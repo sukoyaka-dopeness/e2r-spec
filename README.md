@@ -55,6 +55,7 @@ Version 1.0
 
 ## License
 
+License information will be added before the first public release.
 
 ---
 One narrative, many views.

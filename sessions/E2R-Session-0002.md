@@ -213,3 +213,112 @@ The Core should not restrict Extensions to a fixed taxonomy.
 - Dataset Link Extension
 - Core JSON Schema
 ```
+
+## Session Result (Additional Freeze)
+
+### Dataset Responsibility
+
+- Dataset is responsible only for dataset-level information.
+- Dataset is not an Event, Entity, or Relation.
+- Dataset MAY contain dataset metadata.
+- Dataset-level Extensions are reserved only for information that applies to the entire dataset (e.g. calendar definitions).
+
+### Object Responsibility
+
+- Event, Entity, and Relation are responsible only for information about themselves.
+- Extensions that describe an individual object MUST be attached to that object.
+
+Example:
+
+```json
+{
+  "id": "ev001",
+  "extensions": {
+    "history": {
+      ...
+    }
+  }
+}
+```
+
+This design ensures that each object is self-contained and can be copied or exported independently.
+
+### Metadata
+
+Dataset Metadata belongs to the Dataset, not to Core Objects.
+
+Typical examples include:
+
+- title
+- author
+- license
+- copyright
+
+These fields are metadata for the dataset itself and are not part of Event, Entity, or Relation.
+
+### Tags
+
+`tags` are NOT part of the Core specification.
+
+Applications MAY define tag systems through Extensions.
+
+Rationale:
+
+- Not required by every application.
+- Highly application-specific.
+- Consistent with the Minimal Core philosophy.
+
+### Relation
+
+Core Relation does not contain semantic meaning.
+
+The Core only defines structural connectivity.
+
+Example:
+
+```json
+{
+  "id": "rel001",
+  "source": "ev001",
+  "target": "en001"
+}
+```
+
+Semantic meaning (e.g. "parent", "member", "enemy") belongs exclusively to Semantic Extensions.
+
+### Single Source of Truth
+
+Each piece of information should exist in exactly one place.
+
+Semantic information MUST NOT be duplicated between the Core and Extensions.
+
+This principle reduces ambiguity and simplifies implementation.
+
+### Self-contained Objects
+
+Each Event, Entity, and Relation should be self-contained.
+
+Copying or exporting an object should preserve all information attached to that object, including its Extensions.
+
+This property improves portability, reuse, and interoperability between applications.
+
+### Root Dataset Structure
+
+The root object consists of dataset-level information and the three Core collections.
+
+```json
+{
+  "metadata": { ... },
+  "events": [ ... ],
+  "entities": [ ... ],
+  "relations": [ ... ]
+}
+```
+
+Collection names use plural forms:
+
+- `events`
+- `entities`
+- `relations`
+
+`metadata` remains singular because it is an uncountable noun in English.

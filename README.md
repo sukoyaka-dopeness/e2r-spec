@@ -57,6 +57,11 @@ Version 1.0
 
 License information will be added before the first public release.
 
+## Sessions
+
+- E2R-Session-0001.md (Core Principles)
+- E2R-Session-0002.md (Core JSON Design: Dataset)
+
 ---
 One narrative, many views.
 A minimal specification for interconnected narratives.

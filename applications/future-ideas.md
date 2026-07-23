@@ -123,3 +123,18 @@ EntityやEventをベクトル空間上へ配置するExtension。
 - 概念マップ表示
 
 Coreには含めず、Embeddingを利用する実装が任意で利用するExtensionとする。
+
+## Semantic Projection View
+
+E2RのEntityやEventを多次元特徴空間へ配置し、各種Viewとして投影するExtension群。
+
+想定例
+
+- Embedding View
+- 4象限View
+- クラスタView
+- PCA / UMAP / t-SNEによる意味空間表示
+- AIによる新規Relation候補の提示
+- 孤立Entityや概念ギャップの検出
+
+Embeddingはその一実装例とし、Extensionは投影方法やモデルに依存しない設計を目指す。

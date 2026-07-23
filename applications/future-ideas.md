@@ -262,3 +262,122 @@ Possible workflow:
 5. Continue editing using specialized E2R applications.
 
 Rather than treating LLMs as the primary data format, E2R serves as the structured representation that connects multiple AI systems and editing tools.
+
+## Narrative Intermediate Representation
+
+E2R may function as an Intermediate Representation (IR) for narrative generation rather than simply a storage format.
+
+Possible workflow:
+
+1. Generate characters, places, items, or events.
+2. Assemble them into an E2R Dataset.
+3. Generate natural language using an LLM.
+4. Extract newly generated Entities, Events, and Relations back into E2R.
+5. Continue editing using specialized E2R applications.
+
+Rather than treating LLMs as the primary data format, E2R serves as the structured representation exchanged between AI systems and editing applications.
+
+Potential pipeline examples include:
+
+- Character Generator → Narrative Compiler → LLM → Worldbuilding
+- Worldbuilding → Timeline → Relationship Diagram
+- Knowledge Browser → LLM → E2R Dataset
+
+## Knowledge Capture
+
+E2R can be used as a long-term knowledge archive rather than simply a relationship graph.
+
+Possible applications include:
+
+- Web page snapshots
+- News article archives
+- Wikipedia snapshots
+- Research paper collections
+- Personal note systems
+- PKM (Personal Knowledge Management)
+
+Archived resources may be represented as Entities with accompanying Extensions containing metadata, extracted text, summaries, embeddings, citations, or external identifiers.
+
+Unlike bookmark collections, archived information becomes part of the E2R graph and can participate in relations, semantic search, projection views, and AI-assisted analysis.
+
+## Idea Organization
+
+Idea cards may be represented as Entities and organized using multiple Views.
+
+Possible applications include:
+
+- KJ Method
+- Affinity Diagram
+- Mind Mapping
+- Mandala Chart
+- Brainstorming
+- Card Sorting
+
+Different applications may visualize the same dataset in different ways while sharing identical underlying Entities and Relations.
+
+Tags, embeddings, semantic relations, and projection views may all be combined to reorganize the same collection of ideas.
+
+## Feature Space Editing
+
+Feature Space Views allow Entities to be arranged within arbitrary conceptual spaces.
+
+Examples include:
+
+- Introverted ←→ Extroverted
+- Rational ←→ Emotional
+- Order ←→ Chaos
+- Good ←→ Evil
+
+The axes may be manually defined by users or suggested by AI using available Extensions such as Character or Embedding.
+
+Potential applications include:
+
+- Character balancing
+- Concept exploration
+- Story planning
+- Dataset visualization
+- Semantic navigation
+
+Feature Space Views are not limited to two dimensions. Higher-dimensional embeddings may be projected into two-dimensional spaces for visualization and editing.
+
+## Game Analysis and Replay
+
+E2R can represent game states and gameplay histories.
+
+Possible applications include:
+
+- TRPG replay
+- Campaign management
+- Werewolf game analysis
+- Board game logs
+- Card game match records
+- Chess and shogi game records
+- AI-assisted replay analysis
+
+Game pieces, players, NPCs, items, and locations may all be represented as Entities.
+
+Turns, actions, phases, battles, conversations, and rule events may be represented as Events.
+
+The same dataset can generate multiple Views, including timelines, relationship diagrams, statistics, and replay visualizations.
+
+Future applications may describe game rules themselves using E2R, enabling AI-assisted rule analysis and simulation.
+
+## Modular Application Ecosystem
+
+E2R is intended to support an ecosystem of small, specialized applications rather than a single monolithic editor.
+
+Each application focuses on a specific task while sharing a common dataset.
+
+Examples include:
+
+- Timeline editing
+- Relationship visualization
+- Character generation
+- Worldbuilding
+- Feature space editing
+- Knowledge management
+- Narrative generation
+- Game analysis
+
+Applications may be chained together as user-defined workflows, allowing datasets to evolve incrementally while remaining compatible across the ecosystem.
+

@@ -113,3 +113,34 @@ The Core Specification does not define these concepts.
 The Family Tree Application interprets general E2R Entities, Events, and Relations as genealogical information.
 
 Genealogical rules are defined by the application and its Extensions, not by the E2R Core Specification.
+
+## Dataset Integration
+
+Applications may combine multiple E2R datasets into a larger genealogy.
+
+Possible use cases include:
+
+- Merging independently created family trees
+- Combining regional genealogies
+- Connecting historical records
+- Integrating fictional family lineages
+- Building community-maintained genealogy datasets
+
+The E2R Core Specification does not define merge behavior.
+
+Conflict detection, duplicate resolution, and merge strategies are application-specific.
+
+## Incremental Growth
+
+Family trees are often created gradually.
+
+Applications may support:
+
+- Importing additional datasets
+- Expanding existing branches
+- Connecting previously unrelated families
+- Resolving duplicate individuals
+- Preserving independent sources before merging
+
+This enables large genealogy projects to be built collaboratively over time.
+

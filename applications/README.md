@@ -63,4 +63,27 @@ See `llm-integration.md`.
 
 Applications are free to define their own user interface, workflows, editing features, storage methods, and supported Extensions.
 
+## Composable Datasets
+
+E2R datasets are designed to be independently created and later combined.
+
+Different users, organizations, or applications may create separate datasets describing different parts of the same domain.
+
+Applications may support combining these datasets into a larger graph or timeline while preserving their original information.
+
+Possible examples include:
+
+- Merging independent family trees into a larger genealogy
+- Combining historical timelines from multiple researchers
+- Integrating organization charts from different departments
+- Building collaborative worldbuilding projects
+- Connecting independent investigation datasets
+- Expanding knowledge graphs over time
+
+The E2R Core Specification does not define merge behavior or conflict resolution.
+
+How datasets are merged, validated, or edited is the responsibility of Applications.
+
+
+
 The only interoperability requirement is that Core-compatible datasets remain valid E2R datasets.

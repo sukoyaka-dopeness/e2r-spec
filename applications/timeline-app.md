@@ -113,3 +113,62 @@ The Timeline Application should derive its chronological presentation from E2R E
 The Core Specification does not define how timelines are displayed.
 
 Timeline layout, colors, grouping, filtering, and interaction are application-specific features.
+
+## Editing Workflow
+
+NarrativeLine is designed around Events rather than Entities.
+
+Users naturally think in terms of "something happened" rather than "an object exists". Therefore, creating and editing Events is the primary workflow of the application.
+
+### Event-first Editing
+
+A typical editing flow is:
+
+1. Create an Event.
+2. Enter the Event name.
+3. Optionally enter a date using the History Extension.
+4. Add related Entities.
+
+When a related Entity is entered, the application searches for an existing Entity.
+
+- If an existing Entity is found, it is linked to the Event.
+- If no matching Entity exists, a new Entity is created automatically.
+
+This allows users to build a dataset naturally without managing Entity lists in advance.
+
+### Entity Suggestions
+
+When entering related Entities, the application should provide autocomplete suggestions from the current dataset.
+
+For example:
+
+- Create Event "Birth of Oda Nobunaga"
+- Related Entity: "Oda Nobunaga"
+
+Later:
+
+- Create Event "Incident at Honnō-ji"
+- Typing "Oda..." immediately suggests the existing Entity.
+
+This minimizes duplicate Entities while keeping data entry fast.
+
+### Entity View
+
+The Entity view is primarily intended for browsing and refining existing data rather than creating it.
+
+Each Entity displays:
+
+- Description
+- Related Events
+- Related Entities (when supported)
+- Extensions provided by installed modules
+
+Creating a new Event from an Entity automatically associates that Entity with the new Event.
+
+### Relation Editing
+
+Timeline editing focuses on Events and Entities.
+
+Relations are intentionally minimized in the Timeline application and may be edited in a simplified form.
+
+Rich Relation editing, visualization, and semantic information are expected to be provided by dedicated graph-oriented applications.

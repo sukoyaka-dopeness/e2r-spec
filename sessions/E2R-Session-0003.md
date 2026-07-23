@@ -296,3 +296,114 @@ Whenever practical, complexity should be delegated to:
 - Validation tools
 
 This principle guides future evolution of the E2R ecosystem.
+
+## Additional Decisions
+
+### Event-first Editing
+
+The first MVP of NarrativeLine adopts an Event-first editing workflow.
+
+Users primarily create and edit Events. Related Entities are entered while editing an Event rather than being managed separately beforehand.
+
+If an entered Entity already exists, it is reused. Otherwise, a new Entity is automatically created.
+
+This workflow reduces friction during data entry while naturally building the Entity graph.
+
+---
+
+### Entity View
+
+The Entity view is intended primarily for browsing and refining existing Entities.
+
+From an Entity page, users may:
+
+- View related Events
+- Create new Events already associated with the current Entity
+- Edit Entity descriptions
+- View Extensions supported by the application
+
+Entity creation is expected to occur mainly through Event editing.
+
+---
+
+### Timeline MVP Scope
+
+The initial Timeline MVP focuses on Event management.
+
+Included:
+
+- Timeline View
+- Event Detail
+- Entity Detail
+- JSON Import / Export
+
+Relation editing is intentionally minimized during the first MVP and will primarily be handled by the dedicated graph application.
+
+---
+
+### Extension Editing
+
+Extensions are not owned by individual applications.
+
+Any application that understands an Extension specification may create, edit, or update that Extension.
+
+Applications are expected to ignore unknown Extensions while preserving them during read/write operations.
+
+---
+
+### Extension Dependencies
+
+Extensions should not have mandatory dependencies on other Extensions.
+
+However, an application may optionally utilize another Extension if it is available.
+
+Example:
+
+- Character Extension does not require Embedding Extension.
+- An application may improve its behavior when Embedding Extension is present.
+
+This preserves modularity while allowing richer integrations.
+
+---
+
+### Entity Resolution
+
+Entity Resolution is considered an application feature rather than an Extension.
+
+Its purpose is to determine whether newly entered Entities correspond to existing Entities within the dataset.
+
+Expected implementation stages include:
+
+1. Exact string matching.
+2. Normalized string matching.
+3. Alias-based matching.
+4. Embedding-assisted matching.
+5. LLM-assisted matching.
+
+The Timeline MVP only requires exact string matching with autocomplete suggestions.
+
+---
+
+### Alias Extension
+
+Alias information is distinct from Entity Resolution.
+
+Alias Extension stores alternative names for an Entity.
+
+Entity Resolution may utilize Alias data when suggesting existing Entities.
+
+In other words:
+
+- Alias Extension stores data.
+- Entity Resolution consumes that data.
+
+### Architectural Principle
+
+E2R distinguishes clearly between data and behavior.
+
+- Core defines interoperable data structures.
+- Extensions add optional data.
+- Applications implement editing and analysis behavior.
+- Views determine how data is presented.
+
+Keeping these responsibilities separate allows independent evolution of specifications, applications, and user workflows.

@@ -84,6 +84,62 @@ The E2R Core Specification does not define merge behavior or conflict resolution
 
 How datasets are merged, validated, or edited is the responsibility of Applications.
 
+## E2R Ecosystem
 
+E2Rは単一のアプリケーションではなく、共通のDatasetを複数のアプリケーションが共有するエコシステムを想定している。
+
+各アプリケーションはDatasetの一部を編集・解析・可視化する役割を担い、他のアプリケーションとJSONを介して連携できる。
+
+例:
+
+Character Generator
+↓
+人物Entityを生成
+
+↓
+
+Worldbuilding
+↓
+世界設定を編集
+
+↓
+
+Timeline
+↓
+時系列を整理
+
+↓
+
+Relationship Diagram
+↓
+人物・組織・場所の関係を可視化
+
+↓
+
+Feature Space Editor
+↓
+性格や概念空間を分析・編集
+
+↓
+
+Narrative Compiler
+↓
+物語構造を生成・編集
+
+↓
+
+LLM
+↓
+自然言語へ展開・要約・補完
+
+↓
+
+E2R Dataset
+↓
+更新された構造データを各アプリケーションへ戻す
+
+各アプリケーションは独立して利用できる一方、同じDatasetを共有することで、一つの編集結果を他のアプリケーションがそのまま利用できる。
+
+E2R Datasetは、このエコシステム全体における共通の中間表現（Intermediate Representation, IR）として機能する。
 
 The only interoperability requirement is that Core-compatible datasets remain valid E2R datasets.

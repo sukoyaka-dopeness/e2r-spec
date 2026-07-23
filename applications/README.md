@@ -142,4 +142,23 @@ E2R Dataset
 
 E2R Datasetは、このエコシステム全体における共通の中間表現（Intermediate Representation, IR）として機能する。
 
+## E2R Ecosystem
+
+The applications in this directory are designed to share a common E2R Dataset rather than operate as isolated tools.
+
+Each application edits, analyzes, or visualizes different aspects of the same dataset. Changes made by one application can immediately be reused by others through JSON exchange without requiring format conversion.
+
+Typical workflow examples include:
+
+- Character Generator → Worldbuilding
+- Worldbuilding → Timeline
+- Timeline → Relationship Diagram
+- Relationship Diagram → Feature Space Editor
+- Narrative Compiler → LLM
+- LLM → E2R Dataset
+
+Applications are intended to be composable. Users may use only the applications they need, while sharing the same underlying dataset across the entire ecosystem.
+
+In this ecosystem, the E2R Dataset functions as a common Intermediate Representation (IR) between applications, AI systems, and external tools.
+
 The only interoperability requirement is that Core-compatible datasets remain valid E2R datasets.

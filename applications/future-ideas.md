@@ -108,3 +108,18 @@ The E2R ecosystem is intended to support independent applications built by diffe
 Applications may share datasets while providing different user experiences, editing workflows, and Extensions.
 
 The E2R Core Specification intentionally leaves these possibilities open.
+
+## Embedding Extension
+
+EntityやEventをベクトル空間上へ配置するExtension。
+
+想定用途
+
+- 類似Entity検索
+- 遠い概念同士の組み合わせ提案
+- クラスタ分析
+- 孤立した概念の発見
+- AIによる創作支援
+- 概念マップ表示
+
+Coreには含めず、Embeddingを利用する実装が任意で利用するExtensionとする。

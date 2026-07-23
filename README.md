@@ -65,3 +65,11 @@ License information will be added before the first public release.
 ---
 One narrative, many views.
 A minimal specification for interconnected narratives.
+
+## Ecosystem
+
+E2R is designed as the foundation of an ecosystem rather than a single application.
+
+Timeline editors, relationship diagrams, worldbuilding tools, knowledge management systems, AI-assisted editors, and future applications can all exchange information through a common E2R Dataset.
+
+By using a shared Intermediate Representation (IR), applications remain loosely coupled while allowing users to build flexible workflows tailored to their own use cases.

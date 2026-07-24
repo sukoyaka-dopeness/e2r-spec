@@ -4,7 +4,7 @@
 
 The History Extension provides standardized temporal information for E2R datasets.
 
-Its purpose is to represent when Events occur and how they are ordered in time, while remaining independent from any particular application domain.
+Its purpose is to represent when Events occur and how they are ordered in time while remaining independent from any particular application domain.
 
 The History Extension extends the Core without changing the meaning of Core objects.
 
@@ -17,6 +17,7 @@ The History Extension follows the same philosophy as the E2R Core.
 - Build upon the Core rather than replace it.
 - Standardize only concepts that are broadly applicable.
 - Keep semantic assumptions to a minimum.
+- Separate temporal representation from temporal interpretation.
 - Allow unknown fields and future extensions.
 - Remain independent from presentation.
 
@@ -28,10 +29,9 @@ The History Extension standardizes common temporal concepts, including:
 
 - Absolute date and time
 - Time ranges
-- Approximate or uncertain dates
-- Relative temporal relationships
-- Calendar systems
-- Temporal precision (granularity)
+- Temporal precision
+- Chronological ordering
+- Calendar identification
 
 These concepts are expected to be useful across many application domains, including:
 
@@ -45,49 +45,185 @@ These concepts are expected to be useful across many application domains, includ
 
 ---
 
-## Temporal Concepts
+# Time Object
 
-The extension may define representations for:
+All temporal information is represented by a Time Object.
 
-### Absolute Time
+The Time Object is responsible only for representing temporal values.
 
-Specific dates or timestamps.
+It does not represent domain-specific semantics such as uncertainty, narrative order, parallel timelines, or time loops.
 
-Examples:
+## Single Time
 
-- 2025
-- 2025-07
-- 2025-07-24
-- 2025-07-24T14:35:00Z
+```json
+{
+  "time": {
+    "value": "2027-07-24",
+    "precision": "day"
+  }
+}
+```
+
+## Time Range
+
+```json
+{
+  "time": {
+    "start": {
+      "value": "2025",
+      "precision": "year"
+    },
+    "end": {
+      "value": "2026-03",
+      "precision": "month"
+    }
+  }
+}
+```
+
+A Time Object SHALL contain either:
+
+- `value`
+
+or
+
+- `start` and `end`
+
+Applications SHOULD treat these representations as mutually exclusive.
 
 ---
 
-### Time Range
+## Value
 
-Events or entity existence spanning a period.
+`value` SHALL be an ISO 8601 compatible string.
 
 Examples:
 
-- 1914–1918
-- January–March 2025
+```text
+2027
+2027-07
+2027-07-24
+2027-07-24T15:30:00Z
+```
 
 ---
+
+## Precision
+
+`precision` explicitly specifies the precision of the temporal value.
+
+Allowed values are:
+
+- year
+- month
+- day
+- hour
+- minute
+- second
+
+Applications MUST NOT infer precision solely from the string representation.
+
+---
+
+## Time Range
+
+Time ranges are represented by `start` and `end`.
+
+Each endpoint is itself a Time Object.
+
+This allows different precision at each endpoint.
+
+Example:
+
+```json
+{
+  "time": {
+    "start": {
+      "value": "2027",
+      "precision": "year"
+    },
+    "end": {
+      "value": "2027-06",
+      "precision": "month"
+    }
+  }
+}
+```
+
+---
+
+## Sorting
+
+Applications SHOULD sort Events using the following precedence:
+
+1. Temporal value
+2. Temporal precision
+3. Core `order`
+4. Implementation-defined tie breaker
+
+When temporal values are equal, lower precision SHOULD appear before higher precision.
+
+Example:
+
+```text
+2027
+2027-05
+2027-05-18
+```
+
+---
+
+## Calendar Systems
+
+The History Extension allows temporal values to be associated with calendar systems.
+
+The definition of calendar systems is outside the scope of this specification.
+
+Calendar-specific semantics may be defined by separate Extensions.
+
+---
+
+## Relationship to the Core
+
+The Core defines Events, Entities, and Relations.
+
+The History Extension adds temporal representation without modifying the Core data model.
+
+Applications that do not understand the History Extension should still be able to process Core objects safely.
+
+---
+
+## Relationship to Other Extensions
+
+The History Extension is intended to coexist with independent Extensions.
+
+Examples include:
+
+- Calendar Extension
+- Loop Extension
+- Worldline Extension
+- Probability Extension
+- Narrative Extension
+
+Each Extension is responsible for its own semantics.
+
+---
+
+## Out of Scope
+
+The following concepts are intentionally excluded from the History Extension.
 
 ### Approximate Time
-
-Dates that are known only approximately.
 
 Examples:
 
 - Around 500 BCE
+- Approximately 1900
 - Early 18th century
-- Late summer
 
 ---
 
 ### Relative Time
-
-Time expressed relative to another event.
 
 Examples:
 
@@ -97,61 +233,30 @@ Examples:
 
 ---
 
-### Calendar Systems
-
-Support for multiple calendar systems.
-
-Examples include:
-
-- Gregorian
-- Julian
-- Japanese era
-- Lunar calendars
-- Fictional calendars
-
-The History Extension does not define individual calendar systems.
-It provides a mechanism for identifying them.
-
----
-
-### Temporal Granularity
-
-Different datasets may represent time with different precision.
-
-Examples include:
-
-- Year
-- Month
-- Day
-- Hour
-- Minute
-- Second
-
-Applications should not assume identical precision across all temporal values.
-
----
-
-## Out of Scope
-
-The following concepts are intentionally outside the scope of the History Extension.
-
-These concepts are domain-specific and should be defined by separate Extensions when needed.
-
-### Loop Time
-
-Repeated timelines.
+### Seasons and Named Periods
 
 Examples:
 
-- Time loops
-- Loop counters
-- Iteration numbers
+- Spring
+- Rainy season
+- Renaissance
+- Postwar period
+
+These represent human interpretation of time rather than temporal values themselves.
 
 ---
 
-### Worldline Management
+### Narrative or Experienced Time
 
-Multiple concurrent or branching timelines.
+Examples:
+
+- Character experience order
+- Narrative sequence
+- Flashbacks
+
+---
+
+### Parallel Timelines
 
 Examples:
 
@@ -161,21 +266,16 @@ Examples:
 
 ---
 
-### Subjective or Experienced Time
-
-Temporal order as experienced by an observer.
+### Time Loops
 
 Examples:
 
-- Character memory order
-- Narrative order
-- Player progression
+- Loop counters
+- Iteration numbers
 
 ---
 
 ### Probability and Confidence
-
-Uncertainty regarding whether a temporal assertion is correct.
 
 Examples:
 
@@ -183,15 +283,11 @@ Examples:
 - Probability distribution
 - Competing hypotheses
 
-Temporal uncertainty about *when* something occurred belongs in the History Extension.
-
-Uncertainty about *whether the statement itself is true* belongs in another Extension.
+Temporal uncertainty about whether a statement is true belongs to another Extension.
 
 ---
 
-### Dataset Version History
-
-The evolution of the dataset itself.
+### Dataset History
 
 Examples:
 
@@ -203,36 +299,10 @@ These describe the dataset rather than the represented world.
 
 ---
 
-## Relationship to the Core
-
-The Core defines Events, Entities, and Relations.
-
-The History Extension provides temporal information for those objects.
-
-Applications that do not understand the History Extension should still be able to process the Core safely.
-
----
-
-## Relationship to Other Extensions
-
-The History Extension is designed to coexist with future Extensions.
-
-Examples include:
-
-- Loop Extension
-- Worldline Extension
-- Probability Extension
-- Calendar Extension
-- Narrative Extension
-
-Applications may combine these Extensions as needed.
-
----
-
 ## Non-goals
 
 The History Extension does not attempt to model every possible concept of time.
 
-Its goal is to standardize the temporal concepts that are broadly useful across many domains while leaving specialized semantics to independent Extensions.
+Its purpose is to standardize common temporal representation while allowing specialized temporal semantics to evolve independently through separate Extensions.
 
-This separation keeps the E2R ecosystem modular, extensible, and interoperable.
+This separation keeps E2R modular, extensible, and interoperable.

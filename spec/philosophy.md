@@ -1,131 +1,144 @@
-# Philosophy
+# Core Philosophy
 
-## Core Philosophy
+## Core Principles
 
-E2R is designed around a minimal interoperable Core.
+The Core is minimal.
 
-The Core should contain only the information necessary for every compliant implementation to understand the structure of a dataset.
+Meaning belongs to Semantic Extensions.
 
-Additional meaning, visualization, and application-specific behavior belong outside the Core.
+Presentation belongs to Presentation Extensions.
 
-The design principles are:
+Time representation belongs to the History Extension.
 
-- The Core is minimal.
-- Semantics belong to Extensions.
-- Presentation belongs to Views.
-- Behavior belongs to Applications.
-- The Core alone is sufficient to interpret an E2R Dataset.
-- Unknown Extensions must be safely ignored.
-- A Single Source of Truth should be maintained whenever possible.
+The Core can interpret every valid Core dataset without understanding any Extension.
 
-## Layered Architecture
+Unknown Extensions MUST be safely ignored.
 
-E2R separates responsibilities into independent layers.
+The Core remains the Single Source of Truth for structural interoperability.
 
-```
-Workflow
-↑
-View
-↑
-Application
-↑
-Extension
-↑
-Core
-```
+---
 
-Each layer has a clearly defined purpose and should evolve independently.
+## Structure over Semantics
+
+The Core standardizes structure rather than domain meaning.
+
+The three Core Objects have distinct structural responsibilities:
+
+- Entity represents existence.
+- Event represents occurrence.
+- Relation represents connection.
+
+The Core intentionally avoids assigning domain-specific semantics to these objects.
+
+The meaning of an Entity, the interpretation of an Event, and the semantics of a Relation belong to Extensions.
+
+This separation keeps the Core stable while allowing specialized domains to evolve independently.
+
+---
+
+## Separation of Responsibilities
+
+E2R separates data, meaning, behavior, and presentation into independent layers.
 
 ### Core
 
-The Core defines the minimum interoperable data model shared by every E2R implementation.
+The Core defines the minimum interoperable data model.
 
-The Core is intentionally small and stable.
+It defines only:
 
-### Extensions
+- Core Objects
+- Identifiers
+- Connections
+- Structural consistency
 
-Extensions add optional information without changing the meaning of the Core.
+The Core understands only structure.
 
-Extensions may define additional data models for specific domains such as history, semantics, embeddings, or character generation.
+It does not attempt to understand what that structure means within a particular domain.
 
-Extensions should remain independently usable.
+### Semantic Extensions
 
-An Extension must not require another Extension in order to remain valid.
-
-Applications may optionally make use of additional Extensions when available.
-
-### Applications
-
-Applications implement behavior.
-
-Applications create, edit, analyze, transform, import, and export E2R Datasets according to the Extension specifications they support.
-
-Applications are not owners of Extensions.
-
-Multiple applications may create or edit the same Extension as long as they understand its specification.
-
-Applications should preserve unknown Extensions whenever possible.
-
-### Views
-
-Views define how information is presented to users.
-
-The same dataset may be visualized in many different ways without changing its underlying data.
+Semantic Extensions define domain-specific meaning.
 
 Examples include:
 
-- Timeline
-- Relationship Diagram
-- Calendar
-- List
-- Feature Space
+- Family relationships
+- Organizational structures
+- Narrative roles
+- Music history
+- Biological taxonomy
 
-Views are not part of the Core data model.
+Multiple Semantic Extensions may coexist within the same dataset.
 
-## Workflows
+### History Extension
 
-Applications are intended to be combined into user-defined workflows.
+The History Extension standardizes temporal representation.
 
-An E2R Dataset may pass through multiple applications during its lifetime.
+It defines how time is represented, ordered, and exchanged.
 
-For example:
+It intentionally does not define temporal interpretation such as uncertainty, narrative order, historical eras, or seasonal concepts.
 
-```
-Character Generator
-        ↓
-Worldbuilding
-        ↓
-Timeline
-        ↓
-Relationship Diagram
-        ↓
-Feature Space Editor
-```
+### Presentation Extensions
 
-Applications may also exchange datasets with external systems such as LLMs, search engines, databases, or knowledge bases.
+Presentation Extensions define how information is displayed.
 
-The E2R Dataset functions as a common Intermediate Representation (IR) throughout these workflows.
+Examples include:
 
-## Architectural Principles
+- Labels
+- Colors
+- Icons
+- Layout
+- Timeline rendering
+- Graph visualization
 
-E2R distinguishes clearly between data, behavior, presentation, and workflows.
+Applications may ignore Presentation Extensions without affecting the underlying data.
 
-- Core defines interoperable data.
-- Extensions add optional data.
-- Applications implement behavior.
-- Views present information.
-- Workflows connect independent applications.
+---
 
-This separation allows the Core specification, Extensions, Applications, and Views to evolve independently while remaining interoperable.
+## Extensibility
 
-As a result, new applications and Extensions can be introduced without requiring changes to existing datasets or the Core specification.
+Extensions expand capabilities without modifying the Core.
 
-## Extension Responsibility
+Applications that understand an Extension may use it.
 
-An Extension should standardize concepts that are broadly reusable across application domains.
+Applications that do not understand an Extension should safely ignore it while continuing to process the Core dataset.
 
-Concepts that are highly domain-specific should be defined as independent Extensions rather than expanding an existing one.
+Independent Extensions should not require modifications to the Core specification.
 
-For example, the History Extension standardizes general temporal concepts such as dates, time ranges, relative time, and calendar systems.
+---
 
-Concepts such as time loops, parallel worldlines, narrative experience order, or hypothesis confidence belong to separate Extensions because they introduce domain-specific semantics beyond general temporal representation.
+## Forward Compatibility
+
+Future versions of E2R should favor additive change.
+
+Existing Core datasets should remain valid whenever possible.
+
+Extensions should evolve independently without forcing changes to the Core.
+
+This minimizes ecosystem fragmentation and improves long-term interoperability.
+
+---
+
+## Application Independence
+
+The Core is not designed for a specific application.
+
+The same dataset may be interpreted by many different applications, including:
+
+- Timeline applications
+- Family tree applications
+- Worldbuilding tools
+- Investigation systems
+- Knowledge bases
+- Scenario generators
+- Music history applications
+- Taxonomy browsers
+
+Each application is responsible for interpreting the Extensions it supports.
+
+---
+
+## Design Goal
+
+The primary goal of E2R is to maximize interoperability through a minimal structural Core.
+
+By separating structure, meaning, time, and presentation into independent layers, E2R enables datasets to remain reusable across diverse applications while allowing each domain to define its own semantics through Extensions.

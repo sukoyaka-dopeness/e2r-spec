@@ -1,8 +1,8 @@
 # Design Rationale
 
-This document records the reasoning behind the architectural decisions of the E2R Core specification.
+This document explains the reasoning behind the architectural decisions of the E2R Core specification.
 
-It complements `philosophy.md` by explaining *why* the Core is designed the way it is.
+It complements `philosophy.md` by documenting why the Core is designed as it is and why certain capabilities are intentionally delegated to Extensions.
 
 ---
 
@@ -13,6 +13,26 @@ The Core is intentionally kept as small as possible.
 Every feature added to the Core increases long-term maintenance costs, implementation complexity, and compatibility requirements.
 
 A feature should become part of the Core only when interoperability cannot reasonably be achieved through an Extension.
+
+Whenever a feature can be standardized independently, it should be defined as an Extension rather than expanding the Core.
+
+---
+
+# Structural Rather Than Semantic
+
+The Core standardizes structure rather than domain meaning.
+
+Its responsibility is limited to representing:
+
+- existence
+- occurrence
+- connection
+
+The Core intentionally avoids defining what those structures mean within a particular domain.
+
+Domain semantics belong to Semantic Extensions.
+
+This separation keeps the Core reusable across many different application domains.
 
 ---
 
@@ -47,9 +67,88 @@ Examples include:
 - dataset identifier
 - generating application
 
-These fields are useful in many applications, but they are not required to exchange the semantic structure represented by E2R.
+These fields are useful in many applications, but they are not required to exchange the structural information represented by E2R.
 
 Keeping Metadata as an Extension allows different ecosystems to adopt different metadata models without fragmenting the Core.
+
+---
+
+# Why Time Is an Extension
+
+Time is important for many applications but unnecessary for others.
+
+Some datasets describe logical structures, conceptual knowledge, taxonomies, or other information that has no temporal dimension.
+
+Moving temporal representation into the History Extension allows the Core to remain independent of chronology while still providing a common temporal model for applications that require it.
+
+---
+
+# Why a Time Object
+
+The History Extension uses a Time Object instead of a single date field.
+
+This design supports:
+
+- partial dates
+- explicit precision
+- time ranges
+- future temporal extensions
+
+without requiring incompatible changes to the overall data model.
+
+---
+
+# Why Precision Is Explicit
+
+Temporal precision is represented explicitly rather than inferred from the string representation.
+
+This avoids ambiguity and allows applications to distinguish between values such as:
+
+- 2027
+- 2027-05
+- 2027-05-18
+
+without relying on parsing heuristics.
+
+---
+
+# Why Time Has No Semantics
+
+The History Extension represents temporal values rather than their interpretation.
+
+Examples intentionally excluded include:
+
+- seasons
+- historical eras
+- approximate dates
+- relative time
+- narrative order
+- parallel timelines
+- time loops
+
+These concepts represent temporal semantics rather than temporal structure and may be standardized by separate Extensions.
+
+---
+
+# Why Relations Have No Type
+
+Earlier drafts considered including a semantic `type` field in every Relation.
+
+Examples included concepts such as:
+
+- parent
+- participant
+- member
+- located_at
+- causes
+
+Further discussion concluded that these values describe the meaning of a connection rather than the connection itself.
+
+The Core therefore represents only that two Core Objects are connected.
+
+The meaning of that connection belongs to Semantic Extensions.
+
+This keeps Relation consistent with the responsibilities of Entity and Event.
 
 ---
 
@@ -84,7 +183,7 @@ This enables:
 
 # Dataset-level Extensions
 
-Some information applies to an entire Dataset rather than individual Entities, Events, or Relations.
+Some information applies to an entire Dataset rather than individual Core Objects.
 
 Examples include:
 
@@ -95,7 +194,7 @@ Examples include:
 
 For this reason, Dataset-level Extensions are supported.
 
-This avoids overloading Entity or Event definitions with information that belongs to the Dataset itself.
+This avoids overloading Entity, Event, or Relation definitions with information that belongs to the Dataset itself.
 
 ---
 
@@ -107,7 +206,7 @@ Design choices therefore favor:
 
 - explicit structure
 - predictable naming
-- stable semantics
+- stable architecture
 - simple implementation
 
 Readability is considered an important aspect of long-term maintainability.
@@ -134,7 +233,9 @@ The Core should remain stable while Extensions evolve around it.
 The Core intentionally leaves room for future standard Extensions, including but not limited to:
 
 - Metadata Extension
+- History Extension enhancements
 - Calendar Extension
+- Semantic Extension vocabularies
 - Dataset Link Extension
 
-These are not part of the Core unless future interoperability requirements demonstrate that they must be standardized.
+These are not part of the Core unless future interoperability requirements demonstrate that they should be standardized.

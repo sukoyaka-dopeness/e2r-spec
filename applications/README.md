@@ -161,4 +161,93 @@ Applications are intended to be composable. Users may use only the applications 
 
 In this ecosystem, the E2R Dataset functions as a common Intermediate Representation (IR) between applications, AI systems, and external tools.
 
+## E2R Ecosystem
+
+The applications in this directory are designed to work together by sharing a common E2R Dataset.
+
+Rather than forming a single monolithic application, each application focuses on a specific task such as editing, visualization, generation, or analysis.
+
+Typical applications include:
+
+- Timeline editing
+- Relationship visualization
+- Worldbuilding
+- Character generation
+- Knowledge management
+- Feature space editing
+- Narrative generation
+- Game analysis
+
+Each application may read, modify, and write the same dataset while preserving information that it does not understand.
+
+This allows users to combine applications into flexible workflows without requiring data conversion between tools.
+
+## Application Roles
+
+Applications generally fall into one or more of the following categories.
+
+### Editors
+
+Applications that create or modify E2R Datasets.
+
+Examples:
+
+- Timeline editor
+- Worldbuilding editor
+- Character generator
+
+### Viewers
+
+Applications that visualize existing datasets without fundamentally changing their structure.
+
+Examples:
+
+- Timeline
+- Relationship diagram
+- Feature space view
+
+### Analyzers
+
+Applications that derive additional information from datasets.
+
+Examples:
+
+- Semantic analysis
+- Embedding generation
+- Knowledge graph analysis
+- AI-assisted exploration
+
+### Importers / Exporters
+
+Applications that exchange information with external systems.
+
+Examples:
+
+- LLM integration
+- Citation import
+- Web archive import
+- Knowledge base synchronization
+
+## Shared Intermediate Representation
+
+E2R Datasets are intended to function as a shared Intermediate Representation (IR) between applications.
+
+A dataset may pass through multiple applications during its lifetime.
+
+Example workflow:
+
+Character Generator
+→ Worldbuilding
+→ Timeline
+→ Relationship Diagram
+→ Feature Space Editor
+→ LLM
+→ Knowledge Browser
+
+Each application contributes information while remaining independent from the others.
+
+This modular architecture allows new applications to be introduced without requiring changes to existing datasets or applications.
+
+
+
 The only interoperability requirement is that Core-compatible datasets remain valid E2R datasets.

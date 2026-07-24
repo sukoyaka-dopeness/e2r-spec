@@ -172,3 +172,99 @@ Timeline editing focuses on Events and Entities.
 Relations are intentionally minimized in the Timeline application and may be edited in a simplified form.
 
 Rich Relation editing, visualization, and semantic information are expected to be provided by dedicated graph-oriented applications.
+
+## MVP Scope
+
+The first MVP focuses on creating and editing Events while gradually building an E2R Dataset.
+
+The initial implementation intentionally minimizes complexity and postpones advanced features until dedicated applications become available.
+
+Included functionality:
+
+- Timeline View
+- Event editing
+- Entity editing
+- JSON import/export
+- History Extension support
+- Entity autocomplete
+
+Excluded from the first MVP:
+
+- Rich Relation editing
+- Graph visualization
+- Semantic analysis
+- Embedding
+- Feature Space editing
+- Advanced search
+- Multi-user collaboration
+
+## Editing Workflow
+
+NarrativeLine adopts an Event-first editing workflow.
+
+Users primarily create and edit Events rather than Entities.
+
+Typical workflow:
+
+1. Create a new Event.
+2. Enter the Event name.
+3. Optionally enter date and time information through the History Extension.
+4. Add related Entities.
+
+When entering a related Entity:
+
+- Existing Entities should be suggested using autocomplete.
+- Selecting a suggestion links the existing Entity.
+- If no matching Entity exists, a new Entity is automatically created.
+
+This allows datasets to grow naturally without requiring users to manage Entity lists beforehand.
+
+## Entity View
+
+The Entity view complements the Event editor.
+
+Each Entity page may display:
+
+- Description
+- Related Events
+- Related Entities
+- Installed Extension data
+
+Creating a new Event from an Entity automatically associates that Entity with the newly created Event.
+
+Entity creation is expected to occur primarily through Event editing.
+
+## Relation Editing
+
+The Timeline application is not intended to be the primary Relation editor.
+
+The first MVP only requires enough Relation functionality to support navigation between related objects.
+
+Rich Relation editing, semantic labels, visualization, and graph operations are expected to be provided by dedicated graph-oriented applications.
+
+## Entity Resolution
+
+The Timeline MVP performs simple Entity Resolution while entering related Entities.
+
+The initial implementation only requires:
+
+- Exact string matching
+- Autocomplete suggestions
+
+More advanced matching methods, including aliases, embeddings, and AI-assisted suggestions, are intentionally deferred to future versions.
+
+## User Interface Philosophy
+
+NarrativeLine is an Event editor presented through a timeline.
+
+The timeline itself is only one possible View of the dataset.
+
+The editing model should remain independent from the visualization so that future versions may provide additional Views, including:
+
+- Timeline
+- Calendar
+- List
+- Gantt
+- Sequence
+
+while sharing the same editing workflow and underlying E2R Dataset.

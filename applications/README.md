@@ -1,194 +1,30 @@
-# E2R Applications
+# Applications
 
-This directory contains ideas, concepts, and design notes for applications built on top of the E2R Core Specification.
+This directory describes applications built on top of the E2R specification.
 
-These documents are **not part of the E2R Core Specification**.
-They do not define interoperability requirements and are not normative.
+Rather than defining a single monolithic application, E2R is intended to support an ecosystem of independent applications that share a common E2R Dataset.
 
-Their purpose is to preserve application ideas developed during the design of E2R without affecting the stability of the Core.
+Each application focuses on a particular task such as editing, visualization, generation, or analysis while remaining compatible through the common E2R data model.
 
-## Categories
+## Design Goals
 
-### Timeline & Sequence
+Applications should:
 
-Applications focused on chronological information.
+- Share the same E2R Dataset.
+- Preserve unknown Extensions.
+- Ignore unsupported Extensions without failing.
+- Exchange datasets through JSON.
+- Remain independent from one another.
 
-- Timeline Editor
-- Historical Timeline
-- Project Timeline
+This allows users to build workflows by combining multiple specialized applications.
 
-### Graph & Relationship
+## Application Categories
 
-Applications that visualize and edit relationships between objects.
-
-- Relationship Graph
-- Knowledge Graph
-- Organization Chart
-- Family Tree
-
-### Investigation & Analysis
-
-Applications for collecting, organizing, and analyzing information.
-
-- Investigation Board
-- OSINT Workspace
-- Research Database
-- Citation Graph
-
-### Creative & Worldbuilding
-
-Applications for authors, game designers, and worldbuilders.
-
-- Worldbuilding Database
-- Character Manager
-- Story Timeline
-- Lore Management
-
-### Knowledge Management
-
-Applications for structured information management.
-
-- Personal Knowledge Base
-- Wiki Editor
-- Concept Graph
-- Technical Documentation
-
-### AI-assisted Applications
-
-Applications that use Large Language Models (LLMs) to assist editing, analysis, and data creation.
-
-See `llm-integration.md`.
-
-## Design Principle
-
-Applications are free to define their own user interface, workflows, editing features, storage methods, and supported Extensions.
-
-## Composable Datasets
-
-E2R datasets are designed to be independently created and later combined.
-
-Different users, organizations, or applications may create separate datasets describing different parts of the same domain.
-
-Applications may support combining these datasets into a larger graph or timeline while preserving their original information.
-
-Possible examples include:
-
-- Merging independent family trees into a larger genealogy
-- Combining historical timelines from multiple researchers
-- Integrating organization charts from different departments
-- Building collaborative worldbuilding projects
-- Connecting independent investigation datasets
-- Expanding knowledge graphs over time
-
-The E2R Core Specification does not define merge behavior or conflict resolution.
-
-How datasets are merged, validated, or edited is the responsibility of Applications.
-
-## E2R Ecosystem
-
-E2Rは単一のアプリケーションではなく、共通のDatasetを複数のアプリケーションが共有するエコシステムを想定している。
-
-各アプリケーションはDatasetの一部を編集・解析・可視化する役割を担い、他のアプリケーションとJSONを介して連携できる。
-
-例:
-
-Character Generator
-↓
-人物Entityを生成
-
-↓
-
-Worldbuilding
-↓
-世界設定を編集
-
-↓
-
-Timeline
-↓
-時系列を整理
-
-↓
-
-Relationship Diagram
-↓
-人物・組織・場所の関係を可視化
-
-↓
-
-Feature Space Editor
-↓
-性格や概念空間を分析・編集
-
-↓
-
-Narrative Compiler
-↓
-物語構造を生成・編集
-
-↓
-
-LLM
-↓
-自然言語へ展開・要約・補完
-
-↓
-
-E2R Dataset
-↓
-更新された構造データを各アプリケーションへ戻す
-
-各アプリケーションは独立して利用できる一方、同じDatasetを共有することで、一つの編集結果を他のアプリケーションがそのまま利用できる。
-
-E2R Datasetは、このエコシステム全体における共通の中間表現（Intermediate Representation, IR）として機能する。
-
-## E2R Ecosystem
-
-The applications in this directory are designed to share a common E2R Dataset rather than operate as isolated tools.
-
-Each application edits, analyzes, or visualizes different aspects of the same dataset. Changes made by one application can immediately be reused by others through JSON exchange without requiring format conversion.
-
-Typical workflow examples include:
-
-- Character Generator → Worldbuilding
-- Worldbuilding → Timeline
-- Timeline → Relationship Diagram
-- Relationship Diagram → Feature Space Editor
-- Narrative Compiler → LLM
-- LLM → E2R Dataset
-
-Applications are intended to be composable. Users may use only the applications they need, while sharing the same underlying dataset across the entire ecosystem.
-
-In this ecosystem, the E2R Dataset functions as a common Intermediate Representation (IR) between applications, AI systems, and external tools.
-
-## E2R Ecosystem
-
-The applications in this directory are designed to work together by sharing a common E2R Dataset.
-
-Rather than forming a single monolithic application, each application focuses on a specific task such as editing, visualization, generation, or analysis.
-
-Typical applications include:
-
-- Timeline editing
-- Relationship visualization
-- Worldbuilding
-- Character generation
-- Knowledge management
-- Feature space editing
-- Narrative generation
-- Game analysis
-
-Each application may read, modify, and write the same dataset while preserving information that it does not understand.
-
-This allows users to combine applications into flexible workflows without requiring data conversion between tools.
-
-## Application Roles
-
-Applications generally fall into one or more of the following categories.
+Applications generally fall into several categories.
 
 ### Editors
 
-Applications that create or modify E2R Datasets.
+Applications that create or modify E2R datasets.
 
 Examples:
 
@@ -198,7 +34,7 @@ Examples:
 
 ### Viewers
 
-Applications that visualize existing datasets without fundamentally changing their structure.
+Applications that visualize datasets without changing their structure.
 
 Examples:
 
@@ -208,12 +44,12 @@ Examples:
 
 ### Analyzers
 
-Applications that derive additional information from datasets.
+Applications that derive new information from datasets.
 
 Examples:
 
-- Semantic analysis
 - Embedding generation
+- Semantic analysis
 - Knowledge graph analysis
 - AI-assisted exploration
 
@@ -228,11 +64,9 @@ Examples:
 - Web archive import
 - Knowledge base synchronization
 
-## Shared Intermediate Representation
+## E2R Ecosystem
 
-E2R Datasets are intended to function as a shared Intermediate Representation (IR) between applications.
-
-A dataset may pass through multiple applications during its lifetime.
+Applications are intended to work together rather than replace one another.
 
 Example workflow:
 
@@ -241,13 +75,15 @@ Character Generator
 → Timeline
 → Relationship Diagram
 → Feature Space Editor
-→ LLM
-→ Knowledge Browser
 
-Each application contributes information while remaining independent from the others.
+Applications may also exchange information with external AI systems, search engines, databases, or other software through the shared E2R Dataset.
 
-This modular architecture allows new applications to be introduced without requiring changes to existing datasets or applications.
+The E2R Dataset therefore acts as a common Intermediate Representation (IR) connecting applications while allowing each application to evolve independently.
 
+## Current Application Ideas
 
+Current application proposals are documented in the files contained in this directory.
 
-The only interoperability requirement is that Core-compatible datasets remain valid E2R datasets.
+Each document describes one possible application built on top of E2R.
+
+The list is intentionally open-ended, and additional applications may be added as the ecosystem grows.

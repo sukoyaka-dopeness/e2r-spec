@@ -119,3 +119,13 @@ E2R distinguishes clearly between data, behavior, presentation, and workflows.
 This separation allows the Core specification, Extensions, Applications, and Views to evolve independently while remaining interoperable.
 
 As a result, new applications and Extensions can be introduced without requiring changes to existing datasets or the Core specification.
+
+## Extension Responsibility
+
+An Extension should standardize concepts that are broadly reusable across application domains.
+
+Concepts that are highly domain-specific should be defined as independent Extensions rather than expanding an existing one.
+
+For example, the History Extension standardizes general temporal concepts such as dates, time ranges, relative time, and calendar systems.
+
+Concepts such as time loops, parallel worldlines, narrative experience order, or hypothesis confidence belong to separate Extensions because they introduce domain-specific semantics beyond general temporal representation.

@@ -268,3 +268,13 @@ The editing model should remain independent from the visualization so that futur
 - Sequence
 
 while sharing the same editing workflow and underlying E2R Dataset.
+
+## Future Features
+
+Possible future improvements include:
+
+- Grouping by year
+- Grouping by month
+- Grouping by era
+- Foldable timeline groups
+- User-selectable grouping granularity

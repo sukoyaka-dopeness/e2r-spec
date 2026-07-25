@@ -87,3 +87,11 @@ Current application proposals are documented in the files contained in this dire
 Each document describes one possible application built on top of E2R.
 
 The list is intentionally open-ended, and additional applications may be added as the ecosystem grows.
+
+## Reference Applications
+
+Each application serves as a reference implementation for one or more E2R Extensions.
+
+Applications validate the practical usability of the specification while remaining independent of the Core.
+
+Different applications may support different Extensions without affecting interoperability.

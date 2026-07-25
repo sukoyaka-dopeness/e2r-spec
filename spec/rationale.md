@@ -239,3 +239,35 @@ The Core intentionally leaves room for future standard Extensions, including but
 - Dataset Link Extension
 
 These are not part of the Core unless future interoperability requirements demonstrate that they should be standardized.
+
+## Ordering Keys
+
+History Extension defines the semantics of event ordering, but intentionally does not define the algorithm used to generate ordering keys.
+
+The purpose of `order` is to preserve a stable relative ordering of objects across interoperable applications.
+
+The value itself has no semantic meaning.
+
+Applications are free to regenerate, renumber, or rebalance ordering keys at any time, provided that the relative ordering of objects is preserved.
+
+This separation allows different applications to adopt different internal ordering strategies without affecting interoperability.
+
+For example, an application may use:
+
+- Sequential numbering
+- Sparse numbering
+- Lexicographically sortable identifiers
+- LexoRank-like algorithms
+- Future ordering algorithms
+
+The History Extension only requires that applications interpret the ordering keys consistently.
+
+This design intentionally separates **ordering semantics** from **ordering implementation**, allowing the specification to remain stable while applications evolve independently.
+
+### Rationale
+
+Ordering algorithms are implementation details.
+
+History Extension standardizes only the observable ordering of objects, not the internal mechanism used to produce ordering keys.
+
+This minimizes future specification changes while maximizing long-term interoperability between applications.

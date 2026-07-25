@@ -6,7 +6,7 @@ The History Extension defines temporal information for E2R Core Objects.
 
 Its purpose is to provide interoperable timeline data while remaining independent of application-specific implementations.
 
-History Extension intentionally defines **temporal semantics**, not timeline algorithms or UI behavior.
+History Extension intentionally defines temporal semantics, not timeline algorithms or UI behavior.
 
 ---
 
@@ -31,8 +31,9 @@ History information is stored inside a dedicated `history` object.
   "extensions": {
     "history": {
       "time": {
-        "date": "1945-08-15",
-        "order": "0010"
+        "value": "1945-08-15",
+        "precision": "day",
+        "order": 10
       }
     }
   }
@@ -45,11 +46,21 @@ The `time` object is reserved for temporal information and provides a stable loc
 
 # Time Object
 
-## date
+The Time Object represents a single temporal position.
 
-`date` represents the temporal position of an object.
+## Fields
 
-History Extension uses ISO 8601 representations whenever possible.
+| Field | Type | Required | Description |
+|--------|------|----------|-------------|
+| value | string | Yes | ISO 8601 compatible partial date string. |
+| precision | string | Yes | Precision of `value`. |
+| order | integer | No | Ordering value used when chronological ordering alone is insufficient. |
+
+---
+
+## value
+
+`value` represents the temporal position of an object.
 
 Examples:
 
@@ -57,68 +68,80 @@ Examples:
 1945
 1945-08
 1945-08-15
-1945-08-15T12:30:00Z
 ```
 
-A separate precision field is intentionally omitted.
+Future versions may support additional temporal representations.
 
-The precision is inferred directly from the ISO 8601 representation.
+---
+
+## precision
+
+`precision` explicitly defines the precision of `value`.
+
+Supported values:
+
+- `year`
+- `month`
+- `day`
+
+The value of `precision` MUST match the format of `value`.
+
+Examples:
+
+| value | precision |
+|-------|-----------|
+| `1945` | `year` |
+| `1945-08` | `month` |
+| `1945-08-15` | `day` |
 
 ---
 
 ## order
 
-`order` is an ordering key used when displaying events.
+`order` is an optional ordering key.
 
 Type:
 
 ```
-string
+integer
 ```
 
-The value itself has **no semantic meaning**.
+The value itself has no semantic meaning.
 
-Applications MUST preserve the relative ordering of events.
+Applications are responsible for assigning and maintaining `order`.
 
-Applications MAY freely regenerate or renumber `order` values whenever the relative ordering is preserved.
+The specification does not require sequential numbering.
 
 Examples:
 
 ```
-0010
-0020
-0030
+10
+20
+30
 ```
 
 or
 
 ```
-A
-M
-Z
+100
+200
+300
 ```
 
-or
-
-```
-am3J
-am4K
-b001
-```
-
-History Extension defines the meaning of ordering, but does not define how ordering values are generated.
+Applications MAY freely regenerate `order` values whenever relative ordering is preserved.
 
 ---
 
 # Ordering Rules
 
-Applications should determine display order using the following priority.
+Applications should determine chronological order using the following priority.
 
-1. Temporal information (`date`)
-2. `order`
-3. Application-defined stable ordering (for example object ID)
+1. `value`
+2. `precision`
+3. `order`
+4. Core Object `id`
 
-This ensures deterministic ordering while allowing implementation flexibility.
+This provides deterministic ordering while allowing implementation flexibility.
 
 ---
 
@@ -126,11 +149,9 @@ This ensures deterministic ordering while allowing implementation flexibility.
 
 Objects without temporal information are valid.
 
-Applications may use `order` to position objects with unknown dates.
+Applications may use `order` to position objects whose temporal information is unknown.
 
-Unknown dates should not automatically force objects to the beginning or end of a timeline.
-
-Applications should allow users to place such objects anywhere in the ordering.
+The specification does not require unknown dates to appear at any particular position in a timeline.
 
 ---
 
@@ -151,7 +172,13 @@ These are expected to be handled by separate Extensions or future revisions.
 
 # Planned Future Extensions
 
-The following capabilities are intentionally left outside History Extension v1.0.
+The following capabilities are intentionally outside History Extension v1.0.
+
+## Time Interval
+
+Future versions may introduce an interval object containing `start` and `end` Time Objects for representing durations.
+
+---
 
 ## Calendar
 

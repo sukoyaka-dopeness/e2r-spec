@@ -6,31 +6,33 @@ This document is informational and is not part of the E2R Core Specification.
 
 ## Purpose
 
-The Timeline Application visualizes Events in chronological order while allowing users to navigate related Entities and Relations.
+The Timeline Application is an Event-centered editor built on the E2R Core Specification.
+
+It provides chronological visualization through the History Extension while allowing users to navigate related Entities.
+
+Relation editing is intentionally outside the scope of this application.
 
 The application is intended to support both historical and fictional datasets.
 
-## Possible Features
+## Application Structure
 
-### Timeline View
+Timeline
 
-- Horizontal timeline
-- Vertical timeline
-- Zoomable timeline
-- Infinite timeline
-- Multiple timeline layouts
+↓
+
+Event Detail
+
+↓
+
+Entity Detail
 
 ### Time Resolution
 
 Possible resolutions include:
 
-- Era
 - Year
 - Month
 - Day
-- Hour
-- Minute
-- Second
 
 Applications may support additional resolutions through Extensions.
 
@@ -43,35 +45,33 @@ Possible information displayed for each event includes:
 - Date or time
 - Related entities
 - Related events
+- Selected Event highlighting
+- Events without dates appear after dated Events
+- Smartphone layout displays date and Event name on separate lines
 
 Applications are free to determine how events are presented.
 
 ### Entity Navigation
+
+Related Events are displayed in chronological order.
+
+Entities without related Events are valid.
 
 Users may:
 
 - View all events involving an entity
 - Jump from an event to related entities
 - View an entity's lifespan
-- Filter events by entity
 
-### Relationship Navigation
+## Relation Management
 
-Users may:
+The Timeline Application does not provide direct Relation editing.
 
-- View relationships connected to an event
-- Navigate between related entities
-- Highlight connected objects
+Relations are automatically created and removed as required by Event and Entity editing.
 
-### Filtering
+Existing Relations must be preserved during import and export.
 
-Possible filters include:
-
-- Time range
-- Entity
-- Event type
-- Relation type
-- Extension-defined fields
+Rich Relation editing is expected to be provided by dedicated graph-oriented applications.
 
 ### Multiple Calendars
 
@@ -114,12 +114,6 @@ The Core Specification does not define how timelines are displayed.
 
 Timeline layout, colors, grouping, filtering, and interaction are application-specific features.
 
-## Editing Workflow
-
-NarrativeLine is designed around Events rather than Entities.
-
-Users naturally think in terms of "something happened" rather than "an object exists". Therefore, creating and editing Events is the primary workflow of the application.
-
 ### Event-first Editing
 
 A typical editing flow is:
@@ -152,27 +146,6 @@ Later:
 
 This minimizes duplicate Entities while keeping data entry fast.
 
-### Entity View
-
-The Entity view is primarily intended for browsing and refining existing data rather than creating it.
-
-Each Entity displays:
-
-- Description
-- Related Events
-- Related Entities (when supported)
-- Extensions provided by installed modules
-
-Creating a new Event from an Entity automatically associates that Entity with the new Event.
-
-### Relation Editing
-
-Timeline editing focuses on Events and Entities.
-
-Relations are intentionally minimized in the Timeline application and may be edited in a simplified form.
-
-Rich Relation editing, visualization, and semantic information are expected to be provided by dedicated graph-oriented applications.
-
 ## MVP Scope
 
 The first MVP focuses on creating and editing Events while gradually building an E2R Dataset.
@@ -187,6 +160,17 @@ Included functionality:
 - JSON import/export
 - History Extension support
 - Entity autocomplete
+- Event creation
+- Event editing
+- Event deletion
+- Entity creation
+- Entity editing
+- Entity deletion
+- History Extension editing
+- Entity autocomplete
+- Entity Detail
+- Relation auto-management
+- Empty Dataset template
 
 Excluded from the first MVP:
 
@@ -197,12 +181,22 @@ Excluded from the first MVP:
 - Feature Space editing
 - Advanced search
 - Multi-user collaboration
+- Relation editing
+- Search
+- Filtering
+- Drag-and-drop
+- Timeline folding
+- Multiple calendars
+- Approximate time
+- Relative time
 
 ## Editing Workflow
 
 NarrativeLine adopts an Event-first editing workflow.
+NarrativeLine is designed around Events rather than Entities.
 
 Users primarily create and edit Events rather than Entities.
+Users naturally think in terms of "something happened" rather than "an object exists". Therefore, creating and editing Events is the primary workflow of the application.
 
 Typical workflow:
 
@@ -222,25 +216,36 @@ This allows datasets to grow naturally without requiring users to manage Entity 
 ## Entity View
 
 The Entity view complements the Event editor.
+The Entity view is primarily intended for browsing and refining existing data rather than creating it.
 
 Each Entity page may display:
 
 - Description
 - Related Events
-- Related Entities
 - Installed Extension data
+- Related Events
+(chronological order)
 
-Creating a new Event from an Entity automatically associates that Entity with the newly created Event.
+Each Entity displays:
 
-Entity creation is expected to occur primarily through Event editing.
+- Description
+- Related Events
+- Related Entities (when supported)
+- Extensions provided by installed modules
+
+Creating a new Event from an Entity automatically associates that Entity with the new Event.
 
 ## Relation Editing
 
 The Timeline application is not intended to be the primary Relation editor.
+Timeline editing focuses on Events and Entities.
 
 The first MVP only requires enough Relation functionality to support navigation between related objects.
 
 Rich Relation editing, semantic labels, visualization, and graph operations are expected to be provided by dedicated graph-oriented applications.
+Rich Relation editing, visualization, and semantic information are expected to be provided by dedicated graph-oriented applications.
+
+Relations are intentionally minimized in the Timeline application and may be edited in a simplified form.
 
 ## Entity Resolution
 
@@ -254,6 +259,12 @@ The initial implementation only requires:
 More advanced matching methods, including aliases, embeddings, and AI-assisted suggestions, are intentionally deferred to future versions.
 
 ## User Interface Philosophy
+
+The Timeline Application edits only the data it understands.
+
+Unknown Extensions must be preserved.
+
+The editing workflow is independent of the visualization, allowing future Views to share the same editing model.
 
 NarrativeLine is an Event editor presented through a timeline.
 
@@ -273,13 +284,35 @@ while sharing the same editing workflow and underlying E2R Dataset.
 
 Possible future improvements include:
 
-- Grouping by year
-- Grouping by month
-- Grouping by era
+- Horizontal timeline
+- Zoomable timeline
+- Drag-and-drop reordering
+- Search
+- Filtering
+- Timeline grouping
 - Foldable timeline groups
-- User-selectable grouping granularity
+- Multiple calendar support
+- Relative time visualization
+- Approximate time support
+- ### Filtering
+- Time range
+- Entity
+- Event type
+- Relation type
+- Extension-defined fields
+- ### Time Resolution
+- Era
+- Hour
+- Minute
+- Second
 
 ## Timeline View (MVP)
+
+The Timeline reserves space for a future search bar.
+
+Search functionality is intentionally excluded from the MVP.
+
+Selected Events should be visually highlighted.
 
 The Timeline App presents Events in chronological order.
 
@@ -316,6 +349,10 @@ Applications should avoid modifying unrelated portions of the dataset whenever p
 
 ## Dataset Creation
 
+Applications should provide an Empty Dataset template.
+
+A newly created dataset initially contains no Events, Entities, or Relations.
+
 Creating a new dataset asks the user for a Dataset Title.
 
 The title is stored in metadata.title.
@@ -333,3 +370,21 @@ Ordering keys should only be regenerated when necessary.
 Applications should preserve existing ordering keys whenever possible.
 
 Saved JSON should use two-space indentation.
+
+## Deletion
+
+Deleting an Event removes Relations connected to that Event.
+
+Deleting an Entity removes Relations connected to that Entity.
+
+Before deletion, the application should display the number of affected Relations.
+
+Unused Entities are not automatically removed.
+
+## Design Goal
+
+The Timeline Application serves as a reference implementation of the History Extension.
+
+It intentionally focuses on Event editing while preserving the integrity of the underlying E2R Dataset.
+
+Advanced Entity management and Relation editing are expected to be provided by dedicated applications.

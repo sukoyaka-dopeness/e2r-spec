@@ -2,307 +2,234 @@
 
 ## Purpose
 
-The History Extension provides standardized temporal information for E2R datasets.
+The History Extension defines temporal information for E2R Core Objects.
 
-Its purpose is to represent when Events occur and how they are ordered in time while remaining independent from any particular application domain.
+Its purpose is to provide interoperable timeline data while remaining independent of application-specific implementations.
 
-The History Extension extends the Core without changing the meaning of Core objects.
-
----
-
-## Design Principles
-
-The History Extension follows the same philosophy as the E2R Core.
-
-- Build upon the Core rather than replace it.
-- Standardize only concepts that are broadly applicable.
-- Keep semantic assumptions to a minimum.
-- Separate temporal representation from temporal interpretation.
-- Allow unknown fields and future extensions.
-- Remain independent from presentation.
+History Extension intentionally defines **temporal semantics**, not timeline algorithms or UI behavior.
 
 ---
 
-## Scope
+# Design Principles
 
-The History Extension standardizes common temporal concepts, including:
+The History Extension follows these principles:
 
-- Absolute date and time
-- Time ranges
-- Temporal precision
-- Chronological ordering
-- Calendar identification
+- Keep the specification minimal.
+- Separate temporal information from the Core.
+- Preserve interoperability between applications.
+- Allow future extensions without breaking compatibility.
+- Leave implementation details to applications whenever possible.
 
-These concepts are expected to be useful across many application domains, including:
+---
 
-- Historical datasets
-- Timeline applications
-- Worldbuilding
-- Knowledge bases
-- Investigation systems
-- OSINT
-- Citation graphs
+# Extension Structure
+
+History information is stored inside a dedicated `history` object.
+
+```json
+{
+  "extensions": {
+    "history": {
+      "time": {
+        "date": "1945-08-15",
+        "order": "0010"
+      }
+    }
+  }
+}
+```
+
+The `time` object is reserved for temporal information and provides a stable location for future expansion.
 
 ---
 
 # Time Object
 
-All temporal information is represented by a Time Object.
+## date
 
-The Time Object is responsible only for representing temporal values.
+`date` represents the temporal position of an object.
 
-It does not represent domain-specific semantics such as uncertainty, narrative order, parallel timelines, or time loops.
+History Extension uses ISO 8601 representations whenever possible.
 
-## Single Time
+Examples:
 
-```json
-{
-  "time": {
-    "value": "2027-07-24",
-    "precision": "day"
-  }
-}
+```
+1945
+1945-08
+1945-08-15
+1945-08-15T12:30:00Z
 ```
 
-## Time Range
+A separate precision field is intentionally omitted.
 
-```json
-{
-  "time": {
-    "start": {
-      "value": "2025",
-      "precision": "year"
-    },
-    "end": {
-      "value": "2026-03",
-      "precision": "month"
-    }
-  }
-}
+The precision is inferred directly from the ISO 8601 representation.
+
+---
+
+## order
+
+`order` is an ordering key used when displaying events.
+
+Type:
+
+```
+string
 ```
 
-A Time Object SHALL contain either:
+The value itself has **no semantic meaning**.
 
-- `value`
+Applications MUST preserve the relative ordering of events.
+
+Applications MAY freely regenerate or renumber `order` values whenever the relative ordering is preserved.
+
+Examples:
+
+```
+0010
+0020
+0030
+```
 
 or
 
-- `start` and `end`
-
-Applications SHOULD treat these representations as mutually exclusive.
-
----
-
-## Value
-
-`value` SHALL be an ISO 8601 compatible string.
-
-Examples:
-
-```text
-2027
-2027-07
-2027-07-24
-2027-07-24T15:30:00Z
+```
+A
+M
+Z
 ```
 
----
+or
 
-## Precision
-
-`precision` explicitly specifies the precision of the temporal value.
-
-Allowed values are:
-
-- year
-- month
-- day
-- hour
-- minute
-- second
-
-Applications MUST NOT infer precision solely from the string representation.
-
----
-
-## Time Range
-
-Time ranges are represented by `start` and `end`.
-
-Each endpoint is itself a Time Object.
-
-This allows different precision at each endpoint.
-
-Example:
-
-```json
-{
-  "time": {
-    "start": {
-      "value": "2027",
-      "precision": "year"
-    },
-    "end": {
-      "value": "2027-06",
-      "precision": "month"
-    }
-  }
-}
+```
+am3J
+am4K
+b001
 ```
 
----
-
-## Sorting
-
-Applications SHOULD sort Events using the following precedence:
-
-1. Temporal value
-2. Temporal precision
-3. Core `order`
-4. Implementation-defined tie breaker
-
-When temporal values are equal, lower precision SHOULD appear before higher precision.
-
-Example:
-
-```text
-2027
-2027-05
-2027-05-18
-```
+History Extension defines the meaning of ordering, but does not define how ordering values are generated.
 
 ---
 
-## Calendar Systems
+# Ordering Rules
 
-The History Extension allows temporal values to be associated with calendar systems.
+Applications should determine display order using the following priority.
 
-The definition of calendar systems is outside the scope of this specification.
+1. Temporal information (`date`)
+2. `order`
+3. Application-defined stable ordering (for example object ID)
 
-Calendar-specific semantics may be defined by separate Extensions.
-
----
-
-## Relationship to the Core
-
-The Core defines Events, Entities, and Relations.
-
-The History Extension adds temporal representation without modifying the Core data model.
-
-Applications that do not understand the History Extension should still be able to process Core objects safely.
+This ensures deterministic ordering while allowing implementation flexibility.
 
 ---
 
-## Relationship to Other Extensions
+# Unknown Dates
 
-The History Extension is intended to coexist with independent Extensions.
+Objects without temporal information are valid.
 
-Examples include:
+Applications may use `order` to position objects with unknown dates.
 
-- Calendar Extension
-- Loop Extension
-- Worldline Extension
-- Probability Extension
-- Narrative Extension
+Unknown dates should not automatically force objects to the beginning or end of a timeline.
 
-Each Extension is responsible for its own semantics.
+Applications should allow users to place such objects anywhere in the ordering.
 
 ---
 
-## Out of Scope
+# Scope
 
-The following concepts are intentionally excluded from the History Extension.
+History Extension intentionally does **not** define:
 
-### Approximate Time
+- Calendar systems
+- Relative temporal relationships
+- Temporal constraints
+- Multiple candidate dates
+- Timeline presentation
+- Timeline navigation
+
+These are expected to be handled by separate Extensions or future revisions.
+
+---
+
+# Planned Future Extensions
+
+The following capabilities are intentionally left outside History Extension v1.0.
+
+## Calendar
 
 Examples:
 
-- Around 500 BCE
-- Approximately 1900
-- Early 18th century
+- Gregorian calendar
+- Julian calendar
+- Japanese era calendar
+- Fictional calendars
+
+Calendar support is expected to become an independent Extension referenced by History Extension.
 
 ---
 
-### Relative Time
+## Era
 
 Examples:
 
-- Three days later
-- Before Event A
-- After Entity B was created
+- Childhood
+- Sengoku Period
+- Edo Period
+
+Era-based temporal references may be added in a future revision.
 
 ---
 
-### Seasons and Named Periods
+## Approximate Time
 
 Examples:
 
-- Spring
-- Rainy season
-- Renaissance
-- Postwar period
+- around 1945
+- summer
+- early nineteenth century
 
-These represent human interpretation of time rather than temporal values themselves.
+Approximate temporal expressions are distinct from eras and will be considered separately.
 
 ---
 
-### Narrative or Experienced Time
+## Relative Time
 
 Examples:
 
-- Character experience order
-- Narrative sequence
-- Flashbacks
+- before
+- after
+- +3 days
+- during
+- overlaps
+
+These represent relationships between multiple Events rather than properties of a single Event.
+
+Relative temporal information is expected to become a separate Extension.
 
 ---
 
-### Parallel Timelines
+## Multiple Time Hypotheses
 
-Examples:
+Future revisions may support multiple candidate dates for a single Event.
 
-- Alternate histories
-- Parallel universes
-- Branch identifiers
+This avoids representing a single Event as multiple duplicated Events and preserves the Single Source of Truth principle.
 
 ---
 
-### Time Loops
+## Time Model
 
-Examples:
+The possibility of separating temporal information into multiple conceptual layers has been identified for future study.
 
-- Loop counters
-- Iteration numbers
+Potential layers include:
 
----
+- Absolute Time
+- Relative Time
+- Time Scale
 
-### Probability and Confidence
-
-Examples:
-
-- Confidence score
-- Probability distribution
-- Competing hypotheses
-
-Temporal uncertainty about whether a statement is true belongs to another Extension.
+This concept is intentionally postponed until after the Timeline MVP.
 
 ---
 
-### Dataset History
+# Compatibility
 
-Examples:
+Future versions of the History Extension should extend the `time` object rather than replacing it.
 
-- Revision history
-- Import timestamps
-- Synchronization metadata
-
-These describe the dataset rather than the represented world.
-
----
-
-## Non-goals
-
-The History Extension does not attempt to model every possible concept of time.
-
-Its purpose is to standardize common temporal representation while allowing specialized temporal semantics to evolve independently through separate Extensions.
-
-This separation keeps E2R modular, extensible, and interoperable.
+Applications should ignore unknown fields in accordance with the E2R Core philosophy.

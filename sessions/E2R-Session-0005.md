@@ -192,3 +192,86 @@ The concept has potential value but is intentionally postponed until after the T
 - Preserve interoperability across applications.
 - Applications are responsible for implementation details.
 - Extensions define interoperable data semantics rather than implementation algorithms.
+
+---
+
+# Additional Decisions
+
+## Timeline MVP Design
+
+The Timeline Application is positioned as the reference implementation of the History Extension.
+
+The application adopts an Event-first editing workflow.
+
+Users primarily create and edit Events, while Entity management is performed as part of Event editing.
+
+The Timeline Application is intentionally not a generic E2R editor.
+
+Its purpose is to provide a simple and efficient workflow for constructing chronological datasets.
+
+---
+
+## Relation Editing
+
+The Timeline MVP does not provide direct Relation editing.
+
+Relations are managed internally as a consequence of Event and Entity editing.
+
+Rich Relation editing, visualization, and semantic information are expected to be provided by dedicated graph-oriented applications.
+
+This establishes a clear separation of responsibilities between the Timeline Application and future graph-based applications.
+
+---
+
+## Entity Workflow
+
+When adding a related Entity to an Event:
+
+- Existing Entities are suggested using autocomplete.
+- Selecting an existing Entity associates it with the Event.
+- If no matching Entity exists, a new Entity is created automatically.
+
+Entity creation is therefore expected to occur primarily through Event editing.
+
+A standalone Entity list is intentionally omitted from the MVP.
+
+---
+
+## Entity Detail
+
+The Entity Detail view displays:
+
+- Entity information
+- Related Events in chronological order
+
+This provides an entity-centric view without changing the Event-first editing model.
+
+---
+
+## Deletion Behavior
+
+Deleting an Event removes Relations connected to that Event.
+
+Deleting an Entity removes Relations connected to that Entity.
+
+Entities are never removed automatically, even when they become isolated.
+
+Before deletion, the application should display the number of affected Relations to reduce accidental data loss.
+
+---
+
+## History Extension v1.0
+
+The Timeline MVP finalizes the initial History Extension time model.
+
+The Time Object consists of:
+
+- `value`
+- `precision`
+- `order`
+
+The `order` field is an integer managed by applications.
+
+Applications may regenerate ordering values while preserving relative ordering.
+
+Future capabilities including Relative Time, Approximate Time, Calendar systems, and Time Intervals remain outside the scope of History Extension v1.0.

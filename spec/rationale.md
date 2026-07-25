@@ -271,3 +271,23 @@ Ordering algorithms are implementation details.
 History Extension standardizes only the observable ordering of objects, not the internal mechanism used to produce ordering keys.
 
 This minimizes future specification changes while maximizing long-term interoperability between applications.
+
+## Layered Temporal Model
+
+History Extension intentionally represents absolute temporal information only.
+
+Future Extensions may complement this information with:
+
+- Calendar systems
+- Relative temporal relationships
+- Temporal constraints
+
+Applications should treat these Extensions as complementary rather than competing.
+
+Absolute time provides the primary temporal reference.
+
+Relative relationships enrich the temporal model when absolute time is unavailable or incomplete.
+
+Ordering keys provide stable presentation when multiple valid orderings remain possible.
+
+This layered design keeps individual Extensions small while allowing increasingly sophisticated temporal reasoning.

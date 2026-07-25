@@ -278,3 +278,58 @@ Possible future improvements include:
 - Grouping by era
 - Foldable timeline groups
 - User-selectable grouping granularity
+
+## Timeline View (MVP)
+
+The Timeline App presents Events in chronological order.
+
+The MVP uses a simple vertical layout.
+
+Events are grouped by identical dates.
+
+Example:
+
+1945-08-15
+  Event A
+  Event B
+
+1945-08-16
+  Event C
+
+Each row represents a single Event.
+
+Selecting an Event opens its detail view.
+
+Related Entities are displayed as links.
+
+Selecting a Related Entity opens the corresponding Entity detail view.
+
+## Editing Principles
+
+The Timeline App is a timeline editor rather than a generic JSON editor.
+
+The application edits only the data it understands.
+
+Unknown Extensions must be preserved during loading and saving.
+
+Applications should avoid modifying unrelated portions of the dataset whenever possible.
+
+## Dataset Creation
+
+Creating a new dataset asks the user for a Dataset Title.
+
+The title is stored in metadata.title.
+
+The title is also used as the default filename when saving.
+
+Export and backup operations may append timestamps to generated filenames.
+
+## Save Behavior
+
+Opening a dataset must not modify it.
+
+Ordering keys should only be regenerated when necessary.
+
+Applications should preserve existing ordering keys whenever possible.
+
+Saved JSON should use two-space indentation.

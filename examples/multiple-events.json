@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "specVersion": "1.0"
+  },
+  "events": [
+    {
+      "id": "event-1",
+      "name": "Year Only",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1945
+          }
+        }
+      }
+    },
+    {
+      "id": "event-2",
+      "name": "Year and Month",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1945,
+            "month": 8
+          }
+        }
+      }
+    },
+    {
+      "id": "event-3",
+      "name": "Full Date",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1945,
+            "month": 8,
+            "day": 15
+          }
+        }
+      }
+    },
+    {
+      "id": "event-4",
+      "name": "Date and Time",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1945,
+            "month": 8,
+            "day": 15,
+            "hour": 12,
+            "minute": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "event-5",
+      "name": "Unknown Date"
+    }
+  ],
+  "entities": [],
+  "relations": []
+}

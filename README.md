@@ -73,3 +73,18 @@ E2R is designed as the foundation of an ecosystem rather than a single applicati
 Timeline editors, relationship diagrams, worldbuilding tools, knowledge management systems, AI-assisted editors, and future applications can all exchange information through a common E2R Dataset.
 
 By using a shared Intermediate Representation (IR), applications remain loosely coupled while allowing users to build flexible workflows tailored to their own use cases.
+
+## Reference Applications
+
+E2R-SPEC is developed together with practical applications.
+
+These applications are not only consumers of the specification but also serve as validation platforms for its design.
+
+Building real applications helps identify missing abstractions, unnecessary complexity, and opportunities for improvement.
+
+Current reference applications include:
+
+- NarrativeLine — timeline editing and visualization
+- Relationship Graph — relationship editing and graph visualization
+
+The specification and the applications evolve together through this iterative design process.

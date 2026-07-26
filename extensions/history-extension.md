@@ -4,9 +4,9 @@
 
 The History Extension defines temporal information for E2R Core Objects.
 
-Its purpose is to provide interoperable timeline data while remaining independent of application-specific implementations.
+Its purpose is to provide interoperable temporal data while remaining independent of application-specific implementations.
 
-History Extension intentionally defines temporal semantics, not timeline algorithms or UI behavior.
+The History Extension defines temporal representation, not timeline algorithms, visualization, or user interface behavior.
 
 ---
 
@@ -31,8 +31,9 @@ History information is stored inside a dedicated `history` object.
   "extensions": {
     "history": {
       "time": {
-        "value": "1945-08-15",
-        "precision": "day",
+        "year": 1945,
+        "month": 8,
+        "day": 15,
         "order": 10
       }
     }
@@ -40,7 +41,7 @@ History information is stored inside a dedicated `history` object.
 }
 ```
 
-The `time` object is reserved for temporal information and provides a stable location for future expansion.
+The `time` object provides a stable location for future temporal extensions.
 
 ---
 
@@ -52,94 +53,108 @@ The Time Object represents a single temporal position.
 
 | Field | Type | Required | Description |
 |--------|------|----------|-------------|
-| value | string | Yes | ISO 8601 compatible partial date string. |
-| precision | string | Yes | Precision of `value`. |
-| order | integer | No | Ordering value used when chronological ordering alone is insufficient. |
+| year | integer | No | Year value. |
+| month | integer | No | Month (1–12). |
+| day | integer | No | Day of month. |
+| hour | integer | No | Hour (0–23). |
+| minute | integer | No | Minute (0–59). |
+| second | integer | No | Second (0–59). |
+| order | integer | No | Optional ordering key. |
 
----
+At least one temporal field should be present.
 
-## value
-
-`value` represents the temporal position of an object.
-
-Examples:
-
-```
-1945
-1945-08
-1945-08-15
-```
-
-Future versions may support additional temporal representations.
-
----
-
-## precision
-
-`precision` explicitly defines the precision of `value`.
-
-Supported values:
-
-- `year`
-- `month`
-- `day`
-
-The value of `precision` MUST match the format of `value`.
+Fields that are not known are simply omitted.
 
 Examples:
 
-| value | precision |
-|-------|-----------|
-| `1945` | `year` |
-| `1945-08` | `month` |
-| `1945-08-15` | `day` |
+```json
+{
+  "year": 1945
+}
+```
+
+```json
+{
+  "year": 1945,
+  "month": 8
+}
+```
+
+```json
+{
+  "year": 1945,
+  "month": 8,
+  "day": 15
+}
+```
+
+```json
+{
+  "year": 1945,
+  "month": 8,
+  "day": 15,
+  "hour": 12,
+  "minute": 30
+}
+```
 
 ---
 
-## order
+# Precision
+
+Temporal precision is determined by the most specific field present.
+
+Examples:
+
+| Fields | Precision |
+|--------|-----------|
+| year | year |
+| year, month | month |
+| year, month, day | day |
+| year, month, day, hour | hour |
+| year, month, day, hour, minute | minute |
+| year, month, day, hour, minute, second | second |
+
+No separate `precision` field is required.
+
+---
+
+# Order
 
 `order` is an optional ordering key.
 
-Type:
+Its value has no intrinsic semantic meaning.
 
-```
-integer
-```
-
-The value itself has no semantic meaning.
-
-Applications are responsible for assigning and maintaining `order`.
+Applications may assign and regenerate `order` values whenever relative ordering is preserved.
 
 The specification does not require sequential numbering.
 
-Examples:
-
-```
-10
-20
-30
-```
-
-or
-
-```
-100
-200
-300
-```
-
-Applications MAY freely regenerate `order` values whenever relative ordering is preserved.
+The relationship between `order` and temporal information may evolve in future revisions.
 
 ---
 
 # Ordering Rules
 
-Applications should determine chronological order using the following priority.
+Applications should determine chronological ordering using the following priority:
 
-1. `value`
-2. `precision`
+1. Temporal value
+2. Temporal precision (coarser precision first)
 3. `order`
 4. Core Object `id`
+
+For example:
+
+```
+1945
+
+1945-08
+
+1945-08-15
+
+1945-08-15 12:00
+
+1945-08-15 12:00:30
+```
 
 This provides deterministic ordering while allowing implementation flexibility.
 
@@ -149,9 +164,9 @@ This provides deterministic ordering while allowing implementation flexibility.
 
 Objects without temporal information are valid.
 
-Applications may use `order` to position objects whose temporal information is unknown.
+Applications may use `order` or application-specific behavior when positioning such objects.
 
-The specification does not require unknown dates to appear at any particular position in a timeline.
+The specification does not require unknown dates to appear at any particular position.
 
 ---
 
@@ -165,8 +180,9 @@ History Extension intentionally does **not** define:
 - Multiple candidate dates
 - Timeline presentation
 - Timeline navigation
+- Timeline editing behavior
 
-These are expected to be handled by separate Extensions or future revisions.
+These concerns belong to applications or future Extensions.
 
 ---
 
@@ -176,7 +192,7 @@ The following capabilities are intentionally outside History Extension v1.0.
 
 ## Time Interval
 
-Future versions may introduce an interval object containing `start` and `end` Time Objects for representing durations.
+Representing durations using `start` and `end` Time Objects.
 
 ---
 
@@ -189,7 +205,7 @@ Examples:
 - Japanese era calendar
 - Fictional calendars
 
-Calendar support is expected to become an independent Extension referenced by History Extension.
+Calendar support is expected to become an independent Extension.
 
 ---
 
@@ -201,7 +217,7 @@ Examples:
 - Sengoku Period
 - Edo Period
 
-Era-based temporal references may be added in a future revision.
+Era-based temporal references are intentionally outside the current specification.
 
 ---
 
@@ -213,7 +229,7 @@ Examples:
 - summer
 - early nineteenth century
 
-Approximate temporal expressions are distinct from eras and will be considered separately.
+Approximate temporal expressions are expected to become an independent Extension.
 
 ---
 
@@ -227,36 +243,20 @@ Examples:
 - during
 - overlaps
 
-These represent relationships between multiple Events rather than properties of a single Event.
+Relative temporal information describes relationships between multiple Events rather than properties of a single Event.
 
-Relative temporal information is expected to become a separate Extension.
+It is expected to become an independent Extension.
 
 ---
 
 ## Multiple Time Hypotheses
 
-Future revisions may support multiple candidate dates for a single Event.
-
-This avoids representing a single Event as multiple duplicated Events and preserves the Single Source of Truth principle.
-
----
-
-## Time Model
-
-The possibility of separating temporal information into multiple conceptual layers has been identified for future study.
-
-Potential layers include:
-
-- Absolute Time
-- Relative Time
-- Time Scale
-
-This concept is intentionally postponed until after the Timeline MVP.
+Future revisions may support multiple candidate dates for a single Event while preserving the Single Source of Truth principle.
 
 ---
 
 # Compatibility
 
-Future versions of the History Extension should extend the `time` object rather than replacing it.
+Future versions should extend the `time` object rather than replacing it.
 
 Applications should ignore unknown fields in accordance with the E2R Core philosophy.

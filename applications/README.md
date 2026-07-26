@@ -6,17 +6,22 @@ Rather than defining a single monolithic application, E2R is intended to support
 
 Each application focuses on a particular task such as editing, visualization, generation, or analysis while remaining compatible through the common E2R data model.
 
+Applications are not only consumers of the specification but also an important source of feedback for its evolution.
+
+Building real applications helps validate the specification by revealing missing abstractions, unnecessary complexity, and opportunities for improvement.
+
 ## Design Goals
 
 Applications should:
 
 - Share the same E2R Dataset.
-- Preserve unknown Extensions.
+- Preserve unknown Extensions whenever possible.
+- Edit only the Extensions they understand.
 - Ignore unsupported Extensions without failing.
 - Exchange datasets through JSON.
 - Remain independent from one another.
 
-This allows users to build workflows by combining multiple specialized applications.
+This allows users to build workflows by combining multiple specialized applications while maintaining interoperability.
 
 ## Application Categories
 
@@ -78,7 +83,27 @@ Character Generator
 
 Applications may also exchange information with external AI systems, search engines, databases, or other software through the shared E2R Dataset.
 
-The E2R Dataset therefore acts as a common Intermediate Representation (IR) connecting applications while allowing each application to evolve independently.
+The E2R Dataset therefore acts as a common Intermediate Representation (IR), allowing independent applications to exchange information while evolving separately.
+
+## Reference Applications
+
+Some applications also serve as reference applications.
+
+A reference application validates one or more aspects of the E2R specification through practical implementation.
+
+Rather than acting as a canonical implementation, a reference application provides continuous feedback to the specification by identifying:
+
+- missing abstractions
+- unnecessary complexity
+- useful Extension patterns
+- opportunities to simplify the Core
+
+Examples include:
+
+- NarrativeLine — timeline editing and History Extension
+- Relationship Graph — relationship editing and graph visualization
+
+The specification and its reference applications evolve together through this iterative design process.
 
 ## Current Application Ideas
 
@@ -87,28 +112,3 @@ Current application proposals are documented in the files contained in this dire
 Each document describes one possible application built on top of E2R.
 
 The list is intentionally open-ended, and additional applications may be added as the ecosystem grows.
-
-## Reference Applications
-
-Each application serves as a reference implementation for one or more E2R Extensions.
-
-Applications validate the practical usability of the specification while remaining independent of the Core.
-
-Different applications may support different Extensions without affecting interoperability.
-
-# Applications
-
-Applications demonstrate how E2R can be used in practice.
-
-They also provide continuous feedback to the specification.
-
-During implementation, application developers often discover:
-
-- missing abstractions
-- unnecessary complexity
-- useful Extension patterns
-- opportunities to simplify the Core
-
-These findings are evaluated and, when appropriate, incorporated into future versions of the specification.
-
-Applications therefore function both as users of the specification and as design experiments.

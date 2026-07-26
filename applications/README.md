@@ -95,3 +95,20 @@ Each application serves as a reference implementation for one or more E2R Extens
 Applications validate the practical usability of the specification while remaining independent of the Core.
 
 Different applications may support different Extensions without affecting interoperability.
+
+# Applications
+
+Applications demonstrate how E2R can be used in practice.
+
+They also provide continuous feedback to the specification.
+
+During implementation, application developers often discover:
+
+- missing abstractions
+- unnecessary complexity
+- useful Extension patterns
+- opportunities to simplify the Core
+
+These findings are evaluated and, when appropriate, incorporated into future versions of the specification.
+
+Applications therefore function both as users of the specification and as design experiments.

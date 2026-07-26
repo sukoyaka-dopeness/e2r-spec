@@ -251,3 +251,17 @@ The following topics remain open.
 - Graph Layout Extension.
 - Multiple application-specific presentation Extensions.
 - Formal definition of the Core JSON data model.
+
+## Next Session
+
+The next session will focus on the internal architecture of NarrativeLine.
+
+Planned topics include:
+
+- Project directory structure
+- Component architecture
+- State management
+- Data model
+- Dataset loading and saving
+- Validation architecture
+- Preparation for future applications such as Relationship Graph

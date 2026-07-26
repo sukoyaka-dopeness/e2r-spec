@@ -8,7 +8,7 @@ Meaning belongs to Semantic Extensions.
 
 Presentation belongs to Presentation Extensions.
 
-Time representation belongs to the History Extension.
+Temporal representation belongs to the History Extension.
 
 The Core can interpret every valid Core dataset without understanding any Extension.
 
@@ -25,7 +25,7 @@ The Core standardizes structure rather than domain meaning.
 The three Core Objects have distinct structural responsibilities:
 
 - Entity represents existence.
-- Event represents occurrence.
+- Event represents occurrence or change.
 - Relation represents connection.
 
 The Core intentionally avoids assigning domain-specific semantics to these objects.
@@ -38,7 +38,7 @@ This separation keeps the Core stable while allowing specialized domains to evol
 
 ## Separation of Responsibilities
 
-E2R separates data, meaning, behavior, and presentation into independent layers.
+E2R separates structure, meaning, temporal representation, and presentation into independent layers.
 
 ### Core
 
@@ -53,7 +53,7 @@ It defines only:
 
 The Core understands only structure.
 
-It does not attempt to understand what that structure means within a particular domain.
+It does not attempt to interpret domain meaning, application behavior, or presentation.
 
 ### Semantic Extensions
 
@@ -73,9 +73,9 @@ Multiple Semantic Extensions may coexist within the same dataset.
 
 The History Extension standardizes temporal representation.
 
-It defines how time is represented, ordered, and exchanged.
+It defines how temporal information is represented and exchanged.
 
-It intentionally does not define temporal interpretation such as uncertainty, narrative order, historical eras, or seasonal concepts.
+Higher-level concepts such as narrative order, causality, historical interpretation, or application-specific ordering belong outside the Core and may be defined by future Extensions or Applications.
 
 ### Presentation Extensions
 
@@ -98,9 +98,9 @@ Applications may ignore Presentation Extensions without affecting the underlying
 
 Extensions expand capabilities without modifying the Core.
 
-Applications that understand an Extension may use it.
+Applications that understand an Extension may interpret and edit it.
 
-Applications that do not understand an Extension should safely ignore it while continuing to process the Core dataset.
+Applications that do not understand an Extension should preserve it whenever possible while continuing to process the Core dataset.
 
 Independent Extensions should not require modifications to the Core specification.
 
@@ -133,7 +133,7 @@ The same dataset may be interpreted by many different applications, including:
 - Music history applications
 - Taxonomy browsers
 
-Each application is responsible for interpreting the Extensions it supports.
+Each application is responsible for interpreting and editing only the Extensions it supports.
 
 ---
 
@@ -141,4 +141,4 @@ Each application is responsible for interpreting the Extensions it supports.
 
 The primary goal of E2R is to maximize interoperability through a minimal structural Core.
 
-By separating structure, meaning, time, and presentation into independent layers, E2R enables datasets to remain reusable across diverse applications while allowing each domain to define its own semantics through Extensions.
+By separating structure, meaning, temporal representation, and presentation into independent layers, E2R enables datasets to remain reusable across diverse applications while allowing each domain to define its own semantics through Extensions.

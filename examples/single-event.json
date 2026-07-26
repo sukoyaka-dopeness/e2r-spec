@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "specVersion": "1.0"
+  },
+  "events": [
+    {
+      "id": "event-1",
+      "name": "Example Event",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 2026,
+            "month": 7,
+            "day": 26
+          }
+        }
+      }
+    }
+  ],
+  "entities": [],
+  "relations": []
+}

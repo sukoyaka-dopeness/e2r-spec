@@ -398,3 +398,61 @@ Possible features:
 - Detect circular dependencies
 - Analyze coupling and complexity
 - Assist AI-assisted software design
+
+# Future Application Ideas
+
+This document contains ideas for possible future applications built on E2R.
+
+These concepts are exploratory and are not part of the current application catalog.
+
+Applications may eventually become standalone projects once their architecture and use cases become sufficiently mature.
+
+---
+
+# Architecture Designer
+
+Design and document software architecture using E2R.
+
+Instead of treating software architecture as static diagrams, the architecture itself becomes structured data that can be searched, edited, analyzed, and visualized.
+
+Possible entities include:
+
+- Views
+- Services
+- Models
+- States
+- Actions
+- Components
+- Modules
+
+Relations may describe:
+
+- Dependencies
+- State transitions
+- Function calls
+- Ownership
+- Data flow
+- UI navigation
+
+Possible features:
+
+- Interactive architecture diagrams
+- State transition visualization
+- Dependency analysis
+- Circular dependency detection
+- Architecture documentation generation
+- AI-assisted implementation
+- Architecture diff visualization
+- Architecture version history
+
+Because architecture is represented as E2R datasets, multiple visualizations can coexist for the same underlying design.
+
+Examples include:
+
+- Layer diagrams
+- Dependency graphs
+- State machines
+- Navigation flows
+- Component hierarchies
+
+This application may also serve as a foundation for AI-assisted software engineering tools.

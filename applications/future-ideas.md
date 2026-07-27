@@ -381,3 +381,20 @@ Examples include:
 
 Applications may be chained together as user-defined workflows, allowing datasets to evolve incrementally while remaining compatible across the ecosystem.
 
+# Architecture Designer
+
+Design and visualize software architecture using E2R.
+
+Components such as Views, Services, Models, States, and Actions become Entities.
+
+Relations describe dependencies, ownership, state transitions, and execution flow.
+
+Possible features:
+
+- Visualize application architecture
+- Design state transitions
+- Document service responsibilities
+- Generate architecture documentation
+- Detect circular dependencies
+- Analyze coupling and complexity
+- Assist AI-assisted software design

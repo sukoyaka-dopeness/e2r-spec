@@ -88,3 +88,37 @@ Current reference applications include:
 - Relationship Graph — relationship editing and graph visualization
 
 The specification and the applications evolve together through this iterative design process.
+
+---
+
+# Repository Structure
+
+This repository consists of several complementary components.
+
+## Core Specification
+
+The `spec/` directory defines the normative E2R Core Specification.
+
+## Extensions
+
+The `extensions/` directory defines optional specifications that extend the Core while remaining interoperable.
+
+## Examples
+
+The `examples/` directory provides reference datasets demonstrating the specification and its Extensions.
+
+## Applications
+
+The `applications/` directory describes reference applications built on E2R.
+
+These documents illustrate how the specification can be applied in practical software, including editors, browsers, generators, and analysis tools.
+
+## Benchmark
+
+The `benchmark/` directory contains ideas and datasets for evaluating interoperability, scalability, and application behavior.
+
+## Research
+
+The `research/` directory contains exploratory documents discussing long-term ideas related to the E2R ecosystem.
+
+These documents are intentionally non-normative and are not part of the specification.

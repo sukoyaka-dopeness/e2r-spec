@@ -1,127 +1,160 @@
-# Dataset Browser Application
+# Dataset Browser
 
-This document describes ideas for a dataset browser application built on the E2R Core Specification.
+This document describes a reference application for browsing and inspecting E2R datasets.
 
-This document is informational and is not part of the E2R Core Specification.
+Unlike an editor, the Dataset Browser is primarily a read-only application.
 
-## Purpose
+Its purpose is to help users understand the structure of a dataset and verify compatibility with the E2R specification.
 
-The Dataset Browser Application allows users to explore E2R datasets without requiring editing capabilities.
+---
 
-The application is intended for browsing, searching, navigating, and understanding large datasets.
+# Goals
 
-## Design Philosophy
+The Dataset Browser should present an E2R dataset in a human-friendly form.
 
-Reading should be fast and intuitive.
+Rather than displaying raw JSON, it should organize information according to the Core data model.
 
-Applications should present information from multiple viewpoints while preserving the underlying E2R dataset.
+The browser should also make Extensions visible without requiring knowledge of their internal structure.
 
-The browser should remain usable even for datasets containing millions of Core Objects.
+---
 
-## Navigation
+# Typical Use Cases
 
-Users may navigate by:
+- Inspecting datasets
+- Learning the E2R Core model
+- Debugging datasets
+- Verifying imported datasets
+- Exploring benchmark datasets
+- Inspecting generated datasets
 
-- Entity
-- Event
-- Relation
-- Timeline
-- Graph
-- Search results
-- References
-- Collections
+---
 
-Applications may provide additional navigation methods.
+# Dataset Overview
 
-## Search
-
-Applications may support searching by:
-
-- Identifier
-- Name
-- Alias
-- Description
-- Extension-defined fields
-
-Search methods are application-specific.
-
-## Views
-
-Applications may provide multiple synchronized views.
+The browser should display basic dataset information.
 
 Examples include:
 
-- Entity view
-- Event view
-- Relation view
-- Timeline
-- Relationship graph
-- Hierarchical view
-- Map view
-- Table view
+- title
+- specification version
+- dataset version
+- object counts
 
-The Core Specification does not define visualization methods.
+For example:
 
-## Dataset Exploration
+- Entities
+- Events
+- Relations
+- Extensions
 
-Applications may provide tools for exploring dataset structure.
+---
 
-Examples include:
+# Core Objects
 
-- Connected components
-- Relation statistics
-- Timeline summaries
-- Entity summaries
-- Extension summaries
+The browser should present Core objects separately.
 
-## Dataset Integration
+## Entities
 
-Applications may browse multiple datasets simultaneously.
+Display:
 
-Possible capabilities include:
+- id
+- name
+- description
+- related Events
+- related Relations
+- Extensions
 
-- Opening multiple datasets
-- Switching between datasets
-- Viewing merged datasets
-- Comparing datasets
+---
 
-Merge behavior is application-specific.
+## Events
 
-## Read-only Operation
+Display:
 
-Applications may operate entirely in read-only mode.
+- id
+- name
+- description
+- related Entities
+- related Relations
+- Extensions
 
-Editing capabilities are optional.
+---
 
-## LLM-assisted Workflow
+## Relations
 
-Applications may generate prompts containing selected portions of a dataset for manual use with external Large Language Models.
+Display:
 
-Possible assistance includes:
+- id
+- source
+- target
+- description
+- Extensions
 
-- Dataset summaries
-- Object explanations
-- Relationship analysis
-- Timeline explanations
-- Navigation assistance
+---
 
-Returned JSON may optionally be imported into an editing application after validation.
+# Navigation
 
-The Dataset Browser itself is not required to support editing.
+Objects should be interconnected.
 
-## Typical Use Cases
+Selecting a related Entity, Event, or Relation should navigate directly to that object.
 
-Examples include:
+This allows users to explore the dataset without reading raw JSON.
 
-- Publishing historical archives
-- Sharing worldbuilding projects
-- Exploring knowledge graphs
-- Reviewing investigation datasets
-- Reading genealogy collections
-- Browsing benchmark datasets
+---
 
-## Relationship to the Core
+# Extension Inspection
 
-The Dataset Browser Application operates entirely on standard E2R Entities, Events, and Relations.
+The browser should display all Extensions attached to Core objects.
 
-Navigation methods, visualization, indexing, caching, search algorithms, and user interface are application-specific.
+Known Extensions may receive specialized views.
+
+Unknown Extensions should still be displayed.
+
+The browser should never discard or modify unknown Extension data.
+
+---
+
+# Unknown Extensions
+
+Unknown Extensions should be displayed as generic structured data.
+
+For example:
+
+- extension name
+- raw object structure
+
+This helps developers verify compatibility with future Extensions.
+
+---
+
+# Raw JSON
+
+The browser may optionally include a raw JSON viewer.
+
+This view complements the structured browser and assists debugging.
+
+The structured view should remain the primary interface.
+
+---
+
+# Read-Only
+
+The Dataset Browser is intentionally read-only.
+
+Editing is the responsibility of dedicated editor applications such as NarrativeLine.
+
+---
+
+# Future Possibilities
+
+Future versions may support:
+
+- search
+- filtering
+- graph navigation
+- timeline navigation
+- Extension-specific viewers
+- schema inspection
+- validation results
+- cross-dataset references
+
+These features are outside the scope of an initial implementation.

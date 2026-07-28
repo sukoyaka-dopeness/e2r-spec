@@ -217,3 +217,35 @@ Such datasets could support:
 - Architecture visualization
 
 This concept may eventually become an independent E2R application.
+
+## Long-Term Research Directions
+
+These topics are intentionally outside the current specification.
+
+They represent possible long-term research areas that may influence future E2R ecosystems.
+
+Possible directions include:
+
+- Process Ontology
+- Information Ecology
+- Self-Evolving Datasets
+- Computational Physics
+- Emergent Semantics
+- View Theory
+- Distributed Knowledge
+- Knowledge Compression
+- Semantic Layers
+- Reference Architectures
+- AI-assisted Specification Design
+- AI-native Workflows
+- Dataset Federation
+- Version Ecology
+- Branch Evolution
+- Context Engineering
+- Computational World Models
+
+These research topics are exploratory.
+
+Some may eventually influence future Extensions or applications, while others may remain independent research projects.
+
+No assumption should be made that these topics will become part of the Core specification.

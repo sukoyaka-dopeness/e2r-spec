@@ -1,166 +1,178 @@
 # Dataset Identity
 
-## Purpose
+This document explores the concept of dataset identity within the E2R ecosystem.
 
-E2R Core defines identifiers that are unique within a single Dataset.
+Unlike the Core Specification, this document is exploratory and non-normative.
 
-Future applications, however, may load multiple Datasets simultaneously.
-
-This document explores how Dataset identity may be represented while keeping the Core specification minimal.
+Nothing in this document is required by E2R.
 
 ---
 
-# Local Identity
+# Motivation
 
-Core Object identifiers are intentionally local.
+As E2R datasets become increasingly interconnected, a dataset may no longer be treated as a simple JSON file.
 
-For example,
+Instead, a dataset may be regarded as an independent object with its own identity, history, and lifecycle.
 
-```
-Event
-id = "event-001"
-```
-
-is only required to be unique within the Dataset that contains it.
-
-The Core does not require globally unique identifiers.
+A stable identifier enables applications to recognize a dataset across storage systems, devices, and networks.
 
 ---
 
-# Why Dataset Identity Matters
+# Identity
 
-Applications may eventually support operations such as:
+A dataset identity uniquely distinguishes one dataset from another.
 
-- Loading multiple Datasets
-- Comparing Datasets
-- Merging Datasets
-- Creating Dataset references
-- Tracking Dataset lineage
-- Forking Datasets
+The identity is independent of:
 
-Without Dataset identity, object identifiers may collide.
+- filename
+- storage location
+- transport protocol
+- serialization format
 
-Example:
-
-Dataset A
-
-```
-Event
-id = "event-001"
-```
-
-Dataset B
-
-```
-Event
-id = "event-001"
-```
-
-Both identifiers are valid locally, but become ambiguous after merging.
+Changing any of these does not necessarily create a new dataset.
 
 ---
 
 # Dataset Identifier
 
-A Dataset may own a globally unique identifier.
+Applications may assign a persistent identifier to newly created datasets.
 
-Example
+One possible implementation is a UUID.
 
-```
-metadata
+Other globally unique identifier schemes may also be appropriate.
 
-datasetId
-550e8400-e29b-41d4-a716-446655440000
-```
+The Core Specification intentionally does not require any particular identifier format.
 
-Unlike the Dataset title, the Dataset identifier is intended to remain stable.
+An implementation may choose to generate an identifier automatically when a new dataset is created.
 
-```
-title
-History of Europe
-
-↓
-
-European History
-```
-
-The title may change.
-
-The datasetId should not.
+This allows every dataset to possess a stable identity from the beginning of its lifecycle.
 
 ---
 
-# Global Identity
+# Stability
 
-Applications may construct a globally unique identifier by combining:
+A dataset identifier should remain stable throughout the lifetime of the dataset.
 
-- datasetId
-- local object id
+Ordinary editing does not normally change its identity.
 
-Example
+For example:
 
-```
-datasetId
+- adding Events
+- modifying Entities
+- editing Relations
+- changing Extensions
 
-550e8400-e29b...
-
-Event
-
-id = event-001
-
-↓
-
-Global Identity
-
-550e8400-e29b.../event-001
-```
-
-This global identifier belongs to the application layer rather than the E2R Core specification.
+These operations produce a new version of the same dataset rather than a different dataset.
 
 ---
 
-# Merge Strategy
+# Version
 
-When multiple Datasets are merged,
+Identity and version are independent concepts.
 
-Applications should:
+A dataset may evolve through many versions while retaining the same identity.
 
-- preserve original object ids
-- preserve original datasetIds
-- avoid identifier collisions
-- avoid rewriting local identifiers whenever possible
+Applications may therefore distinguish between:
 
-This allows merged Datasets to retain compatibility with their original sources.
+- dataset identity
+- dataset version
 
 ---
 
-# NarrativeLine MVP
+# Branching
 
-NarrativeLine MVP edits a single Dataset.
+Independent evolution introduces new questions.
 
-Multiple Dataset support is intentionally outside the MVP scope.
-
-However, the architecture should avoid assumptions that permanently limit the application to a single Dataset.
+When a dataset is branched, several strategies are possible.
 
 Examples include:
 
-- generating a datasetId when creating a Dataset
-- isolating Dataset management within DatasetService
-- avoiding global assumptions about object identifiers
+- preserving the original identity
+- assigning a new identity
+- recording lineage between parent and child datasets
 
-These decisions allow future versions to support loading and merging multiple Datasets without requiring major architectural changes.
+Different applications may adopt different policies.
+
+The Core does not define branching behavior.
 
 ---
 
-# Future Directions
+# Federation
 
-Possible future capabilities include:
+Dataset identity becomes increasingly valuable in federated environments.
 
-- Dataset Browser
-- Dataset references
-- Cross-dataset links
-- Dataset lineage
-- Fork and merge workflows
-- Distributed historical archives
+Independent repositories may exchange datasets without relying on filenames or storage paths.
 
-These capabilities are expected to be implemented by applications rather than the E2R Core specification.
+Identity therefore provides a stable reference across organizational boundaries.
+
+---
+
+# Peer-to-Peer Systems
+
+In decentralized systems, there may be no central authority responsible for dataset management.
+
+A persistent identity enables peers to:
+
+- recognize datasets
+- detect duplicates
+- exchange updates
+- maintain lineage
+
+Identity therefore becomes an important foundation for distributed knowledge systems.
+
+---
+
+# Deterministic Applications
+
+Applications may optionally reuse a dataset identifier as a deterministic seed.
+
+Possible examples include:
+
+- graph layout
+- visualization
+- procedural generation
+- benchmark generation
+
+Using the identifier in this way does not change its primary role as an identity.
+
+---
+
+# Human-Friendly Names
+
+Identity is not intended for human communication.
+
+Applications should continue to provide human-readable metadata such as titles and descriptions.
+
+Users interact primarily with names.
+
+Applications interact primarily with identifiers.
+
+---
+
+# Future Possibilities
+
+Future E2R ecosystems may build additional functionality upon stable dataset identities.
+
+Possible examples include:
+
+- distributed synchronization
+- branch management
+- provenance tracking
+- citation networks
+- dataset federation
+- procedural generation
+- deterministic visualization
+
+These possibilities remain outside the current Core Specification.
+
+---
+
+# Research Questions
+
+- What defines the identity of a dataset?
+- Should branching preserve or replace identity?
+- How should lineage be represented?
+- Which identifier schemes are most appropriate?
+- How can identity support decentralized knowledge ecosystems?
+
+These questions remain open for future research.

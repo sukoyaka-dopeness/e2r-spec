@@ -259,3 +259,97 @@ Planned tasks:
 * Create the initial screen structure.
 * Introduce the `src` directory organization.
 * Begin implementing the application architecture defined in the design documents.
+
+## Session Summary (2026-07-29)
+
+This session focused on long-term architectural decisions while preparing for implementation of the NarrativeLine MVP.
+
+### Dataset Identity
+
+The role of dataset identity was reconsidered.
+
+Although the E2R Core Specification does not currently require globally unique dataset identifiers, it was concluded that reference implementations should assign a unique identifier when creating a new dataset.
+
+For NarrativeLine MVP:
+
+* Every newly created dataset should automatically receive `metadata.datasetId`.
+* The identifier may be generated using `crypto.randomUUID()`.
+* Normal editing does not change the dataset identity.
+
+The purpose of introducing dataset identifiers in the MVP is to establish a stable foundation for future features without increasing implementation complexity.
+
+---
+
+### Research Expansion
+
+Several long-term ideas were intentionally moved into the `research/` directory instead of expanding the Core Specification.
+
+New research topics include:
+
+* Dataset Identity
+* Deterministic Generation
+* Neural Knowledge Networks
+* Associative Thinking
+
+These documents investigate future possibilities such as dataset federation, deterministic visualization, procedural generation, AI-assisted knowledge systems, and temporal associative reasoning.
+
+All remain non-normative research documents.
+
+---
+
+### Random Dataset Generator
+
+A new reference application was proposed.
+
+`applications/random-dataset-generator.md`
+
+The application generates E2R datasets for:
+
+* benchmarking
+* stress testing
+* sample datasets
+* AI experiments
+* Extension compatibility testing
+
+Future versions may support deterministic generation and AI-assisted generation.
+
+---
+
+### Dataset Browser
+
+The Dataset Browser was refined into a read-only reference application.
+
+Its purpose is to inspect E2R datasets through the Core model rather than through raw JSON.
+
+The browser should:
+
+* display Core objects
+* navigate relationships
+* inspect Extensions
+* preserve unknown Extensions
+* optionally provide a Raw JSON view
+
+---
+
+### Repository Organization
+
+The overall organization of the E2R repository was reviewed.
+
+The current structure now clearly consists of:
+
+* Core Specification
+* Extensions
+* Applications
+* Examples
+* Benchmark
+* Research
+
+README may be updated in the future to better communicate this ecosystem-oriented structure.
+
+---
+
+### Next Session
+
+The next session will return to implementation of the NarrativeLine MVP.
+
+The immediate objective is to transform the existing architectural documents into an actual React application, beginning with the application structure and UI implementation.

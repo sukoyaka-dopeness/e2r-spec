@@ -95,3 +95,73 @@ Instead, it investigates whether such a model could explain why the current Core
 
 These questions are intentionally left open.
 They are subjects for future research rather than conclusions.
+
+# Core Object Hypothesis
+
+## Motivation
+
+The current E2R Core defines three primary object types:
+
+* Entity
+* Event
+* Relation
+
+This model is intentionally minimal and practical.
+
+However, a more fundamental abstraction may exist beneath these concepts.
+
+---
+
+## Core Object
+
+One possible future direction is to introduce a single abstract object at the Core level.
+
+Every object in a dataset would initially be represented as a Core Object.
+
+The semantics of that object would then be defined by extensions.
+
+For example:
+
+* Entity Extension
+* Event Extension
+* Relation Extension
+
+Under this model, Entity, Event, and Relation become interpretations rather than primitive object types.
+
+---
+
+## Advantages
+
+Such an architecture could provide several benefits.
+
+* A smaller and more uniform Core.
+* Greater flexibility for future object models.
+* Easier experimentation with alternative ontologies.
+* Domain-specific object systems without changing the Core specification.
+
+Applications could support additional object categories simply by defining new extensions.
+
+---
+
+## Challenges
+
+This approach would significantly change the architecture of E2R.
+
+Open questions include:
+
+* How should references between Core Objects be represented?
+* Can existing datasets remain compatible?
+* Should Entity, Event, and Relation remain standardized extensions?
+* How much abstraction is beneficial before practical usability is reduced?
+
+These questions remain unresolved.
+
+---
+
+## Research Status
+
+This idea is exploratory.
+
+The current E2R specification continues to define Entity, Event, and Relation as the Core object types.
+
+The Core Object hypothesis is intended as a possible long-term research direction rather than a proposal for the current specification.

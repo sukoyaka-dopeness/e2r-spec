@@ -1,219 +1,167 @@
 # Computational World
 
-This document explores computational models that may inspire future E2R specifications and applications.
+## Purpose
 
-The ideas presented here are intentionally speculative.
+This document explores the possibility of interpreting an E2R dataset as a computational world rather than a passive data structure.
 
-They are intended to preserve research directions rather than define implementation requirements.
+The objective is not to redefine the E2R specification but to investigate whether concepts from computation, information systems, and process-based models can provide a unified perspective for understanding datasets.
+
+This document serves as a conceptual foundation connecting several long-term research topics within the E2R ecosystem.
 
 ---
 
-# Purpose
+# Dataset as World
 
-Many E2R datasets describe change over time.
+An E2R dataset may be viewed as a self-contained world.
 
-This document explores how computation itself may become part of those models.
+Within that world:
+
+* Entities represent persistent existence.
+* Events represent change.
+* Relations represent connections.
+* Extensions define additional semantics.
+
+The dataset is therefore more than a document; it defines the state and behavior of a computational environment.
+
+---
+
+# Computation Through Events
+
+A computational world evolves through events.
+
+Instead of viewing events as historical records, they may be interpreted as state transitions.
+
+Each event transforms the world's state.
+
+The complete history of a dataset therefore represents a computational process.
+
+---
+
+# Time
+
+Current E2R represents time through the History Extension.
+
+Future research may explore more dynamic models of time.
 
 Possible topics include:
 
-- Discrete time
-- Simulation
-- Information theory
-- Computational complexity
-- Emergent behavior
+* discrete ticks
+* logical time
+* causal ordering
+* partial ordering
+* asynchronous evolution
+
+These concepts remain outside the current specification.
 
 ---
 
-# Discrete Time
+# Locality
 
-One possible model represents history as a sequence of discrete computation steps.
+Not every object needs knowledge of the entire dataset.
 
-Rather than assuming continuous time, every change occurs at an individual Tick.
+Many computations may depend only on local neighborhoods.
 
-```
-Tick 0
-↓
+Potential advantages include:
 
-Tick 1
-↓
+* scalability
+* distributed processing
+* parallel computation
+* partial synchronization
 
-Tick 2
-↓
-
-Tick 3
-```
-
-In this view, history becomes a sequence of state transitions.
+Locality may become an important principle for large computational worlds.
 
 ---
 
-# Tick as the Minimum Unit
+# Information Propagation
 
-A Tick may represent the smallest observable change.
+Changes do not necessarily affect every object immediately.
 
-Applications may interpret Tick duration differently.
-
-For example:
-
-- One second
-- One day
-- One simulation cycle
-- One reasoning step
-- One game turn
-
-The meaning of a Tick is application-defined.
-
----
-
-# History as State Transitions
-
-Instead of viewing history as continuous motion,
-
-history may be interpreted as repeated transitions between discrete states.
-
-```
-State A
-    ↓
-Tick
-    ↓
-State B
-```
-
-This interpretation naturally aligns with event-based datasets.
-
----
-
-# Tick Length
-
-Different systems may choose different Tick lengths.
+Information may propagate through relations.
 
 Examples include:
 
-- Fixed Tick
-- Variable Tick
-- Adaptive Tick
+* dependency chains
+* causal influence
+* delayed synchronization
+* partial visibility
 
-Changing Tick length affects both simulation fidelity and computational cost.
-
----
-
-# Tick and Computational Cost
-
-Smaller Tick lengths generally increase computational requirements.
-
-Larger Tick lengths reduce computation but may hide important intermediate changes.
-
-Choosing an appropriate Tick length therefore represents a trade-off between accuracy and efficiency.
+This perspective treats relations as channels for information flow.
 
 ---
 
-# Tick as Emergent "Gravity"
+# Emergence
 
-One speculative idea is that Tick length may influence how quickly a simulated world evolves.
-
-Worlds with shorter Tick intervals perform more computation.
-
-Worlds with longer Tick intervals evolve more slowly.
-
-This provides an interesting computational analogy to differences in the passage of time.
-
-No physical interpretation is implied.
-
----
-
-# Computational Constraints
-
-Every computational system has limited resources.
-
-Possible constraints include:
-
-- Memory
-- Processing time
-- Communication bandwidth
-- Storage
-
-These constraints influence the level of detail that can be simulated.
-
----
-
-# Coarse-graining
-
-Large systems often become easier to understand when small details are grouped together.
-
-Rather than recording every microscopic change,
-
-applications may represent larger structures.
+Global behavior may arise from simple local interactions.
 
 Examples include:
 
-- Population instead of individuals
-- Kingdom instead of cities
-- Era instead of individual days
+* clusters
+* communities
+* timelines
+* semantic structures
+* knowledge organization
 
-Different applications may choose different levels of abstraction.
+These structures need not exist explicitly within the dataset.
 
----
-
-# Hierarchical Worlds
-
-A world may be represented at multiple scales simultaneously.
-
-Example:
-
-```
-Planet
-    ↓
-Nation
-    ↓
-City
-    ↓
-Building
-    ↓
-Person
-```
-
-Applications may freely move between these levels.
+Applications may discover them through computation.
 
 ---
 
-# Information Limits
+# Multi-Scale Representation
 
-Some theoretical models suggest that observable information may be fundamentally limited.
+Different applications may observe the same dataset at different levels.
 
-Possible inspirations include:
+Examples include:
 
-- Information theory
-- Compression
-- Computational complexity
-- Holographic principles
+* individual objects
+* local neighborhoods
+* communities
+* entire datasets
+* collections of datasets
 
-These concepts may inspire future visualization and storage techniques.
-
-No specific implementation is proposed.
-
----
-
-# AI Reasoning
-
-AI systems also perform computation through discrete reasoning steps.
-
-Future applications may represent reasoning itself as a sequence of Events connected by Relations.
-
-This creates a possible bridge between knowledge graphs, timelines, and reasoning processes.
+This supports coarse-graining, summarization, and abstraction without modifying the underlying data.
 
 ---
 
-# Future Directions
+# Relationship to Other Research
 
-Possible future research includes:
+This document provides a conceptual framework connecting several research topics.
 
-- Tick-based simulation
-- Event-driven universes
-- Adaptive temporal resolution
-- Information-efficient datasets
-- Multi-scale world models
-- Computational physics analogies
-- AI reasoning timelines
-- Emergent historical structures
+Dataset Identity defines persistence.
 
-These ideas remain exploratory and are intentionally independent of the E2R Core specification.
+Process Ontology studies the nature of objects and processes.
+
+Self-Evolving Datasets investigates adaptation.
+
+Branch Evolution studies divergence.
+
+Information Ecology examines interactions among information systems.
+
+Multiverse extends the model to multiple computational worlds.
+
+Together, these topics describe different aspects of a unified computational perspective.
+
+---
+
+# Research Questions
+
+Open questions include:
+
+* Can a dataset be interpreted as a computational universe?
+* Can computation emerge entirely from events?
+* How should locality be represented?
+* Can information propagate without global synchronization?
+* How should multiple scales coexist?
+* Can datasets evolve autonomously while remaining deterministic?
+
+These questions are intentionally left unanswered.
+
+---
+
+# Status
+
+This document is a research proposal.
+
+It does not introduce requirements for the E2R Core specification.
+
+Its purpose is to provide a conceptual foundation for future exploration while preserving the simplicity of the current specification.

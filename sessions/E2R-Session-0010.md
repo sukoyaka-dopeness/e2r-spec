@@ -21,3 +21,23 @@ Its goals are:
 - Act as a playground for exploring E2R datasets.
 
 The Studio is not an editor itself, but the central hub for the E2R ecosystem.
+
+## NarrativeLine Implementation Progress
+
+### Completed
+
+- Created the initial project structure.
+- Defined AppState.
+- Created Dataset, Event, and Entity models.
+- Created NavigationService.
+- Created HomeScreen, TimelineScreen, and EventDetailScreen.
+- Added sampleDataset.
+- TimelineScreen displays sample events.
+- App now begins passing sampleDataset to TimelineScreen.
+
+### Next
+
+- Update TimelineScreen to receive Dataset via props.
+- Remove direct dependency on sampleDataset.
+- Navigate from Timeline to Event Detail.
+- Display selected Event information.

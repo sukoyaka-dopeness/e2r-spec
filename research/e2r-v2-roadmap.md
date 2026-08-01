@@ -129,3 +129,36 @@ Several principles should remain unchanged regardless of future research.
 * Allow research ideas to mature independently before considering standardization.
 
 This roadmap should be viewed as a map of possibilities rather than a release plan.
+
+## Ecosystem Development Roadmap
+
+### Phase 1
+- NarrativeLine (MVP)
+
+### Phase 2
+- Semantic Vocabulary Utility
+  - Wikidata importer
+  - Thesaurus importer
+  - Vocabulary Set Manager
+
+### Phase 3
+- Semantic Extension refinement
+
+### Phase 4
+- Relationship Graph
+
+### Phase 5
+- Quadrant
+
+### Phase 6
+- Validator
+
+### Phase 7
+- Random Dataset Generator
+
+### Long-term
+- Vocabulary sharing
+- User vocabulary
+- Dataset vocabulary
+- Application vocabulary
+- AI-assisted vocabulary generation

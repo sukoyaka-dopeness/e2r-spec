@@ -203,3 +203,49 @@ The E2R Specification standardizes data.
 Applications standardize experiences.
 
 Different applications should feel different while remaining able to exchange the same datasets.
+
+## Automatic Core Object Creation
+
+Applications MAY automatically create Core Objects.
+
+Examples include:
+
+- generating Entities during import
+- generating Events from external sources
+- AI-assisted dataset generation
+- creating placeholder objects during editing
+
+Automatically generated objects MUST remain valid Core Objects.
+
+---
+
+## Automatic Relation Creation
+
+Applications MAY automatically create Relations when a user establishes an association between Core Objects.
+
+Automatically created Relations SHOULD represent only structural connections.
+
+Applications SHOULD NOT infer or introduce additional semantics unless explicitly requested.
+
+---
+
+## Derived Structures
+
+Applications may create internal structures derived from datasets.
+
+Examples include:
+
+- search indexes
+- graph layouts
+- timeline ordering
+- rendering caches
+
+Derived structures are implementation details and are not part of the E2R dataset.
+
+## Interoperability over Workflow
+
+E2R standardizes datasets rather than editing workflows.
+
+Different applications may provide completely different user experiences while producing interoperable datasets.
+
+Applications are encouraged to innovate in editing workflows without requiring changes to the Core Specification.

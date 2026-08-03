@@ -260,3 +260,55 @@ Future revisions may support multiple candidate dates for a single Event while p
 Future versions should extend the `time` object rather than replacing it.
 
 Applications should ignore unknown fields in accordance with the E2R Core philosophy.
+
+---
+
+# Application Recommendations
+
+Applications are responsible for interpreting and presenting historical information.
+
+The History Extension intentionally defines a common representation of temporal information while allowing applications to implement different editing workflows and user interfaces.
+
+Applications are encouraged to provide consistent behaviors for datasets containing incomplete or partially known temporal information.
+
+---
+
+# Ordering
+
+The `order` property exists to provide a deterministic ordering when chronological information alone is insufficient.
+
+Applications MAY regenerate `order` values.
+
+When doing so, applications SHOULD preserve the intended relative ordering of Events whenever practical.
+
+Applications SHOULD NOT assign semantic meaning to `order` beyond ordering.
+
+---
+
+# Unknown Dates
+
+Events without known dates are valid.
+
+Applications SHOULD adopt a consistent display policy for such Events.
+
+A recommended default behavior is to display Events with unknown dates after Events with known dates.
+
+Alternative presentation strategies are permitted.
+
+---
+
+# Time Precision
+
+Applications SHOULD respect the recorded precision of temporal values.
+
+Applications SHOULD NOT display greater precision than is represented by the stored data.
+
+For example, a year-only value should not be displayed as a complete calendar date.
+
+---
+
+# Future Compatibility
+
+Applications SHOULD preserve unknown properties within the History Extension whenever practical.
+
+Future revisions of this Extension may introduce additional temporal metadata while remaining backward compatible.

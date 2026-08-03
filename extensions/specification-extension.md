@@ -178,3 +178,92 @@ Possible future capabilities include:
 - Specification interoperability analysis
 
 The long-term vision is to support an ecosystem in which specifications can be understood, analyzed, and evolved by both humans and AI while remaining compatible with the minimal Core.
+
+---
+
+# Extension Naming Recommendations
+
+Applications and organizations are encouraged to use clear and stable Extension names.
+
+Extensions intended for long-term interoperability should avoid application-specific prefixes.
+
+Examples:
+
+- `history`
+- `media`
+- `embedding`
+
+---
+
+# Experimental Extensions
+
+Before an Extension becomes stable, applications may use implementation-specific names.
+
+Recommended prefixes include:
+
+- `draft.`
+- `experimental.`
+- `vendor.`
+
+Examples:
+
+```json
+{
+  "extensions": {
+    "draft.embedding": { ... },
+    "experimental.timeline": { ... },
+    "vendor.example.relationship-type": { ... }
+  }
+}
+```
+
+These prefixes communicate that the Extension is not yet intended as a stable, interoperable specification.
+
+Applications should not assume compatibility between independently developed experimental Extensions, even if they share similar purposes.
+
+---
+
+# Extension Evolution
+
+An Extension may evolve over time.
+
+A typical lifecycle is:
+
+```
+draft
+    ↓
+experimental
+    ↓
+stable
+```
+
+Applications may also maintain vendor-specific Extensions indefinitely.
+
+The E2R Specification does not require any particular lifecycle.
+
+---
+
+# Stable Extensions
+
+Stable Extensions should use concise and implementation-independent names.
+
+For example:
+
+```
+history
+embedding
+media
+probability
+```
+
+Renaming an Extension after it has become widely adopted should be avoided whenever practical.
+
+---
+
+# Unknown Extensions
+
+Applications SHOULD preserve unknown Extensions whenever practical.
+
+Applications MAY ignore Extensions they do not understand.
+
+Ignoring an unknown Extension should not invalidate the remainder of the dataset.

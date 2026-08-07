@@ -41,6 +41,9 @@ The application may visualize relationships between:
 - Relation ↔ Relation (future)
 
 The graph is generated entirely from Core Objects and supported Extensions.
+The Relation-to-Relation item above is retained only as a historical research
+note; it is not a supported scope item and is not permitted by the current
+Core.
 
 ---
 

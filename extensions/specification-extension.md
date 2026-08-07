@@ -31,6 +31,21 @@ Instead, it provides structured metadata about specifications so that applicatio
 
 ---
 
+# Extension Structure
+
+Specification information is stored in the Dataset-level `specification`
+Extension.
+
+```text
+extensions.specification
+```
+
+The value at `extensions.specification` directly contains the
+Specification Extension data. The Core does not add a common `data` or
+Extension `version` wrapper.
+
+---
+
 # Describing Extensions
 
 A specification entry may describe an Extension.
@@ -50,15 +65,21 @@ Example:
 
 ```json
 {
-  "specification": {
-    "history": {
-      "name": "History Extension",
-      "version": "1.0",
-      "status": "stable"
+  "extensions": {
+    "specification": {
+      "history": {
+        "name": "History Extension",
+        "version": "1.0",
+        "status": "stable"
+      }
     }
   }
 }
 ```
+
+The `version` in this entry describes the version of the specification named
+by the entry. It is not a common Specification Extension envelope field and it
+does not replace the Dataset's top-level Core `version`.
 
 ---
 
@@ -79,11 +100,15 @@ Example:
 
 ```json
 {
-  "field": {
-    "time": {
-      "type": "TimeObject",
-      "required": false,
-      "description": "Represents the primary historical time."
+  "extensions": {
+    "specification": {
+      "field": {
+        "time": {
+          "type": "TimeObject",
+          "required": false,
+          "description": "Represents the primary historical time."
+        }
+      }
     }
   }
 }
@@ -181,7 +206,12 @@ The long-term vision is to support an ecosystem in which specifications can be u
 
 ---
 
-# Extension Naming Recommendations
+# Extension Naming (Reference)
+
+The normative naming rules are defined in
+[`spec/extension-naming.md`](../spec/extension-naming.md). The historical
+guidance below is retained only as context and must not be treated as a second
+source of truth.
 
 Applications and organizations are encouraged to use clear and stable Extension names.
 
@@ -264,6 +294,12 @@ Renaming an Extension after it has become widely adopted should be avoided whene
 
 Applications SHOULD preserve unknown Extensions whenever practical.
 
-Applications MAY ignore Extensions they do not understand.
+Applications MUST ignore Extensions they do not understand when reading a
+Dataset.
 
-Ignoring an unknown Extension should not invalidate the remainder of the dataset.
+Ignoring an unknown Extension does not invalidate the remainder of the Dataset.
+
+The naming guidance above is retained for historical context only. The
+normative source is [`spec/extension-naming.md`](../spec/extension-naming.md).
+This document is responsible for describing machine-readable specification
+metadata, not for maintaining a second naming system.

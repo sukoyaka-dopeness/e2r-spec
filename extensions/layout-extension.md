@@ -6,6 +6,11 @@ Unlike the Coordinate Extension, which stores logical positions, the Layout Exte
 
 Applications may ignore layouts they do not support.
 
+Examples in this document may show the Layout Extension payload in shorthand.
+In a complete E2R Dataset, Layout data MUST be stored under
+`extensions.layout` at the Dataset level or under a Core Object's `extensions`
+field as appropriate.
+
 ---
 
 # Goals

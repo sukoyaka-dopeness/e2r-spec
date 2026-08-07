@@ -212,7 +212,18 @@ The exact structure is application-defined.
 
 ---
 
-# Multiple Dictionaries
+# Dictionary Identity and Scope
+
+The current Dictionary Extension defines one Dataset-level `dictionary`
+Extension value containing reusable `entries`. Entry identifiers are unique
+within that dictionary.
+
+The Extension does not currently define a required global Dictionary ID. An
+application that needs to distinguish multiple dictionaries MUST use a
+separate, explicitly defined structure rather than placing a new Core field on
+Entity, Event, or Relation.
+
+## Multiple Dictionaries
 
 A dataset may contain multiple independent dictionaries.
 
@@ -224,11 +235,13 @@ Examples:
 - Role Dictionary
 - Application Dictionary
 
-Applications may use whichever dictionaries they understand.
+The representation and reference rules for multiple dictionaries are not yet
+standardized. Applications may use whichever dictionaries they understand, but
+must not assume that an entry identifier is globally unique across dictionaries.
 
 ---
 
-# External Dictionaries
+## External Dictionaries
 
 Future applications may reference dictionaries stored outside the dataset.
 
@@ -238,7 +251,9 @@ Possible examples include:
 - Domain-specific dictionaries
 - Organization-specific dictionaries
 
-The mechanism for external references is intentionally left unspecified.
+The mechanism for external references is intentionally left unspecified. URL,
+package, and registry-based references remain future design candidates and are
+not required for Dictionary Extension interoperability today.
 
 ---
 

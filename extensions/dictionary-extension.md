@@ -49,12 +49,16 @@ Example:
 
 ```json
 {
-  "dictionary": {
-    "PERSON": {
-      "name": "Person"
-    },
-    "CITY": {
-      "name": "City"
+  "extensions": {
+    "dictionary": {
+      "entries": {
+        "PERSON": {
+          "name": "Person"
+        },
+        "CITY": {
+          "name": "City"
+        }
+      }
     }
   }
 }
@@ -72,8 +76,12 @@ Example:
 {
   "entity": {
     "id": "en001",
-    "dictionaryId": "PERSON",
-    "name": "Ada Lovelace"
+    "name": "Ada Lovelace",
+    "extensions": {
+      "dictionary": {
+        "entryId": "PERSON"
+      }
+    }
   }
 }
 ```
@@ -90,9 +98,13 @@ Example:
 
 ```json
 {
-  "dictionary": {
-    "PARENT_OF": {
-      "name": "Parent Of"
+  "extensions": {
+    "dictionary": {
+      "entries": {
+        "PARENT_OF": {
+          "name": "Parent Of"
+        }
+      }
     }
   }
 }

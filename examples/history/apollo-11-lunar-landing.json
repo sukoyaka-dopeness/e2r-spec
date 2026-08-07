@@ -1,0 +1,19 @@
+{
+  "id": "event-apollo-11-lunar-landing",
+  "name": "Apollo 11 Lunar Landing",
+  "description": "The lunar module Eagle landed on the Moon.",
+  "extensions": {
+    "history": {
+      "time": {
+        "year": 1969,
+        "month": 7,
+        "day": 20,
+        "hour": 20,
+        "minute": 17,
+        "second": 43,
+        "timeZone": "Etc/UTC",
+        "offset": "+00:00"
+      }
+    }
+  }
+}

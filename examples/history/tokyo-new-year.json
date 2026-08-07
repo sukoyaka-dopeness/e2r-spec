@@ -1,0 +1,17 @@
+{
+  "id": "event-new-year-celebration",
+  "name": "New Year Celebration Begins",
+  "extensions": {
+    "history": {
+      "time": {
+        "year": 2027,
+        "month": 1,
+        "day": 1,
+        "hour": 0,
+        "minute": 30,
+        "timeZone": "Asia/Tokyo",
+        "offset": "+09:00"
+      }
+    }
+  }
+}

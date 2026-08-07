@@ -1,7 +1,5 @@
 {
-  "metadata": {
-    "specVersion": "1.0"
-  },
+  "version": "1.0",
   "events": [
     {
       "id": "event-1",
@@ -26,8 +24,8 @@
   "relations": [
     {
       "id": "relation-1",
-      "from": "event-1",
-      "to": "entity-1"
+      "sourceId": "event-1",
+      "targetId": "entity-1"
     }
   ]
 }

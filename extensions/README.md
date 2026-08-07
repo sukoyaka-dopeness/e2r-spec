@@ -23,7 +23,7 @@ registered as Stable:
 - [Dictionary Extension](dictionary-extension.md)
 - [Specification Extension](specification-extension.md)
 
-## Candidate Extensions
+## Future Candidate Extensions
 
 - Genealogy Extension
 - Geography Extension

@@ -6,65 +6,77 @@
 
 ## Summary
 
-The Validator release automation milestone was completed. npm Trusted
-Publishing was configured for the Validator repository, a controlled
-tag-based GitHub Actions workflow was added, and the workflow successfully
-published `0.1.2` and `0.1.3` to npm.
+NarrativeLine MVP is complete and has been manually reviewed in both English
+and Japanese. The application now includes bilingual UI, language-specific
+sample Datasets, language-specific user-guide links, Validator warning display,
+title editing, and E2R JSON import/export.
 
-## Validator Release Automation
+The E2R overview documentation was added to this repository in Japanese and
+English, and both NarrativeLine user guides now link to the matching overview.
 
-Repository:
+## Repositories and Recent Commits
 
-`C:\Users\extra\E2R\e2r-validator`
+- Specification: `C:\Users\extra\E2R\e2r-spec`
+  - `eeb90c4 Add bilingual E2R overview guides`
+- Application: `C:\Users\extra\E2R\e2r-narrative-line`
+  - `7cfc8a4 Link user guides to E2R overview`
+- Validator: `C:\Users\extra\E2R\e2r-validator`
 
-Trusted Publisher configuration:
+The two recent commits were pushed to their respective `main` branches. The
+working trees were clean after the push.
 
-- GitHub repository: `sukoyaka-dopeness/e2r-validator`
-- Workflow: `release.yml`
-- Permission: `npm publish`
-- Authentication: npm Trusted Publishing with GitHub Actions OIDC
-- Package publishing access: two-factor authentication required; bypass 2FA
-  tokens disallowed
+## E2R Overview Guides
 
-The release workflow runs only for version tags, validates the package and
-specification fixtures, checks that the tag matches `package.json`, inspects
-the package contents, and publishes with provenance.
+Added:
 
-## Published Releases
+- `e2r-spec/docs/e2r-overview-ja.md`
+- `e2r-spec/docs/e2r-overview-en.md`
 
-- `@sukoyaka-dopeness/e2r-validator@0.1.2`
-  - Fixed provenance metadata by adding the exact GitHub `repository.url`.
-- `@sukoyaka-dopeness/e2r-validator@0.1.3`
-  - Fixed the CLI `--version` output to read the package version dynamically.
+The guides explain the three Core Objects, Dataset structure, the role of
+Extensions, and where to find the detailed Core specification.
 
-The `0.1.1` tag remains in history as a failed publication attempt caused by
-the missing `repository.url`; it was not moved or deleted.
+## NarrativeLine MVP Status
 
-## Verification
+Manual checks confirmed:
 
-- Validator tests: 22 passing
-- Specification fixture tests: 2 passing
-- Regular CI: passing for the release commits
-- Release workflow: passing for `v0.1.2` and `v0.1.3`
-- Fresh npm installation of `0.1.3`: successful
-- Installed CLI output: `e2r-validator 0.1.3`
-- npm provenance: generated and accepted
+- Japanese mode opens the Oda Nobunaga sample Dataset.
+- English mode opens the Apollo 11 sample Dataset.
+- Home guide links switch between Japanese and English.
+- Timeline, detail screens, modals, and Entity Picker use the localized terms.
+- Unknown Extension warnings are shown while allowing the Dataset to open.
+- Invalid JSON and missing required arrays stop navigation with import errors.
+- Dataset title editing and safe export filenames work as intended.
 
-## Important Commits
+The user reported no current usability problems requiring further Event Detail,
+Entity Detail, or Entity Picker changes. Input suggestions can be reconsidered
+after external user feedback.
 
-```text
-fb89b4d Add trusted npm release workflow
-44320b3 Fix provenance metadata for 0.1.2
-7c4e5c2 Fix CLI version for 0.1.3
-```
+## Current Direction
 
-## Next Recommended Milestone
+Short-term work is paused while a friend reviews the application and guides.
+The next active milestones are:
 
-Review the NarrativeLine integration in the browser, including validation
-errors and warnings, loading, saving, and export behavior. Then prioritize
-Dataset title editing through `extensions.metadata.title`, title-based export
-filenames, and the beginning of Japanese user documentation.
+1. Expand the E2R beginner and usage documentation with more examples,
+   including sample JSON, Core-versus-Extension explanations, and beginner
+   terminology in both languages.
+2. Formalize Validator release operations: Trusted Publishing, controlled
+   tag-based publishing, changelog/version policy, and pre-release checks.
 
-Do not change Core or Extension specifications unless application evidence
-demonstrates a concrete specification discrepancy.
+Documentation-only changes do not require a version-number change. A package
+version should change when published behavior or package contents change.
 
+## Handoff
+
+At the next session start:
+
+1. Read this log and `sessions/E2R-Session-0020.md`.
+2. Check `git status` in all three repositories and preserve user changes.
+3. Confirm the two overview-guide links resolve from the published GitHub
+   `main` branches.
+4. Review the friend's feedback before changing UI terminology or workflows.
+5. Continue with E2R guide enrichment, then Validator release workflow design.
+6. Do not reset, checkout, or delete existing changes.
+
+## Parallel ChatGPT Session Handoff
+
+No separate parallel-session handoff was supplied for this session.

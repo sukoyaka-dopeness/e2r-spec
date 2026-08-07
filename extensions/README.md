@@ -1,11 +1,27 @@
 # E2R Extension Index
 
-## Standard Extensions
+## Registered Stable Extensions
 
-- Calendar Extension
-- History Extension
-- Semantic Extension
-- Presentation Extension
+The normative Stable Extension registry is maintained in
+[`../spec/extension-naming.md`](../spec/extension-naming.md).
+
+The currently registered Stable Extensions are:
+
+- [Metadata Extension](metadata-extension.md) (`metadata`)
+- [History Extension](history-extension.md) (`history`)
+
+The existence of an Extension document does not by itself make an Extension
+Stable.
+
+## Candidate and Under-Review Extensions
+
+The following Extensions have design documents or proposals but are not
+registered as Stable:
+
+- [Coordinate Extension](coordinate-extension.md)
+- [Layout Extension](layout-extension.md)
+- [Dictionary Extension](dictionary-extension.md)
+- [Specification Extension](specification-extension.md)
 
 ## Candidate Extensions
 

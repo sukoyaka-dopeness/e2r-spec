@@ -100,7 +100,7 @@ Applications remain responsible for avoiding identifier collisions.
 
 Dataset identity is independent from object identifiers.
 
-Applications are encouraged to assign a persistent `metadata.datasetId` to datasets.
+Applications are encouraged to assign a persistent `extensions.metadata.datasetId` to datasets.
 
 This identifier should remain stable across edits to the same logical dataset.
 

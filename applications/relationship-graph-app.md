@@ -28,6 +28,11 @@ The Relationship Graph App should:
 
 # Scope
 
+The current E2R Core permits only Entity and Event endpoints for Relations.
+Relation-to-Relation edges are not part of this application's current scope;
+any future support would require a separately defined Extension or model and
+must not be interpreted as a Core capability.
+
 The application may visualize relationships between:
 
 - Entity ↔ Entity

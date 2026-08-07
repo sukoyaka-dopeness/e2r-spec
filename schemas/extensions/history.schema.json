@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/sukoyaka-dopeness/e2r-spec/main/schemas/extensions/history.schema.json",
+  "title": "E2R History Extension",
+  "description": "Structural validation schema for the value of an E2R extensions.history property.",
+  "$comment": "Draft validation aid. The normative requirements remain in extensions/history-extension.md.",
+  "type": "object",
+  "properties": {
+    "time": {
+      "$ref": "#/$defs/timeObject"
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "timeObject": {
+      "title": "History Time Object",
+      "description": "The primary temporal position of an E2R Core Object.",
+      "$comment": "The legacy order property is rejected for current writer output. Migration-aware readers may handle it as described by the History Extension.",
+      "type": "object",
+      "properties": {
+        "year": {
+          "type": "integer",
+          "description": "Proleptic Gregorian year using astronomical year numbering."
+        },
+        "month": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12,
+          "description": "Gregorian month."
+        },
+        "day": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 31,
+          "description": "Day of the specified Gregorian month and year. Month-specific validity requires semantic validation."
+        },
+        "hour": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 23,
+          "description": "Hour in Civil Time."
+        },
+        "minute": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 59,
+          "description": "Minute in Civil Time."
+        },
+        "second": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 59,
+          "description": "Second in Civil Time. Leap seconds are outside History Extension v1."
+        },
+        "timeZone": {
+          "type": "string",
+          "minLength": 1,
+          "description": "IANA Time Zone ID. Membership in the IANA database requires semantic validation."
+        },
+        "offset": {
+          "type": "string",
+          "pattern": "^[+-][0-9]{2}:[0-9]{2}$",
+          "description": "Numeric UTC offset in +HH:MM or -HH:MM form."
+        },
+        "temporalOrder": {
+          "type": "integer",
+          "description": "Relative temporal order when recorded time cannot otherwise distinguish Core Objects."
+        },
+        "order": false
+      },
+      "anyOf": [
+        {
+          "properties": {
+            "year": true
+          },
+          "required": [
+            "year"
+          ]
+        },
+        {
+          "properties": {
+            "temporalOrder": true
+          },
+          "required": [
+            "temporalOrder"
+          ]
+        }
+      ],
+      "dependentRequired": {
+        "month": [
+          "year"
+        ],
+        "day": [
+          "year",
+          "month"
+        ],
+        "hour": [
+          "year",
+          "month",
+          "day"
+        ],
+        "minute": [
+          "year",
+          "month",
+          "day",
+          "hour"
+        ],
+        "second": [
+          "year",
+          "month",
+          "day",
+          "hour",
+          "minute"
+        ],
+        "timeZone": [
+          "year",
+          "month",
+          "day",
+          "hour",
+          "minute",
+          "offset"
+        ],
+        "offset": [
+          "year",
+          "month",
+          "day",
+          "hour",
+          "minute",
+          "timeZone"
+        ]
+      },
+      "additionalProperties": true
+    }
+  }
+}

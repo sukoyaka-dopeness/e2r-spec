@@ -50,14 +50,82 @@ The interpretation of a Relation is delegated to Extensions or Applications.
 
 An E2R Dataset is a collection of Core Objects.
 
-A Dataset contains:
+A Dataset has the following required fields:
 
-- metadata
-- events
-- entities
-- relations
+- `version`
+- `entities`
+- `events`
+- `relations`
+
+The `entities`, `events`, and `relations` fields are arrays. They are required
+even when they are empty.
 
 The Core does not require any particular ordering of these collections.
+
+A Dataset may also have an optional `extensions` field for Dataset-level
+Extensions.
+
+```json
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [],
+  "relations": [],
+  "extensions": {
+    "metadata": {
+      "datasetId": "019c0000-0000-7000-8000-000000000000"
+    }
+  }
+}
+```
+
+Metadata such as a Dataset identifier, title, author, license, or generating
+application is not part of the Core. Such information may be represented by a
+Dataset-level Extension.
+
+## version
+
+Required.
+
+A non-empty string identifying the E2R Core version used by the Dataset.
+
+The Dataset-level `version` identifies the Core version. It does not identify
+the version of any Extension.
+
+## entities
+
+Required.
+
+An array of Entity objects.
+
+## events
+
+Required.
+
+An array of Event objects.
+
+## relations
+
+Required.
+
+An array of Relation objects.
+
+## Dataset-level Extensions
+
+Optional.
+
+An object whose property names identify Extensions and whose values contain
+Extension-specific data.
+
+Dataset-level Extension data uses the same placement convention as Core Object
+Extension data:
+
+```text
+extensions.<extension-name>.<extension-specific-data>
+```
+
+The Core does not add a common `data` or Extension `version` wrapper. An
+Extension specification defines the structure of its own value.
 
 ---
 
@@ -69,7 +137,11 @@ Every Core Object has the following fields.
 
 Required.
 
-A unique identifier within the dataset.
+A non-empty string that uniquely identifies the Core Object within the
+Dataset.
+
+Identifiers are unique across all Entity, Event, and Relation objects in the
+Dataset, not only within each object type.
 
 The Core does not require globally unique identifiers.
 
@@ -101,7 +173,39 @@ Optional.
 
 Extensions provide additional information outside the Core.
 
-Applications that do not recognize an Extension should preserve it whenever possible.
+Applications that do not recognize an Extension SHOULD preserve it whenever
+practical.
+
+---
+
+# Relation Fields
+
+In addition to the Common Fields, every Relation has the following fields.
+
+## sourceId
+
+Required.
+
+A non-empty string containing the `id` of an Entity or Event in the same
+Dataset.
+
+## targetId
+
+Required.
+
+A non-empty string containing the `id` of an Entity or Event in the same
+Dataset.
+
+Relations must not use another Relation as their source or target. Because Core
+Object identifiers are unique across the Dataset, each endpoint resolves to at
+most one Core Object.
+
+The source and target may identify the same Core Object. Self-relations are
+valid. Cycles involving multiple Relations are also valid.
+
+Relation direction is structural. The Core does not assign semantic meaning to
+the direction, and it does not define a Relation `type` field. Relation meaning
+belongs to Extensions or Applications.
 
 ---
 
@@ -125,15 +229,25 @@ Applications may generate derived or cached values, but these must not become in
 
 ## Unknown Fields
 
-Applications should ignore unknown Core fields.
+Applications MUST ignore unknown Core fields when reading a Dataset.
+
+Applications SHOULD preserve unknown Core fields whenever practical.
+
+A validator may report an unknown Core field as a warning, but its presence
+alone does not make a Dataset invalid. A similarly named unknown field does not
+satisfy a missing required field and must not be treated as that field without
+explicit user action.
 
 ---
 
 ## Unknown Extensions
 
-Applications should preserve unknown Extensions whenever possible.
+Applications MUST ignore Extensions they do not recognize when reading a
+Dataset.
 
-Applications should modify only the Extensions they understand.
+Applications SHOULD preserve unknown Extensions whenever practical.
+
+Applications SHOULD modify only the Extensions they understand.
 
 ---
 

@@ -6,6 +6,11 @@ Unlike screen layouts or rendering information, coordinates represent positions 
 
 Applications are free to interpret these coordinates in different ways.
 
+Examples in this document may show the Coordinate Extension payload in
+shorthand. In a complete E2R Dataset, the payload MUST be stored under
+`extensions.coordinate`, either at Dataset level or under a Core Object's
+`extensions` field as appropriate.
+
 ---
 
 # Goals

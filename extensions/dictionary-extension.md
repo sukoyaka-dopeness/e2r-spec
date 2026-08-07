@@ -113,7 +113,11 @@ Example:
 ```json
 {
   "relation": {
-    "dictionaryId": "PARENT_OF"
+    "extensions": {
+      "dictionary": {
+        "entryId": "PARENT_OF"
+      }
+    }
   }
 }
 ```
@@ -130,12 +134,16 @@ Example:
 
 ```json
 {
-  "dictionary": {
-    "BIRTH": {
-      "name": "Birth"
-    },
-    "MARRIAGE": {
-      "name": "Marriage"
+  "extensions": {
+    "dictionary": {
+      "entries": {
+        "BIRTH": {
+          "name": "Birth"
+        },
+        "MARRIAGE": {
+          "name": "Marriage"
+        }
+      }
     }
   }
 }
@@ -153,11 +161,14 @@ Example:
 
 ```json
 {
-  "dictionary": {
+  "extensions": {
+    "dictionary": {
+      "entries": {
     "PERSON": {
       "label": {
         "en": "Person",
         "ja": "人物"
+      }
       }
     }
   }
@@ -184,10 +195,14 @@ Example:
 
 ```json
 {
-  "dictionary": {
-    "BATTLE": {
-      "name": "Battle",
-      "description": "A military conflict between organized forces."
+  "extensions": {
+    "dictionary": {
+      "entries": {
+        "BATTLE": {
+          "name": "Battle",
+          "description": "A military conflict between organized forces."
+        }
+      }
     }
   }
 }

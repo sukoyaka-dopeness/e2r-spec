@@ -12,7 +12,7 @@ This enables consistent terminology, reuse across datasets, localization, and AI
 
 The Dictionary Extension aims to:
 
-- Separate semantics from Core objects.
+- Separate semantics from Core Objects.
 - Reuse common definitions.
 - Reduce duplication.
 - Improve interoperability.
@@ -68,7 +68,7 @@ Example:
 
 # Referencing Dictionary Entries
 
-Core objects may reference dictionary entries.
+Core Objects may reference dictionary entries.
 
 Example:
 

@@ -51,7 +51,7 @@ For example:
 
 # Core Objects
 
-The browser should present Core objects separately.
+The browser should present Core Objects separately.
 
 ## Entities
 
@@ -103,7 +103,7 @@ This allows users to explore the dataset without reading raw JSON.
 
 # Extension Inspection
 
-The browser should display all Extensions attached to Core objects.
+The browser should display all Extensions attached to Core Objects.
 
 Known Extensions may receive specialized views.
 

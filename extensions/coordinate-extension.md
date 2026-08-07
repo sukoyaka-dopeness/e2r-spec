@@ -53,6 +53,54 @@ Examples include:
 - Spiral coordinates
 - Custom application-defined coordinates
 
+## Coordinate Reference Spaces
+
+A Coordinate Extension MAY define named coordinate reference spaces. A space
+identifies the context in which coordinate values are interpreted; it is not a
+container to which an Entity or Event belongs.
+
+Dataset-level example:
+
+```json
+{
+  "extensions": {
+    "coordinate": {
+      "spaces": {
+        "main": {
+          "system": "cartesian"
+        }
+      }
+    }
+  }
+}
+```
+
+An object position MAY refer to a space using `spaceId`:
+
+```json
+{
+  "id": "entity-a",
+  "extensions": {
+    "coordinate": {
+      "positions": [
+        {
+          "spaceId": "main",
+          "x": 120,
+          "y": 45
+        }
+      ]
+    }
+  }
+}
+```
+
+The same object may have positions in more than one space. `spaceId` is kept
+with a position rather than added to the Core Object, so a space does not become
+a fourth Core concept and an object is not forced to belong to one space.
+
+Space deletion, renaming, identifier formats, and transformations between
+spaces remain future design topics.
+
 ---
 
 # Cartesian Coordinates

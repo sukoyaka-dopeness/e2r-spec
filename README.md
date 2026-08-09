@@ -15,6 +15,12 @@ Multiple views from the same data
 
 https://github.com/sukoyaka-dopeness/e2r-spec/blob/main/spec/philosophy.md
 
+## Documentation
+
+Start with the [Documentation Hub](docs/README.md). It links to Japanese and
+English introductions, Dataset walkthroughs, specifications, applications, and
+research material.
+
 ## Repository Structure
 
 spec/

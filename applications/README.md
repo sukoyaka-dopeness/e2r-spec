@@ -112,3 +112,11 @@ Current application proposals are documented in the files contained in this dire
 Each document describes one possible application built on top of E2R.
 
 The list is intentionally open-ended, and additional applications may be added as the ecosystem grows.
+
+## Linkscape reference documents
+
+- [Linkscape application design](relationship-graph-app.md)
+- [Linkscape MVP acceptance criteria](linkscape-mvp-acceptance.md)
+
+These documents describe application behavior and are not part of the
+normative E2R Core or Extension specifications.

@@ -2,112 +2,92 @@
 
 Repository: e2r-linkscape
 
-# Relationship Graph App
-
 ## Purpose
 
-The Relationship Graph App is a reference application for exploring and editing relationships between Core Objects.
+Linkscape is a reference application for exploring and editing Entity
+relationships in E2R Datasets. It demonstrates practical use of the E2R
+Relation model while remaining independent of application-specific semantics.
+NarrativeLine remains the primary application for Event editing and timeline
+presentation.
 
-Its primary purpose is to demonstrate practical use of the E2R Relation model while remaining independent of application-specific semantics.
+## Design goals
 
-The application focuses on graph visualization rather than timeline presentation.
+Linkscape should:
 
----
+- visualize Entity nodes and Relations;
+- support a small, understandable graph-editing workflow;
+- remain interoperable with other E2R applications;
+- preserve unknown Extensions during loading and saving; and
+- avoid embedding application-specific semantics into the Core.
 
-# Design Goals
+## Scope
 
-The Relationship Graph App should:
+The initial MVP is Entity-first. It imports a Dataset, displays Entity nodes
+and Relation edges, and provides basic navigation and Entity inspection.
+Event nodes and Event editing may be considered later, but are outside the
+initial MVP so that Linkscape does not duplicate NarrativeLine.
 
-- Visualize relationships between Core Objects.
-- Support editing of Relations.
-- Remain interoperable with other E2R applications.
-- Preserve unknown Extensions during loading and saving.
-- Avoid embedding application-specific semantics into the Core.
+Relation endpoints remain subject to the Core rule: they may reference an
+Entity or Event, but never another Relation. Linkscape must not present
+Relation-to-Relation connections as a Core capability.
 
----
-
-# Scope
-
-The current E2R Core permits only Entity and Event endpoints for Relations.
-Relation-to-Relation edges are not part of this application's current scope;
-any future support would require a separately defined Extension or model and
-must not be interpreted as a Core capability.
-
-The application may visualize relationships between:
-
-- Entity ↔ Entity
-- Event ↔ Entity
-- Event ↔ Event
-- Relation ↔ Relation (future)
-
-The graph is generated entirely from Core Objects and supported Extensions.
-The Relation-to-Relation item above is retained only as a historical research
-note; it is not a supported scope item and is not permitted by the current
-Core.
-
----
-
-# MVP
+## MVP
 
 The MVP should support:
 
-- Opening an E2R dataset.
-- Displaying Core Objects as graph nodes.
-- Displaying Relations as graph edges.
-- Selecting nodes.
-- Selecting edges.
-- Editing basic Relation information.
-- Creating Relations.
-- Deleting Relations.
-- Saving datasets without modifying unrelated data.
+- importing an E2R Dataset;
+- displaying Entity nodes and Relation edges;
+- zooming and panning;
+- selecting an Entity and opening Entity Detail;
+- dragging Entity nodes; and
+- saving user coordinates when the user intentionally saves them.
 
-Layout algorithms are implementation details and are outside the scope of the specification.
+The application should preserve unrelated data and unknown Extensions when
+saving. Layout algorithms are implementation details and are outside the
+scope of the E2R specification.
 
----
+Automatic layout fills only missing coordinates. Stored user coordinates take
+priority, and opening a Dataset must not modify it merely because automatic
+layout was used.
 
-# Relation Semantics
+## Relation presentation
 
-The Core Relation model intentionally remains minimal.
+Linkscape may show Relation direction from `sourceId` to `targetId`. The Core
+does not define the semantic meaning of that direction, so arrows or labels
+must not imply meanings such as causality or ownership unless a supported
+Extension provides them.
 
-Graph behavior should be derived from supported Relation Extensions rather than additional Core fields.
+Applications that do not recognize a Relation Extension should continue to
+display the graph using Core information only.
 
-Applications that do not recognize a Relation Extension should continue to display the graph using only Core information.
+## Editing principles
 
----
+Linkscape is a graph editor rather than a generic JSON editor. It edits only
+the information it understands and should avoid modifying unrelated portions
+of a Dataset. Unknown Extensions must be preserved whenever practical.
 
-# Editing Principles
-
-The Relationship Graph App is a graph editor rather than a generic JSON editor.
-
-Applications edit only the information they understand.
-
-Unknown Extensions must be preserved.
-
-Applications should avoid modifying unrelated portions of the dataset whenever possible.
-
----
-
-# Future Features
+## Future features
 
 Possible future capabilities include:
 
-- Relation categories
-- Relation direction indicators
-- Multiple graph layouts
-- Graph filtering
-- Graph search
-- Graph clustering
-- Automatic grouping
-- Hierarchical layouts
-- Semantic coloring
-- Extension-specific visualization
+- Event nodes and Event-related views;
+- creating, editing, and deleting Relations;
+- Relation categories and semantic labels;
+- richer direction indicators and edge routing;
+- multiple graph layouts;
+- graph filtering, search, and clustering;
+- hierarchical layouts;
+- semantic coloring; and
+- Extension-specific visualization.
 
-These capabilities are intentionally excluded from the MVP.
+Coordinate and Layout Extensions remain candidates for future
+standardization. Until Linkscape provides concrete interoperability
+requirements, application layout state and stored logical coordinates should
+remain conceptually separate.
 
----
+## Reference role
 
-# Reference Implementation
-
-The Relationship Graph App serves as a reference implementation for Relation-related Extensions.
-
-Its purpose is to validate that the E2R Relation model remains sufficiently generic for diverse graph-based applications while preserving interoperability with other E2R applications.
+Linkscape can serve as a reference application for Relation-related
+Extensions. Its purpose is to test whether the minimal Relation model remains
+sufficiently generic for graph-based applications while preserving
+interoperability with NarrativeLine and other E2R tools.

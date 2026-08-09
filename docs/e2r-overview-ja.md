@@ -82,6 +82,6 @@ NarrativeLineは、E2R Datasetを編集・表示するアプリケーション�
 
 ## さらに詳しく
 
-実際のJSON例は、[空のDataset](../examples/empty-dataset.json)、[Eventの例](../examples/single-event.json)、[Event・Entity・Relationの例](../examples/event-with-entity.json)を参照してください。
+実際のJSON例は、[空のDataset](../examples/empty-dataset.json)、[Eventの例](../examples/single-event.json)、[Event・Entity・Relationの例](../examples/event-with-entity.json)、[Historyの精度が混在する例](../examples/mixed-history-precision.json)を参照してください。
 
 詳細なルールは、[E2R Core仕様](../spec/core.md)と各拡張機能の仕様を参照してください。アプリケーションで扱うDatasetは、必要に応じてValidatorで検証できます。

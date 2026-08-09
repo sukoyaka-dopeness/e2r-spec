@@ -129,6 +129,10 @@ does not confirm that historical claims or other content are true.
 
 ## 8. Reuse the Dataset
 
+The [mixed History precision example](../examples/mixed-history-precision.json)
+shows how one Dataset can contain year-, month-, day-, minute-, and
+second-precision Events without adding a separate `precision` field.
+
 The resulting Dataset can be opened again by an application that understands
 it, exchanged as JSON, or supplied to another workflow as structured input.
 For example, NarrativeLine can present Event-focused timeline information.

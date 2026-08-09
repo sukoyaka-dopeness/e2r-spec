@@ -82,6 +82,6 @@ NarrativeLine is one application that edits and presents E2R Datasets. Its Timel
 
 ## Learn more
 
-See the [empty Dataset](../examples/empty-dataset.json), [Event example](../examples/single-event.json), and [Event, Entity, and Relation example](../examples/event-with-entity.json) for complete JSON files.
+See the [empty Dataset](../examples/empty-dataset.json), [Event example](../examples/single-event.json), [Event, Entity, and Relation example](../examples/event-with-entity.json), and [mixed History precision example](../examples/mixed-history-precision.json) for complete JSON files.
 
 See the [E2R Core specification](../spec/core.md) and the specifications for individual Extensions for detailed rules. Datasets used by applications can be checked with the Validator when appropriate.

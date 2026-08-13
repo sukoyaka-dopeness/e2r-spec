@@ -1,0 +1,88 @@
+{
+  "version": "1.0",
+  "entities": [
+    {
+      "id": "entity-lighthouse",
+      "name": "Harbor Light",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "linkscape-graph",
+              "values": {
+                "x": 80,
+                "y": 140
+              }
+            },
+            {
+              "spaceId": "harbor-site-plan",
+              "values": {
+                "east": 24.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "event-restoration-start",
+      "name": "Restoration begins",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "linkscape-graph",
+              "values": {
+                "y": 320
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "relations": [],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.coordinate": {
+      "specVersion": "0.1.0",
+      "spaces": [
+        {
+          "id": "linkscape-graph",
+          "name": "Linkscape graph coordinates",
+          "kind": "cartesian-2d",
+          "components": {
+            "x": {
+              "unit": "linkscape-user-unit",
+              "positiveDirection": "display-right"
+            },
+            "y": {
+              "unit": "linkscape-user-unit",
+              "positiveDirection": "display-down"
+            }
+          }
+        },
+        {
+          "id": "harbor-site-plan",
+          "name": "Harbor site plan",
+          "kind": "cartesian-2d",
+          "components": {
+            "east": {
+              "unit": "metre",
+              "positiveDirection": "east",
+              "minimum": 0,
+              "maximum": 500
+            },
+            "north": {
+              "unit": "metre",
+              "positiveDirection": "north",
+              "minimum": 0,
+              "maximum": 500
+            }
+          }
+        }
+      ]
+    }
+  }
+}

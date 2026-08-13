@@ -14,6 +14,15 @@ JSON files directly under `examples/` are complete Dataset examples:
 - `single-event.json`
 - `multiple-events.json`
 - `event-with-entity.json`
+- `cross-application-demo.json`
+
+`cross-application-demo.json` is a reusable workflow example for
+NarrativeLine and Linkscape. It includes Metadata, mixed History precision,
+Event-to-Entity Relations, parallel Entity Relations, multiple self-Relations,
+and experimental Coordinate prototype `0.1.0`. Linkscape interprets the
+`linkscape-graph` Entity positions. NarrativeLine independently displays
+Dataset-defined Entity/Event Coordinates, including a partial Event value and
+an Entity with multiple selectable Spaces.
 
 ### History Extension Examples
 
@@ -58,6 +67,8 @@ examples/
     core/
     extensions/
       history/
+      coordinate-draft/
+      specification/
 ```
 
 The History fixtures currently cover:
@@ -73,6 +84,61 @@ The History fixtures currently cover:
 - the legacy `order` field
 - a non-integer `temporalOrder`
 
+### Specification Extension Draft Examples
+
+Specification Extension draft `0.1.0` fixtures are stored in
+`examples/specification/`. They cover:
+
+- exact locally supported declarations;
+- a legacy payload whose exact Extension version is unspecified;
+- a known Extension at an unsupported exact version;
+- a locally unavailable Extension specification;
+- compatible required dependency data that is unsupported locally; and
+- an unsupported Specification Extension bootstrap version.
+
+Invalid declaration and dependency fixtures are stored in
+`examples/invalid/extensions/specification/`.
+
+### Coordinate Prototype Examples
+
+`examples/coordinate/external-reference.json` demonstrates an OGC CRS84
+identifier while keeping longitude and latitude as locally defined Component
+IDs. Validator and NarrativeLine tests process it offline; neither requires
+dereferencing the identifier.
+
+`examples/coordinate/migration-refusal/` contains structurally preservable
+Datasets for which the explicit Prototype-to-Draft operation must refuse to
+run: one has an unknown Prototype field, and one already contains the distinct
+Draft identity. They are migration-operation fixtures, not invalid Core
+Datasets.
+
+Invalid Coordinate prototype fixtures are stored in
+`examples/invalid/extensions/coordinate/`. They cover duplicate Space
+definitions, duplicate per-object Coordinates in one Space, unresolved
+Components, Relation placement, and disagreement between `formatVersion` and
+the Specification declaration. Duplicate claims model the first multi-writer
+conflict baseline; they are reported rather than silently merged.
+
+### Coordinate Extension Draft Examples
+
+Coordinate draft `0.1.0` fixtures are stored in
+`examples/coordinate-draft/`. They cover:
+
+- partial Entity and Event Coordinates;
+- multiple Dataset-local Spaces on one object;
+- opaque exact Space and Component IDs containing `/` and `~`;
+- exact `specVersion` bootstrap without Specification;
+- a matching Specification declaration; and
+- explicit external Component bindings for OGC CRS84; and
+- an atomic migration output corresponding to the frozen prototype external
+  reference fixture, with no inferred external Component bindings.
+
+Invalid draft fixtures are stored in
+`examples/invalid/extensions/coordinate-draft/`. They cover bootstrap and
+placement errors, whitespace-only Space IDs, duplicate IDs and bindings,
+unresolved references, invalid bounds and values, Relation placement, and
+missing or conflicting Specification declarations.
+
 Each invalid example should:
 
 - be valid JSON unless JSON syntax itself is the behavior under test
@@ -82,11 +148,17 @@ Each invalid example should:
 
 ## Schema Validation
 
-The draft History schema is located at `schemas/extensions/history.schema.json`.
+The History schema is located at `schemas/extensions/history.schema.json`.
+The Coordinate draft schema is located at
+`schemas/extensions/coordinate-draft.schema.json`.
 
 It validates the value stored at `extensions.history`, not an entire Event or Dataset. To validate a History example that contains this property, a test harness should extract the `extensions.history` value from the containing Core Object.
 
-Schema validation covers structural constraints only. IANA Time Zone resolution, daylight-saving ambiguity, Gregorian date validity for a particular month and year, cross-Object `temporalOrder`, and other semantic rules require additional validation.
+Schema validation covers structural constraints only. IANA Time Zone
+resolution, daylight-saving ambiguity, Gregorian date validity for a
+particular month and year, cross-Object `temporalOrder`, Coordinate reference
+resolution, uniqueness, and numeric constraint relationships require
+additional validation.
 
 Schema success does not override the written specification.
 

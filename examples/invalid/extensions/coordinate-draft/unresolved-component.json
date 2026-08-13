@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "entities": [
+    {
+      "id": "entity-a",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "diagram",
+              "values": {
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "events": [],
+  "relations": [],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.coordinate": {
+      "specVersion": "0.1.0",
+      "spaces": [
+        {
+          "id": "diagram",
+          "components": {
+            "x": {},
+            "y": {}
+          }
+        }
+      ]
+    }
+  }
+}

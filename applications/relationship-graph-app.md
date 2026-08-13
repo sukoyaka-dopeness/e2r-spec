@@ -43,10 +43,12 @@ The MVP should support:
 - saving user coordinates when the user intentionally saves them.
 
 The application should preserve unrelated data and unknown Extensions when
-saving. Layout algorithms are implementation details and are outside the
-scope of the E2R specification.
+saving. Automatically generated layout remains Derived application data. A
+user coordinate becomes Owned Dataset data only when the user intentionally
+saves it under the supported coordinate responsibility. The layout algorithm
+itself remains an implementation detail outside the E2R specification.
 
-Automatic layout fills only missing coordinates. Stored user coordinates take
+Automatic layout fills only missing coordinates. Stored Owned coordinates take
 priority, and opening a Dataset must not modify it merely because automatic
 layout was used.
 

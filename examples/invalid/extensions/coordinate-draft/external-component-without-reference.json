@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [],
+  "relations": [],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.coordinate": {
+      "specVersion": "0.1.0",
+      "spaces": [
+        {
+          "id": "geographic",
+          "components": {
+            "longitude": {
+              "externalComponent": "Lon"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

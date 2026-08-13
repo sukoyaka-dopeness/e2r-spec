@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [],
+  "relations": [],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.coordinate": {
+      "specVersion": "0.1.0",
+      "spaces": [
+        {
+          "id": "geographic",
+          "externalReference": {
+            "authority": "example",
+            "identifier": "example-coordinate-system"
+          },
+          "components": {
+            "first": {
+              "externalComponent": "axis-a"
+            },
+            "second": {
+              "externalComponent": "axis-a"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

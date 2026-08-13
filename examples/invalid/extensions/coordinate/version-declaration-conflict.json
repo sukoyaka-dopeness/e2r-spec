@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [],
+  "relations": [],
+  "extensions": {
+    "experimental.github.sukoyaka-dopeness.coordinate": {
+      "formatVersion": "0.1.0",
+      "spaces": []
+    },
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "experimental.github.sukoyaka-dopeness.coordinate",
+          "version": "9.0.0"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "entities": [
+    {
+      "id": "entity-tokyo-station",
+      "name": "Tokyo Station",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "wgs84-longitude-latitude",
+              "values": {
+                "longitude": 139.7671,
+                "latitude": 35.6812
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "events": [],
+  "relations": [],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.coordinate": {
+      "specVersion": "0.1.0",
+      "spaces": [
+        {
+          "id": "wgs84-longitude-latitude",
+          "name": "WGS 84 longitude and latitude",
+          "kind": "geographic-2d",
+          "externalReference": {
+            "authority": "OGC",
+            "identifier": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+          },
+          "components": {
+            "longitude": {
+              "externalComponent": "Lon",
+              "unit": "degree",
+              "positiveDirection": "east",
+              "minimum": -180,
+              "maximum": 180,
+              "period": 360
+            },
+            "latitude": {
+              "externalComponent": "Lat",
+              "unit": "degree",
+              "positiveDirection": "north",
+              "minimum": -90,
+              "maximum": 90
+            }
+          }
+        }
+      ]
+    }
+  }
+}

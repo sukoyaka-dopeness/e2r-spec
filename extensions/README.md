@@ -7,8 +7,8 @@ The normative Stable Extension registry is maintained in
 
 The currently registered Stable Extensions are:
 
-- [Metadata Extension](metadata-extension.md) (`metadata`)
-- [History Extension](history-extension.md) (`history`)
+- [Metadata Extension](metadata-extension.md) (`metadata`, version `1.0.0`)
+- [History Extension](history-extension.md) (`history`, version `1.0.0`)
 
 The existence of an Extension document does not by itself make an Extension
 Stable.
@@ -18,10 +18,15 @@ Stable.
 The following Extensions have design documents or proposals but are not
 registered as Stable:
 
-- [Coordinate Extension](coordinate-extension.md)
+- [Coordinate Extension Draft](coordinate-extension-draft.md)
+  (`draft.github.sukoyaka-dopeness.coordinate`, draft `0.1.0`)
+- [Coordinate Extension Prototype](coordinate-extension.md)
+  (`experimental.github.sukoyaka-dopeness.coordinate`, frozen prototype
+  `0.1.0`; retained as the migration source and interoperability baseline)
 - [Layout Extension](layout-extension.md)
 - [Dictionary Extension](dictionary-extension.md)
 - [Specification Extension](specification-extension.md)
+  (`draft.github.sukoyaka-dopeness.specification`, draft `0.1.0`)
 
 ## Future Candidate Extensions
 

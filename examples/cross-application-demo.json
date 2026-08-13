@@ -1,0 +1,287 @@
+{
+  "version": "1.0",
+  "entities": [
+    {
+      "id": "entity-lighthouse",
+      "name": "Harbor Light",
+      "description": "A lighthouse being restored for continued community use.",
+      "extensions": {
+        "experimental.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "linkscape-graph",
+              "values": {
+                "x": 80,
+                "y": 156
+              }
+            },
+            {
+              "spaceId": "harbor-site-plan",
+              "values": {
+                "east": 14.5,
+                "north": 82
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-restoration-team",
+      "name": "Restoration Team",
+      "description": "The group carrying out the restoration work.",
+      "extensions": {
+        "experimental.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "linkscape-graph",
+              "values": {
+                "x": 335,
+                "y": 156
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-community",
+      "name": "Harbor Community",
+      "description": "Residents and supporters connected with the harbor.",
+      "extensions": {
+        "experimental.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "linkscape-graph",
+              "values": {
+                "x": 592,
+                "y": 156
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-beacon-system",
+      "name": "Beacon System",
+      "description": "The lighting and monitoring equipment inside the lighthouse.",
+      "extensions": {
+        "experimental.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "linkscape-graph",
+              "values": {
+                "x": 730,
+                "y": 156
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "event-survey",
+      "name": "Initial survey",
+      "description": "The restoration team documented the condition of the lighthouse.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 2026,
+            "month": 3
+          }
+        }
+      }
+    },
+    {
+      "id": "event-restoration-start",
+      "name": "Restoration begins",
+      "description": "Work began on the lighthouse and beacon system.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 2026,
+            "month": 4,
+            "day": 12
+          }
+        },
+        "experimental.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "linkscape-graph",
+              "values": {
+                "y": 320
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "event-light-returns",
+      "name": "Harbor light returns",
+      "description": "The restored light was switched on for the community.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 2026,
+            "month": 8,
+            "day": 10,
+            "hour": 19,
+            "minute": 30,
+            "timeZone": "Asia/Tokyo",
+            "offset": "+09:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "event-celebration-planning",
+      "name": "Celebration planning",
+      "description": "The date of the community celebration has not yet been decided."
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation-survey-team",
+      "name": "surveyed by",
+      "sourceId": "event-survey",
+      "targetId": "entity-restoration-team"
+    },
+    {
+      "id": "relation-survey-lighthouse",
+      "name": "surveyed place",
+      "sourceId": "event-survey",
+      "targetId": "entity-lighthouse"
+    },
+    {
+      "id": "relation-start-team",
+      "name": "carried out by",
+      "sourceId": "event-restoration-start",
+      "targetId": "entity-restoration-team"
+    },
+    {
+      "id": "relation-start-beacon",
+      "name": "involved system",
+      "sourceId": "event-restoration-start",
+      "targetId": "entity-beacon-system"
+    },
+    {
+      "id": "relation-return-community",
+      "name": "shared with",
+      "sourceId": "event-light-returns",
+      "targetId": "entity-community"
+    },
+    {
+      "id": "relation-return-lighthouse",
+      "name": "occurred at",
+      "sourceId": "event-light-returns",
+      "targetId": "entity-lighthouse"
+    },
+    {
+      "id": "relation-planning-community",
+      "name": "planned by",
+      "sourceId": "event-celebration-planning",
+      "targetId": "entity-community"
+    },
+    {
+      "id": "relation-team-lighthouse",
+      "name": "restores",
+      "description": "A human-readable Core label, not a standardized semantic type.",
+      "sourceId": "entity-restoration-team",
+      "targetId": "entity-lighthouse"
+    },
+    {
+      "id": "relation-team-community-coordination",
+      "name": "coordinates with",
+      "sourceId": "entity-restoration-team",
+      "targetId": "entity-community"
+    },
+    {
+      "id": "relation-team-community-updates",
+      "name": "shares updates with",
+      "sourceId": "entity-restoration-team",
+      "targetId": "entity-community"
+    },
+    {
+      "id": "relation-community-lighthouse",
+      "name": "supports",
+      "sourceId": "entity-community",
+      "targetId": "entity-lighthouse"
+    },
+    {
+      "id": "relation-beacon-self-monitoring",
+      "name": "self-monitoring loop",
+      "description": "A self-Relation used to demonstrate that Core permits identical source and target IDs.",
+      "sourceId": "entity-beacon-system",
+      "targetId": "entity-beacon-system"
+    },
+    {
+      "id": "relation-beacon-self-calibration",
+      "name": "self-calibration loop",
+      "description": "A second self-Relation used to demonstrate parallel self-Relation routing.",
+      "sourceId": "entity-beacon-system",
+      "targetId": "entity-beacon-system"
+    }
+  ],
+  "extensions": {
+    "metadata": {
+      "datasetId": "example-cross-application-harbor-light",
+      "title": "Harbor Light Restoration"
+    },
+    "experimental.github.sukoyaka-dopeness.coordinate": {
+      "formatVersion": "0.1.0",
+      "spaces": [
+        {
+          "id": "linkscape-graph",
+          "name": "Linkscape graph coordinates",
+          "kind": "cartesian-2d",
+          "components": {
+            "x": {
+              "unit": "linkscape-user-unit",
+              "positiveDirection": "display-right"
+            },
+            "y": {
+              "unit": "linkscape-user-unit",
+              "positiveDirection": "display-down"
+            }
+          }
+        },
+        {
+          "id": "harbor-site-plan",
+          "name": "Harbor site plan",
+          "kind": "cartesian-2d",
+          "components": {
+            "east": {
+              "unit": "metre",
+              "positiveDirection": "east"
+            },
+            "north": {
+              "unit": "metre",
+              "positiveDirection": "north"
+            }
+          }
+        }
+      ]
+    },
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "metadata",
+          "version": "1.0.0"
+        },
+        {
+          "extension": "history",
+          "version": "1.0.0"
+        },
+        {
+          "extension": "experimental.github.sukoyaka-dopeness.coordinate",
+          "version": "0.1.0"
+        }
+      ]
+    }
+  }
+}

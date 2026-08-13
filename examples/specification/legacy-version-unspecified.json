@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [
+    {
+      "id": "event-legacy",
+      "name": "Legacy declaration-free event",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 2026
+          }
+        }
+      }
+    }
+  ],
+  "relations": []
+}

@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [],
+  "relations": [],
+  "extensions": {
+    "vendor.example.source": {
+      "value": true
+    },
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "vendor.example.source",
+          "version": "1.0.0"
+        }
+      ],
+      "definitions": [
+        {
+          "extension": "vendor.example.source",
+          "version": "1.0.0",
+          "requires": [
+            {
+              "target": {
+                "extension": "vendor.example.target"
+              },
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

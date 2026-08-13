@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [],
+  "relations": [],
+  "extensions": {
+    "metadata": {
+      "title": "Unsupported Specification Extension bootstrap"
+    },
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "9.0.0",
+      "uses": [
+        {
+          "extension": "metadata",
+          "version": "1.0.0"
+        }
+      ]
+    }
+  }
+}

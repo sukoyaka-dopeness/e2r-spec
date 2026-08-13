@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [],
+  "relations": [],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.specification": {
+      "uses": []
+    }
+  }
+}

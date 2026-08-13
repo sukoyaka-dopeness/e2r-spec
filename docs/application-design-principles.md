@@ -105,18 +105,48 @@ Applications SHOULD NOT introduce additional semantics into automatically genera
 
 ---
 
-# Derived Structures
+# Derived and Owned Data
 
-Applications may maintain derived or cached structures.
+Applications may calculate information from a Dataset without making that
+information part of the Dataset.
 
-Examples include:
+For this guidance:
 
-- search indexes
-- graph layouts
-- timeline ordering
-- rendering caches
+- **Derived data** is a recomputable result that the Dataset has not
+  intentionally adopted as stored content.
+- **Owned data** is content that has been intentionally authored, imported, or
+  adopted into the Dataset under the Core or an appropriate Extension.
 
-Such structures should not be required to interpret the dataset itself.
+Owned refers to responsibility for stored Dataset content, not legal ownership
+or the publisher of an Extension.
+
+Examples of Derived data include:
+
+- search indexes;
+- automatically generated graph positions or routes;
+- temporary timeline sorting;
+- rendering caches; and
+- preview conversions.
+
+Derived data SHOULD NOT:
+
+- be written merely because a Dataset was opened or displayed;
+- be required to interpret the Dataset itself;
+- silently replace an existing Owned value; or
+- be treated as authoritative after its dependencies change.
+
+A generated result becomes Owned only through an intentional application
+operation that adopts it as Dataset content. The adopted value must use the
+Core or an Extension whose responsibility matches the information. Saving a
+cache in an arbitrary field does not make it interoperable or Owned.
+
+Once adopted, an Owned value takes priority over later automatic generation for
+the same responsibility until an intentional edit, deletion, or regeneration
+operation replaces it.
+
+Temporary zoom, pan, selection, modal, scroll, and similar Application View
+State remain outside the Dataset even when an application stores them in a
+local session or workspace.
 
 ---
 
@@ -229,18 +259,19 @@ Applications SHOULD NOT infer or introduce additional semantics unless explicitl
 
 ---
 
-## Derived Structures
+## Applying the Derived and Owned Boundary
 
-Applications may create internal structures derived from datasets.
+Search indexes, rendering caches, and temporary sorting normally remain
+Derived implementation details.
 
-Examples include:
+Automatically generated graph geometry is also Derived by default. If a user
+explicitly adopts selected coordinates or layout decisions and an appropriate
+Extension represents them, those selected values may become Owned Dataset
+content. The generation algorithm and unadopted alternatives remain
+application details.
 
-- search indexes
-- graph layouts
-- timeline ordering
-- rendering caches
-
-Derived structures are implementation details and are not part of the E2R dataset.
+Persistence alone does not make data interoperable. Applications should keep
+local caches and session state separate from intentionally adopted E2R data.
 
 ## Interoperability over Workflow
 

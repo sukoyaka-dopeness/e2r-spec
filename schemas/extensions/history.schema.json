@@ -50,7 +50,7 @@
           "type": "integer",
           "minimum": 0,
           "maximum": 59,
-          "description": "Second in Civil Time. Leap seconds are outside History Extension v1."
+          "description": "Second in Civil Time. Leap seconds are outside History Extension version 1.0.0."
         },
         "timeZone": {
           "type": "string",

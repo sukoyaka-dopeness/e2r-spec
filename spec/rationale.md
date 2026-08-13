@@ -179,7 +179,7 @@ Neither value is sufficient for every purpose on its own:
 - a Time Zone ID may resolve differently after corrections to the IANA Time Zone Database
 - some local times are ambiguous unless the selected offset is also known
 
-Recording both makes the interpretation reproducible without requiring History Extension v1 to store an IANA database version. If later rules disagree with the stored pair, preserving and reporting the disagreement is safer than silently rewriting historical data.
+Recording both makes the interpretation reproducible without requiring History Extension version `1.0.0` to store an IANA database version. If later rules disagree with the stored pair, preserving and reporting the disagreement is safer than silently rewriting historical data.
 
 Time-zone abbreviations are not used because abbreviations such as `CST` can refer to different zones and offsets.
 
@@ -198,9 +198,9 @@ These operations produce different data. An application cannot infer the user's 
 
 ---
 
-# Why History Extension v1 Uses the Proleptic Gregorian Calendar
+# Why History Extension Version `1.0.0` Uses the Proleptic Gregorian Calendar
 
-Interoperable numeric date fields require one deterministic calendar model. History Extension v1 therefore applies Gregorian rules consistently, including to years before the historical adoption of the Gregorian calendar.
+Interoperable numeric date fields require one deterministic calendar model. History Extension version `1.0.0` therefore applies Gregorian rules consistently, including to years before the historical adoption of the Gregorian calendar.
 
 This choice does not claim that every source originally used the Gregorian calendar. It provides one exchange representation while leaving source-calendar identity, conversion provenance, Julian and lunisolar calendars, Japanese eras, and fictional calendars to a future Calendar Extension.
 
@@ -380,11 +380,17 @@ The History Extension does not standardize an allocation algorithm because seque
 
 `temporalOrder` is used only when the recorded temporal value and precision do not already establish the order. It cannot be used to reverse known chronological positions.
 
-## Why Display Order Is Separate
+## Why Non-Temporal Order Is Separate
 
-The same Events may reasonably appear in different orders in different views. One view may use chronology, another may emphasize a narrative path, and another may present a curated comparison.
+The same Events may reasonably be treated in different orders in different
+authorial contexts. One context may use chronology, another may emphasize a
+narrative path, and another may define a curated comparison.
 
-A view-specific order therefore does not belong in `temporalOrder`. A future presentation Extension may define a View-owned Event ID list, allowing each View to own an independent order without changing the Events' temporal data.
+A non-temporal authorial order therefore does not belong in `temporalOrder`. A
+future persisted authorial-context Extension may record an independent Event
+order without changing the Events' temporal data. Current research
+provisionally calls this responsibility Perspective; this rationale does not
+define its schema or register such an Extension.
 
 Temporary sorting, selection, panel state, scroll position, and similar application state remain outside the Dataset.
 
@@ -405,10 +411,14 @@ Future Extensions may complement this information with:
 
 - alternative calendar systems and conversion provenance
 - relative temporal relationships and constraints
-- interoperable timeline views and presentation order
+- persisted authorial contexts and non-temporal ordering
 
 Applications should treat these Extensions as complementary rather than competing.
 
-History data remains the temporal source. A Relative Time Extension may express relationships such as before, after, or between. A presentation Extension may arrange the same Events differently without changing their temporal meaning.
+History data remains the temporal source. A Relative Time Extension may
+express relationships such as before, after, or between. A persisted
+authorial-context Extension may record a different non-temporal order without
+changing the Events' temporal meaning. Presentation may change appearance but
+does not own that ordering.
 
 This layered design keeps individual Extensions small while allowing increasingly sophisticated temporal reasoning.

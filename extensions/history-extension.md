@@ -4,6 +4,8 @@
 
 The History Extension defines interoperable temporal information for E2R Core Objects.
 
+This document defines History Extension version `1.0.0`.
+
 It defines:
 
 - Civil Time expressed with explicit precision.
@@ -76,11 +78,11 @@ The History Extension does not store a derived UTC value as a second authoritati
 
 # Calendar Model
 
-History Extension v1 uses the proleptic Gregorian calendar.
+History Extension version `1.0.0` uses the proleptic Gregorian calendar.
 
-The Gregorian rules are applied consistently before and after the historical introduction of the Gregorian calendar. Source dates recorded in another calendar must be converted before being represented as History Extension v1 Civil Time.
+The Gregorian rules are applied consistently before and after the historical introduction of the Gregorian calendar. Source dates recorded in another calendar must be converted before being represented as History Extension version `1.0.0` Civil Time.
 
-Alternative source calendars, conversion provenance, Japanese calendar eras, Julian calendar dates, lunisolar calendars, and fictional calendars are outside History Extension v1.
+Alternative source calendars, conversion provenance, Japanese calendar eras, Julian calendar dates, lunisolar calendars, and fictional calendars are outside History Extension version `1.0.0`.
 
 ## Astronomical Year Numbering
 
@@ -146,7 +148,7 @@ The `time` object is the stable location for the primary temporal position of a 
 | `offset` | string | No | Numeric UTC offset in `+HH:MM` or `-HH:MM` form. |
 | `temporalOrder` | integer | No | Relative temporal order when recorded time cannot distinguish Objects. |
 
-Leap-second representation is outside History Extension v1.
+Leap-second representation is outside History Extension version `1.0.0`.
 
 ## Field Dependencies
 
@@ -226,7 +228,7 @@ The offset records the resolution used when the Time Object was created or edite
 
 At the time of creation or intentional time-zone editing, `offset` SHOULD agree with one of the offsets valid for `timeZone` at the recorded Civil Time.
 
-History Extension v1 records offsets to minute precision. Historical sub-minute offsets are outside its current scope.
+History Extension version `1.0.0` records offsets to minute precision. Historical sub-minute offsets are outside its current scope.
 
 ---
 
@@ -275,7 +277,7 @@ If a recorded `timeZone` and `offset` later disagree with the rules available to
 
 When an application must reproduce the UTC resolution originally recorded by the Dataset, the recorded numeric `offset` takes precedence over a later-derived offset.
 
-History Extension v1 does not require a Dataset to record the version of the IANA Time Zone Database used by an application.
+History Extension version `1.0.0` does not require a Dataset to record the version of the IANA Time Zone Database used by an application.
 
 ---
 
@@ -297,7 +299,9 @@ The integer itself has no meaning beyond relative comparison. Values need not be
 
 Applications MAY assign or regenerate `temporalOrder` values when they preserve the intended relative temporal order.
 
-Presentation order, narrative reveal order, layout order, and ordering within a custom Timeline View are not represented by `temporalOrder`.
+Display order, narrative reveal order, layout order, and ordering within a
+custom application Timeline visualization are not represented by
+`temporalOrder`.
 
 ---
 
@@ -483,7 +487,7 @@ Applications MUST NOT infer a date from `temporalOrder`.
 
 # Scope
 
-History Extension v1 intentionally does not define:
+History Extension version `1.0.0` intentionally does not define:
 
 - Alternative calendar systems.
 - Calendar conversion provenance.
@@ -494,7 +498,7 @@ History Extension v1 intentionally does not define:
 - Multiple candidate dates or competing hypotheses.
 - Historical periods represented as Era Entities.
 - Timeline presentation, layout, lanes, or navigation.
-- Custom Timeline View ordering.
+- Custom application Timeline visualization ordering.
 - User interface behavior.
 
 These concerns belong to applications or future Extensions.
@@ -503,7 +507,7 @@ These concerns belong to applications or future Extensions.
 
 Julian calendars, Japanese calendar eras, lunisolar calendars, and fictional calendars may be defined by a future Calendar Extension.
 
-History Extension v1 fields MUST NOT be reinterpreted with application-defined calendar rules.
+History Extension version `1.0.0` fields MUST NOT be reinterpreted with application-defined calendar rules.
 
 ## Relative Time
 
@@ -511,11 +515,18 @@ Relative temporal information such as before, after, or between describes relati
 
 It may be defined by a future Relative Time Extension.
 
-## Timeline Presentation
+## Timeline Display and Authorial Ordering
 
 Application-specific display order MUST NOT be stored in `temporalOrder`.
 
-A future interoperable presentation Extension may define View-owned ordering such as an `eventOrder` list. Application-local selection, panel state, temporary sorting, and scroll position belong outside the E2R Dataset.
+A future interoperable persisted authorial-context Extension may define an
+independent Event order. Current research provisionally calls this
+responsibility Perspective; this specification does not define its schema or
+register such an Extension.
+
+Presentation appearance, layout, and non-temporal authorial ordering remain
+separate responsibilities. Application-local selection, panel state, temporary
+sorting, and scroll position belong outside the E2R Dataset.
 
 ---
 

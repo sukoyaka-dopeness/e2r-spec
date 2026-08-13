@@ -23,7 +23,11 @@ When multiple Events have the same temporal value, precision, and comparison bas
 
 Applications may regenerate `temporalOrder` values provided the represented relative temporal order is preserved. They should not use `temporalOrder` to reverse chronological order that is already established by the recorded temporal fields.
 
-Custom presentation order is view-specific information and should not be stored in `temporalOrder`.
+A temporary custom display order is application state and should not be stored
+in `temporalOrder`. If a non-temporal authorial order is intentionally persisted
+for interoperability, it belongs to a future persisted authorial-context
+Extension, provisionally called Perspective, rather than History or
+Presentation.
 
 ---
 
@@ -236,19 +240,41 @@ When rewriting datasets, applications should preserve unrecognized Extension dat
 
 ---
 
-# Derived Data
+# Derived and Owned Data
 
-Applications may generate derived information that is not part of the dataset itself.
+Applications may generate information that remains outside the Dataset.
 
-Examples include:
+Derived data is recomputable information that has not been intentionally
+adopted as Dataset content. Examples include:
 
-- search indexes
-- graph layouts
-- rendering caches
-- embedding indexes
-- timeline caches
+- search indexes;
+- automatically generated graph positions or routes;
+- rendering caches;
+- embedding indexes;
+- preview values; and
+- temporary timeline sorting or caches.
 
-Derived data should not be required to interpret an E2R dataset.
+Opening, displaying, sorting, or automatically arranging a Dataset should not
+by itself persist Derived data. Derived data should not be required to interpret
+the Dataset and should not silently override intentionally stored values.
+
+An explicit save, import, or adoption workflow may turn selected generated
+values into Owned Dataset data when the Core or an appropriate Extension
+represents that responsibility. Applications should make this transition
+intentional and understandable to the user.
+
+For example, an automatically generated node position is Derived. A position
+the user explicitly chooses to save may become Owned coordinate data. This does
+not make the layout algorithm, zoom level, pan offset, selection, or rendering
+cache part of the Dataset.
+
+Once a value becomes Owned, later automatic generation should preserve it
+unless an intentional operation replaces or removes it. If its Extension is
+unknown to an application, the application should preserve it rather than
+regenerate data into the same responsibility.
+
+Persisting a value in an application-specific cache or arbitrary field does not
+make it an interoperable E2R value.
 
 ---
 

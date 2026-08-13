@@ -68,7 +68,7 @@ example paths must remain stable unless a separate migration updates their
 references and fixtures.
 
 An E2R-valid historical example demonstrates data structure, not the factual
-accuracy of its content. History Extension v1 uses the proleptic Gregorian
+accuracy of its content. History Extension version `1.0.0` uses the proleptic Gregorian
 calendar; examples must not add a duplicate application-defined calendar field.
 
 ## Near-term deliverables

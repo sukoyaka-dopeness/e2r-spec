@@ -1,6 +1,6 @@
 # Metadata Extension
 
-This document defines Metadata Extension v1.
+This document defines Metadata Extension version `1.0.0`.
 
 The Metadata Extension provides optional descriptive and identifying
 information about an E2R Dataset without expanding the Core.
@@ -85,7 +85,7 @@ offer an explicit operation to assign one.
 
 Creating a deliberately independent copy of a Dataset may assign a new
 `datasetId`. Branch, fork, lineage, and provenance semantics are outside
-Metadata Extension v1.
+Metadata Extension version `1.0.0`.
 
 Dataset identifiers and Core Object identifiers are separate namespaces. The
 same string may be used as a Dataset `datasetId` and as a Core Object `id`
@@ -150,7 +150,7 @@ belong to Applications rather than this Extension.
 
 # Scope
 
-Metadata Extension v1 defines only:
+Metadata Extension version `1.0.0` defines only:
 
 - `datasetId`
 - `title`

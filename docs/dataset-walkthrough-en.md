@@ -96,7 +96,7 @@ Add it to the Event's `extensions` object, not to the Dataset-level
 ```
 
 The fields present in `time` express the recorded precision. Omitted fields
-are unknown and must not be invented. History Extension v1 uses the proleptic
+are unknown and must not be invented. History Extension version `1.0.0` uses the proleptic
 Gregorian calendar; do not add a second application-defined calendar field.
 
 ## 6. Add Dataset Metadata

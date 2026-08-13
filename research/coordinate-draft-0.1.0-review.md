@@ -198,12 +198,11 @@ schema/semantic fixture suite pass as of 2026-08-13.
 
 Before migration execution or UI is enabled, Linkscape must be able to run the
 Draft-aware Validator implementation against the complete proposed target.
-Validator `0.2.0` has been prepared and locally verified as the release
-candidate containing that support, including package-content inspection and a
-clean tarball-install smoke test. Publication, tag creation, and post-release
-installation verification remain external release steps. Once the published
-dependency is available, Linkscape may add a pure atomic target projection
-that runs the readiness assessment, constructs the complete Draft target,
-validates it, and returns either the whole target or the original Dataset with
-a refusal. Opening, displaying, arranging, ordinary saving, and Export must
-not trigger migration.
+Validator `0.2.0` was published from tag `v0.2.0` through npm Trusted
+Publishing on 2026-08-13. Post-release verification confirmed npm `latest`, a
+clean public-package installation, CLI version output, and Coordinate Draft
+library diagnostics. Linkscape may now update its ordinary dependency and add
+a pure atomic target projection that runs the readiness assessment, constructs
+the complete Draft target, validates it, and returns either the whole target or
+the original Dataset with a refusal. Opening, displaying, arranging, ordinary
+saving, and Export must not trigger migration.

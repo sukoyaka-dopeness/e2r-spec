@@ -256,7 +256,7 @@ This session refined the concept to `referenceCode` because the value would supp
 The research document is:
 
 ```text
-research/human-readable-reference-code.md
+research/exploratory/human-readable-reference-code.md
 ```
 
 The current direction is:
@@ -291,7 +291,7 @@ The History Extension work in this session affected the following areas:
 - `package.json`
 - `package-lock.json`
 - `.gitignore`
-- `research/human-readable-reference-code.md`
+- `research/exploratory/human-readable-reference-code.md`
 
 ---
 

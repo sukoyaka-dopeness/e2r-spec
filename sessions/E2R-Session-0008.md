@@ -101,8 +101,8 @@ These decisions are expected to reduce future migration costs.
 
 Two new research documents were added.
 
-- research/historical-ecosystem.md
-- research/dataset-identity.md
+- research/exploratory/historical-ecosystem.md
+- research/exploratory/dataset-identity.md
 
 These documents record exploratory architectural ideas and are not part of the normative specification.
 

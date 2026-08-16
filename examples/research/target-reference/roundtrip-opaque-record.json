@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "entities": [
+    {
+      "id": "entity-alice",
+      "name": "Alice",
+      "extensions": {
+        "research.fixture.target-reference": {
+          "recordIdentity": {
+            "namespace": "research.fixture.names",
+            "localId": "name-1"
+          },
+          "opaqueValue": {
+            "text": "Alice",
+            "preserve": true
+          }
+        }
+      }
+    }
+  ],
+  "events": [],
+  "relations": [],
+  "extensions": {
+    "metadata": {
+      "datasetId": "target-reference-roundtrip-fixture",
+      "title": "Target reference opaque record round-trip fixture"
+    },
+    "research.fixture.target-reference": {
+      "fixtureStatus": "research-only",
+      "unknownTarget": {
+        "namespace": "future.example.records",
+        "kind": "record",
+        "localId": "R1"
+      },
+      "datasetTarget": {
+        "kind": "dataset",
+        "note": "Dataset-level target remains a research case"
+      },
+      "lifecycleCases": [
+        {
+          "case": "missing-after-delete",
+          "namespace": "research.fixture.names",
+          "localId": "name-deleted",
+          "mustNotReuse": true
+        },
+        {
+          "case": "replacement-without-redirect",
+          "oldLocalId": "name-old",
+          "newLocalId": "name-new"
+        },
+        {
+          "case": "split-without-selection",
+          "oldLocalId": "name-source",
+          "newLocalIds": ["name-part-a", "name-part-b"]
+        }
+      ]
+    }
+  }
+}

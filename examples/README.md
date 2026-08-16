@@ -17,10 +17,10 @@ JSON files directly under `examples/` are complete Dataset examples:
 - `cross-application-demo.json`
 
 `cross-application-demo.json` is a reusable workflow example for
-NarrativeLine and Linkscape. It includes Metadata, mixed History precision,
+NarrativeLine and LiaisonScape. It includes Metadata, mixed History precision,
 Event-to-Entity Relations, parallel Entity Relations, multiple self-Relations,
-and experimental Coordinate prototype `0.1.0`. Linkscape interprets the
-`linkscape-graph` Entity positions. NarrativeLine independently displays
+and experimental Coordinate prototype `0.1.0`. LiaisonScape interprets the
+`liaisonscape-graph` Entity positions. NarrativeLine independently displays
 Dataset-defined Entity/Event Coordinates, including a partial Event value and
 an Entity with multiple selectable Spaces.
 

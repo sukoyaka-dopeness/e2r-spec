@@ -9,7 +9,7 @@
         "experimental.github.sukoyaka-dopeness.coordinate": {
           "coordinates": [
             {
-              "spaceId": "linkscape-graph",
+              "spaceId": "liaisonscape-graph",
               "values": {
                 "x": 80,
                 "y": 156
@@ -34,7 +34,7 @@
         "experimental.github.sukoyaka-dopeness.coordinate": {
           "coordinates": [
             {
-              "spaceId": "linkscape-graph",
+              "spaceId": "liaisonscape-graph",
               "values": {
                 "x": 335,
                 "y": 156
@@ -52,7 +52,7 @@
         "experimental.github.sukoyaka-dopeness.coordinate": {
           "coordinates": [
             {
-              "spaceId": "linkscape-graph",
+              "spaceId": "liaisonscape-graph",
               "values": {
                 "x": 592,
                 "y": 156
@@ -70,7 +70,7 @@
         "experimental.github.sukoyaka-dopeness.coordinate": {
           "coordinates": [
             {
-              "spaceId": "linkscape-graph",
+              "spaceId": "liaisonscape-graph",
               "values": {
                 "x": 730,
                 "y": 156
@@ -110,7 +110,7 @@
         "experimental.github.sukoyaka-dopeness.coordinate": {
           "coordinates": [
             {
-              "spaceId": "linkscape-graph",
+              "spaceId": "liaisonscape-graph",
               "values": {
                 "y": 320
               }
@@ -235,16 +235,16 @@
       "formatVersion": "0.1.0",
       "spaces": [
         {
-          "id": "linkscape-graph",
-          "name": "Linkscape graph coordinates",
+          "id": "liaisonscape-graph",
+          "name": "LiaisonScape graph coordinates",
           "kind": "cartesian-2d",
           "components": {
             "x": {
-              "unit": "linkscape-user-unit",
+              "unit": "liaisonscape-user-unit",
               "positiveDirection": "display-right"
             },
             "y": {
-              "unit": "linkscape-user-unit",
+              "unit": "liaisonscape-user-unit",
               "positiveDirection": "display-down"
             }
           }

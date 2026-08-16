@@ -25,7 +25,7 @@ const originalOtherSpace = structuredClone(
 const narrativeWrite = updateObjectCoordinate(
   source,
   "entity-lighthouse",
-  "linkscape-graph",
+  "liaisonscape-graph",
   { x: 112, y: 156 },
 );
 assert.equal(narrativeWrite.status, "updated");
@@ -49,7 +49,7 @@ const narrativeRead = readObjectCoordinates(linkscapeWrite, lighthouse);
 assert.equal(narrativeRead.status, "available");
 assert.deepEqual(
   narrativeRead.coordinates
-    .find(({ spaceId }) => spaceId === "linkscape-graph")
+    .find(({ spaceId }) => spaceId === "liaisonscape-graph")
     .values.map(({ id, value }) => ({ id, value })),
   [{ id: "x", value: 112 }, { id: "y", value: 204 }],
 );

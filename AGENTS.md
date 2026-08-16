@@ -80,10 +80,30 @@ relevant specification/schema/example validation. The normal E2R-SPEC gate is
 
 After committing, report the hash, subject, scope, verification results,
 worktree status, and whether the commit remains unpushed. Preserve unrelated
-dirty work. Do not use `git add .`, `git add -A`, `git commit -a`,
-`git reset --hard`, `git clean`, broad restore or stash, rebase, squash, amend,
-history rewriting, or force push without explicit authorization. Push, release,
-tag, and package publication always require explicit authorization.
+dirty work.
+
+Do not use the following unless the user explicitly authorizes that exact
+operation:
+
+- `git add .`
+- `git add -A`
+- `git commit -a`
+- `git reset --hard`
+- `git clean`
+- broad `git restore`
+- broad or automatic `git stash`
+- rebase
+- squash
+- amend of an existing checkpoint
+- history rewriting
+- force push
+
+Prefer exact-path staging such as:
+
+`git add -- path/to/file1 path/to/file2`
+
+or precise hunk staging when required. Push, release, tag, and package
+publication always require explicit authorization.
 
 ## Completion Criteria
 

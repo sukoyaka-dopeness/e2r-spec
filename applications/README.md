@@ -113,10 +113,10 @@ Each document describes one possible application built on top of E2R.
 
 The list is intentionally open-ended, and additional applications may be added as the ecosystem grows.
 
-## Linkscape reference documents
+## LiaisonScape reference documents
 
-- [Linkscape application design](relationship-graph-app.md)
-- [Linkscape MVP acceptance criteria](linkscape-mvp-acceptance.md)
+- [LiaisonScape application design](relationship-graph-app.md)
+- [LiaisonScape MVP acceptance criteria](liaisonscape-mvp-acceptance.md)
 
 These documents describe application behavior and are not part of the
 normative E2R Core or Extension specifications.

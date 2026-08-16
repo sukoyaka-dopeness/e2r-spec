@@ -1,13 +1,13 @@
-# Linkscape MVP Acceptance Criteria
+# LiaisonScape MVP Acceptance Criteria
 
 This document defines application-level acceptance criteria for the future
-Linkscape MVP. It is not part of the E2R Core or any Extension specification.
-The criteria can be implemented as automated tests after the `e2r-linkscape`
+LiaisonScape MVP. It is not part of the E2R Core or any Extension specification.
+The criteria can be implemented as automated tests after the `e2r-liaison-scape`
 repository is created.
 
 ## MVP boundary
 
-Linkscape is Entity-first. The MVP is a graph viewer and light editor for
+LiaisonScape is Entity-first. The MVP is a graph viewer and light editor for
 Entity relationships. NarrativeLine remains the primary application for Event
 editing and timeline presentation.
 
@@ -30,24 +30,24 @@ Relation labels, graph clustering, or a standardized Layout Extension.
 ### A1. Valid minimal Dataset
 
 Given a valid Dataset with empty `entities`, `events`, and `relations` arrays,
-Linkscape opens it without creating Core objects or coordinates in the Dataset.
+LiaisonScape opens it without creating Core objects or coordinates in the Dataset.
 
 ### A2. Entity and Relation graph
 
 Given a Dataset containing Entities and Relations with resolvable endpoints,
-Linkscape displays each supported Entity as a node and each Relation as an
+LiaisonScape displays each supported Entity as a node and each Relation as an
 edge. A Relation is not displayed as a node.
 
 ### A3. Event endpoints
 
-If a Relation has an Event endpoint, Linkscape must not treat that endpoint as
+If a Relation has an Event endpoint, LiaisonScape must not treat that endpoint as
 an Entity. The MVP may omit Event nodes from the graph or show them as an
 explicitly unsupported object, but it must not silently convert them into
 Entities.
 
 ### A4. Invalid input
 
-Linkscape should distinguish a Core validation error from an unsupported
+LiaisonScape should distinguish a Core validation error from an unsupported
 application feature. It should explain that a Dataset is invalid when Core
 rules fail and should preserve the original input when it cannot open it.
 
@@ -90,12 +90,12 @@ valid Core graph edge. The Core permits only Entity or Event endpoints.
 
 ### A11. Stored coordinate priority
 
-If a supported coordinate value exists for an object, Linkscape uses it as the
+If a supported coordinate value exists for an object, LiaisonScape uses it as the
 initial position and does not replace it with an automatic layout.
 
 ### A12. Missing coordinate fallback
 
-If a coordinate is missing, Linkscape may generate an automatic position for
+If a coordinate is missing, LiaisonScape may generate an automatic position for
 display. This generated position is temporary until the user intentionally
 saves it.
 
@@ -107,7 +107,7 @@ Dataset, its identifiers, or its Extensions.
 ### A14. Intentional save
 
 When the user explicitly saves moved nodes, only the coordinate data owned by
-Linkscape may be added or changed. Unrelated Core and Extension data must be
+LiaisonScape may be added or changed. Unrelated Core and Extension data must be
 preserved.
 
 ### A15. Deterministic fallback
@@ -122,11 +122,11 @@ an E2R interoperability requirement.
 ### A16. Core preservation
 
 Importing and saving a Dataset must preserve Core object IDs, names, unknown
-Core fields, and Relations that Linkscape does not edit.
+Core fields, and Relations that LiaisonScape does not edit.
 
 ### A17. Extension preservation
 
-Recognized Extensions may be edited only when Linkscape explicitly supports
+Recognized Extensions may be edited only when LiaisonScape explicitly supports
 them. Unknown Extensions should survive an import-save-export round trip.
 
 ### A18. No view-state serialization
@@ -137,9 +137,9 @@ it must remain distinct from the interoperable Dataset.
 
 ### A19. Validator integration
 
-Before export, Linkscape should be able to invoke the shared Validator or a
+Before export, LiaisonScape should be able to invoke the shared Validator or a
 compatible validation layer. Validation errors should be shown separately from
-unsupported Linkscape features. Validation does not repair the Dataset or
+unsupported LiaisonScape features. Validation does not repair the Dataset or
 guarantee the truth of its content.
 
 ## Suggested fixture matrix
@@ -161,7 +161,7 @@ small set of application fixtures:
 | Dataset with duplicate IDs or unresolved endpoints | Reports Core validation failure and does not silently repair it |
 
 The fixture describing an Event relation is intentionally left to the MVP
-implementation: Linkscape may show supported Event endpoints later, but it
+implementation: LiaisonScape may show supported Event endpoints later, but it
 must preserve the Event and Relation data even when the initial Entity-first
 view does not render them as nodes.
 

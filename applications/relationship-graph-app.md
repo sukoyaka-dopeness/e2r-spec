@@ -1,10 +1,10 @@
-# Linkscape
+# LiaisonScape
 
-Repository: e2r-linkscape
+Repository: e2r-liaison-scape
 
 ## Purpose
 
-Linkscape is a reference application for exploring and editing Entity
+LiaisonScape is a relationship explorer and reference application for exploring and editing Entity
 relationships in E2R Datasets. It demonstrates practical use of the E2R
 Relation model while remaining independent of application-specific semantics.
 NarrativeLine remains the primary application for Event editing and timeline
@@ -12,7 +12,7 @@ presentation.
 
 ## Design goals
 
-Linkscape should:
+LiaisonScape should:
 
 - visualize Entity nodes and Relations;
 - support a small, understandable graph-editing workflow;
@@ -25,10 +25,10 @@ Linkscape should:
 The initial MVP is Entity-first. It imports a Dataset, displays Entity nodes
 and Relation edges, and provides basic navigation and Entity inspection.
 Event nodes and Event editing may be considered later, but are outside the
-initial MVP so that Linkscape does not duplicate NarrativeLine.
+initial MVP so that LiaisonScape does not duplicate NarrativeLine.
 
 Relation endpoints remain subject to the Core rule: they may reference an
-Entity or Event, but never another Relation. Linkscape must not present
+Entity or Event, but never another Relation. LiaisonScape must not present
 Relation-to-Relation connections as a Core capability.
 
 ## MVP
@@ -54,7 +54,7 @@ layout was used.
 
 ## Relation presentation
 
-Linkscape may show Relation direction from `sourceId` to `targetId`. The Core
+LiaisonScape may show Relation direction from `sourceId` to `targetId`. The Core
 does not define the semantic meaning of that direction, so arrows or labels
 must not imply meanings such as causality or ownership unless a supported
 Extension provides them.
@@ -64,7 +64,7 @@ display the graph using Core information only.
 
 ## Editing principles
 
-Linkscape is a graph editor rather than a generic JSON editor. It edits only
+LiaisonScape is a graph editor rather than a generic JSON editor. It edits only
 the information it understands and should avoid modifying unrelated portions
 of a Dataset. Unknown Extensions must be preserved whenever practical.
 
@@ -83,13 +83,13 @@ Possible future capabilities include:
 - Extension-specific visualization.
 
 Coordinate and Layout Extensions remain candidates for future
-standardization. Until Linkscape provides concrete interoperability
+standardization. Until LiaisonScape provides concrete interoperability
 requirements, application layout state and stored logical coordinates should
 remain conceptually separate.
 
 ## Reference role
 
-Linkscape can serve as a reference application for Relation-related
+LiaisonScape can serve as a reference application for Relation-related
 Extensions. Its purpose is to test whether the minimal Relation model remains
 sufficiently generic for graph-based applications while preserving
 interoperability with NarrativeLine and other E2R tools.

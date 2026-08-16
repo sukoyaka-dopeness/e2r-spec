@@ -1,0 +1,19 @@
+{
+  "fixtureStatus": "research-only",
+  "representationNotice": "Internal lifecycle/value notation; not an E2R Dataset or proposed payload",
+  "models": ["L1-immutable-expression-identity", "L2-mutable-with-explicit-snapshot"],
+  "cases": [
+    {"id": "cosmetic-metadata-edit", "nameId": "name-1", "beforeValue": "Alice", "afterValue": "Alice", "expected": "identity-preserved"},
+    {"id": "alice-to-bob-substantive-replacement", "nameId": "name-1", "beforeValue": "Alice", "afterValue": "Bob", "newNameId": "name-2", "interval": "interval-1"},
+    {"id": "language-or-script-change", "nameId": "name-1", "beforeLanguage": "en", "afterLanguage": "ja", "expected": "explicit-identity-policy"},
+    {"id": "old-and-new-applicability", "oldNameId": "name-1", "newNameId": "name-2", "oldInterval": "interval-1", "newInterval": "interval-2", "expected": "no-automatic-redirect"},
+    {"id": "explicit-l2-value-snapshot", "nameId": "name-1", "currentValue": "Bob", "snapshotId": "value-1", "snapshotValue": "Alice", "expected": "separate-value-level-datum"},
+    {"id": "unknown-missing-retired-replaced", "references": [
+      {"ownerNamespace": "future.example.names", "localId": "name-9", "expectedState": "unknown"},
+      {"ownerNamespace": "research.fixture.names", "localId": "name-missing", "expectedState": "missing"},
+      {"ownerNamespace": "research.fixture.names", "localId": "name-retired", "expectedState": "resolved"},
+      {"ownerNamespace": "research.fixture.names", "localId": "name-old", "replacementId": "name-new", "expectedState": "resolved"}
+    ]},
+    {"id": "later-claim-evidence", "nameId": "name-1", "laterRecords": ["claim-1", "evidence-1"], "expected": "explicit-enrichment"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "entity":"E1",
+  "expressions":[
+    {"id":"N-ja","text":"東京"},
+    {"id":"N-en","text":"Tokyo"},
+    {"id":"N-tr","text":"Tōkyō"}
+  ],
+  "exactDiscovery":{"東京":"E1","Tokyo":"E1","Tōkyō":"E1"},
+  "constraints":{"noRanking":true,"noPreference":true,"noGrouping":true}
+}

@@ -1,0 +1,12 @@
+{
+  "entity":"E1",
+  "expressions":[
+    {"id":"N-ja","text":"東京","language":"ja","script":"Jpan"},
+    {"id":"N-en","text":"Tokyo","language":"en","script":"Latn"},
+    {"id":"N-tr","text":"Tōkyō","language":"en","script":"Latn","kind":"transliteration"}
+  ],
+  "nonSubstantiveEdit":{"beforeId":"N-en","afterId":"N-en","intendedExpressionUnchanged":true},
+  "substantiveReplacement":{"old":"N-en","new":"N-en-2","retargetOldReferences":false},
+  "opaqueUnknownData":{"kind":"transliteration","preserve":true},
+  "constraints":{"noIdentityEquivalenceInference":true,"noGroupingInference":true,"namesUnawareRoundTrip":true}
+}

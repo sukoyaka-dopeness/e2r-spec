@@ -1,0 +1,78 @@
+{
+  "fixtureStatus": "research-only",
+  "representationNotice": "Internal comparison notation; not an E2R Dataset or proposed payload",
+  "profiles": [
+    {
+      "id": "profile-b-full",
+      "model": "B",
+      "understands": ["core", "names", "future-temporal-capability"]
+    },
+    {
+      "id": "profile-b-names-only",
+      "model": "B",
+      "understands": ["core", "names"]
+    },
+    {
+      "id": "profile-c-applicability-only",
+      "model": "C-candidate",
+      "understands": ["candidate-generic-applicability"]
+    }
+  ],
+  "cases": [
+    {
+      "id": "one-name-one-interval",
+      "nameReference": {"ownerNamespace": "research.fixture.names", "localId": "name-1"},
+      "entityReference": {"ownerNamespace": "core", "localId": "entity-1"},
+      "domainMeaning": "used-during",
+      "interval": "interval-1"
+    },
+    {
+      "id": "successive-names",
+      "records": [
+        {"nameReference": {"ownerNamespace": "research.fixture.names", "localId": "name-1"}, "interval": "interval-1"},
+        {"nameReference": {"ownerNamespace": "research.fixture.names", "localId": "name-2"}, "interval": "interval-2"}
+      ],
+      "entityReference": {"ownerNamespace": "core", "localId": "entity-1"},
+      "domainMeaning": "used-during"
+    },
+    {
+      "id": "overlapping-names",
+      "records": [
+        {"nameReference": {"ownerNamespace": "research.fixture.names", "localId": "name-1"}, "interval": "interval-overlap-a"},
+        {"nameReference": {"ownerNamespace": "research.fixture.names", "localId": "name-2"}, "interval": "interval-overlap-b"}
+      ],
+      "entityReference": {"ownerNamespace": "core", "localId": "entity-1"},
+      "expected": "coexistence-is-not-structural-error"
+    },
+    {
+      "id": "used-versus-valid",
+      "records": [
+        {"ownerNamespace": "research.fixture.names", "localId": "name-1", "domainMeaning": "used-during"},
+        {"ownerNamespace": "research.fixture.rules", "localId": "rule-1", "domainMeaning": "valid-during"}
+      ],
+      "interval": "interval-1",
+      "expected": "same-shape-does-not-prove-same-contract"
+    },
+    {
+      "id": "alice-to-bob-substantive-edit",
+      "nameReference": {"ownerNamespace": "research.fixture.names", "localId": "name-1"},
+      "beforeValue": "Alice",
+      "afterValue": "Bob",
+      "interval": "interval-1",
+      "expected": "requires-lifecycle-or-value-level-rule"
+    },
+    {
+      "id": "independent-unknown-and-missing",
+      "references": [
+        {"ownerNamespace": "future.example.names", "localId": "name-unknown", "expectedState": "unknown"},
+        {"ownerNamespace": "core", "localId": "entity-missing", "expectedState": "missing"}
+      ]
+    },
+    {
+      "id": "later-claim-evidence",
+      "nameReference": {"ownerNamespace": "research.fixture.names", "localId": "name-1"},
+      "laterRecords": ["claim-1", "evidence-1"],
+      "expected": "no-automatic-claim-wrapping"
+    }
+  ]
+}

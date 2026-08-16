@@ -1,0 +1,46 @@
+{
+  "fixtureStatus": "research-only",
+  "representationNotice": "Cross-domain evidence notation; not an E2R Dataset or proposed payload",
+  "domains": [
+    {
+      "id": "names",
+      "ownerNamespace": "research.fixture.names",
+      "predicate": "used-during",
+      "subject": {"localId": "name-1", "kind": "name-record"},
+      "target": {"ownerNamespace": "core", "localId": "entity-1", "kind": "entity"},
+      "interval": "interval-1"
+    },
+    {
+      "id": "rules",
+      "ownerNamespace": "research.fixture.rules",
+      "predicate": "valid-during",
+      "subject": {"localId": "rule-1", "kind": "rule-record"},
+      "target": {"ownerNamespace": "research.fixture.rule-contexts", "localId": "context-1", "kind": "rule-context"},
+      "interval": "interval-1"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "names-plus-temporal",
+      "canInterpret": ["names.used-during", "temporal.interval"],
+      "mustPreserve": ["rules.valid-during"]
+    },
+    {
+      "id": "names-only",
+      "canInterpret": ["names.used-during", "names.identity"],
+      "mustPreserve": ["temporal.interval", "rules.valid-during"]
+    },
+    {
+      "id": "candidate-applicability-only",
+      "canInterpret": ["target-and-interval-shape"],
+      "mustNotInfer": ["names.used-during=rules.valid-during"],
+      "mustPreserve": ["names.domain-meaning", "rules.domain-meaning"]
+    }
+  ],
+  "finding": {
+    "structuralReuse": true,
+    "semanticContractShared": false,
+    "semanticPartialSupportDemonstrated": false,
+    "modelCStatus": "deferred-evidence-gated"
+  }
+}

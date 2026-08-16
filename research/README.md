@@ -1,111 +1,45 @@
 # E2R Research
 
-This directory contains long-term research topics and experimental ideas related to E2R.
+Research documents are non-normative. They preserve exploration, decisions,
+evidence, and handoffs without changing the Core or officially published
+Extensions.
 
-These documents are intentionally separate from the Core specification.
+## Where to start
 
-A research topic may eventually evolve into:
+- `research-catalog.json` — machine-readable catalog, proposed paths, and
+  reorganization status.
+- `names/` — Names P1 and Grouping workstreams. Each has a `current/` entry
+  point, with decisions, evidence, deferred work, and historical handoffs
+  separated below it.
+- `history-vnext/` — History vNext research and evidence.
+- `source-citation/` — bounded Source/Citation research.
+- `exploratory/` — general exploratory research without a current workstream
+  entry point.
+- `tools/` — executable research harnesses and their tests. These remain in
+  place until test-discovery and reference impact are handled explicitly.
 
-- a Core feature
-- an Extension
-- an Application
-- a Design Pattern
+## Directory meanings
 
-However, research documents are exploratory and do not define any normative behavior.
+- `current/` contains the entry point for a workstream, not every current
+  decision.
+- `decisions/` contains accepted or proposed non-normative design records.
+- `evidence/` contains fixtures, evidence checkpoints, and preservation tests.
+- `deferred/` contains explicitly deferred work.
+- `historical-handoffs/` preserves prior session transfer documents. Historical
+  does not mean invalid; it means the document is no longer the current entry
+  point.
 
-## Purpose
+Accepted decisions and evidence remain usable references after a workstream
+closes. The current entry point and document status are separate axes.
 
-The goals of this directory are:
+## Authority boundary
 
-- Preserve ideas before they are mature enough to become specifications.
-- Explore future directions for E2R.
-- Record architectural and theoretical discussions.
-- Provide a place for experimental concepts.
+Research does not define normative Core or Extension behavior. Normative
+requirements are defined by `spec/` and the applicable Extension documents.
+Applications and Validators may provide implementation evidence, but research
+evidence does not by itself authorize a writer, migration, repair, or Stable
+registration.
 
-## Possible Research Areas
-
-- Self-describing specifications
-- Specification evolution
-- AI-assisted Extension design
-- Computational world models
-- Coarse-graining and abstraction
-- Metadata systems
-- Knowledge representation
-- Architecture modeling
-- LLM-oriented data structures
-
-Research documents may be reorganized, merged, or promoted into other parts of the repository as E2R evolves.
-
-# Research
-
-This directory contains exploratory ideas related to the future evolution of the E2R ecosystem.
-
-Unlike the Core specification and officially published Extensions, the documents in this directory are intentionally speculative.
-
-They are intended to preserve ideas, investigate possible future directions, and provide a place to discuss concepts before they become formal specifications.
-
-In many cases, these ideas may change significantly or never become part of the official specification.
-
----
-
-# Goals
-
-The Research directory exists to:
-
-- Preserve experimental ideas.
-- Record design discussions.
-- Explore future architectures.
-- Investigate AI-assisted specification design.
-- Explore computational models.
-- Separate stable specifications from ongoing research.
-
----
-
-# Relationship to the Specification
-
-The documents in this directory are **not normative**.
-
-Nothing in this directory should be interpreted as part of the E2R Core specification.
-
-Ideas may eventually become:
-
-- Core features
-- Extensions
-- Application designs
-- Best practices
-
-or remain purely experimental.
-
----
-
-# Current Research Topics
-
-Current research includes:
-
-- Computational World Models
-- Specification Evolution
-- AI-assisted Specification Design
-- Self-describing Specifications
-- Future Extension Architectures
-
----
-
-# Research Philosophy
-
-Research should prioritize:
-
-- Simplicity
-- Clear separation of responsibilities
-- Backward compatibility
-- AI interoperability
-- Long-term maintainability
-
-Exploration is encouraged, but experimental ideas should not increase the complexity of the Core specification.
-
----
-
-# Future
-
-As the E2R ecosystem grows, additional research topics may be added.
-
-The goal of this directory is to preserve ideas before they are forgotten while keeping the official specification stable and minimal.
+The physical reorganization is incremental. The Catalog records `path`,
+`movedFrom`, `proposedPath`, move batches, and reference impact. Do not move a
+later batch until the preceding navigation and validation checkpoint passes.

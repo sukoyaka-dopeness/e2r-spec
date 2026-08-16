@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/sukoyaka-dopeness/e2r-spec/main/schemas/extensions/names-draft.schema.json",
+  "title": "E2R Names Extension Draft 0.1.0",
+  "description": "Structural validation schema for the value of an E2R object-local draft.github.sukoyaka-dopeness.names extension.",
+  "$comment": "Dataset-wide recognized-ID uniqueness remains a separate validator responsibility. The normative requirements remain in extensions/names-extension.md.",
+  "type": "object",
+  "required": ["expressions"],
+  "properties": {
+    "expressions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/recognizedExpression" }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "recognizedExpression": {
+      "type": "object",
+      "required": ["id", "value"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "value": { "type": "string", "minLength": 1 },
+        "language": { "type": "string" },
+        "script": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  }
+}

@@ -4,9 +4,11 @@
   "private": true,
   "description": "Development tooling for the E2R specification.",
   "scripts": {
-    "validate": "npm run validate:history && npm run validate:coordinate-draft",
+    "validate": "npm run validate:history && npm run validate:coordinate-draft && npm run validate:names-draft && npm run validate:names-draft-ids",
     "validate:coordinate-draft": "node scripts/validate-coordinate-draft-schema.mjs",
     "validate:history": "node scripts/validate-history-schema.mjs",
+    "validate:names-draft": "node scripts/validate-names-draft-schema.mjs",
+    "validate:names-draft-ids": "node scripts/validate-names-draft-id-uniqueness.mjs",
     "validate:coordinate-interoperability": "node --experimental-strip-types --experimental-specifier-resolution=node scripts/validate-coordinate-interoperability.mjs"
   },
   "devDependencies": {

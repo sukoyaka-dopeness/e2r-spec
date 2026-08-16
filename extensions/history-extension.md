@@ -8,7 +8,7 @@ This document defines History Extension version `1.0.0`.
 
 It defines:
 
-- Civil Time expressed with explicit precision.
+- Civil Time expressed with explicit granularity.
 - Optional IANA Time Zone information.
 - The relationship between Civil Time and an Instant.
 - Temporal ordering when recorded time alone is insufficient.
@@ -24,7 +24,7 @@ The History Extension follows these principles:
 - Keep temporal representation separate from the Core.
 - Preserve the Civil Time in which an Event is historically understood.
 - Do not replace an authoritative Civil Time with a derived UTC value.
-- Preserve incomplete temporal information without inventing missing precision.
+- Preserve incomplete temporal information without inventing missing granularity.
 - Use IANA Time Zone IDs when a regional time zone is known.
 - Keep temporal order separate from application-specific display order.
 - Allow future temporal Extensions without replacing the Time Object.
@@ -66,11 +66,11 @@ Civil Time without Time Zone information does not identify a unique position on 
 
 An Instant is a unique position on the UTC time scale.
 
-A Civil Time can identify an Instant only when it has sufficient precision and includes the Time Zone and UTC offset information required to resolve it without ambiguity.
+A Civil Time can identify an Instant only when it has sufficient granularity and includes the Time Zone and UTC offset information required to resolve it without ambiguity.
 
-A Time Object with incomplete precision may correspond to an interval rather than a unique Instant. Applications MUST preserve the recorded precision when deriving or displaying another time representation.
+A Time Object with incomplete granularity may correspond to an interval rather than a unique Instant. Applications MUST preserve the recorded granularity when deriving or displaying another time representation.
 
-For example, a value recorded to minute precision represents that minute. An application MUST NOT add a zero second and claim that the source data had second precision.
+For example, a value recorded to minute granularity represents that minute. An application MUST NOT add a zero second and claim that the source data had second granularity.
 
 The History Extension does not store a derived UTC value as a second authoritative representation. The Time Object remains the Single Source of Truth.
 
@@ -152,7 +152,7 @@ Leap-second representation is outside History Extension version `1.0.0`.
 
 ## Field Dependencies
 
-Temporal fields MUST be contiguous from coarser precision to finer precision.
+Temporal fields MUST be contiguous from coarser granularity to finer granularity.
 
 - `month` requires `year`.
 - `day` requires `year` and `month`.
@@ -162,7 +162,7 @@ Temporal fields MUST be contiguous from coarser precision to finer precision.
 
 `timeZone` and `offset` MUST either both be present or both be absent.
 
-Time Zone information requires at least minute precision. Therefore, `timeZone` and `offset` require `year`, `month`, `day`, `hour`, and `minute`.
+Time Zone information requires at least minute granularity. Therefore, `timeZone` and `offset` require `year`, `month`, `day`, `hour`, and `minute`.
 
 A Time Object MUST contain at least `year` or `temporalOrder`.
 
@@ -170,11 +170,11 @@ Fields that are not known are omitted. Applications MUST NOT add missing fields 
 
 ---
 
-# Temporal Precision
+# Civil Time Granularity
 
-Temporal precision is determined by the most specific temporal field present.
+Civil Time granularity is determined by the most specific temporal field present.
 
-| Fields | Precision |
+| Fields | Civil Time Granularity |
 |--------|-----------|
 | `year` | year |
 | `year`, `month` | month |
@@ -183,11 +183,11 @@ Temporal precision is determined by the most specific temporal field present.
 | `year`, `month`, `day`, `hour`, `minute` | minute |
 | `year`, `month`, `day`, `hour`, `minute`, `second` | second |
 
-`timeZone`, `offset`, and `temporalOrder` do not increase temporal precision.
+`timeZone`, `offset`, and `temporalOrder` do not increase Civil Time granularity.
 
-No separate `precision` field is used.
+No separate granularity field is used.
 
-Applications MUST NOT display or serialize greater precision than is present in the Time Object unless the added precision is clearly identified as derived or user-supplied.
+Applications MUST NOT display or serialize greater granularity than is present in the Time Object unless the added granularity is clearly identified as derived or user-supplied.
 
 ---
 
@@ -228,7 +228,7 @@ The offset records the resolution used when the Time Object was created or edite
 
 At the time of creation or intentional time-zone editing, `offset` SHOULD agree with one of the offsets valid for `timeZone` at the recorded Civil Time.
 
-History Extension version `1.0.0` records offsets to minute precision. Historical sub-minute offsets are outside its current scope.
+History Extension version `1.0.0` records offsets to minute granularity. Historical sub-minute offsets are outside its current scope.
 
 ---
 
@@ -285,12 +285,12 @@ History Extension version `1.0.0` does not require a Dataset to record the versi
 
 ## `temporalOrder`
 
-`temporalOrder` records relative temporal order when the recorded temporal value and precision cannot otherwise distinguish Core Objects.
+`temporalOrder` records relative temporal order when the recorded temporal value and granularity cannot otherwise distinguish Core Objects.
 
 Typical uses include:
 
 - Ordering Events recorded at the same minute when one is known to occur first.
-- Ordering Events that share the same date and precision.
+- Ordering Events that share the same date and granularity.
 - Ordering multiple Events with unknown dates when their relative chronology is known.
 
 `temporalOrder` MUST NOT be used to reverse two distinct temporal values whose chronological order is already known.
@@ -316,9 +316,9 @@ Civil Time ordering preserves the stored local calendar date and clock value.
 The recommended comparison priority is:
 
 1. Known Civil Time before unknown Civil Time.
-2. Stored temporal fields from `year` through the recorded precision.
-3. Temporal precision, with coarser precision first when values share a prefix.
-4. `temporalOrder` when the Objects have the same temporal value, precision, and time-zone comparison basis.
+2. Stored temporal fields from `year` through the recorded granularity.
+3. Civil Time granularity, with coarser granularity first when values share a prefix.
+4. `temporalOrder` when the Objects have the same temporal value, granularity, and time-zone comparison basis.
 5. Core Object `id` as a deterministic fallback.
 
 Civil Time ordering does not convert values into the viewer's Time Zone.
@@ -336,8 +336,8 @@ Applications MUST NOT claim Instant ordering for a Time Object that cannot be re
 The recommended comparison priority for resolvable values is:
 
 1. Derived UTC temporal position or interval.
-2. Temporal precision.
-3. `temporalOrder` when the represented positions remain indistinguishable at their recorded precision.
+2. Civil Time granularity.
+3. `temporalOrder` when the represented positions remain indistinguishable at their recorded granularity.
 4. Core Object `id` as a deterministic fallback.
 
 When a view contains both resolvable and unresolvable values, a recommended default is:
@@ -346,7 +346,7 @@ When a view contains both resolvable and unresolvable values, a recommended defa
 2. Unresolvable values in Civil Time order.
 3. Objects without temporal fields, ordered by `temporalOrder` and then Core Object `id`.
 
-Applications MAY offer alternative predictable presentation policies, but MUST NOT invent missing Time Zones or temporal precision.
+Applications MAY offer alternative predictable presentation policies, but MUST NOT invent missing Time Zones or Civil Time granularity.
 
 ---
 
@@ -354,7 +354,7 @@ Applications MAY offer alternative predictable presentation policies, but MUST N
 
 ## Partial Civil Time
 
-Year precision:
+Year granularity:
 
 ```json
 {
@@ -362,7 +362,7 @@ Year precision:
 }
 ```
 
-Month precision:
+Month granularity:
 
 ```json
 {
@@ -371,7 +371,7 @@ Month precision:
 }
 ```
 
-Day precision:
+Day granularity:
 
 ```json
 {
@@ -381,7 +381,7 @@ Day precision:
 }
 ```
 
-Minute precision without a Time Zone:
+Minute granularity without a Time Zone:
 
 ```json
 {
@@ -568,7 +568,7 @@ Recommended behavior includes:
 - Reject or explain nonexistent daylight-saving times instead of silently shifting them.
 - Localize BCE and CE labels without changing the stored integer year.
 - Hide raw `temporalOrder` numbers from ordinary users.
-- Allow relative reordering only among Events whose temporal value, precision, and comparison basis do not otherwise establish an order.
+- Allow relative reordering only among Events whose temporal value, granularity, and comparison basis do not otherwise establish an order.
 - Prefer simple Earlier and Later controls before introducing drag-and-drop editing.
 
 Different applications may provide different workflows while exchanging the same History data.

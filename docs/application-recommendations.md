@@ -19,7 +19,7 @@ This document describes behaviors that are recommended because they improve usab
 
 Applications should present Events in a stable and predictable order.
 
-When multiple Events have the same temporal value, precision, and comparison basis, applications are encouraged to use the History Extension's `temporalOrder` field when it is present.
+When multiple Events have the same temporal value, granularity, and comparison basis, applications are encouraged to use the History Extension's `temporalOrder` field when it is present.
 
 Applications may regenerate `temporalOrder` values provided the represented relative temporal order is preserved. They should not use `temporalOrder` to reverse chronological order that is already established by the recorded temporal fields.
 
@@ -44,11 +44,11 @@ Alternative behaviors are permitted if they remain predictable to users.
 
 ---
 
-# Time Precision
+# Civil Time Granularity
 
-Applications should respect the precision recorded by the History Extension.
+Applications should respect the Civil Time granularity recorded by the History Extension.
 
-When displaying Events with different precisions, a recommended ordering is:
+When displaying Events with different granularities, a recommended ordering is:
 
 - year
 - month
@@ -57,7 +57,7 @@ When displaying Events with different precisions, a recommended ordering is:
 - minute
 - second
 
-Applications should avoid presenting higher-precision values that are not actually known.
+Applications should avoid presenting finer-granularity values that are not actually known.
 
 An omitted field should remain omitted. In particular, an application should not treat a date-only value as midnight or add zero-valued clock fields merely to use a date-time library.
 
@@ -94,7 +94,7 @@ Applications are encouraged to provide a read-only preview of an Event's recorde
 
 A preview is derived information. Opening it, changing its display Time Zone, or switching between preview representations should not modify the stored Time Object.
 
-Preview labels should identify the representation and Time Zone being shown. Applications should also make the recorded precision clear and should not display invented precision. A date-only value, for example, should not receive a UTC or user-zone clock preview by assuming midnight.
+Preview labels should identify the representation and Time Zone being shown. Applications should also make the recorded Civil Time granularity clear and should not display invented granularity. A date-only value, for example, should not receive a UTC or user-zone clock preview by assuming midnight.
 
 When the recorded information is insufficient to resolve an Instant, the application should explain that UTC and user-zone previews are unavailable rather than assigning a default Time Zone.
 

@@ -115,7 +115,7 @@ The History Extension uses a Time Object instead of a single date field.
 This design supports:
 
 - partial dates
-- structurally explicit precision
+- structurally explicit Civil Time granularity
 - local calendar and clock fields
 - optional time-zone resolution
 - future temporal extensions
@@ -124,9 +124,9 @@ without requiring incompatible changes to the overall data model.
 
 ---
 
-# Why Precision Is Explicit
+# Why Civil Time Granularity Is Explicit
 
-Temporal precision is represented by which Time Object fields are present rather than inferred from a formatted string or recorded in a second, potentially contradictory field.
+Civil Time granularity is represented by which Time Object fields are present rather than inferred from a formatted string or recorded in a second, potentially contradictory field.
 
 This avoids ambiguity and allows applications to distinguish between values such as:
 
@@ -163,7 +163,7 @@ In particular:
 
 For these reasons, the History Extension does not make a derived UTC timestamp a second authoritative value. The recorded Civil Time and, when present, its IANA Time Zone ID and numeric offset form one compound source of truth.
 
-Applications may derive UTC for comparison or preview when the recorded information is sufficient. They must preserve the original precision and must not invent missing fields merely to satisfy a date-time API.
+Applications may derive UTC for comparison or preview when the recorded information is sufficient. They must preserve the original Civil Time granularity and must not invent missing fields merely to satisfy a date-time API.
 
 ---
 
@@ -370,7 +370,7 @@ These are not part of the Core unless future interoperability requirements demon
 
 ## Why `temporalOrder` Is Part of the History Extension
 
-Recorded temporal fields do not always distinguish Events whose relative chronology is nevertheless known. Events may share the same date and precision, or their dates may be unknown while one is known to precede another.
+Recorded temporal fields do not always distinguish Events whose relative chronology is nevertheless known. Events may share the same date and granularity, or their dates may be unknown while one is known to precede another.
 
 The purpose of `temporalOrder` is to preserve that temporal fact across interoperable applications. Its name makes clear that it does not represent arbitrary presentation order.
 
@@ -378,7 +378,7 @@ The integer itself has no meaning beyond relative comparison. Applications may r
 
 The History Extension does not standardize an allocation algorithm because sequential numbers, sparse numbers, and rank-like strategies can all produce the same observable ordering. Standardizing an algorithm would constrain implementations without improving interoperability.
 
-`temporalOrder` is used only when the recorded temporal value and precision do not already establish the order. It cannot be used to reverse known chronological positions.
+`temporalOrder` is used only when the recorded temporal value and granularity do not already establish the order. It cannot be used to reverse known chronological positions.
 
 ## Why Non-Temporal Order Is Separate
 

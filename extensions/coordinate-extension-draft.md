@@ -527,6 +527,6 @@ Draft `0.1.0` does not define:
 
 Repository status: applications and the published Validator do not yet write
 this draft. The repository review in
-[`research/coordinate-draft-0.1.0-review.md`](../research/coordinate-draft-0.1.0-review.md)
+[`research/coordinate/decisions/coordinate-draft-0.1.0-review.md`](../research/coordinate/decisions/coordinate-draft-0.1.0-review.md)
 passed it to read-only Validator implementation evidence. Application adoption
 and writing remain deferred.

@@ -36,17 +36,17 @@ evolution decisions, then define a normative schema and explicit one-way
 migration.
 
 No Stable identifier is registered. See
-`../research/coordinate-maturity-and-identifier-decision.md` for the accepted
+`../research/coordinate/decisions/coordinate-maturity-and-identifier-decision.md` for the accepted
 non-normative decision record. The first draft-design input is recorded in
-`../research/coordinate-space-component-compatibility-decision.md`: IDs and
+`../research/coordinate/decisions/coordinate-space-component-compatibility-decision.md`: IDs and
 semantic descriptors use exact matching, names remain display-only, and safe
 writes require an explicit processor capability profile. The second design
 input is recorded in
-`../research/coordinate-external-reference-decision.md`: local definitions
+`../research/coordinate/decisions/coordinate-external-reference-decision.md`: local definitions
 remain self-contained and operationally authoritative, while future external
 Component bindings are explicit and fail closed when unresolved or
 conflicting. The third design input is recorded in
-`../research/coordinate-version-and-space-evolution-decision.md`: the draft
+`../research/coordinate/decisions/coordinate-version-and-space-evolution-decision.md`: the draft
 owns its exact `specVersion`, Specification declarations must agree, and
 semantic Space changes require a new Space ID and explicit migration.
 

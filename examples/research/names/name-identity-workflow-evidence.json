@@ -1,0 +1,36 @@
+{
+  "fixtureStatus": "research-only",
+  "representationNotice": "Workflow evidence notation; not an E2R Dataset or proposed payload",
+  "policies": ["P1-expression", "P2-binding", "P3-hybrid"],
+  "workflows": [
+    {
+      "id": "historical-timeline-naming",
+      "requiredMeaning": "expression-specific-applicability-over-time",
+      "records": ["name-old", "name-new", "entity-1"],
+      "intervals": ["interval-old", "interval-new"]
+    },
+    {
+      "id": "multilingual-display-search",
+      "requiredMeaning": "grouped-variants-with-distinct-expression-values",
+      "records": ["name-en", "name-ja", "name-translit", "entity-1"],
+      "metadata": ["language", "script", "naming-kind", "context"]
+    }
+  ],
+  "evidence": {
+    "historical-timeline-naming": {
+      "P1-expression": "strongest-current-fit",
+      "P2-binding": "conditional-on-version-or-snapshot",
+      "P3-hybrid": "strong-but-larger"
+    },
+    "multilingual-display-search": {
+      "P1-expression": "strong-preservation-needs-grouping",
+      "P2-binding": "strong-grouping-conditional-history",
+      "P3-hybrid": "broadest-feature-coverage-highest-complexity"
+    }
+  },
+  "conclusion": {
+    "defaultGuardrail": "P1-expression",
+    "P2P3Status": "workflow-specific-research-candidates",
+    "finalPolicySelected": false
+  }
+}

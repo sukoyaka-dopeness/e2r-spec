@@ -1,0 +1,13 @@
+{
+  "fixtureStatus": "research-only",
+  "representationNotice": "Internal identity-policy notation; not an E2R Dataset or proposed payload",
+  "policies": ["P1-expression", "P2-binding", "P3-hybrid"],
+  "cases": [
+    {"id": "english-japanese", "records": ["name-en", "name-ja"], "entityId": "entity-1", "languageScript": [["en", "Latn"], ["ja", "Jpan"]], "expected": "no-pronunciation-merge"},
+    {"id": "original-transliteration", "records": ["name-original", "name-translit"], "entityId": "entity-1", "expected": "no-silent-merge"},
+    {"id": "short-legal-naming-kind", "records": ["name-short", "name-legal"], "entityId": "entity-1", "namingKinds": ["short", "legal"], "expected": "preference-does-not-define-identity"},
+    {"id": "community-context", "records": ["name-community-a", "name-community-b"], "entityId": "entity-1", "contexts": ["community-a", "community-b"], "expected": "context-is-explicit"},
+    {"id": "historical-alice-alicia", "recordId": "name-en", "beforeValue": "Alice", "afterValue": "Alicia", "interval": "interval-1", "expected": "no-historical-redirect"},
+    {"id": "unknown-language-script", "recordId": "name-unknown-vocabulary", "language": "future-language", "script": "FutureScript", "expected": "preserve-unknown-metadata"}
+  ]
+}

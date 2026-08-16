@@ -7,7 +7,7 @@ import {
 import {
   applyStoredCoordinates,
   getStoredCoordinates,
-} from "../../e2r-linkscape/src/dataset.ts";
+} from "../../e2r-liaison-scape/src/dataset.ts";
 import { validateDataset } from "../../e2r-validator/src/index.js";
 
 const coordinateId = "experimental.github.sukoyaka-dopeness.coordinate";

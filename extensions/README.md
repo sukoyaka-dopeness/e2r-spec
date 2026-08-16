@@ -35,8 +35,9 @@ registered as Stable:
 - Organization Extension
 - Psychology Extension
 - Magic System Extension
-- Citation Extension
-- Evidence Extension (OSINT)
+- Citation / Source responsibility (Gate 3 research baseline; final Extension
+  partition and identifier deferred)
+- Evidence responsibility (OSINT candidate; distinct from weak Citation)
 - Timeline Constraint Extension
 
 ## When to create a new Extension
@@ -54,6 +55,18 @@ For example:
 - Worldline Extension
 - Probability Extension
 - Narrative Extension
+
+### Source/Citation checkpoint
+
+Gate 3 established a non-normative responsibility baseline for the ordinary
+operation "record this source for this Event": an identified Source plus a
+weak Citation association to the identified target. The association does not
+imply Evidence, Claim, Assessment, Provenance, truth, or confidence.
+
+This checkpoint does not register a Citation or Source Extension, choose an
+identifier, define a payload, or decide whether Source and Citation belong to
+one Extension or separate Extensions. The candidate index therefore records
+the responsibility boundary without treating a final Extension as available.
 
 ## Planned Extensions
 

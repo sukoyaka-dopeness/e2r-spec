@@ -236,7 +236,7 @@ workflow.
 
 An application may generate missing positions, routes, lanes, labels, or
 styles. These results are Derived and follow the versioned Engine principles in
-`research/deterministic-generation.md` when repeatability is claimed.
+`research/exploratory/deterministic-generation.md` when repeatability is claimed.
 
 Owned values take priority over later generation for the same responsibility.
 A Dataset ID is not a mandatory seed. Generation should use explicit relevant

@@ -62,9 +62,9 @@ The audit uses the nine agenda handoffs as design input and checks them against:
 - `docs/roadmap.md`;
 - `applications/relationship-graph-app.md`;
 - `applications/linkscape-mvp-acceptance.md`;
-- `research/linkscape-layout-and-view-state.md`;
-- `research/deterministic-generation.md`;
-- `research/view-generation.md`;
+- `research/exploratory/linkscape-layout-and-view-state.md`;
+- `research/exploratory/deterministic-generation.md`;
+- `research/exploratory/view-generation.md`;
 - the current Linkscape, NarrativeLine, and Validator implementations; and
 - `examples/cross-application-demo.json`.
 
@@ -100,7 +100,7 @@ Presentation remain conceptual and must not be standardized from diagrams
 alone.
 
 The major naming question raised by Agenda 9 has since been resolved by
-`research/extension-identity-and-payload-key-decision.md`. The Extension
+`research/extension-architecture/decisions/extension-identity-and-payload-key-decision.md`. The Extension
 identifier remains the payload key; `metadata` and `history` remain registered
 identities; independently published names use authority qualification; and
 exact specification versions remain separate. The decision is reflected in
@@ -286,9 +286,9 @@ The following earlier statements should no longer guide new work:
 | Resolved | `spec/philosophy.md` | Listed Layout, Timeline rendering, and Graph visualization under Presentation Extensions | Presentation now owns appearance; Coordinate, Layout, persisted authorial context, and Application View State are distinct responsibilities |
 | Resolved | `spec/rationale.md` | Assigned View-owned event order to a future Presentation Extension | Non-temporal persisted ordering is now assigned to an authorial-context responsibility, provisionally called Perspective |
 | Resolved | `extensions/history-extension.md` | Correctly excluded display order from `temporalOrder` but assigned future `eventOrder` to Presentation | The `temporalOrder` rules remain unchanged and the future-owner explanation now uses persisted authorial context |
-| Resolved | `research/linkscape-layout-and-view-state.md` | Combined route geometry, label placement, layer order, and icons under a View/Presentation candidate and made coordinate metadata universally mandatory | The document now separates Coordinate, Layout, Presentation, Application View State, and Owned/Derived status; Space metadata is conditional on interpretation |
-| Resolved | `research/deterministic-generation.md` | Was seed-centric and treated Dataset ID as a likely generation basis | The document now separates determinism, reproducibility, and incremental stability around versioned Engines, explicit inputs, deltas, failure containment, and Owned/Derived state |
-| Resolved | `research/view-generation.md` | Used View for Timeline/Graph/Tree/Map without distinguishing it from the persisted authorial concept | The document now uses Application Visualization and separates Application View, Application View State, Perspective, Coordinate, Layout, and Presentation |
+| Resolved | `research/exploratory/linkscape-layout-and-view-state.md` | Combined route geometry, label placement, layer order, and icons under a View/Presentation candidate and made coordinate metadata universally mandatory | The document now separates Coordinate, Layout, Presentation, Application View State, and Owned/Derived status; Space metadata is conditional on interpretation |
+| Resolved | `research/exploratory/deterministic-generation.md` | Was seed-centric and treated Dataset ID as a likely generation basis | The document now separates determinism, reproducibility, and incremental stability around versioned Engines, explicit inputs, deltas, failure containment, and Owned/Derived state |
+| Resolved | `research/exploratory/view-generation.md` | Used View for Timeline/Graph/Tree/Map without distinguishing it from the persisted authorial concept | The document now uses Application Visualization and separates Application View, Application View State, Perspective, Coordinate, Layout, and Presentation |
 | Resolved | `docs/application-design-principles.md` | Treated derived graph layouts only as implementation detail | Derived results now remain local by default while intentionally adopted values may become Owned data under an appropriate Extension |
 | Resolved | `docs/application-recommendations.md` | Used `view-specific` for custom presentation order and treated all generated layouts as external data | Temporary sorting, persisted authorial ordering, Derived data, and intentionally adopted Owned data are now distinguished |
 | Resolved | `extensions/specification-extension.md` | The earlier exploratory model did not express the Agenda 8--9 distinctions | Draft `0.1.0` now separates identity, exact used version, dependencies, Features, lifecycle, evolution, and bootstrap |
@@ -347,7 +347,7 @@ independent authority collision avoidance is needed. Option 3 was not selected
 because the payload key must remain an interoperability identity for existing
 and declaration-free Datasets; a second immutable identifier would add a
 binding and conflict source without demonstrated use. The decision is recorded
-in `research/extension-identity-and-payload-key-decision.md` and
+in `research/extension-architecture/decisions/extension-identity-and-payload-key-decision.md` and
 `spec/extension-naming.md`.
 
 ## Implementation evidence

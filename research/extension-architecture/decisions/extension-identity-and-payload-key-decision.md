@@ -14,7 +14,7 @@ not the current design status.
 ## Purpose
 
 This memo resolves the next design question identified by
-`research/extension-architecture-agenda-audit.md`:
+`research/exploratory/extension-architecture-agenda-audit.md`:
 
 > Should the JSON key locating an Extension payload be separate from the
 > canonical identifier of the Extension specification?

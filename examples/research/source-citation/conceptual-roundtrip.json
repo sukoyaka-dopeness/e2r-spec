@@ -1,0 +1,179 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [
+    {
+      "id": "event-1",
+      "name": "First cited event"
+    },
+    {
+      "id": "event-2",
+      "name": "Second cited event"
+    }
+  ],
+  "relations": [],
+  "extensions": {
+    "metadata": {
+      "datasetId": "source-citation-conceptual-roundtrip",
+      "title": "Source Citation conceptual round-trip fixture"
+    },
+    "research.fixture.source-citation": {
+      "fixtureStatus": "research-only",
+      "representationNotice": "Internal diagnostic notation; not a proposed E2R payload",
+      "sourceRecords": [
+        {
+          "researchId": "source-1",
+          "ownerNamespace": "research.fixture.sources",
+          "description": "Reusable source"
+        },
+        {
+          "researchId": "source-2",
+          "ownerNamespace": "research.fixture.sources",
+          "description": "Same displayed source"
+        },
+        {
+          "researchId": "source-3",
+          "ownerNamespace": "research.fixture.sources",
+          "description": "Same displayed source"
+        }
+      ],
+      "citationAssociations": [
+        {
+          "researchId": "citation-1",
+          "case": "one-source-two-events-a",
+          "sourceReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "research.fixture.sources",
+            "targetKind": "record",
+            "localId": "source-1"
+          },
+          "citationTargetReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "core",
+            "targetKind": "event",
+            "localId": "event-1"
+          },
+          "semantics": "weak-citation-only"
+        },
+        {
+          "researchId": "citation-2",
+          "case": "one-source-two-events-b",
+          "sourceReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "research.fixture.sources",
+            "targetKind": "record",
+            "localId": "source-1"
+          },
+          "citationTargetReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "core",
+            "targetKind": "event",
+            "localId": "event-2"
+          },
+          "semantics": "weak-citation-only"
+        },
+        {
+          "researchId": "citation-3",
+          "case": "equal-text-distinct-source-a",
+          "sourceReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "research.fixture.sources",
+            "targetKind": "record",
+            "localId": "source-2"
+          },
+          "citationTargetReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "core",
+            "targetKind": "event",
+            "localId": "event-1"
+          },
+          "semantics": "weak-citation-only"
+        },
+        {
+          "researchId": "citation-4",
+          "case": "equal-text-distinct-source-b",
+          "sourceReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "research.fixture.sources",
+            "targetKind": "record",
+            "localId": "source-3"
+          },
+          "citationTargetReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "core",
+            "targetKind": "event",
+            "localId": "event-2"
+          },
+          "semantics": "weak-citation-only"
+        },
+        {
+          "researchId": "citation-5",
+          "case": "resolved-event-unknown-source-owner",
+          "sourceReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "future.example.sources",
+            "targetKind": "record",
+            "localId": "source-9"
+          },
+          "citationTargetReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "core",
+            "targetKind": "event",
+            "localId": "event-1"
+          },
+          "expectedResearchStates": {
+            "sourceReference": "unknown",
+            "citationTargetReference": "resolved"
+          },
+          "semantics": "weak-citation-only"
+        },
+        {
+          "researchId": "citation-6",
+          "case": "resolved-source-missing-event",
+          "sourceReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "research.fixture.sources",
+            "targetKind": "record",
+            "localId": "source-1"
+          },
+          "citationTargetReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "core",
+            "targetKind": "event",
+            "localId": "event-missing"
+          },
+          "expectedResearchStates": {
+            "sourceReference": "resolved",
+            "citationTargetReference": "missing"
+          },
+          "semantics": "weak-citation-only"
+        }
+      ],
+      "laterEpistemicAddition": {
+        "case": "claim-evidence-without-citation-reinterpretation",
+        "unchangedCitationResearchId": "citation-1",
+        "claim": {
+          "researchId": "claim-1",
+          "ownerNamespace": "research.fixture.claims",
+          "propositionNote": "Explicit temporal proposition kept separate from the Event-level Citation"
+        },
+        "evidence": {
+          "researchId": "evidence-1",
+          "sourceReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "research.fixture.sources",
+            "targetKind": "record",
+            "localId": "source-1"
+          },
+          "claimReference": {
+            "scope": "dataset-local",
+            "ownerNamespace": "research.fixture.claims",
+            "targetKind": "record",
+            "localId": "claim-1"
+          },
+          "sourcePortionNote": "Research-only identified portion; no final locator payload selected"
+        }
+      }
+    }
+  }
+}

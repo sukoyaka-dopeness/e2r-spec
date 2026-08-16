@@ -30,7 +30,7 @@ Coreは「何が存在するか」「何が起きたか」「何が接続され�
 
 ## アプリケーションやワークフローで交換する
 
-NarrativeLineは、E2R DatasetをEvent中心のTimelineとして編集・表示するアプリケーションです。Linkscapeは、Entity中心の関係グラフとして見るために設計されているreference applicationです。リポジトリは作成されていますが、この設計説明は特定の実装がすぐ利用できるという意味ではありません。
+NarrativeLineは、E2R DatasetをEvent中心のTimelineとして編集・表示するアプリケーションです。LiaisonScapeは、Entity中心の関係グラフとして見るために設計されているreference applicationです。リポジトリは作成されていますが、この設計説明は特定の実装がすぐ利用できるという意味ではありません。
 
 Datasetは、AIや別のアプリケーションに構造化入力として渡すこともできます。説明、プレゼンテーション、PDFなど何を作るかは、そのワークフローが決めます。出力形式はE2R自体が定めるものではありません。
 

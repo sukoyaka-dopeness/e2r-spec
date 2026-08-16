@@ -24,7 +24,7 @@ specifications define normative requirements.
 
 - [NarrativeLine](https://github.com/sukoyaka-dopeness/e2r-narrative-line)
   edits and presents Event-focused timelines.
-- [Linkscape design](../applications/relationship-graph-app.md) describes an
+- [LiaisonScape design](../applications/relationship-graph-app.md) describes an
   Entity-first relationship-graph reference application. Its implementation
   status is separate from this design document.
 

@@ -45,7 +45,7 @@ features.
 ## Exchange between applications and workflows
 
 NarrativeLine is an application that edits and presents E2R Datasets as
-Event-focused timelines. Linkscape is designed as an Entity-first relationship
+Event-focused timelines. LiaisonScape is designed as an Entity-first relationship
 graph reference application; its repository exists, but this design should not
 be read as a statement that a particular implementation is ready to use.
 

@@ -136,7 +136,7 @@ second-precision Events without adding a separate `precision` field.
 The resulting Dataset can be opened again by an application that understands
 it, exchanged as JSON, or supplied to another workflow as structured input.
 For example, NarrativeLine can present Event-focused timeline information.
-Linkscape is designed as an Entity-first relationship-graph application, but
+LiaisonScape is designed as an Entity-first relationship-graph application, but
 its design is not a claim of current implementation availability. An AI or
 another application can use the Dataset to propose an analysis or output; that
 workflow remains responsible for its result.

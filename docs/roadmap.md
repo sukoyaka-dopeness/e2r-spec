@@ -1,27 +1,27 @@
 # E2R Medium- and Long-term Roadmap
 
-Date: 2026-08-13
+Date: 2026-08-17
 
 Status: Current planning document; non-normative
 
 ## Purpose
 
 This roadmap is the current priority summary for the E2R specification,
-Validator, NarrativeLine, and Linkscape. Session logs remain historical records
+Validator, NarrativeLine, and LiaisonScape. Session logs remain historical records
 and must not override this document merely because they contain older
 future-work lists.
 
 The architecture baseline comes from:
 
-- `research/extension-architecture-agenda-audit.md`;
-- `research/extension-identity-and-payload-key-decision.md`;
-- `research/coordinate-maturity-and-identifier-decision.md`;
-- `research/coordinate-space-component-compatibility-decision.md`;
-- `research/coordinate-external-reference-decision.md`;
-- `research/coordinate-version-and-space-evolution-decision.md`;
-- `research/linkscape-layout-and-view-state.md`;
-- `research/deterministic-generation.md`; and
-- `research/view-generation.md`.
+- `research/exploratory/extension-architecture-agenda-audit.md`;
+- `research/extension-architecture/decisions/extension-identity-and-payload-key-decision.md`;
+- `research/coordinate/decisions/coordinate-maturity-and-identifier-decision.md`;
+- `research/coordinate/decisions/coordinate-space-component-compatibility-decision.md`;
+- `research/coordinate/decisions/coordinate-external-reference-decision.md`;
+- `research/coordinate/decisions/coordinate-version-and-space-evolution-decision.md`;
+- `research/exploratory/linkscape-layout-and-view-state.md`;
+- `research/exploratory/deterministic-generation.md`; and
+- `research/exploratory/view-generation.md`.
 
 ## Operating principles
 
@@ -40,6 +40,34 @@ The architecture baseline comes from:
   or an external registry.
 
 ## Current baseline
+
+### Roadmap/status synchronization — 2026-08-17
+
+- Research Physical Reorganization is completed. Its closure record is
+  `sessions/E2R-Session-0028.md`.
+- Names P1 and its Validator release workstream are completed. Names P1 may be
+  consumed read-only by applications; no production writer, migration, repair,
+  or Core `name` synchronization is authorized.
+- Names Grouping remains deferred. Representation selection is not reopened.
+- Coordinate remains at its frozen Prototype/Draft evidence boundary; the
+  current specification-repository Validator evidence is the active support
+  track.
+- History vNext, Relative Time, Source/Citation, and Target Reference remain
+  research or pending responsibilities; their older session “next task” lists
+  do not supersede this roadmap.
+- NarrativeLine remains at `0.1.0`. LiaisonScape `0.1.0` has completed its
+  First Distribution.
+- LiaisonScape now includes Entity and Relation creation and deletion,
+  Entity/Relation detail editing, direct graph authoring, persistence,
+  round-trip preservation, UI modularization, Home/entry UX, and bounded
+  English/Japanese localization.
+- Direct Graph Authoring MVP is complete. This includes direct Entity creation,
+  Relation creation including self and parallel Relations, selected-Relation
+  curvature manipulation, relation hit-area and discoverability improvements,
+  and touch/pen gesture handling.
+- Completion of these application workstreams does not change Core or Extension
+  semantics and does not authorize Names writers, Relative Time semantics,
+  Source/Citation product integration, or other deferred research work.
 
 ### Stable specification foundation
 
@@ -93,17 +121,16 @@ much less complete and must not be represented by that percentage.
 
 ### Application and tooling evidence
 
-- Published Validator `0.1.3` validates Core, Metadata, and History. Unreleased
-  work also validates Specification draft and Coordinate prototype `0.1.0`
-  with layer-specific diagnostics.
-- Specification-repository tooling validates Coordinate draft `0.1.0` against
-  its schema and semantic valid/invalid fixture manifest. Published Validator
-  and applications do not yet write the draft.
+- Published Validator `0.3.0` includes the completed bounded Names P1
+  validation release.
+- Read-only Coordinate draft `0.1.0` Validator support is complete at the
+  current evidence boundary. Applications do not write the Draft, and this
+  support does not authorize migration or Stable registration.
 - NarrativeLine `0.1.0` edits supported Metadata and History data, reads
   Coordinate prototype `0.1.0` in Entity/Event Detail, and provides a bounded
-  second writer for existing Entity `x`/`y` values in Linkscape's exact shared
+  second writer for existing Entity `x`/`y` values in LiaisonScape's exact shared
   Space while preserving unknown fields and Extensions.
-- Linkscape `0.1.0` implements the Entity-first MVP, including graph
+- LiaisonScape `0.1.0` implements the Entity-first MVP, including graph
   interaction, deterministic fallback behavior, explicit Entity-coordinate
   save/restore, Relation editing, route and label interaction, and unknown-data
   preservation.
@@ -112,7 +139,7 @@ much less complete and must not be represented by that percentage.
   partial Event Coordinates, and multiple-Space Entity Coordinates across the
   applications.
 
-Linkscape now migrates its legacy `coordinate` payload into the
+LiaisonScape now migrates its legacy `coordinate` payload into the
 authority-qualified Coordinate prototype `0.1.0`. The prototype remains an
 application experiment, not an official Stable Coordinate Extension.
 
@@ -216,7 +243,7 @@ Extension is designed, but it must not pre-empt its schema decisions.
 
 ### Completed evidence milestone 3: Coordinate prototype
 
-Replace or explicitly migrate Linkscape's experimental
+Replace or explicitly migrate LiaisonScape's experimental
 `{spaceId, x, y}`-style data through an unregistered prototype that tests:
 
 - Dataset-level Coordinate Space definitions;
@@ -231,7 +258,7 @@ Replace or explicitly migrate Linkscape's experimental
 
 Prototype `0.1.0` now implements all eight listed experiments in
 `extensions/coordinate-extension.md` and
-`examples/cross-application-demo.json`. Linkscape interprets and explicitly
+`examples/cross-application-demo.json`. LiaisonScape interprets and explicitly
 saves Entity positions, including controlled migration from its legacy
 payload. NarrativeLine independently resolves the same Dataset Spaces,
 Components, units, partial values, and multiple-Space values in Entity/Event
@@ -243,10 +270,10 @@ from Core diagnostics, and treats unsupported prototype versions as warnings.
 
 The executable evidence milestone is complete. An external-reference fixture
 is interpreted and round-tripped offline. Duplicate Space and per-object
-Coordinate claims exercise the conflict baseline, and Linkscape refuses
+Coordinate claims exercise the conflict baseline, and LiaisonScape refuses
 incompatible definitions instead of overwriting them. NarrativeLine explicitly
 updates only existing Entity `x`/`y` values in the same compatible
-`linkscape-graph` Space. The tested sequential round trip through both
+`liaisonscape-graph` Space. The tested sequential round trip through both
 applications and the Coordinate-aware Validator preserves other Spaces and
 unknown data.
 
@@ -264,20 +291,20 @@ authorize a write. A processor may write only through an explicit capability
 profile matching the required `kind`, Component IDs, units, directions, and
 period behavior. Coordinate itself does not infer aliases or perform unit
 conversion. See
-`research/coordinate-space-component-compatibility-decision.md`.
+`research/coordinate/decisions/coordinate-space-component-compatibility-decision.md`.
 
 Accepted external-reference input keeps Dataset-local definitions as the
 offline operational source of truth. The draft uses explicit
 Component-level external bindings; unresolved or conflicting bindings prevent
 external-aware writes but do not invalidate or replace locally valid data. See
-`research/coordinate-external-reference-decision.md`.
+`research/coordinate/decisions/coordinate-external-reference-decision.md`.
 
 Accepted bootstrap and evolution input makes the draft's required
 Dataset-level `specVersion` authoritative and treats a supported Specification
 declaration as a consistency assertion. Display names and bounds that preserve
 all existing values may retain a Space ID; Component or semantic-definition
 changes require a new Space ID and explicit migration. See
-`research/coordinate-version-and-space-evolution-decision.md`.
+`research/coordinate/decisions/coordinate-version-and-space-evolution-decision.md`.
 
 The normative contract is assembled in
 `extensions/coordinate-extension-draft.md`, with a complete-Dataset JSON
@@ -286,22 +313,22 @@ validation, and atomic migration and refusal fixtures. Repository review found
 and resolved ambiguity around context-only external writes, unsupported
 Specification data, unknown Prototype fields, existing Draft collisions,
 duplicate declarations, and opaque-ID diagnostic paths. See
-`research/coordinate-draft-0.1.0-review.md`.
+`research/coordinate/decisions/coordinate-draft-0.1.0-review.md`.
 
-### Active implementation milestone 5: read-only Validator support
+### Completed implementation milestone 5: read-only Validator support
 
-Before applications write the draft payload, Validator should independently
-recognize the Draft and Prototype identities, bootstrap before schema
-selection, report schema and semantic diagnostics, distinguish unsupported
-versions from malformed supported data, and integrate Specification agreement.
-It must remain read-only and must not migrate application data.
+Validator independently recognizes the Draft and Prototype identities,
+bootstraps before schema selection, reports schema and semantic diagnostics,
+distinguishes unsupported versions from malformed supported data, and
+integrates Specification agreement. It remains read-only and does not migrate
+application data.
 
 The accepted decision and its alternatives are recorded in
-`research/coordinate-maturity-and-identifier-decision.md`.
+`research/coordinate/decisions/coordinate-maturity-and-identifier-decision.md`.
 
 ### Layout persistence experiment
 
-Use a clearly authority-qualified, Linkscape-owned experimental payload to
+Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 
 - ordinary and self-Relation routes;
@@ -322,13 +349,13 @@ The current neutral sample now supports the tested workflow:
 ```text
 NarrativeLine import/edit/export
     -> Validator
-    -> Linkscape import/use/explicit save/export
+    -> LiaisonScape import/use/explicit save/export
     -> NarrativeLine re-import
 ```
 
 The checkpoint verifies preservation of Core IDs, unknown fields, unsupported
 Extensions, exact-version declarations, untouched experimental payloads, and
-the shared Coordinate after sequential writes by NarrativeLine and Linkscape.
+the shared Coordinate after sequential writes by NarrativeLine and LiaisonScape.
 It is repeatable from the specification repository with
 `npm run validate:coordinate-interoperability`; the ordinary `npm run validate`
 remains independent of sibling application repositories.
@@ -344,7 +371,7 @@ Presentation.
 
 ### 2. Media responsibility
 
-Use selectable Linkscape icons as the first concrete experiment. Media should
+Use selectable LiaisonScape icons as the first concrete experiment. Media should
 own reusable resources; Presentation may own their use as icons. Research must
 cover identity, portability, supported formats, security, and preservation.
 
@@ -388,10 +415,11 @@ Other continuing topics include:
 
 - Keep Validator release automation, fixtures, package inspection, and
   tag/version checks healthy for the next published version.
-- Keep NarrativeLine and Linkscape at `0.1.0` until an explicit release or
-  interoperability milestone justifies a version decision.
+- Keep NarrativeLine at `0.1.0` until an explicit release or version decision.
+- LiaisonScape's First Distribution remains `0.1.0`; change its version only
+  through an explicit follow-up version decision.
 - Keep Japanese and English guides aligned when behavior changes.
-- Preserve the Linkscape MVP boundary while architecture work continues.
+- Preserve the LiaisonScape MVP boundary while architecture work continues.
 - Treat major desktop/mobile UI divergence as later application design work,
   not a Core or Extension requirement.
 - Add NarrativeLine time-of-day controls through progressive disclosure when
@@ -403,10 +431,10 @@ Other continuing topics include:
 | Candidate | Current evidence | Missing before formalization |
 | --- | --- | --- |
 | Specification | Draft `0.1.0`, architecture audit, accepted identifier model, bootstrap, dependencies, Features, Validator implementation and fixtures | Multi-application evidence, Stable identifier decision |
-| Coordinate | Frozen prototype `0.1.0`; reviewed draft candidate `0.1.0` with normative contract, schema, 5 valid/18 invalid fixtures, semantic validation, and explicit atomic migration/refusal fixtures | Read-only Validator support, application migration, draft cross-application evidence, later Stable identifier review |
-| Layout | Linkscape routes, loops, labels, and layer requirements | Explicit experimental persistence, endpoint-change rules, round trips, partial support, second renderer |
+| Coordinate | Frozen prototype `0.1.0`; reviewed draft candidate `0.1.0` with normative contract, schema, 5 valid/18 invalid fixtures, semantic validation, explicit atomic migration/refusal fixtures, and read-only Validator support | Application Draft writer/migration evidence, draft cross-application evidence, later Stable identifier review |
+| Layout | LiaisonScape routes, loops, labels, and layer requirements | Explicit experimental persistence, endpoint-change rules, round trips, partial support, second renderer |
 | Perspective | Nine-agenda conceptual model | Final naming review, concrete workflows for at least two capabilities, reference lifecycle, partial support |
-| Presentation | Linkscape appearance requirements | Media boundary, reusable vocabulary, semantic independence, unknown-property preservation, second renderer |
+| Presentation | LiaisonScape appearance requirements | Media boundary, reusable vocabulary, semantic independence, unknown-property preservation, second renderer |
 | Semantic | Relation labels demonstrate unmet semantic typing need | Vocabulary identity, typing model, external mapping, two consuming applications |
 | Media | Future selectable icon requirement | Resource identity, format/security rules, two application uses, Presentation dependency test |
 
@@ -422,7 +450,7 @@ Unless new evidence changes the decision, do not currently:
 - rename `metadata` or `history`;
 - combine Coordinate and Presentation into Layout;
 - serialize ordinary Application View State into the E2R Dataset;
-- standardize Linkscape's current experimental Coordinate payload;
+- standardize LiaisonScape's current experimental Coordinate payload;
 - create a universal Generation Extension;
 - register Perspective before its name and workflows are proven;
 - treat arbitrary Relation direction as semantic hierarchy; or
@@ -430,12 +458,21 @@ Unless new evidence changes the decision, do not currently:
 
 ## Immediate sequence
 
-1. Add read-only Coordinate draft `0.1.0` support to Validator while retaining
-   independent Prototype support.
-2. Add an explicit application Prototype-to-Draft migration only after
-   Validator evidence passes.
-3. Prove Draft preservation and bounded writes across applications.
-4. Then begin explicit Layout adoption and round-trip persistence evidence.
+1. Preserve the LiaisonScape `0.1.0` First Distribution and Direct Graph
+   Authoring checkpoints as the current application baseline.
+2. Select exactly one bounded follow-up workstream through its own scope and
+   evidence gate before implementation.
+3. Keep Names P1 product integration, Names Grouping, Relative Time,
+   History vNext, Target Reference, Source/Citation, Provenance/Confidence,
+   Semantic/Dictionary, and Layout/Presentation responsibilities independently
+   gated.
+4. Continue Coordinate Draft work only through its existing evidence gates;
+   read-only Validator support does not by itself authorize application Draft
+   writers, migration, or Stable registration.
+
+The ordering above does not select the next product feature. A later handoff or
+explicit planning decision may choose one bounded follow-up without reopening
+unrelated workstreams.
 
 At every step, prefer the smallest change that increases executable evidence
 and keeps Core and Extension responsibilities distinct.

@@ -1,0 +1,9 @@
+{
+  "entity":"E1",
+  "names":[
+    {"id":"N1","text":"東京","language":"ja","script":"Jpan"},
+    {"id":"N2","text":"Tokyo","language":"en","script":"Latn"}
+  ],
+  "opaqueGrouping":{"rationale":"current-multilingual","members":["N1","N2"]},
+  "historicalReference":{"target":"N1","interval":"I1"}
+}

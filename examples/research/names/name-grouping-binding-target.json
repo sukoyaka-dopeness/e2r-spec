@@ -1,0 +1,11 @@
+{
+  "candidateConsumers":[
+    {"name":"historical-timeline","target":"expression","evidence":"required"},
+    {"name":"multilingual-catalog-export","target":"grouping-fact","evidence":"required"},
+    {"name":"editorial-alias-management","target":"binding","evidence":"missing"}
+  ],
+  "promotion": {
+    "stableBindingTargetEstablished": false,
+    "historicalValueOwnershipEstablished": false
+  }
+}

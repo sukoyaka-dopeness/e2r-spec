@@ -1,0 +1,6 @@
+{
+  "grouping": {"rationale":"current-multilingual","members":["N1","N2","N3"]},
+  "knownExpressions":["N1","N3"],
+  "unresolvedExpressions":["N2"],
+  "capability":{"groupingUnderstood":true}
+}

@@ -1,0 +1,7 @@
+{
+  "rationale":"R1",
+  "members":["N1","N2","N3"],
+  "replacement":{"old":"N2","new":"N4","substantive":true},
+  "postReplacement":{"members":["N1","N2","N3"],"newExpression":"N4"},
+  "constraints":{"noAutomaticRetarget":true,"missingOldRemainsDistinct":true}
+}

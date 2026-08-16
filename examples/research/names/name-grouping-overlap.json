@@ -1,0 +1,14 @@
+{
+  "entity": "E1",
+  "expression": {"id":"N2","text":"Tokyo","language":"en","script":"Latn"},
+  "groupingFacts": [
+    {"rationale":"current-multilingual-transliteration","members":["N1","N2","N3"]},
+    {"rationale":"catalog-export-context","members":["N2","N6"]}
+  ],
+  "constraints": {
+    "expressionIdentityIndependent": true,
+    "rationalesDistinct": true,
+    "noInferredEquivalence": true,
+    "noInferredPreference": true
+  }
+}

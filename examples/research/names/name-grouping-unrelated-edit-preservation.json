@@ -1,0 +1,5 @@
+{
+  "names":[{"id":"N1","text":"東京","context":"catalog-a"},{"id":"N2","text":"Tokyo"}],
+  "opaqueGrouping":{"rationale":"current-multilingual","members":["N1","N2","N3"]},
+  "edit":{"field":"names[0].context","from":"catalog-a","to":"catalog-b"}
+}

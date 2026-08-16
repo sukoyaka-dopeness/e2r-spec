@@ -1,0 +1,20 @@
+{
+  "workflow": "multilingual-bibliographic-export",
+  "entity": "E1",
+  "expressions": [
+    {"id":"N1","text":"東京","language":"ja","script":"Jpan"},
+    {"id":"N2","text":"Tokyo","language":"en","script":"Latn","kind":"transliteration"},
+    {"id":"N3","text":"Tōkyō","language":"en","script":"Latn","kind":"transliteration"},
+    {"id":"N4","text":"江戸","language":"ja","script":"Jpan","kind":"historical"},
+    {"id":"N5","text":"Edo","language":"en","script":"Latn","kind":"historical-transliteration"}
+  ],
+  "candidateGroupingFacts": [
+    {"members":["N1","N2","N3"],"rationale":"current-multilingual"},
+    {"members":["N4","N5"],"rationale":"historical-name"}
+  ],
+  "constraints": {
+    "groupingIsNotIdentity": true,
+    "groupingIsNotPreference": true,
+    "groupingDoesNotPropagateHistory": true
+  }
+}

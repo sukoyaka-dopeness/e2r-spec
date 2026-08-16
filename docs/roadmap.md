@@ -426,6 +426,58 @@ Other continuing topics include:
   that application task is prioritized; the History model already supports the
   relevant fields.
 
+## E2R ecosystem hub / portal track
+
+The E2R Studio idea recorded in `sessions/E2R-Session-0010.md` is retained as
+an active application-planning direction: create a top-level hub or portal
+that introduces E2R, presents the available applications, links to their
+individual top pages, offers samples and documentation, and helps users move
+between compatible application workflows. The hub is an application and
+distribution surface, not a new Core object or a requirement that all E2R
+applications share one UI.
+
+The following ten milestones are ordered as a planning proposal. They balance
+implementation difficulty, likely user need, and the amount of foundation they
+provide for later E2R applications and distributable packs.
+
+1. **Hub scope and information architecture** — define the audiences, first
+   actions, application categories, links, sample flow, and the boundary
+   between the portal and each application's own Home page.
+2. **Static E2R landing page** — publish a small, fast top page explaining E2R,
+   linking the four current repositories/apps, and providing a clear starting
+   path for new users.
+3. **Application catalog and status cards** — turn the application catalog into
+   discoverable entries with purpose, maturity, supported capabilities, links,
+   and explicit experimental/deferred labels.
+4. **Shared sample gallery** — provide a small set of canonical datasets with
+   previews and “open in application” links, while keeping samples versioned
+   and self-contained.
+5. **Onboarding and documentation paths** — add short guided paths for a first
+   Dataset, timeline workflow, relationship workflow, validation, and
+   cross-application preservation.
+6. **Cross-application handoff links** — make the portal demonstrate import,
+   export, validation, and preservation between NarrativeLine, LiaisonScape,
+   and Validator without requiring a monolithic application.
+7. **Capability and compatibility metadata** — define a lightweight,
+   versioned description of application capabilities and supported Extension
+   profiles so the hub can explain compatibility without guessing from names.
+8. **Pack distribution foundation** — prototype discovery and manifest display
+   for future Calendar, Locale, Dictionary, Orthography, and Style Packs;
+   keep pack resources and Dataset declarations as separate responsibilities.
+9. **User workspace and project entry model** — research a safe way to retain
+   recent Datasets, selected applications, and project links without silently
+   turning local application state into interoperable Dataset content.
+10. **E2R ecosystem release surface** — establish a maintainable portal release
+    process for applications, samples, documentation, compatibility metadata,
+    and packs, including provenance, version selection, and offline/failure
+    behavior.
+
+The next practical step should be milestone 1 followed by milestone 2. A
+static landing page can validate navigation and user demand at low cost before
+the project commits to a registry, shared workspace, or pack ecosystem. None
+of these milestones authorizes a Core change, a universal application UI, or
+automatic interpretation of unknown application and pack metadata.
+
 ## Evidence gates for candidate Extensions
 
 | Candidate | Current evidence | Missing before formalization |

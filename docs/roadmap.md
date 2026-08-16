@@ -478,6 +478,74 @@ the project commits to a registry, shared workspace, or pack ecosystem. None
 of these milestones authorizes a Core change, a universal application UI, or
 automatic interpretation of unknown application and pack metadata.
 
+## Sample and external vocabulary follow-up
+
+Two application/ecosystem tasks are explicitly recorded for future planning:
+
+- Revise the NarrativeLine public sample Dataset so that opening the same
+  Dataset in LiaisonScape produces an interesting, legible relationship graph.
+  The sample should remain useful as a Timeline in NarrativeLine while adding
+  meaningful Entity-to-Entity structure, selected Event connections, and
+  compatible Coordinate data. This is sample and application work, not a reason
+  to weaken NarrativeLine's Timeline identity or change the Core.
+- Research on-demand vocabulary retrieval from thesauri, Wikidata, and other
+  external sources for use with Dictionary and future Semantic capabilities.
+  Retrieved data must be treated as external/derived input until deliberately
+  adopted, with source identity, retrieval time, version or revision, license,
+  language, and failure/offline behavior preserved. Network retrieval must not
+  be required to open or validate an otherwise valid Dataset, and a lookup must
+  not silently create identities, meanings, Relations, or Semantic assertions.
+
+This external-vocabulary idea is related to the existing roadmap topics of
+external identifiers, Wikidata import, Dictionary evolution, and AI-assisted
+analysis, but is a distinct research task concerning on-demand retrieval,
+provenance, caching, deterministic selection, and adoption boundaries.
+
+## Proposed E2R-wide milestones
+
+The following ten milestones provide a cross-repository sequence using three
+selection criteria: low implementation risk, clear user need, and value as a
+foundation for future E2R applications and Extensions.
+
+1. **E2R ecosystem information architecture** — define the relationship among
+   the specification, Validator, NarrativeLine, LiaisonScape, future apps, and
+   the E2R hub.
+2. **First-use hub and application directory** — publish a lightweight entry
+   page with application purposes, maturity, supported capabilities, samples,
+   and documentation links.
+3. **Canonical cross-application samples** — maintain Dataset fixtures that
+   are useful in both Timeline and Graph applications, including the revised
+   NarrativeLine sample and explicit preservation expectations.
+4. **Interoperability verification baseline** — make import, export, Validator
+   checks, unknown-data preservation, and cross-application round trips a
+   repeatable release gate.
+5. **Validator compatibility matrix** — publish which Core and Extension
+   versions, Features, dependencies, and application profiles each tool
+   supports.
+6. **History and chronology completion** — resolve dated/undated ordering,
+   Relative Time, intervals, and advanced History responsibilities before
+   product integration.
+7. **Application capability and pack manifest research** — define how apps,
+   Calendar, Locale, Dictionary, Orthography, and Style Packs declare identity,
+   version, dependency, compatibility, provenance, and licensing.
+8. **Dictionary and Semantic foundation** — establish vocabulary identity,
+   semantic assertions, external mappings, and preservation boundaries without
+   putting domain meaning into the Core.
+9. **On-demand external vocabulary experiment** — prototype read-only lookup
+   from a thesaurus or Wikidata with explicit provenance, cache/version policy,
+   offline fallback, rate/error handling, and intentional adoption into a
+   Dataset or Extension.
+10. **Evidence-gated ecosystem releases** — coordinate application releases,
+    Validator releases, Extension evidence, sample revisions, and pack
+    publication without requiring network access or silently changing stored
+    Dataset meaning.
+
+The recommended immediate sequence is milestones 1 through 4, with the sample
+revision as a bounded parallel task. External vocabulary retrieval should begin
+only after the Dictionary/Semantic responsibility boundary is written down;
+otherwise a convenient lookup can accidentally become an unreviewed identity
+or meaning system.
+
 ## Evidence gates for candidate Extensions
 
 | Candidate | Current evidence | Missing before formalization |

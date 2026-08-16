@@ -64,8 +64,26 @@ When editing:
 * Make one logical change at a time.
 * Keep every intermediate state internally consistent.
 * Do not modify files that are unrelated to the requested task.
-* Do not commit or push changes unless explicitly instructed.
+* A verified local commit is allowed for one bounded logical checkpoint of
+  explicitly requested work. Do not push, publish, or rewrite history without
+  explicit authorization.
 * Review the final diff for contradictions and terminology drift.
+
+## Git Checkpoint Policy
+
+Codex may create local commits when a bounded logical unit is complete and
+verified. Before committing, inspect `git status --short`, identify exact owned
+files or hunks, stage only those paths or hunks, inspect
+`git diff --cached --name-status`, run `git diff --cached --check`, and run the
+relevant specification/schema/example validation. The normal E2R-SPEC gate is
+`npm run validate`; narrower validation scripts may be used when appropriate.
+
+After committing, report the hash, subject, scope, verification results,
+worktree status, and whether the commit remains unpushed. Preserve unrelated
+dirty work. Do not use `git add .`, `git add -A`, `git commit -a`,
+`git reset --hard`, `git clean`, broad restore or stash, rebase, squash, amend,
+history rewriting, or force push without explicit authorization. Push, release,
+tag, and package publication always require explicit authorization.
 
 ## Completion Criteria
 

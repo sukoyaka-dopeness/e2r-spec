@@ -114,4 +114,3 @@ Stable Names registration, or Grouping selection is implied.
 
 The Validator release workstream is complete. No further tag movement,
 publication, or registry mutation is authorized by this handoff.
-

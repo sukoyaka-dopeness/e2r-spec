@@ -512,6 +512,13 @@ intended for Timeline, relationship-graph, Validator, and future Hub workflows;
 application Home samples remain application-specific and are not changed by
 this addition.
 
+The Apollo consumer evidence is recorded in
+`research/exploratory/cross-application-canonical-sample-consumer-evidence.md`.
+It documents the accepted Coordinate-only adoption boundary, the current
+Layout persistence gap, and future Hub, rendering, multilingual, and temporal
+research prompts. It is non-normative evidence and does not authorize a Core,
+Extension, or application implementation change.
+
 ## Sample and external vocabulary follow-up
 
 Two application/ecosystem tasks are explicitly recorded for future planning:

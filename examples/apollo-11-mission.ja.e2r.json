@@ -439,7 +439,7 @@
     },
     {
       "id": "entity-10",
-      "name": "打ち上げられる",
+      "name": "打ち上げる",
       "sourceId": "saturn-v",
       "targetId": "columbia"
     },

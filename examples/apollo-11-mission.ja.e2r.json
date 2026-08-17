@@ -450,7 +450,7 @@
       "targetId": "columbia"
     },
     {
-      "id": "event-launch-saturn-v",
+      "id": "event-1",
       "sourceId": "launch",
       "targetId": "saturn-v"
     },
@@ -480,7 +480,7 @@
       "targetId": "collins"
     },
     {
-      "id": "event-tli-saturn-v",
+      "id": "event-2",
       "sourceId": "tli",
       "targetId": "saturn-v"
     },
@@ -510,7 +510,7 @@
       "targetId": "collins"
     },
     {
-      "id": "event-loi-columbia",
+      "id": "event-3",
       "sourceId": "loi",
       "targetId": "columbia"
     },
@@ -530,7 +530,7 @@
       "targetId": "collins"
     },
     {
-      "id": "event-separate-eagle",
+      "id": "event-4",
       "sourceId": "separate",
       "targetId": "eagle"
     },
@@ -555,7 +555,7 @@
       "targetId": "collins"
     },
     {
-      "id": "event-landing-eagle",
+      "id": "event-5",
       "sourceId": "landing",
       "targetId": "eagle"
     },
@@ -575,7 +575,7 @@
       "targetId": "aldrin"
     },
     {
-      "id": "event-eva-armstrong",
+      "id": "event-6",
       "sourceId": "eva",
       "targetId": "armstrong"
     },
@@ -595,7 +595,7 @@
       "targetId": "moon"
     },
     {
-      "id": "event-ascent-eagle",
+      "id": "event-7",
       "sourceId": "ascent",
       "targetId": "eagle"
     },
@@ -615,7 +615,7 @@
       "targetId": "moon"
     },
     {
-      "id": "event-rendezvous-eagle",
+      "id": "event-8",
       "sourceId": "rendezvous",
       "targetId": "eagle"
     },
@@ -640,7 +640,7 @@
       "targetId": "collins"
     },
     {
-      "id": "event-tei-columbia",
+      "id": "event-9",
       "sourceId": "tei",
       "targetId": "columbia"
     },
@@ -660,7 +660,7 @@
       "targetId": "collins"
     },
     {
-      "id": "event-reentry-columbia",
+      "id": "event-10",
       "sourceId": "reentry",
       "targetId": "columbia"
     },
@@ -680,7 +680,7 @@
       "targetId": "collins"
     },
     {
-      "id": "event-splashdown-columbia",
+      "id": "event-11",
       "sourceId": "splashdown",
       "targetId": "columbia"
     },
@@ -700,7 +700,7 @@
       "targetId": "collins"
     },
     {
-      "id": "event-recovery-hornet",
+      "id": "event-12",
       "sourceId": "recovery",
       "targetId": "hornet"
     },

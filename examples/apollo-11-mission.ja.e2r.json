@@ -1,0 +1,556 @@
+{
+  "version": "1.0",
+  "entities": [
+    {
+      "id": "armstrong",
+      "name": "ニール・アームストロング",
+      "description": "アポロ11号の船長。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 180,
+                "y": 120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "aldrin",
+      "name": "バズ・オルドリン",
+      "description": "アポロ11号の月着陸船操縦士。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 380,
+                "y": 120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "collins",
+      "name": "マイケル・コリンズ",
+      "description": "アポロ11号の司令船操縦士。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 580,
+                "y": 120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "nasa",
+      "name": "NASA",
+      "description": "ミッションを担当した米国の宇宙機関。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 380,
+                "y": 300
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "columbia",
+      "name": "司令船コロンビア",
+      "description": "アポロ11号の司令・機械船。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 180,
+                "y": 480
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "eagle",
+      "name": "月着陸船イーグル",
+      "description": "着陸と上昇に使われた月着陸船。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 380,
+                "y": 480
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "saturn-v",
+      "name": "サターンV",
+      "description": "アポロ11号を月へ運んだロケット。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 580,
+                "y": 480
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "moon",
+      "name": "月",
+      "description": "アポロ11号の目的地。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 680,
+                "y": 300
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hornet",
+      "name": "USSホーネット",
+      "description": "乗組員を収容した回収船。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 80,
+                "y": 300
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "launch",
+      "name": "アポロ11号打上げ",
+      "description": "アポロ11号打上げ。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 16,
+            "hour": 13,
+            "minute": 32,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "tli",
+      "name": "月遷移軌道投入",
+      "description": "月遷移軌道投入。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 16,
+            "hour": 16,
+            "minute": 16,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "loi",
+      "name": "月周回軌道投入",
+      "description": "月周回軌道投入。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 19,
+            "hour": 17,
+            "minute": 21,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "separate",
+      "name": "イーグル分離",
+      "description": "イーグル分離。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 20,
+            "hour": 17,
+            "minute": 44,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "landing",
+      "name": "月面着陸",
+      "description": "月面着陸。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 20,
+            "hour": 20,
+            "minute": 17,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "eva",
+      "name": "月面活動開始",
+      "description": "月面活動開始。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 21,
+            "hour": 2,
+            "minute": 56,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "ascent",
+      "name": "月着陸船上昇",
+      "description": "月着陸船上昇。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 21,
+            "hour": 17,
+            "minute": 54,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "rendezvous",
+      "name": "ランデブーとドッキング",
+      "description": "ランデブーとドッキング。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 21,
+            "hour": 21,
+            "minute": 35,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "tei",
+      "name": "地球帰還軌道投入",
+      "description": "地球帰還軌道投入。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 22,
+            "hour": 4,
+            "minute": 55,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "reentry",
+      "name": "大気圏再突入",
+      "description": "大気圏再突入。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 24,
+            "hour": 16,
+            "minute": 21,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "splashdown",
+      "name": "着水",
+      "description": "着水。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 24,
+            "hour": 16,
+            "minute": 50,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "recovery",
+      "name": "USSホーネットでの回収",
+      "description": "USSホーネットでの回収。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 24,
+            "hour": 17,
+            "minute": 20,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "id": "entity-1",
+      "name": "乗組員",
+      "sourceId": "armstrong",
+      "targetId": "nasa"
+    },
+    {
+      "id": "entity-2",
+      "name": "乗組員",
+      "sourceId": "aldrin",
+      "targetId": "nasa"
+    },
+    {
+      "id": "entity-3",
+      "name": "乗組員",
+      "sourceId": "collins",
+      "targetId": "nasa"
+    },
+    {
+      "id": "entity-4",
+      "name": "操縦する",
+      "sourceId": "armstrong",
+      "targetId": "eagle"
+    },
+    {
+      "id": "entity-5",
+      "name": "操縦する",
+      "sourceId": "aldrin",
+      "targetId": "eagle"
+    },
+    {
+      "id": "entity-6",
+      "name": "操縦する",
+      "sourceId": "collins",
+      "targetId": "columbia"
+    },
+    {
+      "id": "entity-7",
+      "name": "ドッキングする",
+      "sourceId": "columbia",
+      "targetId": "eagle"
+    },
+    {
+      "id": "entity-8",
+      "name": "運用する",
+      "sourceId": "nasa",
+      "targetId": "saturn-v"
+    },
+    {
+      "id": "entity-9",
+      "name": "着陸する",
+      "sourceId": "eagle",
+      "targetId": "moon"
+    },
+    {
+      "id": "entity-10",
+      "name": "打ち上げられる",
+      "sourceId": "columbia",
+      "targetId": "saturn-v"
+    },
+    {
+      "id": "entity-11",
+      "name": "乗組員を収容する",
+      "sourceId": "hornet",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-1",
+      "sourceId": "launch",
+      "targetId": "saturn-v"
+    },
+    {
+      "id": "event-2",
+      "sourceId": "tli",
+      "targetId": "saturn-v"
+    },
+    {
+      "id": "event-3",
+      "sourceId": "loi",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-4",
+      "sourceId": "separate",
+      "targetId": "eagle"
+    },
+    {
+      "id": "event-5",
+      "sourceId": "landing",
+      "targetId": "moon"
+    },
+    {
+      "id": "event-6",
+      "sourceId": "eva",
+      "targetId": "moon"
+    },
+    {
+      "id": "event-7",
+      "sourceId": "ascent",
+      "targetId": "eagle"
+    },
+    {
+      "id": "event-8",
+      "sourceId": "rendezvous",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-9",
+      "sourceId": "tei",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-10",
+      "sourceId": "reentry",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-11",
+      "sourceId": "splashdown",
+      "targetId": "hornet"
+    },
+    {
+      "id": "event-12",
+      "sourceId": "recovery",
+      "targetId": "hornet"
+    }
+  ],
+  "extensions": {
+    "metadata": {
+      "datasetId": "apollo-11-mission-ja-v1",
+      "title": "アポロ11号ミッション"
+    },
+    "draft.github.sukoyaka-dopeness.coordinate": {
+      "specVersion": "0.1.0",
+      "spaces": [
+        {
+          "id": "liaisonscape-graph",
+          "name": "LiaisonScape graph coordinates",
+          "kind": "cartesian-2d",
+          "components": {
+            "x": {
+              "unit": "liaisonscape-user-unit",
+              "positiveDirection": "display-right"
+            },
+            "y": {
+              "unit": "liaisonscape-user-unit",
+              "positiveDirection": "display-down"
+            }
+          }
+        }
+      ]
+    },
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "metadata",
+          "version": "1.0.0"
+        },
+        {
+          "extension": "history",
+          "version": "1.0.0"
+        },
+        {
+          "extension": "draft.github.sukoyaka-dopeness.coordinate",
+          "version": "0.1.0"
+        }
+      ]
+    }
+  }
+}

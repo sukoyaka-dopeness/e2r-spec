@@ -4,7 +4,8 @@
   "private": true,
   "description": "Development tooling for the E2R specification.",
   "scripts": {
-    "validate": "npm run validate:history && npm run validate:coordinate-draft && npm run validate:names-draft && npm run validate:names-draft-ids",
+    "validate": "npm run validate:history && npm run validate:coordinate-draft && npm run validate:names-draft && npm run validate:names-draft-ids && npm run validate:apollo-sample",
+    "validate:apollo-sample": "node scripts/validate-apollo-sample.mjs",
     "validate:coordinate-draft": "node scripts/validate-coordinate-draft-schema.mjs",
     "validate:history": "node scripts/validate-history-schema.mjs",
     "validate:names-draft": "node scripts/validate-names-draft-schema.mjs",

@@ -15,6 +15,8 @@ JSON files directly under `examples/` are complete Dataset examples:
 - `multiple-events.json`
 - `event-with-entity.json`
 - `cross-application-demo.json`
+- `apollo-11-mission.en.e2r.json`
+- `apollo-11-mission.ja.e2r.json`
 
 `cross-application-demo.json` is a reusable workflow example for
 NarrativeLine and LiaisonScape. It includes Metadata, mixed History precision,
@@ -23,6 +25,13 @@ and experimental Coordinate prototype `0.1.0`. LiaisonScape interprets the
 `liaisonscape-graph` Entity positions. NarrativeLine independently displays
 Dataset-defined Entity/Event Coordinates, including a partial Event value and
 an Entity with multiple selectable Spaces.
+
+The Apollo 11 files are the canonical English/Japanese cross-application
+Mission sample. Each file is a complete wrapper-free Dataset with the same
+Object IDs, Event chronology, Relation topology, UTC History values, and
+LiaisonScape Coordinate Draft values. Natural-language fields and Dataset IDs
+are localized. The factual basis and precision policy are recorded in
+`docs/apollo-11-canonical-sample.md`.
 
 ### History Extension Examples
 

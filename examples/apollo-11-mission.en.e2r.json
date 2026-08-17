@@ -1,0 +1,556 @@
+{
+  "version": "1.0",
+  "entities": [
+    {
+      "id": "armstrong",
+      "name": "Neil Armstrong",
+      "description": "Apollo 11 commander.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 180,
+                "y": 120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "aldrin",
+      "name": "Buzz Aldrin",
+      "description": "Apollo 11 lunar module pilot.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 380,
+                "y": 120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "collins",
+      "name": "Michael Collins",
+      "description": "Apollo 11 command module pilot.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 580,
+                "y": 120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "nasa",
+      "name": "NASA",
+      "description": "The United States space agency responsible for the mission.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 380,
+                "y": 300
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "columbia",
+      "name": "Command Module Columbia",
+      "description": "Apollo 11 command and service module.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 180,
+                "y": 480
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "eagle",
+      "name": "Lunar Module Eagle",
+      "description": "Apollo 11 lunar module used for landing and ascent.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 380,
+                "y": 480
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "saturn-v",
+      "name": "Saturn V",
+      "description": "Launch vehicle that carried Apollo 11 toward the Moon.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 580,
+                "y": 480
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "moon",
+      "name": "Moon",
+      "description": "The lunar destination and landing environment.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 680,
+                "y": 300
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hornet",
+      "name": "USS Hornet",
+      "description": "Recovery ship that received the crew after splashdown.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 80,
+                "y": 300
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "launch",
+      "name": "Apollo 11 launch",
+      "description": "Apollo 11 launch.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 16,
+            "hour": 13,
+            "minute": 32,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "tli",
+      "name": "Translunar injection",
+      "description": "Translunar injection.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 16,
+            "hour": 16,
+            "minute": 16,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "loi",
+      "name": "Lunar orbit insertion",
+      "description": "Lunar orbit insertion.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 19,
+            "hour": 17,
+            "minute": 21,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "separate",
+      "name": "Eagle separates from Columbia",
+      "description": "Eagle separates from Columbia.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 20,
+            "hour": 17,
+            "minute": 44,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "landing",
+      "name": "Lunar landing",
+      "description": "Lunar landing.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 20,
+            "hour": 20,
+            "minute": 17,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "eva",
+      "name": "Lunar EVA begins",
+      "description": "Lunar EVA begins.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 21,
+            "hour": 2,
+            "minute": 56,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "ascent",
+      "name": "Lunar module ascent",
+      "description": "Lunar module ascent.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 21,
+            "hour": 17,
+            "minute": 54,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "rendezvous",
+      "name": "Rendezvous and docking",
+      "description": "Rendezvous and docking.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 21,
+            "hour": 21,
+            "minute": 35,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "tei",
+      "name": "Trans-Earth injection",
+      "description": "Trans-Earth injection.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 22,
+            "hour": 4,
+            "minute": 55,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "reentry",
+      "name": "Atmospheric re-entry",
+      "description": "Atmospheric re-entry.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 24,
+            "hour": 16,
+            "minute": 21,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "splashdown",
+      "name": "Splashdown",
+      "description": "Splashdown.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 24,
+            "hour": 16,
+            "minute": 50,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    },
+    {
+      "id": "recovery",
+      "name": "Recovery aboard USS Hornet",
+      "description": "Recovery aboard USS Hornet.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1969,
+            "month": 7,
+            "day": 24,
+            "hour": 17,
+            "minute": 20,
+            "timeZone": "Etc/UTC",
+            "offset": "+00:00"
+          }
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "id": "entity-1",
+      "name": "crew member of",
+      "sourceId": "armstrong",
+      "targetId": "nasa"
+    },
+    {
+      "id": "entity-2",
+      "name": "crew member of",
+      "sourceId": "aldrin",
+      "targetId": "nasa"
+    },
+    {
+      "id": "entity-3",
+      "name": "crew member of",
+      "sourceId": "collins",
+      "targetId": "nasa"
+    },
+    {
+      "id": "entity-4",
+      "name": "operates",
+      "sourceId": "armstrong",
+      "targetId": "eagle"
+    },
+    {
+      "id": "entity-5",
+      "name": "operates",
+      "sourceId": "aldrin",
+      "targetId": "eagle"
+    },
+    {
+      "id": "entity-6",
+      "name": "operates",
+      "sourceId": "collins",
+      "targetId": "columbia"
+    },
+    {
+      "id": "entity-7",
+      "name": "docks with",
+      "sourceId": "columbia",
+      "targetId": "eagle"
+    },
+    {
+      "id": "entity-8",
+      "name": "operates",
+      "sourceId": "nasa",
+      "targetId": "saturn-v"
+    },
+    {
+      "id": "entity-9",
+      "name": "lands on",
+      "sourceId": "eagle",
+      "targetId": "moon"
+    },
+    {
+      "id": "entity-10",
+      "name": "is launched by",
+      "sourceId": "columbia",
+      "targetId": "saturn-v"
+    },
+    {
+      "id": "entity-11",
+      "name": "recovers crew from",
+      "sourceId": "hornet",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-1",
+      "sourceId": "launch",
+      "targetId": "saturn-v"
+    },
+    {
+      "id": "event-2",
+      "sourceId": "tli",
+      "targetId": "saturn-v"
+    },
+    {
+      "id": "event-3",
+      "sourceId": "loi",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-4",
+      "sourceId": "separate",
+      "targetId": "eagle"
+    },
+    {
+      "id": "event-5",
+      "sourceId": "landing",
+      "targetId": "moon"
+    },
+    {
+      "id": "event-6",
+      "sourceId": "eva",
+      "targetId": "moon"
+    },
+    {
+      "id": "event-7",
+      "sourceId": "ascent",
+      "targetId": "eagle"
+    },
+    {
+      "id": "event-8",
+      "sourceId": "rendezvous",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-9",
+      "sourceId": "tei",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-10",
+      "sourceId": "reentry",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-11",
+      "sourceId": "splashdown",
+      "targetId": "hornet"
+    },
+    {
+      "id": "event-12",
+      "sourceId": "recovery",
+      "targetId": "hornet"
+    }
+  ],
+  "extensions": {
+    "metadata": {
+      "datasetId": "apollo-11-mission-en-v1",
+      "title": "Apollo 11 Mission"
+    },
+    "draft.github.sukoyaka-dopeness.coordinate": {
+      "specVersion": "0.1.0",
+      "spaces": [
+        {
+          "id": "liaisonscape-graph",
+          "name": "LiaisonScape graph coordinates",
+          "kind": "cartesian-2d",
+          "components": {
+            "x": {
+              "unit": "liaisonscape-user-unit",
+              "positiveDirection": "display-right"
+            },
+            "y": {
+              "unit": "liaisonscape-user-unit",
+              "positiveDirection": "display-down"
+            }
+          }
+        }
+      ]
+    },
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "metadata",
+          "version": "1.0.0"
+        },
+        {
+          "extension": "history",
+          "version": "1.0.0"
+        },
+        {
+          "extension": "draft.github.sukoyaka-dopeness.coordinate",
+          "version": "0.1.0"
+        }
+      ]
+    }
+  }
+}

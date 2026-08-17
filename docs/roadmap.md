@@ -504,6 +504,14 @@ therefore research an explicit bridge or server-backed workspace before
 assuming cross-origin sharing. This is a future architecture question, not a
 current application or Core implementation requirement.
 
+## Canonical sample follow-up
+
+The canonical cross-application sample baseline now includes the Apollo 11
+Mission English/Japanese wrapper-free Datasets under `examples/`. They are
+intended for Timeline, relationship-graph, Validator, and future Hub workflows;
+application Home samples remain application-specific and are not changed by
+this addition.
+
 ## Sample and external vocabulary follow-up
 
 Two application/ecosystem tasks are explicitly recorded for future planning:

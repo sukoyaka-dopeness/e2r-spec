@@ -9,7 +9,10 @@ the selected Events and precision were chosen.
 ## Scope
 
 The sample follows the mission from launch through recovery with 12 Events,
-nine Entities, Event-to-Entity participation links, and natural
+nine Entities, 11 natural Entity-to-Entity relationships, and Event-to-Entity
+participation links, with the selected participants represented explicitly so
+person-centered traversal remains useful in NarrativeLine. The sample has 66
+Relations in total. It also includes natural
 Entity-to-Entity relationships among the crew, NASA, spacecraft, launch
 vehicle, Moon, and recovery ship. It intentionally does not add a generic
 Apollo 11 Mission Entity, artificial self-Relations, or artificial parallel

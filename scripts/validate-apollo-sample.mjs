@@ -7,7 +7,7 @@ const [en, ja] = datasets;
 for (const dataset of datasets) {
   assert.equal(dataset.entities.length, 9);
   assert.equal(dataset.events.length, 12);
-  assert.equal(dataset.relations.length, 23);
+  assert.equal(dataset.relations.length, 66);
   const ids = new Set([...dataset.entities, ...dataset.events].map(({ id }) => id));
   for (const relation of dataset.relations) {
     assert.ok(ids.has(relation.sourceId));
@@ -19,6 +19,12 @@ for (const dataset of datasets) {
     assert.equal(time.offset, "+00:00");
   }
 }
+const relatedTargets = (dataset, eventId) => dataset.relations.filter(({ sourceId }) => sourceId === eventId).map(({ targetId }) => targetId);
+assert.deepEqual(relatedTargets(en, "landing").sort(), ["armstrong", "aldrin", "eagle", "moon"].sort());
+assert.deepEqual(relatedTargets(en, "eva").sort(), ["armstrong", "aldrin", "eagle", "moon"].sort());
+assert.ok(!relatedTargets(en, "landing").includes("collins"));
+assert.ok(relatedTargets(en, "splashdown").includes("columbia"));
+assert.deepEqual(relatedTargets(en, "recovery").sort(), ["hornet", "columbia", "armstrong", "aldrin", "collins"].sort());
 const shape = (dataset) => ({
   entities: dataset.entities.map(({ id, extensions }) => [id, extensions["draft.github.sukoyaka-dopeness.coordinate"]]),
   events: dataset.events.map(({ id, extensions }) => [id, extensions.history]),

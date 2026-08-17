@@ -385,19 +385,19 @@
   "relations": [
     {
       "id": "entity-1",
-      "name": "crew member of",
+      "name": "is a NASA astronaut",
       "sourceId": "armstrong",
       "targetId": "nasa"
     },
     {
       "id": "entity-2",
-      "name": "crew member of",
+      "name": "is a NASA astronaut",
       "sourceId": "aldrin",
       "targetId": "nasa"
     },
     {
       "id": "entity-3",
-      "name": "crew member of",
+      "name": "is a NASA astronaut",
       "sourceId": "collins",
       "targetId": "nasa"
     },
@@ -450,64 +450,279 @@
       "targetId": "columbia"
     },
     {
-      "id": "event-1",
+      "id": "event-launch-saturn-v",
       "sourceId": "launch",
       "targetId": "saturn-v"
     },
     {
-      "id": "event-2",
+      "id": "event-launch-columbia",
+      "sourceId": "launch",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-launch-eagle",
+      "sourceId": "launch",
+      "targetId": "eagle"
+    },
+    {
+      "id": "event-launch-armstrong",
+      "sourceId": "launch",
+      "targetId": "armstrong"
+    },
+    {
+      "id": "event-launch-aldrin",
+      "sourceId": "launch",
+      "targetId": "aldrin"
+    },
+    {
+      "id": "event-launch-collins",
+      "sourceId": "launch",
+      "targetId": "collins"
+    },
+    {
+      "id": "event-tli-saturn-v",
       "sourceId": "tli",
       "targetId": "saturn-v"
     },
     {
-      "id": "event-3",
+      "id": "event-tli-columbia",
+      "sourceId": "tli",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-tli-eagle",
+      "sourceId": "tli",
+      "targetId": "eagle"
+    },
+    {
+      "id": "event-tli-armstrong",
+      "sourceId": "tli",
+      "targetId": "armstrong"
+    },
+    {
+      "id": "event-tli-aldrin",
+      "sourceId": "tli",
+      "targetId": "aldrin"
+    },
+    {
+      "id": "event-tli-collins",
+      "sourceId": "tli",
+      "targetId": "collins"
+    },
+    {
+      "id": "event-loi-columbia",
       "sourceId": "loi",
       "targetId": "columbia"
     },
     {
-      "id": "event-4",
+      "id": "event-loi-armstrong",
+      "sourceId": "loi",
+      "targetId": "armstrong"
+    },
+    {
+      "id": "event-loi-aldrin",
+      "sourceId": "loi",
+      "targetId": "aldrin"
+    },
+    {
+      "id": "event-loi-collins",
+      "sourceId": "loi",
+      "targetId": "collins"
+    },
+    {
+      "id": "event-separate-eagle",
       "sourceId": "separate",
       "targetId": "eagle"
     },
     {
-      "id": "event-5",
+      "id": "event-separate-columbia",
+      "sourceId": "separate",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-separate-armstrong",
+      "sourceId": "separate",
+      "targetId": "armstrong"
+    },
+    {
+      "id": "event-separate-aldrin",
+      "sourceId": "separate",
+      "targetId": "aldrin"
+    },
+    {
+      "id": "event-separate-collins",
+      "sourceId": "separate",
+      "targetId": "collins"
+    },
+    {
+      "id": "event-landing-eagle",
+      "sourceId": "landing",
+      "targetId": "eagle"
+    },
+    {
+      "id": "event-landing-moon",
       "sourceId": "landing",
       "targetId": "moon"
     },
     {
-      "id": "event-6",
+      "id": "event-landing-armstrong",
+      "sourceId": "landing",
+      "targetId": "armstrong"
+    },
+    {
+      "id": "event-landing-aldrin",
+      "sourceId": "landing",
+      "targetId": "aldrin"
+    },
+    {
+      "id": "event-eva-armstrong",
+      "sourceId": "eva",
+      "targetId": "armstrong"
+    },
+    {
+      "id": "event-eva-aldrin",
+      "sourceId": "eva",
+      "targetId": "aldrin"
+    },
+    {
+      "id": "event-eva-eagle",
+      "sourceId": "eva",
+      "targetId": "eagle"
+    },
+    {
+      "id": "event-eva-moon",
       "sourceId": "eva",
       "targetId": "moon"
     },
     {
-      "id": "event-7",
+      "id": "event-ascent-eagle",
       "sourceId": "ascent",
       "targetId": "eagle"
     },
     {
-      "id": "event-8",
+      "id": "event-ascent-armstrong",
+      "sourceId": "ascent",
+      "targetId": "armstrong"
+    },
+    {
+      "id": "event-ascent-aldrin",
+      "sourceId": "ascent",
+      "targetId": "aldrin"
+    },
+    {
+      "id": "event-ascent-moon",
+      "sourceId": "ascent",
+      "targetId": "moon"
+    },
+    {
+      "id": "event-rendezvous-eagle",
+      "sourceId": "rendezvous",
+      "targetId": "eagle"
+    },
+    {
+      "id": "event-rendezvous-columbia",
       "sourceId": "rendezvous",
       "targetId": "columbia"
     },
     {
-      "id": "event-9",
+      "id": "event-rendezvous-armstrong",
+      "sourceId": "rendezvous",
+      "targetId": "armstrong"
+    },
+    {
+      "id": "event-rendezvous-aldrin",
+      "sourceId": "rendezvous",
+      "targetId": "aldrin"
+    },
+    {
+      "id": "event-rendezvous-collins",
+      "sourceId": "rendezvous",
+      "targetId": "collins"
+    },
+    {
+      "id": "event-tei-columbia",
       "sourceId": "tei",
       "targetId": "columbia"
     },
     {
-      "id": "event-10",
+      "id": "event-tei-armstrong",
+      "sourceId": "tei",
+      "targetId": "armstrong"
+    },
+    {
+      "id": "event-tei-aldrin",
+      "sourceId": "tei",
+      "targetId": "aldrin"
+    },
+    {
+      "id": "event-tei-collins",
+      "sourceId": "tei",
+      "targetId": "collins"
+    },
+    {
+      "id": "event-reentry-columbia",
       "sourceId": "reentry",
       "targetId": "columbia"
     },
     {
-      "id": "event-11",
+      "id": "event-reentry-armstrong",
+      "sourceId": "reentry",
+      "targetId": "armstrong"
+    },
+    {
+      "id": "event-reentry-aldrin",
+      "sourceId": "reentry",
+      "targetId": "aldrin"
+    },
+    {
+      "id": "event-reentry-collins",
+      "sourceId": "reentry",
+      "targetId": "collins"
+    },
+    {
+      "id": "event-splashdown-columbia",
       "sourceId": "splashdown",
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-splashdown-armstrong",
+      "sourceId": "splashdown",
+      "targetId": "armstrong"
+    },
+    {
+      "id": "event-splashdown-aldrin",
+      "sourceId": "splashdown",
+      "targetId": "aldrin"
+    },
+    {
+      "id": "event-splashdown-collins",
+      "sourceId": "splashdown",
+      "targetId": "collins"
+    },
+    {
+      "id": "event-recovery-hornet",
+      "sourceId": "recovery",
       "targetId": "hornet"
     },
     {
-      "id": "event-12",
+      "id": "event-recovery-columbia",
       "sourceId": "recovery",
-      "targetId": "hornet"
+      "targetId": "columbia"
+    },
+    {
+      "id": "event-recovery-armstrong",
+      "sourceId": "recovery",
+      "targetId": "armstrong"
+    },
+    {
+      "id": "event-recovery-aldrin",
+      "sourceId": "recovery",
+      "targetId": "aldrin"
+    },
+    {
+      "id": "event-recovery-collins",
+      "sourceId": "recovery",
+      "targetId": "collins"
     }
   ],
   "extensions": {

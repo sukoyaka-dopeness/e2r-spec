@@ -501,6 +501,39 @@ external identifiers, Wikidata import, Dictionary evolution, and AI-assisted
 analysis, but is a distinct research task concerning on-demand retrieval,
 provenance, caching, deterministic selection, and adoption boundaries.
 
+## Application UX maintenance follow-up
+
+The following bounded application-maintenance items are recorded for both
+NarrativeLine and LiaisonScape. They do not change E2R Core or Extension
+semantics:
+
+- review the visual scale of operation buttons on desktop and narrow mobile
+  layouts; the current controls feel oversized relative to both the desktop
+  composition and the phone viewport. The review must preserve touch-target,
+  keyboard, and contrast requirements while reducing visual disproportion;
+- align NarrativeLine's browser Back/Forward behavior with LiaisonScape's
+  Home/workspace model, including Dataset retention and direct-entry or
+  refresh behavior;
+- align the Home navigation control in NarrativeLine view headers with
+  LiaisonScape's current header treatment, while keeping navigation semantics
+  explicit and preserving the active Dataset;
+- audit modal and confirmation-dialog focus behavior in both applications.
+
+The proposed modal keyboard policy is deliberately action-sensitive. Ordinary
+forms and non-destructive confirmations may initially focus their primary
+decision so Enter can complete the common action. Destructive confirmations,
+especially deletion, should initially focus Cancel or another non-destructive
+choice. Enter activates only the currently focused control; it must not be a
+global shortcut that bypasses the visible focus. Escape, focus containment,
+return focus to the opener, and an always-visible focus indicator remain
+required. This keeps keyboard use efficient without making an accidental
+Enter press delete data.
+
+These items are future application work, not authorization for a broad visual
+rewrite. Each application should receive focused interaction tests for
+browser history, Dataset continuity, responsive button sizing, modal focus,
+Enter/Escape behavior, and destructive-action safety before release.
+
 ## Proposed E2R-wide milestones
 
 The following ten milestones provide a cross-repository sequence using three

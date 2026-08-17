@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "entities": [
+    { "id": "elara", "name": "エララ・ヴェイン", "description": "王女であり、望まぬ摂政。" },
+    { "id": "garrick", "name": "ガリック・ソーン", "description": "王国衛兵隊長。" },
+    { "id": "selene", "name": "セレネ・アークライト", "description": "封印された地下庫を研究する宮廷魔術師。" },
+    { "id": "rowan", "name": "ローワン・ヴェイル", "description": "密輸人で情報仲介者。" },
+    { "id": "mira", "name": "ミラ・フェン", "description": "誰であっても治療する治癒師。" },
+    { "id": "darius", "name": "ダリウス・ハルデン", "description": "隠された目的を持つ北方領主。" },
+    { "id": "ilyan", "name": "イリヤン・メロウ", "description": "古い聖域を守る高位聖職者。" },
+    { "id": "nyra", "name": "ナイラ・ソル", "description": "脆い和平を求める外国使節。" },
+    { "id": "kael", "name": "カエル・ルーク", "description": "自由旗団の指導者。" },
+    { "id": "vhalgrim", "name": "ヴァルグリム", "description": "シンダー峰の地下に眠る古代竜。" }
+  ],
+  "events": [
+    { "id": "king-death", "name": "国王の死", "description": "先王が突然亡くなる。", "extensions": { "history": { "time": { "year": 742 } } } },
+    { "id": "regency", "name": "エララが摂政となる", "description": "エララが摂政を引き受ける。", "extensions": { "history": { "time": { "year": 743 } } } },
+    { "id": "tax-revolt", "name": "北方税反乱", "description": "北方諸侯が王税を拒む。", "extensions": { "history": { "time": { "year": 744 } } } },
+    { "id": "vault-opened", "name": "封印地下庫の開放", "description": "セレネが封印された地下庫を開く。", "extensions": { "history": { "time": { "year": 745 } } } },
+    { "id": "envoy-arrival", "name": "外国使節の到着", "description": "ナイラが和平交渉のため到着する。", "extensions": { "history": { "time": { "year": 746 } } } },
+    { "id": "regent-attack", "name": "摂政暗殺未遂", "description": "エララの命が狙われる。", "extensions": { "history": { "time": { "year": 747 } } } },
+    { "id": "banner-uprising", "name": "自由旗団の蜂起", "description": "カエルの反乱が首都に届く。", "extensions": { "history": { "time": { "year": 748 } } } },
+    { "id": "sanctuary-burning", "name": "聖オラ聖域の炎上", "description": "騒乱の中で聖域が焼け落ちる。", "extensions": { "history": { "time": { "year": 749 } } } },
+    { "id": "dragon-awakening", "name": "ヴァルグリムの目覚め", "description": "古代竜がシンダー峰の地下で目覚める。", "extensions": { "history": { "time": { "year": 750 } } } },
+    { "id": "cinder-pact", "name": "シンダー峰の秘密の盟約", "description": "エララとヴァルグリムが危険な盟約を結ぶ。", "extensions": { "history": { "time": { "year": 751 } } } },
+    { "id": "asterfall-siege", "name": "アスターフォール包囲戦", "description": "対立する勢力がアスターフォールで衝突する。", "extensions": { "history": { "time": { "year": 752 } } } },
+    { "id": "ashen-concord", "name": "灰冠協定", "description": "諸勢力が新たな秩序に合意する。", "extensions": { "history": { "time": { "year": 755 } } } }
+  ],
+  "relations": [
+    { "id": "r1", "name": "命令する", "sourceId": "elara", "targetId": "garrick" }, { "id": "r2", "name": "信頼する", "sourceId": "elara", "targetId": "selene" }, { "id": "r3", "name": "助言する", "sourceId": "nyra", "targetId": "elara" }, { "id": "r4", "name": "命を救われた", "sourceId": "garrick", "targetId": "mira" }, { "id": "r5", "name": "敵対する", "sourceId": "garrick", "targetId": "kael" }, { "id": "r6", "name": "対立する", "sourceId": "selene", "targetId": "ilyan" }, { "id": "r7", "name": "秘密を渡す", "sourceId": "rowan", "targetId": "nyra" }, { "id": "r8", "name": "物資を供給する", "sourceId": "rowan", "targetId": "kael" }, { "id": "r9", "name": "治療する", "sourceId": "mira", "targetId": "kael" }, { "id": "r10", "name": "密かに資金援助する", "sourceId": "darius", "targetId": "kael" }, { "id": "r11", "name": "叔父である", "sourceId": "darius", "targetId": "elara" }, { "id": "r12", "name": "守る", "sourceId": "ilyan", "targetId": "mira" }, { "id": "r13", "name": "誓約で結ばれる", "sourceId": "vhalgrim", "targetId": "selene" }, { "id": "r14", "name": "盟約を結ぶ", "sourceId": "elara", "targetId": "vhalgrim" }, { "id": "r15", "name": "反対する", "sourceId": "kael", "targetId": "elara" }, { "id": "r16", "name": "疑う", "sourceId": "nyra", "targetId": "darius" }, { "id": "r17", "name": "脅迫する", "sourceId": "darius", "targetId": "rowan" },
+    { "id": "e1", "sourceId": "king-death", "targetId": "elara" }, { "id": "e2", "sourceId": "regency", "targetId": "elara" }, { "id": "e3", "sourceId": "tax-revolt", "targetId": "darius" }, { "id": "e4", "sourceId": "vault-opened", "targetId": "selene" }, { "id": "e5", "sourceId": "envoy-arrival", "targetId": "nyra" }, { "id": "e6", "sourceId": "regent-attack", "targetId": "elara" }, { "id": "e7", "sourceId": "banner-uprising", "targetId": "kael" }, { "id": "e8", "sourceId": "sanctuary-burning", "targetId": "ilyan" }, { "id": "e9", "sourceId": "dragon-awakening", "targetId": "vhalgrim" }, { "id": "e10", "sourceId": "cinder-pact", "targetId": "elara" }, { "id": "e11", "sourceId": "cinder-pact", "targetId": "vhalgrim" }, { "id": "e12", "sourceId": "asterfall-siege", "targetId": "kael" }, { "id": "e13", "sourceId": "asterfall-siege", "targetId": "elara" }, { "id": "e14", "sourceId": "ashen-concord", "targetId": "elara" }, { "id": "e15", "sourceId": "ashen-concord", "targetId": "kael" }
+  ],
+  "extensions": { "metadata": { "datasetId": "ashen-crown-ja-v1", "title": "灰冠の王国" }, "draft.github.sukoyaka-dopeness.coordinate": { "specVersion": "0.1.0", "spaces": [{ "id": "liaisonscape-graph", "name": "LiaisonScape graph coordinates", "kind": "cartesian-2d", "components": { "x": { "unit": "liaisonscape-user-unit", "positiveDirection": "display-right" }, "y": { "unit": "liaisonscape-user-unit", "positiveDirection": "display-down" } } }] }, "draft.github.sukoyaka-dopeness.specification": { "specVersion": "0.1.0", "uses": [{ "extension": "metadata", "version": "1.0.0" }, { "extension": "history", "version": "1.0.0" }, { "extension": "draft.github.sukoyaka-dopeness.coordinate", "version": "0.1.0" }] } }
+}

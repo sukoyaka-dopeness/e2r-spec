@@ -29,8 +29,8 @@
             {
               "spaceId": "liaisonscape-graph",
               "values": {
-                "x": 380,
-                "y": 120
+                "x": 454.3376623376622,
+                "y": 120.00000000000004
               }
             }
           ]
@@ -47,8 +47,8 @@
             {
               "spaceId": "liaisonscape-graph",
               "values": {
-                "x": 580,
-                "y": 120
+                "x": 194.54545454545436,
+                "y": 325.1168831168833
               }
             }
           ]
@@ -65,8 +65,8 @@
             {
               "spaceId": "liaisonscape-graph",
               "values": {
-                "x": 380,
-                "y": 300
+                "x": 530.0519480519483,
+                "y": 275.220779220779
               }
             }
           ]
@@ -83,8 +83,8 @@
             {
               "spaceId": "liaisonscape-graph",
               "values": {
-                "x": 180,
-                "y": 480
+                "x": 162.10389610389612,
+                "y": 473.11688311688323
               }
             }
           ]
@@ -101,8 +101,8 @@
             {
               "spaceId": "liaisonscape-graph",
               "values": {
-                "x": 380,
-                "y": 480
+                "x": 382.7532467532468,
+                "y": 488.25974025974034
               }
             }
           ]
@@ -119,8 +119,8 @@
             {
               "spaceId": "liaisonscape-graph",
               "values": {
-                "x": 580,
-                "y": 480
+                "x": 577.2467532467533,
+                "y": 477.2467532467532
               }
             }
           ]
@@ -137,8 +137,8 @@
             {
               "spaceId": "liaisonscape-graph",
               "values": {
-                "x": 680,
-                "y": 300
+                "x": 674.4935064935062,
+                "y": 299.99999999999994
               }
             }
           ]
@@ -155,8 +155,8 @@
             {
               "spaceId": "liaisonscape-graph",
               "values": {
-                "x": 80,
-                "y": 300
+                "x": 82.75324675324674,
+                "y": 288.9870129870131
               }
             }
           ]
@@ -439,9 +439,9 @@
     },
     {
       "id": "entity-10",
-      "name": "is launched by",
-      "sourceId": "columbia",
-      "targetId": "saturn-v"
+      "name": "launches",
+      "sourceId": "saturn-v",
+      "targetId": "columbia"
     },
     {
       "id": "entity-11",

@@ -25,6 +25,9 @@ assert.deepEqual(relatedTargets(en, "eva").sort(), ["armstrong", "aldrin", "eagl
 assert.ok(!relatedTargets(en, "landing").includes("collins"));
 assert.ok(relatedTargets(en, "splashdown").includes("columbia"));
 assert.deepEqual(relatedTargets(en, "recovery").sort(), ["hornet", "columbia", "armstrong", "aldrin", "collins"].sort());
+assert.deepEqual(en.relations.find(({ id }) => id === "entity-10"), { id: "entity-10", name: "launches", sourceId: "saturn-v", targetId: "columbia" });
+assert.equal(ja.relations.find(({ id }) => id === "entity-10")?.sourceId, "saturn-v");
+assert.equal(ja.relations.find(({ id }) => id === "entity-10")?.targetId, "columbia");
 const shape = (dataset) => ({
   entities: dataset.entities.map(({ id, extensions }) => [id, extensions["draft.github.sukoyaka-dopeness.coordinate"]]),
   events: dataset.events.map(({ id, extensions }) => [id, extensions.history]),

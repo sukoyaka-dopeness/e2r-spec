@@ -1,0 +1,782 @@
+{
+  "version": "1.0",
+  "entities": [
+    {
+      "id": "titanic",
+      "name": "RMS Titanic",
+      "description": "White Star Line passenger liner on her maiden voyage.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "carpathia",
+      "name": "RMS Carpathia",
+      "description": "Cunard liner that responded to Titanic's distress call and rescued survivors.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 480,
+                "y": 220
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "californian",
+      "name": "SS Californian",
+      "description": "Nearby ship whose response was examined by later inquiries.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 320,
+                "y": -220
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "white-star-line",
+      "name": "White Star Line",
+      "description": "The company operating Titanic.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": -320,
+                "y": 0
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "harland-wolff",
+      "name": "Harland and Wolff",
+      "description": "Belfast shipbuilder that constructed Titanic.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": -320,
+                "y": -220
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "smith",
+      "name": "Edward J. Smith",
+      "description": "Captain of Titanic.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": -140,
+                "y": 120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "andrews",
+      "name": "Thomas Andrews",
+      "description": "Naval architect associated with Titanic's design and construction.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": -140,
+                "y": -120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ismay",
+      "name": "J. Bruce Ismay",
+      "description": "Chairman and managing director of White Star Line.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": -320,
+                "y": 220
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fleet",
+      "name": "Frederick Fleet",
+      "description": "Lookout who reported the iceberg sighting.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 140,
+                "y": -120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "phillips",
+      "name": "Jack Phillips",
+      "description": "Titanic wireless operator.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 140,
+                "y": 120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bride",
+      "name": "Harold Bride",
+      "description": "Titanic wireless operator who worked with Phillips.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 220,
+                "y": 160
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "rostron",
+      "name": "Arthur Rostron",
+      "description": "Captain of Carpathia during the rescue.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 480,
+                "y": 300
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "molly-brown",
+      "name": "Margaret Brown",
+      "description": "Titanic survivor who later became known for helping fellow survivors.",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 0,
+                "y": 260
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "southampton-departure",
+      "name": "Departure from Southampton",
+      "description": "Titanic begins her maiden voyage.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 10,
+            "hour": 12,
+            "minute": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "cherbourg-call",
+      "name": "Call at Cherbourg",
+      "description": "Titanic calls at Cherbourg.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 10,
+            "hour": 18,
+            "minute": 35
+          }
+        }
+      }
+    },
+    {
+      "id": "queenstown-departure",
+      "name": "Departure from Queenstown",
+      "description": "Titanic leaves Queenstown for New York.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 11,
+            "hour": 13,
+            "minute": 30
+          }
+        }
+      }
+    },
+    {
+      "id": "ice-warning-1",
+      "name": "Ice warning received",
+      "description": "Titanic receives a wireless warning about ice.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 14
+          }
+        }
+      }
+    },
+    {
+      "id": "ice-warning-2",
+      "name": "Further ice warning received",
+      "description": "A further warning contributes to the documented ice-warning sequence.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 14
+          }
+        }
+      }
+    },
+    {
+      "id": "iceberg-sighted",
+      "name": "Iceberg sighted",
+      "description": "Frederick Fleet reports an iceberg ahead.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 14,
+            "hour": 23,
+            "minute": 40
+          }
+        }
+      }
+    },
+    {
+      "id": "collision",
+      "name": "Collision with iceberg",
+      "description": "Titanic strikes an iceberg and begins to flood.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 14,
+            "hour": 23,
+            "minute": 40
+          }
+        }
+      }
+    },
+    {
+      "id": "damage-assessment",
+      "name": "Damage assessment",
+      "description": "The damage and flooding are assessed aboard Titanic.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 14,
+            "hour": 23,
+            "minute": 55
+          }
+        }
+      }
+    },
+    {
+      "id": "distress-begins",
+      "name": "Distress transmission begins",
+      "description": "Titanic's wireless operators begin transmitting distress calls.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 0,
+            "minute": 25
+          }
+        }
+      }
+    },
+    {
+      "id": "carpathia-responds",
+      "name": "Carpathia responds",
+      "description": "Carpathia receives the distress call and turns toward Titanic.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 0,
+            "minute": 35
+          }
+        }
+      }
+    },
+    {
+      "id": "first-lifeboat",
+      "name": "First lifeboat launched",
+      "description": "The evacuation by lifeboat begins.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 0,
+            "minute": 45
+          }
+        }
+      }
+    },
+    {
+      "id": "lifeboat-evacuation",
+      "name": "Lifeboat evacuation",
+      "description": "Multiple lifeboats leave Titanic during the night.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 1,
+            "minute": 30
+          }
+        }
+      }
+    },
+    {
+      "id": "final-distress",
+      "name": "Final distress transmissions",
+      "description": "Wireless contact and distress transmissions cease as Titanic founders.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 2,
+            "minute": 10
+          }
+        }
+      }
+    },
+    {
+      "id": "sinking",
+      "name": "Titanic sinks",
+      "description": "Titanic founders in the North Atlantic.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 2,
+            "minute": 20
+          }
+        }
+      }
+    },
+    {
+      "id": "carpathia-arrives",
+      "name": "Carpathia reaches survivors",
+      "description": "Carpathia reaches the lifeboats in the early morning.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 4,
+            "minute": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "rescue-operations",
+      "name": "Rescue operations",
+      "description": "Carpathia takes survivors aboard.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 8,
+            "minute": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "carpathia-departs",
+      "name": "Carpathia departs the disaster area",
+      "description": "Carpathia leaves with survivors aboard.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "new-york-arrival",
+      "name": "Carpathia arrives in New York",
+      "description": "Carpathia arrives carrying Titanic survivors.",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 18,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "id": "r1",
+      "name": "operates",
+      "sourceId": "white-star-line",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r2",
+      "name": "built",
+      "sourceId": "harland-wolff",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r3",
+      "name": "commands",
+      "sourceId": "smith",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r4",
+      "name": "designed",
+      "sourceId": "andrews",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r5",
+      "name": "leads",
+      "sourceId": "ismay",
+      "targetId": "white-star-line"
+    },
+    {
+      "id": "r6",
+      "name": "serves aboard",
+      "sourceId": "fleet",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r7",
+      "name": "operates wireless aboard",
+      "sourceId": "phillips",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r8",
+      "name": "operates wireless aboard",
+      "sourceId": "bride",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r9",
+      "name": "commands",
+      "sourceId": "rostron",
+      "targetId": "carpathia"
+    },
+    {
+      "id": "r10",
+      "name": "responds to distress from",
+      "sourceId": "carpathia",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r11",
+      "name": "rescues survivors from",
+      "sourceId": "carpathia",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r12",
+      "name": "survives",
+      "sourceId": "molly-brown",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e1",
+      "sourceId": "southampton-departure",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e2",
+      "sourceId": "southampton-departure",
+      "targetId": "smith"
+    },
+    {
+      "id": "e3",
+      "sourceId": "cherbourg-call",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e4",
+      "sourceId": "queenstown-departure",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e5",
+      "sourceId": "ice-warning-1",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e6",
+      "sourceId": "ice-warning-2",
+      "targetId": "smith"
+    },
+    {
+      "id": "e7",
+      "sourceId": "iceberg-sighted",
+      "targetId": "fleet"
+    },
+    {
+      "id": "e8",
+      "sourceId": "iceberg-sighted",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e9",
+      "sourceId": "collision",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e10",
+      "sourceId": "collision",
+      "targetId": "smith"
+    },
+    {
+      "id": "e11",
+      "sourceId": "collision",
+      "targetId": "andrews"
+    },
+    {
+      "id": "e12",
+      "sourceId": "damage-assessment",
+      "targetId": "andrews"
+    },
+    {
+      "id": "e13",
+      "sourceId": "damage-assessment",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e14",
+      "sourceId": "distress-begins",
+      "targetId": "phillips"
+    },
+    {
+      "id": "e15",
+      "sourceId": "distress-begins",
+      "targetId": "bride"
+    },
+    {
+      "id": "e16",
+      "sourceId": "distress-begins",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e17",
+      "sourceId": "carpathia-responds",
+      "targetId": "carpathia"
+    },
+    {
+      "id": "e18",
+      "sourceId": "carpathia-responds",
+      "targetId": "rostron"
+    },
+    {
+      "id": "e19",
+      "sourceId": "first-lifeboat",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e20",
+      "sourceId": "lifeboat-evacuation",
+      "targetId": "molly-brown"
+    },
+    {
+      "id": "e21",
+      "sourceId": "final-distress",
+      "targetId": "phillips"
+    },
+    {
+      "id": "e22",
+      "sourceId": "final-distress",
+      "targetId": "bride"
+    },
+    {
+      "id": "e23",
+      "sourceId": "sinking",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e24",
+      "sourceId": "carpathia-arrives",
+      "targetId": "carpathia"
+    },
+    {
+      "id": "e25",
+      "sourceId": "rescue-operations",
+      "targetId": "carpathia"
+    },
+    {
+      "id": "e26",
+      "sourceId": "rescue-operations",
+      "targetId": "molly-brown"
+    },
+    {
+      "id": "e27",
+      "sourceId": "carpathia-departs",
+      "targetId": "carpathia"
+    },
+    {
+      "id": "e28",
+      "sourceId": "new-york-arrival",
+      "targetId": "carpathia"
+    }
+  ],
+  "extensions": {
+    "metadata": {
+      "datasetId": "titanic-final-voyage-en-v1",
+      "title": "Titanic: Final Voyage"
+    },
+    "draft.github.sukoyaka-dopeness.coordinate": {
+      "specVersion": "0.1.0",
+      "spaces": [
+        {
+          "id": "liaisonscape-graph",
+          "name": "LiaisonScape graph coordinates",
+          "kind": "cartesian-2d",
+          "components": {
+            "x": {
+              "unit": "liaisonscape-user-unit",
+              "positiveDirection": "display-right"
+            },
+            "y": {
+              "unit": "liaisonscape-user-unit",
+              "positiveDirection": "display-down"
+            }
+          }
+        }
+      ]
+    },
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "metadata",
+          "version": "1.0.0"
+        },
+        {
+          "extension": "history",
+          "version": "1.0.0"
+        },
+        {
+          "extension": "draft.github.sukoyaka-dopeness.coordinate",
+          "version": "0.1.0"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,782 @@
+{
+  "version": "1.0",
+  "entities": [
+    {
+      "id": "titanic",
+      "name": "RMSタイタニック",
+      "description": "処女航海中のホワイト・スター・ライン客船。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "carpathia",
+      "name": "RMSカルパチア",
+      "description": "遭難信号に応答し、生存者を救助したキュナード社の船。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 480,
+                "y": 220
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "californian",
+      "name": "SSカリフォルニアン",
+      "description": "後の調査で対応を検討された近隣船。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 320,
+                "y": -220
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "white-star-line",
+      "name": "ホワイト・スター・ライン",
+      "description": "タイタニックを運航した会社。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": -320,
+                "y": 0
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "harland-wolff",
+      "name": "ハーランド・アンド・ウルフ",
+      "description": "タイタニックを建造したベルファストの造船所。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": -320,
+                "y": -220
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "smith",
+      "name": "エドワード・J・スミス",
+      "description": "タイタニック船長。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": -140,
+                "y": 120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "andrews",
+      "name": "トーマス・アンドリュース",
+      "description": "設計・建造に関わった造船技師。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": -140,
+                "y": -120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ismay",
+      "name": "J・ブルース・イズメイ",
+      "description": "ホワイト・スター・ラインの会長兼社長。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": -320,
+                "y": 220
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fleet",
+      "name": "フレデリック・フリート",
+      "description": "氷山を発見して報告した見張り員。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 140,
+                "y": -120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "phillips",
+      "name": "ジャック・フィリップス",
+      "description": "タイタニックの無線通信士。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 140,
+                "y": 120
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bride",
+      "name": "ハロルド・ブライド",
+      "description": "フィリップスと勤務した無線通信士。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 220,
+                "y": 160
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "rostron",
+      "name": "アーサー・ロストロン",
+      "description": "救助時のカルパチア船長。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 480,
+                "y": 300
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "molly-brown",
+      "name": "マーガレット・ブラウン",
+      "description": "生存者で、後に他の生存者を助けた人物。",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.coordinate": {
+          "coordinates": [
+            {
+              "spaceId": "liaisonscape-graph",
+              "values": {
+                "x": 0,
+                "y": 260
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "southampton-departure",
+      "name": "サウサンプトン出港",
+      "description": "タイタニックが処女航海を開始する。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 10,
+            "hour": 12,
+            "minute": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "cherbourg-call",
+      "name": "シェルブール寄港",
+      "description": "タイタニックがシェルブールに寄港する。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 10,
+            "hour": 18,
+            "minute": 35
+          }
+        }
+      }
+    },
+    {
+      "id": "queenstown-departure",
+      "name": "クイーンズタウン出港",
+      "description": "タイタニックがニューヨークへ向けて出港する。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 11,
+            "hour": 13,
+            "minute": 30
+          }
+        }
+      }
+    },
+    {
+      "id": "ice-warning-1",
+      "name": "氷山警告の受信",
+      "description": "氷山に関する無線警告を受ける。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 14
+          }
+        }
+      }
+    },
+    {
+      "id": "ice-warning-2",
+      "name": "追加の氷山警告",
+      "description": "氷山警告の記録が続く。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 14
+          }
+        }
+      }
+    },
+    {
+      "id": "iceberg-sighted",
+      "name": "氷山発見",
+      "description": "フリートが前方の氷山を報告する。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 14,
+            "hour": 23,
+            "minute": 40
+          }
+        }
+      }
+    },
+    {
+      "id": "collision",
+      "name": "氷山との衝突",
+      "description": "氷山に衝突し、浸水が始まる。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 14,
+            "hour": 23,
+            "minute": 40
+          }
+        }
+      }
+    },
+    {
+      "id": "damage-assessment",
+      "name": "損傷確認",
+      "description": "損傷と浸水の状況が確認される。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 14,
+            "hour": 23,
+            "minute": 55
+          }
+        }
+      }
+    },
+    {
+      "id": "distress-begins",
+      "name": "遭難通信開始",
+      "description": "無線通信士が遭難信号を送信し始める。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 0,
+            "minute": 25
+          }
+        }
+      }
+    },
+    {
+      "id": "carpathia-responds",
+      "name": "カルパチアの応答",
+      "description": "遭難信号を受け、タイタニックへ向かう。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 0,
+            "minute": 35
+          }
+        }
+      }
+    },
+    {
+      "id": "first-lifeboat",
+      "name": "最初の救命ボート進水",
+      "description": "救命ボートによる避難が始まる。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 0,
+            "minute": 45
+          }
+        }
+      }
+    },
+    {
+      "id": "lifeboat-evacuation",
+      "name": "救命ボート避難",
+      "description": "夜間に複数の救命ボートが離れる。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 1,
+            "minute": 30
+          }
+        }
+      }
+    },
+    {
+      "id": "final-distress",
+      "name": "最後の遭難通信",
+      "description": "沈没に伴い無線通信が途絶える。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 2,
+            "minute": 10
+          }
+        }
+      }
+    },
+    {
+      "id": "sinking",
+      "name": "タイタニック沈没",
+      "description": "北大西洋で沈没する。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 2,
+            "minute": 20
+          }
+        }
+      }
+    },
+    {
+      "id": "carpathia-arrives",
+      "name": "カルパチアが生存者に到着",
+      "description": "早朝、救命ボートに到着する。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 4,
+            "minute": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "rescue-operations",
+      "name": "救助活動",
+      "description": "カルパチアが生存者を収容する。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 8,
+            "minute": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "carpathia-departs",
+      "name": "遭難海域を離れる",
+      "description": "生存者を乗せて出港する。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 15,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "new-york-arrival",
+      "name": "ニューヨーク到着",
+      "description": "生存者を乗せたカルパチアが到着する。",
+      "extensions": {
+        "history": {
+          "time": {
+            "year": 1912,
+            "month": 4,
+            "day": 18,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "id": "r1",
+      "name": "運航する",
+      "sourceId": "white-star-line",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r2",
+      "name": "建造する",
+      "sourceId": "harland-wolff",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r3",
+      "name": "指揮する",
+      "sourceId": "smith",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r4",
+      "name": "設計する",
+      "sourceId": "andrews",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r5",
+      "name": "率いる",
+      "sourceId": "ismay",
+      "targetId": "white-star-line"
+    },
+    {
+      "id": "r6",
+      "name": "乗務する",
+      "sourceId": "fleet",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r7",
+      "name": "無線通信を担当する",
+      "sourceId": "phillips",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r8",
+      "name": "無線通信を担当する",
+      "sourceId": "bride",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r9",
+      "name": "指揮する",
+      "sourceId": "rostron",
+      "targetId": "carpathia"
+    },
+    {
+      "id": "r10",
+      "name": "遭難信号に応答する",
+      "sourceId": "carpathia",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r11",
+      "name": "生存者を救助する",
+      "sourceId": "carpathia",
+      "targetId": "titanic"
+    },
+    {
+      "id": "r12",
+      "name": "生存する",
+      "sourceId": "molly-brown",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e1",
+      "sourceId": "southampton-departure",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e2",
+      "sourceId": "southampton-departure",
+      "targetId": "smith"
+    },
+    {
+      "id": "e3",
+      "sourceId": "cherbourg-call",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e4",
+      "sourceId": "queenstown-departure",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e5",
+      "sourceId": "ice-warning-1",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e6",
+      "sourceId": "ice-warning-2",
+      "targetId": "smith"
+    },
+    {
+      "id": "e7",
+      "sourceId": "iceberg-sighted",
+      "targetId": "fleet"
+    },
+    {
+      "id": "e8",
+      "sourceId": "iceberg-sighted",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e9",
+      "sourceId": "collision",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e10",
+      "sourceId": "collision",
+      "targetId": "smith"
+    },
+    {
+      "id": "e11",
+      "sourceId": "collision",
+      "targetId": "andrews"
+    },
+    {
+      "id": "e12",
+      "sourceId": "damage-assessment",
+      "targetId": "andrews"
+    },
+    {
+      "id": "e13",
+      "sourceId": "damage-assessment",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e14",
+      "sourceId": "distress-begins",
+      "targetId": "phillips"
+    },
+    {
+      "id": "e15",
+      "sourceId": "distress-begins",
+      "targetId": "bride"
+    },
+    {
+      "id": "e16",
+      "sourceId": "distress-begins",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e17",
+      "sourceId": "carpathia-responds",
+      "targetId": "carpathia"
+    },
+    {
+      "id": "e18",
+      "sourceId": "carpathia-responds",
+      "targetId": "rostron"
+    },
+    {
+      "id": "e19",
+      "sourceId": "first-lifeboat",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e20",
+      "sourceId": "lifeboat-evacuation",
+      "targetId": "molly-brown"
+    },
+    {
+      "id": "e21",
+      "sourceId": "final-distress",
+      "targetId": "phillips"
+    },
+    {
+      "id": "e22",
+      "sourceId": "final-distress",
+      "targetId": "bride"
+    },
+    {
+      "id": "e23",
+      "sourceId": "sinking",
+      "targetId": "titanic"
+    },
+    {
+      "id": "e24",
+      "sourceId": "carpathia-arrives",
+      "targetId": "carpathia"
+    },
+    {
+      "id": "e25",
+      "sourceId": "rescue-operations",
+      "targetId": "carpathia"
+    },
+    {
+      "id": "e26",
+      "sourceId": "rescue-operations",
+      "targetId": "molly-brown"
+    },
+    {
+      "id": "e27",
+      "sourceId": "carpathia-departs",
+      "targetId": "carpathia"
+    },
+    {
+      "id": "e28",
+      "sourceId": "new-york-arrival",
+      "targetId": "carpathia"
+    }
+  ],
+  "extensions": {
+    "metadata": {
+      "datasetId": "titanic-final-voyage-ja-v1",
+      "title": "タイタニック号 最後の航海"
+    },
+    "draft.github.sukoyaka-dopeness.coordinate": {
+      "specVersion": "0.1.0",
+      "spaces": [
+        {
+          "id": "liaisonscape-graph",
+          "name": "LiaisonScape graph coordinates",
+          "kind": "cartesian-2d",
+          "components": {
+            "x": {
+              "unit": "liaisonscape-user-unit",
+              "positiveDirection": "display-right"
+            },
+            "y": {
+              "unit": "liaisonscape-user-unit",
+              "positiveDirection": "display-down"
+            }
+          }
+        }
+      ]
+    },
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "metadata",
+          "version": "1.0.0"
+        },
+        {
+          "extension": "history",
+          "version": "1.0.0"
+        },
+        {
+          "extension": "draft.github.sukoyaka-dopeness.coordinate",
+          "version": "0.1.0"
+        }
+      ]
+    }
+  }
+}

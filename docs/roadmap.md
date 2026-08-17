@@ -478,6 +478,32 @@ the project commits to a registry, shared workspace, or pack ecosystem. None
 of these milestones authorizes a Core change, a universal application UI, or
 automatic interpretation of unknown application and pack metadata.
 
+### Shared browser preference and workspace direction
+
+The Hub should investigate a browser-local sharing layer for the E2R
+ecosystem. A user who selects Japanese in NarrativeLine should be able to open
+LiaisonScape with Japanese selected as well when the applications share an
+origin. This is a user preference, not Dataset content: a future shared key
+such as `e2r.preference.locale` may be stored in `localStorage`, with each
+application reading it at startup. Optional live synchronization through
+`BroadcastChannel` may be considered later, but next-startup sharing is the
+initially sufficient behavior.
+
+Dataset retention and application handoff belong to a separate browser
+workspace layer. Small preferences may fit `localStorage`; retained Datasets,
+recent projects, and application handoff records should be evaluated against
+IndexedDB. A Hub could pass an opaque workspace key between applications
+instead of placing a large Dataset in a URL. Neither layer should alter the
+Dataset or become an implicit E2R Extension.
+
+This direction depends on deployment topology. `localStorage`, IndexedDB, and
+`BroadcastChannel` are origin-scoped, so two applications under the same
+scheme, host, and port but different paths can share them, whereas different
+localhost ports or future separate subdomains cannot. The Hub roadmap must
+therefore research an explicit bridge or server-backed workspace before
+assuming cross-origin sharing. This is a future architecture question, not a
+current application or Core implementation requirement.
+
 ## Sample and external vocabulary follow-up
 
 Two application/ecosystem tasks are explicitly recorded for future planning:

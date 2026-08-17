@@ -282,14 +282,16 @@ Therefore, the implementation sequence is:
 
 ```text
 Dataset Handoff v0 design
-    -> Dataset Replacement Safety design
+    -> Dataset Replacement Safety D1-D5 design checkpoint
     -> Dataset Replacement Safety implementation
     -> Dataset Handoff v0 implementation
     -> Hub direct sample handoff
 ```
 
-This document records the blocker; it does not implement dirty tracking,
-confirmation dialogs, autosave, recovery history, or persistence redesign.
+The D1-D5 policy is documented separately in
+`docs/dataset-replacement-safety-design.md`. This document does not implement
+dirty tracking, confirmation dialogs, autosave, recovery history, or
+persistence redesign.
 
 ## Current application evidence
 
@@ -325,7 +327,7 @@ The conclusion is:
 
 ```text
 Transport compatibility: accepted
-Implementation readiness: blocked by shared Dataset Replacement Safety
+Implementation readiness: blocked by Dataset Replacement Safety implementation
 ```
 
 ## Mutable URL and future revision boundary

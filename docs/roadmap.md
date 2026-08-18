@@ -328,6 +328,11 @@ The accepted decision and its alternatives are recorded in
 
 ### Layout persistence experiment
 
+The responsibility and persistence boundary checkpoint is documented in
+`docs/layout-persistence-responsibility-decision.md`. It records the current
+non-normative design direction without selecting an identifier, schema, or
+implementation.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

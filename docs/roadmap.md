@@ -404,6 +404,14 @@ drag-follow responsiveness during active Node movement and bounded
 multi-line description wrapping; wrapping was not implemented. The next
 temporary experiment is Experiment 1H Node-Label Drag-Follow Responsiveness.
 
+Experiment 1H Node-Label Drag-Follow Responsiveness is recorded as
+`CLEAR IMPROVEMENT / DIRECTION SUPPORTED`. Bypassing previous-placement
+hysteresis only for the actively dragged Node's own label removed the observed
+fast-drag trailing while preserving hysteresis for other labels. The exact
+rule remains experimental. Future routing evidence should distinguish label
+readability and ownership from edge overlap/crossing, and self-loop
+orientation versus Node-label clearance remains a separate candidate.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

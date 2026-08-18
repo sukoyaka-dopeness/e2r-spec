@@ -282,16 +282,16 @@ Therefore, the implementation sequence is:
 
 ```text
 Dataset Handoff v0 design
-    -> Dataset Replacement Safety D1-D5 design checkpoint
+    -> Dataset Replacement Safety D1-D7 design checkpoint
     -> Dataset Replacement Safety implementation
     -> Dataset Handoff v0 implementation
     -> Hub direct sample handoff
 ```
 
-The D1-D5 policy is documented separately in
+The D1-D7 policy is documented separately in
 `docs/dataset-replacement-safety-design.md`. This document does not implement
-dirty tracking, confirmation dialogs, autosave, recovery history, or
-persistence redesign.
+dirty tracking, confirmation dialogs, `beforeunload`, autosave, recovery
+history, or persistence redesign.
 
 ## Current application evidence
 
@@ -373,5 +373,6 @@ This is a design checkpoint only.
 ```text
 Dataset Handoff v0 design: documented
 Dataset Handoff v0 implementation: not started
-Dataset Replacement Safety: next blocking workstream
+Dataset Replacement Safety D1-D7 design: documented
+Dataset Replacement Safety implementation: not started
 ```

@@ -126,17 +126,75 @@ establish durable export or revision history.
 Startup localStorage resume is startup-state selection, not an ordinary
 user-triggered Dataset replacement operation.
 
+## D6. Replacement Confirmation UX
+
+When the Dataset replacement guard is false, replacement proceeds without loss
+protection. When it is true, confirmation occurs immediately before replacement.
+
+### Case A: Dataset modified only
+
+When `datasetModified = true` and `pendingUserWork = false`, the confirmation
+offers Cancel, Discard and Continue, and Export and Continue. Export must
+succeed before the baseline is refreshed and replacement proceeds. If Export
+fails, replacement does not proceed.
+
+### Case B: Pending user work only
+
+When `datasetModified = false` and `pendingUserWork = true`, the confirmation
+offers Cancel and Discard pending work and Continue. Export and Continue is not
+offered because pending work has not been committed into the Dataset.
+
+### Case C: Dataset modified and pending user work
+
+When both values are true, the basic actions are Cancel and Discard work and
+Continue. An additional Export Dataset action may be offered, but it must not
+continue replacement. After successful Export, `datasetModified` is false,
+`pendingUserWork` remains true, and the current Dataset remains active.
+
+### General confirmation rules
+
+- destructive actions name their consequence, such as Discard and Continue;
+- confirmation occurs before replacement;
+- the current Dataset is not replaced before the decision;
+- replacement confirmation is separate from a Save dialog;
+- the confirmation does not invent a pending-work commit mechanism;
+- the scope is Open Dataset, Open Sample, New Dataset, future `datasetUrl`
+  replacement, and future remote Dataset open;
+- internal screen navigation is outside this confirmation scope.
+
+## D7. Application Exit Protection
+
+Application-exit loss risk is:
+
+```text
+exitLossRisk = datasetModified || pendingUserWork
+```
+
+Internal screen navigation—Home, Timeline, Event Detail, Entity Detail, and
+Workspace—is neither Dataset replacement nor application exit and does not use
+an exit guard merely because the screen changes.
+
+Actual application exit includes reload, tab/window close, external navigation,
+and Browser Back when it leaves the application document.
+
+When `exitLossRisk` is true, conditional browser-native `beforeunload`
+protection is applicable. It is not installed when false and is not used as a
+custom replacement confirmation.
+
+`recoverableSessionState` does not suppress exit protection. `beforeunload` is
+only a loss-warning safety net; it is not autosave, durable save, recovery
+persistence, or Dataset Export.
+
 ## Boundaries and non-goals
 
-Application exit protection is related but distinct. Reload, tab close,
-navigation away, and browser history leaving the application are informed by
-the same loss-risk concepts, but confirmation UX and the `beforeunload` policy
-are not decided here.
+Application exit protection is related but distinct from Dataset replacement.
+The exact policies are documented in D6 and D7 above.
 
-This checkpoint does not define confirmation UI, button choices, autosave,
-recovery history, cloud persistence, accounts, content hashes, Provenance,
-lineage, merge, composition, undo/redo, Coordinate autosave, a runtime library,
-or any implementation.
+This checkpoint does not implement confirmation UI, button handlers, dirty
+tracking, pending-work detectors, `beforeunload`, autosave, recovery history,
+cloud persistence, accounts, content hashes, Provenance, lineage, merge,
+composition, undo/redo, Coordinate autosave, a runtime library, or any Dataset
+Handoff behavior.
 
 ## Consistency audit
 
@@ -151,8 +209,8 @@ content, reusable Coordinates, Derived application state, and transient View
 State.
 
 The Handoff v0 document's earlier statement that Replacement Safety was still
-an undecided design blocker is superseded by this D1-D5 checkpoint. Confirmation
-UX, application-exit policy, and implementation remain undecided or not
+an undecided design blocker is superseded by this D1-D7 checkpoint. Confirmation
+UX and application-exit policy are documented here; implementation remains not
 started.
 
 ## Checkpoint status
@@ -160,9 +218,9 @@ started.
 ```text
 Dataset Handoff v0 design: DOCUMENTED
 Dataset Replacement Safety state audit: COMPLETE
-Dataset Replacement Safety D1-D5: DOCUMENTED
-Confirmation UX: NOT YET DECIDED
-Application-exit policy: NOT YET DECIDED
+Dataset Replacement Safety D1-D7: DOCUMENTED
+Replacement Confirmation UX: DOCUMENTED
+Application-exit policy: DOCUMENTED
 Dataset Replacement Safety implementation: NOT STARTED
 Dataset Handoff v0 implementation: NOT STARTED
 ```

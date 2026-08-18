@@ -359,6 +359,15 @@ penalties, and Relation-path effects remain separate unresolved factors. No
 new spacing value or fit behavior was accepted, and Experiment 1B remains
 `INCONCLUSIVE`.
 
+Experiment 1C Angular Freedom is now recorded as bounded evidence with a
+`CLEAR IMPROVEMENT / DIRECTION SUPPORTED` result. Increasing Node-label
+candidate resolution from 16 to the temporary 32-direction comparison
+exposed useful intermediate directions and improved some collision-triggered
+placements. The comparison did not select 32 as a final constant or change
+label distance, collision scoring, geometry, fit behavior, routing, or
+persistence. The next bounded experiment is Experiment 1D Owning-Node
+Proximity.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

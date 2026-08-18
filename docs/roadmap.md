@@ -441,6 +441,16 @@ future presentation research. No production geometry change was adopted.
 The next temporary experiment is 1L Relation-label Drag-Follow
 Responsiveness.
 
+Experiment 1L Relation-label Drag-Follow Responsiveness is recorded as
+`CLEAR IMPROVEMENT / DIRECTION SUPPORTED`. Bypassing previous-placement
+hysteresis only for Relations incident to the actively dragged Node reduced
+horizontal, vertical, and diagonal trailing while preserving stability for
+unrelated Relations. Self-loops were included by the same endpoint condition.
+Some labels still remain too far from their edge after movement; normal-
+distance recovery and along-edge / midpoint recovery remain independent,
+separate experiments. The next temporary experiment is 1M Relation-label
+Normal-Distance Recovery.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

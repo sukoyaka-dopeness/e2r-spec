@@ -338,6 +338,12 @@ documented in `docs/automatic-layout-experiment-plan.md`. This remains an
 experiment plan and does not establish a Layout identifier, schema, algorithm,
 or maturity model.
 
+Experiment 1 Label Stability is complete as bounded evidence. The
+previous-placement approach showed partial improvement without changing
+Dataset or Layout persistence. The next bounded experiment is graph density /
+spacing, recorded in
+`docs/automatic-layout-experiment-1-label-stability-result.md`.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

@@ -422,6 +422,15 @@ placement; optical glyph inset remains separate. The temporary global +3
 vertical shift was rejected. The next experiment is 1J Node-Facing Optical
 Inset.
 
+Experiment 1J Node-Facing Optical Inset is recorded as
+`MIXED / DIRECTIONAL OPTICAL ASYMMETRY CONFIRMED`. A uniform 3px radial
+text-only nudge produced little improvement above Nodes and over-corrected
+below Nodes, so it was not adopted. LabelRect clearance remains unchanged;
+future work should inspect visual geometry before another optical adjustment.
+Qualitatively, 32 directions plus cardinal preference also appear to reduce
+manual Node-label repositioning, though this is not yet a measured metric. The
+next audit is Experiment 1K Directional Optical Geometry.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

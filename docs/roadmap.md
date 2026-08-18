@@ -368,6 +368,14 @@ label distance, collision scoring, geometry, fit behavior, routing, or
 persistence. The next bounded experiment is Experiment 1D Owning-Node
 Proximity.
 
+Experiment 1D Owning-Node Proximity is now recorded as
+`MIXED / BOUNDED IMPROVEMENT`. The temporary axis-separated distance formula
+showed some near-vertical improvement, but no clear diagonal or
+long-description improvement. The exact formula was not adopted and the
+baseline distance calculation was restored. Owning-Node proximity remains
+unresolved; Angular Freedom remains the stronger supported direction. The next
+bounded experiment is Experiment 1E Node-Label Recovery.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

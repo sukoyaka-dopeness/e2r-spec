@@ -431,6 +431,16 @@ Qualitatively, 32 directions plus cardinal preference also appear to reduce
 manual Node-label repositioning, though this is not yet a measured metric. The
 next audit is Experiment 1K Directional Optical Geometry.
 
+Experiment 1K Directional Optical Geometry is recorded as
+`AUDIT COMPLETE / GEOMETRY CLARIFIED`. The audit confirmed an 8-unit
+Node-boundary-to-LabelRect-edge clearance for pure horizontal and vertical
+placements, a transparent hit rectangle, and TRUE GEOMETRIC TERMINATION at
+the invisible LabelRect boundary. Directional optical asymmetry remains a
+rendered-glyph question; adaptive connector visibility is recorded only as
+future presentation research. No production geometry change was adopted.
+The next temporary experiment is 1L Relation-label Drag-Follow
+Responsiveness.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

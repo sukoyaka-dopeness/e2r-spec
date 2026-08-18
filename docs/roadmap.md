@@ -412,6 +412,16 @@ rule remains experimental. Future routing evidence should distinguish label
 readability and ownership from edge overlap/crossing, and self-loop
 orientation versus Node-label clearance remains a separate candidate.
 
+Experiment 1I Bounded Description Wrapping is recorded as
+`CLEAR IMPROVEMENT / DIRECTION SUPPORTED`. Preserving the 28-character visible
+content limit while wrapping to a temporary maximum of two lines at width 20
+reduced wide description footprints and improved dense readability and
+automatic placement in English and Japanese. The geometry audit found an
+8-unit Node-boundary-to-LabelRect-edge gap in both pure vertical and horizontal
+placement; optical glyph inset remains separate. The temporary global +3
+vertical shift was rejected. The next experiment is 1J Node-Facing Optical
+Inset.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

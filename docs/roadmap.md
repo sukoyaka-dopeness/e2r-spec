@@ -394,6 +394,16 @@ Future work should provide an intentional Coordinate-free automatic-layout
 demonstration Dataset. Relation-label midpoint recovery and normal-distance
 recovery remain separate future experiments.
 
+Experiment 1G Node-Label Cardinal Preference is recorded as
+`BOUNDED IMPROVEMENT / DIRECTION SUPPORTED`. A temporary `0.5` penalty per
+11.25-degree step from the nearest cardinal axis made sparse placements more
+orderly while retaining all 32 legal directions for dense-graph escape. The
+weight is not final, cardinal-only placement is not accepted, and proximity
+and density remain separate concerns. Future work now includes Node-label
+drag-follow responsiveness during active Node movement and bounded
+multi-line description wrapping; wrapping was not implemented. The next
+temporary experiment is Experiment 1H Node-Label Drag-Follow Responsiveness.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

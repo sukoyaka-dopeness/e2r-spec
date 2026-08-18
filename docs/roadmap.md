@@ -385,6 +385,15 @@ the 32-direction baseline remain. Graph geometry density has stronger evidence
 as an upstream factor. The next bounded experiment is Experiment 1F
 Anisotropic Derived Spacing.
 
+Experiment 1F Anisotropic Derived Spacing is recorded as
+`INCONCLUSIVE / LIMITED APPLICABILITY`. The `360 x 180` fallback comparison
+did not adequately exercise the main manual targets because stored Coordinates
+and temporary direct-creation positions bypass the fallback grid. The
+temporary spacing was not adopted and the `240 x 180` baseline was restored.
+Future work should provide an intentional Coordinate-free automatic-layout
+demonstration Dataset. Relation-label midpoint recovery and normal-distance
+recovery remain separate future experiments.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

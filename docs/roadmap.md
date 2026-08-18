@@ -376,6 +376,15 @@ baseline distance calculation was restored. Owning-Node proximity remains
 unresolved; Angular Freedom remains the stronger supported direction. The next
 bounded experiment is Experiment 1E Node-Label Recovery.
 
+Experiment 1E Node-Label Recovery is now recorded as
+`INCONCLUSIVE / DENSITY-LIMITED`. Recovery could return labels closer when
+nearby preferred candidates became genuinely free after substantial Node
+separation, but ordinary initial density often kept those candidates blocked.
+The exact recovery gate was not adopted; previous-placement hysteresis and
+the 32-direction baseline remain. Graph geometry density has stronger evidence
+as an upstream factor. The next bounded experiment is Experiment 1F
+Anisotropic Derived Spacing.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

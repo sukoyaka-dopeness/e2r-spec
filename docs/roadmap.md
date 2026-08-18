@@ -333,6 +333,11 @@ The responsibility and persistence boundary checkpoint is documented in
 non-normative design direction without selecting an identifier, schema, or
 implementation.
 
+The Automatic Layout experiment order and interoperability evidence ladder are
+documented in `docs/automatic-layout-experiment-plan.md`. This remains an
+experiment plan and does not establish a Layout identifier, schema, algorithm,
+or maturity model.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

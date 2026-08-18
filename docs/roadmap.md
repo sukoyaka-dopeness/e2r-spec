@@ -350,6 +350,15 @@ current evidence does not support viewport framing as the primary cause of
 label jumps. The next bounded experiment is Experiment 1C Angular Freedom.
 Layout schema and identifier work remain not started.
 
+The Experiment 1B follow-up found that expanding uniform Derived spacing from
+`240 x 180` to the temporary `360 x 270` comparison did not materially
+increase screen-space breathing room because automatic fit reduced the display
+scale as graph bounds grew. Graph-space collision conditions may still change.
+Node-based fit bounds, fixed 16-direction Node-label candidates, collision
+penalties, and Relation-path effects remain separate unresolved factors. No
+new spacing value or fit behavior was accepted, and Experiment 1B remains
+`INCONCLUSIVE`.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

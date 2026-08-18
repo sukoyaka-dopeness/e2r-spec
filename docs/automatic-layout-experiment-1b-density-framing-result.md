@@ -61,6 +61,41 @@ The following are hypotheses for later experiments:
 These observations do not change the Layout responsibility boundary or select
 any algorithm, weight, spacing constant, or schema.
 
+## Follow-up investigation: uniform spacing expansion
+
+A follow-up comparison tested the fallback Derived spacing `240 x 180` against
+the temporary `360 x 270` spacing. No other automatic-layout parameter was
+changed. The comparison was intended to determine whether using more graph
+space would create more usable screen-space around Nodes and labels.
+
+Manual evaluation did not show a substantial increase in screen-space
+breathing room. Investigation found that the larger graph bounds caused
+`fitGraphView()` to reduce the display scale, so uniform graph-space spacing
+and automatic fit partially cancelled each other in screen space.
+
+The spacing change could still alter graph-space collision conditions,
+including Node-to-Node, label-to-label, Node-to-label, and Relation-path
+interactions, as well as the final selected label direction. This does not
+establish that spacing is irrelevant, nor does it accept any new spacing value.
+
+Additional implementation findings are bounded observations, not design
+decisions:
+
+- `fitGraphView()` derives bounds from Node positions with fixed padding;
+  actual Node-label rectangles, Relation labels, and route geometry are not
+  included in those fit bounds;
+- Node-label placement currently searches fixed 16-direction angular
+  candidates and applies strong collision penalties;
+- Relation paths participate in Node-label candidate scoring;
+- label proximity and angular freedom remain separate quality axes from
+  collision avoidance and placement stability.
+
+No fit behavior, label-aware bounds, angular candidate resolution, label
+distance, collision weight or geometry, routing behavior, or persistence
+behavior was changed or accepted by this follow-up. Experiment 1B remains
+`INCONCLUSIVE`. The next planned bounded experiment remains Experiment 1C -
+Angular Freedom.
+
 ## Rollback and clean baseline
 
 The temporary Experiment 1B changes were removed:

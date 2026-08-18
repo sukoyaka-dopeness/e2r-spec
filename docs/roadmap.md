@@ -344,6 +344,12 @@ Dataset or Layout persistence. The next bounded experiment is graph density /
 spacing, recorded in
 `docs/automatic-layout-experiment-1-label-stability-result.md`.
 
+Experiment 1B Density/Framing is now recorded as inconclusive evidence. Its
+temporary spacing and initial-framing implementation was not adopted, and
+current evidence does not support viewport framing as the primary cause of
+label jumps. The next bounded experiment is Experiment 1C Angular Freedom.
+Layout schema and identifier work remain not started.
+
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:
 

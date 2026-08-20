@@ -271,11 +271,12 @@ implementation:
 > not authorize destruction of a previous recoverable session.
 
 Dataset replacement safety is an application editing-model concern shared by
-handoff and existing Open/New/Sample operations. The current source audits
-classify both NarrativeLine and LiaisonScape as:
+handoff and existing Open/New/Sample operations. The current implementation
+status is:
 
 ```text
-NEEDS SHARED DATASET REPLACEMENT SAFETY
+NarrativeLine: NEEDS SHARED DATASET REPLACEMENT SAFETY
+LiaisonScape: D1-D7 IMPLEMENTED AND ACCEPTED
 ```
 
 Therefore, the implementation sequence is:
@@ -311,23 +312,24 @@ Replacement safety audit:
 
 ```text
 NarrativeLine: NEEDS SHARED DATASET REPLACEMENT SAFETY
-LiaisonScape: NEEDS SHARED DATASET REPLACEMENT SAFETY
+LiaisonScape: D1-D7 IMPLEMENTED AND ACCEPTED
 ```
 
 NarrativeLine has a single `narrativeline.lastDataset` localStorage slot, but
-no explicit dirty state, export baseline, recovery history, source/origin
-tracking, or replacement confirmation. Opening another Dataset can overwrite
-that single slot.
+no explicit D1-D7 parity implementation. Opening another Dataset can overwrite
+that single slot; parity remains deferred.
 
-LiaisonScape keeps the Dataset in memory and has no Dataset recovery storage,
-dirty protection, export tracking, or replacement confirmation. Open Sample,
-Open File, and New Dataset can replace the current Dataset directly.
+LiaisonScape has completed and manually accepted D1-D7 implementation,
+including Dataset baseline tracking, pending-user-work detection, D6
+replacement confirmation, and conditional D7 `beforeunload` protection. The
+implementation result and evidence are recorded in
+`docs/dataset-replacement-safety-liaison-scape-implementation-result.md`.
 
 The conclusion is:
 
 ```text
 Transport compatibility: accepted
-Implementation readiness: blocked by Dataset Replacement Safety implementation
+Implementation readiness: LiaisonScape unblocked; Dataset Handoff v0 implementation remains not started
 ```
 
 ## Mutable URL and future revision boundary
@@ -374,5 +376,5 @@ This is a design checkpoint only.
 Dataset Handoff v0 design: documented
 Dataset Handoff v0 implementation: not started
 Dataset Replacement Safety D1-D7 design: documented
-Dataset Replacement Safety implementation: not started
+Dataset Replacement Safety implementation: LiaisonScape D1-D7 accepted; NarrativeLine parity deferred
 ```

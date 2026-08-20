@@ -143,6 +143,18 @@ LiaisonScape now migrates its legacy `coordinate` payload into the
 authority-qualified Coordinate prototype `0.1.0`. The prototype remains an
 application experiment, not an official Stable Coordinate Extension.
 
+### Dataset Replacement Safety implementation checkpoint — 2026-08-20
+
+- LiaisonScape Dataset Replacement Safety D1-D7 is implemented and manually
+  accepted through commit `79451ca43758a14195cf9f549d8785cb9415482a`.
+- The accepted implementation covers Dataset baseline and pending-work safety,
+  D6 replacement confirmation, and D7 browser-native exit protection without
+  changing Core, Extension, Coordinate, routing, label geometry, or Layout
+  persistence semantics.
+- Dataset Handoff v0 implementation is now unblocked for LiaisonScape, but
+  remains a separate not-started workstream.
+- NarrativeLine Replacement Safety parity remains deferred.
+
 ## Completed design milestone 1: Specification Extension redesign
 
 Draft version `0.1.0` is now defined in

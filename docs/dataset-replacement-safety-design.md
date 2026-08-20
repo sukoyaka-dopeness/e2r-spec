@@ -190,7 +190,7 @@ persistence, or Dataset Export.
 Application exit protection is related but distinct from Dataset replacement.
 The exact policies are documented in D6 and D7 above.
 
-This checkpoint does not implement confirmation UI, button handlers, dirty
+This design document does not implement confirmation UI, button handlers, dirty
 tracking, pending-work detectors, `beforeunload`, autosave, recovery history,
 cloud persistence, accounts, content hashes, Provenance, lineage, merge,
 composition, undo/redo, Coordinate autosave, a runtime library, or any Dataset
@@ -210,8 +210,10 @@ State.
 
 The Handoff v0 document's earlier statement that Replacement Safety was still
 an undecided design blocker is superseded by this D1-D7 checkpoint. Confirmation
-UX and application-exit policy are documented here; implementation remains not
-started.
+UX and application-exit policy are documented here. LiaisonScape's accepted
+implementation evidence is recorded separately in
+`docs/dataset-replacement-safety-liaison-scape-implementation-result.md`;
+NarrativeLine parity remains deferred.
 
 ## Checkpoint status
 
@@ -221,6 +223,6 @@ Dataset Replacement Safety state audit: COMPLETE
 Dataset Replacement Safety D1-D7: DOCUMENTED
 Replacement Confirmation UX: DOCUMENTED
 Application-exit policy: DOCUMENTED
-Dataset Replacement Safety implementation: NOT STARTED
+Dataset Replacement Safety implementation: LiaisonScape D1-D7 ACCEPTED; NarrativeLine parity DEFERRED
 Dataset Handoff v0 implementation: NOT STARTED
 ```

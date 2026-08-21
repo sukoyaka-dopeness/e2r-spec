@@ -151,8 +151,11 @@ application experiment, not an official Stable Coordinate Extension.
   D6 replacement confirmation, and D7 browser-native exit protection without
   changing Core, Extension, Coordinate, routing, label geometry, or Layout
   persistence semantics.
-- Dataset Handoff v0 implementation is now unblocked for LiaisonScape, but
-  remains a separate not-started workstream.
+- Dataset Handoff v0 is implemented and manually accepted for LiaisonScape;
+  its accepted implementation checkpoints and evidence are recorded in
+  `docs/dataset-handoff-v0-liaison-scape-implementation-result.md`.
+- Direct Hub handoff remains a later workstream, and NarrativeLine
+  Replacement Safety / Dataset Handoff parity remains deferred.
 - NarrativeLine Replacement Safety parity remains deferred.
 
 ## Completed design milestone 1: Specification Extension redesign

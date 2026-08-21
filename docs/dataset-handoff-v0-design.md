@@ -329,8 +329,11 @@ The conclusion is:
 
 ```text
 Transport compatibility: accepted
-Implementation readiness: LiaisonScape unblocked; Dataset Handoff v0 implementation remains not started
+Implementation readiness: LiaisonScape implementation complete and manually accepted; NarrativeLine and Hub follow-up remain deferred
 ```
+
+The accepted LiaisonScape implementation evidence is recorded in
+`docs/dataset-handoff-v0-liaison-scape-implementation-result.md`.
 
 ## Mutable URL and future revision boundary
 
@@ -374,7 +377,7 @@ This is a design checkpoint only.
 
 ```text
 Dataset Handoff v0 design: documented
-Dataset Handoff v0 implementation: not started
+Dataset Handoff v0 implementation: LiaisonScape complete and manually accepted
 Dataset Replacement Safety D1-D7 design: documented
 Dataset Replacement Safety implementation: LiaisonScape D1-D7 accepted; NarrativeLine parity deferred
 ```

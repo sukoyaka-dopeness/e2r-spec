@@ -224,5 +224,5 @@ Dataset Replacement Safety D1-D7: DOCUMENTED
 Replacement Confirmation UX: DOCUMENTED
 Application-exit policy: DOCUMENTED
 Dataset Replacement Safety implementation: LiaisonScape D1-D7 ACCEPTED; NarrativeLine parity DEFERRED
-Dataset Handoff v0 implementation: NOT STARTED
+Dataset Handoff v0 implementation: LiaisonScape COMPLETE / MANUALLY ACCEPTED; NarrativeLine and Hub follow-up DEFERRED
 ```

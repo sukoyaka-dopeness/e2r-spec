@@ -498,6 +498,78 @@ It is repeatable from the specification repository with
 `npm run validate:coordinate-interoperability`; the ordinary `npm run validate`
 remains independent of sibling application repositories.
 
+## Initial Public Release critical path
+
+The first public release should establish a complete user journey:
+
+`learn E2R -> discover samples in the Hub -> open a Dataset in NarrativeLine
+or LiaisonScape -> edit safely -> export -> return to documentation`.
+
+The critical path is:
+
+1. **NarrativeLine modernization** — bring Dataset Replacement Safety and
+   Dataset Handoff parity to NarrativeLine after auditing its existing temporal
+   editing and pending-work model. This includes safe Open, New, and Sample
+   replacement, loss-risk tracking, pending-work protection, browser-native
+   exit warning, explicit handoff failure, no silent fallback, startup-only
+   handoff, and the distinction between acquisition URL and Dataset identity.
+2. **NarrativeLine navigation ownership** — audit Browser Back/Forward,
+   `history.state`, `popstate`, Home/editor navigation, fragment ownership,
+   runtime fragment changes, and the separation of screen navigation from
+   Dataset replacement. Foreign history state must not be misinterpreted.
+3. **Hub / Portal public entry point** — provide E2R introduction, application
+   purposes, capability and maturity status, sample gallery, documentation,
+   user guides, and application entry points.
+4. **Public interoperability evidence** — continue Validator, canonical and
+   sample Dataset, public handoff fixture, cross-application fixture, and
+   unknown-Extension preservation checks.
+5. **Release documentation synchronization** — align each repository's README,
+   user guide, roadmap, implementation status, deployment state, and sample
+   links. Use `implemented`, `manually accepted`, `research / experimental`,
+   and `deferred / on hold` consistently.
+
+Hub-to-application Dataset opening can be evaluated after NarrativeLine Handoff
+parity. Existing roadmap status keeps Direct Hub handoff as a later workstream;
+this section does not promote it to a release blocker.
+
+## Research / post-release growth
+
+The following are valuable future workstreams and do not block the initial
+public release:
+
+- NarrativeLine <-> LiaisonScape cross-application handoff, distinguishing a
+  public source Dataset from current unexported edits and pending work;
+- Entity grouping / Group Entity, using evidence from both applications before
+  deciding whether grouping belongs to Core, an Extension, or presentation;
+- multiple Dataset comparison, lineage, merge, provenance, and cross-Dataset
+  references;
+- advanced layout and presentation, including larger-graph readability,
+  automatic placement, colors, icons, and reproducible results;
+- Perspective experiments for bounded grouping, ordering, targeting,
+  relevance, or ranking;
+- richer time semantics, including Relative Time, intervals, durations,
+  alternative calendars, temporal constraints, and History vNext;
+- Source, Citation, external identifiers, Wikidata import, provenance,
+  confidence, Dictionary evolution, and external vocabularies; and
+- AI-assisted analysis, validation, repair, and authoring support, subject to
+  ordinary E2R validation and safety boundaries.
+
+### Grouping evidence and feedback direction
+
+Entity grouping is not an accepted Dataset semantic or implementation plan.
+LiaisonScape has evidence that large graphs benefit from meaningful grouping,
+and NarrativeLine has a corresponding need to organize long Entity lists and
+Timeline participants. NarrativeLine modernization should collect evidence
+about grouping, collapse/expand, Entity versus Event grouping, hierarchy, and
+membership before a bounded LiaisonScape grouping experiment is considered.
+Neither application alone should decide the Dataset semantics. Any initial
+experiment must remain bounded; arbitrary nesting, multiple membership, Group
+relations, persistence, and Core-versus-Extension ownership remain open.
+
+Cross-application current-edit handoff, Group Entity, multiple-Dataset merge,
+advanced semantics, and AI assistance are future directions rather than
+conditions that indefinitely delay the first public release.
+
 ## Research priority
 
 ### 1. Semantic responsibility and vocabulary architecture

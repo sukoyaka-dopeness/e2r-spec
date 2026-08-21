@@ -1,8 +1,8 @@
 # NarrativeLine Modernization NL-D4 Acceptance
 
-Date: 2026-08-22  
-Status: ACCEPTED  
-Implementation repository: `e2r-narrative-line`  
+Date: 2026-08-22
+Status: ACCEPTED
+Implementation repository: `e2r-narrative-line`
 Implementation commit: `fd22a37` (`feat: protect NarrativeLine Dataset replacement`)
 
 ## Scope

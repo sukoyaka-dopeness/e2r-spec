@@ -1,5 +1,13 @@
 # E2R Specification Guidance
 
+## Reusable knowledge
+
+The central workspace knowledge base is `C:\Users\extra\E2R\ai-knowledge`.
+Search its `INDEX.md` before specification work involving Dataset safety,
+Handoff, History, application boundaries, or cross-repository decisions.
+Treat the specification as authoritative; knowledge entries provide scoped
+evidence and reusable process guidance only.
+
 ## Repository Purpose
 
 This repository defines the E2R specification.

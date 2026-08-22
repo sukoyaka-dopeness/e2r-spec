@@ -886,6 +886,31 @@ Unless new evidence changes the decision, do not currently:
 - treat arbitrary Relation direction as semantic hierarchy; or
 - make external registry or network access mandatory.
 
+## Current public-release execution priority (2026-08-22)
+
+The current bounded execution order is:
+
+1. Cross-App Locale Recipient-Preference experiments;
+2. NarrativeLine locale consumer implementation;
+3. LiaisonScape locale consumer implementation;
+4. Hub startup locale producer completion;
+5. Hub Direct Handoff and localized Sample Gallery local acceptance;
+6. Hub residual quality audit and Formal Completion;
+7. E2R common favicon design and application to Hub, NarrativeLine, and
+   LiaisonScape (Validator remains excluded unless deployment evidence changes);
+8. LiaisonScape selectable SVG icons;
+9. NarrativeLine display-order reordering;
+10. push and deployment readiness;
+11. Public Handoff/interoperability evidence; and
+12. final pre-public-release audit.
+
+This current priority supersedes the earlier recommendation to make Public
+Interoperability Evidence / Sample Workflow the immediate next workstream. That
+workstream remains planned and is intentionally deferred until the public-facing
+product state is closer to final. The ordering does not make Dataset language
+metadata, localized-counterpart architecture, Dictionary, or Semantic research
+an Initial Public Release blocker.
+
 ## Immediate sequence
 
 1. Preserve the LiaisonScape `0.1.0` First Distribution and Direct Graph

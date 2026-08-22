@@ -506,6 +506,13 @@ The first public release should establish a complete user journey:
 `learn E2R -> discover samples in the Hub -> open a Dataset in NarrativeLine
 or LiaisonScape -> edit safely -> export -> return to documentation`.
 
+The Hub / Portal public entry point is complete for the accepted Hub Public
+Entry Point Information Architecture (Milestone 1) and the manually accepted
+Static E2R Landing Page Implementation (Milestone 2). The current evidence
+covers E2R introduction, application purposes, capability and maturity status,
+sample cards, documentation, user guides, and application entry points.
+Direct Hub Handoff and Initial Public Release remain incomplete.
+
 The critical path is:
 
 1. **NarrativeLine modernization** — COMPLETE for the accepted bounded
@@ -655,6 +662,14 @@ The following ten milestones are ordered as a planning proposal. They balance
 implementation difficulty, likely user need, and the amount of foundation they
 provide for later E2R applications and distributable packs.
 
+Milestone 1, **Hub scope and information architecture**, is COMPLETE / ACCEPTED
+DESIGN. Milestone 2, **Static E2R landing page**, is COMPLETE / MANUALLY
+ACCEPTED. Their acceptance is recorded in
+`docs/e2r-hub-public-entry-point-information-architecture.md` and
+`docs/e2r-hub-public-entry-point-milestone-2-acceptance.md`. The remaining
+items below are future planning context; they do not reopen either accepted
+checkpoint.
+
 1. **Hub scope and information architecture** — define the audiences, first
    actions, application categories, links, sample flow, and the boundary
    between the portal and each application's own Home page.
@@ -687,11 +702,17 @@ provide for later E2R applications and distributable packs.
     and packs, including provenance, version selection, and offline/failure
     behavior.
 
-The next practical step should be milestone 1 followed by milestone 2. A
-static landing page can validate navigation and user demand at low cost before
-the project commits to a registry, shared workspace, or pack ecosystem. None
-of these milestones authorizes a Core change, a universal application UI, or
-automatic interpretation of unknown application and pack metadata.
+The next practical step is a bounded follow-up after Milestones 1 and 2. The
+current Hub already provides application links, sample cards, and a
+Documentation section, so the next workstream should be selected from the
+remaining gap rather than inferred from the historical milestone order.
+Candidates include Application Catalog and Maturity Clarity, Shared Sample
+Gallery refinement, Onboarding and documentation path refinement, Hub direct
+Dataset Handoff, or public interoperability evidence / sample workflow. No
+single candidate is selected here without its own bounded scope and evidence
+gate. None of these milestones authorizes a Core change, a universal
+application UI, or automatic interpretation of unknown application and pack
+metadata.
 
 ### Shared browser preference and workspace direction
 

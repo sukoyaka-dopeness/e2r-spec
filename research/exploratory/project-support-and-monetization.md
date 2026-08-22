@@ -119,4 +119,3 @@ This research does not authorize:
 - claiming current legal, contractual, tax, regional, or privacy facts without
   rechecking the relevant provider documentation;
 - changing the Hub footer before separate implementation authorization.
-

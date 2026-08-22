@@ -218,6 +218,16 @@ language. They leave the persisted preference unchanged and do not cancel an
 otherwise valid Dataset Handoff. Initial focus must be on the saved-language
 action.
 
+During a locale conflict, the application background and the Conflict Dialog
+must remain in the persisted saved locale until the recipient explicitly
+chooses the requested-language action. The requested locale must not be
+applied speculatively to the background or other presentation while the choice
+is pending. Choosing the requested-language action changes the current
+`effectiveLocale` at that point; choosing the saved-language action, Escape, or
+backdrop dismissal continues in the saved locale. This is an application
+presentation choice only and does not select Dataset language or alter Dataset
+acquisition.
+
 Repeated reload behavior is intentionally unresolved until experiment results
 are available. The smallest initial implementation candidate is to keep the
 request in the URL and show the conflict again on a fresh reload. This is
@@ -238,6 +248,22 @@ bounded design:
 No global settings framework or navigation redesign is needed. The control
 must work on narrow/touch layouts and must not be hover-only.
 
+The preferred cross-screen alignment candidate is to make the language control
+available in the same general location, interaction model, and information
+hierarchy across Home and editing screens:
+
+* NarrativeLine Home and Timeline;
+* LiaisonScape Home and Workspace; and
+* the corresponding Hub application surface where its producer control is
+  later completed.
+
+This is a preferred cross-screen alignment candidate, not an accepted
+pixel-level placement decision. The existing Home footer controls remain in
+place for now. Timeline and Workspace experiments must test desktop, narrow,
+touch, and competition with existing actions before final placement or any
+move/removal is accepted. Home must not be treated as a permanently special
+locale-control surface merely because it currently owns the footer control.
+
 An explicit selector action must:
 
 * change `effectiveLocale` immediately without a page reload;
@@ -251,6 +277,24 @@ Updating the URL to the selected value is preferred over removing it or leaving
 an obsolete request in place. A copied address bar then does not request `ja`
 while the visible application is in `en`. This replacement must not add a
 Back/Forward entry.
+
+## Cross-application footer direction
+
+Footer alignment is a future independent application checkpoint. The preferred
+cross-application direction is to use Hub's current left/right separation as a
+basic structural model:
+
+* left: a short descriptor explaining the application;
+* right: Credits.
+
+The shared form need not repeat the application name when that would be
+redundant, such as `E2R Hub`. Descriptor concepts may describe Hub as an E2R
+application ecosystem, NarrativeLine as an E2R timeline editor, and
+LiaisonScape as an E2R relationship editor, but final copy is intentionally
+undecided. Language selection should not remain a footer-only responsibility;
+it is a normal application control available from Home and editing screens.
+Consequently, the footer should trend toward the simpler descriptor-and-Credits
+role. Existing Home language buttons must not be removed in this checkpoint.
 
 ## Startup orchestration and Dataset timing
 
@@ -366,6 +410,18 @@ No experiment in this checkpoint changes production runtime. The first runtime
 implementation should not begin until the ordering, temporary-choice reload
 behavior, and two editor control placements have bounded results.
 
+The current implementation sequence is:
+
+1. Cross-App Locale Recipient-Preference experiments;
+2. NarrativeLine locale consumer and Timeline control experiment;
+3. LiaisonScape locale consumer and Workspace control experiment;
+4. Cross-App Footer / Locale Control Alignment as a separate bounded
+   checkpoint; and
+5. Hub startup locale producer completion.
+
+This sequence does not change the current roadmap priority or authorize runtime
+work in this documentation checkpoint.
+
 ## Non-goals and preservation rules
 
 This refinement does not change Dataset Handoff semantics, Dataset files,
@@ -386,5 +442,16 @@ model is Model 3 with temporary conflict choices and persistent changes only
 through explicit application controls.
 
 Therefore this checkpoint is intentionally not an implementation acceptance.
+
+The following remain experiment questions rather than accepted decisions:
+
+* exact Timeline and Workspace control placement;
+* whether Home and editing screens use the same component;
+* final icon, text, select, or button form;
+* exact narrow/mobile layout;
+* final footer descriptor copy and pixel-level footer sizing, spacing, borders,
+  or height;
+* repeated Conflict Dialog suppression; and
+* parallel Dataset fetch.
 
 **CROSS-APP LOCALE RECIPIENT-PREFERENCE DESIGN: EXPERIMENTS REQUIRED BEFORE IMPLEMENTATION**

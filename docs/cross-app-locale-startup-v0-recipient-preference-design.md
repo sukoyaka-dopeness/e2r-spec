@@ -29,10 +29,30 @@ The currently referenced GitHub Pages origins are:
 * NarrativeLine: `https://sukoyaka-dopeness.github.io/e2r-narrative-line/`
 * LiaisonScape: `https://sukoyaka-dopeness.github.io/e2r-liaison-scape/`
 
-These are distinct origins. Their browser `localStorage` areas are therefore
-not shared. Hub cannot inspect either recipient application's saved locale and
-must not attempt to do so. The deployment URLs are source/documentation
-evidence; this checkpoint does not perform a live deployment smoke test.
+These URLs use the same Web origin, `https://sukoyaka-dopeness.github.io`;
+the repository names are different paths, not different origins. Therefore
+their browser `localStorage` areas are technically shared for these current
+GitHub Pages deployments. The current application-specific keys remain
+separate by name:
+
+* NarrativeLine: `narrativeline.language` and `narrativeline.lastDataset`;
+* LiaisonScape: `liaisonscape.locale`; and
+* Hub: no current locale persistence key.
+
+This technical access does not change the ownership boundary. Hub must not read
+or infer a recipient application's saved locale, and NarrativeLine and
+LiaisonScape must not use one another's keys as preference sources. Producers
+must be able to construct correct links without recipient storage access, and
+recipients must resolve from their own requested locale, own persisted
+preference, browser fallback, and default. Same-origin access is an incidental
+property of the current deployment topology, not a cross-app locale contract;
+custom domains, subdomains, hosts, local ports, or third-party deployments may
+use different origins.
+
+The current local-development setup may likewise place multiple applications
+under paths on one `scheme`/`host`/`port` and expose the same storage area, but
+another dev-server topology may not. These URLs and storage observations are
+deployment evidence, not a live deployment acceptance of this design.
 
 ## Current preference audit
 
@@ -75,7 +95,8 @@ The current behavior is:
 * the locale effect writes the current value to localStorage and applies
   `document.documentElement.lang`;
 * URL `locale` is not consulted;
-* storage is origin-scoped and is not shared with Hub or NarrativeLine;
+* the key is application-owned even when the current same-origin deployment
+  makes the underlying storage area technically accessible to other apps;
 * browser data removal and private browsing follow standard Web Storage
   behavior and do not create a durable application preference.
 
@@ -391,6 +412,60 @@ Both consumers should share tests for:
 * locale conflict with clean, modified, and pending-work states;
 * fetch failure rendered in the resolved locale; and
 * StrictMode causing no second Dataset fetch.
+
+## Interim Experiment 1 manual evidence — acceptance in progress
+
+The following browser observations are interim evidence for NarrativeLine's
+serial `Conflict before Dataset fetch` baseline. They are not final Experiment
+1 acceptance and do not establish a workspace-wide UI or React rule.
+
+### Startup-only behavior
+
+Changing the locale and Dataset Handoff fragment in an already-open document
+did not display a Conflict Dialog. Opening the same URL in a new tab and doing
+a hard reload both displayed the Dialog. This is consistent with the
+startup-only lifecycle.
+
+### Saved English, requested Japanese, valid Handoff
+
+With `narrativeline.language = en`, `locale=ja`, and a valid Dataset Handoff:
+
+* the background UI and Conflict Dialog were English;
+* no Dataset request to `raw.githubusercontent.com` occurred while the Dialog
+  was waiting; and
+* both saved-language and requested-language actions were exercised.
+
+Choosing the requested language changed the UI to Japanese, opened the Dataset
+with exactly one fetch, and left `narrativeline.language = en`. Choosing the
+saved language after the initial observed failure and its fix kept the UI
+English, opened the Dataset, and left the persisted value `en`. Escape and
+backdrop dismissal followed the saved-language path.
+
+The initial saved-language failure is retained as useful experiment evidence:
+clearing the conflict marker allowed a later effect to reapply the requested
+locale. The implementation now separates `unresolved`, `saved`, and
+`requested` startup resolution states; the corrected saved-language retest
+passed.
+
+### Additional completed manual cases
+
+* With saved `ja` and requested `en`, the reverse conflict path passed; choosing
+  English changed only the effective UI locale and left `ja` persisted.
+* With saved `ja` and requested `ja`, no Conflict Dialog appeared, the UI was
+  Japanese, and the Dataset opened. The documented evidence uses the case where
+  `narrativeline.language = ja` was explicitly confirmed after the storage-
+  inspection procedure was corrected.
+* With no persisted locale and requested `ja`, the UI opened in Japanese and
+  `localStorage.getItem("narrativeline.language")` remained `null`.
+
+### Manual cases not yet completed
+
+The following remain unverified manual cases and must not be described as
+passed: invalid locale variants, effective-locale Handoff failure messages,
+locale-only links, repeated-reload UX, locale conflicts combined with
+modified/pending work, Timeline locale controls, narrow/touch layouts, and
+parallel-fetch comparison. Experiment 1 remains
+`INTERIM / MANUAL ACCEPTANCE IN PROGRESS`.
 
 ## Experiments required before runtime implementation
 

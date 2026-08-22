@@ -1,11 +1,11 @@
 # E2R Hub Public Entry Point — Milestone 1 Information Architecture
 
-Status: accepted design checkpoint; non-normative application guidance  
+Status: accepted design checkpoint; non-normative application guidance
 Date: 2026-08-22
 
 ## Purpose
 
-This document defines the scope and information architecture for E2R Hub / 
+This document defines the scope and information architecture for E2R Hub /
 Portal Public Entry Point Milestone 1. It establishes what the Hub is for,
 which audiences and first-use paths it serves, and where applications,
 samples, documentation, and Dataset Handoff belong.

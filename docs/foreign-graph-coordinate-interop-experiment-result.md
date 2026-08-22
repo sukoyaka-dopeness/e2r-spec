@@ -113,6 +113,34 @@ This overlap is a limitation of the simple PDF renderer. It is not evidence of
 a LiaisonScape routing failure, because the renderer did not use LiaisonScape's
 routing engine.
 
+### Future page-segmented graph printing
+
+The large-graph result also suggests a future PDF/export layout approach for
+physical page splitting. A simple poster-style tile can cut Relations at page
+boundaries, but that makes each printed page harder to read in isolation. A
+more legible bounded approach would treat page layout and graph continuity as
+separate concerns:
+
+- omit a Relation from a page when its endpoints would be separated by the
+  page boundary;
+- render both endpoint Nodes on each relevant page, so the page retains the
+  local context of the omitted Relation; and
+- add a small reference marker to duplicated Nodes indicating that the same
+  Node is present on another page.
+
+This is not a proposal to duplicate Core objects in the Dataset. The repeated
+Node renderings would be export-layout instances referring to one underlying
+Entity or Event, while the cross-page Relation remains represented by the
+shared graph identity rather than by a line cut across paper. A future export
+could optionally include page references or a companion index to make the
+omitted cross-page Relations discoverable.
+
+The idea is a non-normative future PDF/export research candidate. It requires
+further decisions about page partitioning, relation visibility, duplicate-node
+markers, labels, page references, and dense local subgraphs. It does not alter
+E2R Core, Coordinate semantics, Dataset identity, or current LiaisonScape
+routing behavior.
+
 ## Findings
 
 1. Core graph interoperability was high for this practical example.

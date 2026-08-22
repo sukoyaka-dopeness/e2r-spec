@@ -154,9 +154,10 @@ application experiment, not an official Stable Coordinate Extension.
 - Dataset Handoff v0 is implemented and manually accepted for LiaisonScape;
   its accepted implementation checkpoints and evidence are recorded in
   `docs/dataset-handoff-v0-liaison-scape-implementation-result.md`.
-- Direct Hub handoff remains a later workstream, and NarrativeLine
-  Replacement Safety / Dataset Handoff parity remains deferred.
-- NarrativeLine Replacement Safety parity remains deferred.
+- Direct Hub handoff remains a later workstream.
+- NarrativeLine Replacement Safety and Dataset Handoff v0 parity are complete
+  for the accepted bounded scope recorded in the NarrativeLine acceptance
+  documents and Formal Completion Acceptance.
 
 ## Completed design milestone 1: Specification Extension redesign
 
@@ -507,12 +508,15 @@ or LiaisonScape -> edit safely -> export -> return to documentation`.
 
 The critical path is:
 
-1. **NarrativeLine modernization** — bring Dataset Replacement Safety and
-   Dataset Handoff parity to NarrativeLine after auditing its existing temporal
-   editing and pending-work model. This includes safe Open, New, and Sample
+1. **NarrativeLine modernization** — COMPLETE for the accepted bounded
+   Dataset Replacement Safety and Dataset Handoff v0 scope after auditing NarrativeLine's
+   existing temporal editing and pending-work model. The accepted work includes
+   safe Open, New, and Sample
    replacement, loss-risk tracking, pending-work protection, browser-native
    exit warning, explicit handoff failure, no silent fallback, startup-only
    handoff, and the distinction between acquisition URL and Dataset identity.
+   Acceptance evidence is recorded in the NarrativeLine NL-D4, NL-D5A, NL-D5B,
+   NL-H1A, NL-H1B, and Formal Completion documents.
 2. **NarrativeLine navigation ownership** — audit Browser Back/Forward,
    `history.state`, `popstate`, Home/editor navigation, fragment ownership,
    runtime fragment changes, and the separation of screen navigation from
@@ -528,9 +532,10 @@ The critical path is:
    links. Use `implemented`, `manually accepted`, `research / experimental`,
    and `deferred / on hold` consistently.
 
-Hub-to-application Dataset opening can be evaluated after NarrativeLine Handoff
-parity. Existing roadmap status keeps Direct Hub handoff as a later workstream;
-this section does not promote it to a release blocker.
+Direct Hub handoff can be evaluated as a later workstream. NarrativeLine Handoff
+v0 completion does not claim Hub direct handoff, public release completion,
+private/authenticated Handoff support, or any future multi-Dataset workflow, and
+this section does not promote Direct Hub handoff to a release blocker.
 
 ## Research / post-release growth
 

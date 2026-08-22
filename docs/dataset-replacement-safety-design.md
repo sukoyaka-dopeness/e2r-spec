@@ -212,8 +212,12 @@ The Handoff v0 document's earlier statement that Replacement Safety was still
 an undecided design blocker is superseded by this D1-D7 checkpoint. Confirmation
 UX and application-exit policy are documented here. LiaisonScape's accepted
 implementation evidence is recorded separately in
-`docs/dataset-replacement-safety-liaison-scape-implementation-result.md`;
-NarrativeLine parity remains deferred.
+`docs/dataset-replacement-safety-liaison-scape-implementation-result.md`.
+At the time of this design checkpoint, NarrativeLine parity remained
+deferred. It was subsequently implemented and accepted within the bounded
+NarrativeLine Dataset Handoff / Replacement Safety scope. The current
+authority is `docs/narrativeline-dataset-handoff-v0-formal-completion-
+acceptance.md`; the historical design-time status is retained here.
 
 ## Checkpoint status
 
@@ -223,6 +227,10 @@ Dataset Replacement Safety state audit: COMPLETE
 Dataset Replacement Safety D1-D7: DOCUMENTED
 Replacement Confirmation UX: DOCUMENTED
 Application-exit policy: DOCUMENTED
-Dataset Replacement Safety implementation: LiaisonScape D1-D7 ACCEPTED; NarrativeLine parity DEFERRED
-Dataset Handoff v0 implementation: LiaisonScape COMPLETE / MANUALLY ACCEPTED; NarrativeLine and Hub follow-up DEFERRED
+Dataset Replacement Safety implementation: LiaisonScape D1-D7 ACCEPTED;
+NarrativeLine bounded parity subsequently IMPLEMENTED / ACCEPTED;
+historical design-time deferral retained
+Dataset Handoff v0 implementation: LiaisonScape COMPLETE / MANUALLY ACCEPTED;
+NarrativeLine bounded implementation COMPLETE / ACCEPTED; Hub follow-up
+DEFERRED
 ```

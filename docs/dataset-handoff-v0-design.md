@@ -275,7 +275,9 @@ handoff and existing Open/New/Sample operations. The current implementation
 status is:
 
 ```text
-NarrativeLine: DATASET REPLACEMENT SAFETY PARITY DEFERRED
+NarrativeLine: DATASET REPLACEMENT SAFETY PARITY subsequently IMPLEMENTED
+AND ACCEPTED within the bounded NarrativeLine scope; the design-time
+deferral is historical
 LiaisonScape: D1-D7 IMPLEMENTED AND ACCEPTED
 ```
 
@@ -311,13 +313,18 @@ the fragment namespace.
 Replacement safety audit:
 
 ```text
-NarrativeLine: DATASET REPLACEMENT SAFETY PARITY DEFERRED
+NarrativeLine: DATASET REPLACEMENT SAFETY PARITY subsequently IMPLEMENTED
+AND ACCEPTED within the bounded NarrativeLine scope; the design-time
+deferral is historical
 LiaisonScape: D1-D7 IMPLEMENTED AND ACCEPTED
 ```
 
-NarrativeLine has a single `narrativeline.lastDataset` localStorage slot, but
-no explicit D1-D7 parity implementation. Opening another Dataset can overwrite
-that single slot; parity remains deferred.
+NarrativeLine has a single `narrativeline.lastDataset` localStorage slot,
+which remains partial recoverable session state rather than a complete dirty
+state. The subsequent bounded implementation added Dataset baseline tracking,
+pending-user-work detection, candidate staging, replacement confirmation, and
+conditional `beforeunload` protection. Its current acceptance is recorded in
+`docs/narrativeline-dataset-handoff-v0-formal-completion-acceptance.md`.
 
 LiaisonScape has completed and manually accepted D1-D7 implementation,
 including Dataset baseline tracking, pending-user-work detection, D6
@@ -329,7 +336,9 @@ The conclusion is:
 
 ```text
 Transport compatibility: accepted
-Implementation readiness: LiaisonScape implementation complete and manually accepted; NarrativeLine and Hub follow-up remain deferred
+Implementation readiness: LiaisonScape implementation complete and manually
+accepted; NarrativeLine bounded implementation complete and accepted; Hub
+follow-up remains deferred
 ```
 
 The accepted LiaisonScape implementation evidence is recorded in
@@ -379,5 +388,7 @@ This is a design checkpoint only.
 Dataset Handoff v0 design: documented
 Dataset Handoff v0 implementation: LiaisonScape complete and manually accepted
 Dataset Replacement Safety D1-D7 design: documented
-Dataset Replacement Safety implementation: LiaisonScape D1-D7 accepted; NarrativeLine parity deferred
+Dataset Replacement Safety implementation: LiaisonScape D1-D7 accepted;
+NarrativeLine bounded implementation accepted; the earlier parity deferral is
+historical; Hub follow-up remains deferred
 ```

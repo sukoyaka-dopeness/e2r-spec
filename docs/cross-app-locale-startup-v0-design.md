@@ -89,6 +89,14 @@ under Dataset Handoff v0, while locale is an optional presentation instruction.
 
 ## Precedence
 
+The recipient-preference refinement in
+`docs/cross-app-locale-startup-v0-recipient-preference-design.md` is the
+current authority for the narrower case where a valid URL request differs from
+a valid persisted explicit recipient preference: that case requires a
+temporary Conflict Dialog rather than silently applying URL precedence. This
+original precedence remains the accepted checkpoint for cases without that
+conflict.
+
 On application startup, the effective locale is resolved in this order:
 
 1. A valid explicit `locale` in the current URL fragment.

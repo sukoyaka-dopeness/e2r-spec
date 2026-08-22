@@ -155,9 +155,10 @@ application experiment, not an official Stable Coordinate Extension.
   its accepted implementation checkpoints and evidence are recorded in
   `docs/dataset-handoff-v0-liaison-scape-implementation-result.md`.
 - Direct Hub handoff remains a later workstream.
-- NarrativeLine Replacement Safety and Dataset Handoff v0 parity are complete
-  for the accepted bounded scope recorded in the NarrativeLine acceptance
-  documents and Formal Completion Acceptance.
+- NarrativeLine Replacement Safety and Dataset Handoff v0 parity remain
+  deferred. The current accepted bounded implementation evidence is for
+  LiaisonScape; NarrativeLine acceptance documents and Formal Completion
+  Acceptance are a later workstream, not current evidence.
 
 ## Completed design milestone 1: Specification Extension redesign
 

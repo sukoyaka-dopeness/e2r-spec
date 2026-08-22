@@ -1,6 +1,6 @@
 # E2R Cross-App Locale Startup v0 — Recipient Preference Design
 
-Status: Design refinement / experiment plan
+Status: Design refinement / current decision record; experiments required before implementation
 
 This document refines the accepted design checkpoint in
 `docs/cross-app-locale-startup-v0-design.md` (commit `f681327`). The original
@@ -10,6 +10,13 @@ and it does not implement runtime behavior.
 The refinement addresses one unresolved question: how a shared link can express
 the sender's presentation-language intent without silently overriding an
 explicit language preference already chosen by the recipient.
+
+This document is the current authority for recipient-preference conflict
+resolution. The original startup design remains the accepted URL-contract
+checkpoint. Where it describes unconditional URL precedence, this refinement
+supersedes that behavior for the valid-request versus valid-persisted-
+preference conflict only; it does not rewrite the original document's
+historical record.
 
 ## Audit basis
 
@@ -190,10 +197,26 @@ The conceptual choices are:
 Neither choice silently changes the saved preference. A later explicit use of
 the application locale selector is a durable preference action.
 
+An existing exact `en` or `ja` value under `liaisonscape.locale` is treated as
+the persisted recipient preference, including during migration from the legacy
+behavior that could store a browser-derived fallback. New consumer behavior
+must not persist browser fallback values; only an explicit manual selector
+action writes the preference.
+
+Locale storage read or write failures are non-fatal. A read failure proceeds
+through browser/default fallback; a write failure may leave the current UI
+locale changed while the preference remains unsaved. Neither failure blocks
+locale startup or Dataset Handoff.
+
 The Dialog must use proper modal semantics: labelled title, initial focus,
 keyboard navigation, predictable Escape behavior, focus restoration, and no
 stacking with a Dataset Replacement Dialog. Button labels must describe UI
 language, not implementation terms such as `locale` or `fragment`.
+
+Escape and backdrop dismissal mean continuing in the saved application
+language. They leave the persisted preference unchanged and do not cancel an
+otherwise valid Dataset Handoff. Initial focus must be on the saved-language
+action.
 
 Repeated reload behavior is intentionally unresolved until experiment results
 are available. The smallest initial implementation candidate is to keep the

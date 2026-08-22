@@ -275,7 +275,7 @@ handoff and existing Open/New/Sample operations. The current implementation
 status is:
 
 ```text
-NarrativeLine: NEEDS SHARED DATASET REPLACEMENT SAFETY
+NarrativeLine: DATASET REPLACEMENT SAFETY PARITY DEFERRED
 LiaisonScape: D1-D7 IMPLEMENTED AND ACCEPTED
 ```
 
@@ -311,7 +311,7 @@ the fragment namespace.
 Replacement safety audit:
 
 ```text
-NarrativeLine: NEEDS SHARED DATASET REPLACEMENT SAFETY
+NarrativeLine: DATASET REPLACEMENT SAFETY PARITY DEFERRED
 LiaisonScape: D1-D7 IMPLEMENTED AND ACCEPTED
 ```
 

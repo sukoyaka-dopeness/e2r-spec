@@ -610,11 +610,49 @@ The supporting NarrativeLine test-infrastructure checkpoints are:
 
 Closure A completion does not mean Cross-App Locale Recipient-Preference
 production readiness is complete. Production readiness remains `NOT READY`.
-Remaining scope includes browser locale fallback, explicit `#locale`
-synchronization and `history.replaceState`, Back/Forward locale lifecycle,
-Experiment 2C conflict and modified/pending safety, remaining NarrativeLine
-consumer migration, LiaisonScape locale consumption, and Hub locale
-production.
+Remaining scope includes explicit `#locale` synchronization and
+`history.replaceState`, preservation of `datasetUrl` and unknown fragment
+parameters, Back/Forward locale lifecycle, Experiment 2C conflict and
+modified/pending safety, remaining NarrativeLine consumer migration,
+LiaisonScape locale consumption, and Hub locale production.
 
 This record changes documentation status only. It does not change the runtime,
 Dataset Handoff semantics, the roadmap priority, or the AI knowledge base.
+
+## Browser Locale Fallback implementation and acceptance
+
+NarrativeLine checkpoint `6d570c9` (`feat: add browser locale fallback`)
+records Browser Locale Fallback as `ACCEPTED — IMPLEMENTED, AUTOMATED,
+COMMITTED`.
+
+Startup precedence is:
+
+`temporary resolution → requested locale → persisted explicit preference →
+browser inference → en`
+
+In the normal startup path, requested locale outranks persisted explicit
+preference, which outranks browser inference. Browser inference is not
+explicit user intent and is never automatically persisted.
+
+Browser resolution checks `navigator.languages` in order, then
+`navigator.language`. `ja`/`ja-*` normalize to `ja`, `en`/`en-*` normalize to
+`en`, and unsupported, empty, or malformed values fall through to `en`.
+URL parsing remains strict: `#locale=ja-JP` is invalid. Browser mismatch alone
+does not create a Conflict, and temporary resolution, manual selector
+persistence, Handoff ordering, and runtime hash semantics remain unchanged.
+
+Direct production App integration evidence covers:
+
+* no request/no persisted preference with browser `ja-JP`: Japanese UI, no
+  Conflict, and no persistence;
+* unsupported browser `fr-FR`: English UI and no persistence;
+* persisted `en` with browser `ja-JP`: English UI, persisted `en`, and no
+  Conflict; and
+* requested `ja` with browser `en-US`: Japanese UI, no Conflict, and no
+  persistence.
+
+Closure A remains `COMPLETE — EVIDENCE SUFFICIENT`. Production readiness
+remains `NOT READY`; the remaining work is explicit selector `#locale`
+synchronization and `history.replaceState`, fragment preservation,
+Back/Forward lifecycle, Experiment 2C, and remaining consumer migration in
+NarrativeLine, LiaisonScape, and Hub.

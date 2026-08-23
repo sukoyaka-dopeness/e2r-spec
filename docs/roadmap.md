@@ -160,6 +160,20 @@ application experiment, not an official Stable Coordinate Extension.
   LiaisonScape; NarrativeLine acceptance documents and Formal Completion
   Acceptance are a later workstream, not current evidence.
 
+### NarrativeLine Focus Phase 2 closure — 2026-08-23
+
+- Focus Phase 2 is COMPLETE / CLOSED for the bounded NarrativeLine scope.
+- Fresh Entity Create entered through explicit `Create New Entity` intent
+  focuses Name once; `Resume Draft` and Browser history restoration do not
+  force a focus target.
+- Existing Event Detail and Existing Entity Detail retain no generic
+  autofocus because the intended editing field is not unambiguous at entry.
+- Safe Enter/form semantics and Timeline title autofocus remain deferred
+  follow-up experiments, not current release blockers.
+- This closure does not authorize autofocus changes in other screens or in
+  LiaisonScape. The accepted runtime checkpoint is NarrativeLine commit
+  `1d6d609`; related reusable evidence remains a Hypothesis in Knowledge.
+
 ## Completed design milestone 1: Specification Extension redesign
 
 Draft version `0.1.0` is now defined in

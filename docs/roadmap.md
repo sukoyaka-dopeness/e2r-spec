@@ -1011,6 +1011,43 @@ responsive testing showed that both LiaisonScape and NarrativeLine can be
 inspected at narrower widths. This remains an observation boundary for future
 responsive acceptance, not a new workspace-wide minimum-width requirement.
 
+### Additional manual-review follow-ups
+
+The same F2-LS1 manual acceptance added two cross-application UX questions:
+
+- **Viewport toolbar interaction semantics** — extend the existing viewport
+  toolbar compactness / 600px breakpoint audit to cover the focusable drag
+  handle. Confirm whether a drag-only affordance belongs in sequential Tab
+  order, whether keyboard repositioning is required, whether Enter / Space
+  should have meaningful behavior, and whether a non-button accessible
+  representation is more appropriate. Preserve pointer drag discoverability,
+  keyboard and touch accessibility, and toolbar compactness. Do not prescribe
+  `tabIndex`, arrow-key, or Enter-to-drag behavior before this audit.
+- **Cross-App Dataset Replacement destructive styling parity** — compare
+  NarrativeLine and LiaisonScape for modified-only, pending-only, and
+  modified-and-pending states, including Cancel, Discard and Continue, Discard
+  work and Continue, Export and Continue, and Export Dataset. Evaluate color,
+  background, border, text emphasis, action hierarchy, safe-side initial focus,
+  disabled state, hover, focus-visible, narrow layout, EN/JA, and danger
+  semantics. The target is equivalent visual hierarchy for equivalent semantic
+  risk, not identical CSS or DOM.
+
+The following observations are recorded as non-issues and are not additional
+roadmap items: extreme-narrow Footer wrap/clip differences caused by available
+text width, and a changed initial Tab location after pointer interaction when
+the browser's sequential-focus behavior remains correct. The accepted
+approximately 240px boundary remains bounded and is not a universal minimum
+width requirement.
+
+F2-LS1 remains in manual acceptance rather than Accepted / Closed. The current
+fixes requiring runtime correction and retest are the 600px/601px shell-height
+jump and Credits opener-focus restoration. Previously accepted checks include
+Workspace Header blank-area regression correction, brand and explicit Home
+navigation, Dataset/selection preservation through locale switching, Credits
+backdrop/Escape dismissal, representative Dataset Replacement Dialog focus and
+dismissal behavior, toolbar breakpoint behavior, and extreme-narrow brand
+behavior. This status record does not itself authorize runtime changes.
+
 ## Immediate sequence
 
 1. Preserve the LiaisonScape `0.1.0` First Distribution and Direct Graph

@@ -905,8 +905,9 @@ Unless new evidence changes the decision, do not currently:
 
 The current bounded execution order is:
 
-1. Cross-App Locale Recipient-Preference experiments;
-2. NarrativeLine locale consumer implementation;
+1. Cross-App Locale Recipient-Preference closure / production readiness;
+2. NarrativeLine locale consumer implementation (blocked until Priority 1
+   closure is accepted);
 3. LiaisonScape locale consumer implementation;
 4. Hub startup locale producer completion;
 5. Hub Direct Handoff and localized Sample Gallery local acceptance;
@@ -1088,3 +1089,58 @@ unrelated workstreams.
 
 At every step, prefer the smallest change that increases executable evidence
 and keeps Core and Extension responsibilities distinct.
+
+## Cross-App Locale consumer readiness checkpoint (2026-08-23)
+
+The latest read-only NarrativeLine Locale Consumer Readiness Audit records the
+current production-migration status as **NOT READY**. The existing
+recipient-preference implementation is a bounded experimental checkpoint, not
+production Cross-App Locale consumer parity. NarrativeLine's runtime worktree
+is clean and the relevant experiment implementation is recorded at commit
+`bfe88f6`.
+
+Priority 1 is therefore **Cross-App Locale Recipient-Preference closure /
+production readiness**. The following bounded closure items must be accepted
+before production locale consumer migration begins:
+
+1. Confirm the browser fallback contract and its NarrativeLine implementation
+   direction while preserving the requested / persisted / browser / default
+   distinction.
+2. Complete manual startup evidence for locale-only, invalid, duplicate,
+   malformed, and unsupported locale requests; effective-locale Handoff
+   errors; temporary-choice reload; and repeated Conflict Dialog behavior.
+3. Run startup locale conflict against modified-only, pending-only, and
+   modified-plus-pending work, confirming Dataset Replacement Safety and modal
+   ordering remain independent of locale preference.
+4. Add and accept selector URL synchronization: immediate UI update,
+   explicit persistence, `locale`-only `replaceState`, no new history entry,
+   and preservation of `datasetUrl` and unknown fragment parameters.
+5. Close the locale URL lifecycle evidence for Back / Forward, startup-only
+   semantics, ignored runtime hash mutation, and Dataset Handoff fragment
+   preservation.
+6. Close NarrativeLine Timeline Header locale-control acceptance for EN and
+   JA at desktop, narrow, and touch conditions.
+
+The existing NarrativeLine experiment acceptance documents remain valid within
+their bounded scopes. Experiment 1 does not close the manual/lifecycle items
+above, and Experiment 2B does not accept startup Handoff with pre-existing
+dirty work. These exclusions must not be treated as production-readiness
+evidence.
+
+The production implementation sequence remains deferred until this checkpoint
+is accepted. Once ready, the smallest sequence is: locale fragment parser and
+updater; requested / persisted / browser / effective state model; Conflict
+Dialog and startup orchestration; Handoff ordering and StrictMode regression;
+AppFrame selector persistence and fragment synchronization; Dataset,
+selection, draft, and Replacement Safety regression; then browser acceptance.
+
+This checkpoint does not reopen accepted F2-NL1/NL1b/NL1c or F2-LS1. Existing
+Cross-App shell follow-ups, Dataset acquisition hierarchy, Header action parity,
+and Dataset Replacement styling remain separate follow-up lanes. The accepted
+LiaisonScape F2-LS1 checkpoint remains closed; its brand hit-area,
+Credits-focus, and stable vertical shell fixes are not locale-readiness gaps.
+
+No runtime, design-authority, or `ai-knowledge` files are changed by this
+roadmap synchronization. The existing untracked files
+`research/exploratory/anonymous-dataset-sharing.md` and
+`sessions/E2R-Session-0048.md` remain preserved and outside this checkpoint.

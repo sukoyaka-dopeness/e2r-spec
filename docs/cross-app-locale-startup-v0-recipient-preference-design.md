@@ -569,3 +569,52 @@ synchronization, `history.replaceState`, Back / Forward locale lifecycle,
 Experiment 2C, or the LiaisonScape locale consumer.
 
 **CROSS-APP LOCALE RECIPIENT-PREFERENCE DESIGN: EXPERIMENTS REQUIRED BEFORE IMPLEMENTATION**
+
+## Closure A completion record
+
+The NarrativeLine Cross-App Locale Recipient-Preference Closure A audit is
+complete with sufficient evidence. All fourteen bounded acceptance areas passed:
+
+1. locale-only requested Japanese;
+2. requested locale without a persisted preference;
+3. same-locale persisted preference;
+4. invalid locale-family handling;
+5. startup-only Conflict behavior;
+6. temporary requested-language choice;
+7. same-tab reload continuity;
+8. saved-language choice and persistence;
+9. manual selector override of stale temporary resolution;
+10. Dataset and selection preservation;
+11. Timeline locale control;
+12. runtime hash startup semantics;
+13. Conflict-before-fetch and StrictMode exactly-once Handoff ordering; and
+14. Error Localization.
+
+The Error Localization evidence is recorded by NarrativeLine checkpoint
+`b272b8b` (`test: cover localized handoff failures`). Its direct production UI
+integration cases verify Japanese and English failed-Handoff alerts, plus the
+persisted-English/requested-Japanese Conflict path with zero fetches before
+resolution, exactly one fetch after requested-language selection, a Japanese
+user-visible `role="alert"`, and unchanged persisted English preference.
+
+Because no safe project-owned HTTPS failure fixture is available, Browser
+Manual remains `NOT EXECUTED — SAFE PROJECT-OWNED FIXTURE UNAVAILABLE`.
+This is accepted under the Error Localization evidence policy above and is not
+reported as Browser Manual PASS.
+
+The supporting NarrativeLine test-infrastructure checkpoints are:
+
+* `d5749cc` — minimal DOM integration harness;
+* `5013089` — Vite TSX loading bridge; and
+* `b272b8b` — localized Handoff failure integration evidence.
+
+Closure A completion does not mean Cross-App Locale Recipient-Preference
+production readiness is complete. Production readiness remains `NOT READY`.
+Remaining scope includes browser locale fallback, explicit `#locale`
+synchronization and `history.replaceState`, Back/Forward locale lifecycle,
+Experiment 2C conflict and modified/pending safety, remaining NarrativeLine
+consumer migration, LiaisonScape locale consumption, and Hub locale
+production.
+
+This record changes documentation status only. It does not change the runtime,
+Dataset Handoff semantics, the roadmap priority, or the AI knowledge base.

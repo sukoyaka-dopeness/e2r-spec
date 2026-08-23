@@ -609,9 +609,9 @@ The supporting NarrativeLine test-infrastructure checkpoints are:
 
 Closure A completion does not mean Cross-App Locale Recipient-Preference
 production readiness is complete. Production readiness remains `NOT READY`.
-Remaining scope includes Back/Forward locale lifecycle, Experiment 2C conflict
-and modified/pending safety, remaining NarrativeLine consumer migration,
-LiaisonScape locale consumption, and Hub locale production.
+Remaining scope includes Back/Forward locale lifecycle, the Experiment 2C
+applicability audit, remaining NarrativeLine consumer migration, LiaisonScape
+locale consumption, and Hub locale production.
 
 This record changes documentation status only. It does not change the runtime,
 Dataset Handoff semantics, the roadmap priority, or the AI knowledge base.
@@ -688,9 +688,9 @@ explicit persisted or URL-synchronized choice.
 
 Closure A remains `COMPLETE — EVIDENCE SUFFICIENT`, Browser Locale Fallback
 remains `ACCEPTED — IMPLEMENTED, AUTOMATED, COMMITTED`, and Production
-readiness remains `NOT READY`. Back/Forward locale lifecycle, Experiment 2C,
-remaining NarrativeLine consumer closure, LiaisonScape locale consumption,
-and Hub locale production remain outstanding.
+readiness remains `NOT READY`. Back/Forward locale lifecycle, the Experiment
+2C applicability audit, remaining NarrativeLine consumer closure,
+LiaisonScape locale consumption, and Hub locale production remain outstanding.
 
 ## Back / Forward Locale Lifecycle design decision
 
@@ -805,7 +805,45 @@ Therefore the status is **ACCEPTED — DESIGN + AUTOMATED + REAL-BROWSER
 EVIDENCE**. This closes only the Back / Forward lifecycle evidence gap. Closure
 A, Browser Locale Fallback, and Selector Fragment Synchronization retain their
 recorded accepted status; overall Cross-App Locale Recipient-Preference
-production readiness remains `NOT READY`. Remaining major scope includes
-Experiment 2C conflict plus modified/pending-work safety, remaining
-NarrativeLine consumer readiness work, LiaisonScape locale consumption, and
-Hub locale production.
+production readiness remains `NOT READY`. Remaining major scope includes the
+Experiment 2C applicability audit, remaining NarrativeLine consumer readiness
+work, LiaisonScape locale consumption, and Hub locale production.
+
+## Experiment 2C applicability audit
+
+Experiment 2C, originally framed as startup Locale Conflict combined with
+pre-existing modified or pending work, is **NOT APPLICABLE AS CURRENTLY
+FRAMED**. This is neither a failure nor a missing runtime implementation.
+
+On a new NarrativeLine document startup, the restored `lastDataset` or sample
+Dataset immediately becomes the accepted baseline, so `datasetModified` is
+false. Pending registry and editor drafts initialize clean and are not restored
+from session or local storage, so `pendingUserWork` is false. Locale Conflict
+can therefore occur only while the active Dataset is clean. Once resolved,
+Handoff starts exactly once; while it is loading, ordinary Home acquisition
+controls are disabled. Runtime hash mutation and `popstate` do not restart
+startup locale or Handoff processing, and reload creates a new clean session
+baseline rather than restoring dirty or pending work.
+
+Dataset Replacement Safety remains intact. In its general candidate pipeline,
+`datasetModified || pendingUserWork` stages a candidate and requires the
+existing Dataset Replacement Dialog; it does not directly accept the
+replacement. Locale choice is not Dataset replacement consent. The accepted
+clean, modified-only, pending-only, and modified-plus-pending replacement
+matrix, including Cancel preservation and export/discard behavior, is
+unchanged. `beforeunload` remains tied to loss risk, not locale resolution.
+
+No synthetic production integration evidence is required for the unreachable
+combined startup state, and no additional Manual Acceptance is applicable.
+Reactivate Experiment 2C only if a future production entry permits existing
+dirty or pending work to coexist with a new incoming Handoff/locale request,
+such as recoverable editing-session restoration or explicit in-session Handoff
+acquisition. That future entry must directly verify sequential locale and
+replacement dialogs, Cancel preservation, effective-locale safety-dialog copy,
+and the existing replacement matrix.
+
+Experiment 2C is no longer an active implementation blocker for the current
+NarrativeLine architecture. Cross-App Locale Recipient-Preference production
+readiness nevertheless remains `NOT READY`; the next NarrativeLine scope is a
+final consumer readiness audit, followed by separate LiaisonScape consumer and
+Hub producer work.

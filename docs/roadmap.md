@@ -1119,9 +1119,10 @@ before production locale consumer migration begins:
 2. Complete manual startup evidence for locale-only, invalid, duplicate,
    malformed, and unsupported locale requests; effective-locale Handoff
    errors; temporary-choice reload; and repeated Conflict Dialog behavior.
-3. Run startup locale conflict against modified-only, pending-only, and
-   modified-plus-pending work, confirming Dataset Replacement Safety and modal
-   ordering remain independent of locale preference.
+3. Record the Experiment 2C applicability audit: current startup Locale
+   Conflict cannot coexist with pre-existing modified or pending work, so no
+   combined implementation case is active until a future entry permits that
+   coexistence; Dataset Replacement Safety remains independently accepted.
 4. Add and accept selector URL synchronization: immediate UI update,
    explicit persistence, `locale`-only `replaceState`, no new history entry,
    and preservation of `datasetUrl` and unknown fragment parameters.

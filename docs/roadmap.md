@@ -810,6 +810,16 @@ semantics:
   LiaisonScape's current header treatment, while keeping navigation semantics
   explicit and preserving the active Dataset;
 - audit modal and confirmation-dialog focus behavior in both applications.
+- **NarrativeLine Event Detail responsive action layout audit** — review the
+  intermediate-width wrapping and grouping of the primary Save action,
+  secondary Save / Add Related Entity action, and destructive / Return action.
+  Compare grouping, wrap order, alignment, spacing, narrow and intermediate
+  widths, EN/JA labels including long localized labels, keyboard focus order,
+  touch targets, and destructive-action hierarchy. This is an audit item, not
+  a decision to force one column, prohibit wrapping, move the destructive
+  action, or introduce a fixed `712px` or `600px` breakpoint. LiaisonScape
+  Detail/Dialog action grouping may be used as a later reference candidate,
+  but this item does not establish identical cross-application layout.
 
 The proposed modal keyboard policy is deliberately action-sensitive. Ordinary
 forms and non-destructive confirmations may initially focus their primary

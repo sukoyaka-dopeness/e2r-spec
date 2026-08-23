@@ -1154,3 +1154,38 @@ No runtime, design-authority, or `ai-knowledge` files are changed by this
 roadmap synchronization. The existing untracked files
 `research/exploratory/anonymous-dataset-sharing.md` and
 `sessions/E2R-Session-0048.md` remain preserved and outside this checkpoint.
+
+## Deferred Cross-App safety and test-infrastructure follow-ups (2026-08-24)
+
+Recent locale production-readiness work surfaced two future follow-ups. They
+do not reorder the current locale priority and do not reopen completed locale
+checkpoints.
+
+### Audit and align Cross-App Entity deletion semantics
+
+LiaisonScape currently blocks deletion of an Entity when incident Relations
+remain, while NarrativeLine can cascade-delete Relations connected through the
+Entity's `sourceId` / `targetId`. This creates a Cross-App interoperability and
+destructive-safety asymmetry: a Dataset authored in LiaisonScape may lose
+incident Relations when opened and edited in NarrativeLine.
+
+Record this as a future audit, not an implementation decision. The audit should
+compare Relation-preservation and deletion-blocking behavior, confirmation and
+cascade options, Event–Entity versus ordinary Entity–Entity Relations, self and
+parallel Relations, Event endpoints, and LiaisonScape/NarrativeLine round-trip
+safety. The Core Relation model must remain application-neutral; this item does
+not authorize changing either application's deletion behavior.
+
+### Reusable UI integration test harness research
+
+NarrativeLine's bounded checkpoints `d5749cc` and `5013089` demonstrate a
+useful pattern combining the Node built-in test runner, jsdom, React 19,
+Vite SSR loading, production components, storage, History API, and fetch
+observations. Record a research seed for whether that pattern can be reused by
+another E2R application and, only after a second-app validation, whether a
+shared helper repository or package is justified.
+
+This remains research, not a shared-package commitment. Manual browser
+acceptance remains necessary for responsive geometry, visual focus, touch,
+hover, drag quality, and real browser Back/Forward UX. The proposed research
+seed is `research/exploratory/reusable-ui-integration-test-harness.md`.

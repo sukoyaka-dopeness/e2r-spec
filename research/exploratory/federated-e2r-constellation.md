@@ -79,6 +79,45 @@ content, or permission to create Relations for another user. These constraints
 make the idea more portable and safer without requiring a single hosting
 provider or registry.
 
+## 4.1 Personal E2R Space / Suite / Asset Hosting
+
+A further research direction is a user-owned **Personal E2R Space**: a
+public/private-compatible storage and hosting space that is useful before a
+user participates in federation. The name is provisional; no product or
+protocol terminology is settled.
+
+Conceptually, such a space could contain a manifest or publication index,
+multiple self-contained E2R Datasets, user-owned image and icon assets,
+public fragments and External Relation references, and a Personal E2R Suite
+or launcher for the relevant E2R applications. This would make federation an
+optional consequence of personal utility rather than the only reason to
+publish. The space would organize owned resources; it would not merge
+independently owned Datasets into one shared Dataset.
+
+Asset hosting is especially relevant to LiaisonScape, where a future Entity
+icon or image may be user-selected. Stable HTTPS asset references, embedded
+versus external assets, stable identity, replacement and deletion,
+portability, licensing, attribution, caching, CORS, Content Security Policy,
+MIME validation, tracking, and SVG active-content risks require separate
+research. This does not authorize a Core schema change, an icon extension, or
+a particular asset-reference syntax. Bundled icons, user-hosted raster images,
+and arbitrary SVG have different safety profiles.
+
+A future Personal E2R Suite could list Datasets and assets, launch NarrativeLine
+or LiaisonScape, and construct existing `datasetUrl` handoffs. GitHub
+repositories and GitHub Pages are possible implementation options, not
+protocol requirements; ordinary hosting, object storage, Pages services,
+self-hosting, or a future E2R-managed host remain possible alternatives.
+Read-only acquisition through `datasetUrl` is separate from write-back, which
+would require authentication, authorization, versioning, concurrency and
+conflict handling, backup, rollback, and portable deletion semantics.
+
+The primary hypothesis is that personal storage, backup/version history, asset
+hosting, Dataset organization, and application launching may provide value even
+without global constellation participation. Selective publication can then
+lead to External Relations and discovery. This remains a participation
+incentive hypothesis, not a product commitment.
+
 ## 5. Notification and discovery
 
 Possible mechanisms include explicit subscriptions, follow lists, public

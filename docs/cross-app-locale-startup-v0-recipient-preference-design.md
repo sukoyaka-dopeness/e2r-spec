@@ -691,3 +691,73 @@ remains `ACCEPTED — IMPLEMENTED, AUTOMATED, COMMITTED`, and Production
 readiness remains `NOT READY`. Back/Forward locale lifecycle, Experiment 2C,
 remaining NarrativeLine consumer closure, LiaisonScape locale consumption,
 and Hub locale production remain outstanding.
+
+## Back / Forward Locale Lifecycle design decision
+
+The Cross-App Locale Back / Forward lifecycle decision is now explicit:
+application-owned Back / Forward navigation restores navigation state, but does
+not treat a historical fragment `locale` as a new live locale request.
+
+On `popstate`:
+
+- the effective presentation locale remains unchanged;
+- the persisted explicit preference remains unchanged;
+- temporary locale resolution remains unchanged;
+- browser fallback is not re-run;
+- the Locale Conflict Dialog is not opened;
+- the locale fragment is not rewritten; and
+- Dataset Handoff is not re-run.
+
+Historical URL restoration and presentation-locale resolution are separate
+concerns. `#locale` has two primary roles: a startup recipient preference when
+a URL is opened or reloaded, and application-owned output written to the
+current History entry by the explicit Header selector. It is not
+entry-scoped live presentation state.
+
+This means that Back / Forward may intentionally produce a temporary URL/UI
+mismatch. For example, returning to a historical `#locale=en` entry while the
+current effective UI locale is Japanese leaves the URL at `#locale=en` and the
+UI in Japanese. No persistence or fragment repair occurs. An entry without a
+locale likewise does not trigger browser fallback or persisted-locale
+recalculation. Invalid, empty, malformed, or duplicate historical locale
+parameters are ignored during traversal and are not repaired automatically.
+
+The Locale Conflict Dialog remains startup-only. Historical locale traversal
+does not create temporary resolution or apply a historical locale through the
+temporary-resolution mechanism. The existing explicit-selector rule remains:
+an explicit Header selection clears stale temporary resolution, persists the
+choice, and synchronizes the owned fragment.
+
+Reload is a different lifecycle boundary. After Back / Forward, a reload is a
+new startup and therefore parses the current historical URL through normal
+startup precedence, including any applicable Conflict behavior. Similarly,
+historical `datasetUrl` does not cause a popstate Handoff fetch, while a reload
+may perform normal startup Handoff processing.
+
+This decision preserves the current runtime boundaries: no `hashchange` locale
+listener, generic fragment observer, popstate locale resolver, or navigation
+rewrite is added. It treats locale as application/session presentation
+preference rather than per-entry UI state, keeps explicit user preference from
+changing during navigation, preserves startup-only Conflict and Handoff
+semantics, and avoids conflating navigation restoration with preference
+mutation.
+
+The following alternatives are not adopted: temporary application of a
+historical locale, full startup precedence re-resolution on `popstate`,
+entry-scoped locale state, and rewriting historical URLs to the persisted
+preference.
+
+This is a Cross-App recipient lifecycle contract. Future LiaisonScape locale
+consumption should follow it unless a later explicit design revision is
+accepted. It does not implement LiaisonScape or Hub behavior.
+
+The decision does not mark implementation acceptance complete. The next
+bounded evidence phase should cover historical locale, no-locale, conflicting,
+and invalid/duplicate entries; unchanged UI and persistence; unchanged
+temporary resolution; view and selection restoration; Handoff exactly-once;
+and reload-after-traversal. A bounded real-browser acceptance should also
+verify browser Back / Forward URL transitions, no Conflict reopening, no
+Handoff refetch, reload semantics, and relevant focus/scroll behavior.
+
+Production readiness remains `NOT READY`; Back / Forward automated and browser
+acceptance evidence is still outstanding.

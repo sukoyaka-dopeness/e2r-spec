@@ -958,6 +958,59 @@ keyboard Tab order, and preservation of nested-surface Back semantics. No
 workspace-wide minimum width is implied by the existing narrow-viewport
 acceptance boundary.
 
+## LiaisonScape residual UX / quality follow-up (2026-08-23)
+
+Manual review during F2-LS1 identified the following bounded LiaisonScape
+follow-ups. They are implementation and acceptance work, not Core or Extension
+changes, and they do not change the current execution priority of F2-LS1,
+Cross-App Locale consumer implementation, or Hub locale producer completion:
+
+1. **Detail metadata / ID presentation audit** — review Entity Detail and
+   Relation Detail ID placement and information hierarchy. Evaluate long UUID-
+   sized values, wrapping, overflow, ellipsis, full-ID verification, copy
+   affordance, keyboard/touch accessibility, and the distinction between empty
+   or identical Entity/Relation names. Do not assume that moving ID directly
+   below a title is the final design; confirm the placement through a bounded
+   audit without reducing Dataset JSON or diagnostic traceability.
+2. **Dataset title editing** — evaluate application authoring for
+   `extensions.metadata.title`. Preserve unknown Metadata fields, Dataset-level
+   unknown fields and Extensions, declarations and version information, and
+   Dataset Replacement Safety / `datasetModified` behavior through export and
+   reload. Define empty/removal semantics and the New Dataset workflow before
+   implementation. This is application capability work, not a Core schema
+   change, and should remain aligned with NarrativeLine's Dataset-level
+   responsibility.
+3. **Viewport toolbar compactness / breakpoint audit** — verify the desktop
+   viewport toolbar and mobile viewport menu at the 600px boundary and nearby
+   widths. The intended question is whether desktop controls should compact or
+   hand off to the mobile UI at the breakpoint while preserving zoom controls,
+   percentage visibility, drag-handle usability, graph visibility,
+   discoverability, and touch-target requirements. Do not change the breakpoint
+   or declare a universal minimum width from this observation alone.
+4. **Graph information hierarchy** — audit the ordering and visual emphasis of
+   Dataset load status, Dataset metadata/title, graph summary, unsupported
+   Event-Relation caveat, graph content, and selection status. Keep the graph
+   summary as the primary graph statistic and the unsupported-content notice as
+   explanatory secondary information; defer exact DOM placement until the
+   bounded audit.
+
+### F2-LS1 acceptance blocker
+
+The manual review also found a current F2-LS1 interaction regression: clicking
+blank area in the Workspace Header can navigate Home. This is distinct from the
+four residual UX follow-ups above and is treated as a current F2-LS1 blocker to
+be corrected and rechecked before F2-LS1 acceptance. This roadmap entry records
+the blocker only; it does not authorize a runtime change in this documentation
+checkpoint.
+
+### Minimum-width observation boundary
+
+The review did not establish a LiaisonScape CSS minimum-width defect. A normal
+Windows Chrome window did not reproduce a fixed minimum width, while DevTools
+responsive testing showed that both LiaisonScape and NarrativeLine can be
+inspected at narrower widths. This remains an observation boundary for future
+responsive acceptance, not a new workspace-wide minimum-width requirement.
+
 ## Immediate sequence
 
 1. Preserve the LiaisonScape `0.1.0` First Distribution and Direct Graph

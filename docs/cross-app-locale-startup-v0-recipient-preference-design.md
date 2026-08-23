@@ -523,4 +523,49 @@ The following remain experiment questions rather than accepted runtime details:
 * repeated Conflict Dialog suppression; and
 * parallel Dataset fetch.
 
+## Error Localization evidence policy clarification
+
+Error Localization is a bounded acceptance concern for the NarrativeLine
+recipient-preference work. Its required behavior is deterministic UI behavior:
+the resolved effective locale must determine the localized Handoff failure text
+that is rendered to the user on the Home error surface.
+
+Browser Manual Acceptance is not an absolute requirement when no safe,
+project-owned HTTPS failure fixture exists. The repository must not introduce
+an arbitrary third-party endpoint, treat an explanatory `example.org` URL as a
+fixture, or add certificate/CORS infrastructure solely to manufacture a
+failure endpoint for this bounded check.
+
+In that situation, direct automated integration evidence may substitute for
+the browser failure-rendering step, but source inspection and service-only
+failure tests are insufficient. The automated evidence must cross the
+runtime/UI boundary and directly assert at least:
+
+1. an effective Japanese locale renders the Japanese Handoff failure text;
+2. an effective English locale renders the English Handoff failure text;
+3. a requested-Japanese Conflict resolution with persisted English keeps the
+   effective locale and failure text Japanese while leaving the persisted
+   preference English; and
+4. the failure is presented on the Home surface through the user-visible
+   alert path.
+
+The automated substitute should also preserve the existing startup ordering:
+no Handoff processing before a locale Conflict is resolved, and no duplicate
+Handoff processing after resolution. It must not alter Dataset Handoff
+semantics, credentials policy, Dataset validation, or Replacement Safety.
+
+If this direct automated integration evidence has not been added and no safe
+browser fixture is available, Error Localization remains `SOURCE / AUTOMATED
+PARTIAL` and Browser Manual remains `NOT EXECUTED`; it must not be reported as
+Manual PASS. Once the required integration assertions pass, the bounded Error
+Localization item may be recorded as `ACCEPTED BY AUTOMATED INTEGRATION
+EVIDENCE`, while browser-only concerns such as responsive behavior, keyboard
+interaction, real startup sequencing, and browser Network observations remain
+subject to their own appropriate acceptance methods.
+
+This clarification does not close Closure A by itself and does not change the
+separate production-readiness gaps for browser fallback, selector fragment
+synchronization, `history.replaceState`, Back / Forward locale lifecycle,
+Experiment 2C, or the LiaisonScape locale consumer.
+
 **CROSS-APP LOCALE RECIPIENT-PREFERENCE DESIGN: EXPERIMENTS REQUIRED BEFORE IMPLEMENTATION**

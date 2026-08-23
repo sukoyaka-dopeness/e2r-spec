@@ -564,8 +564,7 @@ interaction, real startup sequencing, and browser Network observations remain
 subject to their own appropriate acceptance methods.
 
 This clarification does not close Closure A by itself and does not change the
-separate production-readiness gaps for browser fallback, selector fragment
-synchronization, `history.replaceState`, Back / Forward locale lifecycle,
+separate production-readiness gaps for Back / Forward locale lifecycle,
 Experiment 2C, or the LiaisonScape locale consumer.
 
 **CROSS-APP LOCALE RECIPIENT-PREFERENCE DESIGN: EXPERIMENTS REQUIRED BEFORE IMPLEMENTATION**
@@ -610,10 +609,8 @@ The supporting NarrativeLine test-infrastructure checkpoints are:
 
 Closure A completion does not mean Cross-App Locale Recipient-Preference
 production readiness is complete. Production readiness remains `NOT READY`.
-Remaining scope includes explicit `#locale` synchronization and
-`history.replaceState`, preservation of `datasetUrl` and unknown fragment
-parameters, Back/Forward locale lifecycle, Experiment 2C conflict and
-modified/pending safety, remaining NarrativeLine consumer migration,
+Remaining scope includes Back/Forward locale lifecycle, Experiment 2C conflict
+and modified/pending safety, remaining NarrativeLine consumer migration,
 LiaisonScape locale consumption, and Hub locale production.
 
 This record changes documentation status only. It does not change the runtime,
@@ -652,7 +649,45 @@ Direct production App integration evidence covers:
   persistence.
 
 Closure A remains `COMPLETE — EVIDENCE SUFFICIENT`. Production readiness
-remains `NOT READY`; the remaining work is explicit selector `#locale`
-synchronization and `history.replaceState`, fragment preservation,
-Back/Forward lifecycle, Experiment 2C, and remaining consumer migration in
-NarrativeLine, LiaisonScape, and Hub.
+remains `NOT READY`; the remaining work is Back/Forward lifecycle, Experiment
+2C, and remaining consumer migration in NarrativeLine, LiaisonScape, and Hub.
+
+## Explicit Selector Fragment Synchronization implementation and acceptance
+
+NarrativeLine checkpoint `52de052` (`feat: sync explicit locale choice to
+fragment`) records Selector Fragment Synchronization as `ACCEPTED —
+IMPLEMENTED, AUTOMATED, COMMITTED`.
+
+Only an explicit Header locale selector action performs application-owned
+fragment synchronization. It clears stale temporary resolution, updates the
+UI immediately, persists the explicit preference, and rewrites the owned
+`locale` value. Browser fallback, temporary Conflict choices, startup
+requested locale, and generic LanguageContext initialization do not
+automatically write `#locale`.
+
+The fragment writer emits one canonical `locale=en` or `locale=ja`. An
+explicit valid selection can repair invalid, empty, malformed, or duplicate
+owned `locale` segments without loosening strict startup parsing. Unrelated
+raw fragment segments remain unchanged, including `datasetUrl`, unknown
+parameters, encoded values, empty values, duplicate unknown parameters, and
+their relative order.
+
+The current-location operation uses `history.replaceState`, preserving the
+existing `history.state`, pathname, query string, and unrelated fragment
+state. It does not use `pushState` or `location.hash`, so it does not create
+an additional application navigation entry.
+
+Committed integration evidence verifies immediate Header-selector UI update,
+explicit preference persistence, canonical `locale=ja` output,
+`datasetUrl` and unknown-parameter preservation, invalid/duplicate repair,
+`replaceState` and history-state preservation, no `pushState`, browser
+fallback without automatic URL synchronization, and no additional startup
+Handoff fetch. Arbitrary external runtime hash mutation remains non-live, and
+temporary Conflict resolution remains temporary rather than becoming an
+explicit persisted or URL-synchronized choice.
+
+Closure A remains `COMPLETE — EVIDENCE SUFFICIENT`, Browser Locale Fallback
+remains `ACCEPTED — IMPLEMENTED, AUTOMATED, COMMITTED`, and Production
+readiness remains `NOT READY`. Back/Forward locale lifecycle, Experiment 2C,
+remaining NarrativeLine consumer closure, LiaisonScape locale consumption,
+and Hub locale production remain outstanding.

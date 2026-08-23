@@ -761,3 +761,51 @@ Handoff refetch, reload semantics, and relevant focus/scroll behavior.
 
 Production readiness remains `NOT READY`; Back / Forward automated and browser
 acceptance evidence is still outstanding.
+
+## Back / Forward Locale Lifecycle implementation and acceptance
+
+The Back / Forward lifecycle decision above is accepted with design,
+automated, and controlled real-browser evidence. The design record is commit
+`4f8e888` (`docs: define locale history lifecycle`). NarrativeLine automated
+evidence is commit `3beed48e9df02146add6c0cf1d49128e864084b1`
+(`test: cover locale history and handoff topology`).
+
+The production-App popstate integration evidence verifies representative
+historical locale, no-locale, conflicting, invalid/duplicate, temporary
+resolution, and historical-`datasetUrl` entries. It confirms that traversal
+retains the historical URL and restores navigation state while leaving the
+effective locale, persisted explicit preference, and temporary resolution
+unchanged. It does not re-run browser fallback, reopen the Locale Conflict
+Dialog, repair historical locale fragments, or re-fetch Handoff. A
+Forward-style Timeline restoration preserves the same boundaries.
+
+The same checkpoint adds direct successful-startup Handoff topology evidence,
+which synthetic popstate coverage alone could not establish. Production startup
+creates the initial Home entry through `replaceState`, then, after one
+successful Dataset fetch and acceptance, creates Timeline through `pushState`.
+The Home entry is not overwritten in place. The pushed URL retains
+`datasetUrl`, `locale`, and a representative unknown encoded fragment
+parameter, and Timeline renders successfully.
+
+Controlled real-browser acceptance confirms ordinary locale Back / Forward:
+historical URLs and Home/Timeline navigation restore, while the current UI
+locale remains in effect and no Conflict reopens. It also confirms the
+Back/reload boundary: traversal itself does not re-resolve locale, whereas a
+reload is a new startup and may apply normal requested/persisted Conflict
+behavior.
+
+Controlled Handoff Back / Forward acceptance began from one successful Apollo
+11 Handoff fetch and a Timeline state. Back restored Home and Forward restored
+Timeline without an additional Dataset fetch, document navigation, or Handoff
+error. An earlier ambiguous second-fetch observation was not reproduced after
+clearing Network activity and isolating the History state; it is not a runtime
+failure record.
+
+Therefore the status is **ACCEPTED — DESIGN + AUTOMATED + REAL-BROWSER
+EVIDENCE**. This closes only the Back / Forward lifecycle evidence gap. Closure
+A, Browser Locale Fallback, and Selector Fragment Synchronization retain their
+recorded accepted status; overall Cross-App Locale Recipient-Preference
+production readiness remains `NOT READY`. Remaining major scope includes
+Experiment 2C conflict plus modified/pending-work safety, remaining
+NarrativeLine consumer readiness work, LiaisonScape locale consumption, and
+Hub locale production.

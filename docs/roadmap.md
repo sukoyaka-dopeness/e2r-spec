@@ -926,6 +926,38 @@ product state is closer to final. The ordering does not make Dataset language
 metadata, localized-counterpart architecture, Dictionary, or Semantic research
 an Initial Public Release blocker.
 
+## Cross-App Shell follow-up record (2026-08-23)
+
+Cross-App Shell Alignment identified two bounded NarrativeLine follow-ups. They
+remain open work items and do not reopen the accepted F2-NL1 locale Header
+placement, F2-NL1b Footer geometry, or F2-NL1c extreme-narrow Header geometry:
+
+1. **NarrativeLine Timeline shell navigation** — move the explicit `Home`
+   navigation control from the Timeline Footer to the Timeline Header, beside
+   the NarrativeLine brand and locale control. Keep the existing contextual
+   `Back` hierarchy for Event Detail, Entity Detail, Entity Picker, and Entity
+   Create; do not add a second global Home control to those nested surfaces.
+   Keep the Footer limited to descriptor/context and Credits.
+2. **NarrativeLine Credits dismissal** — align the Credits Dialog with the
+   accepted dismissal behavior of the other application Dialogs: explicit Close,
+   Escape, and backdrop click; clicks inside the Dialog must not dismiss it.
+   Preserve keyboard focus behavior, opener-focus restoration, locale state, and
+   Dataset/editor state.
+
+These are application-shell follow-ups, not changes to `#locale`, recipient
+preference semantics, Dataset Handoff, Dataset language, Dataset state, or graph
+state. LiaisonScape's Credits backdrop dismissal is already implemented and is
+not part of this record. The work should be evaluated before Cross-App Shell
+Alignment is marked formally complete and before the final pre-public-release
+audit; it is not by itself a claim that public release is blocked.
+
+The Timeline Header change must include bounded browser and human-acceptance
+checks for EN/JA, desktop, 601px/600px, representative narrow widths, roughly
+270px and 240px boundaries, locale-button wrapping, brand/Home/locale overlap,
+keyboard Tab order, and preservation of nested-surface Back semantics. No
+workspace-wide minimum width is implied by the existing narrow-viewport
+acceptance boundary.
+
 ## Immediate sequence
 
 1. Preserve the LiaisonScape `0.1.0` First Distribution and Direct Graph

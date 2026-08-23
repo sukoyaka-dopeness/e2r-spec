@@ -63,6 +63,22 @@ the other user.
 
 The manifest format and discovery semantics are not decided here.
 
+### Initial assessment
+
+Manifest hopping has meaningful technical and conceptual potential. It can
+support distributed ownership while allowing discovery to grow from local
+connections, without making a central index mandatory. The idea is especially
+promising as an opt-in discovery mechanism rather than as an implicit social
+graph or universal crawler.
+
+The first experiments should impose explicit hop-depth limits, cycle
+detection, caching, timeouts, visibility rules, and crawl policies. A direct
+manifest link should be treated as a reference whose meaning is explicit; it
+must not automatically mean endorsement, permission to crawl all published
+content, or permission to create Relations for another user. These constraints
+make the idea more portable and safer without requiring a single hosting
+provider or registry.
+
 ## 5. Notification and discovery
 
 Possible mechanisms include explicit subscriptions, follow lists, public
@@ -127,6 +143,21 @@ protocol event such as “published,” “discovered,” or “responded to.”
 should determine whether those meanings belong in ordinary E2R data, an
 Extension, or a federation-layer record, and how identity, provenance,
 ordering, updates, and deletion would work across publishers.
+
+### Initial assessment
+
+EventObjects have strong potential as temporal anchors for published
+occurrences, citations, responses, and creative lineage. The main technical
+boundary is semantic: a domain EventObject such as “a meeting occurred” should
+not be silently conflated with a protocol event such as “this fragment was
+published” or “this user discovered that fragment.”
+
+The safer research path is to compare ordinary EventObjects with Extension or
+federation-layer records for those protocol meanings. Identity, provenance,
+ordering, update, and deletion behavior should be tested across independently
+owned publishers before considering any Core change. This preserves the Core's
+minimality while still allowing a future constellation browser to represent
+temporal and causal relationships richly.
 
 ## 9. Relationship with existing concepts
 

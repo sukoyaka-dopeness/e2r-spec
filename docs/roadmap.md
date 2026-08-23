@@ -994,14 +994,18 @@ Cross-App Locale consumer implementation, or Hub locale producer completion:
    explanatory secondary information; defer exact DOM placement until the
    bounded audit.
 
-### F2-LS1 acceptance blocker
+### F2-LS1 acceptance checkpoint
 
-The manual review also found a current F2-LS1 interaction regression: clicking
-blank area in the Workspace Header can navigate Home. This is distinct from the
-four residual UX follow-ups above and is treated as a current F2-LS1 blocker to
-be corrected and rechecked before F2-LS1 acceptance. This roadmap entry records
-the blocker only; it does not authorize a runtime change in this documentation
-checkpoint.
+LiaisonScape F2-LS1 Home / Workspace Header Locale Placement is
+**Accepted / Closed** at the recorded evidence boundary. Acceptance evidence
+and the runtime checkpoint are recorded in
+`docs/liaisonscape-cross-app-shell-alignment-f2-ls1-acceptance.md`.
+
+The accepted checkpoint includes the Workspace Header blank-area hit-area fix,
+stable vertical editor-shell geometry at the 600px breakpoint, Credits opener
+focus restoration, and the accepted Home / Workspace / Footer shell hierarchy.
+It does not close the unrelated residual UX follow-ups below or authorize
+runtime work outside the checkpoint.
 
 ### Minimum-width observation boundary
 
@@ -1039,14 +1043,30 @@ the browser's sequential-focus behavior remains correct. The accepted
 approximately 240px boundary remains bounded and is not a universal minimum
 width requirement.
 
-F2-LS1 remains in manual acceptance rather than Accepted / Closed. The current
-fixes requiring runtime correction and retest are the 600px/601px shell-height
-jump and Credits opener-focus restoration. Previously accepted checks include
+F2-LS1 is no longer an open blocker. Previously accepted checks include
 Workspace Header blank-area regression correction, brand and explicit Home
 navigation, Dataset/selection preservation through locale switching, Credits
-backdrop/Escape dismissal, representative Dataset Replacement Dialog focus and
-dismissal behavior, toolbar breakpoint behavior, and extreme-narrow brand
-behavior. This status record does not itself authorize runtime changes.
+backdrop/Escape dismissal, opener focus restoration, representative Dataset
+Replacement Dialog focus and dismissal behavior, toolbar breakpoint behavior,
+and extreme-narrow brand behavior.
+
+### Cross-App shell action hover parity
+
+Record a future bounded audit for Home and locale controls that share a Header
+action role. Semantic behavior and keyboard accessibility are accepted, but
+their hover / focus-visible visual hierarchy is not currently identical. The
+audit should compare the controls across EN/JA and narrow layouts without
+assuming identical DOM or CSS.
+
+### Home-first Dataset acquisition hierarchy
+
+Record the adopted direction that primary Dataset acquisition is Home-first:
+Home New / Open / Sample actions are the canonical primary entry. If Workspace
+Open / Import remains available, it is secondary access rather than a competing
+primary path. The exact secondary location (for example, a More menu) remains a
+bounded UX decision. Future secondary access should be considered for both
+NarrativeLine and LiaisonScape to preserve Cross-App symmetry, while leaving
+multi-Dataset workflows open for later evaluation.
 
 ## Immediate sequence
 

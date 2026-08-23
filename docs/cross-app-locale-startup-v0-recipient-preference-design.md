@@ -258,32 +258,28 @@ evaluated as a separate experiment; it must never become persisted preference.
 
 ## Timeline and Workspace controls
 
-A persistent locale control is required on both editing surfaces for the
-bounded design:
+The following placement is now an explicitly adopted cross-application design
+decision for the locale control. It supersedes the earlier bounded candidate
+that treated the Home Footer as the retained locale-control surface:
 
-* NarrativeLine Home keeps its current footer control, and Timeline should gain
-  a bounded control in its existing screen header/action area.
-* LiaisonScape Home keeps its current footer control, and Workspace should gain
-  a bounded control in its existing header/action area.
+* the locale control is an application-level presentation-state indicator and
+  preference control;
+* its placement is the top-level Header / application shell;
+* Hub keeps its current Header locale control;
+* NarrativeLine uses the shared `AppFrame` Header for Home, Timeline, Event
+  Detail, Entity Detail, Entity Picker, and Entity Create;
+* LiaisonScape uses a top-level Header for both Home and Workspace; and
+* the Footer contains descriptor/context and Credits, but no locale control.
+
+The NarrativeLine and LiaisonScape runtime currently retain their Home Footer
+controls until the separate bounded runtime placement experiments are
+implemented and accepted. This documentation decision does not itself change
+runtime behavior.
 
 No global settings framework or navigation redesign is needed. The control
-must work on narrow/touch layouts and must not be hover-only.
-
-The preferred cross-screen alignment candidate is to make the language control
-available in the same general location, interaction model, and information
-hierarchy across Home and editing screens:
-
-* NarrativeLine Home and Timeline;
-* LiaisonScape Home and Workspace; and
-* the corresponding Hub application surface where its producer control is
-  later completed.
-
-This is a preferred cross-screen alignment candidate, not an accepted
-pixel-level placement decision. The existing Home footer controls remain in
-place for now. Timeline and Workspace experiments must test desktop, narrow,
-touch, and competition with existing actions before final placement or any
-move/removal is accepted. Home must not be treated as a permanently special
-locale-control surface merely because it currently owns the footer control.
+must work on narrow/touch layouts and must not be hover-only. Exact button
+form, Header spacing, and narrow geometry remain implementation and acceptance
+questions.
 
 An explicit selector action must:
 
@@ -311,11 +307,9 @@ basic structural model:
 The shared form need not repeat the application name when that would be
 redundant, such as `E2R Hub`. Descriptor concepts may describe Hub as an E2R
 application ecosystem, NarrativeLine as an E2R timeline editor, and
-LiaisonScape as an E2R relationship editor, but final copy is intentionally
-undecided. Language selection should not remain a footer-only responsibility;
-it is a normal application control available from Home and editing screens.
-Consequently, the footer should trend toward the simpler descriptor-and-Credits
-role. Existing Home language buttons must not be removed in this checkpoint.
+LiaisonScape as an E2R relationship editor. The Footer role is therefore
+limited to descriptor/context and Credits; locale selection is a Header/shell
+responsibility rather than a Footer responsibility.
 
 ## Startup orchestration and Dataset timing
 
@@ -516,14 +510,14 @@ small empirical validation before runtime implementation. The primary design
 model is Model 3 with temporary conflict choices and persistent changes only
 through explicit application controls.
 
-Therefore this checkpoint is intentionally not an implementation acceptance.
+Therefore this checkpoint adopts the locale-control responsibility and
+placement above, while leaving runtime implementation to bounded experiments.
 
-The following remain experiment questions rather than accepted decisions:
+The following remain experiment questions rather than accepted runtime details:
 
-* exact Timeline and Workspace control placement;
 * whether Home and editing screens use the same component;
 * final icon, text, select, or button form;
-* exact narrow/mobile layout;
+* exact Header spacing and narrow/mobile layout;
 * final footer descriptor copy and pixel-level footer sizing, spacing, borders,
   or height;
 * repeated Conflict Dialog suppression; and

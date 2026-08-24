@@ -184,6 +184,32 @@ Open:
 - future multi-Dataset information architecture; and
 - whether additional import should be modeled separately from replacement.
 
+## Bounded secondary-menu decision — 2026-08-25
+
+The cross-application direction is now bounded as follows:
+
+- NarrativeLine and LiaisonScape should eventually expose the same conceptual
+  secondary workspace Dataset access.
+- The current implementation remains unchanged. LiaisonScape's Workspace
+  Open / Import action remains available while a future revision is evaluated.
+- A More menu is deferred until a second genuinely useful workspace secondary
+  action is accepted. NarrativeLine must not introduce a one-item More menu
+  containing only Open Dataset.
+- NarrativeLine Add Event remains a visible primary editing action, and Export
+  remains visible as a safety and portability action. Neither is moved into
+  More by this decision.
+- When actionable, the trigger should be a text button labelled `More` or
+  `その他`, rather than an icon-only control. The eventual keyboard, touch,
+  focus, dismissal, locale, and viewport contract belongs to the implementation
+  and acceptance phase.
+- The future implementation sequence is NarrativeLine prototype, real/manual
+  acceptance, then LiaisonScape conceptual parity.
+- Dataset acquisition is not assigned to right-click context menus.
+
+This is a bounded application UI sequencing decision, not a Core, Dataset,
+Dataset Handoff, or Dataset Replacement Safety change. It does not authorize
+runtime, test, or documentation changes in either application repository.
+
 ## Explicit non-goals for this record
 
 This record does not implement or authorize:
@@ -202,8 +228,9 @@ This record does not implement or authorize:
 
 ## Decision status
 
-The primary-entry-point direction is accepted as a future information-
-architecture decision. Secondary access placement and future multi-Dataset
-behavior remain open design questions. Any implementation task must be scoped
-and accepted separately after reviewing usage frequency, touch and desktop
-behavior, replacement safety, and cross-application symmetry.
+The primary-entry-point direction and the bounded deferral above are accepted
+as future information-architecture decisions. Exact menu contents, secondary
+access placement details, and future multi-Dataset behavior remain open design
+questions. Any implementation task must be scoped and accepted separately
+after reviewing usage frequency, touch and desktop behavior, replacement
+safety, keyboard and focus behavior, and cross-application symmetry.

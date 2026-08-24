@@ -1078,6 +1078,16 @@ bounded UX decision. Future secondary access should be considered for both
 NarrativeLine and LiaisonScape to preserve Cross-App symmetry, while leaving
 multi-Dataset workflows open for later evaluation.
 
+The bounded follow-up decision is now recorded: conceptual workspace secondary
+access remains a future parity direction, but implementation is deferred until
+a second genuinely useful workspace secondary action is accepted. NarrativeLine
+does not introduce a one-item More menu for Open Dataset alone. Add Event and
+Export remain visible; LiaisonScape's current Workspace Open / Import remains
+unchanged for now. When actionable, the intended sequence is a NarrativeLine
+prototype, real/manual acceptance, and then LiaisonScape parity. The future
+trigger is a text `More` / `その他` control, not an icon-only trigger, and
+Dataset acquisition is not assigned to right-click context menus.
+
 ## Immediate sequence
 
 1. NarrativeLine nested Event Detail / Entity Detail / Entity Picker / Entity

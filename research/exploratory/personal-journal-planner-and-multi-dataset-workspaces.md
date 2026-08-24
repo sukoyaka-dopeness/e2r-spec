@@ -379,3 +379,89 @@ exploration; no application is required to own every presentation.
 - How can publication filtering avoid leaking private related Entities?
 - Should authoring and public reading be one application or separate apps?
 - How should GitHub-backed discovery avoid indiscriminate crawling?
+
+## Reader-owned cross-diary relations
+
+A reader or author may want to relate an Event in their own journal to an
+intentionally published Event or Entity in another journal without modifying
+that source Dataset. For example, a reader's Event B42 may assert that it is
+related to published Event A17. The assertion belongs to the reader's private
+or published annotation/workspace layer; it does not imply target endorsement
+or mutate the target Dataset, repository, metadata, or Relations.
+
+This concept is not directly expressible by simply writing an ordinary Core
+Relation across independent Datasets. Current Core Relations connect
+Dataset-local Entity/Event endpoints. Existing Target Reference research does
+not currently define cross-Dataset references. Cross-diary linking therefore
+requires separate research into a reference, overlay, annotation layer, or
+future Extension; it does not silently expand Core endpoint semantics.
+
+A strong candidate is a reader-owned overlay that references published source
+objects, may remain private or be optionally published, and can be removed
+without changing either source diary. Copying source Events into a new Dataset
+is not equivalent to referencing them and should require an explicit future
+import or snapshot decision.
+
+Possible visibility levels are:
+
+- private relation, visible only to the reader;
+- published outbound relation, visible to readers of the asserting source but
+  not necessarily approved by the target author; and
+- acknowledged or reciprocal relation, where another source publishes a
+  compatible acknowledgement.
+
+Reciprocity is not required for unilateral private or outbound linking and is
+not objective truth. Entity threading remains distinct: it explores whether
+Dataset-local Entities may represent the same cafe, person, or place, while an
+authored cross-diary Relation says that a reader explicitly considers two
+records related. They may coexist in one future overlay without becoming the
+same assertion.
+
+Readers could follow intentional links through source-aware sequences such as
+“response to,” “reminded me of,” “same occasion,” or “another perspective,”
+while preserving source and author context at every hop. These are possible
+application meanings, not a Relation schema or Core relation types.
+
+## Provenance, spam, and target lifecycle
+
+Every cross-diary assertion should retain its asserting Dataset/source,
+referenced Dataset/object, and available author or publication provenance. A
+viewer must distinguish “source A says X” from “reader B says B42 relates to
+A17,” rather than flattening both into one source-authoritative Relation.
+
+Unilateral outbound links must not automatically become target-side promotion,
+endorsement, ranking benefit, notification, or backlink. A malicious publisher
+could otherwise mass-link unrelated popular diaries for attention. Viewers may
+independently use followed-source filters, mute/block controls, rate or quality
+heuristics, and curated inbound presentation. A target-side backlink index is
+optional and, if shown, must be labelled as asserted by another source.
+
+Discovery should be bounded rather than an indiscriminate crawl of the
+Internet. Explicitly followed repositories, user-added sources, registries,
+curated indexes, manifests, topics, or opt-in aggregators remain open options.
+
+Cross-diary references also need lifecycle handling when a target Event is
+edited, renamed, deleted, or moved with its repository or Dataset. A missing
+target must remain distinguishable from a different object silently substituted
+because it has the same name. This should follow the existing Target Reference
+lifecycle research direction.
+
+This is linked published-record exploration, not an automatic social network:
+follower counts, likes, engagement ranking, unsolicited messaging, advertising,
+and recommendation optimization are separate product decisions.
+
+## Additional cross-diary open questions
+
+- What is the smallest safe cross-Dataset target reference?
+- Should reader-owned Relations live in an annotation Dataset or workspace?
+- Can private Relations reference public objects without publishing anything?
+- What makes a relation stable when a target repository or path changes?
+- How should target deletion, renaming, and Dataset replacement appear?
+- Should target authors ever receive inbound-link notifications?
+- How can authors curate or suppress inbound relation presentation?
+- Should acknowledged relations remain two independent assertions?
+- How should mass-link publishers be filtered?
+- Should inbound Relations default to followed or trusted sources only?
+- Can Entity equivalence and authored Event-to-Event links share one overlay?
+- How can public journals expose stable targets without leaking private related
+  Entities?

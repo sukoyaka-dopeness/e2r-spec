@@ -1217,6 +1217,16 @@ completion / final cross-app closure**.
   ACCEPTED at runtime commit `ef0026b0a43affa227ce4c10969a231d6c92f2f4`.
 - Audit nested Event Detail / Entity Detail / Entity Picker / Entity Create Header Back alignment.
 - Keep Detail lower editing action areas as-is unless later evidence changes that decision.
+- Polish the Detail Back Confirmation Dialog visual hierarchy, widths, and
+  alignment. Current behavior, accessibility, focus, and discard semantics are
+  accepted; this is visual polish only.
+- Evaluate long-Timeline Add Event reachability, including sticky or persistent
+  viewport-level affordances. Do not prescribe a FAB or implement this without
+  a bounded design and accessibility audit.
+- Evaluate NarrativeLine Detail metadata / Object ID presentation for parity
+  with the LiaisonScape information-hierarchy audit, including long-ID wrapping,
+  verification, and copy/accessibility affordances. Do not change runtime
+  behavior or Dataset identity semantics as part of this follow-up.
 - Remove the old translated-feedback ternary comment as P3 cleanup.
 - Perform a remaining brittle Header selector audit only if worthwhile.
 

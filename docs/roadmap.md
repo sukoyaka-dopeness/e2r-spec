@@ -1190,3 +1190,40 @@ This remains research, not a shared-package commitment. Manual browser
 acceptance remains necessary for responsive geometry, visual focus, touch,
 hover, drag quality, and real browser Back/Forward UX. The proposed research
 seed is `research/exploratory/reusable-ui-integration-test-harness.md`.
+
+## Cross-App Locale execution update (2026-08-24)
+
+NarrativeLine Locale Consumer is now **COMPLETE / DOCUMENTED**, based on
+runtime checkpoint `ded44d6ca093431cc829d0aa47f6524ea789750a`, final automated
+evidence, and EN/JA manual acceptance. This records recipient-consumer
+readiness, not completion of Cross-App Locale or application release readiness.
+See [NarrativeLine Locale Consumer Acceptance](narrativeline-locale-consumer-acceptance.md).
+
+The next active implementation target is **LiaisonScape locale consumer
+implementation/alignment**, followed by **Hub startup locale producer
+completion / final cross-app closure**.
+
+### Non-blocking NarrativeLine follow-ups
+
+- Audit the 600/601px Header/Footer vertical geometry change.
+- Audit the excessively tall CoordinatePanel control/select at the 600/601px breakpoint.
+- Revisit Timeline Home action placement against the accepted Header direction.
+- Review the Detail lower fixed action area as a UI alignment follow-up.
+- Remove the old translated-feedback ternary comment as P3 cleanup.
+
+These do not reopen the accepted locale consumer checkpoint.
+
+### Cross-app Credits alignment follow-up
+
+During LiaisonScape locale-consumer work, localize Credits application chrome
+while retaining creator/product/repository/version metadata unchanged, and
+verify Close, Escape, and backdrop dismissal parity. Check Hub against the same
+boundary. This is a follow-up, not a claim that either application is already
+aligned.
+
+### Version and queued research note
+
+Review the application `0.2.0` milestone only after Cross-App Locale closes
+across NarrativeLine, LiaisonScape, and Hub. Application versioning remains
+separate from Dataset/schema versioning. Research shelf inventory and the Hub
+concept-page update remain queued after Cross-App Locale closure.

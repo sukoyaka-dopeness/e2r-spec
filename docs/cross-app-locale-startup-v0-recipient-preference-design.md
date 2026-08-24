@@ -1,5 +1,16 @@
 # E2R Cross-App Locale Startup v0 — Recipient Preference Design
 
+## Current implementation checkpoint (2026-08-24)
+
+Earlier audit sections intentionally retain their historical `NOT READY`
+findings. The current state is **NarrativeLine consumer ACCEPTED / COMPLETE**
+at runtime commit `ded44d6ca093431cc829d0aa47f6524ea789750a`; evidence is in
+[NarrativeLine Locale Consumer Acceptance](narrativeline-locale-consumer-acceptance.md).
+Statements below that describe browser fallback, selector synchronization,
+Back/Forward lifecycle, or NarrativeLine migration as pending are historical
+checkpoints unless explicitly marked current. LiaisonScape consumer alignment
+and Hub startup locale producer work remain pending.
+
 Status: Design refinement / current decision record; experiments required before implementation
 
 This document refines the accepted design checkpoint in

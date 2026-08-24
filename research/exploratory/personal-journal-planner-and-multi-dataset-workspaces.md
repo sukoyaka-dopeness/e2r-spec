@@ -101,3 +101,84 @@ hypothesis only; Hub runtime is not changed here.
   NarrativeLine–LiaisonScape relational workflow?
 
 These questions remain intentionally unresolved.
+
+## Calendar view
+
+A diary or planner-oriented NarrativeLine could benefit from a Calendar View
+in addition to a chronological Timeline View. A possible first presentation is
+a month calendar with dated Event indicators; selecting a day could show that
+day's Events and perhaps offer quick Event or journal-entry creation. Calendar
+and Timeline would remain two presentations of the same Event data. Exact UI
+is intentionally unresolved.
+
+Calendar View is application presentation. It does not require a new Core
+temporal field, a Calendar Extension, or a change to History Extension
+1.0.0. History already uses the proleptic Gregorian calendar. Calendar
+presentation must preserve recorded granularity: a year-month-day Event may be
+placed in a day cell, but a year-month Event must not receive an invented day,
+and a year-only Event must not receive an invented month or day. A future UI
+may provide month- or year-level views for incomplete dates.
+
+A candidate daily workflow is date, short summary, long-form journal body,
+Entities, and optional tags or stamps. This remains product exploration and
+does not define a journal schema or a one-entry-per-day rule.
+
+## Personal timeline with historical context
+
+Over years or decades, a person may want to view personal diary or life-log
+Events alongside reference timelines describing the surrounding world: public
+events, popular culture, music, film and television, technology, social trends,
+sports, local history, or appropriate weather and seasonal context. Such
+context may act as a neutral memory cue by helping a user recall a trend,
+product, song, public event, or social atmosphere around an entry. It does not
+alter the original personal record and this note makes no medical or memory
+claim.
+
+Following the distinction in `dataset-distribution-and-merge.md`, viewing
+multiple Datasets is different from saving a new combined Dataset. The first
+useful direction may therefore be a non-destructive multi-Dataset overlay:
+
+```text
+Personal Diary Dataset + Public / Reference Timeline Dataset
+    -> combined presentation
+```
+
+An overlay could preserve independent ownership, allow a reference Dataset to
+be replaced or updated, keep provenance clearer, preserve privacy boundaries,
+and avoid identity collapse merely to view related Events. It would be an
+application-level composition mode, not an E2R Core feature. A user might
+later explicitly combine selected content into a new Dataset, as a separate
+operation governed by the existing merge and provenance research.
+
+Personal diary data may be private while reference timelines may be public or
+shared. Overlay must not imply automatic upload, publication, or copying of
+private Events into reference data. Future UX should keep source ownership
+visible. A Calendar/Timeline presentation might distinguish personal and
+reference layers, filters, or source indicators, but exact visual treatment is
+unresolved.
+
+Recurring people, places, and shops in personal Events could optionally lead
+to relational exploration in LiaisonScape. The existing heuristic remains:
+promote a subject to Entity when recurrence, identity, lookup, or Relations are
+useful; do not turn every diary noun into an Entity.
+
+## Extended Hub research candidate
+
+The existing future Hub direction could eventually introduce personal journal,
+life-log, Calendar, and historical-context ideas. It must distinguish current
+capabilities from future possibilities and must not imply that Calendar View or
+overlay exists today. This is not final Hub marketing copy and does not change
+Hub runtime.
+
+## Additional open questions
+
+- What is the minimum useful Calendar View: month only, or month plus agenda?
+- How should incomplete History granularity appear in Calendar View?
+- Should one calendar day support multiple Events naturally?
+- Should one diary entry per day remain an optional application convention?
+- How should personal and reference Events be visually distinguished?
+- Should an overlay be ephemeral or restorable as workspace state?
+- How should source Dataset provenance appear in an overlay?
+- Can reference timelines be updated without affecting personal data?
+- When should an overlay become an explicit merge or composition?
+- What privacy boundary is required when personal and public Datasets coexist?

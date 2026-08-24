@@ -1080,16 +1080,18 @@ multi-Dataset workflows open for later evaluation.
 
 ## Immediate sequence
 
-1. NarrativeLine 600/601px Header/Footer vertical geometry.
-2. NarrativeLine CoordinatePanel 600/601px geometry.
-3. NarrativeLine nested Event Detail / Entity Detail / Entity Picker / Entity
+1. NarrativeLine nested Event Detail / Entity Detail / Entity Picker / Entity
    Create Header Back alignment.
-4. Small P3 or test-hardening cleanup where still useful.
-5. LiaisonScape locale consumer and Credits alignment.
-6. Hub startup locale producer and final Cross-App Locale closure.
-7. Preserve the LiaisonScape `0.1.0` First Distribution and Direct Graph
+2. Small P3 or test-hardening cleanup where still useful.
+3. LiaisonScape runtime/remote vertical-parity reconciliation.
+4. LiaisonScape locale consumer and Credits alignment.
+5. Hub startup locale producer and final Cross-App Locale closure.
+6. Application `0.2.0` review after Cross-App Locale closes.
+7. Research shelf inventory.
+8. Hub concept-page update.
+9. Preserve the LiaisonScape `0.1.0` First Distribution and Direct Graph
    Authoring checkpoints as the current application baseline.
-8. Keep Names P1 product integration, Names Grouping, Relative Time,
+10. Keep Names P1 product integration, Names Grouping, Relative Time,
    History vNext, Target Reference, Source/Citation, Provenance/Confidence,
    Semantic/Dictionary, and Layout/Presentation responsibilities independently
    gated.
@@ -1209,8 +1211,10 @@ completion / final cross-app closure**.
 
 ### Non-blocking NarrativeLine follow-ups
 
-- Audit the 600/601px Header/Footer vertical geometry change.
-- Audit the excessively tall CoordinatePanel control/select at the 600/601px breakpoint.
+- The 600/601px Header/Footer vertical geometry follow-up is CLOSED / ACCEPTED
+  at runtime commit `b9ad92f055df64b0a1960f22b95d3c2a25fecd05`.
+- The CoordinatePanel 600/601 geometry and Space placement follow-up is CLOSED /
+  ACCEPTED at runtime commit `ef0026b0a43affa227ce4c10969a231d6c92f2f4`.
 - Audit nested Event Detail / Entity Detail / Entity Picker / Entity Create Header Back alignment.
 - Keep Detail lower editing action areas as-is unless later evidence changes that decision.
 - Remove the old translated-feedback ternary comment as P3 cleanup.

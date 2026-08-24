@@ -97,16 +97,15 @@ content length may change the exact degradation boundary.
 
 ### NarrativeLine
 
-NarrativeLine currently has 16px Header/Footer vertical padding at its base and
-12px at `max-width: 600px`, with 40px controls. The adopted editor-shell policy
-therefore creates a runtime follow-up to align its narrow vertical padding with
-the stable-vertical rule. This follow-up does not reopen the accepted F2-NL1,
-F2-NL1b, or F2-NL1c decisions; it is a separate geometry alignment checkpoint.
+NarrativeLine has accepted 16px Header/Footer vertical padding at its base and
+at `max-width: 600px`, with 16px horizontal padding at the narrow breakpoint
+and 40px controls. The accepted runtime checkpoint is
+`b9ad92f055df64b0a1960f22b95d3c2a25fecd05`. This does not reopen the accepted
+F2-NL1, F2-NL1b, or F2-NL1c decisions.
 
 Timeline Home-navigation is CLOSED / ACCEPTED at runtime commit
 `4868111b02aa850bb0c652ab3b3470dcd92595a0`. The accepted top-level placement
-does not close the separate 600/601px stable-vertical geometry follow-up or
-nested Detail, Picker, and Create Header Back alignment. Credits dismissal is
+does not close nested Detail, Picker, and Create Header Back alignment. Credits dismissal is
 also closed through the accepted NarrativeLine locale-consumer work; it is not
 a current NarrativeLine shell blocker.
 
@@ -132,7 +131,8 @@ Credits.
 
 The policy is based on source audit and F2-LS1 manual observations:
 
-- NarrativeLine: 16px base and 12px narrow vertical padding;
+- NarrativeLine: 16px vertical padding at base and narrow widths, with
+  horizontal compression to 16px at `max-width: 600px`;
 - LiaisonScape: 16px base and narrow vertical padding after F2-LS1 correction;
 - both editor applications: 32px to 16px horizontal padding compression and
   40px control minimum;

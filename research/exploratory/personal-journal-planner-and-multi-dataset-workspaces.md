@@ -515,3 +515,57 @@ annotation Dataset or viewer/workspace metadata; whether source and target
 revisions should both be pinned; how rewritten history affects accepted
 references; whether notifications and inbound-link views are opt-in; and how
 public/private following, deletion, and feed classification should work.
+
+## Fediverse journal publication
+
+Journal persistence and social publication should remain separate operations.
+Ordinary Save should write the canonical E2R Dataset or Git-backed journal;
+Publish/Share should be an explicit action that selects external destinations.
+Connecting a social account must not make private journal entries public.
+
+A future Journal application could connect one or more user-owned
+Fediverse/social accounts. A Mastodon-compatible adapter might authenticate
+through OAuth and publish an announcement through an account's home instance,
+and one explicit action could select multiple connected accounts. This is a
+provider-specific adapter direction, not a claim that every Fediverse
+implementation exposes the same API.
+
+ActivityPub has both client-to-server publishing through an Actor outbox and
+server-to-server federation, but implementations may support different
+conformance profiles. “ActivityPub-compatible” therefore does not guarantee a
+generic third-party client publishing API; provider capabilities require
+separate research.
+
+The Git-backed E2R journal should remain the canonical source. A Fediverse post
+would normally be an announcement or social representation containing a short
+summary, optional tags, a canonical public journal URL, and perhaps revision
+metadata, rather than a mandatory duplicate of the entire journal body. A
+future publication record may need to relate the destination account and
+remote post to the Event/Dataset identity, source revision, content revision,
+and publication time, without defining serialized fields yet. Event time and
+publication time remain distinct.
+
+Edits need an explicit future policy: a prior announcement might remain
+unchanged, be edited where supported, receive a new update announcement, or be
+shown as changed since publication. Partial multi-destination failure and
+deletion of the source Event need visible treatment rather than an assumption
+that all remote posts were updated.
+
+One more architectural direction is a Journal publication service exposing an
+ActivityPub Actor:
+
+```text
+Git-backed journal -> Journal Viewer
+                  -> Federation Bridge / ActivityPub Actor -> Fediverse
+```
+
+GitHub storage alone is not a complete federated Actor. A bridge would need a
+network-facing Actor, inbox/outbox, authentication/signing, and delivery
+responsibilities. No server design is selected here.
+
+Publication should remain explicit and may eventually offer destination,
+visibility, content-warning, preview, and canonical-link choices. Open
+questions include adapter versus generic C2S scope, excerpt and character
+limits, Content Warning mapping, edit/deletion policy, one Actor per journal or
+per public Dataset, lightweight GitHub bridges, defederation, partial failure,
+and safe OAuth credential storage outside E2R Dataset data.

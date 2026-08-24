@@ -465,3 +465,53 @@ and recommendation optimization are separate product decisions.
 - Can Entity equivalence and authored Event-to-Event links share one overlay?
 - How can public journals expose stable targets without leaking private related
   Entities?
+
+## Directional acknowledgement and following
+
+A cross-Dataset Relation is intrinsically directional. If Dataset B publishes
+an assertion `B42 -> A17`, a reader consuming B's publication may traverse from
+B42 to A17, but Dataset A has not been modified and does not thereby contain an
+inferred `A17 -> B42` reverse link. A viewer-derived inbound-links view may
+index and display B's assertion, but it must identify it as asserted by B and
+must not imply that A accepted it.
+
+If A chooses to acknowledge B's assertion, A should publish a separate,
+target-owned acknowledgement rather than mutate B's Dataset. Possible
+non-normative states include unacknowledged, acknowledged, revoked, and
+changed-since-acknowledgement. This preserves independent ownership and allows
+effective reciprocal navigation without inventing a shared bidirectional
+Relation. Acknowledgement should be understood as acceptance of an observed
+revision, not automatic endorsement of all future content at a live URL.
+
+For Git-backed publication, future evidence could include the repository,
+source path, Dataset/object identity, observed commit SHA, and optionally a
+content hash. The live locator and accepted snapshot evidence serve different
+purposes. If current content differs, a viewer could offer the accepted
+revision, current revision, re-acknowledgement, or revocation; it should not
+silently carry the acknowledgement forward. Revision identity also does not
+guarantee future availability if a repository disappears, becomes private, or
+rewrites history.
+
+Following is a separate reader-owned subscription concept. A reader may
+intentionally follow a published source, remembering a repository or source,
+Dataset identity, path/ref, last observed revision, and reader-specific filter
+state. Following does not modify the followed journal and does not require
+reciprocity. Publication/revision time must remain distinct from Event time,
+and successive revisions may contain new, edited, deleted, or changed
+Relations without implying one Event per Git commit.
+
+These ideas have conceptual precedent in hyperlinks, Trackback, Pingback,
+Webmention, and RSS/Atom subscriptions: outbound reference, inbound notice,
+receiver verification, re-verification after updates, and reader-owned
+subscription are separable concerns. They are prior-art input, not protocols
+adopted by E2R. Spam controls should include intentional acknowledgement,
+followed/trusted-source filtering, changed-since warnings, revoke/mute/block,
+and no automatic ranking benefit for mass-linking. If a source Relation is
+deleted or rewritten, an acknowledging viewer may show that the source
+assertion was removed while retaining the previously acknowledged revision.
+
+Open research questions include whether acknowledgement belongs to an
+annotation Dataset or viewer/workspace metadata; whether source and target
+revisions should both be pinned; how rewritten history affects accepted
+references; whether notifications and inbound-link views are opt-in; and how
+public/private following, deletion, and feed classification should work.

@@ -288,3 +288,94 @@ useful, but publication filtering and privacy boundaries remain necessary.
 - Should GitHub Pages, raw files, or the GitHub API be the publication surface?
 - How should attachments and photos be represented without expanding the Core?
 - How should publication filtering handle related Entities and Relations?
+
+## Separate journal application direction
+
+The earlier observations show that E2R's Event, Entity, and History model can
+support personal journal data. They do not require NarrativeLine itself to
+become the final journal product. A preferred direction to explore is a
+separate, journal-oriented E2R application for personal diary and life-log
+capture, Calendar-first and daily-entry workflows, optional time-of-day,
+conversational AI journaling, tags and stamps, long-form writing, and
+privacy-oriented GitHub storage or publication. No final application name is
+chosen.
+
+NarrativeLine can remain a broadly domain-neutral chronological Event editor
+for timeline-oriented inspection and editing. The same Dataset should remain
+openable in compatible applications:
+
+```text
+Journal application  -> E2R Dataset <- NarrativeLine
+                                  -> LiaisonScape
+```
+
+Separate applications do not imply incompatible data models. Journal-specific
+long-form bodies, tags, stamps, planner state, or AI provenance may eventually
+need Extensions, but are not Core requirements here.
+
+## Cross-diary Entity threading
+
+Several independently authored journal Datasets may mention the same real-world
+Entity: a cafe, restaurant, school, park, hotel, city, book, film, band, person,
+or organization. A future read-only viewer or aggregator could let a reader
+pivot across intentionally published diaries without destructively merging
+their source data. For example, Dataset-local Entities A17, B82, and C05 may
+be presented as possible references to one “Cafe Midori” thread while their
+original Events remain source-specific.
+
+Core Entity IDs are Dataset-local. Matching IDs, names, or similar labels do
+not establish real-world identity. A separate identity-resolution layer might
+record confirmed, possible, and unresolved equivalence while preserving every
+source Entity. Evidence to research includes user confirmation, external
+identifiers, address, coordinates, official URLs, and provenance. No canonical
+mechanism is selected and name-only matching is unsafe.
+
+Cross-diary threading could reveal observational social-history patterns:
+independent accounts of a film, changing impressions of a place, a shop
+appearing or disappearing, or several perspectives around a public Event. It
+must not turn multiple accounts into objective truth or one anonymous merged
+narrative. Each diary remains a source-specific account.
+
+Time-oriented Calendar/Timeline views and Entity-oriented threads are separate
+presentation/query axes. A reader could move between them without mutating
+source Datasets. Every result should retain source Dataset, author or
+publication source where available, original Event, original Entity, and
+temporal record.
+
+This is only for intentionally available data. It does not imply private-diary
+crawling, inference about unpublished journals, automatic publication of
+related Entities, or disclosure of people mentioned in public Events. Future
+publication filtering might publish an Event while keeping a related person,
+Relation, or journal body private.
+
+## Viewer and discovery placement
+
+It remains open whether public reading and aggregation belong in the journal
+application, a separate read-only E2R Journal Viewer/Aggregator, or a browser
+extension. A possible GitHub-backed flow is:
+
+```text
+public journal repositories -> intentional discovery -> viewer/aggregator
+    -> cross-Dataset Entity threads
+```
+
+Discovery could involve manifests, a Hub registry, explicit user-added URLs,
+GitHub topics, or handoff links. No discovery protocol is defined. A possible
+division is journal/viewer for reading source diaries, NarrativeLine for
+general chronological editing, and LiaisonScape for relational graph
+exploration; no application is required to own every presentation.
+
+## Cross-diary open questions
+
+- What evidence is sufficient to identify two Dataset-local Entities as the
+  same subject?
+- Should equivalence assertions belong to an overlay/workspace rather than
+  source Datasets, and can users keep private mappings?
+- Should authors publish stable external Entity references?
+- How should changed place names, owners, addresses, closed cafes, and people
+  with identical names be handled?
+- How should conflicting cross-diary claims remain source-specific?
+- Can threads remain non-destructive, cacheable, and restorable?
+- How can publication filtering avoid leaking private related Entities?
+- Should authoring and public reading be one application or separate apps?
+- How should GitHub-backed discovery avoid indiscriminate crawling?

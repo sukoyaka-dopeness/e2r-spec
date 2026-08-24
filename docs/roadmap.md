@@ -939,23 +939,22 @@ an Initial Public Release blocker.
 
 ## Cross-App Shell follow-up record (2026-08-23)
 
-Cross-App Shell Alignment identified two bounded NarrativeLine follow-ups. They
-remain open work items and do not reopen the accepted F2-NL1 locale Header
+Cross-App Shell Alignment identified two bounded NarrativeLine follow-ups. The
+Timeline item is now closed by the accepted runtime checkpoint below. The
+remaining Credits item is already closed by the locale-consumer checkpoint.
+These records do not reopen the accepted F2-NL1 locale Header
 placement, F2-NL1b Footer geometry, or F2-NL1c extreme-narrow Header geometry:
 
-1. **NarrativeLine Timeline shell navigation** — move the explicit `Home`
-   navigation control from the Timeline Footer to the Timeline Header, beside
-   the NarrativeLine brand and locale control. Keep the existing contextual
-   `Back` hierarchy for Event Detail, Entity Detail, Entity Picker, and Entity
-   Create; do not add a second global Home control to those nested surfaces.
-   Keep the Footer limited to descriptor/context and Credits.
-2. **NarrativeLine Credits dismissal** — align the Credits Dialog with the
-   accepted dismissal behavior of the other application Dialogs: explicit Close,
-   Escape, and backdrop click; clicks inside the Dialog must not dismiss it.
-   Preserve keyboard focus behavior, opener-focus restoration, locale state, and
-   Dataset/editor state.
+1. **NarrativeLine Timeline shell navigation** — **CLOSED / ACCEPTED** at
+   runtime commit `4868111b02aa850bb0c652ab3b3470dcd92595a0`. The explicit
+   localized `Home` action is in the Timeline Header beside the NarrativeLine
+   brand and locale control; the lower sticky area retains Add Event only.
+   Existing contextual `Back` behavior for nested surfaces remains separate.
+2. **NarrativeLine Credits dismissal** — **CLOSED / ACCEPTED** through the
+   NarrativeLine locale-consumer checkpoint: explicit Close, Escape, and
+   backdrop click, with focus and state behavior preserved.
 
-These are application-shell follow-ups, not changes to `#locale`, recipient
+These are application-shell checkpoints, not changes to `#locale`, recipient
 preference semantics, Dataset Handoff, Dataset language, Dataset state, or graph
 state. LiaisonScape's Credits backdrop dismissal is already implemented and is
 not part of this record. The work should be evaluated before Cross-App Shell
@@ -1081,11 +1080,16 @@ multi-Dataset workflows open for later evaluation.
 
 ## Immediate sequence
 
-1. Preserve the LiaisonScape `0.1.0` First Distribution and Direct Graph
+1. NarrativeLine 600/601px Header/Footer vertical geometry.
+2. NarrativeLine CoordinatePanel 600/601px geometry.
+3. NarrativeLine nested Event Detail / Entity Detail / Entity Picker / Entity
+   Create Header Back alignment.
+4. Small P3 or test-hardening cleanup where still useful.
+5. LiaisonScape locale consumer and Credits alignment.
+6. Hub startup locale producer and final Cross-App Locale closure.
+7. Preserve the LiaisonScape `0.1.0` First Distribution and Direct Graph
    Authoring checkpoints as the current application baseline.
-2. Select exactly one bounded follow-up workstream through its own scope and
-   evidence gate before implementation.
-3. Keep Names P1 product integration, Names Grouping, Relative Time,
+8. Keep Names P1 product integration, Names Grouping, Relative Time,
    History vNext, Target Reference, Source/Citation, Provenance/Confidence,
    Semantic/Dictionary, and Layout/Presentation responsibilities independently
    gated.
@@ -1207,9 +1211,14 @@ completion / final cross-app closure**.
 
 - Audit the 600/601px Header/Footer vertical geometry change.
 - Audit the excessively tall CoordinatePanel control/select at the 600/601px breakpoint.
-- Revisit Timeline Home action placement against the accepted Header direction.
-- Review the Detail lower fixed action area as a UI alignment follow-up.
+- Audit nested Event Detail / Entity Detail / Entity Picker / Entity Create Header Back alignment.
+- Keep Detail lower editing action areas as-is unless later evidence changes that decision.
 - Remove the old translated-feedback ternary comment as P3 cleanup.
+- Perform a remaining brittle Header selector audit only if worthwhile.
+
+The Timeline Home placement is closed and must not be reopened as a follow-up.
+These remaining items are UI consistency work after the locale-consumer
+checkpoint; they are not locale-consumer blockers.
 
 These do not reopen the accepted locale consumer checkpoint.
 

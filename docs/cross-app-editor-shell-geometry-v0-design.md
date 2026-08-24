@@ -103,8 +103,12 @@ therefore creates a runtime follow-up to align its narrow vertical padding with
 the stable-vertical rule. This follow-up does not reopen the accepted F2-NL1,
 F2-NL1b, or F2-NL1c decisions; it is a separate geometry alignment checkpoint.
 
-The existing Timeline Home-navigation and Credits dismissal follow-ups remain
-separate roadmap items.
+Timeline Home-navigation is CLOSED / ACCEPTED at runtime commit
+`4868111b02aa850bb0c652ab3b3470dcd92595a0`. The accepted top-level placement
+does not close the separate 600/601px stable-vertical geometry follow-up or
+nested Detail, Picker, and Create Header Back alignment. Credits dismissal is
+also closed through the accepted NarrativeLine locale-consumer work; it is not
+a current NarrativeLine shell blocker.
 
 ### LiaisonScape
 

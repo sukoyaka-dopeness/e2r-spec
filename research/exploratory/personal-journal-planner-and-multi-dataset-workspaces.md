@@ -182,3 +182,109 @@ Hub runtime.
 - Can reference timelines be updated without affecting personal data?
 - When should an overlay become an explicit merge or composition?
 - What privacy boundary is required when personal and public Datasets coexist?
+
+## Time-of-day journaling
+
+Personal journals may contain date-only entries as well as explicit times of
+day. History Extension 1.0.0 already supports year, month, day, hour, minute,
+second, and optional time-zone and offset information at sufficient
+granularity. This does not require a new Core temporal field. Applications
+must not invent precision: a date-only entry must not silently become midnight,
+while a user-entered month/day/time may preserve that recorded precision.
+
+A future application might require a date for ordinary calendar entries, make
+time optional, offer an explicit “use current time” action, and hide seconds
+unless needed. Day or agenda views could order timed Events within a day. The
+local Civil Time and time zone may be meaningful for travel journals. Exact UX
+is unresolved and History semantics are unchanged.
+
+## Conversational AI journaling
+
+A journal could be created through a conversational assistant as well as a
+form. Prompts might ask what happened today, what was done for the first time,
+who was met, where the user went, how they felt, or what they want to do
+tomorrow. The assistant could propose one or more Event drafts, summaries,
+long-form prose, Entity candidates, tags, stamps, or future/planned Events.
+
+All AI output is a draft. User confirmation must precede persistent Dataset
+mutation. Inferred people, places, shops, emotional states, and duplicate
+Entity candidates must be suggested for review rather than silently linked,
+recorded, or created.
+
+By default, the raw conversation need not become part of the Dataset. A
+possible flow is:
+
+```text
+conversation -> structured proposal -> user review -> accepted E2R data
+```
+
+The transcript may remain ephemeral; persistence would require an explicit
+future choice. This note defines no cloud retention behavior and no AI
+Extension.
+
+## GitHub-backed journal publication
+
+A GitHub repository could serve as storage or distribution for explicitly
+published E2R journal Datasets. A future read-only viewer might present a
+journal stream, Calendar, Timeline, Event Detail, or Entity-oriented browsing
+through a browser extension, standalone viewer, or Hub-linked viewer. No such
+viewer is claimed to exist today.
+
+Git commit chronology is not Event chronology. Commits may represent revision,
+publication, or provenance history; History Extension Event time remains the
+authoritative journal chronology. Event dates must not be derived from commit
+timestamps except through an explicitly designed future import workflow.
+
+Publication must be deliberate:
+
+```text
+Private Dataset/repository -> explicit publication/export -> public Dataset/repository
+```
+
+The public Dataset may contain only selected content. Making the original
+private repository public, automatic publication, and automatic private-to-
+public synchronization are not assumed. A public Event does not imply that
+every related Entity or Relation is public.
+
+## Repository topology and Launcher hypothesis
+
+Repositories should generally not be divided by E2R application, because the
+same Dataset may be consumed by NarrativeLine, LiaisonScape, a viewer, and
+future applications. This is a research hypothesis, not a normative rule:
+
+```text
+repository = storage / sharing / permission / publication / versioning boundary
+Dataset     = identified data object, with datasetId when present
+application = Dataset consumer, editor, or viewer
+```
+
+Both one-repository-per-Dataset and a multi-Dataset personal vault remain open.
+The broader heuristic is that a repository is one storage, sharing, and
+permission boundary, not one application. A future Launcher could register
+Dataset identity, title, repository, file path, branch/ref, and source status,
+then open the same Dataset in compatible applications. It must not equate a
+repository URL with `datasetId`, and no Launcher storage schema is proposed.
+
+A future browser viewer could recognize an intentionally published E2R journal
+and render it as a readable site, with chronological, Calendar, Event, or
+relational views. Following recurring public people, places, or topics may be
+useful, but publication filtering and privacy boundaries remain necessary.
+
+## Additional open questions
+
+- Should hours and minutes be ordinary UI or optional, and what does “use
+  current time” record about time zone and offset?
+- Can one AI conversation produce multiple Events, and should existing Entity
+  links be proposed before new Entities?
+- Should raw conversations remain ephemeral, and how should accepted AI-derived
+  content record provenance?
+- Should public journals be derived Datasets rather than private source data?
+- What manifest identifies E2R content in a GitHub repository?
+- Should a repository contain one Dataset or several?
+- How should Launcher remember repository/path/ref without confusing location
+  with identity?
+- How should private-repository viewer authentication avoid excessive token
+  scope?
+- Should GitHub Pages, raw files, or the GitHub API be the publication surface?
+- How should attachments and photos be represented without expanding the Core?
+- How should publication filtering handle related Entities and Relations?

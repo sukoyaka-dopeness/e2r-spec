@@ -18,9 +18,9 @@
     "noFilesystemChanges": true
   },
   "summary": {
-    "totalFiles": 165,
-    "markdownFiles": 135,
-    "toolFiles": 30
+    "totalFiles": 167,
+    "markdownFiles": 136,
+    "toolFiles": 31
   },
   "entries": [
     {
@@ -4201,6 +4201,50 @@
       "proposedPath": "research/exploratory/reusable-ui-integration-test-harness.md",
       "moveBatch": "post-closure-research-addition",
       "moveImpact": "research checkpoint synchronization; no reorganization batch",
+      "subBatch": null
+    },
+    {
+      "path": "research/exploratory/e2r-lineage-self-description.md",
+      "workstream": "general-research",
+      "documentRole": "exploration",
+      "status": "needs-review",
+      "normativity": "non-normative",
+      "entryPoint": false,
+      "supersededBy": [],
+      "dependsOn": [
+        "research/exploratory/fixtures/e2r-lineage-self-description.json"
+      ],
+      "referencedBy": [],
+      "moveRisk": "low",
+      "adjudication": {
+        "confidence": "needs-review",
+        "basis": "New exploratory Lineage self-description model; candidate semantics remain unaccepted."
+      },
+      "proposedPath": "research/exploratory/e2r-lineage-self-description.md",
+      "moveBatch": "post-closure-research-addition",
+      "moveImpact": "new exploratory document and non-normative fixture",
+      "subBatch": null
+    },
+    {
+      "path": "research/exploratory/fixtures/e2r-lineage-self-description.json",
+      "workstream": "general-research",
+      "documentRole": "evidence",
+      "status": "needs-review",
+      "normativity": "evidence-only",
+      "entryPoint": false,
+      "supersededBy": [],
+      "dependsOn": [],
+      "referencedBy": [
+        "research/exploratory/e2r-lineage-self-description.md"
+      ],
+      "moveRisk": "low",
+      "adjudication": {
+        "confidence": "medium",
+        "basis": "Non-normative Core/Metadata fixture validated by the E2R Validator; lineage semantics remain descriptive."
+      },
+      "proposedPath": "research/exploratory/fixtures/e2r-lineage-self-description.json",
+      "moveBatch": "post-closure-research-addition",
+      "moveImpact": "new exploratory fixture",
       "subBatch": null
     }
   ],

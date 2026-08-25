@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "entities": [
+    {"id": "e2r", "name": "E2R"},
+    {"id": "e2r-core", "name": "E2R Core 1.0"},
+    {"id": "history-extension", "name": "History Extension 1.0.0"},
+    {"id": "names-extension", "name": "Names Extension"},
+    {"id": "coordinate-extension", "name": "Coordinate Extension"},
+    {"id": "specification-extension", "name": "Specification Extension 0.1.0"},
+    {"id": "narrative-line", "name": "NarrativeLine"},
+    {"id": "liaison-scape", "name": "LiaisonScape"},
+    {"id": "e2r-validator", "name": "E2R Validator"},
+    {"id": "dataset", "name": "E2R Dataset"}
+  ],
+  "events": [
+    {"id": "history-accepted", "name": "History version accepted"},
+    {"id": "names-p1-accepted", "name": "Names P1 accepted"},
+    {"id": "coordinate-draft-introduced", "name": "Coordinate Draft introduced"}
+  ],
+  "relations": [
+    {"id": "e2r-extends-core", "sourceId": "e2r", "targetId": "e2r-core", "description": "extends"},
+    {"id": "core-extends-history", "sourceId": "history-extension", "targetId": "e2r-core", "description": "extends"},
+    {"id": "core-extends-names", "sourceId": "names-extension", "targetId": "e2r-core", "description": "extends"},
+    {"id": "core-extends-coordinate", "sourceId": "coordinate-extension", "targetId": "e2r-core", "description": "extends"},
+    {"id": "core-extends-specification", "sourceId": "specification-extension", "targetId": "e2r-core", "description": "extends"},
+    {"id": "narrative-implements-e2r", "sourceId": "narrative-line", "targetId": "e2r", "description": "implements"},
+    {"id": "liaison-implements-e2r", "sourceId": "liaison-scape", "targetId": "e2r", "description": "implements"},
+    {"id": "validator-validates-e2r", "sourceId": "e2r-validator", "targetId": "e2r", "description": "validates"},
+    {"id": "dataset-uses-core", "sourceId": "dataset", "targetId": "e2r-core", "description": "uses"},
+    {"id": "history-event-in-e2r", "sourceId": "history-accepted", "targetId": "e2r", "description": "milestone"},
+    {"id": "names-event-in-e2r", "sourceId": "names-p1-accepted", "targetId": "e2r", "description": "milestone"},
+    {"id": "coordinate-event-in-e2r", "sourceId": "coordinate-draft-introduced", "targetId": "e2r", "description": "milestone"}
+  ],
+  "extensions": {
+    "metadata": {
+      "datasetId": "l0-e2r-lineage-self-description",
+      "title": "L0 E2R Lineage Self-Description Prototype"
+    }
+  }
+}

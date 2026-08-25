@@ -97,6 +97,11 @@ provenance audit. Hub publication of the Self-Description Dataset remains
 blocked until that formalization and the ordinary public URL/redistribution
 readiness checks are complete.
 
+S2.1 now records a Metadata 1.1.0 candidate for optional
+`extensions.metadata.license` as an SPDX License Expression. The field is a
+Dataset-level descriptive declaration, not proof of rights or compliance;
+implementation and Stable promotion remain separate follow-ups.
+
 ### Stable specification foundation
 
 - Core defines Dataset, Entity, Event, and Relation.

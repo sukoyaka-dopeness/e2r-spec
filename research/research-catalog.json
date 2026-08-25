@@ -18,8 +18,8 @@
     "noFilesystemChanges": true
   },
   "summary": {
-    "totalFiles": 175,
-    "markdownFiles": 138,
+    "totalFiles": 176,
+    "markdownFiles": 139,
     "toolFiles": 37
   },
   "entries": [
@@ -4380,6 +4380,22 @@
       "proposedPath": "research/standards-licensing/decisions/e2r-standards-license-decision.md",
       "moveBatch": "post-2026-08-25-catalog-sync",
       "moveImpact": "new accepted standards licensing decision record"
+    },
+    {
+      "path": "research/metadata/decisions/dataset-license-metadata-design.md",
+      "workstream": "metadata",
+      "documentRole": "decision",
+      "status": "accepted",
+      "normativity": "non-normative",
+      "entryPoint": false,
+      "supersededBy": [],
+      "dependsOn": ["extensions/metadata-extension.md", "research/standards-licensing/decisions/e2r-standards-license-decision.md"],
+      "referencedBy": ["docs/roadmap.md"],
+      "moveRisk": "low",
+      "adjudication": {"confidence": "high", "basis": "S2.1 records a bounded Dataset-level license metadata design and defers Metadata implementation and Stable promotion."},
+      "proposedPath": "research/metadata/decisions/dataset-license-metadata-design.md",
+      "moveBatch": "post-2026-08-25-catalog-sync",
+      "moveImpact": "new Metadata vNext license declaration design"
     }
   ],
   "adjudicationPass": {

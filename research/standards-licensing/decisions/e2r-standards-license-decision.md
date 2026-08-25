@@ -27,6 +27,10 @@ package metadata, or replace any repository's existing license. It is not legal
 advice and requires the S3 formalization/provenance audit before public
 formalization.
 
+Dataset-level license declaration semantics are handled separately in the
+Metadata vNext design record:
+`research/metadata/decisions/dataset-license-metadata-design.md`.
+
 ## Strategic requirements preserved
 
 Anyone may implement E2R without case-by-case permission. Commercial, paid,

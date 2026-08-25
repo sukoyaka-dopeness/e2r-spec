@@ -18,9 +18,9 @@
     "noFilesystemChanges": true
   },
   "summary": {
-    "totalFiles": 171,
+    "totalFiles": 173,
     "markdownFiles": 136,
-    "toolFiles": 35
+    "toolFiles": 37
   },
   "entries": [
     {
@@ -4316,6 +4316,38 @@
       "proposedPath": "research/exploratory/fixtures/lineage-v0-translation.json",
       "moveBatch": "post-closure-research-addition",
       "moveImpact": "new exploratory candidate fixture"
+    },
+    {
+      "path": "research/tools/lineage-draft-diagnostic-harness.mjs",
+      "workstream": "general-research",
+      "documentRole": "tool-description",
+      "status": "needs-review",
+      "normativity": "non-normative",
+      "entryPoint": false,
+      "supersededBy": [],
+      "dependsOn": ["research/exploratory/e2r-lineage-self-description.md"],
+      "referencedBy": ["research/tools/lineage-draft-diagnostic-harness.test.mjs"],
+      "moveRisk": "low",
+      "adjudication": {"confidence": "high", "basis": "Research-only L5 harness for candidate Lineage diagnostic semantics; it does not modify production Validator behavior."},
+      "proposedPath": "research/tools/lineage-draft-diagnostic-harness.mjs",
+      "moveBatch": "post-closure-research-addition",
+      "moveImpact": "new exploratory diagnostic harness"
+    },
+    {
+      "path": "research/tools/lineage-draft-diagnostic-harness.test.mjs",
+      "workstream": "general-research",
+      "documentRole": "evidence",
+      "status": "needs-review",
+      "normativity": "evidence-only",
+      "entryPoint": false,
+      "supersededBy": [],
+      "dependsOn": ["research/tools/lineage-draft-diagnostic-harness.mjs"],
+      "referencedBy": ["research/exploratory/e2r-lineage-self-description.md"],
+      "moveRisk": "low",
+      "adjudication": {"confidence": "medium", "basis": "Six non-production tests encode the L5 structural and local-semantic diagnostic candidate matrix."},
+      "proposedPath": "research/tools/lineage-draft-diagnostic-harness.test.mjs",
+      "moveBatch": "post-closure-research-addition",
+      "moveImpact": "new exploratory diagnostic harness test"
     }
   ],
   "adjudicationPass": {

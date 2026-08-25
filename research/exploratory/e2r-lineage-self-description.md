@@ -709,6 +709,141 @@ still demonstrate Core validity and unknown-Extension preservation, not
 Lineage semantic validation. L4 would need dedicated opaque round-trip
 evidence from NarrativeLine and LiaisonScape before any promotion decision.
 
+## L5 — Validator / diagnostic design
+
+Status: **design only**. No production Validator, application, Core, or
+Stable Extension code is changed by L5.
+
+### Architecture findings
+
+The current Validator's smallest future seam is `src/extension-validator.js`
+in `e2r-validator`: recognized Extension identifiers are collected first,
+unknown identifiers receive `unknown_extension`, and recognized payloads are
+dispatched to Extension-specific validators. `src/diagnostics.js` defines the
+diagnostic shape `{ severity, code, path, relatedIds? }`, with only `error` and
+`warning` severities. Paths are JSON Pointer-like strings and duplicate/object
+diagnostics are emitted in deterministic Dataset container and array order.
+Metadata is currently validated in `validateMetadata`; exact local Extension
+support and declaration behavior is centralized in
+`src/specification-validator.js`. Coordinate Draft demonstrates the existing
+pattern of version dispatch plus hand-written structural and semantic checks.
+
+The selected L6 strategy is **C: structural validation plus hand-written local
+semantic checks**. A future `src/lineage-draft-validator.js` should be
+dispatched from `validateExtensions` after the identifier is recognized. A
+separate e2r-spec schema is not created: schemas are not the current
+Validator's Extension source-of-truth seam, and JSON Schema alone cannot
+express self-reference or duplicate `(kind, target.datasetId)` rules cleanly.
+
+### Recognition and version behavior
+
+The exact recognized identifier is `draft.github.sukoyaka-dopeness.lineage`.
+With a valid `specVersion: "0.1.0"`, a future Lineage-aware Validator should
+stop emitting `unknown_extension` for that occurrence and emit no additional
+maturity warning; Draft maturity is documented, not an invalidity. An
+unsupported top-level identifier such as `vendor.example` remains an opaque
+`unknown_extension` warning.
+
+For the recognized payload, the proposed errors are:
+
+| Condition | Proposed code | Path |
+| --- | --- | --- |
+| Payload is not an object | `lineage_payload_invalid` | Lineage payload |
+| `specVersion` missing | `lineage_spec_version_missing` | `/specVersion` |
+| `specVersion` not a string or malformed | `lineage_spec_version_invalid` | `/specVersion` |
+| `specVersion` is not `0.1.0` | `lineage_spec_version_unsupported` | `/specVersion` |
+
+Recognized but unsupported versions are distinct from unknown Extensions.
+They are errors for the recognized Draft dispatch; no generic
+`extension_version_unspecified` warning should be emitted for the Lineage
+payload. The inline `specVersion` is sufficient for the first L6 recognition
+experiment. Specification Extension declaration interaction remains a
+separate resolution: exact declaration may confirm the same version, but its
+absence does not prevent local Lineage shape validation in L6.
+
+### Metadata dependency and payload structure
+
+Metadata `extensions.metadata.datasetId` is a required Lineage dependency,
+using the existing non-empty-string Dataset-ID semantics. A missing or
+malformed Metadata identity produces one
+`lineage_metadata_dataset_id_missing` error at
+`/extensions/metadata/datasetId`; Metadata's own structural error remains the
+upstream explanation when applicable, and self-reference checking is skipped
+when the child identity is unavailable. Exact Metadata version resolution is
+not duplicated by Lineage; Specification Extension declarations remain the
+common version authority.
+
+Structural candidate codes are intentionally small:
+
+* `lineage_parents_missing`, `lineage_parents_invalid`,
+  `lineage_parents_empty`;
+* `lineage_parent_invalid`;
+* `lineage_kind_missing`, `lineage_kind_invalid`;
+* `lineage_target_invalid`, `lineage_target_dataset_id_invalid`.
+
+`parents` is required, an array, and non-empty. Each parent is an object with
+`kind` and `target`; target is an object with a non-empty string
+`datasetId`. Unknown fields at payload, parent, and target levels are
+preserved and produce no unknown-field diagnostic. The known kind enum remains
+closed: `derived`, `revision`, `fork`, `translation`.
+
+### Local semantic diagnostics
+
+The child Dataset ID equal to a parent target produces one
+`lineage_self_reference` error per offending parent, located at that parent's
+`target/datasetId`. This is local only; global cycles, parent lookup, and
+cross-file graph traversal are not designed.
+
+An identical `(kind, target.datasetId)` pair produces one
+`lineage_duplicate_parent` error on the second and each later occurrence,
+located at the duplicate parent object. The first occurrence need not be
+reported and no `relatedIds` metadata is needed. Same target with different
+kinds is valid and must not be diagnosed as duplicate. Parent order receives
+no diagnostic and is neither sorted nor rewritten.
+
+An unresolved parent is locally valid. No filesystem, registry, network, URL,
+hash, authenticity, compatibility, translation-fidelity, authority, license,
+or merge diagnostic belongs to Lineage v0. Unknown kind is invalid and must
+not fall back to `derived`.
+
+Diagnostic order should be deterministic: common Core/Extension parsing first;
+Lineage `specVersion`; Metadata dependency; payload/parents structural checks;
+per-parent structural checks in array order; then self-reference and duplicate
+checks in array order. If a container has the wrong type, nested diagnostics
+are suppressed. A missing target suppresses target child diagnostics; an
+invalid child Dataset ID suppresses self-reference for that parent. This keeps
+invalid payloads actionable without cascading duplicates.
+
+Invalid-case matrix for L6: missing/wrong `specVersion`; missing Metadata or
+`datasetId`; Lineage payload wrong type; missing/wrong/empty parents; parent
+wrong type; missing/unknown kind; missing/wrong target; missing/empty/non-string
+target Dataset ID; self-reference; and duplicate identical parent. Valid-case
+matrix includes all four Draft fixtures, multiple derived parents, same target
+under different kinds, unknown nested fields, and an unresolved external
+parent.
+
+### Research harness and implementation boundary
+
+The non-production harnesses
+[`lineage-draft-diagnostic-harness.mjs`](../tools/lineage-draft-diagnostic-harness.mjs)
+and
+[`lineage-draft-diagnostic-harness.test.mjs`](../tools/lineage-draft-diagnostic-harness.test.mjs)
+encode this candidate behavior without duplicating Core or Extension
+validation. Six tests cover valid kinds, unresolved parents, unknown fields,
+multiple parents, different kinds, version/Metadata/structure ordering,
+self-reference, duplicate policy, invalid kind, empty parents, immutability,
+and absent Lineage.
+
+L6 should add the smallest production dispatch and validator module in
+`e2r-validator`, extend recognized Draft version support, and add production
+fixtures/tests for the matrix above. It must preserve the L4 opaque round-trip
+property: recognition may inspect known fields but must not strip unknown
+fields, reorder parents, normalize kinds, or mutate payloads.
+
+This design does not implement Lineage validation, does not promote the Draft,
+and does not create a Knowledge Candidate. The next bounded phase is **L6 —
+Lineage Draft Validator 0.1.0 Implementation**.
+
 ## L4 — Cross-application opaque round-trip evidence
 
 Status: **round-trip gate satisfied; Lineage remains Draft / Experimental / non-Stable**.

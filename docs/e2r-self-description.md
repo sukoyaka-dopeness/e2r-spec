@@ -36,3 +36,35 @@ surface may offer open, validate, and view-JSON actions after public URL,
 redistribution status, final user-facing wording, and the eventual
 standards/document licensing decision are resolved. No license is selected by
 this artifact.
+
+## Curated development chronology
+
+The Dataset is a bounded chronology snapshot through L7 and S1 on
+2026-08-25. It is curated from committed E2R session logs and dated result or
+decision documents; Git history is used only as a secondary ordering and
+existence cross-check. It is not an exhaustive commit history and does not
+claim that every implementation, acceptance, research checkpoint, package
+publication, or distribution event is represented.
+
+The selected milestones are:
+
+1. 2026-08-05 — History Extension 1.0.0 established.
+2. 2026-08-08 — NarrativeLine MVP completed.
+3. 2026-08-08 — E2R Validator MVP integrated.
+4. 2026-08-16 — LiaisonScape first distribution completed.
+5. 2026-08-18 — E2R Hub first distribution completed.
+6. 2026-08-25 — Lineage Draft and its bounded evidence milestones.
+7. 2026-08-25 — E2R Self-Description dogfood created.
+
+The four existing Lineage Events remain stable and are dated 2026-08-25.
+Same-day Lineage milestones use `temporalOrder` only where the documented L0
+through L7 phase sequence establishes relative order; no clock time or
+timezone is invented. The two 2026-08-08 milestones use the same bounded
+ordering approach from the Session 0021/0020 completion sequence. The S1
+standards-licensing research checkpoint is deferred because it is governance
+research rather than a technical milestone needed to explain the artifact.
+
+The chronology adds History data to the current Events without changing the
+Dataset identity `e2r-self-description-0.1.0`. It remains informative,
+experimental, non-normative dogfood; normative authority remains the
+specification documents and registered specification artifacts.

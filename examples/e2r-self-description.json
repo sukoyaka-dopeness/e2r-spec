@@ -66,22 +66,62 @@
     {
       "id": "lineage-draft-created",
       "name": "Lineage Draft 0.1.0 created",
-      "description": "The Lineage Extension candidate became an explicit Draft document and payload shape."
+      "description": "The Lineage Extension candidate became an explicit Draft document and payload shape.",
+      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 25, "temporalOrder": 10}}}
     },
     {
       "id": "cross-app-roundtrip-evidence",
       "name": "Cross-application opaque round-trip evidence completed",
-      "description": "NarrativeLine and LiaisonScape preserved unsupported Lineage Draft data through representative load, edit, and export workflows."
+      "description": "NarrativeLine and LiaisonScape preserved unsupported Lineage Draft data through representative load, edit, and export workflows.",
+      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 25, "temporalOrder": 20}}}
     },
     {
       "id": "lineage-diagnostic-design",
       "name": "Lineage Validator diagnostic design completed",
-      "description": "Structural and local-semantic diagnostic behavior was designed without production Validator changes."
+      "description": "Structural and local-semantic diagnostic behavior was designed without production Validator changes.",
+      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 25, "temporalOrder": 30}}}
     },
     {
       "id": "lineage-validator-recognized",
       "name": "Validator gained Lineage Draft recognition",
-      "description": "E2R Validator 0.3.0 began recognizing and locally validating Lineage Draft 0.1.0."
+      "description": "E2R Validator 0.3.0 began recognizing and locally validating Lineage Draft 0.1.0.",
+      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 25, "temporalOrder": 40}}}
+    },
+    {
+      "id": "history-extension-established",
+      "name": "History Extension 1.0.0 established",
+      "description": "The stable History Extension defined the authoritative temporal representation, date precision, and relative temporal ordering for E2R Events.",
+      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 5}}}
+    },
+    {
+      "id": "narrative-line-mvp-completed",
+      "name": "NarrativeLine MVP completed",
+      "description": "NarrativeLine completed its bilingual MVP with Dataset editing, validation, import/export, and manual acceptance.",
+      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 8, "temporalOrder": 10}}}
+    },
+    {
+      "id": "validator-mvp-integrated",
+      "name": "E2R Validator MVP integrated",
+      "description": "The standalone E2R Validator completed its MVP and was integrated into the NarrativeLine workflow.",
+      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 8, "temporalOrder": 20}}}
+    },
+    {
+      "id": "liaison-scape-first-distribution",
+      "name": "LiaisonScape first distribution completed",
+      "description": "LiaisonScape completed its first distributed application slice with cross-application sample and guide coverage.",
+      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 16}}}
+    },
+    {
+      "id": "e2r-hub-first-distribution",
+      "name": "E2R Hub first distribution completed",
+      "description": "E2R Hub completed its first distributed entry-point application slice for the E2R ecosystem.",
+      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 18}}}
+    },
+    {
+      "id": "self-description-created",
+      "name": "E2R Self-Description dogfood created",
+      "description": "The bounded machine-readable E2R Self-Description Dataset was created as an informative, experimental dogfood artifact.",
+      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 25, "temporalOrder": 50}}}
     }
   ],
   "relations": [
@@ -101,7 +141,13 @@
     {"id": "lineage-draft-event", "sourceId": "lineage-draft-created", "targetId": "lineage-draft", "description": "milestone"},
     {"id": "roundtrip-event", "sourceId": "cross-app-roundtrip-evidence", "targetId": "e2r", "description": "milestone"},
     {"id": "diagnostic-event", "sourceId": "lineage-diagnostic-design", "targetId": "e2r-validator", "description": "milestone"},
-    {"id": "validator-event", "sourceId": "lineage-validator-recognized", "targetId": "e2r-validator", "description": "milestone"}
+    {"id": "validator-event", "sourceId": "lineage-validator-recognized", "targetId": "e2r-validator", "description": "milestone"},
+    {"id": "history-extension-event", "sourceId": "history-extension-established", "targetId": "history-extension", "description": "milestone"},
+    {"id": "narrative-line-mvp-event", "sourceId": "narrative-line-mvp-completed", "targetId": "narrative-line", "description": "milestone"},
+    {"id": "validator-mvp-event", "sourceId": "validator-mvp-integrated", "targetId": "e2r-validator", "description": "milestone"},
+    {"id": "liaison-scape-distribution-event", "sourceId": "liaison-scape-first-distribution", "targetId": "liaison-scape", "description": "milestone"},
+    {"id": "hub-distribution-event", "sourceId": "e2r-hub-first-distribution", "targetId": "e2r-hub", "description": "milestone"},
+    {"id": "self-description-event", "sourceId": "self-description-created", "targetId": "self-description", "description": "milestone"}
   ],
   "extensions": {
     "metadata": {

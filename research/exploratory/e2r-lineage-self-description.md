@@ -927,6 +927,74 @@ These application observations are compatibility/usefulness smoke evidence,
 not application Lineage support. The artifact is intentionally model-first;
 any graph or timeline presentation limitations are application concerns.
 
+## L7.1 — Self-Description chronology enrichment
+
+Status: **dated dogfood chronology accepted; Hub publication remains deferred**.
+
+The chronology snapshot covers committed Session `E2R-Session-0001` through
+`E2R-Session-0047` and inspected the still-untracked `E2R-Session-0048` only as
+local context. All 48 available session files were inventoried; 47 committed
+session logs were suitable for published historical claims. Dated result and
+decision documents, the History Extension, the current self-description
+artifact, and relevant Git history were also inspected.
+
+Evidence priority was: explicit session Date or dated Progress section;
+explicitly dated result/decision document; Git commit timestamp as a secondary
+cross-check; and no inference when the date was not supported. The candidate
+table contained 14 bounded candidates before duplicate and low-value review.
+Ten Events were selected, retaining all four existing Lineage Events and
+adding five ecosystem milestones: History Extension established, NarrativeLine
+MVP completed, E2R Validator MVP integrated, LiaisonScape first distribution
+completed, E2R Hub first distribution completed, plus the self-description
+creation milestone. The final artifact count is ten Events.
+
+The final artifact contains ten Events, from 2026-08-05 through 2026-08-25.
+It uses exact day precision only. No partial-precision dates, fabricated dates,
+clock times, time zones, or legacy top-level `date` fields were added. Same-day
+ordering uses History `temporalOrder` for the documented same-day phase or
+completion sequence; it does not turn presentation order into temporal truth.
+Each added milestone has one ordinary `milestone` Relation to its primary
+Entity. No new machine-semantic Relation vocabulary was introduced, and no
+additional `self-description uses History Extension` Relation was added because
+the Event-level History payload already makes the Dataset's History dogfood
+truthful without a redundant graph edge.
+
+The S1 standards-licensing research checkpoint was **DEFERRED** from the
+Timeline: it is relevant governance research but is not needed to explain the
+technical development chronology of this bounded artifact. The cutoff is
+explicitly the L7/S1 snapshot on 2026-08-25 and is not an automatic ongoing
+synchronization.
+
+Production e2r-validator result after enrichment:
+
+```text
+valid: true
+warning: extension_version_unspecified at /extensions/metadata
+warning: extension_version_unspecified at /events/0/extensions/history
+```
+
+The History warning is a diagnostic about omitted version metadata on the
+Event-level History payload; it does not reject the valid Stable History shape.
+Lineage diagnostics remained error-free. The artifact identity remains
+`e2r-self-description-0.1.0`: this is content refinement of the existing
+informative dogfood Dataset, not a new Dataset identity or a Lineage revision.
+
+Read-only NarrativeLine smoke accepted the Dataset and exposed the dated
+Events through its existing History-aware timeline path; the observed order
+was History Extension (2026-08-05), NarrativeLine MVP then Validator MVP
+(2026-08-08), LiaisonScape distribution (2026-08-16), Hub distribution
+(2026-08-18), then the five ordered 2026-08-25 milestones. Dated Events were
+visible; no legacy date fallback was used. LiaisonScape continued to accept
+the Dataset with a coherent but denser graph caused by five additional
+milestone edges. No application source was changed.
+
+The enriched artifact now meaningfully exercises History while remaining
+clearly non-normative. It does not establish complete project archaeology,
+change the Core, change Lineage semantics, select a license, or publish
+through Hub. No new reusable Knowledge Candidate was identified; the evidence
+is artifact-specific. The next phase remains S2 — E2R Standards License
+Decision / Policy Record.
+
 Normative authority remains the Markdown specification and registered
 specification artifacts. Local creation is not blocked by S1, but Hub
 redistribution remains deferred pending standards/document licensing,

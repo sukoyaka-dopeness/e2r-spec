@@ -1,6 +1,6 @@
 ﻿{
   "schemaVersion": "0.1.0",
-  "generatedAt": "2026-08-15",
+  "generatedAt": "2026-08-25",
   "sourceOfTruthIntent": "Machine-readable catalog for review; source documents remain authoritative.",
   "classificationPolicy": {
     "ambiguousValue": "needs-review",
@@ -18,8 +18,8 @@
     "noFilesystemChanges": true
   },
   "summary": {
-    "totalFiles": 159,
-    "markdownFiles": 129,
+    "totalFiles": 164,
+    "markdownFiles": 134,
     "toolFiles": 30
   },
   "entries": [
@@ -355,6 +355,31 @@
       ],
       "subBatch": "batch-2F2-simple-referenced",
       "movedFrom": "research/dataset-lineage.md"
+    },
+    {
+      "path": "research/exploratory/cross-project-e2r-lineage-applicability.md",
+      "workstream": "general-research",
+      "documentRole": "exploration",
+      "status": "needs-review",
+      "normativity": "non-normative",
+      "entryPoint": false,
+      "supersededBy": [],
+      "dependsOn": [
+        "research/target-reference/decisions/target-reference-and-record-lifecycle.md",
+        "research/source-citation/decisions/minimal-source-citation-workflow.md",
+        "research/history-vnext/decisions/history-vnext-target-scope.md"
+      ],
+      "referencedBy": [],
+      "moveRisk": "low",
+      "adjudication": {
+        "confidence": "high",
+        "basis": "The source explicitly identifies this document as an exploratory research seed and records no adopted design or implementation contract."
+      },
+      "proposedPath": "research/exploratory/cross-project-e2r-lineage-applicability.md",
+      "moveBatch": "post-2026-08-25-catalog-sync",
+      "moveImpact": [
+        "catalog-only synchronization"
+      ]
     },
     {
       "path": "research/exploratory/deterministic-generation.md",
@@ -6983,8 +7008,8 @@
     "completedDate": "2026-08-15",
     "closureDocument": "sessions/E2R-Session-0028.md",
     "finalAuditVerdict": "PASS WITH SAFE FIXES",
-    "catalogEntries": 159,
-    "researchMarkdownFiles": 129,
+    "catalogEntries": 164,
+    "researchMarkdownFiles": 134,
     "uncataloguedMarkdown": 0,
     "missingCatalogPaths": 0,
     "stalePaths": 0,
@@ -7004,5 +7029,29 @@
     "researchMarkdownFilesAfterReconciliation": 133,
     "researchToolFilesAfterReconciliation": 30,
     "uncataloguedResearchFilesAfterReconciliation": 0
+  },
+  "r0_5CatalogSynchronization": {
+    "status": "completed",
+    "date": "2026-08-25",
+    "sourcePolicy": "Tracked research files are catalogued; preserved untracked exploratory drafts are excluded.",
+    "newTrackedResearchSeed": "research/exploratory/cross-project-e2r-lineage-applicability.md",
+    "countsBefore": {
+      "catalogEntries": 163,
+      "markdownFiles": 133
+    },
+    "countsAfter": {
+      "catalogEntries": 164,
+      "markdownFiles": 134
+    },
+    "datasetLineageSupersededBy": "unresolved",
+    "sourceStatusFollowUps": [
+      "Some accepted research documents retain historical role wording such as research candidate; source normalization is outside R0.5.",
+      "research/exploratory/dataset-lineage.md remains superseded in catalog status without an evidence-backed supersededBy target."
+    ],
+    "catalogGenerator": "No repository generator script or package command exists; this catalog is maintained as a hand-reviewed artifact with source documents authoritative.",
+    "validation": {
+      "npmValidate": "success",
+      "gitDiffCheck": "success"
+    }
   }
 }

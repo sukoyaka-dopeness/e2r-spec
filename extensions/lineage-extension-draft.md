@@ -7,9 +7,10 @@ Draft Extension identifier: `draft.github.sukoyaka-dopeness.lineage`
 Draft specification version: `0.1.0`
 
 This document is an exploratory Draft Extension candidate. It is not
-registered as Stable, is not implemented by the current Validator, and is not
-yet required of applications. It is subject to incompatible change during
-review.
+registered as Stable and is not yet required of applications. The current
+e2r-validator recognizes Draft `0.1.0` for structural and local semantic
+validation, but this does not promote the Extension or require application
+semantic support. It remains subject to incompatible change during review.
 
 The key words MUST, MUST NOT, REQUIRED, SHOULD, SHOULD NOT, and MAY describe
 this Draft candidate only; they do not amend the E2R Core or create a Stable

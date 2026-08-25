@@ -979,14 +979,16 @@ Lineage diagnostics remained error-free. The artifact identity remains
 `e2r-self-description-0.1.0`: this is content refinement of the existing
 informative dogfood Dataset, not a new Dataset identity or a Lineage revision.
 
-Read-only NarrativeLine smoke accepted the Dataset and exposed the dated
-Events through its existing History-aware timeline path; the observed order
-was History Extension (2026-08-05), NarrativeLine MVP then Validator MVP
-(2026-08-08), LiaisonScape distribution (2026-08-16), Hub distribution
-(2026-08-18), then the five ordered 2026-08-25 milestones. Dated Events were
-visible; no legacy date fallback was used. LiaisonScape continued to accept
-the Dataset with a coherent but denser graph caused by five additional
-milestone edges. No application source was changed.
+Read-only NarrativeLine import and existing History-aware ordering checks
+accepted the Dataset and produced the expected chronological order: History
+Extension (2026-08-05), NarrativeLine MVP then Validator MVP (2026-08-08),
+LiaisonScape distribution (2026-08-16), Hub distribution (2026-08-18), then the
+five ordered 2026-08-25 milestones. This was a source-level smoke, not a
+browser screenshot/manual visual inspection; the existing formatter and
+timeline tests provide the no-legacy-date-fallback boundary. LiaisonScape
+read-only load/serialize smoke accepted the Dataset, preserved Event History,
+and left a coherent but denser graph caused by five additional milestone
+edges. No application source was changed.
 
 The enriched artifact now meaningfully exercises History while remaining
 clearly non-normative. It does not establish complete project archaeology,

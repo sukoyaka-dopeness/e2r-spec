@@ -18,8 +18,8 @@
     "noFilesystemChanges": true
   },
   "summary": {
-    "totalFiles": 173,
-    "markdownFiles": 136,
+    "totalFiles": 174,
+    "markdownFiles": 137,
     "toolFiles": 37
   },
   "entries": [
@@ -4348,6 +4348,22 @@
       "proposedPath": "research/tools/lineage-draft-diagnostic-harness.test.mjs",
       "moveBatch": "post-closure-research-addition",
       "moveImpact": "new exploratory diagnostic harness test"
+    },
+    {
+      "path": "research/exploratory/e2r-standards-licensing.md",
+      "workstream": "general-research",
+      "documentRole": "exploration",
+      "status": "needs-review",
+      "normativity": "non-normative",
+      "entryPoint": false,
+      "supersededBy": [],
+      "dependsOn": ["docs/e2r-self-description.md", "research/exploratory/e2r-lineage-self-description.md"],
+      "referencedBy": [],
+      "moveRisk": "low",
+      "adjudication": {"confidence": "high", "basis": "S1 exploratory research records a bounded standards/document licensing comparison and defers the final policy to S2."},
+      "proposedPath": "research/exploratory/e2r-standards-licensing.md",
+      "moveBatch": "post-2026-08-25-catalog-sync",
+      "moveImpact": "new exploratory standards licensing research"
     }
   ],
   "adjudicationPass": {

@@ -1176,6 +1176,33 @@ Extension semantics changed, and no push was performed.
 
 ## Active follow-up ledger — 2026-08-25
 
+### LiaisonScape LS-M2A acceptance — 2026-08-25
+
+LS-M2A Workspace More / Action Hierarchy is **ACCEPTED / COMPLETE**. This
+acceptance supersedes the earlier deferred LS-M2 wording in this roadmap. The
+durable acceptance record is
+`research/exploratory/liaisonscape-workspace-modernization-audit.md`.
+
+The final contract is: above the Workspace-specific `720px` breakpoint, the
+current graph-visible Entity / Relation count is at the toolbar inline start
+and `Add Entity`, `Add Relation`, `Save node coordinates`, and `More` form one
+inline-end action group. At `720px` and below, the count has its own readable
+row, `Add Entity`, `Add Relation`, and `More` remain visible, and Save
+Coordinates is inside More. The shell's global `600px` breakpoint is unchanged.
+
+The accepted checkpoint also records the More keyboard contract, preserved
+Dataset Replacement Safety for `datasetModified` and `pendingUserWork`, the
+removal of persistent successful-load status and the unselected placeholder,
+and the unchanged semantics of the Event-related capability notice now shown
+below the graph. The next bounded application checkpoint is **LS-M2B —
+Dataset title editing**; LS-M2D remains responsible for final capability-notice
+presentation.
+
+Retained follow-ups from acceptance: viewport toolbar drag-handle
+keyboard/focus audit, LiaisonScape Credits descriptive-copy localization,
+common E2R favicon, and Long-form Object Content / Media responsibility
+research. No new knowledge candidate was added.
+
 Small follow-ups must not be lost when development focus moves between
 repositories or workstreams. Record a bounded UX, consistency, safety, or
 visual follow-up when a concrete observation is discovered, even when it is

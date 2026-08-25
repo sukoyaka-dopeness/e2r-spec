@@ -287,3 +287,43 @@ LS-M1 is complete as an audit/design checkpoint. The selected next phase is
 LS-M2A. No application implementation, sample refresh, Metadata 1.1.0
 implementation, S3, Hub publication, or Initial Node Placement work starts
 automatically.
+
+## LS-M2A acceptance — 2026-08-25
+
+LS-M2A Workspace More / Action Hierarchy is **ACCEPTED**. The accepted
+LiaisonScape implementation chain is recorded in the local application
+history, ending at `4dabaa1 test: lock workspace compact action
+responsibility`.
+
+At widths above the Workspace-specific `720px` breakpoint, the toolbar keeps
+the current graph-visible Entity / Relation count at the inline start and
+groups `Add Entity`, `Add Relation`, `Save node coordinates`, and `More` at
+the inline end. More contains `Open Dataset`, `Export E2R JSON`, and the
+existing maintenance/migration actions, with no visible Open/Export duplicate.
+At `720px` and below, the count occupies a readable row, the visible action
+row is `Add Entity`, `Add Relation`, and `More`, and Save Coordinates remains
+available inside More. This is a Workspace-specific breakpoint and does not
+change the shell's global `600px` breakpoint.
+
+The toolbar count represents current graph-visible content, not acquisition
+success. The persistent successful `Loaded ...` message is absent after a
+cold reload. The unselected `Select an Entity or Relation` placeholder was
+removed; selected Entity/Relation Detail behavior remains unchanged. The
+Event-related hidden-Relation capability notice remains semantically
+unchanged and is now below the graph; its final presentation remains LS-M2D.
+
+The accepted More contract is: opening focuses the first enabled item;
+ArrowDown/ArrowUp and Home/End navigate enabled items; Tab and Shift+Tab
+close without trapping normal focus traversal; Escape closes and restores
+focus to More; outside click and item activation close the disclosure.
+Manual Dataset Replacement Safety evidence passed for both `datasetModified`
+and unsaved `pendingUserWork`; moving Open Dataset into More did not bypass
+replacement confirmation or Cancel preservation.
+
+Final evidence recorded: wide desktop and 721px, 720px, 601px, 600px, and
+approximately 320px responsive states passed; LiaisonScape reported 183 tests
+passing with lint, build, and diff checks passing. The next checkpoint is
+LS-M2B Dataset title editing. Retained follow-ups are the viewport toolbar
+drag-handle keyboard/focus audit, LiaisonScape Credits descriptive-copy
+localization, the common E2R favicon, and Long-form Object Content / Media
+responsibility research. No new knowledge candidate was added.

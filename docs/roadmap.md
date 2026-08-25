@@ -1171,26 +1171,97 @@ remains 181/181 tests passing with no React `act(...)` warnings and passing
 lint, build, and diff checks. No Dataset, navigation, modal, locale, Core, or
 Extension semantics changed, and no push was performed.
 
+## Active follow-up ledger — 2026-08-25
+
+Small follow-ups must not be lost when development focus moves between
+repositories or workstreams. Record a bounded UX, consistency, safety, or
+visual follow-up when a concrete observation is discovered, even when it is
+intentionally deferred. Recording an item does not raise its implementation
+priority or authorize implementation; this ledger is not an unbounded wishlist.
+
+### Current execution order
+
+1. **P0 — ledger synchronization** — this checkpoint; complete.
+2. **LS-M1 — LiaisonScape Workspace Modernization Audit** — next phase;
+   implementation deferred until the audit is accepted.
+3. **LS-M2 — bounded LiaisonScape workspace UX implementation** — deferred;
+   depends on LS-M1.
+4. **LS-M3 — Initial Node Placement Objective Audit** — major follow-up;
+   deferred until workspace modernization is complete.
+5. Placement experiments — deferred until LS-M3 justifies them.
+6. **S3 — Standards License Formalization & Provenance Audit** — ready but
+   intentionally deferred during the bounded LiaisonScape sequence.
+7. Metadata 1.1.0 Draft and implementation evidence — deferred after S3.
+8. Hub machine-readable dogfood publication readiness — deferred until
+   licensing formalization and public redistribution checks.
+9. NarrativeLine display-order reordering — explicitly deferred for now.
+10. Public interoperability, deployment, and final release audit — later.
+
+S3 remains **READY**; this ordering is temporary, not a permanent
+architectural priority. History vNext, Relative Time, Target Reference,
+Source/Citation, Semantic/Dictionary, and Layout/Presentation remain
+independently gated research or design tracks.
+
+### Cross-application object identity direction
+
+**Accepted direction / implementation deferred.** Core Object ID is technical
+metadata, not primary user content. NarrativeLine Event Detail and Entity
+Detail, plus LiaisonScape Entity Detail and Relation Detail, should use the
+same hierarchy: a collapsed-by-default `Technical details / 技術情報` section;
+full read-only IDs; long-ID wrapping; and an appropriate copy affordance.
+Object ID is not editable. NarrativeLine does not gain Relation Detail solely
+to expose a Relation ID. Dataset ID is not duplicated inside Object Detail and
+is reserved for a future Dataset-level information/inspection surface.
+
+### LiaisonScape modernization ledger
+
+- **Workspace action hierarchy — audit needed / Cross-app:** evaluate Open
+  Dataset and Export E2R JSON under visible `More / その他`; Home-first
+  acquisition remains canonical and workspace access remains secondary.
+- **Dataset title editing — LS follow-up:** evaluate prominent top-level
+  Workspace title editing. NarrativeLine retains top-level title editing;
+  title is primary Dataset identity/presentation, not a More action.
+- **Hidden Event-Relation notice — audit needed:** review placement, visual
+  priority, persistence/visibility, and graph information hierarchy. It is
+  explanatory content, not automatically an error or destructive warning.
+- **Ownership tooltip/popover sizing — bounded re-audit:** distinguish Entity
+  body, Node label, Relation path, and Relation label before changing accepted
+  geometry.
+- **Cross-app safety parity — retained:** Entity deletion differences and
+  Dataset Replacement destructive styling parity remain open; do not solve
+  them in LS-M1.
+- **Initial Node Placement Objective Audit — major follow-up:** evaluate edge
+  crossings, node/label overlap, edge length, graph bounds, component
+  separation, layout stability, and incremental stability. Initial placement
+  remains Derived presentation/layout behavior and must not silently write
+  Dataset Coordinate/Layout data.
+
+### Metadata and NarrativeLine follow-ups
+
+Metadata 1.0.0 defines `datasetId` and `title`; `license` remains an accepted
+Metadata 1.1.0 SPDX License Expression candidate. Description, author,
+language, and generating application remain separate future evaluations;
+`createdAt`, `updatedAt`, and `tags` are not accepted candidates here. Dataset
+content language remains distinct from application UI locale.
+
+Future user-created Dataset licensing UX must not choose a license
+automatically: default is no interoperable declaration; a user may later
+choose an SPDX preset or advanced expression. Applications do not determine
+ownership or compliance. A future Dataset details/settings surface may host
+richer metadata; P0 does not design it.
+
+NarrativeLine display-order reordering is **DEFER FOR NOW**. Safe Enter,
+Timeline title autofocus, richer Dataset Metadata UX, deletion-safety
+consistency, and destructive styling parity remain deferred. Accepted items —
+Timeline sticky toolbar, More menu, Header Home / nested Back, Back-to-Top,
+locale shell, Credits, CoordinatePanel 600/601 geometry, Dataset Replacement
+Safety, and Dataset Handoff v0 — are not reopened.
+
 ## Immediate sequence
 
-1. NarrativeLine nested Event Detail / Entity Detail / Entity Picker / Entity
-   Create Header Back alignment.
-2. Small P3 or test-hardening cleanup where still useful.
-3. LiaisonScape runtime/remote vertical-parity reconciliation.
-4. LiaisonScape locale consumer and Credits alignment.
-5. Hub startup locale producer and final Cross-App Locale closure.
-6. Application `0.2.0` review after Cross-App Locale closes.
-7. Research shelf inventory.
-8. Hub concept-page update.
-9. Preserve the LiaisonScape `0.1.0` First Distribution and Direct Graph
-   Authoring checkpoints as the current application baseline.
-10. Keep Names P1 product integration, Names Grouping, Relative Time,
-   History vNext, Target Reference, Source/Citation, Provenance/Confidence,
-   Semantic/Dictionary, and Layout/Presentation responsibilities independently
-   gated.
-4. Continue Coordinate Draft work only through its existing evidence gates;
-   read-only Validator support does not by itself authorize application Draft
-   writers, migration, or Stable registration.
+The ledger above is the current short execution sequence. Existing locale,
+shell, and application checkpoints below remain historical evidence and
+independently scoped follow-ups; they are not silently promoted by this ledger.
 
 The ordering above does not select the next product feature. A later handoff or
 explicit planning decision may choose one bounded follow-up without reopening

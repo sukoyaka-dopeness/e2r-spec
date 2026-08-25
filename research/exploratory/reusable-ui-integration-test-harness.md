@@ -1,7 +1,6 @@
 # Reusable Vite UI Integration Test Harness
 
-Status: hypothesis supported; design candidate ready; no shared repository or
-package is approved.
+Status: research conclusion reached; implementation handoff ready.
 
 ## Motivation
 
@@ -129,7 +128,7 @@ handoff state, providers, selectors, actions, labels, and semantic assertions
 remain application-owned. Generic Dataset, locale, navigation, Timeline,
 Graph, or Hub options are rejected.
 
-## Current research conclusion
+## H6 conclusion snapshot (historical)
 
 **Hypothesis supported / design candidate ready**
 
@@ -138,7 +137,7 @@ The evidence supports a small reusable environment lifecycle abstraction.
 next step is H7 — Minimal Shared UI Integration Environment Design, still
 design-only.
 
-## Knowledge candidate
+## H6 knowledge candidate (historical)
 
 The following reusable rule is supported across three independent applications
 and is eligible for a workspace knowledge entry:
@@ -166,3 +165,67 @@ authorized by this checkpoint.
 
 No runtime, package, or test-infrastructure implementation is authorized by
 this research seed.
+
+## H15R — Research evidence synchronization
+
+H7 completed the minimal shared UI integration environment design. H8-H10
+then established the same canonical lifecycle boundary across three materially
+different consumers: Hub, LiaisonScape, and NarrativeLine. LiaisonScape passed
+with jsdom 26.1.0; Hub and NarrativeLine passed with jsdom 30.0.1. NarrativeLine
+retained its richer browser capabilities and URL-string / React-act
+compatibility as migration-local behavior.
+
+H11 selected a dedicated TypeScript-authored, Core-only package consumed as
+compiled ESM JavaScript with declarations. jsdom remains consumer-owned as a
+peer; React, Vite, browser stubs, Dataset state, and application semantics are
+excluded. Independent cloneability is a required distribution invariant.
+
+H12-H14 validated the exact same packed artifact without rebuild or repack:
+
+| Consumer | Language | jsdom | Result |
+|---|---|---:|---|
+| Hub | TypeScript | 30.0.1 | PASS |
+| LiaisonScape | TypeScript | 26.1.0 | PASS |
+| NarrativeLine | JavaScript / ESM | 30.0.1 | PASS |
+
+Artifact SHA-256:
+`E456014CBAAA6427580699DB29BD9F6F9A5B03E6523E3FA48C2BB076AB4EA096`.
+The proven peer expression is `26.1.0 || 30.0.1`; jsdom 27, 28, and 29 are
+untested and are not claimed as supported. No duplicate runtime jsdom was
+required. React, Vite, browser capabilities, fixtures, providers, and
+semantic assertions remained application-owned.
+
+H15 completed the permanent distribution design. **PUBLIC NPM** is selected,
+with **PUBLIC GIT TAG** as the fallback, because public npm best preserves
+`fresh clone → npm install → npm test` without sibling repositories, local
+tarballs, manual downloads, or ordinary contributor registry tokens.
+Publication has not occurred. Source ownership is separate: a new narrow
+package repository, conceptually `e2r-dom-test-environment`, is preferred.
+The existing `e2r-test-utils` remains an experimental prototype and is not yet
+a formal repository.
+
+## Research conclusion
+
+**Research conclusion reached / implementation handoff ready**
+
+Sharing is justified across three applications and both TypeScript and
+JavaScript/ESM consumers. The reusable package remains a Core-only DOM,
+global, and cleanup lifecycle abstraction, not a general React/Vite or
+application test framework. Package viability is demonstrated, while formal
+repository creation, license confirmation, Node support policy, README/API
+contract, final metadata, npm scope/access readiness, publication
+authorization, and consumer migration remain implementation/release work.
+
+The next bounded phase is **H16 — Package Repository Formalization /
+Pre-Publication Readiness**. H16 may create a local Git repository and prepare
+metadata, but must not create a remote, push, or publish without separate
+authorization.
+
+## Knowledge candidate
+
+**NO new Knowledge Candidate.** The accepted workspace decision already records
+the reusable principle that shared UI integration infrastructure owns
+environment lifecycle and cleanup, while application-specific state, browser
+capabilities, selectors, fixtures, and semantic assertions remain
+application-owned. The public npm choice is project-specific distribution
+design rather than a new reusable workspace rule.

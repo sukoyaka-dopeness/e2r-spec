@@ -1,0 +1,119 @@
+{
+  "version": "1.0",
+  "entities": [
+    {
+      "id": "e2r",
+      "name": "E2R",
+      "description": "A general-purpose data specification centered on Dataset, Entity, Event, and Relation."
+    },
+    {
+      "id": "e2r-core",
+      "name": "E2R Core 1.0",
+      "description": "The minimal interoperable E2R data model."
+    },
+    {
+      "id": "metadata-extension",
+      "name": "Metadata Extension 1.0.0 — Stable",
+      "description": "Stable Extension for optional Dataset identity and descriptive metadata."
+    },
+    {
+      "id": "history-extension",
+      "name": "History Extension 1.0.0 — Stable",
+      "description": "Stable Extension for temporal information on Events."
+    },
+    {
+      "id": "coordinate-draft",
+      "name": "Coordinate Extension 0.1.0 — Draft / Experimental",
+      "description": "Draft Extension for reusable Entity and Event positions in Dataset-defined Coordinate Spaces."
+    },
+    {
+      "id": "specification-draft",
+      "name": "Specification Extension 0.1.0 — Draft",
+      "description": "Draft Extension for declaring exact Extension specification versions and related lifecycle metadata."
+    },
+    {
+      "id": "lineage-draft",
+      "name": "Lineage Extension 0.1.0 — Draft / Experimental",
+      "description": "Draft Extension for direct Dataset ancestry claims using Dataset-ID parent targets."
+    },
+    {
+      "id": "narrative-line",
+      "name": "NarrativeLine",
+      "description": "E2R timeline editor and visualization application."
+    },
+    {
+      "id": "liaison-scape",
+      "name": "LiaisonScape",
+      "description": "E2R relationship-oriented exploration and editing application."
+    },
+    {
+      "id": "e2r-validator",
+      "name": "E2R Validator",
+      "description": "Validator for E2R Core and selected Extension structures, including Lineage Draft 0.1.0."
+    },
+    {
+      "id": "e2r-hub",
+      "name": "E2R Hub",
+      "description": "E2R ecosystem entry-point application; publication of this artifact is future work."
+    },
+    {
+      "id": "self-description",
+      "name": "E2R Self-Description",
+      "description": "Informative, experimental machine-readable dogfood Dataset describing the current E2R ecosystem."
+    }
+  ],
+  "events": [
+    {
+      "id": "lineage-draft-created",
+      "name": "Lineage Draft 0.1.0 created",
+      "description": "The Lineage Extension candidate became an explicit Draft document and payload shape."
+    },
+    {
+      "id": "cross-app-roundtrip-evidence",
+      "name": "Cross-application opaque round-trip evidence completed",
+      "description": "NarrativeLine and LiaisonScape preserved unsupported Lineage Draft data through representative load, edit, and export workflows."
+    },
+    {
+      "id": "lineage-diagnostic-design",
+      "name": "Lineage Validator diagnostic design completed",
+      "description": "Structural and local-semantic diagnostic behavior was designed without production Validator changes."
+    },
+    {
+      "id": "lineage-validator-recognized",
+      "name": "Validator gained Lineage Draft recognition",
+      "description": "E2R Validator 0.3.0 began recognizing and locally validating Lineage Draft 0.1.0."
+    }
+  ],
+  "relations": [
+    {"id": "e2r-describes-core", "sourceId": "e2r", "targetId": "e2r-core", "description": "describes"},
+    {"id": "metadata-extends-core", "sourceId": "metadata-extension", "targetId": "e2r-core", "description": "extends"},
+    {"id": "history-extends-core", "sourceId": "history-extension", "targetId": "e2r-core", "description": "extends"},
+    {"id": "coordinate-extends-core", "sourceId": "coordinate-draft", "targetId": "e2r-core", "description": "extends"},
+    {"id": "specification-extends-core", "sourceId": "specification-draft", "targetId": "e2r-core", "description": "extends"},
+    {"id": "lineage-extends-core", "sourceId": "lineage-draft", "targetId": "e2r-core", "description": "extends"},
+    {"id": "narrative-implements-e2r", "sourceId": "narrative-line", "targetId": "e2r", "description": "implements"},
+    {"id": "liaison-implements-e2r", "sourceId": "liaison-scape", "targetId": "e2r", "description": "implements"},
+    {"id": "validator-validates-e2r", "sourceId": "e2r-validator", "targetId": "e2r", "description": "validates"},
+    {"id": "hub-entry-point", "sourceId": "e2r-hub", "targetId": "e2r", "description": "entry point for"},
+    {"id": "self-description-describes-e2r", "sourceId": "self-description", "targetId": "e2r", "description": "describes"},
+    {"id": "self-description-uses-core", "sourceId": "self-description", "targetId": "e2r-core", "description": "uses"},
+    {"id": "self-description-uses-lineage", "sourceId": "self-description", "targetId": "lineage-draft", "description": "uses"},
+    {"id": "lineage-draft-event", "sourceId": "lineage-draft-created", "targetId": "lineage-draft", "description": "milestone"},
+    {"id": "roundtrip-event", "sourceId": "cross-app-roundtrip-evidence", "targetId": "e2r", "description": "milestone"},
+    {"id": "diagnostic-event", "sourceId": "lineage-diagnostic-design", "targetId": "e2r-validator", "description": "milestone"},
+    {"id": "validator-event", "sourceId": "lineage-validator-recognized", "targetId": "e2r-validator", "description": "milestone"}
+  ],
+  "extensions": {
+    "metadata": {
+      "datasetId": "e2r-self-description-0.1.0",
+      "title": "E2R Self-Description — Machine-Readable Dogfood",
+      "description": "Informative and experimental. Normative authority remains the E2R specification documents and registered specification artifacts."
+    },
+    "draft.github.sukoyaka-dopeness.lineage": {
+      "specVersion": "0.1.0",
+      "parents": [
+        {"kind": "derived", "target": {"datasetId": "l0-e2r-lineage-self-description"}}
+      ]
+    }
+  }
+}

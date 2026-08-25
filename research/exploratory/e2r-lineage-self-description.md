@@ -881,6 +881,65 @@ Dataset. The next phase should address remaining promotion gates such as
 broader invalid-case review and final Specification/version governance before
 any Stable decision.
 
+## L7 — Machine-Readable Dogfood / Self-Description Dataset
+
+Status: **MACHINE-READABLE DOGFOOD READY — HUB PUBLICATION DEFERRED**.
+
+Artifact: [`examples/e2r-self-description.json`](../../examples/e2r-self-description.json)
+
+Documentation: [`docs/e2r-self-description.md`](../../docs/e2r-self-description.md)
+
+The artifact is a bounded current-ecosystem Dataset with Core version `1.0`,
+Metadata `datasetId` `e2r-self-description-0.1.0`, 12 Entities, 4 Events, and
+17 Relations. It covers E2R/Core, the two registered Stable Extensions,
+Coordinate/Specification/Lineage Draft candidates, NarrativeLine,
+LiaisonScape, e2r-validator, and E2R Hub. It intentionally omits exhaustive
+history, hypothetical OpenE2R content, Source/Citation claims, and a new
+status or Relation semantics Extension.
+
+The artifact uses ordinary content self-description: `self-description`
+describes `e2r`. It also uses Lineage Draft `0.1.0` with one distinct parent,
+`l0-e2r-lineage-self-description`, and therefore exercises the Validator's
+Lineage path without self-reference. `lineage_self_reference` is absent.
+
+Production e2r-validator result:
+
+```text
+valid: true
+warning: extension_version_unspecified at /extensions/metadata
+```
+
+Lineage produces no error. The remaining Metadata warning is recorded rather
+than hidden; Specification Extension was not added merely to silence it.
+
+Read-only application smoke results against the same artifact:
+
+- NarrativeLine accepted the Dataset with 12 Entities, 4 Events, and 17
+  Relations available through its production import path; its installed
+  Validator reports the unsupported Lineage payload as an `unknown_extension`
+  warning, without rejection.
+- LiaisonScape accepted the Dataset with the same object counts through its
+  production load path, and a production serialization preserved the Lineage
+  payload; its installed Validator likewise reports `unknown_extension` while
+  remaining non-Lineage-aware.
+
+These application observations are compatibility/usefulness smoke evidence,
+not application Lineage support. The artifact is intentionally model-first;
+any graph or timeline presentation limitations are application concerns.
+
+Normative authority remains the Markdown specification and registered
+specification artifacts. Local creation is not blocked by S1, but Hub
+redistribution remains deferred pending standards/document licensing,
+artifact redistribution status, stable public path/URL, Hub handoff URLs, and
+final user-facing wording. No Hub, application, Validator, or ai-knowledge
+changes were made in L7. No new Knowledge Candidate is warranted.
+
+Dogfood quality result: the artifact uses current repository facts, provides
+meaningful Events and Relations, exercises recognized Lineage, distinguishes
+ordinary self-description from Lineage self-reference, and remains small
+enough for manual inspection. The recommended next phase is **S1 — E2R
+Standards Licensing Research** before Hub publication.
+
 ## L4 — Cross-application opaque round-trip evidence
 
 Status: **round-trip gate satisfied; Lineage remains Draft / Experimental / non-Stable**.

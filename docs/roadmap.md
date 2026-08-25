@@ -1114,6 +1114,30 @@ React `act(...)` warnings, and passing lint, build, and diff checks. A Home
 replacement-Cancel observation that ended on `body` remains non-blocking and
 was not silently fixed.
 
+### NarrativeLine Timeline Back-to-Top acceptance — 2026-08-25
+
+The accepted NarrativeLine Timeline Back-to-Top follow-up adds a conditional
+text action to the sticky Timeline toolbar. The action is hidden while the
+Timeline top sentinel is visible and appears after meaningful scroll, using
+`IntersectionObserver`. Its accepted labels are `↑ Top` and `↑ 上へ`.
+
+The accepted visible action order is `[Add Event] [↑ Top] [More]`; at the page
+top it remains `[Add Event] [More]`. Add Event remains the visible primary
+editing action, Back-to-Top is a transient navigation affordance, and More
+remains the terminal secondary workspace-action container with its existing
+panel alignment and behavior.
+
+Activation focuses the Timeline heading and then uses the document-level native
+scroll target `window.scrollTo({ top: 0, left: 0, behavior: "auto" })`. Smooth
+scrolling is not adopted. Manual acceptance passed for EN/JA, long Timeline
+top/middle/bottom states, sticky behavior, keyboard and pointer activation,
+heading focus handoff, desktop and 701/700/601/600px layouts, approximately
+320px layout, More alignment/stacking, and absence of horizontal overflow.
+The approximately 320px Japanese wrap of More is accepted. Automated evidence
+remains 181/181 tests passing with no React `act(...)` warnings and passing
+lint, build, and diff checks. No Dataset, navigation, modal, locale, Core, or
+Extension semantics changed, and no push was performed.
+
 ## Immediate sequence
 
 1. NarrativeLine nested Event Detail / Entity Detail / Entity Picker / Entity

@@ -8,8 +8,8 @@
       "datasetId": "recipe-collection-derived-v0",
       "title": "Family Recipe Collection (hypothetical derived Dataset)"
     },
-    "lineage": {
-      "version": "0.1.0",
+    "draft.github.sukoyaka-dopeness.lineage": {
+      "specVersion": "0.1.0",
       "parents": [
         { "kind": "derived", "target": { "datasetId": "recipe-notes-a" } },
         { "kind": "derived", "target": { "datasetId": "recipe-notes-b" } }

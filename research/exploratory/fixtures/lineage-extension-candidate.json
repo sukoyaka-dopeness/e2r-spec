@@ -14,8 +14,8 @@
       "datasetId": "l1-lineage-candidate",
       "title": "L1 Lineage Extension Candidate Fixture"
     },
-    "lineage": {
-      "version": "0.1.0",
+    "draft.github.sukoyaka-dopeness.lineage": {
+      "specVersion": "0.1.0",
       "parents": [
         {"kind": "fork", "target": {"datasetId": "e2r-core-2"}}
       ]

@@ -20,6 +20,8 @@ registered as Stable:
 
 - [Coordinate Extension Draft](coordinate-extension-draft.md)
   (`draft.github.sukoyaka-dopeness.coordinate`, draft `0.1.0`)
+- [Lineage Extension Draft](lineage-extension-draft.md)
+  (`draft.github.sukoyaka-dopeness.lineage`, draft `0.1.0`)
 - [Coordinate Extension Prototype](coordinate-extension.md)
   (`experimental.github.sukoyaka-dopeness.coordinate`, frozen prototype
   `0.1.0`; retained as the migration source and interoperability baseline)

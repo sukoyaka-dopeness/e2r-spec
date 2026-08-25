@@ -8,8 +8,8 @@
       "datasetId": "field-guide-2026",
       "title": "Coastal Field Guide 2026 (hypothetical revision)"
     },
-    "lineage": {
-      "version": "0.1.0",
+    "draft.github.sukoyaka-dopeness.lineage": {
+      "specVersion": "0.1.0",
       "parents": [
         { "kind": "revision", "target": { "datasetId": "field-guide-2025" } }
       ]

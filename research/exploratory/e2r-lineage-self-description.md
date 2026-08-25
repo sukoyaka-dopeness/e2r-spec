@@ -692,3 +692,19 @@ license compliance, E2R naming, or legal canonicality. No new Knowledge
 Candidate is warranted: the durable rules remain identity distinct from
 location, provenance distinct from supremacy, and compatibility as scoped
 claims.
+
+### L3 handoff — Draft Extension 0.1.0
+
+L2 has now been expressed as the non-Stable Draft at
+[`extensions/lineage-extension-draft.md`](../../extensions/lineage-extension-draft.md).
+The Draft resolves the temporary fixture marker `lineage.version` into the
+repository convention `specVersion` under the exact placeholder identifier
+`draft.github.sukoyaka-dopeness.lineage`. The four exploratory fixtures were
+updated to that Draft shape; they remain under `research/exploratory/fixtures/`
+and are not canonical public examples.
+
+This is a documentation and candidate-shape checkpoint only. The Validator,
+Core, applications, and ai-knowledge remain unchanged. Current Validator runs
+still demonstrate Core validity and unknown-Extension preservation, not
+Lineage semantic validation. L4 would need dedicated opaque round-trip
+evidence from NarrativeLine and LiaisonScape before any promotion decision.

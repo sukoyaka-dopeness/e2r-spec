@@ -69,6 +69,19 @@ The architecture baseline comes from:
   semantics and does not authorize Names writers, Relative Time semantics,
   Source/Citation product integration, or other deferred research work.
 
+### Cross-repository software licensing direction
+
+The current software-release direction is MIT, with copyright-holder direction
+`sukoyaka-dopeness`, for E2R Hub, NarrativeLine, LiaisonScape, E2R Validator,
+and reusable E2R software utilities, including the planned
+`e2r-dom-test-environment` package. This is a project policy/direction, not
+itself a license grant; each software repository must receive its own
+`LICENSE` and package metadata synchronization in a separate bounded phase.
+
+`e2r-spec` is deliberately excluded. Its standards/document licensing requires
+a separate decision, to be resolved before the final public-release audit and
+preferably before Push/deployment readiness.
+
 ### Stable specification foundation
 
 - Core defines Dataset, Entity, Event, and Relation.

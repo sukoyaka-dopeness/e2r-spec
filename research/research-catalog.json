@@ -18,9 +18,9 @@
     "noFilesystemChanges": true
   },
   "summary": {
-    "totalFiles": 167,
+    "totalFiles": 168,
     "markdownFiles": 136,
-    "toolFiles": 31
+    "toolFiles": 32
   },
   "entries": [
     {
@@ -4245,6 +4245,28 @@
       "proposedPath": "research/exploratory/fixtures/e2r-lineage-self-description.json",
       "moveBatch": "post-closure-research-addition",
       "moveImpact": "new exploratory fixture",
+      "subBatch": null
+    },
+    {
+      "path": "research/exploratory/fixtures/lineage-extension-candidate.json",
+      "workstream": "general-research",
+      "documentRole": "evidence",
+      "status": "needs-review",
+      "normativity": "evidence-only",
+      "entryPoint": false,
+      "supersededBy": [],
+      "dependsOn": [],
+      "referencedBy": [
+        "research/exploratory/e2r-lineage-self-description.md"
+      ],
+      "moveRisk": "low",
+      "adjudication": {
+        "confidence": "needs-review",
+        "basis": "Non-normative unknown-Extension candidate fixture; it demonstrates preservation only and has no Lineage validation status."
+      },
+      "proposedPath": "research/exploratory/fixtures/lineage-extension-candidate.json",
+      "moveBatch": "post-closure-research-addition",
+      "moveImpact": "new exploratory candidate fixture",
       "subBatch": null
     }
   ],

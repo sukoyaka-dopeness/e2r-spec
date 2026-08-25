@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "entities": [
+    {"id": "open-e2r-2", "name": "OpenE2R 2.0 (hypothetical fork)"},
+    {"id": "e2r-core-2", "name": "E2R Core 2.0 (hypothetical parent)"},
+    {"id": "translation-ja", "name": "Unofficial Japanese Translation (hypothetical)"}
+  ],
+  "events": [
+    {"id": "relation-rule-change", "name": "Hypothetical Relation endpoint rule change"}
+  ],
+  "relations": [],
+  "extensions": {
+    "metadata": {
+      "datasetId": "l1-lineage-candidate",
+      "title": "L1 Lineage Extension Candidate Fixture"
+    },
+    "lineage": {
+      "version": "0.1.0",
+      "parents": [
+        {"kind": "fork", "target": {"datasetId": "e2r-core-2"}}
+      ],
+      "changes": [
+        {"reference": {"targetKind": "event", "localId": "relation-rule-change"}}
+      ],
+      "translationExample": {
+        "kind": "translation",
+        "target": {"datasetId": "e2r-core-2"},
+        "status": "unofficial"
+      }
+    }
+  }
+}

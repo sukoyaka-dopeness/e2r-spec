@@ -205,13 +205,17 @@ These are Draft design cases, not executable Validator failures yet.
 The current Validator is not Lineage-aware. Current fixture runs demonstrate
 Core validity and unknown-Extension preservation only; they do not validate
 Lineage semantics. Dedicated opaque preservation and round-trip evidence is
-required from both NarrativeLine and LiaisonScape before this Draft can move
-beyond Draft.
+now recorded for both NarrativeLine and LiaisonScape: the unsupported Draft
+payload survived representative load/edit/export workflows, including an
+unknown nested sentinel. Neither application interprets Lineage semantics.
+See the L4 research evidence for exact test paths and commits. This evidence
+does not make Lineage supported by either application or move the Draft beyond
+Draft maturity.
 
 Promotion gates are: reviewed semantics; confirmed Metadata dependency;
 resolved Specification Extension declaration; structural schema/Validator
-strategy; dedicated NarrativeLine and LiaisonScape round-trip evidence;
-invalid-case diagnostics; at least two ordinary Dataset cases; an E2R
+strategy; **dedicated NarrativeLine and LiaisonScape round-trip evidence
+(satisfied by L4)**; invalid-case diagnostics; at least two ordinary Dataset cases; an E2R
 self-dogfood case; unknown-field preservation; no Core conflict; and
 understood S1 licensing implications. No promotion is made by this document.
 

@@ -708,3 +708,50 @@ Core, applications, and ai-knowledge remain unchanged. Current Validator runs
 still demonstrate Core validity and unknown-Extension preservation, not
 Lineage semantic validation. L4 would need dedicated opaque round-trip
 evidence from NarrativeLine and LiaisonScape before any promotion decision.
+
+## L4 — Cross-application opaque round-trip evidence
+
+Status: **round-trip gate satisfied; Lineage remains Draft / Experimental / non-Stable**.
+
+The same committed specimen, `research/exploratory/fixtures/lineage-extension-candidate.json`,
+was used by both applications. Its payload identifier was
+`draft.github.sukoyaka-dopeness.lineage` and its Draft version was
+`specVersion: "0.1.0"`. Each application test added the same application-test-only
+future sentinel:
+
+```json
+"futureSentinel": { "token": "preserve-me" }
+```
+
+The sentinel is not present in the Draft document or canonical fixtures.
+
+### NarrativeLine
+
+- Commit: `8b0dd76 test: preserve Lineage Draft through NarrativeLine`
+- Test: `tests/sourceCitationPreservation.test.js`
+- Workflow: `importDatasetJson` loaded the specimen, an Entity name was edited,
+  and `exportDatasetJson` produced the output.
+- Result: the complete unsupported Lineage object, including `specVersion`,
+  `parents`, `kind`, `target.datasetId`, and `futureSentinel`, was deep-equal
+  before and after the unrelated edit/export.
+- Checks: focused preservation test passed; full test suite passed (182);
+  lint, build, and `git diff --check` passed.
+
+### LiaisonScape
+
+- Commit: `b0c2057 test: preserve Lineage Draft through LiaisonScape`
+- Test: `tests/dataset.test.ts`
+- Workflow: `loadDataset` loaded the specimen, `updateEntityDetails` changed
+  an unrelated Entity name, and `serializeDataset` produced the output.
+- Result: the complete unsupported Lineage object, including `specVersion`,
+  `parents`, `kind`, `target.datasetId`, and `futureSentinel`, was deep-equal
+  before and after the unrelated edit/export.
+- Checks: focused test passed; full test suite passed (182); lint, build, and
+  `git diff --check` passed.
+
+This is evidence that both applications preserve the unsupported Draft payload
+through representative load/edit/export workflows. Neither application
+interprets Lineage semantics, validates parent relationships, exposes Lineage
+UI, or claims Lineage support. The evidence does not cover every acquisition,
+storage/session, or browser-download route, and does not replace future
+Lineage-aware Validator tests.

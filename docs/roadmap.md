@@ -1088,6 +1088,32 @@ prototype, real/manual acceptance, and then LiaisonScape parity. The future
 trigger is a text `More` / `その他` control, not an icon-only trigger, and
 Dataset acquisition is not assigned to right-click context menus.
 
+### NarrativeLine Workspace More acceptance — 2026-08-25
+
+The C2 deferral above is historical and remains accurate for the point at
+which only Open Dataset was considered. During the subsequent NarrativeLine
+C3/C4 work, Export was accepted as a second meaningful secondary action. The
+current accepted result is a text `More` / `その他` menu containing `Open E2R
+Dataset` and `Export E2R JSON`.
+
+Add Event remains visible as the Timeline's primary editing action. Home
+New / Open / Sample remains the canonical primary Dataset acquisition and
+replacement path; workspace Open is secondary convenience access. LiaisonScape
+keeps its current Workspace Open / Import presentation, with conceptual parity
+deferred to a later separately scoped follow-up.
+
+TimelineScreen owns surface-local file acquisition through the local picker,
+file read, same-file reset, and local loading/error presentation. App owns
+Dataset parsing, validation, candidate staging, replacement safety, and final
+acceptance. The accepted C4 modal contract includes backdrop dismissal and
+opener focus restoration; native OS file selection, picker Cancel focus, and
+real touch remain explicit manual boundaries.
+
+The accepted NarrativeLine evidence is 181/181 automated tests passing, zero
+React `act(...)` warnings, and passing lint, build, and diff checks. A Home
+replacement-Cancel observation that ended on `body` remains non-blocking and
+was not silently fixed.
+
 ## Immediate sequence
 
 1. NarrativeLine nested Event Detail / Entity Detail / Entity Picker / Entity

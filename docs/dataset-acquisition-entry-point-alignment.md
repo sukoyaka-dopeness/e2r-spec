@@ -226,6 +226,78 @@ This record does not implement or authorize:
 - user guide changes; or
 - Hub integration.
 
+## NarrativeLine workspace secondary menu acceptance — 2026-08-25
+
+The bounded C2 decision was subsequently exercised and revised through the
+NarrativeLine C3/C4 implementation and acceptance work. The historical C2
+decision remains valid as the earlier sequencing decision: a one-item More
+menu was deferred, Home remained canonical, and Add Event and Export remained
+visible while the menu contents were still unresolved.
+
+The accepted C4 result is now:
+
+```text
+Timeline primary action
+    Add Event                    = visible primary editing action
+
+Timeline secondary actions
+    More / その他
+        Open E2R Dataset         = secondary workspace acquisition
+        Export E2R JSON           = secondary workspace action
+```
+
+This is a two-item secondary menu, not a one-item container introduced only
+for future extensibility. Add Event remains visible and Export is no longer
+required to occupy the primary toolbar once it has a meaningful, discoverable
+secondary-menu home. Home New / Open / Sample remains the canonical primary
+Dataset acquisition and replacement path; workspace Open remains a secondary
+convenience and does not replace the Home-first lifecycle boundary.
+
+The accepted NarrativeLine ownership boundary is:
+
+```text
+TimelineScreen
+    local file input / file.text() / same-file reset / loading and local error UI
+        -> App.handleImportDataset(source)
+            parse / validation
+            candidate staging
+            replacement decision and Dataset Replacement Safety
+            candidate acceptance
+```
+
+Timeline owns acquisition up to the local file-read result. App owns the
+meaning of a Dataset and all validation, candidate, replacement-safety, and
+acceptance decisions. This preserves one application-level Dataset safety
+boundary while allowing the Home and Timeline surfaces to provide local file
+acquisition adapters.
+
+The accepted More menu and Dataset replacement acceptance includes a modal
+backdrop contract: clicking the backdrop dismisses the modal according to the
+existing safe dismissal semantics, and closing restores focus to the opener.
+This contract is distinct from native operating-system file selection and
+from the browser's exact focus behavior when a picker is cancelled. Native
+file selection/change behavior, picker Cancel focus, real touch interaction,
+and same-file manual selection remain acceptance boundaries; same-file reset
+is covered by automated tests.
+
+The NarrativeLine checkpoint was accepted with full automated evidence of
+181/181 tests passing, zero React `act(...)` warnings, and passing lint, build,
+and diff checks. Manual acceptance covered the More trigger and keyboard
+navigation, Open/Export behavior, replacement safety, backdrop dismissal and
+focus restoration, responsive layouts, English/Japanese presentation, and
+real Chrome behavior. One Home replacement-Cancel observation left focus on
+`body`; it is non-blocking evidence and was not silently corrected in this
+checkpoint.
+
+LiaisonScape conceptual parity remains a follow-up. Its current Workspace
+Open / Import presentation is not changed by this record. The accepted
+implementation sequence remains NarrativeLine prototype and acceptance first,
+then a separately scoped LiaisonScape parity evaluation.
+
+This acceptance changes no Core, Extension, Dataset schema, Dataset Handoff,
+or Dataset Replacement Safety semantics. It records application UI ownership,
+sequencing, and bounded acceptance evidence only.
+
 ## Decision status
 
 The primary-entry-point direction and the bounded deferral above are accepted

@@ -198,13 +198,18 @@ its own Metadata `datasetId`; empty `parents`; missing or empty parent
 `datasetId`; an unknown `kind`; a repeated identical `(kind, datasetId)` pair;
 and a Lineage payload without the required Metadata identity.
 
-These are Draft design cases, not executable Validator failures yet.
+These are Draft invalid cases implemented by the current e2r-validator as
+Lineage-specific error diagnostics. The Draft remains Experimental and this
+implementation does not make it Stable.
 
 ## Application and promotion boundary
 
-The current Validator is not Lineage-aware. Current fixture runs demonstrate
-Core validity and unknown-Extension preservation only; they do not validate
-Lineage semantics. Dedicated opaque preservation and round-trip evidence is
+The current e2r-validator recognizes Draft `0.1.0` and validates its structural
+and local semantic rules. Valid recognized Lineage no longer receives an
+`unknown_extension` warning; invalid recognized payloads receive Lineage
+errors. Unknown nested fields remain preserved and unresolved parents remain
+valid. This implementation does not validate non-local semantics. Dedicated
+opaque preservation and round-trip evidence is
 now recorded for both NarrativeLine and LiaisonScape: the unsupported Draft
 payload survived representative load/edit/export workflows, including an
 unknown nested sentinel. Neither application interprets Lineage semantics.

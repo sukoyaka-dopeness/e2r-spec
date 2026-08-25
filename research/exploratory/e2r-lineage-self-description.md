@@ -844,6 +844,43 @@ This design does not implement Lineage validation, does not promote the Draft,
 and does not create a Knowledge Candidate. The next bounded phase is **L6 —
 Lineage Draft Validator 0.1.0 Implementation**.
 
+## L6 — Lineage Draft Validator 0.1.0 implementation evidence
+
+Status: **implemented in e2r-validator; Draft remains Experimental / non-Stable**.
+
+Validator commit: `49b2751 feat: validate Lineage Draft 0.1.0`.
+
+The implementation uses the L5 seam: `src/extension-validator.js` recognizes
+the exact Draft identifier and dispatches to the self-contained
+`src/lineage-draft-validator.js`. It validates the exact `specVersion`, the
+Metadata `datasetId` dependency, parent structure, the four closed kinds,
+self-reference, and duplicate `(kind, target.datasetId)` pairs. It preserves
+unknown payload/parent/target fields, parent order, spelling, and input
+immutability. It does not resolve parents or validate global cycles, URLs,
+hashes, authenticity, compatibility, fidelity, authority, licensing, or merge
+behavior.
+
+Valid recognized Lineage no longer emits `unknown_extension`. The four L3
+fixtures all return `valid: true`; their only diagnostic is the pre-existing
+Metadata `extension_version_unspecified` warning. Invalid recognized Lineage
+returns `error` diagnostics from the L6 code set without an additional
+`unknown_extension`. Local validation works without a Specification Extension
+payload; existing Specification diagnostics remain independently responsible
+for declaration behavior.
+
+Production evidence includes the four valid kinds, multiple parents, same
+target under different kinds, unknown nested fields, unresolved parents,
+absent Lineage, all L5 invalid structural/local cases, deterministic ordering,
+cascading suppression, and non-mutation. e2r-validator gates passed: 102 full
+tests, 3 fixture tests, lint, and diff check. NarrativeLine and LiaisonScape
+were not changed; their L4 opaque round-trip evidence remains valid historical
+evidence because they do not consume this local Validator checkout.
+
+This does not promote the Draft to Stable and does not create a self-description
+Dataset. The next phase should address remaining promotion gates such as
+broader invalid-case review and final Specification/version governance before
+any Stable decision.
+
 ## L4 — Cross-application opaque round-trip evidence
 
 Status: **round-trip gate satisfied; Lineage remains Draft / Experimental / non-Stable**.

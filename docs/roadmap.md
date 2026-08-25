@@ -690,6 +690,9 @@ Other continuing topics include:
   through an explicit follow-up version decision.
 - Keep Japanese and English guides aligned when behavior changes.
 - Preserve the LiaisonScape MVP boundary while architecture work continues.
+- Long-form Core Object Content / body applicability remains a research
+  follow-up; responsibility between `description`, a Content/Text Extension,
+  and a future Core field is UNDECIDED.
 - Treat major desktop/mobile UI divergence as later application design work,
   not a Core or Extension requirement.
 - Add NarrativeLine time-of-day controls through progressive disclosure when

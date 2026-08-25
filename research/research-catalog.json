@@ -18,8 +18,8 @@
     "noFilesystemChanges": true
   },
   "summary": {
-    "totalFiles": 164,
-    "markdownFiles": 134,
+    "totalFiles": 165,
+    "markdownFiles": 135,
     "toolFiles": 30
   },
   "entries": [
@@ -4184,6 +4184,23 @@
       "proposedPath": "research/exploratory/relation-direction-and-arrow-appearance.md",
       "moveBatch": "post-closure-research-addition",
       "moveImpact": "new exploratory document; no reorganization batch",
+      "subBatch": null
+    },
+    {
+      "path": "research/exploratory/reusable-ui-integration-test-harness.md",
+      "workstream": "general-research",
+      "documentRole": "exploration",
+      "status": "needs-review",
+      "normativity": "non-normative",
+      "entryPoint": false,
+      "supersededBy": null,
+      "dependsOn": [],
+      "referencedBy": [],
+      "moveRisk": "low",
+      "adjudication": "Three-application evidence supports a design candidate, but no shared API or implementation has been accepted.",
+      "proposedPath": "research/exploratory/reusable-ui-integration-test-harness.md",
+      "moveBatch": "post-closure-research-addition",
+      "moveImpact": "research checkpoint synchronization; no reorganization batch",
       "subBatch": null
     }
   ],

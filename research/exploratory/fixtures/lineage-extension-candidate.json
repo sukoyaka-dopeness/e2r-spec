@@ -18,15 +18,7 @@
       "version": "0.1.0",
       "parents": [
         {"kind": "fork", "target": {"datasetId": "e2r-core-2"}}
-      ],
-      "changes": [
-        {"reference": {"targetKind": "event", "localId": "relation-rule-change"}}
-      ],
-      "translationExample": {
-        "kind": "translation",
-        "target": {"datasetId": "e2r-core-2"},
-        "status": "unofficial"
-      }
+      ]
     }
   }
 }

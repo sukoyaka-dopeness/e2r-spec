@@ -378,3 +378,181 @@ Knowledge Candidate: **NO Knowledge Candidate**. The design cases strengthen
 the hypotheses that canonicality is provenance rather than supremacy and that
 compatibility is a scoped claim, but neither rule is ready for workspace
 promotion in this checkpoint.
+
+## L1.5 — Lineage reference and evidence boundary resolution
+
+Status: Boundary checkpoint; candidate identifier `lineage` and version
+`0.1.0` remain exploratory, unregistered, and non-normative.
+
+### Reference inventory
+
+- A parent Dataset needs its conceptual `datasetId`. A retrieval URL, mirror,
+  handoff URL, or acquisition location is not identity.
+- A semantic-change reference may point to a local Event, but Lineage should
+  reuse the future general Target Reference shape rather than invent a
+  Lineage-specific local-reference syntax.
+- Evidence for a compatibility claim may point to Source/Citation material,
+  a Validator report, or another record. Lineage does not need to own the
+  evidence lifecycle for the minimal parent relationship.
+
+### Dataset identity and location
+
+`datasetId` alone is sufficient for the minimum parent identity contract,
+subject to its known limits: it is opaque, need not be globally unique under
+Metadata 1.0, and requires a future resolution scope for cross-Dataset use.
+Adding `url` would conflate identity with acquisition and would break the
+meaning when a Dataset is copied, mirrored, moved, or handed off. Parent
+locations belong to retrieval/source responsibilities and are optional future
+metadata, not Lineage identity.
+
+The selected minimum target is therefore:
+
+```json
+{"datasetId": "e2r-core-2"}
+```
+
+The generic Target Reference model remains the future owner of scope, target
+kind, external resolution, and `malformed`/`unknown`/`missing`/`resolved` /
+`ambiguous` diagnostics. It is not required to block L2's Dataset-level case.
+
+### Local and external references
+
+L1's `{targetKind, localId}` example is not frozen. For L2, a parent uses the
+Dataset identity above; an internal change reference is deferred and may later
+reuse Target Reference. Cross-Dataset object references are **NOT REQUIRED FOR
+LINEAGE v0**. They would add scope and resolution complexity without helping
+the minimum ancestry contract.
+
+### Source, evidence, and compatibility boundary
+
+These facts remain distinct:
+
+```text
+Dataset B forkedFrom Dataset A       = Lineage
+Dataset B used Article X             = Source/Citation
+Validator report Y supports a claim  = evidence/claim responsibility
+Dataset A was acquired from URL Z    = retrieval/location responsibility
+who published A                      = publisher/metadata responsibility
+```
+
+Evidence can become stale as Validators, versions, or derived Datasets change.
+That lifecycle belongs to the claim/evidence responsibility. Lineage may
+reference such a claim later, but does not own verification, freshness,
+authentication, or cryptographic trust. Compatibility ownership is **C3:
+Lineage may reference claims but does not own claim semantics**.
+
+### Translation, profile, and revision
+
+`translationOf` records ancestry only. Translator identity, official or
+unofficial status, fidelity, and stale-source status belong to metadata,
+publisher, or separate claim responsibilities; none is implied by the kind.
+
+`profileOf` is **DEFERRED — SPECIFICATION BOUNDARY**. A profile that only
+restricts or configures a specification is closer to Specification Extension
+than to Dataset ancestry. It should not be retained in Lineage v0 merely
+because L1 listed it.
+
+`revisionOf` is not a second version field. A version identifies an artifact;
+`revisionOf` relates two independently identifiable artifacts. Without a
+parent identity, the relation carries no useful meaning.
+
+### Parents and lifecycle safety
+
+Lineage v0 may contain multiple parent records. Parent order has no semantics;
+duplicate identical parents should be warnable or invalid in a later validator,
+while the same parent with different explicit kinds remains a future semantic
+question. Merge behavior is not defined.
+
+Self-reference is **INVALID** for a local Dataset-level parent record. Global
+multi-Dataset cycles are deferred because external resolution may be
+unavailable. An unresolved parent does not invalidate the Dataset: its identity
+assertion survives, resolution may fail, and no network is required for
+reading. If the original URL disappears, the lineage remains meaningful.
+
+Hash/content addressing is **DEFERRED**. Exact bytes, canonical JSON,
+signatures, and integrity are separate release/security concerns and are not
+needed for Lineage v0.
+
+### Simplified Lineage v0 candidate
+
+The strongest current candidate is intentionally reduced to parents only:
+
+```json
+{
+  "extensions": {
+    "lineage": {
+      "version": "0.1.0",
+      "parents": [
+        {"kind": "fork", "target": {"datasetId": "e2r-core-2"}}
+      ]
+    }
+  }
+}
+```
+
+Ownership of this candidate is:
+
+- Lineage: `parents`, `kind`, and the provenance meaning of the relationship.
+- Target Reference: target scope, target kind, resolution, and lifecycle
+  diagnostics when that model is available.
+- Metadata: Dataset identity and title.
+- Source/Citation/claim responsibility: evidence, claimant, publisher,
+  retrieval location, fidelity, and compatibility semantics.
+
+Deferred from v0: `changes`, compatibility claims, evidence, publisher,
+translation status, `profileOf`, URLs, hashes, cross-Dataset object targets,
+merge semantics, and cryptographic identity.
+
+### Machine kind vocabulary
+
+Use noun values in the payload context: `derived`, `revision`, `fork`, and
+`translation`. The surrounding `parents` field supplies the relationship
+direction, so noun values are shorter and avoid inverse-verb ambiguity. This
+is a candidate convention, not a registered vocabulary.
+
+### Updated dogfood cases
+
+Specification lineage:
+
+```text
+E2R Core Dataset B
+  parents: [{kind: revision, target: {datasetId: E2R Core Dataset A}}]
+
+OpenE2R Dataset C
+  parents: [{kind: fork, target: {datasetId: E2R Core Dataset B}}]
+
+Unofficial Japanese Translation Dataset D
+  parents: [{kind: translation, target: {datasetId: E2R Core Dataset B}}]
+```
+
+Ordinary Dataset lineage:
+
+```text
+Japanese Dataset B
+  parents: [{kind: translation, target: {datasetId: English Dataset A}}]
+
+Research Fork C
+  parents: [{kind: fork, target: {datasetId: English Dataset A}}]
+```
+
+No claim fields are needed for these ancestry examples.
+
+### L1.5 decisions and next phase
+
+Target Reference decision: **MINIMAL DATASET-ID REFERENCE SUFFICIENT FOR L2;
+TARGET REFERENCE CAN EVOLVE LATER**.
+
+Source/Citation decision: **SOURCE/CITATION NOT REQUIRED FOR MINIMAL L2;
+EVIDENCE CLAIMS DEFERRED**.
+
+The next bounded phase is **L2 — Minimal Dataset Lineage Candidate v0**:
+parents only, bounded kinds, Dataset-ID targets, self-reference rule,
+unresolved-parent behavior, multiple parents, forward compatibility, two
+ordinary Dataset cases, and one E2R self-dogfood case. L2 should not design
+compatibility claims, merge behavior, or a universal reference system.
+
+For S1 licensing research, persistent Dataset identity means forks and
+translations can retain machine-readable origin even when source URLs vanish
+or the parent becomes inactive. Lineage cannot prevent misleading branding,
+false claims, trademark misuse, or official endorsement; machine provenance
+and legal attribution remain separate.

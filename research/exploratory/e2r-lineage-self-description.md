@@ -196,4 +196,3 @@ datasets and boundaries before promotion.
 Next bounded phase: Lineage Extension design, with Source/Citation and Target
 Reference boundary review before selecting payload fields. Do not start that
 phase automatically.
-

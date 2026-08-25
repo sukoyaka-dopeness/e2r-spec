@@ -82,6 +82,21 @@ itself a license grant; each software repository must receive its own
 a separate decision, to be resolved before the final public-release audit and
 preferably before Push/deployment readiness.
 
+### Standards licensing policy decision — 2026-08-25
+
+S2 accepted the role-based policy in
+`research/standards-licensing/decisions/e2r-standards-license-decision.md`:
+CC BY 4.0 for project-authored specification/documentation prose, MIT for
+standalone schema/code-like specification artifacts, and CC0 1.0 for eligible
+project-created example, research fixture, and machine-readable dogfood data.
+The existing MIT direction for E2R software repositories is reaffirmed. This
+is a policy decision, not license-file or package-metadata implementation.
+
+S3 remains required for the formal repository license application and
+provenance audit. Hub publication of the Self-Description Dataset remains
+blocked until that formalization and the ordinary public URL/redistribution
+readiness checks are complete.
+
 ### Stable specification foundation
 
 - Core defines Dataset, Entity, Event, and Relation.

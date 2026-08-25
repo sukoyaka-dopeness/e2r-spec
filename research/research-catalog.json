@@ -18,8 +18,8 @@
     "noFilesystemChanges": true
   },
   "summary": {
-    "totalFiles": 174,
-    "markdownFiles": 137,
+    "totalFiles": 175,
+    "markdownFiles": 138,
     "toolFiles": 37
   },
   "entries": [
@@ -4364,6 +4364,22 @@
       "proposedPath": "research/exploratory/e2r-standards-licensing.md",
       "moveBatch": "post-2026-08-25-catalog-sync",
       "moveImpact": "new exploratory standards licensing research"
+    },
+    {
+      "path": "research/standards-licensing/decisions/e2r-standards-license-decision.md",
+      "workstream": "standards-licensing",
+      "documentRole": "decision",
+      "status": "accepted",
+      "normativity": "non-normative",
+      "entryPoint": false,
+      "supersededBy": [],
+      "dependsOn": ["research/exploratory/e2r-standards-licensing.md"],
+      "referencedBy": ["docs/roadmap.md"],
+      "moveRisk": "low",
+      "adjudication": {"confidence": "high", "basis": "S2 records the accepted role-based standards licensing policy and explicitly defers license-file formalization to S3."},
+      "proposedPath": "research/standards-licensing/decisions/e2r-standards-license-decision.md",
+      "moveBatch": "post-2026-08-25-catalog-sync",
+      "moveImpact": "new accepted standards licensing decision record"
     }
   ],
   "adjudicationPass": {

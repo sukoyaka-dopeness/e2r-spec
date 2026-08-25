@@ -155,6 +155,15 @@ public release or `LICENSE` change.
 6. What happens to canonical publication if the steward becomes inactive,
    transfers stewardship, or an independent fork becomes the maintained line?
 
+## S2 disposition
+
+S2 converted this research recommendation into the accepted project policy
+record [`research/standards-licensing/decisions/e2r-standards-license-decision.md`](../standards-licensing/decisions/e2r-standards-license-decision.md).
+The selected policy is Mixed Model D: CC BY 4.0 for project-authored prose,
+MIT for standalone schema/code-like artifacts, and CC0 1.0 for eligible
+project-created example, fixture, and dogfood data. S3 remains responsible for
+actual license-file creation, provenance audit, and public formalization.
+
 ## Disposition
 
 S1 is complete as exploratory research. No `LICENSE` file, package metadata,

@@ -18,9 +18,9 @@
     "noFilesystemChanges": true
   },
   "summary": {
-    "totalFiles": 168,
+    "totalFiles": 171,
     "markdownFiles": 136,
-    "toolFiles": 32
+    "toolFiles": 35
   },
   "entries": [
     {
@@ -4268,6 +4268,54 @@
       "moveBatch": "post-closure-research-addition",
       "moveImpact": "new exploratory candidate fixture",
       "subBatch": null
+    },
+    {
+      "path": "research/exploratory/fixtures/lineage-v0-derived.json",
+      "workstream": "general-research",
+      "documentRole": "evidence",
+      "status": "needs-review",
+      "normativity": "evidence-only",
+      "entryPoint": false,
+      "supersededBy": [],
+      "dependsOn": [],
+      "referencedBy": ["research/exploratory/e2r-lineage-self-description.md"],
+      "moveRisk": "low",
+      "adjudication": {"confidence": "medium", "basis": "Non-normative ordinary Dataset fixture for the L2 derived and multiple-parent candidate case."},
+      "proposedPath": "research/exploratory/fixtures/lineage-v0-derived.json",
+      "moveBatch": "post-closure-research-addition",
+      "moveImpact": "new exploratory candidate fixture"
+    },
+    {
+      "path": "research/exploratory/fixtures/lineage-v0-revision.json",
+      "workstream": "general-research",
+      "documentRole": "evidence",
+      "status": "needs-review",
+      "normativity": "evidence-only",
+      "entryPoint": false,
+      "supersededBy": [],
+      "dependsOn": [],
+      "referencedBy": ["research/exploratory/e2r-lineage-self-description.md"],
+      "moveRisk": "low",
+      "adjudication": {"confidence": "medium", "basis": "Non-normative ordinary Dataset fixture for the L2 revision candidate case."},
+      "proposedPath": "research/exploratory/fixtures/lineage-v0-revision.json",
+      "moveBatch": "post-closure-research-addition",
+      "moveImpact": "new exploratory candidate fixture"
+    },
+    {
+      "path": "research/exploratory/fixtures/lineage-v0-translation.json",
+      "workstream": "general-research",
+      "documentRole": "evidence",
+      "status": "needs-review",
+      "normativity": "evidence-only",
+      "entryPoint": false,
+      "supersededBy": [],
+      "dependsOn": [],
+      "referencedBy": ["research/exploratory/e2r-lineage-self-description.md"],
+      "moveRisk": "low",
+      "adjudication": {"confidence": "medium", "basis": "Non-normative ordinary Dataset fixture for the L2 translation candidate case."},
+      "proposedPath": "research/exploratory/fixtures/lineage-v0-translation.json",
+      "moveBatch": "post-closure-research-addition",
+      "moveImpact": "new exploratory candidate fixture"
     }
   ],
   "adjudicationPass": {

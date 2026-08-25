@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [],
+  "relations": [],
+  "extensions": {
+    "metadata": {
+      "datasetId": "lighthouse-restoration-ja",
+      "title": "Lighthouse Restoration (hypothetical Japanese translation)"
+    },
+    "lineage": {
+      "version": "0.1.0",
+      "parents": [
+        { "kind": "translation", "target": { "datasetId": "lighthouse-restoration-en" } }
+      ]
+    }
+  }
+}

@@ -556,3 +556,139 @@ translations can retain machine-readable origin even when source URLs vanish
 or the parent becomes inactive. Lineage cannot prevent misleading branding,
 false claims, trademark misuse, or official endorsement; machine provenance
 and legal attribution remain separate.
+
+## L2 — Minimal Dataset Lineage Candidate v0
+
+Status: **candidate / non-normative research only**. This section does not
+register an Extension, change Core, or define Validator behavior.
+
+### Scope and dependency decisions
+
+The smallest useful responsibility is: **record declared parent relationships
+for the current independently identified E2R Dataset**. It answers which
+Dataset(s) the current Dataset claims ancestry from and what kind of ancestry
+is claimed. It does not establish authenticity, compatibility, publication,
+translation fidelity, changes, supersession, merging, evidence, or a download
+location.
+
+The current Dataset's `extensions.metadata.datasetId` is a **REQUIRED
+DEPENDENCY** for this candidate. Lineage describes an independently identified
+Dataset, so a child without a Dataset identity cannot be checked for
+self-reference or unambiguously described as the subject of the claim. The
+candidate reuses Metadata's existing Dataset-ID identity semantics and invents
+no second identifier grammar. A parent target is an object containing a
+non-empty string `datasetId`.
+
+Self-reference is a local semantic error: a child with Dataset ID `A` MUST NOT
+declare `A` as a parent. This is not a requirement for global cycle detection.
+An identical `(kind, target.datasetId)` parent record is a duplicate and is
+invalid for the candidate. The same target MAY occur once with different kinds
+when the Dataset makes distinct direct claims; the candidate does not infer
+that those claims are contradictory. Parent array order has no semantics and
+MUST NOT imply priority, chronology, authority, or merge precedence. An empty
+`parents` array is unnecessary and is treated as invalid; omit `lineage` when
+no parent is declared.
+
+The v0 machine vocabulary is closed to `derived`, `revision`, `fork`, and
+`translation`. Unknown kinds are not v0-valid; a future candidate version can
+add kinds without requiring a custom-kind mechanism now. `derived` is the
+least-specific fallback. Direct parent declarations are distinct from
+transitive ancestors: consumers MAY traverse a chain, but v0 does not require
+flattening or graph inference.
+
+### Kind semantics and boundary cases
+
+* `derived`: created from or substantially based on the parent; it does not
+  imply replacement, compatibility, language equality, or semantic equivalence.
+* `revision`: a later revision in the same intended artifact lineage; it does
+  not by itself imply supersession, full preservation, or compatibility.
+* `fork`: intentionally begins or continues a divergent lineage; divergence
+  does not itself imply incompatibility.
+* `translation`: an intended natural-language translation derivative; it does
+  not imply fidelity, approval, freshness, or identical structure.
+
+Revision chains retain direct edges (`A2 revision A1`, `A3 revision A2`). A
+translation followed by a revision may declare only the direct parent; adding
+both direct claims is also representable, but neither creates hidden
+inheritance. Multiple-source derivation is representable and is not called a
+merge. A missing, unreachable, deleted, or unavailable parent does not
+invalidate the child: the declaration is an identity assertion, not a network
+resolution requirement. Dataset-ID collisions, authenticity, URLs, hashes,
+and the meaning of a disappeared publication location remain outside v0.
+
+`version: "0.1.0"` is retained only as a temporary exploratory payload marker
+because the candidate is unregistered. It is not a Core, Dataset, parent, or
+Metadata version. A future official Extension should resolve version
+ownership through the Specification Extension declaration rather than freeze
+two competing version mechanisms. Until then, current Validator behavior is
+unknown-Extension preservation, not Lineage validation.
+
+### Selected candidate payload
+
+```json
+{
+  "extensions": {
+    "lineage": {
+      "version": "0.1.0",
+      "parents": [
+        { "kind": "fork", "target": { "datasetId": "parent-dataset-id" } }
+      ]
+    }
+  }
+}
+```
+
+There is no `relationshipId` and no per-parent metadata (`note`, `createdAt`,
+`author`, `confidence`, `status`, `source`, or evidence). `translation` and
+`revision` remain in Lineage because both are direct ancestry claims; their
+content, quality, and artifact-version semantics are deferred elsewhere.
+
+### Focused dogfood fixtures
+
+The four bounded fixtures are:
+
+1. `lineage-v0-derived.json`: an ordinary recipe Dataset derived from two
+   ordinary source Datasets, demonstrating multiple parents without merge
+   semantics.
+2. `lineage-v0-revision.json`: an ordinary field-guide revision chain edge.
+3. `lineage-extension-candidate.json`: the E2R fork case retained from L1.5.
+4. `lineage-v0-translation.json`: an ordinary English-to-Japanese translation
+   claim.
+
+Thus three of four cases are ordinary Dataset examples. The E2R conceptual
+   dogfood chain is `e2r-core-2` → fork → `open-e2r-2`; a separate ordinary
+   translation case avoids claiming that any current E2R sample is a real
+   translation.
+
+Candidate invalid-case matrix: self-reference; missing, empty, or non-string
+parent `datasetId`; unknown kind; duplicate identical parent; and empty
+`parents`. Structural candidate checks cover object/array shapes and the four
+known kinds. Local semantic checks cover self-reference, duplicate records,
+and empty parents. Parent existence, global cycles, authenticity,
+compatibility, translation fidelity, and URL availability are deliberately
+non-local and not validated in v0.
+
+The current Validator accepts these fixtures as Core datasets and emits an
+`unknown_extension` warning for `extensions.lineage`; that result demonstrates
+preservation/forward compatibility only and must not be reported as Lineage
+semantic validation. Existing application round-trip evidence is not a
+dedicated Lineage preservation test, so **ROUND-TRIP APP EVIDENCE STILL
+REQUIRED BEFORE PROMOTION**.
+
+### Candidate language and readiness
+
+The following is a design exercise, not normative specification text:
+
+* A Lineage parent MUST identify another Dataset by `datasetId`.
+* The current Dataset MUST NOT reference itself as a parent.
+* Parent order MUST NOT carry semantic meaning.
+* An unavailable parent MUST NOT by itself invalidate the child Dataset.
+
+The candidate is **READY FOR EXPLORATORY EXTENSION DRAFT**. The next bounded
+phase may be L3, an explicitly Draft/non-Stable Extension document; L3 is not
+started here. For S1, Lineage can identify derivative, translation, and fork
+origin even after a location disappears, but it does not enforce attribution,
+license compliance, E2R naming, or legal canonicality. No new Knowledge
+Candidate is warranted: the durable rules remain identity distinct from
+location, provenance distinct from supremacy, and compatibility as scoped
+claims.

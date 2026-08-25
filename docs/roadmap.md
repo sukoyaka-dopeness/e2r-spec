@@ -1236,6 +1236,13 @@ is reserved for a future Dataset-level information/inspection surface.
   remains Derived presentation/layout behavior and must not silently write
   Dataset Coordinate/Layout data.
 
+- **Public Sample Dataset Refresh — before Hub publication modernization:**
+  inventory public samples, preserve intended roles, update accepted
+  representations where appropriate, validate with production Validator,
+  smoke/round-trip through NarrativeLine and LiaisonScape, verify Hub Handoff
+  and license/redistribution eligibility, and distinguish Stable-oriented from
+  Experimental samples. No sample or Hub change is authorized by this entry.
+
 ### Metadata and NarrativeLine follow-ups
 
 Metadata 1.0.0 defines `datasetId` and `title`; `license` remains an accepted

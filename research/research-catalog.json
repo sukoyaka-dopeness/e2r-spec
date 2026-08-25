@@ -18,8 +18,8 @@
     "noFilesystemChanges": true
   },
   "summary": {
-    "totalFiles": 176,
-    "markdownFiles": 139,
+    "totalFiles": 177,
+    "markdownFiles": 140,
     "toolFiles": 37
   },
   "entries": [
@@ -4396,6 +4396,22 @@
       "proposedPath": "research/metadata/decisions/dataset-license-metadata-design.md",
       "moveBatch": "post-2026-08-25-catalog-sync",
       "moveImpact": "new Metadata vNext license declaration design"
+    },
+    {
+      "path": "research/exploratory/liaisonscape-workspace-modernization-audit.md",
+      "workstream": "general-research",
+      "documentRole": "audit",
+      "status": "accepted",
+      "normativity": "non-normative",
+      "entryPoint": false,
+      "supersededBy": [],
+      "dependsOn": ["docs/roadmap.md"],
+      "referencedBy": ["docs/roadmap.md"],
+      "moveRisk": "low",
+      "adjudication": {"confidence": "high", "basis": "LS-M1 records current LiaisonScape Workspace evidence, bounded modernization decisions, and implementation checkpoints without changing application source."},
+      "proposedPath": "research/exploratory/liaisonscape-workspace-modernization-audit.md",
+      "moveBatch": "post-2026-08-25-catalog-sync",
+      "moveImpact": "new LiaisonScape workspace modernization audit"
     }
   ],
   "adjudicationPass": {

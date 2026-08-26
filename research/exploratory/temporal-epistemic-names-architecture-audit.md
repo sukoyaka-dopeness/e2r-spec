@@ -789,3 +789,34 @@ writer until qualifying comparative evidence reopens selection.
 For future handoffs, use the canonical transfer path in
 `research/names/grouping/current/name-grouping-current-handoff-index.md`; do not use older candidate
 comparison handoffs as the primary instruction.
+
+## NL-EVENT-ID1 — Event Human-readable Identity Disambiguation
+
+Status: **FOLLOW-UP / AUDIT NEEDED**
+
+This record transfers a NarrativeLine-specific audit question. Event names
+alone may be insufficient when multiple Events share a name, share a date, or
+have insufficient time precision. Imported Datasets and Timeline/display-order
+surfaces may expose the same ambiguity.
+
+The candidate display priority is:
+
+1. Event name;
+2. Event name plus visible date/time;
+3. meaningful History precision or `order` where the current interaction
+   context requires it;
+4. a short Object ID in parentheses only when semantic information still does
+   not distinguish the Event.
+
+The short ID is display-only. The full Object ID remains the canonical
+operation identity. History `order` is a possible disambiguating display
+input, not a new required field and not a changed ordering rule. No Event
+identity, Event model, Core schema, History Extension schema, Dataset, or
+runtime behavior is changed by this note.
+
+Candidate surfaces for later audit are Event Picker, Entity Detail Related
+Events, Event selection/search/reference UI, display-order reordering, and
+Timeline presentation. The general principle remains a candidate rather than
+an accepted cross-application rule: prefer human-readable semantic
+information, adding technical identity only when the current interaction
+context requires disambiguation.

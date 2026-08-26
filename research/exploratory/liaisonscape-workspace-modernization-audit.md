@@ -327,3 +327,305 @@ LS-M2B Dataset title editing. Retained follow-ups are the viewport toolbar
 drag-handle keyboard/focus audit, LiaisonScape Credits descriptive-copy
 localization, the common E2R favicon, and Long-form Object Content / Media
 responsibility research. No new knowledge candidate was added.
+
+## LS-M2B acceptance — 2026-08-26
+
+LS-M2B Dataset title editing is **ACCEPTED**. This record covers the verified
+application implementation and its final Edge real-browser evidence; it does
+not claim a committed application checkpoint. The implementation remains an
+uncommitted, verified worktree change in the LiaisonScape repository because
+the local sandbox could not create `.git/index.lock`.
+
+The accepted Dataset title contract stores the title in
+`extensions.metadata.title`. The pure title mutation trims input, removes a
+whitespace-only title, preserves Dataset ID, unknown Metadata, unknown
+Extensions, and Core contents, and does not mutate its input Dataset. The
+Workspace presents the compact visible labels `Title / Edit / Save / Cancel`
+in English and their Japanese equivalents while retaining Dataset-specific
+accessible names.
+
+Saved title changes flow through the existing Dataset update path and mark
+the Dataset modified. An unsaved title draft is meaningful `pendingUserWork`
+but is not serialized by Export. Replacement confirmation, Cancel draft
+preservation, export safety, Edit-to-input focus, Save/Cancel/Escape focus
+restoration, locale draft preservation, intermediate responsive widths, and
+320px long English/Japanese title states were accepted. Final automated
+evidence was 187 passing tests with lint, build, and diff checks passing.
+
+## LS-VT1 acceptance — 2026-08-26
+
+LS-VT1 Viewport Toolbar alignment is **ACCEPTED**. The shared Workspace
+compact boundary remains `720px`: above it the floating Viewport Toolbar is
+visible; at or below it the floating toolbar is hidden and the viewport
+controls are available through More. The 721px → 720px → 721px resize path,
+duplicate-control absence, zoom/reset semantics, and horizontal overflow
+behavior passed Edge real-browser acceptance.
+
+## LS-M2A-R1F acceptance — 2026-08-26
+
+LS-M2A-R1F atomic Workspace action-group wrapping is **ACCEPTED**. A live
+Chrome measurement reproduced the earlier More-only wrap at `innerWidth`
+728px with `clientWidth` 713px and a 15px vertical scrollbar: the action
+group had 485.86px available, required 490.34px, and was short by about
+4.48px. Add Entity, Add Relation, and Save node coordinates were on the first
+row while More fell to the second row.
+
+The accepted layout responsibility is that the outer `.dataset-actions`
+may wrap its summary and action group, while the inner
+`.dataset-actions__buttons` is an atomic non-wrapping group. The resulting
+wide layout moves the complete action group to the next row when necessary;
+it never splits More away from its sibling actions. The existing `720px`
+compact contract remains unchanged, including Save Coordinates inside More.
+Chrome live acceptance, Edge regression smoke, Dataset title smoke, no text
+wrap, no horizontal overflow, and the 187-test/lint/build/diff-check gates
+passed.
+
+The earlier non-reproducible 721px More-wrap observation is retained as
+historical evidence, but superseded by the later Chrome live measurement and
+the atomic action-group fix. The shared breakpoint remains `720px`; no
+733px breakpoint was introduced.
+
+Remaining separate follow-ups are LS-M2C Object ID / Technical details,
+LS-M2D hidden Event-related Relation notice presentation, LS-M2E
+tooltip/popover experiment, LS-LAYOUT-1 Initial Node Placement Objective
+Audit, viewport toolbar drag-handle keyboard/focus audit, NarrativeLine
+display-order reordering, LiaisonScape Credits locale completion, and the
+common E2R favicon. These checkpoints do not start those follow-ups.
+
+## LS-M2C-D1 destructive-action presentation follow-up — 2026-08-26
+
+LS-M2C-D1 keeps LiaisonScape Entity and Relation deletion behavior and its
+existing destructive-action area unchanged. NarrativeLine currently presents
+Entity/Event deletion in a separate danger-area treatment, without a Relation
+detail screen matching LiaisonScape. Cross-application alignment of this
+presentation remains a separate follow-up; this note makes no Core, Extension,
+or schema decision.
+
+## LS-M2C checkpoint acceptance 窶・2026-08-26
+
+LS-M2C Object ID and Detail hierarchy work is **ACCEPTED**. Entity and Relation
+Object IDs are exposed through native collapsed `details/summary` technical
+sections, with full selectable values and narrow-width wrapping. Entity Detail
+keeps editable content first, relationship counts second, technical details
+third, and the destructive area last. Relation Detail keeps Source/Target and
+editable content before technical details and the destructive area.
+
+The accepted responsive evidence covers Entity and Relation desktop, 601px,
+600px, and 320px states. Relation controls use the available Detail container
+width (`width: 100%`, `max-width: 100%`, `min-width: 0`, and
+`box-sizing: border-box`) so long identifiers do not force horizontal
+overflow. Relation save copy is object-specific (`Save Relation`); creation
+copy remains separate. The content-driven responsive principle is recorded as
+an application UI hypothesis only: prefer available container/control width
+over arbitrary viewport breakpoints when deciding inline, wrap, stack, or
+shrink behavior, while retaining explicit breakpoints where shell-level
+behavior requires them.
+
+Automated evidence: 188 tests passed, lint passed, production build passed,
+and `git diff --check` passed. The separate cross-application destructive-action
+presentation alignment follow-up remains open; this checkpoint does not change
+Delete behavior or advance LS-M2D.
+
+## LS-DETAIL-DA3 acceptance and Entity deletion-policy deferral 窶・2026-08-26
+
+LS-DETAIL-DA3 removes only the visible `Danger zone` heading from LiaisonScape
+Entity Detail. The connected-Relation warning, related-Relation list, disabled
+Delete state, separator, destructive styling, and existing deletion behavior
+remain unchanged. LiaisonScape Relation Detail follows the same heading-free
+destructive-action presentation recorded by DA2.
+
+The cross-application Entity deletion policy remains **DEFERRED**. NarrativeLine
+currently permits Entity deletion with cascade removal of connected Relations;
+LiaisonScape blocks Entity deletion while connected Relations exist. This is a
+data-policy difference, not a presentation decision. A future cascade candidate
+must first make all affected Relations visible or otherwise clearly accounted
+for, including hidden/non-visible Relations and the pending LS-M2D
+Relation-awareness work. No cascade behavior or future button copy is decided
+by this checkpoint.
+
+## LS-DETAIL-DA3-CK1 acceptance and RR1 follow-up 窶・2026-08-26
+
+LS-DETAIL-DA3 is **ACCEPTED**. The visible `Danger zone` heading was removed
+from LiaisonScape Entity Detail while preserving the connected-Relation
+warning, Related Relations list, disabled Delete state, separator, destructive
+styling, deletion semantics, and confirmation/focus behavior. The DA2
+heading-free Relation presentation remains accepted. Manual evidence covers
+wide and 320px JA/EN states with wrapping and no horizontal overflow; the
+automated evidence is 188 passing tests with lint, build, and diff checks
+passing.
+
+Cross-application Entity deletion policy remains **DEFERRED**: NarrativeLine
+allows Entity deletion with cascade removal of connected Relations, while
+LiaisonScape blocks deletion while connected Relations exist. No cascade
+behavior was implemented or unified.
+
+### LS-DETAIL-RR1 Related Relation Endpoint Readability — FOLLOW-UP / DEFERRED
+
+An observation was recorded: Entity Detail Related Relations currently falls
+back to raw endpoint Object IDs even when human-readable Entity names exist,
+which weakens operational readability. A candidate presentation is to retain
+Relation Name when present and show human-readable Source/Target Entity labels,
+falling back to Object IDs only when names are absent. This is a presentation
+candidate only; Relation identity, endpoint values, schema, technical Object ID
+visibility, deletion semantics, graph visibility, and cascade policy remain
+unchanged.
+
+RR1 is deferred until the LS-M2D Relation-awareness review, because hidden
+Event-related Relations and Dataset-wide impact awareness affect the final
+endpoint presentation. RR1 is recorded only and is not implemented here.
+
+## LS-M2D-D0 audit record 窶・2026-08-26
+
+The current LiaisonScape graph is Entity-only. `buildEntityGraph` retains
+Entity-to-Entity Relations as graph edges and excludes Relations whose source
+or target is not an Entity, incrementing `unsupportedEdges` for the notice.
+Thus Entity→Event, Event→Entity, Event→Event, and invalid or missing-endpoint
+Relations are not graph edges; the current counter does not distinguish Event
+involvement from other unsupported endpoint cases. Dataset round-trip logic
+preserves the Relations, while Entity Detail Dataset counts use the Dataset
+Relation set rather than only graph-visible edges.
+
+The current notice is a passive status paragraph rendered below the graph when
+the unsupported count is greater than zero. It uses locale-aware singular and
+plural copy, is not a link, button, alert, or focus target, and is intended to
+communicate graph/Dataset scope rather than an error or data-loss warning.
+The current copy is retained as accepted semantic behavior pending a final
+LS-M2D presentation decision.
+
+LS-M2D-D0 remains **AUDIT COMPLETE / IMPLEMENTATION DEFERRED**. Candidate A
+(quiet informational line) is the current baseline; Candidate B (compact
+secondary notice) is the recommended direction if stronger graph/Dataset scope
+awareness is needed without making the notice actionable. Candidate C
+(summary plus disclosure) remains an alternative only if additional
+explanation is required. No graph logic, i18n, CSS, Dataset behavior, or
+delete behavior was changed by this audit.
+
+The audit records future concepts for a multi-visualization application
+(quadrant/radar/future chart forms) and a Notebook/document surface for
+long-form Object content. Naming, schema, chart Extension, and a possible
+`body` field remain deferred research; no Core field or Extension was adopted.
+
+## LS-M2D-CK1 acceptance record — 2026-08-26
+
+LS-M2D is **ACCEPTED / CLOSED**. This documentation checkpoint records the
+completed D0 audit, D1 classification refinement, and D1R1 Japanese notice
+copy alignment. It does not introduce further LiaisonScape implementation.
+
+The accepted responsibility boundary is:
+
+- valid Entity-to-Entity Relations are graph-visible;
+- valid Entity-to-Event, Event-to-Entity, and Event-to-Event Relations are
+  hidden from the Entity-only graph and counted as `eventRelatedHiddenEdges`;
+- missing or invalid endpoints are classified as `otherUnsupportedEdges` and
+  are excluded from the Event-related notice;
+- Dataset Relations remain preserved through serialization and round-trip
+  behavior, regardless of graph visibility.
+
+The workspace toolbar continues to report graph-visible counts. The passive
+notice uses only the Event-related hidden count, appears only when that count
+is nonzero, and remains ordinary non-focusable informational text. It is not a
+validation error, data-loss warning, acquisition status, alert, button, link,
+or disclosure. Final English copy remains `not shown in this graph`; final
+Japanese copy uses `このグラフには表示されません。` to scope the statement to
+the current graph rather than the whole application.
+
+Manual acceptance is recorded as passing for wide English/Japanese states,
+320px English/Japanese states, natural wrapping without horizontal overflow,
+quiet presentation, locale consistency, and accessibility behavior. The
+copy-only D1R1 correction reuses the D1 browser evidence. Automated evidence
+is 189 passing tests with lint, production build, and `git diff --check`
+passing.
+
+Preservation boundary: no Dataset schema, serialization, validation, import/
+export, graph logic beyond the already accepted classification, Delete
+semantics, or cross-application ownership policy was changed by this
+checkpoint. LS-DETAIL-RR1 remains **FOLLOW-UP / DEFERRED**. Cross-App Relation
+Deletion Ownership / Visibility Safety remains **FOLLOW-UP / DEFERRED**.
+
+No new ai-knowledge entry was created. The checkpoint is project-specific
+application acceptance evidence and does not establish a general E2R rule.
+
+## LS-DETAIL-RR1-CK1 acceptance — 2026-08-26
+
+LS-DETAIL-RR1 is **ACCEPTED / CLOSED**. This documentation checkpoint records
+the D0 audit, the structured Related Relations implementation in D1, and the
+D1R1 duplicate-name separator correction. No production code change is made
+by this record.
+
+Final contract:
+
+- Related Relations remain the complete Dataset incident Relation set;
+- each row is one button with structured Relation name, Source, and Target
+  fields, omitting the Relation name field when no usable name exists;
+- names use trim-then-non-empty semantics without mutating the Dataset;
+- Entity and Event endpoints resolve by Object ID, use trimmed names when
+  available, and otherwise show the Object ID;
+- duplicate names use `Name (shortObjectId)` with the existing minimum-eight-
+  character, collision-extending, display-only algorithm;
+- unique names receive no short ID and Relation ID is not a name fallback;
+- interaction continues to pass the exact full `relation.id`.
+
+Manual acceptance is recorded as passing for wide presentation, unnamed
+Relations, human-readable endpoints, duplicate names, Event-related
+endpoints, 320px wrapping/overflow, and correct Relation Detail navigation.
+Automated evidence is 191 passing tests with lint, production build, and
+`git diff --check` passing.
+
+M2C, M2D, Dataset/schema identity, and Delete/ownership semantics remain
+unchanged. `LS-REL-ENDPOINT-ID1` remains FOLLOW-UP / AUDIT NEEDED;
+`LS-DIALOG-DRAFT1` remains FOLLOW-UP / AUDIT NEEDED; `LS-CTX-R1` remains BUG /
+FIX NEEDED; and `LS-GRAPH-DRAG1` remains BUG / AUDIT NEEDED with high priority.
+
+The human-readable-label/technical-identity principle remains a
+project-specific knowledge candidate. No new ai-knowledge entry was created
+or promoted to a general E2R rule. RR1-D1R1 reused existing D1 browser
+evidence except for the duplicate-name presentation smoke; no new live browser
+capture is claimed here.
+
+## LS-MODERNIZATION-AUDIT-CHECKPOINT1 — current disposition
+
+Date: 2026-08-27
+
+This document is a **Research / modernization audit with historical
+checkpoints and current disposition**. The original audit and subsequent
+acceptance evidence are retained as historical records; they are not a second
+implementation authority or a replacement for the roadmap.
+
+The current disposition is synchronized as follows:
+
+| Item | Current status | Boundary / evidence |
+| --- | --- | --- |
+| LS-M2A Workspace More / action hierarchy | **ACCEPTED / CLOSED** | Open and Export are in More; action grouping, focus behavior, and Dataset Replacement Safety were accepted. |
+| LS-M2B Dataset title editing | **ACCEPTED / CLOSED** | `extensions.metadata.title` ownership, preservation, dirty-state, replacement, and responsive evidence were accepted. |
+| LS-M2D Hidden Event-related Relation awareness | **ACCEPTED / CLOSED** | Event-related hidden Relations are distinguished from other unsupported endpoints; Dataset preservation and deletion semantics are unchanged. |
+| LS-DETAIL-RR1 Related Relation readability | **ACCEPTED / CLOSED** | Structured Relation name and endpoint presentation was accepted; identity, graph visibility, and Delete semantics remain unchanged. |
+| Object ID / Technical details | **ACCEPTED / CLOSED** | Technical disclosure hierarchy and full read-only IDs were accepted; Core identity and schema are unchanged. |
+| F2-LS1 locale / shell | **ACCEPTED / CLOSED** | Retained historical open wording does not represent current work. |
+| LS-GRAPH-DRAG1 / D1R6R2 | **ACCEPTED / CLOSED; VERIFIED / COMMITTED / PUSHED** | Application and formal repository closure evidence is recorded; old uncommitted wording is historical. |
+
+The following remain genuinely open and are not converted into accepted
+behavior by this checkpoint: Cross-App Relation Deletion Ownership /
+Visibility Safety; Cross-App Dataset Replacement destructive styling parity;
+viewport toolbar drag-handle keyboard/focus audit; `LS-CTX-R1` narrow
+context-menu clipping; `LS-REL-ENDPOINT-ID1`; `LS-DIALOG-DRAFT1`; Dataset
+metadata Edit/divider spacing; the Cross-App Visual Style / Flatness
+Experiment; Initial Node Placement / `LS-M3`; selectable SVG icons; common
+favicon; public sample refresh; and licensing/release follow-ups.
+
+The earlier audit observations remain **HISTORICAL** where later evidence
+accepted or superseded them. In particular, Dataset title editing, the
+Hidden Event-related Relation notice, Related Relations, locale/shell work,
+and graph drag are not current-open items. No historical wording is rewritten
+to simulate a different observation date.
+
+No duplicate or contradictory authority is introduced: accepted status is
+defined by the linked application or e2r-spec checkpoint evidence, retained
+follow-ups remain planning records, and this audit only indexes their current
+disposition. No Core, Extension, schema, runtime, deletion-policy, graph
+geometry, or visual-experiment decision is made here. `UNKNOWN / ACCIDENTAL`
+contains no current decision or publication claim.
+
+Roadmap dependency: **RESEARCH STANDALONE**. The roadmap remains a separate
+mixed dirty worktree and is not changed by this checkpoint. No new
+ai-knowledge entry is warranted; this is repository-specific status
+reconstruction and publication evidence.

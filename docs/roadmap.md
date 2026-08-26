@@ -1569,7 +1569,9 @@ following current summary takes precedence when older sections use stale
 
 ### Completed / synchronized
 
-- LS-M2A, LS-M2B, LS-M2D, and LS-DETAIL-RR1 are **ACCEPTED / CLOSED**.
+- LS-M2A, LS-M2B, LS-M2D, LS-DETAIL-RR1, and LS-REL-ENDPOINT-ID1 are
+  **ACCEPTED / CLOSED**. The endpoint identity closure is recorded in
+  [LiaisonScape Relation Endpoint Identity Acceptance](liaisonscape-relation-endpoint-identity-acceptance.md).
 - Object ID / Technical details and F2-LS1 locale/shell are accepted/closed.
 - LS-GRAPH-DRAG1 / D1R6R2 is accepted/closed and verified committed/pushed.
 - Session 0048 publication, Anonymous Dataset Sharing research, Temporal /
@@ -1580,7 +1582,7 @@ following current summary takes precedence when older sections use stale
 
 Cross-App Relation Deletion Ownership / Visibility Safety, destructive styling
 parity, viewport drag-handle keyboard/focus review, `LS-CTX-R1`,
-`LS-REL-ENDPOINT-ID1`, `LS-DIALOG-DRAFT1`, Edit/divider spacing, the
+`LS-DIALOG-DRAFT1`, Edit/divider spacing, the
 Cross-App Visual Style / Flatness Experiment, Initial Node Placement / LS-M3,
 selectable SVG icons, the common favicon, Public Sample Dataset Refresh, and
 licensing/release follow-ups remain open or deferred. None is accepted by this

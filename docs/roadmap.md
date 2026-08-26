@@ -872,6 +872,60 @@ rewrite. Each application should receive focused interaction tests for
 browser history, Dataset continuity, responsive button sizing, modal focus,
 Enter/Escape behavior, and destructive-action safety before release.
 
+### Cross-App Relation Deletion Ownership / Visibility Safety
+
+This follow-up audits Relations outside an application's presentation or
+management scope. Current evidence records that LiaisonScape manages
+Entity-to-Entity Relations in its graph while Event-related Relations are not
+graph-visible, and blocks Entity deletion while connected Relations exist.
+NarrativeLine is Event-centered and currently allows Entity deletion with
+cascade removal of connected Relations, while Entity-to-Entity Relations are
+outside its direct surface.
+
+This is a follow-up / audit item, not an accepted rule. Prefer inspectable
+dependencies and avoid silently deleting out-of-scope Relations as a side
+effect of deleting another Object. Sequence it after LS-M2D Relation
+awareness, then LS-DETAIL-RR1 Related Relation Endpoint Readability, followed
+by a dedicated cross-app ownership audit. No current Delete semantics,
+cascade behavior, schema, or Core/Extension decision changes are authorized by
+this entry.
+
+### Future application surface concepts
+
+The following remain future application concepts only, with naming and
+implementation deferred:
+
+- a multi-visualization application that can present the same E2R Dataset
+  through quadrant/four-quadrant, radar, and future chart forms;
+- a Notebook/document surface for diary, gamebook, outline, and long-form
+  Object authoring use cases.
+
+Long-form Object content is a working research candidate only. A possible
+`body` field may represent primary long-form content alongside short `name`
+and `description`, but this entry does not adopt a Core field, Extension,
+schema, media model, or exact content format.
+
+### LS-M2D Hidden Event-related Relation awareness — ACCEPTED / CLOSED
+
+LS-M2D is accepted and closed as an application-specific Relation-awareness
+checkpoint. LiaisonScape's Entity-only graph keeps valid Entity-to-Entity
+Relations graph-visible, classifies valid Event-related Relations as hidden
+from that graph, and separates missing or invalid endpoint Relations as other
+unsupported cases. The Dataset, serialization, round-trip preservation,
+validation, deletion semantics, and Core/Extension responsibilities are
+unchanged.
+
+The workspace count remains the graph-visible count. The passive notice counts
+only `eventRelatedHiddenEdges`; it is ordinary non-actionable text and is not
+a button, link, disclosure, alert, or focus target. Final copy is accepted in
+English and Japanese, including the Japanese graph-scoped wording. Wide and
+320px English/Japanese manual evidence, accessibility checks, 189 tests,
+lint, build, and diff checks passed.
+
+LS-DETAIL-RR1 Related Relation Endpoint Readability and Cross-App Relation
+Deletion Ownership / Visibility Safety remain separate deferred follow-ups.
+They are not accepted or implemented by this roadmap entry.
+
 ## Proposed E2R-wide milestones
 
 The following ten milestones provide a cross-repository sequence using three
@@ -1232,6 +1286,40 @@ architectural priority. History vNext, Relative Time, Target Reference,
 Source/Citation, Semantic/Dictionary, and Layout/Presentation remain
 independently gated research or design tracks.
 
+### Planned visual follow-ups before public release
+
+The following two visual follow-ups are intentionally separate. Recording them
+does not authorize runtime, CSS, or experiment work.
+
+1. **LiaisonScape Dataset metadata Edit / divider spacing — bounded visual
+   fix, relatively early:** review the apparent near-contact between the
+   Dataset metadata-row `Edit` button and the preceding horizontal divider.
+   The bounded scope is vertical separation between the toolbar divider and
+   the metadata/Edit control, while preserving the current visual language.
+   This is a spacing defect, not a redesign: button radius, global control
+   density, hover styling, and the known approximately 600/601px responsive
+   follow-up remain separate. Implementation acceptance should check both
+   narrow and wide layouts for spacing regression. Do not defer this item
+   until the Cross-App Flatness Experiment.
+2. **NarrativeLine / LiaisonScape Cross-App Visual Style / Flatness
+   Experiment — public-release design experiment:** after the principal
+   feature, UX, and known visual-defect work has substantially converged,
+   compare the two applications as one cross-app visual language. Evaluate
+   restrained-flat alternatives for border radius, control height and
+   padding, border contrast, hover, selected, focus-visible, disabled, and
+   destructive states; toolbar density; dialog/popover/menu elevation; and
+   the depth difference between ordinary and floating surfaces. The aim is
+   quieter ordinary surfaces that keep Dataset, Timeline, and Graph content
+   primary while retaining only necessary floating-surface depth. This is not
+   a mandate for Pure Flat Design, a blanket CSS rewrite, or simultaneous Hub
+   redesign. Preserve focus-visible strength, non-hover state information,
+   accessibility, semantic risk distinctions, and application parity. Graph
+   routing, node/Relation geometry, Timeline semantics, and Dataset semantics
+   are out of scope. Conduct the experiment with time for manual visual
+   acceptance and adjustment before Push/deployment readiness and the final
+   pre-public-release audit; if adopted, its accepted result becomes that
+   audit's visual baseline.
+
 ### Cross-application object identity direction
 
 **Accepted direction / implementation deferred.** Core Object ID is technical
@@ -1451,3 +1539,85 @@ Review the application `0.2.0` milestone only after Cross-App Locale closes
 across NarrativeLine, LiaisonScape, and Hub. Application versioning remains
 separate from Dataset/schema versioning. Research shelf inventory and the Hub
 concept-page update remain queued after Cross-App Locale closure.
+
+### LS-DETAIL-RR1 Related Relation readability — ACCEPTED / CLOSED
+
+LiaisonScape Related Relations now use structured human-readable Relation name,
+Source, and Target fields. Names are trimmed for presentation; blank,
+whitespace-only, and unresolved values fall back to Object ID. Event endpoint
+names may be shown without making Events graph nodes or editing targets.
+Duplicate names receive a conditional short Object ID hint in parentheses;
+unique names remain uncluttered.
+
+The complete Dataset incident Relation set and exact `relation.id` interaction
+are preserved. Dataset identity, schema, graph visibility, technical Object
+ID details, and Delete semantics are unchanged. Wide and 320px acceptance,
+duplicate-name presentation, Event endpoint presentation, interaction, 191
+tests, lint, build, and diff checks passed.
+
+Remaining follow-ups are `LS-REL-ENDPOINT-ID1`, `LS-DIALOG-DRAFT1`,
+`LS-CTX-R1`, and `LS-GRAPH-DRAG1`; none is accepted or implemented by RR1.
+
+## Roadmap reconstruction checkpoint — current canonical summary
+
+Date: 2026-08-27
+
+This roadmap is a non-normative planning and status document. Dated planning
+and historical checkpoint sections are retained as historical evidence. The
+following current summary takes precedence when older sections use stale
+"next", "audit needed", or "untracked" wording.
+
+### Completed / synchronized
+
+- LS-M2A, LS-M2B, LS-M2D, and LS-DETAIL-RR1 are **ACCEPTED / CLOSED**.
+- Object ID / Technical details and F2-LS1 locale/shell are accepted/closed.
+- LS-GRAPH-DRAG1 / D1R6R2 is accepted/closed and verified committed/pushed.
+- Session 0048 publication, Anonymous Dataset Sharing research, Temporal /
+  Epistemic / Names research, and the LiaisonScape modernization audit are
+  committed checkpoints.
+
+### Open / deferred
+
+Cross-App Relation Deletion Ownership / Visibility Safety, destructive styling
+parity, viewport drag-handle keyboard/focus review, `LS-CTX-R1`,
+`LS-REL-ENDPOINT-ID1`, `LS-DIALOG-DRAFT1`, Edit/divider spacing, the
+Cross-App Visual Style / Flatness Experiment, Initial Node Placement / LS-M3,
+selectable SVG icons, the common favicon, Public Sample Dataset Refresh, and
+licensing/release follow-ups remain open or deferred. None is accepted by this
+checkpoint.
+
+The Edit/divider item remains a relatively early bounded LiaisonScape spacing
+fix. The Cross-App Flatness item remains a separate pre-public-release design
+experiment. Neither authorizes implementation here.
+
+### Current execution order
+
+The active sequence is Cross-App Locale production readiness, NarrativeLine and
+LiaisonScape locale consumers, Hub locale/Handoff closure, residual quality and
+bounded visual/safety follow-ups, release assets and placement/display-order
+audits, S3 licensing/provenance and sample redistribution checks, then
+push/deployment readiness, public interoperability evidence, and the final
+pre-public-release audit. This records execution shape without selecting a new
+priority among the open follow-ups.
+
+When a completed item appears in an older ledger as current-open, that wording
+is historical. When the same follow-up appears in multiple sections, the
+status above is the current cross-reference rather than a second authority.
+No Core, Extension, schema, deletion-policy, graph-layout, visual-style,
+sharing-provider, or release-version decision is made by this checkpoint.
+No new ai-knowledge entry is warranted.
+
+### NL-EVENT-ID1 — Event Human-readable Identity Disambiguation
+
+**FOLLOW-UP / AUDIT NEEDED.** NarrativeLine should audit Event identity
+presentation where Event names alone are insufficient to distinguish objects.
+Candidate semantic disambiguators are visible date/time, History precision,
+and History `order`, followed by a short Object ID only when ambiguity remains.
+This is display-only: full Object IDs remain canonical operation identity.
+
+Candidate surfaces include Event Picker, Related Events, Event selection,
+display-order UI, search/reference pickers, and Timeline presentation. The
+follow-up must not alter Event identity, History `order`, precision semantics,
+Core or History schema, or Dataset behavior. No global UUID display rule is
+adopted. NarrativeLine implementation and acceptance evidence are still
+required.

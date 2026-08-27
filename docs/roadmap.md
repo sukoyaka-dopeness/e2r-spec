@@ -1583,9 +1583,32 @@ following current summary takes precedence when older sections use stale
   Epistemic / Names research, and the LiaisonScape modernization audit are
   committed checkpoints.
 
+### Current cross-app deletion status
+
+Cross-App Relation Deletion Ownership / Visibility Safety has an **ACCEPTED
+design direction** through `XAPP-REL-DELETE2-DESIGN1`; implementation remains
+not yet aligned across applications. A Relation is a Dataset Object rather than
+an application-owned object. An endpoint Object must not be deleted while
+incident Relations remain, Entity deletion must not silently cascade-delete
+those Relations, and Relation deletion must be explicit. A self Relation is
+one blocker; parallel Relations remain distinct blockers, one per Relation
+Object.
+
+NarrativeLine has completed `NL-ENTITY-DELETE2-READINESS1` with implementation
+boundary E (**atomic multi-surface alignment required**) and
+`NL-ENTITY-DELETE2-DESIGN2` (**READY FOR ATOMIC IMPLEMENTATION**). The bounded
+implementation includes no-cascade Entity deletion, blocker detection, a
+blocked-resolution dialog, human-readable Relation presentation, exact
+per-Relation deletion, inline confirmation, safe focus and dismissal,
+zero-blocker Entity deletion, EN/JA copy, responsive behavior, and tests.
+This does not claim that NarrativeLine or LiaisonScape has implemented the
+final contract. The first NarrativeLine implementation excludes a general
+Relation editor, bulk Delete all, targeted Handoff, provenance or directionality
+schema, and all Core, Extension, or schema changes.
+
 ### Open / deferred
 
-Cross-App Relation Deletion Ownership / Visibility Safety, destructive styling
+destructive styling
 parity, viewport drag-handle keyboard/focus review, `LS-CTX-R1`,
 Edit/divider spacing, the
 Cross-App Visual Style / Flatness Experiment, Initial Node Placement / LS-M3,

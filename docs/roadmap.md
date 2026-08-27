@@ -1672,6 +1672,26 @@ Relation visibility or identity, Dataset ownership, routing, viewport or
 pointer behavior, Handoff, Core/Extension/schema behavior, or the accepted
 focus-management fix.
 
+### LS-CROSS-APP-RELATION-DELETION5-ACTION-HIERARCHY-AUDIT
+
+**AUDIT COMPLETE / DESIGN DIRECTION RECORDED / IMPLEMENTATION NOT STARTED** —
+2026-08-28.
+
+The bounded action-hierarchy audit is recorded in
+[Cross-App Destructive Action Hierarchy Audit](cross-app-destructive-action-hierarchy-audit.md).
+NarrativeLine and LiaisonScape evidence does not establish a universal
+safe-left / destructive-right rule. The reusable principle is one clearly
+identified safe choice before the destructive choice in DOM and keyboard order,
+with visual separation selected according to the host surface. For the current
+LiaisonScape Entity deletion resolution dialog, the recommended bounded
+direction is one footer `Keep Entity` followed by zero-blocker-only `Delete
+Entity`, with the duplicate header `Keep Entity` removed. Narrow stacking,
+final EN/JA copy, and exact spacing remain implementation work.
+
+This is a design/source audit only. Runtime, CSS, i18n, tests, deletion
+semantics, and the accepted focus fix are unchanged. Bidirectional Cross-App
+acceptance and overall capability closure remain pending.
+
 ### Application modularization readiness policy
 
 The workspace now has an [Accepted Decision for moderate application

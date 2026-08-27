@@ -1711,6 +1711,23 @@ claim formal browser visual acceptance, bidirectional Cross-App acceptance, or
 capability closure. The next checkpoint is bounded Real Edge presentation
 acceptance; deletion semantics and the accepted focus fix remain unchanged.
 
+### LS-CROSS-APP-RELATION-DELETION7-PRESENTATION-REAL-EDGE-ACCEPTANCE
+
+**FORMALLY ACCEPTED / COMPLETE** — 2026-08-28.
+
+The bounded LiaisonScape presentation refinement passed dedicated Microsoft
+Edge visual/interaction acceptance at runtime commit `34d8164`. Evidence is
+recorded in [LiaisonScape Relation Deletion Resolution Presentation
+Acceptance](liaisonscape-relation-deletion-resolution-presentation-acceptance.md).
+P1/P2 copy, P3 duplicate-action removal, P4/P5 zero-blocker EN/JA layout, P6
+desktop spacing, P7 narrow safe-before-danger stacking, and P10 focus
+regression all passed. P8/P9/P11/P12 passed as bounded regression evidence.
+
+The acceptance confirms one footer `Keep Entity`, zero-blocker-only `Delete
+Entity`, visible desktop separation, full-width narrow stacking, connected
+Relation wording, and preserved deletion/focus semantics. Bidirectional
+Cross-App acceptance and overall capability closure remain pending.
+
 ### Application modularization readiness policy
 
 The workspace now has an [Accepted Decision for moderate application

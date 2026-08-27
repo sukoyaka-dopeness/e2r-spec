@@ -103,3 +103,30 @@ No CSS, Flatness, graph, Dataset, Core, Extension, Event endpoint, or
 `ai-knowledge` change is part of ID2. Native `<select>` popup visual
 inspection and real screen-reader testing remain the previously recorded
 manual boundaries.
+
+## LS-DIALOG-DRAFT1-S1 safety refinement
+
+Date: 2026-08-27
+
+`LS-DIALOG-DRAFT1-S1` is **IMPLEMENTED / ACCEPTED / CLOSED** as a bounded
+LiaisonScape safety fix. Entity Detail and Relation Detail now preserve local
+draft work when dismissal is requested: clean Close/Escape still closes
+immediately, while dirty Close, Escape, or backdrop dismissal opens a
+confirmation. Cancel retains the detail and its draft; Discard closes the
+detail and does not persist the draft. Explicit Entity/Relation deletion
+continues to use the separate existing Delete Confirmation path.
+
+The implementation is committed and pushed at
+`fef262f` (`fix: guard unsaved detail drafts`). Both detail types use the
+existing draft equality semantics and the existing global dialog focus trap;
+the new confirmation initially focuses Cancel and handles Escape as Cancel.
+No `pendingUserWork` meaning, Dataset Replacement Safety, Creation Dialog,
+Delete Confirmation, CSS, graph behavior, Core, or Extension semantics were
+changed.
+
+Verification passed: 205 tests, lint, build, and `git diff --check`. Real
+browser acceptance covered dirty Entity Close, dirty Relation Close, dirty
+Relation Escape, Cancel retention, Discard/reopen original values, clean
+Escape, Japanese narrow-width presentation, and English wide-width
+presentation. Creation Escape, general dialog initial focus, Delete
+Confirmation focus, action grouping, and Flatness remain separate follow-ups.

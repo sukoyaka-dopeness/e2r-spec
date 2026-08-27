@@ -10,7 +10,8 @@
     "validate:history": "node scripts/validate-history-schema.mjs",
     "validate:names-draft": "node scripts/validate-names-draft-schema.mjs",
     "validate:names-draft-ids": "node scripts/validate-names-draft-id-uniqueness.mjs",
-    "validate:coordinate-interoperability": "node --experimental-strip-types --experimental-specifier-resolution=node scripts/validate-coordinate-interoperability.mjs"
+    "validate:coordinate-interoperability": "node --experimental-strip-types --experimental-specifier-resolution=node scripts/validate-coordinate-interoperability.mjs",
+    "test:cdp": "node --test tools/edge-cdp/*.test.mjs"
   },
   "devDependencies": {
     "ajv": "8.20.0"

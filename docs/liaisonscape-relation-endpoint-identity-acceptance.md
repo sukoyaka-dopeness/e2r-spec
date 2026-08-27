@@ -184,3 +184,30 @@ Enter/Escape no-delete safety, Tab to Delete, explicit Relation deletion, and
 Entity Delete Confirmation initial Cancel focus through the shared component.
 The browser was restored to the sample Dataset, Japanese locale, normal
 viewport, and no dialog. Native screen readers were not directly tested.
+
+## LS-DIALOG-DRAFT1-F2-E1 Create Entity Name autofocus
+
+Date: 2026-08-27
+
+`LS-DIALOG-DRAFT1-F2-E1` is **IMPLEMENTED / ACCEPTED / CLOSED** as a bounded
+LiaisonScape Creation Dialog focus refinement. When an explicitly opened
+Create Entity Dialog mounts, its Name input receives initial focus. The
+condition is limited to Entity mode; Create Relation keeps its unresolved
+Source/Target/Name focus decision unchanged.
+
+The implementation uses the existing `CreationDialog` owner with
+`autoFocus={mode === "entity"}`. It does not introduce a generic autofocus
+rule, focus utility, Enter-to-submit behavior, or focus changes for Detail,
+confirmation, Credits, Dataset Replacement, or other surfaces.
+
+The implementation is committed and pushed at
+`2284d9b` (`fix: focus Entity name on creation`). No CSS, Dataset, graph,
+Core, Extension, or Creation Escape contract was changed.
+
+Verification passed: 208 tests, lint, build, and `git diff --check`. Real
+browser acceptance covered keyboard and pointer Create Entity opening,
+`document.activeElement` on `#creation-name`, immediate typing, visible
+focus, Tab to Description, clean Escape, dirty Escape confirmation with draft
+retention after Cancel, JA/EN labels, and JA 320px layout without horizontal
+overflow. Create Relation did not receive Name autofocus. The real mobile
+software-keyboard effect remains a manual boundary.

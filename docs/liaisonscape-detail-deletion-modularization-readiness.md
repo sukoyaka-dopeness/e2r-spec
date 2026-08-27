@@ -1,13 +1,16 @@
 # LiaisonScape Detail / Deletion Modularization Readiness
 
-Status: **READINESS AUDIT COMPLETE / READY FOR A BOUNDED EXTRACTION**
+Status: **2A IMPLEMENTED / ACCEPTED — BEHAVIOR-PRESERVING BOUNDED EXTRACTION**
 
 Date: 2026-08-27
 
+Runtime checkpoint: `98f7751` — `refactor: extract detail deletion workflow state`
+
 This document records the `LS-DETAIL-DELETION-MODULARIZATION1-READINESS`
-architecture audit. It is a planning and implementation-boundary document. It
-does not change LiaisonScape runtime behavior, E2R Core or Extension
-semantics, schemas, graph interaction, or Cross-App Relation deletion status.
+architecture audit and the accepted `LS-DETAIL-DELETION-MODULARIZATION2A-
+STATE-CONTROLLER` implementation. The extraction preserves LiaisonScape
+runtime behavior, E2R Core or Extension semantics, schemas, graph interaction,
+and Cross-App Relation deletion status.
 
 ## Context
 
@@ -18,9 +21,29 @@ the accepted Cross-App Relation deletion direction requires explicit Relation
 resolution while preserving Entity context, selection cleanup, Dataset
 mutation safety, and focus/dismissal behavior.
 
-The current checkpoint is an architecture audit only. It does not implement a
-new hook, controller, service, dialog, blocker-resolution surface, or runtime
-refactor.
+The readiness audit identified a narrow Detail/deletion workflow boundary. The
+2A implementation uses that boundary without introducing a new dialog,
+blocker-resolution surface, or deletion semantics.
+
+## 2A implementation and acceptance
+
+LiaisonScape now owns the Detail/deletion workflow state and transitions in
+`src/hooks/useDetailDeletionWorkflow.ts`. The hook contains Entity and Relation
+drafts, derived dirty state, Detail dismissal, deletion confirmation state,
+assessment/request/confirm/cancel transitions, and post-deletion selection
+coordination.
+
+`src/App.tsx` remains the composition root for Dataset ownership, clean
+baseline and `datasetModified`, replacement/Handoff/locale/title lifecycle,
+graph selection, graph interaction, routing, viewport, geometry, manual
+placement, and creation. Dataset mutations cross the existing
+`updateDataset(nextDataset)` callback. Domain semantics remain in
+`EntityService` and `RelationService`; graph placement cleanup crosses only
+the `onEntityDeleted` and `onRelationDeleted` callbacks.
+
+The existing dialog components and global focus/dismissal behavior are
+unchanged. No Cross-App blocker-resolution UI or implementation was added.
+The LiaisonScape gate passed with 209 tests, lint, build, and diff check.
 
 ## Existing architecture
 
@@ -336,20 +359,24 @@ next extraction changes observable UI behavior.
 | Premature abstraction creates a generic framework | Use one LiaisonScape-specific bounded boundary first |
 | File movement obscures behavior changes | Compare behavior-preserving diffs and run the existing full gate |
 
-## Proposed next checkpoint
+## Completed checkpoint and next step
 
-`LS-DETAIL-DELETION-MODULARIZATION2A-STATE-CONTROLLER` is the recommended next
-step. It is a behavior-preserving extraction only. It should be followed by a
-separate wiring/acceptance checkpoint if the resulting seam is stable, and
-only then by Cross-App Relation deletion readiness implementation.
+`LS-DETAIL-DELETION-MODULARIZATION2A-STATE-CONTROLLER` is implemented and
+accepted at LiaisonScape commit `98f7751`. It is a behavior-preserving
+extraction only. The existing dialog wiring is covered by the final gate, so a
+separate 2B wiring checkpoint is not required by this implementation.
+
+The next checkpoint is the LiaisonScape-native Cross-App Relation deletion
+blocker-resolution readiness/implementation. It must remain a separate
+feature checkpoint.
 
 The proposed sequence is therefore:
 
-1. 2A: extract the bounded Detail/deletion state and controller seam;
-2. 2B: migrate and verify existing dialog wiring if needed;
-3. implement the LiaisonScape-native Cross-App blocker-resolution workflow;
-4. accept the LiaisonScape Relation deletion behavior; and
-5. perform bidirectional Cross-App interoperability acceptance.
+1. 2A: extract the bounded Detail/deletion state and controller seam —
+   **COMPLETE / ACCEPTED**;
+2. implement the LiaisonScape-native Cross-App blocker-resolution workflow;
+3. accept the LiaisonScape Relation deletion behavior; and
+4. perform bidirectional Cross-App interoperability acceptance.
 
 This sequence does not reorder unrelated roadmap priorities and does not
 authorize any of the later implementation steps in this audit checkpoint.

@@ -1667,12 +1667,16 @@ accepted DELETE2/DELETE3 semantics.
    and browser evidence.
 2. `E2R-CDP-STABILIZATION1` is implemented and accepted as a separate
    operational track; its helper and evidence boundary are recorded below.
-3. `LS-DETAIL-DELETION-MODULARIZATION1-READINESS` is complete. Its recommended
-   next step is `LS-DETAIL-DELETION-MODULARIZATION2A-STATE-CONTROLLER`, a
-   behavior-preserving bounded extraction before LiaisonScape Cross-App
-   Relation deletion readiness/implementation. Do not copy NarrativeLine UI
-   or alter its accepted semantics.
-4. Implement and accept LiaisonScape Relation deletion.
+3. `LS-DETAIL-DELETION-MODULARIZATION1-READINESS` and
+   `LS-DETAIL-DELETION-MODULARIZATION2A-STATE-CONTROLLER` are complete. 2A is
+   accepted at LiaisonScape commit `98f7751`
+   (`refactor: extract detail deletion workflow state`) as a
+   behavior-preserving bounded extraction. Its hook owns Detail/deletion
+   workflow state and transitions; App retains Dataset, clean-baseline,
+   graph-selection, graph-interaction, placement, and creation ownership.
+   Do not copy NarrativeLine UI or alter its accepted semantics.
+4. Implement and accept the LiaisonScape-native Cross-App blocker-resolution
+   workflow as a separate feature checkpoint.
 5. Run final Cross-App interoperability acceptance in both directions,
    including self Relations, parallel Relations, hidden/non-normal
    presentation, and ambiguous endpoint/Relation identity.
@@ -1726,11 +1730,17 @@ recommends Option A: one narrow Detail/deletion application workflow
 coordinator, while App retains Dataset and clean-baseline ownership, and graph
 selection and graph-interaction state remain outside the first boundary.
 
-The next proposed checkpoint is
-`LS-DETAIL-DELETION-MODULARIZATION2A-STATE-CONTROLLER`. It is behavior-
-preserving extraction only. Cross-App blocker-resolution UI, Relation deletion
-implementation, graph interaction, Dataset/Core/Extension/schema changes, and
-browser acceptance for new observable behavior remain separate follow-up work.
+The follow-up `LS-DETAIL-DELETION-MODULARIZATION2A-STATE-CONTROLLER` is now
+**IMPLEMENTED / ACCEPTED** at LiaisonScape commit `98f7751`. It extracts the
+bounded Detail/deletion state and transition controller into
+`src/hooks/useDetailDeletionWorkflow.ts`; Dataset mutation remains behind
+App's existing `updateDataset` boundary, and graph selection/placement remain
+App-owned. LiaisonScape passed 209 tests, lint, build, and diff check.
+
+Cross-App blocker-resolution UI, Relation deletion alignment, graph
+interaction, Dataset/Core/Extension/schema changes, and browser acceptance for
+new observable behavior remain separate follow-up work. The next checkpoint is
+the LiaisonScape-native Cross-App blocker-resolution implementation.
 
 ### Open / deferred
 

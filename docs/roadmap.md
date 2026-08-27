@@ -1624,10 +1624,12 @@ Existing applications are not subject to wholesale rewrite. Before adding
 further workflow to an already large root or controller, the affected
 application should perform a readiness review and identify the smallest useful
 bounded extraction, or explicitly record why extraction is deferred. For
-LiaisonScape, the next relevant readiness review should examine bounded
-Detail/deletion orchestration extraction around `src/App.tsx`. This policy does
-not change the Cross-App Relation Deletion status, accepted Dataset/Core/
-Extension semantics, or the current execution order.
+LiaisonScape's readiness review is recorded in [LiaisonScape Detail / Deletion
+Modularization Readiness](liaisonscape-detail-deletion-modularization-readiness.md).
+The recommended next checkpoint is a bounded Detail/deletion state-controller
+extraction around `src/App.tsx`. This policy does not change the Cross-App
+Relation Deletion status, accepted Dataset/Core/Extension semantics, or the
+current execution order.
 
 The following remain **Accepted implementation — visual/presentation
 follow-up**, not acceptance blockers: Entity Delete button position across
@@ -1663,13 +1665,13 @@ accepted DELETE2/DELETE3 semantics.
    Relation action. Exact left/right/full-width button geometry remains an
    implementation decision to be made from existing card/action conventions
    and browser evidence.
-2. Stabilize the CDP/browser acceptance workflow as a separate operational
-   track: make reusable helper infrastructure explicit, handle native browser
-   dialogs as acceptance preconditions, and report target, URL, native-dialog
-   state, and visual versus programmatic evidence separately.
-3. Complete LiaisonScape Cross-App Relation deletion readiness/design
-   alignment using the accepted NarrativeLine behavior as reference; do not
-   copy NarrativeLine UI or alter its accepted semantics.
+2. `E2R-CDP-STABILIZATION1` is implemented and accepted as a separate
+   operational track; its helper and evidence boundary are recorded below.
+3. `LS-DETAIL-DELETION-MODULARIZATION1-READINESS` is complete. Its recommended
+   next step is `LS-DETAIL-DELETION-MODULARIZATION2A-STATE-CONTROLLER`, a
+   behavior-preserving bounded extraction before LiaisonScape Cross-App
+   Relation deletion readiness/implementation. Do not copy NarrativeLine UI
+   or alter its accepted semantics.
 4. Implement and accept LiaisonScape Relation deletion.
 5. Run final Cross-App interoperability acceptance in both directions,
    including self Relations, parallel Relations, hidden/non-normal
@@ -1714,6 +1716,21 @@ probe it reported `closed` and allowed acceptance. A real `alert` reproduced
 the `open` state, blocked visual/manual PASS, and returned to `closed` after
 explicit `accept: false` recovery. Machine-specific target IDs and WebSocket
 URLs are intentionally not recorded here.
+
+### LS-DETAIL-DELETION-MODULARIZATION1-READINESS
+
+**READINESS AUDIT COMPLETE / READY FOR A BOUNDED EXTRACTION.** The audit is
+recorded in [LiaisonScape Detail / Deletion Modularization
+Readiness](liaisonscape-detail-deletion-modularization-readiness.md). It
+recommends Option A: one narrow Detail/deletion application workflow
+coordinator, while App retains Dataset and clean-baseline ownership, and graph
+selection and graph-interaction state remain outside the first boundary.
+
+The next proposed checkpoint is
+`LS-DETAIL-DELETION-MODULARIZATION2A-STATE-CONTROLLER`. It is behavior-
+preserving extraction only. Cross-App blocker-resolution UI, Relation deletion
+implementation, graph interaction, Dataset/Core/Extension/schema changes, and
+browser acceptance for new observable behavior remain separate follow-up work.
 
 ### Open / deferred
 

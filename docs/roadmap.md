@@ -1692,6 +1692,25 @@ This is a design/source audit only. Runtime, CSS, i18n, tests, deletion
 semantics, and the accepted focus fix are unchanged. Bidirectional Cross-App
 acceptance and overall capability closure remain pending.
 
+### LS-CROSS-APP-RELATION-DELETION6-PRESENTATION-IMPLEMENTATION
+
+**AUTOMATED IMPLEMENTATION COMPLETE / FORMAL BOUNDED REAL EDGE PRESENTATION
+ACCEPTANCE PENDING** — 2026-08-28.
+
+The bounded LiaisonScape presentation implementation is complete at commit
+`34d8164` (`fix: refine Entity deletion resolution presentation`) and is
+recorded in [LiaisonScape Relation Deletion Resolution Presentation
+Implementation](liaisonscape-relation-deletion-resolution-presentation-implementation.md).
+The duplicate header `Keep Entity` was removed; the footer now keeps one safe
+action before zero-blocker-only `Delete Entity`, with a bounded desktop gap and
+safe-before-danger full-width narrow stacking. Human-facing EN/JA copy now
+describes connected Relations without exposing `blocker` terminology.
+
+Automated tests, lint, build, and diff checks passed. This checkpoint does not
+claim formal browser visual acceptance, bidirectional Cross-App acceptance, or
+capability closure. The next checkpoint is bounded Real Edge presentation
+acceptance; deletion semantics and the accepted focus fix remain unchanged.
+
 ### Application modularization readiness policy
 
 The workspace now has an [Accepted Decision for moderate application

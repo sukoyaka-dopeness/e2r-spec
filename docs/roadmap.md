@@ -1630,6 +1630,54 @@ Relation list scrolls. Browser H1-H8 and the six-part hard gate passed. DELETE2
 accepted semantics remain unchanged, and this checkpoint does not claim that
 LiaisonScape or the cross-app implementation has reached final alignment.
 
+### Next Cross-App deletion follow-up sequence
+
+The following is the near-term sequence within the Cross-App Relation
+deletion workstream. It does not reorder the broader roadmap or reopen the
+accepted DELETE2/DELETE3 semantics.
+
+1. `NL-ENTITY-DELETE4-CARD-PRESENTATION1` — refine the narrow Relation
+   blocker card into semantic blocks, place the Relation action at the card
+   bottom, and verify normal and narrow browser presentation. The preferred
+   information order is Relation name, endpoint/direction, endpoint identity
+   hint when needed, Relation identity hint when needed, then the Remove
+   Relation action. Exact left/right/full-width button geometry remains an
+   implementation decision to be made from existing card/action conventions
+   and browser evidence.
+2. Stabilize the CDP/browser acceptance workflow as a separate operational
+   track: make reusable helper infrastructure explicit, handle native browser
+   dialogs as acceptance preconditions, and report target, URL, native-dialog
+   state, and visual versus programmatic evidence separately.
+3. Complete LiaisonScape Cross-App Relation deletion readiness/design
+   alignment using the accepted NarrativeLine behavior as reference; do not
+   copy NarrativeLine UI or alter its accepted semantics.
+4. Implement and accept LiaisonScape Relation deletion.
+5. Run final Cross-App interoperability acceptance in both directions,
+   including self Relations, parallel Relations, hidden/non-normal
+   presentation, and ambiguous endpoint/Relation identity.
+6. Close the capability status from `design accepted / implementation not yet
+   aligned` after the preceding evidence is complete.
+
+### CDP/browser acceptance operational note
+
+The recent browser evidence showed that a native reload/discard/cancel dialog
+can stop a scenario while remaining visible, and background CDP/DOM
+evaluation can otherwise continue against an unclear browser state. Native
+dialog state is therefore an acceptance precondition. If a native dialog is
+open, it must be explicitly handled through the known page target and
+`Page.handleJavaScriptDialog`, then its closed state must be verified before
+the scenario continues. If it remains open, the run is not visual/manual
+PASS; any background DOM result is **programmatic evidence only** and must be
+reported as such. Browser-native dialog state, application `ModalDialog`, and
+background DOM state must not be conflated.
+
+Checkpoint-specific fixtures and selectors remain temporary evidence rather
+than generic helper behavior. Reusable helper scope is limited to target
+discovery, WebSocket connection, `Runtime.evaluate`, focus inspection, native
+dialog handling, and target/URL reporting. A generic workflow candidate is
+recorded for later knowledge review; no new ai-knowledge entry is created by
+this checkpoint, and the existing dirty playbook is preserved unchanged.
+
 ### Open / deferred
 
 destructive styling

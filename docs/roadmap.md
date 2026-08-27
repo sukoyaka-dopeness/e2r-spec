@@ -1617,6 +1617,19 @@ separation in blocker identity presentation; and consistent Japanese
 `つながりを削除` button wrapping across rows. They are recorded in the
 acceptance document and are not implemented by this checkpoint.
 
+The preceding visual/presentation follow-up statement is retained as
+historical wording only and is superseded by this current status:
+`NL-ENTITY-DELETE3-PRESENTATION1` is **IMPLEMENTED / MANUALLY ACCEPTED** at
+NarrativeLine commit `f01bb88` (`fix: refine Entity deletion dialog
+presentation`). Entity Delete action placement is consistent across blocked,
+resolved, and zero-blocker states; blocker identity keeps endpoint context
+primary and Relation ID hints on a separate secondary line when needed;
+localized Remove Relation actions retain stable width and wrapping; and the
+blocker dialog keeps its title, explanation, and footer visible while only the
+Relation list scrolls. Browser H1-H8 and the six-part hard gate passed. DELETE2
+accepted semantics remain unchanged, and this checkpoint does not claim that
+LiaisonScape or the cross-app implementation has reached final alignment.
+
 ### Open / deferred
 
 destructive styling

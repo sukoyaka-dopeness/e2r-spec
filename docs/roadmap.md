@@ -1595,16 +1595,27 @@ one blocker; parallel Relations remain distinct blockers, one per Relation
 Object.
 
 NarrativeLine has completed `NL-ENTITY-DELETE2-READINESS1` with implementation
-boundary E (**atomic multi-surface alignment required**) and
-`NL-ENTITY-DELETE2-DESIGN2` (**READY FOR ATOMIC IMPLEMENTATION**). The bounded
-implementation includes no-cascade Entity deletion, blocker detection, a
+boundary E (**atomic multi-surface alignment required**),
+`NL-ENTITY-DELETE2-DESIGN2` (**READY FOR ATOMIC IMPLEMENTATION**), and
+`NL-ENTITY-DELETE2-ACCEPT1` (**FORMALLY ACCEPTED / COMPLETE**). The bounded
+implementation is accepted at commit `6b9e714` and is recorded in
+[NarrativeLine Entity Deletion Resolution Acceptance](narrativeline-entity-deletion-resolution-acceptance.md).
+It includes no-cascade Entity deletion, blocker detection, a
 blocked-resolution dialog, human-readable Relation presentation, exact
 per-Relation deletion, inline confirmation, safe focus and dismissal,
 zero-blocker Entity deletion, EN/JA copy, responsive behavior, and tests.
-This does not claim that NarrativeLine or LiaisonScape has implemented the
-final contract. The first NarrativeLine implementation excludes a general
-Relation editor, bulk Delete all, targeted Handoff, provenance or directionality
-schema, and all Core, Extension, or schema changes.
+This acceptance is limited to NarrativeLine and does not claim that
+LiaisonScape or the cross-app implementation has reached final alignment. The
+first NarrativeLine implementation excludes a general Relation editor, bulk
+Delete all, targeted Handoff, provenance or directionality schema, and all
+Core, Extension, or schema changes.
+
+The following remain **Accepted implementation — visual/presentation
+follow-up**, not acceptance blockers: Entity Delete button position across
+blocked/resolved/zero-blocker presentation; clearer Entity/Relation line
+separation in blocker identity presentation; and consistent Japanese
+`つながりを削除` button wrapping across rows. They are recorded in the
+acceptance document and are not implemented by this checkpoint.
 
 ### Open / deferred
 

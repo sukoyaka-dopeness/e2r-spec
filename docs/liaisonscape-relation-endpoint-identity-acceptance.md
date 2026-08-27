@@ -211,3 +211,31 @@ focus, Tab to Description, clean Escape, dirty Escape confirmation with draft
 retention after Cancel, JA/EN labels, and JA 320px layout without horizontal
 overflow. Create Relation did not receive Name autofocus. The real mobile
 software-keyboard effect remains a manual boundary.
+
+## LS-DIALOG-DRAFT1 formal behavioral closure
+
+Date: 2026-08-27
+
+`LS-DIALOG-DRAFT1` is **ACCEPTED / CLOSED** as the LiaisonScape dialog,
+creation-draft, dismissal-safety, and bounded focus workstream. The accepted
+scope comprises dirty Entity/Relation Detail dismissal protection, guarded
+Creation Escape dismissal, safe Delete Confirmation initial focus, Create
+Entity Name autofocus, the decision not to impose global Create Relation
+autofocus because entry paths differ, graph-direct Relation browser evidence,
+and the accepted Credits focus contract.
+
+Creation outside-dialog click behavior is also closed as an intentional
+contract: Creation has no backdrop dismissal; an outside click leaves the
+dialog and any draft open, does not show a dismissal confirmation, and does
+not trigger an unintended background state change. Visible Cancel remains an
+explicit immediate discard action, while Escape remains a separate clean-close
+or dirty-confirmation path. Real-browser evidence covered clean and dirty
+Entity Creation, dirty Description, generic Relation Creation, JA/EN, and a
+representative 320px viewport. No remaining behavioral safety blocker was
+identified.
+
+The real screen-reader and universal real-touch checks remain manual
+accessibility boundaries, not known closure blockers. Action grouping,
+metadata Edit/divider spacing, and the Cross-App Visual Style / Flatness
+Experiment remain independent visual follow-ups and do not reopen this
+workstream. No universal E2R focus rule is implied.

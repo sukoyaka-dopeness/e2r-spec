@@ -1571,7 +1571,8 @@ following current summary takes precedence when older sections use stale
 
 - LS-M2A, LS-M2B, LS-M2D, LS-DETAIL-RR1, LS-REL-ENDPOINT-ID1,
   LS-REL-ENDPOINT-ID2, LS-DIALOG-DRAFT1-S1, LS-DIALOG-DRAFT1-C3,
-  LS-DIALOG-DRAFT1-F1, and LS-DIALOG-DRAFT1-F2-E1 are
+  LS-DIALOG-DRAFT1-F1, LS-DIALOG-DRAFT1-F2-E1, and the overall
+  LS-DIALOG-DRAFT1 workstream are
   **ACCEPTED / CLOSED**. The endpoint identity closure is recorded in
   [LiaisonScape Relation Endpoint Identity Acceptance](liaisonscape-relation-endpoint-identity-acceptance.md).
 - Object ID / Technical details and F2-LS1 locale/shell are accepted/closed.
@@ -1597,6 +1598,13 @@ initial focus is closed separately as `LS-DIALOG-DRAFT1-F1`; general dialog
 initial-focus policy remains outside those bounded closures. Create Entity Name
 autofocus is closed as `LS-DIALOG-DRAFT1-F2-E1`; Create Relation initial focus
 and Credits initial focus remain separate open decisions.
+
+The overall `LS-DIALOG-DRAFT1` closure is recorded in the canonical
+[LiaisonScape Relation Endpoint Identity Acceptance](liaisonscape-relation-endpoint-identity-acceptance.md)
+record. Its outside-dialog Creation click contract is no-dismissal with draft
+retention; this does not convert Creation to Credits-style backdrop dismissal.
+Action grouping and the two visual follow-ups remain separate and do not block
+the behavioral closure.
 
 ### Current execution order
 

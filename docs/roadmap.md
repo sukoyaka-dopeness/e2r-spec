@@ -1610,6 +1610,25 @@ first NarrativeLine implementation excludes a general Relation editor, bulk
 Delete all, targeted Handoff, provenance or directionality schema, and all
 Core, Extension, or schema changes.
 
+### Application modularization readiness policy
+
+The workspace now has an [Accepted Decision for moderate application
+modularization and incremental extraction](../../ai-knowledge/decisions/application-modularization-and-incremental-extraction.md).
+New application work should begin
+with clear responsibility boundaries and should avoid concentrating domain
+mutation, workflow orchestration, UI surfaces, interaction state,
+presentation, navigation/lifecycle, and destructive-action workflow in one
+root component when their independent change is already evident.
+
+Existing applications are not subject to wholesale rewrite. Before adding
+further workflow to an already large root or controller, the affected
+application should perform a readiness review and identify the smallest useful
+bounded extraction, or explicitly record why extraction is deferred. For
+LiaisonScape, the next relevant readiness review should examine bounded
+Detail/deletion orchestration extraction around `src/App.tsx`. This policy does
+not change the Cross-App Relation Deletion status, accepted Dataset/Core/
+Extension semantics, or the current execution order.
+
 The following remain **Accepted implementation — visual/presentation
 follow-up**, not acceptance blockers: Entity Delete button position across
 blocked/resolved/zero-blocker presentation; clearer Entity/Relation line

@@ -67,6 +67,15 @@ When editing:
 * Clearly distinguish normative requirements from informational guidance.
 * Do not introduce application-specific behavior into the Core without explicit instruction.
 
+## Application modularization policy
+
+When specification work records application architecture or cross-repository
+development guidance, apply the accepted workspace Decision in
+`ai-knowledge/decisions/application-modularization-and-incremental-extraction.md`.
+Keep the guidance responsibility-based and incremental; do not prescribe a
+fixed file layout or introduce Core, Extension, schema, or application-
+ownership semantics merely to support modularization.
+
 ## Working Method
 
 * Make one logical change at a time.

@@ -160,3 +160,27 @@ confirmation Cancel, confirmation Escape, Discard and blank reopen, clean
 Relation Escape, and Japanese 320px / English wide confirmation wording with
 Cancel initial focus and no horizontal overflow. The browser was restored to
 Japanese, normal viewport, no dialog, and no test draft.
+
+## LS-DIALOG-DRAFT1-F1 safe Delete Confirmation focus
+
+Date: 2026-08-27
+
+`LS-DIALOG-DRAFT1-F1` is **IMPLEMENTED / ACCEPTED / CLOSED** as a bounded
+LiaisonScape destructive-safety refinement. The shared Entity/Relation Delete
+Confirmation now focuses Cancel when it opens. DOM order, Tab/Shift+Tab
+containment, Escape/Cancel behavior, backdrop Cancel behavior, deletion
+eligibility, explicit Delete semantics, and return focus remain unchanged.
+Enter therefore activates the safe initial Cancel control rather than Delete.
+
+The implementation is committed and pushed at
+`cb95cf0` (`fix: focus safe action in delete confirmation`). No Creation
+Dialog, CreationDismissalConfirmation, Detail draft safety, Dataset
+Replacement Safety, CSS, graph, Core, Extension, or general dialog-focus
+policy was changed.
+
+Verification passed: 207 tests, lint, build, and `git diff --check`. Real
+browser acceptance covered Relation Delete Confirmation initial Cancel focus,
+Enter/Escape no-delete safety, Tab to Delete, explicit Relation deletion, and
+Entity Delete Confirmation initial Cancel focus through the shared component.
+The browser was restored to the sample Dataset, Japanese locale, normal
+viewport, and no dialog. Native screen readers were not directly tested.

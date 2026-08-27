@@ -882,13 +882,15 @@ NarrativeLine is Event-centered and currently allows Entity deletion with
 cascade removal of connected Relations, while Entity-to-Entity Relations are
 outside its direct surface.
 
-This is a follow-up / audit item, not an accepted rule. Prefer inspectable
-dependencies and avoid silently deleting out-of-scope Relations as a side
-effect of deleting another Object. Sequence it after LS-M2D Relation
-awareness, then LS-DETAIL-RR1 Related Relation Endpoint Readability, followed
-by a dedicated cross-app ownership audit. No current Delete semantics,
-cascade behavior, schema, or Core/Extension decision changes are authorized by
-this entry.
+The cross-app design direction is now recorded as **ACCEPTED / IMPLEMENTATION
+NOT YET ALIGNED** in [Cross-App Relation Deletion Capability](cross-app-relation-deletion-capability.md): Relation is a Dataset Object;
+provenance is distinct from deletion authority; capabilities are distinct; and
+endpoint deletion should wait until incident Relations are explicitly
+resolved. The earlier NarrativeLine count/details-with-cascade direction is
+held and superseded as the preferred final model. NarrativeLine currently
+cascades while LiaisonScape blocks, so this entry does not close the runtime
+follow-up or authorize implementation. Capability-based handoff and
+application-specific inspect/delete UX remain future bounded work.
 
 ### Future application surface concepts
 

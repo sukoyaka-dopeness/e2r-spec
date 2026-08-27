@@ -1677,7 +1677,13 @@ accepted DELETE2/DELETE3 semantics.
 6. Close the capability status from `design accepted / implementation not yet
    aligned` after the preceding evidence is complete.
 
-### CDP/browser acceptance operational note
+### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
+
+**IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling
+checkpoint. The reusable helper is located at
+[`tools/edge-cdp/`](../tools/edge-cdp/) and is owned by e2r-spec. It uses the
+Node.js 24 built-in WebSocket implementation and does not add a production
+dependency or change application runtime source.
 
 The recent browser evidence showed that a native reload/discard/cancel dialog
 can stop a scenario while remaining visible, and background CDP/DOM
@@ -1693,9 +1699,21 @@ background DOM state must not be conflated.
 Checkpoint-specific fixtures and selectors remain temporary evidence rather
 than generic helper behavior. Reusable helper scope is limited to target
 discovery, WebSocket connection, `Runtime.evaluate`, focus inspection, native
-dialog handling, and target/URL reporting. A generic workflow candidate is
-recorded for later knowledge review; no new ai-knowledge entry is created by
-this checkpoint, and the existing dirty playbook is preserved unchanged.
+dialog handling, acceptance-state reporting, and target/URL reporting.
+Automated helper tests cover target selection, command/event separation,
+focus inspection, dialog state transitions, acceptance blocking, and explicit
+recovery. The existing dirty playbook is preserved unchanged; the clean helper
+documentation and implementation live in e2r-spec.
+
+Real Edge smoke evidence on 2026-08-27 used a dedicated loopback CDP profile
+against LiaisonScape. Target discovery, WebSocket connection,
+`Runtime.evaluate("document.title")`, focus inspection, and explicit
+native-dialog recovery passed. The helper reported initial native-dialog state
+as `unknown` and blocked visual/manual acceptance; after an explicit no-dialog
+probe it reported `closed` and allowed acceptance. A real `alert` reproduced
+the `open` state, blocked visual/manual PASS, and returned to `closed` after
+explicit `accept: false` recovery. Machine-specific target IDs and WebSocket
+URLs are intentionally not recorded here.
 
 ### Open / deferred
 
@@ -1737,7 +1755,8 @@ is historical. When the same follow-up appears in multiple sections, the
 status above is the current cross-reference rather than a second authority.
 No Core, Extension, schema, deletion-policy, graph-layout, visual-style,
 sharing-provider, or release-version decision is made by this checkpoint.
-No new ai-knowledge entry is warranted.
+No new ai-knowledge entry was warranted by that earlier roadmap
+reconstruction checkpoint.
 
 ### NL-EVENT-ID1 — Event Human-readable Identity Disambiguation
 

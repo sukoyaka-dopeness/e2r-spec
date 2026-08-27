@@ -1610,6 +1610,16 @@ first NarrativeLine implementation excludes a general Relation editor, bulk
 Delete all, targeted Handoff, provenance or directionality schema, and all
 Core, Extension, or schema changes.
 
+LiaisonScape has now completed the bounded automated implementation of
+`LS-CROSS-APP-RELATION-DELETION1-BLOCKER-RESOLUTION` at commit `33d0427`,
+recorded in [LiaisonScape Relation Deletion Resolution Implementation](liaisonscape-relation-deletion-resolution-implementation.md).
+The implementation preserves no-cascade Entity deletion, resolves each
+incident Relation through the existing Relation Detail/deletion capability,
+keeps self and parallel Relations distinct, includes hidden/non-normal
+Dataset Relations, and requires explicit final Entity deletion. This is not
+Formal Real Edge acceptance and does not close bidirectional Cross-App
+interoperability or the overall capability status.
+
 ### Application modularization readiness policy
 
 The workspace now has an [Accepted Decision for moderate application
@@ -1675,8 +1685,9 @@ accepted DELETE2/DELETE3 semantics.
    workflow state and transitions; App retains Dataset, clean-baseline,
    graph-selection, graph-interaction, placement, and creation ownership.
    Do not copy NarrativeLine UI or alter its accepted semantics.
-4. Implement and accept the LiaisonScape-native Cross-App blocker-resolution
-   workflow as a separate feature checkpoint.
+4. `LS-CROSS-APP-RELATION-DELETION1-BLOCKER-RESOLUTION` is implemented at
+   LiaisonScape commit `33d0427` with automated verification; Formal Real Edge
+   acceptance remains pending as a separate checkpoint.
 5. Run final Cross-App interoperability acceptance in both directions,
    including self Relations, parallel Relations, hidden/non-normal
    presentation, and ambiguous endpoint/Relation identity.
@@ -1737,10 +1748,11 @@ bounded Detail/deletion state and transition controller into
 App's existing `updateDataset` boundary, and graph selection/placement remain
 App-owned. LiaisonScape passed 209 tests, lint, build, and diff check.
 
-Cross-App blocker-resolution UI, Relation deletion alignment, graph
-interaction, Dataset/Core/Extension/schema changes, and browser acceptance for
-new observable behavior remain separate follow-up work. The next checkpoint is
-the LiaisonScape-native Cross-App blocker-resolution implementation.
+The LiaisonScape-native Cross-App blocker-resolution implementation is now
+recorded at commit `33d0427` with automated verification. Formal browser
+acceptance for the new observable behavior, final Cross-App interoperability,
+and Dataset/Core/Extension/schema changes remain separate follow-up work. The
+next checkpoint is Real Edge formal acceptance for this implementation.
 
 ### Open / deferred
 

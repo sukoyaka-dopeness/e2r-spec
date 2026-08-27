@@ -1631,6 +1631,47 @@ inside the Resolution dialog. The evidence is recorded in
 Bidirectional Cross-App acceptance and overall capability closure remain
 pending.
 
+### LS-CROSS-APP-RELATION-DELETION4-PRESENTATION-FOLLOWUP
+
+**RECORDED / IMPLEMENTATION NOT STARTED** — 2026-08-28.
+
+The Formal Real Edge acceptance for LiaisonScape Entity deletion resolution is
+accepted for behavior and focus. A separate manual visual review recorded the
+following presentation and copy follow-ups. They are presentation polish, not
+acceptance blockers, and this record does not reopen the accepted deletion
+semantics or focus contract.
+
+1. **Human-facing blocker copy:** the Japanese `ブロッカー` wording is useful
+   as internal workflow terminology but is a candidate for clearer user-facing
+   copy describing the connected Relations that must be removed before the
+   Entity can be deleted. The candidate copy must be aligned in English and
+   Japanese before implementation; no runtime copy change is made here.
+2. **Zero-blocker action spacing:** the `Keep Entity` and `Delete Entity`
+   footer actions appear visually close in the resolved state. Review spacing
+   and grouping using the existing action-layout conventions across desktop,
+   narrow, EN, JA, and keyboard focus-visible states; do not prescribe a fixed
+   margin value in this record.
+3. **Keep Entity duplication:** the safe `Keep Entity` action is currently
+   available in both the dialog header and footer. Review whether the same
+   semantic action should remain in both locations or be consolidated, while
+   preserving the existing cancellation behavior and safe focus target.
+4. **Safe/destructive placement convention:** audit the placement of safe and
+   destructive actions across NarrativeLine Entity/Event Detail, deletion
+   resolution and confirmation, LiaisonScape Entity/Relation Detail, existing
+   confirmations, and the current Entity deletion resolution dialog. Compare
+   safe action position, destructive action position, Danger Zone placement,
+   footer grouping, gap, wrap order, narrow-width order, Tab order, and EN/JA
+   label width. This is an evidence-gathering follow-up, not a universal
+   Cross-App left/right rule.
+
+The follow-up remains separate from bidirectional Cross-App acceptance and
+overall capability closure. Any implementation should be a bounded
+presentation/copy checkpoint with its own desktop/narrow, EN/JA, and keyboard
+acceptance evidence. It must not change Entity/Relation deletion semantics,
+Relation visibility or identity, Dataset ownership, routing, viewport or
+pointer behavior, Handoff, Core/Extension/schema behavior, or the accepted
+focus-management fix.
+
 ### Application modularization readiness policy
 
 The workspace now has an [Accepted Decision for moderate application

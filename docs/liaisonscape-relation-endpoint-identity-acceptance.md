@@ -65,3 +65,41 @@ manual acceptance.
 No E2R Core, Extension, Dataset semantic, RR1, Event endpoint, CSS, or
 `ai-knowledge` change is part of this closure. No next roadmap item is
 selected by this record.
+
+## LS-REL-ENDPOINT-ID2 refinement
+
+Date: 2026-08-27
+
+`LS-REL-ENDPOINT-ID2` is **IMPLEMENTED / ACCEPTED / CLOSED** as a bounded
+presentation refinement. It does not reopen the historical ID1 closure.
+
+The Entity endpoint helper now starts duplicate-name hints at a minimum of
+eight Object ID characters and extends beyond eight only when required for
+uniqueness. This aligns ordinary endpoint surfaces with the existing RR1
+Related Relations presentation. The withdrawn four-character proposal was
+not adopted.
+
+The preserved rules are:
+
+- unique usable names remain trimmed name-only;
+- blank or whitespace-only names remain full Object ID fallback;
+- duplicate grouping remains trimmed-name-only, without additional case,
+  locale, or Unicode normalization; and
+- canonical `<option value>` remains the full Entity ID.
+
+The implementation is committed and pushed at
+`22904bf93189a12907eb061d802a822d9a37b034`
+(`fix: align endpoint ID hint length`). RR1 source/output was not changed.
+
+Added helper coverage includes IDs shorter than eight characters, exactly
+eight-character uniqueness, collision extension beyond eight, unique names,
+trimmed names, blank fallback, and separate duplicate-name groups. The
+LiaisonScape gates remain green: 204 tests passed, lint passed, build passed,
+and `git diff --check` passed. Real-browser Create evidence confirmed
+`Yoshi (9f232f22)` and `Yoshi (1a919cf4)` while preserving full option values;
+the existing RR1 surface showed the same eight-character hint.
+
+No CSS, Flatness, graph, Dataset, Core, Extension, Event endpoint, or
+`ai-knowledge` change is part of ID2. Native `<select>` popup visual
+inspection and real screen-reader testing remain the previously recorded
+manual boundaries.

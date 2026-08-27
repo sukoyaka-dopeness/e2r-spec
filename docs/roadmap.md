@@ -1570,7 +1570,7 @@ following current summary takes precedence when older sections use stale
 ### Completed / synchronized
 
 - LS-M2A, LS-M2B, LS-M2D, LS-DETAIL-RR1, LS-REL-ENDPOINT-ID1,
-  LS-REL-ENDPOINT-ID2, and LS-DIALOG-DRAFT1-S1 are
+  LS-REL-ENDPOINT-ID2, LS-DIALOG-DRAFT1-S1, and LS-DIALOG-DRAFT1-C3 are
   **ACCEPTED / CLOSED**. The endpoint identity closure is recorded in
   [LiaisonScape Relation Endpoint Identity Acceptance](liaisonscape-relation-endpoint-identity-acceptance.md).
 - Object ID / Technical details and F2-LS1 locale/shell are accepted/closed.

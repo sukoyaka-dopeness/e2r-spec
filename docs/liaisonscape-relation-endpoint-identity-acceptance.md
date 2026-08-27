@@ -130,3 +130,33 @@ Relation Escape, Cancel retention, Discard/reopen original values, clean
 Escape, Japanese narrow-width presentation, and English wide-width
 presentation. Creation Escape, general dialog initial focus, Delete
 Confirmation focus, action grouping, and Flatness remain separate follow-ups.
+
+## LS-DIALOG-DRAFT1-C3 safe Creation Escape dismissal
+
+Date: 2026-08-27
+
+`LS-DIALOG-DRAFT1-C3` is **IMPLEMENTED / ACCEPTED / CLOSED** as a bounded
+Creation Dialog safety fix. The existing `meaningfulCreationDraft` calculation
+is shared by `pendingUserWork` and the new App-owned Escape path. Clean Entity
+or Relation Creation Escape closes immediately; dirty Escape opens a separate
+discard confirmation and retains the Creation draft. Confirmation Cancel and
+Escape retain the draft, while Discard closes the Creation Dialog and clears
+the transient creation state. The visible Creation Cancel button remains an
+immediate explicit discard action, and Creation Dialog backdrop dismissal
+remains unimplemented.
+
+The implementation is committed and pushed at
+`ffb1b94` (`fix: guard creation drafts on Escape`). It adds a
+Creation-specific confirmation component and English/Japanese wording without
+changing Detail dismissal safety, Delete Confirmation, Dataset Replacement
+Safety, `pendingUserWork` semantics, CSS, graph behavior, Core, or Extension
+semantics. The existing native-select boundary remains preserved: the first
+Escape closes the native popup only; a subsequent page-level Escape applies
+the Creation contract.
+
+Verification passed: 206 tests, lint, build, and `git diff --check`. Real
+browser acceptance covered clean Entity Escape, dirty Entity Escape,
+confirmation Cancel, confirmation Escape, Discard and blank reopen, clean
+Relation Escape, and Japanese 320px / English wide confirmation wording with
+Cancel initial focus and no horizontal overflow. The browser was restored to
+Japanese, normal viewport, no dialog, and no test draft.

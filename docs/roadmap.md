@@ -1620,17 +1620,15 @@ Dataset Relations, and requires explicit final Entity deletion. This is not
 Formal Real Edge acceptance and does not close bidirectional Cross-App
 interoperability or the overall capability status.
 
-`LS-CROSS-APP-RELATION-DELETION2-REAL-EDGE-ACCEPTANCE` was executed on
-2026-08-28 in a dedicated Microsoft Edge session and is **FORMAL ACCEPTANCE
-FAILED / REMEDIATION REQUIRED**. The workflow, explicit deletion safeguards,
-hidden/non-normal Relations, locale behavior, dirty Relation Detail path, and
-narrow viewport passed their observed checks, but Relation-resolution focus
-was not restored after confirmation Cancel and Tab escaped the resolution
-surface to an outside Dataset control. The evidence is recorded in
+`LS-CROSS-APP-RELATION-DELETION3-FOCUS-FIX` is **IMPLEMENTED / ACCEPTED** at
+LiaisonScape commit `0a3c446` (`fix: contain deletion resolution focus`). The
+fresh 2026-08-28 Real Edge rerun of
+`LS-CROSS-APP-RELATION-DELETION2-REAL-EDGE-ACCEPTANCE` passed Matrix D, J, and
+M: Relation confirmation Cancel restores a Resolution control, final Entity
+confirmation Cancel restores `Keep Entity`, and forward/reverse Tab remains
+inside the Resolution dialog. The evidence is recorded in
 [LiaisonScape Relation Deletion Resolution Real Edge Acceptance](liaisonscape-relation-deletion-resolution-acceptance.md).
-This checkpoint does not authorize runtime changes in this record; a focused
-modal focus remediation and a fresh Real Edge rerun are required before
-acceptance. Bidirectional Cross-App acceptance and capability closure remain
+Bidirectional Cross-App acceptance and overall capability closure remain
 pending.
 
 ### Application modularization readiness policy
@@ -1699,10 +1697,9 @@ accepted DELETE2/DELETE3 semantics.
    graph-selection, graph-interaction, placement, and creation ownership.
    Do not copy NarrativeLine UI or alter its accepted semantics.
 4. `LS-CROSS-APP-RELATION-DELETION1-BLOCKER-RESOLUTION` is implemented at
-   LiaisonScape commit `33d0427` with automated verification. Its
-   `LS-CROSS-APP-RELATION-DELETION2-REAL-EDGE-ACCEPTANCE` attempt is recorded as
-   failed because modal focus restoration/trapping did not pass; remediation
-   and a fresh Real Edge rerun remain pending.
+   LiaisonScape commit `33d0427` with automated verification, and its
+   `LS-CROSS-APP-RELATION-DELETION2-REAL-EDGE-ACCEPTANCE` rerun is accepted
+   after `LS-CROSS-APP-RELATION-DELETION3-FOCUS-FIX` at commit `0a3c446`.
 5. Run final Cross-App interoperability acceptance in both directions,
    including self Relations, parallel Relations, hidden/non-normal
    presentation, and ambiguous endpoint/Relation identity.
@@ -1763,13 +1760,12 @@ bounded Detail/deletion state and transition controller into
 App's existing `updateDataset` boundary, and graph selection/placement remain
 App-owned. LiaisonScape passed 209 tests, lint, build, and diff check.
 
-The LiaisonScape-native Cross-App blocker-resolution implementation is now
-recorded at commit `33d0427` with automated verification. The 2026-08-28 Real
-Edge acceptance attempt is recorded as failed for modal focus
-restoration/trapping; no runtime change was made by that acceptance attempt.
-The next checkpoint is focused remediation followed by a fresh Real Edge
-acceptance. Final Cross-App interoperability and Dataset/Core/Extension/schema
-changes remain separate follow-up work.
+The LiaisonScape-native Cross-App blocker-resolution implementation is recorded
+at commit `33d0427` with automated verification. Its modal focus remediation is
+accepted at commit `0a3c446`, with the 2026-08-28 fresh Real Edge rerun
+recorded in [LiaisonScape Relation Deletion Resolution Real Edge Acceptance](liaisonscape-relation-deletion-resolution-acceptance.md).
+Final Cross-App interoperability and Dataset/Core/Extension/schema changes
+remain separate follow-up work.
 
 ### Open / deferred
 

@@ -2004,6 +2004,37 @@ boundary: exact Export/Open ownership, round-trip preservation, dirty/pending
 transitions, failure states, and manual target re-selection. Runtime work
 requires explicit authorization from that checkpoint.
 
+### XAPP-CAPABILITY-HANDOFF5 implementation readiness (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF5-IMPLEMENTATION-READINESS` is **READINESS AUDIT
+COMPLETE / READY FOR A BOUNDED IMPLEMENTATION CHECKPOINT / IMPLEMENTATION NOT
+AUTHORIZED**. The audit is recorded in [Cross-App Capability Handoff
+Implementation Readiness](cross-app-capability-handoff-implementation-readiness.md).
+
+The audit confirms that the accepted contracts can be implemented with
+responsibility-based application modularization. e2r-spec owns contract
+semantics; each recipient owns its supported capability and safe landing
+surface; the sender owns a small reviewed first-party catalog and current
+Dataset availability gate; and Hub remains an optional human-facing
+publication surface. No shared runtime package is introduced at this stage.
+
+The first bounded implementation target is LiaisonScape as the recipient:
+targeted parsing, exact Relation resolution, and safe `relation.inspect`
+landing on the existing Relation Detail surface. The first meaningful sender
+direction is then NarrativeLine's existing Entity deletion-resolution Relation
+row to LiaisonScape. It is inspect-only, does not open deletion confirmation,
+and does not authorize mutation. The current Dataset transfer two-lane safety
+boundary remains in force: clean known HTTPS source URLs may use targeted
+Handoff; modified/local or pending state uses explicit Export then Open.
+
+The next sequence is recipient implementation and acceptance, followed by
+targeted delete-intent compatibility, NarrativeLine source URL tracking and
+availability gating, the contextual sender trigger, and cross-app Real Edge
+acceptance. No runtime, Core, Extension, schema, Validator, Hub routing, or
+ai-knowledge change is authorized by this readiness audit. Endpoint-separator
+and dialog-spacing findings remain deferred, and Cross-App Relation deletion
+remains closed.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

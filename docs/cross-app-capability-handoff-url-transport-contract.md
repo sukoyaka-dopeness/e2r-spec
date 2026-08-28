@@ -422,11 +422,11 @@ TRANSPORT CONTRACT DEFINED /
 IMPLEMENTATION NOT AUTHORIZED
 ```
 
-The next bounded checkpoint should audit implementation readiness against the
-current NL/LS parsers, URL cleanup ownership, startup failure states, static
-capability table placement, URL-size policy, and the design vectors above. It
-must also apply the separate Current Dataset Transfer Design before any
-parser, link generator, navigation, or capability code is edited. Runtime
+The next bounded checkpoint is the [Capability Handoff Implementation
+Readiness](cross-app-capability-handoff-implementation-readiness.md) audit. It
+audits the current NL/LS parsers, URL cleanup ownership, startup failure
+states, static capability table placement, URL-size policy, and the design
+vectors above, together with the Current Dataset Transfer Design. Runtime
 changes require explicit authorization.
 
 ## Knowledge Candidate Check

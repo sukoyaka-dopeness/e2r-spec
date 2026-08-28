@@ -1339,8 +1339,8 @@ In the accepted post-spacing-fix browser view, the Dataset metadata label and
 title value are one logical row but do not appear vertically aligned. The
 label appears slightly higher than the value, weakening the perception that
 they form one metadata pair. The observed Japanese example was label
-`繧ｿ繧､繝医Ν` and value
-`轣ｯ蜿ｰ菫ｮ蠕ｩ繝励Ο繧ｸ繧ｧ繧ｯ繝・`. The adjacent `邱ｨ髮・` / Edit button has
+`タイトル`
+`灯台修復プロジェクト`. The adjacent `邱ｨ髮・` / Edit button has
 its own control geometry and must be evaluated separately from the
 label/value text baseline.
 

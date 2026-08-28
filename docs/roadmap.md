@@ -2166,6 +2166,33 @@ check for exact Relation Detail landing. Formal Cross-App Capability Handoff
 acceptance, generic discovery, modified-Dataset automatic transfer, and other
 deferred work remain separate.
 
+### XAPP-CAPABILITY-HANDOFF9-NL-LS-REAL-EDGE-ACCEPTANCE1 (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF9-NL-LS-REAL-EDGE-ACCEPTANCE1` is **FORMALLY ACCEPTED /
+CURRENT SOURCE REVISIONS**. The acceptance record is [Cross-App Capability
+Handoff NL-LS Real Edge Acceptance](cross-app-capability-handoff-nl-ls-real-edge-acceptance.md).
+
+Current-source revisions `158adec` (NarrativeLine), `95a8c56` (LiaisonScape),
+and `39d6e08` (e2r-spec record) passed the fresh automated gates and bounded
+Edge acceptance. Ordinary Dataset Handoff v0, the authorized NL native-anchor
+sender, exact `relation.inspect` targeting, local LS Detail landing, hidden /
+self / parallel / same-name identity checks, modified/local/pending safety,
+locale coexistence, delete-intent safety, and Back/Forward behavior are
+accepted at the current source revisions. Cross-App Relation deletion remains
+closed.
+
+The public deployment state is deliberately separate:
+**PUBLIC DEPLOYMENT PARITY NOT YET ACCEPTED**. Prior public observation
+established Dataset acquisition but not targeted Relation Detail landing, and
+a fresh public probe encountered a CDP navigation timeout. This does not
+authorize a runtime fix, deployment, or push; the next bounded step is public
+revision/parity verification.
+
+Handoff8 BLOCKED history and Handoff8A authorization remain unchanged.
+Generic capability-table publication, dynamic discovery, Hub targeted Handoff,
+modified-Dataset automatic transfer, endpoint-separator work, dialog-spacing
+work, third-party interoperability, and ai-knowledge changes remain deferred.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

@@ -2237,6 +2237,28 @@ Handoff8 historical BLOCKED evidence, generic capability-table/discovery,
 Hub targeted Handoff, `Remove connection` presentation, endpoint separator,
 dialog spacing, runtime fixes, and ai-knowledge changes remain deferred.
 
+### XAPP-CAPABILITY-HANDOFF12-NL-SENDER-PUBLIC-DEPLOYMENT1 (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF12-NL-SENDER-PUBLIC-DEPLOYMENT1` is **PUBLIC
+NARRATIVELINE SENDER AND PUBLIC NL-to-LS E2E ACCEPTED**. The deployment and
+browser evidence is recorded in [Public NarrativeLine to LiaisonScape
+Capability Handoff Acceptance](cross-app-capability-handoff-public-nl-ls-acceptance.md).
+
+With explicit authorization, NarrativeLine `158adec` was pushed to `main` and
+deployed through the existing GitHub Pages workflow. Actions run `33146076558`
+completed successfully for the exact head. Fresh public Edge verification
+passed ordinary Dataset Handoff v0, the Entity deletion blocker sender,
+`relation.inspect` URL generation, exact canonical `clara-lighthouse` landing,
+hidden Event-related `lead-clara` landing, modified/pending safety, English and
+Japanese locale transport, reload, Back/Forward, no Dataset mutation, and
+native-dialog closure.
+
+LiaisonScape `95a8c56` was unchanged and was not redeployed; its public
+recipient parity remains accepted by Handoff11. Hub and ai-knowledge were
+untouched. Cross-App Relation deletion remains CLOSED. Generic capability
+discovery, `relation.delete` emission from NarrativeLine, presentation work,
+and future capability expansion remain separate and deferred.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

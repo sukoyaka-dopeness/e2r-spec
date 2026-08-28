@@ -162,3 +162,109 @@ Keep this item deferred as Presentation-only. If implementation is authorized,
 perform the card-action geometry and endpoint-separator work as separately
 reviewable presentation changes, followed by dedicated visual acceptance. Do
 not treat either observation as a Capability Handoff blocker.
+
+## Relation identity presentation with long Object names
+
+### Current NarrativeLine presentation
+
+The current blocker card separates Relation name from its endpoints:
+
+```text
+Relation name
+source 竊・target
+```
+
+A secondary Relation ID hint may be added when ambiguity requires it. This
+compact form is readable when endpoint Object names are short.
+
+### LiaisonScape comparison evidence
+
+A current LiaisonScape Entity deletion blocker was manually inspected. Its
+repeated Relation identity cards explicitly separate the following identity
+fields:
+
+```text
+縺､縺ｪ縺後ｊ縺ｮ蜷榊燕  <Relation name>
+蟋狗せ            <source Object name>
+邨らせ            <target Object name>
+```
+
+This is Cross-App presentation evidence only. It does not establish a
+normative E2R rule, and it does not require NarrativeLine and LiaisonScape to
+render Relation identity identically.
+
+### Long-name robustness concern
+
+NarrativeLine's combined `source 竊・target` presentation becomes less robust
+when one or both endpoint Object names are long. Wrapped source and target
+become harder to distinguish; endpoint role must be inferred from arrow
+position; arrow placement can become visually awkward after wrapping; long EN
+and JA names may produce substantially different wrapping; additional endpoint
+or Relation ID hints increase visual ambiguity; and scanning several blocker
+cards becomes harder when wrapped endpoint boundaries differ card by card.
+
+This is an **PRESENTATION FOLLOW-UP / LONG-NAME ROBUSTNESS** finding. It is
+not a Dataset defect, Relation semantic defect, Capability Handoff defect,
+confirmed accessibility failure, or requirement for identical Cross-App UI.
+
+### Safety and responsibility context
+
+This is an Entity deletion blocker surface, not merely compact Relation
+display. Before choosing `Remove connection`, the user must be able to
+understand which incident Relation is being reviewed. Endpoint role clarity
+may therefore appropriately take priority over minimum card height. Relation
+semantics and deletion semantics are unchanged.
+
+### Preferred future candidate
+
+A preferred future presentation candidate is role-explicit identity rows,
+conceptually:
+
+```text
+Relation name  <name>
+Source         <source Object identity>
+Target         <target Object identity>
+```
+
+The Japanese comparison is:
+
+```text
+縺､縺ｪ縺後ｊ縺ｮ蜷榊燕  <name>
+蟋狗せ            <source Object identity>
+邨らせ            <target Object identity>
+```
+
+Exact visual geometry is not accepted by this checkpoint. Later comparison
+must still decide row structure, label width, spacing, unnamed Relations,
+Relation ID and duplicate-name hint placement, long-value wrapping,
+narrow-width behavior, EN/JA label width, and whether to match LiaisonScape
+exactly or only share responsibility separation.
+
+### Density trade-off and later comparison
+
+The current NarrativeLine two-line identity is more compact. LiaisonScape-style
+role separation increases vertical height; vertical density alone is not
+decisive. A later comparison should cover short names, long source only, long
+target only, both endpoints long, EN, JA, multiple Relation cards, narrow
+width, Relation ID hints, duplicate endpoint-name hints, and ordinary, self,
+parallel, and Event-related Relations.
+
+The useful Cross-App observation is narrower: explicit source/target roles
+appear more resilient to long Object names in a destructive-review surface.
+Whether both applications should converge on identical markup or styling
+remains undecided.
+
+### Candidate B boundary and formal status
+
+Relation identity presentation, outer action-group geometry, and internal
+control-label alignment remain separate responsibilities. This observation
+does not reopen or redefine Candidate B automatically. Candidate B Formal
+Visual / Manual Acceptance remains pending, and this unresolved identity
+presentation concern remains visible as a Presentation follow-up before final
+blocker-card presentation closure.
+
+This observation does not reopen Capability Handoff, Entity deletion or
+Relation deletion semantics, endpoint separator correction, Dataset Handoff,
+Core / Extension / schema, or LiaisonScape runtime acceptance. No Source/Target
+rows, card markup, card height, Candidate B geometry, or control-label
+alignment are changed by this documentation checkpoint.

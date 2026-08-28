@@ -2193,6 +2193,29 @@ Generic capability-table publication, dynamic discovery, Hub targeted Handoff,
 modified-Dataset automatic transfer, endpoint-separator work, dialog-spacing
 work, third-party interoperability, and ai-knowledge changes remain deferred.
 
+### XAPP-CAPABILITY-HANDOFF10-PUBLIC-DEPLOYMENT-PARITY-READINESS1 (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF10-PUBLIC-DEPLOYMENT-PARITY-READINESS1` is
+**DIAGNOSIS COMPLETE / PUSH-DEPLOY NOT PERFORMED**. The readiness record is
+[Cross-App Capability Handoff Public Deployment Parity Readiness](cross-app-capability-handoff-public-deployment-parity-readiness.md).
+
+Current-source acceptance remains green at NarrativeLine `158adec`,
+LiaisonScape `95a8c56`, and the e2r-spec acceptance record `fb05042`.
+Read-only remote checks confirmed that both required runtime commits remain
+local-only on their remote `main` branches. Public NL and LS Pages URLs are
+reachable, but the deployed bundles do not expose the current targeted
+Handoff terms; public Relation Detail landing and deployed commit identity
+therefore remain unaccepted. The formal classification is **A — REQUIRED
+RUNTIME COMMITS NOT PUSHED**, with **C — DEPLOYED REVISION UNKNOWN** also
+confirmed. No config mismatch or confirmed service-worker cache was found.
+
+The documented decision is **READY TO AUTHORIZE PUSH/DEPLOY**, without taking
+that action in this checkpoint. If authorized later, deploy LiaisonScape first,
+verify its public targeted recipient and ordinary v0 paths, then deploy
+NarrativeLine and verify the sender-to-public-recipient path. Presentation
+issues, runtime fixes, generic discovery, Hub targeted Handoff, and
+ai-knowledge changes remain deferred.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

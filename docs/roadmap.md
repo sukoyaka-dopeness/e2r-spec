@@ -2377,3 +2377,26 @@ follow-up must not alter Event identity, History `order`, precision semantics,
 Core or History schema, or Dataset behavior. No global UUID display rule is
 adopted. NarrativeLine implementation and acceptance evidence are still
 required.
+
+### NarrativeLine Relation blocker-card presentation follow-up (2026-08-28)
+
+The public Handoff12 browser acceptance recorded a separate **FOLLOW-UP /
+PRESENTATION ONLY / NOT A CAPABILITY HANDOFF BLOCKER** for the NarrativeLine
+Entity deletion blocker dialog. The evidence is recorded in [NarrativeLine
+Relation Blocker-Card Presentation Follow-up](narrativeline-relation-blocker-card-presentation-follow-up.md).
+
+The deferred observations are local Relation-card action alignment, English
+`Remove connection` wrapping, two-action card density, and the known Relation
+endpoint separator mojibake. Candidate later treatment is end-aligned compact
+actions at ordinary width with a narrow responsive fallback, plus normal-width
+one-line English action presentation. Exact geometry is not accepted here.
+The separator issue remains a presentation-source defect, not Dataset
+corruption; a future fix must cover EN/JA, ordinary/self/parallel/
+hidden-Event-related Relations, blocker cards, and Handoff coexistence.
+
+The `Keep Entity` footer placement is not classified as a clear defect and is
+not coupled to card-action changes. No global safe-left/danger-right rule is
+introduced. Entity/Relation deletion semantics, the Capability Handoff
+contract, Dataset Handoff, Core/Extension/schema, Hub, LiaisonScape, and
+ai-knowledge remain unchanged. Public Capability Handoff acceptance stays
+CLOSED.

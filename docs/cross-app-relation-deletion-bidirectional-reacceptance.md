@@ -1,7 +1,7 @@
 # Cross-App Relation Deletion Bidirectional Reacceptance
 
-**Checkpoint:** `XAPP-REL-DELETE5-BIDIRECTIONAL-REACCEPTANCE`  
-**Date:** 2026-08-28  
+**Checkpoint:** `XAPP-REL-DELETE5-BIDIRECTIONAL-REACCEPTANCE`
+**Date:** 2026-08-28
 **Status:** **FORMALLY ACCEPTED / COMPLETE**
 
 ## Why re-acceptance was required

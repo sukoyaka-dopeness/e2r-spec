@@ -2130,6 +2130,42 @@ endpoint-separator work, dialog-spacing work, and formal cross-app acceptance
 remain deferred. The next checkpoint is the bounded NarrativeLine sender
 implementation; this authorization does not begin it automatically.
 
+### XAPP-CAPABILITY-HANDOFF8B-NL-SENDER-IMPLEMENTATION1 (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF8B-NL-SENDER-IMPLEMENTATION1` is **IMPLEMENTED /
+AUTOMATED GREEN / BOUNDED CROSS-APP SMOKE PARTIAL**. The implementation record
+is [NarrativeLine Capability Handoff Sender Runtime Implementation](narrativeline-capability-handoff-sender-runtime-implementation.md).
+
+NarrativeLine now exposes the authorized Entity deletion-resolution Relation
+row sender surface for `relation.inspect`. It uses a pure targeted URL builder,
+the accepted flat-fragment fields, the canonical full Relation ID, an
+environment-aware LiaisonScape configuration, and a native same-tab `<a
+href>` with no imperative navigation. Clean/no-pending/known-HTTPS-source
+eligibility gates targeted navigation. Modified, local, source-less, invalid,
+and pending state retain the existing safe explicit Export/Open boundary; no
+Dataset or deletion mutation was added.
+
+NarrativeLine verification is green: 194 tests passed, lint passed, build
+passed, and diff checking passed. A dedicated Edge smoke confirmed the sender
+surface, exact URL fields, same-tab navigation to the public LiaisonScape
+origin, same Dataset acquisition, and absence of browser/delete confirmation.
+The current public deployment did not expose the targeted Relation Detail
+after fragment loading, so exact public recipient landing remains unclaimed
+and should be reconciled in a later compatibility/acceptance checkpoint.
+
+The historical Handoff8 BLOCKED record and Handoff8A authorization remain
+unchanged. Cross-App Relation deletion remains closed; discovery, target and
+transport contracts, current-Dataset transfer design, readiness, and both
+LiaisonScape recipient implementations remain accepted or implemented. No
+generic capability table, Hub targeted Handoff, Core/Extension/schema change,
+endpoint-separator correction, dialog-spacing correction, or ai-knowledge
+change was made.
+
+The next bounded step is a fresh recipient deployment/real-edge compatibility
+check for exact Relation Detail landing. Formal Cross-App Capability Handoff
+acceptance, generic discovery, modified-Dataset automatic transfer, and other
+deferred work remain separate.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

@@ -1918,6 +1918,36 @@ privacy, and user confirmation. No manifest schema, URL syntax, runtime
 discovery, automatic redirect, registry, Core, Extension, schema, or
 application-source change is authorized by this audit.
 
+### XAPP-CAPABILITY-HANDOFF2 target contract design (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF2-TARGET-CONTRACT-DESIGN` is **DESIGN ACCEPTED / URL
+CONTRACT NOT YET DESIGNED / IMPLEMENTATION NOT AUTHORIZED**. The accepted
+transport-independent contract is recorded in [Cross-App Capability Handoff
+Target Contract](cross-app-capability-handoff-target-contract.md).
+
+The minimum semantic tuple is a transferable Dataset context, the canonical
+full target Object ID, and one primary required capability. `targetObjectType`
+is an optional consistency hint and never replaces the canonical ID. The first
+capability identifiers are application-neutral `relation.inspect` and
+`relation.delete`; deletion requires inspection as a safety prerequisite and
+never means immediate mutation. Source application identity is optional
+diagnostic context, recipient identity is resolved separately, locale is
+orthogonal, and a separate Target Contract version must not be confused with
+Core, Extension, Dataset, or application version.
+
+Missing target, type mismatch, stale capability metadata, and unsupported
+capability all fail non-destructively. Inspect-only support is not a silent
+downgrade from delete. Existing Dataset Handoff v0 `datasetUrl` semantics and
+Hub sample links remain unchanged. The Cross-App Relation deletion capability
+remains **FORMALLY ACCEPTED / CROSS-APP IMPLEMENTATION ALIGNED / COMPLETE**.
+
+The next bounded step is URL/transport contract design. It must decide
+serialization, URL/history ownership, public versus explicitly transferred
+Dataset state, catalog and origin trust, version handling, locale coexistence,
+and replacement safety before any runtime implementation. No Core, Extension,
+schema, application source, capability manifest, runtime discovery, automatic
+redirect, or registry change is authorized by this checkpoint.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

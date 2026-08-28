@@ -2406,6 +2406,35 @@ retention; this does not convert Creation to Credits-style backdrop dismissal.
 Action grouping and the two visual follow-ups remain separate and do not block
 the behavioral closure.
 
+### REL-DIRECTIONALITY1 — Relation Directionality / Endpoint UI Audit
+
+This is a bounded future planning follow-up for Relation directionality and
+endpoint UI vocabulary. The planning record is [Relation Endpoint UI /
+Directionality Follow-up](relation-endpoint-ui-directionality-follow-up.md).
+It records **PLANNING DIRECTION RECORDED / FUTURE DESIGN AUDIT REQUIRED /
+IMPLEMENTATION NOT AUTHORIZED** and does not change the Core, an Extension,
+schema, Validator, or either application.
+
+The current Relation remains directed from `sourceId` to `targetId`. Current
+Source/Target and 始点/終点 presentation remain valid. A future Japanese
+generic grouping direction is `接続`, while the technical term `endpoint`
+remains unchanged; actual connected Object type should remain explicit where
+useful. 始点/終点 are direction-specific roles, not universal names for every
+future endpoint presentation.
+
+Any future reverse-direction operation must swap canonical source and target;
+it must not be a presentation-only arrow reversal. Bidirectional and
+undirected Relation semantics must not be simulated, normalized, or added
+without explicit specification work. A later audit must decide the Core versus
+Extension boundary, canonical ordering, Validator/schema, round-trip, History,
+identity, deletion, Handoff, interoperability, LiaisonScape, NarrativeLine,
+and EN/JA implications.
+
+This item remains separate from current Relation deletion work, Capability
+Handoff, display-order work, Flatness, generic dialog spacing, and
+endpoint-separator presentation correction. No implementation is authorized
+by this roadmap entry.
+
 ### Current execution order
 
 The active sequence is Cross-App Locale production readiness, NarrativeLine and

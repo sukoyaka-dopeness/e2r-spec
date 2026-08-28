@@ -136,10 +136,10 @@ to A v2, sending the v1 URL as though it represented A v2 is forbidden. The
 source must not silently fall back to the stale public URL, and the recipient
 must not be told that current edits were transferred when they were not.
 
-The first transport therefore does not transfer modified current state or
-pending drafts. If an explicit export or publish operation later creates a
-retrievable HTTPS representation of the intended current state, that is a
-separate product and safety decision. It is outside this checkpoint.
+The first URL transport therefore does not transfer modified current state or
+pending drafts. The separate [Current Dataset Transfer Design](cross-app-capability-handoff-current-dataset-transfer-design.md)
+defines explicit Export/Open as a bounded out-of-band direction; it does not
+add a URL parameter or alter this URL contract.
 
 The existing Dataset Replacement Safety guard remains authoritative:
 `datasetModified || pendingUserWork` requires preservation or explicit user
@@ -425,8 +425,9 @@ IMPLEMENTATION NOT AUTHORIZED
 The next bounded checkpoint should audit implementation readiness against the
 current NL/LS parsers, URL cleanup ownership, startup failure states, static
 capability table placement, URL-size policy, and the design vectors above. It
-must explicitly authorize runtime changes before any parser, link generator,
-navigation, or capability code is edited.
+must also apply the separate Current Dataset Transfer Design before any
+parser, link generator, navigation, or capability code is edited. Runtime
+changes require explicit authorization.
 
 ## Knowledge Candidate Check
 

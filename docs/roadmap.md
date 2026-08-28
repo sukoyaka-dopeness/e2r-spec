@@ -1971,10 +1971,38 @@ Relation deletion remains **FORMALLY ACCEPTED / CROSS-APP IMPLEMENTATION
 ALIGNED / COMPLETE**. Endpoint-separator and dialog-spacing findings remain
 deferred.
 
-The next bounded step is an implementation-readiness audit covering current
-NL/LS parser and cleanup ownership, static capability-table placement,
-URL-size policy, and the transport design vectors. Runtime implementation
-requires explicit authorization from that later checkpoint.
+The next bounded step is the current Dataset transfer design below, followed by
+an implementation-readiness audit. Runtime implementation requires explicit
+authorization from a later checkpoint.
+
+### XAPP-CAPABILITY-HANDOFF4 current Dataset transfer design (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF4-CURRENT-DATASET-TRANSFER-DESIGN` is **DESIGN
+ACCEPTED / FIRST CURRENT-DATASET TRANSFER BOUNDARY DEFINED / IMPLEMENTATION
+NOT AUTHORIZED**. The design is recorded in [Cross-App Capability Handoff
+Current Dataset Transfer Design](cross-app-capability-handoff-current-dataset-transfer-design.md).
+
+The accepted first direction has two lanes. A clean Dataset with a known
+retrievable URL may use the existing targeted URL Handoff. A modified committed
+Dataset or a local Dataset without a source URL uses explicit Export followed by
+explicit Open in the recipient; target metadata is not embedded in Core or an
+Extension, so the user re-selects the target. Pending work blocks current-state
+Handoff until explicitly committed or discarded. Modified plus pending work
+requires both boundaries to be resolved.
+
+The transfer is a committed snapshot at export time, using the existing
+validated export/serialization path and preserving unknown valid fields and
+Extensions. It does not introduce revision fields, fingerprints, hosted
+uploads, transfer tokens, live synchronization, or a new URL parameter. No
+silent public sharing, stale URL fallback, draft transfer, automatic target
+action, or destructive mutation is authorized. Discovery, Target Contract,
+URL/Transport Contract, and Cross-App Relation deletion remain accepted; the
+endpoint-separator and dialog-spacing findings remain deferred.
+
+The next bounded step is implementation-readiness review for this two-lane
+boundary: exact Export/Open ownership, round-trip preservation, dirty/pending
+transitions, failure states, and manual target re-selection. Runtime work
+requires explicit authorization from that checkpoint.
 
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 

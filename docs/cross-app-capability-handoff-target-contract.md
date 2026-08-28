@@ -141,8 +141,9 @@ The contract must state whether the intended Dataset is:
 The current source application must not claim that its unexported edits were
 transferred when only a public `datasetUrl` was sent. If the user requests a
 handoff of current edits, the application must first use an explicit export or
-an explicitly designed transfer mechanism. That mechanism is not designed by
-this checkpoint.
+an explicitly designed transfer mechanism. The bounded direction is recorded
+in the [Current Dataset Transfer Design](cross-app-capability-handoff-current-dataset-transfer-design.md);
+implementation remains outside this checkpoint.
 
 The target Object ID is meaningful only within the Dataset representation that
 the recipient actually accepts. If the transferred content differs from the
@@ -162,8 +163,10 @@ The following remain separate from transferable Dataset content:
 
 The recipient must not receive pending drafts merely because a source URL or
 target ID is present. Existing `datasetModified` and `pendingUserWork`
-replacement-safety decisions remain authoritative. A future current-edit
-transfer must define its own explicit acceptance and loss-risk boundary.
+replacement-safety decisions remain authoritative. The first current-state
+transfer boundary is defined in the [Current Dataset Transfer Design](cross-app-capability-handoff-current-dataset-transfer-design.md);
+any later transfer mechanism must define its own explicit acceptance and
+loss-risk boundary.
 
 ## Target Object identity
 
@@ -527,7 +530,7 @@ follow-up contract, while implementation remains separate:
 - runtime discovery or negotiation;
 - automatic redirect;
 - network registry or account/authentication flow;
-- current-edit or pending-draft transport;
+- current-edit or pending-draft runtime transport;
 - provenance or application ownership;
 - a generic plugin system;
 - bulk Relation management;
@@ -556,8 +559,10 @@ The transport contract is now recorded in the
 [URL/Transport Contract](cross-app-capability-handoff-url-transport-contract.md).
 It preserves the current v0 Handoff contract, limits the first direction to a
 flat fragment with retrievable HTTPS `datasetUrl` plus validated target fields,
-and keeps current-edited Dataset transfer outside scope. Runtime capability
-routing still requires its own explicit implementation authorization.
+and keeps runtime current-edited Dataset transfer outside scope. The separate
+[Current Dataset Transfer Design](cross-app-capability-handoff-current-dataset-transfer-design.md)
+defines the explicit Export/Open boundary. Runtime capability routing still
+requires its own explicit implementation authorization.
 
 ## Knowledge Candidate Check
 
@@ -594,6 +599,7 @@ Object ID, and a primary required capability, with optional type and diagnostic
 metadata. `relation.delete` requires safe inspection capability and explicit
 user interaction; it never means immediate deletion. Missing targets,
 mismatches, stale metadata, and unsupported capabilities fail non-destructively.
-The URL/transport design is accepted in the follow-up contract. Runtime
-implementation, current-edited Dataset transfer, and deferred presentation
-fixes remain separate and unauthorized checkpoints.
+The URL/transport design and the separate current Dataset transfer boundary are
+accepted in their follow-up contracts. Runtime implementation, hosted/current
+state transfer, and deferred presentation fixes remain separate and
+unauthorized checkpoints.

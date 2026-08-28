@@ -2086,6 +2086,26 @@ sender implementation is the next bounded step; capability table publication,
 Hub changes, Core/Extension/schema changes, endpoint-separator mojibake, and
 dialog-spacing findings remain deferred.
 
+### XAPP-CAPABILITY-HANDOFF8-NL-SENDER1 (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF8-NL-SENDER1` is **BLOCKED / NO RUNTIME CHANGE**. The
+requested NarrativeLine sender slice was stopped at the pre-implementation
+gate and is recorded in [NarrativeLine Capability Handoff
+Sender Implementation](narrativeline-capability-handoff-sender-implementation.md).
+
+The current readiness document resolves the bounded design decisions but still
+states **IMPLEMENTATION NOT AUTHORIZED**. It also does not record whether the
+targeted recipient navigation is same-tab or new-tab/window, and no existing
+NarrativeLine Cross-App convention resolves that choice. No sender button,
+URL builder, source URL state, recipient config, or navigation handler was
+added. Modified/local/pending Dataset safety boundaries and the explicit
+Export/Open fallback remain unchanged. Generic capability-table publication,
+Hub changes, endpoint-separator work, and dialog-spacing work remain deferred.
+
+The next bounded step is to update the readiness authority with explicit
+sender authorization and navigation behavior, then retry the sender
+implementation.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

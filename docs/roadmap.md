@@ -2216,6 +2216,27 @@ NarrativeLine and verify the sender-to-public-recipient path. Presentation
 issues, runtime fixes, generic discovery, Hub targeted Handoff, and
 ai-knowledge changes remain deferred.
 
+### XAPP-CAPABILITY-HANDOFF11-LS-RECIPIENT-PUBLIC-DEPLOYMENT1 (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF11-LS-RECIPIENT-PUBLIC-DEPLOYMENT1` is **PUBLIC
+LIAISONSCAPE RECIPIENT PARITY ACCEPTED**. The deployment record is
+[LiaisonScape Capability Handoff Public Recipient Deployment](liaisonscape-capability-handoff-public-recipient-deployment.md).
+
+With explicit recipient-first authorization, LiaisonScape `95a8c56` was pushed
+to `main` and deployed by the existing GitHub Pages workflow. Actions run
+`33144996627` completed successfully for that exact head. Fresh dedicated Edge
+verification passed ordinary Dataset Handoff v0, direct `relation.inspect`
+targeting of `clara-thomas-supervises`, canonical self-Relation targeting,
+non-destructive `relation.delete` intent, malformed/unsupported safe failure,
+locale, reload, Back/Forward, and native-dialog closure. Public recipient
+parity is accepted.
+
+NarrativeLine public sender parity remains **NOT YET ACCEPTED** and full public
+NL-to-LS E2E remains separate. Cross-App Relation deletion remains CLOSED.
+Handoff8 historical BLOCKED evidence, generic capability-table/discovery,
+Hub targeted Handoff, `Remove connection` presentation, endpoint separator,
+dialog spacing, runtime fixes, and ai-knowledge changes remain deferred.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

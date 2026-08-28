@@ -133,16 +133,16 @@ They are direction-specific role labels. They are not being removed,
 deprecated, or replaced in the current UI. `接続先` is a future generic
 endpoint vocabulary, not a correction to the current directed labels.
 
-# Direction and arrow consistency
+# Direction and arrow consistency for the ordinary directed form
 
-For a directed Relation:
+For the ordinary directed presentation of a Relation:
 
 ```text
 source = A
 target = B
 ```
 
-the visual direction, when shown, must correspond to:
+the ordinary visual direction normally corresponds to:
 
 ```text
 A → B
@@ -151,9 +151,14 @@ A → B
 The arrow must not imply causality, ownership, chronology, or another domain
 meaning unless a supported Extension or Application contract provides that
 meaning. Direction-neutral endpoint vocabulary does not remove the requirement
-to keep the directed structural meaning truthful.
+to keep the ordinary directed structural meaning truthful.
 
-# Reverse-direction constraint
+# Historical R2 reverse-direction constraint (superseded)
+
+The following section preserves the R2 planning direction for history. Its
+requirement that a future visual reverse must swap canonical source and target
+is superseded by the current planning direction below and is not current
+implementation authorization.
 
 If a future UI offers a reverse-direction operation, semantic reversal must
 swap the canonical source and target roles:
@@ -167,6 +172,48 @@ A presentation-only reversal is not authorized. Keeping `source = A` and
 `target = B` while drawing an arrow that implies the opposite direction would
 contradict canonical Relation meaning. Reverse-direction editing requires a
 separate semantic, identity, Dataset-safety, and acceptance design.
+
+# Superseding current directionality planning
+
+The R2 requirement above is now superseded. The current planning intent is
+that graph directionality may be presented as an application or visualization
+choice while the canonical Core Relation remains unchanged:
+
+```text
+Dataset: sourceId = A, targetId = B
+
+ordinary visual form:      A → B
+reverse visual form:       A ← B
+undirected visual form:    A — B
+bidirectional visual form: A ↔ B
+```
+
+The forms and glyphs are illustrative only. No exact iconography, control, or
+visual directionality schema is accepted by this record.
+
+In these future visual forms, `sourceId = A` and `targetId = B` are not
+automatically swapped merely because the graph appearance changes. The visual
+choice must not be presented as a change to canonical Relation semantics, and
+it must not cause the application to infer causality, ownership, chronology,
+or another domain meaning. The later `REL-DIRECTIONALITY1` audit must define
+how this presentation responsibility coexists with the Core structural
+direction and the existing Presentation/Application Visualization boundaries.
+
+If current Research responsibility wording says that Presentation must not
+override or misrepresent Core semantic direction, that evidence is retained.
+Current planning status: **PLANNING DIRECTION REQUIRES RESEARCH
+RESPONSIBILITY RECONCILIATION**. The required result is a responsibility
+reconciliation, not a silent rewrite of the normative specification. No Core,
+schema, or Directionality Extension change is authorized here.
+
+# Reverse presentation and human-authored text
+
+A future visual directionality choice must not automatically rewrite a
+Relation's human-authored `name` or `description`. For example, reversing the
+appearance of a Relation named `mentor`, `apprentice`, `supervisor`, or
+`subordinate` does not tell the application how the user's prose should
+change. Any semantic editing operation and any presentation choice require
+separate future design decisions.
 
 # Bidirectional boundary
 
@@ -219,8 +266,10 @@ CSS, geometry, or final wording in every context.
 
 # English vocabulary boundary
 
-No English counterpart for `接続先` is finalized here. Candidates such as
-`Endpoints`, `Connections`, and `Connected objects` have not been evaluated.
+No English counterpart for `接続先` is finalized here. `Endpoints` is a
+preferred candidate for a later EN/JA vocabulary audit; candidates such as
+`Connections` and `Connected objects` have not been evaluated. `Endpoints`
+is not normative or accepted English vocabulary in this checkpoint.
 
 Future direction-neutral English vocabulary remains **TBD**. Current
 `Source` / `Target` remains valid for the current directed UI.
@@ -277,7 +326,8 @@ Use the bounded workstream name:
 The later audit should treat `接続先` as the preferred Japanese generic
 endpoint vocabulary, retain `endpoint` as the technical concept, keep
 `つながり` for the Relation itself, retain explicit Object types where useful,
-and preserve semantic consistency between source/target and visual direction.
+and define how alternate visual forms coexist with canonical source/target
+without silently redefining Dataset meaning.
 
 It must produce an explicit semantic decision before any runtime, schema, or
 Core work. This workstream is not the immediate next implementation and is not

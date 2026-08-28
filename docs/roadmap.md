@@ -1941,12 +1941,40 @@ downgrade from delete. Existing Dataset Handoff v0 `datasetUrl` semantics and
 Hub sample links remain unchanged. The Cross-App Relation deletion capability
 remains **FORMALLY ACCEPTED / CROSS-APP IMPLEMENTATION ALIGNED / COMPLETE**.
 
-The next bounded step is URL/transport contract design. It must decide
-serialization, URL/history ownership, public versus explicitly transferred
-Dataset state, catalog and origin trust, version handling, locale coexistence,
-and replacement safety before any runtime implementation. No Core, Extension,
-schema, application source, capability manifest, runtime discovery, automatic
-redirect, or registry change is authorized by this checkpoint.
+The next bounded step is recorded below as URL/transport contract design. No
+Core, Extension, schema, application source, capability manifest, runtime
+discovery, automatic redirect, or registry change is authorized by this
+checkpoint.
+
+### XAPP-CAPABILITY-HANDOFF3 URL/transport contract design (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF3-URL-TRANSPORT-CONTRACT-DESIGN` is **DESIGN ACCEPTED /
+TRANSPORT CONTRACT DEFINED / IMPLEMENTATION NOT AUTHORIZED**. The accepted
+transport is recorded in [Cross-App Capability Handoff URL/Transport
+Contract](cross-app-capability-handoff-url-transport-contract.md).
+
+The first direction extends Dataset Handoff v0's flat URL fragment. It carries
+the existing retrievable absolute HTTPS `datasetUrl`, the canonical full
+`targetObjectId`, optional exact-case `targetObjectType`,
+`requiredCapability`, and `targetContractVersion=1`. Targeted requests are
+startup-only, validate duplicates and malformed values, preserve the existing
+locale contract, and never turn Handoff into an automatic deletion command.
+`relation.delete` still requires safe inspection/presentation and explicit user
+action; unknown, stale, mismatched, or unsupported input fails
+non-destructively.
+
+The first transport does not carry inline or current-edited Dataset state,
+pending drafts, recipient identity, source ownership, or capability
+negotiation. Existing v0 links remain unchanged, and an old recipient may
+open the Dataset but cannot claim that targeted intent was fulfilled. Cross-App
+Relation deletion remains **FORMALLY ACCEPTED / CROSS-APP IMPLEMENTATION
+ALIGNED / COMPLETE**. Endpoint-separator and dialog-spacing findings remain
+deferred.
+
+The next bounded step is an implementation-readiness audit covering current
+NL/LS parser and cleanup ownership, static capability-table placement,
+URL-size policy, and the transport design vectors. Runtime implementation
+requires explicit authorization from that later checkpoint.
 
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 

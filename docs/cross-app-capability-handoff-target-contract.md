@@ -4,12 +4,14 @@
 
 **Date:** 2026-08-28
 
-**Status:** **DESIGN ACCEPTED / URL CONTRACT NOT YET DESIGNED / IMPLEMENTATION NOT AUTHORIZED**
+**Status:** **DESIGN ACCEPTED / TRANSPORT CONTRACT DEFINED IN FOLLOW-UP / IMPLEMENTATION NOT AUTHORIZED**
 
 This document defines the transport-independent semantic contract for a future
 capability-based Cross-App Handoff. It follows the [discovery audit](cross-app-capability-handoff-discovery-audit.md)
-and adopts its first-party static capability direction. It does not define a
-URL, fragment, query, JSON serialization, manifest schema, or runtime behavior.
+and adopts its first-party static capability direction. Its accepted URL
+transport is defined in the [URL/Transport Contract](cross-app-capability-handoff-url-transport-contract.md);
+this document remains the authority for transport-independent meaning and does
+not define runtime behavior.
 
 ## Scope
 
@@ -516,9 +518,10 @@ an Extension, or implementation authorization.
 
 ## Explicit exclusions
 
-This checkpoint does not decide or implement:
+This semantic checkpoint did not decide or implement the following transport
+or runtime details; the URL shape and transport rules are now defined by the
+follow-up contract, while implementation remains separate:
 
-- final Handoff URL or fragment syntax;
 - URL encoding or parser implementation;
 - capability manifest schema or catalog serialization;
 - runtime discovery or negotiation;
@@ -534,36 +537,27 @@ This checkpoint does not decide or implement:
 
 ## Implementation readiness
 
-The design result is:
+The semantic design result is:
 
 ```text
 DESIGN ACCEPTED /
-URL CONTRACT NOT YET DESIGNED /
+TRANSPORT CONTRACT DEFINED IN FOLLOW-UP /
 IMPLEMENTATION NOT AUTHORIZED
 ```
 
 The target meaning, identity, capability semantics, failure behavior, and
-safety boundaries are sufficiently defined for the next URL/transport design
-checkpoint. They are not sufficient authority for a runtime prototype because
-serialization, origin trust, browser history, current Dataset transfer, and
-catalog publication remain undecided.
+safety boundaries are preserved by the follow-up
+[URL/Transport Contract](cross-app-capability-handoff-url-transport-contract.md).
+Neither document authorizes a runtime prototype.
 
 ## Next bounded step
 
-The next checkpoint should design the transport contract, including:
-
-- URL versus non-URL transport;
-- fragment/query/history ownership;
-- serialization and encoding;
-- public source versus explicitly transferred Dataset;
-- catalog entry and recipient URL trust;
-- contract-version handling;
-- locale coexistence;
-- stale target and unsupported capability errors; and
-- explicit navigation and replacement-safety behavior.
-
-It must preserve the current v0 Handoff contract and must not implement
-runtime capability routing until its own acceptance gate is complete.
+The transport contract is now recorded in the
+[URL/Transport Contract](cross-app-capability-handoff-url-transport-contract.md).
+It preserves the current v0 Handoff contract, limits the first direction to a
+flat fragment with retrievable HTTPS `datasetUrl` plus validated target fields,
+and keeps current-edited Dataset transfer outside scope. Runtime capability
+routing still requires its own explicit implementation authorization.
 
 ## Knowledge Candidate Check
 
@@ -600,5 +594,6 @@ Object ID, and a primary required capability, with optional type and diagnostic
 metadata. `relation.delete` requires safe inspection capability and explicit
 user interaction; it never means immediate deletion. Missing targets,
 mismatches, stale metadata, and unsupported capabilities fail non-destructively.
-URL/transport design and runtime implementation remain separate future
-checkpoints.
+The URL/transport design is accepted in the follow-up contract. Runtime
+implementation, current-edited Dataset transfer, and deferred presentation
+fixes remain separate and unauthorized checkpoints.

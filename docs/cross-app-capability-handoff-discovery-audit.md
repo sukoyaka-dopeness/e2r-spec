@@ -463,8 +463,10 @@ implication. The following questions belong to the next contract checkpoint:
 - history entry creation or replacement; and
 - preservation of unknown fields.
 
-The next design must avoid one monolithic startup parser that silently gives
-application-specific meaning to unrelated fields.
+The subsequent Target Contract and URL/Transport Contract checkpoints now
+define the bounded follow-up: targeted fields are explicit, validated, and
+remain separate from unrelated application-owned fragment fields. This audit
+still does not authorize runtime parser changes.
 
 ## Option comparison
 
@@ -499,7 +501,7 @@ direction, not authorization to add runtime metadata or a manifest today.
 
 ## Explicit non-decisions
 
-This audit does not decide or implement:
+At the time of this audit, it did not decide or implement:
 
 - final Handoff URL or fragment syntax;
 - a capability manifest schema;

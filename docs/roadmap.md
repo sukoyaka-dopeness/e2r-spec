@@ -2406,36 +2406,34 @@ retention; this does not convert Creation to Credits-style backdrop dismissal.
 Action grouping and the two visual follow-ups remain separate and do not block
 the behavioral closure.
 
-### REL-DIRECTIONALITY1 — Relation Directionality / Endpoint UI Audit
+### REL-DIRECTIONALITY1 / PRE-RELEASE-FEATURE-RECONSIDERATION1
 
-This is a bounded future planning follow-up for Relation directionality and
-endpoint UI vocabulary. The planning record is [Relation Endpoint UI /
-Directionality Follow-up](relation-endpoint-ui-directionality-follow-up.md).
-It records **PLANNING DIRECTION RECORDED / FUTURE DESIGN AUDIT REQUIRED /
-IMPLEMENTATION NOT AUTHORIZED** and does not change the Core, an Extension,
-schema, Validator, or either application.
+The full planning record is [Pre-public-release Feature Reconsideration](pre-public-release-feature-reconsideration.md).
+The detailed Relation directionality supersession is already recorded
+separately and complete in [Relation Endpoint UI / Directionality
+Follow-up](relation-endpoint-ui-directionality-follow-up.md). The remaining
+endpoint vocabulary work is a later all-surface Cross-App audit covering
+terminology, arrows, and separators across LiaisonScape and NarrativeLine.
 
-The earlier committed planning wording `接続` is withdrawn and superseded by
-the preferred generic Japanese endpoint UI term `接続先`. The Relation itself
-remains `つながり`, and `接続先` does not mean only `target`; it refers to
-endpoint information generally. The technical term `endpoint` remains
-unchanged, and actual connected Object type should remain explicit where
-useful. Current Source/Target and 始点/終点 presentation remain valid.
+The record keeps Relative Chronology as a serious pre-release design
+candidate. A minimal canonical `before` relation is a Research candidate, not
+a selected schema; its editing may use Earlier/Later controls and later
+drag-and-drop. `temporalOrder` editing and authorial display order remain
+separate. Search/Filter, granularity-aware Timeline folding, and `↑ 最初 /
+↓ 最後` are useful pre-release candidates. NarrativeLine time-of-day editing
+is already present and is not a missing feature.
 
-The current Relation remains directed from `sourceId` to `targetId`. Any
-future reverse-direction operation must swap canonical source and target; it
-must not be a presentation-only arrow reversal. Bidirectional and undirected
-Relation semantics must not be simulated, normalized, or added without
-explicit specification work. A later audit must decide the Core versus
-Extension boundary, canonical ordering, Validator/schema, round-trip, History,
-identity, deletion, Handoff, interoperability, LiaisonScape, NarrativeLine,
-and EN/JA implications. NarrativeLine must account for Entity and Event
-endpoints.
+Entity Group design must support possible multiple membership from the
+beginning; Group collapse is not required. Ownership tooltip/popover sizing,
+viewport drag-handle keyboard/focus, and Initial Node Placement remain open
+follow-ups. Undo/Redo is desirable but non-blocking. Public Sample Dataset
+Refresh is required before release, after format-affecting decisions stabilize.
 
-This item remains separate from current Relation deletion work, Capability
-Handoff, display-order work, Flatness, generic dialog spacing, and
-endpoint-separator presentation correction. No implementation is authorized
-by this roadmap entry, and it is not automatically the immediate next item.
+Semantic/Dictionary work, including Wikidata and thesaurus research, remains
+later work. Existing release-quality items retain their current statuses. The
+larger Research audit follows completion of the current small-fix sequence;
+this record does not silently reorder the roadmap or promote every candidate
+to mandatory implementation.
 
 ### Current execution order
 

@@ -1890,6 +1890,34 @@ separator mojibake and generic Cross-App confirmation button-spacing findings
 also remain separate presentation follow-ups. No Core, Extension, schema,
 runtime, or ai-knowledge change was made by this documentation-only closure.
 
+### XAPP-CAPABILITY-HANDOFF1 discovery audit (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF1-DISCOVERY-AUDIT` is **AUDIT COMPLETE / DESIGN
+DIRECTION RECORDED / IMPLEMENTATION NOT AUTHORIZED**. The audit is recorded in
+[Cross-App Capability Handoff Discovery Audit](cross-app-capability-handoff-discovery-audit.md).
+
+The source audit confirms that NarrativeLine and LiaisonScape implement the
+accepted Dataset Handoff v0 `datasetUrl` startup flow, while Hub currently
+generates explicit sample links to those applications. None of the three
+currently publishes or consumes a target Object plus required-capability
+declaration for runtime routing. Existing Cross-App Relation deletion remains
+**FORMALLY ACCEPTED / CROSS-APP IMPLEMENTATION ALIGNED / COMPLETE** and is not
+reopened by this audit.
+
+The recorded first bounded direction is a reviewed static table of first-party
+known applications with operation-level capabilities such as `inspect Relation`
+and `delete Relation`, canonical full target Object IDs, explicit user action,
+recipient-side verification, no network dependency, no automatic third-party
+discovery, and a safe no-recipient fallback. Hub may later publish or explain
+the table but is not a required registry authority.
+
+The next bounded step is target contract design covering Dataset state,
+canonical target identity, required capability, recipient selection,
+URL/history ownership, stale target and stale metadata behavior, trust,
+privacy, and user confirmation. No manifest schema, URL syntax, runtime
+discovery, automatic redirect, registry, Core, Extension, schema, or
+application-source change is authorized by this audit.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

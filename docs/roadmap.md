@@ -2093,18 +2093,42 @@ requested NarrativeLine sender slice was stopped at the pre-implementation
 gate and is recorded in [NarrativeLine Capability Handoff
 Sender Implementation](narrativeline-capability-handoff-sender-implementation.md).
 
-The current readiness document resolves the bounded design decisions but still
-states **IMPLEMENTATION NOT AUTHORIZED**. It also does not record whether the
-targeted recipient navigation is same-tab or new-tab/window, and no existing
-NarrativeLine Cross-App convention resolves that choice. No sender button,
-URL builder, source URL state, recipient config, or navigation handler was
-added. Modified/local/pending Dataset safety boundaries and the explicit
-Export/Open fallback remain unchanged. Generic capability-table publication,
-Hub changes, endpoint-separator work, and dialog-spacing work remain deferred.
+At that checkpoint, the readiness document still stated **IMPLEMENTATION NOT
+AUTHORIZED** and did not record whether targeted recipient navigation was
+same-tab or new-tab/window. No sender button, URL builder, source URL state,
+recipient config, or navigation handler was added. Modified/local/pending
+Dataset safety boundaries and the explicit Export/Open fallback remain
+unchanged. Generic capability-table publication, Hub changes, endpoint-
+separator work, and dialog-spacing work remain deferred.
 
 The next bounded step is to update the readiness authority with explicit
 sender authorization and navigation behavior, then retry the sender
 implementation.
+
+### XAPP-CAPABILITY-HANDOFF8A-SENDER-NAVIGATION-AUTHORIZATION (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF8A-SENDER-NAVIGATION-AUTHORIZATION` is **DESIGN
+COMPLETE / BOUNDED NARRATIVELINE SENDER AUTHORIZED / NO RUNTIME CHANGE**. The
+design record is [Cross-App Capability Handoff Sender Navigation
+Authorization](cross-app-capability-handoff-sender-navigation-authorization.md).
+
+The two Handoff8 blockers are resolved. The next bounded NarrativeLine sender
+implementation is authorized for the existing Entity deletion-resolution
+Relation row and `relation.inspect` only. Navigation is **same-tab by default**
+using a native anchor and a pure targeted URL builder; ordinary browser
+modifier behavior may open another context. This avoids popup-blocker and
+opener-security concerns without forcing focus or a new window. The sender
+must use a reviewed, environment-aware LiaisonScape configuration, and the
+existing clean/no-pending/known-HTTPS-source gate and explicit Export/Open
+fallback remain mandatory.
+
+The Handoff8 blocked attempt remains historical evidence. Discovery, Target
+Contract, Transport Contract, Current Dataset Transfer, Relation deletion
+closure, and both LiaisonScape recipient capabilities remain accepted or
+implemented. Generic capability-table publication, Hub targeted Handoff,
+endpoint-separator work, dialog-spacing work, and formal cross-app acceptance
+remain deferred. The next checkpoint is the bounded NarrativeLine sender
+implementation; this authorization does not begin it automatically.
 
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 

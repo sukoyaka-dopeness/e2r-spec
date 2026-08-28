@@ -4,7 +4,7 @@
 
 **Date:** 2026-08-28
 
-**Status:** **READINESS AUDIT COMPLETE / READY FOR A BOUNDED IMPLEMENTATION CHECKPOINT / IMPLEMENTATION NOT AUTHORIZED**
+**Status:** **READINESS AUDIT COMPLETE / BOUNDED NARRATIVELINE SENDER IMPLEMENTATION AUTHORIZED / NO RUNTIME CHANGE IN THIS CHECKPOINT**
 
 This document audits whether the accepted Cross-App Capability Handoff
 contracts can be implemented safely in NarrativeLine and LiaisonScape. It
@@ -71,7 +71,7 @@ relevant owners:
 | Dirty state | `DatasetBaselineService`, `PendingWorkService`, App state | Sufficient inputs for a source availability gate. |
 | Export | `DatasetService.exportDatasetJson` and download helper | Validated export path can be reused for explicit file fallback. |
 | Open Dataset | App import/replacement pipeline | Existing loss-risk confirmation must remain in force. |
-| Source URL tracking | No dedicated current source URL state | A bounded application-state value is required before a sender can distinguish clean retrievable from local/no-source. |
+| Source URL tracking | No dedicated current source URL state | A bounded application-state value is required for the authorized sender to distinguish clean retrievable from local/no-source. |
 
 NarrativeLine is therefore a suitable first **sender** for a targeted inspect
 request from an existing Relation blocker row, but not the first targeted
@@ -554,8 +554,10 @@ The audit resolves all hard-gate decisions for the bounded slice:
 14. browser acceptance: the matrix above with native-dialog precondition; and
 15. staged rollout: recipient first, sender second.
 
-The gate is therefore ready for a bounded implementation checkpoint. It does
-not authorize implementation in this checkpoint.
+The gate was initially ready for a bounded implementation checkpoint but was
+not authorized until the sender navigation policy was resolved. Handoff8A now
+records that policy and authorizes the next bounded NarrativeLine sender
+implementation only.
 
 ## Recommended implementation sequence
 
@@ -592,8 +594,8 @@ confirmation or mutate the Dataset.
 Add bounded application-only source URL tracking, clean/modified/pending/local
 availability classification, and a pure builder for the accepted flat
 fragment. Reuse existing Export/Open fallback and existing replacement-safety
-state. Do not add a trigger in the same change unless the bounded sender
-surface is separately reviewed.
+state. Do not add a trigger beyond the bounded surface authorized by
+Handoff8A.
 
 ### I4: NarrativeLine contextual sender
 
@@ -613,21 +615,22 @@ and native-dialog evidence.
 The exact next implementation checkpoint is:
 
 ```text
-Repository: e2r-liaison-scape
-Scope: recipient-local targeted Handoff parser + exact Relation resolution
-       + relation.inspect safe landing
-Status: implementation may be proposed in that next checkpoint only
+Repository: e2r-narrative-line
+Scope: source URL gate + pure targeted builder + inspect-only Relation blocker
+       row anchor using reviewed LiaisonScape configuration
+Status: implementation authorized by Handoff8A only
 ```
 
 That checkpoint must list exact owned files before editing, preserve unrelated
-work, run LiaisonScape tests/lint/build, and stop before sender, Hub, delete
-shortcut, or current-Dataset transfer work.
+work, run NarrativeLine tests/lint/build, and stop before capability-table,
+Hub, delete shortcut, current-Dataset transfer, or cross-app acceptance work.
 
 ## Explicit exclusions
 
-This readiness checkpoint does not authorize:
+This readiness checkpoint authorizes only the bounded NarrativeLine sender
+slice described above. It does not authorize:
 
-- runtime source changes in any repository;
+- runtime source changes in LiaisonScape, Hub, or any other repository;
 - capability table implementation or publication;
 - a new shared runtime package;
 - automatic redirect or arbitrary recipient URL;
@@ -645,14 +648,16 @@ This readiness checkpoint does not authorize:
 The accepted contracts are implementation-ready for one narrow vertical slice:
 LiaisonScape as the targeted recipient, followed by NarrativeLine as the
 clean-URL sender for Relation inspection from an existing Relation blocker
-context. Existing Dataset safety and explicit user control remain the hard
-boundaries. The first implementation must be staged recipient-first and must
-not expand into a generalized Cross-App router.
+context. Handoff8A resolves the sender browsing-context policy as same-tab by
+default with native anchor semantics and authorizes the bounded NarrativeLine
+sender implementation. Existing Dataset safety and explicit user control
+remain the hard boundaries. The sender must not expand into a generalized
+Cross-App router.
 
 ```text
 READINESS AUDIT COMPLETE /
 READY FOR BOUNDED IMPLEMENTATION CHECKPOINT /
-IMPLEMENTATION NOT AUTHORIZED
+BOUNDED NARRATIVELINE SENDER IMPLEMENTATION AUTHORIZED
 ```
 
 ## Knowledge Candidate Check

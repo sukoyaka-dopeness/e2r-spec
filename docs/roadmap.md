@@ -2035,6 +2035,32 @@ ai-knowledge change is authorized by this readiness audit. Endpoint-separator
 and dialog-spacing findings remain deferred, and Cross-App Relation deletion
 remains closed.
 
+### XAPP-CAPABILITY-HANDOFF6 LiaisonScape recipient inspect (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF6-LS-RECIPIENT-INSPECT1` is **IMPLEMENTED / AUTOMATED
+GREEN / BOUNDED BROWSER SMOKE PASS** at LiaisonScape commit `0f7fe1c`. The
+implementation record is [LiaisonScape Capability Handoff Relation Inspect
+Implementation](liaisonscape-capability-handoff-relation-inspect-implementation.md).
+
+LiaisonScape now parses the accepted targeted flat fragment while preserving
+ordinary Dataset Handoff v0 behavior, reuses the existing HTTPS Dataset
+acquisition and validation path, resolves the exact canonical Relation ID,
+checks the optional exact `Relation` type hint, and lands on the existing
+Relation Detail surface for `relation.inspect`. Missing targets, type
+mismatches, malformed targeted metadata, and unsupported capabilities fail
+non-destructively. `relation.delete` is not implemented here; it cannot open
+Delete Confirmation or mutate the Dataset.
+
+The runtime gate passed with 223 tests, lint, build, and diff checks. A bounded
+Edge/CDP smoke against the public Lighthouse Dataset opened
+`clara-thomas-supervises` in Relation Detail with no confirmation dialog; the
+helper's native-dialog state was verified `closed` after its explicit probe.
+The targeted and locale fragment remained inspectable. No NarrativeLine,
+Hub, capability table, Core, Extension, schema, or Validator change was made.
+The next bounded step is the separate `relation.delete` intent compatibility
+checkpoint. Cross-App Relation deletion remains closed; endpoint-separator and
+dialog-spacing findings remain deferred.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

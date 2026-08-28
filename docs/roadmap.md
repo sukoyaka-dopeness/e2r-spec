@@ -1090,6 +1090,10 @@ Cross-App Locale consumer implementation, or Hub locale producer completion:
    expansion, resize, and locale changes. The accepted `720px` desktop/mobile
    boundary remains unchanged; no runtime change was made. See [LiaisonScape
    Viewport Toolbar Collapse Follow-up](liaisonscape-viewport-toolbar-collapse-follow-up.md).
+   - **Viewport handle tooltip visibility** — real-browser follow-up recorded:
+     pointer-acquired focus can keep the tooltip visible after pointer leave.
+     Do not blur the button; retain keyboard guidance and investigate a bounded
+     hover-or-keyboard-focus-visible visibility refinement.
 4. **Graph information hierarchy** — audit the ordering and visual emphasis of
    Dataset load status, Dataset metadata/title, graph summary, unsupported
    Event-Relation caveat, graph content, and selection status. Keep the graph

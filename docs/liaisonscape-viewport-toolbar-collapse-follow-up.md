@@ -335,3 +335,88 @@ This is a design/source-audit outcome only. It authorizes a future bounded
 implementation checkpoint under the scope above; it does not accept runtime
 implementation, change the current toolbar, or close the separate need for
 implementation-level automated and real-browser acceptance.
+
+## LS-VIEWPORT-HANDLE-TOOLTIP-VISIBILITY-RECORD1 — Persistent visibility finding
+
+Date: 2026-08-29
+
+Status: **REAL-BROWSER FOLLOW-UP RECORDED / TOOLTIP VISIBILITY REFINEMENT NOT
+YET IMPLEMENTED**.
+
+The accepted baseline remains unchanged: the application-owned tooltip is
+bold, compact, left-aligned, and two lines, with state-dependent guidance for
+the expanded and collapsed handle. The accepted toolbar geometry,
+drag/disclosure behavior, and `720px` desktop/mobile boundary remain in force.
+This record adds one bounded presentation/interaction finding only.
+
+### Current live visibility mechanism
+
+The live LiaisonScape source at `139527f` remains read-only authority for this
+finding. `src/App.tsx` renders the tooltip as an application-owned sibling of
+the native handle button. React state changes the tooltip's localized
+state-dependent text, but does not own its visibility. `src/styles.css` shows
+it through the adjacent selectors:
+
+```css
+.viewport-toolbar-handle:hover + .viewport-toolbar-handle-tooltip,
+.viewport-toolbar-handle:focus + .viewport-toolbar-handle-tooltip {
+  display: block;
+}
+```
+
+Therefore generic `:focus` currently contributes to visibility. A pointer
+click may leave the native button focused after the pointer leaves the handle;
+because that retained pointer-acquired focus is treated the same as keyboard
+focus, the tooltip can remain visible after pointer interaction.
+
+This is a tooltip visibility issue. It is not evidence that button focus,
+sequential Tab order, disclosure semantics, drag classification, or keyboard
+guidance should be removed or changed.
+
+### Recorded finding and preferred direction
+
+The button is allowed to retain focus normally. Forced `blur()` after a pointer
+click is explicitly not the preferred solution.
+
+The bounded follow-up direction is to distinguish pointer-acquired focus from
+keyboard-visible focus and investigate the smallest reliable model equivalent
+to:
+
+```text
+pointer hover || keyboard focus-visible
+```
+
+The eventual implementation may use CSS `:focus-visible`, an existing
+application interaction-modality primitive, or a small local state mechanism,
+as determined by the implementation audit. This record does not mandate one
+technique, and `onFocus` alone must not be assumed to identify input modality.
+
+The desired observable contract is:
+
+- pointer hover shows the tooltip and pointer leave hides it when no
+  keyboard-visible focus justifies it;
+- pointer click may leave the button focused, but pointer-acquired focus alone
+  must not keep the tooltip visible after pointer leave;
+- Tab focus shows the tooltip through keyboard-visible focus;
+- Enter and Space preserve keyboard focus, keep the tooltip available, and
+  update `Move / Collapse` ↔ `Move / Expand` immediately, with the existing
+  Japanese state-dependent wording preserved;
+- moving focus away hides the tooltip;
+- dragging and pointer cancellation do not create a permanently stuck
+  tooltip, and the accepted drag/disclosure classifier remains unchanged.
+
+### Accessibility and accepted presentation boundary
+
+The future refinement is visual tooltip visibility only. The handle remains a
+real button in sequential Tab order with `aria-expanded`, `aria-controls`, a
+localized accessible name, and existing focus-visible styling. Focus is not
+removed merely to hide the tooltip, and keyboard users retain access to the
+visual guidance.
+
+The current accepted presentation is not reopened: two lines, left alignment,
+`font-weight: 600`, compact application-owned box, pointer-events behavior,
+and toolbar geometry independence remain accepted. The percentage indicator,
+natural-width and right-edge clamp behavior, collapse behavior, `721px`/`720px`
+boundary, and mobile controls are outside this finding. No Core, Extension,
+Dataset, Coordinate, Layout, schema, Validator, Handoff, NarrativeLine, Hub,
+or ownership-popover change is implied.

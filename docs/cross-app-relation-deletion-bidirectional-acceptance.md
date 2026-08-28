@@ -31,7 +31,7 @@ commit was created.
 
 - Browser: Microsoft Edge `151.0.4129.107`.
 - Two separate dedicated temporary Edge profiles were used, one per app.
-- Initial and final CDP acceptance state reported `connected: true`,
+- Initial CDP acceptance state reported `connected: true`,
   `visualManualAllowed: true`, and native dialog state `closed`.
 - The CDP helper was used for target selection, DOM inspection, focus checks,
   native-dialog recovery, file transfer, and export capture. CDP state is not
@@ -120,8 +120,11 @@ Relations, and the sentinel.
 
 Because X11 failed, the overall bidirectional acceptance is FAIL. The
 NarrativeLine result is a runtime acceptance failure, not a CDP/native-dialog
-failure: the browser returned to Timeline, native dialog state was closed, and
-the subsequent exported Dataset provided the contrary evidence.
+failure: failure-time inspection showed the browser back on Timeline with no
+unresolved application modal, and the subsequent exported Dataset provided the
+contrary evidence. The runner stopped at X11, so it did not emit its normal
+final helper-state line; this is recorded as an incomplete final-state report,
+not as a native-dialog failure.
 
 ## Automated gates
 

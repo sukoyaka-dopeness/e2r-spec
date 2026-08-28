@@ -2365,6 +2365,41 @@ reconstruction checkpoint.
 
 ### NL-EVENT-ID1 — Event Human-readable Identity Disambiguation
 
+The historical audit wording below is preserved as the state at that
+checkpoint. The current superseding status is:
+
+**FORMALLY ACCEPTED / COMPLETE / CLOSED.**
+
+Accepted runtime: NarrativeLine `4f066d5`. Acceptance evidence is recorded in
+[NarrativeLine Event Identity Formal Acceptance](narrativeline-event-identity-formal-acceptance.md),
+with acceptance documentation commit `e7c7dd1`.
+
+The accepted implementation scope is limited to the Timeline Event list and
+Entity Detail Related Events. Event name remains primary; ambiguity is
+candidate-set-local; chronology is the conditional human-readable
+discriminator; Timeline does not duplicate chronology already visible in its
+normal presentation; Related Events conditionally shows chronology; and
+unresolved same-name/same-chronology ambiguity uses a presentation-only
+short-ID fallback. The full exact `event.id` remains canonical operation
+identity. Raw History precision is not exposed, `temporalOrder` remains valid
+Timeline sorting data but is intentionally excluded from human-facing Event
+identity, and EN/JA share the ambiguity semantics while visible chronology
+remains the responsibility of existing locale/date presentation.
+
+Accepted evidence is 221/221 automated tests, lint/build/diff-check PASS,
+Microsoft Edge Formal Acceptance PASS, ordinary and approximately 360px
+presentation PASS, long-name presentation PASS, canonical Event navigation
+PASS, Relation blocker regression PASS, and no visible mojibake.
+
+This closure does not claim completion for every current or future Event
+surface. Dedicated Event Picker, Event search, generic reference picker,
+global Event identity component, Event Detail identity redesign,
+delete/association dialog redesign, and full-ID-by-default presentation were
+not added by NL-EVENT-ID1. They are not opened as automatic follow-ups by this
+closure; further Event identity work requires new concrete evidence.
+
+Historical audit checkpoint state (preserved):
+
 **FOLLOW-UP / AUDIT NEEDED.** NarrativeLine should audit Event identity
 presentation where Event names alone are insufficient to distinguish objects.
 Candidate semantic disambiguators are visible date/time, History precision,

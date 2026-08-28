@@ -127,6 +127,37 @@ This follow-up does not change:
 
 # Next bounded step
 
+## Control-internal label alignment follow-up
+
+During the recovered local Lighthouse Restoration blocker dialog, the
+`Remove connection` label appeared centered inside its button while `Open in
+LiaisonScape` appeared start/left-aligned inside its button-like anchor. Both
+controls belong to the same ordinary Relation-card action group. The outer
+action-group alignment and the internal alignment of text within each control
+are separate presentation concerns. This observation does not redefine
+Candidate B's card-end alignment or its compact grouping.
+
+This is a **KNOWN PRESENTATION DEFECT / FOLLOW-UP**. It is not evidence of a
+Capability Handoff failure, Relation or Entity deletion failure, Dataset
+failure, accessibility failure, or Cross-App rule violation.
+
+A later NarrativeLine control-label audit should compare ordinary `<button>`
+controls and button-like anchors across modal/dialog actions, workspace
+controls, Detail actions, Timeline controls, Home actions, and other repeated
+control groups. The audit should cover centered versus start-aligned labels,
+multi-line labels, EN and JA, ordinary and narrow widths, button versus anchor
+controls, and consistency inside matched action groups.
+
+No universal rule is accepted here. The later audit must determine whether
+alignment should be globally normalized, normalized only inside matched action
+groups, preserved by control role, or handled through another local rule.
+
+Candidate B Formal Visual / Manual Acceptance remains pending. This unresolved
+control-label observation must remain visible until that acceptance is
+completed. It does not reopen Capability Handoff acceptance, deletion
+semantics, Dataset Handoff, the corrected endpoint separator, or Candidate B's
+automated implementation result.
+
 Keep this item deferred as Presentation-only. If implementation is authorized,
 perform the card-action geometry and endpoint-separator work as separately
 reviewable presentation changes, followed by dedicated visual acceptance. Do

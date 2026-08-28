@@ -1586,13 +1586,16 @@ following current summary takes precedence when older sections use stale
 ### Current cross-app deletion status
 
 Cross-App Relation Deletion Ownership / Visibility Safety has an **ACCEPTED
-design direction** through `XAPP-REL-DELETE2-DESIGN1`; implementation remains
-not yet aligned across applications. A Relation is a Dataset Object rather than
-an application-owned object. An endpoint Object must not be deleted while
+design direction** through `XAPP-REL-DELETE2-DESIGN1` and is now **FORMALLY
+ACCEPTED / CROSS-APP IMPLEMENTATION ALIGNED / COMPLETE** through
+`XAPP-REL-DELETE6-CAPABILITY-CLOSURE`. A Relation is a Dataset Object rather
+than an application-owned object. An endpoint Object must not be deleted while
 incident Relations remain, Entity deletion must not silently cascade-delete
 those Relations, and Relation deletion must be explicit. A self Relation is
 one blocker; parallel Relations remain distinct blockers, one per Relation
-Object.
+Object. The staged implementation paragraphs below preserve their historical
+checkpoint boundaries; the [capability closure record](cross-app-relation-deletion-capability-closure.md)
+is the current canonical status.
 
 NarrativeLine has completed `NL-ENTITY-DELETE2-READINESS1` with implementation
 boundary E (**atomic multi-surface alignment required**),
@@ -1858,6 +1861,34 @@ bounded workstream, but capability closure, targeted Handoff discovery, and
 the deferred NarrativeLine endpoint-separator mojibake and cross-app generic
 confirmation button-spacing findings remain separate follow-ups. No runtime
 source or ai-knowledge change was made in this acceptance-only checkpoint.
+
+### XAPP-REL-DELETE6 capability closure (2026-08-28)
+
+`XAPP-REL-DELETE6-CAPABILITY-CLOSURE` is **FORMALLY ACCEPTED / CROSS-APP
+IMPLEMENTATION ALIGNED / COMPLETE**. The closure is recorded in [Cross-App
+Relation Deletion Capability Closure](cross-app-relation-deletion-capability-closure.md).
+The canonical status is now:
+
+- Cross-App Relation deletion design: **ACCEPTED**;
+- NarrativeLine implementation: **ACCEPTED / COMPLETE**;
+- LiaisonScape implementation: **ACCEPTED / COMPLETE**;
+- bidirectional Dataset interoperability: **FORMALLY ACCEPTED / COMPLETE**;
+- bounded Cross-App Relation deletion capability: **COMPLETE / CLOSED**.
+
+The closure covers the accepted semantic contract, explicit Relation deletion,
+no silent cascade, hidden and Event-related Relation handling, self and
+parallel Relation identity, final explicit Entity deletion, unrelated Dataset
+preservation, and the successful X1-X14 matrix in both directions. The prior
+XAPP-REL-DELETE3 FAIL record remains historical and unchanged; its X11 defect
+was corrected by NarrativeLine commit `7a695b3` and passed in the XAPP-REL-DELETE5
+reacceptance.
+
+Targeted capability-based Handoff, capability discovery/manifest, target-app
+discovery, Handoff URL syntax, provenance, generalized Relation editing, and
+bulk deletion remain separate future work. The deferred NarrativeLine endpoint
+separator mojibake and generic Cross-App confirmation button-spacing findings
+also remain separate presentation follow-ups. No Core, Extension, schema,
+runtime, or ai-knowledge change was made by this documentation-only closure.
 
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 

@@ -1,13 +1,28 @@
 # Cross-App Relation Deletion Capability
 
-Status: **CROSS-APP DESIGN DIRECTION — ACCEPTED / IMPLEMENTATION NOT YET ALIGNED**
+Status: **FORMALLY ACCEPTED / CROSS-APP IMPLEMENTATION ALIGNED / COMPLETE**
 
-Date: 2026-08-27
+Date: 2026-08-28
 
 This document records the cross-application design direction resulting from
 `XAPP-REL-DELETE1-AUDIT1`, `NL-ENTITY-DELETE1-AUDIT1`, and the subsequent
 capability review. It is a non-normative application design record. It does
 not change E2R Core, Extensions, schemas, or current application behavior.
+
+## Current completion status
+
+The bounded Cross-App Relation deletion capability is **COMPLETE / CLOSED** as
+of 2026-08-28. The original design direction and the pre-alignment runtime
+description below are retained as historical context. Current implementation
+alignment is established by the [NarrativeLine final Entity deletion
+fix](narrativeline-final-entity-deletion-cross-app-fix.md), the [bidirectional
+reacceptance](cross-app-relation-deletion-bidirectional-reacceptance.md), and
+the [capability closure record](cross-app-relation-deletion-capability-closure.md).
+
+This closure is bounded to explicit Cross-App Relation deletion semantics,
+NarrativeLine and LiaisonScape alignment, and bidirectional Dataset
+interoperability. It does not close targeted Handoff, capability discovery,
+provenance, generalized Relation editing, or bulk Relation deletion.
 
 ## Dataset Objects, provenance, and capability
 
@@ -66,7 +81,10 @@ Any shortened hint follows the existing validated direction: minimum eight
 characters, extended when needed for uniqueness, while the canonical full ID
 is unchanged.
 
-## Current behavior versus target direction
+## Historical behavior versus target direction
+
+The following describes the pre-alignment state recorded during initial design
+work. It is retained for historical context and is not the current status.
 
 LiaisonScape currently blocks Entity deletion for every incident Relation,
 including valid Event-related Relations that are outside its graph-visible
@@ -81,12 +99,9 @@ Relations outside its normal Event-centered surface. Its confirmation warns
 generically that connected Relations are removed without making those hidden
 Relations individually inspectable.
 
-The target direction is convergence toward no endpoint deletion while
+The target direction was convergence toward no endpoint deletion while
 incident Relations remain, with explicit Relation resolution and a suitable
-inspect/edit/delete or capability-based handoff path. Current NarrativeLine
-cascade behavior is not yet aligned; LiaisonScape's blocking behavior is the
-closer preservation baseline. No claim is made that either runtime already
-implements the final cross-app contract.
+inspect/edit/delete or capability-based handoff path.
 
 ## Superseded and separate work
 
@@ -96,13 +111,31 @@ as the preferred final direction. Its historical inspectability finding is
 retained, but the primary design question is now whether endpoint deletion
 should cascade incident Relation Objects at all.
 
-Separate future bounded tasks include NarrativeLine endpoint-deletion
-alignment, LiaisonScape hidden/out-of-scope Relation resolution UX if needed,
-capability-based targeted handoff, and Relation provenance research. Final
-blocked-delete dialogs, management panels, capability manifests, provenance
-schema, directionality schema, CSS, and implementation are outside this
-record.
+The previously separate NarrativeLine endpoint-deletion alignment and
+LiaisonScape hidden/out-of-scope Relation resolution work are now closed by the
+bounded runtime and acceptance records linked above. Separate future bounded
+tasks remain capability-based targeted Handoff and Relation provenance
+research. Final capability manifests, provenance schema, directionality
+schema, generalized Relation management, CSS, and universal presentation
+parity remain outside this record.
 
 The safety invariant is: no dangling Relation endpoints, no silent loss of
 valid Relation Objects, explicit user intent for Relation deletion, preserved
 Dataset round-tripping, and an application-neutral Core.
+
+## Current completion and boundary
+
+The final bounded contract and evidence are recorded in
+[Cross-App Relation Deletion Capability Closure](cross-app-relation-deletion-capability-closure.md).
+NarrativeLine and LiaisonScape both preserve incident Relations until each is
+explicitly deleted, retain the endpoint Entity until a separate explicit final
+Entity action, and preserve unrelated Dataset content. The X1-X14 matrix
+passed in both transfer directions, including self, parallel, hidden/Event,
+ambiguous-identity, cancellation, Extension-preservation, and EN/JA cases.
+
+Targeted capability-based Handoff and capability discovery remain separate
+future work and are not prerequisites for closing the currently implemented
+cross-app Relation deletion capability. If an application cannot resolve a
+Relation in a future scenario, Handoff remains a possible separate capability;
+this record does not define its discovery, manifest, target-app selection, or
+URL syntax.

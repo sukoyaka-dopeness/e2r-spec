@@ -1333,10 +1333,28 @@ Cross-App Flatness Experiment is separate.
 
 ### LS-METADATA-ALIGN1 — LiaisonScape Dataset metadata label/value alignment
 
-**FOLLOW-UP / VISUAL AUDIT NEEDED / IMPLEMENTATION NOT AUTHORIZED.**
+**FIXED / ACCEPTED / COMPLETE / CLOSED** at LiaisonScape runtime
+`ce446e5 fix: align Dataset metadata text`.
 
-In the accepted post-spacing-fix browser view, the Dataset metadata label and
-title value are one logical row but do not appear vertically aligned. The
+The completed bounded follow-up is supported by [LiaisonScape Dataset metadata
+alignment audit](liaisonscape-dataset-metadata-alignment-audit.md), whose design
+result was **READY — BASELINE ALIGNMENT ONLY**. The accepted contract is local to
+the Dataset metadata label/value text pair: baseline alignment applies across
+the covered responsive metadata-row regimes (wide, 721px, 720px, 601px, 600px,
+and approximately 360px); Edit remains a separately aligned control inside the
+nested value group; nested `dd` centering remains unchanged; horizontal spacing
+remains unchanged; and the accepted `margin-top: 16px` divider spacing remains
+unchanged.
+
+This is a local LiaisonScape presentation result. It does not establish a global
+baseline rule for `dt` / `dd` layouts or flex rows, a shared text baseline for
+buttons, NarrativeLine layout parity, or identical metadata geometry across
+applications. The earlier pre-implementation observations below remain
+historical evidence; they do not represent an open defect after `ce446e5`.
+
+Historical pre-implementation observation (before `ce446e5`): in the
+post-spacing-fix browser view, the Dataset metadata label and title value were
+one logical row but did not appear vertically aligned. The
 label appears slightly higher than the value, weakening the perception that
 they form one metadata pair. The observed Japanese example was label
 `タイトル`
@@ -1348,17 +1366,16 @@ Possible causes are recorded for audit only and are not confirmed: different
 line-height, element or default inline metrics, row `align-items`, font
 metrics, grid/flex alignment, and label/value wrapper geometry.
 
-The horizontal label-to-value distance also appears somewhat generous. This
-is an **OBSERVATION / NOT YET CONFIRMED DEFECT**. A future audit should decide
-whether it is intentional information hierarchy, a consequence of the
-current flex structure, or genuinely too loose. No smaller gap or pixel value
-is prescribed.
+The horizontal label-to-value distance was investigated by the completed audit
+and classified **H1 / ACCEPTABLE / INTENTIONAL**. No horizontal-gap change was
+required by this workstream; the earlier observation is historical and is not
+an unresolved implementation defect.
 
-The future bounded audit should compare EN and JA; short and long Dataset
-titles; wide desktop; approximately 720px; 601/600px; approximately 360px;
-read-only and Edit states; keyboard focus-visible; label/value baseline;
-label/value horizontal relationship; the text pair's relationship to Edit;
-and overflow/wrapping. Geometry must be determined before implementation.
+The completed audit compared EN and JA; short and long Dataset titles; wide
+desktop; approximately 720px; 601/600px; approximately 360px; read-only and
+Edit states; keyboard focus-visible; label/value baseline; label/value
+horizontal relationship; the text pair's relationship to Edit; and
+overflow/wrapping. Its accepted implementation result is recorded above.
 
 `LS-METADATA-ALIGN1` must not reopen the accepted divider-spacing fix. The
 current baseline remains `.dataset-metadata { margin-top: 16px; }` from

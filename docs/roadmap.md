@@ -1293,6 +1293,15 @@ independently gated research or design tracks.
 The following two visual follow-ups are intentionally separate. Recording them
 does not authorize runtime, CSS, or experiment work.
 
+The current status of the Dataset metadata Edit / divider spacing item is
+**FIXED / ACCEPTED** at LiaisonScape runtime `72685dc fix: separate Dataset
+metadata from toolbar`. The accepted change is `.dataset-metadata`;
+`margin-top: 12px` was changed to `16px`. Wide and narrow browser matrices,
+EN/JA, Edit mode, keyboard/focus, and no-overflow checks passed, as did
+225/225 tests, lint, build, and diff-check. No Dataset behavior changed.
+The original near-contact wording in item 1 remains historical; the remaining
+Cross-App Flatness Experiment is separate.
+
 1. **LiaisonScape Dataset metadata Edit / divider spacing — bounded visual
    fix, relatively early:** review the apparent near-contact between the
    Dataset metadata-row `Edit` button and the preceding horizontal divider.
@@ -1321,6 +1330,43 @@ does not authorize runtime, CSS, or experiment work.
    acceptance and adjustment before Push/deployment readiness and the final
    pre-public-release audit; if adopted, its accepted result becomes that
    audit's visual baseline.
+
+### LS-METADATA-ALIGN1 — LiaisonScape Dataset metadata label/value alignment
+
+**FOLLOW-UP / VISUAL AUDIT NEEDED / IMPLEMENTATION NOT AUTHORIZED.**
+
+In the accepted post-spacing-fix browser view, the Dataset metadata label and
+title value are one logical row but do not appear vertically aligned. The
+label appears slightly higher than the value, weakening the perception that
+they form one metadata pair. The observed Japanese example was label
+`繧ｿ繧､繝医Ν` and value
+`轣ｯ蜿ｰ菫ｮ蠕ｩ繝励Ο繧ｸ繧ｧ繧ｯ繝・`. The adjacent `邱ｨ髮・` / Edit button has
+its own control geometry and must be evaluated separately from the
+label/value text baseline.
+
+Possible causes are recorded for audit only and are not confirmed: different
+line-height, element or default inline metrics, row `align-items`, font
+metrics, grid/flex alignment, and label/value wrapper geometry.
+
+The horizontal label-to-value distance also appears somewhat generous. This
+is an **OBSERVATION / NOT YET CONFIRMED DEFECT**. A future audit should decide
+whether it is intentional information hierarchy, a consequence of the
+current flex structure, or genuinely too loose. No smaller gap or pixel value
+is prescribed.
+
+The future bounded audit should compare EN and JA; short and long Dataset
+titles; wide desktop; approximately 720px; 601/600px; approximately 360px;
+read-only and Edit states; keyboard focus-visible; label/value baseline;
+label/value horizontal relationship; the text pair's relationship to Edit;
+and overflow/wrapping. Geometry must be determined before implementation.
+
+`LS-METADATA-ALIGN1` must not reopen the accepted divider-spacing fix. The
+current baseline remains `.dataset-metadata { margin-top: 16px; }` from
+`72685dc`. This local metadata-row alignment follow-up is separate from the
+Cross-App Visual Style / Flatness Experiment, the general 600/601 responsive
+topic, and any NarrativeLine parity requirement. Dataset title semantics,
+`extensions.metadata.title`, modified/pending state, Save/Cancel,
+Replacement Safety, and unknown-field preservation remain unchanged.
 
 ### Cross-application object identity direction
 
@@ -2323,16 +2369,14 @@ remain separate follow-up work.
 ### Open / deferred
 
 destructive styling
-parity, viewport drag-handle keyboard/focus review, `LS-CTX-R1`,
-Edit/divider spacing, the
+parity, viewport drag-handle keyboard/focus review, `LS-CTX-R1`, the
 Cross-App Visual Style / Flatness Experiment, Initial Node Placement / LS-M3,
 selectable SVG icons, the common favicon, Public Sample Dataset Refresh, and
 licensing/release follow-ups remain open or deferred. None is accepted by this
 checkpoint.
 
-The Edit/divider item remains a relatively early bounded LiaisonScape spacing
-fix. The Cross-App Flatness item remains a separate pre-public-release design
-experiment. Neither authorizes implementation here. Delete Confirmation safe
+The Cross-App Flatness item remains a separate pre-public-release design
+experiment. It is not authorized by this checkpoint. Delete Confirmation safe
 initial focus is closed separately as `LS-DIALOG-DRAFT1-F1`; general dialog
 initial-focus policy remains outside those bounded closures. Create Entity Name
 autofocus is closed as `LS-DIALOG-DRAFT1-F2-E1`; Create Relation initial focus

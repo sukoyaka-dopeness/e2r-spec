@@ -124,3 +124,82 @@ The CDP workflow should report the current target, URL, native-dialog state,
 and whether each result is visual or programmatic evidence.
 
 This session does not start DELETE4 implementation.
+
+## Subsequent checkpoint: public NarrativeLine sender acceptance
+
+On 2026-08-28, the separately authorized
+`XAPP-CAPABILITY-HANDOFF12-NL-SENDER-PUBLIC-DEPLOYMENT1` was completed. The
+authorization covered only NarrativeLine push/deployment, public sender
+verification, public NL-to-public-LiaisonScape verification, and local
+e2r-spec documentation.
+
+NarrativeLine `158adec` was pushed to `main` and deployed through the existing
+GitHub Pages workflow. The exact-head workflow run
+[33146076558](https://github.com/sukoyaka-dopeness/e2r-narrative-line/actions/runs/33146076558)
+completed successfully. NarrativeLine passed 194 tests, lint, build, and diff
+check before the push. The public HTML returned HTTP 200 and the deployed
+bundle contained the sender terms `relation.inspect`, `targetObjectId`,
+`targetContractVersion`, and the public LiaisonScape path, without
+`window.open`.
+
+Fresh Microsoft Edge `151.0.4129.107` verification passed:
+
+- ordinary public Dataset Handoff v0 startup;
+- public blocker-card sender action from the Clara Entity;
+- exact URL contract for `clara-lighthouse`;
+- full public NL-to-public-LS landing on exact Relation ID `clara-lighthouse`;
+- hidden/Event-related `lead-clara` landing;
+- modified and pending-work safety with no stale Handoff anchors;
+- English and Japanese locale transport;
+- reload and Back/Forward safety; and
+- no Dataset mutation, destructive confirmation, or open native dialog.
+
+The CDP helper initially reported native-dialog state `unknown`; explicit
+no-dialog recovery normalized it to `closed`, and the final state was
+`closed` with visual acceptance allowed. Local/no-source was recorded using the
+accepted source/production safety substitute because a public HTTPS browser
+cannot inject a local file without user file-selection permission.
+
+The complete acceptance record is
+[cross-app-capability-handoff-public-nl-ls-acceptance.md](../docs/cross-app-capability-handoff-public-nl-ls-acceptance.md).
+LiaisonScape remained at accepted public revision `95a8c56` and was not
+changed or redeployed. Hub and ai-knowledge were untouched; the existing dirty
+ai-knowledge playbook change was preserved.
+
+## Presentation-only follow-up recorded
+
+The public blocker-card observation was recorded separately as
+**FOLLOW-UP / PRESENTATION ONLY / NOT A CAPABILITY HANDOFF BLOCKER** in
+[narrativeline-relation-blocker-card-presentation-follow-up.md](../docs/narrativeline-relation-blocker-card-presentation-follow-up.md).
+
+The deferred observations are:
+
+- Relation-card action alignment and compact two-action density;
+- English `Remove connection` wrapping at normal width; and
+- known Relation endpoint separator mojibake in presentation output.
+
+The later visual direction is a candidate only: end-aligned compact actions at
+ordinary width, responsive vertical fallback at narrow width, and one-line
+English action presentation where width permits. No global safe-left/danger-
+right rule was introduced. `Keep Entity` footer placement remains a separate
+non-defect observation. A future endpoint-separator fix must regress EN/JA,
+ordinary/self/parallel/hidden-Event-related Relations, blocker dialogs, and
+coexisting Handoff actions.
+
+No runtime, Capability Handoff, Dataset Handoff, Core, Extension, schema,
+LiaisonScape, Hub, or ai-knowledge change was made for this follow-up.
+
+## Final session state
+
+The Handoff12 documentation checkpoint was committed locally as
+`d21514d docs: accept public NL to LS Capability Handoff`. The presentation
+follow-up was then committed locally as
+`894ff69 docs: record NarrativeLine blocker presentation follow-up`.
+The latter commit is the current clean e2r-spec state. Neither documentation
+commit was pushed. The dedicated browser session and temporary probe were
+removed after verification. No force push, reset, rebase, amend, squash,
+revert, or history rewrite was performed.
+
+The public Capability Handoff status remains CLOSED. The card geometry and
+separator items remain deferred presentation work and are not acceptance
+blockers.

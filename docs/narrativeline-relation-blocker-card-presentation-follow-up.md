@@ -268,3 +268,42 @@ Relation deletion semantics, endpoint separator correction, Dataset Handoff,
 Core / Extension / schema, or LiaisonScape runtime acceptance. No Source/Target
 rows, card markup, card height, Candidate B geometry, or control-label
 alignment are changed by this documentation checkpoint.
+
+## Formal Acceptance closure — 2026-08-28
+
+**FORMALLY ACCEPTED / COMPLETE / CLOSED**
+
+The bounded NarrativeLine Relation blocker-card presentation workstream is
+formally accepted and closed at NarrativeLine runtime commit `4591f3a`. The
+formal acceptance record is
+[NarrativeLine Relation Blocker Presentation Formal Acceptance](narrativeline-relation-blocker-presentation-formal-acceptance.md),
+accepted by e2r-spec commit `2b52f15`.
+
+The accepted identity presentation uses explicit, independently wrappable
+rows for `Relation Name`, `Source`, and `Target`. The Japanese labels are
+`縺､縺ｪ縺後ｊ縺ｮ蜷榊燕`, `蟋狗せ`, and `邨らせ`. Endpoint role is therefore
+separated from the value, while secondary Relation-ID and endpoint hints are
+preserved where applicable.
+
+The accepted action presentation uses Candidate B's compact card-end action
+group at ordinary width, with a narrow-layout fallback. The matched
+`Remove connection` / `Open in LiaisonScape` control labels and the internal
+Handoff label alignment are accepted as aligned within their local action
+group. No global destructive-action placement rule was introduced.
+
+The acceptance preserves Entity and Relation deletion semantics, inline
+confirmation, focus behavior, safe modified/pending behavior, and Capability
+Handoff semantics. The manual evidence covered Edge real-browser EN and JA
+ordinary-width and approximately 360px states, eight blocker cards,
+long-name robustness, one- and two-action cards, confirmation and focus,
+keyboard behavior, scrolling, and absence of visible mojibake. Automated
+evidence was 197/197 tests passing with lint, build, and diff-check passing.
+
+This closure resolves the earlier Candidate B geometry uncertainty, Candidate
+C identity uncertainty, Japanese Relation-label mojibake, and matched
+blocker action-label alignment findings within this workstream. Those findings
+remain valid historical intermediate evidence and are not rewritten. The
+Capability Handoff acceptance remains independently **CLOSED / ACCEPTED**.
+This closure does not reopen Cross-App work and does not change Entity or
+Relation semantics, Dataset Handoff, Core / Extension / schema, Hub,
+LiaisonScape, or ai-knowledge.

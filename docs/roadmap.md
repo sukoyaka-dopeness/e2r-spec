@@ -2380,23 +2380,32 @@ required.
 
 ### NarrativeLine Relation blocker-card presentation follow-up (2026-08-28)
 
-The public Handoff12 browser acceptance recorded a separate **FOLLOW-UP /
-PRESENTATION ONLY / NOT A CAPABILITY HANDOFF BLOCKER** for the NarrativeLine
-Entity deletion blocker dialog. The evidence is recorded in [NarrativeLine
-Relation Blocker-Card Presentation Follow-up](narrativeline-relation-blocker-card-presentation-follow-up.md).
+The earlier public Handoff12 observation and its exploratory evidence remain
+recorded in [NarrativeLine Relation Blocker-Card Presentation Follow-up](narrativeline-relation-blocker-card-presentation-follow-up.md).
+That presentation workstream is now **FORMALLY ACCEPTED / COMPLETE / CLOSED**
+at accepted NarrativeLine runtime `4591f3a`. Formal evidence is recorded in
+[NarrativeLine Relation Blocker Presentation Formal Acceptance](narrativeline-relation-blocker-presentation-formal-acceptance.md),
+accepted by e2r-spec commit `2b52f15`.
 
-The deferred observations are local Relation-card action alignment, English
-`Remove connection` wrapping, two-action card density, and the known Relation
-endpoint separator mojibake. Candidate later treatment is end-aligned compact
-actions at ordinary width with a narrow responsive fallback, plus normal-width
-one-line English action presentation. Exact geometry is not accepted here.
-The separator issue remains a presentation-source defect, not Dataset
-corruption; a future fix must cover EN/JA, ordinary/self/parallel/
-hidden-Event-related Relations, blocker cards, and Handoff coexistence.
+The accepted result includes labeled Relation Name / Source / Target identity,
+the Japanese `縺､縺ｪ縺後ｊ縺ｮ蜷榊燕` / `蟋狗せ` / `邨らせ` labels, independently
+wrappable endpoints, Candidate B compact action geometry with narrow fallback,
+matched button/Handoff internal label alignment, long-name robustness, EN/JA
+real-browser verification, and no visible mojibake. Automated evidence was
+197/197 tests PASS with lint/build/diff-check PASS; Edge real-browser
+acceptance also passed.
 
-The `Keep Entity` footer placement is not classified as a clear defect and is
-not coupled to card-action changes. No global safe-left/danger-right rule is
-introduced. Entity/Relation deletion semantics, the Capability Handoff
-contract, Dataset Handoff, Core/Extension/schema, Hub, LiaisonScape, and
-ai-knowledge remain unchanged. Public Capability Handoff acceptance stays
-CLOSED.
+The earlier endpoint-separator encoding observation remains a historical
+presentation boundary and is outside this documentation closure; the
+endpoint-separator source/runtime was not modified. The `Keep Entity` footer
+placement remains a separate responsibility and no global safe-left/
+danger-right rule was introduced.
+
+This closure resolves the earlier Candidate B geometry uncertainty, Candidate C
+identity uncertainty, Japanese Relation-label mojibake, and matched blocker
+action-label alignment findings within this workstream. Those findings remain
+valid historical intermediate evidence and are not rewritten. Entity/Relation
+deletion semantics, the Capability Handoff contract, Dataset Handoff,
+Core/Extension/schema, Hub, LiaisonScape, and ai-knowledge remain unchanged.
+Capability Handoff acceptance stays CLOSED / ACCEPTED. This closure does not
+alter unrelated NarrativeLine, cross-application, or deployment work.

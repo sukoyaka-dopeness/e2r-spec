@@ -1840,6 +1840,25 @@ LiaisonScape generic-dialog button-spacing findings remain presentation
 follow-ups and were not fixed in this checkpoint. LiaisonScape runtime source
 and the pre-existing dirty CDP diagnostic playbook were unchanged.
 
+### XAPP-REL-DELETE5 bidirectional reacceptance (2026-08-28)
+
+`XAPP-REL-DELETE5-BIDIRECTIONAL-REACCEPTANCE` is **FORMALLY ACCEPTED / COMPLETE**
+at NarrativeLine `7a695b3` and LiaisonScape `34d8164`. The full X1-X14
+Cross-App matrix passed in both directions, including the repaired
+NarrativeLine final Entity deletion, LiaisonScape final Entity deletion,
+self/parallel/hidden Relations, duplicate identity, Cancel safety, unknown
+Extension preservation, Dataset export/open transfer, and EN/JA semantic
+parity. NarrativeLine (187), LiaisonScape (216), CDP helper (4), and e2r-spec
+validation gates were green; dedicated Edge evidence confirmed native dialog
+state `closed`.
+
+The original `XAPP-REL-DELETE3-BIDIRECTIONAL-ACCEPTANCE` FAIL record remains
+historical and unchanged. Bidirectional acceptance is now closed for this
+bounded workstream, but capability closure, targeted Handoff discovery, and
+the deferred NarrativeLine endpoint-separator mojibake and cross-app generic
+confirmation button-spacing findings remain separate follow-ups. No runtime
+source or ai-knowledge change was made in this acceptance-only checkpoint.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

@@ -2415,25 +2415,27 @@ It records **PLANNING DIRECTION RECORDED / FUTURE DESIGN AUDIT REQUIRED /
 IMPLEMENTATION NOT AUTHORIZED** and does not change the Core, an Extension,
 schema, Validator, or either application.
 
-The current Relation remains directed from `sourceId` to `targetId`. Current
-Source/Target and 始点/終点 presentation remain valid. A future Japanese
-generic grouping direction is `接続`, while the technical term `endpoint`
-remains unchanged; actual connected Object type should remain explicit where
-useful. 始点/終点 are direction-specific roles, not universal names for every
-future endpoint presentation.
+The earlier committed planning wording `接続` is withdrawn and superseded by
+the preferred generic Japanese endpoint UI term `接続先`. The Relation itself
+remains `つながり`, and `接続先` does not mean only `target`; it refers to
+endpoint information generally. The technical term `endpoint` remains
+unchanged, and actual connected Object type should remain explicit where
+useful. Current Source/Target and 始点/終点 presentation remain valid.
 
-Any future reverse-direction operation must swap canonical source and target;
-it must not be a presentation-only arrow reversal. Bidirectional and
-undirected Relation semantics must not be simulated, normalized, or added
-without explicit specification work. A later audit must decide the Core versus
+The current Relation remains directed from `sourceId` to `targetId`. Any
+future reverse-direction operation must swap canonical source and target; it
+must not be a presentation-only arrow reversal. Bidirectional and undirected
+Relation semantics must not be simulated, normalized, or added without
+explicit specification work. A later audit must decide the Core versus
 Extension boundary, canonical ordering, Validator/schema, round-trip, History,
 identity, deletion, Handoff, interoperability, LiaisonScape, NarrativeLine,
-and EN/JA implications.
+and EN/JA implications. NarrativeLine must account for Entity and Event
+endpoints.
 
 This item remains separate from current Relation deletion work, Capability
 Handoff, display-order work, Flatness, generic dialog spacing, and
 endpoint-separator presentation correction. No implementation is authorized
-by this roadmap entry.
+by this roadmap entry, and it is not automatically the immediate next item.
 
 ### Current execution order
 

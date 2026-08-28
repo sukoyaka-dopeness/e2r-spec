@@ -307,3 +307,11 @@ Capability Handoff acceptance remains independently **CLOSED / ACCEPTED**.
 This closure does not reopen Cross-App work and does not change Entity or
 Relation semantics, Dataset Handoff, Core / Extension / schema, Hub,
 LiaisonScape, or ai-knowledge.
+
+The earlier endpoint-separator encoding observation was subsequently resolved
+by NarrativeLine commit `0eae8df fix: correct Relation endpoint separator`,
+which changed the separator to the intended/current `→`. That correction
+preceded the final combined blocker acceptance and is included in accepted
+runtime `4591f3a`; it is no longer an open Presentation follow-up. The later
+Japanese Relation-label mojibake was a separate incident introduced by
+`529f209` and corrected by `da54d55`; the two incidents must not be conflated.

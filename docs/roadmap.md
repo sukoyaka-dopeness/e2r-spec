@@ -2395,9 +2395,13 @@ real-browser verification, and no visible mojibake. Automated evidence was
 197/197 tests PASS with lint/build/diff-check PASS; Edge real-browser
 acceptance also passed.
 
-The earlier endpoint-separator encoding observation remains a historical
-presentation boundary and is outside this documentation closure; the
-endpoint-separator source/runtime was not modified. The `Keep Entity` footer
+The earlier endpoint-separator encoding observation was resolved by
+NarrativeLine commit `0eae8df fix: correct Relation endpoint separator`, which
+changed the separator to the intended/current `→` before the final combined
+blocker acceptance. It is included in accepted runtime `4591f3a` and is no
+longer an open Presentation follow-up. The later Japanese Relation-label
+mojibake was a separate incident introduced by `529f209` and corrected by
+`da54d55`; the two incidents remain distinct. The `Keep Entity` footer
 placement remains a separate responsibility and no global safe-left/
 danger-right rule was introduced.
 

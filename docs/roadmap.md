@@ -2061,6 +2061,31 @@ The next bounded step is the separate `relation.delete` intent compatibility
 checkpoint. Cross-App Relation deletion remains closed; endpoint-separator and
 dialog-spacing findings remain deferred.
 
+### XAPP-CAPABILITY-HANDOFF7 LiaisonScape recipient Relation delete intent (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF7-LS-RECIPIENT-DELETE-INTENT1` is **IMPLEMENTED /
+AUTOMATED GREEN / BOUNDED BROWSER SMOKE PASS** at LiaisonScape commit
+`95a8c56`. The implementation record is [LiaisonScape Capability Handoff
+Relation Delete Intent Implementation](liaisonscape-capability-handoff-relation-delete-intent-implementation.md).
+
+LiaisonScape now treats accepted `relation.delete` as a non-destructive intent:
+it reuses Dataset Handoff v0 acquisition, resolves the exact canonical Relation,
+checks the optional `Relation` type hint and the bounded recipient capability,
+and lands on the existing Relation Detail surface. The existing explicit Delete
+action remains available, but Handoff receipt does not open Confirmation, focus
+the destructive control, inject input, or mutate the Dataset. `relation.inspect`
+and ordinary v0 behavior remain green; missing, mismatched, malformed, and
+unknown targeted requests fail safely.
+
+The LiaisonScape gate passed with 225 tests, lint, build, and diff checks. A
+dedicated Edge/CDP smoke confirmed the exact `clara-thomas-supervises` landing,
+closed native-dialog state, no initial destructive focus, explicit Delete then
+Cancel safety, locale coexistence, reload, and Back/Forward behavior. The
+closed Cross-App Relation deletion capability remains closed. NarrativeLine
+sender implementation is the next bounded step; capability table publication,
+Hub changes, Core/Extension/schema changes, endpoint-separator mojibake, and
+dialog-spacing findings remain deferred.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

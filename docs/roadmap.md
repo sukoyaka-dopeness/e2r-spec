@@ -1083,14 +1083,13 @@ Cross-App Locale consumer implementation, or Hub locale producer completion:
    change, and should remain aligned with NarrativeLine's Dataset-level
    responsibility.
 3. **Viewport toolbar collapse follow-up** — the CSS-only compactness candidate
-   was **REJECTED / reverted**: initial ordinary EN/JA desktop density
-   improved, but post-drag rendered-dimension recalculation around `721px`
-   wrapped action labels and exposed a stale width/height clamp defect. The
-   bounded record is [LiaisonScape Viewport Toolbar Collapse Follow-up](liaisonscape-viewport-toolbar-collapse-follow-up.md).
-   The preferred next direction is a collapsible floating toolbar; its audit
-   must cover drag-versus-click classification, disclosure keyboard semantics,
-   current-dimension reclamping, EN/JA width, and the accepted `720px`
-   desktop/mobile boundary. Implementation is not authorized by this record.
+   remains **REJECTED / reverted**. The follow-up audit is
+   **DESIGN ACCEPTED / READY FOR BOUNDED IMPLEMENTATION**: the handle may own
+   both pointer drag and click/keyboard disclosure, with explicit drag-versus-
+   click classification and current-dimension reclamping after collapse,
+   expansion, resize, and locale changes. The accepted `720px` desktop/mobile
+   boundary remains unchanged; no runtime change was made. See [LiaisonScape
+   Viewport Toolbar Collapse Follow-up](liaisonscape-viewport-toolbar-collapse-follow-up.md).
 4. **Graph information hierarchy** — audit the ordering and visual emphasis of
    Dataset load status, Dataset metadata/title, graph summary, unsupported
    Event-Relation caveat, graph content, and selection status. Keep the graph
@@ -1124,14 +1123,12 @@ responsive acceptance, not a new workspace-wide minimum-width requirement.
 The same F2-LS1 manual acceptance added two cross-application UX questions:
 
 - **Viewport toolbar interaction semantics** — the existing drag-handle
-  keyboard/focus follow-up is reframed by the [LiaisonScape Viewport Toolbar
+  keyboard/focus follow-up is resolved by the [LiaisonScape Viewport Toolbar
   Collapse Follow-up](liaisonscape-viewport-toolbar-collapse-follow-up.md) as
-  a combined drag-handle plus disclosure-trigger audit. Confirm click versus
-  drag classification, Enter / Space and sequential Tab behavior,
-  focus-visible and accessible disclosure state, position ownership, and
-  dimension-change reclamping. Preserve pointer drag discoverability,
-  keyboard and touch accessibility, and the accepted `720px` handoff. Do not
-  prescribe `tabIndex`, arrow-key, or Enter-to-drag behavior before this audit.
+  a **DESIGN ACCEPTED / READY FOR BOUNDED IMPLEMENTATION** combined
+  drag-handle plus disclosure-trigger contract. Runtime implementation remains
+  a separate checkpoint; the `720px` handoff and no-keyboard-repositioning
+  boundary remain unchanged.
 - **Cross-App Dataset Replacement destructive styling parity** — compare
   NarrativeLine and LiaisonScape for modified-only, pending-only, and
   modified-and-pending states, including Cancel, Discard and Continue, Discard
@@ -1257,8 +1254,8 @@ below the graph. The next bounded application checkpoint is **LS-M2B —
 Dataset title editing**; LS-M2D remains responsible for final capability-notice
 presentation.
 
-Retained follow-ups from acceptance: the viewport toolbar drag-handle /
-disclosure audit recorded in
+Retained follow-ups from acceptance: the bounded viewport toolbar
+drag-handle/disclosure implementation following
 `docs/liaisonscape-viewport-toolbar-collapse-follow-up.md`, LiaisonScape
 Credits descriptive-copy localization, common E2R favicon, and Long-form
 Object Content / Media responsibility research. No new knowledge candidate was
@@ -2391,7 +2388,7 @@ remain separate follow-up work.
 ### Open / deferred
 
 destructive styling
-parity, viewport toolbar drag-handle / disclosure review, `LS-CTX-R1`, the
+parity, viewport toolbar drag-handle / disclosure implementation, `LS-CTX-R1`, the
 Cross-App Visual Style / Flatness Experiment, Initial Node Placement / LS-M3,
 selectable SVG icons, the common favicon, Public Sample Dataset Refresh, and
 licensing/release follow-ups remain open or deferred. None is accepted by this
@@ -2430,10 +2427,10 @@ is already present and is not a missing feature.
 
 Entity Group design must support possible multiple membership from the
 beginning; Group collapse is not required. Ownership tooltip/popover sizing,
-the viewport toolbar drag-handle / disclosure audit, and Initial Node
-Placement remain open follow-ups. Undo/Redo is desirable but non-blocking.
-Public Sample Dataset Refresh is required before release, after format-affecting
-decisions stabilize.
+the bounded viewport toolbar drag-handle / disclosure implementation, and
+Initial Node Placement remain open follow-ups. Undo/Redo is desirable but
+non-blocking. Public Sample Dataset Refresh is required before release, after
+format-affecting decisions stabilize.
 
 Semantic/Dictionary work, including Wikidata and thesaurus research, remains
 later work. Existing release-quality items retain their current statuses. The

@@ -1803,6 +1803,24 @@ accepted DELETE2/DELETE3 semantics.
 6. Close the capability status from `design accepted / implementation not yet
    aligned` after the preceding evidence is complete.
 
+### XAPP-REL-DELETE3 bidirectional acceptance (2026-08-28)
+
+`XAPP-REL-DELETE3-BIDIRECTIONAL-ACCEPTANCE` was executed as an acceptance-only
+checkpoint and is recorded in
+[Cross-App Relation Deletion Bidirectional Acceptance](cross-app-relation-deletion-bidirectional-acceptance.md).
+The result is **FORMAL BIDIRECTIONAL ACCEPTANCE: FAIL**. NarrativeLine at
+`3b2078f` and LiaisonScape at `34d8164` passed the automated gates and the
+bounded Relation, self, parallel, hidden/Event, ambiguity, cancellation, and
+extension-preservation checks. LiaisonScape final Entity deletion passed, but
+NarrativeLine retained `entity-nl-final` after its two incident Relations were
+resolved and final Entity deletion was confirmed. No runtime source was
+changed; no runtime commit was created.
+
+The final Cross-App acceptance remains pending, and capability closure remains
+deferred. X11 must be resolved and the full bidirectional matrix, including
+locale parity, must be re-accepted before item 6 can advance. No targeted
+Handoff closure is claimed.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

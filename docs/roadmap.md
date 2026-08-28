@@ -1821,6 +1821,25 @@ deferred. X11 must be resolved and the full bidirectional matrix, including
 locale parity, must be re-accepted before item 6 can advance. No targeted
 Handoff closure is claimed.
 
+### XAPP-REL-DELETE4 — NarrativeLine final Entity deletion fix (2026-08-28)
+
+**IMPLEMENTED / AUTOMATED GREEN / EXPLORATORY REAL EDGE PASS** at NarrativeLine
+commit `7a695b3` (`fix: complete final Entity deletion`). The X11 stale-state
+overwrite risk was corrected with a functional Dataset updater, and a focused
+real-App regression test now covers explicit resolution of both incident
+Relations, cancellation and reopening of final Entity confirmation, and
+confirmed target deletion with preservation of unrelated Entity/Event data.
+The full 187-test suite, lint, build, and diff checks passed; a fresh Edge
+smoke also passed the export assertions.
+
+The prior `XAPP-REL-DELETE3-BIDIRECTIONAL-ACCEPTANCE` FAIL record is preserved.
+Formal bidirectional acceptance must be rerun in both directions, including
+the full X1-X14 matrix and locale parity; capability closure remains deferred.
+The separately recorded NarrativeLine endpoint-separator mojibake and
+LiaisonScape generic-dialog button-spacing findings remain presentation
+follow-ups and were not fixed in this checkpoint. LiaisonScape runtime source
+and the pre-existing dirty CDP diagnostic playbook were unchanged.
+
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
 **IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling

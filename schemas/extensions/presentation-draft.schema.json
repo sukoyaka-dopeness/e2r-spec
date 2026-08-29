@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/sukoyaka-dopeness/e2r-spec/main/schemas/extensions/presentation-draft.schema.json",
+  "title": "E2R LiaisonScape Presentation Extension Draft 0.1.0",
+  "description": "Structural validation schema for the value of the draft.github.sukoyaka-dopeness.liaisonscape-presentation Extension at exact version 0.1.0.",
+  "$comment": "This schema validates the Extension payload only. Relation-ID resolution, canonical omission of defaults and empty records, orphan handling, and unknown-token interpretation remain separate responsibilities. The normative requirements remain in extensions/presentation-extension-draft.md.",
+  "type": "object",
+  "required": [
+    "specVersion"
+  ],
+  "properties": {
+    "specVersion": {
+      "const": "0.1.0"
+    },
+    "relations": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "\\S"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/relationPresentation"
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "relationPresentation": {
+      "type": "object",
+      "minProperties": 1,
+      "properties": {
+        "arrowDisplay": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Known values are normal, reverse, undirected, and bidirectional. Other strings are structurally preserved as unsupported future values and receive the reader's Normal fallback."
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

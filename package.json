@@ -4,12 +4,13 @@
   "private": true,
   "description": "Development tooling for the E2R specification.",
   "scripts": {
-    "validate": "npm run validate:history && npm run validate:coordinate-draft && npm run validate:names-draft && npm run validate:names-draft-ids && npm run validate:apollo-sample",
+    "validate": "npm run validate:history && npm run validate:coordinate-draft && npm run validate:names-draft && npm run validate:names-draft-ids && npm run validate:presentation-draft && npm run validate:apollo-sample",
     "validate:apollo-sample": "node scripts/validate-apollo-sample.mjs",
     "validate:coordinate-draft": "node scripts/validate-coordinate-draft-schema.mjs",
     "validate:history": "node scripts/validate-history-schema.mjs",
     "validate:names-draft": "node scripts/validate-names-draft-schema.mjs",
     "validate:names-draft-ids": "node scripts/validate-names-draft-id-uniqueness.mjs",
+    "validate:presentation-draft": "node scripts/validate-presentation-draft-schema.mjs",
     "validate:coordinate-interoperability": "node --experimental-strip-types --experimental-specifier-resolution=node scripts/validate-coordinate-interoperability.mjs",
     "test:cdp": "node --test tools/edge-cdp/*.test.mjs"
   },

@@ -2685,3 +2685,24 @@ Schema/reader-writer implementation remains a separate next phase, followed by
 Arrow display runtime, line-style design/implementation, and Lighthouse
 Restoration sample refresh. No schema, runtime, Validator, or sample change is
 authorized by this checkpoint.
+
+### E2R-LS-PRESENTATION-EXTENSION-SCHEMA1 (2026-08-29)
+
+The accepted LiaisonScape Presentation Extension Draft `0.1.0` now has a
+machine-readable structural schema at
+[`schemas/extensions/presentation-draft.schema.json`](../schemas/extensions/presentation-draft.schema.json)
+and a targeted validator registered as `npm run validate:presentation-draft`.
+The schema validates the payload's exact `specVersion`, optional Relation-ID
+map, current `arrowDisplay` string shape, and unknown-field preservation
+boundary. Known values remain `normal`, `reverse`, `undirected`, and
+`bidirectional`; unknown strings remain structurally preservable for the
+reader's Normal fallback.
+
+Relation-ID resolution, orphan diagnostics, canonical default/empty-state
+omission, and application interpretation remain outside JSON Schema. The
+Presentation Extension remains a Draft candidate and does not change Core,
+Coordinate, Layout, Validator semantics, Dataset samples, or application
+runtime. The next checkpoint may implement a bounded LiaisonScape
+Presentation reader/writer responsibility, following the accepted incremental
+application modularization policy; it must not begin as arbitrary Extension
+traversal distributed through `App.tsx`.

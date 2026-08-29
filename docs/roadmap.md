@@ -2431,14 +2431,15 @@ Relations. Implementation, final labels/artwork, persistence, and endpoint
 vocabulary remain separate follow-ups; no runtime/Core/schema change occurred.
 
 The [Relation Endpoint Vocabulary Audit](../research/exploratory/relation-endpoint-vocabulary-audit.md)
-finds the conceptual split between Relation, generic endpoint group, and
-canonical Source/Target roles coherent, but records **VOCABULARY MODEL
-PARTIALLY ACCEPTED / SPECIFIC TERMS STILL UNRESOLVED**. The Japanese generic
-endpoint UI term `つながり先` is now accepted as direction-neutral and
-Entity/Event-capable, without replacing canonical Source/Target roles. English
-generic wording remains unresolved; runtime adoption and surface-specific copy
-remain separate bounded follow-ups. Visual directionality remains separate, and
-no implementation or copy change is authorized.
+now records **VOCABULARY MODEL ACCEPTED / RUNTIME SURFACE ADOPTION REMAINS**.
+The preferred/default English generic endpoint term is `Connected objects`,
+while technical `Endpoints` remains available as specification vocabulary and
+surface-specific grammar may use alternatives such as `Connected to`. The
+Japanese generic endpoint UI term `つながり先` remains accepted as
+direction-neutral and Entity/Event-capable, without replacing canonical
+Source/Target roles. Runtime adoption and surface-specific copy remain
+separate bounded follow-ups. Visual directionality remains separate, and no
+implementation or copy change is authorized.
 
 The record keeps Relative Chronology as a serious pre-release design
 candidate. A minimal canonical `before` relation is a Research candidate, not

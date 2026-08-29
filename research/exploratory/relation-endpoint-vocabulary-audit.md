@@ -462,3 +462,101 @@ placement, and any runtime adoption remain separate follow-ups.
 No application runtime, application copy, visual-directionality UI, endpoint
 editing behavior, Core, Extension, schema, Validator, Hub, or ai-knowledge file
 was modified by this decision.
+
+## E2R-RELATION-ENDPOINT-VOCABULARY-EN1 — English generic endpoint decision
+
+Date: 2026-08-29
+
+### Decision scope
+
+This follow-up resolves the English generic UI concept corresponding to the
+accepted Japanese term `つながり先`. The concept is:
+
+> Either object connected by one Relation, without implying whether it is the
+> canonical Source or Target.
+
+The term must remain compatible with Entity, Event, future allowed endpoint
+kinds, and all four presentation modes (Normal, Reverse, Undirected, and
+Bidirectional). It must not mean a target-only destination, the Relation
+object itself, a reciprocal Relation, an undirected Core Relation, or a
+coordinate/anchor.
+
+### Candidate comparison
+
+| Candidate | Decision and rationale |
+| --- | --- |
+| `Connected objects` | **Accepted as the preferred/default English generic UI term.** It names the participating objects directly, is direction-neutral and Entity/Event-neutral, and remains understandable in headings and explanatory prose. It is longer in compact UI, so a surface may use a grammatical realization such as `Connected to` without changing the accepted concept. |
+| `Endpoints` | Retained as a precise technical/specification term and a possible advanced heading. It is direction-neutral and conventional, but can suggest geometric points or a developer-facing abstraction in ordinary UI; it is not the default user-facing literal. |
+| `Connected items` | Not selected. It is friendlier but too vague about the object semantics and Relation boundary. |
+| `Linked objects` | Not selected. `Linked` can describe generic linking behavior rather than the E2R Relation concept. |
+| `Related objects` | Not selected. It can imply conceptual relatedness without requiring a Relation object. |
+| `Connections` | Not selected. It more naturally names the Relation/edge or a group of Relations, and collides with existing connection terminology. |
+
+This is a preferred conceptual/default term, not a requirement that every
+surface use the same literal string. Surface-specific copy may be shorter or
+more grammatical, provided that it preserves the same direction-neutral
+endpoint meaning. Runtime copy adoption is not part of this decision.
+
+### Boundary with canonical roles and presentation
+
+`Connected objects` does not replace `Source` or `Target`. Direct authoring,
+technical detail, validation, diagnostics, and any context where `sourceId`
+or `targetId` is being inspected must continue to expose the canonical roles.
+The generic term may describe a neutral summary or explanatory group, but it
+must not hide which object is Source and which is Target.
+
+The term is compatible with every visual direction mode because it describes
+Relation participation rather than display orientation:
+
+* Normal does not make the first object a different kind of endpoint.
+* Reverse changes presentation only and does not swap Source/Target roles.
+* Undirected changes presentation only and does not turn the Core Relation
+  into an undirected data-model object.
+* Bidirectional changes presentation only and does not create a reciprocal
+  Relation.
+
+The Japanese generic term `つながり先` remains accepted and is not reopened.
+It is distinct from the Relation object term `つながり`; the English
+`Connected objects` decision has the same distinction from `Relation`.
+
+### Live application spot-check
+
+The current live surfaces support the boundary without authorizing runtime
+changes:
+
+* LiaisonScape Relation Create/Edit and Relation Detail need explicit
+  Source/Target labels where canonical IDs or roles are selected or shown.
+  Entity Detail and deletion-resolution surfaces may use a neutral summary
+  concept in a future copy pass, but `Connected Relations` names a Relation
+  group and is not itself an endpoint label.
+* NarrativeLine Relation presentation and Entity/Event Detail can use the
+  generic concept for neutral explanatory text, while Relation identity and
+  blocker details retain explicit Source/Target information where the role is
+  material.
+* The candidate term does not authorize changes to existing English or
+  Japanese runtime strings, tests, schemas, or data behavior in either app.
+
+### Updated terminology matrix
+
+| Concept | EN | JA | Status |
+| --- | --- | --- | --- |
+| Relation object | `Relation` | `つながり` | Accepted |
+| Generic endpoint concept | `Connected objects` (preferred/default; surface-specific grammar permitted) | `つながり先` | Accepted; runtime adoption remains |
+| Technical endpoint vocabulary | `Endpoints` | No separate Japanese decision | Retained as technical/non-default UI terminology |
+| Canonical Source role | `Source` | Existing canonical-role vocabulary; not replaced here | Retained |
+| Canonical Target role | `Target` | Existing canonical-role vocabulary; not replaced here | Retained |
+| Visual direction | Separate presentation vocabulary | Separate presentation vocabulary | Presentation-only; not selected here |
+
+### Narrowed outcome
+
+**ENGLISH GENERIC ENDPOINT TERM ACCEPTED: `Connected objects`.**
+
+Together with the earlier Japanese decision, the vocabulary model is now:
+
+**VOCABULARY MODEL ACCEPTED / RUNTIME SURFACE ADOPTION REMAINS**
+
+No conceptual vocabulary question remains open in this audit. Remaining work
+is limited to bounded surface-copy choices and any separately authorized
+runtime adoption. No application runtime, application copy,
+visual-directionality UI, endpoint editing behavior, Core, Extension, schema,
+Validator, Hub, or ai-knowledge file was modified by this decision.

@@ -61,7 +61,11 @@ Version 1.0
 
 ## License
 
-License information will be added before the first public release.
+E2R-SPEC uses a role-based licensing map. Project-authored specification and
+documentation prose is CC BY 4.0; standalone schemas and code-like artifacts
+are MIT; eligible project-created examples and machine-readable data are CC0
+1.0. Third-party or imported material keeps its source terms. See
+[LICENSE.md](LICENSE.md) and [the public sample provenance record](docs/public-sample-provenance.md).
 
 ## Sessions
 

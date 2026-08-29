@@ -1,6 +1,6 @@
 # Public Sample Provenance Record
 
-Date: 2026-08-30  
+Date: 2026-08-30
 Status: **S3 formalization record — project release-readiness evidence**
 
 This record documents repository evidence; it is not legal advice or a

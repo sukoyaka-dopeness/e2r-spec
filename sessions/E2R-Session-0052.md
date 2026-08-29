@@ -203,3 +203,133 @@ revert, or history rewrite was performed.
 The public Capability Handoff status remains CLOSED. The card geometry and
 separator items remain deferred presentation work and are not acceptance
 blockers.
+
+## Continuation after the recorded completion (2026-08-28 to 2026-08-29)
+
+The final-state paragraph above is a historical snapshot at `894ff69`. The
+following separately authorized checkpoints continued the same session
+handoff and supersede that snapshot's repository-state description. The
+e2r-spec continuation ran from `0e69583` through the current local HEAD
+`6b7048b`.
+
+### NarrativeLine follow-up closure
+
+The NarrativeLine follow-up sequence recorded and closed the following
+bounded presentation work:
+
+- Relation blocker-card action geometry comparison;
+- modal/dialog mojibake audit and encoding-corruption root-cause diagnosis;
+- control-label alignment and Relation identity presentation audits;
+- post-1I mojibake and Japanese Relation-label correction; and
+- formal Relation blocker presentation acceptance and closure.
+
+The Event human-readable identity sequence was also audited, designed,
+formally accepted, and closed. Its acceptance covered candidate-local Event
+identity presentation for Timeline and Related Events while preserving the
+Core Event ID and existing lifecycle behavior.
+
+The Capability Handoff acceptance remains `CLOSED / ACCEPTED`. The known
+endpoint-separator mojibake remains outside the accepted presentation closure
+and was not corrected by these records.
+
+### LiaisonScape and cross-application records
+
+The e2r-spec history recorded LiaisonScape Dataset metadata alignment,
+including correction of the Japanese example mojibake, and closed that
+alignment checkpoint. It also recorded the cross-application generic dialog
+spacing audit, Relation directionality and endpoint-vocabulary decisions,
+the Relation Detail display-control and persistence boundaries, and the
+remaining Relation deletion blocker presentation boundary.
+
+The viewport toolbar sequence recorded the rejected compact-too-far direction,
+the accepted collapsible toolbar contract, and the focus-visible tooltip
+visibility follow-up. These records did not authorize unrelated runtime or
+specification changes.
+
+### Presentation Extension and schema progress
+
+The LiaisonScape Presentation Extension Draft was defined with identifier
+`draft.github.sukoyaka-dopeness.liaisonscape-presentation` and version
+`0.1.0`. Its Relation presentation serialization boundary was recorded, and
+the structural schema plus `validate:presentation-draft` fixture validator
+were added.
+
+The schema now covers the optional Relation `arrowDisplay` and `lineStyle`
+fields, including the accepted known values and structurally preservable
+unknown non-empty values. Arrow display and Line style remain independent
+Presentation concerns; Core endpoints, Relation identity, Layout, and
+Coordinate semantics were not changed. The completed Arrow display, Line
+style, and LiaisonScape Credits locale-parity checkpoints remain closed.
+
+### Pre-release Validator and sequencing record
+
+The current roadmap checkpoint was committed as:
+
+`6b7048b docs: record pre-release Validator sequencing`
+
+`docs/roadmap.md` now explicitly requires production Validator integration
+and acceptance for Presentation `0.1.0` before Public Sample Dataset Refresh.
+The required coverage includes:
+
+- known `arrowDisplay` values `normal`, `reverse`, `undirected`, and
+  `bidirectional`;
+- known `lineStyle` values `solid`, `dashed`, and `dotted`;
+- forward-compatible preservation of unknown non-empty future tokens;
+- malformed payload handling at the appropriate Validator boundary;
+- unaffected Core-only datasets and safely ignorable/preservable unrelated
+  Extensions; and
+- an explicit, still-open question for orphan Relation-ID Presentation
+  records and diagnostic severity/boundary.
+
+Node automatic placement remains a separate Layout/placement responsibility.
+The roadmap does not assume whether it will use existing Coordinate/Layout
+serialization or introduce/change serialized data. If serialized data changes,
+its schema and Validator coverage must precede Public Sample acceptance; no
+placement algorithm or serialization was selected or implemented here.
+
+The recorded remaining sequence is node placement acceptance, serialization
+implication resolution, independent Presentation lifecycle cleanup, production
+Validator integration/acceptance, Public Sample Dataset Refresh, cross-app
+release audit, LiaisonScape version decision, final audit, explicit
+push/deploy authorization, and only then public deployment acceptance.
+Lighthouse Restoration remains a later sample-refresh workstream and does not
+authorize adding Relations or inferring Relations between mojibake sample
+names. The application remains `0.1.0`; a possible `0.2.0` remains an
+unaccepted future candidate.
+
+### Next-room source handoff
+
+The live LiaisonScape source inventory was inspected for the next checkpoint.
+There is no dedicated automatic-placement module yet. The current trace is
+`src/App.tsx` Entity creation and placement state, `src/services/EntityService.ts`
+Entity construction, `src/direct-graph-authoring.ts` pointer-to-graph mapping
+and temporary placement, `src/dataset-replacement-safety.ts` placement
+ownership/pending-work boundary, and `src/dataset.ts` Coordinate read/write
+and graph construction. `src/viewport.ts` supplies fit, routing, and geometry
+behavior; the corresponding tests were identified for the handoff.
+
+The next separately authorized work begins with Node automatic placement. It
+must first preserve existing Coordinates, distinguish automatic placement from
+manual placement, and establish the explicit Coordinate save boundary before
+any implementation is attempted.
+
+### Continuation verification and repository state
+
+- `npm.cmd run validate`: PASS, including Presentation Draft validation with
+  14 valid and 12 invalid cases and Apollo sample validation;
+- `git diff --check`: PASS;
+- exact changed file for the sequencing checkpoint: `docs/roadmap.md`;
+- current e2r-spec HEAD: `6b7048b`, clean, and the sequencing commit remains
+  unpushed;
+- LiaisonScape remains clean at `1e82a22` and was not changed by this
+  documentation checkpoint;
+- NarrativeLine remains clean at `3c81d33` and was not changed by this
+  documentation checkpoint;
+- Validator remains clean at `49b2751`, Hub at `9de6399`, and no other
+  repository was changed; and
+- the pre-existing dirty
+  `ai-knowledge/playbooks/e2r-edge-cdp-browser-diagnostic.md` change remains
+  untouched and preserved.
+
+No Validator runtime integration, Node automatic placement, Dataset sample
+refresh, application version bump, push, or deployment was performed.

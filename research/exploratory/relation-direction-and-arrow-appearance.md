@@ -635,3 +635,136 @@ Persistence ownership remains unresolved and is now the remaining named
 decision before runtime implementation. The four presentation modes, stable
 endpoint order, no-mutation boundary, Japanese label, and English visible
 label are decided conceptually; runtime implementation remains unimplemented.
+
+## LS-RELATION-DISPLAY-PERSISTENCE-OWNERSHIP1 - Persistence ownership decision
+
+Date: 2026-08-29
+
+Status: **RELATION DISPLAY PERSISTENCE OWNER ACCEPTED / SERIALIZATION DETAIL
+REMAINS**.
+
+This checkpoint resolves the remaining ownership question for the accepted
+Relation Detail `Relation display` control. It is a documentation-only
+decision. It does not implement the control, register an Extension, define a
+schema, or change any application.
+
+### Live ownership evidence
+
+The current authority set distinguishes the following responsibilities:
+
+| Existing responsibility | Current evidence | Disposition for Relation display |
+| --- | --- | --- |
+| Core Relation | `sourceId` and `targetId` define the canonical structural Relation | Not an owner; unchanged |
+| Coordinate | The current prototype and draft Coordinate contracts address Entity/Event coordinates; Relation Coordinate payloads are prohibited | Not an owner |
+| Layout | Existing research owns route geometry, self-Relation geometry, label placement, and spatial layering; exact Layout persistence remains experimental | Not an owner for visual direction mode |
+| Application View State | Zoom, pan, selection, hover, modal, and gesture state are application-only | Temporary runtime holder only, not the accepted Dataset owner |
+| Presentation | Existing research assigns line/arrow appearance and other visual styling to Presentation, but no registered Presentation Extension exists | Correct responsibility; a new bounded owner mechanism is required |
+| Perspective | A provisional future responsibility for persisted targeting, grouping, ordering, or relevance context | Not needed for this Relation-local appearance choice |
+
+The strings `liaisonscape-graph` and `liaisonscape-user-unit` are current
+Coordinate Space and unit identifiers, not Relation-presentation Extension
+identifiers. The Extension index lists Coordinate as draft/prototype and
+Layout as a candidate document; it lists no registered LiaisonScape-owned
+Presentation Extension or Relation display field. Therefore no existing
+identifier, version, enum convention, or Relation-addressing convention can
+be safely reused as a serialized contract here.
+
+### Ownership decision
+
+The selected ownership conclusion is:
+
+**NEW PRESENTATION OWNERSHIP MECHANISM REQUIRED.**
+
+The exact conceptual owner is a future LiaisonScape-owned, Dataset-contained
+Presentation mechanism for reusable Relation appearance intent. This is a
+bounded owner decision, not permission to design the complete Presentation
+family. The future payload must remain separate from Core, Coordinate, Layout,
+and the provisional Perspective responsibility.
+
+Core ownership is rejected. All four accepted modes continue to describe one
+Relation with the same `sourceId = A` and `targetId = B`; putting the mode on
+Core would make a rendering choice appear to be semantic structure. Layout
+ownership is also rejected for this field: route/curvature and label geometry
+answer where a Relation is drawn, while this mode answers how its direction is
+visually emphasized. A future Presentation mechanism may later be composed
+with a Layout, but it must not be hidden inside one.
+
+Transient LiaisonScape state alone is not accepted as the product persistence
+boundary. The choice is an explicit, Relation-specific presentation decision,
+so a committed selection is expected to survive Dataset export, close/reopen,
+and transfer to another LiaisonScape instance. Application memory may hold the
+active value while editing, but it is not the durable owner. A future
+Perspective may eventually compose or reference this state, but its current
+research scope does not justify forcing a Relation appearance enum into it.
+
+### Persistence boundary and lifecycle expectations
+
+The future runtime/contract checkpoint must treat a committed display choice
+as Dataset-contained presentation data:
+
+- Choosing Reverse, Undirected, or Bidirectional must not mutate endpoints,
+  names, descriptions, IDs, or semantic Extensions. It may make the Dataset
+  modified once the selection is intentionally adopted as presentation data.
+- Closing Relation Detail, saving/exporting, closing the application, browser
+  reload, and reopening the same exported Dataset should retain an adopted
+  choice. A value that was only a canceled or incomplete interaction may be
+  discarded according to the future atomic-adoption rule.
+- Export/import and Dataset copying should carry the presentation metadata with
+  the Dataset. It must not be implemented as localStorage or as a preference
+  that survives replacement of the active Dataset.
+- Replacing the Dataset replaces its Relation display choices. The incoming
+  Dataset's presentation state is authoritative for that Dataset; no unrelated
+  browser preference is merged into it.
+- The state must be addressed by exact Relation ID, not by endpoint pair,
+  Relation name, array position, or rendered edge. This permits one mode for a
+  self-Relation and independent modes for parallel Relations.
+- When a Relation is deleted, a future writer should remove its presentation
+  record in the same committed Dataset transition. Orphan-record validation
+  and repair rules remain part of the serialization contract; this checkpoint
+  does not authorize cleanup code.
+- A future display-mode change is conceptually an authored Dataset
+  presentation mutation. It should therefore be eligible for the same future
+  undo/redo boundary as other adopted Dataset edits, while undo/redo itself
+  remains out of scope.
+
+This is analogous to the accepted direction for intentionally saved Entity
+Coordinates: an explicit adopted value is Dataset content and can contribute
+to dirty state. It is deliberately not analogous to LiaisonScape's current
+automatic routes, temporary Relation curvature, or temporary label placement,
+which remain Derived or unsaved Layout adjustments. Opening a Dataset or
+merely rendering a default must not materialize `Normal`.
+
+### Compatibility, unknown values, and default
+
+Absence of a persisted display choice means Normal: render the canonical
+source-to-target direction when direction is shown. The contract should omit
+that default rather than materialize an explicit `normal` value unless a
+future schema gives a demonstrated reason to do otherwise.
+
+Another application, including NarrativeLine, must remain able to parse and
+edit the Core Relation without understanding this LiaisonScape presentation
+state. An unsupported Presentation payload or mode must not block Core
+Relation use, must not rewrite `sourceId` or `targetId`, and should be
+preserved on round trip whenever the applicable Extension and consumer rules
+require preservation. Existing NarrativeLine evidence demonstrates opaque
+unknown Extension preservation for supported round-trip paths; it does not
+make NarrativeLine a Presentation consumer.
+
+If a later LiaisonScape version encounters an unknown mode, it should preserve
+the original metadata where practical and render the safe canonical Normal
+fallback without silently rewriting the unknown value. It must not claim to
+interpret or edit the unsupported value. The exact diagnostic and recovery
+surface is deferred.
+
+### Serialization readiness
+
+The conceptual value set is stable enough for the next contract discussion:
+Normal, Reverse, Undirected, and Bidirectional. The exact serialized tokens,
+casing, payload placement, Relation-ID map/record shape, Extension identifier,
+version field, declaration behavior, unknown-field rules, and orphan-record
+validation are not safely selected by the current evidence. No field or token
+is introduced here.
+
+Accordingly, the next checkpoint is **A2: one bounded serialized-shape and
+version decision remains**. Runtime implementation is not ready until that
+contract is defined and its preservation/dirty-state tests are authorized.

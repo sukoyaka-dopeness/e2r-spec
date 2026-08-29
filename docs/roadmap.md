@@ -2631,3 +2631,22 @@ Persistence ownership remains the sole named prerequisite before runtime
 implementation. No ARIA wording, arrow control, rendering, persistence, Core,
 Extension, schema, or application change is authorized by this vocabulary
 decision.
+
+### LS-RELATION-DISPLAY-PERSISTENCE-OWNERSHIP1 (2026-08-29)
+
+The [Relation Direction and Arrow Appearance](../research/exploratory/relation-direction-and-arrow-appearance.md)
+authority now records **RELATION DISPLAY PERSISTENCE OWNER ACCEPTED /
+SERIALIZATION DETAIL REMAINS**. An explicitly adopted Relation display choice
+is Presentation-owned, Dataset-contained LiaisonScape state under a future
+bounded Presentation mechanism. It is not Core, Coordinate, Layout geometry,
+Application View State, or the provisional Perspective responsibility.
+
+An absent choice defaults to canonical Normal (`sourceId -> targetId`); an
+adopted choice is expected to travel through Dataset export/import and may
+contribute to `datasetModified` and future undo/redo. Unsupported presentation
+data must not block Core Relation use and should be preserved where applicable
+Extension rules require it. Exact Extension identifier/version, serialized
+tokens, payload shape, Relation-ID addressing, and orphan-record rules remain
+the next bounded schema-contract decision. Relation display runtime work is
+therefore not yet ready, and no Core, schema, Extension, Validator, or
+application change is authorized by this checkpoint.

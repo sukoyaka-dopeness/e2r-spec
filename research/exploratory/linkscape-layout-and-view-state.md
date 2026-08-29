@@ -425,3 +425,47 @@ At that checkpoint, the repository should contain:
 Coordinate, Layout, and Presentation should pass their evidence gates
 independently. Success in one responsibility does not justify standardizing the
 others.
+
+## LS-RELATION-DISPLAY-PERSISTENCE-OWNERSHIP1 - Presentation persistence boundary
+
+Date: 2026-08-29
+
+The Relation display persistence decision is recorded here to keep the
+responsibility boundary aligned with this research baseline:
+
+**NEW PRESENTATION OWNERSHIP MECHANISM REQUIRED.**
+
+An explicitly adopted Normal, Reverse, Undirected, or Bidirectional choice is
+Presentation-owned intent for how a canonical Relation is rendered. It is not
+Layout route geometry, Coordinate data, Core direction, or Application View
+State. If retained after the user commits the choice, it belongs in a future
+LiaisonScape-owned, Dataset-contained Presentation mechanism and travels with
+the Dataset through export/import. The exact Extension identifier, version,
+payload shape, and Relation-ID record convention remain a separate contract
+decision.
+
+This does not make the current Layout candidate the owner. Layout continues to
+cover route, self-loop, label, and spatial-layer geometry; the existing Layout
+document has no stable registered identifier or Relation display schema.
+Likewise, `liaisonscape-graph` and `liaisonscape-user-unit` identify the
+current Coordinate Space and unit, not a Presentation contract. Application
+View State may temporarily hold a selected value during an uncommitted
+interaction, but it is not the durable owner for an explicit Dataset
+presentation choice.
+
+The future contract must preserve the following boundary: absence means the
+canonical Normal source-to-target rendering; a supported Relation ID is the
+addressing key; self-Relations and parallel Relations are independent; deleted
+Relations must not leave active orphan presentation records; Dataset
+replacement takes the incoming Dataset's state; and an unsupported mode must
+fall back to canonical Normal without rewriting or discarding unknown data
+where preservation is required. A committed choice may contribute to
+`datasetModified` and future undo/redo as authored Dataset presentation data.
+Opening a Dataset and merely rendering a default must not materialize it.
+
+NarrativeLine need not interpret this LiaisonScape presentation state. Existing
+round-trip evidence supports preservation of opaque unsupported Extension data
+on applicable paths, but it does not make NarrativeLine a consumer of the
+future Presentation contract. Presentation standardization and its
+cross-application evidence gate remain open; no schema or runtime change is
+authorized by this checkpoint.

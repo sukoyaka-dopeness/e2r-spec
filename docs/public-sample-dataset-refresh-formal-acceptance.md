@@ -283,7 +283,7 @@ Only this e2r-spec result document was created.
 
 ## Commit
 
-Pending local commit: `docs: formally accept public sample refresh`.
+Local commit: `2df55b5 docs: formally accept public sample refresh`.
 
 ## Push/deploy status
 

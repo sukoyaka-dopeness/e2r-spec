@@ -378,3 +378,168 @@ evidence required before runtime or Extension design.
 
 No Core, schema, Validator, Extension, application runtime, endpoint
 vocabulary, or exact arrow artwork change follows from this audit.
+
+## E2R-RELATION-VISUAL-DIRECTIONALITY-DECISION1 — Follow-up decision
+
+Date: 2026-08-29
+
+Status: **RESEARCH RECONCILED / PRESENTATION-ONLY DIRECTIONALITY MODEL
+ACCEPTED**.
+
+### Historical Outcome B and the resolved question
+
+The preceding audit, recorded at `c68b767`, remains historical evidence. It
+concluded **RESEARCH PARTIALLY RECONCILED / SOME VISUAL MODES REQUIRE
+SEPARATE DECISION**: Normal was the baseline, Reverse and Undirected were
+bounded presentation-only candidates, and Bidirectional was left unresolved.
+
+Bidirectional was deferred because a two-headed depiction of one Relation could
+be read as reciprocal semantic assertions or as two Relations. That concern was
+valid as an interpretation risk, but the accepted product decision is that it
+does not justify overriding or prohibiting an explicit user choice of visual
+expression. The unresolved Bidirectional portion of Outcome B is therefore
+superseded by this section; the canonical-data safeguards and the distinction
+between presentation and semantic mutation remain in force.
+
+### Reconciled principle
+
+**Visual Relation directionality is presentation state. Canonical Relation
+semantics remain defined by Dataset structure. Presentation must not be used by
+the application as an instruction to mutate or infer canonical semantic
+structure.**
+
+In short:
+
+> display choice != semantic mutation
+
+One canonical directed Relation may be drawn in different ways without
+automatically changing what is stored. Potential interpretation by another
+viewer is a presentation consideration, but it is not by itself sufficient
+reason for the application to override or forbid an explicit visual choice.
+This is a narrow decision about Relation visual directionality, not a general
+UX doctrine.
+
+The application's responsibility is to preserve canonical Dataset semantics,
+keep semantic editing explicit, and avoid silently inferring semantic
+mutations from presentation controls. It is not required to anticipate every
+possible interpretation by forbidding an intentional presentation.
+
+### Four presentation modes under one model
+
+The four modes below use the same presentation-only rule. The glyphs are
+conceptual examples only; they do not select final arrowhead artwork, UI
+labels, or serialization vocabulary.
+
+| Mode | Canonical Relation | Conceptual visual | Conclusion |
+| --- | --- | --- | --- |
+| Normal | `sourceId = A`, `targetId = B` | `A -> B` | Accepted presentation baseline; no semantic mutation. |
+| Reverse | `sourceId = A`, `targetId = B` | `A <- B` | Accepted presentation-mode concept; no endpoint swap. |
+| Undirected | Still canonical `A -> B` | `A — B` | Accepted direction-neutral presentation concept; it does not create an undirected Core Relation. |
+| Bidirectional | Still one canonical `A -> B` Relation | `A <-> B` | Accepted presentation-mode concept; it does not create reciprocal or duplicate canonical structure. |
+
+For every mode, the application must not infer or rewrite Dataset semantics from
+the drawing. In particular, selecting Bidirectional must not create a reverse
+Relation, create a second Relation, swap `sourceId`/`targetId`, make the
+Relation structurally symmetric, rewrite semantic text, change IDs, or change
+Core, schema, or Extension semantics. The same no-mutation rule applies to
+Normal, Reverse, and Undirected.
+
+### One visual Relation versus two canonical Relations
+
+If the user semantically means both assertions:
+
+```text
+Alice supervises Bob
+Bob supervises Alice
+```
+
+the canonical model can represent them as two distinct Relations:
+
+```text
+Relation 1: Alice -> Bob
+Relation 2: Bob -> Alice
+```
+
+That is different from selecting Bidirectional presentation for one canonical
+Relation:
+
+```text
+one Relation: A -> B, displayed as A <-> B
+```
+
+The visual choice is not equivalent to automatically creating the two
+Relations, and the two semantic assertions must not be collapsed into one
+presentation choice.
+
+### Semantic identity and text boundary
+
+Changing visual mode never automatically rewrites:
+
+- Relation `name`;
+- Relation `description`;
+- Entity names;
+- `sourceId`;
+- `targetId`; or
+- the Relation ID or any other Core object ID.
+
+For example, a canonical Relation named `Alice supervises Bob` remains named
+`Alice supervises Bob` when the user selects Reverse, Undirected, or
+Bidirectional presentation. Semantic text editing remains a separate explicit
+user action.
+
+Canonical `source`/`target` roles and their IDs remain available to
+semantic and technical surfaces irrespective of the selected visual mode.
+This decision does not select final Relation Detail vocabulary and does not
+rename `Source`, `Target`, or any existing or deferred endpoint vocabulary.
+Endpoint-vocabulary work remains a separate audit.
+
+### Safeguards and ownership boundary
+
+The retained safeguards are semantic-clarity safeguards, not a veto on any of
+the four modes:
+
+- canonical source/target roles remain inspectable;
+- a visual mode is identified as presentation/view state rather than an
+  endpoint-editing operation; and
+- no semantic mutation occurs merely because a visual mode is selected.
+
+No mandatory warning dialog or confirmation prompt follows from this decision.
+Bidirectional presentation is not inherently a dangerous operation and must
+not be prohibited solely because an observer could infer reciprocity.
+
+If visual directionality is later persisted, it remains presentation/view-owned
+state. Possible future ownership includes transient LiaisonScape View State,
+Layout/View presentation state, or another future presentation-oriented
+mechanism. This checkpoint selects none of them and does not introduce a new
+Extension or persistence mechanism. Visual directionality must not be promoted
+into Core merely to store an appearance choice.
+
+### Interoperability and default presentation
+
+Applications that do not understand a future visual-directionality setting
+must still preserve and interpret the canonical Relation from `sourceId`,
+`targetId`, Relation identity, and normal Core fields. NarrativeLine does not
+need to understand a LiaisonScape visual mode in order to preserve Relation
+semantics. Unknown presentation metadata, if introduced in a later checkpoint,
+must not redefine the Core Relation.
+
+When no visual-directionality presentation choice is present, the default graph
+presentation reflects canonical `sourceId -> targetId` direction when direction
+is shown. This documentation decision does not change current runtime behavior.
+
+### Accepted scope and exclusions
+
+The accepted result is:
+
+**RESEARCH RECONCILED / PRESENTATION-ONLY DIRECTIONALITY MODEL ACCEPTED**.
+
+Normal, Reverse, Undirected, and Bidirectional are all accepted as
+presentation-mode concepts for one canonical directed Relation. All retain the
+same canonical source/target Dataset structure, and no visual mode itself
+changes semantic text or Core structure.
+
+This does not authorize runtime implementation, final UI labels, final glyph
+or arrow styling, a persistence model, endpoint-vocabulary resolution, or any
+change to Relation creation/editing, Relation Detail, graph markers, Core,
+schema, Extension semantics, or application repositories. The current
+checkpoint is documentation and decision reconciliation only.

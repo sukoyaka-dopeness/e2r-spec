@@ -2600,3 +2600,20 @@ safe-first ordering, shared focus trapping, dismissal, and narrow scrolling
 remain accepted responsibility-specific behavior. Only an optional P3
 representative browser-fixture coverage candidate was recorded; no runtime,
 vocabulary, deletion, or cross-app parity fix is opened by this checkpoint.
+
+### LS-RELATION-DETAIL-PRESENTATION-DIRECTIONALITY-DECISION1 (2026-08-29)
+
+The Relation Detail presentation decision is recorded in the reconciled
+[Relation Endpoint Vocabulary Surface Adoption Audit](../research/exploratory/relation-endpoint-vocabulary-surface-adoption-audit.md)
+and the bounded [Relation Direction and Arrow Appearance](../research/exploratory/relation-direction-and-arrow-appearance.md)
+UI consequence. Ordinary Relation Detail is now conceptually inspection plus
+future presentation configuration: `Name`, two singular `Connected object`
+rows in stable canonical source/target order, and a visual control between
+them. The Japanese control concept is `つながりの表示`; Normal, Reverse,
+Undirected, and Bidirectional remain presentation-only choices.
+
+Canonical `sourceId` / `targetId`, Relation name/description, Create/Edit,
+Entity Detail, and the accepted deletion-blocker presentation remain unchanged.
+The English control label and persistence ownership are unresolved, so runtime
+implementation is not ready. No arrow control, rendering, persistence, Core,
+Extension, schema, or application change is authorized by this decision.

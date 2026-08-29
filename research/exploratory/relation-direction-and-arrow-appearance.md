@@ -543,3 +543,37 @@ or arrow styling, a persistence model, endpoint-vocabulary resolution, or any
 change to Relation creation/editing, Relation Detail, graph markers, Core,
 schema, Extension semantics, or application repositories. The current
 checkpoint is documentation and decision reconciliation only.
+
+## LS-RELATION-DETAIL-PRESENTATION-DIRECTIONALITY-DECISION1 — Bounded UI consequence
+
+Date: 2026-08-29
+
+The presentation-only directionality model now has one bounded UI consequence:
+ordinary LiaisonScape Relation Detail is the intended future surface for
+inspecting a Relation and choosing how that Relation is shown. This does not
+rewrite the semantic directionality decision above and does not authorize the
+control's runtime implementation.
+
+The conceptual Relation Detail structure is:
+
+- Relation `Name`;
+- one generic `Connected object` row for the canonical source-ordered endpoint
+  A;
+- a presentation control conceptually between the endpoint rows; and
+- one generic `Connected object` row for the canonical target-ordered endpoint
+  B.
+
+The endpoint names are shown once and are not repeated inside a compact visual
+direction label. The rows retain stable canonical storage order without being
+labelled Source/Target in the ordinary primary view. This avoids requiring a
+user to reconcile canonical role terminology with a Reverse or other
+presentation-only visual choice. The Japanese control concept is
+`つながりの表示`; the exact English control label remains unresolved.
+
+This UI consequence does not select final glyphs, persistence, or an advanced
+technical view. Relation Create/Edit remains a separate canonical Source/
+Target responsibility, and Entity Detail's related-Relation cards remain a
+separate follow-up. The default remains Normal (`sourceId -> targetId`) when no
+presentation choice exists. Selecting Normal, Reverse, Undirected, or
+Bidirectional must continue to leave `sourceId`, `targetId`, Relation text,
+IDs, Core semantics, and Extension semantics unchanged.

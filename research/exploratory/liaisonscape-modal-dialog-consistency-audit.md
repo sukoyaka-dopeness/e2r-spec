@@ -327,3 +327,25 @@ consistency defect and does not authorize any implementation in this checkpoint.
 
 No LiaisonScape file, test, locale message, CSS rule, service, or runtime
 behavior was changed by this audit.
+
+## Subsequent Relation Detail decision
+
+The Outcome A above remains the valid result of `LS-MODAL-DIALOG-CONSISTENCY-AUDIT1`
+under the responsibility model available on 2026-08-29. In particular, its
+finding that Entity Detail related-Relation cards and Entity deletion blocker
+cards serve different responsibilities remains unchanged.
+
+The later `LS-RELATION-DETAIL-PRESENTATION-DIRECTIONALITY-DECISION1` supersedes
+only this audit's Relation Detail classification and current-vocabulary
+conclusion. Under the newly accepted product direction, ordinary Relation
+Detail becomes Relation inspection plus future presentation configuration. Its
+ordinary primary structure is therefore conceptually `Name`, two singular
+`Connected object` rows in stable canonical order, and a presentation control
+between them. Japanese uses `名前`, `つながり先`, and `つながりの表示`; the
+English control label and persistence remain unresolved.
+
+This note does not reopen the modal inventory, destructive styling, dismissal,
+focus, scroll, narrow, or EN/JA findings above. It does not change Relation
+Create/Edit, Entity Detail, the accepted Entity deletion blocker, or any
+runtime behavior. It records a later product-direction supersession, not a
+retroactive defect in the completed audit.

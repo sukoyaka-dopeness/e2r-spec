@@ -411,3 +411,97 @@ No runtime copy, application behavior, deletion behavior, visual directionality,
 Core, Extension, schema, Validator, Hub, or ai-knowledge file was modified by
 this audit; the accepted LiaisonScape follow-up remains a documentation-only
 runtime candidate.
+
+## LS-RELATION-DETAIL-PRESENTATION-DIRECTIONALITY-DECISION1 — Superseding decision
+
+Date: 2026-08-29
+
+Status: **RELATION DETAIL SURFACE-SPECIFIC GENERIC + PRESENTATION CONTROL
+ACCEPTED / RUNTIME NOT READY**
+
+### Historical finding and narrow supersession
+
+The preceding Relation Detail findings remain valid historical evidence. The
+earlier accuracy work correctly replaced the inaccurate Entity-specific
+`Source Entity` / `Target Entity` wording with type-neutral canonical
+`Source` / `Target` labels, and the modal consistency audit correctly found no
+material inconsistency under the then-current responsibility model.
+
+This section supersedes only the current Relation Detail presentation
+recommendation because a new product direction now intends Relation Detail to
+host a future presentation-direction choice. When a user can choose Normal,
+Reverse, Undirected, or Bidirectional visual presentation, primary Source/
+Target copy can make a presentation-only reverse visual appear to contradict
+the canonical labels. The new direction is therefore a product-level
+information-architecture decision, not a claim that the earlier accuracy fix
+was wrong.
+
+### Accepted Relation Detail structure
+
+Ordinary Relation Detail is now defined as **ordinary Relation inspection plus
+presentation configuration**. Its primary questions are: what is this
+Relation, which objects does it connect, and how should it be shown? The
+ordinary primary view should not require the user to reason about `sourceId`,
+`targetId`, canonical Source, or canonical Target. A future explicitly
+technical surface may expose those concepts; this decision does not design
+that surface.
+
+The accepted conceptual structure is:
+
+| Row | Japanese | English |
+| --- | --- | --- |
+| 1 | `名前` + Relation name | `Name` + Relation name |
+| 2 | `つながり先` + endpoint A | `Connected object` + endpoint A |
+| Control | `つながりの表示` + future visual control | `EN display-control label: unresolved` + future visual control |
+| 3 | `つながり先` + endpoint B | `Connected object` + endpoint B |
+
+The singular English `Connected object` is accepted for each endpoint row as
+surface-specific grammar derived from the accepted conceptual vocabulary
+`Connected objects`. The conceptual English vocabulary is not reopened.
+Endpoint names appear once, above and below the control; the control must not
+repeat them in a compressed `A → B` label.
+
+The Japanese control concept is accepted as `つながりの表示`, not
+`矢印の種類` or another arrow-only term, because one accepted mode is
+non-directional and the control changes the visual presentation of the Relation
+rather than only its arrowhead. No English control label is accepted in this
+checkpoint. Candidate translations such as `Relation direction`, `Direction`,
+`Arrow type`, `Relation display`, `Connection display`, and `Appearance` remain
+unresolved and must not be silently selected by implementation.
+
+### Endpoint order and presentation-only semantics
+
+For the current canonical Dataset `sourceId = A`, `targetId = B`, the upper
+endpoint row remains the current canonical source object A and the lower row
+remains the current canonical target object B. This is a stable presentation
+anchor, not a user-facing Source/Target label and not a visual-direction-
+dependent reorder. No `connected object 1/2`, alphabetical reorder, or mode-
+dependent swap is accepted.
+
+Relative to the two visible rows, the conceptual modes are:
+
+| Mode | Conceptual result | Semantic effect |
+| --- | --- | --- |
+| Normal | Show A toward B (`A → B`) | Presentation only; canonical A/B unchanged |
+| Reverse | Show B toward A (`A ← B`) | Presentation only; do not swap `sourceId`/`targetId` |
+| Undirected | Show the Relation without directional emphasis (`A — B`) | Does not create an undirected Core Relation |
+| Bidirectional | Show the Relation in both directions (`A ↔ B`) | Does not create reciprocal or duplicate Relations |
+
+Selecting a mode must not mutate `sourceId`, `targetId`, Relation name,
+Relation description, Entity/Event names, IDs, Core semantics, or Extension
+semantics. If no presentation setting exists, Normal remains the default
+visual reflecting canonical source toward canonical target.
+
+### Boundaries and readiness
+
+Relation Create/Edit remains a separate canonical Source/Target responsibility
+and is not changed by this decision. Entity Detail's related-Relation cards
+remain a separate follow-up candidate and are not silently converted here. The
+accepted LiaisonScape deletion-blocker rows remain `Name` plus two `Connected
+object` rows, with no visual-direction control.
+
+Persistence ownership remains unresolved. A future choice may be transient
+LiaisonScape view state or another presentation-oriented mechanism, but no
+Core field, Extension, schema, or persistence contract is selected. The exact
+English control label is also unresolved. Consequently, this decision is
+**not runtime implementation ready** and authorizes no application change.

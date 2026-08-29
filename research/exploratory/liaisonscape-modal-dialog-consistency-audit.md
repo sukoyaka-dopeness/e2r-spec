@@ -349,3 +349,26 @@ focus, scroll, narrow, or EN/JA findings above. It does not change Relation
 Create/Edit, Entity Detail, the accepted Entity deletion blocker, or any
 runtime behavior. It records a later product-direction supersession, not a
 retroactive defect in the completed audit.
+
+### LS-RELATION-DETAIL-ARROW-DISPLAY-ORDER-DECISION1 - Future Detail hierarchy
+
+Date: 2026-08-29
+
+The live `RelationDetailDialog` order was rechecked read-only. Its current
+ordinary flow is endpoint controls (`Source` / `Target`), then `Name`,
+`Description`, Save, the expandable Technical Information section, and the
+danger-area Delete action; header Close remains in the dialog header. The
+Japanese runtime endpoint labels remain `始点` / `終点`.
+
+The current endpoint-first order is now a future Relation Detail redesign
+target because the Relation's human-readable identity should be primary. The
+accepted future ordinary hierarchy is `Name`, generic `Connected object`,
+`Arrow display`, generic `Connected object`, then `Description`, with the
+arrow-display control between the endpoint rows. This is an information-order
+decision only. It is not a current data, semantic, modal-consistency, or
+runtime defect classification.
+
+The narrower arrow-display responsibility does not reopen this audit's
+Outcome A. It does not alter the accepted Create/Edit Source/Target surface,
+Entity Detail related-Relation surface, generic deletion-blocker cards,
+destructive action hierarchy, focus behavior, or serialization boundary.

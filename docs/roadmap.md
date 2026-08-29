@@ -2650,3 +2650,22 @@ tokens, payload shape, Relation-ID addressing, and orphan-record rules remain
 the next bounded schema-contract decision. Relation display runtime work is
 therefore not yet ready, and no Core, schema, Extension, Validator, or
 application change is authorized by this checkpoint.
+
+### LS-RELATION-DETAIL-ARROW-DISPLAY-ORDER-DECISION1 (2026-08-29)
+
+The [Relation Direction and Arrow Appearance](../research/exploratory/relation-direction-and-arrow-appearance.md)
+authority now records **RELATION DETAIL ARROW-DISPLAY PRESENTATION ACCEPTED**.
+The four-mode control is narrowed from the previously accepted broader
+`Relation display` concept to the accepted English label `Arrow display` and
+Japanese label `遏｢蜊ｰ縺ｮ陦ｨ遉ｺ`. `Relation display` remains valid historical
+wording for a possible broader presentation section; future line/stroke style
+is separate.
+
+Relation Detail's accepted future ordinary order is `Name`, `Connected object`,
+`Arrow display`, `Connected object`, `Description`, with the control between
+the endpoint rows. The current live endpoint-first order is a redesign target,
+not a data defect. Normal, Reverse, Undirected, and Bidirectional semantics,
+canonical `sourceId` / `targetId`, Create/Edit, Entity Detail, and deletion
+blocker boundaries remain unchanged. The persistence owner remains the future
+LiaisonScape-owned Dataset-contained Presentation mechanism; serialization and
+runtime implementation remain deferred.

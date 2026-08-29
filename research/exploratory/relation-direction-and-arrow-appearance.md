@@ -768,3 +768,87 @@ is introduced here.
 Accordingly, the next checkpoint is **A2: one bounded serialized-shape and
 version decision remains**. Runtime implementation is not ready until that
 contract is defined and its preservation/dirty-state tests are authorized.
+
+## LS-RELATION-DETAIL-ARROW-DISPLAY-ORDER-DECISION1 - Arrow-display label and information order
+
+Date: 2026-08-29
+
+Status: **RELATION DETAIL ARROW-DISPLAY PRESENTATION ACCEPTED**.
+
+This follow-up supersedes only the visible label and responsibility of the
+four-mode Relation Detail control, and refines the ordinary information order.
+It does not erase the earlier acceptance of `Relation display` /
+`縺､縺ｪ縺後ｊ縺ｮ陦ｨ遉ｺ`. That earlier wording was valid as a broader
+presentation label. The four-mode control is now understood more narrowly
+because future line/stroke style may be controlled independently.
+
+### Arrow-display responsibility
+
+The accepted Japanese visible label for this control is
+`遏｢蜊ｰ縺ｮ陦ｨ遉ｺ`. It means controlling whether and in which direction arrow
+indication is shown between the two connected objects. `窶覗` remains valid
+because it means no arrow indication; it is not being treated as an arrow
+type.
+
+The previously considered `遏｢蜊ｰ縺ｮ遞ｮ鬘杼` is rejected as the primary label.
+It frames the four choices as arrow types even though one choice removes arrow
+indication. A future line/stroke-style responsibility may separately cover
+solid, dashed, dotted, or other line appearance. This checkpoint does not
+select its label, options, or implementation.
+
+The English candidate comparison is intentionally bounded:
+
+| Candidate | Disposition |
+| --- | --- |
+| `Arrow display` | Accepted: communicates whether and how arrow indication is shown, includes no-arrow and both-arrow choices, and leaves line style separate |
+| `Relation display` | Superseded for this narrow control; remains suitable as a possible broader future presentation heading |
+| `Arrow` | Rejected: too terse and does not describe a choice of display behavior |
+| `Arrow direction` | Rejected: suggests a single direction selector and can imply canonical direction editing |
+| `Direction` | Rejected: risks implying mutation of the Relation's canonical direction |
+
+`Arrow display` is therefore the exact accepted English visible label. It
+describes presentation, not a change to `sourceId`, `targetId`, Relation text,
+object identity, or semantic meaning.
+
+### Unchanged four-mode semantics
+
+For stable endpoint A (the first displayed object in canonical source order)
+and endpoint B (the second displayed object in canonical target order), the
+four choices remain:
+
+| Mode | Presentation result | Canonical effect |
+| --- | --- | --- |
+| Normal | A toward B | None |
+| Reverse | B toward A visually | None; do not swap `sourceId` and `targetId` |
+| Undirected | A and B without arrow indication | None; does not create an undirected Core Relation |
+| Bidirectional | Arrow indication in both directions | None; does not create reciprocal or duplicate Relations |
+
+Endpoint names are shown once in the surrounding rows, not repeated inside
+the arrow-display control. The control belongs conceptually between endpoint A
+and endpoint B. No mode changes `sourceId`, `targetId`, Relation name or
+description, any Entity/Event name, any ID, or any semantic Extension.
+
+### Relation Detail information hierarchy
+
+The accepted ordinary-field order for Relation Detail is:
+
+| Order | Japanese | English |
+| --- | --- | --- |
+| 1 | `蜷榊燕` | `Name` |
+| 2 | `縺､縺ｪ縺後ｊ蜈・` | `Connected object` |
+| 3 | `遏｢蜊ｰ縺ｮ陦ｨ遉ｺ` | `Arrow display` |
+| 4 | `縺､縺ｪ縺後ｊ蜈・` | `Connected object` |
+| 5 | `隱ｬ譏餐` | `Description` |
+
+This order makes the Relation's human-readable identity primary, then shows
+what it connects and how that connection is visually shown, followed by the
+description. Technical Information remains secondary below these ordinary
+fields, and Save/Delete/Close remain actions rather than ordinary identity
+content. The current live endpoint-first order is a future redesign target,
+not a data or semantic defect. Relation Create/Edit, Entity Detail, and the
+accepted deletion blocker remain separate surfaces.
+
+This is a documentation-only reconciliation. It does not implement the
+reordering, add the control, define Presentation serialization, or alter the
+accepted persistence owner. Persistence remains the future LiaisonScape-owned
+Dataset-contained Presentation mechanism, with serialization still deferred.

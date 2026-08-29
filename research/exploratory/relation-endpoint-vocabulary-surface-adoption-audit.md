@@ -508,3 +508,32 @@ LiaisonScape view state or another presentation-oriented mechanism, but no
 Core field, Extension, schema, or persistence contract is selected.
 Consequently, this decision is **not runtime implementation ready** and
 authorizes no application change.
+
+### LS-RELATION-DETAIL-ARROW-DISPLAY-ORDER-DECISION1 - Narrowed Relation Detail surface
+
+Date: 2026-08-29
+
+This follow-up supersedes only the Relation Detail control label and ordinary
+field order recorded above. The earlier `Relation display` / `縺､縺ｪ縺後ｊ縺ｮ陦ｨ遉ｺ`
+acceptance remains valid historical evidence for the broader presentation
+concept. The current four-mode control is now narrowed to arrow indication so
+that future line/stroke style can remain a separate responsibility.
+
+The accepted Relation Detail ordinary structure is:
+
+| Order | Japanese | English |
+| --- | --- | --- |
+| 1 | `蜷榊燕` | `Name` |
+| 2 | `縺､縺ｪ縺後ｊ蜈・` | `Connected object` |
+| 3 | `遏｢蜊ｰ縺ｮ陦ｨ遉ｺ` | `Arrow display` |
+| 4 | `縺､縺ｪ縺後ｊ蜈・` | `Connected object` |
+| 5 | `隱ｬ譏餐` | `Description` |
+
+The endpoint rows remain in stable canonical source/target order, but remain
+generic in this ordinary surface. The arrow-display control is conceptually
+between the two endpoint rows and does not repeat endpoint names. The four
+presentation semantics remain Normal, Reverse, Undirected, and Bidirectional;
+none changes `sourceId`, `targetId`, Relation text, IDs, or Core/Extension
+meaning. Technical information remains secondary, and Relation Create/Edit,
+Entity Detail related Relations, and deletion-blocker cards remain separate
+surfaces. No runtime or serialization change follows from this update.

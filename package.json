@@ -11,6 +11,7 @@
     "validate:names-draft": "node scripts/validate-names-draft-schema.mjs",
     "validate:names-draft-ids": "node scripts/validate-names-draft-id-uniqueness.mjs",
     "validate:presentation-draft": "node scripts/validate-presentation-draft-schema.mjs",
+    "validate:public-sample-mirrors": "node scripts/validate-public-sample-mirrors.mjs",
     "validate:coordinate-interoperability": "node --experimental-strip-types --experimental-specifier-resolution=node scripts/validate-coordinate-interoperability.mjs",
     "test:cdp": "node --test tools/edge-cdp/*.test.mjs"
   },

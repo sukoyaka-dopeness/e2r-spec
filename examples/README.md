@@ -17,6 +17,8 @@ JSON files directly under `examples/` are complete Dataset examples:
 - `cross-application-demo.json`
 - `apollo-11-mission.en.e2r.json`
 - `apollo-11-mission.ja.e2r.json`
+- `lighthouse-restoration-demo.en.e2r.json`
+- `lighthouse-restoration-demo.ja.e2r.json`
 
 `cross-application-demo.json` is a reusable workflow example for
 NarrativeLine and LiaisonScape. It includes Metadata, mixed History precision,
@@ -32,6 +34,12 @@ Object IDs, Event chronology, Relation topology, UTC History values, and
 LiaisonScape Coordinate Draft values. Natural-language fields and Dataset IDs
 are localized. The factual basis and precision policy are recorded in
 `docs/apollo-11-canonical-sample.md`.
+
+The Lighthouse Restoration files are the canonical English/Japanese
+relationship-oriented Public Sample. They retain Coordinate data and EN/JA
+structural parity, and demonstrate Presentation intent through Reverse,
+Undirected, and Dashed Relation display. Presentation does not change Core
+Relation endpoints or semantics.
 
 ### History Extension Examples
 

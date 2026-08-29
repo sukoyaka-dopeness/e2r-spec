@@ -28,7 +28,7 @@ boundary. Software repository licensing is separate.
 |---|---|---|---|---|---|---|---|---|
 | Berlin Wall | `e2r-narrative-line/src/sample/berlin-wall-history.en.e2r.json` | `e2r-narrative-line/src/sample/berlin-wall-history.ja.e2r.json` | factual project-authored Dataset | NarrativeLine sample files are maintained in project history | Berlin Wall chronology and events; source bibliography still bounded | PROJECT-ADOPTED TRANSLATION — ORIGINAL AUTHORING METHOD NOT RECOVERABLE | no obvious long match found | CC0 candidate, source terms remain excluded |
 | Apollo 11 | `e2r-spec/examples/apollo-11-mission.en.e2r.json` | `e2r-spec/examples/apollo-11-mission.ja.e2r.json` | factual project-authored Dataset | introduced in `e9610e0`; later graph/coordinate refinements; JA correction in `33e741b` | NASA mission chronology and UTC event basis; see `docs/apollo-11-canonical-sample.md` | project-adopted Japanese localization; exact method not recoverable | no obvious long match found | CC0 candidate, factual sources not relicensed |
-| Lighthouse | `e2r-liaison-scape/public/lighthouse-restoration-demo.en.e2r.json` | `e2r-liaison-scape/public/lighthouse-restoration-demo.ja.e2r.json` | project-created fictional demo | public demo maintained in LiaisonScape history; README identifies fictional restoration project | no external story dependency known | project-created/adopted localization; exact method not recoverable | no obvious long match found | CC0 candidate after project authority |
+| Lighthouse | `e2r-spec/examples/lighthouse-restoration-demo.en.e2r.json` | `e2r-spec/examples/lighthouse-restoration-demo.ja.e2r.json` | project-created fictional demo | canonical sample moved to e2r-spec; LiaisonScape `public/` remains the deployment/compatibility mirror | no external story dependency known | project-created/adopted localization; exact method not recoverable | no obvious long match found | CC0 candidate after project authority |
 | Ashen Crown | `e2r-spec/examples/ashen-crown.en.e2r.json` | `e2r-spec/examples/ashen-crown.ja.e2r.json` | project-created fictional Dataset | introduced in `e9ed7dd`; later graph readability refinements | no external story dependency known | project-created/adopted localization; exact method not recoverable | no obvious long match found | CC0 candidate after project authority |
 | Titanic | `e2r-spec/examples/titanic-final-voyage.en.e2r.json` | `e2r-spec/examples/titanic-final-voyage.ja.e2r.json` | factual project-authored Dataset | introduced in `7d8b11c` | Titanic voyage facts; dedicated source bibliography still needed | PROJECT-ADOPTED TRANSLATION — ORIGINAL AUTHORING METHOD NOT RECOVERABLE | no obvious long match found | CC0 candidate, factual sources not relicensed |
 
@@ -64,9 +64,10 @@ and [Apollo 11 mission report archive](https://www.nasa.gov/history/apollo-11-mi
 
 ### Lighthouse Restoration EN/JA
 
-The sample is explicitly fictional and project-created. Existing Relations
-(`clara-lighthouse`, `clara-thomas-supervises`, `maya-beacon`, and the existing
-self/event Relations) are authored graph content; no external story dependency
+The sample is explicitly fictional and project-created. The canonical EN/JA
+files are now in e2r-spec `examples/`; LiaisonScape `public/` remains a
+deployment/compatibility mirror. Existing Relations and the two bounded
+semantic additions are authored graph content; no external story dependency
 was found. The EN/JA files share the same topology and Coordinate structure.
 The project has authority to adopt the pair as its demo content, subject to the
 normal S3 release record and translation confirmation.

@@ -157,3 +157,224 @@ This memo does not:
 - define a final Presentation schema;
 - make arrow styling carry semantic truth;
 - require changes to LiaisonScape or NarrativeLine now.
+
+## E2R-RELATION-VISUAL-DIRECTIONALITY-AUDIT1 — Research reconciliation
+
+Date: 2026-08-29
+
+Status: **RESEARCH PARTIALLY RECONCILED / SOME VISUAL MODES REQUIRE SEPARATE
+DECISION**.
+
+This bounded audit follows the planning direction in
+`docs/relation-endpoint-ui-directionality-follow-up.md`. It preserves the
+earlier exploratory memo and its historical distinctions; it does not
+implement or authorize a directionality control, visual-mode prototype, new
+Extension, or Core change.
+
+### Authority and existing Research inventory
+
+The live authority set is:
+
+| Document | Relevant finding | Classification |
+| --- | --- | --- |
+| `spec/core.md`, Relation Fields | `sourceId` and `targetId` are required, resolve to same-Dataset Entity or Event objects, and establish structural direction. Self-relations and cycles are valid; Relation-to-Relation endpoints are not. | Normative Core authority |
+| `spec/philosophy.md`, Presentation Extensions and Application View State | Presentation owns appearance, not semantic meaning; transient zoom, pan, selection, hover, and gesture state remain application concerns. | Normative responsibility guidance |
+| `research/exploratory/view-generation.md`, Single source of truth and Relationship Graph | Relation direction comes from Core `sourceId`/`targetId`, not arrow styling; routes and geometry are Layout, while line appearance is Presentation. | Compatible exploratory boundary |
+| `research/exploratory/linkscape-layout-and-view-state.md` | Relation direction is Core data; arrow/line appearance is Presentation; route geometry is Layout; View State is not Dataset content. | Compatible application evidence |
+| `extensions/layout-extension.md` | Layout describes how positions are displayed without modifying the Core. | Compatible candidate responsibility |
+| Earlier sections of this memo | Endpoint reversal, an opposite Relation, semantic symmetry, and hidden arrowheads are different operations. | Compatible exploratory distinction |
+| `docs/relation-endpoint-ui-directionality-follow-up.md` | The R2 endpoint-swap constraint is explicitly superseded by a planning intent to investigate presentation-only forms; exact iconography/schema remain unselected. | Superseded history plus clarification target |
+| `docs/liaisonscape-relation-attachment-and-arrowhead-result.md` | Current arrowhead orientation is derived from route samples and does not change Dataset persistence or Core data. | Compatible application result, not a directionality decision |
+
+The normative Core and responsibility boundaries take precedence over
+application planning. The existing research status `needs-review` for this
+exploratory memo remains appropriate for any future schema or runtime work;
+this section records the bounded semantic disposition below.
+
+### Canonical Core contract
+
+For one canonical Relation:
+
+```text
+sourceId = A
+targetId = B
+```
+
+the Dataset contains one structurally directed Relation from `A` to `B`.
+`sourceId` and `targetId` are canonical structural roles, not interchangeable
+display aliases. Core does not assign domain meaning such as causality,
+ownership, or chronology to the direction; such meaning belongs to an
+Extension or Application.
+
+The audit preserves the other Core constraints: endpoints resolve to Entity or
+Event objects in the same Dataset; a self-Relation is valid; parallel
+Relations remain distinct Core objects; cycles are allowed; and a Relation
+cannot target another Relation. No visual mode changes these facts.
+
+### Reconciliation of the apparent tension
+
+The question has three separate layers:
+
+1. **Dataset semantic truth:** the canonical objects and structural roles in the
+   Relation (`sourceId = A`, `targetId = B`);
+2. **View/Presentation encoding:** how a visualization emphasizes or does not
+   emphasize that structure; and
+3. **user interpretation risk:** what a viewer may infer incorrectly from the
+   encoding.
+
+“Presentation must not override semantic meaning” is compatible with an
+alternative depiction when it means that the view must not claim the
+canonical Relation changed. It does not prohibit every non-default visual
+orientation, but it requires canonical roles to remain truthful and
+discoverable. A visual encoding must not be the only copy of interoperable
+meaning.
+
+| Existing statement or direction | Classification | Disposition |
+| --- | --- | --- |
+| Core direction is structural and owned by `sourceId`/`targetId`. | Compatible. | Remains authoritative and unchanged. |
+| Presentation owns appearance, not semantic meaning. | Compatible. | Applies to visual directionality with explicit semantic safeguards. |
+| Visualization direction comes from Core endpoints, not arrow styling. | Requires clarification. | It identifies the Dataset source of truth; it is not a ban on a disclosed view orientation or direction-neutral rendering. |
+| Removing arrowheads must not create an undirected semantic Relation. | Compatible. | Retained as the minimum undirected-visual boundary. |
+| R2 required a reverse visual to swap canonical endpoints. | Genuine historical contradiction with the later planning direction. | Explicitly superseded by `c6f9055`; historical evidence only, not current authority. |
+| The planning record lists normal, reverse, undirected, and bidirectional forms. | Requires clarification. | These are candidates with different interpretation risks, not four equally accepted modes. |
+
+The historical contradiction is resolved by explicit supersession, not by
+rewriting the old record. The remaining issue is a design boundary rather than
+an unresolved Core conflict: a presentation may be visually non-default while
+remaining semantically unchanged, but stronger reciprocal-looking encodings
+need stronger safeguards.
+
+### Presentation-only mode assessment
+
+The following forms are illustrative concepts only; their glyphs are not
+accepted UI, marker, serialization, or schema vocabulary.
+
+| Mode | Candidate visual | Canonical data | Interpretation risk | Disposition |
+| --- | --- | --- | --- | --- |
+| Normal | `A -> B` | Unchanged | Lowest when used as the default. | Accepted baseline. |
+| Reverse visual | `A <- B` | Still `sourceId = A`, `targetId = B` | High: viewers may infer endpoint exchange. | Defensible only as an explicitly identified view orientation, with safeguards; not a semantic reverse operation. |
+| Undirected visual | `A — B` | Still structurally `A -> B` | Medium/high: viewers may infer an undirected fact. | Defensible only as explicitly direction-neutral presentation; never as an undirected Core claim. |
+| Bidirectional visual | `A <-> B` | Still one Relation `A -> B` | Highest: viewers may infer reciprocal meaning or two Relations. | Not accepted as a generally safe shorthand; separate named-view/presentation decision required. |
+
+The safe reconciled formulation is:
+
+> A View or Presentation may alter how structural direction is visually
+> emphasized or depicted, provided it does not silently rewrite canonical
+> endpoints, claim that Dataset semantics changed, or use the visual form as
+> the only interoperable representation of meaning.
+
+This formulation supports the normal baseline and conditional reverse and
+undirected candidates. It does not accept bidirectional appearance merely for
+symmetry with the other forms.
+
+### Reverse visual boundary
+
+`A <- B` can represent a reading or view orientation rather than semantic
+reversal, but only if the future surface makes that distinction explicit. At a
+minimum it would need:
+
+- an indication that the selected mode is a presentation/view mode;
+- Relation Detail and canonical inspection surfaces retaining
+  `source`/`target` and `sourceId`/`targetId` roles;
+- no automatic swap of endpoint identities, IDs, names, descriptions, or
+  operation targets; and
+- help or equivalent explanation sufficient to prevent treating the visual
+  arrow as an endpoint-editing action.
+
+Exact control names, tooltip copy, icons, and endpoint wording remain future UI
+work. A semantic reversal is a separate editing operation that exchanges
+canonical endpoints and needs its own identity, Dataset-safety, round-trip,
+and acceptance design.
+
+### Undirected visual boundary
+
+An arrowless rendering may mean “display this relationship without emphasizing
+direction.” It must not mean “this Relation is semantically undirected” unless
+a future Core/Extension decision explicitly defines such a model; current Core
+does not.
+
+Exported and shared Dataset data therefore retains `sourceId` and `targetId`.
+A consumer that does not understand the visual choice can still process the
+directed Core Relation, and canonical inspection does not hide its structural
+roles. A persisted direction-neutral choice requires a separate responsibility
+and interoperability decision; this audit does not create or authorize it.
+
+### Bidirectional visual boundary
+
+A two-headed depiction of one Relation is not equivalent to two independent
+Relations:
+
+```text
+one Relation:  A -> B
+
+two Relations:
+  A -> B
+  B -> A
+```
+
+Nor is it proof that a semantic predicate is symmetric. Because ordinary
+interpretation is close to reciprocal assertions, this audit does not accept
+`A <-> B` as an ordinary Presentation option. It remains a candidate for a
+narrower explicitly named View/Perspective or separately decided presentation
+contract, requiring evidence for identity, Detail, editing, deletion, History,
+Handoff, export, and cross-application interpretation.
+
+### Name, description, and identity immutability
+
+Visual directionality never automatically changes Relation `name`, Relation
+`description`, `sourceId`, `targetId`, endpoint Entity/Event identity, or any
+Core object ID. If an authored Relation name is `Alice supervises Bob`, a
+reverse visual does not authorize rewriting it to `Bob is supervised by Alice`.
+Presentation controls are not semantic text transforms; a user must separately
+edit human-authored content through an explicit semantic workflow.
+
+### Storage and ownership boundary
+
+This audit does not choose a storage format or authorize a new Extension:
+
+- a temporary viewing mode belongs to application View State;
+- an intentionally remembered composition may require a future
+  Layout/Presentation/Perspective decision, not an arbitrary Core property;
+  and
+- a reusable symmetry or inverse claim belongs to future Semantic/Dictionary
+  research, not to arrow appearance.
+
+Persistence alone does not make a visual choice interoperable. Visual
+directionality must not be added to Core merely to restore a local view.
+
+### Round-trip and Relation Detail boundary
+
+When a Dataset has no presentation-direction metadata, the safe default is a
+visualization reflecting canonical `sourceId -> targetId` direction when
+direction is shown. Another application can preserve and interpret the
+canonical Relation without understanding an application-specific visual mode;
+NarrativeLine does not need to understand a LiaisonScape visual choice to
+preserve Core semantics.
+
+Relation Detail continues to expose canonical `source`/`sourceId` and
+`target`/`targetId` roles regardless of graph presentation. Generic endpoint
+group vocabulary, Entity/Event type presentation, and direction-specific UI
+labels remain a separate later audit. This checkpoint does not rename or
+replace `Source`, `Target`, `始点`, `終点`, or the deferred Japanese generic
+endpoint term.
+
+### Final outcome
+
+**RESEARCH PARTIALLY RECONCILED / SOME VISUAL MODES REQUIRE SEPARATE
+DECISION**.
+
+Normal visual direction remains the accepted baseline. Reverse visual and
+undirected visual are viable bounded candidates only when explicitly presented
+as non-semantic view choices with canonical-role safeguards. Bidirectional
+visual appearance for one canonical directed Relation remains unresolved and
+requires a separate decision; it is not accepted merely because it is
+visually symmetrical.
+
+Remaining questions are limited to future design evidence: the safest named
+View/Presentation concept for reverse and direction-neutral modes; ownership of
+any intentionally persisted visual choice; whether bidirectional shorthand can
+avoid implying reciprocal assertions; and the cross-application/accessibility
+evidence required before runtime or Extension design.
+
+No Core, schema, Validator, Extension, application runtime, endpoint
+vocabulary, or exact arrow artwork change follows from this audit.

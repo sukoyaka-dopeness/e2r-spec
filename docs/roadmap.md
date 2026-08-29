@@ -2421,6 +2421,15 @@ Follow-up](relation-endpoint-ui-directionality-follow-up.md). The remaining
 endpoint vocabulary work is a later all-surface Cross-App audit covering
 terminology, arrows, and separators across LiaisonScape and NarrativeLine.
 
+The [Relation Direction and Arrow Appearance](../research/exploratory/relation-direction-and-arrow-appearance.md)
+audit is complete with outcome **RESEARCH PARTIALLY RECONCILED / SOME VISUAL
+MODES REQUIRE SEPARATE DECISION**. Normal presentation remains the baseline;
+reverse and direction-neutral visual candidates require explicit semantic
+safeguards, while bidirectional appearance for one canonical directed Relation
+remains separately unresolved. `sourceId`/`targetId` remain unchanged, no
+runtime/Core/schema change occurred, and endpoint vocabulary remains a
+separate audit.
+
 The record keeps Relative Chronology as a serious pre-release design
 candidate. A minimal canonical `before` relation is a Research candidate, not
 a selected schema; its editing may use Earlier/Later controls and later

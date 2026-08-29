@@ -37,6 +37,18 @@ const validCases = [
       },
     },
   ],
+  ["lineStyle solid", { specVersion: "0.1.0", relations: { r1: { lineStyle: "solid" } } }],
+  ["lineStyle dashed", { specVersion: "0.1.0", relations: { r1: { lineStyle: "dashed" } } }],
+  ["lineStyle dotted", { specVersion: "0.1.0", relations: { r1: { lineStyle: "dotted" } } }],
+  [
+    "arrow and lineStyle are independent",
+    { specVersion: "0.1.0", relations: { r1: { arrowDisplay: "reverse", lineStyle: "dashed" } } },
+  ],
+  ["unknown lineStyle token remains valid", { specVersion: "0.1.0", relations: { r1: { lineStyle: "future-pattern" } } }],
+  [
+    "lineStyle with unknown sibling field",
+    { specVersion: "0.1.0", relations: { r1: { lineStyle: "dotted", futureProperty: 123 } } },
+  ],
 ];
 
 const invalidCases = [
@@ -47,6 +59,10 @@ const invalidCases = [
   ["empty Relation record", { specVersion: "0.1.0", relations: { r1: {} } }],
   ["arrowDisplay is not a string", { specVersion: "0.1.0", relations: { r1: { arrowDisplay: 1 } } }],
   ["arrowDisplay is empty", { specVersion: "0.1.0", relations: { r1: { arrowDisplay: "" } } }],
+  ["lineStyle is empty", { specVersion: "0.1.0", relations: { r1: { lineStyle: "" } } }],
+  ["lineStyle is null", { specVersion: "0.1.0", relations: { r1: { lineStyle: null } } }],
+  ["lineStyle is not a string", { specVersion: "0.1.0", relations: { r1: { lineStyle: 123 } } }],
+  ["lineStyle is an object", { specVersion: "0.1.0", relations: { r1: { lineStyle: {} } } }],
   ["Relation ID is whitespace", { specVersion: "0.1.0", relations: { " ": { arrowDisplay: "reverse" } } }],
 ];
 

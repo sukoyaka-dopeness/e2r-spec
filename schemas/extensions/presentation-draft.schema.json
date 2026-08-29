@@ -32,6 +32,11 @@
           "type": "string",
           "minLength": 1,
           "description": "Known values are normal, reverse, undirected, and bidirectional. Other strings are structurally preserved as unsupported future values and receive the reader's Normal fallback."
+        },
+        "lineStyle": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Known values are solid, dashed, and dotted. Other strings are structurally preserved as unsupported future values and receive the reader's Solid fallback."
         }
       },
       "additionalProperties": true

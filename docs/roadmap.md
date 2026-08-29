@@ -2747,3 +2747,22 @@ placement remains an independent Layout/placement work item, and the likely
 LiaisonScape `0.2.0` application release decision remains deferred until the
 larger feature set is complete. No application version, schema, runtime,
 Validator, sample, or other repository change follows from this checkpoint.
+
+### LS-RELATION-LINE-STYLE-SCHEMA1 (2026-08-29)
+
+The Presentation Draft schema now formally standardizes the optional
+Relation-record `lineStyle` property as a non-empty string. The known tokens
+are `solid`, `dashed`, and `dotted`; unknown non-empty tokens remain structurally
+valid for forward-compatible runtime fallback and preservation. The existing
+`arrowDisplay` behavior, `additionalProperties` policy, empty-record rule,
+Relation-ID map, and `specVersion: "0.1.0"` are unchanged.
+
+The coherent `validate:presentation-draft` fixture matrix now covers the three
+known line-style tokens, Arrow + lineStyle combinations, unknown lineStyle and
+sibling fields, and invalid empty/non-string lineStyle values. Schema behavior
+remains structural: effective Solid fallback, canonical omission, UI labels,
+CSS/SVG rendering, orphan resolution, and graph interpretation remain outside
+the schema. The schema checkpoint is complete and LiaisonScape line-style
+reader/writer work is ready as a separate follow-up; this checkpoint does not
+authorize runtime implementation, application version changes, or node
+automatic placement.

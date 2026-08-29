@@ -417,7 +417,7 @@ runtime candidate.
 Date: 2026-08-29
 
 Status: **RELATION DETAIL SURFACE-SPECIFIC GENERIC + PRESENTATION CONTROL
-ACCEPTED / RUNTIME NOT READY**
+ACCEPTED / EN LABEL ACCEPTED / PERSISTENCE UNRESOLVED / RUNTIME NOT READY**
 
 ### Historical finding and narrow supersession
 
@@ -452,7 +452,7 @@ The accepted conceptual structure is:
 | --- | --- | --- |
 | 1 | `名前` + Relation name | `Name` + Relation name |
 | 2 | `つながり先` + endpoint A | `Connected object` + endpoint A |
-| Control | `つながりの表示` + future visual control | `EN display-control label: unresolved` + future visual control |
+| Control | `つながりの表示` + future visual control | `Relation display` + future visual control |
 | 3 | `つながり先` + endpoint B | `Connected object` + endpoint B |
 
 The singular English `Connected object` is accepted for each endpoint row as
@@ -461,13 +461,16 @@ surface-specific grammar derived from the accepted conceptual vocabulary
 Endpoint names appear once, above and below the control; the control must not
 repeat them in a compressed `A → B` label.
 
+The English visible control label is accepted as `Relation display`. It uses
+the established `Relation` object term and describes how the Relation is shown
+without implying canonical direction mutation. The candidate comparison and
+rejections are recorded in the directionality authority.
+
 The Japanese control concept is accepted as `つながりの表示`, not
 `矢印の種類` or another arrow-only term, because one accepted mode is
 non-directional and the control changes the visual presentation of the Relation
-rather than only its arrowhead. No English control label is accepted in this
-checkpoint. Candidate translations such as `Relation direction`, `Direction`,
-`Arrow type`, `Relation display`, `Connection display`, and `Appearance` remain
-unresolved and must not be silently selected by implementation.
+rather than only its arrowhead. The Japanese label remains unchanged; the
+English label is now `Relation display`.
 
 ### Endpoint order and presentation-only semantics
 
@@ -502,6 +505,6 @@ object` rows, with no visual-direction control.
 
 Persistence ownership remains unresolved. A future choice may be transient
 LiaisonScape view state or another presentation-oriented mechanism, but no
-Core field, Extension, schema, or persistence contract is selected. The exact
-English control label is also unresolved. Consequently, this decision is
-**not runtime implementation ready** and authorizes no application change.
+Core field, Extension, schema, or persistence contract is selected.
+Consequently, this decision is **not runtime implementation ready** and
+authorizes no application change.

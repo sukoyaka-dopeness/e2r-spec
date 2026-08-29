@@ -2617,3 +2617,17 @@ Entity Detail, and the accepted deletion-blocker presentation remain unchanged.
 The English control label and persistence ownership are unresolved, so runtime
 implementation is not ready. No arrow control, rendering, persistence, Core,
 Extension, schema, or application change is authorized by this decision.
+
+### LS-RELATION-DETAIL-DISPLAY-CONTROL-EN1 (2026-08-29)
+
+The English visible label for the future Relation Detail presentation control
+is now accepted as **`Relation display`**. It matches the established `Relation`
+UI term and describes presentation rather than canonical direction. The
+Japanese label remains `つながりの表示`; Normal, Reverse, Undirected, and
+Bidirectional remain presentation-only choices, with endpoint names shown once
+outside the control.
+
+Persistence ownership remains the sole named prerequisite before runtime
+implementation. No ARIA wording, arrow control, rendering, persistence, Core,
+Extension, schema, or application change is authorized by this vocabulary
+decision.

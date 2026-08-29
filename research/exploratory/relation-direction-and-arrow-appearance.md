@@ -577,3 +577,61 @@ separate follow-up. The default remains Normal (`sourceId -> targetId`) when no
 presentation choice exists. Selecting Normal, Reverse, Undirected, or
 Bidirectional must continue to leave `sourceId`, `targetId`, Relation text,
 IDs, Core semantics, and Extension semantics unchanged.
+
+## LS-RELATION-DETAIL-DISPLAY-CONTROL-EN1 — English label decision
+
+Date: 2026-08-29
+
+Status: **EN DISPLAY-CONTROL LABEL ACCEPTED**
+
+### Candidate comparison
+
+The accepted visible English label is **`Relation display`**. It is a compact
+noun phrase that uses the established E2R UI object term `Relation` and reads
+naturally as “how this Relation is shown.” It remains valid for Normal,
+Reverse, Undirected, and Bidirectional presentation without implying that the
+canonical Relation direction is being edited.
+
+The serious alternatives were rejected for bounded reasons:
+
+| Candidate | Conclusion |
+| --- | --- |
+| `Relation display` | Accepted: specific enough for the Relation Detail context, compact, and compatible with all four visual modes |
+| `Connection display` | Not selected: friendlier in isolation, but introduces `Connection` as a competing object name for the canonical `Relation` |
+| `Appearance` | Not selected: too broad; the current control does not choose color, thickness, curve, opacity, or label placement |
+| `Display` | Not selected: short and non-technical, but too vague and could mean visibility rather than directional presentation |
+| `Relation appearance` / `Connection appearance` | Not selected: retain the scope ambiguity of `Appearance`, with the same Relation/Connection concern for the latter |
+| `Direction` / `Relation direction` | Not selected: can imply canonical semantic direction or `sourceId`/`targetId` mutation |
+| `Arrow type` / `Arrow` | Not selected: too narrow because Undirected is not an arrow-only presentation |
+| `Orientation` | Not selected: abstract and likely to imply layout rotation rather than Relation presentation |
+
+The label fits the current LiaisonScape tone of terse nouns and noun phrases
+such as `Relation Detail`, `Object ID`, `Automatic placement`, `Route`, and
+`Label`, while remaining more informative than a bare `Display`. It does not
+need to repeat either endpoint, the Relation name, Source, Target, or internal
+IDs because the two endpoint rows are immediately adjacent.
+
+### Four-mode and semantic-mutation checks
+
+`Relation display` remains meaningful above each of the conceptual controls:
+
+- Normal: display the Relation as A toward B;
+- Reverse: display the Relation as B toward A;
+- Undirected: display the Relation without directional emphasis; and
+- Bidirectional: display the Relation in both directions.
+
+In every case the wording describes presentation, not canonical data. A user
+is not reasonably led to infer that the control rewrites the Relation,
+exchanges endpoint IDs, creates reciprocal Relations, or changes Relation
+text. Endpoint names remain outside the control and are not repeated in its
+label.
+
+The Japanese label `つながりの表示` remains unchanged. This is conceptual
+parity, not a requirement for literal translation. A future runtime may use a
+more descriptive accessible name than the concise visible label; this decision
+does not select final ARIA strings.
+
+Persistence ownership remains unresolved and is now the remaining named
+decision before runtime implementation. The four presentation modes, stable
+endpoint order, no-mutation boundary, Japanese label, and English visible
+label are decided conceptually; runtime implementation remains unimplemented.

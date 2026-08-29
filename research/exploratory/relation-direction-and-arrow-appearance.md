@@ -880,3 +880,68 @@ that may use the same Relation record without being defined here.
 The serialization contract is ready for a later schema/reader/writer
 implementation checkpoint. No JSON Schema, Validator, sample, or runtime
 change is authorized by this documentation checkpoint.
+
+## LS-RELATION-LINE-STYLE-DESIGN1 - Independent line-style decision
+
+Date: 2026-08-29
+
+Status: **RELATION LINE-STYLE PRESENTATION MODEL ACCEPTED / SCHEMA UPDATE
+READY**.
+
+This checkpoint defines Relation line appearance independently from the
+accepted `arrowDisplay` property. Arrow display controls directional arrow
+indication; line style controls only the pattern of the Relation's visible
+line. They are Cartesian Presentation choices: every line style is valid with
+Normal, Reverse, Undirected, and Bidirectional arrow display. Neither choice
+changes `sourceId`, `targetId`, Relation identity, Relation text, semantic
+Extensions, route geometry, label placement, or the other Presentation value.
+
+The exact line-style property is `lineStyle` with the lowercase values
+`solid`, `dashed`, and `dotted`. Its effective default is `solid`, preserving
+the current runtime baseline, whose visible `.edge` is a normal solid stroke.
+Absence means Solid and need not be materialized. The canonical writer removes
+`lineStyle` when Solid is explicitly selected after a non-default value; it
+must retain unknown fields and must not remove a Relation record or Extension
+that still contains preserved data.
+
+Unknown non-empty line-style values use the safe Solid visual fallback and are
+preserved whenever practical. Unrelated edits must not normalize them. An
+explicit edit of line style may replace the unknown value with a supported
+token, including canonical removal when Solid is selected. This follows the
+accepted Arrow display forward-compatibility model rather than introducing a
+second preservation policy.
+
+The selected visible labels are `Line style` in English and `線のスタイル` in
+Japanese. The initial UI control is a native select with textual options:
+`Solid`, `Dashed`, `Dotted`; and `実線`, `破線`, `点線`. If a future visual
+sample is added, its accessible textual meaning remains required and the
+pattern must not be communicated by pixels alone. In the accepted Relation
+Detail information hierarchy, the order is `Name`, `Connected object`,
+`Arrow display`, `Line style`, `Connected object`, `Description`.
+
+Line style is initially a Relation Detail customization, not a Relation
+Creation control. A newly created Relation without the optional field uses
+Solid. Self-Relations retain the same routed loop geometry under all three
+values, and parallel Relations are independently addressed by Relation ID.
+Stored line-style data remains Relation-ID scoped even when a Relation is
+hidden from the graph or has an Event endpoint; current rendering visibility
+does not control persistence.
+
+Future runtime support applies the pattern only to the visible Relation line
+path. The edge halo, hit area, selection hit target, route geometry, label,
+arrowhead fill/shape, and Relation-creation preview remain separate. A dashed
+or dotted line does not imply a dashed or dotted arrowhead.
+
+The Presentation Extension remains Draft candidate `0.1.0` under
+`draft.github.sukoyaka-dopeness.liaisonscape-presentation`. Keeping `0.1.0`
+is an additive-version decision: the existing Dataset-contained Relation-ID
+map explicitly reserved separately named Presentation properties, structurally
+permits unknown Relation fields, and requires practical preservation. Older
+`0.1.0` readers can ignore and preserve `lineStyle`; the later schema
+checkpoint must standardize the field and known values. This checkpoint does
+not modify the schema, runtime, or application version.
+
+The existing Layout boundary remains unchanged: route, curvature, self-loop
+orientation/radius, label placement, and spatial layering are Layout; line
+pattern is Presentation. Node automatic placement remains an independent
+Layout/placement responsibility and is not part of this decision.

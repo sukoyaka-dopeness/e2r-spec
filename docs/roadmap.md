@@ -2706,3 +2706,44 @@ runtime. The next checkpoint may implement a bounded LiaisonScape
 Presentation reader/writer responsibility, following the accepted incremental
 application modularization policy; it must not begin as arbitrary Extension
 traversal distributed through `App.tsx`.
+
+### LS-RELATION-LINE-STYLE-DESIGN1 (2026-08-29)
+
+The [LiaisonScape Presentation Extension Draft](../extensions/presentation-extension-draft.md)
+and [Relation Direction and Arrow Appearance research](../research/exploratory/relation-direction-and-arrow-appearance.md)
+now record **RELATION LINE-STYLE PRESENTATION MODEL ACCEPTED / SCHEMA UPDATE
+READY**. Relation line appearance is an independent Presentation responsibility
+from `arrowDisplay`: the exact property is `lineStyle`, with `solid`, `dashed`,
+and `dotted` tokens. Absence means `solid`, and canonical writing omits
+explicit Solid while preserving unknown fields and unknown non-empty tokens
+until an explicit line-style edit.
+
+The selected future Relation Detail vocabulary is `Line style` / `線のスタイル`,
+with a native textual select using `Solid` / `実線`, `Dashed` / `破線`, and
+`Dotted` / `点線`. The accepted ordinary order is `Name`, `Connected object`,
+`Arrow display`, `Line style`, `Connected object`, `Description`. The control
+is initially Relation Detail-only; Relation Creation uses the default Solid.
+All line styles combine independently with all four accepted arrow-display
+modes, and none changes Core endpoints, Relation identity/text, or semantic
+data. Self-Relations retain their routed loop geometry, and parallel Relations
+are independently addressed by Relation ID. Hidden or Event-related Relations
+remain eligible for Relation-ID-scoped Presentation storage regardless of
+current graph visibility.
+
+The Presentation Extension remains Draft candidate `0.1.0`; this additive
+optional field does not warrant a version bump because the existing contract
+reserved separately named Presentation properties and requires unknown-field
+preservation. A later schema checkpoint must document and validate the
+standardized field/tokens; schema work remains separate. Runtime reader/writer,
+graph rendering, and Relation Detail integration also remain separate and are
+not authorized by this documentation checkpoint.
+
+The rendering boundary is limited to the visible Relation line path. Halo,
+hit-area, selection target, route/self-loop geometry, labels, arrowhead shape,
+and the Relation-creation preview remain separate responsibilities. Existing
+Layout research remains authoritative for route, curvature, self-loop
+orientation/radius, label placement, and spatial layering. Node automatic
+placement remains an independent Layout/placement work item, and the likely
+LiaisonScape `0.2.0` application release decision remains deferred until the
+larger feature set is complete. No application version, schema, runtime,
+Validator, sample, or other repository change follows from this checkpoint.

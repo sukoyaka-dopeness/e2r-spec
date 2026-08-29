@@ -7,9 +7,10 @@ Draft Extension identifier: `draft.github.sukoyaka-dopeness.liaisonscape-present
 Draft specification version: `0.1.0`
 
 This document defines a candidate Dataset-contained Presentation Extension for
-LiaisonScape-authored visual presentation intent. It currently specifies one
-property: Relation arrow display. The Extension is not registered as Stable,
-and no machine-readable JSON Schema is introduced by this checkpoint.
+LiaisonScape-authored visual presentation intent. It currently specifies two
+independent Relation properties: arrow display and line style. The Extension
+is not registered as Stable, and no machine-readable JSON Schema is introduced
+by this checkpoint.
 
 The key words MUST, MUST NOT, REQUIRED, SHOULD, SHOULD NOT, and MAY are to be
 interpreted as requirements of this draft only.
@@ -22,9 +23,11 @@ This Extension owns LiaisonScape-authored, Dataset-carried presentation
 properties that alter how canonical E2R objects are visually presented without
 redefining Core semantics.
 
-Version `0.1.0` specifies Relation arrow display. Its four values control
-whether and in which direction arrow indication is rendered between the
-Relation's two canonically ordered endpoints.
+Version `0.1.0` specifies Relation arrow display and Relation line style. The
+four arrow-display values control whether and in which direction arrow
+indication is rendered between the Relation's two canonically ordered
+endpoints. The line-style values control the visible pattern of the Relation
+line itself. The two properties are independent and may be combined freely.
 
 This Extension does not own:
 
@@ -36,10 +39,10 @@ This Extension does not own:
 - node placement, viewport geometry, zoom, or pan;
 - selection, hover, focus, modal, locale, or gesture state;
 - arbitrary application preferences; or
-- line/stroke style in this version.
+- the route's geometry, hit area, or interaction path.
 
-Future line/stroke properties may be added as separately named, explicitly
-specified Presentation properties. They MUST NOT overload `arrowDisplay`.
+The Extension does not define a generic style bag. Each additional visual
+responsibility requires its own explicitly named and specified property.
 
 ---
 
@@ -82,7 +85,8 @@ of Relation presentation records:
       "specVersion": "0.1.0",
       "relations": {
         "relation-1": {
-          "arrowDisplay": "reverse"
+          "arrowDisplay": "reverse",
+          "lineStyle": "dashed"
         }
       }
     }
@@ -130,13 +134,34 @@ endpoint B remains the stable second displayed object in canonical target order.
 The display value never changes `sourceId`, `targetId`, Relation text, object
 IDs, or semantic Extension data.
 
+## Relation line-style property and tokens
+
+The exact serialized property name is `lineStyle`. It describes the visible
+pattern of the Relation's own line or stroke. It does not describe arrow
+direction, Core direction, route geometry, line color, line width, opacity,
+visibility, selection emphasis, or interaction behavior.
+
+The exact lowercase serialized tokens are:
+
+| Token | Presentation meaning | Core effect |
+| --- | --- | --- |
+| `solid` | Continuous line pattern | None |
+| `dashed` | Repeating dashed line pattern | None |
+| `dotted` | Repeating dotted line pattern | None |
+
+The tokens express presentation intent, not CSS/SVG dash arrays or other
+rendering mechanics. Every line-style token is valid with every
+`arrowDisplay` token. For example, Reverse + dashed, Bidirectional + dotted,
+and Undirected + solid are ordinary combinations; neither property implies a
+value for the other.
+
 ---
 
 ## Absence, defaults, and canonical writing
 
 Absence of the Extension, absence of a Relation ID entry, or absence of
 `arrowDisplay` means `normal`: render the canonical source-to-target direction
-when direction is shown.
+when direction is shown. Absence of `lineStyle` means `solid`.
 
 The canonical writer MUST omit the default rather than materialize
 `"arrowDisplay": "normal"`. If a user selects Normal after a non-default
@@ -155,6 +180,13 @@ The canonical writer therefore uses these empty-state rules:
 2. an Extension with no Relation records is omitted from canonical output; and
 3. opening or rendering a default does not create either empty state.
 
+For line style, the canonical writer MUST omit `lineStyle` when its effective
+value is `solid`. Selecting Solid after Dashed or Dotted removes `lineStyle`.
+If that leaves the Relation record with no other recognized or preserved field,
+the writer removes the Relation record; if no Relation record remains, it
+omits the entire Presentation Extension. Unknown fields MUST prevent
+destructive record or Extension removal.
+
 ---
 
 ## Unknown tokens and unsupported fields
@@ -172,6 +204,15 @@ silently replace an unknown token with `normal` merely because it cannot render
 it. A writer MUST NOT edit an unsupported record as though the unknown token
 were understood; an explicit user replacement may later create a supported
 value under a separate authoring operation.
+
+If `lineStyle` contains an unrecognized non-empty token, a
+Presentation-aware reader MUST render the safe `solid` fallback and SHOULD
+preserve the original token whenever practical. It MUST NOT silently replace
+the stored token merely because it cannot render it. An unrelated edit, such
+as changing Relation name or `arrowDisplay`, MUST preserve the unknown
+`lineStyle` token. An explicit line-style edit may replace it with `dashed` or
+`dotted`; selecting `solid` applies the canonical omission rule for that
+property. Unknown fields in the same Relation record remain preserved.
 
 If a Relation record contains a future field, the current reader may still use
 its supported `arrowDisplay` value and MUST preserve the future field whenever
@@ -229,20 +270,67 @@ undo/redo itself is outside this draft checkpoint.
 
 ---
 
-## Future line-style extensibility
+## Relation Detail and application intent
 
-The single Relation-ID map is intentionally broader than arrow display. A
-future version can add a separately specified property to the same record:
+The future ordinary Relation Detail order is:
 
-```text
-{ arrowDisplay: <supported token>, <future explicitly named property>: ... }
-```
+1. `Name`
+2. `Connected object` for endpoint A in canonical source order
+3. `Arrow display`
+4. `Line style`
+5. `Connected object` for endpoint B in canonical target order
+6. `Description`
 
-Such an addition does not require a second Relation-presentation Extension,
-second Relation-ID map, Core field, or overload of `arrowDisplay`. The future
-property must pass its own responsibility, token, compatibility, and
-preservation decision. This draft does not define line/stroke-style property
-names, values, or rendering behavior.
+The two presentation controls form one connection-presentation block between
+the endpoint rows. This order does not change canonical Source/Target roles,
+Relation creation, or the Detail technical view. The selected visible English
+label is `Line style`; the selected visible Japanese label is `線のスタイル`.
+The initial control family is a native select with textual options: `Solid`,
+`Dashed`, and `Dotted` in English; `実線`, `破線`, and `点線` in Japanese. Any
+future visual line samples MUST retain an accessible textual name and MUST NOT
+make the distinction depend on pixels alone.
+
+Line style is initially edited from Relation Detail only. Relation Creation
+does not gain a line-style control: a newly created Relation with no explicit
+property uses the default solid appearance.
+
+## Version decision for line style
+
+Adding `lineStyle` does not change the Presentation Extension version. The
+contract remains Draft candidate `0.1.0` under the existing identifier.
+
+This is an additive, optional Relation-record property in the same
+Dataset-contained Relation-ID map. The current draft already reserves
+separately named future Presentation properties, permits unknown Relation
+fields structurally, and requires practical preservation of unknown fields.
+Older `0.1.0` readers can therefore ignore and preserve `lineStyle` while
+continuing to interpret `arrowDisplay`. A later schema checkpoint MUST
+standardize the field and its known token vocabulary in the machine-readable
+schema; that schema update is separate from this contract decision. A version
+bump is reserved for an incompatible meaning, placement, or compatibility
+change rather than this additive field.
+
+## Rendering and geometry boundary
+
+Future runtime support MUST apply `lineStyle` only to the visible Relation
+line/stroke path. It MUST NOT automatically apply the pattern to the edge
+halo, hit area, selection hit target, route geometry, label, or arrowhead fill
+and shape. Selection may continue to alter visual emphasis such as line width
+as an application concern. The relation-creation preview is a separate
+interaction affordance and is not a stored Relation line style.
+
+Self-Relations use the same `solid`, `dashed`, or `dotted` property on the same
+routed loop path without changing loop orientation or radius. Parallel
+Relations are addressed independently by Relation ID and may use different
+line styles. Presentation records remain stored even when a Relation is
+currently hidden from the graph or has an Event endpoint; current graph
+visibility does not determine serialization or editability.
+
+Changing line style never changes `sourceId`, `targetId`, Relation identity,
+Relation name or description, endpoint identity, route geometry, label
+position, or semantic data. It is a Presentation mutation only when the user
+explicitly adopts it; opening or rendering the default must not materialize
+`solid`.
 
 ---
 

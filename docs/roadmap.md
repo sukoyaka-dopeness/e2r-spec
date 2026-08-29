@@ -2434,10 +2434,11 @@ The [Relation Endpoint Vocabulary Audit](../research/exploratory/relation-endpoi
 finds the conceptual split between Relation, generic endpoint group, and
 canonical Source/Target roles coherent, but records **VOCABULARY MODEL
 PARTIALLY ACCEPTED / SPECIFIC TERMS STILL UNRESOLVED**. The Japanese generic
-candidate `謗･邯壼・` and English `Endpoints` remain tentative; `Relation` /
-`つながり` and Source/Target role vocabulary remain responsibility-specific.
-Visual directionality remains separate, and no implementation or copy change is
-authorized.
+endpoint UI term `つながり先` is now accepted as direction-neutral and
+Entity/Event-capable, without replacing canonical Source/Target roles. English
+generic wording remains unresolved; runtime adoption and surface-specific copy
+remain separate bounded follow-ups. Visual directionality remains separate, and
+no implementation or copy change is authorized.
 
 The record keeps Relative Chronology as a serious pre-release design
 candidate. A minimal canonical `before` relation is a Research candidate, not

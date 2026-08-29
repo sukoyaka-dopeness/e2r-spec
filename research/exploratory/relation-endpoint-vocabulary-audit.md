@@ -318,3 +318,147 @@ labels are follow-up findings, not runtime changes in this checkpoint.
 No application copy, endpoint vocabulary, visual-directionality UI, Core,
 Extension, schema, Hub, Validator, or ai-knowledge file was modified by this
 audit record.
+
+## E2R-RELATION-ENDPOINT-VOCABULARY-JA1 — Japanese generic endpoint decision
+
+Date: 2026-08-29
+
+Status: **JAPANESE GENERIC ENDPOINT UI VOCABULARY ACCEPTED / ENGLISH GENERIC
+VOCABULARY REMAINS UNRESOLVED**
+
+### Relationship to the historical audit
+
+The preceding `885adc7` audit remains historical evidence with outcome
+**VOCABULARY MODEL PARTIALLY ACCEPTED / SPECIFIC TERMS STILL UNRESOLVED**. It
+left the Japanese generic literal unresolved while considering technical and
+direction-neutral alternatives, including the historical candidate
+`謗･邯壼・`. This follow-up does not rewrite that history. It records the new
+explicit product decision for one Japanese generic UI term only.
+
+### Accepted Japanese generic term
+
+The accepted Japanese generic endpoint UI vocabulary is:
+
+**`つながり先`**
+
+`つながり先` means a direction-neutral UI concept for an object participating
+at either endpoint of a Relation when the surface does not need to distinguish
+canonical Source from canonical Target. It may cover an Entity endpoint, an
+Event endpoint, or another endpoint object kind permitted by E2R semantics.
+It is not Entity-only and it is not target-only.
+
+This is a vocabulary decision, not a schema or identity model. It must not
+introduce numbered endpoint semantics such as “つながり先 1” and
+“つながり先 2” as replacements for Source and Target.
+
+### Relation and endpoint distinction
+
+The terms remain separate:
+
+```text
+つながり    = the Relation object itself
+つながり先  = a generic object participating at either endpoint
+```
+
+`つながり先` must not rename the Relation object, become a synonym for
+Relation, or replace the established ordinary Japanese Relation vocabulary
+`つながり`. A future surface may conceptually describe a `つながり` and its
+`つながり先`, without implying that the generic term identifies a canonical
+target.
+
+Where type information is useful, a surface may add Entity or Event
+information alongside the generic concept. Exact copy, layout, and placement
+are not selected here.
+
+### Canonical Source/Target boundary
+
+`つながり先` is not a replacement for canonical Source or Target when the UI
+must communicate what will be stored as `sourceId` or `targetId`. Explicit
+Source/Target terminology remains necessary for:
+
+- Relation Create and Relation Edit;
+- semantic or technical Relation Detail;
+- validation and diagnostic surfaces; and
+- any control directly determining `sourceId` or `targetId`.
+
+The existing Japanese canonical-role candidates and labels remain separate and
+are not globally resolved by this decision. In particular, `蟋狗せ` and
+`邨らせ` remain historical vocabulary records, while the current live
+application labels are surface-specific. The historical `謗･邯壼・` candidate
+is not the selected generic endpoint term and is not silently converted into
+`つながり先` in this checkpoint.
+
+### Visual-directionality compatibility
+
+For the canonical Relation:
+
+```text
+sourceId = A
+targetId = B
+```
+
+`つながり先` remains direction-neutral under every accepted presentation:
+
+```text
+Normal:       A -> B
+Reverse:      A <- B
+Undirected:   A — B
+Bidirectional: A <-> B
+```
+
+In every case, A and B may be discussed generically as `つながり先` when the
+surface does not need canonical roles. This does not make Source and Target
+disappear, swap, or become semantic aliases. A Reverse visual must not turn
+Source = A / Target = B into Source = B / Target = A, and no visual mode may
+infer a semantic mutation.
+
+### English remains a separate question
+
+Accepting `つながり先` does not accept a one-to-one English translation. The
+English generic UI term remains unresolved among `Endpoints`, `Connected
+objects`, and surface-specific wording such as `Connected to`. The English
+decision requires its own audience and grammatical-surface review.
+
+Japanese acceptance therefore does not upgrade the overall vocabulary audit
+to Outcome A. The conceptual model is narrowed and improved, but English
+generic wording and some surface-specific copy remain open.
+
+### Implementation status and encoding boundary
+
+This decision does not authorize runtime copy replacement. Current application
+surfaces may continue to use Source/Target, `接続元`/`接続先`, `始点`/`終点`,
+`つながり`, or other responsibility-specific wording until a later bounded
+implementation audit determines where `つながり先` is actually appropriate.
+
+The directly relevant Research file was checked as UTF-8. No new encoding
+corruption was found in the decision or terminology sections. Historical and
+candidate spellings such as `謗･邯壼・`, `蟋狗せ`, and `邨らせ` are retained as
+research evidence where referenced; no repository-wide encoding cleanup or
+unrelated endpoint-label correction is part of this checkpoint.
+
+### Updated terminology matrix
+
+| Concept | EN | JA | Status |
+| --- | --- | --- | --- |
+| Relation object | `Relation` | `つながり` | Accepted |
+| Generic endpoint concept | Unresolved: `Endpoints`, `Connected objects`, or surface-specific wording | `つながり先` | JA accepted / EN unresolved |
+| Canonical Source role | `Source` | Existing canonical-role vocabulary; not replaced here | Retained |
+| Canonical Target role | `Target` | Existing canonical-role vocabulary; not replaced here | Retained |
+| Visual direction | Separate presentation vocabulary | Separate presentation vocabulary | Presentation-only; not selected here |
+
+## Narrowed outcome
+
+**Japanese generic endpoint UI vocabulary accepted: `つながり先`.**
+
+The overall audit remains:
+
+**VOCABULARY MODEL PARTIALLY ACCEPTED / SPECIFIC TERMS STILL UNRESOLVED**
+
+The accepted Japanese term is direction-neutral, covers Entity/Event-capable
+endpoint objects, remains distinct from `つながり`, and never replaces
+canonical Source/Target roles. The English generic literal, exact surface
+placement, and any runtime adoption remain separate follow-ups.
+
+No application runtime, application copy, visual-directionality UI, endpoint
+editing behavior, Core, Extension, schema, Validator, Hub, or ai-knowledge file
+was modified by this decision.

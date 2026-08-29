@@ -1,0 +1,353 @@
+# E2R Relation Endpoint Vocabulary Surface Adoption Audit
+
+## E2R-RELATION-ENDPOINT-VOCABULARY-SURFACE-AUDIT1
+
+Date: 2026-08-29
+
+Status: **VOCABULARY ACCEPTED / NO CURRENT GENERIC RUNTIME CHANGE REQUIRED**
+
+## Scope and authorities
+
+This is a documentation-only audit of current user-facing Relation and
+endpoint presentations. It applies the accepted vocabulary model without
+changing runtime copy, behavior, tests, schemas, or application repositories.
+
+The audit uses the live repositories and the following e2r-spec authorities:
+
+* `67f6305 docs: accept English endpoint vocabulary`;
+* `601eec7 docs: accept つながり先 endpoint vocabulary`;
+* [Relation endpoint vocabulary audit](relation-endpoint-vocabulary-audit.md);
+* [Relation direction and arrow appearance](relation-direction-and-arrow-appearance.md);
+* [roadmap](../../docs/roadmap.md).
+
+The accepted conceptual terms are:
+
+* Relation object: EN `Relation`, JA `つながり`;
+* generic direction-neutral endpoint concept: EN `Connected objects`, JA
+  `つながり先`;
+* technical/specification vocabulary: `Endpoints`;
+* canonical structural roles: `Source` / `Target`, backed by `sourceId` /
+  `targetId`.
+
+`Connected objects` and `つながり先` describe the objects participating in a
+Relation. They do not replace Source/Target where stored direction matters,
+and their acceptance does not require a literal label on every surface.
+
+## Audit method and exclusions
+
+The live source was checked in LiaisonScape, NarrativeLine, and Hub. The
+inspection covered localization/message maps, rendered components, endpoint
+presentation services, and directly related tests or source references.
+
+The following were classified as non-UI occurrences and excluded from
+vocabulary adoption targets:
+
+* `sourceId`, `targetId`, `source`, `target`, and `endpoints` property or
+  variable names;
+* TypeScript types and service names;
+* test fixture fields and assertions;
+* schema/Core terminology, comments, and validation diagnostics;
+* internal graph and endpoint geometry terminology.
+
+No live user-facing occurrence of `Connected objects`, `Connected object`,
+`つながり先`, or `Endpoints` was found in the inspected application source.
+This audit therefore evaluates where the accepted concept would help, rather
+than treating its absence as a copy defect.
+
+## Live surfaces inspected
+
+### LiaisonScape
+
+* `src/App.tsx` — Relation Detail wiring and Entity/Relation selection flow;
+* `src/components/CreationDialog.tsx` — Relation Create controls;
+* `src/components/RelationDetailDialog.tsx` — Relation Detail and Edit;
+* `src/components/EntityDetailDialog.tsx` — related-Relation list;
+* `src/components/EntityDeletionResolutionDialog.tsx` — deletion blockers;
+* `src/related-relation-display.ts` — endpoint object and blocker identity
+  derivation;
+* `src/services/RelationService.ts` — endpoint resolution and Entity-only
+  changed-endpoint validation;
+* `src/i18n.ts` — EN/JA runtime messages.
+
+### NarrativeLine
+
+* `src/services/RelationPresentationService.ts` — compact Relation identity,
+  Source, Target, and combined endpoint presentation data;
+* `src/screens/EntityDetailScreen.tsx` — Related Events and Entity deletion
+  blockers;
+* `src/screens/EventDetailScreen.tsx` — Related Entities and Event deletion /
+  association dialogs;
+* `src/screens/EntityPickerScreen.tsx` — context-relative related-Entity
+  selection;
+* `src/i18n/messages.ts` — presentation message map (no endpoint-specific
+  generic label found).
+
+### Hub
+
+* `src/App.tsx` and `tests/appUiIntegration.test.ts` — public application and
+  sample descriptions.
+
+Hub uses `relationship diagram`, `relationships`, and `Dataset source`; no
+Relation endpoint terminology is present. There is no runtime adoption target
+in Hub.
+
+## Surface findings
+
+### LiaisonScape Relation Create/Edit
+
+Current EN copy is `Source Entity`, `Target Entity`, `Select source`, and
+`Select target`. Current JA copy is `接続元のエンティティ`, `接続先のエンティティ`,
+`接続元を選択`, and `接続先を選択`.
+
+These controls select the values that become `sourceId` and `targetId`.
+Canonical Source/Target information is required. Replacing either control
+with `Connected objects` / `つながり先` would hide the stored role and is not
+appropriate. The controls are currently Entity-only by authoring policy, so
+their Entity noun is not an endpoint-type defect on this surface.
+
+Recommendation: **KEEP CANONICAL**.
+
+No surrounding generic heading or summary is needed; the two role controls
+already communicate the complete responsibility directly.
+
+### LiaisonScape Relation Detail
+
+The live role labels are the same `Source Entity` / `Target Entity` in EN and
+`接続元のエンティティ` / `接続先のエンティティ` in JA. When both endpoints
+are Entities, the surface edits the canonical roles. When an endpoint is an
+Event, the service resolves and displays it in read-only Detail while the
+component still uses those Entity-specific labels.
+
+Canonical Source/Target remains necessary. A generic `Connected objects` row
+would remove role information and would not solve the type-noun problem.
+
+Recommendation: **SEPARATE ACCURACY FIX**.
+
+The smallest likely correction direction is to make the read-only mixed
+endpoint labels type-neutral (`Source` / `Target`) or explicitly type-aware,
+while retaining Entity-specific authoring controls if that authoring policy is
+unchanged. This is an independent accuracy follow-up; it is not a generic
+vocabulary adoption and is not implemented here.
+
+### LiaisonScape Entity Detail / related Relations
+
+The group heading is EN `Related Relations:` and JA `関連する Relation:`. Each
+card shows Relation name plus explicit Source and Target rows: EN `Relation
+name`, `Source`, `Target`; JA `つながりの名前`, `始点`, `終点`. The derived values
+resolve both Entity and Event objects.
+
+This surface both summarizes incident Relations and exposes role information
+that helps interpret each Relation. `Connected objects` / `つながり先` would
+duplicate the two role rows without improving the existing summary.
+
+Recommendation: **NO CHANGE**.
+
+The current EN/JA difference is a surface-language difference, not a loss of
+semantic parity: both identify the Relation and preserve both canonical roles.
+
+### LiaisonScape Entity deletion blockers
+
+The blocker group is EN `Connected Relations` and JA `接続しているつながり`;
+the accessible group label is EN `Connections to remove` and JA `削除するつながり`.
+Each blocker preserves Relation identity, a compact ordered `source → target`
+summary, an ID hint when needed, and an `Inspect Relation` / `つながりを確認`
+action.
+
+This is destructive review. The group labels name incident Relations, not
+endpoint objects, and the ordered summary is useful for identifying exactly
+which Relation blocks deletion. Adding a generic endpoint heading would be
+redundant and could dilute deletion clarity.
+
+Recommendation: **KEEP CANONICAL**.
+
+No generic adoption is appropriate here. The existing no-cascade and explicit
+inspection/removal semantics remain unchanged.
+
+### NarrativeLine Relation presentation
+
+`RelationPresentationService` derives a compact primary identity of the form
+`Relation name: source → target`, plus separate `source`, `target`, and
+combined `endpoints` values for consumers. It does not render a generic
+endpoint heading or localize one.
+
+The compact ordered expression already presents both endpoint objects without
+adding a verbose label. In contexts where role distinction is material, the
+derived Source/Target values remain available. A generic label would not
+improve the current compact presentation.
+
+Recommendation: **NO CHANGE**.
+
+The `endpoints` property is internal presentation data, not runtime adoption
+of the technical word `Endpoints`.
+
+### NarrativeLine Entity Detail
+
+The related-object section is EN `Related Events` / `No related events.` and
+JA `関連するできごと` / `関連するできごとはありません。`. It displays only
+Events related to the selected Entity; it does not display Relation identity
+or endpoint role rows.
+
+This is a context-relative one-other-object list, but the object type is
+intentional and the current heading is more informative than a generic
+endpoint heading. No singular `Connected object` or `つながり先` literal is
+authorized by this audit.
+
+Recommendation: **NO CHANGE**.
+
+### NarrativeLine Event Detail
+
+The related-object section is EN `Related Entities` / `No related entities.`
+and JA `関連エンティティ` / `関連するエンティティはありません。`. The
+Event-to-Entity association workflow also uses `Add Related Entity` /
+`関連エンティティを追加`.
+
+These surfaces intentionally present Entity objects related to the selected
+Event. They do not claim that every possible Relation endpoint is an Entity;
+they describe the concrete Entity-oriented workflow. Event deletion copy uses
+`connected Relations` / `関連する関係`, which names the incident Relation
+group rather than an endpoint type.
+
+Recommendation: **NO CHANGE**.
+
+The current copy is type-accurate for the rendered list and does not need a
+generic endpoint label.
+
+### NarrativeLine Entity deletion blockers
+
+The blocker heading is EN `Review connections before deleting` and JA
+`つながりを確認してください`. The group label is EN `Connections to remove`
+and JA `削除するつながり`. Each blocker has EN `Relation Name`, `Source`, and
+`Target`; JA `つながりの名前`, `始点`, and `終点`, followed by explicit remove,
+cancel, and keep actions.
+
+This surface has the same destructive-review responsibility as LiaisonScape.
+The explicit role rows are necessary to identify a blocking Relation before a
+destructive action. The displayed endpoint values can be Entity or Event and
+the labels do not hard-code `Entity`.
+
+Recommendation: **KEEP CANONICAL**.
+
+The difference from LiaisonScape's compact blocker identity is a justified
+presentation difference within the same safety responsibility; both preserve
+Relation identity and canonical role information.
+
+### NarrativeLine EntityPicker / single-other-endpoint context
+
+The picker uses EN `Add Related Entity` / `Select an Entity to associate with
+this Event.` and JA `関連エンティティを追加` / `このできごとに関連付けるエンティティを
+選択してください。`. It presents a concrete Entity selection action, not a
+neutral endpoint summary.
+
+Recommendation: **NO CHANGE**.
+
+The selected Entity or Event context can establish one participant, but that
+does not by itself require a singular generic label. The current type-specific
+action is clearer and no `Connected object` / `つながり先` wording is needed.
+
+## Required surface matrix
+
+| App | Surface | Current EN | Current JA | Responsibility | Recommendation | Why |
+| --- | --- | --- | --- | --- | --- | --- |
+| LiaisonScape | Relation Create | `Source Entity`; `Target Entity`; `Select source`; `Select target` | `接続元のエンティティ`; `接続先のエンティティ`; `接続元を選択`; `接続先を選択` | Select values written to `sourceId` / `targetId` | KEEP CANONICAL | Generic wording would hide stored roles; Entity-only authoring is intentional. |
+| LiaisonScape | Relation Edit / Detail, Entity endpoints | `Source Entity`; `Target Entity` | `接続元のエンティティ`; `接続先のエンティティ` | Edit or show canonical roles for Entity endpoints | KEEP CANONICAL | Role distinction remains necessary and type noun is accurate for this branch. |
+| LiaisonScape | Relation Detail, mixed/Event endpoint | `Source Entity`; `Target Entity` | `接続元のエンティティ`; `接続先のエンティティ` | Read-only inspection of an endpoint that may be an Event | SEPARATE ACCURACY FIX | Entity noun can be inaccurate; generic endpoint wording is not the fix. |
+| LiaisonScape | Entity Detail related Relations | `Related Relations:`; `Relation name`; `Source`; `Target` | `関連する Relation:`; `つながりの名前`; `始点`; `終点` | Summarize incident Relations and preserve role rows | NO CHANGE | Existing summary plus role rows already communicates the concept. |
+| LiaisonScape | Entity deletion blockers | `Connected Relations`; `Connections to remove`; compact `source → target` | `接続しているつながり`; `削除するつながり`; compact `source → target` | Individually identify Relations before removal | KEEP CANONICAL | Generic endpoint heading would be redundant in destructive review. |
+| NarrativeLine | Relation presentation | Compact `Relation name: source → target`; derived `source`, `target`, `endpoints` | Same compact object-name expression; no generic label | Present Relation identity in cards/summaries | NO CHANGE | Compact ordered presentation is clearer than adding a generic label. |
+| NarrativeLine | Entity Detail related Events | `Related Events`; `No related events.` | `関連するできごと`; `関連するできごとはありません。` | Show the other object type in an Entity context | NO CHANGE | Type-specific list is accurate; no generic heading is needed. |
+| NarrativeLine | Event Detail related Entities | `Related Entities`; `No related entities.`; `Add Related Entity` | `関連エンティティ`; `関連するエンティティはありません。`; `関連エンティティを追加` | Show/select concrete Entity associations for an Event | NO CHANGE | Concrete workflow is clearer and type-accurate. |
+| NarrativeLine | Entity deletion blockers | `Relation Name`; `Source`; `Target`; `Connections to remove` | `つながりの名前`; `始点`; `終点`; `削除するつながり` | Preserve Relation identity and roles before deletion | KEEP CANONICAL | Explicit role rows are required for deletion safety. |
+| NarrativeLine | Event deletion / association dialogs | `connected Relations`; `Keep Association`; `Remove Association` | `関連する関係`; `関連付けを残す`; `関連付けを解除` | Explain incident Relation deletion or Entity association removal | NO CHANGE | Names Relation/association responsibility, not endpoint type. |
+| NarrativeLine | EntityPicker | `Add Related Entity`; `Select an Entity to associate with this Event.` | `関連エンティティを追加`; `このできごとに関連付けるエンティティを選択してください。` | Select a concrete related Entity | NO CHANGE | A generic singular endpoint term would reduce clarity. |
+| Hub | Public app/sample descriptions | No Relation endpoint term; `relationship diagram`, `relationships`, `Dataset source` | No Relation endpoint term in inspected source | Public navigation and descriptions | NO CHANGE | No runtime adoption target in Hub. |
+
+## Generic-heading and parity conclusions
+
+### Group heading versus role row
+
+The accepted generic concept is suitable in principle for a newly introduced
+neutral group heading whose responsibility is “these are the objects
+participating in this Relation.” No inspected current surface needs that new
+heading:
+
+* LiaisonScape related-Relation and blocker groups already name Relations and
+  show useful role information;
+* NarrativeLine Entity/Event sections intentionally name the concrete object
+  type or use compact Relation identity;
+* adding a generic heading would not remove ambiguity that users currently
+  have.
+
+The role-row responsibility is different: `Source` / `Target` and the current
+Japanese role vocabulary remain where the stored direction or destructive
+identity matters. One layer must not replace the other.
+
+### Single-other-endpoint contexts
+
+NarrativeLine Entity Detail and Event Detail are context-relative lists, but
+they intentionally filter to `Related Events` or `Related Entities`. The
+selected object establishes the context and the list's concrete type is more
+useful than a generic singular label. No singular generic runtime copy is
+currently justified.
+
+### EN/JA parity
+
+Literal symmetry is not required. The relevant parity is preserved:
+
+* both locales retain the Source/Target distinction where it matters;
+* both locales show the same number and kind of endpoint objects per surface;
+* both retain type accuracy in the concrete Entity/Event lists;
+* both preserve Relation identity and explicit destructive-review clarity.
+
+The accepted conceptual pair remains EN `Connected objects` / JA `つながり先`,
+but neither needs to be inserted solely to make labels look parallel.
+
+### Cross-app parity
+
+* LiaisonScape Create/Edit and NarrativeLine presentation are different
+  responsibilities, so different copy is justified.
+* LiaisonScape and NarrativeLine deletion blockers have the same safety
+  responsibility but different current presentation structures. This is a
+  future parity-review candidate, not an established copy defect: both retain
+  Relation identity, endpoint order, and explicit removal actions.
+* The current conceptual vocabulary is aligned even where literal labels are
+  intentionally different.
+
+## Future implementation grouping
+
+The audit finds no bounded generic runtime adoption candidate with a present
+user benefit. The following separate candidates are supported by the live
+findings:
+
+### Candidate A — LiaisonScape mixed-endpoint label accuracy
+
+Audit and, if accepted separately, correct the read-only Relation Detail
+labels that currently say `Source Entity` / `Target Entity` when an Event
+endpoint is displayed. Keep canonical role information and keep Entity-only
+authoring constraints distinct. This is an accuracy fix, not adoption of
+`Connected objects` / `つながり先`.
+
+### Candidate B — Cross-app destructive-review parity
+
+If later needed, compare the LiaisonScape compact blocker identity with
+NarrativeLine's explicit role rows and decide whether any bounded parity change
+improves review safety. Do not add generic headings merely for vocabulary
+uniformity, and do not weaken existing explicit removal/inspection behavior.
+
+There is no Candidate C for generic heading replacement because no current
+surface was found where the accepted generic term improves clarity enough to
+justify runtime copy change.
+
+## Outcome
+
+**VOCABULARY ACCEPTED / NO CURRENT GENERIC RUNTIME CHANGE REQUIRED**
+
+The accepted EN/JA generic endpoint concepts are reserved for a future neutral
+summary or group-heading surface if one is actually introduced. Current
+Source/Target controls and rows should remain where canonical direction or
+destructive identity matters. Current type-specific Entity/Event surfaces
+should remain type-specific. The only concrete accuracy finding is the
+separate LiaisonScape mixed-endpoint `Source Entity` / `Target Entity` follow-up.
+
+No runtime copy, application behavior, deletion behavior, visual directionality,
+Core, Extension, schema, Validator, Hub, or ai-knowledge file was modified by
+this audit.

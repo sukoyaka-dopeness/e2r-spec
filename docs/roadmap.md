@@ -2441,6 +2441,16 @@ Source/Target roles. Runtime adoption and surface-specific copy remain
 separate bounded follow-ups. Visual directionality remains separate, and no
 implementation or copy change is authorized.
 
+The [Relation Endpoint Vocabulary Surface Adoption Audit](../research/exploratory/relation-endpoint-vocabulary-surface-adoption-audit.md)
+finds no current surface where adding `Connected objects` / `つながり先`
+improves clarity enough to justify runtime copy adoption. Source/Target remains
+intentional in Create/Edit, technical Detail, and destructive-review identity;
+type-specific Entity/Event lists also remain unchanged. A separate bounded
+LiaisonScape accuracy follow-up is recorded for mixed Event endpoints currently
+shown under `Source Entity` / `Target Entity`; cross-app deletion-review parity
+is only a future review candidate. **VOCABULARY ACCEPTED / NO CURRENT GENERIC
+RUNTIME CHANGE REQUIRED**.
+
 The record keeps Relative Chronology as a serious pre-release design
 candidate. A minimal canonical `before` relation is a Research candidate, not
 a selected schema; its editing may use Earlier/Later controls and later

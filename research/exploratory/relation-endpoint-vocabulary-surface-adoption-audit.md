@@ -4,7 +4,7 @@
 
 Date: 2026-08-29
 
-Status: **VOCABULARY ACCEPTED / NO CURRENT GENERIC RUNTIME CHANGE REQUIRED**
+Status: **VOCABULARY ACCEPTED / LIAISONSCAPE BLOCKER FOLLOW-UP ACCEPTED**
 
 ## Scope and authorities
 
@@ -163,6 +163,60 @@ Recommendation: **KEEP CANONICAL**.
 No generic adoption is appropriate here. The existing no-cascade and explicit
 inspection/removal semantics remain unchanged.
 
+### Superseding decision — LiaisonScape Entity deletion blockers
+
+The preceding `KEEP CANONICAL` finding is preserved as the historical result of
+this audit. After direct visual review of the live deletion-resolution modal and
+reconsideration under the accepted presentation-only directionality model, that
+classification is superseded for this LiaisonScape surface only.
+
+The current accepted outcome is:
+
+**LIAISONSCAPE DELETION-BLOCKER GENERIC ENDPOINT PRESENTATION ACCEPTED /
+RUNTIME IMPLEMENTATION READY**
+
+The blocker card's responsibility is to identify the blocking Relation and both
+connected endpoint objects clearly before destructive action. It does not need
+to teach or expose the canonical `sourceId` / `targetId` roles. The Relation
+name, both endpoint object identities, individual Relation inspection, explicit
+removal, and the Entity-deletion block remain the safety mechanisms.
+
+The accepted conceptual card structure is:
+
+* EN: `Name` + Relation name; then two `Connected object` + endpoint value rows;
+* JA: `名前` + Relation name; then two `つながり先` + endpoint value rows.
+
+`Connected object` is singular because each row identifies one endpoint object;
+it is surface-specific grammar derived from the accepted generic concept
+`Connected objects`, not a new vocabulary model. The Japanese `つながり先` is
+direction-neutral and remains valid for Entity and Event values.
+
+The primary endpoint identity should no longer depend on one compressed
+`A → B` line. The two endpoint values may retain the existing stable canonical
+display order. Presentation-neutral labels do not swap endpoints and do not
+mutate `sourceId` or `targetId`.
+
+This structure remains compatible with Normal, Reverse, Undirected, and
+Bidirectional graph presentation because it identifies the Relation name and
+the two connected objects without requiring the user to reconcile Source/Target
+with an arrow appearance. Canonical direction remains intact elsewhere.
+
+This decision does not supersede canonical labels in Relation Create, Relation
+Edit, or technical Relation Detail. Relation Detail remains EN `Source` /
+`Target` and JA `始点` / `終点`, as accepted by LiaisonScape commit
+`334c931 fix: make Relation endpoint roles type-neutral`.
+
+The endpoint rows are type-neutral and therefore valid for both Entity and
+Event values. They must not be labelled `Entity`, `Source Entity`, `Target
+Entity`, or `Connected Entity`. Existing self-Relation semantics remain intact:
+one blocking Relation may show the same endpoint value in both rows. Parallel
+Relations remain distinct blocker cards. Existing `Inspect Relation`, removal,
+and `Keep Entity` actions remain unchanged, as does the action hierarchy.
+
+This is a LiaisonScape-only runtime candidate. NarrativeLine's deletion-blocker
+`KEEP CANONICAL` finding remains a later, separate cross-app parity review; it
+is not superseded here.
+
 ### NarrativeLine Relation presentation
 
 `RelationPresentationService` derives a compact primary identity of the form
@@ -252,7 +306,7 @@ action is clearer and no `Connected object` / `つながり先` wording is neede
 | LiaisonScape | Relation Edit / Detail, Entity endpoints | `Source Entity`; `Target Entity` | `接続元のエンティティ`; `接続先のエンティティ` | Edit or show canonical roles for Entity endpoints | KEEP CANONICAL | Role distinction remains necessary and type noun is accurate for this branch. |
 | LiaisonScape | Relation Detail, mixed/Event endpoint | `Source Entity`; `Target Entity` | `接続元のエンティティ`; `接続先のエンティティ` | Read-only inspection of an endpoint that may be an Event | SEPARATE ACCURACY FIX | Entity noun can be inaccurate; generic endpoint wording is not the fix. |
 | LiaisonScape | Entity Detail related Relations | `Related Relations:`; `Relation name`; `Source`; `Target` | `関連する Relation:`; `つながりの名前`; `始点`; `終点` | Summarize incident Relations and preserve role rows | NO CHANGE | Existing summary plus role rows already communicates the concept. |
-| LiaisonScape | Entity deletion blockers | `Connected Relations`; `Connections to remove`; compact `source → target` | `接続しているつながり`; `削除するつながり`; compact `source → target` | Individually identify Relations before removal | KEEP CANONICAL | Generic endpoint heading would be redundant in destructive review. |
+| LiaisonScape | Entity deletion blockers | `Connected Relations`; `Connections to remove`; compact `source → target` | `接続しているつながり`; `削除するつながり`; compact `source → target` | Individually identify Relations before removal | KEEP CANONICAL (historical; superseded below) | Historical finding preserved; the bounded LiaisonScape follow-up accepts surface-specific generic endpoint rows. |
 | NarrativeLine | Relation presentation | Compact `Relation name: source → target`; derived `source`, `target`, `endpoints` | Same compact object-name expression; no generic label | Present Relation identity in cards/summaries | NO CHANGE | Compact ordered presentation is clearer than adding a generic label. |
 | NarrativeLine | Entity Detail related Events | `Related Events`; `No related events.` | `関連するできごと`; `関連するできごとはありません。` | Show the other object type in an Entity context | NO CHANGE | Type-specific list is accurate; no generic heading is needed. |
 | NarrativeLine | Event Detail related Entities | `Related Entities`; `No related entities.`; `Add Related Entity` | `関連エンティティ`; `関連するエンティティはありません。`; `関連エンティティを追加` | Show/select concrete Entity associations for an Event | NO CHANGE | Concrete workflow is clearer and type-accurate. |
@@ -278,8 +332,11 @@ heading:
   have.
 
 The role-row responsibility is different: `Source` / `Target` and the current
-Japanese role vocabulary remain where the stored direction or destructive
-identity matters. One layer must not replace the other.
+Japanese role vocabulary remain where the stored direction or canonical
+identity matters, including Relation Detail. The accepted LiaisonScape
+deletion-blocker decision is a bounded exception because that surface reviews
+safe Relation identity rather than canonical direction. One layer must not
+replace the other.
 
 ### Single-other-endpoint contexts
 
@@ -306,17 +363,18 @@ but neither needs to be inserted solely to make labels look parallel.
 * LiaisonScape Create/Edit and NarrativeLine presentation are different
   responsibilities, so different copy is justified.
 * LiaisonScape and NarrativeLine deletion blockers have the same safety
-  responsibility but different current presentation structures. This is a
-  future parity-review candidate, not an established copy defect: both retain
-  Relation identity, endpoint order, and explicit removal actions.
+  responsibility but different current presentation structures. LiaisonScape
+  now has an accepted surface-specific generic endpoint follow-up, while
+  NarrativeLine remains `KEEP CANONICAL`; cross-app parity is still a separate
+  future review and neither decision changes endpoint semantics or actions.
 * The current conceptual vocabulary is aligned even where literal labels are
   intentionally different.
 
 ## Future implementation grouping
 
-The audit finds no bounded generic runtime adoption candidate with a present
-user benefit. The following separate candidates are supported by the live
-findings:
+The audit finds one bounded LiaisonScape deletion-blocker implementation
+candidate with a present review-safety benefit. The following separate
+candidates remain scoped by the live findings:
 
 ### Candidate A — LiaisonScape mixed-endpoint label accuracy
 
@@ -339,15 +397,17 @@ justify runtime copy change.
 
 ## Outcome
 
-**VOCABULARY ACCEPTED / NO CURRENT GENERIC RUNTIME CHANGE REQUIRED**
+**VOCABULARY ACCEPTED / LIAISONSCAPE BLOCKER FOLLOW-UP ACCEPTED**
 
 The accepted EN/JA generic endpoint concepts are reserved for a future neutral
-summary or group-heading surface if one is actually introduced. Current
-Source/Target controls and rows should remain where canonical direction or
-destructive identity matters. Current type-specific Entity/Event surfaces
-should remain type-specific. The only concrete accuracy finding is the
-separate LiaisonScape mixed-endpoint `Source Entity` / `Target Entity` follow-up.
+summary or group-heading surface if one is actually introduced, with the
+accepted LiaisonScape deletion-blocker rows as the explicit surface-specific
+exception. Current Source/Target controls and Relation Detail rows remain
+canonical. Current type-specific Entity/Event surfaces should remain
+type-specific. The LiaisonScape deletion-blocker follow-up is implementation
+ready but not yet implemented, and NarrativeLine parity remains separate.
 
 No runtime copy, application behavior, deletion behavior, visual directionality,
 Core, Extension, schema, Validator, Hub, or ai-knowledge file was modified by
-this audit.
+this audit; the accepted LiaisonScape follow-up remains a documentation-only
+runtime candidate.

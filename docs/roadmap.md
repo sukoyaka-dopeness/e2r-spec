@@ -2451,6 +2451,18 @@ shown under `Source Entity` / `Target Entity`; cross-app deletion-review parity
 is only a future review candidate. **VOCABULARY ACCEPTED / NO CURRENT GENERIC
 RUNTIME CHANGE REQUIRED**.
 
+The subsequent bounded LiaisonScape deletion-blocker decision supersedes only
+the prior deletion-blocker classification. Its implementation candidate is
+**LIAISONSCAPE DELETION-BLOCKER GENERIC ENDPOINT PRESENTATION ACCEPTED /
+RUNTIME IMPLEMENTATION READY**: the blocker Relation identity becomes a
+multi-row presentation with `Name` plus two direction-neutral `Connected
+object` / `つながり先` rows. It does not display Source/Target roles, mutate
+Relation semantics, or change deletion behavior. Relation Detail remains
+canonical, and NarrativeLine parity remains a separate future review. The
+decision is recorded in the [Relation Endpoint Vocabulary Surface Adoption
+Audit](../research/exploratory/relation-endpoint-vocabulary-surface-adoption-audit.md);
+runtime implementation is not yet complete.
+
 The record keeps Relative Chronology as a serious pre-release design
 candidate. A minimal canonical `before` relation is a Research candidate, not
 a selected schema; its editing may use Earlier/Later controls and later

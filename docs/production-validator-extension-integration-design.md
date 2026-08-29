@@ -1,7 +1,7 @@
 # Production Validator Extension Integration Design
 
-Date: 2026-08-29  
-Status: **BLOCKED — SPEC DECISION REQUIRED**  
+Date: 2026-08-29
+Status: **BLOCKED — SPEC DECISION REQUIRED**
 Scope: read-only design checkpoint; no Validator, application, schema, or
 roadmap implementation is included.
 

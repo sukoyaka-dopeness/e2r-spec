@@ -2587,3 +2587,16 @@ deletion semantics, the Capability Handoff contract, Dataset Handoff,
 Core/Extension/schema, Hub, LiaisonScape, and ai-knowledge remain unchanged.
 Capability Handoff acceptance stays CLOSED / ACCEPTED. This closure does not
 alter unrelated NarrativeLine, cross-application, or deployment work.
+
+### LS-MODAL-DIALOG-CONSISTENCY-AUDIT1 (2026-08-29)
+
+The complete live LiaisonScape modal/dialog inventory and responsibility audit
+is recorded in [LiaisonScape Modal / Dialog Consistency Audit](../research/exploratory/liaisonscape-modal-dialog-consistency-audit.md).
+**MODAL AUDIT COMPLETE / NO MATERIAL CONSISTENCY FIX REQUIRED.** Canonical
+Source/Target presentation remains appropriate for Relation Create/Edit, Detail,
+and the Entity Detail related-Relation inspection list; generic Connected object
+rows remain appropriate for Entity deletion blocker resolution. Destructive
+safe-first ordering, shared focus trapping, dismissal, and narrow scrolling
+remain accepted responsibility-specific behavior. Only an optional P3
+representative browser-fixture coverage candidate was recorded; no runtime,
+vocabulary, deletion, or cross-app parity fix is opened by this checkpoint.

@@ -852,3 +852,31 @@ This is a documentation-only reconciliation. It does not implement the
 reordering, add the control, define Presentation serialization, or alter the
 accepted persistence owner. Persistence remains the future LiaisonScape-owned
 Dataset-contained Presentation mechanism, with serialization still deferred.
+
+## LS-RELATION-PRESENTATION-SERIALIZATION-DESIGN1 - Serialization contract reference
+
+Date: 2026-08-29
+
+The serialization contract is now defined in
+[`extensions/presentation-extension-draft.md`](../../extensions/presentation-extension-draft.md)
+as **Draft candidate `0.1.0`** under the exact identifier
+`draft.github.sukoyaka-dopeness.liaisonscape-presentation`.
+
+The contract owns a Dataset-level Relation-ID map for LiaisonScape-authored
+Presentation state. Its currently specified property is `arrowDisplay`, with
+the exact lowercase tokens `normal`, `reverse`, `undirected`, and
+`bidirectional`. Omission means canonical Normal and canonical writers omit
+redundant default state. Unknown fields and tokens remain subject to the
+preservation/fallback rules in the contract; orphan records are ignored for
+rendering and cleaned by a future LiaisonScape writer when a Relation is
+deleted.
+
+This reference does not change the accepted presentation-only semantics:
+`sourceId` and `targetId` remain canonical and no display token mutates Core,
+Relation text, or object identity. Layout remains responsible for geometry,
+and future line/stroke style is an independently named Presentation property
+that may use the same Relation record without being defined here.
+
+The serialization contract is ready for a later schema/reader/writer
+implementation checkpoint. No JSON Schema, Validator, sample, or runtime
+change is authorized by this documentation checkpoint.

@@ -469,3 +469,17 @@ on applicable paths, but it does not make NarrativeLine a consumer of the
 future Presentation contract. Presentation standardization and its
 cross-application evidence gate remain open; no schema or runtime change is
 authorized by this checkpoint.
+
+### LS-RELATION-PRESENTATION-SERIALIZATION-DESIGN1 - Contract alignment
+
+The bounded draft contract is now recorded in
+[`extensions/presentation-extension-draft.md`](../../extensions/presentation-extension-draft.md)
+under `draft.github.sukoyaka-dopeness.liaisonscape-presentation`, version
+`0.1.0`. It carries Relation-specific non-semantic arrow presentation in a
+Dataset-level Relation-ID map. This does not move any geometry into
+Presentation: Coordinates remain positions, Layout remains route/self-loop/
+label/layer geometry, and Application View State remains outside the Dataset.
+
+The same Relation record may later receive independently specified line/stroke
+properties, but this draft does not define them. No schema, Validator, runtime,
+or current Layout behavior changes follow from the contract design.

@@ -2669,3 +2669,19 @@ canonical `sourceId` / `targetId`, Create/Edit, Entity Detail, and deletion
 blocker boundaries remain unchanged. The persistence owner remains the future
 LiaisonScape-owned Dataset-contained Presentation mechanism; serialization and
 runtime implementation remain deferred.
+
+### LS-RELATION-PRESENTATION-SERIALIZATION-DESIGN1 (2026-08-29)
+
+The [LiaisonScape Presentation Extension Draft](../extensions/presentation-extension-draft.md)
+now defines the Dataset-contained serialization contract as draft candidate
+`draft.github.sukoyaka-dopeness.liaisonscape-presentation`, version `0.1.0`.
+It uses one Relation-ID-scoped `relations` map and the `arrowDisplay` tokens
+`normal`, `reverse`, `undirected`, and `bidirectional`; absence means Normal.
+The contract preserves canonical Core endpoints, omits redundant defaults, and
+supports future independently named Presentation properties in the same
+Relation record without defining line-style data here.
+
+Schema/reader-writer implementation remains a separate next phase, followed by
+Arrow display runtime, line-style design/implementation, and Lighthouse
+Restoration sample refresh. No schema, runtime, Validator, or sample change is
+authorized by this checkpoint.

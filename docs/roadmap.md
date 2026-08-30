@@ -2985,6 +2985,19 @@ LiaisonScape commit `96da8dd` passed 278/278 tests, lint, and build. No runtime
 change was made by this audit; self-loop, foreign-node, label, crossing, and
 occupied-path/order follow-ups remain separate.
 
+### E2R-LIAISONSCAPE-PARALLEL-OBSTACLE-SIDE-PRESERVATION-FIX1 (2026-08-30)
+
+The bounded obstacle side-preservation fix is recorded in [LiaisonScape Parallel Obstacle Side-Preservation Fix](liaisonscape-parallel-obstacle-side-preservation-fix.md).
+Safe candidates that preserve the existing parallel physical side are now
+preferred lexicographically, while the existing best-candidate fallback
+allows side switching when no such candidate is safe. No new numeric weight
+or clearance threshold was introduced.
+
+LiaisonScape commit `22f61a8` passed 279/279 tests, lint, and build. The
+change is limited to automatic ordinary parallel obstacle routing; group
+optimization, foreign-node, label, crossing, self-loop, and occupied-path
+redesign remain separate.
+
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).

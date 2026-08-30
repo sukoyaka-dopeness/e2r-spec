@@ -2889,3 +2889,17 @@ evidence, Final Pre-Public-Release Audit, and—only if READY and explicitly
 authorized—public sync, tag, GitHub Release, deployment, and public acceptance.
 Neither audit authorizes Core, History, schema, or runtime implementation;
 Research shelf inventory and the Hub concept page remain separate workstreams.
+
+### E2R-LIAISONSCAPE-LICENSE-REMEDIATION1 (2026-08-30)
+
+The LiaisonScape repository-owned MIT license blocker is now remediated. The
+root `LICENSE` uses `Copyright (c) 2026 sukoyaka-dopeness`; `package.json`,
+`package-lock.json`, and README are synchronized. The evidence is recorded in
+[LiaisonScape License Remediation Result](liaisonscape-license-remediation-result.md).
+
+This closes only the license checkpoint. LiaisonScape remains `0.2.0` and
+`private: true`; runtime, Dataset, sample, Core, Extension, and specification
+licensing boundaries are unchanged. Initial Node Placement Objective Audit is
+now next, followed by the NarrativeLine Display-Order Reordering Audit. The
+Final Pre-Public-Release Audit has not been rerun, and public release remains
+unauthorized.

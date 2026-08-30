@@ -2917,3 +2917,18 @@ licensing boundaries are unchanged. Initial Node Placement Objective Audit is
 now next, followed by the NarrativeLine Display-Order Reordering Audit. The
 Final Pre-Public-Release Audit has not been rerun, and public release remains
 unauthorized.
+
+### E2R-LIAISONSCAPE-COORDINATELESS-PLACEMENT-COMPARISON-AUDIT1 (2026-08-30)
+
+The stored-versus-derived-versus-explicit-Auto-Layout comparison is recorded in
+[LiaisonScape Coordinate-less Placement Comparison Audit](liaisonscape-coordinate-less-placement-comparison-audit.md).
+The result is `ACCEPTED - CURRENT STORED SAMPLE COORDINATES REMAIN PREFERRED`.
+Both Lighthouse samples have identical 10-Entity / 28-Relation topology and
+stored coordinates for all 10 Entities. Coordinate-less derived placement is
+deterministic but elongated and is not a suitable automatic refresh basis for
+this curated sample; explicit Auto Layout remains a separate user workflow.
+
+No tracked sample or runtime implementation was changed. If the original
+visual concern remains release-relevant, the next bounded choice is manual
+sample-coordinate curation or a separate routing/presentation audit. The
+NarrativeLine Display-Order audit remains pending.

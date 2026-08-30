@@ -2947,6 +2947,17 @@ straight conceptual edges, current routed edges, parallel offsets, and manual
 or stored Presentation. No runtime, sample, schema, or release operation was
 changed.
 
+### E2R-LIAISONSCAPE-SELF-LOOP-SAME-GEOMETRY-COUNTERFACTUAL1 (2026-08-30)
+
+The self-loop same-geometry counterfactual is recorded in [LiaisonScape Self-Loop Same-Geometry Counterfactual](liaisonscape-self-loop-same-geometry-counterfactual.md).
+The result is `NOT JUSTIFIED - SAME-GEOMETRY COUNTERFACTUAL SHOWS NO CLEARLY
+BETTER SELF-LOOP ROUTE`. Ordinary-first routing produced identical self-loop
+geometry because current self-loop candidate selection does not consume
+`occupiedPaths`. `beacon-self-calibrate` remains near an ordinary route, but
+causality and an order-only fix are unproven.
+
+No runtime, sample, test, schema, or release operation was changed.
+
 ### E2R-LIAISONSCAPE-ROUTING-DECOMPOSITION-SELF-LOOP-AUDIT1 (2026-08-30)
 
 The routing decomposition and self-loop audit is recorded in [LiaisonScape Routing Decomposition / Self-Loop Audit](liaisonscape-routing-decomposition-self-loop-audit.md).

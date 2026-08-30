@@ -3173,3 +3173,12 @@ ordinary `occupiedPaths` order create a plausible asymmetry, but do not prove
 the observed defect. A same-geometry counterfactual comparison is required.
 
 No runtime, sample, test, schema, or release operation was changed.
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-EDGE-CORRIDOR-PROXY-EXPERIMENT1 (2026-08-30)
+
+The Edge-corridor proxy experiment is recorded in [LiaisonScape Initial
+Placement Edge-Corridor Proxy Experiment](liaisonscape-initial-placement-edge-corridor-proxy-experiment.md).
+The result is `PARTIAL`: straight topological chord crossing (P1) and
+separation (P2) detect controlled synthetic cases, but Lighthouse ranking does
+not explain production routing or the manual congestion concern. No runtime,
+solver, routing, label, iteration, or sample change was made. The next bounded
+checkpoint is the label-pressure proxy experiment.

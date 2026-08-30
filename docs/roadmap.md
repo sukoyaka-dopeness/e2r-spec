@@ -3090,6 +3090,20 @@ No production runtime, sample, or Coordinate change was made. The next
 candidate checkpoint is bounded-settling implementation with a distinct
 initial-placement boundary.
 
+### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-BOUNDED-SETTLING-IMPLEMENTATION1 (2026-08-30)
+
+The bounded settling implementation is recorded in [LiaisonScape Initial Node
+Placement Bounded Settling Implementation](liaisonscape-initial-node-placement-bounded-settling-implementation.md).
+The result is `IMPLEMENTED`: Coordinate-less Dataset opening now uses a
+deterministic three-iteration derived placement helper based on the existing
+Auto Layout mechanics. Stored Coordinates remain authoritative, and mixed
+Coordinate opening retains the existing deterministic missing-node path pending
+a separate pinned-node ownership decision.
+
+LiaisonScape passed 280/280 tests, lint, and build. No explicit Auto Layout
+workflow, Dataset mutation, dirty/adoption state, sample, schema, or release
+operation changed.
+
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).

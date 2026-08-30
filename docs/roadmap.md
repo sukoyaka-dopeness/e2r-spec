@@ -3230,3 +3230,12 @@ compression, but no non-arbitrary target Edge length is justified by existing
 semantic or geometric evidence. No spring, solver, iteration, routing, label,
 or sample change was made; the existing uncommitted sample candidate remains
 preserved.
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MULTI-HOP-TOPOLOGY-SEED-EXPERIMENT1 (2026-08-30)
+
+The multi-hop topology seed experiment is recorded in [LiaisonScape Initial
+Placement Multi-Hop Topology Seed Experiment](liaisonscape-initial-placement-multi-hop-topology-seed-experiment.md).
+The result is `NOT SUPPORTED`: live source shows a degree-ranked but
+topology-agnostic ring seed, while no bounded external-seed comparison
+established material multi-hop presentation benefit. No runtime, force,
+iteration, routing, label, or sample change was made; the existing uncommitted
+Lighthouse candidate remains preserved.

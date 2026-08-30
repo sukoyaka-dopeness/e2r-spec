@@ -3114,6 +3114,16 @@ solver is not Edge-crossing-, route-clearance-, or label-aware. No production
 iteration change or sample refresh was accepted; the uncommitted 3-iteration
 candidate remains available for manual review.
 
+### E2R-LIAISONSCAPE-NODE-LAYOUT-PRESENTATION-PRESSURE-OBJECTIVE-DECOMPOSITION1 (2026-08-30)
+
+The presentation-pressure decomposition is recorded in [LiaisonScape Initial
+Node Placement Presentation-Pressure Objective Decomposition](liaisonscape-initial-node-placement-presentation-pressure-objective-decomposition.md).
+The result is `RESEARCH REQUIRED`: the existing Node-only solver does not
+account for Edge, route-corridor, or label pressure, but direct integration of
+production routing and labels would create an unbounded feedback loop. No
+runtime, production iteration, routing, label, or sample change was made. The
+next checkpoint must define one coarse, lexicographic presentation proxy.
+
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).

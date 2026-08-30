@@ -1,7 +1,7 @@
 # E2R DOM Test Environment npm Publication Authority Result
 
 - Date: 2026-08-30
-- Status: `USER ACTION REQUIRED — COMPLETE NPM LOGIN`
+- Status: `READY — NPM PUBLICATION AUTHORITY VERIFIED`
 - Model used: Current Codex model; assessment: sufficient for bounded npm authority verification.
 
 ## Trigger and authority
@@ -42,13 +42,14 @@ ownership was found.
 
 ## npm authentication and scope
 
-`npm whoami` returned 401 Unauthorized. No authenticated identity was
-available, so scope classification is `SCOPE-E — cannot determine safely via
-read-only tooling` and authentication classification is `AUTH-C`.
+`npm whoami` now succeeds and returns `sukoyaka-dopeness`. `npm org ls
+sukoyaka-dopeness --json` reports the account as `owner`, establishing
+`SCOPE-B — npm organization` with owner-level authority. The read-only
+`npm access list packages @sukoyaka-dopeness --json` check also succeeds and
+shows existing read-write access for `@sukoyaka-dopeness/e2r-validator`.
 
-The GitHub owner name does not establish npm ownership. The `@sukoyaka-dopeness`
-personal-scope/organization model and publication authority must be confirmed
-after login without exposing credentials in chat or logs.
+This is direct npm evidence; the GitHub owner name alone would not have been
+sufficient.
 
 ## Package-name availability and access model
 
@@ -64,16 +65,10 @@ must be entered only into the local npm prompt/browser flow, never sent to
 ChatGPT. No trusted-publishing workflow is currently required by accepted E2R
 policy; ordinary authenticated local publication remains the proposed path.
 
-## User action required
+## User action completed
 
-Complete the official npm login flow locally, for example:
-
-```text
-npm login
-```
-
-Do not paste passwords, tokens, OTPs, or `.npmrc` contents into chat. After
-login, ask Codex to rerun `npm whoami` and the scope-authority checks.
+The user completed the official npm login flow. No password, token, OTP, or
+`.npmrc` content was shared in chat.
 
 ## Codex assessment
 
@@ -85,9 +80,9 @@ step.
 
 ### Concern
 
-The npm identity and `@sukoyaka-dopeness` scope authority are still unknown.
-GitHub remote state is also not live-verifiable in the current network
-environment.
+The npm identity and scope authority are now verified. GitHub remote state is
+still not live-verifiable in the current network environment and should be
+reconfirmed immediately before a source push.
 
 ### Alternative
 
@@ -97,9 +92,9 @@ bounded next step.
 
 ### Recommendation
 
-Complete npm login interactively, then verify the authenticated username and
-scope authority in a follow-up checkpoint. Publication remains a separate
-explicit authorization action.
+The package is ready for a separate explicit first-publication authorization
+checkpoint. Reconfirm the empty GitHub remote immediately before pushing;
+publication remains a separate write action.
 
 ## Push/publish status
 
@@ -108,4 +103,4 @@ deploy occurred. No credentials were changed by Codex.
 
 ## Result
 
-`USER ACTION REQUIRED — COMPLETE NPM LOGIN`
+`READY — NPM PUBLICATION AUTHORITY VERIFIED`

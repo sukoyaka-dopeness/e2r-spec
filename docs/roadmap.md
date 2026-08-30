@@ -765,6 +765,18 @@ gate. None of these milestones authorizes a Core change, a universal
 application UI, or automatic interpretation of unknown application and pack
 metadata.
 
+### Hub self-history Dataset access follow-up
+
+The existing [E2R Self-Description Dataset](../examples/e2r-self-description.json)
+is an informative, experimental dogfooding artifact that represents E2R's own
+project history in E2R form. When Hub is next modified, provide an appropriate
+Hub entry point for users to access this Dataset. The exact Hub placement,
+presentation, public URL or Handoff behavior, and relationship to the shared
+sample gallery are implementation-checkpoint decisions; this roadmap entry
+does not select them. The Dataset remains owned by its current specification
+repository location, and this follow-up does not authorize changing or
+duplicating the Dataset.
+
 ### Shared browser preference and workspace direction
 
 The Hub should investigate a browser-local sharing layer for the E2R

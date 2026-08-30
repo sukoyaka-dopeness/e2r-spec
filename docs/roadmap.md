@@ -3239,3 +3239,17 @@ topology-agnostic ring seed, while no bounded external-seed comparison
 established material multi-hop presentation benefit. No runtime, force,
 iteration, routing, label, or sample change was made; the existing uncommitted
 Lighthouse candidate remains preserved.
+
+### E2R-LIAISONSCAPE-EXTERNAL-SEED-INJECTION-AND-MULTI-HOP-COUNTERFACTUAL1 (2026-08-30)
+
+The causal external-seed experiment is recorded in [LiaisonScape External-Seed
+Injection and Multi-Hop Counterfactual](liaisonscape-external-seed-injection-and-multi-hop-counterfactual.md).
+The result is `PARTIAL`: round-trip injection was bit-identical, BFS hop rings
+improved Lighthouse spacing but mixed branches, and parent sectors materially
+improved Lighthouse routing and labels. Cycle, multi-hub, chain, and dense
+controls prevent a general production implementation. The preceding
+`NOT SUPPORTED` record did not perform this causal injection and remains as
+history; this result supplies its missing reconciliation. All temporary runtime
+instrumentation was removed, the existing sample candidate remains untouched
+and uncommitted, and no runtime, force, iteration, routing, label, release, or
+publication change was made.

@@ -2874,3 +2874,18 @@ Validator, Coordinate, Presentation, DOM-package, or dependency version. The
 application remains `private: true`. Tagging, GitHub Release, deployment, and
 public acceptance remain separate later actions requiring explicit
 authorization.
+
+### E2R-PRE-RELEASE-ROADMAP-PLACEMENT-ORDER-LICENSE-RECORD1 (2026-08-30)
+
+The current pre-public-release authority now supersedes the sequencing details
+above while retaining them as historical records. LiaisonScape 0.2.0 remains
+blocked on repository-owned `LICENSE`/`LICENSE.md` remediation; this checkpoint
+does not add that file. The bounded audits and active sequence are recorded in
+[Pre-Public-Release Placement, Display-Order, and License Sequencing](pre-public-release-placement-order-license-sequencing.md).
+
+The active order is license remediation, Initial Node Placement Objective Audit,
+NarrativeLine Display-Order Reordering Audit, result-driven samples and release
+evidence, Final Pre-Public-Release Audit, and—only if READY and explicitly
+authorized—public sync, tag, GitHub Release, deployment, and public acceptance.
+Neither audit authorizes Core, History, schema, or runtime implementation;
+Research shelf inventory and the Hub concept page remain separate workstreams.

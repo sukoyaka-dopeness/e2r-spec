@@ -3078,6 +3078,18 @@ separate authored baseline with unknown provenance.
 No production initial-placement or sample change was made. A bounded
 non-grid initial-placement experiment is the next separate checkpoint.
 
+### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-NON-GRID-EXPERIMENT1 (2026-08-30)
+
+The non-grid experiment is recorded in [LiaisonScape Initial Node Placement Non-Grid Experiment](liaisonscape-initial-node-placement-non-grid-experiment.md).
+The result is `PARTIAL`: bounded runs of the existing Auto Layout mechanics
+remove the coordinate-less fallback's repeated-row gridness deterministically,
+but full startup reuse remains unproven for mixed Coordinates, routing/label
+quality, performance, and ownership semantics.
+
+No production runtime, sample, or Coordinate change was made. The next
+candidate checkpoint is bounded-settling implementation with a distinct
+initial-placement boundary.
+
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).

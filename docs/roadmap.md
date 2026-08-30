@@ -2958,6 +2958,19 @@ causality and an order-only fix are unproven.
 
 No runtime, sample, test, schema, or release operation was changed.
 
+### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
+
+The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).
+The result is `CAUSALITY CONFIRMED - REVERSE-ENDPOINT PHYSICAL-SIDE
+NORMALIZATION FIX REQUIRED`. Same-direction pairs separate at the base slot
+stage, while an A->B plus B->A pair collapses to the same canonical physical
+side because the directed normal reverses while the slot sign does not.
+
+An obstacle can also switch one side and collapse a two-Relation pair. The
+smallest next implementation candidate is reverse-endpoint physical-side
+normalization, with obstacle-side preservation kept separate. No runtime,
+sample, test, or release operation was changed.
+
 ### E2R-LIAISONSCAPE-PARALLEL-PHYSICAL-SIDE-DECOMPOSITION-AUDIT1 (2026-08-30)
 
 The parallel physical-side decomposition is recorded in [LiaisonScape Parallel Physical-Side Decomposition Audit](liaisonscape-parallel-physical-side-decomposition-audit.md).

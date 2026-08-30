@@ -2830,7 +2830,9 @@ The remaining release sequence is:
 
 1. Design, implement, and accept node automatic placement.
 2. Resolve any resulting Coordinate/Layout serialization and schema
-   implications.
+   implications. **CLOSED 2026-08-30:** the accepted automatic placement
+   implementation introduces no new serialized contract, schema, or Validator
+   work; see [Automatic Placement Serialization Impact](liaisonscape-automatic-placement-serialization-impact-result.md).
 3. Complete the separate Presentation lifecycle cleanup, including removal
    of a deleted Relation ID's Presentation record where appropriate.
 4. Integrate and accept production Validator coverage for the release-

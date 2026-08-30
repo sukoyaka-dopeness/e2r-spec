@@ -3044,6 +3044,17 @@ or threshold is therefore not justified.
 No runtime change was made. Foreign-edge congestion caused by route crossing,
 manual/Owned labels, and global label coordination remain separate follow-ups.
 
+### E2R-LIAISONSCAPE-ORDINARY-EDGE-CROSSING-CONGESTION-FIX1 (2026-08-30)
+
+The ordinary-edge crossing audit is recorded in [LiaisonScape Ordinary-Edge Crossing Audit](liaisonscape-ordinary-edge-crossing-audit.md).
+The result is `NOT REPRODUCED`: the current Lighthouse stored geometry has
+zero true non-endpoint ordinary-edge crossings and no sampled near-crossing
+pair below the diagnostic 20-unit band. No crossing score, threshold, or
+global rerouting change was justified.
+
+No runtime change was made. Shared-endpoint fan-out, local congestion,
+self-loop interactions, and future route-order evidence remain separate.
+
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).

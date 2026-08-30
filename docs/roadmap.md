@@ -2843,9 +2843,10 @@ The remaining release sequence is:
    Extension preservation, Hub/Handoff evidence, and license, credits, and
    sample-metadata checks.
 6. Run the cross-application and release integration audit.
-7. Make the LiaisonScape application version decision after content is
-   complete. The current version remains `0.1.0`; a likely `0.2.0` is only a
-   later candidate and is not accepted or applied by this record.
+7. The LiaisonScape application version decision is now recorded as
+   `0.2.0`. The current metadata remains `0.1.0`; the actual bump is deferred
+   to bounded release preparation. See
+   `docs/liaisonscape-application-version-decision.md`.
 8. Run the final pre-public-release audit.
 9. Obtain explicit authorization before any push or deployment.
 10. Perform public deployment acceptance only after that authorization.

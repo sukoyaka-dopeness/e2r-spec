@@ -1618,10 +1618,12 @@ aligned.
 
 ### Version and queued research note
 
-Review the application `0.2.0` milestone only after Cross-App Locale closes
-across NarrativeLine, LiaisonScape, and Hub. Application versioning remains
-separate from Dataset/schema versioning. Research shelf inventory and the Hub
-concept-page update remain queued after Cross-App Locale closure.
+The LiaisonScape next application release decision is now accepted as
+`0.2.0`, while the current metadata remains `0.1.0` until bounded release
+preparation. Application versioning remains separate from Dataset/schema
+versioning. Cross-App Locale, research shelf inventory, and the Hub
+concept-page update remain separate cross-app or future work and do not reopen
+the LiaisonScape version decision by themselves.
 
 ### LS-DETAIL-RR1 Related Relation readability — ACCEPTED / CLOSED
 
@@ -2756,9 +2758,10 @@ and the Relation-creation preview remain separate responsibilities. Existing
 Layout research remains authoritative for route, curvature, self-loop
 orientation/radius, label placement, and spatial layering. Node automatic
 placement remains an independent Layout/placement work item, and the likely
-LiaisonScape `0.2.0` application release decision remains deferred until the
-larger feature set is complete. No application version, schema, runtime,
-Validator, sample, or other repository change follows from this checkpoint.
+LiaisonScape `0.2.0` application release decision is recorded separately;
+actual version preparation remains release-time. No application version,
+schema, runtime, Validator, sample, or other repository change follows from
+this historical design checkpoint.
 
 ### LS-RELATION-LINE-STYLE-SCHEMA1 (2026-08-29)
 

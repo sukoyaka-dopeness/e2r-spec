@@ -2971,6 +2971,20 @@ LiaisonScape commit `96da8dd` passed 278/278 tests, lint, and build. The
 obstacle-induced collapse remains a separate follow-up. No sample, schema, or
 release operation was changed.
 
+### E2R-LIAISONSCAPE-PARALLEL-OBSTACLE-SIDE-COLLAPSE-AUDIT1 (2026-08-30)
+
+The obstacle side-collapse audit is recorded in [LiaisonScape Parallel Obstacle Side-Collapse Audit](liaisonscape-parallel-obstacle-side-collapse-audit.md).
+The result is `CAUSALITY CONFIRMED - OBSTACLE ROUTING INDEPENDENTLY COLLAPSES
+PARALLEL SIDES`: a one-sided obstacle can make individually scored routes
+choose the same escape side even after clean base normalization. The tested
+geometry also retained legal side-preserving candidates that lost under the
+current clearance/detour score, so the smallest next candidate is a bounded
+side-preservation preference in obstacle scoring.
+
+LiaisonScape commit `96da8dd` passed 278/278 tests, lint, and build. No runtime
+change was made by this audit; self-loop, foreign-node, label, crossing, and
+occupied-path/order follow-ups remain separate.
+
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).

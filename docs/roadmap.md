@@ -2998,6 +2998,19 @@ change is limited to automatic ordinary parallel obstacle routing; group
 optimization, foreign-node, label, crossing, self-loop, and occupied-path
 redesign remain separate.
 
+### E2R-LIAISONSCAPE-FOREIGN-NODE-CLEARANCE-FIX1 (2026-08-30)
+
+The foreign-node clearance audit is recorded in [LiaisonScape Foreign-Node Clearance Audit](liaisonscape-foreign-node-clearance-audit.md).
+The result is `NOT REPRODUCED`: current Lighthouse stored coordinates keep
+all ordinary Relation routes outside the existing 60-unit node-influence
+region. The closest measured case, `clara-maya` near `lighthouse`, remains
+87.3 units from the foreign Node center and 55.3 units beyond the existing
+32-unit Node body radius.
+
+No runtime change was justified or made. New clearance thresholds, score
+weights, candidate redesign, label recovery, and crossing minimization remain
+separate follow-ups.
+
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).

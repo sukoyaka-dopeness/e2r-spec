@@ -3033,6 +3033,17 @@ along-edge displacement whenever the preferred position remains blocked.
 No runtime change was made. Normal-distance, foreign-edge ownership,
 crossing, global label layout, and manual placement remain separate concerns.
 
+### E2R-LIAISONSCAPE-RELATION-LABEL-FOREIGN-EDGE-OWNERSHIP-FIX1 (2026-08-30)
+
+The foreign-edge ownership audit is recorded in [LiaisonScape Relation-Label Foreign-Edge Ownership Audit](liaisonscape-relation-label-foreign-edge-ownership-audit.md).
+The result is `NOT JUSTIFIED`: current automatic label candidates already
+place representative Lighthouse labels nearer to their owning Relation than
+to the nearest foreign Relation. A new foreign-distance score, ratio, margin,
+or threshold is therefore not justified.
+
+No runtime change was made. Foreign-edge congestion caused by route crossing,
+manual/Owned labels, and global label coordination remain separate follow-ups.
+
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).

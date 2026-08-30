@@ -333,3 +333,38 @@ any implementation is attempted.
 
 No Validator runtime integration, Node automatic placement, Dataset sample
 refresh, application version bump, push, or deployment was performed.
+
+### Explicit Auto Layout semantic decision and EXP-1A handoff
+
+The explicit whole-graph Auto Layout semantic decision was completed locally:
+
+- e2r-spec commit `156836b docs: decide explicit Auto Layout semantics`;
+- decision document:
+  `docs/liaisonscape-explicit-auto-layout-semantic-decision.md`;
+- selected `SCOPE-B`, `PERSIST-B`, `DIRTY-B`, `OWN-B`, `ALG-C`, `SCHEMA-NO`,
+  and `EXP-1A`;
+- R2 state: `DESIGN DEFINED — IMPLEMENTATION NOT STARTED`;
+- passive automatic initial placement remains accepted and unchanged.
+
+The first EXP-1A execution stopped because LiaisonScape was read-only in that
+Codex session. A workspace permission setup checkpoint then updated the local
+Codex config at `C:\Users\extra\.codex\config.toml`, preserving existing
+settings and adding `sandbox_mode = "workspace-write"` with
+`C:/Users/extra/E2R` as writable root. A timestamped config backup was made.
+Temporary write probes for e2r-spec, LiaisonScape, NarrativeLine, Validator,
+and Hub all passed and were removed. No Git changes resulted from the probes.
+
+A subsequent EXP-1A retry confirmed a LiaisonScape write probe, but the
+current session's patch application still did not complete. Therefore
+`src/auto-layout.ts`, `tests/auto-layout.test.ts`, and the EXP-1A result
+document have not been created. No source, test, package, Dataset, schema,
+sample, App/UI, or integration change was made. EXP-1A remains pending; no
+experiment result or commit may be claimed.
+
+The next session should recheck the effective writable roots and target
+worktrees, then implement only the pure solver and focused tests. It must run
+LiaisonScape test/lint/build, record an honest EXP-1A result, and keep App/UI,
+Coordinate persistence, dirty confirmation, browser acceptance, and
+production integration out of scope. Push, tag, publish, deploy, and changes
+to the protected `ai-knowledge/playbooks/e2r-edge-cdp-browser-diagnostic.md`
+remain prohibited without separate authorization.

@@ -3191,3 +3191,12 @@ route samples, candidate anchors, occupied paths, and localized text footprint,
 so a straight-chord proxy does not explain Lighthouse reliably. No runtime,
 solver, routing, label, iteration, or sample change was made. A combined proxy
 is not justified by the current evidence.
+### E2R-LIAISONSCAPE-DEGREE-CENTERED-OUTWARD-PLACEMENT-EXPERIMENT1 (2026-08-30)
+
+The degree-centered outward experiment is recorded in [LiaisonScape
+Degree-Centered Outward Placement Experiment](liaisonscape-degree-centered-outward-placement-experiment.md).
+The result is `PARTIAL`: Lighthouse centrality selects `clara` consistently,
+supporting a future central-hub seed experiment, but label-aware sectoring and
+the post-settle effect were not established. No runtime, iteration, routing,
+label, sample, or release change was made; the existing uncommitted sample
+candidate remains preserved.

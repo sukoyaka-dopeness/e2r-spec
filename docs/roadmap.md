@@ -2932,3 +2932,17 @@ No tracked sample or runtime implementation was changed. If the original
 visual concern remains release-relevant, the next bounded choice is manual
 sample-coordinate curation or a separate routing/presentation audit. The
 NarrativeLine Display-Order audit remains pending.
+
+### E2R-LIAISONSCAPE-RELATION-ROUTING-PRESENTATION-QUALITY-AUDIT1 (2026-08-30)
+
+The Relation routing / presentation quality audit is recorded in [LiaisonScape Relation Routing / Presentation Quality Audit](liaisonscape-relation-routing-presentation-quality-audit.md).
+The result is `ROUTING / PRESENTATION FOLLOW-UP REQUIRED - INITIAL PLACEMENT IS
+NOT PRIMARY CAUSE`. Current stored coordinates remain the comparison basis;
+crossing, foreign-node clearance, Relation-label ownership, and parallel-set
+readability cannot be attributed to placement alone.
+
+Existing focused routing and label tests remain valid, but Lighthouse-scale
+quality evidence is incomplete. A future bounded comparison must separate
+straight conceptual edges, current routed edges, parallel offsets, and manual
+or stored Presentation. No runtime, sample, schema, or release operation was
+changed.

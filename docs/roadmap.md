@@ -2860,3 +2860,17 @@ sample names. The completed Relation Arrow display work, Relation Line style
 work, and LiaisonScape Credits locale-parity work remain closed and are not
 reopened by this sequencing record. The existing application modularization
 and repository boundaries remain in force.
+
+### E2R-LIAISONSCAPE-0.2.0-RELEASE-PREPARATION1 (2026-08-30)
+
+The bounded LiaisonScape application release preparation is complete locally.
+Application metadata and Credits now identify `0.2.0`; the First Distribution
+provenance date `2026-08-16` remains preserved, and the update metadata date is
+`2026-08-30`. The README now reflects Validator `0.4.0` and the `0.2.0`
+release-candidate state.
+
+This preparation changes no Dataset, Core, Extension, schema, Handoff,
+Validator, Coordinate, Presentation, DOM-package, or dependency version. The
+application remains `private: true`. Tagging, GitHub Release, deployment, and
+public acceptance remain separate later actions requiring explicit
+authorization.

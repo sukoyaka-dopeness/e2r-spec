@@ -3209,3 +3209,14 @@ Node distance is already beyond the 96-unit repulsion activation distance, and
 repulsion tuning does not explain the presentation concern. No production
 constant, iteration count, routing, label, or sample change was made. The
 central-hub seed remains the stronger separate direction.
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SOURCE-RECONCILIATION-AND-TARGET-EDGE-LENGTH-EXPERIMENT1 (2026-08-30)
+
+The source reconciliation and target-edge-length experiment is recorded in
+[LiaisonScape Initial Placement Source Reconciliation and Target Edge Length
+Experiment](liaisonscape-initial-placement-source-reconciliation-and-target-edge-length-experiment.md).
+The result is `SUPPORTED BY EQUATIONS`: live source confirms that
+Coordinate-less opening uses the solver's own degree-ranked seed, not the
+previously described fallback seed, and that always-attractive connected-node
+force explains continued compression. A target Edge length was not selected or
+implemented; redundant `seededPositions` cleanup remains separate. No runtime,
+constant, iteration, routing, label, or sample change was made.

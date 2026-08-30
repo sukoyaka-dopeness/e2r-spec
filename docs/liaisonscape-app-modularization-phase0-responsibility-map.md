@@ -366,3 +366,37 @@ untouched.
 
 Result: **MAPPED — LIAISONSCAPE APP RESPONSIBILITY AND STATE-WRITER BOUNDARIES**
 
+## Incremental execution policy
+
+LiaisonScape App.tsx modularization will proceed as an independent, bounded
+refactoring practice rather than as one long, continuous refactor project.
+When a feature, bug fix, or maintenance change genuinely touches a specific
+responsibility, a bounded extraction may be considered if its ownership
+boundary is clear and the extraction improves change risk, writer
+concentration, or maintainability. Characterization tests should be added
+before extraction when the behavior is not already sufficiently characterized.
+
+The default unit is one responsibility and one change reason. Line-count
+reduction is not a goal. Untouched areas must not be split preemptively as a
+side effect of work elsewhere.
+
+The current candidate ranking is guidance, not a fixed schedule: Coordinate
+workflow is the strongest first candidate, followed by Dataset workspace
+lifecycle, Workspace actions/shell, Dialog composition, and finally the
+high-risk Graph interaction area. The actual order may change when future
+source state, change reason, ownership, and risk evidence justify it.
+
+Touching Coordinate code does not automatically require extracting the
+Coordinate workflow. A small, low-risk change may remain local when combining
+it with extraction would increase risk. Conversely, repeated writer additions
+or corrections in the same responsibility are a strong signal that extraction
+should be reconsidered.
+
+Graph pointer and pointer-capture lifecycle, Dataset Replacement Safety, and
+manual route/label ownership are high-coupling areas. Nearby code changes are
+not, by themselves, sufficient justification for extracting them.
+
+For this policy checkpoint, Coordinate workflow extraction is **NOT STARTED**
+and App.tsx refactoring is **NOT STARTED**. LiaisonScape source and tests remain
+unchanged. No browser acceptance, push, deploy, or publish is authorized or
+performed.

@@ -3220,3 +3220,13 @@ previously described fallback seed, and that always-attractive connected-node
 force explains continued compression. A target Edge length was not selected or
 implemented; redundant `seededPositions` cleanup remains separate. No runtime,
 constant, iteration, routing, label, or sample change was made.
+### E2R-LIAISONSCAPE-TARGET-EDGE-LENGTH-CANDIDATE-AND-SHARED-SOLVER-BOUNDARY-EXPERIMENT1 (2026-08-30)
+
+The target-edge-length and shared-solver boundary experiment is recorded in
+[LiaisonScape Target Edge Length Candidate and Shared Solver Boundary
+Experiment](liaisonscape-target-edge-length-candidate-and-shared-solver-boundary-experiment.md).
+The result is `BLOCKED`: current source equations explain continued
+compression, but no non-arbitrary target Edge length is justified by existing
+semantic or geometric evidence. No spring, solver, iteration, routing, label,
+or sample change was made; the existing uncommitted sample candidate remains
+preserved.

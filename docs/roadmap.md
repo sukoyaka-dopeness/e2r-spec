@@ -2779,6 +2779,17 @@ reader/writer work is ready as a separate follow-up; this checkpoint does not
 authorize runtime implementation, application version changes, or node
 automatic placement.
 
+### LS-PRESENTATION-RELATION-DELETION-CLEANUP1 (2026-08-30)
+
+The previously remaining Presentation lifecycle cleanup item is closed. The
+existing LiaisonScape implementation removes only the Presentation record
+keyed by an explicitly deleted Relation ID, preserves siblings and unrelated
+orphan records, and applies the accepted empty-container canonicalization.
+Malformed or unsupported Presentation payloads remain fail-closed. This
+closure is recorded in
+`docs/liaisonscape-presentation-relation-deletion-cleanup-result.md`; it does
+not introduce global orphan repair or change Validator/schema semantics.
+
 ### PRE-RELEASE-VALIDATOR-AND-SEQUENCING-ROADMAP-SYNC1 (2026-08-29)
 
 The remaining pre-release path is now synchronized around a mandatory

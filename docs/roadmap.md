@@ -3182,3 +3182,12 @@ separation (P2) detect controlled synthetic cases, but Lighthouse ranking does
 not explain production routing or the manual congestion concern. No runtime,
 solver, routing, label, iteration, or sample change was made. The next bounded
 checkpoint is the label-pressure proxy experiment.
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LABEL-PRESSURE-PROXY-EXPERIMENT1 (2026-08-30)
+
+The Label-pressure proxy experiment is recorded in [LiaisonScape Initial
+Placement Label-Pressure Proxy Experiment](liaisonscape-initial-placement-label-pressure-proxy-experiment.md).
+The result is `RESEARCH REQUIRED`: actual label pressure depends on production
+route samples, candidate anchors, occupied paths, and localized text footprint,
+so a straight-chord proxy does not explain Lighthouse reliably. No runtime,
+solver, routing, label, iteration, or sample change was made. A combined proxy
+is not justified by the current evidence.

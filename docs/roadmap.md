@@ -2958,6 +2958,20 @@ causality and an order-only fix are unproven.
 
 No runtime, sample, test, schema, or release operation was changed.
 
+### E2R-LIAISONSCAPE-PARALLEL-PHYSICAL-SIDE-DECOMPOSITION-AUDIT1 (2026-08-30)
+
+The parallel physical-side decomposition is recorded in [LiaisonScape Parallel Physical-Side Decomposition Audit](liaisonscape-parallel-physical-side-decomposition-audit.md).
+The result is `INSUFFICIENT EVIDENCE - PARALLEL PHYSICAL-SIDE CAUSE NOT
+ISOLATED`. The Lighthouse sample has only one ordinary parallel group,
+`clara-thomas-mentors` / `clara-thomas-supervises`, both `clara -> thomas`;
+there is no reverse-direction ordinary parallel pair to establish a
+normalization defect.
+
+Existing deterministic slot, reversal, obstacle, occupied-path, and manual
+offset tests remain valid. A frozen stage-by-stage comparison with synthetic
+same-direction and reverse-direction groups is required before any parallel
+runtime change. No runtime, sample, schema, or release operation was changed.
+
 ### E2R-LIAISONSCAPE-ROUTING-DECOMPOSITION-SELF-LOOP-AUDIT1 (2026-08-30)
 
 The routing decomposition and self-loop audit is recorded in [LiaisonScape Routing Decomposition / Self-Loop Audit](liaisonscape-routing-decomposition-self-loop-audit.md).

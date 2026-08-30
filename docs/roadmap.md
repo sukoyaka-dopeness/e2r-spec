@@ -3265,3 +3265,21 @@ No threshold-free sufficient production guard was established. All temporary
 runtime instrumentation was removed; the unaccepted Lighthouse candidate and
 protected session state remain untouched. No runtime, seed, force, iteration,
 routing, label, release, or publication change was made.
+
+### E2R-LIAISONSCAPE-PRESENTATION-AWARE-LOCAL-EXPANSION-COUNTERFACTUAL1 (2026-08-30)
+
+The bounded post-presentation experiment is recorded in [LiaisonScape
+Presentation-Aware Local Expansion Counterfactual](liaisonscape-presentation-aware-local-expansion-counterfactual.md).
+The result is `PARTIAL`: one `clara`-centered 1-hop pass reduced actual
+Lighthouse Relation-label/Node conflicts but did not reduce any ordinary
+crossing, and one label conflict migrated. Cycle, chain, star, and unequal
+two-hub controls remained safe no-ops; cross-linked branches exposed a new
+label conflict at the Lighthouse diagnostic point, and dense 1-hop locality
+degenerated to nine of ten Nodes. The extra fresh presentation pass roughly
+doubled current initial-presentation cost.
+
+No Production displacement or applicability rule was selected. No runtime,
+solver, routing, label, iteration, schema, sample, release, or publication
+change was made. Single-root guard research remains deferred. The next bounded
+research candidate is local-expansion routing-signal decomposition with a
+genuinely multi-region pressure fixture, not Production implementation.

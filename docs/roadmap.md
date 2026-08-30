@@ -3055,6 +3055,18 @@ global rerouting change was justified.
 No runtime change was made. Shared-endpoint fan-out, local congestion,
 self-loop interactions, and future route-order evidence remain separate.
 
+### E2R-LIAISONSCAPE-SHARED-ENDPOINT-FANOUT-CONGESTION-FIX1 (2026-08-30)
+
+The shared-endpoint fan-out audit is recorded in [LiaisonScape Shared-Endpoint Fan-Out Audit](liaisonscape-shared-endpoint-fanout-audit.md).
+The result is `NOT REPRODUCED`: the current Lighthouse geometry has no
+material post-boundary bundling. The largest incident group, `clara`, has six
+ordinary Relations, and all routes diverge from the shared Node at the first
+post-boundary sample.
+
+No fan-out angle threshold, separation weight, Node-port design, group
+optimizer, or runtime routing change was justified. Parallel, label, crossing,
+and self-loop concerns remain separately bounded.
+
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).

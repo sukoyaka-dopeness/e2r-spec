@@ -2890,6 +2890,20 @@ authorized—public sync, tag, GitHub Release, deployment, and public acceptance
 Neither audit authorizes Core, History, schema, or runtime implementation;
 Research shelf inventory and the Hub concept page remain separate workstreams.
 
+### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-OBJECTIVE-AUDIT1 (2026-08-30)
+
+The Initial Node Placement Objective Audit is recorded in [LiaisonScape Initial Node Placement Objective Audit](liaisonscape-initial-node-placement-objective-audit.md).
+The result is `SAMPLE REFRESH REQUIRED - INITIAL PLACEMENT ALGORITHM
+ACCEPTABLE`: both Lighthouse Restoration samples contain stored coordinates
+for all 10 Entities, so Dataset open does not exercise the missing-coordinate
+placement path. The observation therefore does not establish that the
+placement algorithm is the primary cause.
+
+The next bounded activity is a stored-versus-derived diagnostic comparison and
+sample-coordinate refresh decision. No runtime, schema, Coordinate, Core,
+Extension, sample, or release operation was authorized by this audit. The
+NarrativeLine Display-Order audit remains next in the pre-release sequence.
+
 ### E2R-LIAISONSCAPE-LICENSE-REMEDIATION1 (2026-08-30)
 
 The LiaisonScape repository-owned MIT license blocker is now remediated. The

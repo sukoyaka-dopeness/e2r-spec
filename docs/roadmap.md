@@ -2946,3 +2946,13 @@ quality evidence is incomplete. A future bounded comparison must separate
 straight conceptual edges, current routed edges, parallel offsets, and manual
 or stored Presentation. No runtime, sample, schema, or release operation was
 changed.
+
+### E2R-LIAISONSCAPE-ROUTING-DECOMPOSITION-SELF-LOOP-AUDIT1 (2026-08-30)
+
+The routing decomposition and self-loop audit is recorded in [LiaisonScape Routing Decomposition / Self-Loop Audit](liaisonscape-routing-decomposition-self-loop-audit.md).
+The result is `SELF-LOOP ROUTING FIX NOT YET JUSTIFIED - INSUFFICIENT CAUSAL
+EVIDENCE`. The two Lighthouse `beacon` self-Relations and the fixed-before-
+ordinary `occupiedPaths` order create a plausible asymmetry, but do not prove
+the observed defect. A same-geometry counterfactual comparison is required.
+
+No runtime, sample, test, schema, or release operation was changed.

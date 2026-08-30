@@ -3200,3 +3200,12 @@ supporting a future central-hub seed experiment, but label-aware sectoring and
 the post-settle effect were not established. No runtime, iteration, routing,
 label, sample, or release change was made; the existing uncommitted sample
 candidate remains preserved.
+### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-NODE-REPULSION-SENSITIVITY-EXPERIMENT1 (2026-08-30)
+
+The Node-repulsion sensitivity experiment is recorded in [LiaisonScape
+Initial Placement Node-Repulsion Sensitivity Experiment](liaisonscape-initial-placement-node-repulsion-sensitivity-experiment.md).
+The result is `NOT SUPPORTED`: the current three-iteration candidate's minimum
+Node distance is already beyond the 96-unit repulsion activation distance, and
+repulsion tuning does not explain the presentation concern. No production
+constant, iteration count, routing, label, or sample change was made. The
+central-hub seed remains the stronger separate direction.

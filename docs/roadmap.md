@@ -3011,6 +3011,18 @@ No runtime change was justified or made. New clearance thresholds, score
 weights, candidate redesign, label recovery, and crossing minimization remain
 separate follow-ups.
 
+### E2R-LIAISONSCAPE-RELATION-LABEL-NORMAL-DISTANCE-RECOVERY-FIX1 (2026-08-30)
+
+The Relation-label normal-distance audit is recorded in [LiaisonScape Relation-Label Normal-Distance Recovery Audit](liaisonscape-relation-label-normal-distance-recovery-audit.md).
+The result is `NOT JUSTIFIED`: the existing label helper already returns an
+automatic label toward its owner Edge when pressure disappears, while keeping
+the along-edge anchor stable and retaining necessary displacement when
+collisions remain.
+
+No runtime change was made. New normal-distance thresholds or score weights,
+along-edge recovery, global label layout, foreign-edge routing, and manual
+label semantics remain separate follow-ups.
+
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).

@@ -3253,3 +3253,15 @@ history; this result supplies its missing reconciliation. All temporary runtime
 instrumentation was removed, the existing sample candidate remains untouched
 and uncommitted, and no runtime, force, iteration, routing, label, release, or
 publication change was made.
+
+### E2R-LIAISONSCAPE-BRANCH-PRESERVING-SEED-TOPOLOGY-GUARD-EXPERIMENT1 (2026-08-30)
+
+The topology-guard experiment is recorded in [LiaisonScape Branch-Preserving
+Seed Topology Guard Experiment](liaisonscape-branch-preserving-seed-topology-guard-experiment.md).
+The result is `PARTIAL`: categorical true branching plus a unique maximum root
+selects C for Lighthouse and protects chain, cycle, dense, and equal-two-hub
+controls, but it accepts unsafe unequal-two-hub and cross-linked-branch cases.
+No threshold-free sufficient production guard was established. All temporary
+runtime instrumentation was removed; the unaccepted Lighthouse candidate and
+protected session state remain untouched. No runtime, seed, force, iteration,
+routing, label, release, or publication change was made.

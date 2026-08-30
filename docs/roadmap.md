@@ -3067,6 +3067,17 @@ No fan-out angle threshold, separation weight, Node-port design, group
 optimizer, or runtime routing change was justified. Parallel, label, crossing,
 and self-loop concerns remain separately bounded.
 
+### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-GRIDNESS-COUNTERFACTUAL1 (2026-08-30)
+
+The gridness counterfactual is recorded in [LiaisonScape Initial Node Placement Gridness Counterfactual](liaisonscape-initial-node-placement-gridness-counterfactual.md).
+The result is `DIRECTION SUPPORTED`: the coordinate-less fallback exhibits
+strong repeated-row gridness, while the existing Auto Layout counterfactual
+removes exact X/Y alignments. The stored Lighthouse geometry remains a
+separate authored baseline with unknown provenance.
+
+No production initial-placement or sample change was made. A bounded
+non-grid initial-placement experiment is the next separate checkpoint.
+
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).

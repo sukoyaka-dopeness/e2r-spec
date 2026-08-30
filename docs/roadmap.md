@@ -2958,6 +2958,19 @@ causality and an order-only fix are unproven.
 
 No runtime, sample, test, schema, or release operation was changed.
 
+### E2R-LIAISONSCAPE-REVERSE-ENDPOINT-PARALLEL-PHYSICAL-SIDE-FIX1 (2026-08-30)
+
+The reverse-endpoint parallel physical-side fix is recorded in [LiaisonScape Reverse-Endpoint Parallel Physical-Side Fix](liaisonscape-reverse-endpoint-parallel-physical-side-fix.md).
+Automatic non-self parallel base offsets now use a canonical unordered
+endpoint frame, so A->B and B->A retain opposite physical sides while their
+semantic directions and arrows remain unchanged. The correction applies only
+to parallel groups; single ordinary Relations, manual offsets, self-loops,
+and obstacle solver behavior remain bounded as before.
+
+LiaisonScape commit `96da8dd` passed 278/278 tests, lint, and build. The
+obstacle-induced collapse remains a separate follow-up. No sample, schema, or
+release operation was changed.
+
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).
@@ -2970,6 +2983,19 @@ An obstacle can also switch one side and collapse a two-Relation pair. The
 smallest next implementation candidate is reverse-endpoint physical-side
 normalization, with obstacle-side preservation kept separate. No runtime,
 sample, test, or release operation was changed.
+
+### E2R-LIAISONSCAPE-REVERSE-ENDPOINT-PARALLEL-PHYSICAL-SIDE-FIX1 (2026-08-30)
+
+The reverse-endpoint parallel physical-side fix is recorded in [LiaisonScape Reverse-Endpoint Parallel Physical-Side Fix](liaisonscape-reverse-endpoint-parallel-physical-side-fix.md).
+Automatic non-self parallel base offsets now use a canonical unordered
+endpoint frame, so A->B and B->A retain opposite physical sides while their
+semantic directions and arrows remain unchanged. The correction applies only
+to parallel groups; single ordinary Relations, manual offsets, self-loops,
+and obstacle solver behavior remain bounded as before.
+
+LiaisonScape commit `96da8dd` passed 278/278 tests, lint, and build. The
+obstacle-induced collapse remains a separate follow-up. No sample, schema, or
+release operation was changed.
 
 ### E2R-LIAISONSCAPE-PARALLEL-PHYSICAL-SIDE-DECOMPOSITION-AUDIT1 (2026-08-30)
 

@@ -3104,6 +3104,16 @@ LiaisonScape passed 280/280 tests, lint, and build. No explicit Auto Layout
 workflow, Dataset mutation, dirty/adoption state, sample, schema, or release
 operation changed.
 
+### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-CONGESTION-SETTLING-DEPTH-EXPERIMENT1 (2026-08-30)
+
+The settling-depth experiment is recorded in [LiaisonScape Initial Node
+Placement Congestion / Settling Depth Experiment](liaisonscape-initial-node-placement-congestion-settling-depth-experiment.md).
+The result is `RESEARCH REQUIRED`: 6/12-iteration counterfactuals compact the
+Node geometry beyond the accepted 3-iteration candidate, but the existing
+solver is not Edge-crossing-, route-clearance-, or label-aware. No production
+iteration change or sample refresh was accepted; the uncommitted 3-iteration
+candidate remains available for manual review.
+
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).

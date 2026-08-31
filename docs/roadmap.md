@@ -3397,3 +3397,20 @@ No runtime, routing, drag, label, candidate-set, sample, schema, release, or
 publication change was made. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-RELEASE-TRANSITION-SEMANTICS-EXPERIMENT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FINITE-REVALIDATION-EXPERIMENT1 (2026-08-31)
+
+The bounded two-stage experiment is recorded in [LiaisonScape Automatic-Route
+Final-Label Finite Revalidation Experiment](liaisonscape-automatic-route-final-label-finite-revalidation-experiment.md).
+Its result is `MIXED — FINAL-LABEL REVALIDATION IS INFORMATIVE BUT NOT YET A
+STABLE SELECTION SEMANTIC`: using Pass-1 final Node-label rectangles for one
+otherwise-current arbitration pass changes six English and two Japanese
+ordinary routes. A hypothetical next feed is stable in English but changes four
+Japanese routes, so the method cannot yet be a locale-independent Production
+selection boundary.
+
+No runtime, routing, drag/release behavior, label placement, candidate set,
+sample, schema, release, or publication change was made. The selected next
+bounded checkpoint is
+`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-STABILITY-EXPERIMENT1`;
+it is selected only and is not started by this record.

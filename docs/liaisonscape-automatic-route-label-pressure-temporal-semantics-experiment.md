@@ -103,4 +103,3 @@ Production Runtime, routing, drag behavior, label placement, candidate set,
 samples, schema, and `seededPositions` changed: **NO**. The temporary replay
 harness was removed. No LiaisonScape commit, push, tag, release, deployment,
 or publication occurred.
-

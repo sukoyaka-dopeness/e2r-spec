@@ -51,13 +51,18 @@ boundary:
 | Node-label route hard clearance | `4` |
 | Node-label route halo | width `16`, weight `8` |
 | Route-label halo | width `20`, coefficient `20`; hard pressure `100000` in route arbitration |
+| Visible route stroke | ordinary edge `2`; selected edge `2.75`; visual edge halo `6`; hit area `24` |
+| Relation-label paint stroke | background paint-order stroke `4px` |
 | Label recovery clearance | `60` in the existing Node-label recovery helper |
 | Self-loop orientation step | `PI / 18` |
+| Graph viewport | SVG `viewBox` `800 x 500`; fit padding `96`; CSS graph is responsive and uses SVG meet mapping |
 
 These are implementation landmarks, not a normative minimum distance. No
 existing source constant states that automatic routes must remain a chosen
 distance from a Node-label rectangle. In particular, `6`, `8`, `10`, `12`,
 `labelHeight / 2`, and the existing halo widths are not adopted as Cmin.
+The surrounding CSS has ordinary UI gaps and paddings, but no shared graph
+spacing token that can justify a Node-label clearance boundary.
 
 ## Temporary Cmin semantics
 
@@ -135,6 +140,14 @@ The EN full scan produced 89 distinct graph breakpoints, also spanning roughly
 did not improve the already-straight authority route. JA and EN therefore do
 not provide a shared cross-locale numeric Cmin or a common boundary with the
 same presentation effect.
+
+The available EN presentation diagnostics were also unchanged in the main
+crossing inventory: current and Cmin `0` were both `6 / 6` straight/curved,
+with H2 count `7` and minimum foreign-Node clearance `18.615`. Ordinary route
+length fell from `1459.126` to `1435.190`; PNR/FNR changed from `0 / 2` to
+`0 / 0`, while the fresh replay still reported Node-label/route-label
+conflicts. These are diagnostic replay values and do not establish a
+cross-locale acceptance threshold.
 
 ## Interpretation and decision
 

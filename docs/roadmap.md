@@ -3546,3 +3546,20 @@ No runtime, routing, scoring, order, label placement, candidate-set, sample,
 schema, release, or publication change was made. The selected next bounded
 checkpoint is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-APP-PIPELINE-TRACE-HARNESS1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-NEAR-CENTER-LABEL-PRESSURE-CONTINUITY-EXPERIMENT1 (2026-09-01)
+
+The canonical App-pipeline label-pressure experiment is recorded in
+[LiaisonScape Automatic-Route Near-Center Label-Pressure Continuity Experiment](liaisonscape-automatic-route-near-center-label-pressure-continuity-experiment.md).
+Its result is `MIXED`: label pressure is causal, but its boundary is
+Relation-specific. Mentors has a multi-owner hard-plus-halo boundary, while
+the Authority/Lighthouse straight candidate loses to foreign-label halo
+pressure alone. Removing only halo pressure recovers straight offset `0` for
+Authority/Lighthouse but leaves mentors at `-52`; occupied-path and Node-safety
+negative controls remain intact.
+
+No runtime, routing, score, candidate-set, label placement, sample, parallel,
+self-loop, schema, release, or publication change was made. The selected next
+bounded checkpoint is
+`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-HALO-CONTINUITY-SEMANTICS-EXPERIMENT1`;
+it is selected only and is not started by this record.

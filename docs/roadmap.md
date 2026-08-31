@@ -3336,6 +3336,19 @@ or publication change was made. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-ORDINARY-ROUTE-NODE-LABEL-CROSSING-PRIORITY-SEMANTICS-EXPERIMENT1`;
 it is selected only and is not started by this record.
 
+### E2R-LIAISONSCAPE-LIGHTHOUSE-LOCAL-CURVATURE-BLOCKER-INVENTORY1 (2026-09-01)
+
+The Japanese Lighthouse inventory is recorded in [LiaisonScape Lighthouse Local
+Curvature Blocker Inventory](liaisonscape-lighthouse-local-curvature-blocker-inventory.md).
+It is `MIXED`: Clara/Thomas and Sofia/Archive are multiple-label cases, while
+Authority/Lighthouse is a single foreign-label case; no single endpoint-label
+qualifying case was found.
+
+No runtime, routing, scoring, label placement, candidate-set, sample, parallel,
+self-loop, schema, release, or publication change was made. The selected next
+checkpoint is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-MULTI-LABEL-CORRIDOR-ISOLATION1`;
+it is selected only and is not started by this record.
+
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-ENDPOINT-LABEL-CORRIDOR-RELAXATION-EXPERIMENT1 (2026-09-01)
 
 The controlled experiment is recorded in [LiaisonScape Endpoint Label Corridor

@@ -3717,3 +3717,27 @@ change was made. Modes D (rendered ink) and E (true glyph outline) were not
 measured. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-PARALLEL-EDGE-BUNDLE-SPACING-AUDIT1`; it is selected only
 and is not started by this record.
+
+### E2R-LIAISONSCAPE-PARALLEL-EDGE-BUNDLE-SPACING-AUDIT1 (2026-09-01)
+
+The bounded parallel ordinary-edge audit is recorded in [LiaisonScape
+Parallel Edge Bundle Spacing Audit](liaisonscape-parallel-edge-bundle-spacing-audit.md).
+Its result is `CASE 3 / EXACT RESULT 3 / DECISION C`: label pressure shifts an
+otherwise balanced `clara-thomas-mentors` / `clara-thomas-supervises` bundle.
+Without label pressure, JA and EN both return to the nominal `+40/-40`
+opposite-sided bundle. The sibling-only occupied ablation changes only the
+later edge's outward offset and collapses the bundle when removed; it is not a
+justification for changing occupied-path semantics.
+
+The current replay also shows a CASE 6 same-side symptom, but the label-only
+ablation restores the accepted physical-side arrangement. This does not
+demonstrate a reverse-endpoint or slot-normalization regression, and it does
+not justify Production changes to slot spacing, physical-side policy, score
+weights, or curvature. H2 identities remain unchanged; the lower diagnostic
+route totals are not an acceptance improvement, and JA incurs one additional
+provisional label conflict under the label ablation.
+
+No LiaisonScape runtime, test, sample, preview, coordinate, initial-placement,
+Final-label feedback, self-loop, connector, schema, release, or publication
+change was made. The selected next bounded checkpoint is exactly
+`E2R-LIAISONSCAPE-PARALLEL-EDGE-LABEL-PRESSURE-ISOLATION-EXPERIMENT1`.

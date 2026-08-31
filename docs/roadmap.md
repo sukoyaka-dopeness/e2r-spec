@@ -3741,3 +3741,22 @@ No LiaisonScape runtime, test, sample, preview, coordinate, initial-placement,
 Final-label feedback, self-loop, connector, schema, release, or publication
 change was made. The selected next bounded checkpoint is exactly
 `E2R-LIAISONSCAPE-PARALLEL-EDGE-LABEL-PRESSURE-ISOLATION-EXPERIMENT1`.
+
+### E2R-LIAISONSCAPE-PARALLEL-EDGE-LABEL-PRESSURE-ISOLATION-EXPERIMENT1 (2026-09-01)
+
+The bounded label-pressure experiment is recorded in [LiaisonScape Parallel
+Edge Label-pressure Isolation Experiment](liaisonscape-parallel-edge-label-pressure-isolation-experiment.md).
+Its result is `CASE 3 / EXACT RESULT 3 / DECISION C`: hard label collision
+starts the first parallel side switch, while soft halo and sibling
+occupied-path pressure amplify the final one-sided bundle. Current JA/EN
+replays are `mentors=-52/-64` and `supervises=-76/-88`; hard-only does not
+restore opposite sides, halo-only restores them only with hard-unsafe geometry,
+and no-label returns to `+40/-40` only as an unsafe diagnostic.
+
+JA has a Clara-plus-Archive hard blocker; EN is materially controlled by the
+Clara endpoint label. The hard-only full-graph comparison changes unrelated
+routes and increases JA H2, so it is not a Production candidate. No hard
+collision relaxation, halo change, label-geometry change, slot change,
+physical-side change, occupied-path change, runtime, sample, preview, or
+release change was made. The selected next bounded checkpoint is exactly
+`E2R-LIAISONSCAPE-PARALLEL-EDGE-HARD-SIDE-SWITCH-CASCADE-AUDIT1`.

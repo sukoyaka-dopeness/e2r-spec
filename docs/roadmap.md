@@ -3299,3 +3299,22 @@ No Production route, order, penalty, Node movement, label, sample, schema,
 release, or publication change was made. The selected next bounded checkpoint
 is `E2R-LIAISONSCAPE-ROUTING-CROSSING-MIXED-CAUSE-PRIORITIZATION1`; it is not
 started by this record.
+
+### E2R-LIAISONSCAPE-ROUTING-CROSSING-MIXED-CAUSE-PRIORITIZATION1 (2026-08-31)
+
+The bounded candidate-space experiment is recorded in [LiaisonScape Routing-
+Crossing Mixed-Cause Prioritization](liaisonscape-routing-crossing-mixed-cause-prioritization.md).
+Its result is `DIRECTION SUPPORTED`: current candidates can safely resolve five
+of seven English Lighthouse true crossings through two one-Relation
+replacements, and both benefits survive fresh routing and labels. No straight
+or lower-curvature candidate is safe. A bounded beacon trajectory also exposes
+a large route-sweep discontinuity when automatic offset selection flips side,
+but straight-following introduces foreign-Node penetration.
+
+This selects P1, router objective first. Candidate existence does not establish
+a Production selector because true crossings are not scored and sequential
+routing hides future routes. No runtime, route score, candidate set, Node
+placement, label, sample, schema, release, or publication change was made. The
+next bounded candidate is
+`E2R-LIAISONSCAPE-ORDINARY-ROUTE-TRUE-CROSSING-OBJECTIVE-EXPERIMENT1`; it is not
+started by this record.

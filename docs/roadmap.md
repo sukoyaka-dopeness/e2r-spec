@@ -3428,3 +3428,17 @@ locale-dependent and its precise label/occupied-path cause, independent safety,
 and presentation effect are unverified. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-CASCADE-CAUSE-ISOLATION1`; it is
 selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-CASCADE-CAUSE-ISOLATION1 (2026-08-31)
+
+The bounded cause isolation is recorded in [LiaisonScape Automatic-Route
+Final-Label Cascade Cause Isolation](liaisonscape-automatic-route-final-label-cascade-cause-isolation.md).
+Its result is `DIRECTION SUPPORTED`: reverting only the Pass-2 Clara final
+Node-label rectangle to its Pass-1 geometry removes all four Japanese Pass-3
+Clara-centred route changes. The first-stage source of Clara's movement and the
+hard-versus-halo score signal remain unisolated.
+
+No runtime, routing, order, label placement, candidate-set, sample, schema,
+release, or publication change was made. The selected next bounded checkpoint
+is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-HARD-BOUNDARY-SEMANTICS-EXPERIMENT1`;
+it is selected only and is not started by this record.

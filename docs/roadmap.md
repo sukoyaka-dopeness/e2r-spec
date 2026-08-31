@@ -3414,3 +3414,17 @@ sample, schema, release, or publication change was made. The selected next
 bounded checkpoint is
 `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-STABILITY-EXPERIMENT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-STABILITY-EXPERIMENT1 (2026-08-31)
+
+The bounded feedback probe is recorded in [LiaisonScape Automatic-Route
+Final-Label Feedback Stability Experiment](liaisonscape-automatic-route-final-label-feedback-stability-experiment.md).
+Its result is `PARTIAL — JA REQUIRES ADDITIONAL FINAL-LABEL FEEDBACK PASSES
+BEFORE STABILIZING`: EN is fixed after Pass 2; JA changes two routes at Pass 2,
+four further routes at Pass 3, and is fixed at Pass 4. No cycle was observed.
+
+This does not authorize iterative Production routing: the cascade remains
+locale-dependent and its precise label/occupied-path cause, independent safety,
+and presentation effect are unverified. The selected next bounded checkpoint is
+`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-CASCADE-CAUSE-ISOLATION1`; it is
+selected only and is not started by this record.

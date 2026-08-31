@@ -3612,3 +3612,57 @@ release, or publication change was made. The selected next bounded checkpoint
 is
 `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-HARD-CORRIDOR-RELIEF-AUDIT1`;
 it is selected only and is not started by this record.
+
+### LiaisonScape Node-label collision geometry follow-ups (2026-09-01)
+
+The hard-label corridor audit established that current automatic-route hard
+collision uses the full axis-aligned Node-label background rectangle and the
+41 sampled route points. The rectangle is a conservative collision obstacle;
+it is not the rendered glyph ink itself. The following two future checkpoints
+are registered to investigate that distinction without changing the current
+runtime contract.
+
+#### E2R-LIAISONSCAPE-NODE-LABEL-INK-GEOMETRY-COLLISION-AUDIT1
+
+Audit whether Node-label collision geometry should be tighter than the full
+background rectangle. Compare, in a bounded read-only experiment:
+
+- the current full background rectangle;
+- deterministic per-line tight text bounds;
+- rendered text/ink bounds where browser measurement is reliable;
+- true glyph-outline geometry only if its cross-browser cost is acceptable;
+- a simpler deterministic text-bound approximation.
+
+The audit must measure whether empty corners, whitespace, and multiline label
+space are unnecessarily forcing Edge curvature, especially in the
+Clara/Thomas hard corridor. It must preserve deterministic and cross-browser
+routing behavior and must not assume that glyph outlines are automatically the
+correct answer. Paint/background geometry and collision geometry remain
+separate concepts; registering this audit does not authorize ink-based
+Production collision semantics.
+
+#### E2R-LIAISONSCAPE-NODE-LABEL-CONNECTOR-VISIBILITY-AUDIT1
+
+Audit Node-label connector visibility, attachment, and occlusion separately
+from collision geometry. The current background rectangle may visually cover
+part of a connector even when the connector is logically attached correctly.
+The audit should measure the visible connector endpoint, background occlusion,
+ownership legibility, text/ink clearance, and multiline JA/EN behavior. It must
+determine whether connector geometry should use a separate contract or remain
+coupled to the background rectangle; it must not automatically couple
+connector changes to route-collision changes.
+
+These are presentation follow-ups only. They do not authorize final-label
+feedback adoption, initial-placement changes, parallel-edge bundle changes,
+self-loop changes, temporal drag changes, hard-collision relaxation, halo
+retuning, candidate-set changes, or a multi-label solver.
+
+The execution order remains:
+
+1. `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-HARD-CORRIDOR-RELIEF-AUDIT1`
+2. `E2R-LIAISONSCAPE-NODE-LABEL-INK-GEOMETRY-COLLISION-AUDIT1`
+3. `E2R-LIAISONSCAPE-NODE-LABEL-CONNECTOR-VISIBILITY-AUDIT1`
+
+The first checkpoint remains the immediate next checkpoint. The two new
+checkpoints are future registrations only, and no production or preview change
+was made by this roadmap update.

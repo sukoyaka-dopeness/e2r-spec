@@ -3336,6 +3336,19 @@ or publication change was made. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-ORDINARY-ROUTE-NODE-LABEL-CROSSING-PRIORITY-SEMANTICS-EXPERIMENT1`;
 it is selected only and is not started by this record.
 
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-MULTI-LABEL-CORRIDOR-ISOLATION1 (2026-09-01)
+
+The canonical App-pipeline isolation is recorded in [LiaisonScape Multi-Label
+Corridor Isolation](liaisonscape-automatic-route-multi-label-corridor-isolation.md).
+It is `DIRECTION SUPPORTED`: both Clara/Thomas Relations require all three
+observed owners under live omission, while Sofia/Archive has alternative
+single-owner sets and Authority/Lighthouse is a foreign-label control.
+
+No runtime, routing, score, label, candidate-set, sample, parallel, self-loop,
+schema, release, or publication change was made. The selected next bounded
+checkpoint is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-THREE-LABEL-CORRIDOR-FEASIBILITY-AUDIT1`;
+it is selected only and is not started by this record.
+
 ### E2R-LIAISONSCAPE-LIGHTHOUSE-LOCAL-CURVATURE-BLOCKER-INVENTORY1 (2026-09-01)
 
 The Japanese Lighthouse inventory is recorded in [LiaisonScape Lighthouse Local

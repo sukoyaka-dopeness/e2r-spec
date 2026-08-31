@@ -3547,6 +3547,22 @@ schema, release, or publication change was made. The selected next bounded
 checkpoint is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-APP-PIPELINE-TRACE-HARNESS1`;
 it is selected only and is not started by this record.
 
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-HALO-CONTINUITY-SEMANTICS-EXPERIMENT1 (2026-09-01)
+
+The bounded halo-semantics experiment is recorded in [LiaisonScape
+Automatic-Route Label-Halo Continuity Semantics Experiment](liaisonscape-automatic-route-label-halo-continuity-semantics-experiment.md).
+Its result is `PARTIAL`: a hard-preserving magnitude-first diagnostic recovers
+the `authority-lighthouse` straight candidate, but its minimum label distance
+falls from `20.087` to `5.809`, and the direction does not recover the main
+Clara/Thomas hard-label frontier. Halo-first reproduces the current JA
+selection; occupied-path and Node-safety controls remain intact.
+
+No runtime, routing, score, candidate-set, label placement, sample, parallel,
+self-loop, schema, release, or publication change was made. The selected next
+bounded checkpoint is
+`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-HALO-MINIMUM-CLEARANCE-BOUNDARY-AUDIT1`;
+it is selected only and is not started by this record.
+
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-NEAR-CENTER-LABEL-PRESSURE-CONTINUITY-EXPERIMENT1 (2026-09-01)
 
 The canonical App-pipeline label-pressure experiment is recorded in

@@ -3318,3 +3318,20 @@ placement, label, sample, schema, release, or publication change was made. The
 next bounded candidate is
 `E2R-LIAISONSCAPE-ORDINARY-ROUTE-TRUE-CROSSING-OBJECTIVE-EXPERIMENT1`; it is not
 started by this record.
+
+### E2R-LIAISONSCAPE-ORDINARY-ROUTE-TRUE-CROSSING-OBJECTIVE-EXPERIMENT1 (2026-08-31)
+
+The bounded objective experiment is recorded in [LiaisonScape Ordinary-Route
+True-Crossing Objective Experiment](liaisonscape-ordinary-route-true-crossing-objective-experiment.md).
+Its result is `TRADE-OFF`: threshold-free X1 preserves hard Node and
+provisional-label safety but cannot select the previously proven Lighthouse
+crossing reductions because those candidates fail its provisional-label gate.
+Sequential and full-context Lighthouse results are identical, so future-route
+visibility is not the target-fixture blocker. Dense control reduces crossings
+but causes migration, more than 20% route churn, clearance regression, and
+high diagnostic cost.
+
+No runtime, routing, placement, label, candidate-set, sample, schema, release,
+or publication change was made. The selected next bounded checkpoint is
+`E2R-LIAISONSCAPE-ORDINARY-ROUTE-NODE-LABEL-CROSSING-PRIORITY-SEMANTICS-EXPERIMENT1`;
+it is selected only and is not started by this record.

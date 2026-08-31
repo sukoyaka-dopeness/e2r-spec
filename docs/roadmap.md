@@ -3666,3 +3666,22 @@ The execution order remains:
 The first checkpoint remains the immediate next checkpoint. The two new
 checkpoints are future registrations only, and no production or preview change
 was made by this roadmap update.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-HARD-CORRIDOR-RELIEF-AUDIT1 (2026-09-01)
+
+The read-only Current-to-feedback audit is recorded in [LiaisonScape
+Automatic-Route Final-Label Feedback Hard-Corridor Relief Audit](liaisonscape-automatic-route-final-label-feedback-hard-corridor-relief-audit.md).
+Its result is `CASE10 / MIXED`: JA moves only the Clara final label and keeps
+the `mentors` winner at `-52`, while EN changes `mentors` from `-64` to `+40`
+and makes that route clear against feedback rectangles but hard-unsafe against
+the original provisional Clara rectangle. Feedback therefore provides local
+corridor relief without establishing a locale-independent safe selection
+semantic; route and crossing regressions remain.
+
+No runtime, routing, score, candidate-set, label placement, sample, preview,
+parallel, self-loop, initial-placement, schema, release, or publication change
+was made. The existing preview text `Feedback: fixed at pass 2` was confirmed
+to describe a single feedback replay, not a fixed-point solver. The selected
+next bounded checkpoint is
+`E2R-LIAISONSCAPE-NODE-LABEL-INK-GEOMETRY-COLLISION-AUDIT1`; it is selected
+only and is not started by this record.

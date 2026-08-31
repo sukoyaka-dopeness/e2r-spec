@@ -3336,6 +3336,20 @@ or publication change was made. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-ORDINARY-ROUTE-NODE-LABEL-CROSSING-PRIORITY-SEMANTICS-EXPERIMENT1`;
 it is selected only and is not started by this record.
 
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-THREE-LABEL-CORRIDOR-FEASIBILITY-AUDIT1 (2026-09-01)
+
+The feasibility audit is recorded in [LiaisonScape Three-Label Corridor
+Feasibility Audit](liaisonscape-automatic-route-three-label-corridor-feasibility-audit.md).
+It is `BLOCKED / F6`: pressure omission is established, but the current label
+placement API does not expose the full candidate inventory and exact safety
+semantics needed for a joint feasibility oracle. No second solver or copied
+safety logic was introduced.
+
+No runtime, routing, score, label, candidate-set, sample, parallel, self-loop,
+schema, release, or publication change was made. The selected next checkpoint
+is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-NEAR-CENTER-WINNER-DISCONTINUITY-EXPERIMENT1`;
+it is selected only and is not started by this record.
+
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-MULTI-LABEL-CORRIDOR-ISOLATION1 (2026-09-01)
 
 The canonical App-pipeline isolation is recorded in [LiaisonScape Multi-Label

@@ -3383,3 +3383,17 @@ No runtime, routing, label, candidate-set, sample, schema, release, or
 publication change was made. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-PRESSURE-TEMPORAL-SEMANTICS-EXPERIMENT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-PRESSURE-TEMPORAL-SEMANTICS-EXPERIMENT1 (2026-08-31)
+
+The active-drag and release comparison is recorded in [LiaisonScape Automatic-
+Route Label-Pressure Temporal Semantics Experiment](liaisonscape-automatic-route-label-pressure-temporal-semantics-experiment.md).
+Its result is `TRADE-OFF — DRAG-TIME LABEL DEFER REMOVES THE MID-DRAG FLIP BUT
+MOVES THE SAME DISCONTINUITY TO RELEASE`: snapshot, defer, and offset hold make
+the beacon drag smooth, but each restores the current 216-unit discontinuity
+when released, and defer has the largest temporary label-conflict inventory.
+
+No runtime, routing, drag, label, candidate-set, sample, schema, release, or
+publication change was made. The selected next bounded checkpoint is
+`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-RELEASE-TRANSITION-SEMANTICS-EXPERIMENT1`;
+it is selected only and is not started by this record.

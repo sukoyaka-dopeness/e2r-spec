@@ -3579,3 +3579,19 @@ self-loop, schema, release, or publication change was made. The selected next
 bounded checkpoint is
 `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-HALO-CONTINUITY-SEMANTICS-EXPERIMENT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-HALO-MINIMUM-CLEARANCE-BOUNDARY-AUDIT1 (2026-09-01)
+
+The bounded minimum-clearance audit is recorded in [LiaisonScape
+Automatic-Route Label-Halo Minimum-Clearance Boundary Audit](liaisonscape-automatic-route-label-halo-minimum-clearance-boundary-audit.md).
+Its result is `PARTIAL`: JA authority/lighthouse has reproducible hard-safe
+breakpoints at approximately `5.809`, `12.840`, and `20.087`, but the broader
+graph has dense Relation-specific breakpoints and EN has no shared boundary
+with the same effect. Symbolic `Cmin = 0` recovers one JA straight route but
+does not reduce H2 crossings or resolve the Clara/Thomas hard-label frontier.
+
+No runtime, routing, score, candidate-set, label placement, sample, parallel,
+self-loop, schema, release, or publication change was made. The selected next
+bounded checkpoint is
+`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-HARD-LABEL-CORRIDOR-BOUNDARY-AUDIT1`;
+it is selected only and is not started by this record.

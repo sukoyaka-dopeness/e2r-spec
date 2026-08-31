@@ -110,4 +110,3 @@ Production Runtime, routing, label placement, candidate set, samples, schema,
 and `seededPositions` changed: **NO**. No LiaisonScape commit, push, tag,
 release, deployment, or publication occurred. Temporary diagnostic source and
 replay harness were removed before validation.
-

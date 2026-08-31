@@ -3336,6 +3336,18 @@ or publication change was made. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-ORDINARY-ROUTE-NODE-LABEL-CROSSING-PRIORITY-SEMANTICS-EXPERIMENT1`;
 it is selected only and is not started by this record.
 
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-NEAR-CENTER-WINNER-DISCONTINUITY-EXPERIMENT1 (2026-09-01)
+
+The live frontier experiment is recorded in [LiaisonScape Near-Center Winner
+Discontinuity Experiment](liaisonscape-automatic-route-near-center-winner-discontinuity-experiment.md).
+It is `F7 / MIXED`: near-center candidates exist, but different Relations lose
+them to Node-label pressure, occupied paths, or combined safety cliffs.
+
+No runtime, score, candidate-set, label, sample, parallel, self-loop, schema,
+release, or publication change was made. The selected next checkpoint is
+`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-NEAR-CENTER-LABEL-PRESSURE-CONTINUITY-EXPERIMENT1`;
+it is selected only and is not started by this record.
+
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-THREE-LABEL-CORRIDOR-FEASIBILITY-AUDIT1 (2026-09-01)
 
 The feasibility audit is recorded in [LiaisonScape Three-Label Corridor

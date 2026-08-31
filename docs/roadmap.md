@@ -3335,3 +3335,21 @@ No runtime, routing, placement, label, candidate-set, sample, schema, release,
 or publication change was made. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-ORDINARY-ROUTE-NODE-LABEL-CROSSING-PRIORITY-SEMANTICS-EXPERIMENT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-ORDINARY-ROUTE-NODE-LABEL-CROSSING-PRIORITY-SEMANTICS-EXPERIMENT1 (2026-08-31)
+
+The bounded semantics experiment is recorded in [LiaisonScape Ordinary-Route
+Node-Label-Crossing Priority Semantics Experiment](liaisonscape-ordinary-route-node-label-crossing-priority-semantics-experiment.md).
+Its result is `MIXED`: provisional route/Node-label intersections are only
+partially predictive of final presentation safety. In the English Lighthouse
+inventory, 13 of 21 provisional intersections persist and eight resolve, but
+all 14 label-blocked crossing-improvement candidates also migrate another
+measured label-conflict identity. Cross-linked and Japanese controls include
+cleanly resolving examples, while a final-presentation oracle reduces English
+H2 from seven to two with label-identity migration and one-step route/label
+feedback.
+
+No runtime, routing, label, placement, candidate-set, sample, schema, release,
+or publication change was made. The selected next bounded checkpoint is
+`E2R-LIAISONSCAPE-PROVISIONAL-LABEL-GATE-PREDICTIVENESS-SUBSET1`; it is
+selected only and is not started by this record.

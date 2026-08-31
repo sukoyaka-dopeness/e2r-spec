@@ -614,6 +614,21 @@ public release:
 - AI-assisted analysis, validation, repair, and authoring support, subject to
   ordinary E2R validation and safety boundaries.
 
+### Perceived name impression and character-name generation research
+
+The research seed [Perceived Name Impression Database and Character Name
+Generation](../research/exploratory/name-impression-database-and-character-name-generation.md)
+records a future study of Japanese and English surname/given-name sources,
+human-perceived name impressions, quadrant or radar profiles, and a possible
+character-name generator. It explicitly separates perceived impression from
+demographic or historical fact and remains non-normative.
+
+This is research/post-release growth only. It does not reopen Names P1, change
+the Core `name` contract, authorize source fetching, define a Names or
+Generation Extension, change priority, or create a release blocker. Any future
+generator must address source licensing, privacy, bias, deterministic
+reproducibility, and intentional adoption before implementation.
+
 ### Grouping evidence and feedback direction
 
 Entity grouping is not an accepted Dataset semantic or implementation plan.

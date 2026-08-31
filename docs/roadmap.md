@@ -3336,6 +3336,19 @@ or publication change was made. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-ORDINARY-ROUTE-NODE-LABEL-CROSSING-PRIORITY-SEMANTICS-EXPERIMENT1`;
 it is selected only and is not started by this record.
 
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-SHORT-EDGE-NORMALIZED-CURVATURE-AUDIT1 (2026-08-31)
+
+The controlled source audit is recorded in [LiaisonScape Automatic-Route
+Short-Edge / Normalized-Curvature Audit](liaisonscape-automatic-route-short-edge-normalized-curvature-audit.md).
+It is `MIXED`: absolute offsets amplify normalized curvature on short chords,
+while ordinary automatic endpoint labels alone did not curve the minimal
+fixture; endpoint labels occupying the corridor did select nonzero live routes.
+
+No runtime, routing, score, candidate-set, label, sample, parallel, self-loop,
+schema, release, or publication change was made. The selected next checkpoint
+is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-ENDPOINT-LABEL-CORRIDOR-RELAXATION-EXPERIMENT1`;
+it is selected only and is not started by this record.
+
 ### E2R-LIAISONSCAPE-ORDINARY-ROUTE-NODE-LABEL-CROSSING-PRIORITY-SEMANTICS-EXPERIMENT1 (2026-08-31)
 
 The bounded semantics experiment is recorded in [LiaisonScape Ordinary-Route

@@ -3700,3 +3700,20 @@ to describe a single feedback replay, not a fixed-point solver. The selected
 next bounded checkpoint is
 `E2R-LIAISONSCAPE-NODE-LABEL-INK-GEOMETRY-COLLISION-AUDIT1`; it is selected
 only and is not started by this record.
+
+### E2R-LIAISONSCAPE-NODE-LABEL-INK-GEOMETRY-COLLISION-AUDIT1 (2026-09-01)
+
+The bounded collision-geometry audit is recorded in [LiaisonScape Node-label
+Ink Geometry Collision Audit](liaisonscape-node-label-ink-geometry-collision-audit.md).
+Its result is `G2 / EXACT RESULT 2`: deterministic tight-content and per-line
+regions relieve some route pressure, but the JA and EN `mentors` primary hard
+owners remain in the estimated text region. JA keeps `mentors=-52`; EN changes
+`-64→-52` without straightening the route. The result is locale- and
+Relation-dependent, and no Production collision replacement is justified.
+
+No runtime, routing, collision, label rendering, sample, preview, parallel,
+self-loop, connector, initial-placement, schema, release, or publication
+change was made. Modes D (rendered ink) and E (true glyph outline) were not
+measured. The selected next bounded checkpoint is
+`E2R-LIAISONSCAPE-PARALLEL-EDGE-BUNDLE-SPACING-AUDIT1`; it is selected only
+and is not started by this record.

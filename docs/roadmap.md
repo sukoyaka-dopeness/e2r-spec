@@ -3336,6 +3336,19 @@ or publication change was made. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-ORDINARY-ROUTE-NODE-LABEL-CROSSING-PRIORITY-SEMANTICS-EXPERIMENT1`;
 it is selected only and is not started by this record.
 
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-ENDPOINT-LABEL-CORRIDOR-RELAXATION-EXPERIMENT1 (2026-09-01)
+
+The controlled experiment is recorded in [LiaisonScape Endpoint Label Corridor
+Relaxation Experiment](liaisonscape-automatic-route-endpoint-label-corridor-relaxation-experiment.md).
+It is `PARTIAL`: existing candidates plus target-owner-only previous-placement
+preference removal reopened a single endpoint corridor through chord 160, but a
+second endpoint blocker remained decisive and no Lighthouse case was shown.
+
+No runtime, routing, scoring, candidate-set, label, sample, parallel, self-loop,
+schema, release, or publication change was made. The selected next bounded
+checkpoint is `E2R-LIAISONSCAPE-LIGHTHOUSE-LOCAL-CURVATURE-BLOCKER-INVENTORY1`;
+it is selected only and is not started by this record.
+
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-SHORT-EDGE-NORMALIZED-CURVATURE-AUDIT1 (2026-08-31)
 
 The controlled source audit is recorded in [LiaisonScape Automatic-Route

@@ -3369,3 +3369,17 @@ No runtime, routing, placement, label, candidate-set, sample, schema, release,
 or publication change was made. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-HISTORICAL-SAFETY-DELTA-ISOLATION1`; it is
 selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-HISTORICAL-SAFETY-DELTA-ISOLATION1 (2026-08-31)
+
+The property-level replay is recorded in [LiaisonScape Automatic-Route
+Historical Safety-Delta Isolation](liaisonscape-automatic-route-historical-safety-delta-isolation.md).
+Its result is `MIXED — PROVISIONAL-LABEL PRESSURE IS CAUSAL BUT NO GLOBAL
+RELAXATION IS SAFE`: the hard provisional-label boundary alone causes the
+beacon flip, while full removal recovers continuity but changes route and label
+identities across both locales.
+
+No runtime, routing, label, candidate-set, sample, schema, release, or
+publication change was made. The selected next bounded checkpoint is
+`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-PRESSURE-TEMPORAL-SEMANTICS-EXPERIMENT1`;
+it is selected only and is not started by this record.

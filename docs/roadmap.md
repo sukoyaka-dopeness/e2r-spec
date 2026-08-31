@@ -3455,3 +3455,16 @@ No runtime, routing, order, label placement, candidate-set, sample, schema,
 release, or publication change was made. The selected next bounded checkpoint
 is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-SCORE-TRACE-REPRODUCTION1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-SCORE-TRACE-REPRODUCTION1 (2026-08-31)
+
+The live-score trace reproduction attempt is recorded in [LiaisonScape
+Automatic-Route Final-Label Score-Trace Reproduction](liaisonscape-automatic-route-final-label-score-trace-reproduction.md).
+It is `BLOCKED`: a read-only observer can compile inside the live candidate
+loop, but an App-pipeline L0/L1 harness has not yet attached it and reproduced
+the eight required target winners.
+
+No runtime, routing, scoring, order, label placement, candidate-set, sample,
+schema, release, or publication change was made. The selected next bounded
+checkpoint is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-APP-PIPELINE-TRACE-HARNESS1`;
+it is selected only and is not started by this record.

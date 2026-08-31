@@ -3595,3 +3595,20 @@ self-loop, schema, release, or publication change was made. The selected next
 bounded checkpoint is
 `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-HARD-LABEL-CORRIDOR-BOUNDARY-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-HARD-LABEL-CORRIDOR-BOUNDARY-AUDIT1 (2026-09-01)
+
+The bounded hard-label corridor audit is recorded in [LiaisonScape
+Automatic-Route Hard-Label Corridor Boundary Audit](liaisonscape-automatic-route-hard-label-corridor-boundary-audit.md).
+Its result is `MIXED`: in JA, the `clara + archive` hard corridor excludes
+the `+40/+52` near-center `mentors` candidates and `-52` is the first
+hard-safe opposite-side candidate. EN has a different Clara-only topology,
+and halo/occupied/Node signals still affect final winners across locales.
+
+The supplied `Experimental — Final-label feedback` clean-layout observation is
+recorded as manual context only. No runtime, routing, score, candidate-set,
+label placement, sample, parallel, self-loop, initial-placement, schema,
+release, or publication change was made. The selected next bounded checkpoint
+is
+`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-HARD-CORRIDOR-RELIEF-AUDIT1`;
+it is selected only and is not started by this record.

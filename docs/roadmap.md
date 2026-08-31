@@ -3353,3 +3353,19 @@ No runtime, routing, label, placement, candidate-set, sample, schema, release,
 or publication change was made. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-PROVISIONAL-LABEL-GATE-PREDICTIVENESS-SUBSET1`; it is
 selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-HISTORICAL-REPLAY-AUDIT1 (2026-08-31)
+
+The historical detached-worktree replay is recorded in [LiaisonScape
+Automatic-Route Historical Replay Audit](liaisonscape-automatic-route-historical-replay-audit.md).
+Its result is `TRADE-OFF — EARLIER ROUTING IS TEMPORALLY SMOOTHER BUT
+REINTRODUCES ACCEPTED COLLISION REGRESSIONS`: G3/G4 have a stable beacon
+trajectory, while those generations predate accepted physical-side protections
+and omit current provisional-label behavior; G5 also fails the foreign-Node
+clearance control. The current beacon discontinuity begins at the provisional
+label-pressure change in `d0c885d`.
+
+No runtime, routing, placement, label, candidate-set, sample, schema, release,
+or publication change was made. The selected next bounded checkpoint is
+`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-HISTORICAL-SAFETY-DELTA-ISOLATION1`; it is
+selected only and is not started by this record.

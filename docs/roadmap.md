@@ -3442,3 +3442,16 @@ No runtime, routing, order, label placement, candidate-set, sample, schema,
 release, or publication change was made. The selected next bounded checkpoint
 is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-HARD-BOUNDARY-SEMANTICS-EXPERIMENT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-HARD-BOUNDARY-SEMANTICS-EXPERIMENT1 (2026-08-31)
+
+The score-boundary attribution attempt is recorded in [LiaisonScape
+Automatic-Route Final-Label Score-Boundary Semantics Experiment](liaisonscape-automatic-route-final-label-hard-boundary-semantics-experiment.md).
+It is `BLOCKED`: a partial score reconstruction did not reproduce all four live
+Japanese Pass-3 winners, so attributing them to hard, halo, occupied-path, or
+tie semantics would be unreliable.
+
+No runtime, routing, order, label placement, candidate-set, sample, schema,
+release, or publication change was made. The selected next bounded checkpoint
+is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-SCORE-TRACE-REPRODUCTION1`;
+it is selected only and is not started by this record.

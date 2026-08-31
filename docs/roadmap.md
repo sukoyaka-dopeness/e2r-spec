@@ -3283,3 +3283,19 @@ solver, routing, label, iteration, schema, sample, release, or publication
 change was made. Single-root guard research remains deferred. The next bounded
 research candidate is local-expansion routing-signal decomposition with a
 genuinely multi-region pressure fixture, not Production implementation.
+
+### E2R-LIAISONSCAPE-LOCAL-EXPANSION-ROUTING-SIGNAL-DECOMPOSITION1 (2026-08-30)
+
+The bounded causal diagnosis is recorded in [LiaisonScape Local-Expansion
+Routing-Signal Decomposition](liaisonscape-local-expansion-routing-signal-decomposition.md).
+The result is `MIXED`: two of seven Lighthouse H2 crossings have a safe bounded
+single-endpoint signal, while route-pair swaps, full route-order reversal, and
+occupied-path removal retain all seven identities. Foreign-Node and
+provisional-label avoidance are material, but removing them trades crossings
+for Node clearance loss or crossing migration because proper transverse
+crossings are not a current candidate-score term.
+
+No Production route, order, penalty, Node movement, label, sample, schema,
+release, or publication change was made. The selected next bounded checkpoint
+is `E2R-LIAISONSCAPE-ROUTING-CROSSING-MIXED-CAUSE-PRIORITIZATION1`; it is not
+started by this record.

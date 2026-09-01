@@ -4527,3 +4527,19 @@ publication profile, or schema, and it does not start follow-up research. The
 LiaisonScape Initial Placement priority and selected checkpoint remain
 unchanged; Suite, VS Code OSINT, Personal Storage, Federated Constellation, and
 GitHub Sponsors roadmap items remain separate.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-CANDIDATE-FAMILY-EXPERIMENT-DESIGN1 (2026-09-02)
+
+The [LiaisonScape practical seed-family experiment design](liaisonscape-initial-placement-seed-practical-candidate-family-experiment-design.md)
+is complete with `CASE 1 / EXACT RESULT 1+2+3+4+5 / DECISION A`. It selects
+`FP1-NGP`, a bounded, deterministic, exact normalized general-position family,
+as the one primary practical diagnostic candidate. `F0-CURRENT` and `F1-ALG`
+remain controls; the structured F2 family remains deferred.
+
+The design keeps exact GEO-0/GEO-3 pre-settling evidence primary, separates
+normalization and runtime smoke from hard-safety authority, and leaves visual
+quality and Production suitability open. No candidate family, assignment,
+settling, routing, label, or application source changed. The selected next
+checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-CANDIDATE-FAMILY-EXPERIMENT1`;
+it is selected only and is not started by this record.

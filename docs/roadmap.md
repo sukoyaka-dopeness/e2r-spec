@@ -3853,6 +3853,26 @@ other runtime change is justified. The selected next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-NONFOCAL-NODE-GEOMETRY-CRITERIA-AUDIT1`;
 it is selected only and is not started by this record.
 
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-QUALITY-CRITERIA-VALIDATION1 (2026-09-01)
+
+The cross-neighborhood and cross-sample validation is recorded in [LiaisonScape
+Initial-placement Local-neighborhood Quality Criteria Validation](liaisonscape-initial-placement-local-neighborhood-quality-criteria-validation.md).
+Its result is `CASE 2 / EXACT RESULT 2 / DECISION A`: the shared-neighbor
+spacing criterion is supported by an ordinary Class O neighborhood in Ashen
+Crown JA/EN, without using labels, routes, locale, or rendered text as
+placement inputs and without a selected hard-safety counterexample.
+
+The inventory found four Class P and 50 Class O eligible instances across the
+available samples; seven bounded detail instances were replayed. The result
+is partial across locale presentation magnitude, and samples without a
+stored/auto pair remain uninformative, but the criterion is sufficiently
+supported for one bounded diagnostic implementation experiment. No Production
+Initial Placement, routing, feedback, label, collision, sample, preview,
+schema, release, or publication change was made. The selected next checkpoint
+is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-SPACING-EXPERIMENT1`;
+it is selected only and is not started by this record.
+
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-NONFOCAL-NODE-GEOMETRY-CRITERIA-AUDIT1 (2026-09-01)
 
 The bounded non-focal geometry audit is recorded in [LiaisonScape

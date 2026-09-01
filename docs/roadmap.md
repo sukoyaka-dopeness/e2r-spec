@@ -4436,3 +4436,18 @@ No LiaisonScape source, temporary seam, runtime switch, preview, sample, or
 `ai-knowledge` change was made. The selected next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM1`;
 it is selected only and is not started by this record.
+
+### E2R-VSCODE-OSINT-WORKBENCH-RESEARCH1 (2026-09-02)
+
+The exploratory [E2R for VS Code — OSINT Workbench](../research/exploratory/e2r-vscode-osint-workbench.md)
+record examines VS Code as a possible power-user/research client between the
+existing browser applications and a possible future Desktop client. It covers
+large local investigation workspaces, bounded local storage/index/query
+responsibilities, AI/agent tool boundaries, human review and provenance, and
+local/private OSINT risks. It does not select an extension, desktop framework,
+database, AI provider, schema, cloud backend, or authentication model.
+
+This is exploratory research only. The current LiaisonScape Initial Placement
+priority and selected checkpoint remain unchanged. The GitHub Sponsors and
+Personal Storage roadmap sections remain separate and unchanged; no
+`ai-knowledge` promotion was made.

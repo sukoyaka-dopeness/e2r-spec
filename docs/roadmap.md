@@ -4678,3 +4678,22 @@ candidate-family research checkpoint, with clearance, local curvature,
 parallel/self-loop separation, node-movement shape preservation, and later
 crossing reduction kept distinct. No source, candidate family, assignment,
 settling, routing, label, sample, preview, or `ai-knowledge` change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-RESEARCH1 (2026-09-02)
+
+The [LiaisonScape structural-assignment objective research](liaisonscape-initial-placement-seed-structural-assignment-objective-research1.md)
+is recorded as `CASE 2 / EXACT RESULT 1+2+3+4+5+6+7+8+9+10 / DECISION B`.
+The accepted evidence supports a scalar-free, partial structural preference in
+principle: exact GEO-0/GEO-3 remain hard constraints, while normalized
+motif-altitude and local fan-out distribution are only conditional candidate
+axes. Shape, compactness, bottleneck identity, total edge length, and other
+descriptors remain descriptive or trade-off-prone. Ashen trade-offs therefore
+remain incomparable without weights, and routed/label/visual quality remains
+downstream except for future explicitly justified presentation-independent
+proxies.
+
+No objective, materializer, solver, candidate family, Production assignment,
+settling, routing, label, sample, preview, or `ai-knowledge` change was made.
+The next checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-PARTIAL-PREFERENCE-DESIGN1`;
+it is selected only and is not auto-started.

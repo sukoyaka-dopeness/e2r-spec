@@ -4272,3 +4272,28 @@ schema, Core, Extension, Handoff, Storage Research, or `ai-knowledge` change
 was made. The selected next bounded checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-SEMANTICS-VALIDATION1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-SEMANTICS-VALIDATION1 (2026-09-01)
+
+The seed candidate-generation semantics validation is recorded in
+[LiaisonScape Initial-placement Seed Candidate-generation Semantics
+Validation](liaisonscape-initial-placement-seed-candidate-generation-semantics-validation.md).
+Its result is `CASE 2 / EXACT RESULT 2 / DECISION B`: representational
+sufficiency for topology-derived exact hard constraints remains required, but
+topology need not be a direct generator input. Same-Node-count controls and
+the high-R series falsified Node-count-only sufficiency for the current
+fixed-direction family, while an N-only general-position diagnostic family
+provided hard-feasible witnesses for all tested controls and real samples.
+
+The result refines, rather than discards, the prior semantic: topology-derived
+demand remains the validation target, while a sufficiently rich topology-
+agnostic family may satisfy that target. Phase-diverse, graph-relative, and
+general-position families remain diagnostics only. Capability distribution,
+global simultaneous feasibility, practical symmetry-compatible construction,
+and downstream presentation remain separate boundaries. No Production
+generator, candidate vocabulary, slot count, radius, phase, assignment,
+settling, routing, feedback, label, sample, preview, schema, Core, Extension,
+Handoff, Storage Research, or `ai-knowledge` change was made. The selected
+next bounded checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-INPUT-BOUNDARY-AUDIT1`;
+it is selected only and is not started by this record.

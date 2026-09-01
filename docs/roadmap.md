@@ -4180,3 +4180,21 @@ routing, feedback, label, sample, preview, schema, release, or
 exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-AWARE-SEED-GEOMETRY-SEMANTICS-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-PERSONAL-STORAGE-RESEARCH1 (2026-09-01)
+
+The E2R-managed Personal Storage research is recorded in [E2R-managed
+Personal Storage](../research/exploratory/e2r-managed-personal-storage.md).
+It records an exploratory E2R Personal Storage / Personal E2R Space direction:
+authenticated durable private storage, candidate Google sign-in UX without a
+Google protocol dependency, provider abstraction, managed/BYO/hybrid models,
+resource responsibility separation, Save/Publish/Share semantics, portability,
+revision and security questions, and the distinction from Anonymous Dataset
+Sharing and Federated E2R.
+
+The preferred hybrid model is a research hypothesis only. Basic local and
+accountless use remains supported; no provider, backend, account, auth flow,
+manifest, Handoff, Core, Extension, schema, UI, deployment, or publication
+was selected or implemented. This research does not reorder the active
+LiaisonScape Initial Placement sequence; its current completed and selected
+checkpoints remain unchanged.

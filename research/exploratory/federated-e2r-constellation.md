@@ -118,6 +118,12 @@ without global constellation participation. Selective publication can then
 lead to External Relations and discovery. This remains a participation
 incentive hypothesis, not a product commitment.
 
+The managed personal-storage responsibility is explored in the dedicated
+[E2R-managed Personal Storage research](e2r-managed-personal-storage.md).
+That document expands authenticated durable Save, Publish, Share, identity,
+provider, portability, and resource-separation questions without changing the
+federation direction or selecting an implementation.
+
 ## 5. Notification and discovery
 
 Possible mechanisms include explicit subscriptions, follow lists, public

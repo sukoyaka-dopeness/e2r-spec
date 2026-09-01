@@ -4507,3 +4507,23 @@ no Production family or assignment was selected. The selected next checkpoint
 is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-CANDIDATE-FAMILY-EXPERIMENT-DESIGN1`;
 it is selected only and is not started by this record.
+
+### E2R-OSINT-EXTERNAL-DATASET-ACQUISITION-TRUST-RESEARCH1 (2026-09-02)
+
+The exploratory [E2R OSINT External Dataset Acquisition, Trust, and
+Provenance research](../research/exploratory/e2r-osint-external-dataset-acquisition-and-trust.md)
+examines discovering, snapshotting, reviewing, comparing, and selectively
+adopting third-party E2R Datasets while preserving provenance and local
+assessment ownership. Its result is `CASE 10 / MIXED / DECISION A`: acquisition
+and factual acceptance, discovery and trust, integrity and truth, and source
+count and independent corroboration remain distinct responsibilities. A
+decentralized discovery direction with optional indexes is coherent, but
+assertion-level modeling and the location of trust/provenance metadata remain
+open.
+
+This is `EXPLORATORY / NOT ACTIVE` research only. It does not implement an
+OSINT client, downloader, crawler, trust system, snapshot store, registry,
+publication profile, or schema, and it does not start follow-up research. The
+LiaisonScape Initial Placement priority and selected checkpoint remain
+unchanged; Suite, VS Code OSINT, Personal Storage, Federated Constellation, and
+GitHub Sponsors roadmap items remain separate.

@@ -4247,3 +4247,28 @@ sample, preview, schema, Core, Extension, Handoff, Storage Research, or
 exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-SEMANTICS-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-SEMANTICS-AUDIT1 (2026-09-01)
+
+The seed candidate-generation semantics audit is recorded in [LiaisonScape
+Initial-placement Seed Candidate-generation Semantics
+Audit](liaisonscape-initial-placement-seed-candidate-generation-semantics-audit.md).
+Its result is `CASE 7 / EXACT RESULT 3 / DECISION A`: source-independent,
+ID-neutral candidate generation can be described semantically without choosing
+exact coordinates. Geometric freedom must scale with topology-derived hard
+constraint demand, not Node count alone; both position capacity and usable
+directional capacity must avoid fixed-direction saturation.
+
+The current fixed-phase family remains only a baseline: its position count
+grows while the center direction set remains eight, so G7 (`R(s)=16`) is not
+representable. Diagnostic phase-diverse, graph-relative, and general-position
+families remove the observed boundary, but no exact generator, phase, radius,
+slot count, assignment algorithm, solver, or Production rule was selected.
+Global simultaneous hard feasibility remains a validation oracle, and
+capability distribution, practical symmetry-compatible construction, and
+cluster allocation remain partial/open boundaries. No Production seed,
+candidate vocabulary, settling, routing, feedback, label, sample, preview,
+schema, Core, Extension, Handoff, Storage Research, or `ai-knowledge` change
+was made. The selected next bounded checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-SEMANTICS-VALIDATION1`;
+it is selected only and is not started by this record.

@@ -614,6 +614,17 @@ public release:
 - AI-assisted analysis, validation, repair, and authoring support, subject to
   ordinary E2R validation and safety boundaries.
 
+### Multidimensional History / Temporal Perspectives
+
+The exploratory [E2R Multidimensional History and Temporal Perspectives](../research/exploratory/e2r-multidimensional-history-temporal-perspectives.md)
+research examines multiple scoped temporal values and orderings over the same
+Event set, including recorded chronology, experience/recollection order,
+publication/acquisition chronology, partial order, and 1D/2D/3D projections.
+It preserves current `temporalOrder` semantics, keeps semantic dimensions
+separate from visual projection, and remains `EXPLORATORY / NOT ACTIVE`.
+No schema, Core, Extension, NarrativeLine, LiaisonScape, or implementation
+change follows from this research.
+
 ### Perceived name impression and character-name generation research
 
 The research seed [Perceived Name Impression Database and Character Name

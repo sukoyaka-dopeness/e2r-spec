@@ -3852,3 +3852,27 @@ placement rule, Production Initial Placement change, feedback adoption, or
 other runtime change is justified. The selected next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-NONFOCAL-NODE-GEOMETRY-CRITERIA-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-NONFOCAL-NODE-GEOMETRY-CRITERIA-AUDIT1 (2026-09-01)
+
+The bounded non-focal geometry audit is recorded in [LiaisonScape
+Initial-placement Non-focal Node Geometry Criteria Audit](liaisonscape-initial-placement-nonfocal-node-geometry-criteria-audit.md).
+Its result is `CASE 11 / EXACT RESULT 5 / DECISION B`: Maya's coordinate
+change combines direct corridor clearance with Node-label and route
+propagation. The dominant measurable component selected for follow-up is the
+shared-endpoint neighbor arrangement around Maya, Clara, Thomas, and Beacon.
+
+JA's coarse sweep changes from `0` safe pairs at `t=.75` to `49` at `.875`
+and `63` at S0, but midpoint refinement observes closed/open alternation in
+the bracket. PX opens while PY does not, so the result supports a local
+neighborhood criterion rather than an axis rule or numeric distance threshold.
+The first open point changes three final Node labels and nine ordinary routes;
+held-label controls show that direct and propagated effects are both material.
+The identical EN sweep remains closed on the main path, giving locale class
+L3 and preventing locale-independent adoption.
+
+No Production Initial Placement, routing, feedback, label, collision,
+parallel, self-loop, sample, preview, schema, release, or publication change
+was made. The selected next checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-QUALITY-CRITERIA-VALIDATION1`;
+it is selected only and is not started by this record.

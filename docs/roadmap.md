@@ -4602,3 +4602,21 @@ outside scope. No source, candidate family, assignment, settling, sample,
 preview, or `ai-knowledge` change was made. The selected next checkpoint is
 exactly `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-QUALITY-EXPERIMENT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-QUALITY-EXPERIMENT1 (2026-09-02)
+
+The [LiaisonScape practical-family structural-quality experiment](liaisonscape-initial-placement-seed-practical-family-structural-quality-experiment1-result.md)
+is recorded as `CASE 9 / MIXED / EXACT RESULT 1+2+3+4+5+6+7+8+9 / DECISION B`.
+The source-transparent F0 path passed for Lighthouse and Ashen Crown. FP1
+remained hard-valid across the executed primary controls, while the two-layer
+profile exposed motif/cluster bottlenecks, high-R capacity-versus-distribution
+differences, F1/FP1 affine descriptor changes, and mixed unchanged-settling
+transitions. Lighthouse and Ashen profiles changed under the fixed
+representation-neutral assignment probes; K3 remained symmetry-equivalent.
+
+This remains a headless structural diagnostic only. Visual, routing, label,
+crossing, edge-length, and Production quality remain unassessed, and no source,
+candidate family, assignment, settling, sample, preview, or `ai-knowledge`
+change was made. The selected next checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-ASSIGNMENT-SENSITIVITY-FOLLOWUP1`;
+it is selected only and is not started by this record.

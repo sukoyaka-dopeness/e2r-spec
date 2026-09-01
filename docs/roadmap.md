@@ -660,6 +660,28 @@ bounds, internal layout, boundary routing, and interoperability remain open.
 This is research/post-release growth only. It is not an accepted Dataset
 semantic, implementation authorization, priority change, or release blocker.
 
+### One-button high-quality automatic coordinate generation
+
+The future capability note [LiaisonScape One-button High-quality Automatic
+Coordinate Generation](../research/exploratory/liaisonscape-one-button-automatic-coordinate-generation.md)
+records a long-term user-facing goal: one clear action should be able to
+request a practical, high-quality Derived coordinate set with low manual
+correction. "One-button" describes the workflow, not one force, one pass, or
+one universal objective. A future bounded pipeline may combine global
+placement, graph/motif analysis, cluster quality handling, local
+regularization, route and label evaluation, and feedback.
+
+The goal does not promise mathematical or global optimality. Generated
+coordinates remain Derived until an explicit adoption/save workflow exists;
+Coordinate persistence and Layout persistence remain separate. Current motif
+and cluster research may contribute a local geometry stage, while explicit
+user-defined Groups remain a distinct future concept. Reuse beyond
+LiaisonScape is a hypothesis only.
+
+This is research/post-release growth only. It does not change the current
+research order, selected checkpoint, implementation status, or release
+blocker status.
+
 ## Research priority
 
 ### 1. Semantic responsibility and vocabulary architecture

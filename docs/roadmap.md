@@ -3780,3 +3780,28 @@ The favorable Initial Placement plus Experimental Final-label feedback image
 remains manual context only. The selected next bounded checkpoint is exactly
 `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-INITIAL-PLACEMENT-INTERACTION-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-INITIAL-PLACEMENT-INTERACTION-AUDIT1 (2026-09-01)
+
+The bounded Final-label feedback / Initial Placement interaction audit is
+recorded in [LiaisonScape Automatic-Route Final-Label Feedback / Initial-Placement Interaction Audit](liaisonscape-automatic-route-final-label-feedback-initial-placement-interaction-audit.md).
+Its result is `CASE 5 / EXACT RESULT 5 / DECISION F`: feedback opens the
+balanced parallel corridor on the favorable clean HEAD geometry in both
+locales, but its effect changes with starting geometry and locale. Current
+Production coordinate-less placement reproduces the dirty stored geometry in
+this sample; the JA feedback result remains blocked, while the EN diagnostic
+opens only 24 safe candidate pairs and its selected `mentors=+40` route is
+hard-unsafe against the original provisional label.
+
+Initial Placement alone opens no hard-safe opposite-side pair in any measured
+start. R0 is zero in all six locale/start conditions; R1 is `91` for JA/EN
+S0, `0` for JA S1/S2, and `24` for EN S1/S2. The S0 improvement is therefore
+an interaction result, not evidence for universal feedback adoption or an
+Initial Placement objective change. The supplied clean screenshot remains
+manual evidence only because its exact coordinates are unavailable.
+
+No LiaisonScape runtime, routing, score, label, collision, parallel,
+Initial-placement, sample, preview, schema, release, or publication change
+was made. The selected next bounded checkpoint is
+`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-LOCALE-START-REGRESSION-ISOLATION1`;
+it is selected only and is not started by this record.

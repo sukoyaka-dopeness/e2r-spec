@@ -4092,3 +4092,25 @@ was made. The strengthened reusable result remains a hypothesis only and no
 exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-REGULARIZATION-SEMANTICS-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-REGULARIZATION-SEMANTICS-AUDIT1 (2026-09-01)
+
+The motif-cluster regularization semantics audit is recorded in [LiaisonScape
+Initial-placement Motif-cluster Regularization Semantics
+Audit](liaisonscape-initial-placement-motif-cluster-regularization-semantics-audit.md).
+Its result is `CASE 5 / EXACT RESULT 4 / DECISION D`: source-independent
+improvement directions are definable, but source-independent activation remains
+unspecified. An isolated motif supports a symmetric centroid-preserving opening
+family; a shared Node supports symmetric angular fan-out with radial distances
+preserved; and an overlap cluster requires constraint inventory and composition
+because shared Nodes receive multiple motif and fan-out constraints.
+
+A single-vertex push was rejected as asymmetric, and always-on regularization
+was rejected as an implicit ideal-shape or spreading policy. The audit does not
+introduce a scalar score, numeric threshold, force, displacement amount, target
+shape, route/label input, or Production placement rule. No Node movement,
+routing, feedback, label, collision, parallel, self-loop, sample, preview,
+schema, release, publication, or `ai-knowledge` change was made. The selected
+next bounded checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-REGULARIZATION-ACTIVATION-AUDIT1`;
+it is selected only and is not started by this record.

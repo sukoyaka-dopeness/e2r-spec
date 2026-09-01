@@ -4316,3 +4316,22 @@ it is selected only and is not started by this record.
 This status-only update does not reorder the active LiaisonScape Initial
 Placement sequence and does not authorize changes to application source,
 runtime behavior, or repository-local funding files.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-INPUT-BOUNDARY-AUDIT1 (2026-09-02)
+
+The seed candidate-generation input boundary audit is recorded in
+[LiaisonScape Initial-placement Seed Candidate-generation Input Boundary Audit](liaisonscape-initial-placement-seed-candidate-generation-input-boundary-audit.md).
+Its result is `CASE 2 / EXACT RESULT 1+2+3 / DECISION B+C`: Node count is the
+minimum required graph-derived capacity parameter for a finite, ID-neutral
+candidate family; topology may optionally adapt generation, while topology-
+derived motif and shared-ray constraints remain validation targets. Generator
+input and validation input can therefore be separated without losing the exact
+safety floor.
+
+Current source-stage coupling, ID/order use, and the separate frame/scale
+context are recorded as boundaries, not implementation instructions. No
+Production generator, assignment, settling, routing, label, sample, preview,
+or `ai-knowledge` change was made. The selected next bounded checkpoint is
+exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-DESIGN-BOUNDARY-AUDIT1`;
+it is selected only and is not started by this record.

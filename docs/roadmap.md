@@ -3805,3 +3805,30 @@ Initial-placement, sample, preview, schema, release, or publication change
 was made. The selected next bounded checkpoint is
 `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-LOCALE-START-REGRESSION-ISOLATION1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-S0-S1-FOCAL-COORDINATE-ATTRIBUTION-EXPERIMENT1 (2026-09-01)
+
+The narrower S0/S1 focal coordinate attribution experiment is recorded in
+[LiaisonScape S0/S1 Focal Coordinate Attribution Experiment](liaisonscape-automatic-route-s0-s1-focal-coordinate-attribution-experiment.md).
+It replaced the broader locale/start regression audit for immediate
+execution; that broader checkpoint remains deferred, not completed or deleted.
+
+The experiment evaluated all 16 JA masks while restoring only the focal Nodes
+`Clara`, `Thomas`, `Archive`, and `Lighthouse` from S1 to exact S0 coordinates.
+Two inclusion-minimal V0 masks opened diagnostic R1 corridor pairs: `0011`
+(`Archive + Lighthouse`) with `12`, and `1001` (`Clara + Lighthouse`) with
+`16`. Only `0011` was conservative against its original R0 provisional labels.
+
+The critical control was `H1111` versus full S0: H1111 produced `0` safe pairs,
+while full S0 produced `91` and selected `+40/-40`. Therefore the result is
+`CASE 7 / EXACT RESULT 7 / DECISION E`: the four focal-node neighborhood is
+insufficient, and at least one non-focal coordinate difference or broader
+global topology interaction must be identified before changing placement
+parameters. EN bounded replay showed partial locale portability (`0000=24`,
+`1001=16`, full S0=`91`) but did not alter the primary decision.
+
+No LiaisonScape runtime, Initial Placement, routing, feedback, label,
+collision, parallel, sample, preview, schema, release, or publication change
+was made. The selected next bounded checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-GLOBAL-TOPOLOGY-ATTRIBUTION-AUDIT1`;
+it is selected only and is not started by this record.

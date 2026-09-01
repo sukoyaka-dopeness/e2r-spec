@@ -3977,3 +3977,25 @@ sample, preview, schema, release, or publication change was made. The
 selected next bounded checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SHARED-NEIGHBOR-ADJUSTMENT-SCOPE-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SHARED-NEIGHBOR-ADJUSTMENT-SCOPE-AUDIT1 (2026-09-01)
+
+The shared-neighbor adjustment-scope audit is recorded in [LiaisonScape
+Initial-placement Shared-neighbor Adjustment Scope Audit](liaisonscape-initial-placement-shared-neighbor-adjustment-scope-audit.md).
+Its result is `CASE 2 / EXACT RESULT 2 / DECISION A`: an overlap-cluster
+scope provides one structural model for isolated motifs and overlapping
+motifs. Lighthouse is one isolated motif, while Ashen has seven motifs in
+one nine-Node overlap cluster within a ten-Node component; five of seven
+motifs compress in the stored-to-auto comparison, so one-motif processing is
+too narrow and whole-component scope is too broad.
+
+The scope result does not define a quality threshold or movement rule. The
+node-packing result is partial, attraction is not identified as causal, and
+the available samples contain no component with multiple separate motif
+clusters. The overlap-cluster concept is retained as a reusable hypothesis
+only; no `ai-knowledge` entry was changed. No Node movement, placement
+candidate, force, routing, feedback, label, sample, preview, schema, release,
+or publication change was made. The selected next bounded checkpoint is
+exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-QUALITY-CRITERIA-AUDIT1`;
+it is selected only and is not started by this record.

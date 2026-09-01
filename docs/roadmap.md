@@ -4369,3 +4369,19 @@ assignment, settling, packing, routing, label, sample, preview, or
 `ai-knowledge` change was made. The selected next bounded checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-FAMILY-OFFLINE-EXPERIMENT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-FAMILY-OFFLINE-EXPERIMENT1 (2026-09-02)
+
+The offline candidate-family Experiment 1 result is recorded in
+[LiaisonScape Initial-placement Seed Candidate-family Offline Experiment 1 Result](liaisonscape-initial-placement-seed-candidate-family-offline-experiment1-result.md).
+The result is `CASE 1 / EXACT RESULT 1+2+3 / DECISION A`: exact F1-ALG
+(`P_i=(i,i²)`) removed the bounded candidate-space GEO-0/GEO-3 capacity
+failure in the required offline corpus, while current-mapping failures remain
+a separate assignment problem. F0 reproduced the expected fixed-direction
+contrast, including the G7/high-R capacity boundary.
+
+This validates the exact safety-floor diagnostic only. F1-ALG is not a
+Production layout design; no visual-quality or runtime conclusion was made.
+The selected next checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-GENERATION-ASSIGNMENT-RESPONSIBILITY-AUDIT1`;
+it is selected only and is not started by this record.

@@ -3896,3 +3896,22 @@ parallel, self-loop, sample, preview, schema, release, or publication change
 was made. The selected next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-QUALITY-CRITERIA-VALIDATION1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-SPACING-EXPERIMENT1 (2026-09-01)
+
+The bounded implementation experiment is recorded in [LiaisonScape
+Initial-placement Local-neighborhood Spacing Experiment](liaisonscape-initial-placement-local-neighborhood-spacing-experiment.md).
+Its result is `CASE 6 / EXACT RESULT 6 / DECISION D`: the topology-only
+shared-neighbor adjustment opened the selected local angle in Lighthouse and
+Ashen Crown, but its displacement semantics introduced new R0 hard
+route/Node-label conflicts in Lighthouse and replaced the hard-conflict set in
+Ashen. The candidate had no new Node-body overlap, was deterministic,
+locale-independent, and exact no-op on the no-shared-neighbor controls, but it
+failed the primary safety gate.
+
+No Production Initial Placement, routing, feedback, label, collision,
+parallel, self-loop, sample, preview, schema, or release change was made. No
+LiaisonScape commit or candidate adoption occurred. The selected next
+checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-DISPLACEMENT-BOUNDARY-AUDIT1`;
+it is selected only and is not started by this record.

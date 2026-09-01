@@ -4489,3 +4489,21 @@ assignment, settling, routing, label, sample, preview, or `ai-knowledge`
 change was made. The selected next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-EQUIVARIANCE-FOLLOWUP1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-EQUIVARIANCE-FOLLOWUP1 (2026-09-02)
+
+The [LiaisonScape Initial-placement Seed Assignment Equivariance Follow-up](liaisonscape-initial-placement-seed-assignment-equivariance-followup.md)
+is recorded as `CASE 6 / EXACT RESULT 1+2+3+4+5+6+7 / DECISION A`. The audit
+found that the Lighthouse rename failure belongs to the current A0 selector,
+while the underlying GEO-0/GEO-3 `HardValid` relation is representation-
+neutral. Identifier spelling may remain an operational order, but must not
+control hard-safety classification.
+
+For mapping-sensitive candidate families, hard-safe assignment remains a
+required contract. An assignment-insensitive family can remove that burden at
+the hard-safety level, without proving visual-quality invariance. The current
+finite-graph hard-safe direction is qualified to the exact GEO-0/GEO-3 floor;
+no Production family or assignment was selected. The selected next checkpoint
+is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-CANDIDATE-FAMILY-EXPERIMENT-DESIGN1`;
+it is selected only and is not started by this record.

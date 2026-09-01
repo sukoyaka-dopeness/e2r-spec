@@ -645,6 +645,21 @@ Cross-application current-edit handoff, Group Entity, multiple-Dataset merge,
 advanced semantics, and AI assistance are future directions rather than
 conditions that indefinitely delay the first public release.
 
+### User-defined graph Groups
+
+The future capability note [LiaisonScape User-defined Graph
+Groups](../research/exploratory/liaisonscape-user-defined-graph-groups.md)
+records a user-facing goal for meaningful visible grouping and Group-aware
+positioning. It keeps explicit user-defined Groups separate from derived
+motif-overlap clusters: the latter remain topology-based layout/research
+scopes and are not semantic Groups. Multiple membership must remain possible
+in the design space. Group ownership, Entity/Event eligibility, hierarchy,
+Group relations, collapse/expand, persistence, serialization, deletion,
+bounds, internal layout, boundary routing, and interoperability remain open.
+
+This is research/post-release growth only. It is not an accepted Dataset
+semantic, implementation authorization, priority change, or release blocker.
+
 ## Research priority
 
 ### 1. Semantic responsibility and vocabulary architecture

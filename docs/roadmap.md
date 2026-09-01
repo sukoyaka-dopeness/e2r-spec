@@ -4335,3 +4335,20 @@ or `ai-knowledge` change was made. The selected next bounded checkpoint is
 exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-DESIGN-BOUNDARY-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-DESIGN-BOUNDARY-AUDIT1 (2026-09-02)
+
+The seed candidate-generation design boundary audit is recorded in
+[LiaisonScape Initial-placement Seed Candidate-generation Design Boundary Audit](liaisonscape-initial-placement-seed-candidate-generation-design-boundary-audit.md).
+Its result is `CASE 11 / EXACT RESULT 1+2+3+4+5 / DECISION E`: a finite,
+deterministic, ID-neutral capacity contract is sufficiently bounded for an
+offline family experiment design, while a generic N-only base and optional
+topology adaptation remain equally permitted. General-position-like families
+are diagnostic only; no exact coordinates or Production design was selected.
+
+The current runtime's discovery, ranking, candidate creation, assignment,
+settling, and packing coupling is recorded as a causal limitation. No
+Production source, assignment, settling, routing, label, sample, preview, or
+`ai-knowledge` change was made. The selected next bounded checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-FAMILY-OFFLINE-EXPERIMENT1-DESIGN1`;
+it is selected only and is not started by this record.

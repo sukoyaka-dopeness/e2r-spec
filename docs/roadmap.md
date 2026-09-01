@@ -4543,3 +4543,19 @@ settling, routing, label, or application source changed. The selected next
 checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-CANDIDATE-FAMILY-EXPERIMENT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-CANDIDATE-FAMILY-EXPERIMENT1 (2026-09-02)
+
+The [LiaisonScape practical candidate-family experiment](liaisonscape-initial-placement-seed-practical-candidate-family-experiment1-result.md)
+is recorded as `CASE 2 / EXACT RESULT 1+2+3+4+5+6 / DECISION A`. `FP1-NGP`
+preserved the current exact GEO-0/GEO-3 hard-safety floor, remained
+assignment-insensitive, bounded the normalized coordinate envelope, avoided
+F0's fixed eight-ray saturation in the bounded high-R controls, and remained
+finite/distinct through the tested `N<=65` materialization domain.
+
+This is a practical diagnostic result only: visual quality, routing, labels,
+crossings, settling quality, and Production suitability remain unassessed.
+No candidate family, assignment, application source, sample, preview, or
+`ai-knowledge` change was made. The selected next checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-QUALITY-EXPERIMENT-DESIGN1`;
+it is selected only and is not started by this record.

@@ -625,6 +625,22 @@ separate from visual projection, and remains `EXPLORATORY / NOT ACTIVE`.
 No schema, Core, Extension, NarrativeLine, LiaisonScape, or implementation
 change follows from this research.
 
+### Causal order, Relative Time, and undated Event placement
+
+The exploratory [E2R Causal Order, Relative Time, and Undated Event Placement](../research/exploratory/e2r-causal-relative-order-and-undated-event-placement.md)
+research refines the existing History/chronology direction. It keeps causal
+Event-to-Event Relations distinct from explicit temporal precedence, rejects
+current temporalOrder as a general partial-order representation, and records a
+possible early NarrativeLine capability for relative placement without date
+inference.
+
+The capability remains conditional on a minimal relative-precedence contract,
+conflict/cycle and dated-anchor semantics, and derived-display boundaries.
+Human-readable Relation names do not provide causal typing. This is exploratory
+research only; no schema, Relation type, History change, NarrativeLine,
+LiaisonScape, or implementation change follows, and the active Initial
+Placement priority remains unchanged.
+
 ### Perceived name impression and character-name generation research
 
 The research seed [Perceived Name Impression Database and Character Name

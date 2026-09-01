@@ -4403,3 +4403,20 @@ order, and visual-quality-neutral tie handling remains open. No Production or
 preview change was made. The selected next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-SEMANTICS-DESIGN1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-SEMANTICS-DESIGN1 (2026-09-02)
+
+The seed-assignment semantics design is recorded in [LiaisonScape
+Initial-placement Seed-assignment Semantics Design](liaisonscape-initial-placement-seed-assignment-semantics-design.md).
+Its result is `CASE 11 / EXACT RESULT 1+2+3+4+5+6+7+8 / DECISION A`: the exact
+assignment semantic is the set-valued hard-valid mapping relation, with a
+separate materialization responsibility. Assignment must be sound and
+conditionally complete for mapping-sensitive families when `HardValid` is
+non-empty; family infeasibility remains a separate result. True automorphism
+orbits do not justify a unique named topology-only role, and hard-valid
+non-equivalent mappings remain outside the deferred visual-quality selector.
+
+No Production, candidate-family, runtime-seam, preview, sample, or
+`ai-knowledge` change was made. The selected next checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM-DESIGN1`;
+it is selected only and is not started by this record.

@@ -4420,3 +4420,19 @@ No Production, candidate-family, runtime-seam, preview, sample, or
 `ai-knowledge` change was made. The selected next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM-DESIGN1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM-DESIGN1 (2026-09-02)
+
+The family/assignment experiment seam design is recorded in [LiaisonScape
+Initial-placement Seed Family / Assignment Experiment Seam Design](liaisonscape-initial-placement-seed-family-assignment-experiment-seam-design.md).
+Its result is `CASE 11 / EXACT RESULT 1+2+3+4+5+6 / DECISION A`: a disposable
+pre-settling seam can independently expose candidate family and assignment
+policy while preserving the existing downstream stages. `F0+A0` baseline
+transparency is mandatory; `F0+A1` isolates assignment loss; `F1-ALG` remains a
+diagnostic control. Headless execution is sufficient, and post-settling output
+is smoke evidence only.
+
+No LiaisonScape source, temporary seam, runtime switch, preview, sample, or
+`ai-knowledge` change was made. The selected next checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM1`;
+it is selected only and is not started by this record.

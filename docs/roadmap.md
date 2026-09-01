@@ -4451,3 +4451,22 @@ This is exploratory research only. The current LiaisonScape Initial Placement
 priority and selected checkpoint remain unchanged. The GitHub Sponsors and
 Personal Storage roadmap sections remain separate and unchanged; no
 `ai-knowledge` promotion was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM1 (2026-09-02)
+
+The disposable [LiaisonScape Initial-placement Seed Family / Assignment
+Experiment Seam 1](liaisonscape-initial-placement-seed-family-assignment-experiment-seam1-result.md)
+result is `CASE 11 / EXACT RESULT 1+2+3+4 / DECISION E`. The experiment
+validated that F0 candidate-family capacity and current A0 assignment loss
+are separable at the exact pre-settling hard-safety stage: Lighthouse and
+Ashen Crown retain F0 hard-valid mappings that A0 can lose, while proof-
+infeasible F0 G7/K6 remain infeasible and diagnostic F1-ALG is hard-valid
+under both assignments.
+
+The result also found that a deterministic ID rename changes Lighthouse's
+F0+A0 hard-validity classification. Identity/equivariance therefore remains
+an explicit follow-up boundary. No Production source, candidate family,
+assignment, settling, routing, label, sample, preview, or `ai-knowledge`
+change was made. The selected next checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-EQUIVARIANCE-FOLLOWUP1`;
+it is selected only and is not started by this record.

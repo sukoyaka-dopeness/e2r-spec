@@ -4222,3 +4222,28 @@ Core, Extension, Handoff, or Storage Research change was made. The selected
 next bounded checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-SPACE-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-SPACE-AUDIT1 (2026-09-01)
+
+The seed candidate-space audit is recorded in [LiaisonScape Initial-placement
+Seed Candidate-space Audit](liaisonscape-initial-placement-seed-candidate-space-audit.md).
+Its result is `CASE 6 / EXACT RESULT 6 / DECISION E`: the current finite
+center/ring vocabulary grows position count without generally growing
+directional capacity, because later rings repeat the same eight directions.
+The G7 control has 16 incident motif neighbors but only 8 distinct center
+directions, while diagnostic staggered and topology-derived directional
+families can express the hard witness. This supports scalable candidate-space
+capacity as a requirement, but does not select a Production generator,
+direction count, radius, phase, or assignment algorithm.
+
+`F-CURRENT`, `F-ROLE`, and `F-SET` were kept separate. Lighthouse and Ashen
+remain existentially representable by the current point set despite their
+current-assignment failures; G7 is not representable in that finite set. The
+audit remains an existence boundary only: near-collapse, labels, routes,
+settling, crossings, and global quality objectives remain separate. No
+Production seed, slot, radius, phase, settling, routing, feedback, label,
+sample, preview, schema, Core, Extension, Handoff, Storage Research, or
+`ai-knowledge` change was made. The selected next bounded checkpoint is
+exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-SEMANTICS-AUDIT1`;
+it is selected only and is not started by this record.

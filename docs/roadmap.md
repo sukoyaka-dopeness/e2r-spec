@@ -3915,3 +3915,22 @@ LiaisonScape commit or candidate adoption occurred. The selected next
 checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-DISPLACEMENT-BOUNDARY-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-DISPLACEMENT-BOUNDARY-AUDIT1 (2026-09-01)
+
+The rejected-candidate displacement boundary audit is recorded in [LiaisonScape
+Initial-placement Local-neighborhood Displacement Boundary Audit](liaisonscape-initial-placement-local-neighborhood-displacement-boundary-audit.md).
+Its result is `CASE 4 / EXACT RESULT 2 / DECISION B`: a safe partial forward
+displacement region exists in both Lighthouse and Ashen before the first new
+final-label conflict, but the rejected minimum-line-distance selector chooses
+an endpoint as W rather than the validated shared neighbor in both topologies.
+The target-role mismatch is therefore the primary failure boundary; mirror
+direction is only partially safer and does not restore the intended local
+spacing semantics.
+
+No Production Initial Placement, routing, feedback, label, collision,
+parallel, self-loop, sample, preview, schema, or release change was made. No
+coefficient tuning or candidate resurrection occurred. The selected next
+checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SHARED-NEIGHBOR-TARGET-SELECTION-AUDIT1`;
+it is selected only and is not started by this record.

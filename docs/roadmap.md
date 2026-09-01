@@ -3999,3 +3999,30 @@ or publication change was made. The selected next bounded checkpoint is
 exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-QUALITY-CRITERIA-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-QUALITY-CRITERIA-AUDIT1 (2026-09-01)
+
+The motif-cluster quality-criteria audit is recorded in [LiaisonScape
+Initial-placement Motif-cluster Quality Criteria Audit](liaisonscape-initial-placement-motif-cluster-quality-criteria-audit.md).
+Its result is `CASE 6 / EXACT RESULT 2 / DECISION D`: the evidence supports a
+two-layer descriptive bottleneck profile. Layer 1 describes per-motif shape
+and Node-to-chord bottlenecks, with absolute packing as context. Layer 2
+describes shared-Node fan-out, cluster aggregation, and boundary context.
+Lighthouse has an isolated motif with scale-and-shape collapse; Ashen has
+seven overlapping motifs, three clear shared-Node fan-out bottlenecks, and
+multiple chord bottlenecks. A single scalar score, dominance ordering, or
+numeric threshold is not supported.
+
+The full inventory reproduced 19 unordered motifs and 57 ordered roles across
+15 files. The clean Lighthouse and Ashen JA/EN pairs were topology- and
+geometry-identical within each pair. The geometry transform check preserved
+normalized shape and overlap topology while scaling raw distances, supporting
+separate absolute-packing and normalized-shape descriptors. The packing
+hypothesis remains partial; no causal force attribution was made. The profile
+is a reusable hypothesis only and no `ai-knowledge` entry was changed.
+
+No Production Initial Placement, routing, feedback, label, collision,
+parallel, self-loop, sample, preview, schema, release, or publication change
+was made. The selected next bounded checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-QUALITY-CRITERIA-VALIDATION1`;
+it is selected only and is not started by this record.

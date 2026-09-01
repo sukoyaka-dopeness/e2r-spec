@@ -1037,6 +1037,25 @@ only after the Dictionary/Semantic responsibility boundary is written down;
 otherwise a convenient lookup can accidentally become an unreviewed identity
 or meaning system.
 
+### E2R Suite - long-term milestone (EXPLORATORY / DISTANT / NOT ACTIVE)
+
+The exploratory [E2R Suite - Long-term Multi-application
+Ecosystem](../research/exploratory/e2r-suite-long-term-milestone.md) record
+explores a possible future ecosystem of focused interoperable E2R
+applications over portable Datasets and, where appropriate, larger workspace
+contexts. NarrativeLine, LiaisonScape, and Hub are treated only as early
+examples of focused responsibilities; possible Evidence, Map, Search,
+Reporting, multidimensional, AI-assisted, VS Code, Desktop, and third-party
+surfaces remain illustrative possibilities.
+
+This is a long-term, distant milestone with no target version, target date,
+release assignment, or implementation order. It does not select a Suite shell,
+relabel Hub, choose VS Code or Desktop, change Handoff, define capabilities,
+change Core/Extensions/Dataset semantics, or authorize a new application or
+repository. Browser apps remain first-class. The current active LiaisonScape
+Initial Placement checkpoint remains unchanged and authoritative; this Suite
+record does not become active or scheduled.
+
 ## Evidence gates for candidate Extensions
 
 | Candidate | Current evidence | Missing before formalization |

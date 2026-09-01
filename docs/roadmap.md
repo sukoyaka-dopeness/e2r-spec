@@ -3760,3 +3760,23 @@ collision relaxation, halo change, label-geometry change, slot change,
 physical-side change, occupied-path change, runtime, sample, preview, or
 release change was made. The selected next bounded checkpoint is exactly
 `E2R-LIAISONSCAPE-PARALLEL-EDGE-HARD-SIDE-SWITCH-CASCADE-AUDIT1`.
+
+### E2R-LIAISONSCAPE-PARALLEL-EDGE-HARD-SIDE-SWITCH-CASCADE-AUDIT1 (2026-09-01)
+
+The bounded cascade audit is recorded in [LiaisonScape Parallel Edge
+Hard-Side-Switch Cascade Audit](liaisonscape-parallel-edge-hard-side-switch-cascade-audit.md).
+Its result is `CASE 4 / EXACT RESULT 4 / DECISION E`: the current label
+geometry leaves no hard-safe opposite-side pair for the Clara/Thomas parallel
+group. JA and EN each have 256 swapped-side candidate pairs; all are mutually
+occupied-safe, but zero are hard-safe. The first `mentors` side switch is
+therefore hard-label-driven, while the later `supervises` outward movement is
+the occupied-path/halo cascade after that switch. Reversing the bounded route
+order does not open a balanced safe pair.
+
+No runtime, routing, score, candidate-set, label placement, label geometry,
+parallel slot, occupied-path, self-loop, initial-placement, Final-label
+feedback, sample, preview, schema, release, or publication change was made.
+The favorable Initial Placement plus Experimental Final-label feedback image
+remains manual context only. The selected next bounded checkpoint is exactly
+`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-INITIAL-PLACEMENT-INTERACTION-AUDIT1`;
+it is selected only and is not started by this record.

@@ -4137,3 +4137,24 @@ routing, feedback, label, sample, preview, schema, release, publication, or
 exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-BOTTLENECK-ORIGIN-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-BOTTLENECK-ORIGIN-AUDIT1 (2026-09-01)
+
+The seed-versus-settling bottleneck-origin audit is recorded in [LiaisonScape
+Initial-placement Motif-cluster Bottleneck Origin
+Audit](liaisonscape-initial-placement-motif-cluster-bottleneck-origin-audit.md).
+Its result is `CASE 7 / EXACT RESULT 5 / DECISION F`: the current seed is
+deterministic but sensitive to topology-tie and lexical ID assignment. An
+isomorphic ID rename changes the Node-to-slot assignment and removes
+Lighthouse's exact motif collinearity and Ashen's exact zero-gap fan-out,
+whereas reversing Entity or Relation arrays does not change them.
+
+Settling remains a distinct secondary boundary: it partially recovers the
+Lighthouse seed-born collapse and creates mixed motif/fan-out changes in Ashen.
+Component packing does not materially create the observed one-component
+bottlenecks. No seed, slot, radius, phase, settling, coefficient, force,
+threshold, Production placement, routing, feedback, label, sample, preview,
+schema, release, publication, or `ai-knowledge` change was made. The selected
+next bounded checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-STABILITY-AUDIT1`;
+it is selected only and is not started by this record.

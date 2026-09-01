@@ -4158,3 +4158,25 @@ schema, release, publication, or `ai-knowledge` change was made. The selected
 next bounded checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-STABILITY-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-STABILITY-AUDIT1 (2026-09-01)
+
+The seed-assignment stability audit is recorded in [LiaisonScape
+Initial-placement Seed-assignment Stability Audit](liaisonscape-initial-placement-seed-assignment-stability-audit.md).
+Its result is `CASE 7 / EXACT RESULT 5 / DECISION D`: higher-order topology
+distinguishes all Nodes in the tested Lighthouse and Ashen samples, but K3,
+star, path, symmetric-motif, and ring controls confirm that automorphic Nodes
+cannot receive a unique topology-only order. Structural partitioning and
+orbit-aware semantics are supported as assignment boundaries; current ID
+choices are not shown to be quality-neutral, and seed geometry quality remains
+a separate motif-aware question.
+
+The audit reproduced the current lexical seed's ID-rename-sensitive
+collinearity and zero-gap behavior, while Entity/Relation array reversal
+remained stable. It used only a temporary diagnostic signature/orbit observer;
+no Production seed, lexical tie-break, slot, radius, phase, settling,
+routing, feedback, label, sample, preview, schema, release, or
+`ai-knowledge` change was made. The selected next bounded checkpoint is
+exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-AWARE-SEED-GEOMETRY-SEMANTICS-AUDIT1`;
+it is selected only and is not started by this record.

@@ -4114,3 +4114,26 @@ schema, release, publication, or `ai-knowledge` change was made. The selected
 next bounded checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-REGULARIZATION-ACTIVATION-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-REGULARIZATION-ACTIVATION-AUDIT1 (2026-09-01)
+
+The source-independent regularization activation audit is recorded in
+[LiaisonScape Initial-placement Motif-cluster Regularization Activation
+Audit](liaisonscape-initial-placement-motif-cluster-regularization-activation-audit.md).
+Its result is `CASE 5 / EXACT RESULT 3 / DECISION E`: transition history can
+detect and help prevent solver-induced deterioration after a comparable Derived
+geometry exists, but it cannot repair bottlenecks already present in the
+initial seed. Lighthouse is seed-born (`ORIGIN-L1`); Ashen combines seed-present
+geometry with mixed settling changes (`ORIGIN-L3/L4`).
+
+Per-constraint deterioration is detectable but too sensitive as a complete
+activation policy, while cluster Pareto activation remains underdetermined in
+mixed improvement/worsening states. Exact degeneracy is retained only as a
+safety floor, proposal-relative non-worsening is retained only as a guard, and
+workflow-bounded participation is supported. No threshold, ranking, reference,
+ideal shape, scalar score, force, Node movement, Production placement,
+routing, feedback, label, sample, preview, schema, release, publication, or
+`ai-knowledge` change was made. The selected next bounded checkpoint is
+exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-BOTTLENECK-ORIGIN-AUDIT1`;
+it is selected only and is not started by this record.

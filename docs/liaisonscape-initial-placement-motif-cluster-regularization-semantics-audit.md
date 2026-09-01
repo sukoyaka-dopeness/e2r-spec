@@ -155,7 +155,7 @@ gap, the symbolic direction is:
 
 This direction is source-independent, mirror-equivariant, and does not choose a
 semantic W. The controlled fan-out state widened the selected gap by a
-symbolic `60 -> 25` degree change in the recorded gap diagnostic while
+symbolic `25 -> 60` degree change in the recorded gap diagnostic while
 preserving the two motif shapes and topology. The direction is not
 independent of the motif layer in an overlap cluster: A, B, or S may also
 belong to other motif constraints.

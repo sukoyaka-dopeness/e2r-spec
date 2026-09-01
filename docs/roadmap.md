@@ -4297,3 +4297,22 @@ Handoff, Storage Research, or `ai-knowledge` change was made. The selected
 next bounded checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-INPUT-BOUNDARY-AUDIT1`;
 it is selected only and is not started by this record.
+
+### GitHub Sponsors follow-up (2026-09-02)
+
+- GitHub Sponsors account approval is complete.
+- Account-level default funding is configured through
+  `sukoyaka-dopeness/.github/.github/FUNDING.yml`.
+- Repository-level Sponsorships enablement is an administrative GitHub setting
+  and remains separate from application runtime.
+- NarrativeLine and LiaisonScape should expose GitHub Sponsors only as a
+  low-prominence secondary/support affordance near the bottom of Home, not as a
+  primary CTA or Header action.
+- Hub placement should be evaluated separately for cross-app consistency rather
+  than assumed from the application placement.
+- No runtime Sponsor link/button implementation is authorized by this roadmap
+  update.
+
+This status-only update does not reorder the active LiaisonScape Initial
+Placement sequence and does not authorize changes to application source,
+runtime behavior, or repository-local funding files.

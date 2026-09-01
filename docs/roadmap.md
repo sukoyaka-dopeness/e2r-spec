@@ -4570,3 +4570,19 @@ No candidate family, assignment, application source, sample, preview, or
 `ai-knowledge` change was made. The selected next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-QUALITY-EXPERIMENT-DESIGN1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-QUALITY-EXPERIMENT-DESIGN1 (2026-09-02)
+
+The [LiaisonScape practical-family structural-quality experiment design](liaisonscape-initial-placement-seed-practical-family-structural-quality-experiment-design.md)
+is complete with `CASE 9 / EXACT RESULT 1+2+3+4+5+6 / DECISION A`. It keeps
+the accepted two-layer motif/overlap-cluster profile, separates exact
+GEO-0/GEO-3 safety from structural descriptors, and defines bounded
+pre-settling/post-settling evidence with unchanged settling, a small
+representative-assignment probe, and an F1/FP1 affine diagnostic.
+
+The design selects `VIS-0`: no manual visual evidence is required for the next
+structural run, and routing, labels, crossings, and Production quality remain
+outside scope. No source, candidate family, assignment, settling, sample,
+preview, or `ai-knowledge` change was made. The selected next checkpoint is
+exactly `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-QUALITY-EXPERIMENT1`;
+it is selected only and is not started by this record.

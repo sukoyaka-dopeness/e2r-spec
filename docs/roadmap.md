@@ -4352,3 +4352,20 @@ Production source, assignment, settling, routing, label, sample, preview, or
 `ai-knowledge` change was made. The selected next bounded checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-FAMILY-OFFLINE-EXPERIMENT1-DESIGN1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-FAMILY-OFFLINE-EXPERIMENT1-DESIGN1 (2026-09-02)
+
+The offline candidate-family Experiment 1 design is recorded in
+[LiaisonScape Initial-placement Seed Candidate-family Offline Experiment 1 Design](liaisonscape-initial-placement-seed-candidate-family-offline-experiment1-design.md).
+The design is ready with `F0` (the current fixed eight-direction family) and
+`F1-ALG` (an exact N-only algebraic general-position-like diagnostic family).
+`F2` structured geometry is deferred because a distinct exact/provable
+comparator is not yet selected. `F-SET` is the primary level and F-MAP-CURRENT
+is secondary only.
+
+The future run will use exact GEO-0/GEO-3 predicates, no thresholds or scores,
+and will remain offline in a disposable worktree. No Production generator,
+assignment, settling, packing, routing, label, sample, preview, or
+`ai-knowledge` change was made. The selected next bounded checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-FAMILY-OFFLINE-EXPERIMENT1`;
+it is selected only and is not started by this record.

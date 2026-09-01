@@ -4640,3 +4640,21 @@ sample, preview, or `ai-knowledge` change was made. The selected next
 checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-EXPERIMENT-DESIGN1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-EXPERIMENT-DESIGN1 (2026-09-02)
+
+The [LiaisonScape topology-aware assignment experiment design](liaisonscape-initial-placement-seed-topology-aware-assignment-experiment-design.md)
+is complete as `CASE 1 / DECISION A`. Existing graph-derived topology roles,
+deterministic FP1 candidate-role descriptions, and the two-layer structural
+profile are sufficient for a bounded headless experiment without a scalar
+objective. The design keeps topology role classification, candidate geometric
+role classification, role-to-candidate correspondence, admissible assignment
+sets, and literal materialization separate. K3 orbit semantics, a stronger
+same-degree lexical rename, input-order control, Ashen trade-offs, and FP1
+family asymmetry are explicit boundaries.
+
+No topology order, candidate family, assignment, Production behavior, settling,
+routing, label, sample, preview, or `ai-knowledge` change was made. The
+selected next checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-EXPERIMENT1`;
+it is selected only and is not started by this record.

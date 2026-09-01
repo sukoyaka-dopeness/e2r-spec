@@ -4063,3 +4063,32 @@ parallel, self-loop, sample, preview, schema, release, or publication change
 was made. The selected next bounded checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-QUALITY-CRITERIA-VALIDATION1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-QUALITY-CRITERIA-VALIDATION1 (2026-09-01)
+
+The two-layer motif/overlap-cluster quality validation is recorded in
+[LiaisonScape Initial-placement Motif-cluster Quality Criteria
+Validation](liaisonscape-initial-placement-motif-cluster-quality-criteria-validation.md).
+Its result is `CASE 2 / EXACT RESULT 2 / DECISION B`: the two-layer profile is
+validated after collapsing redundant descriptors. P4 is the same geometric
+quantity as the P2 vertex-to-opposite-side altitude, and P1 motif-adjacent
+distances are the P2 side lengths. P1 cluster-wide absolute packing remains
+context; P3 shared-Node fan-out and P5 boundary context remain distinct
+cluster-layer information.
+
+The validation reproduced 19 unordered motifs and 57 ordered roles, passed
+zero-motif and two-disconnected-cluster controls, and confirmed translation,
+rotation, scale, Entity-order, Relation-order, locale, and deterministic
+invariance boundaries. A controlled shared-Node state changed fan-out from
+`60` to `25` degrees while preserving motif shape, confirming that the
+overlap layer adds information unavailable from one motif alone. Packing is
+supported as one context dimension but is only partial as a complete quality
+explanation; attraction was not assigned causality.
+
+No Node movement, force, scalar score, numeric threshold, route/label input,
+Production placement, sample, preview, schema, release, or publication change
+was made. The strengthened reusable result remains a hypothesis only and no
+`ai-knowledge` entry was changed. The selected next bounded checkpoint is
+exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-REGULARIZATION-SEMANTICS-AUDIT1`;
+it is selected only and is not started by this record.

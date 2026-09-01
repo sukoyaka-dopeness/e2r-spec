@@ -3832,3 +3832,23 @@ collision, parallel, sample, preview, schema, release, or publication change
 was made. The selected next bounded checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-GLOBAL-TOPOLOGY-ATTRIBUTION-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-GLOBAL-TOPOLOGY-ATTRIBUTION-AUDIT1 (2026-09-01)
+
+The exhaustive non-focal attribution audit is recorded in [LiaisonScape
+Initial-placement Global-topology Attribution Audit](liaisonscape-initial-placement-global-topology-attribution-audit.md).
+Its result is `CASE 1 / EXACT RESULT 1 / DECISION A`: the single outside-focal
+Node `maya` is an inclusion-minimal V0 sufficient set in JA (`000010`), opening
+the H1111 feedback corridor from `0` to `63` safe pairs. Maya is a direct
+neighbor of both focal endpoints, while the final-label replay changes two
+Node labels and nine ordinary routes, so label-placement and route propagation
+are material.
+
+The result does not reproduce Full S0 presentation: Maya alone selects
+`+40/-100`, while JA strong-reproduction masks are `111011` and `111111`.
+The JA minimal mask does not open EN, so the attribution is locale-dependent
+and EN requires a different or broader non-focal coordinate set. No numeric
+placement rule, Production Initial Placement change, feedback adoption, or
+other runtime change is justified. The selected next checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-NONFOCAL-NODE-GEOMETRY-CRITERIA-AUDIT1`;
+it is selected only and is not started by this record.

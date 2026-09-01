@@ -4620,3 +4620,23 @@ candidate family, assignment, settling, sample, preview, or `ai-knowledge`
 change was made. The selected next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-ASSIGNMENT-SENSITIVITY-FOLLOWUP1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-ASSIGNMENT-SENSITIVITY-FOLLOWUP1 (2026-09-02)
+
+The [LiaisonScape practical-family structural assignment-sensitivity follow-up](liaisonscape-initial-placement-seed-practical-family-structural-assignment-sensitivity-followup1.md)
+is recorded as `CASE 1 / DECISION A`. The bounded FP1 pre-settling
+single-swap audit found structural profile variation beyond the preceding
+three representatives: 21/45 Lighthouse swaps and 44/45 Ashen Crown swaps
+changed profile, while all 93 swaps remained injective and current-floor
+GEO-0/GEO-3 hard-valid. K3 swaps remained equivalent at the topology orbit
+level. FP1 candidate positions are non-equivalent geometric roles, and Ashen
+showed structural trade-offs; therefore no best mapping or scalar objective was
+selected.
+
+The result supports topology-aware assignment as the smallest next question,
+while candidate-family responsibility and visual quality remain open. No
+Production assignment, candidate family, source, settling, routing, label,
+sample, preview, or `ai-knowledge` change was made. The selected next
+checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-EXPERIMENT-DESIGN1`;
+it is selected only and is not started by this record.

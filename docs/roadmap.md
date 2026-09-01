@@ -3934,3 +3934,24 @@ coefficient tuning or candidate resurrection occurred. The selected next
 checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SHARED-NEIGHBOR-TARGET-SELECTION-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SHARED-NEIGHBOR-TARGET-SELECTION-AUDIT1 (2026-09-01)
+
+The shared-neighbor target-selection audit is recorded in [LiaisonScape
+Initial-placement Shared-neighbor Target Selection Audit](liaisonscape-initial-placement-shared-neighbor-target-selection-audit.md).
+Its result is `CASE 6 / EXACT RESULT 5 / DECISION G`: Lighthouse has a
+topology-distinguishable shared-neighbor role because the Clara-Thomas pair
+has relation multiplicity two, but Ashen's 21-role overlap cluster leaves the
+validated Kael role non-unique. The generic minimum-line-distance selector
+still chooses Clara and Elara as W respectively, so geometry ranking is not a
+semantic target contract. Target role and adjustment scope remain
+under-specified, with a sample-split result.
+
+The exhaustive role inventory preserved directed Relation evidence without
+weighting it, excluded self-relations, compared stored and auto support
+triangles, and found identical topology/geometry in the JA/EN pairs. No
+Node movement, candidate placement rule, routing, feedback, label, sample,
+preview, schema, release, or publication change was made. The selected next
+bounded checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SHARED-NEIGHBOR-ROLE-SYMMETRY-AUDIT1`;
+it is selected only and is not started by this record.

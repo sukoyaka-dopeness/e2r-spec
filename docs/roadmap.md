@@ -4658,3 +4658,23 @@ routing, label, sample, preview, or `ai-knowledge` change was made. The
 selected next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-EXPERIMENT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-EXPERIMENT1 (2026-09-02)
+
+The [LiaisonScape topology-aware assignment experiment](liaisonscape-initial-placement-seed-topology-aware-assignment-experiment1-result.md)
+is recorded as `CASE 9 / MIXED / EXACT RESULT 1+2+3+4+5+6+7+8+9+10 / DECISION B`.
+Across Lighthouse, Ashen Crown, and the K3 orbit control, all six bounded
+policies remained FP1 hard-valid. TA-0 retained lexical sensitivity under the
+strong same-degree rename, while TA-1 through TA-3 transported topology,
+assignment, literal-witness, and anonymous-profile classes and remained stable
+under Entity/Relation input reorder. Real-graph structural profiles changed
+with topology field order and with the RC-H2 forward/reverse correspondence
+direction; K3 remained orbit-equivalent.
+
+No policy is adopted for Production because candidate index has no accepted
+quality meaning and the observed profile differences are not a quality verdict.
+The next responsibility is a bounded structural assignment-objective and
+candidate-family research checkpoint, with clearance, local curvature,
+parallel/self-loop separation, node-movement shape preservation, and later
+crossing reduction kept distinct. No source, candidate family, assignment,
+settling, routing, label, sample, preview, or `ai-knowledge` change was made.

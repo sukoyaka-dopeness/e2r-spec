@@ -4385,3 +4385,21 @@ Production layout design; no visual-quality or runtime conclusion was made.
 The selected next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-GENERATION-ASSIGNMENT-RESPONSIBILITY-AUDIT1`;
 it is selected only and is not started by this record.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-GENERATION-ASSIGNMENT-RESPONSIBILITY-AUDIT1 (2026-09-02)
+
+The seed generation/assignment responsibility audit is recorded in
+[LiaisonScape Initial-placement Seed Generation / Assignment Responsibility Audit](liaisonscape-initial-placement-seed-generation-assignment-responsibility-audit.md).
+Its result is `CASE 11 / EXACT RESULT 1+2+3+4+5+6+7+8 / DECISION A`: for a
+mapping-sensitive candidate family, assignment must preserve available
+GEO-0/GEO-3 feasibility and must not use ID spelling or input order to choose
+non-equivalent geometry roles. F1-ALG demonstrates the conditional escape
+hatch in which every injective mapping is hard-safe; G7/K6 remain family-
+infeasible and cannot be repaired by assignment.
+
+Current degree-plus-lexical mapping is recorded as A0-CURRENT, not as a
+semantic rule. True automorphism orbits prevent a unique topology-only named
+order, and visual-quality-neutral tie handling remains open. No Production or
+preview change was made. The selected next checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-SEMANTICS-DESIGN1`;
+it is selected only and is not started by this record.

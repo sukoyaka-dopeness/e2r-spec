@@ -4768,3 +4768,18 @@ checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-MANIFEST-RECONSTRUCTION-DESIGN1`.
 No experiment, source, assignment, Production, settling, routing, label,
 sample, preview, or `ai-knowledge` change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-MANIFEST-RECONSTRUCTION-DESIGN1 (2026-09-02)
+
+The [LiaisonScape assignment manifest reconstruction design](liaisonscape-initial-placement-seed-topology-aware-assignment-manifest-reconstruction-design.md)
+records `CASE 5 / EXACT RESULT 1+2+3+4+5+6+7+8+9+10 / DECISION I`.
+TA-0 / REP-0 is a `WIT-DERIVED` control, TA-1 remains `WIT-CLASS-ONLY`, and
+TA-2-degree, TA-2-motif, and TA-3 forward/reverse remain excluded because their
+complete policy semantics and literal correspondence are not committed.
+
+The six-policy objective matrix is therefore not ready; no historical mapping
+was recovered from deleted output, profile inversion, or residual shells. The
+smallest selected next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA1-QUALITY-NEUTRAL-WITNESS-DESIGN1`.
+No source, assignment, objective, materializer, solver, settling, routing,
+label, sample, preview, or `ai-knowledge` change was made.

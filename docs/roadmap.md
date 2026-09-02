@@ -5189,3 +5189,22 @@ used for visual, settling, routing, label, structural-objective, ranking, or
 PR-2 acceptance. No candidate is selected and the common fixture ROLE GAP
 remains open. The disposable clone is retained for the next exact checkpoint:
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-VALIDATION1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-VALIDATION1 (2026-09-03)
+
+The [Validation1 result](liaisonscape-initial-placement-seed-production-candidate-materialization-validation1-result.md)
+records `CASE 1 / DECISION A`: the frozen Implementation1 source and initial
+artifact hashes matched, the existing harness reproduced all 15 authorized
+fixture/candidate cells, and nonvolatile materialization evidence matched
+after expected `generatedAt` volatility was removed. Pure-core tests passed
+13/13; the unchanged application gate passed 280/280 tests, lint, and build;
+Production isolation remained intact.
+
+This establishes bounded `MAT-C3` runtime/nonvisual materialization evidence
+only. It does not establish `PR-2`, select a candidate, accept visual,
+settling, routing/label, viewport, performance, or Production integration
+evidence, or claim that Initial Placement is solved. The exact smallest next
+prerequisite is nonvisual evidence completion for PR-2, beginning with the
+candidate-specific Production compatibility/persistence/migration/fallback
+audit and extending hard-gate/runtime and Production provenance evidence
+beyond the bounded materializer surface. That prerequisite is not started.

@@ -5106,3 +5106,20 @@ Experiment5 is not justified by a specific unresolved question. The maximum
 inference remains `INF-W1`; no visual or Production conclusion is made. The
 next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-RESEARCH-SYNTHESIS1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-RESEARCH-SYNTHESIS1 (2026-09-02)
+
+The [Research Synthesis1 result](liaisonscape-initial-placement-seed-structural-assignment-research-synthesis1-result.md)
+reconciles the TA0–TA3 structural-assignment lineage through the
+`INF-W0 / INF-W1` evidence ceiling. The current-scope branch is saturated:
+the bounded relation matrix is complete, the corrected Lighthouse/Ashen/K3
+topologies are recorded, and no specific unresolved same-level question
+justifies Experiment5.
+
+This is a research closure only. Hard-validity, fixture-local structural
+preference, visual quality, and Production acceptance remain separate layers.
+No universal winner, cross-fixture ranking, FP1 superiority, visual acceptance,
+or Production candidate selection is recorded. The remaining concrete
+pre-Production responsibility is to freeze auditable acceptance criteria. The
+next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-READINESS-DESIGN1`.

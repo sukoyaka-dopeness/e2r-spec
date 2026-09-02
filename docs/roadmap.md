@@ -5267,3 +5267,24 @@ selection, and live-integration evidence remain separate. The exact smallest
 next prerequisite is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-PR2-NONVISUAL-EVIDENCE-COMPLETION1`,
 which is not started.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-PR2-NONVISUAL-EVIDENCE-COMPLETION1 (2026-09-03)
+
+The [PR-2 nonvisual evidence completion result](liaisonscape-initial-placement-seed-production-pr2-nonvisual-evidence-completion1-result.md)
+records `CASE 1 / DECISION A`: the four exact PR-2 classes—hard validity,
+determinism/runtime, compatibility, and provenance—are complete-bounded for
+the five frozen materializer identities on `1 <= N <= 65`. The expanded
+evidence covers seven committed real fixtures and six deterministic controls:
+65 eligible candidate cells pass all HARD-1..7 gates, while N=0 and N=66 fail
+closed for every candidate. Projection boundaries for self, parallel, and
+Event Relations are recorded explicitly.
+
+The frozen pure-core tests pass 13/13, the MAT-C3 harness passes 15/15, the
+new PR-2 evidence tests pass 4/4, and unchanged Production passes 280/280,
+lint, build, and diff-check. No candidate-specific failure occurred. The
+realistic fixture ROLE GAP remains open for later stages; visual, settling,
+routing/label, viewport, performance, Production integration, and selection
+remain separate and unaccepted. No candidate is selected and `PR-C3` through
+`PR-C5` remain `NO`. The exact next prerequisite is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-DESIGN1`,
+which is selected only and not started.

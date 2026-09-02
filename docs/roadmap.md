@@ -4920,3 +4920,18 @@ witness, mapping, hard gate, or objective result. TA2-degree remains unchanged
 at TA2W-MAN-5. The selected next checkpoint is
 E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-MOTIF-OPERATIONAL-WITNESS-RECONSTRUCTION1.
 No Production, sample, or ai-knowledge change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-MOTIF-OPERATIONAL-WITNESS-RECONSTRUCTION1 (2026-09-02)
+
+The [TA-2 motif operational witness reconstruction result](liaisonscape-initial-placement-seed-ta2-motif-operational-witness-reconstruction1-result.md)
+records CASE 1 / DECISION A. The corrected `TA2-MOTIF-NEW-v1` vectors were
+materialized as `TA2-MOTIF-W1-OP-v1` for Lighthouse, Ashen Crown, and K3.
+All three witnesses are deterministic under Entity/Relation input reorder,
+semantic rename transport passes, K3 remains one orbit, and all exact
+GEO-0/GEO-3 hard gates pass. Each reaches TA2W-MAN-5 with
+`TA2-WIT-NEW-OPERATIONAL` / `CLAIM-P0`.
+
+The complete safe TA2 witness set is Design3-ready. The selected next
+checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN3`.
+No objective run, Production, sample, or `ai-knowledge` change was made.

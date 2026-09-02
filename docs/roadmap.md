@@ -5123,3 +5123,18 @@ or Production candidate selection is recorded. The remaining concrete
 pre-Production responsibility is to freeze auditable acceptance criteria. The
 next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-READINESS-DESIGN1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-READINESS-DESIGN1 (2026-09-02)
+
+The [Production Readiness Design1 result](liaisonscape-initial-placement-seed-production-readiness-design1.md)
+freezes a non-ranking acceptance contract before candidate selection. Hard
+validity, deterministic/runtime correctness, structural preference, visual
+acceptance, settling, routing/labels, viewport, performance, compatibility,
+provenance, and fixture evidence remain separate classes. PP-M3 remains
+fixture-local preference evidence; incomparability and equivalence are
+preserved, and no cross-fixture score or winner is authorized.
+
+Criteria are frozen, but candidate eligibility is not yet audited. Visual and
+runtime evidence are not accepted by this checkpoint, and no Production
+candidate is selected. The exact next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-READINESS-EVIDENCE-AUDIT1`.

@@ -5225,3 +5225,23 @@ viewport, or performance evidence was accepted. The exact smallest next
 prerequisite is a bounded common Production compatibility contract design,
 beginning with runtime-transform ownership and the EVAL-FULL-SEED versus
 partial Stored/Owned boundary. It is not started.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-COMPATIBILITY-DESIGN1 (2026-09-03)
+
+The [candidate compatibility design](liaisonscape-initial-placement-seed-production-candidate-compatibility-design1-result.md)
+records `CASE 1 / DECISION A`. It freezes a minimum common Product contract:
+the explicit transform belongs to a dedicated pure placement-space evaluation
+adapter; candidate evaluation is optional and startup-external; EVAL-FULL-SEED
+is permitted only for a clean zero-Stored state; Stored/Owned coordinates
+remain authoritative; Derived output requires explicit user-owned adoption;
+accepted Coordinate and canonical Space migration precede evaluation; failure
+is attributable with no silent fallback or candidate retry; and provenance
+remains in a separate evaluation record.
+
+The complete-Stored distinction is explicit: Stored/Owned precedence is
+`PASS`, while candidate evaluation over complete Stored input remains
+`NOT-DEFINED` because EVAL-FULL-SEED rejects Stored input. No Production code,
+candidate selection, schema, registry, persistence, migration, fallback,
+visual, settling, routing/label, viewport, performance, or structural
+objective work was started. `PR-2` remains `NO`. The exact next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-COMPATIBILITY-VALIDATION1`.

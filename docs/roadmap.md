@@ -4846,3 +4846,18 @@ quality failure. `EXEC-YES` is selected for the exact next checkpoint:
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT2`.
 No objective values, application source, sample, or `ai-knowledge` change was
 made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT2 (2026-09-02)
+
+The [Experiment2 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment2-result.md)
+records `CASE 3 / DECISION A`. The reduced exact-rational pipeline completed
+for the three frozen literal witness pairs: Lighthouse
+`TA0-DOMINATES-W1`, Ashen Crown `TA0-DOMINATES-W1`, and K3
+`PP-PREF-EQUIVALENT` through the identity oracle. The result remains
+`INF-W0/INF-W1` and `CLAIM-P0`; no policy ranking, cross-fixture score, or
+Production conclusion is permitted.
+
+The exact pipeline is validated, TA-2/TA-3 remain excluded for missing
+semantics, and the selected next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-POLICY-MANIFEST-RECOVERY1`.
+No source, sample, `ai-knowledge`, or Production change was made.

@@ -5383,3 +5383,28 @@ execution, V0–V3 evidence, screenshots, browser review, candidate selection, o
 Production integration occurred. PR-3 remains `NO`. The exact next prerequisite
 is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-DESIGN1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-DESIGN1 (2026-09-03)
+
+The [Product evaluation seam design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-design1-result.md)
+records CASE 1 / DECISION A and Product modularization PARTIAL. Reliable future
+PR-3 evidence requires a Product-owned explicit-seed settling kernel and a
+layered pure automatic route/label derivation boundary. The design keeps
+manual state, reconciliation, Dataset lifecycle, interaction, and SVG
+composition App-owned; no render-component extraction is authorized now
+(P-A). Product modules remain candidate-, TA-, manifest-, and harness-blind.
+
+The design freezes PES-SETTLING-v1, PES-ROUTING-v1, PES-LABEL-v1,
+PES-RENDER-v1, PES-ISOLATION-v1, and PRODUCT-SEAM-EQUIVALENCE-v1. Exact
+characterization must precede refactoring, with exact numeric equality and
+arithmetic-order preservation for default behavior. The preferred future
+workspace is a new disposable clone based at accepted source commit
+fd563340625fd3d88dc25baedc93c4f8fe69e5e7; the retained materializer clone
+remains unchanged.
+
+No Product implementation, harness implementation, candidate materialization,
+V0-V3 execution, screenshot/browser review, comparison, ranking, selection,
+Production integration, fixture change, or PR-3 claim was made. PR-2 remains
+COMPLETE-BOUNDED, PR-3 remains NO, and the exact next prerequisite is the
+not-started
+E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1A.

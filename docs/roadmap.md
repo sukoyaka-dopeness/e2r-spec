@@ -5288,3 +5288,23 @@ remain separate and unaccepted. No candidate is selected and `PR-C3` through
 `PR-C5` remain `NO`. The exact next prerequisite is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-DESIGN1`,
 which is selected only and not started.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-DESIGN1 (2026-09-03)
+
+The [visual, settling, and routing evidence design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-design1-result.md)
+records `CASE 1 / DECISION A`: the PR-3 evidence contract is frozen without
+executing visual acceptance. PR-2 remains `COMPLETE-BOUNDED`; PR-3 remains
+`NO`. The design separates candidate seed output from Product settling,
+routing, labels, viewport fit, and browser rendering, and freezes V0-V3
+ablation, observable visual criteria, downstream failure attribution, review,
+and provenance contracts. `E-VIEWPORT` and `E-PERFORMANCE` are classified as
+separate post-PR3 evidence, not assumed PR-3 gates.
+
+The common realistic fixture ROLE GAP remains open: high-fanout, sparse, dense,
+realistic symmetry, and realistic larger-size roles require committed fixture
+authority and validation. K3 remains control-only and N=65 remains a
+synthetic boundary control. No candidate is ranked or selected, no Production
+integration is made, and no screenshots are produced. The exact next
+prerequisite is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-FIXTURE-ROLE-ACQUISITION-DESIGN1`,
+which is selected only and not started.

@@ -1,0 +1,31 @@
+{
+  "version":"1.0",
+  "entities":[
+    {"id":"east-solar-cooperative","name":"East District Solar Cooperative","description":"A resident-owned cooperative operating a small solar project in the east district."},
+    {"id":"east-solar-site","name":"East District Solar Site","description":"The community solar installation on the east district waterworks grounds."},
+    {"id":"east-installation-firm","name":"East Renewable Installers","description":"The local firm that installed and services the east district array."},
+    {"id":"east-grid-operator","name":"East Grid Operator","description":"The electricity network operator receiving power from the east site."},
+    {"id":"east-members","name":"East Cooperative Members","description":"Residents who fund and receive credit from the east district project."},
+    {"id":"east-monitoring-team","name":"East Site Monitoring Team","description":"A small team that checks the east array and records maintenance needs."},
+    {"id":"west-solar-cooperative","name":"West District Solar Cooperative","description":"A resident-owned cooperative operating a separate solar project in the west district."},
+    {"id":"west-solar-site","name":"West District Solar Site","description":"The community solar installation on the west district library grounds."},
+    {"id":"west-installation-firm","name":"West Renewable Installers","description":"The local firm that installed and services the west district array."},
+    {"id":"west-grid-operator","name":"West Grid Operator","description":"The electricity network operator receiving power from the west site."},
+    {"id":"west-members","name":"West Cooperative Members","description":"Residents who fund and receive credit from the west district project."},
+    {"id":"west-monitoring-team","name":"West Site Monitoring Team","description":"A small team that checks the west array and records maintenance needs."}
+  ],
+  "events":[],
+  "relations":[
+    {"id":"east-r01","name":"operates","sourceId":"east-solar-cooperative","targetId":"east-solar-site"},
+    {"id":"east-r02","name":"is funded by","sourceId":"east-solar-cooperative","targetId":"east-members"},
+    {"id":"east-r03","name":"was installed by","sourceId":"east-solar-site","targetId":"east-installation-firm"},
+    {"id":"east-r04","name":"feeds power to","sourceId":"east-solar-site","targetId":"east-grid-operator"},
+    {"id":"east-r05","name":"is monitored by","sourceId":"east-solar-site","targetId":"east-monitoring-team"},
+    {"id":"west-r01","name":"operates","sourceId":"west-solar-cooperative","targetId":"west-solar-site"},
+    {"id":"west-r02","name":"is funded by","sourceId":"west-solar-cooperative","targetId":"west-members"},
+    {"id":"west-r03","name":"was installed by","sourceId":"west-solar-site","targetId":"west-installation-firm"},
+    {"id":"west-r04","name":"feeds power to","sourceId":"west-solar-site","targetId":"west-grid-operator"},
+    {"id":"west-r05","name":"is monitored by","sourceId":"west-solar-site","targetId":"west-monitoring-team"}
+  ],
+  "extensions":{"metadata":{"datasetId":"visual-fixture-district-solar-cooperatives-v1","title":"District Solar Cooperatives"}}
+}

@@ -1,0 +1,31 @@
+{
+  "version":"1.0",
+  "entities":[
+    {"id":"east-solar-cooperative","name":"東地区太陽光協同組合","description":"東地区で小規模な太陽光事業を運営する住民所有の協同組合。"},
+    {"id":"east-solar-site","name":"東地区太陽光施設","description":"東地区の水道施設用地にある地域太陽光発電設備。"},
+    {"id":"east-installation-firm","name":"東再生可能エネルギー施工社","description":"東地区の発電設備を施工し保守する地域企業。"},
+    {"id":"east-grid-operator","name":"東地区送電網運用者","description":"東地区の設備から電力を受け入れる送電網運用者。"},
+    {"id":"east-members","name":"東地区組合員","description":"東地区の事業に出資し電力の還元を受ける住民。"},
+    {"id":"east-monitoring-team","name":"東施設監視チーム","description":"東地区の設備を点検し保守の必要を記録する小規模チーム。"},
+    {"id":"west-solar-cooperative","name":"西地区太陽光協同組合","description":"西地区で別の太陽光事業を運営する住民所有の協同組合。"},
+    {"id":"west-solar-site","name":"西地区太陽光施設","description":"西地区の図書館用地にある地域太陽光発電設備。"},
+    {"id":"west-installation-firm","name":"西再生可能エネルギー施工社","description":"西地区の発電設備を施工し保守する地域企業。"},
+    {"id":"west-grid-operator","name":"西地区送電網運用者","description":"西地区の設備から電力を受け入れる送電網運用者。"},
+    {"id":"west-members","name":"西地区組合員","description":"西地区の事業に出資し電力の還元を受ける住民。"},
+    {"id":"west-monitoring-team","name":"西施設監視チーム","description":"西地区の設備を点検し保守の必要を記録する小規模チーム。"}
+  ],
+  "events":[],
+  "relations":[
+    {"id":"east-r01","name":"運営する","sourceId":"east-solar-cooperative","targetId":"east-solar-site"},
+    {"id":"east-r02","name":"出資を受ける","sourceId":"east-solar-cooperative","targetId":"east-members"},
+    {"id":"east-r03","name":"施工を受ける","sourceId":"east-solar-site","targetId":"east-installation-firm"},
+    {"id":"east-r04","name":"電力を供給する","sourceId":"east-solar-site","targetId":"east-grid-operator"},
+    {"id":"east-r05","name":"監視される","sourceId":"east-solar-site","targetId":"east-monitoring-team"},
+    {"id":"west-r01","name":"運営する","sourceId":"west-solar-cooperative","targetId":"west-solar-site"},
+    {"id":"west-r02","name":"出資を受ける","sourceId":"west-solar-cooperative","targetId":"west-members"},
+    {"id":"west-r03","name":"施工を受ける","sourceId":"west-solar-site","targetId":"west-installation-firm"},
+    {"id":"west-r04","name":"電力を供給する","sourceId":"west-solar-site","targetId":"west-grid-operator"},
+    {"id":"west-r05","name":"監視される","sourceId":"west-solar-site","targetId":"west-monitoring-team"}
+  ],
+  "extensions":{"metadata":{"datasetId":"visual-fixture-district-solar-cooperatives-v1-ja","title":"地区太陽光協同組合"}}
+}

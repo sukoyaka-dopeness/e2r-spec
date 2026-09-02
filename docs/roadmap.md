@@ -4751,3 +4751,20 @@ only. The selected next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN1`.
 No comparator, objective, candidate-family, assignment, Production, settling,
 routing, label, sample, preview, or `ai-knowledge` change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN1 (2026-09-02)
+
+The [LiaisonScape structural-assignment objective experiment design](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design.md)
+is recorded as `CASE 3 / EXACT RESULT 2+6+7+8+9+11 / DECISION C`.
+The bounded experiment contract is otherwise defined: exact-rational FP1,
+PRE-settling, normalized altitude plus FAN-P1, fixed coverage, record-level
+PP-M3 comparison, and 15 unordered policy pairs per graph. Exact altitude
+comparison is ready and K3 remains orbit-safe with `k=2` fan-out excluded.
+
+Execution is not ready because committed evidence does not contain complete
+literal Node-to-FP1-index witness mappings and tie/fallback manifests for
+TA-1 through TA-3. No mapping is guessed or newly optimized. The selected next
+checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-MANIFEST-RECONSTRUCTION-DESIGN1`.
+No experiment, source, assignment, Production, settling, routing, label,
+sample, preview, or `ai-knowledge` change was made.

@@ -4797,3 +4797,18 @@ remains set-valued at policy level, and the next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA1-OPERATIONAL-WITNESS-RECONSTRUCTION1`.
 No objective, assignment, source, materializer, solver, settling, routing,
 label, sample, preview, or `ai-knowledge` change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA1-OPERATIONAL-WITNESS-RECONSTRUCTION1 (2026-09-02)
+
+The [TA-1 operational witness reconstruction](liaisonscape-initial-placement-seed-ta1-operational-witness-reconstruction1-result.md)
+records `CASE 7 / DECISION G`. The predeclared `TA1-W1-OP-v1` rule produced
+deterministic exact manifests for Ashen Crown and K3 at `W1-MAN-5`; Lighthouse
+passed the exact hard gate but remains at `W1-MAN-4` because its current
+committed blob hash does not reconcile with the preceding recorded provenance
+hash. W1 remains `WIT-NEW-OPERATIONAL` / `CLAIM-P0`, and TA-1 remains
+`WIT-CLASS-ONLY / MAN-2`.
+
+The selected next checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-LIGHTHOUSE-FIXTURE-PROVENANCE-RECONCILIATION1`.
+No objective, Production, source, candidate family, assignment, settling,
+routing, label, sample, preview, or `ai-knowledge` change was made.

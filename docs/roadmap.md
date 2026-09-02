@@ -4890,3 +4890,18 @@ mapping or objective result is implied.
 The selected next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-OPERATIONAL-WITNESS-RECONSTRUCTION1`.
 No source, sample, `ai-knowledge`, or Production change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-OPERATIONAL-WITNESS-RECONSTRUCTION1 (2026-09-02)
+
+The [TA-2 operational witness reconstruction result](liaisonscape-initial-placement-seed-ta2-operational-witness-reconstruction1-result.md)
+records CASE 2 / DECISION B. The new TA-2-degree contract was materialized as
+the fixture-local witness TA2-DEG-W1-OP-v1 for Lighthouse, Ashen Crown, and
+K3; all three are deterministic and pass the exact GEO-0/GEO-3 hard gate.
+The TA-2-motif witness was not materialized because Design1's
+overlapClusterMembershipCount definition conflicts with the recorded Ashen
+vectors: one overlap cluster cannot yield second-component values of 4.
+
+TA2-WIT-NEW-OPERATIONAL / CLAIM-P0 remains the degree-witness boundary.
+No objective, mapping optimization, Production, or ai-knowledge change was
+made. The selected next checkpoint is
+E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-MOTIF-RESPONSIBILITY-ENCODING-RECONCILIATION1.

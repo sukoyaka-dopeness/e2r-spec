@@ -4984,3 +4984,22 @@ history. Any next TA3 contract must be explicitly NEW. The selected next
 checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-SEMANTICS-DESIGN1`.
 No Production, runtime, sample, or `ai-knowledge` change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-SEMANTICS-DESIGN1 (2026-09-02)
+
+The [new TA-3 correspondence semantics design](liaisonscape-initial-placement-seed-ta3-correspondence-semantics-design1.md)
+records CASE 1 / DECISION A. This is explicitly a NEW operational semantic
+family, not historical replay. It selects one shared responsibility contract,
+`TA3-RESP-NEW-v1`, using the exact `R(V)=(m(V),o(V),s(V))` componentwise partial
+order by new normative reuse of `TA2-MOTIF-NEW-v1`; it does not backfill the
+historical TA3 record.
+
+It also selects one exact candidate-only local-spacing contract,
+`TA3-SPACE-NEW-v1` (SPACE-S1 mirrored local chord span), with exact integer
+monotonicity for `N>=3` and an explicit `N=2` tie boundary. Forward and reverse
+share responsibility, Node linearization, and spacing semantics, differing
+only by larger-versus-smaller spacing orientation. Future witnesses are
+reserved under `TA3-WIT-NEW-OPERATIONAL` / `CLAIM-P0`; no fixture mapping,
+objective, hard gate, Production, runtime, sample, or `ai-knowledge` change
+was made. The selected next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-OPERATIONAL-WITNESS-RECONSTRUCTION1`.

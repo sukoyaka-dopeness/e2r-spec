@@ -4697,3 +4697,20 @@ settling, routing, label, sample, preview, or `ai-knowledge` change was made.
 The next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-PARTIAL-PREFERENCE-DESIGN1`;
 it is selected only and is not auto-started.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-PARTIAL-PREFERENCE-DESIGN1 (2026-09-02)
+
+The [LiaisonScape structural-assignment partial-preference design](liaisonscape-initial-placement-seed-structural-assignment-partial-preference-design.md)
+is recorded as `CASE 2 / EXACT RESULT 1+2+3+4+5+6+7+8+9+10+11 / DECISION B`.
+Hard admissibility remains prior to preference, and normalized motif altitude
+is accepted only as a conditional same-motif local axis. Fan-out distribution
+is not yet registered because the fixed-sum circular gap vector does not supply
+a non-arbitrary comparator; a narrower fan-out semantics design is required.
+Incomparability, unknown, not-applicable, preference-equivalence, and full
+profile-equivalence remain distinct states, with no total ranking or weights.
+
+No objective, materializer, solver, candidate family, Production assignment,
+settling, routing, label, sample, preview, or `ai-knowledge` change was made.
+The next checkpoint is exactly
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FANOUT-PARTIAL-PREFERENCE-DESIGN1`;
+it is selected only and is not auto-started.

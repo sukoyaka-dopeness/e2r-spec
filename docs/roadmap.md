@@ -4935,3 +4935,18 @@ The complete safe TA2 witness set is Design3-ready. The selected next
 checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN3`.
 No objective run, Production, sample, or `ai-knowledge` change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN3 (2026-09-02)
+
+The [Design3 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design3.md)
+records CASE 1 / DECISION A. The four provenance-safe witness labels resolve
+to three exact geometry classes on Lighthouse, three on Ashen Crown, and one
+on K3. The frozen future matrix has 7 executed cells: 6 substantive
+geometry-class comparisons, including 2 Experiment2 regression cells and 4
+new TA2-motif cells, plus 1 K3 identity control.
+
+The maximum inference remains INF-W0/INF-W1; TA3 remains excluded, and no
+cross-fixture score or policy ranking is allowed. The selected next checkpoint
+is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT3`.
+No objective value, Production, sample, or `ai-knowledge` change was made.

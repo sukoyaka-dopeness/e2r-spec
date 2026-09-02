@@ -5308,3 +5308,22 @@ integration is made, and no screenshots are produced. The exact next
 prerequisite is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-FIXTURE-ROLE-ACQUISITION-DESIGN1`,
 which is selected only and not started.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-FIXTURE-ROLE-ACQUISITION-DESIGN1 (2026-09-03)
+
+The [fixture-role acquisition design result](liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition-design1-result.md)
+records `CASE 2 / DECISION A`: all 17 committed Dataset paths across
+e2r-spec, LiaisonScape, NarrativeLine, and Hub were audited from committed
+bytes under `FIXTURE-SELECTION-BLIND-v1`. Existing realistic ordinary and
+motif-rich authorities remain frozen; high-fanout, sparse, dense, realistic
+symmetry, and realistic larger-size remain role gaps. K3 remains control-only,
+and EN/JA files are presentation variants of structural fixtures rather than
+additional roles.
+
+The result freezes `VSR-FIXTURE-AUTHORITY-v1`, the role matrix, Product-visible
+routing/label coverage, locale policy, future manifest shape, and the
+candidate-blind acquisition/authoring contract. No fixture bytes were
+modified, no candidate materializer or visual/browser harness was run, no
+screenshots were produced, and no candidate was ranked or selected. PR-2
+remains `COMPLETE-BOUNDED`; PR-3 remains `NO`; the common corpus is
+`CORPUS-INCOMPLETE`.

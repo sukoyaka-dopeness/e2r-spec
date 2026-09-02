@@ -5088,3 +5088,21 @@ remains `INF-W1`. No win counts, cross-fixture aggregation, ranking, winner,
 or Production selection was recorded. The next separately authorized
 checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-INTERPRETATION1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-INTERPRETATION1 (2026-09-02)
+
+The [Experiment4 Interpretation1 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-interpretation1-result.md)
+records CASE 1 / DECISION A. Rerun1 is internally coherent: Lighthouse has
+all 6/6 class-pair relations and forms the fixture-local chain
+`G0 > G2 > G1 > G3`; Ashen has all 3/3 relations with `G0` and `G2`
+incomparable and both PP-maximal; K3 passes only as an orbit control.
+
+TA3 Forward adds substantive literal geometry only on Lighthouse in the
+current real-fixture set; on Ashen it aliases TA1/W1, and on K3 it is
+control-only. TA3 Reverse adds no new literal geometry. There are no UNKNOWN,
+INELIGIBLE, manifest, comparator, regression, or class-pair gaps. The current
+TA0–TA3 structural-assignment objective branch is current-scope saturated;
+Experiment5 is not justified by a specific unresolved question. The maximum
+inference remains `INF-W1`; no visual or Production conclusion is made. The
+next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-RESEARCH-SYNTHESIS1`.

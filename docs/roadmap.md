@@ -4861,3 +4861,17 @@ The exact pipeline is validated, TA-2/TA-3 remain excluded for missing
 semantics, and the selected next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-POLICY-MANIFEST-RECOVERY1`.
 No source, sample, `ai-knowledge`, or Production change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-POLICY-MANIFEST-RECOVERY1 (2026-09-02)
+
+The [TA-2 policy manifest recovery result](liaisonscape-initial-placement-seed-ta2-policy-manifest-recovery1-result.md)
+records `CASE 7 / DECISION G`. Reachable committed history contains only the
+high-level `degree-first` and `motif/overlap responsibility-first` hypotheses;
+neither TA-2-degree nor TA-2-motif has a recoverable complete role tuple,
+candidate correspondence, tie/fallback, materializer, or literal manifest.
+Both remain `TA2-MAN-1 / TA2-WIT-RECOVERY-INCOMPLETE` and are not eligible for
+objective design. Experiment2 outputs were not used for recovery.
+
+The selected next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-POLICY-SEMANTICS-DESIGN1`.
+No source, sample, `ai-knowledge`, or Production change was made.

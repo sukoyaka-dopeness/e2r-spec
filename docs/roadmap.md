@@ -4812,3 +4812,21 @@ The selected next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-LIGHTHOUSE-FIXTURE-PROVENANCE-RECONCILIATION1`.
 No objective, Production, source, candidate family, assignment, settling,
 routing, label, sample, preview, or `ai-knowledge` change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-LIGHTHOUSE-FIXTURE-PROVENANCE-RECONCILIATION1 (2026-09-02)
+
+The [Lighthouse fixture provenance reconciliation](liaisonscape-initial-placement-seed-lighthouse-fixture-provenance-reconciliation1-result.md)
+records `CASE 4 / DECISION B`. The previously recorded `3038…` content hash
+was not found in any reachable committed Lighthouse blob or documented
+canonicalization. LF-to-CRLF of the current committed blob reproduces it as a
+diagnostic only, so the old value is `PROV-P3` and is not a future authority.
+
+Future W1 research uses `AUTH-LH0`: LiaisonScape commit
+`fd563340625fd3d88dc25baedc93c4f8fe69e5e7`,
+`public/lighthouse-restoration-demo.en.e2r.json`, Git blob
+`b96092b0c2b88c6c1ea41c11c1b36dccca3e9726`, raw SHA-256 `C671…`, and W1-input
+projection SHA-256 `4CDDB0…`. The W1 mapping is unchanged and Lighthouse is
+promoted from `W1-MAN-4` to `W1-MAN-5`; Ashen Crown and K3 remain
+`W1-MAN-5`. The exact next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN2`.
+No objective, Production, source, sample, or `ai-knowledge` change was made.

@@ -5003,3 +5003,21 @@ reserved under `TA3-WIT-NEW-OPERATIONAL` / `CLAIM-P0`; no fixture mapping,
 objective, hard gate, Production, runtime, sample, or `ai-knowledge` change
 was made. The selected next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-OPERATIONAL-WITNESS-RECONSTRUCTION1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-OPERATIONAL-WITNESS-RECONSTRUCTION1 (2026-09-02)
+
+The [TA-3 operational witness reconstruction result](liaisonscape-initial-placement-seed-ta3-correspondence-operational-witness-reconstruction1-result.md)
+records CASE 1 / DECISION A. The new witnesses
+`TA3-FWD-W1-OP-v1` and `TA3-REV-W1-OP-v1` were materialized for Lighthouse,
+Ashen Crown, and K3 under `TA3-WIT-NEW-OPERATIONAL` / `CLAIM-P0`. All six
+cells are input-order deterministic, semantic-rename transport passes, K3
+remains one orbit, and every exact GEO-0/GEO-3 hard gate passes without
+remapping or repair; each reaches TA3W-MAN-5.
+
+Reverse is literally identical to TA2-motif on the three current fixtures,
+but remains semantically distinct by its NEW correspondence contract and
+provenance. Forward adds a literal mapping class on all three fixtures. This
+does not select a quality winner or Production assignment. Objective Design4
+is eligible next, with literal geometry deduplication and semantic-alias
+preservation required. No objective, runtime, sample, or `ai-knowledge`
+change was made.

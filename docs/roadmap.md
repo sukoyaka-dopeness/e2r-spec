@@ -5245,3 +5245,25 @@ candidate selection, schema, registry, persistence, migration, fallback,
 visual, settling, routing/label, viewport, performance, or structural
 objective work was started. `PR-2` remains `NO`. The exact next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-COMPATIBILITY-VALIDATION1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-COMPATIBILITY-VALIDATION1 (2026-09-03)
+
+The [candidate compatibility validation](liaisonscape-initial-placement-seed-production-candidate-compatibility-validation1-result.md)
+records `CASE 1 / DECISION A`: the frozen PCOMP common compatibility contract
+is validated for the bounded nonvisual evaluation surface. The five fixed
+materializer source hashes match; fresh pure-core evidence is 13/13; fresh
+authorized fixture/candidate evidence is 15/15; Production tests are 280/280;
+lint, build, and diff-check pass; and nonvolatile artifact evidence remains
+stable across two harness runs.
+
+The validation confirms the shared transform, ownership, adoption, persistence,
+migration, failure, safety, and provenance boundaries without implementing the
+future Product adapter or live evaluation path. The three defensive failure
+paths without individual injected artifact cases are recorded as a bounded
+evidence boundary. No candidate-specific compatibility gap or design conflict
+was found. No candidate was selected and no Production integration was made.
+`PR-2` remains `NO`; visual, settling, routing/label, viewport, performance,
+selection, and live-integration evidence remain separate. The exact smallest
+next prerequisite is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-PR2-NONVISUAL-EVIDENCE-COMPLETION1`,
+which is not started.

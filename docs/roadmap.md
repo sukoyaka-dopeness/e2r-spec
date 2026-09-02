@@ -5408,3 +5408,24 @@ Production integration, fixture change, or PR-3 claim was made. PR-2 remains
 COMPLETE-BOUNDED, PR-3 remains NO, and the exact next prerequisite is the
 not-started
 E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1A.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1A (2026-09-03)
+
+The [Implementation1A characterization result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1a-result.md)
+records CASE 3 / DECISION C. The new W-C clone captured 38 auto-layout
+baseline cases, 9 pure routing cases, 8 pure label cases, and 16 App
+automatic routing/label DOM records from immutable fixture bytes. Exact
+in-process replay and fresh-process auto-layout replay pass. Product source
+and package files remain unchanged.
+
+Characterization found a frozen-invariant conflict before refactoring:
+Node-array reversal is exact for 16/16 fixture variants, while Relation-array
+reversal is exact for only 2/16; 14/16 have IEEE-754-level coordinate changes
+from the current adjacency accumulation order. The behavior is recorded
+without tolerance, rounding, normalization, or Product repair. Therefore
+characterization artifacts are complete, but the checkpoint is BLOCKED before
+IMPLEMENTATION1B. No candidate execution, V0-V3 evidence, screenshot, browser
+review, selection, Production integration, or PR-3 claim occurred.
+
+The exact next prerequisite is the not-started
+E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CONFLICT-RESOLUTION1.

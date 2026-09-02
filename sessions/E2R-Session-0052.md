@@ -368,3 +368,138 @@ Coordinate persistence, dirty confirmation, browser acceptance, and
 production integration out of scope. Push, tag, publish, deploy, and changes
 to the protected `ai-knowledge/playbooks/e2r-edge-cdp-browser-diagnostic.md`
 remain prohibited without separate authorization.
+
+### Read-only next-room source refresh manifest
+
+The LiaisonScape transition was accepted with no open local blockers. The
+next cross-application checkpoint is:
+
+`E2R-DOM-TEST-ENVIRONMENT-NARRATIVELINE-SECOND-CONSUMER-AUDIT1`
+
+Its purpose is to audit NarrativeLine as a second consumer of the canonical
+`@sukoyaka-dopeness/e2r-dom-test-environment@0.1.0` package. The audit must
+compare the current NarrativeLine helper and DOM-heavy tests with the
+canonical API, identify any consumer-specific adapter boundary, and decide
+whether implementation should begin or the checkpoint should stop.
+
+Minimum source refresh manifest:
+
+1. `e2r-narrative-line/package.json`
+2. `e2r-narrative-line/package-lock.json`
+3. `e2r-narrative-line/AGENTS.md`
+4. `e2r-narrative-line/tests/helpers/dom-test-environment.js`
+5. `e2r-narrative-line/tests/domIntegrationHarness.test.js`
+6. `e2r-narrative-line/tests/NavigationService.test.js`
+7. `e2r-narrative-line/tests/timelineShellIntegration.test.js`
+8. `e2r-narrative-line/tests/browserTraversalGuardIntegration.test.js`
+9. `e2r-narrative-line/tests/localeHistoryLifecycleIntegration.test.js`
+10. `e2r-narrative-line/tests/workspaceMoreMenuIntegration.test.js`
+
+The current inventory confirms that `jsdom` is a direct development
+dependency, the shared DOM package is not installed, and
+`tests/helpers/dom-test-environment.js` owns JSDOM creation, global
+installation/restoration, URL setup, and LIFO cleanup. Seventeen tests import
+that helper; the remaining DOM consumers are an indexed expansion set for the
+next audit, not an instruction to modify all tests.
+
+Additional files may be read only if the audit requires them:
+`README.md`, `src/App.tsx`, `src/main.tsx`,
+`src/services/NavigationService.ts`,
+`src/services/PendingWorkService.ts`, and the remaining DOM integration tests.
+
+Source authority order for the next room is live local filesystem, accepted
+local documents, accepted repository history and tests, public GitHub, and
+attached snapshots. Public GitHub is currently behind the local accepted
+state and is supplementary evidence only.
+
+No files were modified, staged, committed, pushed, published, or deployed by
+this read-only checkpoint. The protected
+`ai-knowledge/playbooks/e2r-edge-cdp-browser-diagnostic.md` file remains
+untouched. Product backlog items, App modularization, and e2r-test-utils
+cleanup remain deferred and are not hidden blockers.
+
+`READY — NEXT ROOM CROSS-APP SOURCE REFRESH MANIFEST`
+
+STOP.
+
+### Production-candidate materialization implementation checkpoint
+
+The bounded implementation checkpoint
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-IMPLEMENTATION1`
+was completed on 2026-09-03.
+
+The frozen Design1 M2 disposable harness and M1 pure materialization core were
+implemented only in the retained disposable clone:
+
+`C:\Users\extra\E2R\e2r-liaison-scape-production-candidate-materialization-implementation1`
+
+The clone is detached at the accepted Production source commit
+`fd563340625fd3d88dc25baedc93c4f8fe69e5e7` and was not committed, pushed, or
+published. Its implementation surface is
+`experimental/production-candidate-materialization/`, containing exact
+BigInt-rational arithmetic, canonical graph projection, FP1-NGP generation,
+keyed SHA-256 fingerprints, HARD-1..7 gates, the TA0/TA2/TA3 materializer,
+authoritative fixture projections, pure tests, and the validation harness.
+
+The evaluation-only registry is:
+
+- `TA0/REP-0` -> `TA0-REP0-MAT-v1`;
+- `TA2-DEG-W1-OP-v1` -> `TA2-DEG-MAT-v1`;
+- `TA2-MOTIF-W1-OP-v1` -> `TA2-MOTIF-MAT-v1`;
+- `TA3-FWD-W1-OP-v1` -> `TA3-FWD-MAT-v1`;
+- `TA3-REV-W1-OP-v1` -> `TA3-REV-MAT-v1`; and
+- `FP1-NGP` -> `FP1-NGP-MAT-v1` as family dependency/generator only.
+
+`TA1-W1-OP-v1`, K3, and `REFERENCE-BASELINE` were not authorized as
+candidate materializers. TA1 remains fixture-witness-only and K3 remains a
+control. The input mode is `EVAL-FULL-SEED`; output is ephemeral Derived
+coordinates. Stored Coordinates, labels, locale, routes, viewport state,
+settling, routing, and UI state are outside the materializer input and no
+fallback/remapping/repair is performed.
+
+Validation results:
+
+- pure core tests: `13/13 PASS`;
+- authorized fixture/candidate materializations: `15/15 PASS` across
+  Lighthouse, Ashen Crown, and K3;
+- FP1 boundaries N=1, 3, 10, 65: PASS; N=0 and N=66: DOMAIN-MISMATCH;
+- exact SPACE-S1 values, N=2 tie, graph permutation determinism,
+  no-mutation, failure precedence, canonical fingerprint, and HARD gate
+  checks: PASS;
+- disposable clone application gate: `npm.cmd test` `280/280 PASS`, lint
+  PASS, build PASS; and
+- e2r-spec `npm.cmd run validate` and diff checks: PASS.
+
+The clone-local artifacts are:
+
+- `manifest.json`;
+- `raw-materialization.json`;
+- `audit-results.json`; and
+- `artifact-index.json`.
+
+Artifact SHA-256 values are recorded in the clone artifact index and in
+`docs/liaisonscape-initial-placement-seed-production-candidate-materialization-implementation1-result.md`.
+
+The e2r-spec result document and roadmap were committed as:
+
+`6354ec1c7534f51ec1482ea7172cfe32343315e3 docs: implement LiaisonScape candidate materialization surface`
+
+The Production repository's tracked source, package files, App/main imports,
+bundle, Dataset, schema, samples, and runtime behavior were not changed. Its
+pre-existing protected Lighthouse sample modifications remain preserved. The
+pre-existing Session changes in this file remain preserved; this section was
+appended afterward and is intentionally not included in the materialization
+checkpoint commit.
+
+No candidate was selected, no PR-2 claim was made, and no claim that Initial
+Placement is solved was made. Visual, settling, routing/label, viewport,
+performance, compatibility, structural-objective, ranking, and Production
+acceptance remain open. The common fixture ROLE GAP remains open.
+
+The next separately authorized checkpoint is:
+
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-VALIDATION1`
+
+It was not started automatically.
+
+`SESSION LOGGED - IMPLEMENTATION1 COMPLETE; VALIDATION1 NEXT`

@@ -5070,3 +5070,21 @@ orbit control. No objective was run, no witness was remapped, and no
 Production, runtime, sample, or `ai-knowledge` change was made. The next
 separately authorized checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-RERUN1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-RERUN1 (2026-09-02)
+
+The [Experiment4 Rerun1 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-rerun1-result.md)
+records CASE 1 / DECISION A. The corrected preflight passed 4/3/2 geometry
+classes and 45/15/30/10 accounting. All six Experiment3 regressions matched;
+the K3 orbit control passed as `PP-PREF-EQUIVALENT`; and the three new
+Lighthouse TA3-Forward cells returned exact relations:
+`LEFT-DOMINATES-RIGHT`, `LEFT-DOMINATES-RIGHT`, and
+`LEFT-DOMINATES-RIGHT` for `G0-G3`, `G1-G3`, and `G2-G3` respectively.
+
+Ashen TA3-Forward remains a keyed geometry alias of TA1/W1 and generated no
+duplicate execution or evidence. `D4-INF0=false`, `D4-INF1=true`,
+`D4-INF2=false`, `D4-INF3=false`, and `D4-INF4=false`; the maximum inference
+remains `INF-W1`. No win counts, cross-fixture aggregation, ranking, winner,
+or Production selection was recorded. The next separately authorized
+checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-INTERPRETATION1`.

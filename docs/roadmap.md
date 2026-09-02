@@ -4783,3 +4783,17 @@ smallest selected next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA1-QUALITY-NEUTRAL-WITNESS-DESIGN1`.
 No source, assignment, objective, materializer, solver, settling, routing,
 label, sample, preview, or `ai-knowledge` change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA1-QUALITY-NEUTRAL-WITNESS-DESIGN1 (2026-09-02)
+
+The [TA-1 quality-neutral witness design](liaisonscape-initial-placement-seed-ta1-quality-neutral-witness-design.md)
+records `CASE 2 / DECISION B`: a deterministic fixture-local witness can be
+defined independently of objective output, but it is not semantically neutral
+because FP1 candidate roles are non-equivalent. It is therefore named
+`WIT-NEW-OPERATIONAL`, not `WIT-NEW-NEUTRAL`, and is limited to `CLAIM-P0`.
+
+One witness is selected conceptually; it has not been created or executed. TA-1
+remains set-valued at policy level, and the next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA1-OPERATIONAL-WITNESS-RECONSTRUCTION1`.
+No objective, assignment, source, materializer, solver, settling, routing,
+label, sample, preview, or `ai-knowledge` change was made.

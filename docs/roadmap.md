@@ -4950,3 +4950,20 @@ cross-fixture score or policy ranking is allowed. The selected next checkpoint
 is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT3`.
 No objective value, Production, sample, or `ai-knowledge` change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT3 (2026-09-02)
+
+The [Experiment3 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment3-result.md)
+records CASE 1 / DECISION A. The 7-cell matrix completed cleanly: both
+Experiment2 regressions passed, all 4 new TA2-motif real-fixture cells
+produced valid literal-geometry relations, and the K3 identity control passed
+as `PP-PREF-EQUIVALENT`. The new relations are Lighthouse G0/G2
+`LEFT-DOMINATES-RIGHT`, Lighthouse G1/G2 `RIGHT-DOMINATES-LEFT`, Ashen G0/G2
+`PP-INCOMPARABLE`, and Ashen G1/G2 `RIGHT-DOMINATES-LEFT`.
+
+The maximum inference remains INF-W0/INF-W1. Aliases retain
+`evidenceMultiplicity=1`; no cross-fixture aggregation, ranking, policy
+selection, Production change, or FP1 conclusion is authorized. The selected
+next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-MANIFEST-RECOVERY1`.
+No runtime, sample, or `ai-knowledge` change was made.

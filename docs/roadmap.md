@@ -4905,3 +4905,18 @@ TA2-WIT-NEW-OPERATIONAL / CLAIM-P0 remains the degree-witness boundary.
 No objective, mapping optimization, Production, or ai-knowledge change was
 made. The selected next checkpoint is
 E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-MOTIF-RESPONSIBILITY-ENCODING-RECONCILIATION1.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-MOTIF-RESPONSIBILITY-ENCODING-RECONCILIATION1 (2026-09-02)
+
+The [TA-2 motif responsibility encoding reconciliation result](liaisonscape-initial-placement-seed-ta2-motif-responsibility-encoding-reconciliation1-result.md)
+records CASE 1 / DECISION A and classifies the seam as ENC-R1
+(audit derivation error). The authoritative o(V) meaning remains the count
+of derived motif-overlap clusters containing V; Ashen has one cluster, so the
+recorded second components that duplicate motifMembershipCount are superseded
+topology-only audit evidence. TA2-MOTIF-NEW-v1 itself is unchanged.
+
+The corrected topology-only vectors are frozen without creating a literal
+witness, mapping, hard gate, or objective result. TA2-degree remains unchanged
+at TA2W-MAN-5. The selected next checkpoint is
+E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-MOTIF-OPERATIONAL-WITNESS-RECONSTRUCTION1.
+No Production, sample, or ai-knowledge change was made.

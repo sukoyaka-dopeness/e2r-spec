@@ -4967,3 +4967,20 @@ selection, Production change, or FP1 conclusion is authorized. The selected
 next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-MANIFEST-RECOVERY1`.
 No runtime, sample, or `ai-knowledge` change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-MANIFEST-RECOVERY1 (2026-09-02)
+
+The [TA-3 correspondence manifest recovery result](liaisonscape-initial-placement-seed-ta3-correspondence-manifest-recovery1-result.md)
+records `TA3-REC-1 / CASE 4 / DECISION D`. Git archaeology recovered the
+exact historical labels `TA-3-forward` and `TA-3-reverse` and the high-level
+RC-H2 diagnostic intent, but not an exact operational correspondence,
+tie/fallback semantics, or fixture-local Node-to-FP1 manifests. The historical
+Experiment1 scope includes Lighthouse, Ashen Crown, and K3, but no fixture is
+objective-eligible from this recovery.
+
+No TA3 objective value was calculated, and no Experiment2/3 result, later
+TA1/TA2 semantics, visual output, or residual artifact was used to backfill
+history. Any next TA3 contract must be explicitly NEW. The selected next
+checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-SEMANTICS-DESIGN1`.
+No Production, runtime, sample, or `ai-knowledge` change was made.

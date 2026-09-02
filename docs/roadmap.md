@@ -4875,3 +4875,18 @@ objective design. Experiment2 outputs were not used for recovery.
 The selected next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-POLICY-SEMANTICS-DESIGN1`.
 No source, sample, `ai-knowledge`, or Production change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-POLICY-SEMANTICS-DESIGN1 (2026-09-02)
+
+The [TA-2 policy semantics design](liaisonscape-initial-placement-seed-ta2-policy-semantics-design.md)
+records `CASE 1 / DECISION A`. Both variants are explicitly new designs:
+TA-2-degree uses distinct-neighbor degree as a descending semantic preorder
+with equal-degree classes; TA-2-motif uses a three-component componentwise
+motif/overlap responsibility relation. Both use the experiment-only
+`TA2-OP-LIN-v1` materializer boundary, with no candidate-quality meaning.
+Future witnesses remain `TA2-WIT-NEW-OPERATIONAL` / `CLAIM-P0`; no literal
+mapping or objective result is implied.
+
+The selected next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-OPERATIONAL-WITNESS-RECONSTRUCTION1`.
+No source, sample, `ai-knowledge`, or Production change was made.

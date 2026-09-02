@@ -4830,3 +4830,19 @@ promoted from `W1-MAN-4` to `W1-MAN-5`; Ashen Crown and K3 remain
 `W1-MAN-5`. The exact next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN2`.
 No objective, Production, source, sample, or `ai-knowledge` change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN2 (2026-09-02)
+
+The [reduced structural-assignment objective design](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design2.md)
+records `CASE 3 / DECISION C`: the six-policy matrix is reduced to TA-0/REP-0
+versus TA-1/W1 across Lighthouse, Ashen Crown, and K3. TA-0 manifests are now
+frozen as `WIT-DERIVED`; TA-1/W1 remains `WIT-NEW-OPERATIONAL` / `CLAIM-P0`.
+
+The reduced experiment is justified only as exact pipeline validation and a
+literal-witness contrast, with maximum inference `INF-W0/INF-W1`. Its three
+fixture-local cells must not become a cross-fixture score, policy ranking, or
+Production selection. TA-2 and TA-3 remain excluded for missing semantics, not
+quality failure. `EXEC-YES` is selected for the exact next checkpoint:
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT2`.
+No objective values, application source, sample, or `ai-knowledge` change was
+made.

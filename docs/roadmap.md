@@ -5170,3 +5170,22 @@ fixture witness is generalized into runtime semantics. The common fixture
 ROLE GAP, settling/routing/label, visual, viewport, and performance evidence
 remain open. No candidate is selected. The exact next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-IMPLEMENTATION1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-IMPLEMENTATION1 (2026-09-03)
+
+The [Implementation1 result](liaisonscape-initial-placement-seed-production-candidate-materialization-implementation1-result.md)
+records CASE 1 / DECISION A. The frozen M2 disposable harness and M1 pure
+core were implemented in the required detached clone at the accepted
+LiaisonScape source commit. The five authorized research-only materializers
+(`TA0/REP-0`, TA2 degree, TA2 motif, TA3 Forward, and TA3 Reverse) passed on
+the Lighthouse, Ashen Crown, and K3 control fixtures: 15/15 cells, with
+exact rational FP1 substrate, explicit transform, provenance, deterministic
+failures, and HARD-1..7 evidence. FP1 remains a family dependency only;
+TA1-W1, K3, and the reference baseline are not candidate identities.
+
+The clone's unchanged application gate passed 280/280 tests, lint, and build.
+The evaluation surface is not imported by Production, persisted, bundled, or
+used for visual, settling, routing, label, structural-objective, ranking, or
+PR-2 acceptance. No candidate is selected and the common fixture ROLE GAP
+remains open. The disposable clone is retained for the next exact checkpoint:
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-VALIDATION1`.

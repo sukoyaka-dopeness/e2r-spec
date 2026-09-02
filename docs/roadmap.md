@@ -5053,3 +5053,20 @@ winner, ranking, or Production selection was produced. `D4-INF4=true` and the
 maximum inference ceiling remains `INF-W1`. The selected next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-INTEGRITY-RECONCILIATION1`.
 No Production, runtime, sample, or `ai-knowledge` change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-INTEGRITY-RECONCILIATION1 (2026-09-02)
+
+The [Experiment4 integrity reconciliation result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-integrity-reconciliation1-result.md)
+records CASE 1 / DECISION A. A derived identity-audit error was found in the
+previous TA3 result: Ashen Crown TA3 Forward and TA1/W1 use opposite row
+orders but have the same keyed Node-to-FP1 mapping. The literal witness tables,
+TA3W-MAN-5 gates, and GEO gates remain valid.
+
+The corrected geometry classes are Lighthouse 4, Ashen Crown 3, and K3 2.
+The 45 conceptual pairs therefore reduce to 15 identity-implied and 30
+cross-class aliases. The corrected future matrix has 10 cells: six
+Experiment3 regressions, three new Lighthouse TA3-Forward cells, and one K3
+orbit control. No objective was run, no witness was remapped, and no
+Production, runtime, sample, or `ai-knowledge` change was made. The next
+separately authorized checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-RERUN1`.

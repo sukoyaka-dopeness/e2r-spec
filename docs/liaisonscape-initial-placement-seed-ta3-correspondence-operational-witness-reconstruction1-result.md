@@ -309,6 +309,17 @@ change, endpoint-rule change, or witness repair.
 
 ## Existing-witness identity audit
 
+### Reconciliation1 correction (2026-09-02)
+
+The first identity table below contained one derived-audit error: it compared
+the serialized row order rather than the keyed `Node -> FP1Index` mapping.
+The literal Ashen Crown Forward table is displayed in descending semantic
+rank, while TA1/W1 is displayed in the opposite row order; the keyed maps
+are identical. The literal mapping tables, TA3W-MAN-5 gates, and GEO gates
+remain unchanged. This correction changes only the derived identity result
+and the downstream geometry-class interpretation; it does not infer semantic
+policy identity or authorize a witness remap.
+
 After mapping and hard-gate freeze, exact literal Node-to-FP1 identity was
 compared with TA0/REP-0, TA1/W1, TA2-degree, and TA2-motif. Only `IDENTICAL`
 and `DIFFERENT` are reported.
@@ -317,7 +328,7 @@ and `DIFFERENT` are reported.
 | --- | --- | --- | --- | --- | --- |
 | Lighthouse | Forward | DIFFERENT | DIFFERENT | DIFFERENT | DIFFERENT |
 | Lighthouse | Reverse | DIFFERENT | DIFFERENT | DIFFERENT | IDENTICAL |
-| Ashen Crown | Forward | DIFFERENT | DIFFERENT | DIFFERENT | DIFFERENT |
+| Ashen Crown | Forward | DIFFERENT | IDENTICAL | DIFFERENT | DIFFERENT |
 | Ashen Crown | Reverse | DIFFERENT | DIFFERENT | DIFFERENT | IDENTICAL |
 | K3 | Forward | DIFFERENT | DIFFERENT | DIFFERENT | DIFFERENT |
 | K3 | Reverse | IDENTICAL | IDENTICAL | IDENTICAL | IDENTICAL |
@@ -333,8 +344,8 @@ ON CURRENT FIXTURE
 
 The Reverse identity does not imply TA3/TA2 semantic policy identity: the
 family architecture, correspondence contract, witness IDs, and provenance
-remain distinct. Forward adds a new literal mapping class on all three current
-fixtures.
+remain distinct. Forward adds a new literal mapping class on Lighthouse and
+K3; on Ashen Crown it is literally identical to TA1/W1 and is an alias only.
 
 ## TA3W-MAN readiness and Design4 eligibility
 
@@ -387,7 +398,7 @@ TA2-degree, TA2-motif, historical TA3, or `ai-knowledge` change was made.
 | Q26-Q27. Gate and repair? | All six PASS; no remapping or repair. |
 | Q28. Objective calculated? | No. |
 | Q29-Q31. Reverse identity? | Reverse is literally identical to TA2-motif on Lighthouse, Ashen, and K3; semantic identity is not implied. |
-| Q32-Q33. New geometry and other identities? | Forward adds a literal class on all three; identity table above is complete. |
+| Q32-Q33. New geometry and other identities? | Forward adds a literal class on Lighthouse and K3; on Ashen Crown it is identical to TA1/W1 under keyed comparison. |
 | Q34-Q36. Readiness and Design4? | All six TA3W-MAN-5; Design4 eligible. |
 | Q37-Q38. Winner or Production? | Neither Forward nor Reverse is selected as better; Production assignment is not selected. |
 | Q39-Q40. Next and auto-start? | Design4 follows; it was not auto-started. |

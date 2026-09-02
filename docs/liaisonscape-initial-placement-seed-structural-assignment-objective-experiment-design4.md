@@ -2,10 +2,10 @@
 
 - Checkpoint: `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN4`
 - Date: 2026-09-02
-- Status: Complete — Design4 frozen and execution-ready; design only; not executed
+- Status: Reconciled — corrected Design4 frozen; design only; not executed
 - Preceding TA3 witness result: `928c820`
 - Preceding TA3 semantics Design1: `344e778`
-- Result: `CASE 1 / EXACT RESULT 1+2+3+4+5+6+7+8+9+10+11+12+13+14+15 / DECISION A`
+- Result: `CASE 1 / DECISION A` after integrity reconciliation
 
 > **DESIGN ONLY**
 >
@@ -15,21 +15,35 @@
 
 ## Exact result and decision
 
+### Reconciliation1 correction (2026-09-02)
+
+The preceding TA3 result contained a derived identity-audit error for Ashen
+Crown Forward versus TA1/W1. The two tables use different row order, but
+their keyed `Node -> FP1Index` maps are identical. Exact `GEOM-FP-v1`
+comparison therefore yields 4 Lighthouse classes, 3 Ashen Crown classes,
+and 2 K3 classes. The original 4/4/2, 14/31/13, and six-new-real-fixture
+claims in this document are superseded by the corrected values below.
+
+The correction changes no literal witness table, source, runner, objective,
+or Production state. It removes the Ashen Forward duplicate execution and
+retains its provenance as an alias of TA1/W1.
+
 The six provenance-safe TA0/TA1/TA2/TA3 witness labels reconcile into exactly
-four literal geometry classes on Lighthouse, four on Ashen Crown, and two on
-K3. The 45 conceptual fixture-local label pairs reduce to 14
-identity-implied relations plus 31 cross-class alias relations covered by 13
-future geometry-class executions.
+four literal geometry classes on Lighthouse, three on Ashen Crown, and two on
+K3. The 45 conceptual fixture-local label pairs reduce to 15
+identity-implied relations plus 30 cross-class alias relations. The corrected
+future matrix contains 10 geometry-class executions.
 
-The frozen matrix contains six Experiment3 regression cells, six new
-real-fixture TA3-Forward cells, and one K3 orbit control. Objective coverage
-and comparator semantics remain unchanged. The maximum inference remains
-`INF-W0/INF-W1`; no ranking or winner is introduced.
+The corrected matrix contains six Experiment3 regression cells, three new
+Lighthouse TA3-Forward cells, and one K3 orbit control. Ashen TA3-Forward is
+covered by the existing TA1/W1 class cells. Objective coverage and comparator
+semantics remain unchanged. The maximum inference remains `INF-W0/INF-W1`;
+no ranking or winner is introduced.
 
-**Decision A:** Design4 is complete; execute the frozen 13-cell objective
-matrix next:
+**Decision A:** the corrected Design4 is complete; execute the corrected
+10-cell objective matrix in the next separately authorized checkpoint:
 
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4`
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-RERUN1`
 
 Evidence-gated boundary:
 
@@ -58,8 +72,9 @@ The preceding reconstruction froze:
 
 The TA3 Reverse mapping is literally identical to TA2-motif on Lighthouse,
 Ashen Crown, and K3. TA3 Forward is a different literal mapping from every
-existing TA0/TA1/TA2/TA3-Reverse mapping on all three fixtures. These are
-literal facts only; semantic policy identity is not inferred.
+existing mapping on Lighthouse and K3. On Ashen Crown, TA3 Forward is
+literally identical to TA1/W1 under keyed comparison. These are literal facts
+only; semantic policy identity is not inferred.
 
 The six labels are:
 
@@ -139,9 +154,8 @@ the authoritative Node-ID order for that fixture.
 | D4 class | Members | Computation representative | Exact mapping fingerprint |
 | --- | --- | --- | --- |
 | `D4-ASH-G0` | TA0/REP-0; TA2-DEG-W1-OP-v1 | TA0/REP-0 | `elara:0, kael:1, darius:2, garrick:3, mira:4, nyra:5, rowan:6, selene:7, ilyan:8, vhalgrim:9` |
-| `D4-ASH-G1` | TA1/W1 | TA1/W1 | `ilyan:0, vhalgrim:1, selene:2, mira:3, rowan:4, nyra:5, garrick:6, darius:7, kael:8, elara:9` |
+| `D4-ASH-G1` | TA1/W1; TA3-FWD-W1-OP-v1 | TA1/W1 | `darius:7, elara:9, garrick:6, ilyan:0, kael:8, mira:3, nyra:5, rowan:4, selene:2, vhalgrim:1` |
 | `D4-ASH-G2` | TA2-MOTIF-W1-OP-v1; TA3-REV-W1-OP-v1 | TA2-MOTIF-W1-OP-v1 | `elara:0, kael:1, darius:2, garrick:3, nyra:4, rowan:5, mira:6, selene:7, vhalgrim:8, ilyan:9` |
-| `D4-ASH-G3` | TA3-FWD-W1-OP-v1 | TA3-FWD-W1-OP-v1 | `elara:9, kael:8, darius:7, garrick:6, nyra:5, rowan:4, mira:3, selene:2, vhalgrim:1, ilyan:0` |
 
 ### K3
 
@@ -164,8 +178,8 @@ TA0/REP-0 < TA1/W1 < TA2-degree < TA2-motif < TA3-Forward < TA3-Reverse
 ```
 
 The representatives are G0→TA0, G1→TA1, G2→TA2-motif, G3→TA3-Forward on
-Lighthouse and Ashen; K3 G0→TA0 and G1→TA3-Forward. This ordering has no
-quality meaning.
+Lighthouse; Ashen uses G0→TA0, G1→TA1, and G2→TA2-motif; K3 uses G0→TA0
+and G1→TA3-Forward. This ordering has no quality meaning.
 
 ## Conceptual pair space and deduplication
 
@@ -177,9 +191,9 @@ substantive executions.
 | Fixture | Labels | Conceptual pairs | Identity-implied | Cross-class aliases | Executed class pairs |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Lighthouse | 6 | 15 | 2 | 13 | 6 |
-| Ashen Crown | 6 | 15 | 2 | 13 | 6 |
+| Ashen Crown | 6 | 15 | 3 | 12 | 3 |
 | K3 | 6 | 15 | 10 | 5 | 1 |
-| Total | 18 labels-in-fixture | 45 | 14 | 31 | 13 |
+| Total | 18 labels-in-fixture | 45 | 15 | 30 | 10 |
 
 “18 labels-in-fixture” is not 18 globally distinct policies.
 
@@ -201,13 +215,13 @@ identityImplied: true
 | Ashen Crown | TA2-MOTIF-W1-OP-v1 vs TA3-REV-W1-OP-v1 |
 | K3 | every unordered pair within `{TA0/REP-0, TA1/W1, TA2-DEG-W1-OP-v1, TA2-MOTIF-W1-OP-v1, TA3-REV-W1-OP-v1}` (10 pairs) |
 
-Thus `2+2+10=14`. No same-class identity pair is executed again unless a
+Thus `2+3+10=15`. No same-class identity pair is executed again unless a
 concrete integrity reason cannot be covered by the exact pre-execution class
 assertions.
 
 ### Cross-class alias expansion
 
-Each of the 13 executed class-pair results expands deterministically to every
+Each of the 10 executed class-pair results expands deterministically to every
 member-label pair across its two classes. Every expanded alias retains:
 
 ```text
@@ -256,11 +270,9 @@ not a second execution.
 | `D4-ASH-G0-G1` | G0 | G1 | TA0 vs TA1 | SUBSTANTIVE-REGRESSION | LEFT-DOMINATES-RIGHT |
 | `D4-ASH-G0-G2` | G0 | G2 | TA0 vs TA2-motif | SUBSTANTIVE-REGRESSION | PP-INCOMPARABLE |
 | `D4-ASH-G1-G2` | G1 | G2 | TA1 vs TA2-motif | SUBSTANTIVE-REGRESSION | RIGHT-DOMINATES-LEFT |
-| `D4-ASH-G0-G3` | G0 | G3 | TA0 vs TA3-Forward | SUBSTANTIVE-NEW | NONE |
-| `D4-ASH-G1-G3` | G1 | G3 | TA1 vs TA3-Forward | SUBSTANTIVE-NEW | NONE |
-| `D4-ASH-G2-G3` | G2 | G3 | TA2-motif vs TA3-Forward | SUBSTANTIVE-NEW | NONE |
 
-The TA3-Reverse alias remains in G2 and is not another execution.
+TA3-Forward is a member of G1 and is covered by the G0-G1 and G1-G2
+regression cells through alias expansion; it is not a new Ashen execution.
 
 ### K3 orbit control
 
@@ -276,9 +288,9 @@ Lighthouse or Ashen as real-fixture quality evidence.
 ### Matrix summary
 
 ```text
-13 executed geometry-class cells
+10 executed geometry-class cells
 = 6 SUBSTANTIVE-REGRESSION
-+ 6 SUBSTANTIVE-NEW real-fixture TA3-Forward cells
++ 3 SUBSTANTIVE-NEW Lighthouse TA3-Forward cells
 + 1 ORBIT-CONTROL
 ```
 
@@ -399,13 +411,13 @@ Prohibited:
 | Q2. Are all TA3 cells MAN-5? | Yes, from the preceding witness reconstruction. |
 | Q3. Is geometry identity recomputed? | Yes; exact fingerprints are classed before matrix freeze. |
 | Q4. Lighthouse classes? | Four: G0 TA0/TA2-degree, G1 TA1, G2 TA2-motif/TA3-Reverse, G3 TA3-Forward. |
-| Q5. Ashen classes? | Four with the same membership pattern. |
+| Q5. Ashen classes? | Three: G0 TA0/TA2-degree, G1 TA1/TA3-Forward, G2 TA2-motif/TA3-Reverse. |
 | Q6. K3 classes? | G0 five labels; G1 TA3-Forward. |
 | Q7-Q8. Reverse identity? | Literally identical to TA2-motif on all three; semantic identity is not implied. |
-| Q9. Forward new class? | Yes, on Lighthouse, Ashen, and K3. |
-| Q10-Q14. Counts? | 15 per fixture; 45 total; 14 identity-implied; 31 cross-class aliases; 13 executed class cells. |
+| Q9. Forward new class? | Yes on Lighthouse and K3; no on Ashen Crown because it is keyed-identical to TA1/W1. |
+| Q10-Q14. Counts? | 15 per fixture; 45 total; 15 identity-implied; 30 cross-class aliases; 10 executed class cells. |
 | Q15. Why differ? | Same geometry implies equality without duplicate execution; cross-class pairs expand from one class-cell result. |
-| Q16-Q18. Regression/new cells? | Six regression cells, with listed Experiment3 oracles; six new real-fixture TA3-Forward cells. |
+| Q16-Q18. Regression/new cells? | Six regression cells, with listed Experiment3 oracles; three new Lighthouse TA3-Forward cells; Ashen Forward is an alias. |
 | Q19-Q20. K3? | Not substantive quality evidence; it is a one-orbit integration control. |
 | Q21-Q22. Representatives? | Frozen non-quality precedence; representative choice has no quality meaning. |
 | Q23-Q25. Aliases? | Preserve TA3-Reverse provenance; do not multiply evidence; invert only directional relations when orientation reverses. |
@@ -417,15 +429,15 @@ Prohibited:
 | Q35-Q36. Regression failure? | It blocks new-result interpretation until reconciliation; no immediate interpretation. |
 | Q37. D4-INF states? | `D4-INF0` through `D4-INF4`, descriptive and non-ranking. |
 | Q38. Production changed? | No. |
-| Q39. Execution-ready? | Yes, for the bounded 13-cell future run. |
-| Q40. Next checkpoint? | `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4`; not auto-started. |
+| Q39. Execution-ready? | Yes, for the bounded corrected 10-cell future rerun. |
+| Q40. Next checkpoint? | `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-RERUN1`; not auto-started. |
 
 ## Hypotheses and falsification
 
 H1–H15 are supported at design level: Reverse can be computationally
-deduplicated without erasing provenance; Forward adds one literal class on
-each primary fixture; the class counts are 4/4/2; 45 conceptual pairs are
-covered by 13 executions plus identity and alias expansion; evidence
+deduplicated without erasing provenance; Forward adds a literal class on
+Lighthouse and K3 while aliasing TA1 on Ashen; the class counts are 4/3/2;
+45 conceptual pairs are covered by 10 executions plus identity and alias expansion; evidence
 multiplicity follows executions; Experiment3 regressions validate a common
 runner without independent-replication claims; K3 is an orbit control; current
 coverage remains sufficient; no scalar objective or policy ranking is needed;
@@ -435,9 +447,9 @@ change follows.
 
 N1–N15 were not triggered:
 
-- N1–N3: the expected Reverse identity, Forward newness, and one-class
-  membership were recomputed and reconcile;
-- N4–N6: `14+31=45`, alias expansion does not add evidence, and directional
+- N1–N3: the expected Reverse identity, keyed Ashen Forward identity, and
+  class membership were recomputed and reconcile;
+- N4–N6: `15+30=45`, alias expansion does not add evidence, and directional
   alias inversion is explicit;
 - N7–N8: all six regression cells are representable and coverage is unchanged;
 - N9–N11: K3 needs no named privilege, is not quality evidence, and Reverse
@@ -448,12 +460,12 @@ N1–N15 were not triggered:
 ## CASE and closure
 
 **CASE 1** is selected: the six-label witness set reconciles exactly into four
-Lighthouse classes, four Ashen classes, and two K3 classes; the 45 conceptual
-pairs reduce to 13 executed cells with 14 identity-implied and 31 cross-class
-alias relations; six regressions, six new real-fixture TA3-Forward cells, and
-one K3 orbit control are frozen; Experiment4 is execution-ready.
+Lighthouse classes, three Ashen classes, and two K3 classes; the 45 conceptual
+pairs reduce to 10 executed cells with 15 identity-implied and 30 cross-class
+alias relations; six regressions, three new Lighthouse TA3-Forward cells, and
+one K3 orbit control are frozen; the corrected rerun is execution-ready.
 
-**Decision A** is selected: Design4 complete; execute the frozen 13-cell
-objective matrix next.
+**Decision A** is selected: corrected Design4 complete; execute the frozen
+10-cell objective matrix in the separately authorized rerun checkpoint.
 
 Production changes: **NO**.

@@ -5351,3 +5351,35 @@ the common corpus is frozen, PR-3 remains `NO`, no candidate materialization,
 comparison, screenshots, browser review, selection, or Production integration
 was performed. The exact next prerequisite is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-EXECUTION1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-HARNESS-DESIGN1 (2026-09-03)
+
+The [visual evidence harness design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-harness-design1-result.md)
+records the additive reconciliation of Acquisition1's skipped seam. The
+Acquisition1 Decision A remains unchanged; its `EXECUTION1` next pointer is
+`DEFERRED / NOT YET ELIGIBLE`, and this Harness Design1 identifier is the
+corrected next prerequisite.
+
+The frozen input is the `CORPUS-COMPLETE` role manifest with 8 structural
+fixtures and 16 EN/JA presentation variants. The planned matrix is 80
+candidate/presentation cells, with 240 V0–V3 stage records after structural
+V0/V1 deduplication; B0/B1 diagnostic coverage is 40 records. Multi-role
+fixtures execute once per candidate/locale/stage and role results reference
+the shared artifact.
+
+The source audit found pure importable graph/route/label helpers, but current
+`settleInitialPlacement`/`solveAutoLayout` accept no explicit V0 seed, while
+App-owned routing orchestration, manual state, and SVG/CSS rendering have no
+stable isolated seam. This is `S-H3`; `VSR-SEED-ADAPTER-v1` is required. The
+target architecture is a disposable H-B Vite/browser entry with an H-D-style
+wrapper in the detached clone at
+`experimental/production-candidate-materialization/visual-evidence-harness/`,
+but implementation is deferred until the Product/evaluation seam is designed.
+The canonical capture viewport is `PR3-CAPTURE-VIEWPORT-v1` at 1280×900 CSS px,
+DSF 1, browser zoom 100%, with logical SVG viewBox 800×500.
+
+This checkpoint is `CASE 2 / DECISION B`: no harness implementation, candidate
+execution, V0–V3 evidence, screenshots, browser review, candidate selection, or
+Production integration occurred. PR-3 remains `NO`. The exact next prerequisite
+is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-DESIGN1`.

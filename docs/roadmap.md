@@ -4732,3 +4732,22 @@ comparison and representation boundary is the single selected next checkpoint:
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-EXACT-ANGULAR-GAP-COMPARATOR-DESIGN1`.
 No objective, candidate family, assignment, Production, settling, routing,
 label, sample, preview, or `ai-knowledge` change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-EXACT-ANGULAR-GAP-COMPARATOR-DESIGN1 (2026-09-02)
+
+The [LiaisonScape exact angular-gap comparator design](liaisonscape-initial-placement-seed-exact-angular-gap-comparator-design.md)
+is recorded as `CASE 1 / EXACT RESULT 1+2+3+4+5+6+7+8+9+10 / DECISION A`.
+Exact half-plane/cross/dot predicates close cyclic ray ordering, directed
+`<pi`/`pi`/`>pi` classification, and same-class gap comparison without
+`atan2`, square roots, or epsilon. Exact integer/rational geometry, including
+the current FP1 diagnostic family after positive denominator clearing, is
+sufficient for bounded research registration of FAN-P1. Float-only, rendered,
+and future runtime-authority cases remain conditional or `UNKNOWN` rather than
+Production support.
+
+The comparator status is `ANGULAR-COMPARATOR-READY` for the bounded exact-
+rational FP1 research contract; FAN-P1 is registered for that research scope
+only. The selected next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN1`.
+No comparator, objective, candidate-family, assignment, Production, settling,
+routing, label, sample, preview, or `ai-knowledge` change was made.

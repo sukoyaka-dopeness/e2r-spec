@@ -5021,3 +5021,21 @@ does not select a quality winner or Production assignment. Objective Design4
 is eligible next, with literal geometry deduplication and semantic-alias
 preservation required. No objective, runtime, sample, or `ai-knowledge`
 change was made.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN4 (2026-09-02)
+
+The [Design4 specification](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design4.md)
+records CASE 1 / DECISION A. The six-label witness family recomputes to four
+Lighthouse geometry classes, four Ashen Crown classes, and two K3 classes.
+The 45 conceptual fixture-local pairs reconcile as 14 identity-implied pairs
+and 31 cross-class aliases, covered by 13 future executed class-pair cells:
+six Experiment3 regressions, six new real-fixture TA3-Forward cells, and one
+K3 orbit control.
+
+TA3-Reverse remains a provenance-visible alias of the TA2-motif geometry class
+without duplicated evidence; TA3-Forward is a new literal class on all three
+fixtures. Objective coverage and comparator semantics remain unchanged, with
+the inference ceiling at `INF-W0/INF-W1`. No objective was run, no Experiment4
+clone was created, and no Production, runtime, sample, or `ai-knowledge`
+change was made. The selected next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4`.

@@ -5327,3 +5327,27 @@ modified, no candidate materializer or visual/browser harness was run, no
 screenshots were produced, and no candidate was ranked or selected. PR-2
 remains `COMPLETE-BOUNDED`; PR-3 remains `NO`; the common corpus is
 `CORPUS-INCOMPLETE`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-FIXTURE-ROLE-ACQUISITION1 (2026-09-03)
+
+The [visual fixture role acquisition result](liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition1-result.md)
+records the additive formal reconciliation of Design1 as `CASE 2 / DECISION B`.
+The corrected inventory wording is “four repositories audited; 16 tracked
+Dataset paths inventoried; Hub contained no tracked Dataset”; the historical
+Design1 entry is not rewritten. The five missing realistic roles were
+candidate-blindly briefed and acquired as three coherent structural fixtures
+with EN/JA variants: `regional-care-coordination` (`high-fanout` and
+`larger-size`), `district-solar-cooperatives` (`sparse` and `realistic-symmetry`),
+and `regional-emergency-response` (`dense`). Existing ordinary and motif-rich
+authorities remain frozen, and no existing fixture was newly promoted.
+
+Commit A is `4d59010d8c13886c188d89a8b4c6c839e75f26e6`
+(`testdata: add LiaisonScape visual role fixtures`). The immutable role
+manifest is `docs/evidence/visual-fixture-role-manifest-v1.json`. All six new
+Datasets validate, EN/JA structures are equivalent, and the common realistic
+corpus is `CORPUS-COMPLETE`. `K3_CONTROL = PRESENT` and
+`REALISTIC_ROLE = NO`. The acquisition result is `CASE 1 / DECISION A`:
+the common corpus is frozen, PR-3 remains `NO`, no candidate materialization,
+comparison, screenshots, browser review, selection, or Production integration
+was performed. The exact next prerequisite is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-EXECUTION1`.

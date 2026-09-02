@@ -5039,3 +5039,17 @@ the inference ceiling at `INF-W0/INF-W1`. No objective was run, no Experiment4
 clone was created, and no Production, runtime, sample, or `ai-knowledge`
 change was made. The selected next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4 (2026-09-02)
+
+The [Experiment4 preflight result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-result.md)
+records CASE 5 / DECISION E. Literal manifest recomputation passes Lighthouse
+`4/4` and K3 `2/2`, but Ashen Crown recomputes to `3` classes rather than the
+Design4-required `4`: `TA1/W1` and `TA3-FWD-W1-OP-v1` have the same exact
+Node-to-FP1 fingerprint. The mandatory geometry-class gate therefore failed
+before objective execution. Regression cells, K3 orbit-control, and all six
+new TA3-Forward cells were not run; no class relations, D4-INF0–3 evidence,
+winner, ranking, or Production selection was produced. `D4-INF4=true` and the
+maximum inference ceiling remains `INF-W1`. The selected next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-INTEGRITY-RECONCILIATION1`.
+No Production, runtime, sample, or `ai-knowledge` change was made.

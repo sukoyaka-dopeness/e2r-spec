@@ -5138,3 +5138,18 @@ Criteria are frozen, but candidate eligibility is not yet audited. Visual and
 runtime evidence are not accepted by this checkpoint, and no Production
 candidate is selected. The exact next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-READINESS-EVIDENCE-AUDIT1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-READINESS-EVIDENCE-AUDIT1 (2026-09-02)
+
+The [nonvisual evidence audit result](liaisonscape-initial-placement-seed-production-readiness-evidence-audit1-result.md)
+reconciles the candidate inventory. The current Production baseline is kept
+separate from the TA0-TA3 research witnesses, FP1-NGP research family, and K3
+control. Research hard evidence reaches only bounded `PR-1`; no research
+candidate reaches `PR-2` because a Production-compatible materializer,
+runtime compatibility evidence, and complete Production provenance are absent.
+
+The common blocker is B2, not a quality ranking. The common fixture-role set
+also has a later ROLE GAP; visual, settling, routing, viewport, and performance
+evidence remain unaccepted. No candidate is selected and no visual stage is
+authorized yet. The next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-DESIGN1`.

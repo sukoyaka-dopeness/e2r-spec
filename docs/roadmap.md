@@ -4714,3 +4714,21 @@ settling, routing, label, sample, preview, or `ai-knowledge` change was made.
 The next checkpoint is exactly
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FANOUT-PARTIAL-PREFERENCE-DESIGN1`;
 it is selected only and is not auto-started.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FANOUT-PARTIAL-PREFERENCE-DESIGN1 (2026-09-02)
+
+The [LiaisonScape fan-out partial-preference design](liaisonscape-initial-placement-seed-fanout-partial-preference-design.md)
+is recorded as `CASE 2 / EXACT RESULT 1+2+3+4+5+6+7+8+9+11 / DECISION B`.
+The complete circular gap vector remains descriptive because its components
+have a fixed sum. A larger minimum positive gap is a coherent, narrowly local
+candidate for relieving the worst motif-neighbor angular bottleneck under
+fixed transported coverage; it is not a uniformity objective. Bottleneck
+identity, tie multiplicity, pair-specific gaps, multiple shared Nodes, and
+fan-out capacity remain descriptive or separate records, with conflicts kept
+incomparable and missing exactness kept unknown.
+
+FAN-P1 is therefore `FANOUT-PARTIAL`, not registered. The exact angular
+comparison and representation boundary is the single selected next checkpoint:
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-EXACT-ANGULAR-GAP-COMPARATOR-DESIGN1`.
+No objective, candidate family, assignment, Production, settling, routing,
+label, sample, preview, or `ai-knowledge` change was made.

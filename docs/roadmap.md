@@ -5153,3 +5153,20 @@ also has a later ROLE GAP; visual, settling, routing, viewport, and performance
 evidence remain unaccepted. No candidate is selected and no visual stage is
 authorized yet. The next checkpoint is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-DESIGN1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-DESIGN1 (2026-09-03)
+
+The [candidate materialization design](liaisonscape-initial-placement-seed-production-candidate-materialization-design1.md)
+freezes a bounded M2 disposable harness with an M1 pure core. It consumes a
+normalized Entity graph and emits ephemeral Derived coordinates only; it is
+not imported by the live App, included in the Production bundle, or allowed
+to persist or mutate Stored/Owned coordinates. The first domain is
+`1<=N<=65` with an explicit positive uniform affine runtime transform.
+
+TA0/REP-0, TA2 degree, TA2 motif, TA3 Forward, TA3 Reverse, and FP1-NGP are
+authorized as research-only identities for the bounded implementation
+surface. TA1-W1 remains fixture-witness-only and K3 remains control-only; no
+fixture witness is generalized into runtime semantics. The common fixture
+ROLE GAP, settling/routing/label, visual, viewport, and performance evidence
+remain open. No candidate is selected. The exact next checkpoint is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-IMPLEMENTATION1`.

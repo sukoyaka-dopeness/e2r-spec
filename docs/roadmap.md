@@ -6745,3 +6745,24 @@ prerequisite is
 The failed lineage remains immutable and no Product, Machine Evidence,
 Harness, host graphics, or `ai-knowledge` state changed; no push, tag,
 release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-B1-EXECUTION1 (2026-09-04)
+
+The [Browser Capture1 Restart1 B1 Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-b1-execution1.md)
+records **CASE 2 / DECISION B - `B1-BROWSER-GATE-FAIL`**. The fresh
+Restart1 lineage began the frozen 16-item B1 gate under Edge Stable
+`152.0.4191.62`, but the first item `apollo-11/en` reached the same
+`BROWSER-CAPTURE-FAILURE` after 3 attempts. The isolated browser entry did not
+become ready; the remaining 15 B1 items were not started. GPU-fatal and
+cache-lock counts were `0`; exact first-CDP timing was not emitted for these
+failure records and is not inferred.
+
+The B1 gate is `B1-BROWSER-GATE-FAIL`; V3 eligibility is `NO`. V3 records,
+candidate screenshots, Browser Evidence B, Human Review, Review1, ranking,
+selection, E-VISUAL, Product integration, and PR-3 remain absent or `NO` as
+applicable. The run manifest and canonical artifact index preserve the one
+blocking B1 record and its three attempts. The failed lineage, Machine
+Evidence, Product, Harness, host graphics state, and `ai-knowledge` remain
+unchanged. The exact next prerequisite is a separately bounded browser/runtime
+diagnosis or Windows Update qualification based on this failure; V3 execution
+is not started and remains prohibited.

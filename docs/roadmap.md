@@ -5767,3 +5767,27 @@ drag/follow/reset semantics, routing, persistence, and Dataset behavior remain
 unchanged. Implementation1F is NOT STARTED, PR-3 is NO, and V0/V1/V2/V3 are
 NONE. The exact next prerequisite is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1E-ADOPTION1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1E-ADOPTION1 (2026-09-03)
+
+The [Implementation1E Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1e-adoption1-result.md)
+records CASE 1 / Decision A. The validated three-file candidate was adopted
+into live Production with exact candidate/live bytes. The new accepted
+Product/evaluation/presentation-seam authority is
+`c7e7745ad883f8434f56dd62e5b933aafabf548d` (`refactor: extract automatic
+label derivation`), parent `e2ede7f...`.
+
+Automatic Node-label and Relation-label derivation are now pure
+Product-owned seams. Dynamic Node-label recomputation, Relation-label
+route-follow, curve-offset and self-loop follow, manual App ownership, and
+dependency lists are preserved. Exact baseline evidence remains pure routing
+9/9, App routing 16/16, pure labels 8/8, App labels 16/16, auto-layout 38/38
+with unchanged v2 SHA
+`F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`, and
+the focused presentation suite is 22/22 (routing subset 10/10). Product tests
+pass 309/309; lint/build/diff-check pass. Baseline-v2 is unchanged and
+baseline-v3 was not created.
+
+Implementation1F is technically eligible but remains NOT STARTED. PR-3 is
+NO; V0/V1/V2/V3, candidate execution, materializer execution, browser review,
+screenshots, and Product candidate integration remain absent.

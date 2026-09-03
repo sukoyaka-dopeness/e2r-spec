@@ -6342,3 +6342,41 @@ materializer, baseline, fixture, or `ai-knowledge` file changed. The exact
 next prerequisite is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-MACHINE-EXECUTION1`.
 No push, tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-MACHINE-EXECUTION1-BROWSER-LINEAGE-READINESS-RECONCILIATION1 (2026-09-04)
+
+The [Machine Execution1 browser-lineage readiness reconciliation](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-browser-lineage-readiness-reconciliation1.md)
+records `CASE 3 / Decision C`. Machine Evidence B remains valid historical
+machine evidence: V0 `40/40`, V1 `40/40`, V2 `80/80`, machine candidate total
+`160`, B0 `8 COMPLETE`, and B1 machine-side `16 COMPLETE`. The `16` B1
+browser-side diagnostics remain pending; V3 remains `0`.
+
+The static contract audit found that `PR3-RUN-IDENTITY-v1` requires a final
+`pr3r1-<lowercase-sha256>` identity containing the exact browser path/version,
+while the accepted C-class rule and browser-authority wording do not clearly
+state whether that value must be supplied before the first Phase M artifact or
+only before Phase B. The Machine-local
+`machine-execution1-2026-09-03` ID is therefore `M-R1`, not a final PR3 ID.
+No accepted final-manifest or `PR3-RESUME-v1` bridge was found that binds this
+phase-local run to a new browser-bound semantic identity. The existing VSR
+stage linkage remains valid for immutable V2 fingerprint references but does
+not by itself establish the final cross-phase identity.
+
+The Machine computational evidence is preserved and may be referenced
+byte-for-byte. It must not be copied, renamed, rewritten, or reidentified.
+The browser binding timing is `AMBIGUOUS before Phase M` and `YES before Phase
+B`; final PR-3 lineage eligibility is therefore `NO` pending a narrowly scoped
+`RUN-IDENTITY / PHASE-BRIDGE DESIGN CORRECTION`.
+
+The frozen Phase B order is corrected additively as B1 browser-side diagnostics
+(`16`, `candidate=NO-CANDIDATE`) followed by candidate V3 captures (`80`). The
+canonical checkpoint name remains
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1`.
+The later `BROWSER-EXECUTION1` wording is `POINTER-NAME-DRIFT` only; no formal
+rename was accepted and no second Phase B checkpoint is created.
+
+No browser, CDP, Vite browser run, V3, screenshot, human review, ranking,
+selection, Product integration, Machine rerun, or Machine artifact change
+occurred. Browser Capture1 is `NOT STARTED`. No new `ai-knowledge` entry was
+created, existing dirty knowledge was preserved, and no push, tag, release,
+deploy, or publication occurred.

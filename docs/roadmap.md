@@ -5471,3 +5471,24 @@ candidate; accepted Product authority remains `fd563340...`, IMPLEMENTATION1B
 remains blocked, and PR-3 remains NO. The exact smallest next prerequisite is
 the not-started
 E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-ADOPTION1.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-ADOPTION1 (2026-09-03)
+
+The [order canonicalization adoption result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-adoption1-result.md)
+records CASE 1 / Decision A. The validated W-C correction was transferred into
+live Production and committed as `0937d7768136ff63e74924480551d370b2935c2e`
+(`fix: canonicalize layout neighbor order`), with parent historical authority
+`fd563340625fd3d88dc25baedc93c4f8fe69e5e7`. The two Product files match the W-C
+candidate byte-for-byte; Product tests pass 283/283, focused permutation and
+immutable fixture diagnostics pass, and lint/build/diff-check pass.
+
+The new Product commit is the CURRENT ACCEPTED PRODUCT SOURCE AUTHORITY for the
+next checkpoint. Historical `fd563340...` and baseline-v1 remain preserved;
+W-C remains unchanged at `d7271f5...`; the materializer remains detached at
+historical `fd563340...`; and the existing dirty EN/JA sample files remain
+unchanged. Baseline-v2 is not generated, Implementation1B remains blocked,
+PR-3 remains NO, and no candidate materialization, V0-V3, selection, or
+publication occurred. The sample-coordinate authoring follow-up is unchanged.
+
+The exact next prerequisite is the not-started
+E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-BASELINE2.

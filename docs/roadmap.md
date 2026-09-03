@@ -6049,3 +6049,32 @@ remain unchanged. The exact next prerequisite remains
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE1`,
 NOT STARTED. PR-3 remains NO; no candidate, materializer, browser, screenshot,
 or review execution occurred. The original Design1 history was not rewritten.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE1 (2026-09-03)
+
+The [Run Configuration Evidence1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence1-result.md)
+records CASE 4 / Decision D. Design1 remains CASE 2 / Decision B and its
+additive Correction1 remains CASE 1 / Decision A. Protocol Commit A was
+preregistered before dynamic execution; the valid clean restart used only
+candidate-neutral family, explicit-seed settling, Product downstream, and
+exact translation-covariance probes.
+
+FP1 authority and Nmax 65 passed, the candidate-independent point-set proof
+passed, Product clearance 96 and three settling iterations passed, and the
+minimal exact RC-SPACING-v1 scale derived as 6144/1. Family,
+initial-pairwise-clearance, settling, routing, labels, fit, replay, and
+non-mutation gates passed. The exact translation-covariance gate failed on
+Product floating-point representation drift; no tolerance was introduced
+after observing results.
+
+No candidate, real PR-3 fixture, B0/B1, browser, screenshot, human review,
+E-VISUAL, ranking, selection, Product integration, or PR-3 execution occurred.
+`PR3-RUNTIME-TRANSFORM-v1` remains UNFROZEN. No transform is recommended,
+zero origin is not justified, and Adoption1 is ineligible. The valid Evidence
+Commit B is `9738ff477d3d216507d1fba562f45dd77aa72797`. Product regression
+remains green at 309/309 with the expected baseline-v2 SHA
+`F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`.
+
+The exact next prerequisite is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-TRANSLATION-COVARIANCE-DESIGN-RECONCILIATION1`.
+No push, tag, release, deploy, or publication occurred.

@@ -5904,3 +5904,31 @@ PR-3 remain NO/NONE. The candidate is not adopted or selected; Live remains at
 next prerequisite is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1G-ADOPTION1`,
 NOT STARTED.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1G-ADOPTION1 (2026-09-03)
+
+The [Implementation1G Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1g-adoption1-result.md)
+records CASE 1 / Decision A. The validated four-file 1G candidate was
+transferred under G-A and adopted into Live as
+`563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf`, parent
+`bce55702cf79ce0047627125fe759893ffd6fc15`. The new repository/evaluation
+authority is the adoption commit; normal Product runtime source remains
+unchanged.
+
+`VSR-BROWSER-ENTRY-v1`, `PRODUCT-RUNTIME-ISOLATION-v1`,
+`EVALUATION-ENTRY-ISOLATION-v1`, and `H-B-BUILD-v1` are frozen in Live and
+PASS. The browser1 entry remains evaluation-only at `#evaluation-root`, uses
+the adopted wrapper and neutral smoke fixture, and cannot be reached by the
+normal Product graph. No Product CSS, wrapper, package, normal Vite config,
+App, entry, routing, label, layout, viewport, or baseline bytes changed.
+
+The Product Evaluation Seam implementation sequence 1B-1G is COMPLETE. This
+does not complete PR-3 or E-VISUAL. Browser execution, visual review,
+screenshots, candidate/materializer execution, V0-V3, and PR-3 remain NO/NONE;
+no candidate was selected and no Product candidate integration occurred. The
+full Product suite remains 309/309, wrapper 13/13, graph-presentation 22/22,
+routing/labels exact, auto-layout 38/38, and baseline2 replay 4/4.
+
+The exact next prerequisite is the separately authorized
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-HARNESS-IMPLEMENTATION1`,
+NOT STARTED.

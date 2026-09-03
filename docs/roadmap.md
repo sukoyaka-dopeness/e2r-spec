@@ -5855,3 +5855,25 @@ adoption, browser work, E-VISUAL, candidate/materializer execution, V0-V3, or
 PR-3 claim occurred. Implementation1G is NOT STARTED and NOT ELIGIBLE. The
 exact next prerequisite is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-ADOPTION1-RETRY1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-ADOPTION1-RETRY1 (2026-09-03)
+
+The [Adoption1-Retry1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-adoption1-retry1-result.md)
+records CASE 1 / Decision A. The reconciled two-file F-RETRY-A transfer was
+adopted into Live as `bce55702cf79ce0047627125fe759893ffd6fc15`
+(`test: adopt evaluation render wrapper`), parent `c7e7745...`. The wrapper
+implementation was left byte-untouched; the corrected EOL-stable test was
+adopted from reconciliation candidate `0af4437...`.
+
+`PRODUCT-CSS-PROVENANCE-v1` passes in the Live LF checkout using committed Git
+blob authority plus canonical LF-normalized content identity. `VSR-RENDER-
+PROJECTION-v1`, `APP-RENDER-EQUIVALENCE-v1`, and C-A CSS direct-import policy
+remain frozen. The corrected wrapper suite passes 13/13, Product tests pass
+309/309, and lint/build/baseline evidence pass. Normal Product runtime source
+remains byte-identical to c7e7745...; only evaluation infrastructure advanced
+repository HEAD.
+
+Implementation1G is technically eligible but NOT STARTED. Browser execution,
+E-VISUAL, candidate/materializer execution, V0-V3, and PR-3 remain absent. The
+exact next prerequisite is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1G`.

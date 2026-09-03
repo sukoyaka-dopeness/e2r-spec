@@ -5429,3 +5429,22 @@ review, selection, Production integration, or PR-3 claim occurred.
 
 The exact next prerequisite is the not-started
 E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CONFLICT-RESOLUTION1.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CONFLICT-RESOLUTION1 (2026-09-03)
+
+The [Relation-order conflict resolution result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-conflict-resolution1-result.md)
+records CASE 2 / Decision B. E2R Core collection order is non-semantic, and
+LiaisonScape's existing exact “ignores relation order” test establishes the
+intended Product behavior. The accepted `fd563340...` implementation retains
+Relation insertion order in adjacency Sets used by floating-point settling, so
+the current sensitivity is classified as incidental numeric order sensitivity,
+not accepted layout semantics.
+
+Implementation1A baseline v1 artifacts are preserved as historical pre-order-
+resolution evidence. A separately authorized Product correction must establish
+canonical locale-independent Relation/neighbor order and a post-correction
+baseline v2 before Implementation1B settling extraction can resume. No Product
+source, tests, fixtures, baseline, harness, candidate, V0-V3, screenshot,
+browser review, selection, Production integration, or PR-3 claim was made.
+The exact smallest next prerequisite is the not-started
+E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-IMPLEMENTATION1.

@@ -5697,3 +5697,38 @@ screenshot, browser review, selection, baseline update, label extraction, or
 PR-3 claim occurred. Implementation1E remains `NOT STARTED`; the exact next
 prerequisite is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1D-ADOPTION1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1D-ADOPTION1 (2026-09-03)
+
+The [Implementation1D Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1d-adoption1-result.md)
+records CASE 1 / Decision A. Live Production was verified at the exact
+pre-adoption authority `681ef0a...`; the Implementation1D candidate
+`63753950...` was verified with that exact parent and its three-path inventory
+was adopted through an exact-path transfer. All three selected files
+byte-matched the validated candidate.
+
+The pure Product-owned `deriveAutomaticRoutes(...)` seam is now adopted. App
+continues to own React/manual/persistence/interaction state and provisional
+Node-label geometry, while routing preserves the existing comparator,
+fixed-first order, overlap indexing, occupiedPaths sequencing, diagnostics,
+parallel eligibility, and original graph-edge output order. `viewport.ts` and
+`auto-layout.ts` remain unchanged; frozen-edge-during-drag remains NOT
+CORRECT.
+
+Live replay remains exact to unchanged characterization-v2: pure routing 9/9,
+App routing 16/16, pure labels 8/8, App labels 16/16, auto-layout 38/38 with
+SHA `F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`,
+Relation and Node reversal solve/settle 16/16 each, and focused seam tests
+10/10. Full Product tests pass 297/297; lint/build/diff-check pass. Dynamic
+Node-position, curve-offset, self-loop-override, and provisional-label
+recomputation proofs pass.
+
+The live adoption commit is `e2ede7f...` (`refactor: extract automatic routing
+derivation`), parent `681ef0a...`, and is the new current Product/evaluation/
+presentation-seam authority. Baseline-v2 is unchanged; baseline-v3 was not
+created. Protected EN/JA samples are unchanged. No label extraction,
+candidate/materializer execution, V0-V3, screenshot, browser review,
+candidate selection, Product candidate integration, or PR-3 claim occurred.
+Implementation1E is technically eligible but remains NOT STARTED. The exact
+next prerequisite is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1E`.

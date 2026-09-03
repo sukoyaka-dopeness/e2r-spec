@@ -62,7 +62,7 @@ The identity was independently verified before Protocol A. The phase bridge
 was frozen as `PR3-PHASE-BRIDGE-v1`, targeting Browser and referencing Machine
 Evidence B; no Machine artifact was copied, rewritten, or reidentified.
 
-The final preregistration topology had five discarded pre-dynamic/failed
+The final preregistration topology had six discarded pre-dynamic/failed
 lineages before the final capture7 Protocol A: the first correction was before
 dynamic capture; later lineages stopped on common B1 launch/readiness failure.
 The final lineage's Protocol A preceded its dynamic sessions and no runner or

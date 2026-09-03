@@ -5833,3 +5833,25 @@ valid but the CSS provenance gate is unresolved. Browser execution, screenshots,
 E-VISUAL, candidate/materializer execution, V0-V3, and PR-3 remain absent.
 Implementation1G is NOT STARTED. A separately authorized CSS working-tree
 reconciliation is required before retrying Adoption1.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-CSS-PROVENANCE-RECONCILIATION1 (2026-09-03)
+
+The [CSS provenance reconciliation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-css-provenance-reconciliation1-result.md)
+records CASE 1 / Decision A. The blocked Adoption1 raw SHA mismatch was
+classified as an EOL-dependent working-tree provenance assertion: candidate and
+Live share Git blob `ae41e48b34d72067d92517a5d42a57a4cc1d409f`, while candidate
+checks out CRLF and Live checks out LF. Product CSS content was not changed.
+
+`PRODUCT-CSS-PROVENANCE-v1` is frozen with Git blob authority and an LF-
+normalized canonical content digest; raw working-tree SHA is diagnostic only.
+The reconciliation candidate is `0af4437c469bdee2f5636a87e6b5489a1f53c60b`
+(`test: make render wrapper CSS provenance EOL-stable`), changing only the
+wrapper test. The corrected suite passes 13/13 in both CRLF and isolated LF
+checkouts, including EOL equivalence and real-content-mutation rejection.
+
+Live remains untouched at `c7e7745ad883f8434f56dd62e5b933aafabf548d`; the
+blocked-Adoption1 wrapper files remain untracked there and unchanged. No Live
+adoption, browser work, E-VISUAL, candidate/materializer execution, V0-V3, or
+PR-3 claim occurred. Implementation1G is NOT STARTED and NOT ELIGIBLE. The
+exact next prerequisite is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-ADOPTION1-RETRY1`.

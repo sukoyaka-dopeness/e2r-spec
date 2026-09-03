@@ -6720,3 +6720,28 @@ KB5120998 remains deferred; B1/V3 remain `0`; Browser Evidence B remains
 Harness, Machine Evidence, browser authority, driver, graphics setting,
 Windows Update, registry, policy, `ai-knowledge`, failed lineage, push, tag,
 release, deploy, or publication changed.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-PROTOCOL-A (2026-09-04)
+
+The [Browser Capture1 Restart1 Protocol A result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-protocol-a.md)
+records **CASE 1 / DECISION A - `RESTART1-PROTOCOL-A-READY`**. A fresh
+phase-local run `browser-capture-restart1-2026-09-04` and fresh semantic run
+`pr3r1-6560dd8187ddaa1ff002034ab99ffe91a3336b430f449cc1f1c7da85e26659d9`
+were minted under `VSR-ARTIFACT-CANONICAL-v1`, distinct from the failed
+lineage. The current Edge Stable authority remains `152.0.4191.62`, exactly
+matching the preceding `BROWSER-RUNTIME-READY` authority. The Machine-to-
+Browser bridge remains bound to Machine Evidence B `b0bd0f1a9f70915c639cbee61cf5f8370c78766f`,
+with eligible V2 count 80 and B1 pending count 16 and their recorded hashes.
+
+Protocol A froze the normal-sandbox contract, including
+`--disable-extensions` and excluding `--disable-gpu-sandbox`, the
+`1280x900` / DSF 1 / 100% / `0 0 800 500` viewport, fresh profiles, and
+initial retry 1 plus at most 2 retries. B1-first ordering is fixed: 16 B1
+items precede 80 candidate V3 items. No browser was launched; B1, V3,
+screenshots, Browser Evidence B, Human Review, Review1, ranking, selection,
+E-VISUAL, and PR-3 remain `0`/`NONE`/`NO` as applicable. The exact next
+prerequisite is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-B1-EXECUTION1`.
+The failed lineage remains immutable and no Product, Machine Evidence,
+Harness, host graphics, or `ai-knowledge` state changed; no push, tag,
+release, deploy, or publication occurred.

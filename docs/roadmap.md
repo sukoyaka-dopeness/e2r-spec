@@ -717,6 +717,39 @@ illustrative rather than a limit. Active LiaisonScape engineering priority is
 unchanged and this is not a release blocker or ACTIVE/NEXT engineering work.
 `EXTERNAL-VOCABULARY-WEB-FETCH-EXPERIMENT1` remains FUTURE / NOT STARTED.
 
+### Character Generator deterministic Dataset tendency and seed research
+
+The existing [Character Generator Application](../applications/character-generator-app.md)
+entry was updated additively by
+`E2R-CHARACTER-GENERATOR-DETERMINISTIC-DATASET-TENDENCY-SEED-RESEARCH-NOTE3`.
+It records `DETERMINISTIC-DATASET-TENDENCY-SEED-HYPOTHESIS-v1` as
+`RECORDED / UNPROVEN`: a future generator may derive a Dataset-level tendency
+before generating individual Characters, Relations, and Events. Generation
+should use opaque generation-specific seed material rather than actual user,
+email, GitHub, repository, or machine identity. Root, private/profile,
+Dataset, and domain-specific seeds remain conceptual and open; no schema,
+algorithm, hash, PRNG, KDF, UUID, or bit width is selected.
+
+The direction distinguishes exact reproduction from same-tendency regeneration,
+records `SEED-ONLY-REPRODUCIBILITY = INSUFFICIENT`, and identifies generator
+version, configuration/profile version, seed lineage, and vocabulary
+snapshot/version as future reproducibility inputs. `DATASET-GENERATION-PROFILE-v1`
+describes fictional-world distributions rather than real-user profiling.
+Privacy/linkability risks, private-root versus portable-reproduction material,
+cross-provider portability, generated-object identity, partial regeneration,
+Relation/Event/Trait consistency, and D0–D4 determinism levels remain research
+questions. The illustrative approximately-100-character graph remains a
+scenario, not a limit.
+
+The note preserves the distinction between generated proposals and Owned
+Dataset data, and between Character Generator generation quality and
+LiaisonScape/NarrativeLine presentation. Future G1–G7 scenarios are recorded
+but were not run. Character Generator implementation, generation execution,
+user/account access, Core/Extension changes, Dataset generation metadata,
+VSCode/GitHub integration, LiaisonScape, and NarrativeLine changes remain NO.
+This is future research only, not ACTIVE/NEXT work, not a release blocker, and
+the current LiaisonScape priority is unchanged.
+
 ### Grouping evidence and feedback direction
 
 Entity grouping is not an accepted Dataset semantic or implementation plan.

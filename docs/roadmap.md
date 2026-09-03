@@ -6171,3 +6171,29 @@ exact next prerequisite is
 which is NOT STARTED. No Product, Harness, materializer, Live, baseline, or
 `ai-knowledge` change occurred; no push, tag, release, deploy, or publication
 occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-CANONICAL-ORIGIN-EVIDENCE2 (2026-09-03)
+
+The [canonical-origin Evidence2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-canonical-origin-evidence2-result.md)
+records CASE 1 / Decision A. Fresh preregistered candidate-neutral evidence
+supports the single transform `originX=0/1`, `originY=0/1`, `scale=6144/1`.
+All BS1-BS10 and E2-H1-E2-H22 gates pass; all eight branch-risk classes are
+accounted for, with zero blocking O-D responsibilities. The global transform
+consistency audit has one fingerprint.
+
+No candidate, authorized candidate materialization, real PR-3 fixture,
+alternate-origin run, B0/B1, browser, screenshot, human review, E-VISUAL,
+ranking, candidate selection, Product integration, Adoption1 execution, or
+PR-3 claim occurred. Candidate execution is 0, real fixture execution is 0,
+and alternate-origin execution is 0. The transform is recommended for the
+separate Adoption1 checkpoint and `RUN-CONFIGURATION-ADOPTION1 = ELIGIBLE`,
+while `PR3-RUNTIME-TRANSFORM-v1` remains UNFROZEN.
+
+The valid Evidence2 clone is separate from Product and ends at Evidence Commit
+B `ecad472c48b12e4fccb0d71f2edd44ec2e13f55c`; its valid preregistration
+authority is `91d6cea340a717b11806b0563aeb43f861badf1c`. Focused regression is
+188/188 and the full Product suite is 309/309; lint, build, and diff-check
+pass. The exact next prerequisite is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-ADOPTION1`.
+No Product, Harness, materializer, Live, baseline, or `ai-knowledge` change
+occurred; no push, tag, release, deploy, or publication occurred.

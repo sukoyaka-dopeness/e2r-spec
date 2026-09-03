@@ -6103,3 +6103,39 @@ E-VISUAL, Product, Harness, materializer, Live, or baseline work occurred.
 The exact next prerequisite remains the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-TRANSLATION-COVARIANCE-DESIGN-RECONCILIATION1`.
 No push, tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-TRANSLATION-COVARIANCE-DESIGN-RECONCILIATION1 (2026-09-03)
+
+The [translation covariance design reconciliation](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-translation-covariance-design-reconciliation1.md)
+records CASE 1 / Decision A. The provenance audit finds that R1–R7 remain
+accepted hard requirements: candidate-, fixture-, and locale-neutrality;
+determinism; one global transform; no visual tuning; and an explicit positive
+uniform affine transform. Arbitrary-origin downstream raw JavaScript Number
+equality (R8–R11) first appears in the Evidence1 Protocol A translation
+controls and runner gate; it was not an accepted Design1 or Product semantic
+invariant.
+
+Evidence1 remains formally valid and permanently retains CASE 4 / Decision D:
+exact translation covariance FAILS under its preregistered strict comparison.
+The observed CP1 and CP10 differences are classified as finite floating
+representation drift (F-C), without claiming visual, semantic-geometry, or
+branch equivalence. No tolerance or ULP rule was introduced, and no observed
+mismatch was used to set a threshold.
+
+TC-B + TC-D is selected prospectively. `PR3-CANONICAL-RUNTIME-ORIGIN-v1` is
+frozen as a canonical no-added-translation policy with `originX=0/1` and
+`originY=0/1`; it is not translation equivalence, a Product coordinate policy,
+candidate semantics, or a runtime-transform adoption. `RC-SPACING-v1` and
+`SCALE-COMPATIBILITY-EVIDENCED` remain valid, including the exact scale
+derivation `6144/1`, but `PR3-RUNTIME-TRANSFORM-v1` remains UNFROZEN.
+
+The eight-class `TRANSLATION-BRANCH-RISK-INVENTORY-v1` is recorded. Fresh
+preregistered canonical-origin / branch-stability Evidence2 is required;
+existing Evidence1 is diagnostic/supporting prior evidence only. Adoption1,
+candidate execution, real-fixture execution, B0/B1, browser, screenshot,
+review, ranking, selection, Product integration, and PR-3 remain NO/0. The
+exact next prerequisite is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-CANONICAL-ORIGIN-EVIDENCE2`,
+which is NOT STARTED. No Product, Harness, materializer, Live, baseline, or
+`ai-knowledge` change occurred; no push, tag, release, deploy, or publication
+occurred.

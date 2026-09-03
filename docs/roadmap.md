@@ -6536,6 +6536,33 @@ Evidence B, failed capture7, materializer, Baseline2, and `ai-knowledge`
 remain unchanged. PR-3 remains `NO`; no push, tag, release, deploy, or
 publication occurred.
 
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-POST-REBOOT-QUALIFICATION1 (2026-09-04)
+
+The [Host Runtime Post-Reboot Qualification1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-post-reboot-qualification1.md)
+records **POST-REBOOT-C / DECISION C - HOST / CHROMIUM / GPU RUNTIME
+INSTABILITY PERSISTS ACROSS REBOOT**. A full Windows reboot was confirmed
+after Qualification1: boot time was `2026-09-03T19:11:25.1487986Z`, after the
+Qualification1 completion timestamp.
+
+Updated Edge Stable `152.0.4191.62` failed 3/3 controlled Node cycles with
+first CDP at `5569-5719 ms`, GPU fatal 3/3, cache-lock 3/3, and quiescence
+3/3. Because Edge remained unstable, Chrome Stable was run as a non-evidence
+comparator; current Chrome `152.0.7977.75` also failed 3/3, reaching CDP at
+`329-477 ms` but producing GPU fatal and cache-lock errors in every cycle.
+
+The pre- and post-reboot GPU signatures are **UNCHANGED**. Edge-specific
+instability is **NO**; persistent host/Chromium/GPU runtime instability is
+**YES**. Product, Harness, and Machine Evidence defects were not demonstrated.
+The accepted PR-3 authority remains Edge Stable; no Browser Authority
+Correction occurred and Chrome is not qualified as a replacement.
+
+Fresh Browser Capture1 remains **NOT ELIGIBLE**; Review1 remains **NOT
+ELIGIBLE**; B1 and V3 remain `0`; Browser Evidence B remains `NONE`; PR-3
+remains `NO`. The exact next prerequisite is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-GPU-RUNTIME-DIAGNOSTIC1`,
+which is **NOT STARTED**. No driver/settings/browser-authority/runner change,
+Product change, or publication occurred.
+
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-BROWSER-RUNTIME-STABILITY-QUALIFICATION1 (2026-09-04)
 
 The [Browser Runtime Stability Qualification1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-browser-runtime-stability-qualification1.md)

@@ -5576,3 +5576,28 @@ remains `0937d776...` until adoption. Implementation1C is `NOT STARTED`, PR-3
 is `NO`, no candidate materialization or Product candidate integration occurred,
 and the exact next prerequisite is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1B-ADOPTION1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1B-ADOPTION1 (2026-09-03)
+
+The [Implementation1B Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1b-adoption1-result.md)
+records CASE 1 / Decision A. The validated candidate
+`a5bc4b5f13731a6e29acab9cd941e014d7a603c0` was adopted into live Production
+through the selected `E-A` policy: only `src/auto-layout.ts` and
+`tests/auto-layout.test.ts` were transferred. The candidate's copied
+characterization2 evidence surface remains disposable-clone-only; baseline2
+`324193eda...` remains the immutable evidence authority.
+
+Live adoption commit is `3b5fb4d2b8d6360cc630e7e910182927e1d8459a`
+(`refactor: extract layout settling kernel`), parent `0937d776...`, and is
+the new CURRENT ACCEPTED PRODUCT SOURCE AUTHORITY. The existing
+`characterization-v2-post-order-resolution` remains the exact behavioral target:
+38/38 replay with unchanged SHA, Relation/Node reversal 16/16 for solve and
+settle, pure/App routing and labels exact to v2, Product tests 287/287, lint,
+build, and diff-check passing. No baseline-v3 was created and baseline-v2 was
+not rewritten; Product behavior change is `NONE`.
+
+Interaction and routing source remain unchanged. Implementation1C is eligible
+but `NOT STARTED`; PR-3 is `NO`, with no adapter, candidate materialization,
+V0-V3 execution, candidate selection, or Product candidate integration. The
+exact next prerequisite is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1C`.

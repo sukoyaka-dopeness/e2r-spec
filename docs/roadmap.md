@@ -5877,3 +5877,30 @@ Implementation1G is technically eligible but NOT STARTED. Browser execution,
 E-VISUAL, candidate/materializer execution, V0-V3, and PR-3 remain absent. The
 exact next prerequisite is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1G`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1G (2026-09-03)
+
+The [Implementation1G result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1g-result.md)
+records CASE 1 / Decision A. A clean disposable clone started at the current
+Live authority `bce55702cf79ce0047627125fe759893ffd6fc15`, and candidate commit
+`ff7c399c006ae841aa7ee811e46313f2ebb0dfe4` adds only the isolated
+`experimental/product-evaluation-seam/browser1/` entry, smoke fixture, and
+focused isolation test.
+
+`VSR-BROWSER-ENTRY-v1`, `PRODUCT-RUNTIME-ISOLATION-v1`,
+`EVALUATION-ENTRY-ISOLATION-v1`, and `H-B-BUILD-v1` all PASS. The entry reaches
+the adopted render wrapper but not normal App runtime, materializer, or
+candidate code; normal Product cannot reach the experimental seam. H-BUILD-A
+passes with the existing Vite CLI and dependencies, while normal Product
+source and build remain unchanged/green. Product CSS C-A and
+`PRODUCT-CSS-PROVENANCE-v1` remain PASS.
+
+The full Product suite passes 309/309; wrapper 13/13, graph-presentation
+22/22, routing/labels exact, auto-layout 38/38 with unchanged v2 SHA, and
+baseline2 replay 4/4 remain green. Browser execution, dev-server visual
+review, screenshots, E-VISUAL, candidate/materializer execution, V0-V3, and
+PR-3 remain NO/NONE. The candidate is not adopted or selected; Live remains at
+`bce55702...` with only the protected EN/JA sample modifications. The exact
+next prerequisite is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1G-ADOPTION1`,
+NOT STARTED.

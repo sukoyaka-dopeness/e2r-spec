@@ -5632,3 +5632,35 @@ browser review, selection, Production integration, or PR-3 claim occurred.
 Implementation1C Adoption1 is now eligible but not started. PR-3 remains NO,
 and the exact next prerequisite is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1C-ADOPTION1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1C-ADOPTION1 (2026-09-03)
+
+The [Implementation1C Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1c-adoption1-result.md)
+records CASE 1 / Decision A. Live Production was verified at the exact 1C
+parent authority `3b5fb4d...`; the candidate `bb4f603...` was verified with
+that exact parent and its complete path inventory was inspected.
+
+Transfer policy `T-A` was selected: only `src/auto-layout.ts` and
+`experimental/product-evaluation-seam/explicit-seed-adapter1/` were adopted.
+The copied `characterization2` evidence was excluded because baseline2
+`324193e...` remains the separate default-behavior evidence authority. All
+selected files byte-matched the candidate. `VSR-SEED-ADAPTER-v1` is frozen;
+exact Node-ID coverage, finite coordinates, deterministic failures, no
+fallback, no mutation, Product-owned normalization, and Product-owned P3
+composition are adopted.
+
+The live adoption commit is `681ef0a90d06e4c88f3e77289c165b7a5bfbc647`
+(`feat: expose explicit-seed settling seam`), parent `3b5fb4d...`, and is the
+new CURRENT ACCEPTED PRODUCT / EVALUATION-SEAM SOURCE AUTHORITY. Default
+Product behavior remains exact to unchanged characterization-v2: 38/38 with
+SHA `F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`;
+downstream routing/label replay is exact; Product tests pass 287/287; and
+lint/build/diff-check pass.
+
+Protected EN/JA sample hashes are unchanged. Live contains no copied
+`characterization2`; baseline-v2 is unchanged and baseline-v3 was not
+created. No candidate execution, V0-V3 evidence, screenshot, browser review,
+selection, materializer update, Product candidate integration, or PR-3 claim
+occurred. Implementation1D is eligible but remains `NOT STARTED`; the exact
+next prerequisite is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1D`.

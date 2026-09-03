@@ -5522,3 +5522,32 @@ change occurred.
 Product-seam equivalence is not fully reconciled, Implementation1B remains
 blocked, PR-3 remains NO, and the exact next prerequisite is the not-started
 E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-EQUIVALENCE-RECONCILIATION1.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-EQUIVALENCE-RECONCILIATION1 (2026-09-03)
+
+The [authority and equivalence reconciliation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-equivalence-reconciliation1-result.md)
+records CASE 1 / Decision A. The current Product authority is
+`0937d776...`; historical `fd563340...` remains the pre-order-correction v1
+authority, W-C `d7271f5...` remains correction provenance, and baseline2
+`324193e...` remains post-correction evidence only. `PRODUCT-SEAM-EQUIVALENCE-v1`
+is retained with the `POST-ORDER-RESOLUTION` profile and v2 is the exact future
+refactor target.
+
+The S-C settling boundary remains valid but is refined to a Product-owned
+kernel receiving a normalized layout graph and explicit initial positions, so
+canonical neighbor ordering is shared rather than duplicated or bypassed.
+Materializer source drift is `UNAFFECTED`: the retained fd materializer uses
+its own graph/FP1/rational implementation and does not import Product
+auto-layout. M-A is retained with later pre-PR-3 environment revalidation.
+
+Implementation1B entry gate is `PASS`. The future workspace policy is W4: a
+new clean disposable clone from `0937d776...` at the proposed
+`e2r-liaison-scape-product-evaluation-seam-implementation1b` path; it was not
+created here. The machine baseline does not define frozen curves during drag:
+automatic routes must recompute from current Node positions, while manual
+routes, direct Relation drag, and label follow remain App-owned.
+
+Implementation1B remains not started, PR-3 remains NO, and no Product,
+materializer, sample, candidate, or interaction change occurred. The exact
+next prerequisite is the not-started
+E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1B.

@@ -5815,3 +5815,21 @@ remain absent. Implementation1G is NOT STARTED, the candidate is not selected,
 and Product candidate integration has not occurred. The exact next prerequisite
 is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-ADOPTION1`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-ADOPTION1 (2026-09-03)
+
+The [Implementation1F Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-adoption1-result.md)
+records CASE 3 / Decision C. The exact two-file F-A transfer was performed
+against Live HEAD `c7e7745ad883f8434f56dd62e5b933aafabf548d`; both wrapper files
+matched the 1F candidate byte-for-byte. Adoption stopped because the focused
+wrapper suite was 11/12: F-R11 found that the candidate's raw CSS SHA reflects
+CRLF working-tree bytes while Live has LF working-tree bytes. The Git blob and
+normalized stylesheet text are equal, and Product CSS was not changed.
+
+No Live adoption commit was created. The normal Product runtime remains
+byte-identical to c7e7745..., Product tests pass 309/309, lint/build and
+baseline evidence pass, while `APP-RENDER-EQUIVALENCE-v1` remains structurally
+valid but the CSS provenance gate is unresolved. Browser execution, screenshots,
+E-VISUAL, candidate/materializer execution, V0-V3, and PR-3 remain absent.
+Implementation1G is NOT STARTED. A separately authorized CSS working-tree
+reconciliation is required before retrying Adoption1.

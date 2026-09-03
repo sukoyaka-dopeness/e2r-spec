@@ -5601,3 +5601,34 @@ but `NOT STARTED`; PR-3 is `NO`, with no adapter, candidate materialization,
 V0-V3 execution, candidate selection, or Product candidate integration. The
 exact next prerequisite is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1C`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1C (2026-09-03)
+
+The [Implementation1C result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1c-result.md)
+records CASE 1 / Decision A. From a new clean clone at accepted Product
+authority `3b5fb4d...`, the pre-edit v2 replay passed exactly before source
+editing. The existing Product seam was insufficient for the requested
+evaluation path because sequential multi-component P3 packing remained in the
+`solveAutoLayout` composition, so Decision `P-B` added the smallest generic
+composition seam in `src/auto-layout.ts` only.
+
+The candidate exposes Product-owned settling from complete explicit initial
+positions while retaining the existing normalized graph, canonical neighbor
+order, settling arithmetic, and sequential composition. The separate
+evaluation-only `VSR-SEED-ADAPTER-v1` validates exact Node-ID coverage and
+finite positions, has no fallback, and remains blind to candidates,
+materialization, V0-V3, persistence, normal App entry, and rendering.
+
+The local candidate commit is `bb4f603` (`feat: expose LiaisonScape explicit-seed
+settling seam`). Characterization2 replay is 38/38 exact with unchanged SHA
+`F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`, the
+adapter tests pass 10/10, full Product tests pass 287/287, and lint/build/
+diff-check pass. The candidate clone is clean and unpushed.
+
+Live Production remains unchanged at `3b5fb4d...` apart from its two protected
+dirty samples; baseline2, W-C, the 1B candidate, and the retained materializer
+remain unchanged. No candidate materialization, V0-V3 execution, screenshot,
+browser review, selection, Production integration, or PR-3 claim occurred.
+Implementation1C Adoption1 is now eligible but not started. PR-3 remains NO,
+and the exact next prerequisite is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1C-ADOPTION1`.

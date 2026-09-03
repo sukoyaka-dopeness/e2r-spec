@@ -6380,3 +6380,37 @@ selection, Product integration, Machine rerun, or Machine artifact change
 occurred. Browser Capture1 is `NOT STARTED`. No new `ai-knowledge` entry was
 created, existing dirty knowledge was preserved, and no push, tag, release,
 deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-IDENTITY-PHASE-BRIDGE-DESIGN-CORRECTION1 (2026-09-04)
+
+The [Run-Identity Phase-Bridge Design Correction1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-identity-phase-bridge-design-correction1.md)
+records `CASE 1 / Decision A`. The preferred phase-scoped model is frozen:
+Machine Execution1 remains immutable phase-local evidence, while the final
+browser-bound `pr3r1-<lowercase-sha256>` identity is minted during Browser
+Protocol A preregistration/preflight after exact Microsoft Edge path/version
+binding and before any Browser dynamic execution.
+
+`PR3-MACHINE-EVIDENCE-REFERENCE-v1` and `PR3-PHASE-BRIDGE-v1` are frozen as
+reference-only contracts. The final Browser/PR3 manifest references Machine
+Evidence B `b0bd0f1a9f70915c639cbee61cf5f8370c78766f` plus its exact artifact
+index/run-manifest hashes; it does not transfer ownership or rewrite, copy, or
+reidentify Machine artifacts. `PR3-RESUME-v1` remains intra-lineage resume
+only. Machine rerun is `NO`.
+
+The exact eligible V2 set is frozen at 80 records with set hash
+`E891C747394C492AE1D56AA1518F2E596E96756985BCBFBDFC93323070CC162C`. The B1
+pending set is frozen at 16 records with set hash
+`B02C9075A2758CF953F3D6BF50CC852E8394C0357A127F3B559708899D216335`. V3 rows
+must link exact V2 artifact references/hashes, and B1 browser rows must link
+exact B1 machine-side references/hashes while retaining `NO-CANDIDATE`.
+
+`PHASE-B-ORDER-v1` is B1 browser-side 16 first, then candidate V3 80. The
+canonical checkpoint remains
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1`.
+Browser Capture1 is eligible but `NOT STARTED`; V3, screenshots, review,
+selection, Product integration, and PR-3 remain `NO`.
+
+No Product, Harness, Machine clone, Evidence1/Evidence2, materializer, or
+Baseline2 change occurred. No new `ai-knowledge` entry was created; existing
+dirty knowledge was preserved. No push, tag, release, deploy, or publication
+occurred.

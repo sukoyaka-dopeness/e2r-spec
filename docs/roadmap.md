@@ -6590,3 +6590,32 @@ runtime qualification focused on the common GPU/cache failure and external
 runtime state. It is **NOT STARTED**. No Product, Harness, Machine Evidence,
 capture7, or `ai-knowledge` change occurred; no push, tag, release, deploy, or
 publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-GPU-RUNTIME-DIAGNOSTIC1 (2026-09-04)
+
+The [Host/GPU Runtime Diagnostic1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-gpu-runtime-diagnostic1.md)
+records **CASE 2 / DECISION B — HOST-GPU-B / FIREFOX ALSO FAILS**. The
+post-reboot Edge/Chrome baseline was reused without rerunning Chromium. A
+fresh Microsoft Store Firefox `154.0.1` executable was run in three sequential
+headless cycles against a neutral local text/CSS/SVG control page, with three
+fresh profiles. All three processes exited code 0 but emitted
+`RenderCompositorSWGL failed mapping default framebuffer, no dt`; no PNG was
+produced. All three profiles were cleaned and the Firefox process set was
+quiescent.
+
+The update-free host snapshot records Windows 11 Home 64-bit, build
+`26200.9168`, Intel UHD Graphics / Intel driver `32.0.101.7088`, WDDM 3.2,
+DirectX 12, and no installed KB5120998. GPU/WMI inventory was restricted, so
+PnP and dxdiag evidence were retained. No display-driver reset,
+LiveKernelEvent, or browser crash entry appeared in the narrow event window.
+The independent Firefox failure makes cross-engine host/GPU graphics failure
+strongly supported. Product, Harness, Machine Evidence, runner causality, and
+Browser Authority defects were not demonstrated.
+
+Fresh Browser Capture1 remains **NOT ELIGIBLE**; Review1 remains **NOT
+ELIGIBLE**; B1 and V3 remain `0`; Browser Evidence B remains `NONE`; PR-3
+remains `NO`. The exact next prerequisite is a bounded GPU driver/Windows
+graphics diagnostic beginning with read-only pre-change evidence. It is **NOT
+STARTED**. Windows Update, GPU driver, graphics settings, Product, Harness,
+Machine Evidence, failed capture7, materializer, Baseline2, and `ai-knowledge`
+remain unchanged; no push, tag, release, deploy, or publication occurred.

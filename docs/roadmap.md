@@ -6649,3 +6649,30 @@ prerequisite is
 KB5120998 was not installed. Product, Harness, Machine Evidence, Browser
 authority, driver, settings, and `ai-knowledge` remain unchanged; no push,
 tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-VSCODE-STABLE-EXCLUSION-QUALIFICATION1 (2026-09-04)
+
+The [VS Code Stable Exclusion Qualification1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-vscode-stable-exclusion-qualification1.md)
+records **CASE 3 / DECISION C - `VSCODE-STABLE-C / MIXED / INCONCLUSIVE`**.
+VS Code Stable was installed at `1.136.0` but was already absent before the
+test and remained absent before and after all three cycles. VS Code Insiders
+`1.137.0-insider`, hosting Codex, remained running throughout. It was not
+stopped or modified.
+
+With Stable excluded and Insiders retained, Edge `152.0.4191.62` using the
+original Diagnostic2 normal-sandbox argv passed `3/3` with first CDP at
+`289-308 ms`, zero GPU fatal, zero cache-lock, and quiescence `3/3`. One
+optional sandbox-disabled integrity control also passed. The result answers
+the operational question as YES, but because Stable was not running at
+preflight there is no matched Stable-running baseline; active Stable-process
+causality is therefore **INCONCLUSIVE**, and installation causality is not
+demonstrated.
+
+The retained headless Chromium GPU-sandbox/runtime issue remains supported,
+but KB5120998 is **not** the immediate next variable. The exact next
+prerequisite is a bounded VS Code Stable-present/Stable-absent confirmation
+checkpoint. Browser Capture1 remains **NOT ELIGIBLE**; Review1 remains **NOT
+ELIGIBLE**; B1 and V3 remain `0`; Browser Evidence B remains `NONE`; PR-3
+remains `NO`. No Product, Harness, Machine Evidence, browser authority,
+driver, settings, Windows Update, or `ai-knowledge` change occurred; no push,
+tag, release, deploy, or publication occurred.

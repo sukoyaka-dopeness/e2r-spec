@@ -6535,3 +6535,31 @@ state recording. It is **NOT STARTED**. Product, Original Harness, Machine
 Evidence B, failed capture7, materializer, Baseline2, and `ai-knowledge`
 remain unchanged. PR-3 remains `NO`; no push, tag, release, deploy, or
 publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-BROWSER-RUNTIME-STABILITY-QUALIFICATION1 (2026-09-04)
+
+The [Browser Runtime Stability Qualification1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-browser-runtime-stability-qualification1.md)
+records **CASE 3 / DECISION C - HOST / CHROMIUM / GPU ENVIRONMENT
+INSTABILITY**. Updated Edge Stable was resolved as `152.0.4191.62`, drifted
+from the historical failed authority `152.0.4191.53`, and failed 3/3
+controlled Node cycles. Each reached CDP around 5.756-5.795 seconds, then
+became `GPU-FATAL-AFTER-CDP` before the 3-second stability window.
+
+Because updated Edge failed, the user-authorized Chrome direction was tested
+as a non-evidence comparator. Chrome Stable `151.0.7922.175` also failed 3/3
+under the same semantic argv, Node HTTP poller, fresh-profile policy, unique
+ports, 12-second observation, 3-second stability, and targeted quiescence.
+Chrome reached CDP at 363-503 ms but had GPU fatal and cache-lock errors in
+all three cycles. Edge-specific instability is therefore **NO**; host-wide
+Chromium/GPU instability is **YES**. Product, Harness data, and Machine
+Evidence defects were not demonstrated.
+
+Chrome is not a stable replacement and the accepted PR-3 authority remains
+Edge Stable. Browser Authority Correction1 is not required from this result.
+Fresh Browser Capture1 remains **NOT ELIGIBLE**; Review1 remains **NOT
+ELIGIBLE**; B1 and V3 remain `0`; Browser Evidence B remains `NONE`; PR-3
+remains `NO`. The exact next prerequisite is a bounded host/Chromium/GPU
+runtime qualification focused on the common GPU/cache failure and external
+runtime state. It is **NOT STARTED**. No Product, Harness, Machine Evidence,
+capture7, or `ai-knowledge` change occurred; no push, tag, release, deploy, or
+publication occurred.

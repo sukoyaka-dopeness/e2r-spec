@@ -6414,3 +6414,29 @@ No Product, Harness, Machine clone, Evidence1/Evidence2, materializer, or
 Baseline2 change occurred. No new `ai-knowledge` entry was created; existing
 dirty knowledge was preserved. No push, tag, release, deploy, or publication
 occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1 (2026-09-04)
+
+The first authorized Phase B execution was attempted in disposable Browser
+lineages based on the accepted Harness authority. Machine Evidence B, the
+80-cell eligible V2 set, the 16-cell B1 pending set, the adopted transform,
+and the exact Edge Stable authority were frozen before dynamic capture. The
+final Browser identity was
+`pr3r1-95ff619e25deb4c5edc281041bf6c4d32324e6765c4f5999a98ff68a343d8762`.
+
+The checkpoint is **CASE 7 / DECISION G — B1 PHASE GATE BLOCKS CANDIDATE V3**.
+The final disposable lineage committed Browser Protocol A, then reached seven
+terminal B1 browser-side failures after 21 attempts; the common CDP launch /
+readiness failure prevented the remaining B1 rows and blocked all candidate
+V3 captures. No screenshot succeeded, no Browser Evidence B completion commit
+was created, and no V3, visual review, ranking, selection, E-VISUAL, Product
+integration, or PR-3 assessment occurred. Partial B1 failure records remain in
+the Browser clone for diagnosis. Edge VersionInfo and an independent CDP probe
+both reported `152.0.4191.53`; Chrome fallback was not used.
+
+The exact next prerequisite remains
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-REVIEW1`,
+but it is **NOT STARTED**. A future Browser retry requires a new lineage and
+Protocol A after correcting the runner launch/readiness fault. Machine
+Execution1, Browser Lineage Readiness Reconciliation1, and Run-Identity
+Phase-Bridge Design Correction1 remain preserved.

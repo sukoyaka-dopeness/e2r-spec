@@ -6287,3 +6287,29 @@ not-started `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-
 No Product, Harness, Evidence1, Evidence2, materializer, baseline, or
 `ai-knowledge` history changed; no new execution, push, tag, release, deploy,
 or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-ADOPTION1 (2026-09-03)
+
+The [Run Configuration Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-adoption1.md)
+records `CASE 1 / Decision A`. The accepted Evidence2 result and source-hash
+provenance reconciliation remain valid, Product source drift is `NO`, and the
+canonical raw-blob convention is applied prospectively to the adopted source
+bundle.
+
+`PR3-RUNTIME-TRANSFORM-v1` is now `ADOPTED / FROZEN` as the single global
+transform `originX=0/1`, `originY=0/1`, `scale=6144/1`. Its scope is limited to
+the LiaisonScape Initial Placement Seed production-candidate PR-3 evaluation
+lineage. This does not establish Product coordinate policy, candidate
+semantics, visual acceptance, selection, Product integration, or PR-3
+completion. `PR3-CANONICAL-RUNTIME-ORIGIN-v1` is `FROZEN`,
+`RC-SPACING-v1` and `SCALE-COMPATIBILITY-EVIDENCED` are `RETAINED`, and
+`RUN-CONFIGURATION-ADOPTION1 = COMPLETE`.
+
+Machine Execution1 is `ELIGIBLE / NOT STARTED`. Candidate execution is `0`,
+real-fixture execution is `0`, V0/V1/V2/V3 and B0/B1 PR-3 evidence remain
+`NONE`/`0`, browser and screenshot work remain `NO`, `E-VISUAL = NO`, ranking,
+selection, Product integration, and PR-3 remain `NO`. No Product, Harness,
+materializer, baseline, fixture, or `ai-knowledge` file changed. The exact
+next prerequisite is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-MACHINE-EXECUTION1`.
+No push, tag, release, deploy, or publication occurred.

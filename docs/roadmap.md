@@ -6440,3 +6440,35 @@ but it is **NOT STARTED**. A future Browser retry requires a new lineage and
 Protocol A after correcting the runner launch/readiness fault. Machine
 Execution1, Browser Lineage Readiness Reconciliation1, and Run-Identity
 Phase-Bridge Design Correction1 remain preserved.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-CDP-LAUNCH-READINESS-DIAGNOSTIC1 (2026-09-04)
+
+The [Browser Capture1 CDP launch/readiness diagnostic result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-cdp-launch-readiness-diagnostic1.md)
+records **CASE 6 / DECISION F — CORRECTION UNSTABLE**. The failed capture7
+lineage remains immutable at `06acff14d5e27e3c9a775057c608d203854cab20` and
+was not resumed. A fresh diagnostic clone was based on the exact failed
+Protocol A source `a7a2aafad8fa25b66b183b8685827ae3fb938d4a` and recorded
+reproduction, launch-difference, transport, profile, timing, process, and
+focused-test artifacts in diagnostic commit `15659d0`.
+
+The first failed readiness layer was R1: the failed Node `child_process.spawn`
+path did not obtain a usable `/json/version` endpoint, while Edge later emitted
+`DevTools listening` followed by `GPU process isn't usable. Goodbye.` The
+strongest causal difference is the Windows process-launch seam: an isolated
+same-argv PowerShell `Start-Process` comparison passed three fresh cycles, but
+a later repeat of the diagnostic correction failed three cycles with the same
+GPU fatal. The root is therefore **LIKELY**, classified as
+`WINDOWS-SPAWN-SEMANTICS-DEFECT` with unresolved process-lifecycle/GPU
+instability; no stable correction candidate was accepted.
+
+No Product, Original Harness, Machine Evidence B, transform, viewport,
+candidate, B1, V3, screenshot, Browser Evidence B, review, ranking, selection,
+E-VISUAL, Product integration, or PR-3 work occurred. Product, Machine,
+materializer, Baseline2, ai-knowledge, and the failed Browser lineage remain
+unchanged. `REVIEW1 = NOT ELIGIBLE`; the historical Review1 pointer is a stale
+downstream pointer, not the active prerequisite. Fresh Browser Capture1 retry
+eligibility remains **NO / BLOCKED** until a stable diagnostic correction is
+proven. The active next prerequisite is a bounded follow-up diagnostic for the
+remaining Edge CDP launch/readiness process-lifecycle instability. That next
+diagnostic and any fresh Browser Capture1 retry are **NOT STARTED**. PR-3
+remains `NO`; no push, tag, release, deploy, or publication occurred.

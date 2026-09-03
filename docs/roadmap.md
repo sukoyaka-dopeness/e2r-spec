@@ -5492,3 +5492,33 @@ publication occurred. The sample-coordinate authoring follow-up is unchanged.
 
 The exact next prerequisite is the not-started
 E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-BASELINE2.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-BASELINE2 (2026-09-03)
+
+The [post-correction baseline-v2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-baseline2-result.md)
+records CASE 1 / Decision A. Adoption1 final-state reconciliation is recorded
+additively: its stale pending-documentation sentence is only a pre-finalization
+snapshot; Adoption1 commit `a5348e742b7f8939c13fa0d34eaf9c192178829e` was
+validated and clean, and its accepted Product authority remains
+`0937d7768136ff63e74924480551d370b2935c2e`.
+
+From a new exact-source clone, the same 38 auto-layout, 9 pure routing, 8 pure
+label, and 16+16 App records were reproduced. Baseline-v2 is frozen with
+auto-layout 12 changed / 26 unchanged and maximum delta
+`5.684341886080802e-14`; every auto-layout difference is
+`EXPECTED-ORDER-CORRECTION`. Pure routing and pure labels are exact. App
+routing changed in 2 records and App labels changed in 2 records; all are
+`UPSTREAM-POSITION-PROPAGATION`, with unexplained drift count 0.
+
+The v2 evidence commit is
+`324193eda5924d2c5f5d0e0cad8a92b64d2ea6a8`
+(`test: freeze LiaisonScape post-correction characterization`), based on
+`0937d776...`. Historical v1 remains unchanged, live Production remains
+unchanged apart from its two protected dirty samples, W-C remains at
+`d7271f5...`, and the materializer remains detached at historical
+`fd563340...`. No Product source, sample, candidate, V0-V3, or publication
+change occurred.
+
+Product-seam equivalence is not fully reconciled, Implementation1B remains
+blocked, PR-3 remains NO, and the exact next prerequisite is the not-started
+E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-EQUIVALENCE-RECONCILIATION1.

@@ -6619,3 +6619,33 @@ graphics diagnostic beginning with read-only pre-change evidence. It is **NOT
 STARTED**. Windows Update, GPU driver, graphics settings, Product, Harness,
 Machine Evidence, failed capture7, materializer, Baseline2, and `ai-knowledge`
 remain unchanged; no push, tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-GPU-RUNTIME-GRAPHICS-DIAGNOSTIC2 (2026-09-04)
+
+The [Host/GPU Runtime Graphics Diagnostic2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-gpu-runtime-graphics-diagnostic2.md)
+records **CASE 1 / DECISION A - HEADLESS CHROMIUM GPU-SANDBOX/RUNTIME PATH
+STRONGLY IMPLICATED**. Normal visible GUI controls all rendered the same
+neutral local page: Edge `GUI-RENDER-PASS`, Chrome `GUI-RENDER-PASS`, and
+Firefox `GUI-RENDER-PASS` from the user's bounded manual acceptance
+(`page YES, text YES, SVG YES, corruption NO`). Firefox remains open on that
+local page.
+
+The retained headless Chromium baseline remains GPU-fatal, but adding only
+`--disable-gpu-sandbox` to the otherwise identical Edge baseline produced
+three late-stable passes. First CDP arrived at `5574-5632 ms`; all three
+completed the 3-second stability window with zero GPU fatal, zero cache-lock,
+and 3/3 targeted quiescence/cleanup passes. The result is
+`SANDBOX-A / STRONGLY SUPPORTED`. This is diagnostic-only and is not a
+production Browser Capture or PR-3 launch configuration.
+
+Diagnostic1's total-host-graphics wording is refined additively to:
+**CROSS-ENGINE HEADLESS/AUTOMATED GRAPHICS-COMPOSITOR FAILURE OBSERVED;
+NORMAL GUI GRAPHICS PATH REMAINS FUNCTIONAL.** Total GPU hardware or total
+Windows graphics failure is not demonstrated. Fresh Browser Capture1 remains
+**NOT ELIGIBLE**; Review1 remains **NOT ELIGIBLE**; B1 and V3 remain `0`;
+Browser Evidence B remains `NONE`; PR-3 remains `NO`. The exact next
+prerequisite is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-WINDOWS-UPDATE-QUALIFICATION1`.
+KB5120998 was not installed. Product, Harness, Machine Evidence, Browser
+authority, driver, settings, and `ai-knowledge` remain unchanged; no push,
+tag, release, deploy, or publication occurred.

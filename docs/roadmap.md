@@ -5791,3 +5791,27 @@ baseline-v3 was not created.
 Implementation1F is technically eligible but remains NOT STARTED. PR-3 is
 NO; V0/V1/V2/V3, candidate execution, materializer execution, browser review,
 screenshots, and Product candidate integration remain absent.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F (2026-09-03)
+
+The [Implementation1F result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-result.md)
+records CASE 1 / Decision A. A clean disposable clone started at the current
+accepted Product/evaluation/presentation-seam authority
+`c7e7745ad883f8434f56dd62e5b933aafabf548d`. The P-A evaluation-only render
+wrapper candidate is committed locally as `60373836bc1ccea56151593afc22a9b8f324d0a3`
+(`test: add LiaisonScape evaluation render wrapper`).
+
+`VSR-RENDER-PROJECTION-v1` and `APP-RENDER-EQUIVALENCE-v1` are frozen and
+pass. The focused wrapper suite passes 12/12, including deterministic output,
+non-mutation, neutral markup, Product class/CSS provenance, and the
+independent App-authority structural proof. The wrapper consumes already-
+derived presentation data and directly imports the existing `src/styles.css`
+under CSS policy C-A. Product render source, `App.tsx`, and Product CSS remain
+unchanged; the accepted baseline and v2 SHA remain exact.
+
+Full Product tests pass 309/309; lint/build/diff-check pass. Browser execution,
+screenshots, E-VISUAL, candidate/materializer execution, V0-V3, and PR-3
+remain absent. Implementation1G is NOT STARTED, the candidate is not selected,
+and Product candidate integration has not occurred. The exact next prerequisite
+is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-ADOPTION1`.

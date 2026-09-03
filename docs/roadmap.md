@@ -6026,3 +6026,26 @@ unfrozen. No VS Code extension repository, prototype, schema, player runtime,
 implementation, Product change, or prior-art feature-parity work is started.
 This idea is not added as ACTIVE, NEXT, or PRIORITY work. `ai-knowledge` is
 unchanged, and no push, tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-DESIGN1-CORRECTION1 (2026-09-03)
+
+The [Run Configuration Design1 Correction1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-design1-correction1.md)
+records CASE 1 / Decision A. The original Design1 CASE 2 / Decision B remains
+valid; Correction1 fixes only the phase-cardinality defect in its completeness
+wording.
+
+The corrected accounting is: candidate Machine V0/V1/V2 = `160` rows
+(40 + 40 + 80), candidate Browser V3 = `80` rows, full candidate V0–V3 =
+`240` rows, and diagnostics B0/B1 = `40` rows (8 + 32). Phase M therefore
+requires 160 candidate machine rows plus 40 diagnostic rows and does not wait
+for Phase B. Phase B remains responsible for all 80 V3 rows. B1 remains the
+32-row presentation diagnostic contract spanning V2/V3; no secondary
+diagnostic ambiguity was found.
+
+No other Design1 contract changed: T-D remains selected,
+`PR3-RUNTIME-TRANSFORM-v1` remains UNFROZEN, Edge/viewport/DSF/zoom,
+E-C, M/B/R/P, retry/resume, artifact, review, and historical pointer policies
+remain unchanged. The exact next prerequisite remains
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE1`,
+NOT STARTED. PR-3 remains NO; no candidate, materializer, browser, screenshot,
+or review execution occurred. The original Design1 history was not rewritten.

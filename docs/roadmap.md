@@ -6005,3 +6005,24 @@ remains 240 candidate records plus 40 diagnostics, with 0 PR-3 records
 executed. Browser execution, screenshots, human review, `E-VISUAL`, candidate
 selection, Product integration, and `PR-3` remain NO. No push, tag, release,
 deploy, or publication occurred.
+
+### E2R-GAMEBOOK-VSCODE-EXTENSION-RESEARCH-NOTE1 (2026-09-03)
+
+The [E2R Gamebook / Interactive Narrative VS Code Extension research note](e2r-gamebook-vscode-extension-research-note1.md)
+records CASE 1 / Decision A. This is `FUTURE RESEARCH / DEFERRED IDEA`, not
+active work. The individual feature ideas are currently mostly not novel and
+the prior-art names Yarn Spinner, Twine, ink/Inky, articy:draft, and Ren'Py
+remain unverified prior-art leads in this checkpoint.
+
+H1–H5 are retained as differentiation hypotheses only: E2R as a shared data
+foundation, one Dataset across applications, explicit Gamebook/Media
+separation, provenance-preserving authoring and execution, and stateful
+branching beyond gamebooks. The E2R Core scene/passage/Event question remains
+open. `RESTART-TRIGGER-v1` requires a concrete, testable, materially
+E2R-specific differentiation claim before research restarts.
+
+Gamebook Extension and Media Extension relations remain exploratory and
+unfrozen. No VS Code extension repository, prototype, schema, player runtime,
+implementation, Product change, or prior-art feature-parity work is started.
+This idea is not added as ACTIVE, NEXT, or PRIORITY work. `ai-knowledge` is
+unchanged, and no push, tag, release, deploy, or publication occurred.

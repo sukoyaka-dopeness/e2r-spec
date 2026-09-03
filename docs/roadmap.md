@@ -6226,3 +6226,31 @@ pass. The exact next prerequisite is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-ADOPTION1`.
 No Product, Harness, materializer, Live, baseline, or `ai-knowledge` change
 occurred; no push, tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE2-SOURCE-HASH-PROVENANCE-RECONCILIATION1 (2026-09-03)
+
+The [Evidence2 source-hash provenance reconciliation](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence2-source-hash-provenance-reconciliation1.md)
+records CASE 1 / Decision A. The exact Product Git blob for
+`563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf:src/auto-layout.ts` is
+`a7bb99d6628fe127eef7defe9ffdd957591de150`; its canonical raw-byte SHA-256 is
+`63547927D0B5DE990D596EEAF5925A7877F2677165A3DF676DA9123FC3030212`.
+
+Evidence1's `257B...` is the CRLF checkout representation, while Evidence2's
+`2F...` is the Live mixed-EOL working-tree representation. Evidence2's actual
+checkout imports resolve to the same Product blob, and no Product source drift
+exists. The discrepancy is HASH-RECORD-DRIFT / metadata error only; no
+invalidated Evidence2 artifacts entered Evidence Commit B `ecad472...`, whose
+13 artifacts remain bound to valid Protocol A `91d6cea...`.
+
+Evidence1 remains formally valid with its historical CASE 4 / Decision D
+translation-covariance result. Evidence2 remains valid with CASE 1 / Decision
+A, the recommended transform `originX=0/1`, `originY=0/1`, `scale=6144/1`, and
+`RUN-CONFIGURATION-ADOPTION1 = ELIGIBLE`. `PR3-RUNTIME-TRANSFORM-v1` remains
+UNFROZEN. `PRODUCT-SOURCE-RAW-BLOB-SHA256-v1` is frozen prospectively as an
+additive convention binding commit, path, Git blob ID, and SHA-256 of exact raw
+blob bytes; historical hashes are preserved. The exact next prerequisite is the
+not-started `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-ADOPTION1`.
+
+No Product, Harness, Evidence1, Evidence2, materializer, baseline, or
+`ai-knowledge` history changed; no new execution, push, tag, release, deploy,
+or publication occurred.

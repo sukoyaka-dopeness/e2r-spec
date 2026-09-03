@@ -5664,3 +5664,36 @@ selection, materializer update, Product candidate integration, or PR-3 claim
 occurred. Implementation1D is eligible but remains `NOT STARTED`; the exact
 next prerequisite is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1D`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1D (2026-09-03)
+
+The [Implementation1D result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1d-result.md)
+records CASE 1 / Decision A. A new clean disposable clone started exactly at
+the accepted Product/evaluation-seam authority `681ef0a...`. The pre-edit
+characterization reproduced auto-layout 38/38, pure routing 9/9, App routing
+16/16, pure labels 8/8, App labels 16/16, fresh replay PASS, and the unchanged
+v2 SHA.
+
+The old App `routedEdges` orchestration was fully mapped, including fixed and
+automatic partitioning, existing localeCompare priority, overlap indexing,
+Node-label obstacles, occupiedPaths, route diagnostics, parallel eligibility,
+and original graph-edge output order. A pure Product-owned
+`deriveAutomaticRoutes(...)` seam was extracted to `src/graph-presentation.ts`.
+App still owns React/manual/persistence state and continues to derive and pass
+provisional Node-label geometry as data. Relation-label and Node-label
+derivation remain deferred to Implementation1E.
+
+The 1D candidate commit is `63753950e4f1b004ba22d7bdc39e4732b218d53f`
+(`refactor: extract LiaisonScape automatic routing derivation`), parent
+`681ef0a...`. Focused routing tests pass 10/10; pure/App routing and labels
+remain exact to v2; auto-layout remains 38/38 exact; full Product tests pass
+297/297; and lint/build/diff-check pass. Dynamic recomputation for current
+Node positions, curve offsets, and self-loop overrides is explicitly proven;
+frozen-edge-during-drag remains NOT CORRECT.
+
+Live Production remains unchanged at `681ef0a...` with only protected EN/JA
+samples dirty. No candidate execution, materializer execution, V0-V3,
+screenshot, browser review, selection, baseline update, label extraction, or
+PR-3 claim occurred. Implementation1E remains `NOT STARTED`; the exact next
+prerequisite is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1D-ADOPTION1`.

@@ -285,3 +285,181 @@ This remains research/post-release growth only. It is not a release blocker,
 does not change current research priority, and authorizes no Character
 Generator, importer, schema, Core, Extension, LiaisonScape, NarrativeLine, or
 sample Dataset change.
+
+## Research direction: portable Character Trait Vocabulary source policy
+
+Added by checkpoint
+`E2R-CHARACTER-GENERATOR-PORTABLE-TRAIT-VOCABULARY-SOURCE-POLICY-RESEARCH-NOTE2`
+on 2026-09-03.
+
+This is a research direction and source-selection preference. It is not an E2R
+Core rule, an Extension specification, a schema freeze, an implementation
+authorization, or a source approval.
+
+### Portable vocabulary policy
+
+`PORTABLE-VOCABULARY-NO-ATTRIBUTION-PREFERENCE-v1` is **RECORDED**.
+Character Generator's initial portable vocabulary should prefer sources that
+are Public Domain or CC0, or that can be shown by source-specific evidence to
+permit the same relevant uses without mandatory downstream attribution,
+notice, or ShareAlike propagation. This preference exists because generated
+values may enter a self-contained E2R Dataset and move through LiaisonScape,
+NarrativeLine, and other applications.
+
+The policy does not declare any named source eligible. For every source,
+rights remain **TO VERIFY** until authoritative source-specific evidence
+establishes identity, commercial use, modification, redistribution,
+derived-data redistribution, attribution, notice propagation, ShareAlike, and
+research-only/noncommercial restrictions.
+
+The preferred research class is:
+
+`SOURCE-RIGHTS-A = PREFERRED SOURCE CLASS`
+
+It describes a source that is freely usable for the intended purpose, permits
+commercial use, modification, redistribution, and derived-data redistribution,
+does not legally require attribution or mandatory notice propagation for the
+portable Dataset, and has no ShareAlike/copyleft or research-only restriction.
+The phrase "legally equivalent" must never be asserted without verifying the
+particular source's authoritative terms.
+
+For research accounting, `SOURCE-RIGHTS-B` means attribution or notice is
+required and is a lead only by default; `SOURCE-RIGHTS-C` means ShareAlike or
+copyleft terms and is not preferred for the initial portable vocabulary; and
+`SOURCE-RIGHTS-D` means restricted, research-only, noncommercial, no-
+redistribution, unclear derived-data rights, or unclear provenance and is
+ineligible until separately resolved.
+
+Attribution-bearing sources are not automatically rejected from all future
+research, but they are not to enter the initial distributable Character Trait
+Dictionary without an explicit later licensing decision. Previously mentioned
+leads such as IPIP, Wikidata, OBA, WordNet, Japanese WordNet, PATO,
+ConceptNet, DBnary, and NRC remain research leads or **RIGHTS TO VERIFY**;
+none is automatically approved here.
+
+### Credits, provenance, and portability
+
+Application Credits and Dataset provenance are separate responsibilities.
+Application Credits cover the Character Generator's own bundled libraries,
+icons, assets, and dictionaries. Provenance may preserve source identity,
+version, URL, external concept ID, normalization derivation, retrieval date,
+and source hash for reproducibility, audit, debugging, trust, and refresh. That
+informational provenance is not automatically a legal credit.
+
+If the initial dictionary is built solely from verified `SOURCE-RIGHTS-A`
+resources, Character Generator should not force vocabulary-source legal credits
+into every generated Dataset, and receiving applications should not need to
+display third-party legal credits solely because they consumed those generated
+values. Optional acknowledgement may still be useful. This conclusion does
+not apply to unverified or future attribution-bearing sources.
+
+No general `Dataset.licenses`, `Dataset.attributions`,
+`Dataset.thirdPartyNotices`, or `Dataset.creditRequirements` schema is created
+by this research note. If attribution-bearing ingestion is later selected, it
+requires separate Dataset-carried provenance/attribution research.
+
+### Character Trait Vocabulary target
+
+`CHARACTER-TRAIT-VOCABULARY = FIRST LIKELY EXTERNAL-VOCABULARY RESEARCH TARGET`.
+The first likely vocabulary target is a trait dictionary rather than names
+alone, with illustrative areas of Mental, Physical, and Social traits. Mental
+traits are the strongest first research candidate; no psychological model is
+adopted.
+
+The research must distinguish:
+
+- a trait dimension or axis, such as Extraversion or Emotional Stability;
+- a trait concept, such as "sociable";
+- a preferred display label chosen for a language and UI; and
+- aliases, related terms, opposite terms, and stronger or weaker expressions.
+
+`preferredLabel`, aliases, axis authority, concept identity, intensity, and
+multilingual labels are different responsibilities. The source with the best
+concept identity need not supply the best consumer-facing headword. The first
+lemma in a synonym set, a Wikidata label, or an ontology `rdfs:label` is not
+automatically the preferred display label. `PREFERRED-LABEL-SOURCE = OPEN`.
+No ranking algorithm or Trait Dictionary schema is frozen.
+
+The vocabulary may later support four-quadrant presentation from two axes or
+a radar chart from several dimensions. These are presentation hypotheses, not
+adopted psychological semantics. A multi-source architecture remains possible:
+an axis source, lexical/concept source, presentation dictionary, generator, and
+E2R Dataset may have separate responsibilities. Only verified `SOURCE-RIGHTS-A`
+resources are preferred for the initial portable path.
+
+### Provenance question and future source survey
+
+`DATASET-VOCABULARY-PROVENANCE-QUESTION-v1 = OPEN`. Even when legal
+attribution is unnecessary, a future generated Dataset may preserve vocabulary
+provenance for reproducibility and audit. This does not authorize a provenance
+schema now.
+
+The future source survey should first investigate sources likely to satisfy
+`SOURCE-RIGHTS-A`, including Public Domain/CC0 personality-scale resources,
+structured lexical/concept resources, and biological or attribute ontologies.
+This is a priority concept, not a final source selection. Before any future
+fetch, the source-rights preflight should establish: known source identity;
+authoritative rights text; commercial use; modification; redistribution;
+derived-data redistribution; no legally required attribution; no mandatory
+notice propagation; no ShareAlike; no research-only/noncommercial restriction;
+and obtainable version/provenance metadata. All eleven gates must pass before
+`SOURCE-RIGHTS-A-ELIGIBLE` can be recorded.
+
+`EXTERNAL-VOCABULARY-WEB-FETCH-EXPERIMENT1 = FUTURE / NOT STARTED` is refined
+to ask whether a verified source can be retrieved, normalized, provenance-
+recorded, and converted into a small deterministic Character Trait Vocabulary
+snapshot without downstream legal obligations. This checkpoint performs no
+fetch, API call, scraper, crawler, download, ingestion, or source approval.
+
+WordNet-like, Wikidata-like, and ontology-like resources remain useful research
+leads for synsets, stable identifiers, primary labels, aliases, definitions,
+and multilingual data, but source fitness and source rights remain separate
+evaluations. No named resource is approved here.
+
+### Cross-application and future-generation boundary
+
+The portable Dataset hypothesis is:
+
+`PORTABLE-DATASET-LICENSE-SIMPLICITY-HYPOTHESIS-v1`
+
+When generated data is intended to move between E2R applications and be
+redistributed as self-contained Datasets, input resources with no downstream
+attribution or license propagation substantially simplify interoperability.
+This is a research hypothesis, not Core law, and may later apply to names,
+metadata, templates, identifiers, or media metadata.
+
+Character Generator may eventually generate approximately 100 interconnected
+characters with life Events as well as traits, relationships, and other
+attributes. The 100-Entity value is illustrative, not a Core or application
+limit. LiaisonScape may present the relationship graph while NarrativeLine may
+present multi-person life histories and timelines. Relation/Event consistency
+(for example, a marriage Event and spouse Relation) remains a future hypothesis;
+no temporal Relation semantics or Core change is introduced.
+
+The existing name-impression, on-demand external-data/name-generation,
+semantic-vocabulary, Group, and AI-workflow research remains authoritative for
+its narrower questions. This addition cross-references those records and does
+not duplicate or supersede them. Legal attribution remains distinct from
+provenance, and generated proposals remain distinct from intentionally adopted
+Dataset data.
+
+### Status and boundary
+
+```text
+PORTABLE-VOCABULARY-NO-ATTRIBUTION-PREFERENCE-v1 = RECORDED
+SOURCE-RIGHTS-A = PREFERRED SOURCE CLASS
+CHARACTER-TRAIT-VOCABULARY = FIRST LIKELY EXTERNAL-VOCABULARY RESEARCH TARGET
+PREFERRED-LABEL-SOURCE = OPEN
+DATASET-VOCABULARY-PROVENANCE-QUESTION-v1 = OPEN
+EXTERNAL-VOCABULARY-WEB-FETCH-EXPERIMENT1 = FUTURE / NOT STARTED
+CHARACTER TRAIT DICTIONARY = NOT IMPLEMENTED
+CHARACTER GENERATOR = NOT IMPLEMENTED
+LIFE EVENT GENERATION = NOT IMPLEMENTED
+```
+
+This remains research/post-release growth only and is not a release blocker or
+active/NEXT engineering work. No Web fetch, source survey execution,
+vocabulary ingestion, dictionary build, trait scoring, quadrant or radar UI,
+name/Relation/Event generation, 100-Entity Dataset generation, Dataset
+provenance schema, Credits UI, Core, Extension, NarrativeLine, LiaisonScape,
+Group, sample, or implementation change is authorized.

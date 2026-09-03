@@ -688,6 +688,35 @@ research/post-release growth only, does not promote to ACTIVE or NEXT, does
 not change the current Initial Placement priority, and is not a release
 blocker.
 
+### Character Generator portable vocabulary source policy
+
+The existing [Character Generator Application](../applications/character-generator-app.md)
+entry was updated additively by
+`E2R-CHARACTER-GENERATOR-PORTABLE-TRAIT-VOCABULARY-SOURCE-POLICY-RESEARCH-NOTE2`.
+This Research direction records `PORTABLE-VOCABULARY-NO-ATTRIBUTION-PREFERENCE-v1`:
+the initial portable Character Trait Vocabulary should prefer verified Public
+Domain, CC0, or equivalent no-attribution sources. Attribution-bearing,
+mandatory-notice, ShareAlike/copyleft, restricted, research-only, and unclear
+sources are deprioritized until source-specific rights evidence and a separate
+licensing decision exist. No named source is approved.
+
+The note separates legal attribution from informational Dataset provenance,
+and distinguishes axis, concept, preferred label, aliases, related/opposite
+terms, and generator output. `CHARACTER-TRAIT-VOCABULARY` is the first likely
+external-vocabulary research target; `PREFERRED-LABEL-SOURCE` and
+`DATASET-VOCABULARY-PROVENANCE-QUESTION-v1` remain OPEN. Future Web fetch must
+pass a source-rights preflight covering identity, authoritative rights,
+commercial use, modification, redistribution, derived-data redistribution,
+attribution, notice, ShareAlike, restrictions, and provenance/version.
+
+No fetch, source approval, vocabulary ingestion, dictionary, schema, Credits
+UI, Character Generator, Event generation, 100-Entity Dataset, NarrativeLine,
+LiaisonScape, Core, or Extension implementation occurred. The approximate
+100-character multi-person Event direction remains future research, with 100
+illustrative rather than a limit. Active LiaisonScape engineering priority is
+unchanged and this is not a release blocker or ACTIVE/NEXT engineering work.
+`EXTERNAL-VOCABULARY-WEB-FETCH-EXPERIMENT1` remains FUTURE / NOT STARTED.
+
 ### Grouping evidence and feedback direction
 
 Entity grouping is not an accepted Dataset semantic or implementation plan.

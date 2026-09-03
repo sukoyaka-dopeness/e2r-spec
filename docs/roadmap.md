@@ -6676,3 +6676,24 @@ ELIGIBLE**; B1 and V3 remain `0`; Browser Evidence B remains `NONE`; PR-3
 remains `NO`. No Product, Harness, Machine Evidence, browser authority,
 driver, settings, Windows Update, or `ai-knowledge` change occurred; no push,
 tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-VSCODE-STABLE-PRESENT-ABSENT-CONFIRMATION1 (2026-09-04)
+
+The [VS Code Stable Present/Absent Confirmation1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-vscode-stable-present-absent-confirmation1.md)
+records **CASE 1 / DECISION A - `VSCODE-STABLE-PRESENT-A / PRESENCE NOT
+SUPPORTED AS CAUSE`**. The reused Stable-absent A1 result and the fresh
+Stable-present B result both pass `3/3` under the exact retained Edge original
+normal-sandbox argv. During B, Stable and Insiders were identified by their
+installation paths and remained present before and after every cycle; first
+CDP was `293-309 ms`, GPU fatal and cache-lock counts were both `0`, and
+quiescence was `3/3`.
+
+The matched comparison does not support VS Code Stable process presence as the
+cause. A2 was therefore not run, Stable was not uninstalled, and KB5120998
+remains deferred. The exact next prerequisite is
+`HOST-RUNTIME-BROWSER-CAPTURE-READINESS-REQUALIFICATION1`. Browser Capture1
+remains **NOT STARTED** and **NOT ELIGIBLE**; Review1 remains **NOT ELIGIBLE**;
+B1 and V3 remain `0`; Browser Evidence B remains `NONE`; PR-3 remains `NO`.
+No Product, Harness, Machine Evidence, browser authority, driver, settings,
+Windows Update, registry, policy, or `ai-knowledge` change occurred; no push,
+tag, release, deploy, or publication occurred.

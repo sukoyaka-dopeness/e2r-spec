@@ -656,6 +656,38 @@ Generation Extension, change priority, or create a release blocker. Any future
 generator must address source licensing, privacy, bias, deterministic
 reproducibility, and intentional adoption before implementation.
 
+### Character Generator external vocabulary and large-graph research
+
+The existing [Character Generator Application](../applications/character-generator-app.md)
+entry was updated additively by
+`E2R-CHARACTER-GENERATOR-EXTERNAL-VOCABULARY-AND-LARGE-GRAPH-RESEARCH-NOTE1`.
+It records `CHARACTER-GENERATOR-LARGE-GRAPH-HYPOTHESIS-v1` as
+`RECORDED / UNPROVEN`: an illustrative scenario of approximately 100
+character Entities and potentially hundreds of Relations may later be used
+to examine LiaisonScape readability, settling, routing, labels, viewport
+usability, performance, and manual-correction burden. The 100-Entity value is
+not a limit or requirement, and no generated Dataset enters the current PR-3
+fixture corpus.
+
+The same entry records
+`EXTERNAL-VOCABULARY-ACQUISITION-PREREQUISITE-v1`, covering personal names,
+Relation vocabulary, thesauri, and later organization/occupation/place
+vocabularies. Any future source work must address identity, licensing,
+provenance, reproducibility, drift, language/script, privacy, bias, and the
+distinction between text equality and semantic identity. The bounded
+`EXTERNAL-VOCABULARY-WEB-FETCH-EXPERIMENT1` remains `FUTURE / NOT STARTED`;
+no source is selected and no fetch or importer is authorized.
+
+The addition keeps raw sources, normalized vocabulary, generated proposals,
+and intentionally adopted E2R data separate. Validator structural validity is
+not factual/content correctness, human review remains relevant, and
+deterministic non-AI generation remains possible. Explicit semantic Groups,
+derived graph clusters, and visual layout clusters remain separate; Group
+schema and implementation are not authorized. This direction is
+research/post-release growth only, does not promote to ACTIVE or NEXT, does
+not change the current Initial Placement priority, and is not a release
+blocker.
+
 ### Grouping evidence and feedback direction
 
 Entity grouping is not an accepted Dataset semantic or implementation plan.

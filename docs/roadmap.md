@@ -5732,3 +5732,38 @@ candidate selection, Product candidate integration, or PR-3 claim occurred.
 Implementation1E is technically eligible but remains NOT STARTED. The exact
 next prerequisite is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1E`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1E (2026-09-03)
+
+The [Implementation1E result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1e-result.md)
+records CASE 1 / Decision A. A new clean disposable clone started at the
+accepted Product/evaluation/presentation authority `e2ede7f...`. The old
+Node-label and Relation-label App orchestration was mapped before editing,
+including current positions/routes, primitive inputs, processing order,
+occupied rectangle order, previous placement inputs, and manual override
+application points.
+
+The existing `src/graph-presentation.ts` now owns the pure automatic
+`deriveAutomaticNodeLabels(...)` and `deriveAutomaticRelationLabels(...)`
+orchestration. App remains the owner of React/manual/persistence/interaction
+state and passes snapshot Maps for previous placements and manual offsets or
+anchors. `placeNodeLabel(...)` and `placeEdgeLabel(...)` remain unchanged and
+single-owned in `viewport.ts`; routing and viewport behavior are unchanged.
+
+Focused presentation tests pass 22/22. Exact characterization remains pure
+routing 9/9, App routing 16/16, pure labels 8/8, App labels 16/16, and
+auto-layout 38/38 with SHA
+`F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`.
+Relation and Node reversal solve/settle remain 16/16 each, fresh-process and
+no-mutation checks pass, and Node movement plus route/curve/self-loop changes
+recompute label geometry. Full Product tests pass 309/309; lint/build/
+diff-check pass.
+
+The local 1E candidate commit is `dd8ea0c917eae78399411b10ad3beeec705f706d`
+(`refactor: extract LiaisonScape automatic label derivation`), parent
+`e2ede7f...`. It is a candidate only and was not adopted into live Production.
+Baseline-v2 is unchanged; baseline-v3 was not created. Manual label ownership,
+drag/follow/reset semantics, routing, persistence, and Dataset behavior remain
+unchanged. Implementation1F is NOT STARTED, PR-3 is NO, and V0/V1/V2/V3 are
+NONE. The exact next prerequisite is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1E-ADOPTION1`.

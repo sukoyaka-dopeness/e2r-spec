@@ -153,11 +153,14 @@ passed.
 
 ## Protected state and next step
 
-The harness candidate commit is
-`36650462f7f2def95478098a01cb345b9c89cfa1`, subject
-`test: implement LiaisonScape visual evidence harness`, parent
-`563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf`. It is local, unpushed, and not
-adopted to Live. Its worktree is clean.
+The harness candidate commit chain ends at
+`9bd3f3b819bf07ccdfa0339be9a953d045c4e4fc`, subject
+`test: tighten visual review packet contract`, parent
+`36650462f7f2def95478098a01cb345b9c89cfa1`; the implementation commit was
+`36650462f7f2def95478098a01cb345b9c89cfa1` with parent
+`563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf`. The second local commit removes
+forbidden ranking/winner fields without rewriting history. The chain is local,
+unpushed, and not adopted to Live. Its worktree is clean.
 
 Live remains at HEAD `563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf` with only the
 protected EN/JA sample modifications. Their final hashes remain:

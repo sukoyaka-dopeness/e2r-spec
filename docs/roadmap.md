@@ -5947,6 +5947,8 @@ and `HARNESS-SOURCE-DRIFT-REVALIDATION1 = PASS`.
 The self-contained clone is
 `C:\Users\extra\E2R\e2r-liaison-scape-visual-evidence-harness-implementation1`,
 with local candidate commit
+`9bd3f3b819bf07ccdfa0339be9a953d045c4e4fc` (`test: tighten visual review
+packet contract`), on implementation commit
 `36650462f7f2def95478098a01cb345b9c89cfa1` (`test: implement LiaisonScape
 visual evidence harness`). Its materializer snapshot is exact against the
 retained Implementation1 source, and the frozen fixture role manifest

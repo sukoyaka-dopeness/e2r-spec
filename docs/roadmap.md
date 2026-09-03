@@ -6078,3 +6078,28 @@ remains green at 309/309 with the expected baseline-v2 SHA
 The exact next prerequisite is the not-started
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-TRANSLATION-COVARIANCE-DESIGN-RECONCILIATION1`.
 No push, tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE1-PROTOCOL-PROVENANCE-RECONCILIATION1 (2026-09-03)
+
+The [Evidence1 protocol provenance reconciliation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence1-protocol-provenance-reconciliation1.md)
+records CASE 2 / Decision B. The reported topology is confirmed:
+`9bd3f3b...` → `ff28b5a...` → `68fde7f...` → `9738ff4...`.
+
+`protocol.json` is byte-identical at A/P/B. The A→P changes are limited to
+the pre-dynamic import-path correction, its source-audit hash bookkeeping, and
+an additive correction record; no evidence semantics, inputs, transform,
+gates, comparison rule, or CASE mapping changed. The executable probe bytes
+therefore have PI-B provenance: semantic protocol authority remains
+`ff28b5a4afce56aa4f5ac57181a1f33ebd35d20f`, while executable preregistration
+authority is `68fde7f3600b152f9d88351829796f1115e65e28`. No dynamic result
+predated the correction, and P→B contains only generated artifacts.
+
+Evidence1 remains formally valid with corrected provenance wording; its CASE 4
+/ Decision D translation-covariance failure remains unchanged. No transform is
+recommended, `PR3-RUNTIME-TRANSFORM-v1` remains UNFROZEN, and Adoption1 remains
+ineligible. No new probe, candidate, fixture, browser, screenshot, review,
+E-VISUAL, Product, Harness, materializer, Live, or baseline work occurred.
+
+The exact next prerequisite remains the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-TRANSLATION-COVARIANCE-DESIGN-RECONCILIATION1`.
+No push, tag, release, deploy, or publication occurred.

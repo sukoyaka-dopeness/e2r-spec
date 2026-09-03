@@ -100,16 +100,16 @@ was taken.
 75. **Exact next prerequisite:** bounded GPU driver/Windows graphics diagnostic, beginning with read-only pre-change GPU/runtime evidence and an explicit decision about any later user-authorized Windows Update or driver qualification.
 76. **Next checkpoint:** `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-GPU-RUNTIME-GRAPHICS-DIAGNOSTIC2` — NOT STARTED.
 77. **Artifact root:** `C:\Users\extra\E2R\e2r-liaison-scape-host-gpu-runtime-diagnostic1\diagnostics\host-gpu-runtime-diagnostic1`.
-78. **Diagnostic clone commit:** to be recorded after exact-path staging and validation; subject `diagnostic: isolate host GPU runtime from Chromium`.
-79. **Diagnostic clone final state:** to be recorded after commit; unrelated repositories are untouched.
+78. **Diagnostic clone commit:** primary `b0add3d` — `diagnostic: isolate host GPU runtime from Chromium`; final artifact HEAD `42f9f79` after two exact-path line-ending normalization commits.
+79. **Diagnostic clone final state:** clean at `42f9f79`; unrelated repositories are untouched.
 80. **Result document:** this document.
 81. **Roadmap:** changed additively with this checkpoint result.
 82. **Knowledge Candidate:** NO new reusable knowledge candidate; existing `ai-knowledge` playbook unchanged.
 83. **ai-knowledge:** unchanged; pre-existing dirty `playbooks/e2r-edge-cdp-browser-diagnostic.md` preserved.
 84. **e2r-spec validation:** `npm.cmd run validate` — PASS.
 85. **Diff-check:** `git diff --check` — PASS.
-86. **e2r-spec commit:** to be recorded after exact-path staging and validation; subject `docs: diagnose LiaisonScape host GPU runtime`.
-87. **e2r-spec worktree:** to be recorded after commit; unrelated changes preserved.
+86. **e2r-spec commit:** `f4443d743596d22ed26d2a2b102b2b20cff214c4` — `docs: diagnose LiaisonScape host GPU runtime`.
+87. **e2r-spec worktree:** clean at the final commit; unrelated changes preserved.
 88. **Live Product:** unchanged; the two pre-existing dirty sample files were preserved.
 89. **Protected samples:** preserved.
 90. **Machine clone:** unchanged.

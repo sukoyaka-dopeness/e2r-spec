@@ -6473,6 +6473,38 @@ remaining Edge CDP launch/readiness process-lifecycle instability. That next
 diagnostic and any fresh Browser Capture1 retry are **NOT STARTED**. PR-3
 remains `NO`; no push, tag, release, deploy, or publication occurred.
 
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-CDP-LAUNCH-READINESS-DIAGNOSTIC3 (2026-09-04)
+
+The [Browser Capture1 CDP Launch/Readiness Diagnostic3 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-cdp-launch-readiness-diagnostic3.md)
+records **CASE 4 / DECISION D - GPU/Edge environment instability dominates**.
+The bounded quiescent crossover ran in the preregistered order
+`N1 -> P1 -> N2 -> P2 -> N3 -> P3` with six unique profiles and six unique
+ports. All six cycles reached CDP at approximately 5.750-6.022 seconds, but
+all six became `GPU-FATAL-AFTER-CDP` before the 3-second stability window.
+
+Node and PowerShell each failed 3/3 under the same semantic argv, common Node
+HTTP poller, 12-second observation window, fresh-profile policy, and
+quiescence procedure. GPU fatal and `GPUPersistentCache` file-in-use errors
+occurred in all six cycles; all six process/port/profile cleanup checks passed.
+The classifications are `SPAWN-C / CORRELATED ONLY`,
+`LIFECYCLE-C / NOT SUPPORTED`, `PROFILE-C / NOT SUPPORTED`,
+`GPU-A / FATAL PREVENTS STABLE CDP`, and `TIMEOUT-B / CONTRIBUTING`.
+
+The first N1 attempt was invalidated as a diagnostic-helper snapshot bug and
+was not counted; it used a unique profile and was followed by a corrected N1
+with no profile or port reuse. Historical Diagnostic1/2 TEMP profiles were
+cleaned only from their isolated E2R diagnostic roots: 18 and 2 profiles,
+all `CLEANUP-PASS`. No normal Edge profile was touched.
+
+No stable causal Browser runner correction was identified. Browser Capture1
+retry remains **NOT ELIGIBLE**; Review1 remains **NOT ELIGIBLE**; B1 and V3
+remain `0`; Browser Evidence B remains `NONE`; PR-3 remains `NO`. The exact
+next prerequisite is a bounded browser/runtime environment stability
+qualification focused on Edge/GPU resource state and external process
+ownership. It is **NOT STARTED**. Product, Harness, Machine Evidence B,
+failed capture7, materializer, Baseline2, and `ai-knowledge` remain unchanged;
+no push, tag, release, deploy, or publication occurred.
+
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-CDP-LAUNCH-READINESS-DIAGNOSTIC2 (2026-09-04)
 
 The [Browser Capture1 CDP Launch/Readiness Diagnostic2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-cdp-launch-readiness-diagnostic2.md)

@@ -5971,3 +5971,37 @@ requires roadmap/design reconciliation because the prior
 `...EVIDENCE-EXECUTION1` pointer is deferred:
 
 `NEXT EVIDENCE CHECKPOINT NAME REQUIRES ROADMAP/DESIGN RECONCILIATION`
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-DESIGN1 (2026-09-03)
+
+The [Run Configuration Design1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-design1.md)
+records CASE 2 / Decision B. The current Product authority remains
+`563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf`; future evidence binds directly to
+the validated Harness Implementation1 candidate
+`9bd3f3b819bf07ccdfa0339be9a953d045c4e4fc`, which remains unchanged and
+unadopted.
+
+The complete run-configuration and execution-sequence contract is frozen
+except for the numeric `PR3-RUNTIME-TRANSFORM-v1`. The materializer's positive
+uniform affine transform remains caller-supplied, and the current Product
+solver/viewport constants do not establish a normalized-domain origin or
+scale. Therefore the implementation-validation values `100/1`, `200/1`, and
+`10/1` remain non-authoritative and are not promoted to PR-3 configuration.
+
+The next exact prerequisite is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE1`,
+which may collect only candidate-neutral transform compatibility evidence and
+is NOT STARTED. The subsequent decomposition is run-configuration adoption,
+machine V0/V1/V2 execution, browser V3 capture, human review, and PR-3
+assessment, each as a separately bounded checkpoint. The selected execution
+strategy is E-C bounded batches with machine-first gating, fresh browser per
+V3 cell, explicit retry/resume rules, immutable run artifacts, deterministic
+anonymized review ordering, and full-corpus B0/B1 diagnostics excluded from
+candidate accounting.
+
+The historical monolithic `...EVIDENCE-EXECUTION1` pointer is classified
+`RENAMED / SPLIT`; historical documents are not rewritten. Planned scope
+remains 240 candidate records plus 40 diagnostics, with 0 PR-3 records
+executed. Browser execution, screenshots, human review, `E-VISUAL`, candidate
+selection, Product integration, and `PR-3` remain NO. No push, tag, release,
+deploy, or publication occurred.

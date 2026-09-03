@@ -6288,6 +6288,35 @@ No Product, Harness, Evidence1, Evidence2, materializer, baseline, or
 `ai-knowledge` history changed; no new execution, push, tag, release, deploy,
 or publication occurred.
 
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-MACHINE-EXECUTION1 (2026-09-03)
+
+The [Machine Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-result.md)
+records `CASE 1 / Decision A`. The final Protocol / Executable Commit A is
+`06f66142812be03a8a3a138e2b774cbc9926b91f`; it preceded all dynamic work.
+Evidence Commit B is `b0bd0f1a9f70915c639cbee61cf5f8370c78766f`, containing
+generated evidence artifacts only.
+
+The frozen matrix completed with V0 `40/40`, V1 `40/40`, V2 `80/80`, for
+machine candidate total `160/160`. B0 is `8/8` complete. B1 has `16` complete
+V2 machine-side diagnostics and `16` pending V3 browser-side obligations.
+Deterministic replay, input mutation, stage linkage, fixture authority, and
+canonical artifact index gates pass; there are no candidate, Product
+downstream, Harness, or fixture-authority failures. All `80` V2 cells are
+machine-eligible for later Browser Execution1.
+
+The adopted transform remains the single global
+`PR3-RUNTIME-TRANSFORM-v1`: `originX=0/1`, `originY=0/1`, `scale=6144/1`, with
+the Evidence2 fingerprint retained. No V3, browser, screenshot, human review,
+ranking, selection, Product integration, or PR-3 claim occurred. `E-VISUAL =
+NO` and `PR-3 = NO`.
+
+Product regression is `309/309 PASS`; lint and build pass. Live Product,
+original Harness, Evidence1 clone, Evidence2 clone, retained materializer,
+Baseline2, and `ai-knowledge` remain unchanged. The exact next prerequisite is
+the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-EXECUTION1`.
+No push, tag, release, deploy, or publication occurred.
+
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-ADOPTION1 (2026-09-03)
 
 The [Run Configuration Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-adoption1.md)

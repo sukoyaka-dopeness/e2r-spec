@@ -1541,6 +1541,9 @@ is reserved for a future Dataset-level information/inspection surface.
   smoke/round-trip through NarrativeLine and LiaisonScape, verify Hub Handoff
   and license/redistribution eligibility, and distinguish Stable-oriented from
   Experimental samples. No sample or Hub change is authorized by this entry.
+  When official samples eventually receive authored Stored Coordinates, prefer
+  integer values where sufficient; this is an authoring convention, not a
+  runtime solver or persistence rounding rule.
 
 ### Metadata and NarrativeLine follow-ups
 
@@ -5448,3 +5451,23 @@ source, tests, fixtures, baseline, harness, candidate, V0-V3, screenshot,
 browser review, selection, Production integration, or PR-3 claim was made.
 The exact smallest next prerequisite is the not-started
 E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-IMPLEMENTATION1.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-IMPLEMENTATION1 (2026-09-03)
+
+The [order canonicalization implementation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-implementation1-result.md)
+records CASE 1 / Decision A. The W-C correction candidate
+`d7271f5bc2c56d6ae7d46992140dc9cc165ecfee` replaces incidental adjacency-Set
+iteration with one-time canonical Unicode code-point neighbor ordering and
+adds focused exact permutation/comparator coverage. Immutable fixture replay
+passes Relation reversal 16/16, Node reversal 16/16, and no-mutation 16/16
+for both `solveAutoLayout` and `settleInitialPlacement`; full Product tests pass
+283/283 with lint and build.
+
+Historical baseline-v1 remains byte-identical. Twelve of 38 in-memory
+auto-layout cases intentionally change by at most
+`5.684341886080802e-14`; topology and component membership do not change, and
+baseline-v2 is not generated. The correction remains a local unpushed
+candidate; accepted Product authority remains `fd563340...`, IMPLEMENTATION1B
+remains blocked, and PR-3 remains NO. The exact smallest next prerequisite is
+the not-started
+E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-ADOPTION1.

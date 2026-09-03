@@ -6697,3 +6697,26 @@ B1 and V3 remain `0`; Browser Evidence B remains `NONE`; PR-3 remains `NO`.
 No Product, Harness, Machine Evidence, browser authority, driver, settings,
 Windows Update, registry, policy, or `ai-knowledge` change occurred; no push,
 tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-BROWSER-CAPTURE-READINESS-REQUALIFICATION1 (2026-09-04)
+
+The [Browser Capture Readiness Requalification1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-browser-capture-readiness-requalification1.md)
+records **CASE 1 / DECISION A - `BROWSER-RUNTIME-READY`**. The current
+Microsoft Edge Stable authority remains `152.0.4191.62` at the resolved
+`msedge.exe` path, unchanged from the preceding checkpoint. Six fresh
+sequential cycles using the exact original normal-sandbox contract all passed:
+first CDP `267-312 ms`, six `READINESS-STABLE-PASS`, GPU fatal `0`,
+cache-lock `0`, and quiescence `6/6`.
+
+The one deterministic local evaluation-entry smoke also passed: page, root,
+SVG, fixed viewBox `0 0 800 500`, stable CDP, no runtime exception, and
+quiescence all passed. It is explicitly `NON-EVIDENCE-READINESS-SMOKE`, not
+Browser Evidence B, B1, V3, or PR-3. Browser Capture1 remains **NOT STARTED**
+in this checkpoint, but a fresh lineage is eligible at the exact next
+prerequisite:
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-PROTOCOL-A`.
+KB5120998 remains deferred; B1/V3 remain `0`; Browser Evidence B remains
+`NONE`; Review1 remains **NOT ELIGIBLE**; PR-3 remains **NO**. No Product,
+Harness, Machine Evidence, browser authority, driver, graphics setting,
+Windows Update, registry, policy, `ai-knowledge`, failed lineage, push, tag,
+release, deploy, or publication changed.

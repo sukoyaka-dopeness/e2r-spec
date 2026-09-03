@@ -5551,3 +5551,28 @@ Implementation1B remains not started, PR-3 remains NO, and no Product,
 materializer, sample, candidate, or interaction change occurred. The exact
 next prerequisite is the not-started
 E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1B.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1B (2026-09-03)
+
+The [Implementation1B settling-kernel refactor result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1b-result.md)
+records CASE 1 / Decision A. Reconciliation1 CASE 1 / Decision A and its
+`PRODUCT-SEAM-EQUIVALENCE-v1` post-order-resolution profile remain the input.
+From a new clean clone at Product authority `0937d7768136ff63e74924480551d370b2935c2e`,
+the Product-owned normalized layout graph, automatic seed generation, and
+component-scoped settling kernel were separated in `src/auto-layout.ts` while
+preserving the existing arithmetic and sequential packing order.
+
+The refactor candidate is commit `a5bc4b5f13731a6e29acab9cd941e014d7a603c0`
+(`refactor: extract LiaisonScape layout settling kernel`). Exact baseline-v2
+replay is 38/38 with SHA
+`F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`;
+Relation and Node reversal checks are 16/16 for both solve and settle, and
+pure/App routing and label replay is exact to v2. Product behavior change is
+`NONE`; interaction source is unchanged. Product tests pass 287/287 with lint,
+build, and diff-check passing.
+
+This is a refactor candidate only. The current accepted Product authority
+remains `0937d776...` until adoption. Implementation1C is `NOT STARTED`, PR-3
+is `NO`, no candidate materialization or Product candidate integration occurred,
+and the exact next prerequisite is the not-started
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1B-ADOPTION1`.

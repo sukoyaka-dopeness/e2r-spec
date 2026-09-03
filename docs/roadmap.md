@@ -6472,3 +6472,34 @@ proven. The active next prerequisite is a bounded follow-up diagnostic for the
 remaining Edge CDP launch/readiness process-lifecycle instability. That next
 diagnostic and any fresh Browser Capture1 retry are **NOT STARTED**. PR-3
 remains `NO`; no push, tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-CDP-LAUNCH-READINESS-DIAGNOSTIC2 (2026-09-04)
+
+The [Browser Capture1 CDP Launch/Readiness Diagnostic2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-cdp-launch-readiness-diagnostic2.md)
+records **CASE 4 / DECISION D — MULTI-FACTOR INSTABILITY**. Diagnostic1's
+CASE 6 / Decision F remains historical and was not amended. Diagnostic2
+reconciles the retained chronology: Edge process start is `PASS`; first failed
+readiness is R1 CDP HTTP discovery; one extended exact failed-runner run
+reached `/json/version` at 5765 ms, after the original 5-second window, then
+became GPU-fatal after only two successful responses.
+
+The timeout classification is `TIMEOUT-B / CONTRIBUTING`. The launcher result
+is `SPAWN-B / LIKELY CONTRIBUTING`, not confirmed: Node direct spawn repeatedly
+failed, isolated same-argv PowerShell passed three cycles, and later PowerShell
+runs also failed. The final layered model is multi-factor launcher,
+process-lifecycle, profile/cache, and GPU instability; Vite is not causal at
+R1. Independent probe authority is `PROBE-AUTHORITY-B`: retained artifacts
+contain mixed PASS/FAIL, with the final retained probe artifact at port 9712
+recording PASS. The earlier prose-only port-9691 PASS is not authoritative.
+
+No Browser Capture1 retry, B1, V3, Browser Evidence B, screenshot, Review1,
+ranking, selection, E-VISUAL, Product integration, or PR-3 work occurred.
+`REVIEW1 = NOT ELIGIBLE`; the historical Review1 pointer is stale. Fresh
+Browser Capture1 retry eligibility remains **NO / BLOCKED**. The exact next
+prerequisite is a bounded CDP launch/readiness process-quiescence and
+launcher-crossover stability diagnostic with fresh profiles, explicit
+targeted process-tree exit confirmation, extended observation, and GPU/cache
+state recording. It is **NOT STARTED**. Product, Original Harness, Machine
+Evidence B, failed capture7, materializer, Baseline2, and `ai-knowledge`
+remain unchanged. PR-3 remains `NO`; no push, tag, release, deploy, or
+publication occurred.

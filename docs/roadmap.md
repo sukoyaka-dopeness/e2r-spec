@@ -5932,3 +5932,40 @@ routing/labels exact, auto-layout 38/38, and baseline2 replay 4/4.
 The exact next prerequisite is the separately authorized
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-HARNESS-IMPLEMENTATION1`,
 NOT STARTED.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-HARNESS-IMPLEMENTATION1 (2026-09-03)
+
+The disposable Harness Implementation1 candidate is validated in CASE 1 /
+Decision A. Product Evaluation Seam 1B–1G remains COMPLETE, and future
+evidence is explicitly rebound to current accepted Product authority
+`563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf`; the historical Harness Design1
+freeze `fd563340625fd3d88dc25baedc93c4f8fe69e5e7` remains historical
+provenance only. `MATERIALIZER-SOURCE-DRIFT = UNAFFECTED`,
+`PRODUCT-DOWNSTREAM-SOURCE-DRIFT = REVALIDATED / NEW EVIDENCE AUTHORITY`,
+and `HARNESS-SOURCE-DRIFT-REVALIDATION1 = PASS`.
+
+The self-contained clone is
+`C:\Users\extra\E2R\e2r-liaison-scape-visual-evidence-harness-implementation1`,
+with local candidate commit
+`36650462f7f2def95478098a01cb345b9c89cfa1` (`test: implement LiaisonScape
+visual evidence harness`). Its materializer snapshot is exact against the
+retained Implementation1 source, and the frozen fixture role manifest
+`B867E9FF7B84107E8B4DDCCC02458B7B9AA535AB6FACE4AD10A2942CC8C8D8F5` verifies
+8 structural IDs and 16 EN/JA authorities.
+
+`VSR-HARNESS-IMPLEMENTATION-v1` and `VSR-RUN-PLAN-v1` are implemented. The
+plan contains 240 candidate records (V0 40, V1 40, V2 80, V3 80) and 40
+diagnostic records (B0 8, B1 32), with 0 executed as PR-3 evidence.
+`PR3-RUNTIME-TRANSFORM = UNFROZEN`; the only transform used was explicitly
+labeled implementation-test configuration. T1–T17 and H-T18–H-T28 pass,
+historical materializer checks are 13/13 plus 15/15 bounded replay, and the
+harness browser build passes without browser execution or generated evidence
+artifacts. `E-VISUAL = NO` and `PR-3 = NO`.
+
+The local harness candidate is not adopted to Live; no candidate is selected,
+no Product integration occurred, and no push/tag/release/deploy/publication
+occurred. The next evidence checkpoint is not started. The exact name
+requires roadmap/design reconciliation because the prior
+`...EVIDENCE-EXECUTION1` pointer is deferred:
+
+`NEXT EVIDENCE CHECKPOINT NAME REQUIRES ROADMAP/DESIGN RECONCILIATION`

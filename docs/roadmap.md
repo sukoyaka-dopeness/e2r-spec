@@ -6988,3 +6988,23 @@ lint and build pass, and no package files changed. The exact next prerequisite
 is Restart3 B1 Execution1, which is **NOT STARTED**. No Product, Machine,
 Harness, fixture, host/GPU, Windows Update, or `ai-knowledge` state changed;
 no push, tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-B1-EXECUTION1 (2026-09-04)
+
+The [Restart3 B1 Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-b1-execution1.md)
+records **CASE 3 / DECISION C - `B1-BROWSER-RUNTIME-BLOCKED`**. The exact
+frozen B1 order entered `apollo-11 / en` first, but the frozen executor's
+first `/json/list` target was Edge's `edge://sync-confirmation-dialog/`
+instead of the LiaisonScape page. Its unbounded ready wait was stopped after
+two fresh invocations; the remaining 15 items were not started.
+
+B1 is planned `16`, executed `1`, success `0`, failure `1`, pending `15`;
+V3 is `NOT STARTED` and prohibited; screenshots are `0`; Browser Evidence B
+is `NONE / INCOMPLETE`; Review1 is **NOT ELIGIBLE**; and PR-3 is **NO**. The
+canonical failure item, execution summary, run manifest, and artifact index
+are committed in Restart3 commit `45a8a1c55a41f767b3f22ad963321dda6fd9a755`.
+The exact next prerequisite is bounded Browser Capture executor target-
+selection/runtime correction qualification followed by a fresh authorized
+Restart3 B1 gate. No semantic source, Product, Machine, Harness, fixture,
+host/GPU, Windows Update, or `ai-knowledge` state changed; no push, tag,
+release, deploy, or publication occurred.

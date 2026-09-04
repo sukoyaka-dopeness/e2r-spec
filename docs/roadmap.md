@@ -7136,3 +7136,26 @@ npm test is `309/309`, lint/build pass. The exact next prerequisite is
 No Product, Machine, Harness, fixture, host/GPU setting, Windows Update, or
 `ai-knowledge` state changed; no push, tag, release, deploy, or publication
 occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-WEBSOCKET-BRIDGE-IMPLEMENTATION1 (2026-09-05)
+
+The [ClientWebSocket bridge implementation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-websocket-bridge-implementation1.md)
+records **CASE 10 / `DOTNET-BRIDGE-IMPLEMENTATION-INFRA-BLOCKED`**. The
+production transport replacement is committed locally: Node retains browser,
+run-binding, CDP state, retry, evidence, and artifact ownership; a committed
+PowerShell 5.1 / .NET `System.Net.WebSockets.ClientWebSocket` helper provides
+one structured IPC-backed CDP session per attempt. The semantic closure is
+explicitly 20/20 with zero omitted or unexpected paths, the client authority
+is materialized and synthetically bound into future v3 identity/phase
+contracts, and focused/full verification is 102/102 and 309/309 with lint and
+build passing.
+
+Real Edge qualification stopped on the first governed attempt because Windows
+execution policy blocked the committed helper. The checkpoint did not use an
+execution-policy workaround and did not change host policy, registry,
+security settings, browser/GPU state, Product, Machine, Harness, fixtures, or
+ai-knowledge. Edge qualification is therefore not PASS: 0/1 qualified, runs 2
+and 3 were not started. Restart3 remains immutable and non-resumable; Restart4
+is required but not started; B1/V3/screenshots/Browser Evidence B/Review1 and
+an accepted final semantic run ID remain absent. The exact next prerequisite is
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-PROTOCOL-A`.

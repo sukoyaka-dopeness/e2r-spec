@@ -6766,3 +6766,30 @@ Evidence, Product, Harness, host graphics state, and `ai-knowledge` remain
 unchanged. The exact next prerequisite is a separately bounded browser/runtime
 diagnosis or Windows Update qualification based on this failure; V3 execution
 is not started and remains prohibited.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-B1-ENTRY-READINESS-DIAGNOSTIC1 (2026-09-04)
+
+The [Browser Capture1 Restart1 B1 Entry Readiness Diagnostic1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-b1-entry-readiness-diagnostic1.md)
+records **CASE 1 / DECISION A — `B1-ENTRY-SEAM-IDENTIFIED`** with primary
+classification **`ENTRY-B / URL-ROUTE-MISMATCH`** and subordinate
+`PAGE-BOOTSTRAP-FAILURE`. The retained blocking item is `apollo-11/en`; all
+three attempts failed, while B1 remains success `0`, terminal failure `1`, and
+pending `15`.
+
+The local Vite server started and the exact B1 target returned HTTP `200`, but
+the browser resolved `./capture-input.json` to
+`/e2r-liaison-scape/capture-input.json?cacheBust=...`, which returned the Vite
+HTML fallback (`200 text/html`) instead of JSON. The document reached
+`DOMContentLoaded`, `load`, and `readyState: complete`; `#evaluation-root`
+existed, but no SVG/viewBox mounted and the B1 ready marker never became true.
+The resulting JSON parse exception is the first meaningful divergence from the
+successful readiness smoke, which used a different static entry, route,
+startup path, fixture delivery, bootstrap, predicate, and timeout. No GPU-fatal
+or cache-lock signal occurred, no browser runtime defect was demonstrated, and
+Windows Update / KB5120998 remains deferred.
+
+B1 remains blocked; V3 is prohibited and remains `0`; Browser Evidence B is
+`NONE / INCOMPLETE`; Review1 is **NOT ELIGIBLE**; and PR-3 is `NO`. The exact
+next prerequisite is a bounded Restart1 B1 entry-seam correction checkpoint.
+No B1 resume, V3 execution, Product/Harness change, `ai-knowledge` change,
+push, tag, release, deploy, or publication occurred.

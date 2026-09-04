@@ -7159,3 +7159,24 @@ and 3 were not started. Restart3 remains immutable and non-resumable; Restart4
 is required but not started; B1/V3/screenshots/Browser Evidence B/Review1 and
 an accepted final semantic run ID remain absent. The exact next prerequisite is
 `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-PROTOCOL-A`.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-WEBSOCKET-BRIDGE-HELPER-EXECUTION-POLICY-COMPATIBILITY-QUALIFICATION1 (2026-09-05)
+
+The [helper execution-policy compatibility result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-websocket-bridge-helper-execution-policy-compatibility-qualification1.md)
+records **CASE 2 / `POWERSHELL-SCRIPT-HELPER-HOST-INCOMPATIBLE`**. Read-only
+inventory resolved the effective Windows PowerShell policy as `Restricted`;
+MachinePolicy, UserPolicy, Process, CurrentUser, and LocalMachine were all
+`Undefined`, with no relevant policy registry keys present. Both the exact
+committed helper and a harmless trivial `.ps1 -File` control failed with
+`UnauthorizedAccess` before script output, proving a general static script
+host incompatibility rather than a helper-specific invocation defect.
+
+No policy override, `Set-ExecutionPolicy`, registry change, `Unblock-File`,
+Zone.Identifier removal, signing, command-mode execution, security change, or
+production correction was performed. The helper execution gate therefore
+failed and Edge was not launched; qualification runs 2 and 3 were not
+started. The bridge/client authority remained unchanged, Restart3 remains
+immutable, Restart4 is not eligible, and the exact next prerequisite is a
+bounded non-script .NET ClientWebSocket helper design correction. B1, V3,
+screenshots, Browser Evidence B, Review1, and a fresh semantic run ID remain
+absent.

@@ -144,16 +144,16 @@ Date: 2026-09-05
 140. Exact next prerequisite: bounded non-script .NET ClientWebSocket helper design correction.
 141. Next checkpoint started: NO.
 142. Diagnostic root: diagnostics/dotnet-bridge-helper-execution-policy-compatibility-qualification1/.
-143. Diagnostic clone commit: f859a03 (local, `diagnostics: qualify ClientWebSocket helper execution policy`).
-144. Diagnostic clone final state: detached HEAD at f859a03, clean and unpushed.
+143. Diagnostic clone commit: f859a03728708017e1d8cf837e2f4a0585e73cc3 (`diagnostics: qualify ClientWebSocket helper execution policy`).
+144. Diagnostic clone final state: detached HEAD at f859a037, clean and unpushed.
 145. Result document: this file.
 146. Roadmap changed: YES, additive policy compatibility entry.
 147. Knowledge Candidate: candidate-only; no new entry.
 148. ai-knowledge changed: NO; pre-existing dirty playbook preserved.
-149. e2r-spec validation: pending final documentation commit.
-150. diff-check: pending final documentation commit.
-151. e2r-spec commit: pending final documentation commit.
-152. e2r-spec worktree: prior clean state plus this new document/roadmap edits before commit.
+149. e2r-spec validation: PASS.
+150. diff-check: PASS.
+151. e2r-spec commit: 23a86eb (local, `docs: record ClientWebSocket helper execution-policy qualification`).
+152. e2r-spec worktree: clean after the documentation commit; no unrelated changes.
 153. Live Product unchanged: YES.
 154. Protected samples preserved: YES.
 155. Machine clone unchanged: YES.

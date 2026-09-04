@@ -134,7 +134,7 @@ Checkpoint date: 2026-09-05. This is a bounded design/toolchain qualification. N
 130. ai-knowledge: unchanged.
 131. e2r-spec validation: `PASS` (`npm.cmd run validate`).
 132. e2r-spec diff-check: `PASS` (`git diff --check`).
-133. e2r-spec commit: to be recorded as the substantive documentation commit before the final self-reference correction.
+133. e2r-spec substantive documentation commit: `821ebcb215dfb6b8cc03d1f5be339004d660b10c` — `docs: record non-script helper authority design` (the final correction is a separate non-amending commit).
 134. e2r-spec worktree: clean after the final documentation commit.
 135. Live Product unchanged: `YES`.
 136. Protected samples preserved: `YES`.

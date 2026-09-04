@@ -6820,3 +6820,23 @@ B1 remains blocked; V3 is prohibited and remains `0`; Browser Evidence B is
 next prerequisite is a bounded Restart1 B1 entry-seam correction checkpoint.
 No B1 resume, V3 execution, Product/Harness change, `ai-knowledge` change,
 push, tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-PROTOCOL-A (2026-09-04)
+
+The [Browser Capture1 Restart2 Protocol A result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-protocol-a.md)
+records **CASE 2 / DECISION B — `RESTART2-IDENTITY-BINDING-BLOCKED`** with
+`IDENTITY-BINDING-B`. The corrected `browser-capture1/main.tsx` passed its
+bounded `apollo-11/en` correction validation, but the accepted
+`PR3-RUN-IDENTITY-v1` input has no legitimate field binding the corrected
+Browser Capture implementation commit/blob/hash. `harnessAuthority` alone is
+insufficient, so no misleading new `pr3r1-*` was minted.
+
+No Restart2 clone or Protocol A artifact root was created. No B1 or V3
+execution occurred; the old Restart1 blocked lineage and artifacts remain
+historical and unchanged. B1 fresh planned state remains `16` with executed
+`0`; V3 remains planned `80`; Browser Evidence B is `NONE`; Review1 is **NOT
+ELIGIBLE**; and PR-3 is `NO`. The exact next prerequisite is a bounded Browser
+Capture implementation authority / PR3 run-identity design correction
+checkpoint. It is **NOT STARTED**. Product, Harness, Machine Evidence, fixture
+corpus, materializer, host/GPU state, Windows Update, and `ai-knowledge` remain
+unchanged; no push, tag, release, deploy, or publication occurred.

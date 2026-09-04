@@ -6919,3 +6919,24 @@ materializer, fixture corpus, host/GPU state, Windows Update, and
 `ai-knowledge` remain unchanged. Restart2 is eligible for the exact next
 bounded B1 Execution1 checkpoint, which is **NOT STARTED**. No push, tag,
 release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-B1-EXECUTION1 (2026-09-04)
+
+The [Browser Capture1 Restart2 B1 Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-b1-execution1.md)
+records **CASE 5 / DECISION E - `B1-HARNESS-PROTOCOL-BLOCKED`**. All
+authority, host, B1-set, and V2-parent preflights passed, but the committed
+executor still hard-codes the historical Restart1 phase-local ID and artifact
+root. Its pre-item guard stopped with `BC1-HARD-GATE: B1 output already
+exists`. No B1 item, browser process, CDP attempt, screenshot, V3 call, or
+Browser Evidence B packet was created, and no semantic source was changed.
+
+B1 remains planned `16`, executed `0`, success `0`, failure `0`, pending `16`;
+V3 remains `NOT STARTED` and prohibited; Browser Evidence B is
+`NONE / INCOMPLETE`; Review1 is **NOT ELIGIBLE**; and PR-3 is **NO**. The
+Restart2 artifact index validates all indexed hashes, and the focused
+Protocol A/B1 suite passes `8/8`. The exact next prerequisite is a bounded
+Restart2 executor/run-root binding correction checkpoint, which is **NOT
+STARTED**. The old copied Restart1 artifact root was removed from Restart2;
+Product, Machine, Harness, fixture, host/GPU, Windows Update, and
+`ai-knowledge` state remain unchanged. No push, tag, release, deploy, or
+publication occurred.

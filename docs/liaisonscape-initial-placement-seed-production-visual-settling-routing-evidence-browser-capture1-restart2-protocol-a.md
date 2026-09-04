@@ -197,7 +197,7 @@ retries `2`, maximum attempts `3`.
 90. `ai-knowledge`: unchanged
 91. e2r-spec validation: `PASS` (after this document update)
 92. Diff-check: `PASS`
-93. e2r-spec commit: recorded after this document is committed
+93. e2r-spec commit: `9e8ce9fff7e094eba4b5e9ed00890bd5b92d8c44` — `docs: record blocked LiaisonScape Browser Capture1 Restart2 protocol`
 94. e2r-spec worktree: clean after final commit
 95. Live Product unchanged: `YES`
 96. Protected samples preserved: `YES`

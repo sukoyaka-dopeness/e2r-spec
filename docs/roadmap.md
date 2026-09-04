@@ -6940,3 +6940,27 @@ STARTED**. The old copied Restart1 artifact root was removed from Restart2;
 Product, Machine, Harness, fixture, host/GPU, Windows Update, and
 `ai-knowledge` state remain unchanged. No push, tag, release, deploy, or
 publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-EXECUTOR-RUN-ROOT-BINDING-CORRECTION1 (2026-09-04)
+
+The [Restart2 executor/run-root binding correction result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-executor-run-root-binding-correction1.md)
+records **CASE 1 / DECISION A - `EXECUTOR-RUN-ROOT-BINDING-CORRECTED`**. A
+fresh correction clone based exactly on implementation-authority commit
+`b9b6530ecc937dc2d7dcb9b661445f6c301444a5` now requires an explicit accepted
+Protocol A locator and derives `phaseRunId`, `artifactRoot`, and
+`finalPr3RunId` from that canonical metadata. Wrong lineage, identity drift,
+and existing B1/V3/screenshot outputs fail closed before Vite or browser
+launch. Production executor restart-specific hardcodes are absent; the
+corrected executor is `SEMANTIC-IMPACT-B`, while `main.tsx` remains byte
+identity-equivalent.
+
+Focused T1-T15 verification passed `16/16`; syntax checks, full npm test
+`309/309`, lint, and build passed. Exact-lockfile `npm ci --ignore-scripts`
+was used without package changes. Dry-run resolved the historical Restart2
+metadata in a temporary Protocol A-only fixture with zero browser/Vite
+launches. B1, V3, Browser Capture, screenshots, Browser Evidence B, Restart3,
+and new semantic-ID minting were not performed. The historical Restart2 clone
+remains clean and immutable. The exact next prerequisite is Restart3 Protocol
+A, which is **NOT STARTED**. No Product, Machine, Harness, fixture, host/GPU,
+Windows Update, or `ai-knowledge` state changed; no push, tag, release, deploy,
+or publication occurred.

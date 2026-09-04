@@ -6767,6 +6767,33 @@ unchanged. The exact next prerequisite is a separately bounded browser/runtime
 diagnosis or Windows Update qualification based on this failure; V3 execution
 is not started and remains prohibited.
 
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-B1-ENTRY-SEAM-CORRECTION1 (2026-09-04)
+
+The [Browser Capture1 Restart1 B1 Entry-Seam Correction1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-b1-entry-seam-correction1.md)
+records **CASE 1 / DECISION A — `B1-ENTRY-SEAM-CORRECTED`** with
+`SEMANTIC-IMPACT-B`. The isolated `browser-capture1/main.tsx` entry now resolves
+the executor-written input from the Vite public root as
+`/capture-input.json?...`, instead of the document-relative
+`/e2r-liaison-scape/capture-input.json?...` HTML fallback.
+
+The static probe returned `200 application/json` with matching expected and
+response SHA-256 for `apollo-11/en`. One fresh normal-sandbox Edge validation
+passed: target navigation, `readyState: complete`, evaluation root, SVG,
+viewBox `0 0 800 500`, and the unchanged B1 ready marker all succeeded; Runtime
+exceptions, network failures, GPU fatal, and cache-lock counts were `0`. No
+screenshot was created. The B1 full gate was not resumed; the remaining 15 B1
+items and V3 remain prohibited, Browser Evidence B remains `NONE`, Review1 is
+**NOT ELIGIBLE**, and PR-3 is `NO`.
+
+Because implementation bytes changed after Protocol A, the existing Restart1
+semantic ID is not reusable for corrected future evidence and the old blocked
+lineage is not resumable for corrected evidence. The exact next prerequisite is
+the fresh corrected Browser Capture Protocol A / Restart2 checkpoint:
+`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-PROTOCOL-A`.
+It is **NOT STARTED**. Windows Update, GPU driver/settings, Product, Harness,
+Machine Evidence, fixture corpus, and `ai-knowledge` remain unchanged; no push,
+tag, release, deploy, or publication occurred.
+
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-B1-ENTRY-READINESS-DIAGNOSTIC1 (2026-09-04)
 
 The [Browser Capture1 Restart1 B1 Entry Readiness Diagnostic1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-b1-entry-readiness-diagnostic1.md)

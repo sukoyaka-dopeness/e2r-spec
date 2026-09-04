@@ -7078,3 +7078,31 @@ bounded shared CDP WebSocket/client transport diagnostic or design correction.
 No Product, Machine, Harness, fixture, host/GPU, Windows Update, or
 `ai-knowledge` state changed; no push, tag, release, deploy, or publication
 occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-SHARED-CDP-WEBSOCKET-INDEPENDENT-CLIENT-DIAGNOSTIC1 (2026-09-05)
+
+The [Restart3 independent CDP WebSocket client diagnostic result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-shared-cdp-websocket-independent-client-diagnostic1.md)
+records **CASE 6 / DECISION F - `NODE-WEBSOCKET-CLIENT-SEAM-CONFIRMED`**.
+The exact 89-byte command failed through the existing Node global WebSocket
+controls, while an independent `.NET System.Net.WebSockets.ClientWebSocket`
+completed Edge direct-target `Runtime.evaluate` and Edge browser-endpoint
+`Target.getTargets` → `Target.attachToTarget` → session-scoped evaluation with
+result `2`. Chrome direct control reached the target transport but observed
+`Inspector.targetCrashed`; Chrome browser-endpoint discovery was separately
+blocked by the observed Chrome GPU fatal.
+
+The diagnostic clone is based exactly on semantic authority
+`f2d25e98d75aa208e176105a5b33acc2d6742aa5` and is locally committed, with no
+production source or dependency change. Retained focused regressions pass
+`58/58`, prior framing controls pass `12/12`, combined focused qualification
+is `70/70`, full npm test is `309/309`, and lint/build pass. Policy inventory
+was read-only; no pipe control was feasible or executed. B1 remains the
+historical `1 executed / 0 success / 1 failure / 15 pending` state, V3 is `0`,
+screenshots are `0`, Browser Evidence B is `NONE / INCOMPLETE`, Review1 is
+**NOT ELIGIBLE**, and PR-3 is **NO**. No fresh semantic ID or Restart4 was
+created.
+
+The exact next prerequisite is a bounded Browser Capture WebSocket client
+authority/replacement design-correction checkpoint. No Product, Machine,
+Harness, fixture, host/GPU setting, Windows Update, or `ai-knowledge` state
+changed; no push, tag, release, deploy, or publication occurred.

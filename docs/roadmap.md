@@ -7106,3 +7106,33 @@ The exact next prerequisite is a bounded Browser Capture WebSocket client
 authority/replacement design-correction checkpoint. No Product, Machine,
 Harness, fixture, host/GPU setting, Windows Update, or `ai-knowledge` state
 changed; no push, tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-WEBSOCKET-CLIENT-AUTHORITY-REPLACEMENT-DESIGN-CORRECTION1 (2026-09-05)
+
+The [Browser Capture1 WebSocket client authority / replacement design correction result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-websocket-client-authority-replacement-design-correction1.md)
+records **CASE 1 / DECISION A - `DOTNET-CLIENTWEBSOCKET-BRIDGE-DESIGNED`**.
+Option A is the selected future replacement design for the current PR3
+boundary: Node remains the owner of browser launch, exact target selection,
+run binding, retries, evidence state, and artifacts; one static Windows
+PowerShell/.NET `System.Net.WebSockets.ClientWebSocket` helper owns one CDP
+WebSocket session per capture attempt through a structured IPC contract.
+
+The decision is based on the prior independent Edge direct and browser-
+endpoint/session proof. Option B is deferred because no standalone WebSocket
+package is present and a new dependency qualification would be required;
+Option C has no independent supported Node builtin; Option D is disfavored;
+and Option E remains deferred because pipe mechanics are not authoritative.
+The qualitative matrix uses no arithmetic score.
+
+This is design-only: no production source, semantic manifest, run identity,
+phase bridge, Product behavior, package file, B1/V3 evidence, screenshot,
+Browser Evidence B, Restart4, or semantic ID changed. The proposed
+`PR3-BROWSER-CAPTURE-WEBSOCKET-CLIENT-AUTHORITY-v1` is documentation-only.
+PowerShell/.NET, helper/adapter/IPC source, OS assembly, and timeout/error
+authorities remain an explicit expansion required before Restart4. Current
+focused tests are `58/58`, prior framing is `12/12`, combined `70/70`; full
+npm test is `309/309`, lint/build pass. The exact next prerequisite is
+`E2R-LIAISONSCAPE-...-BROWSER-CAPTURE1-DOTNET-WEBSOCKET-BRIDGE-IMPLEMENTATION1`.
+No Product, Machine, Harness, fixture, host/GPU setting, Windows Update, or
+`ai-knowledge` state changed; no push, tag, release, deploy, or publication
+occurred.

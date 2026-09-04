@@ -177,7 +177,7 @@ PR-3: `NO`. No canonical screenshot or Browser Evidence B was created.
 72. `ai-knowledge`: unchanged
 73. e2r-spec validation: `PASS` (recorded before final docs commit)
 74. Diff-check: `PASS`
-75. e2r-spec commit: `f59fd2290022b3d27a1005ec25916b76b4a82df1` — `docs: record LiaisonScape Restart1 B1 entry-seam correction`
+75. e2r-spec commits: `f59fd2290022b3d27a1005ec25916b76b4a82df1` — `docs: record LiaisonScape Restart1 B1 entry-seam correction`; final documentation identity `d27bb8c6f443ce915be6599c5a5a53f11f7423ee` — `docs: record final e2r-spec correction checkpoint identity`
 76. e2r-spec worktree: clean after final docs commit
 77. Live Product unchanged: `YES`
 78. Protected samples preserved: `YES`

@@ -166,7 +166,7 @@ in this checkpoint and does not mutate `PR3-RUN-IDENTITY-v2` or
 112. **ai-knowledge changed/unchanged:** unchanged.
 113. **e2r-spec validation:** PASS, `npm.cmd run validate`.
 114. **diff-check:** PASS, `git diff --check`.
-115. **e2r-spec commit hash/subject:** to be supplied by the final documentation commit; subject `docs: design Browser Capture WebSocket client replacement`.
+115. **e2r-spec commit hash/subject:** `eeed1031b37fd03709ae49ed05b6f459d138c811`, `docs: design Browser Capture WebSocket client replacement`.
 116. **e2r-spec worktree:** clean after the final documentation commit; unpushed.
 117. **Live Product unchanged YES/NO:** YES.
 118. **protected samples preserved YES/NO:** YES.

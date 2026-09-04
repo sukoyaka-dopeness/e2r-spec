@@ -147,7 +147,7 @@ Browser Evidence B packet, or new semantic ID occurred.
 122. **package/toolchain provenance follow-up OPEN:** YES; the environment/toolchain and Chrome host/GPU behavior remain follow-up evidence, not a production correction.
 123. **e2r-spec validation:** PASS, `npm.cmd run validate`.
 124. **diff-check:** PASS, `git diff --check`.
-125. **e2r-spec commit hash/subject:** to be supplied by the final local documentation commit; subject `docs: record independent CDP WebSocket diagnostic`.
+125. **e2r-spec commit hash/subject:** `e53f0f7c829175b203c71b5d936923cc2a07550a`, `docs: record independent CDP WebSocket diagnostic`.
 126. **e2r-spec worktree:** clean after the final documentation commit; unpushed.
 127. **Live Product unchanged YES/NO:** YES.
 128. **protected samples preserved YES/NO:** YES.

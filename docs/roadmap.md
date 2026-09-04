@@ -6840,3 +6840,27 @@ Capture implementation authority / PR3 run-identity design correction
 checkpoint. It is **NOT STARTED**. Product, Harness, Machine Evidence, fixture
 corpus, materializer, host/GPU state, Windows Update, and `ai-knowledge` remain
 unchanged; no push, tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-PR3-RUN-IDENTITY-BROWSER-IMPLEMENTATION-AUTHORITY-DESIGN-CORRECTION1 (2026-09-04)
+
+The [Browser Capture implementation-authority design correction result](liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-design-correction1.md)
+records **CASE 1 / DECISION A - `PR3-RUN-IDENTITY-BROWSER-IMPLEMENTATION-AUTHORITY-DESIGNED`**.
+The prior `IDENTITY-BINDING-B` result was valid: accepted
+`PR3-RUN-IDENTITY-v1` did not bind the corrected Browser Capture entry or its
+executor. The prospective design selects a dedicated
+`PR3-BROWSER-CAPTURE-IMPLEMENTATION-AUTHORITY-v1` field in
+`PR3-RUN-IDENTITY-v2`, with an explicit frozen semantic-runtime source
+manifest, Git blob identities, and raw Git blob SHA-256 values. Product,
+Harness, Machine Evidence, and browser-executable authorities remain separate.
+
+The historical v1 IDs remain unchanged. A future Browser Protocol A requires
+the additive `PR3-PHASE-BRIDGE-v2` binding of both browser executable and
+Browser Capture implementation authorities. The Machine-to-Browser reference
+remains valid and no Machine rerun is required. This checkpoint did not
+implement the field, create Restart2, mint a semantic ID, launch a browser,
+execute B1/V3, create Browser Evidence B, or run Review1. B1/V3 remain `0`,
+Review1 remains **NOT ELIGIBLE**, and PR-3 remains **NO**. The exact next
+prerequisite is the bounded implementation checkpoint for the authority field
+and Restart2 Protocol A generator/tests; it is **NOT STARTED**. No Product,
+Harness, Machine, materializer, host/GPU, Windows Update, or `ai-knowledge`
+state changed; no push, tag, release, deploy, or publication occurred.

@@ -6864,3 +6864,28 @@ prerequisite is the bounded implementation checkpoint for the authority field
 and Restart2 Protocol A generator/tests; it is **NOT STARTED**. No Product,
 Harness, Machine, materializer, host/GPU, Windows Update, or `ai-knowledge`
 state changed; no push, tag, release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-PR3-RUN-IDENTITY-BROWSER-IMPLEMENTATION-AUTHORITY-IMPLEMENTATION1 (2026-09-04)
+
+The [Browser Capture implementation-authority implementation result](liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-implementation1.md)
+records **CASE 1 / DECISION A - `PR3-BROWSER-CAPTURE-IMPLEMENTATION-AUTHORITY-IMPLEMENTED`**.
+In a fresh clone based on the corrected entry-seam authority, the dedicated
+`PR3-BROWSER-CAPTURE-IMPLEMENTATION-AUTHORITY-v1` is implemented with an
+explicit 19-path semantic runtime manifest, Git blob/raw SHA-256 identities,
+and a fail-closed local runtime closure audit. Prospective
+`PR3-RUN-IDENTITY-v2` and `PR3-PHASE-BRIDGE-v2` builders bind the Browser
+Capture authority separately from Product, Harness, Machine Evidence, and
+browser executable authorities.
+
+Focused verification passed 7/7 tests, including I1-I8, generated/test-only
+exclusions, dirty-source rejection, and CRLF/LF stability. Clone-wide npm
+gates were attempted but remain dependency-blocked (`react`, validator, and
+`tsc` are not installed). Package/toolchain provenance remains a follow-up.
+The historical v1 lineages remain unchanged and Machine Evidence remains
+valid without rerun. Restart2 is still not created, no semantic ID is minted,
+B1/V3 remain `0`, Browser Evidence B is `NONE`, Review1 is **NOT ELIGIBLE**,
+and PR-3 is **NO**. The exact next prerequisite is the bounded Restart2
+Protocol A checkpoint using the implemented v2 authority; it is **NOT
+STARTED**. No Product, fixture, Machine, host/GPU, Windows Update, or
+`ai-knowledge` state changed; no push, tag, release, deploy, or publication
+occurred.

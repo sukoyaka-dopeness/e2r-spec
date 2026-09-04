@@ -6890,6 +6890,30 @@ STARTED**. No Product, fixture, Machine, host/GPU, Windows Update, or
 `ai-knowledge` state changed; no push, tag, release, deploy, or publication
 occurred.
 
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-APP-READINESS-CDP-CALL-CORRECTION-QUALIFICATION1 (2026-09-04)
+
+The [Restart3 app-readiness/CDP-call correction qualification result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-app-readiness-cdp-call-correction-qualification1.md)
+records **CASE 4 / DECISION D - `CDP-CLIENT-PROTOCOL-BLOCKED`**. The
+production CDP client correction retains the target-selection and run-binding
+seams, bounds WebSocket lifecycle and command handling, normalizes messages,
+correlates request IDs, rejects CDP errors, and clears pending state after
+timeout/close/error. Focused tests pass `58/58`; full test/lint/build gates
+also pass.
+
+The primary Edge qualification selected the exact expected application page
+and reached WebSocket OPEN, but the first generic `Runtime.evaluate` command
+failed with WebSocket close `1006`. Installed Chrome reproduced the same
+low-level result. `Page.enable` remains unremoved because its necessity could
+not be tested after transport failure and downstream production calls include
+`Page.navigate` and `Page.captureScreenshot`. Edge app readiness therefore
+remains blocked, with no B1/V3/screenshots/Browser Evidence B/Review1 and no
+Restart4. The historical Restart3 clone and semantic ID remain immutable.
+The exact next prerequisite is a bounded shared low-level CDP
+transport/client correction qualification; after that passes, a fresh
+Restart4 Protocol A may be considered. No Product, fixture, Machine, Harness,
+host/GPU, Windows Update, or `ai-knowledge` state changed; no push, tag,
+release, deploy, or publication occurred.
+
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-PROTOCOL-A (2026-09-04) - v2 binding
 
 The [Browser Capture1 Restart2 Protocol A v2 binding result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-protocol-a-v2-binding.md)

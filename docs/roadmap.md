@@ -6889,3 +6889,33 @@ Protocol A checkpoint using the implemented v2 authority; it is **NOT
 STARTED**. No Product, fixture, Machine, host/GPU, Windows Update, or
 `ai-knowledge` state changed; no push, tag, release, deploy, or publication
 occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-PROTOCOL-A (2026-09-04) - v2 binding
+
+The [Browser Capture1 Restart2 Protocol A v2 binding result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-protocol-a-v2-binding.md)
+records **CASE 1 / DECISION A - `RESTART2-PROTOCOL-A-READY`** with
+`IDENTITY-BINDING-A`. A fresh Restart2 clone was based exactly on the
+implemented Browser Capture authority commit
+`b9b6530ecc937dc2d7dcb9b661445f6c301444a5`, and the first legitimate
+Restart2 semantic ID is bound by `PR3-RUN-IDENTITY-v2` plus
+`PR3-BROWSER-CAPTURE-IMPLEMENTATION-AUTHORITY-v1`:
+`pr3r1-4ba49e9f8d9ad79112b4a3cfaff95aa01648eeba1eb8e181ed0e2c725510206a`.
+The v2 phase bridge is `PR3-PHASE-BRIDGE-v2`; the 19-path implementation
+closure is `19/19` with omitted `0` and unexpected `0`.
+
+Protocol A is `PREPARED / READY` under Edge Stable `152.0.4191.62`, with
+the corrected `/capture-input.json` contract, the existing ready marker,
+normal-sandbox launch arguments, and no `--disable-gpu-sandbox`. Its fresh
+artifact root contains exactly the eight Protocol A files. B1 is **NOT
+STARTED** with `0 / 0 / 0 / 16` success/failure/terminal/pending; V3 is
+planned `80` and executed `0`; screenshots and Browser Evidence B are absent;
+Review1 is **NOT ELIGIBLE** and PR-3 remains **NO**. Focused Protocol A tests
+passed `5/5`. Clone-wide npm test/lint/build remain dependency-blocked and no
+package or toolchain changes were made.
+
+The earlier blocked Restart2 result remains immutable and is explicitly
+distinguished from this successor binding. Product, Harness, Machine Evidence,
+materializer, fixture corpus, host/GPU state, Windows Update, and
+`ai-knowledge` remain unchanged. Restart2 is eligible for the exact next
+bounded B1 Execution1 checkpoint, which is **NOT STARTED**. No push, tag,
+release, deploy, or publication occurred.

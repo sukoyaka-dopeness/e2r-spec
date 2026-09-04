@@ -8,8 +8,8 @@
 
 ## Scope and authority
 
-The preceding checkpoint was `B1-EXECUTION1`, recorded as `CASE 2 / DECISION B —
-`B1-BROWSER-GATE-FAIL``. The e2r-spec starting HEAD was
+The preceding checkpoint was `B1-EXECUTION1`, recorded as
+`CASE 2 / DECISION B — B1-BROWSER-GATE-FAIL`. The e2r-spec starting HEAD was
 `7530fda3aa526a3d5af44ac6ebc086b0a80c602a`. The retained Restart1 authority was
 `C:\Users\extra\E2R\e2r-liaison-scape-visual-evidence-browser-capture-restart1`
 at blocked commit `6b3e9f16424de283248298cb03e0f42c8a9eb9e7`. The semantic run was

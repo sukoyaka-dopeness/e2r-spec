@@ -7180,3 +7180,28 @@ immutable, Restart4 is not eligible, and the exact next prerequisite is a
 bounded non-script .NET ClientWebSocket helper design correction. B1, V3,
 screenshots, Browser Evidence B, Review1, and a fresh semantic run ID remain
 absent.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-NON-SCRIPT-WEBSOCKET-HELPER-AUTHORITY-DESIGN-CORRECTION1 (2026-09-05)
+
+The [non-script WebSocket helper authority design correction result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-non-script-websocket-helper-authority-design-correction1.md)
+records **CASE 3 / `DOTNET-PREBUILT-HELPER-BINARY-AUTHORITY-DESIGN-REQUIRED`**.
+The installed .NET Framework `csc.exe` can compile a BCL-only x64 EXE and a
+trivial EXE launches directly under the current host, but the compiler does
+not support `/deterministic`; two controlled builds produced different output
+bytes. Option C is therefore accepted as a design: committed C# source plus
+an explicitly reviewed, prebuilt helper EXE whose exact bytes, compiler,
+reference assemblies, build inputs, and runtime authority are bound before
+use. No binary is added in this checkpoint.
+
+IPC-v1 remains preservable with `JavaScriptSerializer` from the framework, and
+Node retains browser, target, run, retry, CDP, evidence, and artifact
+ownership. The proposed build contract is
+`PR3-BROWSER-CAPTURE-DOTNET-HELPER-BUILD-AUTHORITY-v1`; the proposed client
+successor is `PR3-BROWSER-CAPTURE-WEBSOCKET-CLIENT-AUTHORITY-v2`. Existing
+`PR3-RUN-IDENTITY-v3` and `PR3-PHASE-BRIDGE-v3` remain sufficient. This is
+design-only: production source, helper form, package files, Product, B1/V3,
+screenshots, Browser Evidence B, Restart4, and semantic run identity remain
+unchanged. Focused tests are `102/102`, full npm test is `309/309`, and
+lint/build pass. The exact next prerequisite is the bounded non-script EXE
+WebSocket helper implementation and authority qualification checkpoint;
+Restart4 remains not eligible.

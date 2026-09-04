@@ -7008,3 +7008,26 @@ selection/runtime correction qualification followed by a fresh authorized
 Restart3 B1 gate. No semantic source, Product, Machine, Harness, fixture,
 host/GPU, Windows Update, or `ai-knowledge` state changed; no push, tag,
 release, deploy, or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-TARGET-SELECTION-RUNTIME-CORRECTION-QUALIFICATION1 (2026-09-04)
+
+The [Restart3 target-selection runtime correction qualification result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-target-selection-runtime-correction-qualification1.md)
+records **CASE 2 / DECISION B - `TARGET-SELECTION-CORRECTED-APP-READINESS-BLOCKED`**.
+The corrected Browser Capture executor now selects the exact expected
+LiaisonScape page URL from `/json/list`, ignores internal Edge extension
+targets, fails closed on no-match/ambiguous/missing-websocket states, and
+keeps the existing 80 x 100 ms target and 100 x 100 ms readiness authorities
+while bounding awaited CDP operations. The semantic correction is
+`SEMANTIC-IMPACT-B`.
+
+The bounded runtime qualification selected the expected app at target-list
+position 5 with a valid websocket, but `Page.enable` timed out within the
+retained readiness window. Target selection is therefore **PASS** and app
+readiness remains **BLOCKED**. Teardown/quiescence passed; GPU fatal and
+cache-lock counts were zero; screenshots, B1, V3, Browser Evidence B, and
+Review1 remain absent. The historical Restart3 clone and semantic ID remain
+immutable, no Restart4 was created, and the exact next prerequisite is a
+bounded Browser Capture app-readiness/CDP-call correction qualification.
+No Product, fixture, Machine, Harness, host/GPU, Windows Update, or
+`ai-knowledge` state changed; no push, tag, release, deploy, or publication
+occurred.

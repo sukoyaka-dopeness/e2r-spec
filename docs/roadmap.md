@@ -6964,3 +6964,27 @@ remains clean and immutable. The exact next prerequisite is Restart3 Protocol
 A, which is **NOT STARTED**. No Product, Machine, Harness, fixture, host/GPU,
 Windows Update, or `ai-knowledge` state changed; no push, tag, release, deploy,
 or publication occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-PROTOCOL-A (2026-09-04)
+
+The [Restart3 Protocol A result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-protocol-a.md)
+records **CASE 1 / DECISION A - `RESTART3-PROTOCOL-A-READY`**. Restart2's
+historical pre-item block remains immutable, and the accepted executor
+run-root binding correction is based on semantic commit
+`5e1581b2fb59f6f241e715604fdd4f2e082f2d1b`; its diagnostic descendant was
+proven byte-neutral across all 19 semantic manifest paths. A fresh Restart3
+clone and fresh root now bind the corrected implementation authority,
+`PR3-RUN-IDENTITY-v2`, `PR3-PHASE-BRIDGE-v2`, and
+`PR3-BROWSER-CAPTURE-RUN-BINDING-v1`.
+
+Restart3 minted the distinct semantic ID
+`pr3r1-e8af40d999fb33bf7efb46b135121eca81f1e33deb17e96c14670265d2929461`.
+Protocol A contains exactly eight metadata files. The binding dry-run is
+`RUN-BINDING-VALID` with zero browser/Vite/CDP launches. Fresh B1 is `16`
+pending with `0` executed; V3 is planned `80` and executed `0`; screenshots
+and Browser Evidence B are absent; Review1 is **NOT ELIGIBLE** and PR-3 is
+**NO**. Focused Protocol A tests pass `11/11`; full npm test is `309/309`,
+lint and build pass, and no package files changed. The exact next prerequisite
+is Restart3 B1 Execution1, which is **NOT STARTED**. No Product, Machine,
+Harness, fixture, host/GPU, Windows Update, or `ai-knowledge` state changed;
+no push, tag, release, deploy, or publication occurred.

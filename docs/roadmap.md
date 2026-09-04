@@ -7055,3 +7055,26 @@ bounded Browser Capture app-readiness/CDP-call correction qualification.
 No Product, fixture, Machine, Harness, host/GPU, Windows Update, or
 `ai-knowledge` state changed; no push, tag, release, deploy, or publication
 occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-SHARED-CDP-TRANSPORT-CLIENT-CORRECTION-QUALIFICATION1 (2026-09-04)
+
+The [Restart3 shared CDP transport/client correction qualification result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-shared-cdp-transport-client-correction-qualification1.md)
+records **CASE 5 / DECISION E - `SHARED-CDP-WEBSOCKET-TRANSPORT-BLOCKED`**.
+The production client already sends the exact 89-byte canonical command as a
+JavaScript string; explicit text and binary controls both fail against the
+selected direct target in Edge and Chrome with no successful response and
+close `1006`. The Edge browser-level WebSocket and `Target.getTargets`
+respond, but `Target.attachToTarget` closes before a session ID, so the shared
+transport/client seam remains blocked.
+
+No semantic correction was proven or applied; the implementation authority
+remains `f2d25e98d75aa208e176105a5b33acc2d6742aa5`, with 19/19 closure and
+omitted/unexpected 0/0. Focused retained regressions pass 58/58, framing
+checks pass 12/12, full npm test is 309/309, and lint/build pass. Restart3
+remains historical and immutable; real B1 evidence is 0, V3 is 0, screenshots
+are 0, Browser Evidence B is `NONE / INCOMPLETE`, Review1 is **NOT ELIGIBLE**,
+PR-3 is **NO**, and Restart4 was not created. The exact next prerequisite is a
+bounded shared CDP WebSocket/client transport diagnostic or design correction.
+No Product, Machine, Harness, fixture, host/GPU, Windows Update, or
+`ai-knowledge` state changed; no push, tag, release, deploy, or publication
+occurred.

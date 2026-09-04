@@ -155,8 +155,8 @@ Date: 2026-09-05
 151. ai-knowledge changed: NO; pre-existing dirty playbook preserved.
 152. e2r-spec validation: PASS after documentation staging.
 153. diff-check: PASS after documentation staging.
-154. e2r-spec commit: pending final documentation commit; this field is finalized by the committed document lineage.
-155. e2r-spec worktree: pre-existing state preserved; final status is recorded after commit.
+154. e2r-spec commit: 428548dce9952466c9422ac099dd4b24eac0a6a1 (`docs: record Browser Capture ClientWebSocket bridge implementation`); this field is the substantive documentation commit.
+155. e2r-spec worktree: clean after the substantive documentation commit; this follow-up only finalizes the self-reference field.
 156. Live Product unchanged: YES.
 157. Protected samples preserved: YES.
 158. Machine clone unchanged: YES.

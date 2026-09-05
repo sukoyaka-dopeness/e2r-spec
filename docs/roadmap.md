@@ -7287,3 +7287,9 @@ eligible because Control B did not pass. No B1 rerun, V3 execution,
 screenshots, Browser Evidence B, review, or new restart occurred. The exact
 next prerequisite is a separately bounded Edge process-lifetime/host-runtime
 diagnostic before any fresh Browser Capture lineage decision.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-EDGE-PROCESS-LIFETIME-HOST-RUNTIME-DIAGNOSTIC1 (2026-09-05)
+
+The [Edge process lifetime / host runtime diagnostic](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-edge-process-lifetime-host-runtime-diagnostic1.md) records **CASE 7 / `EDGE-PROCESS-LIFETIME-NONREPRODUCED`** with semantic impact NONE. Under the unchanged frozen launch contract, App/no-helper and trivial-local-page/no-helper controls each survived 3/3 bounded root-process observations, with listener and discovery endpoints still available.
+
+Restart4 remains immutable at one failed B1 item and 15 pending; B1 was not rerun, V3 was not started, and Browser Evidence B remains incomplete. No production correction, browser-flag change, or fresh restart is eligible. The exact next prerequisite is a bounded recurrence/readiness decision checkpoint.

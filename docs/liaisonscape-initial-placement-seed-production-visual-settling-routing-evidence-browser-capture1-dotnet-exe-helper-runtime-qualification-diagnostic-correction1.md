@@ -170,7 +170,7 @@ correction was required.
 163. Exact next prerequisite: `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-PROTOCOL-A`.
 164. Next checkpoint: `NOT STARTED`.
 165. Diagnostic root: `diagnostics/dotnet-exe-helper-runtime-qualification-diagnostic-correction1/`.
-166. Diagnostic commit hash/subject: `a396166` full hash and subject to be recorded after commit verification.
+166. Diagnostic commit hash/subject: `a3961661b46a096ba070c0c1593fbecb07619c18`, `diagnostics: isolate Edge target crash during executable helper qualification`.
 167. Diagnostic clone final state: clean detached HEAD at the diagnostic commit, unpushed.
 168. Result document: this file.
 169. Roadmap: changed additively with this checkpoint.
@@ -178,7 +178,7 @@ correction was required.
 171. ai-knowledge: unchanged; pre-existing playbook dirt preserved.
 172. e2r-spec validation: `PASS`.
 173. diff-check: `PASS`.
-174. e2r-spec commit hash/subject: to be recorded as the substantive documentation commit before final self-reference correction.
+174. e2r-spec substantive documentation commit: `d1a5726ab00a463af56dd94e62dbb8b13d143bd6`, `docs: record executable helper Edge runtime diagnostic`; this document's final self-reference correction follows separately.
 175. e2r-spec final worktree: clean after final documentation commit.
 176. Live Product unchanged: `YES`.
 177. Protected samples preserved: `YES`.

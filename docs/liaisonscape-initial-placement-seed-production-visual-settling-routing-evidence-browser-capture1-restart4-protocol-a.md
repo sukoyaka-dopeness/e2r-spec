@@ -121,10 +121,10 @@ implementation, and stopped before B1 execution.
 115. Roadmap changed/unchanged: `CHANGED` additively with Browser Capture1 Restart4 Protocol A.
 116. Knowledge Candidate: `CANDIDATE ONLY / NO NEW ENTRY`.
 117. `ai-knowledge` changed/unchanged: `UNCHANGED`.
-118. E2R-SPEC validation: `PENDING FINAL DOCUMENT COMMIT`.
-119. Diff-check: `PENDING FINAL DOCUMENT COMMIT`.
-120. E2R-SPEC commit hash/subject: `PENDING FINAL DOCUMENT COMMIT`.
-121. E2R-SPEC final worktree: `PENDING FINAL DOCUMENT COMMIT`.
+118. E2R-SPEC validation: `PASS` (`npm.cmd run validate`).
+119. Diff-check: `PASS` (`git diff --check`).
+120. E2R-SPEC commit hash/subject: `d4ed1cd` (`docs: record Browser Capture Restart4 Protocol A`), substantive documentation commit.
+121. E2R-SPEC final worktree: `CLEAN` after the non-amending result-reference finalization commit.
 122. Live Product unchanged: `YES`.
 123. Protected samples preserved: `YES`.
 124. Machine clone unchanged: `YES`.

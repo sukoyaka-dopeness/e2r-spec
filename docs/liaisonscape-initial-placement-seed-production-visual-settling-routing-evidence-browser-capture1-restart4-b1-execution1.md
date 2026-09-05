@@ -11,7 +11,7 @@ started.
 4. Exact e2r-spec starting HEAD: `1a5957608cee2daf43f741fdbc7d594819de1e09`.
 5. Protocol A documentation final authority: `1a5957608cee2daf43f741fdbc7d594819de1e09`.
 6. Restart4 Protocol A commit: `7fab50b33f514c6b27b838ec58ca6aa7f145ca9e`, `evidence: bind Browser Capture Restart4 Protocol A`.
-7. Restart4 B1 evidence commit: `25e65b8` (`evidence: record incomplete Browser Capture Restart4 B1`).
+7. Restart4 B1 evidence commit: `25e65b89f275eef9511c5e9792ea6e3bd927db29` (`evidence: record incomplete Browser Capture Restart4 B1`).
 8. Restart4 semantic ID: `pr3r1-ec74872605846cbb9bc1c1b6d8acf5bb083bc4c65c58b44dcb24836fcd1f6861`.
 9. Semantic implementation authority: `ba3cb3dd50ab723a7b4a4a5c2b839bc2abef87d4`; closure `21/21`, omitted `0`, unexpected `0`.
 10. Helper EXE raw SHA: `17F38BFC4DB37EC6A7D906D6A7E90EFD64864FEE336D2215F7BB1CEE20182E86`.
@@ -69,10 +69,10 @@ started.
 62. Restart4 artifact root: `artifacts/browser-capture-restart4-2026-09-05`.
 63. Result document: `docs/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-b1-execution1.md`.
 64. Roadmap status: `CHANGED` additively with the incomplete B1 result.
-65. E2R-SPEC validation: `PENDING FINAL DOCUMENT COMMIT`.
-66. E2R-SPEC commit: `PENDING FINAL DOCUMENT COMMIT`.
+65. E2R-SPEC validation: `PASS` (`npm.cmd run validate`).
+66. E2R-SPEC commit: `942e024f02fd6df93a1b7c0fea70cbc5dc7491f2` (`docs: record incomplete Browser Capture Restart4 B1`), substantive documentation commit.
 67. Restart4 final worktree: `CLEAN` after the B1 evidence commit.
-68. E2R-SPEC final worktree: `PENDING FINAL DOCUMENT COMMIT`.
+68. E2R-SPEC final worktree: `CLEAN` after non-amending result-reference finalization.
 69. Live Product/Machine/Harness/Baseline preservation: `YES`; no changes were made.
 70. `--disable-gpu-sandbox` used: `NO`.
 71. Push/tag/release/deploy/publication: `NONE`.

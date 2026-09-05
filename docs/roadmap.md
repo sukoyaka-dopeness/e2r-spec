@@ -7205,3 +7205,20 @@ unchanged. Focused tests are `102/102`, full npm test is `309/309`, and
 lint/build pass. The exact next prerequisite is the bounded non-script EXE
 WebSocket helper implementation and authority qualification checkpoint;
 Restart4 remains not eligible.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-EXE-WEBSOCKET-HELPER-IMPLEMENTATION1 (2026-09-05)
+
+The [production .NET executable helper implementation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-exe-websocket-helper-implementation1.md)
+records **CASE 9 / `DOTNET-EXE-HELPER-RUNTIME-QUALIFICATION-BLOCKED`** with
+semantic impact B. The production `.ps1` helper was removed and committed C#
+source plus a reviewed x64 `.exe` were added. Build authority v1 and client
+authority v2 are bound, while IPC-v1, Run Identity v3, and Phase Bridge v3
+remain preserved and sufficient.
+
+The direct Edge qualification reached the fresh Run1 target but received
+`Inspector.targetCrashed` before `Runtime.evaluate`, `Page.enable`, or the
+ready marker. Per the bounded stop-on-first-failure rule, Run2 and Run3 were
+not started. Restart4 is not eligible; B1, V3, screenshots, Browser Evidence
+B, Human Review, and a fresh accepted semantic run ID remain absent. No
+product/Machine/Harness/fixture changes, policy/security changes, or push were
+performed.

@@ -170,7 +170,7 @@ Checkpoint date: 2026-09-05. This bounded checkpoint implemented the accepted no
 166. ai-knowledge: unchanged; pre-existing playbook dirt preserved.
 167. e2r-spec validation: `PASS`.
 168. diff-check: `PASS`.
-169. e2r-spec commit hash/subject: to be recorded as the substantive documentation commit before the final self-reference correction.
+169. e2r-spec substantive documentation commit: `f228ed0a9083e3eae280584f312bd0858ffa8656`, `docs: record Browser Capture .NET executable helper implementation`.
 170. e2r-spec final worktree: clean after the final documentation commit.
 171. Live Product unchanged: `YES`.
 172. Protected samples preserved: `YES`.

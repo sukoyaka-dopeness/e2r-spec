@@ -7269,3 +7269,21 @@ The semantic ID, EXE/build/client authorities, Restart3, Product, Machine,
 Harness, and fixture authorities remain unchanged. No B1 rerun or V3 execution
 is authorized; a separately bounded B1 runtime-infrastructure diagnosis or
 correction is required and has not started.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-B1-LOCAL-WEBSOCKET-CONNECTION-REFUSAL-DIAGNOSTIC-CORRECTION1 (2026-09-05)
+
+The [Restart4 B1 local WebSocket refusal diagnostic](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-b1-local-websocket-connection-refusal-diagnostic-correction1.md)
+records **CASE 4 / `B1-EDGE-PROCESS-LIFETIME-BLOCKED`** with semantic impact
+NONE. Restart4 remains immutable at `0` B1 success, `1` terminal failure, and
+`15` pending. The historical helper errors were reproduced in three fresh
+production-like direct-helper controls, but immediate TCP probes were
+`CONNECTED` before helper CONNECT. Edge then exited with code `2147483651`,
+its debugging listener became `ECONNREFUSED`, and Control A showed the same
+exit with no helper at all.
+
+No URI normalization, address-family, helper, C#, EXE, executor, or Browser
+Capture semantic correction is justified by this evidence. Control C was not
+eligible because Control B did not pass. No B1 rerun, V3 execution,
+screenshots, Browser Evidence B, review, or new restart occurred. The exact
+next prerequisite is a separately bounded Edge process-lifetime/host-runtime
+diagnostic before any fresh Browser Capture lineage decision.

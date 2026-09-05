@@ -53,8 +53,9 @@ Fresh diagnostic clone:
 Exact base and unchanged semantic authority:
 `ba3cb3dd50ab723a7b4a4a5c2b839bc2abef87d4`.
 No correction clone was created. No new semantic commit was created.
-Diagnostic commit: PENDING_DIAGNOSTIC_COMMIT, subject
-`diagnostics: converge Browser Capture runtime failures`.
+Diagnostic commit: `a4b646776ba4b5362bcbbe75f9058092896e4666`, subject
+`diagnostics: converge Browser Capture runtime failures`; artifact-index
+follow-up: `d85b3596a0ff71a9ea75f33288e3ef22e6f8521a`.
 
 ## Semantic, binary and browser authority
 
@@ -485,12 +486,13 @@ All raw gate logs, source extracts, run JSON/JSONL and summaries are indexed in
 [artifact-index.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/artifact-index.json).
 
 E2R-SPEC changes: this informational result and an additive roadmap entry only.
-E2R-SPEC validate: PENDING_SPEC_VALIDATION. Diff/staged-diff check:
-PENDING_DIFF_CHECK. E2R-SPEC substantive commit: PENDING_SPEC_COMMIT.
+E2R-SPEC validate: PASS. Diff/staged-diff check: PASS. E2R-SPEC substantive
+commit: `24a6320163266224e476f884264537db584adfbc`.
 Final reference authority is the separate non-amending finalization commit that
 records that substantive hash; the containing Git commit is its exact identity.
-Diagnostic final state: PENDING_DIAGNOSTIC_STATE. E2R-SPEC final worktree:
-PENDING_SPEC_STATE. All commits remain local/unpushed. No correction clone exists.
+Diagnostic final state: clean at `d85b3596a0ff71a9ea75f33288e3ef22e6f8521a`.
+E2R-SPEC final worktree: clean at `24a6320163266224e476f884264537db584adfbc`.
+All commits remain local/unpushed. No correction clone exists.
 
 This report and its linked per-run/authority/preservation records cover the
 requested final-report fields 1–140: decision/lineage (1–18), exact authorities

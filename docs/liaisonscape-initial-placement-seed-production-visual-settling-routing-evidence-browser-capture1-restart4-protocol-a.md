@@ -74,7 +74,7 @@ implementation, and stopped before B1 execution.
 68. B1 set authority: `PASS`.
 69. Run Identity v3: `PASS`.
 70. Phase Bridge v3: `PASS`.
-71. Historical identity fixture regressions: v2 preservation and v3 builder coverage `PASS`; immutable Restart3 state preserved; obsolete fresh-root assertions were observed separately and did not modify the historical clone.
+71. Historical identity fixture regressions: v2 preservation and v3 builder coverage `PASS`; the immutable Restart3 regression file reported `8/11 PASS` because its three fresh-root assertions correctly encounter already-retained Restart3 execution artifacts; the historical clone was not modified.
 72. Focused tests count/result: `102/102 PASS` for the selected authority, transport, target, CDP, retry, and run-binding suite; stale historical fresh-root tests were not used as the Restart4 gate.
 73. `node --check`: `PASS` for the production `.mjs` authority/executor files.
 74. `npm test`: `309/309 PASS`.
@@ -123,7 +123,7 @@ implementation, and stopped before B1 execution.
 117. `ai-knowledge` changed/unchanged: `UNCHANGED`.
 118. E2R-SPEC validation: `PASS` (`npm.cmd run validate`).
 119. Diff-check: `PASS` (`git diff --check`).
-120. E2R-SPEC commit hash/subject: `d4ed1cd` (`docs: record Browser Capture Restart4 Protocol A`), substantive documentation commit.
+120. E2R-SPEC commit hash/subject: `d4ed1cd74a1e576c52ca5524ea18971a9b8628e8` (`docs: record Browser Capture Restart4 Protocol A`), substantive documentation commit.
 121. E2R-SPEC final worktree: `CLEAN` after the non-amending result-reference finalization commit.
 122. Live Product unchanged: `YES`.
 123. Protected samples preserved: `YES`.

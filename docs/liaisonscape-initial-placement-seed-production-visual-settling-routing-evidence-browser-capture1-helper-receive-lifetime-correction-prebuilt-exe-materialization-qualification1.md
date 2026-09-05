@@ -12,8 +12,9 @@ The corrected semantic implementation is in the detached correction repository a
 
 - C# source raw SHA-256: `ABF4035E4603DE3179A3FDC4A1E09F8D61586B9FF2CF3221BF7884F8B1D860B3`.
 - EXE raw SHA-256: `5C25540A8F86DC2B7C97A7486DABB7FCE8D9995756C13714D4527D4DC910E45A` (9,728 bytes).
-- Build authority: `F70346FB01863560C3D688A30018F6ACEBCA23535581E76C20A098AA72E88783`.
-- Implementation/client authority: `A4F97B95591ACCA14D52618FE608604870D2F751658F45B88A0CF7DBC4F2A48A`.
+- Implementation authority (`PR3-BROWSER-CAPTURE-IMPLEMENTATION-AUTHORITY-v1`): the committed role record has no independent `canonicalSha256` field; its identity is the repository commit and bound source-identity set.
+- Build authority (`PR3-BROWSER-CAPTURE-DOTNET-HELPER-BUILD-AUTHORITY-v1`): `F70346FB01863560C3D688A30018F6ACEBCA23535581E76C20A098AA72E88783`.
+- Client authority (`PR3-BROWSER-CAPTURE-WEBSOCKET-CLIENT-AUTHORITY-v2`): `A4F97B95591ACCA14D52618FE608604870D2F751658F45B88A0CF7DBC4F2A48A`.
 - Compiler: .NET Framework 4.8 `csc.exe`, x64, exact accepted `/noconfig /nostdlib+` reference set; deterministic and byte-reproducible build flags are false.
 - A first candidate was superseded after the direct CLOSE check exposed the old cancellation ordering. The final candidate was compiled once from the corrected source, tested, copied once to the semantic path, and verified against the committed bytes.
 

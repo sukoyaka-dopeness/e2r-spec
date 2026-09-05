@@ -7222,3 +7222,20 @@ not started. Restart4 is not eligible; B1, V3, screenshots, Browser Evidence
 B, Human Review, and a fresh accepted semantic run ID remain absent. No
 product/Machine/Harness/fixture changes, policy/security changes, or push were
 performed.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-EXE-HELPER-RUNTIME-QUALIFICATION-DIAGNOSTIC-CORRECTION1 (2026-09-05)
+
+The [executable helper runtime qualification diagnostic result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-exe-helper-runtime-qualification-diagnostic-correction1.md)
+records **CASE 1 / `DOTNET-EXE-HELPER-RUNTIME-QUALIFICATION-PASS`**. The prior
+Run1 `Inspector.targetCrashed` observation was not reproduced: Control A
+(application target without helper), Control B (direct production EXE with
+`Runtime.evaluate("1 + 1") = 2`), and the conditional canonical qualification
+all passed. Canonical Edge qualification completed fresh 3/3 with
+`Runtime.enable`, `Page.enable`, the ready marker, SVG presence, and
+`viewBox = 0 0 800 500`; the committed EXE SHA was identical in all runs.
+
+No semantic correction, EXE rebuild, Product/Machine/Harness/fixture change,
+browser-flag change, policy/security change, or push was performed. Restart4
+is now eligible but was not created; B1, V3, screenshots, Browser Evidence B,
+Human Review, and a fresh accepted semantic run ID remain absent. The exact
+next prerequisite is bounded Restart4 Protocol A.

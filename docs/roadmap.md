@@ -7254,3 +7254,18 @@ launch; B1 is `0/16`, V3 is `0`, and Browser Evidence B is
 The exact next prerequisite is Restart4 B1 Execution1. B1 is not started;
 no screenshots, Browser Evidence B, Human Review, Review1, ranking, selection,
 or PR-3 completion occurred.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-B1-EXECUTION1 (2026-09-05)
+
+The [Browser Capture1 Restart4 B1 Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-b1-execution1.md)
+records **CASE 2 / `RESTART4-B1-EXECUTION-INCOMPLETE`**. The canonical
+executor began the real B1 run, launched one executor-owned Vite runtime and
+three fresh Edge/helper attempts for `apollo-11/en`, then stopped after the
+third helper WebSocket connection refusal. B1 is `1/16` entered, `0` success,
+`1` failure, `15` pending, with two retries; V3 remains `0` and
+Browser Evidence B remains `NONE / INCOMPLETE`.
+
+The semantic ID, EXE/build/client authorities, Restart3, Product, Machine,
+Harness, and fixture authorities remain unchanged. No B1 rerun or V3 execution
+is authorized; a separately bounded B1 runtime-infrastructure diagnosis or
+correction is required and has not started.

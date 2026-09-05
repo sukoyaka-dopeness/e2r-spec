@@ -7239,3 +7239,18 @@ browser-flag change, policy/security change, or push was performed. Restart4
 is now eligible but was not created; B1, V3, screenshots, Browser Evidence B,
 Human Review, and a fresh accepted semantic run ID remain absent. The exact
 next prerequisite is bounded Restart4 Protocol A.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-PROTOCOL-A (2026-09-05)
+
+The [Browser Capture1 Restart4 Protocol A result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-protocol-a.md)
+records **CASE 1 / `RESTART4-PROTOCOL-A-READY`**. A fresh Restart4 clone is
+bound to semantic authority `ba3cb3dd50ab723a7b4a4a5c2b839bc2abef87d4` with
+the prequalified .NET EXE helper, client authority v2, build authority v1,
+Run Identity v3, and Phase Bridge v3. The Protocol A dry-run passed with
+Restart4-root binding and no Browser, Vite runtime server, helper, or CDP
+launch; B1 is `0/16`, V3 is `0`, and Browser Evidence B is
+`NONE / INCOMPLETE`.
+
+The exact next prerequisite is Restart4 B1 Execution1. B1 is not started;
+no screenshots, Browser Evidence B, Human Review, Review1, ranking, selection,
+or PR-3 completion occurred.

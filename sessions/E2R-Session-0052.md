@@ -503,3 +503,74 @@ The next separately authorized checkpoint is:
 It was not started automatically.
 
 `SESSION LOGGED - IMPLEMENTATION1 COMPLETE; VALIDATION1 NEXT`
+
+### Browser Capture helper receive-lifetime correction, authority clarification, and remote handoff
+
+The bounded Browser Capture helper receive-lifetime correction and qualification
+sequence was completed on 2026-09-06.
+
+The corrected helper was implemented and qualified in the detached correction
+repository:
+
+`C:\Users\extra\E2R\e2r-liaison-scape-browser-capture-helper-receive-lifetime-correction1`
+
+The accepted semantic correction commits are:
+
+- `592b02cbbcc95ba3a037548658d5e655697bb459` — separate passive receive
+  lifetime from helper operation timeouts;
+- `f5c0b8c1db6da059194ff174b964cf1f43ecf358` — preserve graceful helper close
+  after idle receive; and
+- `421d788329432337d049aa614fdafa8026c79c49` — materialize and qualify the
+  corrected helper.
+
+Qualification results were I1 PASS plus Q1-Q6 fresh PASS (6/6). Each run
+  sustained the approximately 12.5-second quiet receive, evaluated `2+2` as
+  `4` after idle, reported zero helper errors, exited with clean CLOSE, and
+  reached quiescence. Static gates were focused `106/106`, npm `309/309`,
+  lint/build/executor-check/runner-check PASS, and preservation postflight
+  PASS. No Protocol A, governed B1, V3, screenshot, Browser Evidence B, or
+  Review execution was performed.
+
+The final committed identities are:
+
+- C# raw SHA-256:
+  `ABF4035E4603DE3179A3FDC4A1E09F8D61586B9FF2CF3221BF7884F8B1D860B3`;
+- EXE raw SHA-256:
+  `5C25540A8F86DC2B7C97A7486DABB7FCE8D9995756C13714D4527D4DC910E45A`;
+- build authority canonical SHA:
+  `F70346FB01863560C3D688A30018F6ACEBCA23535581E76C20A098AA72E88783`;
+- client authority canonical SHA:
+  `A4F97B95591ACCA14D52618FE608604870D2F751658F45B88A0CF7DBC4F2A48A`.
+
+The v1 implementation authority is represented by its repository commit and
+bound source-identity set and has no independent canonical SHA field. This
+was clarified in the E2R-SPEC result document; the wording no longer merges
+implementation and client authority roles. The clarification commit is:
+
+`33be032fe109515b409a7e6c176f2bd632149e5c docs: clarify Browser Capture authority identities`
+
+The E2R-SPEC validation and diff checks passed.
+
+The accepted remote handoff was then published without merge, rebase, force
+push, tag, release, deployment, or source changes:
+
+- `sukoyaka-dopeness/e2r-spec` `main` ->
+  `33be032fe109515b409a7e6c176f2bd632149e5c`;
+- `sukoyaka-dopeness/e2r-ai-knowledge` `main` ->
+  `b060bbaeb0d9a49341663d45c56af23227ef8842`;
+- correction repository remote branch
+  `evidence/browser-capture-helper-receive-lifetime-correction1` ->
+  `421d788329432337d049aa614fdafa8026c79c49`.
+
+The protected dirty file
+`ai-knowledge/playbooks/e2r-edge-cdp-browser-diagnostic.md` remains
+unstaged, uncommitted, and preserved. No additional historical diagnostic
+branch was required. All three remote references were verified with
+`git ls-remote` and matched the intended local commits. Worktrees remain
+preserved, with only the known protected ai-knowledge dirty state.
+
+Fresh Browser Capture restart eligibility remains YES. The next prerequisite
+is a separately authorized Fresh Browser Capture Restart Protocol A
+checkpoint; it was not started in this session.
+
+`SESSION LOGGED - REMOTE HANDOFF PUBLISHED; PROTOCOL A NOT STARTED`

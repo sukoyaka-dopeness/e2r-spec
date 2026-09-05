@@ -45,4 +45,4 @@ Restart4 remains at `25e65b89f275eef9511c5e9792ea6e3bd927db29`, clean, B1 `16/1/
 
 Product `563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf`, Machine protocol/evidence, fixture, harness, materializer, Baseline2, and protected samples were unchanged. ai-knowledge remains unchanged with its pre-existing dirty playbook. Knowledge Candidate: `CANDIDATE ONLY / NO NEW ENTRY`. No package or lockfile change and no new dependency. `npm test` 309/309 PASS, lint PASS, build PASS, diagnostic `node --check` PASS; inherited focused tests 102/102 PASS. E2R-SPEC `npm.cmd run validate` and `git diff --check` PASS.
 
-Roadmap was updated additively. The diagnostic clone final worktree and E2R-SPEC final worktree are clean. No push, tag, release, deploy, or publication occurred.
+Roadmap was updated additively. The substantive E2R-SPEC record is `e73b06f2c1cef175ca58721a68f008722febf3a0`. The diagnostic clone final worktree and E2R-SPEC final worktree are clean. No push, tag, release, deploy, or publication occurred.

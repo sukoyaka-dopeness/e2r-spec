@@ -7301,3 +7301,29 @@ The [recurrence/readiness decision](liaisonscape-initial-placement-seed-producti
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-APPLICATION-READINESS-RECURRENCE-DIAGNOSTIC1 (2026-09-05)
 
 The [application-readiness diagnostic](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-application-readiness-recurrence-diagnostic1.md) records **CASE 11 / `APPLICATION-READINESS-DIAGNOSTIC-INFRA-BLOCKED`** with semantic impact NONE. One fresh production-like run reached the exact target and a Node websocket probe, but direct production helper IPC-v1 connection was refused before CDP/readiness observation; stop-on-first-failure left the remaining two runs unexecuted. Restart4 remains immutable, no B1/V3 rerun occurred, and fresh restart eligibility is NO. The next prerequisite is a bounded helper/CDP transport diagnostic.
+
+### Browser Capture Runtime Convergence Diagnostic/Correction1 (2026-09-05)
+
+The [runtime convergence result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-runtime-convergence-diagnostic-correction1.md)
+records **CASE 10 / `RUNTIME-CONVERGENCE-HELPER-SOURCE-CORRECTION-REQUIRED`**,
+semantic impact NONE. Historical Edge exit/listener loss/refusal remains
+preserved with its initiating cause unresolved. Source comparison also identifies
+the recurrence diagnostic's one-shot readiness assertion and the later
+diagnostic's different Vite entry, helper adapter, cleanup and retention paths;
+the earlier aggregate labels are not equivalent production-path observations.
+
+Five connected short controls passed, including three with the Node page probe.
+An initial extra diagnostic input assertion failed before browser launch and is
+retained separately. Unchanged-authority qualification then stopped on Q1:
+readiness and browser-only survival passed, but the helper emitted a receive-loop
+OperationCanceledException 10,038ms after its last message, before teardown,
+while root/listener/exact target remained healthy. Its C# hard-codes a 10-second
+pending-receive timer. Qualification is 6 planned, 1 executed, 0 success,
+1 failure, 5 pending, no retries; helper-inclusive survival is FAIL.
+
+Semantic correction: NO; C# and EXE unchanged. Fresh restart eligibility: NO.
+The next prerequisite is a separately authorized receive-lifetime correction and
+controlled prebuilt EXE materialization, authority closure and fresh non-evidence
+6-run qualification. That checkpoint has not started. Restart4 remains immutable,
+governed B1 was not rerun, V3 was not started, screenshots remain zero, and
+Browser Evidence B remains incomplete. Historical blocked entries are retained.

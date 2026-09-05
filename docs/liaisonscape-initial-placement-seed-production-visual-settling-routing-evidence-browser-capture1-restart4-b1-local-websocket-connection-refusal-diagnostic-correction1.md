@@ -130,12 +130,12 @@ process exit, including in a no-helper control.
 123. Roadmap: updated additively.
 124. Knowledge candidate: `CANDIDATE ONLY / NO NEW ENTRY`.
 125. ai-knowledge unchanged: `YES`; its pre-existing dirty playbook is preserved.
-126. E2R-SPEC validation: pending final documentation validation at this record point.
-127. Diff check: pending final documentation check at this record point.
-128. E2R-SPEC commit: pending final documentation commit at this record point.
+126. E2R-SPEC validation: `PASS` (`npm.cmd run validate`).
+127. Diff check: `PASS` (`git diff --check`).
+128. E2R-SPEC substantive documentation commit: `22cf2336b404b80215248054f722e1ee6c3efe2d` (`docs: record Restart4 B1 websocket refusal diagnostic`).
 129. Diagnostic clone final state: `CLEAN` after commit.
 130. Correction clone final state: not applicable; no correction clone exists.
-131. E2R-SPEC final worktree: pending final documentation commit at this record point.
+131. E2R-SPEC final worktree: `CLEAN` after non-amending result-reference finalization.
 132. Browser policy changed: `NO`.
 133. PowerShell execution policy changed: `NO`.
 134. Registry changed: `NO`.

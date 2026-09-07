@@ -7371,3 +7371,22 @@ Extension, or Dataset change is authorized. If the work is reopened, the first
 step is a bounded ownership/design decision separating temporary presentation,
 factual Relative Time, and persisted authorial order; accessible move controls
 must precede drag-and-drop.
+
+### Pre-Public-Release Push and Deployment Readiness Audit (2026-09-07)
+
+The [Pre-Public-Release Push and Deployment Readiness Audit](pre-public-release-push-deployment-readiness-audit.md)
+is **COMPLETE / DEFER FOR NOW / PUBLIC WRITE NOT AUTHORIZED**. The audit
+confirmed that the local Validator 0.4.0 publication, consumer integration,
+local Public Sample acceptance, S3 licensing/provenance formalization, and
+LiaisonScape 0.2.0 preparation are recorded as complete, but the exact public
+release set is not yet stable: e2r-spec retains an unrelated dirty session-log
+change, LiaisonScape retains modified sample mirrors and twelve local commits
+ahead of its tracked `origin/main`, and public propagation/deployment
+acceptance plus the final Cross-App / Release Audit remain outstanding.
+
+No push, tag, deploy, publication, cleanup, or cross-repository source change
+was performed. PR-3 Browser Evidence remains formally BLOCKED and is not
+replaced by an alternate evidence path. A future release checkpoint must first
+define and reconcile exact release commits, preserve unrelated dirty state, run
+the final Cross-App / Release Audit, and obtain explicit authorization for each
+public write.

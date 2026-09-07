@@ -7349,3 +7349,25 @@ This additive current-status entry does not revise historical records or grant
 READY status. The defined resume condition is a qualified current or successor
 Edge runtime under the same accepted security boundary, followed by Browser
 authority qualification without historical rewrite.
+
+### NarrativeLine Display-Order Reordering Audit (2026-09-07)
+
+The [NarrativeLine Display-Order Reordering Audit](narrativeline-display-order-reordering-audit.md)
+is **COMPLETE / DEFER FOR NOW**. It was selected as the next independent
+pre-public-release audit after PR-3 Browser Evidence became formally blocked;
+it does not reopen or depend on Browser execution.
+
+The current NarrativeLine implementation sorts a derived copy of the Event
+collection by recorded date, precision, `temporalOrder` where applicable, and
+Event ID. It does not reorder the Dataset or generate `temporalOrder` merely to
+preserve presentation order. Core, History, application guidance, and the
+NarrativeLine design handoff agree that temporary custom display order is
+application state, while factual relative chronology and persisted authorial
+order require separate responsibility decisions.
+
+No concrete release-critical defect or requirement for arbitrary display-order
+reordering was established. No source, test, sample, schema, Core, History,
+Extension, or Dataset change is authorized. If the work is reopened, the first
+step is a bounded ownership/design decision separating temporary presentation,
+factual Relative Time, and persisted authorial order; accessible move controls
+must precede drag-and-drop.

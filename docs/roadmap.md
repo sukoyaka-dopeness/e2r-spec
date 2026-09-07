@@ -7327,3 +7327,25 @@ controlled prebuilt EXE materialization, authority closure and fresh non-evidenc
 6-run qualification. That checkpoint has not started. Restart4 remains immutable,
 governed B1 was not rerun, V3 was not started, screenshots remain zero, and
 Browser Evidence B remains incomplete. Historical blocked entries are retained.
+
+### PR-3 Browser Evidence current-host runtime blocker synchronization (2026-09-07)
+
+The [current-host runtime blocker synchronization record](liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md)
+formalizes the latest current-host qualification boundary as **PR-3 Browser
+runtime blocker = FORMALLY CONFIRMED** and **current-host Browser execution =
+BLOCKED**. Microsoft Edge Stable `152.0.4191.66` reproduces the GPU child
+`0xC0000022 / STATUS_ACCESS_DENIED` failure, followed by Edge root-process
+termination and CDP continuity loss. The exact denied resource, ACL or sandbox
+operation, and external product/host cause remain unresolved; the observed
+`GPUPersistentCache\\DawnGraphiteCache` message is not classified as root cause.
+
+Repository-local bounded hypotheses have not produced a safe correction.
+Therefore repository-local correction is **NONE IDENTIFIED**, the `.62`
+Browser authority pin remains **KNOWN / DEFERRED UNTIL QUALIFIED SUCCESSOR
+EXISTS**, no `.66` authority candidate is materialized, B1 is not passed, and
+V3 has not started. Fresh lineage1/2/3, Restart1, and Restart8 historical
+state remains preserved and immutable; Fresh lineage4 eligibility is **NO**.
+This additive current-status entry does not revise historical records or grant
+READY status. The defined resume condition is a qualified current or successor
+Edge runtime under the same accepted security boundary, followed by Browser
+authority qualification without historical rewrite.

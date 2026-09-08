@@ -7390,3 +7390,27 @@ replaced by an alternate evidence path. A future release checkpoint must first
 define and reconcile exact release commits, preserve unrelated dirty state, run
 the final Cross-App / Release Audit, and obtain explicit authorization for each
 public write.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-REVIEW-EXECUTION-AUTHORITY1 (2026-09-08)
+
+The [visual review execution authority result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-review-execution-authority1.md)
+establishes the additive `VSR-REVIEW-RESULT-v1` contract for a future Human
+Review of an already-generated Browser Evidence B lineage. The canonical
+schema is `schemas/evidence/visual-review-result-v1.schema.json`; derived
+results belong to `docs/evidence/reviews/<review-result-id>.json` in
+e2r-spec. The result is write-once and must bind phaseRunId, finalPr3RunId,
+identity SHA, artifact-index/protocol/eligible-set/manifest/audit/state hashes,
+and each V3 result, packet, screenshot, and fixture-manifest entry.
+
+The review unit is one candidate/fixture/locale/V3 cell with V-A..V-H rows.
+Fresh12's 80 machine-eligible cells are explicitly separated into 64 research
+candidate cells and 16 separately labeled current-baseline references; the
+baseline is not a candidate and is excluded from ranking. No replicate axis is
+invented. Human Review is authorized only as a later bounded checkpoint after
+the read-only start gate passes and trustworthy visual inspection is available.
+
+Ranking remains a separate not-started checkpoint, with no weighted score,
+majority selector, cross-fixture scalar, or baseline ranking. Selection remains
+a further separate checkpoint, and formal PR-3 acceptance and publication are
+not authorized here. Fresh12 evidence is unchanged, Human Review remains
+`NOT STARTED`, and PR-3 remains `NO`.

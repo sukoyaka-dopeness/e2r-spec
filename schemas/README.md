@@ -10,6 +10,14 @@ The following draft schema is currently available:
 
 - `extensions/history.schema.json` validates the value of an `extensions.history` property using JSON Schema Draft 2020-12.
 
+The application-evidence schema at
+`schemas/evidence/visual-review-result-v1.schema.json` is maintained
+separately from E2R Core and Extension schemas. It validates the structure of
+the LiaisonScape `VSR-REVIEW-RESULT-v1` derived review record; it is not an
+E2R Dataset schema or an official E2R Extension schema. Its normative process
+boundary is the corresponding review-execution authority document in
+`docs/`.
+
 The History schema is a structural validation aid. A Core Dataset schema and composed schemas for complete Datasets are not yet available.
 
 The Markdown specifications in `spec/` and `extensions/` remain the source of truth. Files in `examples/` demonstrate intended structures but do not define validity by themselves.

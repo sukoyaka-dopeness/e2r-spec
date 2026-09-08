@@ -1,0 +1,447 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/sukoyaka-dopeness/e2r-spec/main/schemas/evidence/visual-review-result-v1.schema.json",
+  "title": "E2R LiaisonScape Visual Review Result v1",
+  "description": "Structural schema for an immutable, derived Human Review result over an already-generated Browser Evidence B lineage. This is an application-evidence contract, not an E2R Core or Extension schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract",
+    "reviewResultId",
+    "status",
+    "reviewMode",
+    "reviewerPresentation",
+    "evidenceTarget",
+    "rubric",
+    "scope",
+    "units",
+    "ranking",
+    "selection",
+    "formalAcceptance",
+    "publication",
+    "immutability"
+  ],
+  "properties": {
+    "contract": {
+      "const": "VSR-REVIEW-RESULT-v1"
+    },
+    "reviewResultId": {
+      "type": "string",
+      "pattern": "^vsr-review-[a-z0-9][a-z0-9-]*$"
+    },
+    "status": {
+      "enum": ["COMPLETE", "BLOCKED"]
+    },
+    "reviewMode": {
+      "const": "HUMAN-REVIEW"
+    },
+    "reviewerPresentation": {
+      "enum": [
+        "ANONYMIZED-CANDIDATE-ID",
+        "IDENTIFIED-CANDIDATE-ID",
+        "MIXED"
+      ]
+    },
+    "reviewerRef": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidenceTarget": {
+      "$ref": "#/$defs/evidenceTarget"
+    },
+    "rubric": {
+      "$ref": "#/$defs/rubric"
+    },
+    "scope": {
+      "$ref": "#/$defs/scope"
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reviewUnit"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/blocker"
+      }
+    },
+    "ranking": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "const": "NOT-STARTED"
+        }
+      }
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "const": "NONE"
+        }
+      }
+    },
+    "formalAcceptance": {
+      "const": "NOT-PERFORMED"
+    },
+    "publication": {
+      "const": "NOT-PERFORMED"
+    },
+    "immutability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceEvidenceChanged", "recordWriteOnce"],
+      "properties": {
+        "sourceEvidenceChanged": {
+          "const": false
+        },
+        "recordWriteOnce": {
+          "const": true
+        }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[A-Fa-f0-9]{64}$"
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "relativeRef": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*\\\\)(?!.*\\.\\.)\\S+$"
+    },
+    "hashedRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {
+          "$ref": "#/$defs/relativeRef"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "evidenceTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceRepository",
+        "sourceRepositoryCommit",
+        "artifactRoot",
+        "phaseRunId",
+        "finalPr3RunId",
+        "identityInputSha256",
+        "artifactIndex",
+        "protocolA",
+        "eligibleV2Set",
+        "runManifest",
+        "auditResults",
+        "v3ExecutionState"
+      ],
+      "properties": {
+        "sourceRepository": {
+          "const": "e2r-liaison-scape-browser-capture"
+        },
+        "sourceRepositoryCommit": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "artifactRoot": {
+          "$ref": "#/$defs/relativeRef"
+        },
+        "phaseRunId": {
+          "type": "string",
+          "pattern": "^browser-capture-fresh-lineage[0-9]+-.+$"
+        },
+        "finalPr3RunId": {
+          "type": "string",
+          "pattern": "^pr3r1-[a-f0-9]{64}$"
+        },
+        "identityInputSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "artifactIndex": {
+          "$ref": "#/$defs/hashedRef"
+        },
+        "protocolA": {
+          "$ref": "#/$defs/hashedRef"
+        },
+        "eligibleV2Set": {
+          "$ref": "#/$defs/hashedRef"
+        },
+        "runManifest": {
+          "$ref": "#/$defs/hashedRef"
+        },
+        "auditResults": {
+          "$ref": "#/$defs/hashedRef"
+        },
+        "v3ExecutionState": {
+          "$ref": "#/$defs/hashedRef"
+        }
+      }
+    },
+    "rubric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["visualContract", "reviewContract", "criteria", "stage"],
+      "properties": {
+        "visualContract": {
+          "const": "VSR-VISUAL-v1"
+        },
+        "reviewContract": {
+          "const": "VSR-REVIEW-v1"
+        },
+        "criteria": {
+          "type": "array",
+          "prefixItems": [
+            { "const": "V-A" },
+            { "const": "V-B" },
+            { "const": "V-C" },
+            { "const": "V-D" },
+            { "const": "V-E" },
+            { "const": "V-F" },
+            { "const": "V-G" },
+            { "const": "V-H" }
+          ],
+          "items": false,
+          "minItems": 8,
+          "maxItems": 8
+        },
+        "stage": {
+          "const": "V3"
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coverageBasis",
+        "researchCandidateIds",
+        "baselineReferenceIncluded",
+        "expectedCandidateCellCount",
+        "expectedBaselineReferenceCellCount"
+      ],
+      "properties": {
+        "coverageBasis": {
+          "const": "AUTHORITATIVE-V3-ELIGIBLE-SET"
+        },
+        "researchCandidateIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          },
+          "uniqueItems": true
+        },
+        "baselineReferenceIncluded": {
+          "type": "boolean"
+        },
+        "expectedCandidateCellCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "expectedBaselineReferenceCellCount": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "reviewUnit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unitId",
+        "kind",
+        "candidateId",
+        "fixtureId",
+        "structuralFixtureId",
+        "presentationVariant",
+        "stage",
+        "v3EvidenceId",
+        "fixtureAuthority",
+        "sourceArtifacts",
+        "criteria"
+      ],
+      "properties": {
+        "unitId": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "kind": {
+          "enum": ["RESEARCH-CANDIDATE", "CURRENT-PRODUCTION-BASELINE"]
+        },
+        "candidateId": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "fixtureId": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "structuralFixtureId": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "presentationVariant": {
+          "enum": ["en", "ja"]
+        },
+        "stage": {
+          "const": "V3"
+        },
+        "v3EvidenceId": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "fixtureAuthority": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["manifestFixtureId", "manifestRawSha256", "manifestRef"],
+          "properties": {
+            "manifestFixtureId": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "manifestRawSha256": {
+              "$ref": "#/$defs/sha256"
+            },
+            "manifestRef": {
+              "$ref": "#/$defs/relativeRef"
+            }
+          }
+        },
+        "sourceArtifacts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["v3Result", "packet", "screenshot"],
+          "properties": {
+            "v3Result": {
+              "$ref": "#/$defs/hashedRef"
+            },
+            "packet": {
+              "$ref": "#/$defs/hashedRef"
+            },
+            "screenshot": {
+              "$ref": "#/$defs/hashedRef"
+            }
+          }
+        },
+        "criteria": {
+          "type": "array",
+          "prefixItems": [
+            { "$ref": "#/$defs/criterionRowA" },
+            { "$ref": "#/$defs/criterionRowB" },
+            { "$ref": "#/$defs/criterionRowC" },
+            { "$ref": "#/$defs/criterionRowD" },
+            { "$ref": "#/$defs/criterionRowE" },
+            { "$ref": "#/$defs/criterionRowF" },
+            { "$ref": "#/$defs/criterionRowG" },
+            { "$ref": "#/$defs/criterionRowH" }
+          ],
+          "items": false,
+          "minItems": 8,
+          "maxItems": 8
+        }
+      }
+    },
+    "criterionRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["criterion", "status", "severeFailure", "evidenceNote", "artifactRefs"],
+      "properties": {
+        "criterion": {
+          "type": "string",
+          "pattern": "^V-[A-H]$"
+        },
+        "status": {
+          "enum": ["PASS", "FAIL", "INDETERMINATE"]
+        },
+        "severeFailure": {
+          "type": "boolean"
+        },
+        "evidenceNote": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "artifactRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/relativeRef"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "preference": {
+          "enum": ["PREF-A", "PREF-B", "PREF-EQUIVALENT", "PREF-INCOMPARABLE"]
+        }
+      }
+    },
+    "criterionRowA": {
+      "allOf": [
+        { "$ref": "#/$defs/criterionRow" },
+        { "type": "object", "properties": { "criterion": { "const": "V-A" } } }
+      ]
+    },
+    "criterionRowB": {
+      "allOf": [
+        { "$ref": "#/$defs/criterionRow" },
+        { "type": "object", "properties": { "criterion": { "const": "V-B" } } }
+      ]
+    },
+    "criterionRowC": {
+      "allOf": [
+        { "$ref": "#/$defs/criterionRow" },
+        { "type": "object", "properties": { "criterion": { "const": "V-C" } } }
+      ]
+    },
+    "criterionRowD": {
+      "allOf": [
+        { "$ref": "#/$defs/criterionRow" },
+        { "type": "object", "properties": { "criterion": { "const": "V-D" } } }
+      ]
+    },
+    "criterionRowE": {
+      "allOf": [
+        { "$ref": "#/$defs/criterionRow" },
+        { "type": "object", "properties": { "criterion": { "const": "V-E" } } }
+      ]
+    },
+    "criterionRowF": {
+      "allOf": [
+        { "$ref": "#/$defs/criterionRow" },
+        { "type": "object", "properties": { "criterion": { "const": "V-F" } } }
+      ]
+    },
+    "criterionRowG": {
+      "allOf": [
+        { "$ref": "#/$defs/criterionRow" },
+        { "type": "object", "properties": { "criterion": { "const": "V-G" } } }
+      ]
+    },
+    "criterionRowH": {
+      "allOf": [
+        { "$ref": "#/$defs/criterionRow" },
+        { "type": "object", "properties": { "criterion": { "const": "V-H" } } }
+      ]
+    },
+    "blocker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "message", "severity"],
+      "properties": {
+        "code": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "message": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "severity": {
+          "const": "BLOCKING"
+        }
+      }
+    }
+  }
+}

@@ -7414,3 +7414,20 @@ majority selector, cross-fixture scalar, or baseline ranking. Selection remains
 a further separate checkpoint, and formal PR-3 acceptance and publication are
 not authorized here. Fresh12 evidence is unchanged, Human Review remains
 `NOT STARTED`, and PR-3 remains `NO`.
+
+### Early diagnostic visual smoke check before expensive evidence (2026-09-08)
+
+The [Early Smoke Check policy](visual-evidence-early-smoke-check-policy.md)
+is accepted as a lightweight, non-authoritative process safeguard for visual
+output workflows. Before a large candidate matrix, long browser capture, or
+formal visual review, the workflow should inspect the first trustworthy output
+for gross scale, viewport, clipping, displacement, label-readability, and
+recognizability defects. A representative output is normally sufficient; a
+skip requires a recorded reason.
+
+This diagnostic check is explicitly separate from Human Review, ranking,
+selection, and formal acceptance. Machine PASS does not substitute for visual
+sanity, and a smoke defect does not itself identify a layout, fit, camera, or
+coordinate root cause. The policy is motivated by Fresh12's first review cell,
+where B1/V3 and integrity passed but visual review found a blocking defect.
+Fresh12 artifacts and its canonical review result remain immutable.

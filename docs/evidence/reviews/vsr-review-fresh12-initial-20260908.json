@@ -1,0 +1,166 @@
+{
+  "contract": "VSR-REVIEW-RESULT-v1",
+  "reviewResultId": "vsr-review-fresh12-initial-20260908",
+  "status": "BLOCKED",
+  "reviewMode": "HUMAN-REVIEW",
+  "reviewerPresentation": "IDENTIFIED-CANDIDATE-ID",
+  "reviewerRef": "codex-visual-review-2026-09-08",
+  "evidenceTarget": {
+    "sourceRepository": "e2r-liaison-scape-browser-capture",
+    "sourceRepositoryCommit": "e59bec02e0cd921e6caef49d08013b67b90f65c4",
+    "artifactRoot": "artifacts/browser-capture-fresh-lineage12-2026-09-08",
+    "phaseRunId": "browser-capture-fresh-lineage12-2026-09-08",
+    "finalPr3RunId": "pr3r1-2afec2dbca9e1136e88af8a1c2192886e29d2cc76c8b13a5779fff44b8f5a147",
+    "identityInputSha256": "2AFEC2DBCA9E1136E88AF8A1C2192886E29D2CC76C8B13A5779FFF44B8F5A147",
+    "artifactIndex": {
+      "path": "artifacts/browser-capture-fresh-lineage12-2026-09-08/artifact-index.json",
+      "sha256": "A42AA51FC73CDD9E4E86D71BF934D644B04D43DB2AD7BE1A617CCA876068D549"
+    },
+    "protocolA": {
+      "path": "artifacts/browser-capture-fresh-lineage12-2026-09-08/protocol-a.json",
+      "sha256": "00AFDDBE8CDFC9B209B4EC5E5402EC2A79FBD8F5481BA124276B2C7B159E6130"
+    },
+    "eligibleV2Set": {
+      "path": "artifacts/browser-capture-fresh-lineage12-2026-09-08/eligible-v2-set.json",
+      "sha256": "8364E3E43C5B6FE0B9AD27311F6BB601AB21F1BD907BF0D11EC51922949058AD"
+    },
+    "runManifest": {
+      "path": "artifacts/browser-capture-fresh-lineage12-2026-09-08/run-manifest.json",
+      "sha256": "E85B74BA87D83FED95DCF010765E094F81715889709A4C9CE2FDA5256E46D0E0"
+    },
+    "auditResults": {
+      "path": "artifacts/browser-capture-fresh-lineage12-2026-09-08/audit-results.json",
+      "sha256": "1936A66CFCE4E0CDA9EA5032149FE0C571563B119AEBE5ABC83BC39ED26BB356"
+    },
+    "v3ExecutionState": {
+      "path": "artifacts/browser-capture-fresh-lineage12-2026-09-08/v3-execution-state.json",
+      "sha256": "744F2089D1138819E385029D44828FD9C3E6202BD43EDD8AB5B417F6FAAECAAC"
+    }
+  },
+  "rubric": {
+    "visualContract": "VSR-VISUAL-v1",
+    "reviewContract": "VSR-REVIEW-v1",
+    "criteria": ["V-A", "V-B", "V-C", "V-D", "V-E", "V-F", "V-G", "V-H"],
+    "stage": "V3"
+  },
+  "scope": {
+    "coverageBasis": "AUTHORITATIVE-V3-ELIGIBLE-SET",
+    "researchCandidateIds": [
+      "TA2-DEG-W1-OP-v1",
+      "TA2-MOTIF-W1-OP-v1",
+      "TA3-FWD-W1-OP-v1",
+      "TA3-REV-W1-OP-v1"
+    ],
+    "baselineReferenceIncluded": true,
+    "expectedCandidateCellCount": 64,
+    "expectedBaselineReferenceCellCount": 16
+  },
+  "units": [
+    {
+      "unitId": "TA0-REP-0-apollo-11-en-V3",
+      "kind": "CURRENT-PRODUCTION-BASELINE",
+      "candidateId": "TA0/REP-0",
+      "fixtureId": "apollo-11-en",
+      "structuralFixtureId": "apollo-11",
+      "presentationVariant": "en",
+      "stage": "V3",
+      "v3EvidenceId": "TA0__REP_0__apollo_11__en",
+      "fixtureAuthority": {
+        "manifestFixtureId": "apollo-11-en",
+        "manifestRawSha256": "B055CB0D0A0D5B577C0E3689EF5CA1FC278DD3F4CE68DA25C6D1E76A94912BDF",
+        "manifestRef": "docs/evidence/visual-fixture-role-manifest-v1.json"
+      },
+      "sourceArtifacts": {
+        "v3Result": {
+          "path": "artifacts/browser-capture-fresh-lineage12-2026-09-08/v3/TA0__REP_0__apollo_11__en.json",
+          "sha256": "DB824E5B6A79F4C3FD05D08C263D4EAD6084785D00A150E1DC240D8D9BA04920"
+        },
+        "packet": {
+          "path": "artifacts/browser-capture-fresh-lineage12-2026-09-08/packets/v3/TA0__REP_0__apollo_11__en.json",
+          "sha256": "3A959A4922CF00155F52F3084C5160C800BD9F725FF7FE4BF58CC4E2993704F7"
+        },
+        "screenshot": {
+          "path": "artifacts/browser-capture-fresh-lineage12-2026-09-08/screenshots/v3/TA0__REP_0__apollo_11__en.png",
+          "sha256": "BC3D27EB728B47EA77F71EDD1F40C46C500852F4F82402889BAE18F5C94F8860"
+        }
+      },
+      "criteria": [
+        {
+          "criterion": "V-A",
+          "status": "INDETERMINATE",
+          "severeFailure": false,
+          "evidenceNote": "Review stopped after a blocking extent defect; individual-node visibility was not assessed to completion.",
+          "artifactRefs": ["artifacts/browser-capture-fresh-lineage12-2026-09-08/screenshots/v3/TA0__REP_0__apollo_11__en.png"]
+        },
+        {
+          "criterion": "V-B",
+          "status": "INDETERMINATE",
+          "severeFailure": false,
+          "evidenceNote": "Review stopped before completing major-structure overlap assessment.",
+          "artifactRefs": ["artifacts/browser-capture-fresh-lineage12-2026-09-08/screenshots/v3/TA0__REP_0__apollo_11__en.png"]
+        },
+        {
+          "criterion": "V-C",
+          "status": "INDETERMINATE",
+          "severeFailure": false,
+          "evidenceNote": "Review stopped before completing relation-following assessment.",
+          "artifactRefs": ["artifacts/browser-capture-fresh-lineage12-2026-09-08/screenshots/v3/TA0__REP_0__apollo_11__en.png"]
+        },
+        {
+          "criterion": "V-D",
+          "status": "FAIL",
+          "severeFailure": true,
+          "evidenceNote": "Required node and relation labels are rendered at an effectively unreadable scale in the 1280x900 view.",
+          "artifactRefs": ["artifacts/browser-capture-fresh-lineage12-2026-09-08/screenshots/v3/TA0__REP_0__apollo_11__en.png"]
+        },
+        {
+          "criterion": "V-E",
+          "status": "FAIL",
+          "severeFailure": true,
+          "evidenceNote": "The graph occupies a narrow diagonal region with extensive unused viewport and an unusable fitted extent rather than a usable initial view.",
+          "artifactRefs": ["artifacts/browser-capture-fresh-lineage12-2026-09-08/screenshots/v3/TA0__REP_0__apollo_11__en.png"]
+        },
+        {
+          "criterion": "V-F",
+          "status": "INDETERMINATE",
+          "severeFailure": false,
+          "evidenceNote": "Review stopped before completing hidden-structure assessment.",
+          "artifactRefs": ["artifacts/browser-capture-fresh-lineage12-2026-09-08/screenshots/v3/TA0__REP_0__apollo_11__en.png"]
+        },
+        {
+          "criterion": "V-G",
+          "status": "FAIL",
+          "severeFailure": true,
+          "evidenceNote": "The initial fitted view is not recognizably legible as a graph at the supplied viewport scale because the content is extremely small and displaced into a diagonal strip.",
+          "artifactRefs": ["artifacts/browser-capture-fresh-lineage12-2026-09-08/screenshots/v3/TA0__REP_0__apollo_11__en.png"]
+        },
+        {
+          "criterion": "V-H",
+          "status": "INDETERMINATE",
+          "severeFailure": false,
+          "evidenceNote": "Review stopped before completing gross-pathology assessment beyond the observed viewport defect.",
+          "artifactRefs": ["artifacts/browser-capture-fresh-lineage12-2026-09-08/screenshots/v3/TA0__REP_0__apollo_11__en.png"]
+        }
+      ]
+    }
+  ],
+  "blockers": [
+    {
+      "code": "VSR-FRESH12-VIEWPORT-EXTENT-BLOCKING",
+      "message": "The first inspected Fresh12 V3 cell has a severe unusable graph extent and unreadable initial fitted view; Human Review cannot be completed or used for ranking.",
+      "severity": "BLOCKING"
+    }
+  ],
+  "ranking": {
+    "status": "NOT-STARTED"
+  },
+  "selection": {
+    "status": "NONE"
+  },
+  "formalAcceptance": "NOT-PERFORMED",
+  "publication": "NOT-PERFORMED",
+  "immutability": {
+    "sourceEvidenceChanged": false,
+    "recordWriteOnce": true
+  }
+}

@@ -173,6 +173,37 @@ by actual Product inspection of the few candidates. They do not justify a
 large parameter sweep or a routing implementation change. A candidate that
 looks better numerically still requires an Early Visual Smoke Check.
 
+## Presentation-aware bounded relaxation
+
+The next diagnostic experiment started from `local-search-v1-plus` and used
+the current Product presentation pipeline as the evaluator. It changed one
+Node at a time in canonical graph order, tried eight compass directions at
+steps 24, 12, and 6, and made two deterministic sweeps. A candidate was
+rejected before presentation derivation when any pair violated the existing
+`INITIAL_ENTITY_CLEARANCE` rule of 76 graph units in both axes. This is the
+same hard feasibility rule used by initial Entity placement; it was not
+changed or promoted into a new Product rule.
+
+The evaluator included Node-label derivation, Relation-label placement,
+routing, bounded feedback, crossings, label-route hits, label proximity,
+label overlap, route length, and extent. The experiment performed 433
+presentation evaluations, accepted 29 improving moves, and observed no
+infeasible accepted candidate. The resulting diagnostic candidate is named
+`presentation-aware-relaxation-v1` on the actual-App inspection surface.
+
+| Candidate | Node overlap pairs | Minimum Node separation | Crossings | Label-route hits | Route median | Route max | Extent |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| local-search-v1-plus | 0 | 176.7 | 3 | 0 | 163.8 | 363.3 | 440 x 677 |
+| presentation-aware-relaxation-v1 | 0 | 140.6 | 2 | 0 | 123.3 | 382.5 | 338 x 647 |
+
+This result is encouraging but not a selection: the candidate reduces
+crossing pressure, route median, and extent while increasing route maximum and
+reducing the minimum Node separation. The hard feasibility boundary held, but
+visual Node-label and Relation-label naturalness still require actual Product
+inspection. The result supports presentation-aware relaxation as a useful
+bounded experiment family; it does not establish that this score or sweep
+schedule is a Product algorithm.
+
 ## Boundaries and state
 
 - Fresh10, Fresh11, Fresh12 artifacts and the canonical Fresh12 Human Review
@@ -183,4 +214,6 @@ looks better numerically still requires an Early Visual Smoke Check.
   regression baseline.
 - Initial geometry / label accommodation is the active comparison track;
   interactive pointer-up routing remains independently unresolved.
+- `presentation-aware-relaxation-v1` is diagnostic-only and awaits user visual
+  inspection; Product adoption remains undecided.
 - No push, tag, release, deploy, or publication was performed.

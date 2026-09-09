@@ -251,6 +251,53 @@ proof that the new band or weight is optimal. Actual Product inspection is
 still required, especially for the Armstrong/NASA/Eagle and Collins/NASA
 corridors.
 
+## Factor-isolated comparison from the best-so-far baseline
+
+The subsequent comparison kept `local-search-v1-plus` as the common starting
+geometry and isolated three pressures rather than combining them in one score:
+
+- **Label-length-aware refinement** increased the preference for a usable span
+  around Relation labels.
+- **Horizontal-canvas refinement** added a weak prior toward a less vertical
+  graph shape, using the 800 x 500 inspection viewport as context.
+- **Bounded crossing refinement** reused the existing crossing-aware control as
+  a crossing-focused comparison, while retaining the existing label and route
+  checks.
+
+The first two new candidates used one deterministic sweep, eight directions,
+steps 18/9/6, and a maximum 96-unit displacement per Node. Node overlap was
+still rejected at the existing 76-unit boundary. The Product presentation
+pipeline remained the evaluator.
+
+| Candidate | Aspect ratio | Fit scale | Route median | Route max | Crossings | Label-route hits | Extent | Interpretation |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| Targeted local corridor refinement | 0.650 | 0.416 | 163.8 | 363.3 | 3 | 0 | 440 x 677 | user-inspected best so far |
+| Presentation-aware bounded relaxation | 0.523 | 0.433 | 123.3 | 382.5 | 2 | 0 | 338 x 647 | user-rejected for topology locality |
+| Topology-aware bounded relaxation | 0.665 | 0.477 | 127.4 | 292.8 | 3 | 0 | 386 x 581 | user-rejected for label accommodation |
+| Label-length-aware refinement | 0.651 | 0.337 | 329.6 | 452.3 | 3 | 0 | 554 x 851 | label metric improves, geometry worsens |
+| Horizontal-canvas refinement | 0.970 | 0.473 | 140.1 | 394.8 | 3 | 0 | 569 x 587 | aspect improves, width and separation cost |
+| Bounded crossing refinement | 0.718 | 0.506 | 116.1 | 305.4 | 1 | 2 | 391 x 545 | crossing-only mixed control |
+
+The label-length-aware result lowers its diagnostic label-support shortfall,
+but it does so by moving Nodes into a much larger 554 x 851 footprint and by
+increasing route median to 329.6. This rejects a label-length-only objective as
+the next Product direction. The horizontal candidate makes the geometry less
+vertical and raises the fit scale, but its width grows to 569, minimum Node
+separation falls to 129.6, and route max increases to 394.8. Aspect alone is
+therefore also insufficient.
+
+The bounded crossing control reduces the sampled count to one, yet has two
+label-route hits and was previously judged visually worse by the user. This is
+a direct reminder that raw sampled crossing count is not equivalent to actual
+visual crossing quality.
+
+The comparison supports a bounded joint direction: keep the locality and
+label-affiliation qualities of `local-search-v1-plus`, add only a modest
+label-support prior, and use aspect and crossing as weak diagnostics rather
+than dominant objectives. This is a research direction, not a Product
+adoption decision. A further combined candidate should be created only after
+the current factor candidates have been inspected and its score is justified.
+
 ## Boundaries and state
 
 - Fresh10, Fresh11, Fresh12 artifacts and the canonical Fresh12 Human Review

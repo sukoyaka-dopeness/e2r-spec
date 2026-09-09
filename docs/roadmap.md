@@ -4599,6 +4599,24 @@ priority and selected checkpoint remain unchanged. The GitHub Sponsors and
 Personal Storage roadmap sections remain separate and unchanged; no
 `ai-knowledge` promotion was made.
 
+### E2R-WEB-VSCODE-HOST-AUTHORITY-RESEARCH1 (2026-09-10)
+
+The exploratory [E2R Web / VS Code Host Authority research](../research/exploratory/e2r-web-vscode-host-authority.md)
+records a distinct cross-application hosting boundary for NarrativeLine and
+LiaisonScape. E2R-SPEC remains the Dataset/interoperability authority; shared
+Product source remains the implementation authority; the Web build remains a
+first-class public, portable surface; and a possible VS Code host remains a
+future workspace-integrated surface. Browser lifecycle and VS Code
+document/workspace lifecycle are treated as host responsibilities, while
+host-independent Product semantics should be shared where practical.
+
+No VS Code extension, Webview, Custom Editor, package boundary, desktop
+framework, schema, storage engine, or deployment architecture was selected or
+implemented. The existing OSINT workbench and Gamebook extension research
+remain separate. This is exploratory research only; no Product, Dataset,
+Handoff, Fresh lineage, release, deployment, publication, or `ai-knowledge`
+change was made.
+
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM1 (2026-09-02)
 
 The disposable [LiaisonScape Initial-placement Seed Family / Assignment

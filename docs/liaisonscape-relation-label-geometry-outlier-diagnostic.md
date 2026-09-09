@@ -385,6 +385,51 @@ secondary to hard feasibility, topology locality, and label accommodation;
 crossing location, angle, shared corridor, and proximity to Relation labels
 must be judged on the actual Product surface.
 
+## Global horizontal recomposition
+
+The preceding user inspection found that the local and compaction refinements
+improved corridor safety but did not materially change the graph's overall
+shape. The next bounded experiment therefore tested a global recomposition,
+without changing routing, Relation-label placement, Node-owned labels, final
+feedback, or drag behavior.
+
+Candidate A, `global-horizontal-topology-v1`, applies a centroid-preserving
+principal-axis rotation to `crossing-after-compaction-v1`. This is a genuine
+global transform rather than an x-axis stretch: every Node is transformed in
+one operation, pairwise distances and 1-hop distances are preserved, and the
+existing `INITIAL_ENTITY_CLEARANCE = 76` feasibility boundary remains active.
+Candidate B, `topology-aware-horizontal-recomposition-v1`, starts from A and
+allows one bounded 12/6-unit, eight-direction pass with a 48-unit per-Node
+limit. Its objective adds label-support and relative-adjacency penalties while
+rejecting Node overlap, label-route hits, and label overlap. Both candidates
+are diagnostic materializations only.
+
+The machine comparison is:
+
+| Candidate | Extent | Aspect | Fit scale | Route median/max | Usable-span penalty | Crossings | Minimum Node separation |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Targeted local corridor refinement | 440 x 677 | 0.650 | 0.416 | 163.8 / 363.3 | 3043 | 3 | 176.7 |
+| Crossing refinement after compaction | 516 x 529 | 0.976 | 0.520 | 180.9 / 393.8 | 6 | 3 | 107.9 |
+| Global horizontal recomposition A | 585 x 496 | 1.180 | 0.550 | 171.5 / 381.6 | 10322 | 3 | 107.9 |
+| Topology-aware horizontal recomposition B | 507 x 441 | 1.151 | 0.610 | 141.5 / 327.4 | 5502 | 3 | 134.0 |
+
+A demonstrates the intended global shape change and preserves 1-hop geometry,
+but its horizontal orientation creates too many shallow-angle label-support
+shortfalls in the current metric. B recovers some fit scale, route length, and
+minimum separation while retaining a clearly horizontal aspect, but its
+usable-span penalty remains materially above the balanced/compacted controls.
+Neither candidate reduced the raw crossing count. The result is therefore
+strong evidence that global reorientation can change canvas utilization without
+changing topology, but not evidence that principal-axis rotation alone is a
+usable Product layout. Whether B is visually preferable, whether the remaining
+shortfalls are concentrated in the named Apollo corridors, and whether a
+topology-first horizontal band assignment can improve them remain unresolved
+until actual Product inspection.
+
+This experiment also keeps the two concerns separate: the interactive
+pointer-up obstacle-side flip remains `OPEN / INDEPENDENT`, and these static
+coordinate candidates do not claim to diagnose or fix it.
+
 ## Boundaries and state
 
 - Fresh10, Fresh11, Fresh12 artifacts and the canonical Fresh12 Human Review
@@ -399,4 +444,8 @@ must be judged on the actual Product surface.
   inspection; Product adoption remains undecided.
 - `topology-aware-relaxation-v1` is a separate diagnostic candidate and awaits
   actual Product inspection; it is not a Product algorithm or adoption.
+- `global-horizontal-topology-v1` and
+  `topology-aware-horizontal-recomposition-v1` are diagnostic candidates
+  awaiting actual Product inspection; neither is Product behavior or an
+  adoption decision.
 - No push, tag, release, deploy, or publication was performed.

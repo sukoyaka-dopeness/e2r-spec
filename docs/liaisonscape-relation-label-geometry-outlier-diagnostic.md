@@ -132,6 +132,47 @@ promising diagnostic candidate, not a Product decision. Actual Product visual
 inspection remains authoritative for deciding whether the longer route is
 acceptable and whether the previously good labels remain natural.
 
+## Track separation for the next comparison
+
+The current work is split into two independent tracks:
+
+1. **Initial presentation / geometry**: crossings, corridor density,
+   Node-owned label accommodation, Relation-label accommodation, route burden,
+   and extent.
+2. **Interactive routing / drag lifecycle**: obstacle entry during drag,
+   active route curvature, and pointer-up side changes.
+
+The second track remains open. A genuine final label-safety reroute in an
+Armstrong -> Eagle trace is evidence that the final safety rule can act; it is
+not evidence that every pointer-up side flip is resolved. Geometry changes must
+not be used to close that interactive-routing question.
+
+## Low-cost geometry controls
+
+Two small, interpretable controls were generated from the promising local
+candidate family. The Product routing, label placement, drag implementation,
+and Apollo relation topology were held fixed; only the in-memory diagnostic
+coordinates differ.
+
+| Candidate | Crossings | Label-route hits | Route median | Route max | Extent | Interpretation |
+| --- | ---: | ---: | ---: | ---: | --- | --- |
+| local-search-v1-plus | 3 | 0 | 163.8 | 363.3 | 440 x 677 | promising, user inspection pending |
+| crossing-aware-v1 | 1 | 2 | 116.1 | 305.4 | 391 x 545 | mixed/negative control |
+| label-accommodation-v1 | 3 | 1 | 177.9 | 464.4 | 423 x 677 | mixed control |
+
+The crossing-aware control demonstrates why crossing count cannot be the sole
+objective: it reduces sampled crossings and route burden while introducing
+route/label hits and weakening the representative Relation-label affiliation
+around the Armstrong corridor. The label-accommodation-aware control improves
+the residual `entity-1` competing-route separation and reduces crowded
+representative routes, but its maximum route grows substantially and one
+label-route hit remains. Neither control is adoption-ready from metrics alone.
+
+These results support a small geometry-plus-accommodation comparison, followed
+by actual Product inspection of the few candidates. They do not justify a
+large parameter sweep or a routing implementation change. A candidate that
+looks better numerically still requires an Early Visual Smoke Check.
+
 ## Boundaries and state
 
 - Fresh10, Fresh11, Fresh12 artifacts and the canonical Fresh12 Human Review
@@ -140,4 +181,6 @@ acceptable and whether the previously good labels remain natural.
 - No Product initial-placement adoption was made.
 - Current routing, label-safety, active recovery, and drag behavior remain the
   regression baseline.
+- Initial geometry / label accommodation is the active comparison track;
+  interactive pointer-up routing remains independently unresolved.
 - No push, tag, release, deploy, or publication was performed.

@@ -298,6 +298,51 @@ than dominant objectives. This is a research direction, not a Product
 adoption decision. A further combined candidate should be created only after
 the current factor candidates have been inspected and its score is justified.
 
+## Balanced Edge-length refinement
+
+The user inspection of `horizontal-canvas-v1` found a useful distinction:
+horizontal canvas utilization improved, but some horizontal Edges became too
+short to give their Relation labels a comfortable corridor. The earlier
+label-length-only control was not a safe remedy because it produced unnatural
+curves and extra crossing exposure. This supports a narrower experiment rather
+than a global Edge-length target.
+
+The new diagnostic `balanced-edge-length-v1` keeps the current Product
+routing, label placement, and drag behavior unchanged. It starts from the same
+`local-search-v1-plus` coordinates and uses the existing one-sweep, eight-
+direction, 18/9/6-step search with a 96-unit per-Node displacement bound.
+`INITIAL_ENTITY_CLEARANCE = 76` remains a hard reject.
+
+For diagnosis, a Relation's raw route length is kept separate from its usable
+label span. Usable span is the route's horizontal endpoint projection scaled
+by route straightness, and it is evaluated only for shallow-angle routes
+(horizontal projection ratio >= 0.55). The soft lower bound is label width +
+48 units; steep routes are not pulled sideways merely to satisfy a horizontal
+label heuristic. A weak baseline-relative upper band limits unnecessary
+expansion. These are experiment parameters, not Product thresholds.
+
+| Candidate | Usable-span penalty | Extent | Aspect | Fit scale | Route median/max | Crossings | Minimum Node separation |
+| --- | ---: | --- | ---: | ---: | ---: | ---: | ---: |
+| Targeted local corridor refinement | 3043 | 440 x 677 | 0.650 | 0.416 | 163.8 / 363.3 | 3 | 176.7 |
+| Horizontal-canvas refinement | 4624 | 569 x 587 | 0.970 | 0.473 | 140.1 / 394.8 | 3 | 129.6 |
+| Balanced Edge-length refinement | 15 | 524 x 578 | 0.907 | 0.480 | 192.4 / 410.9 | 3 | 142.9 |
+
+The balanced candidate reduces the shallow-angle usable-span shortfall from
+3043 to 15 while retaining a more horizontal shape than the best-so-far
+baseline. It does not reduce the sampled crossing count, and its route maximum
+and median are higher than the horizontal-only control. Therefore it is a
+promising candidate for actual Product inspection, not a selection or adoption
+decision. The result also shows that “shorter Edge = better” is not a safe
+general objective: the route-median improvement of the horizontal-only control
+coexists with worse label-support pressure.
+
+The shallow-angle cutoff and label-width-plus-margin lower bound remain
+unresolved heuristics. They need actual Product inspection and, if useful,
+confirmation on another representative fixture before becoming reusable
+policy. Crossing quality also remains independent: the same raw count can have
+different visual significance depending on crossing location, angle, corridor
+congestion, and Relation-label proximity.
+
 ## Boundaries and state
 
 - Fresh10, Fresh11, Fresh12 artifacts and the canonical Fresh12 Human Review

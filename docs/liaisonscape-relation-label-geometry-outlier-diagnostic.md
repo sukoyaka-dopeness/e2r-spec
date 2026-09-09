@@ -204,6 +204,53 @@ inspection. The result supports presentation-aware relaxation as a useful
 bounded experiment family; it does not establish that this score or sweep
 schedule is a Product algorithm.
 
+## Topology-aware bounded relaxation
+
+The actual Product inspection of the presentation-only relaxation showed that
+label placement was improved but direct neighbors could become visually too
+far apart. The cause is visible in the objective: presentation pressure was
+scored, while 1-hop Node distance was not. The greedy one-Node-at-a-time order
+could therefore accept a move that improved a local label or route score while
+stretching several incident Relations.
+
+A second deterministic diagnostic run used the same starting geometry,
+candidate directions, step sizes, sweeps, hard Node feasibility, and full
+presentation evaluator. It added a bounded soft regularizer for every 1-hop
+Relation. The preferred band was relative to the `local-search-v1-plus`
+starting distance: 0.8x to 1.1x, with the existing 76-unit clearance as the
+absolute lower floor. The band and penalty weight are experiment parameters,
+not Product thresholds; the purpose is to test topology locality, not to
+freeze the existing geometry.
+
+Representative connected-pair distances changed as follows:
+
+| Connected pair / Relation | Starting distance | Topology-aware distance | Preferred band |
+| --- | ---: | ---: | --- |
+| Neil Armstrong -> NASA (`is a NASA astronaut`) | 205.9 | 170.9 | 164.7–226.4 |
+| Buzz Aldrin -> NASA | 187.8 | 155.6 | 150.3–206.6 |
+| Michael Collins -> NASA | 258.8 | 207.9 | 207.0–284.7 |
+| Michael Collins -> Command Module Columbia | 231.4 | 185.3 | 185.2–254.6 |
+| Lunar Module Eagle -> Moon | 229.6 | 250.0 | 183.6–252.5 |
+| Hornet -> Command Module Columbia | 242.1 | 205.6 | 193.6–266.3 |
+
+All 11 connected pairs remained within the diagnostic preferred band. The
+topology-aware candidate has zero Node-overlap pairs and a minimum Node
+separation of 155.6. Its presentation comparison is:
+
+| Candidate | Node overlap pairs | Crossings | Label-route hits | 1-hop outside band | 1-hop median | Route median | Route max | Extent |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| Targeted local corridor refinement | 0 | 3 | 0 | not measured | 231.4 | 163.8 | 363.3 | 440 x 677 |
+| Presentation-aware bounded relaxation | 0 | 2 | 0 | 5 | 189.3 | 123.3 | 382.5 | 338 x 647 |
+| Topology-aware bounded relaxation | 0 | 3 | 0 | 0 | 189.3 | 127.4 | 292.8 | 386 x 581 |
+
+The topology-aware candidate gives up the crossing reduction of the previous
+relaxation, but it avoids the observed adjacency drift and also reduces route
+maximum and extent relative to `local-search-v1-plus`. This is evidence that
+the earlier candidate's unnatural topology was an objective omission, not
+proof that the new band or weight is optimal. Actual Product inspection is
+still required, especially for the Armstrong/NASA/Eagle and Collins/NASA
+corridors.
+
 ## Boundaries and state
 
 - Fresh10, Fresh11, Fresh12 artifacts and the canonical Fresh12 Human Review
@@ -216,4 +263,6 @@ schedule is a Product algorithm.
   interactive pointer-up routing remains independently unresolved.
 - `presentation-aware-relaxation-v1` is diagnostic-only and awaits user visual
   inspection; Product adoption remains undecided.
+- `topology-aware-relaxation-v1` is a separate diagnostic candidate and awaits
+  actual Product inspection; it is not a Product algorithm or adoption.
 - No push, tag, release, deploy, or publication was performed.

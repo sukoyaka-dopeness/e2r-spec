@@ -108,6 +108,30 @@ A Relation-label-only correction should remain a diagnostic comparison until
 the same-geometry probe demonstrates a clear, bounded improvement. Do not
 select a candidate from crossing count or owning-route distance alone.
 
+## Targeted geometry candidate
+
+A deterministic targeted search was run from `local-search-v1`, changing only
+the positions of Armstrong, NASA, and Eagle. The current routing, Relation
+label placement, Node-label placement, feedback pass, and Apollo topology were
+held fixed. The search included regression pressure for the previously
+user-confirmed Relation-label corridors.
+
+The resulting diagnostic candidate is named `local-search-v1-plus` in the
+inspection surface. Its comparison with `local-search-v1` is:
+
+| Candidate | entity-1 competing-route distance | entity-1 owning-route distance | Representative crowded routes | Route median | Route max | Crossings | Extent |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| local-search-v1 | 0.0 | 3.7 | 5 | 177.9 | 319.9 | 3 | 423 × 677 |
+| local-search-v1-plus | 22.3 | 6.6 | 3 | 163.8 | 363.3 | 3 | 440 × 677 |
+
+The targeted candidate improves the residual `Neil Armstrong -> NASA`
+corridor separation and lowers the number of crowded representative routes
+without increasing sampled crossings. It also lowers route median, but its
+maximum route is longer and its horizontal extent is wider. This is a
+promising diagnostic candidate, not a Product decision. Actual Product visual
+inspection remains authoritative for deciding whether the longer route is
+acceptable and whether the previously good labels remain natural.
+
 ## Boundaries and state
 
 - Fresh10, Fresh11, Fresh12 artifacts and the canonical Fresh12 Human Review

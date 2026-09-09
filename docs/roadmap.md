@@ -1020,10 +1020,14 @@ The following bounded application-maintenance items are recorded for both
 NarrativeLine and LiaisonScape. They do not change E2R Core or Extension
 semantics:
 
-- review the visual scale of operation buttons on desktop and narrow mobile
-  layouts; the current controls feel oversized relative to both the desktop
-  composition and the phone viewport. The review must preserve touch-target,
-  keyboard, and contrast requirements while reducing visual disproportion;
+- review the cross-application control density and typography of operation
+  buttons in LiaisonScape and NarrativeLine on desktop and narrow mobile
+  layouts. Current user observation confirms that button boxes and their text
+  feel oversized across both applications, rather than at one isolated screen.
+  Audit shared or app-wide control rules, including padding, height, border
+  weight, font size, and responsive behaviour. Preserve touch-target,
+  keyboard, contrast, and readable localized-label requirements while reducing
+  visual disproportion; this is not authorization for individual CSS patches;
 - align NarrativeLine's browser Back/Forward behavior with LiaisonScape's
   Home/workspace model, including Dataset retention and direct-entry or
   refresh behavior;

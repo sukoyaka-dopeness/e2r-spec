@@ -343,6 +343,48 @@ policy. Crossing quality also remains independent: the same raw count can have
 different visual significance depending on crossing location, angle, corridor
 congestion, and Relation-label proximity.
 
+## Safe vertical compaction and secondary crossing pass
+
+User inspection of `balanced-edge-length-v1` found that label accommodation
+was substantially better, but the graph still retained unnecessary vertical
+space. The next bounded experiment therefore fixed every Node's x coordinate
+and searched only y movements from the balanced candidate. Each Node was
+limited to 72 units of cumulative vertical displacement, and the existing
+`INITIAL_ENTITY_CLEARANCE = 76` Node-overlap hard reject remained active.
+The objective retained the shallow-angle usable-span guard and a relative
+1-hop locality penalty against the balanced starting geometry.
+
+The compaction pass produced `safe-vertical-compaction-v1`:
+
+| Candidate | Extent | Aspect | Fit scale | Route median/max | Usable-span penalty | Crossings | Minimum Node separation |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Balanced Edge-length refinement | 524 x 578 | 0.907 | 0.480 | 192.4 / 410.9 | 15.1 | 3 | 142.9 |
+| Safe vertical compaction | 524 x 541 | 0.970 | 0.510 | 189.6 / 404.0 | 6.3 | 3 | 125.0 |
+
+This identifies removable vertical space in this Apollo 11 candidate without
+changing route/label implementation, introducing Node overlap, or losing
+shallow-angle label-support coverage in the diagnostic metric. The reduced
+minimum separation is still above the hard boundary, but it is a visual risk
+that requires Product inspection rather than automatic approval.
+
+A second bounded pass then searched small x/y moves (maximum 48 units from the
+compacted positions) with hard label-route and label-overlap rejection and a
+soft usable-span guard. It was intended as a secondary crossing refinement,
+not as a primary raw-crossing minimizer. In this fixture it produced
+`crossing-after-compaction-v1`, with extent 516 x 529, aspect 0.976, fit scale
+0.520, route median/max 180.9 / 393.8, usable-span penalty 6.4, minimum Node
+separation 107.9, and **3 crossings**, unchanged from the compacted candidate.
+Thus the pass did not achieve raw crossing reduction; it only found a smaller
+geometry under the current constraints. The visual significance of its
+crossings remains unresolved until actual Product inspection.
+
+The current direction is consequently: inspect the two new candidates, treat
+balanced Edge length as the label-support baseline, and do not promote the
+compaction or crossing pass to Product behavior. A crossing score must remain
+secondary to hard feasibility, topology locality, and label accommodation;
+crossing location, angle, shared corridor, and proximity to Relation labels
+must be judged on the actual Product surface.
+
 ## Boundaries and state
 
 - Fresh10, Fresh11, Fresh12 artifacts and the canonical Fresh12 Human Review

@@ -430,6 +430,59 @@ This experiment also keeps the two concerns separate: the interactive
 pointer-up obstacle-side flip remains `OPEN / INDEPENDENT`, and these static
 coordinate candidates do not claim to diagnose or fix it.
 
+## Structural reassignment screen and vertical-space rebalance
+
+The subsequent actual Product inspection established two strong baselines:
+`local-search-v1-plus` remains the best overall for local corridors and label
+affiliation, while `safe-vertical-compaction-v1` is a promising second option
+whose labels and Edge lengths remain acceptable. Its remaining issues are
+crossing quality and a graph that is still more vertical than the desktop
+canvas. Conversely, the earlier principal-axis horizontal candidates achieved
+a wide shape by creating short horizontal Edges that did not accommodate their
+Relation labels. This distinguishes horizontalization from horizontal
+compression.
+
+Two bounded structural checks followed. First, a fixed-scaffold assignment
+screen tried every pairwise Node-to-position swap in two deterministic sweeps
+(72 evaluated swaps) from `safe-vertical-compaction-v1`. It rejected any
+candidate with a Node-label or Relation-label collision/proximity, a usable
+span penalty above `2x + 64` of the starting candidate, or a 1-hop distance
+outside the broad 0.70--1.35 reference ratio. All 68 feasible-evaluation
+failures were rejected by those presentation/topology constraints, and no swap
+was accepted. This is useful negative evidence: in this fixture, a local
+assignment swap alone does not remove a crossing while retaining the current
+good label, clearance, and locality qualities.
+
+Second, `vertical-space-rebalance-v1` keeps every x coordinate fixed and
+rebalances y coordinates around the graph centroid. The strongest eligible
+screened factor is 0.75. It is not a generic scaling rule or Product behavior;
+it is a small structural diagnostic that tests whether desktop canvas use can
+improve without shortening horizontal label corridors.
+
+| Candidate | Extent | Aspect | Fit scale | Route median/max | Usable-span penalty | Crossings | Minimum Node separation |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Targeted local corridor refinement | 440 x 677 | 0.650 | 0.416 | 163.8 / 363.3 | 3043 | 3 | 176.7 |
+| Balanced Edge length with safe vertical compaction | 524 x 541 | 0.970 | 0.510 | 189.6 / 404.0 | 6.3 | 3 | 125.0 |
+| Horizontal topology rebalance (vertical-space only) | 524 x 405 | 1.293 | 0.656 | 187.2 / 397.6 | 19.5 | 3 | 94.0 |
+
+The new candidate has no Node overlap, no label-route hit, no Node-label
+overlap, and no label-proximity hit under the existing diagnostic checks. Its
+connected-pair distance ratios against the safe-compaction reference range
+from 0.752 to 0.997, which remains within the intentionally broad structural
+screen. Its slightly higher usable-span penalty is concentrated in the
+Armstrong/NASA and Collins/NASA Relation corridors, so their actual label
+affiliation must be checked rather than inferred from the aggregate.
+
+Raw crossing count remains three. The crossing diagnostic identifies the same
+three Relation pairs, but not the same visual quality: Collins/NASA with
+Armstrong/Eagle moves from a 55.2-degree label-near crossing to a 50.9-degree
+non-label-near crossing; Armstrong/Eagle with NASA/Saturn V becomes
+label-near at 69.8 degrees; Collins/Columbia with NASA/Saturn V remains
+label-near and becomes shallower (80.0 to 68.6 degrees). Consequently this is
+a canvas-utilization comparison candidate, not a crossing-reduction success.
+Actual Product inspection must decide whether the new horizontal shape is
+worth the reduced separation and changed crossing presentation.
+
 ## Boundaries and state
 
 - Fresh10, Fresh11, Fresh12 artifacts and the canonical Fresh12 Human Review
@@ -448,4 +501,7 @@ coordinate candidates do not claim to diagnose or fix it.
   `topology-aware-horizontal-recomposition-v1` are diagnostic candidates
   awaiting actual Product inspection; neither is Product behavior or an
   adoption decision.
+- `vertical-space-rebalance-v1` is a diagnostic candidate awaiting actual
+  Product inspection. It does not claim a crossing reduction or Product
+  adoption.
 - No push, tag, release, deploy, or publication was performed.

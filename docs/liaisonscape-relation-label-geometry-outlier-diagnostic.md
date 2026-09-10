@@ -636,3 +636,102 @@ The interactive pointer-up routing track remains `OPEN / INDEPENDENT`.
 No Product behavior has been adopted; no new governed Fresh lineage was
 started; Fresh10, Fresh11, Fresh12, and the canonical Fresh12 Human Review
 result remain unchanged.
+
+## Post-structural constrained relaxation
+
+### Snapshot
+
+At the start of this checkpoint, the generic crossing-first candidate had
+already passed actual Product inspection by the user: zero crossings, label
+safety, natural Relation-label fit, and very good overall readability. The
+user also observed that a small manual Node movement could make a Relation
+label in a parallel corridor appear more naturally separated. That observation
+is recorded as user inspection evidence; it is not a Product coordinate or a
+new acceptance rule.
+
+The snapshot to preserve is therefore:
+
+| Candidate | Crossings | Label-route hits | Label-near-20 routes | Usable-span penalty | Extent | Fit scale | Route median/max |
+| --- | ---: | ---: | ---: | ---: | --- | ---: | --- |
+| Generic crossing-first structural search | 0 | 0 | 0 | 149.4 | 670 x 499 | 0.548 | 194.0 / 356.9 |
+
+No historical evidence, canonical review result, or stored Product Dataset
+was changed to create this snapshot.
+
+### Experiment
+
+The generic candidate was used as the starting geometry. A deterministic local
+pass changed one Node at a time by 18, 9, or 6 units in eight compass
+directions, with a maximum displacement of 48 units per Node from the
+snapshot. The existing Product presentation pipeline remained the evaluator.
+Candidates were rejected if they reintroduced a crossing, Node overlap,
+label-route hit, label overlap, or label-near-20 route. A soft 0.80--1.20
+relative band around each starting 1-hop distance protected topology locality;
+this band is an experiment constraint, not a Product policy.
+
+The pass evaluated 208 positions and accepted 16 improving moves. Four Nodes
+moved in the resulting state: `moon`, `saturn-v`, `columbia`, and `aldrin`,
+with a smaller `nasa` y adjustment; no Node exceeded the 48-unit bound. The
+other Nodes remained at their snapshot positions.
+
+| Candidate | Crossings | Label-route hits | Label-near-20 routes | Node overlap pairs | Minimum separation | Usable-span penalty | Extent | Fit scale | Route median/max |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | ---: | --- |
+| Generic snapshot | 0 | 0 | 0 | 0 | 164.0 | 149.4 | 670 x 499 | 0.548 | 194.0 / 356.9 |
+| Post-structural constrained relaxation | **0** | 0 | 0 | 0 | 164.0 | **0** | 622 x 419 | 0.637 | 195.7 / 352.9 |
+
+The relaxation reduced the measured usable-span shortfall to zero, reduced the
+visual extent, increased fitted scale, and slightly reduced the maximum route.
+Route median increased by about 1.6 units. Crucially, zero crossings and all
+hard label/clearance checks remained intact. This is a promising bounded
+diagnostic result, not proof that the local score is generally optimal.
+
+### Why the small movement helps
+
+The evidence supports a local pressure explanation: the generic structural
+solution already separates the crossing topology, but a few Nodes still place
+parallel or shallow corridors close to the Relation-label support boundary.
+Small displacement can release that pressure without changing the structural
+assignment or requiring a Relation-label algorithm change. The current run
+does not isolate whether the improvement came primarily from parallel-edge
+separation, candidate competition, Node-label occupancy, or their interaction.
+
+**PROVEN**
+
+- The bounded relaxation found a changed candidate with zero crossings and no
+  measured label-safety or Node-overlap violation.
+- Its measured usable-span penalty improved from 149.4 to 0 and its extent
+  improved from 670 x 499 to 622 x 419.
+- The changes were small local movements around an already good structural
+  solution, not a second large recomposition.
+
+**STRONGLY SUPPORTED**
+
+- Structural search followed by a small presentation-aware relaxation is a
+  useful two-stage diagnostic strategy for this fixture.
+- The observed manual-drag improvement is consistent with local corridor
+  pressure being released by small geometry changes.
+
+**UNRESOLVED**
+
+- Whether the relaxed candidate is visually preferable to the user-inspected
+  generic snapshot.
+- Whether the same relaxation remains useful across other Datasets, Node
+  counts, or relation topologies.
+- A general automatic acceptance rule for relaxation, including the correct
+  locality band and cost budget.
+- Node-to-Node label connector presentation and the independent interactive
+  pointer-up obstacle-side flip.
+
+### Actual Product inspection boundary
+
+The candidate is available as
+`post-structural-relaxation-v1` on the diagnostic geometry inspection surface.
+It changes only an in-memory diagnostic clone; Product initial placement and
+stored Dataset coordinates are unchanged. The user should compare it directly
+with `generic-crossing-search-v1`, checking that zero crossings remain
+visually true, Relation labels remain natural in parallel corridors, Edge
+lengths do not become awkward, Node groups remain coherent, and the improved
+fit is not achieved by harmful crowding.
+
+Product adoption remains undecided. No governed Fresh lineage was started and
+the interactive pointer-up routing track remains `OPEN / INDEPENDENT`.

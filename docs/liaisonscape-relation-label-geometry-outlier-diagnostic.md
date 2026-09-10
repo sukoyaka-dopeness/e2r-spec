@@ -2343,6 +2343,137 @@ Review result were unchanged. No new governed Fresh lineage, Product
 initial-placement adoption, push, tag, release, deploy, or publication was
 performed.
 
+## Regional Care bounded local-spacing fallback
+
+### Purpose and method
+
+The preceding fixed-geometry arbitration probes did not produce a materially
+safer candidate for the remaining `r03`, `r16`, and `r18` label-route hits.
+This checkpoint therefore tested whether a small amount of local Node room
+would allow the existing Product-owned routing, Node-label placement, and
+feedback pipeline to settle safely. It was a diagnostic in-memory replay:
+Product spacing rules, fixture data, Product source, and governed evidence
+were not changed.
+
+The baseline selected geometry was held as the starting point. For `r03`, the
+tested local set was `regional-care-network`, `east-clinic`, and
+`public-health-office`, with a surrounding cluster adding
+`east-community-center`, `elder-care-center`, and `municipal-council`. For
+`r18`, the local set was `west-clinic`, `west-community-center`,
+`pharmacy-coalition`, and `volunteer-coalition`, with `city-hospital` and
+`blood-bank` in the surrounding cluster. The probe applied five bounded
+families (`owner-normal`, `endpoint-normal`, `endpoint-tangent`,
+`corridor-balanced`, and `cluster-radial`) at 24, 48, 72, 96, 120, 144, and
+192 units, in both signs where applicable. Candidates violating the existing
+76-unit initial Node-clearance rule were rejected.
+
+The same renderer and feedback pass then measured hard hits, near-label
+routes, crossings, route median/max, extent, fit, changed remote routes, and
+changed Node labels. A candidate was called globally acceptable only if it
+removed the target hit, did not relocate the defect to a new relation, reduced
+the total hit count, and did not worsen near count, crossings, or route
+median/max by more than the bounded 5% burden allowance.
+
+### Local results
+
+| Target | Local candidates | Target hit-free | First local hit-free | Resulting global state |
+| --- | ---: | ---: | --- | --- |
+| `r03` | 54 | 0 | none | no local direction removed the persistent `public-health-office` corridor conflict |
+| `r18` | 37 | 6 | `owner-normal`, 24 units, moving `pharmacy-coalition` and `volunteer-coalition` | 6 hits / 12 near / 2 crossings; `r16` remained a hit |
+
+For `r03`, the best bounded vectors still retained `r03` and produced at
+least 7 total hits (the baseline has 3); the smallest tested owner movement
+also increased crossings to 4. For `r18`, the 24-unit local result removed
+`r18` but produced hits `r03`, `r07`, `r08`, `r16`, `r20`, and `r25`, and
+changed several remote routes and Node labels. Its route median was `295.6`
+versus `281.6` at baseline, while extent and fit happened to remain equal.
+This is a local diagnostic escape, not a safe candidate.
+
+No local candidate met the global-acceptability gate for either target.
+The target-specific results also show that local movement can change the
+downstream presentation even when the moved nodes are not endpoints of every
+changed route; the current feedback and occupied-path decisions remain
+globally coupled.
+
+### Global expansion comparison
+
+As a comparison only, every Node was expanded radially from the graph
+centroid. The first factor at which each target was individually hit-free was
+`1.15` for `r18` and `1.50` for `r03`; both were hit-free at factor `1.50`.
+That factor had:
+
+```text
+hits       4  (r01, r13, r14, r25)
+near       8
+crossings  0
+route      median/max 441.4 / 1008.8
+extent     1640.9 × 1036.5
+fit        0.2799
+max move   307.5 units
+```
+
+Thus the first broad expansion that clears both target relations still
+creates four unrelated hard hits and increases route median/max by roughly
+57%, while reducing fit by roughly 31%. Factor `2.00` leaves three unrelated
+hits but raises route median/max to `609.4 / 1375.7`, adds two crossings, and
+reduces fit to `0.2130`. No tested local or global candidate was materially
+safe under the stated burden and relocation constraints.
+
+The positive-fixture regression baseline remains unchanged: the four prior
+clean fixture results were not rerun in this position-only diagnostic because
+Product source was not modified. This is a state-preservation result, not a
+claim that the rejected Regional Care candidates are product-ready.
+
+### Decision
+
+**PROVEN**
+
+- Within the tested bounded local families and 24–192-unit range, `r03` has
+  no target-hit-free local expansion.
+- `r18` has a small local escape at 24 units, but it relocates defects and
+  adds a crossing, so it is not globally acceptable.
+- A broad centroid expansion can clear both target relations only at the
+  tested factor `1.50` or greater; that expansion introduces unrelated hard
+  hits and materially worsens route burden and fit.
+- No tested spacing candidate satisfies the material-safety gate. No Product
+  spacing rule should be adopted from this checkpoint.
+
+**STRONGLY SUPPORTED**
+
+- Available local room is a genuine constraint for `r03` and `r18` under the
+  current presentation pipeline: local movement either cannot escape `r03`
+  or escapes `r18` only by moving the conflict into other corridors.
+- The practical classification is **C/D**: both targets become locally
+  clear only with broad expansion at the tested scale, but spacing alone does
+  not produce a safer aggregate result. This is not evidence that a larger
+  arbitrary canvas is the correct Product solution.
+- The next useful work is not more blind spacing expansion. It should expose
+  a coordinated layout/routing/label arbitration or a more expressive
+  topology-aware layout while preserving locality and route burden.
+
+**UNRESOLVED**
+
+- Whether a targeted multi-component layout can create room around both
+  corridors without broad expansion.
+- Whether a route/label arbitration with explicit displacement and remote
+  ownership costs can use newly created room safely.
+- Whether another untested local direction or cluster definition would alter
+  the negative result; the probe is bounded and is not an exhaustive proof
+  over all geometry.
+
+### State
+
+The diagnostic implementation is
+`tools/regional-care-spacing-diagnostic.mjs`; it emits a temporary JSON report
+and does not change Product behavior. Regional Care actual-Product inspection
+was not prepared because no materially safer candidate was found. Regional
+Emergency fallback, Node-label connectors, and interactive pointer-up
+side-flipping remain OPEN/SEPARATE tracks.
+
+Fresh10/Fresh11/Fresh12 historical evidence and the Fresh12 canonical Human
+Review result remain unchanged. No new governed Fresh lineage, Product
+adoption, push, tag, release, deploy, or publication was performed.
+
 ## Regional Care bounded joint arbitration probe
 
 ### Scope and method

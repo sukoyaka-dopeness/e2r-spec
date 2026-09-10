@@ -2343,6 +2343,166 @@ Review result were unchanged. No new governed Fresh lineage, Product
 initial-placement adoption, push, tag, release, deploy, or publication was
 performed.
 
+## Progressive local repair diagnostic
+
+### Scope and prototype
+
+The previous Regional Care probes showed that route, occupied-path, Node-label,
+and feedback decisions can propagate beyond the Nodes that appear in the
+initial defect. This checkpoint tested a diagnostic progressive-repair model:
+
+1. detect current hard `labelRouteHits`;
+2. seed an affected region with the hit Relation endpoints and the owners of
+   the conflicting Node labels;
+3. replay the unchanged canonical route prefix;
+4. compare the replayed result with a full presentation evaluation;
+5. if changed routes or labels escape the region, add their endpoint/owner
+   Nodes and repeat, subject to a graph-size bound.
+
+The prototype uses the existing Product presentation function and its
+diagnostic `replayPrefix` hook. It does not change Product source or attempt
+to persist a repaired geometry. The route-decision count is used as a
+comparable work estimate: label-free, first, and feedback route decisions are
+counted separately and then summed. This is intentionally conservative: the
+existing bounded presentation still has global label-free and feedback
+stages, so a non-empty replay prefix does not imply that every stage became
+local.
+
+Implementation:
+`tools/progressive-local-repair-diagnostic.mjs`
+
+### Regional Care result
+
+The Regional Care selected geometry was replayed with a bounded `r18`
+owner-normal 24-unit mutation, corresponding to the smallest previously
+observed local spacing escape. This mutation is a propagation probe, not an
+adoption candidate.
+
+```text
+baseline hard hits       r03, r16, r18
+initial affected region  10 Nodes
+initial incident edges   24 / 30
+initial first dirty idx  0
+initial prefix replay    0 routes
+initial local work       90 route decisions
+full repair work         90 route decisions
+```
+
+The full mutation result was:
+
+```text
+hits       7  (r03, r07, r08, r16, r18, r20, r25)
+near       15
+crossings  1
+route      median/max 295.6 / 645.4
+extent     1093.9 × 691.0
+fit        0.4079
+```
+
+Eight route geometries, eleven Relation-label geometries, and seven Node-label
+geometries changed. The route processing order did not change, and feedback
+remained applied. The new hard hits demonstrate defect relocation; the mutation
+is therefore rejected as a repair result.
+
+The first region contained the endpoints and conflicting label owners for the
+three original hits:
+
+```text
+city-hospital, east-clinic, pharmacy-coalition, public-health-office,
+regional-care-network, south-clinic, south-family-practice,
+volunteer-coalition, west-clinic, west-community-center
+```
+
+The first pass observed escaped Node-label/dependency owners including
+`ambulance-service`, `elder-care-center`, `mobile-clinic`,
+`laboratory-service`, `blood-bank`, and `east-community-center`. The region
+expanded once to 16 Nodes. At that point the replayed result was exactly equal
+to the full result, but the replay prefix was still zero and the estimated work
+was still 90 route decisions. Exactness was therefore obtained by effectively
+falling back to the full route suffix, not by a cheap local computation.
+
+This checkpoint used one bounded batch mutation; it did not run an unbounded
+collision-chasing loop. No repeated `collision -> relax -> new collision`
+sequence was introduced or accepted.
+
+### Positive-fixture trigger comparison
+
+The same trigger and region derivation was run against the previously clean
+selected geometries for Apollo 11, Lighthouse, and Linkscape, plus the
+deterministic diagnostic geometry used for the District Solar fixture.
+
+| Fixture | Hard trigger | Initial region | Repair invocation | Result |
+| --- | --- | ---: | ---: | --- |
+| Apollo 11 | none | 0 | 0 | no unnecessary repair |
+| Lighthouse | none | 0 | 0 | no unnecessary repair |
+| Linkscape | none | 0 | 0 | no unnecessary repair |
+| District Solar | none | 0 | 0 | no unnecessary repair |
+
+For these clean cases, the baseline presentation is still evaluated to decide
+whether a trigger exists; the repair mutation and progressive repair passes
+are not run. Apollo/Lighthouse/Linkscape used their saved clean generic-search
+positions. District Solar has no stored coordinate extension in the fixture,
+so its result is only a deterministic diagnostic-geometry comparison and is
+not a Product acceptance claim.
+
+### Interpretation
+
+**PROVEN**
+
+- Regional Care's initial hard-defect region can be derived generically from
+  hit Relation endpoints and conflicting Node-label owners; it contained 10
+  Nodes for the three-hit baseline.
+- A bounded local mutation caused remote presentation changes: 8/30 routes,
+  11/30 Relation labels, and 7/24 Node labels changed.
+- The dependency region expanded once from 10 to 16 Nodes, but the earliest
+  affected route was at processing index 0, so no canonical route prefix could
+  be replayed.
+- The progressive result matched full recomputation exactly only while doing
+  full route work (90 decisions). The mutation itself relocated defects from 3
+  to 7 hard hits and is not safe.
+- Clean comparison fixtures did not trigger repair, so a no-defect Dataset can
+  avoid repair work after its baseline trigger check.
+
+**STRONGLY SUPPORTED**
+
+- The current sequential occupied-path order and global label-free/feedback
+  stages make triggered local repair impractical as a general performance
+  optimization when the first affected route is early in the order.
+- A safe locality boundary can be defined conservatively, but for this failure
+  class it must expand to a full-work fallback. The useful classification is
+  **EXACT_BUT_FULL_WORK_REQUIRED**, not successful cheap local repair.
+- Propagation is moderately sparse in changed artifact counts, but not sparse
+  enough in processing cost: an early changed route invalidates the remaining
+  ordered route suffix, and the current pipeline still pays global stages.
+- Batch repair plus bounded region expansion and a global acceptance gate are
+  required to avoid defect chasing. A repair must be rejected when it relocates
+  a hard defect, even if the original collision disappears.
+
+**UNRESOLVED**
+
+- Whether a dependency-aware route scheduler or independent local occupied-path
+  partitions could create a non-empty safe replay prefix without changing
+  accepted Product semantics.
+- Whether a richer multi-component repair can improve the geometry rather than
+  merely reproduce the observed defect relocation.
+- Whether another failure with a later processing index would yield a useful
+  local prefix; the current Regional Care case is an early-index stress case.
+
+### Decision and state
+
+Progressive local repair is **not Product-ready** and no Product adoption was
+made. The diagnostic supports a two-path policy for future investigation:
+clean presentations skip repair after the trigger check; triggered cases use a
+bounded batch and region expansion, then fall back to full recomputation when
+the first dirty route prevents meaningful prefix replay or when equivalence
+cannot be proven.
+
+Regional Emergency fallback, Node-label connectors, and interactive pointer-up
+side flipping remain OPEN/SEPARATE tracks. Fresh10/Fresh11/Fresh12 historical
+evidence and the Fresh12 canonical Human Review result remain unchanged. No
+new governed Fresh lineage, push, tag, release, deploy, or publication was
+performed.
+
 ## Regional Care bounded local-spacing fallback
 
 ### Purpose and method

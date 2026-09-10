@@ -1376,3 +1376,137 @@ change to Product route semantics.
 No Product source behavior, stored fixture, historical evidence, or canonical
 Human Review result was changed. No governed Fresh lineage, Product adoption,
 push, tag, release, deploy, or publication was performed.
+
+## Dependency tracing and equivalence audit checkpoint
+
+### Scope and method
+
+This checkpoint measured the existing full `deriveBoundedAutomaticPresentation`
+pipeline before attempting partial recomputation. The opt-in diagnostic mode is
+enabled with `E2R_RELAXATION_DEPENDENCY_TRACE=1` in
+`tools/generic-crossing-search.mjs`. It records, without changing route
+selection, the exact route/label geometry signatures for each candidate and a
+compact trace of the label-free, first, and feedback route passes. Each route
+decision includes its canonical processing index, selected offset, continuity
+flags, and the observed blocking Node, occupied-path, and Node-label identities.
+
+For every one-Node candidate, the trace compares the current full presentation
+with the candidate full presentation. It classifies changed routes into
+incident and remote sets, compares Relation-label and Node-label geometries,
+records feedback-state changes, and checks whether the canonical route order
+changed. This is a dependency observation and equivalence-audit instrument; it
+is not an incremental evaluator and it does not alter Product source behavior.
+
+### Dependency model
+
+The actual propagation chain is:
+
+```text
+moved Node
+  -> incident endpoint geometry and all-node obstacle inputs
+  -> canonical route pass / selected route / occupiedPaths sequence
+  -> Relation-label placement and label occupancy
+  -> Node-label placement and route/label collision neighborhoods
+  -> bounded final feedback route pass when final Node-label bounds move
+```
+
+The following classifications are supported by the implementation and trace:
+
+| Component | Definitely affected by a one-Node move | Conditionally affected | Unchanged only after proof |
+| --- | --- | --- | --- |
+| Incident routes | endpoint coordinates and candidate inputs | selected side/offset and continuity recovery | none for the moved endpoint |
+| Later routes | none solely from incidence | obstacle, prior occupied path, label, or candidate-side changes | a later route after all earlier inputs and occupied paths are identical |
+| Relation labels | labels of changed routes | labels whose route or occupied label neighborhood changes | unchanged route plus identical placement inputs |
+| Node labels | moved Node's placement input | labels sharing route/relation occupancy or collision neighborhoods | identical route-label inputs and collision neighborhood |
+| Feedback | only when final Node-label geometry moves | every feedback-pass route after that input changes | only when the feedback precondition is false or all inputs are proven identical |
+
+The occupied-path dependency is ordered rather than merely geometric: each
+selected route is appended to `occupiedPaths`, and later routes score against
+that prefix. The trace's processing indices are therefore the relevant replay
+boundary. A changed route decision or route geometry can invalidate a suffix
+even when the moved Node is not an endpoint of those suffix Edges.
+
+### Measured propagation
+
+The continuous full-node relaxation trajectory was used for the comparison.
+The table counts full candidate evaluations; `remote candidates` means at
+least one changed route was not incident to the candidate's moved Node.
+
+| Fixture | Candidates | Remote candidates | Max changed routes | Max remote routes | Max changed Relation labels | Max changed Node labels | Feedback changes | Route-order changes | Route-decision changes | Accepted moves with remote propagation |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Apollo 11 | 207 | 68 | 6 | 2 | 6 | 3 | 0 | 0 | 119 | 4 / 16 |
+| Lighthouse | 237 | 139 | 9 | 3 | 12 | 5 | 0 | 0 | 171 | 8 / 14 |
+| Linkscape | 118 | 0 | 3 | 0 | 0 | 1 | 0 | 0 | 81 | 0 / 9 |
+| K3,3 | no Stage 2 | — | — | — | — | — | — | — | — | — |
+
+K3,3 selected the existing grid fallback but did not enter the Stage 2
+relaxation loop, so it supplies no Stage 2 candidate trace. Its existing
+fallback result remains preserved; this is a scope limitation, not evidence
+that a dense K3,3 dependency graph is local.
+
+The route order remained canonical and unchanged in all evaluated candidates.
+That does not make the computation local: route decisions changed frequently,
+and remote route changes occurred whenever the changed obstacle/occupied-path
+or label neighborhood reached a route in the canonical suffix. In Apollo and
+Lighthouse, accepted improvements sometimes included remote route changes, so
+the authority trajectory itself is not incident-only.
+
+### Equivalence and performance conclusion
+
+No partial-recomputation prototype was implemented. Consequently, there is no
+incremental-vs-full output equivalence claim to make. The current trace compares
+the full authority's before/after outputs exactly and shows why a speculative
+incident-only replay would not be safe. An incremental prototype would need to
+replay the same canonical route prefix, invalidate the affected occupied-path
+suffix, re-evaluate relation and Node-label neighborhoods, and rerun feedback
+whenever its precondition changes. It would then need exact signature equality
+for routes, Relation labels, Node labels, feedback state, selected metrics, and
+the accepted move sequence.
+
+The practical architecture finding is mixed rather than universally global:
+Linkscape's tested moves were route-local, while Apollo and Lighthouse showed
+meaningful remote propagation. Therefore the current implementation may have
+sparse dependency regions for some fixtures, but it has no explicit dependency
+graph or proof boundary that can be used safely across fixtures. The next
+useful performance work is a diagnostic invalidation/replay prototype with a
+canonical-prefix proof, not Product adoption of a partial evaluator.
+
+**PROVEN**
+
+- The current pipeline propagates through canonical ordered routing,
+  `occupiedPaths`, Relation-label placement, Node-label placement, and bounded
+  feedback inputs.
+- In the measured Apollo and Lighthouse trajectories, a one-Node candidate can
+  change remote route geometry and remote Relation-label geometry.
+- Canonical route order did not change in the measured candidates; the changed
+  decisions occurred within that stable order.
+- Linkscape demonstrated a genuinely local result for the tested trajectory,
+  but not a cross-fixture safety guarantee.
+- The diagnostic trace is opt-in and leaves Product routing, fixtures,
+  historical evidence, and canonical Human Review results unchanged.
+
+**STRONGLY SUPPORTED**
+
+- Incident-edge-only incremental evaluation is unsafe as a general Product
+  contract.
+- A useful incremental boundary, if pursued, must be dependency-aware and
+  preserve canonical prefix/suffix replay plus exact output equivalence.
+- The cheap lower-bound screen remains safe but ineffective; dependency tracing
+  is the more informative next performance direction.
+
+**UNRESOLVED**
+
+- Whether a complete invalidation graph can be made both conservative and
+  materially faster on dense or hub-heavy fixtures.
+- Whether feedback can be proven absent for a bounded class of candidates
+  without evaluating the final Node-label placement.
+- The Stage 2 dependency behavior of K3,3 under a dedicated bounded probe,
+  since the current runner does not send its fallback through Stage 2.
+- Node-label connector presentation remains OPEN/SEPARATE. Interactive
+  pointer-up obstacle-side flipping remains OPEN/INDEPENDENT.
+
+No Product source behavior, stored fixture, Fresh10/Fresh11/Fresh12 historical
+evidence, or canonical Human Review result was changed. No new governed Fresh
+lineage, Product adoption, push, tag, release, deploy, or publication was
+performed. No final presentation candidate changed, so no actual-Product visual
+inspection was required for this instrumentation-only checkpoint.

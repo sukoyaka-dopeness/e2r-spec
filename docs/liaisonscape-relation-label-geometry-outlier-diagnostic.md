@@ -1976,3 +1976,122 @@ independent tracks.
 Fresh10/Fresh11/Fresh12 historical evidence and the Fresh12 canonical Human
 Review result were unchanged. No new governed Fresh lineage, push, tag,
 release, deploy, or publication was performed.
+
+## Regional Care label-corridor-aware Stage 2 probe
+
+### Question and metric
+
+This checkpoint tested whether the three label-route hits remaining after the
+coupled pair probe were primarily a scoring omission. The diagnostic runner
+now records an explicit `labelCorridorDeficit`: for each route and node-label
+pair, it measures the amount by which the route enters a 48-unit label
+corridor, using route samples away from the endpoint attachments. It also
+records corridor conflict-pair count, minimum clearance, and maximum intrusion.
+The existing hard hit, near-label, crossing, route-burden, extent, fit, and
+node-overlap metrics remain independent and continue to govern final
+eligibility.
+
+The corridor penalty was deliberately applied only inside Stage 2
+`constrainedRelaxationScore()`. The Stage 1 candidate selection and the Stage
+2 starting positions therefore remain unchanged between the standard and
+corridor comparisons.
+
+### Experiments
+
+The first comparison reused the pressure-targeted eight-node pair neighborhood
+from the previous checkpoint. It used soft-defect admission, a 48-unit
+maximum displacement, 18/9-unit moves, and the same-direction/opposite-
+direction pair plans. The standard pair score was run with corridor
+instrumentation only; the corridor score added a 1200-point penalty per unit
+of corridor deficit. A 3000-point sensitivity run checked whether the result
+was merely under-weighted. Finally, a six-node bounded three-node cluster was
+tested with the corridor objective, using all-same-direction and one-node-
+opposite-direction plans.
+
+| Candidate | Crossings | Label hits / near | Corridor deficit / pairs | Route median / max | Extent | Fit | Accepted moves |
+| --- | ---: | ---: | ---: | --- | --- | ---: | ---: |
+| Existing hard Stage 2 | 4 | 6 / 14 | 880.4 / 32 | 282.1 / 629.3 | 1093.9 x 673.0 | 0.4179 | 0 |
+| Standard coupled pair | 1 | 3 / 10 | 809.3 / 31 | 281.6 / 645.4 | 1093.9 x 691.0 | 0.4079 | 8 |
+| Corridor pair, weight 1200 | 2 | 3 / 10 | 676.2 / 28 | 286.8 / 647.9 | 1093.9 x 685.7 | 0.4108 | 4 |
+| Corridor pair, weight 3000 | 4 | 6 / 14 | 880.4 / 32 | 282.1 / 629.3 | 1093.9 x 673.0 | 0.4179 | 9 |
+| Corridor three-node cluster | 3 | 3 / 12 | 657.9 / 30 | 278.4 / 652.5 | 1097.1 x 685.7 | 0.4108 | 8 |
+
+The corridor objective reduced the geometric corridor deficit, but neither
+pair nor three-node cluster removed any of the three hard label-route hits.
+The stronger weight did not produce a safer result. The cluster reduced the
+deficit slightly further but regressed crossings and near-label routes versus
+the pair candidate.
+
+### Positive-fixture regression
+
+The corridor pair was also run against the four current positive fixtures.
+All remained hard-clean: crossings, label-route hits, near-label routes,
+label overlaps, and node overlaps were zero. However, the corridor objective
+caused unacceptable presentation regressions relative to the standard pair
+probe on some fixtures:
+
+| Fixture | Route median / max | Extent | Fit |
+| --- | --- | --- | ---: |
+| Apollo 11 | 194.0 / 356.9 | 670.0 x 498.5 | 0.5475 |
+| Lighthouse | 189.2 / 385.7 | 636.0 x 440.0 | 0.6111 |
+| Linkscape | 115.1 / 172.0 | 375.0 x 164.0 | 1.0000 |
+| District Solar | 254.4 / 375.9 | 787.7 x 346.0 | 0.7138 |
+
+In particular, Apollo 11 fit fell from 0.6313 to 0.5475 and Linkscape route
+maximum grew from 122.2 to 172.0. Machine-clean defect counts alone are
+therefore insufficient to accept this objective.
+
+### Interpretation
+
+**PROVEN**
+
+- An explicit 48-unit label-corridor deficit can be measured without changing
+  Product routing, labels, or stored geometry.
+- The corridor objective reduces corridor intrusion burden in the Regional
+  Care pair and cluster probes, but leaves all three label-route hits.
+- Increasing the corridor weight does not reliably improve the hard hit count.
+- A three-node bounded cluster does not remove the residual hits and is worse
+  than the pair candidate on crossings and near-label routes.
+- The four positive fixtures remain defect-clean by the hard metrics, but the
+  corridor objective introduces route/extent/fit regressions and is not an
+  acceptable adoption candidate.
+
+**STRONGLY SUPPORTED**
+
+- The remaining Regional Care hits are not explained by a simple omission of a
+  scalar corridor-clearance term. The objective changes which basin is
+  preferred, but does not create a hit-free solution in the tested pair or
+  small-cluster neighborhood.
+- Move-family expressiveness is also insufficient by itself: adding a
+  bounded three-node family improves corridor deficit but not hard hits.
+- The residual is likely an interaction between placement geometry and the
+  current routing/label-placement semantics. A useful next experiment needs
+  relation-specific corridor ownership or route/label coordination, rather
+  than only a stronger global distance penalty.
+
+**UNRESOLVED**
+
+- Whether a relation-specific corridor objective that excludes legitimate
+  endpoint attachment zones can remove the hits without route regressions.
+- Whether the current automatic routing semantics create the residual conflict
+  even when node placement is locally improved.
+- Whether a bounded search over route-side or label-placement alternatives is
+  the smallest effective next step.
+
+### Candidate decision and state
+
+The label-corridor objective and three-node cluster remain **diagnostic-only**.
+Neither was adopted into Product initial placement. Because Regional Care
+still has three label-route hits and the corridor objective regresses route
+burden/extent/fit on positive fixtures, no Regional Care actual-Product
+comparison surface was prepared and no new governed evidence was generated.
+
+The existing Apollo 11 actual Product geometry inspection surface was verified
+and remains available for the already materialized diagnostic candidates. It
+does not represent the Regional Care corridor probe. Regional Emergency
+fallback, node-label connectors, and interactive pointer-up side flipping
+remain separate open tracks.
+
+Fresh10/Fresh11/Fresh12 historical evidence and the Fresh12 canonical Human
+Review result were unchanged. No new governed Fresh lineage, Product
+adoption, push, tag, release, deploy, or publication was performed.

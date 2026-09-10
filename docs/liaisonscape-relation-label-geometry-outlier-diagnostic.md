@@ -207,8 +207,8 @@ the feedback-pass decisions whose semantic Node-label inputs changed. The
 24-unit Node mutation produced 0 hits (33/33 and 90/90 misses), as required.
 
 Same-process wall-clock observations for the repeated snapshot were about
-95.392 ms uncached versus 36.975 ms cached for Apollo (61.2% lower), and
-258.424 ms versus 109.434 ms for Regional Care (57.7% lower). These are
+32.401 ms uncached versus 13.889 ms cached for Apollo (57.1% lower), and
+148.313 ms versus 78.120 ms for Regional Care (47.3% lower). These are
 indicative diagnostic timings, not a production benchmark; they include the
 full presentation pipeline and vary with host load. Candidate-generation
 diagnostic records still report the same 1,089 / 2,970 records because
@@ -231,18 +231,35 @@ times were:
 
 | Fixture | Presentation pass time | Candidate generation | Selection loop | Occupied-path checks | Relation labels | Node labels | Feedback pass |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Apollo 11 | 94.2 ms | 56.2 ms | 0.6 ms | 11.9 ms | 8.1 ms | 20.4 ms | 34.9 ms |
-| Regional Care | 256.4 ms | 117.0 ms | 1.2 ms | 28.5 ms | 34.3 ms | 83.0 ms | 96.6 ms |
+| Apollo 11 | 32.4 ms | 17.0 ms | 0.2 ms | 3.7 ms | 3.1 ms | 7.8 ms | 11.8 ms |
+| Regional Care | 148.3 ms | 72.7 ms | 0.6 ms | 16.6 ms | 15.8 ms | 50.9 ms | 55.8 ms |
 
 The component values are diagnostic timings collected in one process and
 should not be added as independent totals: the feedback-pass value contains
 its route and label work. The important boundary is that the ranking/selection
 loop itself is small, while candidate evaluation and downstream label/feedback
 work are substantial. On the cached repeat, candidate-generation timing fell
-to about 7.6 ms / 15.0 ms for Apollo / Regional Care, while final outputs
+to about 1.5 ms / 9.9 ms for Apollo / Regional Care, while final outputs
 remained exact. This means the cache does not expose a separate high-value
 arbitration-selection seam; it removes repeated candidate evaluation and leaves
 the quality-critical ordered authority intact.
+
+The label-operation counts on the same uncached repeat were also recorded.
+Apollo evaluated 990 Relation-label candidates and 576 Node-label candidates;
+Regional Care evaluated 2,700 and 1,536 respectively. Relation-label scoring
+performed 4,950 / 39,150 occupied-label checks, 8,910 / 64,800 Node checks,
+and 405,900 / 3,210,300 Edge-path point checks for Apollo / Regional Care.
+Node-label scoring performed 8,640 / 63,744 occupied-label checks,
+4,608 / 35,328 other-Node checks, 259,776 / 1,889,280 Edge-path point checks,
+and 59,040 / 881,664 yielding-route point checks. No previous-placement or
+manual-anchor work was present in these baseline fixtures.
+
+The first-to-feedback comparison showed that feedback recomputed all stage
+outputs, while the actual changed items were 7 routes / 9 Relation labels /
+5 Node labels for Apollo and 22 / 26 / 12 for Regional Care. This is evidence
+that whole-snapshot feedback recomputation contains unchanged work, but it is
+not yet safe to skip item-by-item because sequential label occupancy and route
+feedback are semantic inputs to later items.
 
 ### Classification and next direction
 

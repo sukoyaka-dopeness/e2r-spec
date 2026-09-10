@@ -2,6 +2,153 @@
 
 Status: diagnostic result; no Product adoption decision
 
+## Presentation-architecture coupling diagnosis
+
+### Purpose and boundary
+
+This checkpoint evaluates the presentation pipeline after the Regional Care
+geometry, arbitration, spacing, progressive-repair, and late-index replay
+probes. It does not adopt a new routing algorithm or alter Product behavior.
+The only implementation change is additional diagnostic observation in
+`tools/late-index-local-repair-diagnostic.mjs`; it derives a separate
+label-free counterfactual solely to expose that pass's output footprint.
+
+The question is not whether a local change can be made. It is which existing
+dependency is responsible for both (a) a local quality correction relocating
+defects and (b) an attempted local recomputation becoming non-exact or fully
+global.
+
+### Current pipeline and coupling classes
+
+`deriveBoundedAutomaticPresentation()` currently performs these Product-owned
+stages:
+
+1. a full label-free route derivation;
+2. a full first route derivation against provisional Node labels;
+3. Relation-label placement from those routes;
+4. Node-label placement from routes and occupied Relation labels; and
+5. exactly one full feedback derivation when the final Node-label bounds moved.
+
+Within every route derivation, `deriveAutomaticRoutes()` uses a canonical
+ordered sequence and adds every selected path to `occupiedPaths`. Therefore a
+route can depend on all earlier selected paths, all Node obstacles, and the
+pass's Node-label rectangles. Relation-label placement then depends on routed
+geometry and prior Relation labels, while Node-label placement depends on both
+routes and Relation labels. The final feedback pass deliberately makes the
+result depend on the final Node-label bounds.
+
+| Coupling | Class | Why it exists | Evidence / consequence |
+| --- | --- | --- | --- |
+| Node geometry → route geometry | A: quality-critical | Routes must avoid non-endpoint Nodes. | In the late Apollo case, moving `saturn-v` changed label-free and first-pass routes `entity-3`, `entity-8`, and `entity-10`, although the diagnosed hard defect was only `entity-10` at index 10/11. Endpoint-only invalidation is therefore unsound. |
+| Earlier selected routes → later routes through `occupiedPaths` | D: global occupancy plus C: ordering | Sequential selection avoids reusing the same corridor and keeps output deterministic. | It makes a prefix reusable only when none of its geometry inputs changed; a route-order position alone is not a safe locality boundary. |
+| Route geometry → Relation labels → Node labels | A/F: quality-critical, mixed | Labels need the currently displayed route and occupied-label geometry. | In the late Apollo repair, first-pass route changes produced four Relation-label changes and two Node-label changes; feedback expanded this to six changed routes, six Relation labels, and three Node labels. |
+| Final Node labels → feedback routes | E: quality-critical | The feedback pass removes collisions created by final label placement. | Disabling feedback in the repaired Apollo case changed 8/11 final routes, left 2 hard hits and 2 crossings rather than 0/0, and increased median/max route length from 195.7/353.3 to 270.0/416.0. On Regional Care it increased hard-hit relations from 3 to 13 and crossings from 1 to 3. |
+| Whole presentation rerun on every changed snapshot | B: accidental implementation/recomputation coupling | The stages are composed as a single call and only the first route pass has diagnostic prefix replay. | The late Apollo replay initially reduced route decisions 33 → 29, but label-free and feedback still ran globally. Exactness failed until expansion removed the reusable prefix, restoring 33/33 work. |
+
+The current sequential authority is consequently not an arbitrary defect: its
+Node, occupancy, and final-label dependencies preserve observed safety. The
+harmful part is the absence of explicit, independently invalidatable stage
+inputs. Current code conflates "must be globally verified for this snapshot"
+with "must be recomputed from scratch on every presentation call."
+
+### Comparative evidence
+
+The late-index Apollo counterfactual was deliberately favorable to local
+reuse: the only hard defect was `entity-10`, the final canonical route
+(index 10/11), and a small `saturn-v -24 x` repair removed it with no defect
+relocation under full authority.
+
+| Stage comparison: defect → full repair | Changed routes | Changed Relation labels | Changed Node labels |
+| --- | ---: | ---: | ---: |
+| label-free | 3 | 0 | 0 |
+| first route/label pass | 3 | 4 | 2 |
+| feedback pass | 6 | 6 | 3 |
+
+The initial three-Node region replayed four first-pass routes and reduced
+route decisions by 12.1%, but produced non-exact route, Relation-label, and
+Node-label output. Including escaped dependencies grew the region to seven
+Nodes; because an expanded incident route was at index 0, the safe replay
+prefix became empty and exact work returned to 33 decisions. Thus the
+feedback boolean did not change, but the feedback *geometry* amplified the
+changed footprint. This distinguishes a quality-critical feedback dependency
+from a mere state flag.
+
+Regional Care is the stronger quality stress case. Its initial hard-hit
+region already touched canonical index 0, and the diagnostic repair changed
+8 routes, 11 Relation labels, and 7 Node labels; expansion from 10 to 16
+Nodes was needed to account for the changed artifact footprint. Exact work
+remained 90 route decisions. Earlier route-side, Node-label, coupled-move,
+corridor-objective, richer-topology, and spacing probes found no materially
+safe candidate: local improvements repeatedly relocated defects.
+
+The current clean Apollo 11, Lighthouse, Linkscape, and District Solar
+baselines remain unaffected because this checkpoint changes no Product
+authority. Their established clean path continues to be `NO_TRIGGER_NO_REPAIR`
+for progressive repair.
+
+### Architecture candidates
+
+| Candidate | Concept | Quality implication | Performance implication | Exactness / risk | Assessment |
+| --- | --- | --- | --- | --- | --- |
+| A. Minimal restructuring | Make stage inputs and outputs explicit, record per-route Node/label/occupied-path dependencies, and cache only when the complete semantic input snapshot matches. Keep current selection and feedback authority. | Does not itself solve Regional Care's three residual hits; preserves existing quality. | Enables safe skip/caching and makes the true invalidation footprint observable. | Exact by construction when cache reuse requires a complete input match; low behavioral risk. | **Recommended first architecture refactor.** |
+| B. Bounded joint arbitration | Select a small set of route and Node-label alternatives together around a defect. | Could address a local quality conflict if a safe joint basin exists. | Adds search work; does not remove global verification cost. | Earlier Regional Care probes found no materially safe candidate across the bounded families tested. | Keep as a diagnostic tool, not the next Product investment. |
+| C. Dependency-partitioned presentation | Separate pure per-route candidate generation from sequential occupied-path arbitration, label placement, and final verification. Cache/recompute candidates by geometry dependency; retain the current global authority selection initially. | Preserves current quality if selection and feedback are unchanged; creates a boundary for future local authority research. | The most plausible way to avoid repeated candidate-generation work even when final arbitration remains global. | Can retain exactness for the authority stages; medium extraction/instrumentation cost. | **Promising second step after A.** Test with an opt-in prototype, not Product adoption. |
+| D. Larger pipeline redesign | Treat route candidates, Node labels, Relation labels, and conflict resolution as a jointly optimized or partitioned presentation problem. | The only family likely to change the Regional Care quality frontier rather than relocate its defects. | May permit region-level recomputation, but could be more expensive and changes output semantics. | Cannot promise current exactness; high regression and validation cost. | Defer until a bounded candidate model demonstrates a safe quality gain beyond current authority. |
+
+### Decision
+
+**PROVEN**
+
+- The presentation pipeline has a real structural coupling, not merely an
+  early-index Regional Care anomaly. A late-index Apollo defect changed
+  earlier route geometry through Node-obstacle dependency and then expanded
+  through label placement and feedback.
+- Feedback is quality-critical in the tested cases. Removing it made both
+  Apollo and Regional Care materially worse; it must not be treated as an
+  expendable performance pass.
+- The current local-repair mechanism can safely skip work for clean fixtures,
+  but does not provide a general exact-performance mechanism for dirty
+  snapshots. Prefix replay alone is insufficient.
+- No Product source, fixture, historical evidence, or governed lineage was
+  changed in this checkpoint.
+
+**STRONGLY SUPPORTED**
+
+- The principal accidental coupling is whole-pipeline recomputation rather
+  than sequential `occupiedPaths` authority itself. Candidate generation,
+  arbitration, label placement, and feedback need clearer boundaries and
+  dependency traces before useful caching or partitioning can be made safe.
+- Processing-order tuning should remain deprioritized: the most favorable
+  late-index case retained a prefix only before exactness was checked.
+- A targeted architecture refactor (A), followed by an opt-in candidate/
+  arbitration split (C), has higher return on investment than continuing
+  incremental scalar or spacing tuning. A broader semantic redesign (D) is
+  not yet justified without a safe quality-improving prototype.
+
+**UNRESOLVED**
+
+- Whether a complete dependency trace can retain an exact reusable region in
+  any dirty nontrivial fixture, rather than only skip clean fixtures.
+- Whether independently cached route candidate generation yields material
+  wall-clock savings once its obstacle dependencies are recorded.
+- Whether a redesigned joint route/label authority can resolve Regional Care
+  without changing the positive-fixture presentation semantics.
+
+### Recommended next checkpoint
+
+Do a bounded, diagnostic-only **stage-boundary prototype**: extract or mirror
+pure route-candidate generation behind an opt-in seam, instrument its exact
+Node/label/occupied-path inputs, then compare it with current authority on
+Regional Care and the four clean fixtures. Keep sequential arbitration and
+feedback as the reference authority. This tests the smallest high-ROI claim:
+whether candidate-generation work can be safely reused without pretending that
+the current global quality decisions are local.
+
+Progressive local repair should therefore remain a conservative
+skip/fallback/diagnostic mechanism. It should not be promoted as the Product
+performance strategy, and broader architecture redesign should remain a
+separate, evidence-gated decision.
+
 ## Scope
 
 This checkpoint follows the actual Product inspection of the diagnostic-only

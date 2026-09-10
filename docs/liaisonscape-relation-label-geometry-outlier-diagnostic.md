@@ -903,6 +903,15 @@ The evaluator intentionally remains the current Product presentation pipeline.
 No routing, Relation-label, Node-label, or drag semantics were changed to
 obtain the timing result.
 
+An additional V8 CPU profile of the Lighthouse 8-finalist run decomposed the
+presentation cost further. Approximately 48% of sampled CPU time was spent in
+the repeated occupied-path sample-proximity test inside route candidate
+scoring, and approximately 20% was in `routeGraphEdge` as a whole. The next
+largest individual costs were label/path distance and route geometry work;
+there was no evidence that crossing counting or candidate allocation was the
+primary bottleneck. These percentages are profiler samples, not a frozen
+performance budget.
+
 ### Bounded optimization
 
 The generic runner now limits the expensive Product-aware repair to the first
@@ -920,23 +929,54 @@ selected quality metrics on Apollo 11 and Lighthouse, so it is the bounded
 default for this diagnostic runner. This is evidence for a diagnostic budget,
 not a universal acceptance threshold.
 
+The follow-up optimization keeps the same full-fidelity Product presentation
+for every requested candidate but avoids work that cannot affect the result.
+The shared `routeGraphEdge` helper first checks candidate and occupied-route
+sample bounding boxes expanded by the exact 8-unit proximity threshold; only
+intersecting boxes enter the existing point-sample safety loop. Its node
+influence precheck uses the same conservative bounding-box principle. The
+existing `< 60` and `< 8` thresholds, consecutive-distance rule, candidate
+ordering, route selection, and label checks are unchanged. The repeated
+distance comparisons use squared distances, which is mathematically
+equivalent for these non-negative thresholds. This is a computational change
+shared by Product routing and the diagnostic runner, not a new routing policy.
+
+The diagnostic runner also memoizes the pure `positions -> metrics` result by
+the complete sorted node-coordinate key. This cache is intentionally local to
+the diagnostic runner: it does not reuse interactive Product routing state,
+previous routes, labels, or drag continuity. Lighthouse had 16 exact duplicate
+requests out of 483 calls; this is a small secondary saving, not the main
+optimization mechanism.
+
 ### Before / after measurements
 
-| Fixture | Finalist limit | Product evaluations | Runtime | Crossings | Label safety | Extent | Fit | Route median/max |
+| Fixture | Finalist limit | Presentation calls / full evaluations | Runtime | Crossings | Label safety | Extent | Fit | Route median/max |
 | --- | ---: | ---: | ---: | ---: | --- | --- | ---: | --- |
 | Apollo 11 | 12 | 508 observed in the prior run | 46.68 s | 0 | pass | 622 x 419 | 0.637 | 195.7 / 352.9 |
-| Apollo 11 | **8** | 469 | **38.41 s** | 0 | pass | 622 x 419 | 0.637 | 195.7 / 352.9 |
+| Apollo 11 | **8, optimized** | 469 / 453 | **12.55 s** | 0 | pass | 622 x 419 | 0.637 | 195.7 / 352.9 |
 | Linkscape | 12 | prior baseline | 9.09 s | 0 | pass | 356 x 146 | 1.000 | 100.6 / 139.7 |
-| Linkscape | **8** | 336 | **6.87 s** | 0 | pass | 356 x 146 | 1.000 | 100.6 / 139.7 |
+| Linkscape | **8, optimized** | 336 / 318 | **2.86 s** | 0 | pass | 356 x 146 | 1.000 | 100.6 / 139.7 |
 | Lighthouse | 12 | 583 | 82.93 s | 0 | pass | 633 x 401 | 0.662 | 193.4 / 370.0 |
-| Lighthouse | **8** | 483 | **68.51 s** | 0 | pass | 633 x 401 | 0.662 | 193.4 / 370.0 |
+| Lighthouse | **8, optimized** | 483 / 467 | **18.79 s** | 0 | pass | 633 x 401 | 0.662 | 193.4 / 370.0 |
+| K3,3 fallback | **8, optimized** | 36 / 24 | **0.59 s** | 2 routed; 1 structural | pass | 392 x 164 | 1.000 | 132.0 / 343.9 |
 
-The Apollo and Lighthouse selected coordinates and reported quality metrics
-were identical between the 12 and 8 finalist runs. The Linkscape result also
-remained zero-crossing and label-safe with the same reported output metrics.
-The runtime reductions are approximately 18%, 24%, and 17% respectively.
-The counts include the deterministic candidate evaluations used by the runner;
-they are not browser capture or governed evidence counts.
+The optimized Apollo, Linkscape, and Lighthouse selected coordinates and
+reported quality metrics were identical to their pre-optimization 8-finalist
+runs. K3,3 retained its bounded non-zero-crossing fallback. The optimized
+runner still requested the same number of presentation evaluations; the
+full-evaluation column excludes exact cache hits. The measured wall-time
+improvement from the earlier 8-finalist baseline is approximately 67% for
+Apollo, 59% for Linkscape, and 73% for Lighthouse in these representative
+runs. Wall time is machine-dependent and is not a Product acceptance budget.
+
+Stage-level Lighthouse measurements were 44 presentation calls / 2.17 s for
+Stage 1 structural search and 439 calls / 16.62 s for Stage 2 presentation
+repair plus constrained relaxation; Stage 2 contained 423 full evaluations and
+16 cache hits. Apollo measured 60 / 2.13 s in Stage 1 and 409 / 10.43 s in
+Stage 2. Linkscape measured 16 / 0.26 s and 320 / 2.60 s respectively. K3,3
+measured 36 / 0.59 s in Stage 1 and did not enter Stage 2. The counts include
+diagnostic runner work only; they are not browser capture or governed evidence
+counts.
 
 ### Scaling interpretation
 
@@ -948,12 +988,14 @@ remains the first bottleneck even after finalist pruning. The exact circular
 screen is separately capped at nine Nodes because its factorial growth is
 predictable; larger graphs use the seeded heuristic order screen.
 
-The next meaningful optimization candidates are therefore incremental route /
-label recomputation or a stronger cheap lower-bound screen. A broad cache is
-not yet justified: candidate positions are mostly unique, and the current
-quality-preserving finalist pruning already removes the demonstrated
-redundancy. Any incremental evaluator must prove equivalence against the
-current Product presentation output before it can be considered.
+The current broad scaling concern remains the Stage 2 full-fidelity evaluator:
+even after this optimization, a 10-node graph takes tens of seconds on the
+representative host. Exact duplicate caching is useful but small. The next
+meaningful architecture candidates are incremental affected-route/label
+recomputation, a stronger cheap lower-bound screen, or pressure-targeted
+partial refinement. None is implemented here because each would need an
+equivalence proof against the current Product presentation output; a cache
+with interactive state or incomplete invalidation would be unsafe.
 
 ### Current generalization state
 
@@ -968,18 +1010,24 @@ pruning because it has no structural zero-crossing start.
 **PROVEN**
 
 - Full Product presentation evaluation is the dominant measured cost for the
-  10-node fixture.
+  10-node fixture, with Stage 2 responsible for 439 of 483 Lighthouse calls.
 - A finalist limit of eight preserves the selected Apollo and Lighthouse
   quality metrics in repeated diagnostic runs while reducing runtime.
 - A limit of four causes a measured route-quality regression and is rejected.
+- Bounding and squared-distance optimizations reduce measured runtime without
+  changing selected coordinates or reported quality metrics on the four
+  representative cases.
 
 **STRONGLY SUPPORTED**
 
-- Cheap structural screening followed by a small number of Product-aware
-  finalist evaluations is the appropriate performance architecture at this
-  scale.
+- Cheap structural screening followed by a bounded number of full-fidelity
+  Product-aware finalist evaluations is effective at this scale, but the
+  remaining Stage 2 cost is still too high for Product adoption.
 - Finalist pruning should remain a diagnostic budget until more fixture classes
   confirm that it does not discard a visually better candidate.
+- Conservative spatial screening and pure diagnostic memoization are reusable
+  optimization patterns when their invalidation and equivalence boundaries are
+  explicit.
 
 **UNRESOLVED**
 
@@ -987,6 +1035,9 @@ pruning because it has no structural zero-crossing start.
   without changing Product presentation semantics.
 - Whether eight finalists remain sufficient for denser or hub-heavy graphs,
   narrow viewports, and graphs with parallel or self-loop Relations.
+- Whether the optimized runner's tens-of-seconds 10-node trajectory is
+  acceptable for any future Product performance evidence class; no budget is
+  frozen here.
 - Whether the performance benefit survives actual Product visual inspection
   for Linkscape and broader fixtures.
 - Product adoption and initial-placement integration.

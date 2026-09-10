@@ -1882,3 +1882,97 @@ behavior. Fresh10/Fresh11/Fresh12 historical evidence, Fresh12 canonical
 Human Review, stored fixtures, Product source, and Product adoption state were
 unchanged. No new governed Fresh lineage, push, tag, release, deploy, or
 publication was performed.
+
+## Regional Care bounded coupled-move Stage 2 probe
+
+### Question and method
+
+This checkpoint tested whether the remaining Regional Care label-route hits
+were reachable with a small coupled geometry neighborhood, rather than with a
+larger single-node radius. The probe remained diagnostic-only. It started from
+the existing Regional Care Stage 2 result, admitted finite presentation-defect
+penalties so that the search could cross an unsafe intermediate state, and
+retained node-body overlap as a hard rejection.
+
+The pair mode selected the eight highest-pressure nodes from the current
+presentation metrics. It evaluated every pair with 18- and 9-unit steps, eight
+directions, and both same-direction and opposite-direction motion. This gave
+896 planned pair moves; 848 reached full presentation evaluation after
+displacement and hard-overlap screening. The final candidate was therefore a
+bounded pairwise probe, not a general multi-node solver.
+
+### Regional Care result
+
+| Candidate | Crossings | Label hits / near / overlap | Route median / max | Extent | Fit | Min separation | Accepted moves |
+| --- | ---: | ---: | --- | --- | ---: | ---: | ---: |
+| Existing hard Stage 2 | 4 | 6 / 14 / 0 | 282.1 / 629.3 | 1093.9 x 673.0 | 0.4179 | — | 0 |
+| Soft single-node, max displacement 48 | 0 | 6 / 11 / 0 | 321.8 / 635.2 | 1112.7 x 677.3 | 0.4160 | — | 28 |
+| Soft coupled pair, max displacement 48 | 1 | 3 / 10 / 0 | 281.6 / 645.4 | 1093.9 x 691.0 | 0.4079 | 126.6 | 8 |
+
+The hard-overlap guard produced zero node-body overlaps in the selected pair
+candidate. Coupling materially improved label-route hits (6 to 3) and also
+reduced crossings relative to the hard baseline (4 to 1), while bringing route
+median close to baseline. It did not produce a presentation-clean result:
+three label-route hits and ten near-label routes remained, route maximum grew,
+the vertical extent grew, and fit decreased.
+
+### Regression check
+
+The same pair mode was run against Apollo 11, Lighthouse, Linkscape, and
+District Solar. All four remained machine-clean: crossings, label-route hits,
+near-label routes, label overlaps, and node overlaps were all zero. No
+positive-fixture regression was observed in this diagnostic run. The outputs
+were not promoted to Product data or governed evidence.
+
+### Interpretation
+
+**PROVEN**
+
+- A bounded coupled pair neighborhood can remove part of the Regional Care
+  label-route defect that remains after the single-node soft probe: hits 6 to
+  3, crossings 4 to 1, and near-label routes 14 to 10.
+- The improvement is not explained by a larger displacement radius alone; it
+  comes from allowing two pressure nodes to move as one candidate plan.
+- The pair candidate can preserve the tested positive fixtures under the
+  current machine metrics while retaining a hard node-body-overlap boundary.
+
+**STRONGLY SUPPORTED**
+
+- The remaining Regional Care defects are partly a coupled geometry problem:
+  a single-node trajectory cannot express all of the local corridor changes
+  needed by the affected relation and label neighborhoods.
+- Pair coupling alone is insufficient for a clean result. The remaining hits
+  indicate that candidate scoring still needs a more explicit label-corridor
+  objective, a richer move family, or a change in route/label interaction.
+- A small pressure-targeted pair search is a reasonable bounded diagnostic
+  building block, but its cost and incomplete result do not justify Product
+  adoption yet.
+
+**UNRESOLVED**
+
+- Whether a label-corridor-aware objective can remove the remaining three hits
+  without increasing route burden or harming the four positive fixtures.
+- Whether three-node moves are necessary, or whether pair moves with corridor
+  directionality and label-aware cost are sufficient.
+- Whether Regional Care's residual defect is ultimately caused by placement,
+  routing semantics, relation-label positioning, or their interaction.
+
+### Candidate decision and state
+
+The coupled pair family is retained as a **diagnostic candidate-generation
+result only**. It is not adopted into Product initial placement and it does not
+authorize a new governed evidence run. The next useful checkpoint is a bounded
+label-corridor-aware comparison, preferably using the same pressure-targeted
+pair neighborhood and an explicit before/after corridor metric, followed by an
+Early Visual Smoke Check if a materially safer candidate is found.
+
+The actual Product inspection surface was checked for the existing Apollo 11
+geometry-candidate comparison and remains available for user inspection. No
+Regional Care Product fixture was added, and no new governed browser evidence
+was generated. Regional Emergency fallback remains OPEN/SEPARATE; node-label
+connector presentation and interactive pointer-up side flipping remain
+independent tracks.
+
+Fresh10/Fresh11/Fresh12 historical evidence and the Fresh12 canonical Human
+Review result were unchanged. No new governed Fresh lineage, push, tag,
+release, deploy, or publication was performed.

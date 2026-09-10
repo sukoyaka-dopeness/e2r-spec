@@ -1640,3 +1640,132 @@ Fresh10/Fresh11/Fresh12 historical evidence, canonical Human Review results,
 stored fixtures, and final Product candidate selection were unchanged. No new
 governed Fresh lineage, Product adoption, push, tag, release, deploy, or
 publication was performed.
+
+## Two-stage cross-dataset quality generalization audit
+
+### Scope and method
+
+This bounded checkpoint tested the existing diagnostic two-stage strategy
+without changing Product source or stored evidence. Stage 1 was the generic
+crossing-first structural search; Stage 2 was the existing post-structural
+constrained relaxation. The same runner and the same presentation metrics were
+used for each fixture. The audit deliberately separates layout-quality
+generalization from performance scalability; the 24-node run is reported as a
+quality stress result, not as a runtime acceptance target.
+
+The coverage was selected to include small, sparse, hub/mixed, self-loop or
+parallel-relation, larger mixed, and non-planar stress behavior using existing
+repository fixtures plus the existing K3,3 synthetic fixture:
+
+| Fixture | Graph | Topology signal used for coverage |
+| --- | ---: | --- |
+| Linkscape relation sample | 5 nodes / 6 edges | small sparse mixed graph |
+| Lighthouse restoration | 10 / 14 | hub/mixed graph; source fixture also contains self-loop/parallel relation data |
+| Apollo 11 | 9 / 11 | hub-heavy mission graph |
+| District solar cooperatives | 12 / 10 | sparse/disconnected-style visual fixture |
+| Regional emergency response | 12 / 30 | dense mixed stress graph |
+| Regional care coordination | 24 / 30 | larger mixed graph |
+| K3,3 synthetic | 6 / 9 | non-planar dense stress; no planar structural finalist expected |
+
+The machine metrics are diagnostic: Stage 1 zero-crossing finalist count and
+minimum structural crossings; Stage 2 routed crossings; label-route hits and
+near-label count; route median/maximum; node extent; fit scale; and minimum
+node separation. These are the minimum set retained for this comparison
+because they jointly expose topology safety, readability pressure, route
+burden, and viewport use without treating raw crossing count as sufficient.
+
+### Machine results
+
+| Fixture | Stage 1 zero / min structural | Stage 2 | Final routed crossings | Label hits / near / overlap | Route median / max | Extent | Fit | Interpretation |
+| --- | ---: | --- | ---: | ---: | ---: | --- | ---: | --- |
+| Linkscape | 12 / 0 | 9 moves | 0 | 0 / 0 / 0 | 100.6 / 139.7 | 355.9 x 146.0 | 1.000 | clean small positive |
+| Lighthouse | 12 / 0 | 14 moves | 0 | 0 / 0 / 0 | 193.4 / 370.0 | 633.0 x 401.0 | 0.662 | clean positive |
+| Apollo 11 | 12 / 0 | 16 moves | 0 | 0 / 0 / 0 | 195.7 / 352.9 | 622.3 x 419.4 | 0.637 | clean positive |
+| District solar | 12 / 0 | 7 moves | 0 | 0 / 0 / 0 | 260.1 / 357.7 | 788.2 x 328.0 | 0.713 | clean but longer routes |
+| Regional emergency | 0 / 3 | fallback | 48 | 0 / 0 / 0 | 315.8 / 654.7 | 755.8 x 581.4 | 0.477 | structural fallback is visibly/quantitatively weak |
+| Regional care | 8 / 0 | 0 effective moves | 4 | 6 / 14 / 0 | 282.1 / 629.3 | 1093.9 x 673.0 | 0.418 | Stage 1 success does not ensure presentation safety at this size |
+| K3,3 | 0 / 1 | fallback | 2 | 0 / 0 / 0 | 132.0 / 343.9 | 392.0 x 164.0 | 1.000 | expected non-planar bounded fallback |
+
+For Regional Care, the runner produced a zero-crossing structural finalist,
+but the selected presentation-repaired candidate still had four routed
+crossings, six label-route hits, and fourteen near-label routes. This is the
+strongest counterexample to interpreting Stage 1 zero-crossing as a complete
+visual-quality guarantee. Regional Emergency is a separate failure mode: the
+structural search did not find a zero-crossing finalist and the bounded
+fallback retained a large crossing burden. K3,3 confirms the intentional
+non-planar fallback boundary rather than a new Product defect.
+
+### Actual Product visual inspection
+
+The Apollo 11 diagnostic geometry surface was opened on the current local
+Product build and the Generic crossing-first structural search and
+Post-structural constrained relaxation candidates were inspected in the actual
+Product renderer. The Generic candidate was readable and spatially coherent;
+the Post-structural candidate remained readable while using a more horizontal,
+balanced footprint. No gross clipping, node-body overlap, or unreadable-label
+failure was observed in this bounded Apollo inspection. This is diagnostic
+visual evidence only: it does not accept either candidate for Product initial
+placement and does not replace formal Human Review.
+
+Lighthouse, Linkscape, District Solar, Regional Emergency, Regional Care, and
+K3,3 were machine-audited in this checkpoint but were not promoted to a new
+governed browser evidence run. Their visual status therefore remains
+machine-only unless separately inspected.
+
+### Generalization judgement
+
+**PROVEN**
+
+- The current two-stage strategy produces a machine-clean result for the
+  tested Linkscape, Lighthouse, Apollo 11, and District Solar fixtures under
+  the retained metrics.
+- A larger 24-node fixture can pass Stage 1 structural zero-crossing while
+  Stage 2 leaves routed crossings and label pressure; structural success is
+  not sufficient for presentation quality.
+- Dense/non-planar stress can enter the existing bounded fallback when no
+  zero-crossing structural finalist is found; K3,3 and Regional Emergency
+  expose this boundary with different severities.
+- The existing bounded fallback and Stage 2 gate are diagnostic behavior and
+  do not alter Product initial placement or governed evidence.
+
+**STRONGLY SUPPORTED**
+
+- The strategy is promising for small and medium fixtures with manageable
+  topology, but quality does not generalize uniformly to larger or denser
+  graphs.
+- The first targeted layout work should improve fallback and large-graph
+  presentation feasibility before any broad architecture or performance
+  investment. The highest-value next experiment is topology-aware structural
+  search / fallback admission coupled to presentation re-evaluation, not a
+  fit-scale-only change.
+- Viewport fit is a consequence and useful diagnostic signal here; lowering or
+  raising fit alone cannot remove the Regional Care route/label conflicts or
+  the Regional Emergency fallback crossings.
+
+**UNRESOLVED**
+
+- Whether a topology-aware Stage 1 objective can make Regional Care both
+  structurally and presentation-clean within the current bounded budget.
+- Whether Regional Emergency's 48 routed crossings arise mainly from its
+  topology, the structural search family, or insufficient fallback search
+  breadth.
+- Whether the current renderer remains visually acceptable for the two
+  machine-only failure cases after a bounded candidate is materialized. That
+  requires a separate non-authoritative visual inspection, not a new governed
+  evidence run.
+- Node-label connector presentation remains OPEN/SEPARATE. Interactive
+  pointer-up obstacle-side flipping remains OPEN/INDEPENDENT.
+
+### Decision and state
+
+The result is **Option B: promising but topology-limited; targeted layout work
+first**. A presentation-architecture redesign is not justified by this audit,
+and no Product adoption decision is made. The next bounded work should focus on
+one dense/large failure mode at a time, preserve the current Apollo/Lighthouse/
+Linkscape positives, and repeat both machine metrics and Early Visual Smoke
+Check before any adoption discussion.
+
+Fresh10/Fresh11/Fresh12 historical evidence, Fresh12 canonical Human Review,
+and existing stored fixtures were unchanged. No new governed Fresh lineage,
+Product initial-placement adoption, push, tag, release, deploy, or publication
+was performed.

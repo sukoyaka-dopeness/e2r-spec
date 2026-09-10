@@ -207,12 +207,42 @@ the feedback-pass decisions whose semantic Node-label inputs changed. The
 24-unit Node mutation produced 0 hits (33/33 and 90/90 misses), as required.
 
 Same-process wall-clock observations for the repeated snapshot were about
-31.653 ms uncached versus 11.557 ms cached for Apollo (63.5% lower), and
-155.024 ms versus 74.033 ms for Regional Care (52.2% lower). These are
+95.392 ms uncached versus 36.975 ms cached for Apollo (61.2% lower), and
+258.424 ms versus 109.434 ms for Regional Care (57.7% lower). These are
 indicative diagnostic timings, not a production benchmark; they include the
 full presentation pipeline and vary with host load. Candidate-generation
 diagnostic records still report the same 1,089 / 2,970 records because
 arbitration continues to receive the same candidate set contents.
+
+### Arbitration profiling
+
+The next diagnostic pass added an opt-in profiler to the same authority. It
+does not alter route selection or downstream presentation. It separates
+candidate generation, the candidate-ranking/selection loop, occupied-path
+checks, continuity/safety predicates, Relation-label placement, Node-label
+placement, and per-pass elapsed time. The primary route decision profiler also
+counts 33 decisions / 1,089 candidate comparisons for Apollo and 90 decisions
+/ 2,970 comparisons for Regional Care. Manual/self-loop early returns remain
+outside candidate comparisons; parallel-eligibility counterfactual route calls
+are included in route profiling when present.
+
+For an uncached repeat of the same semantic snapshot, the observed component
+times were:
+
+| Fixture | Presentation pass time | Candidate generation | Selection loop | Occupied-path checks | Relation labels | Node labels | Feedback pass |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Apollo 11 | 94.2 ms | 56.2 ms | 0.6 ms | 11.9 ms | 8.1 ms | 20.4 ms | 34.9 ms |
+| Regional Care | 256.4 ms | 117.0 ms | 1.2 ms | 28.5 ms | 34.3 ms | 83.0 ms | 96.6 ms |
+
+The component values are diagnostic timings collected in one process and
+should not be added as independent totals: the feedback-pass value contains
+its route and label work. The important boundary is that the ranking/selection
+loop itself is small, while candidate evaluation and downstream label/feedback
+work are substantial. On the cached repeat, candidate-generation timing fell
+to about 7.6 ms / 15.0 ms for Apollo / Regional Care, while final outputs
+remained exact. This means the cache does not expose a separate high-value
+arbitration-selection seam; it removes repeated candidate evaluation and leaves
+the quality-critical ordered authority intact.
 
 ### Classification and next direction
 
@@ -222,9 +252,11 @@ snapshots: exact reuse produced a material diagnostic wall-clock reduction.
 This is not a claim that all presentation work is cacheable. The feedback pass
 still depends on downstream semantic Node-label state, and the conservative
 key makes many geometry changes misses. The appropriate next direction is to
-keep this opt-in seam as diagnostic infrastructure, refine dependency
-instrumentation and benchmark representative repeated evaluations, and inspect
-arbitration cost separately before considering any Product adoption.
+keep the candidate cache and profiler as opt-in diagnostic infrastructure. The
+small ranking/selection loop does not justify a separate optimization branch on
+this evidence. If more performance work is warranted, measure downstream
+label/feedback stages or their dependency boundaries separately before
+considering any Product adoption.
 
 No default Product behavior, fixture, stored evidence, or governed lineage was
 changed by this prototype. The source addition is an opt-in API only; callers

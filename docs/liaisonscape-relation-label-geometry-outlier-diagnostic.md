@@ -735,3 +735,154 @@ fit is not achieved by harmful crowding.
 
 Product adoption remains undecided. No governed Fresh lineage was started and
 the interactive pointer-up routing track remains `OPEN / INDEPENDENT`.
+
+## Two-stage layout generalization snapshot
+
+### Snapshot of the Apollo milestone
+
+The current milestone is now recorded as the two-stage diagnostic pattern:
+
+```text
+generic crossing-first structural search
+    -> graph-level structural arrangement
+post-structural constrained relaxation
+    -> small presentation-preserving geometry adjustment
+```
+
+For Apollo 11, the generic search found a structural zero-crossing candidate,
+and the bounded relaxation kept zero crossings while removing the measured
+usable-span pressure. The user inspected the relaxed candidate in the actual
+Product and reported readable Node-owned and Relation labels, improved
+parallel-corridor affiliation, and very good overall readability. A small
+manual Node movement producing a similar local presentation improvement is
+supporting user evidence for local corridor pressure, not a stored coordinate
+or an Apollo-specific rule.
+
+The snapshot remains diagnostic-only. It is a research milestone and not a
+Product adoption decision.
+
+### Generalization probe
+
+The same implementation was run against existing fixtures without Apollo
+names or Apollo-specific ordering. The inspection surface can now display the
+generic and post-relaxation materializations for the Linkscape sample and the
+Lighthouse sample as diagnostic in-memory clones of the actual `App` surface.
+The stored fixtures and Product initial-placement source remain unchanged.
+
+| Fixture class | Nodes / entity Edges | Structural result | Post-relaxation | Result summary |
+| --- | ---: | --- | --- | --- |
+| sparse Apollo control | 3 / 1 | zero finalist found | 0 crossings, label-safe | bounded run completed in 0.09 s |
+| sparse/medium Linkscape sample | 5 / 6 | zero finalist found | 9 accepted moves; 0 crossings and label-safe | extent 375 x 164 -> 356 x 146; route max 172.0 -> 139.7 |
+| Apollo 11 benchmark | 9 / 11 | zero finalist found | 16 accepted moves; 0 crossings and label-safe | extent 670 x 499 -> 622 x 419; usable penalty 149.4 -> 0 |
+| Lighthouse sample | 10 / 14 | zero finalist found | 14 accepted moves; 0 crossings and label-safe | extent 636 x 440 -> 633 x 401; fit 0.611 -> 0.662 |
+
+These machine results support repeating the two-stage strategy beyond Apollo,
+but they do not establish visual quality for the other fixtures. The actual
+Product surface is the authority for that observation, and the generalization
+surface is waiting for user inspection.
+
+### Zero-crossing fallback
+
+Zero crossings are a preference when feasible, not a universal rule. A
+synthetic K3,3 graph was used as a non-planar stress case for the structural
+screen. Its exact circular stage had a best chord count of 3; the bounded grid
+screen found no structural zero-crossing finalist and its best structural
+fallback had one straight-line crossing. The post-structural relaxation was
+not attempted because there was no zero-crossing structural start.
+
+The same run completed in 1.70 s with 19,216 cheap grid evaluations. The
+selected fallback retained label and Node-clearance safety in the measured
+presentation, but had two routed crossings. This is the intended fail-closed
+bounded behavior: return the best structural result found under the budget,
+report that zero structural feasibility was not found, and do not wait
+indefinitely or claim planarity. The finite result is evidence about this
+screen and budget, not a mathematical proof that every possible embedding is
+impossible.
+
+The diagnostic now keeps these quantities separate:
+
+- structural straight-line crossing count;
+- routed Product presentation crossing count;
+- label-route hits, label proximity, and label overlap;
+- Node clearance and 1-hop locality.
+
+This distinction prevents a curved router result from being mistaken for a
+planar structural embedding.
+
+### Scaling and first bottleneck
+
+The latest bounded runs measured the following:
+
+| Fixture | Nodes / Edges | Order evaluations | Cheap grid evaluations | Product evaluations | Runtime |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Apollo low-density | 3 / 1 | 2 | 19,216 | 50 | 0.09 s |
+| Linkscape | 5 / 6 | 24 | 19,216 | 300 | 9.09 s |
+| Apollo 11 | 9 / 11 | 40,320 raw permutations | 19,216 | 300 + 208 relaxation | 46.83 s |
+| Lighthouse | 10 / 14 | 580 heuristic attempts | 19,216 | 300 + 208 relaxation | 83.59 s |
+| synthetic K3,3 | 6 / 9 | 120 | 19,216 | no post-relaxation | 1.70 s |
+
+For at most nine Nodes, the exact circular screen grows factorially and is
+therefore capped. Larger graphs use a deterministic seeded heuristic for that
+screen. The grid stage has a fixed 16-start by 1,200-move budget, with each
+cheap evaluation growing with non-incident Edge-pair count. Full Product
+presentation and local relaxation are the first practical bottlenecks for
+these fixtures; the Lighthouse run is slower despite only one additional Node
+because its relation topology causes more presentation work. No 100-Node
+performance claim is made.
+
+### Contribution of the two stages
+
+The structural stage contributes the main crossing-topology improvement. In
+Apollo it moves from the prior three-crossing family to a zero-crossing
+structural candidate; the circular-only screen could not do this. The second
+stage contributes presentation polish: on Apollo it reduces usable-span
+penalty, extent, and route maximum without reintroducing crossings. On the
+5-node sample it also reduces route burden; on Lighthouse it improves extent
+and fit but leaves a high usable-span penalty. Thus the stages have distinct
+responsibilities and should not be collapsed into one opaque local score.
+
+### Classification
+
+**PROVEN**
+
+- The Apollo two-stage milestone is preserved as a research snapshot.
+- The same generic implementation completed on sparse, medium, and 10-node
+  existing fixtures.
+- Apollo, Linkscape, and Lighthouse each produced a bounded structural
+  zero-crossing finalist under the current budget.
+- The K3,3 stress case produced no structural zero finalist, and the search
+  returned a bounded fallback without post-relaxation.
+- Structural and routed crossing counts are now reported separately.
+
+**STRONGLY SUPPORTED**
+
+- Structural search followed by small constrained relaxation is more
+  promising than solving crossing, labels, aspect, and route length as one
+  local objective.
+- The current routing and label implementations benefit substantially from
+  improved geometry in more than one fixture class.
+- The first scalability concern is full Product presentation evaluation,
+  after the exact circular search has been disabled for larger graphs.
+
+**UNRESOLVED**
+
+- Visual quality of the non-Apollo candidates until actual Product inspection.
+- General behavior for denser, hub-heavy, parallel, self-loop, narrow-viewport,
+  and larger graphs.
+- The right budget and fallback weighting when zero structural crossings are
+  not found.
+- Whether any of this diagnostic family should become Product initial layout.
+- Node-label connector presentation and interactive pointer-up obstacle-side
+  flip remain separate open tracks.
+
+### Product-readiness boundary
+
+Before Product adoption can be evaluated seriously, the current work still
+needs cross-fixture actual Product inspection, deterministic/reproducible
+budget review, narrow-viewport inspection, regression coverage for preserved
+routing/label/drag semantics, and an explicit initial-placement integration
+decision. Research success does not imply Product adoption.
+
+No Fresh10, Fresh11, or Fresh12 artifact or canonical Human Review result was
+changed. No governed Fresh lineage, push, tag, release, deploy, or publication
+was performed.

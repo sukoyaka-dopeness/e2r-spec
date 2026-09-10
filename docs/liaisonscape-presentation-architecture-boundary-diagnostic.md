@@ -177,25 +177,51 @@ Product test suite passed without changing Product semantics.
   graph without changing accepted output or making the authority more complex
   than the saved work justifies.
 
+## Behavior-preserving contract prototype
+
+A small implementation prototype was completed to test whether the proposed
+boundary can be represented without moving authority. The new
+`src/presentation-stage-contracts.ts` defines read-only contracts for:
+
+- route-selection snapshots;
+- Relation-label snapshots;
+- Node-label snapshots, including yielding-route descriptors;
+- complete per-pass snapshots; and
+- explicit feedback-stage input.
+
+`deriveBoundedAutomaticPresentation()` now passes these snapshots between its
+existing stages. The route-selection loop, Relation-label loop, Node-label
+loop, candidate scoring, occupancy order, and feedback decision remain in the
+same authority functions. Snapshot containers and arrays are copied/frozen at
+the boundary; maps are exposed only through `ReadonlyMap` contracts. The
+ordinary Product result is reconstructed into the existing return shape, so
+callers and Product-visible behavior remain unchanged.
+
+The prototype makes dependency ownership and future invalidation inputs
+inspectable, but it does not claim a recomputation reduction. The existing
+trace still shows that current route and label outputs have no safe reusable
+prefix/suffix in the tested fixtures. This is therefore a maintainability and
+future-invalidation seam, not an optimization result by itself.
+
 ## Checkpoint outcome
 
-No architecture prototype or Product refactor was implemented in this
-checkpoint. The evidence supports closing the current primitive-optimization
-branch and selecting a future, behavior-preserving stage-contract design as
-the next architecture experiment. That future experiment should measure
-snapshot construction, dependency invalidation, and exact output equivalence
-before attempting any parallel or incremental recomputation.
+The behavior-preserving stage-contract prototype is suitable for continued
+diagnostic use. The current primitive-optimization branch remains closed, and
+no parallel or incremental recomputation was enabled. The next architecture
+experiment should measure snapshot construction and explicit dependency
+invalidation before attempting any recomputation or parallel execution.
 
 Validation for the associated implementation checkpoint:
 
-- LiaisonScape tests: `334/334 PASS`;
+- LiaisonScape tests: `335/335 PASS`;
 - lint: PASS;
 - build: PASS;
 - E2R-SPEC validation: PASS;
 - `git diff --check`: PASS.
 
-The implementation checkpoint is `8771853` and the preceding result record is
-`477a979`; both remain local and unpushed. Fresh10/Fresh11/Fresh12 historical
-evidence, the Fresh12 canonical Human Review result, Product adoption state,
-and unrelated dirty work are unchanged. No push, tag, release, deploy, or
-publication was performed.
+The implementation checkpoint is recorded in the local commit for this
+stage-contract prototype; the preceding implementation/result records are
+`8771853` and `477a979`. All remain local and unpushed. Fresh10/Fresh11/Fresh12
+historical evidence, the Fresh12 canonical Human Review result, Product
+adoption state, and unrelated dirty work are unchanged. No push, tag, release,
+deploy, or publication was performed.

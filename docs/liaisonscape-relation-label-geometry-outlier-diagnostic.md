@@ -1510,3 +1510,133 @@ evidence, or canonical Human Review result was changed. No new governed Fresh
 lineage, Product adoption, push, tag, release, deploy, or publication was
 performed. No final presentation candidate changed, so no actual-Product visual
 inspection was required for this instrumentation-only checkpoint.
+
+## Dependency-aware incremental replay checkpoint
+
+### Diagnostic prototype
+
+The next bounded experiment implemented an opt-in replay path in the existing
+presentation authority. It reuses a contiguous canonical route prefix from the
+previous full presentation, rebuilds `occupiedPaths` from that prefix, and
+replays the dirty route suffix in canonical order. Prefix reuse is fail-safe:
+the supplied IDs must match the candidate's canonical prefix and every reused
+route must have identical endpoint positions. Relation labels and Node labels
+are deliberately recomputed through the existing full helpers; no unproven
+label-prefix reuse was introduced.
+
+The prototype then compares the replay result with the full candidate result.
+It checks final route geometry, first-pass and feedback-pass route geometry,
+Relation-label geometry, Node-label geometry, feedback state, and all derived
+metrics. A mismatch is diagnostic failure evidence, not an invitation to alter
+the Product authority.
+
+### Actual replay results
+
+| Fixture | Candidates | Exact replay matches | Mismatches | First mismatch stage | Prefix routes requested | Suffix routes replayed |
+| --- | ---: | ---: | ---: | --- | ---: | ---: |
+| Apollo 11 | 207 | 78 | 129 | first-route geometry | 686 | 1,591 |
+| Lighthouse | 237 | 178 | 59 | first-route geometry | 1,090 | 2,228 |
+| Linkscape | 118 | 118 | 0 | — | 176 | 532 |
+| K3,3 | no Stage 2 | — | — | — | — | — |
+
+K3,3 again selected the existing fallback and did not enter the Stage 2
+relaxation loop. It therefore has no incremental candidate population in this
+runner and cannot support a dense-graph reuse conclusion.
+
+The exact matches are useful only as bounded positive cases. They do not
+establish a general Product-safe boundary. Apollo and Lighthouse demonstrate
+the counterexample: a route that is unchanged in the current-to-full final
+comparison can still not be reused in the first pass when the candidate's
+suffix changes the label/feedback inputs. A representative Apollo candidate
+reused four routes, but the full first pass and replay first pass selected
+different geometry for the same route; the full authority then applied a
+different feedback consequence. The final mismatch was therefore observable
+at route geometry before any claim of metric equivalence could be made.
+
+### Why label reuse is not currently justified
+
+`deriveAutomaticRelationLabels` places each Relation label with all other route
+paths as input and with previously placed Relation labels as occupancy. A
+suffix route can therefore affect a nominal prefix label through both the
+all-route path set and sequential label occupancy. `deriveAutomaticNodeLabels`
+then consumes all route paths, all Relation-label occupancy, prior placements,
+and Node collision neighborhoods. A selective Node-label prefix cannot be
+declared safe from the current API without a stronger proof of unchanged
+inputs. Finally, a changed final Node-label bound activates the feedback pass,
+where routes are re-derived again. These are dependency facts, not merely
+performance observations.
+
+### Reuse and performance interpretation
+
+Across the tested replay population, Relation labels reused: 0 and Node labels
+reused: 0; both were replayed through their existing full helpers. The
+prototype requested 686/1,090/176 prefix routes for Apollo/Lighthouse/Linkscape
+and replayed the remaining 1,591/2,228/532 route suffixes respectively. The
+measured presentation-evaluation body time was approximately:
+
+| Fixture | Full candidate evaluation time | Replay evaluation time | Interpretation |
+| --- | ---: | ---: | --- |
+| Apollo 11 | 4.23 s | 3.94 s | small diagnostic reduction, with 129 mismatches |
+| Lighthouse | 7.98 s | 7.54 s | small diagnostic reduction, with 59 mismatches |
+| Linkscape | 0.77 s | 0.72 s | exact but too little reusable work |
+
+These are summed candidate-body timings, not an end-to-end Product runtime
+budget. They do not justify adoption: the cases with the clearest potential
+reuse are not equivalent, while the exact Linkscape case has too little reuse
+and does not generalize to Apollo or Lighthouse.
+
+### Equivalence and architecture decision
+
+The diagnostic replay is **not equivalent as a general strategy**. The
+prototype is retained only as an opt-in audit instrument. Its safe reusable
+boundary is limited to a canonical prefix whose route IDs, endpoint inputs,
+route decisions, occupied-path prefix, all downstream label inputs, and
+feedback precondition are independently proven identical. The current
+implementation does not expose such a complete proof boundary; in particular,
+Relation-label and Node-label inputs remain broad, and feedback can reverse the
+apparent first-pass outcome.
+
+No partial-recomputation Product implementation, candidate selection, or new
+visual surface was created. No final presentation candidate changed, so an
+actual-Product visual smoke inspection was not required for this
+instrumentation-only, non-adopting checkpoint.
+
+**PROVEN**
+
+- A canonical route prefix can be mechanically replayed only when the
+  candidate's canonical prefix and endpoint inputs match; the prototype
+  enforces that boundary.
+- The replay path is exact for all tested Linkscape candidates.
+- The replay path mismatches Apollo 129/207 and Lighthouse 59/237 candidates,
+  with first-pass route geometry as the first observed divergence.
+- Current Relation-label and Node-label helpers do not provide a proven
+  selective prefix reuse boundary.
+- Final feedback can make a route that looked stable in the final
+  current-to-full comparison participate in a different first-pass/feedback
+  trajectory.
+
+**STRONGLY SUPPORTED**
+
+- Prefix route reuse without downstream label/feedback invalidation is unsafe
+  for the general Product authority.
+- Exact replay is topology- and label-pressure-sensitive rather than a
+  fixture-independent property.
+- The measured reuse is not sufficient to justify Product complexity or a
+  runtime claim; the current Stage 2 bottleneck remains repeated full
+  presentation evaluation.
+
+**UNRESOLVED**
+
+- Whether a complete conservative invalidation graph could make selective
+  Relation-label/Node-label replay both exact and materially faster.
+- Whether a separate label-independent route authority or explicit dependency
+  contract would create a useful replay boundary without changing Product
+  semantics.
+- Dense K3,3 Stage 2 behavior under a dedicated bounded probe.
+- Node-label connector presentation remains OPEN/SEPARATE. Interactive
+  pointer-up obstacle-side flipping remains OPEN/INDEPENDENT.
+
+Fresh10/Fresh11/Fresh12 historical evidence, canonical Human Review results,
+stored fixtures, and final Product candidate selection were unchanged. No new
+governed Fresh lineage, Product adoption, push, tag, release, deploy, or
+publication was performed.

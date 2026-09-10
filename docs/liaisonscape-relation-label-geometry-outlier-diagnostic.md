@@ -1142,3 +1142,125 @@ no-pressure fallback, not by evidence that the pressure signals are complete.
 No Product source, stored fixture, Fresh10/Fresh11/Fresh12 evidence, or
 canonical Human Review result was changed. No new governed Fresh lineage,
 Product adoption, push, tag, release, deploy, or publication was performed.
+
+## Stage 2 quantized-lattice performance checkpoint
+
+### Chosen direction
+
+The next performance probe tested quantized candidate coordinates in the
+post-structural constrained relaxation. This direction was selected before
+incremental route or label recomputation because it can preserve the existing
+full Product presentation evaluator and all target nodes while testing a
+specific source of repeated work. The expected benefit was state collapse and
+additional exact cache hits, not faster integer arithmetic.
+
+The mode is diagnostic-only and opt-in through
+`E2R_RELAXATION_LATTICE_STEP`. The default remains zero and reproduces the
+previous continuous-coordinate result exactly. A separate
+`E2R_RELAXATION_LATTICE_PROBE=1` switch records candidate-state cardinality;
+the default runner does not pay that measurement overhead. Lattice steps 1,
+2, and 4 were tested. The whole Stage 2 relaxation start is rounded to the
+configured lattice and every trial move is rounded before the unchanged
+Product presentation evaluator scores it.
+
+### Fractional-state diagnosis
+
+Fractional coordinates are introduced by diagonal movement directions in both
+the Product-aware repair and the constrained relaxation. The 45-degree moves
+multiply integer step lengths by sine/cosine values. A selected structural
+state can therefore enter constrained relaxation with fractional coordinates:
+Apollo 11 had nine fractional coordinate components, Linkscape had four, and
+Lighthouse had none in these runs. The constrained trial sequence then
+generated fractional states even from Lighthouse's integer start.
+
+The baseline constrained relaxation produced the following state counts. The
+rounded columns are counterfactual unique keys for the same requested baseline
+states; actual quantized runs can follow a different accepted-move trajectory.
+
+| Fixture | Trial requests | Fractional requests | Unique raw states | Unique at step 1 | Unique at step 2 | Unique at step 4 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Apollo 11 | 216 | 216 | 212 | 208 | 208 | 195 |
+| Lighthouse | 240 | 235 | 235 | 234 | 233 | 218 |
+| Linkscape | 120 | 120 | 116 | 114 | 114 | 106 |
+
+Thus even step 4 collapses only 17 baseline Apollo states, 17 Lighthouse
+states, and 10 Linkscape states. Most expensive Product presentation requests
+are geometrically distinct at this lattice scale.
+
+### Before / after
+
+These representative timings include the opt-in state-cardinality probe for
+the lattice comparison and are not frozen performance budgets.
+
+| Fixture / lattice | Calls / full evaluations | Cache hits | Runtime | Crossings | Label safety | Extent | Fit | Route median/max | Span penalty |
+| --- | ---: | ---: | ---: | ---: | --- | --- | ---: | --- | ---: |
+| Apollo / continuous | 469 / 453 | 16 | 9.96 s | 0 | pass | 622 x 419 | 0.637 | 195.7 / 352.9 | 0 |
+| Apollo / step 1 | 474 / 457 | 17 | 10.22 s | 0 | pass | 644 x 420 | 0.636 | 191.6 / 358.5 | 0 |
+| Apollo / step 2 | 469 / 451 | 18 | 10.14 s | 0 | pass | 624 x 424 | 0.631 | 191.6 / 358.9 | 0 |
+| Apollo / step 4 | 475 / 443 | 32 | 10.00 s | 0 | pass | 664 x 428 | 0.626 | 198.4 / 352.4 | 0 |
+| Lighthouse / continuous | 483 / 467 | 16 | 16.29 s | 0 | pass | 633 x 401 | 0.662 | 193.4 / 370.0 | 9654.4 |
+| Lighthouse / step 1 | 482 / 465 | 17 | 16.54 s | 0 | pass | 629 x 401 | 0.662 | 193.4 / 375.6 | 9643.6 |
+| Lighthouse / step 2 | 482 / 466 | 16 | 16.09 s | 0 | pass | 630 x 408 | 0.653 | 193.4 / 374.9 | 9656.1 |
+| Lighthouse / step 4 | 486 / 451 | 35 | 15.99 s | 0 | pass | 624 x 396 | 0.670 | 192.0 / 361.0 | 9628.4 |
+| Linkscape / continuous | 336 / 318 | 18 | 2.18 s | 0 | pass | 356 x 146 | 1.000 | 100.6 / 139.7 | 0.002 |
+| Linkscape / step 1 | 336 / 317 | 19 | 2.18 s | 0 | pass | 356 x 146 | 1.000 | 100.5 / 139.9 | 0 |
+| Linkscape / step 2 | 338 / 323 | 15 | 2.21 s | 0 | pass | 358 x 132 | 1.000 | 101.2 / 142.6 | 0 |
+| Linkscape / step 4 | 335 / 310 | 25 | 2.15 s | 0 | pass | 375 x 164 | 1.000 | 115.1 / 172.0 | 0 |
+| K3,3 / continuous or step 4 | 36 / 24 | 12 | 0.44-0.45 s | 2 routed; 1 structural | pass | 392 x 164 | 1.000 | 132.0 / 343.9 | 0 |
+
+Step 4 generated more cache hits and reduced full evaluations by 10 on Apollo,
+16 on Lighthouse, and 8 on Linkscape, but did not produce a meaningful runtime
+reduction. It also changed every planar fixture's selected geometry. On
+Linkscape it made the quantized post-relaxation candidate lose to the earlier
+structural presentation-repair candidate, increasing route median/max from
+100.6/139.7 to 115.1/172.0. Step 1 stayed closer to the continuous result but
+saved at most two full evaluations and did not improve runtime. K3,3 never
+entered Stage 2, so quantization correctly had no effect on its fallback.
+
+With the probe disabled and lattice step zero, the final runner reproduced the
+pre-probe selected positions and complete selected metric objects exactly on
+Apollo 11, Linkscape, Lighthouse, and K3,3. Its call/full-evaluation counts also
+remained 469/453, 336/318, 483/467, and 36/24 respectively.
+
+### Interpretation
+
+**PROVEN**
+
+- Fractional Stage 2 states are common, but steps 1-4 collapse only a small
+  fraction of the requested candidate states.
+- Integer-lattice arithmetic is not the bottleneck; avoided full Product
+  presentation evaluations are too few to create a material runtime gain.
+- Quantization changes accepted-move trajectories and selected geometry even
+  when crossing, label, and Node-clearance gates continue to pass.
+- Step 4 causes a material Linkscape route-quality regression and is rejected.
+- The opt-in probe and step-zero default preserve existing Product semantics
+  and diagnostic output selection.
+
+**STRONGLY SUPPORTED**
+
+- Quantization alone is not a viable general Stage 2 optimization at the
+  tested lattice sizes.
+- Coarser lattices are unlikely to solve the dominant cost without increasing
+  threshold-boundary and geometry divergence risk.
+- The next promising performance family is dependency-aware incremental
+  presentation evaluation or a stronger cheap lower-bound screen, because the
+  remaining states are genuinely distinct rather than near-duplicate keys.
+
+**UNRESOLVED**
+
+- Whether a lattice used only as a cheap pre-screen, followed by continuous
+  full evaluation of a small finalist set, can reduce work without changing
+  the final geometry.
+- A semantic dependency graph sufficient for incremental route, Relation-label,
+  Node-label, occupied-path, and final-feedback recomputation.
+- Product performance budgets and broader dense/hub-heavy scaling evidence.
+- Node-label connector presentation remains OPEN/SEPARATE. Interactive
+  pointer-up obstacle-side flipping remains OPEN/INDEPENDENT.
+
+The step-1 geometry differs from the continuous baseline, so it is exposed only
+as an actual Product diagnostic comparison candidate. It is not recommended
+for adoption and no visual acceptance is inferred from the machine metrics.
+
+No Product source, stored fixture, historical evidence, or canonical Human
+Review result was changed. No governed Fresh lineage, Product adoption, push,
+tag, release, deploy, or publication was performed.

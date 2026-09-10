@@ -1264,3 +1264,115 @@ for adoption and no visual acceptance is inferred from the machine metrics.
 No Product source, stored fixture, historical evidence, or canonical Human
 Review result was changed. No governed Fresh lineage, Product adoption, push,
 tag, release, deploy, or publication was performed.
+
+## Stage 2 dependency and cheap-screen checkpoint
+
+### Chosen path
+
+After quantization was rejected, this checkpoint chose the conservative cheap
+screen direction for a bounded feasibility test. The screen was allowed to
+reject a candidate only when either the existing hard Node-body overlap rule
+already rejected it, or a mathematically safe lower bound proved that the
+candidate could not improve the current constrained-relaxation incumbent.
+No heuristic ranking or Product quality threshold was substituted for the
+full evaluator.
+
+The lower bound uses the endpoint-center chord minus a conservative 96-unit
+bound for the two Node-boundary attachment offsets. It then uses the monotone
+lower bounds for route median, route maximum, extent, and long-route penalty;
+the non-negative locality and usable-span terms are omitted. A probe mode
+evaluates every candidate anyway and checks the lower bound against the full
+score before the opt-in screen mode is allowed to skip it.
+
+### Dependency diagnosis
+
+The current Product presentation is not an incident-edge-only computation.
+`deriveBoundedAutomaticPresentation` first derives routes without Node labels,
+then derives routes with provisional labels, derives Relation labels, derives
+Node-owned labels from those Relation labels and routes, and may run a bounded
+feedback route pass when final Node-label geometry moves. Within each route
+pass, `deriveAutomaticRoutes` processes fixed and ordinary Edges in canonical
+order and appends each selected route to `occupiedPaths`.
+
+For one moved Node, the dependency classes are therefore:
+
+| Component | Definitely affected | Potentially affected | Safe to declare unaffected without a dependency proof |
+| --- | --- | --- | --- |
+| Incident route geometry | moved endpoint and its route candidates | — | non-incident routes only if no obstacle, label, or occupied-path dependency exists |
+| Later route geometry | — | any route whose obstacle, label, or occupied-path candidate intersects the changed region; route-order successors can observe a changed occupied path | only after all preceding route dependencies are proven unchanged |
+| Relation labels | incident route labels | every label whose route or occupied label neighborhood changes | labels with unchanged route and unchanged placement inputs |
+| Node-owned labels | moved Node label | labels sharing Relation-label occupancy, route halos, or placement neighborhoods | labels with unchanged route-label inputs and collision neighborhood |
+| Feedback pass | any changed final Node-label bound | every route in the feedback pass because the pass is a global ordered derivation | none from the current API alone |
+
+This means “moved Node -> incident Edges only” is not a valid incremental
+contract for the current implementation. A safe incremental evaluator would
+need explicit invalidation for route order and occupied paths, route and label
+collision neighborhoods, Node-label placement neighborhoods, and the final
+feedback pass. It would also need to replay the same canonical order and prove
+that every omitted component received identical inputs.
+
+### Probe and preservation results
+
+The cheap-screen probe used the continuous full-node relaxation trajectory and
+recorded the accepted move trace. It found no lower-bound violations in any
+fully evaluated candidate. The opt-in screen then rejected zero candidates on
+all four regression fixtures:
+
+| Fixture | Stage 2 candidates considered | Cheap rejects | Overlap rejects | Lower-bound rejects | Lower-bound violations | Accepted trace preserved | Selected positions/metrics preserved |
+| --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| Apollo 11 | 207 | 0 | 0 | 0 | 0 | yes, 16 moves | yes |
+| Lighthouse | 237 | 0 | 0 | 0 | 0 | yes, 14 moves | yes |
+| Linkscape | 118 | 0 | 0 | 0 | 0 | yes, 9 moves | yes |
+| K3,3 | no Stage 2 | 0 | 0 | 0 | 0 | not applicable | yes |
+
+Consequently, the full and screen-on runs retained the same calls and full
+evaluations: Apollo 469/453, Lighthouse 483/467, Linkscape 336/318, and K3,3
+36/24. Lighthouse remained approximately a 16-17 second run with Stage 2 at
+439 calls; there was no measured performance reduction. The screen is safe in
+the tested cases but has no useful selectivity because the incumbent score is
+already below the conservative bound only rarely, and every candidate that
+could have been rejected remained potentially competitive under that bound.
+
+An earlier uncorrected probe used Node-center chord lengths directly and could
+produce a lower bound above the actual score because Product route length is
+measured between Node-boundary attachments. That formulation was discarded;
+the final 96-unit attachment correction produced zero lower-bound violations
+in the probe. This correction is part of the diagnostic rationale, not a
+change to Product route semantics.
+
+### Interpretation
+
+**PROVEN**
+
+- The current route/label pipeline has global dependencies through canonical
+  route ordering, occupied paths, label occupancy, and bounded feedback.
+- A conservative attachment-corrected lower bound can be checked against the
+  full score without false lower-bound violations in the four tested fixtures.
+- The screen-on mode rejected no candidate and preserved every accepted move,
+  selected position, and selected metric object.
+- The safe screen therefore produces no current runtime reduction; the Stage 2
+  full-evaluation bottleneck remains.
+
+**STRONGLY SUPPORTED**
+
+- A useful incremental evaluator cannot be justified by endpoint incidence
+  alone; it needs an explicit dependency graph and canonical replay proof.
+- A stronger cheap screen must exploit a tighter quality lower bound or a
+  bounded structural certificate. The current conservative lower bound is too
+  weak to reduce the evaluated search.
+- The next meaningful prototype, if pursued, should be dependency tracing and
+  equivalence auditing first, not partial recomputation in Product code.
+
+**UNRESOLVED**
+
+- Whether route-corridor and label-neighborhood lower bounds can become both
+  tight and conservative enough to reject candidates.
+- Whether a complete dependency trace can support incremental evaluation while
+  preserving exact route, label, and feedback outputs.
+- How these costs scale for dense, parallel, self-loop, or hub-heavy graphs.
+- Node-label connector presentation remains OPEN/SEPARATE. Interactive
+  pointer-up obstacle-side flipping remains OPEN/INDEPENDENT.
+
+No Product source behavior, stored fixture, historical evidence, or canonical
+Human Review result was changed. No governed Fresh lineage, Product adoption,
+push, tag, release, deploy, or publication was performed.

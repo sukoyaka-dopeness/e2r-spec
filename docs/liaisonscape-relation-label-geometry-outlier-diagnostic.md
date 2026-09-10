@@ -1769,3 +1769,116 @@ Fresh10/Fresh11/Fresh12 historical evidence, Fresh12 canonical Human Review,
 and existing stored fixtures were unchanged. No new governed Fresh lineage,
 Product initial-placement adoption, push, tag, release, deploy, or publication
 was performed.
+
+## Regional Care bounded soft-defect relaxation probe
+
+### Chosen failure mode
+
+The primary target for this checkpoint was the **Regional Care type** failure,
+not the separate Regional Emergency fallback failure. Regional Care is the
+more informative case because Stage 1 finds a zero-crossing structural
+finalist, while the existing Stage 2 result remains presentation-unsafe.
+
+### Causal diagnosis
+
+The current Stage 2 relaxation starts from a presentation-repaired structural
+finalist, but `constrainedRelaxationScore()` assigns `Infinity` to any state
+with a routed crossing, label-route hit, near-label route, label overlap, or
+node overlap. Its single-node moves are therefore unable to cross an unsafe
+intermediate state: unless one move removes every active presentation defect,
+the move is not accepted. Regional Care's starting state had four routed
+crossings, six label-route hits, and fourteen near-label routes, so the
+observed zero accepted moves were not evidence that no better nearby state
+exists; they were evidence that the hard admission boundary prevents gradual
+escape from the defect basin.
+
+### Bounded candidate
+
+The diagnostic runner now accepts `E2R_RELAXATION_ADMISSION=soft-defect`.
+This keeps the same one-node moves, directions, steps, node-overlap hard
+boundary, and 48-unit default displacement bound, but gives presentation
+defects finite penalties during the search. No Product routing, labels, or
+initial placement code is changed. A second probe set the displacement bound
+to 96; it was a control for the radius hypothesis only.
+
+### Before / after comparison
+
+| Regional Care candidate | Structural / routed crossings | Label hits / near / overlap | Route median / max | Extent | Fit | Accepted moves |
+| --- | ---: | ---: | ---: | --- | ---: | ---: |
+| Existing hard Stage 2 | 0 / 4 | 6 / 14 / 0 | 282.1 / 629.3 | 1093.9 x 673.0 | 0.418 | 0 |
+| Soft-defect admission, max displacement 48 | 0 / 0 | 6 / 11 / 0 | 321.8 / 635.2 | 1112.7 x 677.3 | 0.416 | 28 |
+| Soft-defect admission, max displacement 96 | 0 / 0 | 6 / 11 / 0 | 321.8 / 635.2 | 1112.7 x 677.3 | 0.416 | 28 |
+
+The candidate materially removes routed crossings and reduces near-label
+pressure, proving that the hard admission rule was a real local-search
+limitation. It does not remove label-route hits, and it slightly worsens route
+burden, extent, and fit. The identical 48- and 96-unit results show that the
+tested trajectory did not reach the displacement limit; simply enlarging that
+bound is not the next useful fix.
+
+The soft candidate was replayed against the positive regression fixtures. The
+Apollo 11, Lighthouse, Linkscape, and District Solar results remained
+machine-clean and numerically identical to their hard-admission results:
+zero routed crossings and zero label hits, near-label routes, and label
+overlaps. This is a diagnostic regression result, not Product adoption.
+
+### Interpretation
+
+**PROVEN**
+
+- Regional Care's hard Stage 2 admission can reject every one-node move even
+  when a bounded sequence can remove all routed crossings.
+- Soft-defect admission found a materially safer intermediate/final state in
+  the same bounded neighborhood: routed crossings 4 to 0 and near-label
+  routes 14 to 11.
+- The same soft probe left six label-route hits, so it did not establish a
+  presentation-safe candidate.
+- The 96-unit displacement control produced the same result as 48 units;
+  displacement radius was not the active bottleneck in this trajectory.
+- Existing Apollo 11, Lighthouse, Linkscape, and District Solar positive
+  results were preserved under the diagnostic soft mode.
+
+**STRONGLY SUPPORTED**
+
+- The Regional Care failure is a combination of an overly hard Stage 2
+  admission boundary and a single-node local neighborhood that cannot jointly
+  resolve route crossings and label corridors.
+- A useful next layout experiment should use coupled moves or a presentation
+  feasibility search that can temporarily trade one defect for another, while
+  retaining hard node-body overlap rejection and the final presentation
+  safety gate.
+- This is a targeted Stage 2 / candidate-generation limitation, not evidence
+  that fit framing or the entire presentation architecture must be redesigned.
+
+**UNRESOLVED**
+
+- Whether pairwise or small-cluster moves can remove the remaining six
+  label-route hits without causing regressions on the four positive fixtures.
+- Whether the remaining label hits require a different label-corridor
+  objective rather than more geometric movement.
+- Regional Emergency's separate structural/fallback failure remains open and
+  was not merged into this experiment.
+
+### Candidate decision
+
+The soft-defect probe is retained as a **diagnostic candidate family only**.
+It is not selected for Product initial placement because it remains label
+unsafe and has a larger route median, extent, and lower fit. No new Product
+candidate was materialized into stored data. The next bounded experiment, if
+authorized, should test a small coupled-move Stage 2 variant on Regional Care
+and repeat the four positive-fixture regression plus an Early Visual Smoke
+Check.
+
+The current actual Product geometry inspection surface remains available for
+Apollo 11 Generic and Post-structural visual comparison. Regional Care was
+machine-audited in this checkpoint but was not promoted to a new governed
+browser evidence run or a new Product fixture.
+
+### Changes and state
+
+Changed only the diagnostic runner to expose the soft admission mode and an
+explicit displacement-bound control, with defaults preserving the prior hard
+behavior. Fresh10/Fresh11/Fresh12 historical evidence, Fresh12 canonical
+Human Review, stored fixtures, Product source, and Product adoption state were
+unchanged. No new governed Fresh lineage, push, tag, release, deploy, or
+publication was performed.

@@ -154,11 +154,13 @@ separate, evidence-gated decision.
 ### Prototype
 
 The follow-up prototype is
-`tools/stage-boundary-candidate-diagnostic.mjs`. It invokes the unchanged
-`deriveBoundedAutomaticPresentation()` authority and fingerprints its existing
-per-route `candidateDiagnostics` by pass. It is not a replacement route
-solver, and it does not inject a cache into Product. This deliberately tests
-whether a seam exists before making a source-level extraction.
+`tools/stage-boundary-candidate-diagnostic.mjs`. It invokes the existing
+`deriveBoundedAutomaticPresentation()` authority with an opt-in
+candidate-generation cache. The cache stores only route candidate geometry
+and candidate diagnostics; route selection/arbitration, Relation-label and
+Node-label placement, and feedback remain on the existing authority path.
+The cache is omitted by normal Product callers, so the default Product path
+does not change.
 
 Two counterfactuals were compared for Apollo 11 and Regional Care:
 
@@ -186,28 +188,47 @@ mutated Node's incident Relations: Apollo changed 17 pass/Relation entries and
 Regional Care changed 52. This is consistent with Node obstacles and ordered
 occupancy, and confirms that an endpoint-only cache key would be unsafe.
 
-The current Product still generated the same number of decisions in every
-comparison: 33 route decisions per Apollo presentation and 90 per Regional
-Care presentation. Candidate generation and arbitration were both invoked in
-full for the three snapshots. Therefore this checkpoint demonstrates a safe
-boundary and invalidation signal, but **does not claim a measured runtime
-saving**. A real cache must be keyed by the complete semantic route input,
-including the relevant Node-obstacle snapshot, provisional/final Node-label
-rectangles, manual route authority, and occupied-path prefix.
+The current Product still makes the same number of arbitration decisions in
+every comparison: 33 route decisions per Apollo presentation and 90 per
+Regional Care presentation. The diagnostic cache avoids candidate geometry
+recomputation only when its complete semantic key matches. That key includes
+the source/target geometry, parallel-edge parameters, Node obstacles,
+occupied-path prefix, Node-label rectangles, physical-side and offset inputs.
+This is intentionally conservative: an endpoint-only key would be unsafe.
+Manual/self-loop paths are outside this candidate loop and are not reported as
+cache reuse.
+
+On the repeated same-snapshot comparison, Apollo reused 33/33 candidate sets
+and Regional Care reused 90/90. The cached and uncached final route geometry,
+Relation-label output, Node-label output, feedback state, and presentation
+metrics were exact matches for both fixtures. In the downstream-only
+counterfactual, Apollo reused 22/33 and Regional Care 60/90; the misses were
+the feedback-pass decisions whose semantic Node-label inputs changed. The
+24-unit Node mutation produced 0 hits (33/33 and 90/90 misses), as required.
+
+Same-process wall-clock observations for the repeated snapshot were about
+31.653 ms uncached versus 11.557 ms cached for Apollo (63.5% lower), and
+155.024 ms versus 74.033 ms for Regional Care (52.2% lower). These are
+indicative diagnostic timings, not a production benchmark; they include the
+full presentation pipeline and vary with host load. Candidate-generation
+diagnostic records still report the same 1,089 / 2,970 records because
+arbitration continues to receive the same candidate set contents.
 
 ### Classification and next direction
 
 The result is **C: candidate seam exists, arbitration remains authoritative**,
-with an important **B** qualification: the candidate-generation boundary still
-depends on broad global state when the feedback pass is reached. The next
-bounded experiment should extract only the pure/cached candidate stage behind
-an opt-in diagnostic seam, retain the current sequential selection and
-feedback stages, and measure actual cache hits/misses and wall-clock time.
-It must reject reuse on any relevant semantic-input mismatch and compare the
-complete final presentation against the current authority.
+with an important **A** qualification for repeated identical semantic
+snapshots: exact reuse produced a material diagnostic wall-clock reduction.
+This is not a claim that all presentation work is cacheable. The feedback pass
+still depends on downstream semantic Node-label state, and the conservative
+key makes many geometry changes misses. The appropriate next direction is to
+keep this opt-in seam as diagnostic infrastructure, refine dependency
+instrumentation and benchmark representative repeated evaluations, and inspect
+arbitration cost separately before considering any Product adoption.
 
-No Product source behavior, fixture, stored evidence, or governed lineage was
-changed by this prototype.
+No default Product behavior, fixture, stored evidence, or governed lineage was
+changed by this prototype. The source addition is an opt-in API only; callers
+that omit `candidateCache` execute the previous uncached behavior.
 
 ## Scope
 

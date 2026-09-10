@@ -2749,6 +2749,122 @@ candidate scoring, Relation-label placement, Node-label placement, or bounded
 feedback semantics were changed. No new governed Fresh lineage, Product
 adoption, push, tag, release, deploy, or publication was performed.
 
+## Exact label path-scoring primitive optimization
+
+### Baseline and chosen primitive
+
+The profiler showed that the repeated work was not primarily candidate
+selection. `placeEdgeLabel()` scanned every point of every other route for
+each candidate, while `placeNodeLabel()` scanned every route point and every
+yielding-route point for each of its 32 directional candidates. The bounded
+optimization adds immutable per-call point bounds and rejects a path only
+when its bounds cannot intersect the candidate's exact scoring region.
+
+The broad phase uses the same scoring regions as the existing authority:
+
+- Relation labels use the label rectangle plus the existing 4/15-unit edge
+  overlap padding;
+- Node-label route scoring uses the existing hard-clearance plus halo;
+- yielding-route scoring uses the existing halo distance.
+
+When a bounds test cannot prove a miss, the original point-by-point test runs
+unchanged. Candidate order, candidate count, sample density, thresholds,
+score weights, tie-breaks, processing order, and feedback semantics are
+unchanged. Invalid or empty paths conservatively fall through to the original
+scan.
+
+### Results
+
+The comparison was run on Apollo 11 and Regional Care with the same current
+candidate-cached authority. Timings are wall-clock observations and vary with
+the local process; point counts and exact-output comparisons are the primary
+evidence.
+
+| Fixture | Relation-label time (ms) | Node-label time (ms) | Feedback time (ms) | Relation point checks | Relation broad rejects | Node route point checks | Node broad rejects | Yielding point checks | Yielding broad rejects |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Apollo 11 | 8.36 | 6.13 | 18.48 | 21,894 | 4,416 | 18,819 | 2,709 | 7,339 | 1,261 |
+| Regional Care | 15.29 | 37.56 | 89.98 | 148,256 | 35,534 | 99,794 | 20,606 | 42,968 | 12,008 |
+
+For scale, the pre-optimization profiler recorded approximately 202,950
+Apollo and 1,605,150 Regional Care Relation-label path-point checks in the
+first/feedback work, and approximately 129,888 Apollo and 944,640 Regional
+Care Node-label route-point checks. Yielding-route checks fell from roughly
+59,040 and 535,296 to 7,339 and 42,968 in the corresponding observed pass.
+The current implementation reports narrow-phase checks separately from broad-
+phase rejects, so these counts are directly comparable by work class.
+
+The optimized and unoptimized authority comparison was exact for both
+fixtures:
+
+```text
+Apollo 11:
+  route geometry       exact
+  Relation-labels      exact
+  Node-labels          exact
+  feedback state       exact
+  hard/near/crossings  exact
+  route burden/extent  exact
+
+Regional Care:
+  route geometry       exact
+  Relation-labels      exact
+  Node-labels          exact
+  feedback state       exact
+  hard/near/crossings  exact
+  route burden/extent  exact
+```
+
+The unchanged Regional Care baseline remained 3 hard hits (`r03`, `r16`,
+`r18`), 10 near-label routes, 1 crossing, route median/max `281.6 / 645.4`,
+extent `1093.9 x 691.0`, and fit `0.4079`. No quality improvement or
+regression was claimed from this performance checkpoint.
+
+### Interpretation
+
+**PROVEN**
+
+- Bounds-based broad-phase rejection can reduce repeated Relation-label,
+  Node-label, and yielding-route point work while preserving exact selected
+  candidates and final presentation output for Apollo 11 and Regional Care.
+- The optimized and unprofiled presentation outputs are exactly equal in the
+  added regression coverage; the diagnostic authority comparison also matches
+  route, labels, feedback, and aggregate metrics.
+- Preprocessing is linear in the points of the paths supplied to one label
+  placement call. No persistent index, cache, new threshold, or Product data
+  is introduced.
+
+**STRONGLY SUPPORTED**
+
+- This is classification **A**: an exact primitive optimization gives
+  material work reduction, especially for dense Regional Care path scoring.
+- Relation-label and Node-label path scanning are genuine primitive costs,
+  but wall-clock benefit is less stable than point-count reduction because
+  candidate generation, feedback, and local process scheduling remain in the
+  same presentation measurement.
+- The result does not reopen feedback skip/reuse. It accelerates the existing
+  authority without changing its dependency architecture or visible quality.
+
+**UNRESOLVED**
+
+- Whether a persistent immutable route spatial index would outperform the
+  per-call bounds at much larger graph sizes; its memory and invalidation cost
+  were not studied here.
+- Whether browser-level interaction workloads show the same timing benefit as
+  the deterministic fixture benchmark.
+- Whether yielding-route summaries can be accelerated further without making
+  route deviation or halo semantics less transparent.
+
+### Decision and state
+
+Keep the bounds broad phase as a bounded, exact primitive optimization. Do not
+change Product-level thresholds or quality policy based on this checkpoint.
+The next performance check may measure larger fixtures or a persistent index,
+but architecture-level feedback reuse remains a separate decision.
+
+Fresh10/Fresh11/Fresh12 historical evidence and the Fresh12 canonical Human
+Review result were unchanged. No Product adoption, governed Fresh lineage,
+push, tag, release, deploy, or publication was performed.
+
 ## Late-index progressive local repair comparison
 
 ### Purpose and case construction

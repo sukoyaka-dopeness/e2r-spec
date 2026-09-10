@@ -298,3 +298,77 @@ item-level reuse or Product adoption. The implementation checkpoint is
 `d3f7f75`/`45243c7`; this measurement adds a subsequent local diagnostic
 checkpoint in the LiaisonScape repository. Fresh historical evidence and the
 canonical Human Review result remain outside this experiment.
+
+## Responsibility-scoped key comparison
+
+The follow-up diagnostic compared the existing full-stage input fingerprint
+with an opt-in responsibility-scoped projection. The projection was derived
+from the actual current stage inputs, not used by Product: route keys retained
+effective positions, route-relevant edge identity/topology/labels, route
+labels, continuity state, prior routes, and route controls; Relation-label keys
+removed only the pass annotation; Node-label keys removed only the pass
+annotation and represented node identity/text separately from the effective
+position map. Feedback retained its complete orchestration input. This is a
+diagnostic hypothesis, not a second production authority.
+
+Apollo 11 (9 nodes/11 edges) and Regional Care (24 nodes/30 edges) were run
+with the same no-op, position, manual Relation-label anchor, provisional-label,
+feedback-disabled, and an additional `raw-node-coordinate` mutation. The last
+mutation changed the raw `GraphNode.x` value while leaving the explicit
+`positions` map unchanged; it tests whether the scoped representation avoids
+counting a shadow value that the current implementation does not read when an
+effective position exists.
+
+| Mutation | Full input invalidation | Scoped input invalidation | Output |
+| --- | ---: | ---: | --- |
+| no-op | 0/8 | 0/8 | unchanged |
+| position | 8/8 | 8/8 | changed; 7/8 traced outputs changed |
+| manual Relation-label anchor | 6/8 | 6/8 | changed; earlier route stages retained |
+| provisional label offset | 1/8 | 1/8 | unchanged in both fixtures |
+| raw node coordinate with explicit positions | 5/8 | 0/8 | unchanged |
+| feedback disabled | 1/8 | 1/8 | feedback pass omitted as expected |
+
+The scoped representation therefore removed one false invalidation class in
+this controlled input condition, but it did not make the common geometry,
+downstream-anchor, provisional-label, or feedback changes more selective. The
+raw-coordinate result is not a false-safe pass for general reuse: if an
+effective position is absent, the current implementation falls back to the
+GraphNode coordinate, and a future authority change could make that field
+material. Any production key would need to be generated from an explicit
+effective-input contract or fall back conservatively, rather than relying on
+the diagnostic projection.
+
+For the diagnostic runs, scoped input-key construction was approximately
+2.2--3.7 ms for Apollo 11 and 4.9--8.2 ms for Regional Care; full input-key
+construction was approximately 2.2--5.5 ms and 5.1--11.7 ms respectively.
+The measurements are small and noisy, but the larger fixture does not show a
+clear enough cost reduction to compensate for the additional projection
+logic. The full-stage fingerprint's output serialization is still useful for
+exact comparison, but must not be placed on the Product hot path merely to
+obtain the diagnostic signal.
+
+### Decision
+
+**PROVEN:** a scoped key can be compared exactly using its canonical
+serialization; it identifies the same invalidations as the full key for the
+tested semantic mutations; and it can avoid a raw-coordinate invalidation when
+an explicit effective position shadows that raw value.
+
+**STRONGLY SUPPORTED:** the current stage contracts do not yet expose enough
+selectivity for snapshot-level reuse to justify a production key. The useful
+exception is a coarse, already-explicit stage boundary such as preserving
+label-free/first route work when only a downstream manual anchor changes, but
+feedback still reopens downstream work. The projection's complexity and
+false-safe risk are higher than its demonstrated recomputation savings.
+
+**UNRESOLVED:** a future explicit effective-input contract, maintained beside
+the authority rather than reconstructed in diagnostics, might make a safe
+coarse cache worthwhile. This checkpoint did not enable reuse, alter Product
+semantics, or establish item-level invalidation.
+
+Recommendation: close the scoped-key optimization branch for now. Retain the
+stage contracts and diagnostic trace as observability infrastructure. Revisit
+reuse only if a concrete architecture change can expose an authoritative
+effective-input snapshot with a measured, large invalidation region; otherwise
+architecture work should focus on reducing dependency propagation rather than
+adding more fingerprints.

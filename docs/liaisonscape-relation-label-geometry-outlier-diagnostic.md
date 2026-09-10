@@ -2219,3 +2219,131 @@ Fresh10/Fresh11/Fresh12 historical evidence and the Fresh12 canonical Human
 Review result were unchanged. No new governed Fresh lineage, Product
 initial-placement adoption, push, tag, release, deploy, or publication was
 performed.
+
+## Regional Care route/label arbitration diagnostic
+
+### Fixed-geometry experiment
+
+The three residual relations were replayed with the selected Regional Care
+Node geometry held fixed. The new diagnostic varied one presentation decision
+at a time through the existing Product-owned pipeline, without changing
+Product source or fixture data:
+
+1. bounded route-side offsets for `r03`, `r16`, and `r18`;
+2. one forced Node-label placement from the existing 32-angle placement family
+   for each conflicting label;
+3. a feedback counterfactual that retained the `r16` first-pass route;
+4. a feedback counterfactual that retained the first-pass placement of the
+   conflicting Node label.
+
+The diagnostic intentionally did not treat Relation-label movement as a direct
+fix. The current `labelRouteHits` predicate measures route samples against
+final Node-label rectangles, while Relation-label placement is derived after
+route selection. Relation-label geometry was therefore recorded as a
+downstream presentation concern, not as the causal switch for these three
+hits.
+
+### Results by relation
+
+| Relation | Residual conflict | Route-side local result | Node-label local result | Global consequence of best local result |
+| --- | --- | --- | --- | --- |
+| `r03` regional-care-network -> east-clinic | `public-health-office`, interior | `+120` removes local hit | moving `public-health-office` to candidate 0 removes local hit | route-side: 7 hits / 3 crossings / 14 near; label move: 5 hits / 2 crossings / 12 near |
+| `r16` south-clinic -> south-family-practice | `city-hospital`, interior | `+192` removes local hit | candidate 5 removes local hit | both reach 2 global hits but 5 crossings / 11 near; route median 282.1 or 284.6 |
+| `r18` west-clinic -> west-community-center | `west-clinic`, `pharmacy-coalition`, `volunteer-coalition`, all interior | `+48` removes local hit | moving `volunteer-coalition` to candidate 18 removes local hit | route-side: 4 hits / 1 crossing / 12 near; label move: 5 hits / 1 crossing / 12 near |
+
+The fixed-geometry baseline was 3 hits / 10 near / 1 crossing, with route
+median/max `281.6 / 645.4`, extent `1093.9 x 691.0`, and fit `0.4079`.
+All alternatives kept the Node extent and fit unchanged, but none improved
+the complete safety vector. The `r16` Node-label candidate had route median
+`282.1`; the best route-side alternative had median/max `284.6 / 645.4`.
+
+### Feedback-specific evidence
+
+The normal replay remained:
+
+- first pass: 13 hits / 21 near;
+- feedback-enabled final: 3 hits / 10 near / 1 crossing;
+- feedback-disabled final: 13 hits.
+
+The route decision trace selected these route-side offsets for the residuals:
+
+- `r03`: `0` in first and feedback passes;
+- `r16`: first pass `-192`, feedback pass `-36`;
+- `r18`: first pass `-192`, feedback pass `-84`.
+
+Forcing the `r16` first-pass route offset (`-192`) did not preserve the local
+hit-free result: the final feedback presentation still hit `city-hospital`,
+and the aggregate became 12 hits / 15 near / 1 crossing. Conversely, retaining
+the first-pass `city-hospital` label removed the local `r16` hit, but the
+aggregate became 4 hits / 12 near / 1 crossing. This isolates a real
+route/label feedback interaction, but neither one-decision intervention is a
+safe replacement for the current result.
+
+For `r18`, moving only one of the three conflicting labels can remove the
+local hit in some placements, but the remaining two-label corridor means the
+case is not an endpoint-only accounting artifact. For `r03`, both route-side
+and Node-label alternatives are locally sensitive, but their global effects
+show that the occupied-path and downstream feedback arbitration is not local
+to the edited relation.
+
+### Interpretation
+
+**PROVEN**
+
+- The residual relations remain `r03`, `r16`, and `r18`, and every listed
+  conflict includes an interior route sample after endpoint-zone exclusion.
+- Existing route-side alternatives can remove each local hit, but no tested
+  route-side alternative improves the complete global safety vector over
+  3 hits / 10 near / 1 crossing.
+- Existing Node-label placement alternatives can remove a local hit for each
+  residual relation in at least one tested placement, but their global result
+  is not safer than the baseline and they require a forced diagnostic offset.
+- `r16` is feedback-dependent, and fixing only its first-pass route does not
+  remove the final hit. Fixing only its first-pass label improves `r16` locally
+  but regresses other relations.
+- The current Relation-label placement stage is downstream of route selection
+  and is not the direct cause of these Node-label route hits.
+
+**STRONGLY SUPPORTED**
+
+- The next constraint is not a missing global scalar corridor weight. It is a
+  coordinated arbitration problem involving route side, occupied paths,
+  Node-label placement, and the bounded feedback pass.
+- The residuals should remain separate cases: `r03` is a persistent
+  route/Node-label corridor conflict; `r16` is feedback-dependent; `r18` is a
+  persistent multi-label corridor conflict.
+- The bounded geometry-only search direction is no longer the most informative
+  next step. A future experiment should expose relation-local route candidates
+  and Node-label candidates to a global arbitration gate, rather than applying
+  either choice unilaterally.
+
+**UNRESOLVED**
+
+- Whether a joint route-side plus Node-label arbitration can keep the baseline
+  global vector while reducing one or more residuals.
+- Whether the current route candidate family has a globally safe side that is
+  not reached by the tested bounded offsets, or whether route topology itself
+  must change.
+- Whether a Relation-label-aware coordination objective can improve overall
+  readability after Node-label safety is satisfied, even though it cannot
+  directly remove the current `labelRouteHits`.
+
+### Decision and state
+
+No Product routing, Node-label, or Relation-label behavior was changed. The
+diagnostic implementation is
+`tools/regional-care-arbitration-diagnostic.mjs`; it consumes the Regional
+Care fixture and the saved selected-geometry search result, and emits only a
+temporary diagnostic JSON report. No Regional Care actual-Product surface was
+prepared because no tested alternative was materially safer than the current
+baseline.
+
+The four positive-fixture regression baselines from the preceding corridor
+probe remain hard-clean; this checkpoint did not alter Product source or those
+fixtures. Regional Emergency fallback, Node-label connectors, and interactive
+pointer-up side flipping remain OPEN/SEPARATE tracks.
+
+Fresh10/Fresh11/Fresh12 historical evidence and the Fresh12 canonical Human
+Review result were unchanged. No new governed Fresh lineage, Product
+initial-placement adoption, push, tag, release, deploy, or publication was
+performed.

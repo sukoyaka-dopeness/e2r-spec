@@ -1045,3 +1045,100 @@ pruning because it has no structural zero-crossing start.
 No Product behavior, stored fixture, historical evidence, or canonical Human
 Review result was changed. No governed Fresh lineage, push, tag, release,
 deploy, or publication was performed.
+
+## Pressure-targeted Stage 2 relaxation checkpoint
+
+The next bounded experiment tested whether Stage 2 relaxation can be limited
+to nodes implicated by the current Product presentation, rather than moving
+every node in the structural finalist. This is a diagnostic runner mode, not
+a Product layout policy. The existing Stage 1 structural search, Stage 2
+finalist limit, route scoring, label safety checks, deterministic ordering, and
+pure coordinate-key cache were retained.
+
+### Target derivation
+
+Pressure is derived from the actual `deriveBoundedAutomaticPresentation`
+result for the selected zero-crossing structural state. The current signals
+are: positive Relation-label usable-span shortfall, long routed paths above
+480 units, route crossings, route/node-label hits or near misses, Node-label
+overlap, and unusually short endpoint hops. A signal initially marks Relation
+endpoints; route/label proximity can also mark the nearby Node-label owner.
+The marked set is expanded by a geometric radius of 190 units (2.5 times the
+existing 76-unit initial entity clearance). The relaxation target is therefore
+an explicit pressure set plus a bounded neighborhood, not an arbitrary count
+of finalists.
+
+The target set is computed once from the selected structural state for this
+experiment. It is not dynamically recomputed after each accepted move. This
+keeps the checkpoint deterministic and bounded, but leaves incremental
+pressure invalidation as a separate open question. When no pressure signal is
+found, the runner explicitly falls back to full-node relaxation so that a
+missing diagnostic signal cannot silently discard an existing optimization
+opportunity.
+
+### Full-node versus pressure-targeted measurements
+
+Representative runs used the same Apollo 11, Lighthouse, and Linkscape
+fixtures and the same default eight presentation finalists. Presentation
+calls include exact cache hits; the full-evaluation column excludes them.
+
+| Fixture / mode | Stage 2 calls / full | Total calls / full | Runtime | Pressure / expanded / target nodes | Relaxation evaluated / accepted | Selected extent | Fit | Route median/max | Usable-span penalty |
+| --- | ---: | ---: | ---: | --- | ---: | --- | ---: | --- | ---: |
+| Apollo 11 / full | 409 / 393 | 469 / 453 | 12.10 s | — / — / 9 | 208 / 16 | 622.3 x 419.4 | 0.637 | 195.7 / 352.9 | 0 |
+| Apollo 11 / pressure | 250 / 238 | 310 / 298 | 8.67 s | 2 / 2 / 2 | 49 / 6 | 670.0 x 465.5 | 0.582 | 193.2 / 356.9 | 0 |
+| Lighthouse / full | 439 / 423 | 483 / 467 | 17.95 s | — / — / 10 | 238 / 14 | 633.0 x 401.0 | 0.662 | 193.4 / 370.0 | 9654.4 |
+| Lighthouse / pressure | 388 / 374 | 432 / 418 | 17.18 s | 7 / 8 / 8 | 187 / 12 | 642.0 x 405.4 | 0.656 | 193.4 / 385.7 | 9526.7 |
+| Linkscape / full | 320 / 304 | 336 / 318 | 2.92 s | 0 / 0 / 5 | 119 / 9 | 355.9 x 146.0 | 1.000 | 100.6 / 139.7 | 0.002 |
+| Linkscape / pressure | 320 / 304 | 336 / 318 | 2.69 s | 0 / 0 / 5 (full fallback) | 119 / 9 | 355.9 x 146.0 | 1.000 | 100.6 / 139.7 | 0.002 |
+
+All runs retained zero crossings and zero counted label hits/near misses or
+overlaps in their selected candidate. However, pressure targeting did not
+produce the same selected coordinates as full-node relaxation on Apollo 11 or
+Lighthouse. Apollo traded a smaller route median for a larger footprint and
+lower fit; Lighthouse slightly reduced the span penalty but increased extent,
+reduced fit, and increased the maximum routed length. These are not visual
+equivalence proofs. Linkscape's identity is explained by the explicit
+no-pressure fallback, not by evidence that the pressure signals are complete.
+
+### Interpretation
+
+**PROVEN**
+
+- The current presentation output can be converted into a deterministic,
+  generic pressure-node set without using Apollo-specific names.
+- Bounded neighborhood targeting reduced the Apollo 11 Stage 2 workload from
+  409 to 250 calls and the Lighthouse workload from 439 to 388 calls in the
+  representative runs.
+- Targeted relaxation can change the selected geometry even when all selected
+  candidates remain machine-feasible and crossing-free.
+- An empty pressure set is observable and now has an explicit full-node
+  fallback; Linkscape therefore preserves the full-node selected geometry.
+
+**STRONGLY SUPPORTED**
+
+- Presentation pressure is a useful prioritization signal for reducing
+  relaxation work, especially when the pressure set is small relative to the
+  graph.
+- Pressure-only targeting is not yet a safe replacement for full-node
+  relaxation because local moves can alter global extent, fit, or route
+  maxima, and a one-time pressure snapshot may miss newly created opportunity
+  after a move.
+- Any future refinement should compare targeted and full results on geometry
+  and actual Product visuals; machine feasibility alone is insufficient.
+
+**UNRESOLVED**
+
+- Whether pressure should be refreshed after each accepted move or after each
+  bounded pass, and how to invalidate affected routes and labels safely.
+- Whether graph-distance expansion, route-corridor expansion, or a stronger
+  lower-bound signal can preserve full-node quality while retaining most of
+  the measured reduction.
+- Whether a targeted candidate is visually preferable on Apollo 11 or
+  Lighthouse; an actual Product comparison surface is prepared for user
+  inspection, but no adoption decision is made here.
+- Node-label connector presentation remains OPEN/SEPARATE. Interactive
+  pointer-up obstacle-side flipping remains OPEN/INDEPENDENT.
+
+No Product source, stored fixture, Fresh10/Fresh11/Fresh12 evidence, or
+canonical Human Review result was changed. No new governed Fresh lineage,
+Product adoption, push, tag, release, deploy, or publication was performed.

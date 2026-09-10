@@ -2620,6 +2620,128 @@ Review result were unchanged. No new governed Fresh lineage, Product
 initial-placement adoption, push, tag, release, deploy, or publication was
 performed.
 
+## Bounded feedback dependency trace
+
+### Diagnostic method
+
+The presentation pipeline now exposes an opt-in, non-Product trace for the
+`first` and `feedback` passes. It records one row per processing item:
+
+- route: Edge ID, processing index, route-label input fingerprint, candidate
+  fingerprint, selected-route fingerprint, and occupied-path prefix
+  fingerprint;
+- Relation label: Relation ID, processing index, route fingerprint, input
+  fingerprint, occupied-Relation-label prefix fingerprint, candidate
+  fingerprint, and selected-placement fingerprint;
+- Node label: Node ID, processing index, position/text input fingerprint,
+  occupied-label prefix fingerprint, route-set fingerprint, yielding-route
+  fingerprint, candidate fingerprint, and selected-placement fingerprint.
+
+The diagnostic report compares the first and feedback rows by item identity.
+It emits SHA-256 digests of the exact fingerprint payloads so large candidate
+arrays do not obscure the counts. No skip, memoization, or selection decision
+is made from this trace.
+
+### Same-snapshot first-to-feedback results
+
+The trace was run against the current candidate-cached authority. The final
+presentation remained exactly equivalent to the uncached authority for routes,
+Relation labels, Node labels, and feedback state.
+
+| Fixture / stage | Items | Input changed | Candidate changed | Selected output changed | Occupancy changed | Earliest/latest output change | Reusable boundary |
+| --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| Apollo 11 / route | 11 | 11 | 11 | 7 | 10 | 0 / 10 | none |
+| Apollo 11 / Relation label | 11 | 11 | 11 | 9 | 9 | 1 / 10 | none |
+| Apollo 11 / Node label | 9 | 9 | 9 | 5 | 9 | 0 / 8 | none |
+| Regional Care / route | 30 | 30 | 30 | 22 | 28 | 1 / 29 | none |
+| Regional Care / Relation label | 30 | 30 | 30 | 26 | 29 | 0 / 29 | none |
+| Regional Care / Node label | 24 | 24 | 24 | 12 | 24 | 0 / 22 | output-only suffix at index 23 |
+
+There was no unchanged prefix in any stage. There was no exact stable route
+or Relation-label suffix. Regional Care's final Node-label item selected the
+same output after feedback, but its semantic input, candidate set, and
+occupied-label prefix still changed; it is therefore a recomputed stable
+output, not an exact reusable suffix.
+
+```text
+                         unchanged-but-  dependency-changed-
+stage                    recomputed     output-same
+Apollo route                 0 / 11          4 / 11
+Apollo Relation label        0 / 11          2 / 11
+Apollo Node label            0 /  9          4 /  9
+Regional route               0 / 30          8 / 30
+Regional Relation label      0 / 30          4 / 30
+Regional Node label          0 / 24         12 / 24
+```
+
+The changed route IDs were 7 of 11 in Apollo 11 and 22 of 30 in Regional
+Care. The changed Relation-label IDs were 9 of 11 and 26 of 30 respectively.
+The changed Node-label IDs were `armstrong`, `collins`, `nasa`, `saturn-v`,
+and `hornet` in Apollo 11, and 12 of 24 Regional Care Nodes. In Regional Care,
+route output changed from processing index 1 through 29, Relation-label output
+changed from index 0 through 29, and Node-label output changed from index 0
+through 22.
+
+### Dependency interpretation
+
+**PROVEN**
+
+- The current feedback pass recomputes every route, every Relation-label,
+  and every Node-label item when invoked; the trace confirms this directly.
+- In both fixtures, feedback route input changes at processing index 0.
+  Route candidate and occupied-path fingerprints remain broadly different
+  through the suffix, ruling out an exact immutable route prefix or suffix
+  under current pass semantics.
+- Relation-label occupancy is sequential: 9 of 11 Apollo items and 29 of 30
+  Regional Care items have changed occupied prefixes. A later Relation label
+  cannot be reused safely from output equality alone.
+- Node-label occupancy is sequential: all 9 Apollo and all 24 Regional Care
+  Node items have changed occupied prefixes. The one Regional Care output-only
+  re-convergence does not provide a safe skip boundary.
+- Cached candidate generation preserves exact final authority output, but it
+  does not create an item-level feedback reuse seam. Feedback still performs
+  the full arbitration and downstream placement sequence.
+
+**STRONGLY SUPPORTED**
+
+- The dominant classification is **H**: no materially useful exact-reuse seam
+  is present under the current architecture. **D** and **E** explain why
+  suffix reuse is unsafe: sequential Relation-label and Node-label occupancy
+  makes later inputs state-dependent. **F** and **G** are concurrent
+  contributors: route feedback changes are broad, and labels remain changed or
+  re-evaluated even where selected routes re-converge.
+- A selected output that happens to be unchanged is insufficient evidence for
+  reuse. The exact condition must include semantic input, candidate set,
+  sequential occupancy state, selected output, and all downstream state the
+  next item consumes.
+- The ordered pipeline is useful for profiling and candidate-generation
+  caching, but not for an exact pass/prefix/suffix shortcut without redesigning
+  dependency ownership or adding a stronger global state representation.
+
+**UNRESOLVED**
+
+- Whether a future immutable occupancy snapshot or dependency graph can make
+  a safe region-level reuse boundary without changing visible semantics.
+- Whether route and label stages can be split into independent components
+  while preserving current deterministic ordering and feedback behavior.
+- How active drag/finalization traces compare with this static first-to-
+  feedback trace. Existing interaction tests cover behavior, but this
+  checkpoint did not add a browser event trace.
+
+### Decision and state
+
+No reuse prototype was enabled. The trace is diagnostic-only and omitted from
+normal Product callers. The appropriate next direction is to retain the
+candidate-generation cache and optimize the dominant label-scoring primitive,
+or revisit dependency architecture as a quality/performance design task;
+processing-order tuning alone is not justified by this evidence.
+
+Fresh10/Fresh11/Fresh12 historical evidence and the Fresh12 canonical Human
+Review result were unchanged. No Product behavior, routing semantics,
+candidate scoring, Relation-label placement, Node-label placement, or bounded
+feedback semantics were changed. No new governed Fresh lineage, Product
+adoption, push, tag, release, deploy, or publication was performed.
+
 ## Late-index progressive local repair comparison
 
 ### Purpose and case construction

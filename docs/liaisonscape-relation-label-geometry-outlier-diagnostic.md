@@ -2620,6 +2620,102 @@ Review result were unchanged. No new governed Fresh lineage, Product
 initial-placement adoption, push, tag, release, deploy, or publication was
 performed.
 
+## Exact path-bounds sharing reprofile and follow-up optimization
+
+The next performance checkpoint re-profiled the implementation after the
+exact path-bounds broad phase. The current optimized authority was measured
+with the Apollo 11 and Regional Care diagnostic fixtures; no Product-visible
+semantics or fixture data were changed.
+
+### Current optimized cost boundary
+
+Regional Care remains the useful stress fixture:
+
+- final presentation: 3 hard hits / 10 near / 1 crossing;
+- route median/max: `281.6 / 645.4`;
+- extent/fit: `1093.9 x 691.0` / `0.4079`;
+- feedback remains applied;
+- narrow-phase counts remain approximately `148k` Relation-label path-point
+  checks, `100k` Node-label route-point checks, and `43k` yielding-route
+  checks.
+
+The current optimized timing profile puts the largest repeated stage work in
+route candidate generation and the downstream Node-label stage. In one
+representative current run, Regional Care's feedback pass measured about
+`48.9 ms` route candidate generation, `13.6 ms` Relation-label placement, and
+`25.7 ms` Node-label placement. The exact timings vary by process state, so
+the counters and output identity are the stronger evidence.
+
+### Follow-up primitive tested
+
+`pointBounds()` was being recomputed for every Relation-label item and every
+Node-label item even though the route samples were immutable for the whole
+placement pass. The bounded optimization now computes:
+
+- one route-bounds array for the Relation-label pass, then filters the same
+  bounds alongside each relation's existing `otherEdgePaths`;
+- one edge-path-bounds array and one yielding-route-bounds array for the
+  Node-label pass, then reuses them for every Node label.
+
+The narrow-phase loops, broad-phase padding, candidate list, score, tie-break,
+processing order, route arbitration, feedback, and final presentation are
+unchanged. Direct callers retain the old behavior because the optional bounds
+arguments are only an exact reuse path; omitted bounds still use the original
+local construction.
+
+Representative first-pass counter comparison:
+
+| Fixture/stage | Bounds path builds before | Bounds path builds after | Point visits before | Point visits after |
+|---|---:|---:|---:|---:|
+| Apollo 11 / Relation labels | 110 | 11 | 4,510 | 451 |
+| Apollo 11 / Node labels | 144 | 16 | 5,904 | 656 |
+| Regional Care / Relation labels | 870 | 30 | 35,670 | 1,230 |
+| Regional Care / Node labels | 1,128 | 47 | 46,248 | 1,927 |
+
+The broad-phase rejects and narrow-phase point-check counters remain equal
+between the shared-bounds and uncached exact authority runs. The final
+Apollo 11 and Regional Care outputs also remain exact, including hard hits,
+near relations, crossings, route geometry, labels, extent, fit, and feedback
+state. The reduction is therefore a primitive-work reduction rather than a
+change to the presentation decision.
+
+### Decision
+
+**PROVEN**
+
+- Path-bounds construction was a repeated exact primitive in both label
+  placement stages.
+- Sharing immutable pass-local bounds removes roughly 90% of Relation-label
+  bounds path construction and roughly 96% of Node-label bounds path
+  construction in the Regional Care first pass.
+- Narrow-phase behavior and final presentation remain exact.
+- The positive Apollo 11 clean result and the Regional Care baseline result
+  are preserved.
+
+**STRONGLY SUPPORTED**
+
+- This is a worthwhile low-risk exact primitive optimization and is the last
+  completed optimization in this checkpoint.
+- After it, the remaining cost is dominated by route candidate generation and
+  genuine narrow-phase/label evaluation rather than avoidable repeated bounds
+  construction.
+- Further optimization of route candidate generation or scoring would require
+  a separate proof that the candidate geometry, score evaluation, and
+  tie-break behavior remain exact; it is not justified by the current
+  measurement alone.
+
+**UNRESOLVED**
+
+- Whether the remaining route-candidate and narrow-phase work has another
+  exact primitive optimization with material ROI across larger fixtures.
+- Whether a broader architecture change, rather than another local primitive,
+  is needed for meaningful additional savings.
+
+No Regional Care quality fix, Product adoption, or governed evidence
+execution was performed. Fresh10/Fresh11/Fresh12 historical evidence and the
+Fresh12 canonical Human Review result remain unchanged. This checkpoint did
+not perform push, tag, release, deploy, or publication.
+
 ## Bounded feedback dependency trace
 
 ### Diagnostic method

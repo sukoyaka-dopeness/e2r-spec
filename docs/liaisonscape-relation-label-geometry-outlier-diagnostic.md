@@ -2220,6 +2220,141 @@ Review result were unchanged. No new governed Fresh lineage, Product
 initial-placement adoption, push, tag, release, deploy, or publication was
 performed.
 
+## Regional Care bounded joint arbitration probe
+
+### Scope and method
+
+This checkpoint kept the selected Regional Care Node geometry fixed and did
+not expand inter-Node spacing. It evaluated a small joint decision space over
+the existing presentation pipeline:
+
+- the bounded route-side offsets already shown to be locally sensitive;
+- one or more existing 32-angle Node-label placements for the conflicting
+  labels;
+- the normal bounded feedback pass;
+- for `r16`, retention of the first-pass `city-hospital` label as a feedback
+  counterfactual.
+
+Each relation was evaluated separately first. The best local-hit-free actions
+were then combined in a 108-combination global search. A candidate was called
+materially safer only if it reduced total hits without increasing near-label
+routes or crossings and without more than a 5% increase in route median/max.
+The search remained diagnostic-only: it used manual offsets as counterfactual
+inputs and did not change Product authority.
+
+### Relation-level result
+
+| Relation | Local before | Best joint intervention | Local after | Global result / side effects |
+| --- | --- | --- | --- | --- |
+| `r03` | hit: `public-health-office` interior | retain route offset `0`; move `public-health-office` to candidate 0 | no hit | 5 hits / 12 near / 2 crossings; remote routes changed: `r01,r10,r17,r23,r29,r30` |
+| `r16` | hit: `city-hospital` after feedback | route `+192` plus candidate-5 `city-hospital` placement | no hit | 2 hits / 11 near / 5 crossings; remote routes changed: `r02,r18,r21` |
+| `r18` | hits against `west-clinic`, `pharmacy-coalition`, `volunteer-coalition` | route `+48`; no single-label action was globally better | no hit | 4 hits / 12 near / 1 crossing; remote routes changed: `r01,r07,r10,r22,r23` |
+
+The `r18` three-label plan was included when candidate placements were
+available, but it did not produce a better global result. The residual is a
+multi-label corridor, not a single endpoint-label defect.
+
+### Aggregate result
+
+The fixed-geometry baseline remained:
+
+```text
+hits       3
+near       10
+crossings  1
+route      median/max 281.6 / 645.4
+extent     1093.9 x 691.0
+fit        0.4079
+```
+
+The best global joint combination was:
+
+```text
+r03: no intervention
+r16: route +192 + city-hospital candidate-5
+r18: no intervention
+
+hits       2
+near       11
+crossings  5
+route      median/max 284.6 / 645.4
+extent     1093.9 x 691.0
+fit        0.4079
+```
+
+It is not acceptable because the hit reduction is purchased with four new
+crossings and one additional near-label route. The next best combinations
+either remained at the baseline or made near/crossing/route-burden trade-offs.
+No combination satisfied the materially-safer gate; therefore no Regional
+Care actual-Product comparison surface was created.
+
+### Feedback interpretation
+
+The normal feedback sequence remained 13 hits in the first pass and 3 hits in
+the final pass. The `r16` joint action shows that route and label decisions can
+cooperate locally, but the cooperation is not globally stable: preserving the
+first-pass label alone gives 4 hits / 12 near / 1 crossing, while adding the
+route-side action gives 2 hits / 11 near / 5 crossings. This is evidence for a
+feedback arbitration limit, not evidence that feedback should simply be
+disabled.
+
+### Interpretation
+
+**PROVEN**
+
+- A bounded joint search over the tested route-side and Node-label choices
+  evaluated 108 combinations and found zero materially safer candidates.
+- The best tested combination reduced hits from 3 to 2 but increased crossings
+  from 1 to 5 and near-label routes from 10 to 11.
+- Each residual relation can be made locally hit-free by some joint or nearly
+  joint intervention, but the effect propagates through occupied paths,
+  downstream label placement, and feedback.
+- No Node-spacing expansion was required to establish this negative result.
+- Product routing/label behavior and all historical Fresh artifacts remained
+  unchanged.
+
+**STRONGLY SUPPORTED**
+
+- The current route candidate family and Node-label candidate family are not
+  independently sufficient, and their tested combinations are not sufficient
+  under the current feedback ordering.
+- Feedback arbitration is a limiting factor for `r16`, but disabling feedback
+  is not a solution because it restores the 13-hit first-pass state.
+- Available local room is becoming a meaningful constraint for `r03` and
+  `r18`: local escape directions exist, but they displace conflicts into
+  other corridors instead of producing a stable global improvement.
+- The next meaningful direction is a richer global arbitration model with
+  explicit remote-route and ownership/readability costs, not wider Node
+  spacing as an immediate fallback.
+
+**UNRESOLVED**
+
+- Whether a richer route candidate topology, beyond the current side/offset
+  family, can provide a globally safe escape.
+- Whether label ownership/readability can be represented strongly enough to
+  arbitrate several labels without making the canvas less legible.
+- Whether a feedback pass with explicit rollback or multi-route lookahead can
+  preserve the aggregate 3/10/1 baseline while removing any residual.
+
+### Decision and state
+
+The diagnostic implementation is
+`tools/regional-care-arbitration-diagnostic.mjs`, extended to run the joint
+probe and emit a temporary JSON report. No Product source, initial placement,
+route semantics, Node-label semantics, fixture, or governed evidence was
+changed. The current Regional Care fallback remains spacing expansion, but it
+was deliberately not executed here.
+
+The four positive-fixture regression baselines remain hard-clean from the
+preceding diagnostic probes. Regional Emergency fallback, Node-label
+connectors, and interactive pointer-up side flipping remain OPEN/SEPARATE
+tracks. No actual Product Regional Care surface was prepared because the
+materially-safer gate was not met.
+
+Fresh10/Fresh11/Fresh12 historical evidence and the Fresh12 canonical Human
+Review result were unchanged. No new governed Fresh lineage, Product
+adoption, push, tag, release, deploy, or publication was performed.
+
 ## Regional Care route/label arbitration diagnostic
 
 ### Fixed-geometry experiment

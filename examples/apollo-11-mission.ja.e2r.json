@@ -4,164 +4,47 @@
     {
       "id": "armstrong",
       "name": "ニール・アームストロング",
-      "description": "アポロ11号の船長。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 140,
-                "y": 100
-              }
-            }
-          ]
-        }
-      }
+      "description": "アポロ11号の船長。"
     },
     {
       "id": "aldrin",
       "name": "バズ・オルドリン",
-      "description": "アポロ11号の月着陸船操縦士。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 400,
-                "y": 90
-              }
-            }
-          ]
-        }
-      }
+      "description": "アポロ11号の月着陸船操縦士。"
     },
     {
       "id": "collins",
       "name": "マイケル・コリンズ",
-      "description": "アポロ11号の司令船操縦士。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 140,
-                "y": 320
-              }
-            }
-          ]
-        }
-      }
+      "description": "アポロ11号の司令船操縦士。"
     },
     {
       "id": "nasa",
       "name": "NASA",
-      "description": "ミッションを担当した米国の宇宙機関。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 600,
-                "y": 240
-              }
-            }
-          ]
-        }
-      }
+      "description": "ミッションを担当した米国の宇宙機関。"
     },
     {
       "id": "columbia",
       "name": "司令船コロンビア",
-      "description": "アポロ11号の司令・機械船。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 120,
-                "y": 500
-              }
-            }
-          ]
-        }
-      }
+      "description": "アポロ11号の司令・機械船。"
     },
     {
       "id": "eagle",
       "name": "月着陸船イーグル",
-      "description": "着陸と上昇に使われた月着陸船。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 360,
-                "y": 520
-              }
-            }
-          ]
-        }
-      }
+      "description": "着陸と上昇に使われた月着陸船。"
     },
     {
       "id": "saturn-v",
       "name": "サターンV",
-      "description": "アポロ11号を月へ運んだロケット。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 650,
-                "y": 500
-              }
-            }
-          ]
-        }
-      }
+      "description": "アポロ11号を月へ運んだロケット。"
     },
     {
       "id": "moon",
       "name": "月",
-      "description": "アポロ11号の目的地。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 760,
-                "y": 280
-              }
-            }
-          ]
-        }
-      }
+      "description": "アポロ11号の目的地。"
     },
     {
       "id": "hornet",
       "name": "USSホーネット",
-      "description": "乗組員を収容した回収船。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 40,
-                "y": 300
-              }
-            }
-          ]
-        }
-      }
+      "description": "乗組員を収容した回収船。"
     }
   ],
   "events": [
@@ -730,26 +613,6 @@
       "datasetId": "apollo-11-mission-ja-v1",
       "title": "アポロ11号ミッション"
     },
-    "draft.github.sukoyaka-dopeness.coordinate": {
-      "specVersion": "0.1.0",
-      "spaces": [
-        {
-          "id": "liaisonscape-graph",
-          "name": "LiaisonScape graph coordinates",
-          "kind": "cartesian-2d",
-          "components": {
-            "x": {
-              "unit": "liaisonscape-user-unit",
-              "positiveDirection": "display-right"
-            },
-            "y": {
-              "unit": "liaisonscape-user-unit",
-              "positiveDirection": "display-down"
-            }
-          }
-        }
-      ]
-    },
     "draft.github.sukoyaka-dopeness.specification": {
       "specVersion": "0.1.0",
       "uses": [
@@ -760,10 +623,6 @@
         {
           "extension": "history",
           "version": "1.0.0"
-        },
-        {
-          "extension": "draft.github.sukoyaka-dopeness.coordinate",
-          "version": "0.1.0"
         }
       ]
     }

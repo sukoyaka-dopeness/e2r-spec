@@ -29,10 +29,14 @@ assert.deepEqual(en.relations.find(({ id }) => id === "entity-10"), { id: "entit
 assert.equal(ja.relations.find(({ id }) => id === "entity-10")?.sourceId, "saturn-v");
 assert.equal(ja.relations.find(({ id }) => id === "entity-10")?.targetId, "columbia");
 const shape = (dataset) => ({
-  entities: dataset.entities.map(({ id, extensions }) => [id, extensions["draft.github.sukoyaka-dopeness.coordinate"]]),
+  entities: dataset.entities.map(({ id, extensions }) => [id, extensions?.["draft.github.sukoyaka-dopeness.coordinate"] ?? null]),
   events: dataset.events.map(({ id, extensions }) => [id, extensions.history]),
   relations: dataset.relations.map(({ id, sourceId, targetId }) => [id, sourceId, targetId]),
 });
 assert.deepEqual(shape(en), shape(ja));
+assert.equal(en.extensions?.["draft.github.sukoyaka-dopeness.coordinate"], undefined);
+assert.equal(ja.extensions?.["draft.github.sukoyaka-dopeness.coordinate"], undefined);
+assert.ok(en.entities.every(({ extensions }) => extensions?.["draft.github.sukoyaka-dopeness.coordinate"] === undefined));
+assert.ok(ja.entities.every(({ extensions }) => extensions?.["draft.github.sukoyaka-dopeness.coordinate"] === undefined));
 assert.notEqual(en.extensions.metadata.datasetId, ja.extensions.metadata.datasetId);
-console.log("Apollo 11 canonical sample validation passed: EN/JA structure, endpoints, History, and Coordinate parity.");
+console.log("Apollo 11 canonical sample validation passed: EN/JA structure, endpoints, History, and coordinate-less public-sample contract.");

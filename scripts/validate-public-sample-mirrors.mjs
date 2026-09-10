@@ -11,6 +11,7 @@ const pairs = [
   ["en", join(specRoot, "examples", "lighthouse-restoration-demo.en.e2r.json"), join(liaisonRoot, "public", "lighthouse-restoration-demo.en.e2r.json")],
   ["ja", join(specRoot, "examples", "lighthouse-restoration-demo.ja.e2r.json"), join(liaisonRoot, "public", "lighthouse-restoration-demo.ja.e2r.json")],
 ];
+const coordinateExtension = "draft.github.sukoyaka-dopeness.coordinate";
 
 const read = async (path) => {
   try {
@@ -41,6 +42,12 @@ for (const [locale, canonicalPath, mirrorPath] of pairs) {
     if (!canonical.equals(mirror)) throw new Error(`byte mismatch: ${canonicalPath} != ${mirrorPath}`);
     const canonicalDataset = parsed(canonical, canonicalPath);
     const mirrorDataset = parsed(mirror, mirrorPath);
+    for (const [label, dataset] of [["canonical", canonicalDataset], ["mirror", mirrorDataset]]) {
+      if (dataset.extensions?.[coordinateExtension]) throw new Error(`${label} retains Dataset Coordinate declaration`);
+      if (dataset.entities.some(({ extensions }) => extensions?.[coordinateExtension])) {
+        throw new Error(`${label} retains Entity Coordinate data`);
+      }
+    }
     if (JSON.stringify(projection(canonicalDataset)) !== JSON.stringify(projection(mirrorDataset))) {
       throw new Error(`structural mismatch: ${canonicalPath} != ${mirrorPath}`);
     }

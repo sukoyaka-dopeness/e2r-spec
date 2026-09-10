@@ -4,164 +4,47 @@
     {
       "id": "armstrong",
       "name": "Neil Armstrong",
-      "description": "Apollo 11 commander.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 140,
-                "y": 100
-              }
-            }
-          ]
-        }
-      }
+      "description": "Apollo 11 commander."
     },
     {
       "id": "aldrin",
       "name": "Buzz Aldrin",
-      "description": "Apollo 11 lunar module pilot.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 400,
-                "y": 90
-              }
-            }
-          ]
-        }
-      }
+      "description": "Apollo 11 lunar module pilot."
     },
     {
       "id": "collins",
       "name": "Michael Collins",
-      "description": "Apollo 11 command module pilot.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 140,
-                "y": 320
-              }
-            }
-          ]
-        }
-      }
+      "description": "Apollo 11 command module pilot."
     },
     {
       "id": "nasa",
       "name": "NASA",
-      "description": "The United States space agency responsible for the mission.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 600,
-                "y": 240
-              }
-            }
-          ]
-        }
-      }
+      "description": "The United States space agency responsible for the mission."
     },
     {
       "id": "columbia",
       "name": "Command Module Columbia",
-      "description": "Apollo 11 command and service module.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 120,
-                "y": 500
-              }
-            }
-          ]
-        }
-      }
+      "description": "Apollo 11 command and service module."
     },
     {
       "id": "eagle",
       "name": "Lunar Module Eagle",
-      "description": "Apollo 11 lunar module used for landing and ascent.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 360,
-                "y": 520
-              }
-            }
-          ]
-        }
-      }
+      "description": "Apollo 11 lunar module used for landing and ascent."
     },
     {
       "id": "saturn-v",
       "name": "Saturn V",
-      "description": "Launch vehicle that carried Apollo 11 toward the Moon.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 650,
-                "y": 500
-              }
-            }
-          ]
-        }
-      }
+      "description": "Launch vehicle that carried Apollo 11 toward the Moon."
     },
     {
       "id": "moon",
       "name": "Moon",
-      "description": "The lunar destination and landing environment.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 760,
-                "y": 280
-              }
-            }
-          ]
-        }
-      }
+      "description": "The lunar destination and landing environment."
     },
     {
       "id": "hornet",
       "name": "USS Hornet",
-      "description": "Recovery ship that received the crew after splashdown.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 40,
-                "y": 300
-              }
-            }
-          ]
-        }
-      }
+      "description": "Recovery ship that received the crew after splashdown."
     }
   ],
   "events": [
@@ -730,26 +613,6 @@
       "datasetId": "apollo-11-mission-en-v1",
       "title": "Apollo 11 Mission"
     },
-    "draft.github.sukoyaka-dopeness.coordinate": {
-      "specVersion": "0.1.0",
-      "spaces": [
-        {
-          "id": "liaisonscape-graph",
-          "name": "LiaisonScape graph coordinates",
-          "kind": "cartesian-2d",
-          "components": {
-            "x": {
-              "unit": "liaisonscape-user-unit",
-              "positiveDirection": "display-right"
-            },
-            "y": {
-              "unit": "liaisonscape-user-unit",
-              "positiveDirection": "display-down"
-            }
-          }
-        }
-      ]
-    },
     "draft.github.sukoyaka-dopeness.specification": {
       "specVersion": "0.1.0",
       "uses": [
@@ -760,10 +623,6 @@
         {
           "extension": "history",
           "version": "1.0.0"
-        },
-        {
-          "extension": "draft.github.sukoyaka-dopeness.coordinate",
-          "version": "0.1.0"
         }
       ]
     }

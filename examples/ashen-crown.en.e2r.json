@@ -4,182 +4,52 @@
     {
       "id": "elara",
       "name": "Elara Veyne",
-      "description": "Crown princess and reluctant regent.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 0,
-                "y": 0
-              }
-            }
-          ]
-        }
-      }
+      "description": "Crown princess and reluctant regent."
     },
     {
       "id": "garrick",
       "name": "Garrick Thorn",
-      "description": "Captain of the royal guard.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -240,
-                "y": 0
-              }
-            }
-          ]
-        }
-      }
+      "description": "Captain of the royal guard."
     },
     {
       "id": "selene",
       "name": "Selene Arclight",
-      "description": "Court mage studying the sealed vault.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -120,
-                "y": -190
-              }
-            }
-          ]
-        }
-      }
+      "description": "Court mage studying the sealed vault."
     },
     {
       "id": "rowan",
       "name": "Rowan Vale",
-      "description": "Smuggler and information broker.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 310,
-                "y": 190
-              }
-            }
-          ]
-        }
-      }
+      "description": "Smuggler and information broker."
     },
     {
       "id": "mira",
       "name": "Mira Fen",
-      "description": "Healer who treats anyone in need.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -310,
-                "y": 190
-              }
-            }
-          ]
-        }
-      }
+      "description": "Healer who treats anyone in need."
     },
     {
       "id": "darius",
       "name": "Darius Halden",
-      "description": "Northern lord with a hidden agenda.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 240,
-                "y": 0
-              }
-            }
-          ]
-        }
-      }
+      "description": "Northern lord with a hidden agenda."
     },
     {
       "id": "ilyan",
       "name": "Ilyan Merrow",
-      "description": "High priest and guardian of an old sanctuary.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -310,
-                "y": -190
-              }
-            }
-          ]
-        }
-      }
+      "description": "High priest and guardian of an old sanctuary."
     },
     {
       "id": "nyra",
       "name": "Nyra Sol",
-      "description": "Foreign envoy seeking a fragile peace.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 310,
-                "y": -190
-              }
-            }
-          ]
-        }
-      }
+      "description": "Foreign envoy seeking a fragile peace."
     },
     {
       "id": "kael",
       "name": "Kael Rook",
-      "description": "Leader of the Free Banner.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 0,
-                "y": 190
-              }
-            }
-          ]
-        }
-      }
+      "description": "Leader of the Free Banner."
     },
     {
       "id": "vhalgrim",
       "name": "Vhalgrim",
-      "description": "Ancient dragon beneath Cinder Peak.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 0,
-                "y": -400
-              }
-            }
-          ]
-        }
-      }
+      "description": "Ancient dragon beneath Cinder Peak."
     }
   ],
   "events": [
@@ -637,26 +507,6 @@
       "datasetId": "ashen-crown-en-v1",
       "title": "The Ashen Crown"
     },
-    "draft.github.sukoyaka-dopeness.coordinate": {
-      "specVersion": "0.1.0",
-      "spaces": [
-        {
-          "id": "liaisonscape-graph",
-          "name": "LiaisonScape graph coordinates",
-          "kind": "cartesian-2d",
-          "components": {
-            "x": {
-              "unit": "liaisonscape-user-unit",
-              "positiveDirection": "display-right"
-            },
-            "y": {
-              "unit": "liaisonscape-user-unit",
-              "positiveDirection": "display-down"
-            }
-          }
-        }
-      ]
-    },
     "draft.github.sukoyaka-dopeness.specification": {
       "specVersion": "0.1.0",
       "uses": [
@@ -667,10 +517,6 @@
         {
           "extension": "history",
           "version": "1.0.0"
-        },
-        {
-          "extension": "draft.github.sukoyaka-dopeness.coordinate",
-          "version": "0.1.0"
         }
       ]
     }

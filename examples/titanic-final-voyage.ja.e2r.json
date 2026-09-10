@@ -4,236 +4,67 @@
     {
       "id": "titanic",
       "name": "RMSタイタニック",
-      "description": "処女航海中のホワイト・スター・ライン客船。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 0,
-                "y": 0
-              }
-            }
-          ]
-        }
-      }
+      "description": "処女航海中のホワイト・スター・ライン客船。"
     },
     {
       "id": "carpathia",
       "name": "RMSカルパチア",
-      "description": "遭難信号に応答し、生存者を救助したキュナード社の船。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 480,
-                "y": 220
-              }
-            }
-          ]
-        }
-      }
+      "description": "遭難信号に応答し、生存者を救助したキュナード社の船。"
     },
     {
       "id": "californian",
       "name": "SSカリフォルニアン",
-      "description": "後の調査で対応を検討された近隣船。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 320,
-                "y": -220
-              }
-            }
-          ]
-        }
-      }
+      "description": "後の調査で対応を検討された近隣船。"
     },
     {
       "id": "white-star-line",
       "name": "ホワイト・スター・ライン",
-      "description": "タイタニックを運航した会社。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -320,
-                "y": 0
-              }
-            }
-          ]
-        }
-      }
+      "description": "タイタニックを運航した会社。"
     },
     {
       "id": "harland-wolff",
       "name": "ハーランド・アンド・ウルフ",
-      "description": "タイタニックを建造したベルファストの造船所。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -320,
-                "y": -220
-              }
-            }
-          ]
-        }
-      }
+      "description": "タイタニックを建造したベルファストの造船所。"
     },
     {
       "id": "smith",
       "name": "エドワード・J・スミス",
-      "description": "タイタニック船長。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -140,
-                "y": 120
-              }
-            }
-          ]
-        }
-      }
+      "description": "タイタニック船長。"
     },
     {
       "id": "andrews",
       "name": "トーマス・アンドリュース",
-      "description": "設計・建造に関わった造船技師。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -140,
-                "y": -120
-              }
-            }
-          ]
-        }
-      }
+      "description": "設計・建造に関わった造船技師。"
     },
     {
       "id": "ismay",
       "name": "J・ブルース・イズメイ",
-      "description": "ホワイト・スター・ラインの会長兼社長。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -320,
-                "y": 220
-              }
-            }
-          ]
-        }
-      }
+      "description": "ホワイト・スター・ラインの会長兼社長。"
     },
     {
       "id": "fleet",
       "name": "フレデリック・フリート",
-      "description": "氷山を発見して報告した見張り員。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 140,
-                "y": -120
-              }
-            }
-          ]
-        }
-      }
+      "description": "氷山を発見して報告した見張り員。"
     },
     {
       "id": "phillips",
       "name": "ジャック・フィリップス",
-      "description": "タイタニックの無線通信士。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 140,
-                "y": 120
-              }
-            }
-          ]
-        }
-      }
+      "description": "タイタニックの無線通信士。"
     },
     {
       "id": "bride",
       "name": "ハロルド・ブライド",
-      "description": "フィリップスと勤務した無線通信士。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 220,
-                "y": 160
-              }
-            }
-          ]
-        }
-      }
+      "description": "フィリップスと勤務した無線通信士。"
     },
     {
       "id": "rostron",
       "name": "アーサー・ロストロン",
-      "description": "救助時のカルパチア船長。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 480,
-                "y": 300
-              }
-            }
-          ]
-        }
-      }
+      "description": "救助時のカルパチア船長。"
     },
     {
       "id": "molly-brown",
       "name": "マーガレット・ブラウン",
-      "description": "生存者で、後に他の生存者を助けた人物。",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 0,
-                "y": 260
-              }
-            }
-          ]
-        }
-      }
+      "description": "生存者で、後に他の生存者を助けた人物。"
     }
   ],
   "events": [
@@ -741,26 +572,6 @@
       "datasetId": "titanic-final-voyage-ja-v1",
       "title": "タイタニック号 最後の航海"
     },
-    "draft.github.sukoyaka-dopeness.coordinate": {
-      "specVersion": "0.1.0",
-      "spaces": [
-        {
-          "id": "liaisonscape-graph",
-          "name": "LiaisonScape graph coordinates",
-          "kind": "cartesian-2d",
-          "components": {
-            "x": {
-              "unit": "liaisonscape-user-unit",
-              "positiveDirection": "display-right"
-            },
-            "y": {
-              "unit": "liaisonscape-user-unit",
-              "positiveDirection": "display-down"
-            }
-          }
-        }
-      ]
-    },
     "draft.github.sukoyaka-dopeness.specification": {
       "specVersion": "0.1.0",
       "uses": [
@@ -771,10 +582,6 @@
         {
           "extension": "history",
           "version": "1.0.0"
-        },
-        {
-          "extension": "draft.github.sukoyaka-dopeness.coordinate",
-          "version": "0.1.0"
         }
       ]
     }

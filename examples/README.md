@@ -19,6 +19,10 @@ JSON files directly under `examples/` are complete Dataset examples:
 - `apollo-11-mission.ja.e2r.json`
 - `lighthouse-restoration-demo.en.e2r.json`
 - `lighthouse-restoration-demo.ja.e2r.json`
+- `ashen-crown.en.e2r.json`
+- `ashen-crown.ja.e2r.json`
+- `titanic-final-voyage.en.e2r.json`
+- `titanic-final-voyage.ja.e2r.json`
 
 `cross-application-demo.json` is a reusable workflow example for
 NarrativeLine and LiaisonScape. It includes Metadata, mixed History precision,
@@ -31,15 +35,22 @@ an Entity with multiple selectable Spaces.
 The Apollo 11 files are the canonical English/Japanese cross-application
 Mission sample. Each file is a complete wrapper-free Dataset with the same
 Object IDs, Event chronology, Relation topology, UTC History values, and
-LiaisonScape Coordinate Draft values. Natural-language fields and Dataset IDs
-are localized. The factual basis and precision policy are recorded in
+no saved placement data, so LiaisonScape derives its initial placement.
+Natural-language fields and Dataset IDs are localized. The factual basis and
+precision policy are recorded in
 `docs/apollo-11-canonical-sample.md`.
 
 The Lighthouse Restoration files are the canonical English/Japanese
-relationship-oriented Public Sample. They retain Coordinate data and EN/JA
-structural parity, and demonstrate Presentation intent through Reverse,
+relationship-oriented Public Sample. They are coordinate-less and preserve
+EN/JA structural parity while demonstrating Presentation intent through Reverse,
 Undirected, and Dashed Relation display. Presentation does not change Core
 Relation endpoints or semantics.
+
+Ashen Crown and Titanic Final Voyage are also Hub-linked public samples and
+are coordinate-less. Berlin Wall remains a NarrativeLine-owned Hub sample and
+is coordinate-less already. The reusable `cross-application-demo.json` and
+Coordinate-specific examples elsewhere in this repository remain explicit
+Coordinate fixtures and are not part of the Hub public-sample contract.
 
 ### History Extension Examples
 

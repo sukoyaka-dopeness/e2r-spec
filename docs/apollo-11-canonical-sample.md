@@ -41,7 +41,10 @@ operational detail.
 
 ## Interoperability boundary
 
-The Coordinate Draft data is application-neutral payload preserved for
-LiaisonScape graph display. NarrativeLine may ignore it while displaying the
-same Events chronologically. No Core, History, Coordinate, Source/Citation,
-Names, or Semantic design is introduced by this sample.
+The public Apollo 11 files intentionally contain no saved Coordinate or
+placement payload. LiaisonScape therefore exercises its current automatic
+initial-placement path when the Hub sample is opened, while NarrativeLine may
+ignore that application-derived graph placement and display the same Events
+chronologically. Coordinate interoperability remains covered by the dedicated
+cross-application and Coordinate fixtures; no Core, History, Coordinate,
+Source/Citation, Names, or Semantic design is introduced by this public sample.

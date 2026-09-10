@@ -4,236 +4,67 @@
     {
       "id": "titanic",
       "name": "RMS Titanic",
-      "description": "White Star Line passenger liner on her maiden voyage.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 0,
-                "y": 0
-              }
-            }
-          ]
-        }
-      }
+      "description": "White Star Line passenger liner on her maiden voyage."
     },
     {
       "id": "carpathia",
       "name": "RMS Carpathia",
-      "description": "Cunard liner that responded to Titanic's distress call and rescued survivors.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 480,
-                "y": 220
-              }
-            }
-          ]
-        }
-      }
+      "description": "Cunard liner that responded to Titanic's distress call and rescued survivors."
     },
     {
       "id": "californian",
       "name": "SS Californian",
-      "description": "Nearby ship whose response was examined by later inquiries.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 320,
-                "y": -220
-              }
-            }
-          ]
-        }
-      }
+      "description": "Nearby ship whose response was examined by later inquiries."
     },
     {
       "id": "white-star-line",
       "name": "White Star Line",
-      "description": "The company operating Titanic.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -320,
-                "y": 0
-              }
-            }
-          ]
-        }
-      }
+      "description": "The company operating Titanic."
     },
     {
       "id": "harland-wolff",
       "name": "Harland and Wolff",
-      "description": "Belfast shipbuilder that constructed Titanic.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -320,
-                "y": -220
-              }
-            }
-          ]
-        }
-      }
+      "description": "Belfast shipbuilder that constructed Titanic."
     },
     {
       "id": "smith",
       "name": "Edward J. Smith",
-      "description": "Captain of Titanic.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -140,
-                "y": 120
-              }
-            }
-          ]
-        }
-      }
+      "description": "Captain of Titanic."
     },
     {
       "id": "andrews",
       "name": "Thomas Andrews",
-      "description": "Naval architect associated with Titanic's design and construction.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -140,
-                "y": -120
-              }
-            }
-          ]
-        }
-      }
+      "description": "Naval architect associated with Titanic's design and construction."
     },
     {
       "id": "ismay",
       "name": "J. Bruce Ismay",
-      "description": "Chairman and managing director of White Star Line.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": -320,
-                "y": 220
-              }
-            }
-          ]
-        }
-      }
+      "description": "Chairman and managing director of White Star Line."
     },
     {
       "id": "fleet",
       "name": "Frederick Fleet",
-      "description": "Lookout who reported the iceberg sighting.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 140,
-                "y": -120
-              }
-            }
-          ]
-        }
-      }
+      "description": "Lookout who reported the iceberg sighting."
     },
     {
       "id": "phillips",
       "name": "Jack Phillips",
-      "description": "Titanic wireless operator.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 140,
-                "y": 120
-              }
-            }
-          ]
-        }
-      }
+      "description": "Titanic wireless operator."
     },
     {
       "id": "bride",
       "name": "Harold Bride",
-      "description": "Titanic wireless operator who worked with Phillips.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 220,
-                "y": 160
-              }
-            }
-          ]
-        }
-      }
+      "description": "Titanic wireless operator who worked with Phillips."
     },
     {
       "id": "rostron",
       "name": "Arthur Rostron",
-      "description": "Captain of Carpathia during the rescue.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 480,
-                "y": 300
-              }
-            }
-          ]
-        }
-      }
+      "description": "Captain of Carpathia during the rescue."
     },
     {
       "id": "molly-brown",
       "name": "Margaret Brown",
-      "description": "Titanic survivor who later became known for helping fellow survivors.",
-      "extensions": {
-        "draft.github.sukoyaka-dopeness.coordinate": {
-          "coordinates": [
-            {
-              "spaceId": "liaisonscape-graph",
-              "values": {
-                "x": 0,
-                "y": 260
-              }
-            }
-          ]
-        }
-      }
+      "description": "Titanic survivor who later became known for helping fellow survivors."
     }
   ],
   "events": [
@@ -741,26 +572,6 @@
       "datasetId": "titanic-final-voyage-en-v1",
       "title": "Titanic: Final Voyage"
     },
-    "draft.github.sukoyaka-dopeness.coordinate": {
-      "specVersion": "0.1.0",
-      "spaces": [
-        {
-          "id": "liaisonscape-graph",
-          "name": "LiaisonScape graph coordinates",
-          "kind": "cartesian-2d",
-          "components": {
-            "x": {
-              "unit": "liaisonscape-user-unit",
-              "positiveDirection": "display-right"
-            },
-            "y": {
-              "unit": "liaisonscape-user-unit",
-              "positiveDirection": "display-down"
-            }
-          }
-        }
-      ]
-    },
     "draft.github.sukoyaka-dopeness.specification": {
       "specVersion": "0.1.0",
       "uses": [
@@ -771,10 +582,6 @@
         {
           "extension": "history",
           "version": "1.0.0"
-        },
-        {
-          "extension": "draft.github.sukoyaka-dopeness.coordinate",
-          "version": "0.1.0"
         }
       ]
     }

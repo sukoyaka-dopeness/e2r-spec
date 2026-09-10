@@ -2095,3 +2095,127 @@ remain separate open tracks.
 Fresh10/Fresh11/Fresh12 historical evidence and the Fresh12 canonical Human
 Review result were unchanged. No new governed Fresh lineage, Product
 adoption, push, tag, release, deploy, or publication was performed.
+
+## Regional Care residual label-hit decision diagnostic
+
+### Fixed-geometry method
+
+The three hits remaining after the standard coupled-pair candidate were
+decomposed with the selected pair geometry held fixed. The diagnostic replayed
+the current presentation pipeline in three forms: the normal bounded feedback
+pipeline, the first route/label pass, and the same geometry with feedback
+disabled. It then tested one relation at a time with manual route offsets from
+0 through +/-192 units. These offsets are route-side counterfactuals only;
+they do not change stored geometry or Product routing authority.
+
+The endpoint-zone test removed the first and last four route samples before
+checking a hit. This distinguishes contact near the endpoint attachment from
+an actual interior route/label conflict.
+
+### The three residual relations
+
+| Relation | Conflicting label(s) | Endpoint-only? | First pass | Feedback final | Best hit-free route offset |
+| --- | --- | --- | --- | --- | --- |
+| `r03` regional-care-network -> east-clinic | `public-health-office` | No; interior hit | Hit | Hit | `+120`, but global hits 7 / crossings 3 |
+| `r16` south-clinic -> south-family-practice | `city-hospital` | No; interior hit | No hit | Hit | `0,+12,+24,+48,+72,+192`; best `+192` gives global hits 2 / crossings 5 |
+| `r18` west-clinic -> west-community-center | `west-clinic`, `pharmacy-coalition`, `volunteer-coalition` | No; all conflicts include interior samples | Hit | Hit | `+48,+72,+144,+168`; best `+48` gives global hits 4 / crossings 1 |
+
+`r18` includes its source node label (`west-clinic`), but the same route also
+hits two non-endpoint labels. It is therefore not a harmless endpoint-zone
+artifact. All three residual relations have genuine interior conflict under
+the current label rectangles.
+
+### Pipeline sensitivity
+
+The fixed-geometry replay produced these aggregate states:
+
+- First pass: 13 route hits and 21 near-label routes.
+- Feedback-enabled final: 3 route hits and 10 near-label routes.
+- Feedback-disabled final: the same 13 route hits as the first pass.
+- Feedback changed 21 route paths and 26 Relation-label geometries.
+
+This means the bounded feedback pass is materially involved in the overall
+presentation result. For the residuals specifically, `r03` and `r18` exist in
+both first and final passes, while `r16` is absent in the first and
+feedback-disabled states but is introduced by the final feedback state.
+
+The current `labelRouteHits` predicate checks route samples against **node
+label rectangles**. Relation-label placement is derived after route selection
+and is not an input to that predicate. Relation-label movement can change
+presentation geometry and can participate in other safety metrics, but it is
+not a direct causal switch for these three node-label route hits under the
+current implementation.
+
+### Route-side counterfactuals
+
+Changing route side can remove an individual local hit, but no tested offset
+was a globally safe improvement:
+
+- `r03 +120` removes its local hit, but changes many remote routes and worsens
+  the global state to 7 hits, 3 crossings, 14 near routes, and route max
+  667.0.
+- `r16 +192` gives the strongest local/global hit reduction (2 global hits),
+  but introduces 5 crossings; its route median/max are 284.6/645.4.
+- `r18 +48` removes its local hit while keeping 1 crossing, but leaves 4
+  global hits and 12 near routes.
+
+The side alternatives therefore demonstrate route-side sensitivity, but not a
+safe route-side fix. Occupied-path and downstream feedback effects remain in
+these replays; the listed remote-route changes show that a local side change
+is not isolated in the current arbitration pipeline.
+
+### Causal classification
+
+**PROVEN**
+
+- The three residual hits are `r03`, `r16`, and `r18`; each contains an
+  interior node-label conflict after endpoint samples are excluded.
+- `r03` and `r18` are present before and after feedback, so feedback alone is
+  not their origin.
+- `r16` is feedback-dependent in the fixed-geometry replay: the final
+  feedback pass introduces it.
+- Route-side alternatives can remove each local hit for at least one tested
+  offset, but every such alternative causes unacceptable global trade-offs.
+- Relation-label placement is downstream of the current node-label route-hit
+  predicate and is not the direct switch for these three hits.
+
+**STRONGLY SUPPORTED**
+
+- Geometry-only search is not fully exhausted in a mathematical sense, but
+  the tested bounded placement neighborhood is no longer the most informative
+  next direction. More brute-force node movement is unlikely to explain the
+  residual without modeling route/label arbitration explicitly.
+- The next effective experiment should be relation-specific route/label
+  coordination: preserve current node geometry, expose route candidate side
+  and node-label occupancy decisions, and compare one decision change at a
+  time with a global safety gate.
+- `r16` should be treated as a feedback arbitration case, while `r03` and
+  `r18` should be treated as persistent route-versus-node-label corridor
+  cases. They should not be collapsed into one generic “spacing” defect.
+
+**UNRESOLVED**
+
+- Whether a relation-specific route-side choice that accounts for global
+  occupied-path effects can improve `r03` or `r18` without the observed
+  regressions.
+- Whether a node-label placement alternative, rather than a route alternative,
+  can remove the interior conflicts while preserving label readability.
+- Whether the feedback pass should retain the current `r16` label placement or
+  choose a bounded alternative based on route ownership.
+
+### Decision and state
+
+No Product routing or label-placement change was made. The diagnostic output
+is recorded in `tools/regional-care-hit-diagnostic.mjs`; it consumes a saved
+diagnostic search result and does not modify the fixture or any governed
+artifact. No Regional Care Product surface was prepared because no
+counterfactual produced a materially safer globally acceptable candidate.
+
+The existing Apollo 11 actual Product inspection surface remains available and
+was verified separately. Regional Emergency fallback, node-label connectors,
+and interactive pointer-up side flipping remain OPEN/SEPARATE tracks.
+
+Fresh10/Fresh11/Fresh12 historical evidence and the Fresh12 canonical Human
+Review result were unchanged. No new governed Fresh lineage, Product
+initial-placement adoption, push, tag, release, deploy, or publication was
+performed.

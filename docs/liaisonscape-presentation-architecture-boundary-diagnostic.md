@@ -225,3 +225,76 @@ adapted in `45243c7`. The preceding implementation/result records are
 historical evidence, the Fresh12 canonical Human Review result, Product
 adoption state, and unrelated dirty work are unchanged. No push, tag, release,
 deploy, or publication was performed.
+
+## Dependency fingerprint and invalidation measurement
+
+The next diagnostic checkpoint added an opt-in `presentationDependencySink` and
+`src/presentation-dependency.ts` in the LiaisonScape repository. Each traced
+stage records a canonical serialized input and output fingerprint for
+`route-selection`, `relation-label`, `node-label`, and `feedback`, separately
+for the `label-free`, `first`, and `feedback` passes. The canonical serialized
+value is the exact comparison authority. A compact FNV-1a digest is included
+only for display; a digest collision is not accepted as proof of reuse.
+
+The sink is absent from normal Product calls, so this diagnostic serialization
+does not alter Product runtime behavior. The feedback trace describes the
+orchestration decision (`shouldRun`); the actual feedback presentation remains
+the following `feedback` pass snapshot.
+
+The diagnostic tool
+`tools/presentation-dependency-invalidation-diagnostic.mjs` compared a
+baseline against a no-op and four small input mutations on the current Apollo
+11 and Regional Care diagnostic fixtures. The mutation matrix was:
+
+| Mutation | Stage-level observation | Exact final output |
+| --- | --- | --- |
+| no-op | 0/8 stage inputs changed; 0/8 stage outputs changed | unchanged |
+| position (`first node.x += 24`) | 8/8 inputs changed; 7/8 traced outputs changed | changed |
+| manual Relation-label anchor | label-free and first route inputs/outputs unchanged; feedback route and downstream label stages changed | changed |
+| provisional label offset | first route input changed, but no traced stage output changed | unchanged |
+| feedback disabled | only the feedback orchestration input/output changed; feedback presentation pass was absent | changed as expected |
+
+The matrix was the same at the stage-key level for both fixtures. This is
+useful evidence of a coarse boundary: a downstream-only manual anchor can
+preserve both route passes before feedback, while feedback and its dependent
+labels remain invalidated. It is not evidence that a changed provisional
+input may safely reuse a route snapshot merely because this fixture produced
+the same output; the exact input fingerprint correctly remains conservative.
+Likewise, a geometry mutation invalidates the whole traced pipeline under the
+current authority rather than exposing a safe item-level prefix or suffix.
+
+Observed diagnostic fingerprint construction time was approximately 5--7 ms
+for Apollo 11 and 12--14 ms for Regional Care across the runs, compared with
+roughly 30--50 ms and 95--123 ms total presentation runs respectively. These
+figures include the opt-in serialization and should not be read as Product
+runtime overhead, but they show that full-structure fingerprints are not free
+enough to add indiscriminately to every interactive pass. A future reuse
+experiment would need stage-specific, dependency-scoped representations or a
+coarser cache boundary; adding full fingerprints to the hot path would have a
+material cost on the larger fixture.
+
+### Decision
+
+**PROVEN:** canonical fingerprints are stable for unchanged semantic input;
+the trace can exactly identify which current stage contracts changed; and a
+manual downstream input can leave the earlier route stages unchanged.
+
+**STRONGLY SUPPORTED:** the current stage contracts are valuable as an
+architecture and observability boundary, but they do not yet provide a
+selective item-level invalidation graph. Position changes and feedback
+propagation remain broad, and fingerprint construction must itself be kept
+out of ordinary Product execution or made dependency-scoped before it can
+support safe reuse.
+
+**UNRESOLVED:** whether a smaller, responsibility-specific dependency key
+(for example route-authority inputs separated from downstream placement
+inputs) can provide material exact reuse without duplicating authority
+semantics. No reuse was enabled by this checkpoint.
+
+The recommended next direction is a bounded, diagnostic-only comparison of
+stage-scoped keys against the current full snapshots, with exact output
+comparison and explicit fallback on any ambiguity. Do not proceed directly to
+item-level reuse or Product adoption. The implementation checkpoint is
+`d3f7f75`/`45243c7`; this measurement adds a subsequent local diagnostic
+checkpoint in the LiaisonScape repository. Fresh historical evidence and the
+canonical Human Review result remain outside this experiment.

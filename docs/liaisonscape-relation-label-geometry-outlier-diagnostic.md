@@ -2096,6 +2096,129 @@ Fresh10/Fresh11/Fresh12 historical evidence and the Fresh12 canonical Human
 Review result were unchanged. No new governed Fresh lineage, Product
 adoption, push, tag, release, deploy, or publication was performed.
 
+## Regional Care richer topology and feedback rollback probe
+
+### Scope
+
+This checkpoint tested the two remaining alternatives before widening
+Node-to-Node spacing:
+
+1. richer route topology for the persistent `r03` and `r18` corridor cases;
+2. bounded feedback lookahead/rollback for the feedback-dependent `r16` case.
+
+The selected Node geometry, fixture, Product source, and governed evidence
+remained unchanged. The route-topology probe used an in-memory diagnostic
+clone that preserved the current route's Node-boundary attachment points and
+recomputed current Node/Relation-label placement. It tested dogleg,
+orthogonal-like, and three-bend polylines at bounded offsets from -240 through
+240. Because the current Product route API exposes only the quadratic offset
+family, this was deliberately a topology counterfactual rather than a Product
+implementation change; downstream routes were held fixed and that limitation
+is recorded below.
+
+The feedback probe used the actual first-pass and final-pass route/label
+snapshots. It tested four bounded policies: no rollback, rollback of the
+`r16` route, rollback of the `r16` Node label, and rollback of both. This is a
+state-level lookahead/rollback comparison, not a change to the Product
+feedback algorithm.
+
+### Richer route topology
+
+| Relation | Best local-hit-free topology | Local result | Global result |
+| --- | --- | --- | --- |
+| `r03` | dogleg, offset `-240` | local hit removed | 6 hits / 11 near / 3 crossings; route median `281.6` |
+| `r18` | three-bend, offset `-192` | local hit removed | 3 hits / 11 near / 3 crossings; route median `282.1` |
+
+The route-topology combinations for `r03` and `r18` were also combined in a
+15-case bounded global probe. It produced no materially safer candidate. The
+best no-intervention rederived comparison was 3 hits / 9 near / 1 crossing;
+the best topology action was still 3 hits / 11 near / 3 crossings. The
+rederived no-intervention value differs from the canonical 3/10/1 baseline
+because this diagnostic clone re-runs label placement from the custom route
+set; it is not used to claim a baseline improvement.
+
+The topology probe did not show a safe escape for either persistent case. It
+also does not prove that every possible waypoint topology fails, because the
+current diagnostic does not re-arbitrate all downstream routes after an
+injected custom route. It does show that the tested richer local families are
+not an immediate safe replacement for the current route family.
+
+### Feedback lookahead and rollback
+
+The canonical feedback baseline was 13 first-pass hits -> 3 final hits, with
+final 3 hits / 10 near / 1 crossing. The bounded rollback results were:
+
+| Policy | `r16` | Total hits | Hit relations | Near | Crossings | Route median/max |
+| --- | --- | ---: | --- | ---: | ---: | --- |
+| No rollback | hit | 3 | `r03,r16,r18` | 10 | 1 | `281.6 / 645.4` |
+| Rollback `r16` route | hit | 3 | `r03,r16,r18` | 10 | 1 | `282.1 / 645.4` |
+| Rollback `r16` label | no hit | 3 | `r03,r18,r20` | 9 | 1 | `281.6 / 645.4` |
+| Rollback route + label | hit | 4 | `r03,r16,r18,r20` | 10 | 1 | `282.1 / 645.4` |
+
+The label rollback preserves the aggregate hit count benefit of feedback, but
+it moves the defect from `r16` to `r20`; it therefore fails the requirement
+that the conflict not be moved elsewhere. Route-only rollback has no causal
+benefit, and rolling back both is worse. Disabling feedback remains invalid
+because it restores the 13-hit first-pass state.
+
+### Decision
+
+The evidence supports decision **D** for the next stage:
+
+```text
+neither richer route topology nor bounded feedback rollback is sufficient;
+local available room is becoming the dominant constraint to investigate
+next, with Node-spacing expansion as a justified diagnostic fallback
+```
+
+This is a decision to investigate spacing, not to adopt a spacing value or
+change Product initial placement. The spacing experiment must still preserve
+the current route/label/feedback semantics and compare the same complete
+safety vector. Regional Emergency fallback remains OPEN/SEPARATE.
+
+### Interpretation
+
+**PROVEN**
+
+- The tested richer dogleg, orthogonal-like, and three-bend families produced
+  no materially safer Regional Care candidate for `r03`/`r18`.
+- The 15-case combined topology probe produced zero materially safer
+  candidates.
+- Feedback route rollback does not remove `r16`.
+- Feedback label rollback removes `r16` locally but moves the same-count hit to
+  `r20`; route-plus-label rollback is worse.
+- The current aggregate feedback benefit must be preserved; disabling feedback
+  is not a valid remedy.
+
+**STRONGLY SUPPORTED**
+
+- The current quadratic route candidate family is insufficient for the tested
+  Regional Care corridor conflicts, but the topology probe is not a proof that
+  all richer topologies are impossible.
+- `r16` is limited by feedback ordering/coordination, while `r03` and `r18`
+  are increasingly consistent with insufficient local room under the current
+  label and route semantics.
+- Node-spacing expansion is now the next justified diagnostic fallback before
+  making a larger routing or feedback architecture change.
+
+**UNRESOLVED**
+
+- Whether a fully re-arbitrated waypoint topology can outperform spacing
+  expansion once all downstream routes are allowed to respond.
+- Whether modest spacing expansion can reduce `r03`/`r18` without causing
+  unacceptable extent, fit, route burden, or positive-fixture regressions.
+- Whether a future feedback policy can reject a newly introduced local hit
+  while retaining the other feedback improvements without moving the defect.
+
+### State
+
+No Product routing, label, feedback, initial-placement, or spacing behavior was
+changed. No actual Product Regional Care surface was prepared because no
+materially safer candidate was found. Fresh10/Fresh11/Fresh12 historical
+evidence and the Fresh12 canonical Human Review result were unchanged. No new
+governed Fresh lineage, Product adoption, push, tag, release, deploy, or
+publication was performed.
+
 ## Regional Care residual label-hit decision diagnostic
 
 ### Fixed-geometry method

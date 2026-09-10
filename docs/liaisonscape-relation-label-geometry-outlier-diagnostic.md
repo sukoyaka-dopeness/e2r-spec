@@ -2343,6 +2343,157 @@ Review result were unchanged. No new governed Fresh lineage, Product
 initial-placement adoption, push, tag, release, deploy, or publication was
 performed.
 
+## Late-index progressive local repair comparison
+
+### Purpose and case construction
+
+Regional Care is an early-index stress case: its initial affected region
+contains a route at processing index 0. To test whether that alone explains the
+absence of savings, a separate diagnostic mutation was searched on the saved
+clean Apollo geometry. The search moved one Node in bounded 48-unit grid steps,
+kept the existing Node-clearance rule, required exactly one hard
+`labelRouteHit`, and preferred the latest canonical processing index. A bounded
+24-unit move of the same Node was then used as the repair mutation. Both the
+defect state and the repair state were evaluated through the existing Product
+presentation pipeline.
+
+This is a diagnostic analogue of a late failure, not a Product interaction or
+an adopted Apollo geometry.
+
+### Later-index result
+
+The selected case was:
+
+```text
+graph                    9 Nodes / 11 Relations
+mutated Node             saturn-v (+96, +96)
+hard defect              entity-10 only
+defect processing index  10 / 11
+initial region           3 Nodes
+initial region edges     6 / 11
+initial prefix replay    4 routes
+```
+
+The defect-state presentation remained otherwise clean:
+
+```text
+hits       1  (entity-10)
+near       3
+crossings  0
+route      median/max 195.7 / 355.3
+extent     622.3 × 419.4
+fit        0.6371
+```
+
+The bounded repair move was `saturn-v -24` in x. Full authority removed the
+hard hit without defect relocation:
+
+```text
+hits       0
+near       1
+crossings  0
+route      median/max 195.7 / 353.3
+extent     622.3 × 419.4
+fit        0.6371
+feedback   unchanged: applied
+```
+
+However, replaying the four-route prefix was not exactly equivalent to full
+authority. The first local replay saved 4 of 33 route decisions (12.1%), all
+from the first route pass; label-free and feedback passes remained full:
+
+```text
+full authority       label-free 11 / first 11 / feedback 11 = 33
+progressive initial  label-free 11 / first  7 / feedback 11 = 29
+work savings         4 / 33 = 12.1%
+pass savings         label-free 0, first 4, feedback 0
+```
+
+The initial replay differed in route geometry for `entity-3`, `entity-6`,
+`entity-7`, and `entity-9`, in their Relation-label geometry, and in the
+`armstrong` and `collins` Node labels. The feedback state itself matched. The
+escaped dependencies therefore came from route occupancy and downstream
+label placement, rather than from a change in the feedback boolean alone.
+
+The region expanded once from 3 to 7 Nodes:
+
+```text
+expanded region = armstrong, collins, columbia, eagle, moon, nasa, saturn-v
+expanded replay prefix = 0 routes
+expanded work = 33 route decisions
+full equivalence = exact
+```
+
+Thus the expanded result was safe and exactly equivalent, but it had no work
+saving. The late defect preserved a meaningful prefix only before exactness was
+established; the prefix could not be retained once the escaped route and label
+dependencies were included.
+
+### Comparison with Regional Care
+
+| Case | Defect index | Initial region | Final region | Prefix replay | Full/local work | Exact after local replay |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| Regional Care | 0 | 10 | 16 | 0 | 90 / 90 | yes, by full work |
+| Apollo late-index | 10 / 11 | 3 | 7 | 4 -> 0 | 33 / 29 -> 33 | no -> yes after expansion |
+
+Regional Care demonstrates immediate full fallback. The later Apollo case
+demonstrates that a late processing index can create a short first-pass saving,
+but current route/label dependencies can invalidate that saving before exact
+full-authority equivalence is reached.
+
+No sequential defect-chasing loop was run. Both cases used one bounded batch
+repair, one dependency expansion, and a global equivalence/relocation gate.
+
+### Decision
+
+**PROVEN**
+
+- A later-index hard defect can preserve a non-empty canonical prefix: the
+  Apollo case replayed four routes and reduced first-pass work by 4/33 route
+  decisions (12.1%).
+- That initial saving was not exact. Route, Relation-label, and Node-label
+  differences escaped the three-Node region even though the defect relation was
+  the final route in processing order.
+- Expanding the region to seven Nodes restored exact full-authority equivalence,
+  but removed all savings because the first affected route became index 0.
+- The label-free and feedback passes remained full in the later case; the
+  saving existed only in the first route pass.
+- The late repair removed its one hard defect without relocating it. This does
+  not make the initial replay acceptable because exactness failed.
+
+**STRONGLY SUPPORTED**
+
+- The practical classification is **C**, with an **E**-type dependency cause:
+  ordered routing can expose a useful prefix, but current occupied-path and
+  downstream label dependencies can erase it, while global label-free and
+  feedback stages provide no additional savings.
+- Processing-order tuning alone is not yet justified as the next Product
+  direction. A useful optimization would need an explicit proof that escaped
+  route and label dependencies are absent, or an architecture that makes those
+  dependencies independently recomputable.
+- Progressive local repair remains worthwhile as a conservative diagnostic and
+  skip/fallback policy, but not yet as a general Product performance mechanism.
+
+**UNRESOLVED**
+
+- Whether a later case with no escaped Node-label changes can retain exact local
+  savings under the same pipeline.
+- Whether partitioning occupied paths or separating label-free computation can
+  make the observed first-pass saving durable without changing Product
+  semantics.
+- Whether the 12.1% saving is representative; this checkpoint intentionally
+  used one bounded late-index case rather than a broad mutation matrix.
+
+### State
+
+The late-index implementation is
+`tools/late-index-local-repair-diagnostic.mjs`. It is diagnostic-only and does
+not modify Product source, fixture data, or stored Apollo evidence. No actual
+Product inspection surface was prepared, no Product adoption was made, and no
+governed Fresh lineage was started. Fresh10/Fresh11/Fresh12 historical evidence
+and the Fresh12 canonical Human Review result remain unchanged. No push, tag,
+release, deploy, or publication was performed.
+
 ## Progressive local repair diagnostic
 
 ### Scope and prototype

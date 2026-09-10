@@ -81,6 +81,16 @@ presentation region in the changed implementation. Do not reopen snapshot
 reuse or add new governance/evidence execution merely because this baseline
 exists.
 
+## Roadmap disposition
+
+This baseline closes the current performance branch. The nearer follow-up is a
+separate Dataset loading indication so users can understand the wait before a
+stable Graph appears. Display-time optimization is deferred until a feature or
+Dataset size/shape change provides a reason to re-measure the actual Product.
+At that point, the then-current bottleneck—not necessarily the current route
+candidate-generation or first-pass hot spot—determines the next optimization
+checkpoint.
+
 ## State
 
 - Product-visible semantics: unchanged;

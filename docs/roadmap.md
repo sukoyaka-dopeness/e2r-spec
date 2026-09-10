@@ -7453,3 +7453,24 @@ sanity, and a smoke defect does not itself identify a layout, fit, camera, or
 coordinate root cause. The policy is motivated by Fresh12's first review cell,
 where B1/V3 and integrity passed but visual review found a blocking defect.
 Fresh12 artifacts and its canonical review result remain immutable.
+
+### LiaisonScape Dataset loading UX follow-up (2026-09-11)
+
+Add a clear loading indication for the interval between opening a Dataset and
+the first stable, usable Graph display. This is a near UX follow-up, separate
+from performance optimization: the indication should explain waiting without
+assuming that the current measured implementation is slow enough to require a
+code optimization. No implementation is authorized by this roadmap entry.
+
+### LiaisonScape Dataset display-time performance follow-up (deferred)
+
+The current end-to-end performance investigation is closed after the baseline
+recorded in [LiaisonScape End-to-End Dataset Open
+Baseline](liaisonscape-end-to-end-performance-baseline.md). Retain its timing
+seam, stage contracts, and profiler as observability for a later checkpoint.
+Re-measure the actual Product after a substantial feature change or a change
+in Dataset size or shape, then prioritize the bottleneck observed at that
+time. The current evidence identifies presentation derivation, especially
+route candidate generation and the first pass, as the present hot spot; it is
+not a permanent optimization assumption. This deferred item does not reopen
+snapshot reuse, authorize Product adoption, or start governed evidence work.

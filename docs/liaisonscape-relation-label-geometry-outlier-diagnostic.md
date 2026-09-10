@@ -2718,6 +2718,13 @@ through 22.
   caching, but not for an exact pass/prefix/suffix shortcut without redesigning
   dependency ownership or adding a stronger global state representation.
 
+The downstream-only manual Relation-label counterfactual reinforces this
+boundary: label-free and first-pass candidate sets were reusable in both
+fixtures, while feedback candidate sets were invalidated for 4 Apollo routes
+and 11 Regional Care routes. The uncached comparison still produced exactly
+the same final route, Relation-label, Node-label, and feedback outputs. This
+is a useful candidate-generation cache seam, not a feedback-stage reuse seam.
+
 **UNRESOLVED**
 
 - Whether a future immutable occupancy snapshot or dependency graph can make

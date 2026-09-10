@@ -886,3 +886,111 @@ decision. Research success does not imply Product adoption.
 No Fresh10, Fresh11, or Fresh12 artifact or canonical Human Review result was
 changed. No governed Fresh lineage, push, tag, release, deploy, or publication
 was performed.
+
+## Two-stage layout performance checkpoint
+
+### Performance diagnosis
+
+Instrumentation around the current diagnostic runner shows that full Product
+presentation evaluation is the first practical bottleneck. On the Lighthouse
+fixture, the previous 12-finalist run took 82.93 seconds; 82.80 seconds was
+inside 583 calls to the Product presentation evaluator. The cheap structural
+grid screen remained bounded at 19,216 evaluations. This makes repeated full
+routing and label derivation, rather than the crossing arithmetic itself, the
+dominant cost at this scale.
+
+The evaluator intentionally remains the current Product presentation pipeline.
+No routing, Relation-label, Node-label, or drag semantics were changed to
+obtain the timing result.
+
+### Bounded optimization
+
+The generic runner now limits the expensive Product-aware repair to the first
+eight zero-crossing structural finalists, selected after the cheap structural
+screen. The limit is configurable through
+`E2R_PRESENTATION_FINALIST_LIMIT` for diagnostic experiments and defaults to
+eight. This is finalist pruning, not a semantic cache or a new Product
+algorithm. It removes redundant full evaluations while preserving the same
+deterministic search and the same post-structural relaxation logic.
+
+The limit-four probe was rejected: it reduced Lighthouse runtime to 51.50
+seconds but changed the selected candidate's route maximum from 370.0 to
+551.3 and increased usable-span pressure. The limit-eight probe preserved the
+selected quality metrics on Apollo 11 and Lighthouse, so it is the bounded
+default for this diagnostic runner. This is evidence for a diagnostic budget,
+not a universal acceptance threshold.
+
+### Before / after measurements
+
+| Fixture | Finalist limit | Product evaluations | Runtime | Crossings | Label safety | Extent | Fit | Route median/max |
+| --- | ---: | ---: | ---: | ---: | --- | --- | ---: | --- |
+| Apollo 11 | 12 | 508 observed in the prior run | 46.68 s | 0 | pass | 622 x 419 | 0.637 | 195.7 / 352.9 |
+| Apollo 11 | **8** | 469 | **38.41 s** | 0 | pass | 622 x 419 | 0.637 | 195.7 / 352.9 |
+| Linkscape | 12 | prior baseline | 9.09 s | 0 | pass | 356 x 146 | 1.000 | 100.6 / 139.7 |
+| Linkscape | **8** | 336 | **6.87 s** | 0 | pass | 356 x 146 | 1.000 | 100.6 / 139.7 |
+| Lighthouse | 12 | 583 | 82.93 s | 0 | pass | 633 x 401 | 0.662 | 193.4 / 370.0 |
+| Lighthouse | **8** | 483 | **68.51 s** | 0 | pass | 633 x 401 | 0.662 | 193.4 / 370.0 |
+
+The Apollo and Lighthouse selected coordinates and reported quality metrics
+were identical between the 12 and 8 finalist runs. The Linkscape result also
+remained zero-crossing and label-safe with the same reported output metrics.
+The runtime reductions are approximately 18%, 24%, and 17% respectively.
+The counts include the deterministic candidate evaluations used by the runner;
+they are not browser capture or governed evidence counts.
+
+### Scaling interpretation
+
+For small graphs, the fixed grid budget is unnecessary relative to the full
+presentation cost: the 3-node control completed in 0.09 seconds. For the
+5-node Linkscape fixture, the 8-finalist run completed in 6.87 seconds. For
+Apollo 11 and the 10-node Lighthouse fixture, full presentation evaluation
+remains the first bottleneck even after finalist pruning. The exact circular
+screen is separately capped at nine Nodes because its factorial growth is
+predictable; larger graphs use the seeded heuristic order screen.
+
+The next meaningful optimization candidates are therefore incremental route /
+label recomputation or a stronger cheap lower-bound screen. A broad cache is
+not yet justified: candidate positions are mostly unique, and the current
+quality-preserving finalist pruning already removes the demonstrated
+redundancy. Any incremental evaluator must prove equivalence against the
+current Product presentation output before it can be considered.
+
+### Current generalization state
+
+The two-stage strategy remains strongest on Apollo 11 and has machine support
+on Linkscape and Lighthouse. Lighthouse actual Product inspection reported no
+major visual breakage, with Edge-to-Relation-label and Node-to-Node-label
+affiliation remaining close. Linkscape actual Product visual acceptance is
+still pending and is not inferred from its metrics. The K3,3 stress case still
+uses the bounded non-zero structural fallback and is unaffected by finalist
+pruning because it has no structural zero-crossing start.
+
+**PROVEN**
+
+- Full Product presentation evaluation is the dominant measured cost for the
+  10-node fixture.
+- A finalist limit of eight preserves the selected Apollo and Lighthouse
+  quality metrics in repeated diagnostic runs while reducing runtime.
+- A limit of four causes a measured route-quality regression and is rejected.
+
+**STRONGLY SUPPORTED**
+
+- Cheap structural screening followed by a small number of Product-aware
+  finalist evaluations is the appropriate performance architecture at this
+  scale.
+- Finalist pruning should remain a diagnostic budget until more fixture classes
+  confirm that it does not discard a visually better candidate.
+
+**UNRESOLVED**
+
+- Whether incremental affected-route/label recomputation can reduce the cost
+  without changing Product presentation semantics.
+- Whether eight finalists remain sufficient for denser or hub-heavy graphs,
+  narrow viewports, and graphs with parallel or self-loop Relations.
+- Whether the performance benefit survives actual Product visual inspection
+  for Linkscape and broader fixtures.
+- Product adoption and initial-placement integration.
+
+No Product behavior, stored fixture, historical evidence, or canonical Human
+Review result was changed. No governed Fresh lineage, push, tag, release,
+deploy, or publication was performed.

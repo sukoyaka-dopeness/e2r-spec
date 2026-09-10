@@ -505,3 +505,134 @@ worth the reduced separation and changed crossing presentation.
   Product inspection. It does not claim a crossing reduction or Product
   adoption.
 - No push, tag, release, deploy, or publication was performed.
+
+## Generic crossing-first structural search
+
+### Scope and question
+
+The user demonstrated an Apollo 11 arrangement in the actual Product with no
+visible Edge crossings. That observation does not make zero crossings a
+universal Product requirement, but it disproves the narrower claim that the
+three crossings in the current diagnostic candidates are topologically
+unavoidable for this Dataset.
+
+This checkpoint therefore tested a generic, diagnostic-only feasibility
+search. It does not use Apollo names, hand-arranged coordinates, a special
+ordering, or a Product code path. The current routing, Node-label placement,
+Relation-label placement, drag behavior, and stored Dataset coordinates remain
+unchanged.
+
+### Search design
+
+The diagnostic tool in the LiaisonScape repository uses two structural stages:
+
+1. For graphs of at most nine Nodes, it exhaustively screens circular orders
+   as an outer-face hint. For larger graphs it uses a deterministic, seeded
+   circular-order heuristic. This stage is intentionally only a screen: a
+   graph can have a planar embedding with interior Nodes while having no
+   zero-crossing circular embedding.
+2. A generic grid assignment search permits interior Nodes, using Node swaps
+   and moves into unused grid slots. It first minimizes straight-line
+   non-incident crossings, short connected pairs, and unnecessary long pairs.
+   Only zero-crossing structural finalists enter the bounded, expensive repair
+   that evaluates the actual Product presentation pipeline.
+
+The repair evaluates routing, Node labels, Relation labels, label collisions,
+label proximity, route lengths, usable label support, fit, and crossings. It
+does not accept a candidate with a Node-overlap pair under the existing
+`INITIAL_ENTITY_CLEARANCE = 76` rule, a label-route hit, a label overlap, or a
+label-near-20 route. This is a diagnostic feasibility boundary, not a new
+Product layout contract.
+
+### Apollo 11 result
+
+The exact circular screen evaluated 40,320 raw permutations (20,160
+reflection-distinct orders) and its best chord model still had two crossings.
+This is useful negative evidence: outer-face ordering alone is insufficient;
+it does not show that the graph is nonplanar.
+
+The generic grid-plus-presentation search then found an eligible candidate:
+
+| Candidate | Crossings | Label-route hits | Label-near-20 routes | Node-label overlap | Node overlap pairs | Minimum separation | Extent | Fit scale | Route median/max | Usable-span penalty |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | ---: | --- | ---: |
+| Safe vertical compaction | 3 | 0 | 0 | 0 | 0 | 125.0 | 524 x 541 | 0.510 | 189.6 / 404.0 | 6.3 |
+| Generic crossing-first structural search | **0** | 0 | 0 | 0 | 0 | 164.0 | 670 x 499 | 0.548 | 194.0 / 356.9 | 149.4 |
+
+The candidate has no sampled crossing details, no hard label collision, and no
+label-proximity failure. Its single remaining shallow Relation-label support
+shortfall is represented by the nonzero soft usable-span penalty; it was not
+silently treated as a pass. The candidate is intentionally wider than the
+compaction baseline, but has a comparable fitted scale, a slightly higher
+route median, and a lower route maximum.
+
+This establishes **feasibility**, not selection. The candidate is available as
+`generic-crossing-search-v1` on the actual-App geometry inspection surface for
+an Early Visual Smoke Check. It must be judged for topology locality, natural
+cluster grouping, label affiliation, canvas use, and whether its zero
+crossings are visibly worth its wider footprint.
+
+### Crossing model
+
+The raw count is used only as a structural feasibility signal. For each
+non-incident route intersection the diagnostic records the route pair,
+intersection point, acute crossing angle, and whether it is near a Relation
+label. Short-edge crossings and shared corridors are separately reflected in
+the route-length, usable-span, and local visual inspection checks. A candidate
+is not declared visually superior merely because its count is lower.
+
+### Scale observations
+
+The bounded implementation was measured on representative local inputs:
+
+| Input | Nodes / entity-to-entity Edges | Order stage | Cheap grid evaluations | Product-presentation evaluations | Wall time |
+| --- | ---: | --- | ---: | ---: | ---: |
+| Apollo low-density fixture | 3 / 1 | exact circular | 19,216 | 50 | 0.09 s |
+| Apollo 11 fixture | 9 / 11 | exact circular | 19,216 | 300 | 30.85 s |
+| Lighthouse fixture | 10 / 14 | heuristic circular | 19,216 | 300 | 50.37 s |
+
+The exact circular screen grows factorially and is deliberately capped at nine
+Nodes. The generic grid stage has a fixed diagnostic budget of 16 starts by
+1,200 cheap swap/move evaluations; each evaluation grows with the number of
+non-incident Edge pairs. The Product-aware repair is capped at 12
+zero-crossing structural finalists, one start, and 24 local moves (at most 300
+full presentation evaluations). The 10-node input also found an eligible
+zero-crossing candidate, but its usable-span penalty was high; that confirms
+the method is an inexpensive feasibility direction, not a generally ready
+layout solver.
+
+For materially larger graphs, the current fixed budget must be profiled and
+possibly reduced or staged before it can become an ordinary interactive or
+initial-layout path. No claim is made for 100-node performance.
+
+### Classification and next decision
+
+**PROVEN**
+
+- Apollo 11's current three crossings are not topologically unavoidable.
+- A generic interior-capable structural search can find an Apollo candidate
+  with zero sampled crossings while maintaining the stated hard diagnostic
+  label and clearance checks.
+- Circular ordering alone bottoms out at two chord crossings for Apollo 11.
+
+**STRONGLY SUPPORTED**
+
+- A two-stage structural search is a more promising zero-crossing direction
+  than tuning the existing local routing score or performing only local
+  assignment swaps.
+- The Product-presentation repair is needed after cheap geometric feasibility:
+  the initial zero-crossing grid states still had label-near or usable-span
+  problems.
+
+**UNRESOLVED**
+
+- Whether the generic candidate is visually more natural than the current
+  local-corridor / safe-compaction alternatives.
+- The right balance among crossing preference, locality, label support, and
+  canvas footprint across a broader fixture set.
+- Whether this diagnostic should evolve into a bounded Product initial-layout
+  option, and at what graph-size budget.
+
+The interactive pointer-up routing track remains `OPEN / INDEPENDENT`.
+No Product behavior has been adopted; no new governed Fresh lineage was
+started; Fresh10, Fresh11, Fresh12, and the canonical Fresh12 Human Review
+result remain unchanged.

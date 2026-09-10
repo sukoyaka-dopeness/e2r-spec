@@ -219,8 +219,8 @@ Validation for the associated implementation checkpoint:
 - E2R-SPEC validation: PASS;
 - `git diff --check`: PASS.
 
-The implementation checkpoint is recorded in the local commit for this
-stage-contract prototype; the preceding implementation/result records are
+The implementation checkpoint is `d3f7f75`; its diagnostic consumers were
+adapted in `45243c7`. The preceding implementation/result records are
 `8771853` and `477a979`. All remain local and unpushed. Fresh10/Fresh11/Fresh12
 historical evidence, the Fresh12 canonical Human Review result, Product
 adoption state, and unrelated dirty work are unchanged. No push, tag, release,

@@ -149,6 +149,66 @@ skip/fallback/diagnostic mechanism. It should not be promoted as the Product
 performance strategy, and broader architecture redesign should remain a
 separate, evidence-gated decision.
 
+## Stage-boundary candidate-generation diagnostic
+
+### Prototype
+
+The follow-up prototype is
+`tools/stage-boundary-candidate-diagnostic.mjs`. It invokes the unchanged
+`deriveBoundedAutomaticPresentation()` authority and fingerprints its existing
+per-route `candidateDiagnostics` by pass. It is not a replacement route
+solver, and it does not inject a cache into Product. This deliberately tests
+whether a seam exists before making a source-level extraction.
+
+Two counterfactuals were compared for Apollo 11 and Regional Care:
+
+- the same Node geometry with only a manual Relation-label anchor changed;
+  this changes downstream label state but is not a route-generation input;
+- a 24-unit mutation of one Node position; this is a semantic geometry change
+  and must invalidate affected candidate fingerprints.
+
+### Results
+
+| Fixture | Graph | Candidate fingerprints / presentation | Same-route-input reuse | Geometry mutation invalidation |
+| --- | ---: | ---: | --- | --- |
+| Apollo 11 | 9 Nodes / 11 Relations | 1,089 | label-free **yes**, first **yes**, feedback **no** (4 changed) | 17 changed across the three passes |
+| Regional Care | 24 Nodes / 30 Relations | 2,970 | label-free **yes**, first **yes**, feedback **no** (11 changed) | 52 changed across the three passes |
+
+The downstream-only counterfactual changed Relation-label/Node-label output and
+left the label-free and first-pass route candidate fingerprints unchanged in
+both fixtures. The feedback pass was different because final Node-label
+placement is fed back into route scoring. This is the cleanest current seam:
+candidate generation is separable for earlier passes, but not from the
+feedback pass without changing its semantic inputs.
+
+The semantic Node mutation invalidated candidate fingerprints beyond the
+mutated Node's incident Relations: Apollo changed 17 pass/Relation entries and
+Regional Care changed 52. This is consistent with Node obstacles and ordered
+occupancy, and confirms that an endpoint-only cache key would be unsafe.
+
+The current Product still generated the same number of decisions in every
+comparison: 33 route decisions per Apollo presentation and 90 per Regional
+Care presentation. Candidate generation and arbitration were both invoked in
+full for the three snapshots. Therefore this checkpoint demonstrates a safe
+boundary and invalidation signal, but **does not claim a measured runtime
+saving**. A real cache must be keyed by the complete semantic route input,
+including the relevant Node-obstacle snapshot, provisional/final Node-label
+rectangles, manual route authority, and occupied-path prefix.
+
+### Classification and next direction
+
+The result is **C: candidate seam exists, arbitration remains authoritative**,
+with an important **B** qualification: the candidate-generation boundary still
+depends on broad global state when the feedback pass is reached. The next
+bounded experiment should extract only the pure/cached candidate stage behind
+an opt-in diagnostic seam, retain the current sequential selection and
+feedback stages, and measure actual cache hits/misses and wall-clock time.
+It must reject reuse on any relevant semantic-input mismatch and compare the
+complete final presentation against the current authority.
+
+No Product source behavior, fixture, stored evidence, or governed lineage was
+changed by this prototype.
+
 ## Scope
 
 This checkpoint follows the actual Product inspection of the diagnostic-only

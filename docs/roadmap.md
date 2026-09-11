@@ -7474,3 +7474,21 @@ time. The current evidence identifies presentation derivation, especially
 route candidate generation and the first pass, as the present hot spot; it is
 not a permanent optimization assumption. This deferred item does not reopen
 snapshot reuse, authorize Product adoption, or start governed evidence work.
+
+### LiaisonScape initial-layout candidate cross-fixture acceptance (2026-09-11)
+
+The user's Actual Product comparison across Lighthouse Restoration, Apollo 11,
+Berlin Wall, Ashen Crown, and Titanic Final Voyage in EN/JA is recorded in
+[Initial-Layout Candidate Cross-Fixture Acceptance 2](liaisonscape-initial-layout-candidate-cross-fixture-acceptance2-result.md).
+The user preferred `post-structural-relaxation-v1` in every compared cell.
+This establishes strong bounded research evidence, including the fact that
+Titanic EN/JA may have materially different locale-specific geometry; it does
+not permit cross-locale coordinate reuse or a cross-fixture scalar ranking.
+
+The explicit adoption result is `HOLD`: the current Product authority remains
+the generic `settleInitialPlacement()` path, while Post is still a diagnostic
+materializer with no generic runtime authority, budget, fallback, or
+locale-aware policy for arbitrary coordinate-less Datasets. Self-loop,
+non-semantic curve-crossing, and parallel-Edge side-balance concerns remain
+separate routing/presentation tracks. No Product source, Dataset, or governed
+evidence was changed.

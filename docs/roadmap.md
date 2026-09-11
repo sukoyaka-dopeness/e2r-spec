@@ -894,24 +894,6 @@ ACCEPTED. Their acceptance is recorded in
 items below are future planning context; they do not reopen either accepted
 checkpoint.
 
-### LiaisonScape Initial-Layout Coarse Objective Design 1 (2026-09-11)
-
-The [coarse objective design result](liaisonscape-initial-layout-coarse-objective-design1-result.md)
-records a diagnostic-only proxy over Node/label envelopes, straight-chord
-crossings, long edges, parallel-bundle pressure, and estimated Relation-label
-corridors. It respects routing and label authority boundaries but does not yet
-prove Post visual equivalence. The next bounded comparative evaluation may
-proceed; Product integration and adoption remain unauthorized.
-
-### LiaisonScape Initial-Layout / Presentation Attribution: Titanic 1 (2026-09-11)
-
-The [Titanic presentation attribution result](liaisonscape-initial-layout-presentation-attribution-titanic1-result.md)
-confirms that the Post score consumes downstream routing and Relation-label
-signals, while it has no independent parallel-Edge or Self-loop-angle
-authority. The `Carpathia -> Titanic` `r10/r11` group remains a separate
-presentation track. A coarse-objective design checkpoint is justified;
-Product adoption and routing fixes remain on hold.
-
 1. **Hub scope and information architecture** — define the audiences, first
    actions, application categories, links, sample flow, and the boundary
    between the portal and each application's own Home page.
@@ -7546,6 +7528,43 @@ eligibility but not this runtime authority contract. Therefore Product
 integration is **NOT YET AUTHORIZED** and adoption remains **HOLD**. The next
 possible implementation checkpoint is a bounded runtime-provider prototype
 against these gates; no public-sample-specific coordinate switch is allowed.
+
+### LiaisonScape Initial-Layout research synchronization (2026-09-11)
+
+This section is the current execution-order authority for the Initial Layout
+research branch and supersedes earlier local "next step" wording in the
+individual result entries below.
+
+1. **Acceptance evidence — RECORDED.**
+   `post-structural-relaxation-v1` is strongly preferred by the user across
+   the bounded cross-fixture / cross-locale Actual Product comparison. This is
+   research evidence, not a universal ranking or Product adoption.
+2. **Runtime authority / bounded provider — SAFETY PASS, HOLD.** Stored
+   Coordinates remain authoritative; coordinate-less output remains Derived;
+   the provider has whole-result fallback and does not dirty or persist the
+   Dataset. Post equivalence is not proven.
+3. **Post runtime feasibility — CLOSED NEGATIVE.** The full Post evaluator is
+   seconds-scale and routing/presentation-coupled; direct generic runtime
+   integration is not justified.
+4. **Coarse objective — NEXT.** The diagnostic proxy is implementable without
+   taking routing authority. Comparative evaluation must first recheck its
+   Relation-label corridor geometry sensitivity and Node-label rectangle
+   approximation before any adoption discussion.
+
+Separate presentation tracks are not children of Initial Layout authority:
+
+- Node-owned label glyph halo / white-outline symmetry: presentation
+  experiment candidate; collision geometry and rendering remain separate.
+- Node-label connector termination, layering, and glyph integration: separate
+  connector track.
+- Titanic EN `Carpathia -> Titanic` `r10/r11` parallel Edge plus long
+  Relation-label interaction: downstream routing/presentation track; runtime
+  routing fix not started.
+- Self-loop angle bias: separate unresolved routing/presentation track.
+
+These tracks may inform diagnostic proxies, but do not authorize Product
+initial-placement, routing, label, connector, Self-loop, or parallel-Edge
+adoption.
 
 ### LiaisonScape Initial-Layout Post-Objective Runtime Feasibility 1 (2026-09-11)
 

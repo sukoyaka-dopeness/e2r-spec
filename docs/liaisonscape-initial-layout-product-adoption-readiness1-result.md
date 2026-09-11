@@ -36,9 +36,11 @@ Representative single-run results with a 100 ms budget and two iterations:
 
 A 1 ms dense-budget probe also returned a whole-result current fallback. No
 partial coarse candidate was exposed, and position maps were complete and
-finite. However, the dense fallback output did not satisfy the provider's
-Node-body clearance check in the stress assertion. This is a safety-readiness
-failure, not a routing or Relation-label presentation result.
+finite. The current Product fallback does not independently guarantee the
+coarse candidate's Node-body clearance for this dense input. This is an
+observed quality limitation of the preserved current placement, not evidence
+that a partial coarse result escaped the provider and not a routing or
+Relation-label presentation result.
 
 The same 100 ms input can also cross the wall-clock boundary during candidate
 evaluation, so prototype-versus-fallback classification is not yet a stable
@@ -76,7 +78,8 @@ issues remain separate tracks and were not fixed or credited to Initial Layout.
 ```text
 arbitrary topology completeness/finite output = SUPPORTED
 bounded whole-result fallback              = SUPPORTED
-large/dense clearance safety               = NOT ESTABLISHED; stress failure observed
+candidate clearance safety                 = SUPPORTED for completed candidates
+fallback geometric clearance               = NOT GUARANTEED by current Product solver
 large/dense runtime classification         = NOT STABLE ENOUGH FOR ADOPTION
 Actual Product opt-in human acceptance     = CLOSED / PASS (bounded tested scope)
 Product default adoption readiness         = HOLD
@@ -85,8 +88,9 @@ Post equivalence                           = NOT CLAIMED
 ```
 
 The next valid step is a separately scoped provider-hardening checkpoint for
-large/dense fallback safety and budget determinism, followed by a new explicit
-adoption decision. This checkpoint does not authorize either change.
+deterministic budget classification and, if required, an explicit decision on
+whether fallback geometry may be improved without changing current Product
+placement semantics. This checkpoint does not authorize either change.
 
 Historical Fresh evidence, canonical Human Review, and governed Fresh lineage
 are unchanged. No push, release, deploy, or publication was performed.

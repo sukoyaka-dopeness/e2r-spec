@@ -7462,6 +7462,17 @@ from performance optimization: the indication should explain waiting without
 assuming that the current measured implementation is slow enough to require a
 code optimization. No implementation is authorized by this roadmap entry.
 
+### LiaisonScape Initial-Layout Runtime Provider Prototype 1 (2026-09-11)
+
+The [runtime provider prototype result](liaisonscape-initial-layout-runtime-provider-prototype1-result.md)
+records a bounded opt-in provider boundary in the LiaisonScape repository.
+It validates deterministic Node/label-envelope refinement, whole-result
+fallback, finite/complete positions, and non-persistence, but it is not wired
+into `App.tsx` and does not reproduce the diagnostic Post materializer's
+routing-aware metrics. Runtime integration and Product adoption remain
+`NOT STARTED` / `HOLD`; actual Product opt-in inspection and
+candidate-equivalence/budget evidence are still required.
+
 ### LiaisonScape Dataset display-time performance follow-up (deferred)
 
 The current end-to-end performance investigation is closed after the baseline

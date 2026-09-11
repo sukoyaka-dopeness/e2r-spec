@@ -7492,3 +7492,18 @@ locale-aware policy for arbitrary coordinate-less Datasets. Self-loop,
 non-semantic curve-crossing, and parallel-Edge side-balance concerns remain
 separate routing/presentation tracks. No Product source, Dataset, or governed
 evidence was changed.
+
+### LiaisonScape Initial-Layout Product Adoption Design / Runtime Authority (2026-09-11)
+
+The [Initial-Layout Product Adoption Design](liaisonscape-initial-layout-product-adoption-design1.md)
+defines the boundary for a future runtime provider. Stored Coordinates remain
+authoritative; coordinate-less placement remains transient Derived state until
+an explicit Save Coordinates action. A future provider must be generic,
+deterministic, locale-input-scoped, budgeted, safety-gated, and able to fall
+back to the current provider without dirtying the Dataset.
+
+`post-structural-relaxation-v1` currently satisfies research comparison
+eligibility but not this runtime authority contract. Therefore Product
+integration is **NOT YET AUTHORIZED** and adoption remains **HOLD**. The next
+possible implementation checkpoint is a bounded runtime-provider prototype
+against these gates; no public-sample-specific coordinate switch is allowed.

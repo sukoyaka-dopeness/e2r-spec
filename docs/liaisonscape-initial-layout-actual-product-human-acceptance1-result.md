@@ -2,6 +2,8 @@
 
 Date: 2026-09-11
 
+Follow-up attempt: 2026-09-11
+
 ## Result
 
 The human acceptance is **PARTIAL / NOT CLOSED**. Lighthouse was observed in
@@ -35,6 +37,22 @@ PASS.
 - Direct human confirmation of all self-loop, connector, and long-label cases
   across the requested fixtures.
 - Reopen after Save Coordinates using the same persisted Dataset payload.
+
+## Follow-up acquisition result
+
+The canonical Titanic and Apollo JSON fixtures are present in
+`e2r-spec/examples/`, while the current LiaisonScape `public/` runtime exposes
+only the Lighthouse sample. The normal Product file picker opened, but the
+connected browser automation did not expose a file-chooser handle for safely
+injecting those local files. No fixture was copied into Product assets and no
+fixture-loading behavior was added solely to manufacture acceptance evidence.
+Consequently, the Titanic/Apollo items remain UNCONFIRMED rather than being
+inferred from diagnostic-only seams or machine tests.
+
+The Lighthouse follow-up re-observed the saved-state message and disabled Save
+Coordinates control. A same-payload reopen was not completed, because the
+sample reopen would fetch the original coordinate-less Lighthouse asset rather
+than the in-memory saved payload.
 
 The existing automated fallback and persistence tests remain evidence for
 safety semantics, but do not replace these human visual checks.

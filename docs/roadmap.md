@@ -7486,6 +7486,16 @@ route candidate generation and the first pass, as the present hot spot; it is
 not a permanent optimization assumption. This deferred item does not reopen
 snapshot reuse, authorize Product adoption, or start governed evidence work.
 
+### LiaisonScape Initial-Layout Candidate Equivalence / Budget 1 (2026-09-11)
+
+The [candidate equivalence and budget result](liaisonscape-initial-layout-candidate-equivalence-budget1-result.md)
+records that the bounded provider is safe as an opt-in experiment but does not
+yet reproduce `post-structural-relaxation-v1`: Apollo EN/JA use whole-result
+fallback, while other public samples complete a smaller Node/label-only
+refinement. Product opt-in integration remains `NOT STARTED` and adoption
+remains `HOLD`; routing/label quality equivalence and actual Product inspection
+are still required.
+
 ### LiaisonScape initial-layout candidate cross-fixture acceptance (2026-09-11)
 
 The user's Actual Product comparison across Lighthouse Restoration, Apollo 11,

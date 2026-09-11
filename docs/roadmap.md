@@ -7562,6 +7562,17 @@ Separate presentation tracks are not children of Initial Layout authority:
   routing fix not started.
 - Self-loop angle bias: separate unresolved routing/presentation track.
 
+### LiaisonScape Initial-Layout Coarse Objective Proxy Audit 1 (2026-09-11)
+
+The [coarse objective proxy audit](liaisonscape-initial-layout-coarse-objective-proxy-audit1-result.md)
+found and corrected a Relation-label corridor bug: the former self-chord
+midpoint measurement was always zero and was not geometry-sensitive. The
+corrected proxy responds to foreign Node and foreign straight-chord occupancy.
+Node-label rectangles are explicitly only estimated occupancy envelopes, not
+glyph or actual label-placement authority. The proxy is now ready for bounded
+comparative evaluation, while Product integration and adoption remain
+unauthorized.
+
 These tracks may inform diagnostic proxies, but do not authorize Product
 initial-placement, routing, label, connector, Self-loop, or parallel-Edge
 adoption.

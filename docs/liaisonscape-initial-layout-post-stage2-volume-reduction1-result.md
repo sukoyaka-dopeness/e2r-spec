@@ -142,4 +142,3 @@ Post direction.
   Review, and governed lineage are unchanged.
 - No presentation defect was fixed, and no push, tag, release, deploy, or
   publication was performed.
-

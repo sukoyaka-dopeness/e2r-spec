@@ -44,6 +44,23 @@ attribution signals.
 | Apollo EN | 2,171 | 984 / 60 | 1,187 / 103 | 1,175 | 1,789 |
 | Apollo JA | 2,394 | 994 / 60 | 1,400 / 120 | 1,386 | 1,991 |
 
+The fresh Stage-2 decomposition was:
+
+| Fixture / locale | Presentation repair evaluations | Post-structural relaxation evaluations | Stage 2 full evaluations | Presentation cache hits |
+| --- | ---: | ---: | ---: | ---: |
+| Lighthouse EN | 50 | 111 | 154 | 8 |
+| Lighthouse JA | 50 | 107 | 152 | 6 |
+| Titanic EN | 50 | 103 | 146 | 8 |
+| Titanic JA | 50 | 104 | 146 | 9 |
+| Apollo EN | 50 | 58 | 103 | 6 |
+| Apollo JA | 50 | 76 | 120 | 7 |
+
+Repair is bounded at 50 evaluations for the two-finalist configuration. The
+relaxation work is larger in every measured cell, ranging from 58 to 111
+evaluations. The columns do not add exactly because the presentation cache
+serves some requests; they nevertheless confirm that reducing relaxation
+volume has the largest direct Stage-2 leverage in this arm.
+
 The fresh E2E range is 2.17–4.22 seconds, consistent with the previously
 reported approximately 2.23–4.12 second ECR3 range. Stage 2 is 1.19–3.05
 seconds and is the dominant stage for every cell. Apollo is near the proposed

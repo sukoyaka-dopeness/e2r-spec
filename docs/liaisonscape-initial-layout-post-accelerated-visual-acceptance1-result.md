@@ -153,4 +153,3 @@ for further research is positive.
   Review, and governed lineage are unchanged.
 - No known presentation defect was fixed, and no push, tag, release, deploy,
   or publication was performed.
-

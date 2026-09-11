@@ -33,3 +33,18 @@ The authoritative result is recorded in
 `docs/liaisonscape-initial-layout-bounded-coarse-provider1-result.md`.
 
 `SESSION-0053 CHECKPOINT - BOUNDED COARSE PROVIDER CANDIDATE PASS; PRODUCT ADOPTION HOLD`
+
+## Contract audit correction
+
+The provider audit found that the candidate path projected Relations to the
+Product-visible Entity graph while fallback passed the raw Relation array to
+auto-layout. The fallback now receives the same projected Relation set. The
+former `post-structural-relaxation-v1-prototype` result identity was also
+renamed to `label-envelope-v1-prototype`; coarse remains a separate
+presentation-informed geometric proxy and is not the Post materializer.
+
+Validation after correction: LiaisonScape `350/350` tests, lint, build, and
+diff check passed. Normal Product integration, adoption, and governed Fresh
+execution remain not started.
+
+`SESSION-0053 CONTRACT AUDIT - GRAPH INPUT ALIGNED; POST MISNOMER REMOVED`

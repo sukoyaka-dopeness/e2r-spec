@@ -7592,6 +7592,18 @@ verified, while Post equivalence, arbitrary-Dataset generality, and normal
 Product integration remain unresolved. The next gate is opt-in Actual Product
 evaluation; Product adoption remains `HOLD`.
 
+### LiaisonScape Initial-Layout Bounded Provider Contract Audit 1 (2026-09-11)
+
+The [provider contract audit](liaisonscape-initial-layout-bounded-provider-contract-audit1-result.md)
+found and corrected a graph-input boundary mismatch: candidate and fallback
+now use the same Product-visible Relation projection. It also corrected the
+default provider identity so the simplified envelope prototype is not named as
+`post-structural-relaxation-v1`. The coarse strategy remains a
+presentation-informed geometric proxy, not a presentation-independent
+materializer or Post implementation. Tests, lint, and build pass; opt-in
+Actual Product evaluation is the next gate and Product adoption remains
+`HOLD`.
+
 ### LiaisonScape Initial-Layout Coarse Objective Comparative Evaluation 1 (2026-09-11)
 
 The [comparative evaluation result](liaisonscape-initial-layout-coarse-objective-comparative-evaluation1-result.md)

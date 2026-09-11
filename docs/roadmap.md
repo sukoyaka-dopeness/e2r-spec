@@ -7581,6 +7581,17 @@ usability. Absence of a coarse-specific new defect remains unconfirmed, so the
 bounded provider branch may continue diagnostically while Product adoption
 remains `HOLD`.
 
+### LiaisonScape Initial-Layout Bounded Coarse Provider 1 (2026-09-11)
+
+The [bounded provider result](liaisonscape-initial-layout-bounded-coarse-provider1-result.md)
+records that `coarse-objective-prototype-v1` is now available through the
+existing opt-in provider boundary. Lighthouse and Titanic completed within the
+diagnostic budget; Apollo EN/JA safely used whole-result fallback after unsafe
+seed rejection. Derived ownership, deterministic output, and fallback are
+verified, while Post equivalence, arbitrary-Dataset generality, and normal
+Product integration remain unresolved. The next gate is opt-in Actual Product
+evaluation; Product adoption remains `HOLD`.
+
 ### LiaisonScape Initial-Layout Coarse Objective Comparative Evaluation 1 (2026-09-11)
 
 The [comparative evaluation result](liaisonscape-initial-layout-coarse-objective-comparative-evaluation1-result.md)

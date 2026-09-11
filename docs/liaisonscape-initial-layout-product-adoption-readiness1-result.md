@@ -2,7 +2,7 @@
 
 Date: 2026-09-11
 
-Status: HOLD — readiness gates not all satisfied
+Status: HOLD — readiness gates not all satisfied; budget contract hardened
 
 ## Scope
 
@@ -42,11 +42,26 @@ observed quality limitation of the preserved current placement, not evidence
 that a partial coarse result escaped the provider and not a routing or
 Relation-label presentation result.
 
-The same 100 ms input can also cross the wall-clock boundary during candidate
-evaluation, so prototype-versus-fallback classification is not yet a stable
-adoption-quality result for larger graphs. Existing provider behavior remains
-bounded and fails closed, but the evidence is insufficient to claim a robust
-large/dense default.
+The structural result is now independent of per-candidate wall-clock jitter.
+Large inputs may still take the emergency fallback at an iteration boundary;
+that is intentionally a runtime safety outcome rather than a quality claim.
+Existing provider behavior remains bounded and fails closed, but the evidence
+is insufficient to claim a robust large/dense default.
+
+## Budget contract hardening
+
+The coarse evaluator was adjusted so ordinary candidate acceptance is governed
+by the deterministic structural bound already represented by
+`maxIterations × Entity count × 8 directions`. The wall-clock budget is now
+checked before and after an iteration only, as an emergency fail-safe. A
+timeout returns the current Product placement as one whole fallback result;
+the partial coarse candidate is never exposed. This keeps normal geometry and
+quality classification independent of per-candidate scheduling jitter while
+retaining a runtime escape hatch.
+
+The hardening does not remove the wall-clock guard, change the current Product
+solver, or make fallback geometry claim coarse clearance. The 100 ms value is
+still a runtime fail-safe input, not a golden timing value.
 
 Self-loop relations were isolated from the ordinary coarse objective: adding
 self-loops produced the same ordinary placement as the equivalent graph
@@ -78,9 +93,13 @@ issues remain separate tracks and were not fixed or credited to Initial Layout.
 ```text
 arbitrary topology completeness/finite output = SUPPORTED
 bounded whole-result fallback              = SUPPORTED
+budget contract redesign                   = PASS for coarse candidate evaluation
+deterministic work bound                   = ESTABLISHED
+deterministic quality/result classification = ESTABLISHED absent emergency abort
+wall-clock fail-safe                       = ESTABLISHED at iteration boundaries
 candidate clearance safety                 = SUPPORTED for completed candidates
 fallback geometric clearance               = NOT GUARANTEED by current Product solver
-large/dense runtime classification         = NOT STABLE ENOUGH FOR ADOPTION
+large/dense runtime classification         = BOUNDED, but fallback geometry limits adoption
 Actual Product opt-in human acceptance     = CLOSED / PASS (bounded tested scope)
 Product default adoption readiness         = HOLD
 Product default behavior                   = UNCHANGED

@@ -7571,6 +7571,15 @@ Separate presentation tracks are not children of Initial Layout authority:
   routing fix not started.
 - Self-loop angle bias: separate unresolved routing/presentation track.
 
+### LiaisonScape Initial-Layout Coarse Objective Comparative Evaluation 1 (2026-09-11)
+
+The [comparative evaluation result](liaisonscape-initial-layout-coarse-objective-comparative-evaluation1-result.md)
+records a diagnostic bounded candidate. It reduced the proxy score modestly on
+Lighthouse and Titanic within roughly 0.3–10.5 ms, while Apollo EN/JA used safe
+whole-result fallback. The real Product inspection surface is ready for
+current/Post/coarse user comparison, but proxy-to-visual agreement and Post
+approximation remain unresolved; Product adoption is not authorized.
+
 ### LiaisonScape Initial-Layout Coarse Objective Proxy Audit 1 (2026-09-11)
 
 The [coarse objective proxy audit](liaisonscape-initial-layout-coarse-objective-proxy-audit1-result.md)

@@ -894,6 +894,15 @@ ACCEPTED. Their acceptance is recorded in
 items below are future planning context; they do not reopen either accepted
 checkpoint.
 
+### LiaisonScape Initial-Layout / Presentation Attribution: Titanic 1 (2026-09-11)
+
+The [Titanic presentation attribution result](liaisonscape-initial-layout-presentation-attribution-titanic1-result.md)
+confirms that the Post score consumes downstream routing and Relation-label
+signals, while it has no independent parallel-Edge or Self-loop-angle
+authority. The `Carpathia -> Titanic` `r10/r11` group remains a separate
+presentation track. A coarse-objective design checkpoint is justified;
+Product adoption and routing fixes remain on hold.
+
 1. **Hub scope and information architecture** — define the audiences, first
    actions, application categories, links, sample flow, and the boundary
    between the portal and each application's own Home page.

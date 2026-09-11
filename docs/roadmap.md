@@ -894,6 +894,15 @@ ACCEPTED. Their acceptance is recorded in
 items below are future planning context; they do not reopen either accepted
 checkpoint.
 
+### LiaisonScape Initial-Layout Coarse Objective Design 1 (2026-09-11)
+
+The [coarse objective design result](liaisonscape-initial-layout-coarse-objective-design1-result.md)
+records a diagnostic-only proxy over Node/label envelopes, straight-chord
+crossings, long edges, parallel-bundle pressure, and estimated Relation-label
+corridors. It respects routing and label authority boundaries but does not yet
+prove Post visual equivalence. The next bounded comparative evaluation may
+proceed; Product integration and adoption remain unauthorized.
+
 ### LiaisonScape Initial-Layout / Presentation Attribution: Titanic 1 (2026-09-11)
 
 The [Titanic presentation attribution result](liaisonscape-initial-layout-presentation-attribution-titanic1-result.md)

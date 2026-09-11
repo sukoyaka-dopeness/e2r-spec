@@ -7528,3 +7528,13 @@ eligibility but not this runtime authority contract. Therefore Product
 integration is **NOT YET AUTHORIZED** and adoption remains **HOLD**. The next
 possible implementation checkpoint is a bounded runtime-provider prototype
 against these gates; no public-sample-specific coordinate switch is allowed.
+
+### LiaisonScape Initial-Layout Post-Objective Runtime Feasibility 1 (2026-09-11)
+
+The [Post-objective runtime feasibility result](liaisonscape-initial-layout-post-objective-runtime-feasibility1-result.md)
+measured the existing diagnostic search at approximately 7–12 seconds and
+208–269 Post presentation evaluations on representative public samples. This
+does not fit the bounded runtime-provider budget, and the fast provider remains
+non-equivalent. Direct Product opt-in is therefore not authorized; the next
+possible work is a separate coarse-objective or offline-assistance design
+checkpoint.

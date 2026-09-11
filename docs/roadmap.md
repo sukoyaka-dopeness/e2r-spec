@@ -3117,6 +3117,15 @@ now next, followed by the NarrativeLine Display-Order Reordering Audit. The
 Final Pre-Public-Release Audit has not been rerun, and public release remains
 unauthorized.
 
+### LiaisonScape Initial-Layout Coarse Objective Self-loop Boundary Audit 1 (2026-09-11)
+
+The [Self-loop boundary audit](liaisonscape-initial-layout-coarse-objective-self-loop-boundary-audit1-result.md)
+removed Self-loop Relations from ordinary straight-chord, long-edge,
+Relation-label corridor, and parallel-bundle proxies. Node occupancy metrics
+remain valid Node-geometry signals; loop angle/radius and loop-label behavior
+remain routing/presentation work. The corrected objective is ready for bounded
+comparative evaluation, with Product integration still unauthorized.
+
 ### E2R-LIAISONSCAPE-COORDINATELESS-PLACEMENT-COMPARISON-AUDIT1 (2026-08-30)
 
 The stored-versus-derived-versus-explicit-Auto-Layout comparison is recorded in

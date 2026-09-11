@@ -7571,6 +7571,16 @@ Separate presentation tracks are not children of Initial Layout authority:
   routing fix not started.
 - Self-loop angle bias: separate unresolved routing/presentation track.
 
+### LiaisonScape Initial-Layout Coarse Objective Actual Product Comparison 2 (2026-09-11)
+
+The [Actual Product comparison result](liaisonscape-initial-layout-coarse-objective-actual-product-comparison2-result.md)
+records that Post remains visually preferred and that the coarse candidate
+follows the same improvement direction, with acceptable observed Node
+placement, label readability, Node--Edge spacing, graph cohesion, and viewport
+usability. Absence of a coarse-specific new defect remains unconfirmed, so the
+bounded provider branch may continue diagnostically while Product adoption
+remains `HOLD`.
+
 ### LiaisonScape Initial-Layout Coarse Objective Comparative Evaluation 1 (2026-09-11)
 
 The [comparative evaluation result](liaisonscape-initial-layout-coarse-objective-comparative-evaluation1-result.md)

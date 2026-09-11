@@ -48,3 +48,58 @@ diff check passed. Normal Product integration, adoption, and governed Fresh
 execution remain not started.
 
 `SESSION-0053 CONTRACT AUDIT - GRAPH INPUT ALIGNED; POST MISNOMER REMOVED`
+
+## Chat-room handoff summary
+
+The bounded coarse provider work in this room is complete at the contract-audit
+boundary.
+
+### Authoritative implementation state
+
+- `deriveBoundedInitialLayout()` has an explicit
+  `coarse-objective-prototype-v1` strategy.
+- The coarse strategy is diagnostic-only, deterministic, budgeted, finite,
+  complete, body-safe, and Derived-owned.
+- Candidate and fallback use the same Product-visible Entity/Relation
+  projection.
+- Unsafe or budget-exceeded candidates are discarded as whole results and the
+  current Product placement is retained.
+- The simplified default envelope provider is identified as
+  `label-envelope-v1-prototype`; it is not the Post materializer.
+- The coarse objective is presentation-informed geometric proxy logic, not
+  presentation-independent logic and not routing/label authority.
+- `App.tsx` normal initial-placement behavior is not wired to either provider.
+
+### Evidence and decisions
+
+- Lighthouse and Titanic completed within the diagnostic budget in EN/JA.
+- Apollo 11 EN/JA safely fell back after unsafe-seed rejection.
+- Post equivalence remains unproven.
+- Coarse-specific visual-defect absence remains unresolved.
+- Opt-in Actual Product evaluation is the next valid gate.
+- Product default integration/adoption remains `HOLD`.
+
+### Commits
+
+- LiaisonScape `d211c2f`: expose coarse provider strategy;
+- E2R-SPEC `9069f57`: record bounded coarse provider checkpoint;
+- LiaisonScape `f4b5a99`: align bounded provider graph input;
+- E2R-SPEC `b54a2a2`: record provider contract audit.
+
+### Preserved boundaries
+
+Fresh10/Fresh11/Fresh12 historical evidence, the Fresh12 canonical Human
+Review result, Stored Coordinates, mixed-coordinate semantics, dirty-state,
+Save Coordinates, routing, labels, connectors, Self-loops, and parallel-Edge
+behavior were not changed. No new governed Fresh lineage, push, tag, release,
+deploy, or publication was performed.
+
+### Worktree state at handoff
+
+- LiaisonScape: pre-existing untracked
+  `experimental/product-evaluation-seam/spacing-inspection2/` remains;
+- E2R-SPEC: pre-existing modified `sessions/E2R-Session-0052.md` and
+  untracked `work/` remain;
+- no new uncommitted files from this checkpoint remain.
+
+`SESSION-0053 CHAT-ROOM HANDOFF - BOUNDED PROVIDER AUDIT COMPLETE; OPT-IN EVALUATION NEXT`

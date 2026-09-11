@@ -2,7 +2,7 @@
 
 Date: 2026-09-11
 
-Status: HOLD — readiness gates not all satisfied; budget contract hardened
+Status: READY FOR DECISION — fallback policy established; adoption not performed
 
 ## Scope
 
@@ -63,6 +63,23 @@ The hardening does not remove the wall-clock guard, change the current Product
 solver, or make fallback geometry claim coarse clearance. The 100 ms value is
 still a runtime fail-safe input, not a golden timing value.
 
+## Fallback geometry policy
+
+The policy decision for this checkpoint is **ACCEPT CURRENT SEMANTICS**:
+fallback is a non-regression boundary, not a second coarse quality target. On
+unsafe-candidate or emergency-timeout, the provider must return exactly the
+current Product placement for the same Product-visible graph, with complete
+finite Derived positions and no partial coarse candidate. The large/dense test
+now compares the fallback output directly with `solveAutoLayout()` and fixes
+this authority boundary without changing the solver.
+
+The current solver's dense geometry limitation is therefore recorded as a
+separate Product placement quality issue. It is not silently attributed to
+coarse Initial Layout and is not repaired in this checkpoint. If a future
+Product decision requires a minimum clearance guarantee even on fallback, that
+is a separately scoped placement redesign and must not be introduced as a
+side effect of coarse adoption.
+
 Self-loop relations were isolated from the ordinary coarse objective: adding
 self-loops produced the same ordinary placement as the equivalent graph
 without them. Their angle/radius and labels remain presentation authority.
@@ -99,17 +116,17 @@ deterministic quality/result classification = ESTABLISHED absent emergency abort
 wall-clock fail-safe                       = ESTABLISHED at iteration boundaries
 candidate clearance safety                 = SUPPORTED for completed candidates
 fallback geometric clearance               = NOT GUARANTEED by current Product solver
-large/dense runtime classification         = BOUNDED, but fallback geometry limits adoption
+large/dense runtime classification         = BOUNDED; fallback follows current Product semantics
+fallback geometry policy                   = ACCEPT CURRENT SEMANTICS / NON-REGRESSION
 Actual Product opt-in human acceptance     = CLOSED / PASS (bounded tested scope)
-Product default adoption readiness         = HOLD
+Product default adoption readiness         = READY FOR DECISION
 Product default behavior                   = UNCHANGED
 Post equivalence                           = NOT CLAIMED
 ```
 
-The next valid step is a separately scoped provider-hardening checkpoint for
-deterministic budget classification and, if required, an explicit decision on
-whether fallback geometry may be improved without changing current Product
-placement semantics. This checkpoint does not authorize either change.
+The next valid step is a separate explicit Product adoption decision. This
+checkpoint does not authorize changing the Product default. Any improvement to
+fallback geometry remains a separate placement redesign decision.
 
 Historical Fresh evidence, canonical Human Review, and governed Fresh lineage
 are unchanged. No push, release, deploy, or publication was performed.

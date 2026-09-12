@@ -7662,3 +7662,21 @@ rounded-rectangle Nodes attach at 32px on cardinal directions and at the
 corner-aware boundary on diagonals. The change preserves connector z-order,
 collision/hit rectangles, routing, label placement, and Dataset behavior; no
 new human acceptance is implied by this browser inspection.
+
+### E2R-LIAISONSCAPE-NODE-LABEL-CONNECTOR-PRESENTATION-FOLLOWUP1 (2026-09-13)
+
+The Node-label connector presentation follow-up is recorded in [LiaisonScape
+Node-label Geometry and Connector Audit 1](liaisonscape-node-label-geometry-connector-audit1-result.md).
+Its result is `PASS / BOUNDED PRESENTATION FIX`. The connector now prefers a
+deterministic per-line text-plus-outline visual envelope for multiline labels,
+with the prior enclosing visual envelope retained only as a gap fallback.
+The conservative collision/hit `LabelRect`, Node-label placement, routing,
+Relation-label authority, and Dataset semantics remain unchanged.
+
+The connector is painted below connection affordances, the selected/focused
+Node body, and the label group, so it cannot cover the Node selection/focus
+indication. The six Global Placement 3 canonical surfaces loaded without
+Product errors in browser inspection, and automated geometry/UI tests pass.
+This remains machine/browser evidence rather than a new external human
+acceptance; Product default/adoption and the Initial Layout Release blocker
+are unchanged.

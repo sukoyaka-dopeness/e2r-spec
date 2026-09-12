@@ -116,3 +116,62 @@ rounded-rectangle diagonal         = corner-aware boundary intersection
 connector z-order workaround       = not required
 Relation attachment consistency    = PASS
 ```
+
+## Node-label connector presentation follow-up
+
+Date: 2026-09-13
+
+Checkpoint: `E2R-LIAISONSCAPE-NODE-LABEL-CONNECTOR-PRESENTATION-FOLLOWUP1`
+
+Result: `PASS / BOUNDED PRESENTATION FIX`
+
+The remaining rectangular impression was caused by using one axis-aligned
+`visualBounds` rectangle for every multiline label. That rectangle is still a
+valid enclosing fallback, but a short line could inherit a longer sibling's
+width when the connector ray approached it diagonally or from the side.
+
+`NodeLabelTextGeometry` now exposes deterministic `visualLines`, one envelope
+per rendered title/description line, using the existing text-width estimate
+plus the existing white outline. `nodeLabelConnectorEndpoint` first intersects
+the Node-to-label ray with the nearest applicable line envelope. If the ray
+passes through the gap between disjoint line envelopes, it conservatively uses
+the prior enclosing `visualBounds` boundary; it never falls back to the Node
+center. `LabelRect` remains the collision/hit geometry and is not recombined
+with this visual attachment geometry.
+
+The connector is now a direct child painted before connection affordances and
+the `.entity-body`; the label group remains after the body. Thus selected or
+focused Node body styling and visible connection handles paint over the
+auxiliary connector. Selection/focus remains application view state and does
+not enter Dataset or layout semantics.
+
+Product-surface inspection opened the six Global Placement 3 canonical cells
+through the ordinary review surface: Lighthouse EN/JA (10 labels/connectors),
+Titanic EN/JA (13), and Apollo EN/JA (9). All loaded without Product errors;
+the Titanic JA surface rendered the multiline Japanese labels and connectors,
+and a selected Lighthouse Node retained the expected body-over-connector DOM
+order. The automated Product rendering test also asserts connector < body <
+label-group order. Existing routing, label placement, relation presentation,
+manual placement, persistence, and Global Placement 3 semantics were not
+changed. This is browser inspection plus automated evidence, not a new user
+human acceptance.
+
+Validation:
+
+- targeted graph/UI tests: **139/139 PASS**
+- full LiaisonScape test suite: **376/376 PASS**
+- `npm run lint`: **PASS**
+- `npm run build`: **PASS**
+- `git diff --check`: **PASS**
+- E2R-SPEC `npm run validate`: **PASS**
+
+Disposition:
+
+```text
+per-line visual attachment             = PASS / bounded
+selection/focus layering               = PASS / connector under affordances
+collision / hit / routing authority    = UNCHANGED
+Global Placement 3 regression          = NOT OBSERVED
+Product default / adoption             = UNCHANGED / HOLD
+Initial Layout Release blocker         = UNCHANGED / OPEN
+```

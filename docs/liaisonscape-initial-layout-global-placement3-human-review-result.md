@@ -2,7 +2,7 @@
 
 Date: 2026-09-12
 
-Status: MACHINE/BROWSER INSPECTION ONLY; READY FOR USER HUMAN REVIEW; PRODUCT DEFAULT AND RELEASE BLOCKER UNCHANGED
+Status: MACHINE/BROWSER INSPECTION ONLY; USER ACCEPTANCE RECORDED SEPARATELY; PRODUCT DEFAULT AND RELEASE BLOCKER UNCHANGED
 
 ## Review boundary
 
@@ -61,30 +61,28 @@ the fitScale/readability trade-off still needs a formulation change.
 
 ```text
 Codex browser inspection quality            = MIXED / NON-AUTHORITATIVE
-user human visual acceptance                = NOT PERFORMED
-Titanic JA readability improvement          = OBSERVED BY CODEX; USER CONFIRMATION REQUIRED
+user human visual acceptance                = RECORDED IN SEPARATE AUTHORITATIVE RESULT
+Titanic JA readability improvement          = CONFIRMED BY USER OBSERVATION
 candidate-only discrete visual regression   = NOT OBSERVED IN BROWSER INSPECTION
 candidate-specific readability trade-off   = OBSERVED IN LIGHTHOUSE EN/JA, TITANIC EN
 full ECR3 visual direction retained         = UNCONFIRMED BY USER
 Stage-2 bypass                              = RETAIN AS DIAGNOSTIC HYPOTHESIS, NOT ADOPTION
-candidate disposition                       = UNDECIDED PENDING USER REVIEW
-handoff status                              = READY FOR USER HUMAN REVIEW
+candidate disposition                       = ACCEPTED FOR NEXT BOUNDED PRODUCT-INTEGRATION CHECKPOINT
+handoff status                              = CLOSED; USER ACCEPTANCE RECORDED SEPARATELY
 Initial Layout Release blocker              = STILL BLOCKED
 Product default/adoption                   = HOLD / UNCHANGED
 ```
 
-The previous `RETUNE` wording is not a completed candidate disposition; it is
-retained only as a provisional interpretation of the browser inspection. The
-next bounded study may reduce the anisotropic transform or make it
-viewport-targeted with a readability/fit floor, while preserving the Titanic
-JA separation benefit. It should not use fixture-specific coordinates. A new
-candidate must receive a fresh machine comparison and fresh human review;
-the ECR3 human ACCEPT is not inherited.
+The previous `RETUNE` wording was a provisional interpretation of the browser
+inspection. It is superseded for this candidate by the user's separate
+acceptance, while the observed fit/readability trade-off remains useful input
+for future research. Any new candidate must receive a fresh machine
+comparison and fresh human review; the ECR3 human ACCEPT is not inherited.
 
 The user-facing comparison URLs and review instructions are recorded in
-`liaisonscape-initial-layout-global-placement3-human-review-handoff.md`.
-Acceptance must remain open until the user reports observations for the six
-fixture/locale cells.
+`liaisonscape-initial-layout-global-placement3-human-review-handoff.md`. The
+authoritative user result is recorded in
+`liaisonscape-initial-layout-global-placement3-user-human-acceptance-result.md`.
 
 ## Preserved boundaries
 

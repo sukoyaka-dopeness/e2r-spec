@@ -2,15 +2,15 @@
 
 Date: 2026-09-12
 
-Status: READY FOR USER HUMAN REVIEW; NO ACCEPT/REJECT DECISION
+Status: USER HUMAN ACCEPTANCE RECORDED; SEE AUTHORITATIVE RESULT
 
 ## Purpose
 
 The previous Global Placement 3 entry was audited and reclassified: its
 observations came from Codex browser inspection, not from the user viewing the
-comparison surface. The links below are the actual handoff for the user's
-review. Until the user reports the observations, this candidate must not be
-marked `ACCEPT`, `REJECT`, or `RETUNE` as a completed human decision.
+comparison surface. The links below were then used as the user review
+handoff. The user's observations are now recorded authoritatively in
+`liaisonscape-initial-layout-global-placement3-user-human-acceptance-result.md`.
 
 The retained reference is `adaptive-post` (ECR3). The candidate is
 `global-placement3`, meaning viewport-anisotropic placement with
@@ -80,3 +80,7 @@ Overall candidate: ACCEPT / RETUNE / REJECT — ...
 
 No Product default, adoption, persistence, canonical Dataset, or presentation
 authority changes are part of this handoff.
+
+The handoff is closed for this review cycle. It does not by itself change the
+Product default, clear the Initial Layout Release blocker, or authorize
+release/publication.

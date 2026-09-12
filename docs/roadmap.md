@@ -7699,3 +7699,21 @@ also required. This checkpoint pivots from transform-only and tiny-arm
 simplification; no production-native provider was established, no new human
 review was authorized, Product default/adoption remains `HOLD`, and the
 Initial Layout Release blocker remains `OPEN`.
+
+### LiaisonScape Initial-Layout Global Placement 3 Production-native Structural Diversity / Frontier Reduction 1 (2026-09-13)
+
+The [Frontier Reduction 1 result](liaisonscape-initial-layout-global-placement3-production-native-frontier-reduction1-result.md)
+tested a cheap structural Pareto frontier plus normalized farthest-point
+representatives before authoritative Product presentation. Frontier-12 reduced
+the matched G3 46/62-call arm to 13 calls including round-once finalization and
+retained the G3 selected structural candidate/output in 5/6 canonical cells.
+All six canonical cells had zero routed crossings, Relation-label route hits,
+and overlap pairs; Titanic JA selected a new output and therefore does not
+inherit the G3 human ACCEPT.
+
+The 14-Node/49-Relation dense case retained no G3 candidate and still had 143
+routed crossings at Frontier-12, despite a runtime reduction from 8.46 s to
+3.62 s. The formulation is consequently `RETUNE` for density-aware portfolio
+selection, not a production provider. A canonical-scope new Actual Product
+human review may follow, while Product default/adoption remains `HOLD` and the
+Initial Layout Release blocker remains `OPEN`.

@@ -7637,3 +7637,20 @@ does not fit the bounded runtime-provider budget, and the fast provider remains
 non-equivalent. Direct Product opt-in is therefore not authorized; the next
 possible work is a separate coarse-objective or offline-assistance design
 checkpoint.
+
+### E2R-LIAISONSCAPE-NODE-LABEL-CONNECTOR-VISIBILITY-AUDIT1 (2026-09-13)
+
+The Node-label geometry and connector audit is recorded in [LiaisonScape
+Node-label Geometry and Connector Audit 1](liaisonscape-node-label-geometry-connector-audit1-result.md).
+Its result is `PASS / BOUNDED PRESENTATION FIX`: the shared conservative
+collision/hit `LabelRect` is retained, while connector attachment uses a
+deterministic text-plus-outline visual envelope. This removes the apparent
+diagonal and upper/lower connector gap without changing route obstacles,
+Relation-label authority, manual placement, or Dataset behavior.
+
+The six Global Placement 3 canonical surfaces loaded through the normal Product
+rendering path in browser inspection, with one Node-label group and connector
+per displayed Node. This is machine/browser evidence, not a new external human
+acceptance. No Initial Layout, Global Placement 3, default, persistence,
+canonical sample, or publication change was made. Ink-based collision
+tightening remains separate and is not reopened by this checkpoint.

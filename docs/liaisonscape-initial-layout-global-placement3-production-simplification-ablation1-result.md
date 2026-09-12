@@ -143,8 +143,6 @@ tag, release, deploy, or publication was performed.
 
 - Targeted locality/presentation test file: 14/14 PASS.
 - Existing LiaisonScape dirty work was preserved; no Product source was changed.
-- `npm test`, lint, production build, and `git diff --check` are the remaining
-  repository gates for this checkpoint and are reported with the commit status
-  after execution.
-- E2R-SPEC `npm run validate` is required after this result document and
-  roadmap entry are added.
+- LiaisonScape `npm test`: 381/381 PASS; lint, production build, and
+  `git diff --check`: PASS.
+- E2R-SPEC `npm run validate` and `git diff --check`: PASS.

@@ -43,6 +43,23 @@ no longer makes a diagonal or upper connector appear to stop short of the
 glyphs. The collision and hit rectangle remain unchanged; this deliberately
 avoids transferring an ink-bound estimate into Product route authority.
 
+### Node-side attachment follow-up
+
+The former App-side connector start was `direction * 33`, which modeled a
+virtual circle and could place the visible line inside the 64x64, `rx=12` Node.
+The connector now calls the shared `getEntityAttachment` dispatch with the
+exported `ENTITY_ATTACHMENT_SHAPE` and the Node-to-label direction. Cardinal
+starts are therefore 32px from the center and diagonal starts follow the
+rounded-rectangle corner arc. This is the same attachment contract used by
+ordinary Relation routing.
+
+The shape is a discriminated contract rather than a rendering-type test. A
+future circle, ellipse, polygon, or simplified attachment hull can add a shape
+variant and its boundary primitive behind `getEntityAttachment`; callers such
+as Relation routing and Node-label connectors keep the same center/direction /
+shape interface. Complex SVG rendering need not be treated as its own
+attachment geometry unless an explicit shape variant is added.
+
 Relation-owned labels remain on their existing contract. No Relation-label,
 route, self-loop, connector layer, glyph, or CSS authority was moved into
 Initial Layout.
@@ -88,3 +105,14 @@ Product default / adoption           = UNCHANGED / HOLD
 
 Further ink-based collision tightening remains a separate research question;
 this checkpoint does not reopen that Production decision.
+
+Node-side attachment follow-up result:
+
+```text
+former Node start                  = direction * 33 (virtual circle)
+current Node start                 = getEntityAttachment + ENTITY_ATTACHMENT_SHAPE
+rounded-rectangle cardinal         = exact 32px boundary
+rounded-rectangle diagonal         = corner-aware boundary intersection
+connector z-order workaround       = not required
+Relation attachment consistency    = PASS
+```

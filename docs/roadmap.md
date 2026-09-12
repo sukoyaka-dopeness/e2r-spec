@@ -7654,3 +7654,11 @@ per displayed Node. This is machine/browser evidence, not a new external human
 acceptance. No Initial Layout, Global Placement 3, default, persistence,
 canonical sample, or publication change was made. Ink-based collision
 tightening remains separate and is not reopened by this checkpoint.
+
+The Node-side attachment follow-up is also complete: the former
+`direction * 33` virtual-circle start now uses the shared
+`getEntityAttachment` dispatch with `ENTITY_ATTACHMENT_SHAPE`. Current
+rounded-rectangle Nodes attach at 32px on cardinal directions and at the
+corner-aware boundary on diagonals. The change preserves connector z-order,
+collision/hit rectangles, routing, label placement, and Dataset behavior; no
+new human acceptance is implied by this browser inspection.

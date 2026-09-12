@@ -7680,3 +7680,22 @@ Product errors in browser inspection, and automated geometry/UI tests pass.
 This remains machine/browser evidence rather than a new external human
 acceptance; Product default/adoption and the Initial Layout Release blocker
 are unchanged.
+
+### LiaisonScape Initial-Layout Global Placement 3 Production Simplification / Quality-Contributor Ablation 1 (2026-09-13)
+
+The [Global Placement 3 production simplification result](liaisonscape-initial-layout-global-placement3-production-simplification-ablation1-result.md)
+isolated the accepted viewport-anisotropic transform from the structural
+candidate search and authoritative presentation selection. A deterministic
+current seed plus the transform reduced the 46/62-call G3 diagnostic arm to
+one full presentation call, and one/two-arm bounded grid probes reduced the
+same volume to one or two calls. The speedup was not quality-safe: direct arms
+introduced routed crossings, label conflicts, or overlap in all six canonical
+cells, while bounded grid arms retained defects and degraded sharply on the
+14-node/49-relation synthetic case.
+
+The quality contribution is therefore mixed: the global transform improves
+screen-space shape, but candidate diversity and authoritative selection are
+also required. This checkpoint pivots from transform-only and tiny-arm
+simplification; no production-native provider was established, no new human
+review was authorized, Product default/adoption remains `HOLD`, and the
+Initial Layout Release blocker remains `OPEN`.

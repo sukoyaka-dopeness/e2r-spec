@@ -60,13 +60,17 @@ benchmarks.
 | Apollo EN | 9 / 11 | 0.897 s | 0.867 s | 0.029 s | 62 |
 | Apollo JA | 9 / 11 | 0.929 s | 0.879 s | 0.050 s | 62 |
 | Synthetic K3-3 control | 6 / 9 | 0.288 s | 0.287 s | 0.001 s | 24 |
+| Synthetic K4-4 | 8 / 16 | 1.291 s | 1.290 s | 0.001 s | 60 |
+| Synthetic K7-7 | 14 / 49 | 7.224 s | 7.222 s | 0.001 s | 44 |
 
 The dominant measured cost is Stage 1 structural/grid candidate generation
 and its authoritative presentation evaluations, not adaptive planning or
 Product viewport fitting. In the canonical runs, presentation computation was
 approximately 0.69-0.95 seconds. The public canonical set only reaches 13
-nodes; scaling beyond that size and arbitrary external Dataset behavior remain
-unqualified for the candidate.
+nodes. The synthetic 14-node case shows a sharp increase in Stage 1 cost, but
+it is still a diagnostic benchmark, not evidence that arbitrary external
+Dataset behavior is safe or that the candidate has a production scaling
+contract.
 
 These measurements do not establish a production latency target, because the
 candidate is not executing inside the production client and the benchmark
@@ -113,7 +117,8 @@ implement that architecture or reduction.
 - Historical Fresh evidence, Fresh12 canonical Human Review, and unrelated
   dirty work were preserved.
 - No push, tag, release, deploy, or publication was performed.
-- No LiaisonScape source or test file was changed in this checkpoint.
-- Existing LiaisonScape validation remains 372/372 tests PASS with lint,
-  production build, and diff check PASS.
+- The diagnostic-only synthetic benchmark generator and its bounded test were
+  added; no Product source, canonical sample, or default path was changed.
+- LiaisonScape validation: 373/373 tests PASS with lint, production build,
+  and diff check PASS.
 - E2R-SPEC `npm run validate` and `git diff --check` pass.

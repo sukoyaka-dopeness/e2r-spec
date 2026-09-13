@@ -8169,21 +8169,35 @@ interaction, and Actual Product evidence remain open. Product default/adoption
 is `HOLD`, production provider is `NOT ESTABLISHED`, and the Initial Layout
 Release blocker is `OPEN`.
 
-### Current Initial Layout execution order — Structural Retune before Self-loop and Architecture (2026-09-14)
+### Current Initial Layout execution order — Parallel Closure, Structural Retune, and Presentation Re-evaluation (2026-09-14)
 
 The [Structural Placement / Angular Ordering Retune 1 result](liaisonscape-structural-placement-angular-ordering-retune1-result.md)
 now makes the near-term order explicit:
 
-1. Parallel / Incident Bundle responsibility and structured capacity requests;
-2. Structural Placement / Angular Ordering, including ordinary-crossing
-   reduction and generic request-driven capacity response;
-3. Self-loop Angle / Ordinary Edge Interaction as an independent
+1. Parallel / Incident Architecture Closure: close the responsibility,
+   feasibility, shortage, fallback, and request-response contracts without
+   claiming Product visual-quality closure;
+2. Structural Placement / Angular Ordering / Initial Node Placement, including
+   ordinary-crossing reduction, Node separation, viewport fit, and generic
+   responses to routing-issued capacity requests;
+3. Parallel / Relation-label Presentation Re-evaluation using the improved Node
+   geometry;
+4. Self-loop Angle / Ordinary Edge Interaction as an independent
    routing/presentation track;
-4. bounded Layout / Presentation Modularization readiness and behavior-
+5. bounded Layout / Presentation Modularization readiness and behavior-
    preserving extraction, only where a responsibility contract is already
    stable;
-5. Initial Layout Re-baseline on canonical, dense, and difficult topologies;
-6. Initial Layout execution-architecture decision.
+6. Initial Layout Re-baseline on canonical, dense, and difficult topologies;
+7. Initial Layout execution-architecture decision.
+
+Parallel visual-quality follow-up is deliberately not a prerequisite for
+Structural Placement once the Parallel architecture boundary is closed. After
+Structural Placement, the re-evaluation must measure bundle lane separation,
+physical-side ordering, side bias, Relation-label clearance and ownership,
+outer ordinary clearance, obstacle influence, ordinary-route churn, endpoint
+capacity, and long EN/JA label behavior. Only residuals that remain under the
+improved geometry should be treated as Parallel / Relation-label Product
+quality work. Self-loop follows that re-evaluation and remains independent.
 
 ### Future Layout / Presentation Modularization plan (2026-09-14)
 

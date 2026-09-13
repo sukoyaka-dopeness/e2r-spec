@@ -7880,3 +7880,14 @@ a route-length increase and Titanic crossings remained. The candidate is
 Apollo Relation-label issues remain a separate presentation track. Product
 default/adoption remains `HOLD` and the Initial Layout Release blocker remains
 `OPEN`.
+
+### LiaisonScape Parallel Edge / Incident Bundle Presentation Human Review Handoff (2026-09-13)
+
+The [parallel Edge / incident bundle human-review handoff](liaisonscape-parallel-edge-incident-bundle-human-review-handoff.md)
+publishes explicit six-cell URLs for the G3 baseline, `parallel-pair-16`, and
+`parallel-bundle-16` arms. The candidate arms reuse G3 coordinates and use the
+normal Product open/routing/label/fit surface; no new Initial Layout provider
+is introduced. Titanic EN/JA are the priority review cells. Codex verified the
+Titanic EN baseline/pair/bundle pages and arm banners in the local browser,
+but USER HUMAN REVIEW remains `PENDING`. Product default/adoption remains
+`HOLD` and the Initial Layout Release blocker remains `OPEN`.

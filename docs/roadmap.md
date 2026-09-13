@@ -8286,3 +8286,19 @@ small; otherwise advance the Fast Initial Placement plus explicit High-quality
 Auto Layout responsibility decision. Product default/adoption remains `HOLD`,
 production provider remains `NOT ESTABLISHED`, and the Initial Layout Release
 blocker remains `OPEN`.
+
+### Organic Relationship-Shaped Placement — HYPOTHESIS / FUTURE STRUCTURAL DIRECTION
+
+The failed continuous projection and first discrete cell-assignment gate leave
+an `Organic Relationship-Shaped Placement` hypothesis for later research. The
+goal is not to make a graph look like a regular grid, ring, or random jitter;
+it is to derive Node geometry from Relation topology, route/label capacity,
+endpoint angular space, Node separation, and viewport constraints. Grid, ring,
+cell, and sector structures may remain internal search scaffolds, but final
+geometry must not be forced to preserve their artificial regularity. Any future
+candidate must continue through the unchanged Product presentation and
+endpoint-plan authorities and must be tested on canonical, dense, symmetric,
+perturbed, disconnected, and label-length variants. This is a future
+hypothesis, not a Product provider or adoption decision. Product
+default/adoption remains `HOLD`, production provider remains `NOT ESTABLISHED`,
+and the Initial Layout Release blocker remains `OPEN`.

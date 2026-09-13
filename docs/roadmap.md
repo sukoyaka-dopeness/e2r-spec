@@ -8104,6 +8104,24 @@ remains rejected. Self-loop remains independent. Product default/adoption is
 `HOLD`, production provider is `NOT ESTABLISHED`, Initial Layout re-baseline is
 blocked, and the Release blocker remains `OPEN`.
 
+### LiaisonScape Endpoint Plan Candidate Compression + Capacity-Negotiated Placement Safety (2026-09-13)
+
+The [candidate compression and capacity safety result](liaisonscape-endpoint-plan-candidate-compression-capacity-safety-experiment-result.md)
+is `RETUNE / NOT READY FOR HUMAN REVIEW`. A conservative geometry-family
+portfolio reduced direct per-group candidate generation while retaining
+canonical feasible/shortage outcomes and the shared multi-bundle plan. Smaller
+families dropped rare feasible synthetic candidates; the retained family still
+drifts selected output in short/short, long/short, and multiple-ordinary cases,
+so no existing Human evidence is inherited.
+
+Titanic EN's structured 26.4-degree request was applied as a generic,
+request-driven placement counterfactual: endpoint planning became feasible and
+Node separation changed 68.3px to 64.4px, with crossings 0. Viewport, unrelated
+corridor, lifecycle, and Human readability evidence remain open. Continue with
+compression retuning and request-driven placement safety before Product-facing
+integration; Product default/adoption remains `HOLD`, production provider is
+`NOT ESTABLISHED`, and the Release blocker remains `OPEN`.
+
 ### LiaisonScape Endpoint Plan / Multi-Bundle Incident Allocation Experiment (2026-09-13)
 
 The [endpoint-plan result](liaisonscape-endpoint-plan-multi-bundle-incident-allocation-experiment-result.md)

@@ -7766,3 +7766,24 @@ routed crossings at Frontier-12, despite a runtime reduction from 8.46 s to
 selection, not a production provider. A canonical-scope new Actual Product
 human review may follow, while Product default/adoption remains `HOLD` and the
 Initial Layout Release blocker remains `OPEN`.
+
+### LiaisonScape Initial-Layout Frontier-12 Dense / Topology Retune 1 (2026-09-13)
+
+The [Frontier-12 dense/topology retune result](liaisonscape-initial-layout-global-placement3-frontier12-dense-topology-retune1-result.md)
+audited the dense loss boundary and found that the G3-selected source was
+present in the 44-candidate pool and 22-candidate cheap frontier, but was lost
+when the frontier was compressed to 12 representatives. A crossing
+relation-pair signature did not improve the dense result and introduced a
+canonical Lighthouse label-nearness drift, so it is not a quality-safe rule.
+
+A density-aware adaptive portfolio was then tested: it keeps the 12-call
+portfolio for sparse frontiers and evaluates the whole cheap frontier when it
+is denser than 12. It used 22 calls on `synthetic:k7-7`, 18 on `k6-8`, and 12
+on `k8-8`, recovering the G3 selected output and hard metrics in all three
+cases. Canonical cells stayed at the existing 13-call Frontier-12 result.
+The dense `k7-7` runtime was still about 6.6--6.8 seconds, so this is a
+quality-retention research candidate, not a production provider or release
+solution. Disposition is `CONTINUE` for bounded density-aware research;
+Product default/adoption remains `HOLD` and the Release blocker remains
+`OPEN`. A new Actual Product human review is required for any adoption
+consideration.

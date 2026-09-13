@@ -8083,3 +8083,23 @@ Placement when routing cannot satisfy the contract. No candidate is ready for
 Human Review. Product default/adoption remains `HOLD`, production provider
 remains `NOT ESTABLISHED`, and the Initial Layout Release blocker remains
 `OPEN`; Self-loop remains independent.
+
+### LiaisonScape Endpoint-Sector / Port Allocation Architecture Experiment 2 (2026-09-13)
+
+The [Experiment 2 result](liaisonscape-endpoint-sector-port-allocation-architecture-experiment2-result.md)
+classifies the bounded architecture as `RETUNE / NOT READY FOR HUMAN REVIEW`.
+A first-class contract now separates feasible allocation, structured capacity
+shortage, and diagnostic fallback rendering. Joint endpoint-budget search also
+showed that the previous Lighthouse shortage was a bundle-first search
+artifact: Lighthouse EN/JA became feasible with no ordinary-route churn, and
+Titanic JA churn fell from 8 Relations to 1. Titanic EN remained infeasible and
+returned an approximately 12.2-degree half-sector shortage plus outer/obstacle
+pressure.
+
+The next routing step is a multi-bundle endpoint plan with explicit port
+reservations and bounded backtracking. Structural Placement / Angular Ordering
+may concurrently test the generic Titanic EN capacity request, but must preserve
+Node separation, viewport fit, and unrelated corridors; fixed angular relief
+remains rejected. Self-loop remains independent. Product default/adoption is
+`HOLD`, production provider is `NOT ESTABLISHED`, Initial Layout re-baseline is
+blocked, and the Release blocker remains `OPEN`.

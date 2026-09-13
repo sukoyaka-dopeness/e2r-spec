@@ -8246,3 +8246,16 @@ Titanic EN, but viewport, unrelated-corridor, interaction, and human-readability
 evidence remain open. Product default/adoption remains `HOLD`, production
 provider remains `NOT ESTABLISHED`, and the Initial Layout Release blocker
 remains `OPEN`.
+
+The [General Crossing-Aware Placement 1 result](liaisonscape-general-crossing-aware-placement1-result.md)
+keeps this track at `RETUNE / NOT READY FOR HUMAN REVIEW`. Compact guarded-grid
+placement restores viewport fit and screen-space Node separation but loses the
+strong dense crossing signal; continuous compression of the strong topology
+embedding preserves crossings but causes Node/label clearance defects. A clean
+canonical crossing count also did not imply endpoint capacity: Lighthouse JA
+reported an explicit endpoint-plan shortage. The next bounded placement work
+must construct topology ordering, hard Node separation, endpoint capacity, and
+coarse label corridors jointly. Parallel presentation re-evaluation remains
+after a viable geometry candidate; Self-loop remains independent. Product
+default/adoption is `HOLD`, production provider is `NOT ESTABLISHED`, and the
+Initial Layout Release blocker is `OPEN`.

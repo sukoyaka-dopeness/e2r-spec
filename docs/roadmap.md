@@ -8140,3 +8140,31 @@ placement candidate, not inherited Human evidence. Next work should reduce
 per-group port-family generation and test the capacity request with generic
 viewport/Node guards. Product default/adoption remains `HOLD`, production
 provider remains `NOT ESTABLISHED`, and the Release blocker remains `OPEN`.
+
+### Adaptive Initial Placement Cascade — HYPOTHESIS / FUTURE EXPERIMENT (2026-09-13)
+
+The [Adaptive Initial Placement Cascade and endpoint-plan safety checkpoint](liaisonscape-adaptive-initial-placement-cascade-and-endpoint-plan-safety-result.md)
+records a future hypothesis: try a fast bounded placement, accept only when a
+cheap gate is sufficiently predictive of Actual Product readability/safety,
+and escalate difficult Datasets to higher-quality placement or an explicit
+High-quality Auto Layout responsibility. This is not a current execution
+policy and does not change the current exact-runtime or endpoint/placement
+research priority.
+
+The hypothesis requires a cheap gate that predicts Product quality, low-cost
+escalation, explicit responsibility boundaries for each stage, and a separate
+interaction-stability solution for progressive re-layout. Endpoint-plan and
+capacity-negotiation evidence may inform the future gate, but routing-only,
+placement-escalation, cheap structural, and authoritative-presentation-only
+signals must remain distinct.
+
+The bounded geometry-derived candidate probe reduced typical endpoint families
+to 12--18 candidates, but dropped oracle-feasible results in Lighthouse EN and
+synthetic controls and drifted selected plans in other controls. It is
+`RETUNE / NOT READY FOR HUMAN REVIEW`; the old family remains the audit
+oracle. The request-driven placement lifecycle is only a pure, unintegrated
+contract: initial-open/idle application, drag/transition/manual-authority
+deferral, and stale/cancel discard. Whole-graph viewport, unrelated-corridor,
+interaction, and Actual Product evidence remain open. Product default/adoption
+is `HOLD`, production provider is `NOT ESTABLISHED`, and the Initial Layout
+Release blocker is `OPEN`.

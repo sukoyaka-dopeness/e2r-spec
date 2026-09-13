@@ -7979,3 +7979,28 @@ The current priority is bounded attribution plus parallel bundle geometry and
 structural/angular retune. Self-loop remains separate. No Product behavior,
 canonical Dataset, persistence semantics, or release state changes follow from
 this roadmap organization.
+
+### LiaisonScape Parallel / Incident Bundle Geometry Attribution 1 (2026-09-13)
+
+The [Parallel / Incident Bundle Geometry Attribution 1 result](liaisonscape-parallel-incident-bundle-geometry-attribution1-result.md)
+classifies the bounded matched audit as `MIXED / RETUNE`. With coordinates
+held constant, pair/bundle slot policy directly changed parallel route geometry
+and Relation-label clearance. Titanic JA also changed one ordinary incident
+route and reduced measured outer clearance to about 0.1px after widening;
+`fleet` and `andrews` remained obstacle-influenced routes. This confirms that
+parallel readability cannot be accepted from internal lane separation alone.
+
+Mirror/rotation placement controls under the same routing semantics changed
+side bias and label clearance, including a 3-parallel long-label synthetic
+case. Placement therefore contributes through neighbor angular distribution,
+but no fixture-specific swap or circular-order rule is accepted. The next
+geometry hypothesis is a Relation-label-aware incident-bundle corridor that
+preserves internal physical-side ordering, outer ordinary-Edge clearance, and
+bundle-level obstacle coexistence. Fixed pair spacing is not sufficient.
+
+Parallel bundle geometry and Structural Placement / Angular Ordering remain
+adjacent retune tracks; the attribution result does not make them a serial
+dependency. Self-loop / ordinary-Edge interaction remains independent. No
+bounded production retune or new human acceptance was made. Product
+default/adoption remains `HOLD`, production provider remains `NOT ESTABLISHED`,
+and the Initial Layout Release blocker remains `OPEN`.

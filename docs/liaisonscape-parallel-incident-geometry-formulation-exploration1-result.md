@@ -138,13 +138,37 @@ not established because continuity/drag behavior, manual-route coexistence,
 multiple interacting bundles, cancellation, and bounded portfolio size still
 need explicit contracts and tests.
 
+## Architecture experiment: hard-feasibility-first selection
+
+The portfolio was then changed from scalar weighted selection to a
+feasibility-first gate. A candidate was eligible only when it had no obstacle
+influence, at least 16px lane separation, at least 4px label clearance, no
+negative label ownership margin, at least 4px outer clearance when an outer
+incident Relation existed, no crossing, and unique physical-side offsets.
+Cost comparison (side bias, detour, and route length) ran only after that gate.
+
+The gate found feasible candidates in Titanic JA (3/35), the 3-parallel
+long/short synthetic case (3/28), mixed reverse (1/28), short/short (13/28),
+and long/long (1/35). It found none in Lighthouse EN/JA (0/35 and 0/28) or
+Titanic EN (0/35); those candidates failed outer clearance. This is a useful
+generic capacity-shortage result, not a fallback to unsafe candidate choice.
+The bounded rerun was deterministic in every cell.
+
+The synthetic hard-feasible results improved both internal and external
+geometry, but the canonical shortage cases show that a per-bundle allocator
+cannot manufacture endpoint angular capacity. Titanic EN had only 14.2° and
+Lighthouse 17.7° of measured bundle-to-ordinary angular capacity. Titanic JA
+had 18.8° and became feasible only with substantial ordinary-route churn (8
+routes). The experiment therefore validates the negotiation boundary but does
+not establish a safe product rule.
+
 ## Disposition
 
-No new candidate is ready for Actual Product Human Review. The joint portfolio
-is strongly promising on synthetic topology and exposes the right causal
-boundary, but canonical Lighthouse and Titanic still contain trade-offs and
-5–9 ordinary route changes. Existing G3/Frontier and parallel Human evidence
-is not inherited.
+No new candidate is ready for Actual Product Human Review. The hard-first
+allocator is strongly promising on synthetic topology and exposes the right
+causal boundary, but canonical Lighthouse and Titanic still contain
+capacity-shortage/trade-off cases and 5–9 ordinary route changes. Existing
+G3/Frontier and parallel Human evidence is not inherited.
 
 Research should **PIVOT from offset/corridor heuristics to the endpoint-sector
 and atomic incident architecture**. Structural Placement / Angular Ordering

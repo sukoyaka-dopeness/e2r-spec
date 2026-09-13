@@ -8058,3 +8058,28 @@ Parallel presentation and Structural Placement remain adjacent negotiating
 tracks. Self-loop remains independent. Product default/adoption remains
 `HOLD`, production provider remains `NOT ESTABLISHED`, Initial Layout
 re-baseline remains blocked, and the Release blocker remains `OPEN`.
+
+### LiaisonScape Parallel / Incident Routing Architecture Experiment 1 (2026-09-13)
+
+The [incident routing architecture experiment](liaisonscape-parallel-incident-geometry-formulation-exploration1-result.md)
+extends the previous corridor probe with a bounded atomic incident portfolio
+and a hard-feasibility-first gate. The candidate evaluates parallel lanes,
+Relation-label reservation, outer ordinary Relations, obstacle influence,
+physical-side uniqueness, and crossing safety before comparing side bias and
+detour cost. It is deterministic and improves the synthetic short/short,
+long/long, long/short, 3-plus, reverse, ordinary, and obstacle controls.
+
+The canonical result is not yet safe: no hard-feasible candidate was found in
+Lighthouse EN/JA or Titanic EN because outer clearance was unavailable; Titanic
+JA had only 3/35 feasible candidates and required 8 ordinary-route changes.
+This records a generic capacity shortage rather than silently accepting a
+scalar trade-off. A fixed 32-degree angular relief is also rejected because
+it reduced Lighthouse minimum Node separation from 85.5px to 40px.
+
+The next implementation boundary is therefore an endpoint-sector/port
+allocator above per-Relation routing. It should atomically reserve the whole
+incident set and return a generic angular-capacity request to Structural
+Placement when routing cannot satisfy the contract. No candidate is ready for
+Human Review. Product default/adoption remains `HOLD`, production provider
+remains `NOT ESTABLISHED`, and the Initial Layout Release blocker remains
+`OPEN`; Self-loop remains independent.

@@ -7891,3 +7891,91 @@ is introduced. Titanic EN/JA are the priority review cells. Codex verified the
 Titanic EN baseline/pair/bundle pages and arm banners in the local browser,
 but USER HUMAN REVIEW remains `PENDING`. Product default/adoption remains
 `HOLD` and the Initial Layout Release blocker remains `OPEN`.
+
+## Current Initial Layout / Parallel Presentation Coordination (2026-09-13)
+
+This section is the current coordination authority for the adjacent
+Initial-Layout and presentation research tracks. The checkpoint entries above
+remain historical records and are not rewritten by this summary.
+
+### 1. Parallel / Incident Bundle Geometry Attribution — RETUNE
+
+The [parallel Edge / incident bundle retune result](liaisonscape-parallel-edge-incident-bundle-presentation-retune1-result.md)
+and its [human-review handoff](liaisonscape-parallel-edge-incident-bundle-human-review-handoff.md)
+establish that `parallel-pair-16` and `parallel-bundle-16` improve graph-space
+slot spacing in machine evidence, but user review did not establish a reliable
+readability improvement. The candidates remain unaccepted and must not inherit
+G3 or Frontier human acceptance.
+
+The next bounded attribution scope is to distinguish routing-side from
+placement-side contribution using the same coordinates, mirrored or reordered
+placement controls, and matched presentation evaluation. The bundle hypothesis
+should cover, together rather than independently:
+
+- internal minimum separation and stable ordering for 2+ parallel Relations;
+- Relation-label occupied width, especially long labels on vertical routes;
+- clearance from the outer ordinary incident Relation;
+- obstacle avoidance that preserves bundle-side ordering and does not collapse
+  the bundle; and
+- reverse-direction physical-side behavior.
+
+Fixed pair spacing is not a sufficient acceptance rule. A
+Relation-label-aware bundle corridor is the working hypothesis, with ordinary
+outer-Edge guard spacing and obstacle handling measured as part of the same
+incident bundle. The Titanic JA observation that widening only the parallel
+Relations can worsen the view when nearby ordinary Edges do not move is a
+required counter-signal.
+
+### 2. Structural Placement / Angular Ordering Retune — RETUNE, ADJACENT
+
+The [obstacle-sensitive decomposition result](liaisonscape-initial-layout-obstacle-sensitive-crossing-decomposition-audit1-result.md)
+did not establish a quality-safe placement rule, but it did show that some
+crossings are placement-sensitive while the Titanic parallel residual is not
+explained by the current Node-obstacle predicate alone. Structural placement
+research therefore remains adjacent to the parallel attribution track rather
+than waiting for a complete parallel fix.
+
+Its bounded scope is generic Node ordering or local swap evidence, including
+neighbor angular separation around shared endpoints and the contribution of
+Node angular distribution to parallel one-sided bending. Do not assume that
+equal circular spacing is inherently correct, and do not hard-code a fixture
+or object ID. Every candidate must be assessed jointly against crossings,
+screen-space Node/label separation, route corridors, Relation-label
+association, viewport fit, and runtime.
+
+The two tracks may exchange attribution evidence: a route that changes under a
+generic Node ordering control is placement-sensitive; a residual that persists
+under matched placement controls remains routing/presentation-owned. Neither
+track transfers routing, label, or Self-loop authority into Initial Layout.
+
+### 3. Self-loop / Ordinary Edge Interaction — SEPARATE TRACK
+
+Self-loop angle tendency and Self-loop/ordinary-Edge interaction remain an
+independent routing/presentation track. They must be measured as residuals when
+useful, but must not be included in the Parallel bundle objective or credited
+to structural placement. No Self-loop routing fix is authorized by the
+parallel or Initial-Layout checkpoints.
+
+### 4. Initial Layout Re-baseline — BLOCKED / AFTER SUFFICIENT ATTRIBUTION
+
+After enough matched evidence exists in the two adjacent tracks, re-baseline
+the structural formulation on canonical and dense cases. Re-measure crossing
+cause, Relation-label association, screen-space readability, viewport fit, and
+runtime together. The re-baseline must decide whether to continue a single
+Initial Placement formulation or separate fast Initial Placement from an
+explicit high-quality Auto Layout responsibility.
+
+This is a gated re-evaluation, not a requirement to finish all presentation
+work first. Parallel bundle attribution and structural/angular retune may
+proceed as neighboring research, while Initial Layout re-baseline waits for
+their causal boundary evidence. Existing G3/Frontier user evidence is not
+inherited by any new candidate.
+
+### Current status and priority boundary
+
+Product default/adoption remains `HOLD`; the production provider remains
+`NOT ESTABLISHED`; and the Initial Layout Release blocker remains `OPEN`.
+The current priority is bounded attribution plus parallel bundle geometry and
+structural/angular retune. Self-loop remains separate. No Product behavior,
+canonical Dataset, persistence semantics, or release state changes follow from
+this roadmap organization.

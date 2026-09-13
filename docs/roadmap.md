@@ -8179,8 +8179,46 @@ now makes the near-term order explicit:
    reduction and generic request-driven capacity response;
 3. Self-loop Angle / Ordinary Edge Interaction as an independent
    routing/presentation track;
-4. Initial Layout Re-baseline on canonical, dense, and difficult topologies;
-5. Initial Layout execution-architecture decision.
+4. bounded Layout / Presentation Modularization readiness and behavior-
+   preserving extraction, only where a responsibility contract is already
+   stable;
+5. Initial Layout Re-baseline on canonical, dense, and difficult topologies;
+6. Initial Layout execution-architecture decision.
+
+### Future Layout / Presentation Modularization plan (2026-09-14)
+
+The current research is separating Parallel / Incident Bundle, Structural
+Placement / Angular Ordering, Self-loop / Ordinary Edge Interaction, Initial
+Layout, ordinary Relation routing, Relation-label placement, and future
+quality-gate / Adaptive Cascade orchestration. This records a future
+responsibility-based modularization plan, not an authorization for a broad
+rewrite.
+
+The intended direction is to stabilize the responsibility and authority
+boundaries experimentally first, then extract small pure contracts or modules
+incrementally where behavior-preserving reuse is demonstrated. Experimental
+algorithms must remain replaceable; modularization is for making responsibility
+and authority explicit, not for prematurely fixing an algorithm or imposing a
+file layout. Product behavior changes and research algorithm changes remain
+separate checkpoints.
+
+The conceptual seams to preserve for future evaluation include Initial /
+Structural Placement, ordinary Relation Routing, Parallel / Incident
+Allocation / Endpoint Plan, Relation-label Placement, Self-loop Routing,
+Presentation Evaluation, capacity request/response contracts, and future
+Initial Layout orchestration / quality gates. Each candidate should continue
+through the accepted common Product Presentation responsibilities. Fast and
+high-quality stages must not duplicate or fork those responsibilities; a
+quality gate may reject or escalate a fast candidate when presentation defects
+are evident.
+
+This plan does not change the current priority: Parallel and Structural
+Placement remain adjacent retune tracks, Self-loop remains independent, and
+modularization readiness is considered only after those boundaries are
+sufficiently established and before Re-baseline when a small extraction is
+actually justified. Adaptive Cascade remains a later hypothesis. Product
+default/adoption remains `HOLD`, the production provider remains `NOT
+ESTABLISHED`, and the Initial Layout Release blocker remains `OPEN`.
 
 Self-loop work is intentionally before both the deferred Adaptive Initial
 Placement Cascade and the execution-architecture decision. This prevents

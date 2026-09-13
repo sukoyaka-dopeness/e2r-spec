@@ -8004,3 +8004,27 @@ dependency. Self-loop / ordinary-Edge interaction remains independent. No
 bounded production retune or new human acceptance was made. Product
 default/adoption remains `HOLD`, production provider remains `NOT ESTABLISHED`,
 and the Initial Layout Release blocker remains `OPEN`.
+
+### LiaisonScape Parallel Incident-Bundle Corridor Retune 2 (2026-09-13)
+
+The [Parallel Incident-Bundle Corridor Retune 2 result](liaisonscape-parallel-incident-bundle-corridor-retune2-result.md)
+implemented an opt-in label-aware slot probe. It used the existing deterministic
+Relation-label width, chord-normal projection, and gutter to widen internal
+parallel lanes without changing default routing, manual curvature, or
+Self-loop behavior.
+
+The probe improved internal label/lane measurements but was not quality-safe as
+a whole-bundle rule: Titanic EN side bias worsened to 10.38 and outer clearance
+fell to 1.6px; Titanic JA retained obstacle influence and near-zero outer
+clearance; the reverse synthetic bundle balanced its lanes while consuming all
+outer clearance. The 3-parallel long-label case likewise retained zero outer
+clearance. No human-review handoff was prepared for this candidate.
+
+The working contract is therefore escalated from internal label-aware spacing
+to true group-level corridor allocation: preserve physical-side ordering and
+label envelopes, then allocate bundle center/detour together with outer
+ordinary-Edge and obstacle guards. Endpoint/neighbor angular distribution
+remains an adjacent Structural Placement / Angular Ordering input. Parallel
+and structural tracks remain neighboring retune tracks; Self-loop remains
+independent. Product default/adoption is `HOLD` and the Initial Layout Release
+blocker remains `OPEN`.

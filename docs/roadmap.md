@@ -7807,3 +7807,22 @@ planning direction. The frontier early-stop line is therefore `PIVOT`; the
 adaptive whole-frontier arm remains diagnostic reference only. Production-native
 provider readiness, Product default/adoption, and the Initial Layout Release
 blocker are unchanged (`NOT ESTABLISHED`, `HOLD`, `OPEN`).
+
+### LiaisonScape Initial-Layout Authoritative Presentation Cost Audit 1 (2026-09-13)
+
+The [Authoritative Presentation Cost Audit 1 result](liaisonscape-initial-layout-authoritative-presentation-cost-audit1-result.md)
+reprofiled one full Product presentation evaluation without changing the
+candidate arm or evaluator authority. Existing exact geometry/metadata reuse
+was output-equivalent in all nine matched cells and reduced measured
+authoritative time by roughly 14--22%, but only reduced profiled E2E time by
+about 9--15%. Full evaluation count was unchanged.
+
+Dense residual cost remained route candidate generation and sequential
+occupied-path checks; `k8-8` retained about 2.06 seconds of occupied-path work
+even after reuse. The cache reached 72--87% hit rates but required up to about
+20,394 geometry entries plus matching metadata entries in one process. No
+2--3x exact per-evaluation opportunity was found. The micro-optimization line
+is therefore `PIVOT`; the next direction is a larger production-native
+structural formulation or an explicit Initial Placement/high-quality Auto
+Layout responsibility split. Product default/adoption and the Initial Layout
+Release blocker remain `HOLD` and `OPEN`.

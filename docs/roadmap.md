@@ -7826,3 +7826,22 @@ is therefore `PIVOT`; the next direction is a larger production-native
 structural formulation or an explicit Initial Placement/high-quality Auto
 Layout responsibility split. Product default/adoption and the Initial Layout
 Release blocker remain `HOLD` and `OPEN`.
+
+### Production-native structural formulation 1 (2026-09-13)
+
+The [structural formulation research](liaisonscape-initial-layout-production-native-structural-formulation1-result.md)
+implemented layered barycenter, graph-distance stress, structural-twin spokes,
+crossing-aware circular ordering, and ordered stress. A six-candidate portfolio
+retained the ten-arm audit's selected output on eleven measured cells and used
+seven full evaluations including round-once. Dense k7-7/k6-8/k8-8 crossings
+fell from 129/123/229 to 81/72/144 at about 1.05--1.99 seconds, but fit shrank
+screen separation and canonical Apollo still had a crossing. Titanic JA had
+label-nearness drift relative to Frontier-12. Larger dense 24/144 took 7.23 s.
+
+Disposition: RETUNE the portfolio and continue bounded structural research;
+no general human-review readiness or production provider is established.
+The dense topology signal is evidence against declaring structural research
+exhausted. Fast Initial Placement plus explicit high-quality Auto Layout
+remains an architecture option for larger graphs, not an adopted behavior.
+Product default/adoption remains HOLD and Release blocker OPEN. No human
+acceptance is inherited; vertical parallel-edge spacing remains separate.

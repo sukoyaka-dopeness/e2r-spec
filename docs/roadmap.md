@@ -7700,6 +7700,18 @@ simplification; no production-native provider was established, no new human
 review was authorized, Product default/adoption remains `HOLD`, and the
 Initial Layout Release blocker remains `OPEN`.
 
+### LiaisonScape Initial-Layout Global Placement 3 Frontier-12 Human Review Handoff (2026-09-13)
+
+The [Frontier-12 human review handoff](liaisonscape-initial-layout-global-placement3-frontier12-human-review-handoff.md)
+adds `frontier-12` to the existing development-only Actual Product review
+surface. It provides explicit G3 (`global-placement3`) and Frontier-12 URLs
+for Lighthouse/Titanic/Apollo in EN/JA, using the same canonical Dataset and
+normal App rendering path. Machine evidence is summarized separately: the
+candidate retains G3 output in 5/6 cells and changes Titanic JA, so no G3
+human ACCEPT is inherited. The status is `READY FOR HUMAN REVIEW`; user
+acceptance, Product default/adoption, and the Initial Layout Release blocker
+remain unchanged.
+
 ### LiaisonScape Initial-Layout Global Placement 3 Production-native Structural Diversity / Frontier Reduction 1 (2026-09-13)
 
 The [Frontier Reduction 1 result](liaisonscape-initial-layout-global-placement3-production-native-frontier-reduction1-result.md)

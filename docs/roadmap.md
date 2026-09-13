@@ -7787,3 +7787,23 @@ solution. Disposition is `CONTINUE` for bounded density-aware research;
 Product default/adoption remains `HOLD` and the Release blocker remains
 `OPEN`. A new Actual Product human review is required for any adoption
 consideration.
+
+### LiaisonScape Initial-Layout Frontier Adaptive Dense Cost Reduction 2 (2026-09-13)
+
+The [Frontier Adaptive Dense Cost Reduction 2 result](liaisonscape-initial-layout-frontier-adaptive-dense-cost-reduction2-result.md)
+tested whether a cheap structural stratum could be evaluated first and the
+remaining frontier widened only when needed. The matched audit found the
+G3-quality source at frontier-order positions 22/22 for `k7-7`, 11/18 for
+`k6-8`, and 1/4 for `k8-8`; the first case prevents a conservative early-stop
+claim from the current cheap signals.
+
+The diagnostic progressive probe reduced canonical evaluation count to five in
+Lighthouse and Apollo and used 12 calls in Titanic and the dense cases, but it
+introduced canonical Lighthouse label-nearness drift, Titanic EN drift, and
+Apollo EN/JA route/crossing drift relative to Frontier-12. The density-aware
+whole-frontier reference remained quality-retaining in the tested dense cases
+at 22/18/12 calls, but remained several seconds from the roughly two-second
+planning direction. The frontier early-stop line is therefore `PIVOT`; the
+adaptive whole-frontier arm remains diagnostic reference only. Production-native
+provider readiness, Product default/adoption, and the Initial Layout Release
+blocker are unchanged (`NOT ESTABLISHED`, `HOLD`, `OPEN`).

@@ -7728,6 +7728,27 @@ the user supplies the visual observations. G3 Human ACCEPT, Product
 default/adoption, dense scaling, production-provider readiness, and the
 Initial Layout Release blocker are unchanged.
 
+### LiaisonScape Initial-Layout Global Placement 3 Frontier-12 User Human Review Evidence (2026-09-13)
+
+The [Frontier-12 user evidence result](liaisonscape-initial-layout-global-placement3-frontier12-human-review-user-evidence-result.md)
+records the user's direct observation separately from Codex browser inspection
+and machine metrics. Frontier-12 speed was satisfactory and the canonical
+six-cell result was broadly good, with no Frontier-12-specific visual
+regression observed.
+
+The user also identified unnecessary Edge crossings weakening
+Relation-label association in Titanic EN/JA and short horizontal Edges making
+Relation-labels appear detached in Apollo EN. The user reports both issues
+were already present in Global Placement 3; they are therefore recorded as
+separate downstream routing/Relation-label presentation follow-ups, not
+Frontier-12 defects.
+
+Because the user did not explicitly use the project's formal `ACCEPT` wording,
+the canonical checkpoint is recorded as human evidence received but formal
+acceptance not closed. A bounded dense/topology Frontier-12 retune research
+checkpoint may proceed; Product default/adoption remains `HOLD` and the
+Initial Layout Release blocker remains `OPEN`.
+
 ### LiaisonScape Initial-Layout Global Placement 3 Production-native Structural Diversity / Frontier Reduction 1 (2026-09-13)
 
 The [Frontier Reduction 1 result](liaisonscape-initial-layout-global-placement3-production-native-frontier-reduction1-result.md)

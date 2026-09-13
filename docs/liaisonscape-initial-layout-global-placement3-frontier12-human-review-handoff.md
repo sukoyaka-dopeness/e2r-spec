@@ -2,7 +2,12 @@
 
 Date: 2026-09-13
 
-Status: READY FOR HUMAN REVIEW; USER ACCEPTANCE NOT RECORDED
+Status: USER OBSERVATION RECORDED; FORMAL ACCEPTANCE DISPOSITION IN RESULT
+
+The user's direct observations are recorded in the [Frontier-12 user evidence
+result](liaisonscape-initial-layout-global-placement3-frontier12-human-review-user-evidence-result.md).
+They are positive but do not explicitly declare the project-level `ACCEPT`
+status; the earlier Codex browser inspection remains separate evidence.
 
 ## Scope
 

@@ -7866,3 +7866,17 @@ default/adoption remains `HOLD`, production provider remains `NOT ESTABLISHED`,
 and the Initial Layout Release blocker remains `OPEN`. The independent
 parallel Edge spacing checkpoint may proceed; existing human evidence is not
 inherited by any new candidate.
+
+### LiaisonScape Parallel Edge / Incident Bundle Presentation Retune 1 (2026-09-13)
+
+The [parallel Edge / incident bundle retune result](liaisonscape-parallel-edge-incident-bundle-presentation-retune1-result.md)
+added an opt-in presentation-only slot policy. Pair widening improves the
+two-Relation case, while bundle-aware widening also separates same-side slots
+in 3+ groups and preserves reverse-direction, manual-route, obstacle, ordinary
+Relation, and Self-loop boundaries. The six-cell machine comparison was mostly
+neutral; Titanic EN improved one label-route hit, while Lighthouse JA incurred
+a route-length increase and Titanic crossings remained. The candidate is
+`RETUNE / READY FOR HUMAN REVIEW`, not human-accepted. Existing Titanic and
+Apollo Relation-label issues remain a separate presentation track. Product
+default/adoption remains `HOLD` and the Initial Layout Release blocker remains
+`OPEN`.

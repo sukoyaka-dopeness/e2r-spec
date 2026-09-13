@@ -8274,3 +8274,15 @@ responsibility decision instead of another projection retune. Parallel
 presentation re-evaluation and Self-loop remain downstream independent tracks.
 Product default/adoption remains `HOLD`, production provider remains `NOT
 ESTABLISHED`, and the Initial Layout Release blocker remains `OPEN`.
+
+The [Discrete Feasibility-First Structural Placement 1 result](liaisonscape-discrete-feasibility-first-placement1-result.md)
+now records the state-space gate as `PIVOT / NOT READY FOR HUMAN REVIEW`.
+Canonical sparse cases stayed below 175 states per family, but Titanic reached
+the 25,000-state cap for three families and every dense control returned no
+feasible plan under the tested sector/corridor propagation. The next work must
+not simply raise the cap or relax the guards. Investigate a narrower
+decomposition with explicit capacity contracts only if its state space remains
+small; otherwise advance the Fast Initial Placement plus explicit High-quality
+Auto Layout responsibility decision. Product default/adoption remains `HOLD`,
+production provider remains `NOT ESTABLISHED`, and the Initial Layout Release
+blocker remains `OPEN`.

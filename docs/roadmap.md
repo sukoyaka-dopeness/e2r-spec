@@ -8259,3 +8259,18 @@ coarse label corridors jointly. Parallel presentation re-evaluation remains
 after a viable geometry candidate; Self-loop remains independent. Product
 default/adoption is `HOLD`, production provider is `NOT ESTABLISHED`, and the
 Initial Layout Release blocker is `OPEN`.
+
+The [Joint-Constrained Crossing-Aware Placement 2 result](liaisonscape-joint-constrained-crossing-aware-placement2-result.md)
+closes continuous post-generation projection as `PIVOT / NOT READY FOR HUMAN
+REVIEW`. Hard graph-space separation removed Node overlap, but viewport fit
+still reduced screen separation; dense crossing retention was topology-
+dependent; and cheap angular/corridor proxies had authoritative endpoint-plan
+false-safe cases. The only remaining bounded single-placement hypothesis is a
+discrete feasibility-first topology-cell/port assignment that reserves screen,
+endpoint-sector, and coarse label-corridor capacity during construction. Its
+state-space feasibility must be checked before deeper implementation. If it is
+not small, proceed to the Initial Placement / explicit High-quality Auto Layout
+responsibility decision instead of another projection retune. Parallel
+presentation re-evaluation and Self-loop remain downstream independent tracks.
+Product default/adoption remains `HOLD`, production provider remains `NOT
+ESTABLISHED`, and the Initial Layout Release blocker remains `OPEN`.

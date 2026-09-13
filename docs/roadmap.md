@@ -7712,6 +7712,22 @@ human ACCEPT is inherited. The status is `READY FOR HUMAN REVIEW`; user
 acceptance, Product default/adoption, and the Initial Layout Release blocker
 remain unchanged.
 
+### LiaisonScape Initial-Layout Global Placement 3 Frontier-12 Human Review Execution (2026-09-13)
+
+The [Frontier-12 human review result](liaisonscape-initial-layout-global-placement3-frontier12-human-review-result.md)
+records a Codex browser inspection of all six G3/reference versus
+Frontier-12/candidate pairs on the normal Product surface. All six cells
+loaded through the expected Dataset, fit, routing, and label path. No obvious
+candidate-only defect was observed in that inspection; Titanic JA visibly
+requires particular attention because its selected output differs and its
+compact fitted view creates a readability/spacing trade-off.
+
+This is not external human acceptance. All six user judgments and the overall
+Frontier-12 disposition remain `UNCONFIRMED / PENDING USER HUMAN REVIEW` until
+the user supplies the visual observations. G3 Human ACCEPT, Product
+default/adoption, dense scaling, production-provider readiness, and the
+Initial Layout Release blocker are unchanged.
+
 ### LiaisonScape Initial-Layout Global Placement 3 Production-native Structural Diversity / Frontier Reduction 1 (2026-09-13)
 
 The [Frontier Reduction 1 result](liaisonscape-initial-layout-global-placement3-production-native-frontier-reduction1-result.md)

@@ -8168,3 +8168,29 @@ deferral, and stale/cancel discard. Whole-graph viewport, unrelated-corridor,
 interaction, and Actual Product evidence remain open. Product default/adoption
 is `HOLD`, production provider is `NOT ESTABLISHED`, and the Initial Layout
 Release blocker is `OPEN`.
+
+### Current Initial Layout execution order — Structural Retune before Self-loop and Architecture (2026-09-14)
+
+The [Structural Placement / Angular Ordering Retune 1 result](liaisonscape-structural-placement-angular-ordering-retune1-result.md)
+now makes the near-term order explicit:
+
+1. Parallel / Incident Bundle responsibility and structured capacity requests;
+2. Structural Placement / Angular Ordering, including ordinary-crossing
+   reduction and generic request-driven capacity response;
+3. Self-loop Angle / Ordinary Edge Interaction as an independent
+   routing/presentation track;
+4. Initial Layout Re-baseline on canonical, dense, and difficult topologies;
+5. Initial Layout execution-architecture decision.
+
+Self-loop work is intentionally before both the deferred Adaptive Initial
+Placement Cascade and the execution-architecture decision. This prevents
+parallel, ordinary-route, and Self-loop presentation residuals from being
+misattributed to Initial Layout. The Adaptive Cascade remains a
+`Hypothesis / future experiment` and is not promoted in priority.
+
+Structural Retune 1 remains `RETUNE / NOT READY FOR HUMAN REVIEW`: the
+request-driven placement counterfactual is generic and machine-promising for
+Titanic EN, but viewport, unrelated-corridor, interaction, and human-readability
+evidence remain open. Product default/adoption remains `HOLD`, production
+provider remains `NOT ESTABLISHED`, and the Initial Layout Release blocker
+remains `OPEN`.

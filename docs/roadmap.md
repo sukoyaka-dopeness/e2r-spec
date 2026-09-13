@@ -7845,3 +7845,24 @@ exhausted. Fast Initial Placement plus explicit high-quality Auto Layout
 remains an architecture option for larger graphs, not an adopted behavior.
 Product default/adoption remains HOLD and Release blocker OPEN. No human
 acceptance is inherited; vertical parallel-edge spacing remains separate.
+
+### LiaisonScape Initial-Layout Obstacle-sensitive Crossing / Placement-vs-Presentation Decomposition Audit 1 (2026-09-13)
+
+The [obstacle-sensitive crossing decomposition result](liaisonscape-initial-layout-obstacle-sensitive-crossing-decomposition-audit1-result.md)
+added an opt-in diagnostic that uses the existing Product route samples and
+60-unit Node-influence predicate to identify obstacle-sensitive routes, then
+tests eight deterministic one-clearance local Node moves per inferred obstacle.
+The audit found a placement-sensitive signal in Lighthouse, Apollo, and dense
+`k7-7`, but no quality-safe general move rule: crossing reductions changed
+route sets or traded against labels/overlap. Titanic EN/JA had no inferred
+obstacle Node; its four crossings were two ordinary-route and two parallel
+Relation presentation cases, with nearest non-endpoint Nodes outside the
+router influence radius. The Titanic long-label/parallel issue therefore
+remains a separate presentation track.
+
+Disposition is `RETUNE` for structural placement research. No retune provider,
+routing fix, parallel-spacing fix, or Self-loop fix was implemented. Product
+default/adoption remains `HOLD`, production provider remains `NOT ESTABLISHED`,
+and the Initial Layout Release blocker remains `OPEN`. The independent
+parallel Edge spacing checkpoint may proceed; existing human evidence is not
+inherited by any new candidate.

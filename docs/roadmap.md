@@ -8103,3 +8103,22 @@ Node separation, viewport fit, and unrelated corridors; fixed angular relief
 remains rejected. Self-loop remains independent. Product default/adoption is
 `HOLD`, production provider is `NOT ESTABLISHED`, Initial Layout re-baseline is
 blocked, and the Release blocker remains `OPEN`.
+
+### LiaisonScape Endpoint Plan / Multi-Bundle Incident Allocation Experiment (2026-09-13)
+
+The [endpoint-plan result](liaisonscape-endpoint-plan-multi-bundle-incident-allocation-experiment-result.md)
+is `RETUNE / NOT READY FOR HUMAN REVIEW`. A deterministic branch-and-bound
+contract now reserves all parallel bundles at a shared endpoint before atomic
+commit, rejects sector and ordinary-route ownership conflicts, and performs a
+combined authoritative Product presentation validation before accepting a
+plan. The shared two-bundle synthetic was feasible in 6 of at most 512 explored
+states with no ordinary-route churn; canonical one-bundle results remained
+unchanged.
+
+Titanic EN still returned the structured routing capacity shortage. A bounded
+request-driven placement counterfactual made it feasible while changing minimum
+screen-space Node separation from 68.3px to 64.4px, but that is a new unreviewed
+placement candidate, not inherited Human evidence. Next work should reduce
+per-group port-family generation and test the capacity request with generic
+viewport/Node guards. Product default/adoption remains `HOLD`, production
+provider remains `NOT ESTABLISHED`, and the Release blocker remains `OPEN`.

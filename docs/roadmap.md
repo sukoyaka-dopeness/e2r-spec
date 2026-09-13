@@ -8028,3 +8028,33 @@ remains an adjacent Structural Placement / Angular Ordering input. Parallel
 and structural tracks remain neighboring retune tracks; Self-loop remains
 independent. Product default/adoption is `HOLD` and the Initial Layout Release
 blocker remains `OPEN`.
+
+### LiaisonScape Parallel / Incident Geometry Formulation Exploration 1 (2026-09-13)
+
+The [formulation exploration result](liaisonscape-parallel-incident-geometry-formulation-exploration1-result.md)
+classifies further offset/corridor tuning as `PIVOT / NOT READY FOR HUMAN
+REVIEW`. The current sequential route-then-label pipeline cannot reserve final
+parallel label envelopes and later ordinary incident routes in one decision.
+That decision boundary explains the repeated internal-clearance versus outer-
+gutter and side-bias trade-off.
+
+A diagnostic atomic-bundle portfolio plus incident ordinary rerouting was
+deterministic and materially improved the 2-label, 3-plus, reverse-direction,
+long/short, and obstacle synthetic controls. It also repaired Titanic EN label
+ownership and side balance, but canonical Lighthouse lost outer clearance and
+Titanic required 8 ordinary-route changes. The candidate is therefore causal
+evidence, not an accepted presentation rule.
+
+The next Parallel track is an endpoint-sector and atomic incident allocator
+above per-Relation routing. It must allocate the complete incident set,
+Relation-label reservations, bundle center/detour, obstacle guards, and
+physical-side order as one bounded decision. When no sector is feasible it may
+return a generic angular-capacity requirement to Structural Placement /
+Angular Ordering; a fixed placement correction is rejected because the 32-
+degree probe improved Titanic EN but reduced Lighthouse minimum Node
+separation from 85.5px to 40px.
+
+Parallel presentation and Structural Placement remain adjacent negotiating
+tracks. Self-loop remains independent. Product default/adoption remains
+`HOLD`, production provider remains `NOT ESTABLISHED`, Initial Layout
+re-baseline remains blocked, and the Release blocker remains `OPEN`.

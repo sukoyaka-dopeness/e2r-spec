@@ -8917,3 +8917,29 @@ Product visual evaluation remains `NOT READY`, Human Review remains `NOT
 READY`, and the Initial Layout Release blocker remains `OPEN`. The next bounded
 question is independent gate/target validation; do not advance Adaptive
 Cascade, Product adoption, or Human Review.
+
+### LiaisonScape Independent Risk-Gate / Probe-Target Stability Validation 1 (2026-09-14)
+
+The [Independent Risk-Gate / Probe-Target Stability Validation 1 result](liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
+rechecks the previous bounded multi-stage Product probe under failure
+injection, candidate-generation-order perturbation, and four independent
+graph-derived synthetic controls. The normal diagnostic path now requires
+zero fail-closed operations before it can retain an established classification;
+failure injection correctly produced fail-closed operations, no selected best
+candidate for failed probes, and limited-probing insufficiency.
+
+The previous one-probe `26/26` closure was invariant to list-order reversal
+but not to generation-index perturbation: three targets changed and two
+meaningful dense misses returned (`24/26`). A stable family-plus-fingerprint
+target rule was order-invariant but also reached only `24/26`. Independent
+controls reached `6/8` exact-best and left two near-threshold frontier misses;
+the graph-derived risk gate remains open.
+
+Disposition: `C. ORDER DEPENDENCY CONFIRMED / TARGET RULE NOT ESTABLISHED`.
+Keep the multi-stage selector diagnostic-only, quality solver `HOLD / NOT
+ESTABLISHED`, Product integration/default `HOLD`, production provider `NOT
+ESTABLISHED`, Adaptive Initial Placement Cascade `INACTIVE`, Actual Product
+visual evaluation `NOT READY`, Human Review `NOT READY`, and the Initial
+Layout Release blocker `OPEN`. Do not advance Product adoption or Human
+Review; no visual smoke check was warranted because this checkpoint produced
+no new Product visual candidate. Session log is synchronized in Session 0057.

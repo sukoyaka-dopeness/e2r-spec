@@ -8865,3 +8865,27 @@ plus explicit High-quality Auto Layout `PROVISIONALLY ADOPT`, quality solver
 provider `NOT ESTABLISHED`, Adaptive Initial Placement Cascade `INACTIVE`,
 Human Review `NOT READY`, and the Initial Layout Release blocker `OPEN`.
 Session log remains intentionally unchanged.
+
+### LiaisonScape Bounded Screening Formulation / Finalist Recall 1 (2026-09-14)
+
+The [Bounded Screening Formulation / Finalist Recall 1 result](liaisonscape-bounded-screening-finalist-recall1-result.md)
+reuses the existing candidate families and Product-authoritative oracle to
+compare deterministic finalist screens at K=2/3/4/6. The previous current
+top-4 exact-best recall was reproduced at `20/26`. A lexicographic geometry,
+topology, label/corridor, angular, and extent formulation improved top-4 exact
+recall to `24/26`, retained a Product top-3 candidate in `26/26`, and retained
+all 24 oracle baseline improvements while reducing simulated Product
+evaluations from 311 to 104.
+
+Two meaningful dense misses remain. In `dense-k7-7` and `dense-k5-9`, the
+missed Product-best and retained grid candidates are equivalent under the
+tested cheap summaries while Product routing differs by nine and seven
+crossings. Increasing K to six does not recover them; Pareto and mandatory
+family diversity also performed worse. Disposition: `B. RECALL IMPROVED BUT
+NOT CLOSED`. Cheap-only production screening remains `NOT ESTABLISHED`; the
+next bounded architecture candidate is one/two complete Product-authoritative
+probes gated only for cheap-equivalent/high-risk classes. Quality solver and
+Product integration remain `HOLD / NOT ESTABLISHED` and `HOLD`; production
+provider remains `NOT ESTABLISHED`, Adaptive Cascade remains `INACTIVE`, Human
+Review remains `NOT READY`, and the Initial Layout Release blocker remains
+`OPEN`.

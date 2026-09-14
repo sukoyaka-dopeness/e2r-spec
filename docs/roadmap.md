@@ -8889,3 +8889,31 @@ Product integration remain `HOLD / NOT ESTABLISHED` and `HOLD`; production
 provider remains `NOT ESTABLISHED`, Adaptive Cascade remains `INACTIVE`, Human
 Review remains `NOT READY`, and the Initial Layout Release blocker remains
 `OPEN`.
+
+### LiaisonScape Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1 (2026-09-14)
+
+The [Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1 result](liaisonscape-bounded-multi-stage-product-probe1-result.md)
+evaluates the next bounded architecture candidate after finalist screening:
+existing candidate generation, cheap lexicographic K=4, a graph-derived
+cheap-equivalence/high-risk gate, and zero, one, or two complete
+Product-authoritative ambiguity probes. No new solver family or Product
+authority was introduced.
+
+The zero-probe baseline reproduced `24/26` exact-best with two meaningful
+dense misses. One bounded probe triggered on `3/26` operations, recovered both
+known misses, and reached `26/26` exact-best with zero meaningful false
+negatives, `107` Product evaluations versus `311` oracle evaluations, and
+`100%` baseline-improvement retention. Two probes added cost without improving
+the result. The gate produced one unnecessary trigger on `dense-k6-8`, no
+canonical trigger, and no trigger on `dense-k7-7-minus-one` or `dense-k8-8`.
+
+Disposition: `A. BOUNDED MULTI-STAGE SELECTOR ESTABLISHED` for this diagnostic
+campaign, with multi-stage selector readiness only `DIAGNOSTICALLY PROMISING /
+PRODUCTION INTEGRATION NOT ESTABLISHED`. Cheap-only screening remains
+`HOLD / NOT ESTABLISHED`; quality solver remains `HOLD / NOT ESTABLISHED`,
+Product integration/default remains `HOLD`, production provider remains `NOT
+ESTABLISHED`, Adaptive Initial Placement Cascade remains `INACTIVE`, Actual
+Product visual evaluation remains `NOT READY`, Human Review remains `NOT
+READY`, and the Initial Layout Release blocker remains `OPEN`. The next bounded
+question is independent gate/target validation; do not advance Adaptive
+Cascade, Product adoption, or Human Review.

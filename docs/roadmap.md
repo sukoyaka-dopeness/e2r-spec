@@ -9030,3 +9030,25 @@ ESTABLISHED`, production provider `NOT ESTABLISHED`, Product integration/default
 Layout Release blocker `OPEN`. Actual Product visual evaluation is `READY FOR
 NEXT CHECKPOINT`; it was not performed here. Session log is synchronized in
 Session 0060.
+
+### LiaisonScape Worker Product Metric Parity / Actual Product Visual Candidate Gate 1 (2026-09-15)
+
+The [checkpoint result](liaisonscape-worker-product-metric-parity-actual-product-visual-candidate-gate1-result.md)
+confirms that the prior Worker response used a diagnostic-only score rather
+than the complete HQ research metric. A forward pure metric seam now supplies
+both synchronous and Worker verification without moving Product presentation
+authority or duplicating Worker logic.
+
+Across 28 canonical, dense cheap-equivalent, and label-heavy finalists,
+presentation signatures had zero mismatches; selected complete metrics and
+fingerprints also matched. Worker isolation remained materially better on the
+dense main-thread boundary, while 30.8-second wall time kept latency open.
+
+Disposition: `D. WORKER PRODUCT PARITY ESTABLISHED / VISUAL EVALUATION
+INCONCLUSIVE`. The Actual Product Lighthouse surface was inspected, but the
+verified HQ candidate could not be shown because no non-adopting preview seam
+exists. Keep visual quality and Human Review `NOT READY`, quality solver `HOLD
+/ NOT ESTABLISHED`, production provider `NOT ESTABLISHED`, Product
+integration/default `HOLD`, and the Initial Layout Release blocker `OPEN`.
+The next checkpoint is a bounded, operation-local Actual Product candidate
+preview seam and representative visual smoke inspection.

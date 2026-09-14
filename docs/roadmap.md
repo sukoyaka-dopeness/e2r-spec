@@ -8918,6 +8918,40 @@ READY`, and the Initial Layout Release blocker remains `OPEN`. The next bounded
 question is independent gate/target validation; do not advance Adaptive
 Cascade, Product adoption, or Human Review.
 
+### LiaisonScape Boundary Equivalence-Class Product Completion / Cost Envelope 1 (2026-09-14)
+
+The [Boundary Equivalence-Class Product Completion / Cost Envelope 1 result](liaisonscape-boundary-equivalence-class-product-completion1-result.md)
+follows the order-dependency result by evaluating the entire cheap-equivalence
+class that crosses the normal K=4 boundary. The class is defined only by the
+existing six-decimal quantized cheap feature vector and must contain both K=4
+and outside members. Product metrics, fixture identity, candidate index, and
+known Product-best identity are excluded from membership and triggering.
+
+Across the previous 26 operations plus eight independent controls, cheap K=4
+reached `30/34` exact-best with four meaningful misses. The previous density +
+one index policy reached `32/34` but remained order-dependent. Full boundary
+completion reached `34/34` exact-best and top-3-any, zero meaningful misses,
+zero regret, and `100%` baseline retention. It evaluated 182 of 420 oracle
+candidates, avoided 238 evaluations, and added at most eight evaluations per
+operation. Seven boundary classes showed material Product variance, including
+crossing ranges up to 43.
+
+Stable geometry-ordered caps were order-invariant but remained incomplete:
+`+2` left four misses, `+4` left two, and `+6` left one. Failure injection
+failed closed on all 34 operations and produced no unverified selected result.
+
+Disposition: `A. BOUNDARY CLASS COMPLETION ESTABLISHED WITH ACCEPTABLE COST`
+for this diagnostic completion architecture. Boundary-equivalence trigger is
+`DIAGNOSTICALLY SUPPORTED`, full completion is `QUALITY CLOSED IN TESTED SET`
+within the tested envelope, and capped completion remains `NOT CLOSED`.
+Keep cheap-only selector `HOLD / NOT ESTABLISHED`, risk gate `OPEN`, probe
+target `NOT ESTABLISHED`, quality solver `HOLD / NOT ESTABLISHED`, Product
+integration/default `HOLD`, production provider `NOT ESTABLISHED`, Adaptive
+Initial Placement Cascade `INACTIVE`, Actual Product visual evaluation `NOT
+READY`, Human Review `NOT READY`, and the Initial Layout Release blocker
+`OPEN`. Do not treat this as Product adoption or production provider evidence.
+Session log is synchronized in Session 0058.
+
 ### LiaisonScape Independent Risk-Gate / Probe-Target Stability Validation 1 (2026-09-14)
 
 The [Independent Risk-Gate / Probe-Target Stability Validation 1 result](liaisonscape-independent-risk-gate-probe-target-stability1-result.md)

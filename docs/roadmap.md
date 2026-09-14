@@ -9004,3 +9004,29 @@ ESTABLISHED`, production provider `NOT ESTABLISHED`, Product integration/default
 Adaptive Cascade `INACTIVE`, and the Initial Layout Release blocker `OPEN`.
 No Actual Product visual smoke check or Human Review was warranted. Session log
 is synchronized in Session 0059.
+
+### LiaisonScape Product Verification Execution Architecture Decision 1 (2026-09-14)
+
+The [Product Verification Execution Architecture Decision 1 result](liaisonscape-product-verification-execution-architecture-decision1-result.md)
+traces the provider's dense main-thread blocker to synchronous whole-candidate
+`deriveBoundedAutomaticPresentation` calls. Existing Product-authoritative
+route, Relation-label, and Node-label accumulators materially improved the
+main-thread boundary, but provider-shaped dense geometry retained load-sensitive
+source units.
+
+Worker-isolated current Product verification preserved every verified
+presentation signature, Product metric, and selected fingerprint across
+canonical, dense, and label-heavy controls. In the fixed dense run, maximum
+main-thread slice fell from `1,893.4ms` synchronous to `14.6ms` Worker;
+cancellation terminated without receiving or exposing a result. Total wall
+time remained load-sensitive, and per-candidate Worker startup/transport added
+cost on smaller cases.
+
+Disposition: `B. WORKER PRODUCT VERIFICATION ARCHITECTURE ESTABLISHED IN
+TESTED ENVELOPE`. This establishes an execution responsibility boundary, not a
+production provider or latency SLA. Keep quality solver `HOLD / NOT
+ESTABLISHED`, production provider `NOT ESTABLISHED`, Product integration/default
+`HOLD`, Human Review `NOT READY`, Adaptive Cascade `INACTIVE`, and the Initial
+Layout Release blocker `OPEN`. Actual Product visual evaluation is `READY FOR
+NEXT CHECKPOINT`; it was not performed here. Session log is synchronized in
+Session 0060.

@@ -8977,3 +8977,30 @@ visual evaluation `NOT READY`, Human Review `NOT READY`, and the Initial
 Layout Release blocker `OPEN`. Do not advance Product adoption or Human
 Review; no visual smoke check was warranted because this checkpoint produced
 no new Product visual candidate. Session log is synchronized in Session 0057.
+
+### LiaisonScape Production-shaped Quality Provider Execution / Browser Cost Envelope 1 (2026-09-14)
+
+The [Production-shaped Quality Provider Execution / Browser Cost Envelope 1 result](liaisonscape-production-shaped-quality-provider-execution-browser-cost-envelope1-result.md)
+wraps the established diagnostic candidate generation, cheap K=4 screen, full
+boundary completion, and current Product-authoritative verification in a pure
+provider execution seam. The seam keeps the existing routing, Parallel /
+Incident, endpoint-plan, Relation-label, Node-label, Self-loop, viewport, and
+final Product selection authorities in place; it does not integrate App.tsx,
+change Product defaults, or mutate Dataset/persistence semantics.
+
+The Node campaign completed `34/34` operations and matched the fixed boundary
+artifact's selected fingerprints on `34/34`, with `182` Product evaluations.
+Cancellation, stale input, Product failure, and budget exhaustion failed
+closed without exposing a partial result. Browser controls completed
+deterministically, but the dense quality case took `2,317.7ms` and reached a
+`251.6ms` maximum main-thread slice with a `255.8ms` interval gap; label-heavy
+reached `54.9ms`. Product verification dominated the provider cost.
+
+Disposition: `D. WORKER OR EXECUTION ARCHITECTURE STUDY REQUIRED`. Provider
+execution semantics are diagnostically established, but dense multi-finalist
+quality work is not main-thread-ready. Keep quality solver `HOLD / NOT
+ESTABLISHED`, production provider `NOT ESTABLISHED`, Product integration/default
+`HOLD`, Actual Product visual evaluation `NOT READY`, Human Review `NOT READY`,
+Adaptive Cascade `INACTIVE`, and the Initial Layout Release blocker `OPEN`.
+No Actual Product visual smoke check or Human Review was warranted. Session log
+is synchronized in Session 0059.

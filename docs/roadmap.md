@@ -9567,3 +9567,33 @@ Adaptive Cascade remains inactive, and the Initial Layout Release blocker
 remains `OPEN`. Session 0080 records this new objective. Do not retune a family,
 change routing/label authority, add an Adaptive Cascade, or adopt a Product
 provider/default from this result.
+
+### LiaisonScape Diagnostic Preview Fixture Integrity + Parallel One-Sided Product Quality Audit 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-diagnostic-preview-fixture-integrity-parallel-one-sided-product-quality-audit1-result.md)
+corrects a diagnostic-only Japanese synthetic fixture and audits the reported
+one-sided Parallel presentation on the current Actual Product surface. The
+mojibake was caused by duplicated preview/tool literals, not by the Product
+renderer. A shared diagnostic fixture generator now preserves the same
+topology, IDs, labels, locale, and candidate geometry across the portfolio
+tool and preview seam.
+
+The corrected Parallel control contains two forward and two reverse Relations
+for `alpha`/`beta`. Current Product output has physical-side counts `1` and
+`3`; the `gamma`/`delta` pair remains balanced. The reverse routes' opposite
+base-side candidates are rejected by occupied-path conflict or Relation-label
+pressure, so the side imbalance is downstream routing/presentation behavior
+under hard feasibility pressure. The current Product path does not call the
+experimental incident allocator or expose endpoint-plan output. No safe fix
+was adopted because forcibly selecting the rejected side would introduce the
+known clearance conflicts.
+
+The checkpoint is classified `C. PREVIEW FIXTURE INTEGRITY RESTORED /
+ONE-SIDED RESULT IS HARD-FEASIBILITY-DRIVEN`, with `D. APPARENT ONE-SIDED
+ISSUE IS DOWNSTREAM ROUTING OR LABEL PRESENTATION` attribution. It is not
+formal acceptance and opens no Human Review candidate. Parallel/Incident
+architecture remains closed, quality solver remains `HOLD / NOT ESTABLISHED`,
+production provider remains `NOT ESTABLISHED`, Product integration/default
+remains `HOLD`, Human Review remains `NOT READY`, Adaptive Cascade remains
+inactive, and the Initial Layout Release blocker remains `OPEN`. Session 0081
+records this new objective.

@@ -9714,3 +9714,29 @@ provider, or Human Review adoption follows. Product default/adoption remains
 `HOLD`, production provider remains `NOT ESTABLISHED`, Human Review remains
 `NOT READY`, Adaptive Cascade remains inactive, and the Initial Layout Release
 blocker remains `OPEN`. Session 0085 records this new objective.
+
+### LiaisonScape Product Relation-label Normal-offset Granularity + Parallel Bundle Capacity Attribution Experiment 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-product-relation-label-normal-offset-granularity1-result.md)
+reproduces the current `placeEdgeLabel` normal candidates and scoring from
+source, then compares current/coarse, widened/coarse, current/fine, and
+widened/fine arms on fixed Node geometry. The expanded diagnostic trace names
+the foreign sibling route that enters a rejected zero-offset label rectangle:
+for example, primary `r-ab-2` is blocked by `r-ba-1`. This confirms foreign
+sibling pressure as the immediate cause of the observed zero-offset rejection.
+
+The primary control retains ambiguity `1` under finer candidates alone, while
+the prior Product-owned bundle-local widening closes it to `0` and restores
+Alpha/Beta side balance `2:2`. Finer candidates become useful after widening,
+selecting smaller offsets and improving owner-route margin; mixed and shared
+controls show secondary gains. Higher multiplicity retains one ordinary-route
+churn and Lighthouse has no gross regression.
+
+The outcome is `B PRIMARY / C QUALIFIED SECONDARY`: bundle widening is the
+primary owner-label capacity mechanism, with finer normal candidates a bounded
+secondary refinement. Collision-envelope retuning is not established. No wrap,
+routing, endpoint-plan, Structural Placement, Parallel/Incident, Self-loop,
+default, provider, or Human Review adoption follows. Product default/adoption
+remains `HOLD`, production provider remains `NOT ESTABLISHED`, Human Review
+remains `NOT READY`, Adaptive Cascade remains inactive, and the Initial Layout
+Release blocker remains `OPEN`. Session 0086 records this new objective.

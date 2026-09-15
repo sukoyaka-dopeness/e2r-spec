@@ -9210,3 +9210,28 @@ ordinary representative evidence shows a release failure. Quality solver
 remains `HOLD / NOT ESTABLISHED`, production provider `NOT ESTABLISHED`,
 Product integration/default `HOLD`, Human Review `NOT READY`, and the Initial
 Layout Release blocker remains `OPEN`. Session 0068 records this clarification.
+
+### LiaisonScape Representative Sample Release-Quality Acceptance 1 (2026-09-15)
+
+The [checkpoint result](liaisonscape-representative-sample-release-quality-acceptance1-result.md)
+inspected the Actual Product surface rather than a diagnostic renderer.
+Lighthouse EN/JA were opened through the normal Product sample path; Titanic
+EN/JA and Apollo EN/JA were opened through the existing development-only
+acceptance-fixture seam. All observed cases rendered usable graphs without
+blank/crash/navigation failure, obvious Node-body overlap, or mojibake.
+
+Titanic and Apollo retain bounded central route/Relation-label crowding, so
+their classification is `PASS WITH BOUNDED SAMPLE FOLLOW-UP`. Lighthouse is
+`PASS WITH NON-BLOCKING OBSERVATION`. Apollo JA reload was confirmed, but
+same-payload Save/reopen remains unconfirmed. Ashen Crown is canonical in
+e2r-spec but has no current normal Product or acceptance-fixture acquisition
+path, therefore it is `NOT EVALUATED`.
+
+Gate 1 overall is `C. PARTIAL / ACQUISITION-EVIDENCE GAP`; it is not closed and
+does not advance Gate 2. The next bounded question is whether an
+acceptance-only Ashen Crown seam is warranted. Do not add Ashen Crown to the
+normal Product sample loader solely for this acceptance. Quality solver,
+production provider, Product integration/default, Human Review, and the
+Initial Layout Release blocker remain unchanged. Session 0069 records the
+matrix; deep layout research and General / Complex Dataset Practicality remain
+deferred.

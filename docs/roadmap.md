@@ -9313,3 +9313,30 @@ the Initial Layout Release blocker `OPEN`. Do not reinterpret the old Product
 button's failure as a failure of the entire research lineage, and do not
 replace or adopt the button in this checkpoint. Session 0071 records the
 reconnection.
+
+### LiaisonScape General / Complex Dataset Practicality Gate 3 - Bounded HQ Readability / Execution Budget (2026-09-15)
+
+The [checkpoint result](liaisonscape-general-complex-dataset-practicality-gate3-bounded-hq-readability-execution-result.md)
+selects one existing HQ research family: Infinite-Canvas Local-Density /
+Extent-Growth followed by Occupied-Geometry Feasibility-First feedback. No
+new solver family, provider, Product default, or Adaptive Cascade was added.
+
+The family improves occupied geometry and preserves bounded canonical,
+Parallel, and Self-loop controls. Product timing for replayed candidates was
+also measured through the existing authority: presentation-derived time was
+`79.4ms` canonical, `495.1ms` dense, and `207.8ms` long-label; dense graph
+stable was `986.5ms`. These are verification/replay measurements only. The
+candidate-generation and complete user-visible operation budget remain
+unmeasured, and dense Actual Product readability remains below the
+release-facing bar.
+
+Gate 2 remains open with prior classification D. Gate 3 is classified `C.
+BOUNDED HQ DIRECTION PROMISING / RELEASE READABILITY AND EXECUTION BUDGET NOT
+CLOSED`. The minimal blocker is now one complete bounded HQ operation that
+has both credible candidate-generation/verification/total timing and readable
+Actual Product route/Relation-label association for ordinary or moderate
+complex coordinate-less data. Keep quality solver `HOLD / NOT ESTABLISHED`,
+production provider `NOT ESTABLISHED`, Product integration/default `HOLD`,
+Human Review `NOT READY`, Adaptive Initial Placement Cascade inactive, and
+the Initial Layout Release blocker `OPEN`. Session 0072 records this
+checkpoint.

@@ -29,4 +29,3 @@ states and the Initial Layout Release blocker are unchanged.
 
 No LiaisonScape or e2r-spec source/runtime/sample content was modified by this
 acceptance checkpoint. No push, tag, release, deploy, or publish was performed.
-

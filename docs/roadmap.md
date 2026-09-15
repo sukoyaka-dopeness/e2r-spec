@@ -9597,3 +9597,42 @@ production provider remains `NOT ESTABLISHED`, Product integration/default
 remains `HOLD`, Human Review remains `NOT READY`, Adaptive Cascade remains
 inactive, and the Initial Layout Release blocker remains `OPEN`. Session 0081
 records this new objective.
+
+### LiaisonScape Product Presentation Local Spacing + Parallel/Label/Self-loop Refinement 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-product-presentation-local-spacing-parallel-label-self-loop-refinement1-result.md)
+keeps the current Frontier-12 `parallel-self-loop-control` Node geometry and
+tests bounded Product presentation changes. Alpha/beta local spacing at 1.15x
+and 1.30x was compared with the current Product route policy and with the
+existing development-only `bundle-16`, `pair-16`, and `corridor-aware-16`
+inputs. Twelve Self-loop angle/radius probes and a Node-only versus occupied
+presentation viewport diagnostic were also recorded.
+
+Local spacing can create capacity but is not a standalone winner: the 1.15x
+probe reaches 2:2 in the normal policy while losing endpoint angular
+separation and retaining an ownership ambiguity; 1.30x increases extent and
+ambiguity. The strongest signal is the same current geometry with the widened
+Product bundle policy: alpha/beta becomes 2:2, endpoint separation improves,
+and the Actual Product smoke shows clearer lane/label/reverse-direction
+association, with a route-length and ownership-margin trade-off. This is a
+Product presentation direction, not a forced side-balancing rule or a reopened
+Incident allocator.
+
+The automatic Self-loop remains upper-biased because its source selector seeds
+the upper orientation and applies only a weak preferred-angle penalty; manual
+right/down/left probes do not establish automatic adoption. The real Product
+Reset view centered both control and widened-bundle surfaces at 100%; the
+initial preview's smaller/left-biased frame is retained as a framing diagnosis,
+with no viewport fix adopted. The smoke found no gross widened-bundle or
+ordinary-route break, but no Human Review candidate was opened.
+
+The checkpoint is classified `A/B/C COMBINED: LOCAL PRODUCT ROUTE-PRESENTATION
+DIRECTION PROMISING / SPACING CAPACITY HELPS BUT ROUTING-LABEL TRADE-OFF
+REMAINS / SELF-LOOP REFINEMENT NOT ESTABLISHED`. Parallel/Incident architecture
+remains closed, quality solver remains `HOLD / NOT ESTABLISHED`, production
+provider remains `NOT ESTABLISHED`, Product integration/default remains `HOLD`,
+Human Review remains `NOT READY`, Adaptive Cascade remains inactive, and the
+Initial Layout Release blocker remains `OPEN`. Session 0082 records this new
+objective. Do not adopt the development route variant, modify Product defaults,
+open Human Review, or merge Self-loop/viewport authority into Structural
+Placement from this checkpoint.

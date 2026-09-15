@@ -9426,3 +9426,34 @@ remains `HOLD / NOT ESTABLISHED`, production provider `NOT ESTABLISHED`,
 Product integration/default `HOLD`, Human Review `NOT READY`, Adaptive
 Cascade inactive, and the Initial Layout Release blocker `OPEN`. Session 0075
 records this new objective.
+
+### LiaisonScape Frontier Actual-Product Visual Sweep 1 - Public Samples and Research Stress Fixtures (2026-09-15)
+
+The [checkpoint result](liaisonscape-frontier-actual-product-visual-sweep1-result.md)
+reconstructs the current Frontier-12 candidate once per row and inspects it
+through the real Product `App` surface using a disposable, non-adopting
+operation-local preview seam. Ten repository-verified public EN/JA samples
+(Lighthouse, Apollo 11, Berlin Wall, Ashen Crown, and Titanic) plus dense
+`k7-7`, `k6-8`, `k8-8`, a Japanese long-label control, and a
+Parallel/Self-loop control were materialized. Each row retained 12 bounded
+candidates and 13 Product presentation evaluations; the exact selected
+geometry and fingerprints are persisted in the companion LiaisonScape
+artifact.
+
+Actual Product smoke found public samples generally usable for a bounded user
+visual comparison. Berlin and Lighthouse were clear at local inspection
+scale; Apollo and Ashen retain local Relation-label/route crowding, and
+Titanic needs local zoom because fit overview scale becomes small. The
+Parallel/Self-loop control showed separated lanes, reverse-side distinction,
+and a visible self-loop. Dense and long-label controls remain visibly coupled
+and non-release-readable, so Frontier alone does not close Product
+presentation capacity.
+
+The checkpoint is classified `FRONTIER PUBLIC-SAMPLE VISUAL COMPARISON READY /
+COMPLEX PRODUCT READABILITY OPEN`. It is not formal acceptance and creates no
+Human Review candidate. Keep quality solver `HOLD / NOT ESTABLISHED`,
+production provider `NOT ESTABLISHED`, Product integration/default `HOLD`,
+Human Review `NOT READY`, Adaptive Cascade inactive, and the Initial Layout
+Release blocker `OPEN`. Do not start another broad Structural Placement search
+or geometry-only retune from this smoke result. Session 0076 records this new
+objective.

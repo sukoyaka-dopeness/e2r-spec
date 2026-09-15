@@ -9105,3 +9105,23 @@ integration/default `HOLD`, Human Review `NOT READY`, and the release blocker
 `OPEN`. Refine a bounded extent/aspect, post-fit scale, and ownership-capacity
 contract before any wider solver or adoption work. Session 0064 records this
 checkpoint.
+
+### LiaisonScape Bounded Label-Capacity / Screen-Scale / Ownership Formulation Refinement 1 (2026-09-15)
+
+The [checkpoint result](liaisonscape-bounded-label-capacity-screen-ownership-refinement1-result.md)
+adds a three-variant, diagnostic-only local-grouping/2D-packing formulation
+with a baseline-relative fit budget and continuous ownership margin. Japanese
+multi-component output improves from fit `0.537` to `0.601` with foreign-route
+hits `44` to `31`; dense output improves fit `0.481` to `0.635` and overlap
+`13` to `6`, but foreign-route hits worsen `46` to `74`.
+
+The single-connected 14/49 control is decisive: overlap improves `69` to `56`,
+but fit falls below budget and foreign-route hits worsen `186` to `285`.
+Actual Product smoke confirms the connected core remains unreadable. The
+checkpoint is classified `D. MULTI-COMPONENT BENEFIT CONFIRMED /
+SINGLE-COMPONENT FORMULATION OPEN`. Keep quality solver `HOLD / NOT
+ESTABLISHED`, production provider `NOT ESTABLISHED`, Product integration
+`HOLD`, Human Review `NOT READY`, and the release blocker `OPEN`. Session 0065
+records the checkpoint; the next bounded question is Product-authoritative
+Relation-label ownership/corridor feedback, not stronger expansion or
+Adaptive Cascade.

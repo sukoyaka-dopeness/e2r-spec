@@ -7,7 +7,7 @@ Checkpoint: provide the current-source Frontier candidate through the existing
 Actual Product preview seam so the user can directly judge public and stress
 fixtures. Stop technical research until that judgment is recorded.
 
-Started: 2026-09-15.  
+Started: 2026-09-15.
 Status: `READY FOR USER VISUAL COMPARISON / WAITING FOR USER JUDGMENT`.
 
 This is a new objective, so it has a new Session file. Any continuation after

@@ -1,8 +1,8 @@
 # LiaisonScape Frontier User Visual Comparison Handoff 1
 
-Date: 2026-09-15  
+Date: 2026-09-15
 Purpose: hand the current-source Frontier candidate to direct user judgment on
-the Actual Product surface.  
+the Actual Product surface.
 Status: `READY FOR USER VISUAL COMPARISON`.
 
 This handoff follows

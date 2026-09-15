@@ -9457,3 +9457,22 @@ Human Review `NOT READY`, Adaptive Cascade inactive, and the Initial Layout
 Release blocker `OPEN`. Do not start another broad Structural Placement search
 or geometry-only retune from this smoke result. Session 0076 records this new
 objective.
+
+### LiaisonScape Frontier User Visual Comparison Handoff 1 - Public Samples and Complex Research Fixtures (2026-09-15)
+
+The [user visual comparison handoff](liaisonscape-frontier-user-visual-comparison-handoff1.md)
+opens the already materialized current-source Frontier candidate through the
+development-only Actual Product preview seam. It supplies exact URLs for the
+ten public EN/JA samples and five research/stress controls, preserves the
+selected Frontier family and diagnostic elapsed time per fixture, and leaves a
+small user judgment vocabulary: `GOOD`, `ACCEPTABLE WITH ISSUE`, `NOT GOOD`,
+or `NOT REVIEWED`.
+
+This is a stop point, not a solver checkpoint. No Frontier refinement,
+Label-Capacity or Occupied-Geometry change, new solver, scoring retune,
+routing/label fix, viewport policy, provider, default, or acceptance result
+should be added before the user judgment is recorded. Gate 2 remains `OPEN`,
+quality solver remains `HOLD / NOT ESTABLISHED`, production provider remains
+`NOT ESTABLISHED`, Product integration/default remains `HOLD`, Human Review
+remains `NOT READY`, Adaptive Cascade remains inactive, and the Initial Layout
+Release blocker remains `OPEN`. Session 0077 records this new objective.

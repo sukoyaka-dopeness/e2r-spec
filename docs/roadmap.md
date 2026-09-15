@@ -9052,3 +9052,22 @@ exists. Keep visual quality and Human Review `NOT READY`, quality solver `HOLD
 integration/default `HOLD`, and the Initial Layout Release blocker `OPEN`.
 The next checkpoint is a bounded, operation-local Actual Product candidate
 preview seam and representative visual smoke inspection.
+
+### LiaisonScape Operation-local Actual Product HQ Candidate Preview / Visual Smoke 1 (2026-09-15)
+
+The [checkpoint result](liaisonscape-operation-local-actual-product-hq-candidate-preview-visual-smoke1-result.md)
+establishes a development-only, non-adopting preview at the App's Node-geometry
+input. It leaves session positions, Dataset/persistence, dirty state, coordinate
+ownership, Save Coordinates, and manual authorities unchanged while reusing the
+entire current Product presentation pipeline.
+
+Actual Product smoke covered three exact prior Worker-selected fingerprints.
+Canonical was stable but showed no material improvement. Dense and Japanese
+label-heavy candidates failed because label crowding and route/label association
+remained visually unacceptable at fitted scale.
+
+Disposition: `B. PREVIEW ESTABLISHED / METRIC-VISUAL QUALITY GAP FOUND`.
+Keep visual quality and Human Review `NOT READY`, quality solver `HOLD / NOT
+ESTABLISHED`, production provider `NOT ESTABLISHED`, Product integration/default
+`HOLD`, and the release blocker `OPEN`. Next investigate metric/candidate
+formulation against the visual failures; retain Self-loop as a missing control.

@@ -9504,3 +9504,29 @@ remains `HOLD / NOT ESTABLISHED`, production provider remains `NOT
 ESTABLISHED`, Product integration/default remains `HOLD`, Human Review
 remains `NOT READY`, Adaptive Cascade remains inactive, and the Initial Layout
 Release blocker remains `OPEN`. Session 0078 records this new objective.
+
+### LiaisonScape Topology-Aware Free-Form Crossing-Minimizing Auto Layout Experiment 1 (2026-09-15)
+
+The [experiment result](liaisonscape-topology-aware-free-form-crossing-minimizing-auto-layout-experiment1-result.md)
+tests a diagnostic-only continuous placement line that derives topology-aware
+components, degree/hub roots, BFS layers, bridge signals, and bounded local
+relaxation without final grid or circle projection. Six candidates per row
+were evaluated through the existing Product presentation authority on
+Lighthouse EN/JA, Apollo 11 EN/JA, Titanic, the Japanese long-label control,
+and dense `k7-7`.
+
+Dense `k7-7` routed crossings fell from Frontier `143` and Post `129` to
+`100`, demonstrating a real free-form topology signal. The same candidate
+retained label-route/near pressure and materially larger extent. Public rows
+regressed to 3–6 crossings, Titanic became an extremely wide tiny Reset
+overview, and long Japanese labels remained capacity-bound. Actual Product
+smoke confirmed the trade-off; no user comparison or Human Review candidate
+was opened.
+
+The checkpoint is classified `C. STRUCTURAL IMPROVEMENT BUT PRESENTATION
+TRADE-OFF / D. NO MEANINGFUL GENERAL IMPROVEMENT OVER FRONTIER / POST`. Gate 2
+remains `OPEN`, quality solver remains `HOLD / NOT ESTABLISHED`, production
+provider remains `NOT ESTABLISHED`, Product integration/default remains
+`HOLD`, Human Review remains `NOT READY`, Adaptive Cascade remains inactive,
+and the Initial Layout Release blocker remains `OPEN`. Session 0079 records
+this new objective.

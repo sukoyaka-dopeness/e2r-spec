@@ -9087,3 +9087,21 @@ integration/default `HOLD`, Human Review `NOT READY`, and the Initial Layout
 Release blocker `OPEN`. Next test one explicit label-capacity candidate
 formulation against the fixed diagnostic vectors; do not start another broad
 solver search or retune a production scalar from these observations alone.
+
+### LiaisonScape Explicit Label-Capacity Candidate Formulation Probe 1 (2026-09-15)
+
+The [checkpoint result](liaisonscape-explicit-label-capacity-candidate-formulation-probe1-result.md)
+tests one bounded component-local expansion and repacking formulation derived
+from actual Product label bounds and Relation demand. It reduces dense label
+overlap from `13` to `1` and Japanese label-heavy overlap from `4` to `0`, with
+lower foreign-route pressure and no obvious control regression.
+
+Actual Product smoke confirms visible improvement but not acceptance quality.
+Dense output falls to `0.375` fit and remains difficult to read; long Japanese
+Relation-label ownership also remains unresolved. Disposition:
+`B. LABEL-CAPACITY SIGNAL VALID / FORMULATION NEEDS REFINEMENT`. Keep quality
+solver `HOLD / NOT ESTABLISHED`, production provider `NOT ESTABLISHED`, Product
+integration/default `HOLD`, Human Review `NOT READY`, and the release blocker
+`OPEN`. Refine a bounded extent/aspect, post-fit scale, and ownership-capacity
+contract before any wider solver or adoption work. Session 0064 records this
+checkpoint.

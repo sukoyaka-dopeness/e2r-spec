@@ -9340,3 +9340,34 @@ production provider `NOT ESTABLISHED`, Product integration/default `HOLD`,
 Human Review `NOT READY`, Adaptive Initial Placement Cascade inactive, and
 the Initial Layout Release blocker `OPEN`. Session 0072 records this
 checkpoint.
+
+### LiaisonScape Historical Best Candidate Re-comparison 1 - Past Visual Winners vs Current HQ Lineage (2026-09-15)
+
+The [checkpoint result](liaisonscape-historical-best-candidate-recomparison1-result.md)
+recompares the historical `post-structural-relaxation-v1`, Global Placement 3,
+Frontier-12, joint-constrained, and discrete structural lineages with the
+current Explicit Label-Capacity and Infinite-Canvas -> Occupied-Geometry
+lineage. The audit distinguishes historical artifact replay from
+current-source reconstruction and does not inherit historical Human Review
+evidence.
+
+Current source reconstructs the Post lineage on Lighthouse with zero routed
+crossings, zero label hits, zero label-near count, zero Node overlap, and an
+extent of `633 x 401`. The historical Actual Product comparison had previously
+preferred Post over the old current baseline and generic predecessor on that
+same scoped surface. Current structural arms retain strong canonical topology
+signals, while current Occupied-Geometry improves occupied label/body
+collisions on its own difficult synthetic controls. Dense current HQ Actual
+Product smoke still shows crowded Relation-label ownership.
+
+The comparison is formally `D. COMPARISON INCONCLUSIVE / TRADE-OFF SIGNAL
+RECORDED`: historical canonical fixtures and current capacity fixtures do not
+share exact topology/materialization, so equal node/edge counts are not treated
+as equivalence and no fair cross-lineage winner is claimed. This records a
+research trade-off between structural ordering/crossing quality and local
+spacing/label capacity, not a portfolio or selector decision. No new solver,
+provider, Product default, Adaptive Cascade, or Human Review candidate is
+created. Gate 2 remains `OPEN`, quality solver remains `HOLD / NOT ESTABLISHED`,
+production provider `NOT ESTABLISHED`, Product integration/default `HOLD`,
+Human Review `NOT READY`, and the Initial Layout Release blocker `OPEN`.
+Session 0073 records this new objective.

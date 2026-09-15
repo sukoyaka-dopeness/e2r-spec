@@ -9770,3 +9770,30 @@ Review candidate follows. Product default/adoption remains `HOLD`, production
 provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive
 Cascade remains inactive, and the Initial Layout Release blocker remains
 `OPEN`. Session 0087 records this new objective.
+
+### LiaisonScape Product Node-label Relation-presentation-first Angular Escape Experiment 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-product-node-label-relation-presentation-first-angular-escape1-result.md)
+holds the current Product routes and Relation-label rectangles fixed and adds
+only an opt-in diagnostic angular occupancy signal to the existing 32-angle
+automatic Node-label scorer. Horizontal, vertical, diagonal, high-degree,
+dense, Self-loop, and Lighthouse EN/JA controls compare current-fresh,
+current-previous, angular-fresh, and angular-previous arms.
+
+Fresh angular escape selected the same Node-label directions as the current arm
+on every fixture and introduced no measured overlap or foreign-route benefit.
+Previous-placement inputs changed directions across every fixture family and
+incurred the larger movement cost; angular pressure did not overcome that
+continuity term. The Actual Product smoke showed no angular-specific rendering
+or interaction regression, while the larger Lighthouse framing risk remained
+present in the control as well.
+
+The outcome is `E PRIMARY / C QUALIFIED`: current route-distance/collision
+scoring is sufficient in the tested envelope, previous-placement hysteresis is
+the stronger residual signal, and Relation-presentation-first angular escape is
+not established. No Structural Placement, routing, Relation-label,
+endpoint-plan, Self-loop, Adaptive Cascade, Product default/provider, or Human
+Review decision follows. Product default/adoption remains `HOLD`, production
+provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive
+Cascade remains inactive, and the Initial Layout Release blocker remains
+`OPEN`. Session 0088 records this new objective.

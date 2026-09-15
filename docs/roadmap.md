@@ -9235,3 +9235,22 @@ production provider, Product integration/default, Human Review, and the
 Initial Layout Release blocker remain unchanged. Session 0069 records the
 matrix; deep layout research and General / Complex Dataset Practicality remain
 deferred.
+
+### LiaisonScape Representative Sample Release-Quality Acceptance 2 - Ashen Crown Acquisition Evidence (2026-09-15)
+
+The [checkpoint result](liaisonscape-representative-sample-release-quality-acceptance2-ashen-crown-result.md)
+extends only the development-only canonical acceptance seam with Ashen Crown
+EN/JA. Both coordinate-less canonical files were validated and inspected on
+the Actual Product surface. English and Japanese opened and reloaded as stable
+10-Entity / 17-visible-Relation graphs, with no blank/crash/navigation failure,
+obvious Node-body overlap, or mojibake. Native Product zoom supported local
+inspection. Central route/Relation-label density remains a bounded
+non-blocking observation.
+
+Gate 1 is now `B. ACCEPTED WITH BOUNDED NON-BLOCKING SAMPLE FOLLOW-UPS`.
+Same-payload Save/reopen remains a separate unclaimed persistence check and was
+not required for this acquisition/rendering gate. Gate 2, `General / Complex
+Dataset Practicality`, remains not started and was not begun in this
+checkpoint. The normal sample loader, Product authority, production provider,
+quality solver, Human Review state, and Initial Layout Release blocker remain
+unchanged. Session 0069 records this continuation.

@@ -9530,3 +9530,40 @@ provider remains `NOT ESTABLISHED`, Product integration/default remains
 `HOLD`, Human Review remains `NOT READY`, Adaptive Cascade remains inactive,
 and the Initial Layout Release blocker remains `OPEN`. Session 0079 records
 this new objective.
+
+### LiaisonScape Cross-Family Product-Authoritative Auto Layout Portfolio Selector Experiment 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-cross-family-product-authoritative-auto-layout-portfolio-selector1-result.md)
+tests whether existing Frontier, Post, and topology-aware free-form candidate
+families can be selected as a bounded portfolio under the current Product
+authority. On the same seven fixtures, a full oracle and a top-two cheap-screen
+selector were compared after explicit hard gates and exact geometry
+fingerprint handling.
+
+The selector matched the fresh Product oracle on 6/7 rows. It selected
+Frontier on Lighthouse EN/JA, Apollo EN, and Titanic, Post on Apollo JA, and
+free-form on the Japanese long-label control. On dense `k7-7`, the oracle
+selected free-form (`102` current Product crossings) while the bounded selector
+selected Post (`129`), because cheap features ranked Post and Frontier ahead of
+free-form. The selector used 14 Product evaluations versus 16 for the oracle
+and reused no duplicate geometry. This establishes a real portfolio signal but
+not an established selector: the dense recall miss and the small evaluation
+saving remain open.
+
+A small Actual Product smoke found the selected dense Post view compact but
+still crowded, the dense free-form oracle mechanically improved but visually
+remained crowded/clipped, and the long-label free-form selection remained hard
+to read at overview scale. Persisted prior-family fields differed from fresh
+current-source Product recomputation in 21 fields; the checkpoint records that
+parity gap and uses fresh current-source evaluation without rewriting history.
+
+The checkpoint is classified `B. PORTFOLIO PROMISING / SELECTOR INCOMPLETE`
+with a `C. PORTFOLIO QUALITY BENEFIT EXISTS BUT METRIC GAP REMAINS`
+qualification. It is not formal acceptance and opens no Human Review
+candidate. Gate 2 remains `OPEN`, quality solver remains `HOLD / NOT
+ESTABLISHED`, production provider remains `NOT ESTABLISHED`, Product
+integration/default remains `HOLD`, Human Review remains `NOT READY`,
+Adaptive Cascade remains inactive, and the Initial Layout Release blocker
+remains `OPEN`. Session 0080 records this new objective. Do not retune a family,
+change routing/label authority, add an Adaptive Cascade, or adopt a Product
+provider/default from this result.

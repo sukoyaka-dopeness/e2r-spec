@@ -9254,3 +9254,31 @@ Dataset Practicality`, remains not started and was not begun in this
 checkpoint. The normal sample loader, Product authority, production provider,
 quality solver, Human Review state, and Initial Layout Release blocker remain
 unchanged. Session 0069 records this continuation.
+
+### LiaisonScape General / Complex Dataset Practicality Gate 1 (2026-09-15)
+
+The [checkpoint result](liaisonscape-general-complex-dataset-practicality-gate1-result.md)
+tests five deterministic coordinate-less controls through the current Fast
+`settleInitialPlacement` path and the existing explicit 12-iteration
+`solveAutoLayout` path. Fast placement is finite and deterministic in the
+tested envelope, and the Actual Product Ashen Crown smoke opened a usable
+10-Entity / 17-visible-Relation graph without blank/crash/navigation failure,
+mojibake, or obvious Node-body overlap.
+
+The diagnostic matrix shows that placement itself remains sub-millisecond;
+presentation, route, and label work dominate dense and connected cases. Dense
+and connected controls retain substantial crossing and route/label pressure,
+and the HQ rows can introduce body overlap. More importantly, the Actual
+Product More -> Auto Layout smoke completed but produced obvious central
+Node-body overlap, so the existing HQ action cannot be treated as a
+release-quality several-second fallback. Visual evidence stopped at that
+gross defect; no Human Review candidate was created.
+
+Gate 2 is therefore `C. FAST INITIAL PLACEMENT PRACTICALITY ESTABLISHED / HQ
+PRACTICALITY AND QUALITY NOT ESTABLISHED`. Keep quality solver `HOLD / NOT
+ESTABLISHED`, production provider `NOT ESTABLISHED`, Product
+integration/default `HOLD`, Human Review `NOT READY`, Adaptive Initial
+Placement Cascade inactive, and the Initial Layout Release blocker `OPEN`.
+Do not begin another broad solver search or adopt a provider from this gate.
+Session 0070 records the new objective; the next bounded question is an
+explicit HQ execution/quality contract, only if continued.

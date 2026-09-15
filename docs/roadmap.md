@@ -9740,3 +9740,33 @@ default, provider, or Human Review adoption follows. Product default/adoption
 remains `HOLD`, production provider remains `NOT ESTABLISHED`, Human Review
 remains `NOT READY`, Adaptive Cascade remains inactive, and the Initial Layout
 Release blocker remains `OPEN`. Session 0086 records this new objective.
+
+### LiaisonScape Product Relation-label Display-only Automatic Wrap Capacity Experiment 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-product-relation-label-display-only-wrap1-result.md)
+tests a bounded, display-only two-line Relation-label presentation after the
+previously established Product-owned bundle widening and fine normal-offset
+reference. English uses whitespace-first breaking with bounded character
+fallback; Japanese uses character fallback. Dataset Relation names and all
+stored/authored state remain unchanged, and the same derived geometry is shared
+by SVG text, hit testing, and the label collision envelope.
+
+On horizontal English controls, two long labels reduce one-line span deficits
+from `103/116` to `0/5.5` and remove the reference ownership ambiguity. On the
+Japanese horizontal control, two-line character breaking is better balanced and
+removes the foreign-closer signal, but one ownership ambiguity remains. Token
+and punctuation controls expose an explicit readability trade-off. Vertical and
+diagonal controls do not wrap and retain their existing route/association
+residuals; higher multiplicity retains ordinary-route churn. The Actual Product
+smoke found no gross rendering or interaction regression, but the result is not
+formal visual acceptance.
+
+The outcome is `B/C PRIMARY / D QUALIFIED / F RESIDUAL CAPACITY OPEN`: display-
+only wrapping is useful for long horizontal labels after bundle capacity and
+fine placement, but it is not a general Product-quality solution. No local
+offset retune, Structural Placement change, routing authority change,
+endpoint-plan change, Self-loop adoption, Product default/provider, or Human
+Review candidate follows. Product default/adoption remains `HOLD`, production
+provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive
+Cascade remains inactive, and the Initial Layout Release blocker remains
+`OPEN`. Session 0087 records this new objective.

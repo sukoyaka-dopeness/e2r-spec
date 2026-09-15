@@ -9180,3 +9180,33 @@ inactive, and the Initial Layout Release blocker `OPEN`. Session 0066 records
 the checkpoint. Continue with bounded Product-authoritative route/label
 ownership work; do not treat the smoke check as formal acceptance or begin
 Adaptive Cascade.
+
+### LiaisonScape Initial Layout Release-Bar / Hub Publication Re-prioritization 1 (2026-09-15)
+
+The [checkpoint result](liaisonscape-initial-layout-release-bar-hub-publication-reprioritization1-result.md)
+redefines the Hub/publication bar without claiming that Initial Layout research
+is complete. The release-critical sequence is now:
+
+1. `Representative Sample Release-Quality Acceptance`;
+2. `General / Complex Dataset Practicality Gate`.
+
+The first gate is the next checkpoint. The second gate measures unknown or
+user-provided Dataset practicality with Fast Initial Placement and, where
+needed, an explicit High-quality Auto Layout operation. A target described as
+`roughly / on the order of 10 seconds` remains a practical target, not a hard
+browser-independent SLA.
+
+Repository evidence distinguishes the eight canonical e2r-spec sample variants,
+the two Lighthouse LiaisonScape compatibility mirrors, and the development-only
+Titanic/Apollo/Lighthouse acceptance-fixture seam. Ashen Crown is not exposed by
+the normal LiaisonScape sample loader and must not be silently marked accepted.
+Representative Sample acceptance is `OPEN / NOT CLOSED`; the General / Complex
+Dataset gate is `NOT STARTED AS A RELEASE GATE`.
+
+Unresolved single-connected stress quality, Relation-label ownership,
+occupied-geometry convergence, HQ metric refinement, solver portfolios, and
+Adaptive Initial Placement remain post-release or later-quality research unless
+ordinary representative evidence shows a release failure. Quality solver
+remains `HOLD / NOT ESTABLISHED`, production provider `NOT ESTABLISHED`,
+Product integration/default `HOLD`, Human Review `NOT READY`, and the Initial
+Layout Release blocker remains `OPEN`. Session 0068 records this clarification.

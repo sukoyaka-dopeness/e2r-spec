@@ -9282,3 +9282,34 @@ Placement Cascade inactive, and the Initial Layout Release blocker `OPEN`.
 Do not begin another broad solver search or adopt a provider from this gate.
 Session 0070 records the new objective; the next bounded question is an
 explicit HQ execution/quality contract, only if continued.
+
+### LiaisonScape General / Complex Dataset Practicality Gate 2 - HQ Candidate Reconnection (2026-09-15)
+
+The [checkpoint result](liaisonscape-general-complex-dataset-practicality-gate2-hq-candidate-reconnection-result.md)
+separates three previously conflated roles. Fast Initial Placement is the
+coordinate-less startup path. The current Product More -> Auto Layout action
+is the old `solveAutoLayout(input)` control, with source default
+`DEFAULT_ITERATIONS = 12`; it is not the recent HQ research candidate. The
+recent candidate reconnected here is the bounded
+Infinite-Canvas Local-Density / Extent-Growth -> Occupied-Geometry
+Feasibility-First lineage.
+
+The recent candidate improves occupied geometry without changing Product
+authority: dense occupied overlap `5 -> 2`, Japanese `1 -> 0`, and
+single-connected `28 -> 10`; however single-connected remains hard-infeasible
+and retains route/label ownership residuals. Through the existing Actual
+Product operation-local seam, canonical reset view was stable, while dense
+14/49 at 47% overview remained visibly crowded and difficult to associate.
+The smoke stopped at that failure; no Human Review candidate was created.
+
+The recent candidate's per-case generation and end-to-end wall-time envelope
+were not recorded, and prior Worker timing belongs to a different finalist
+campaign. Therefore no candidate meets both the release-oriented quality and
+practicality bar. Gate 2 is classified `D. NO CURRENT RECENT HQ CANDIDATE
+MEETS RELEASE PRACTICALITY`. Keep quality solver `HOLD / NOT ESTABLISHED`,
+production provider `NOT ESTABLISHED`, Product integration/default `HOLD`,
+Human Review `NOT READY`, Adaptive Initial Placement Cascade inactive, and
+the Initial Layout Release blocker `OPEN`. Do not reinterpret the old Product
+button's failure as a failure of the entire research lineage, and do not
+replace or adopt the button in this checkpoint. Session 0071 records the
+reconnection.

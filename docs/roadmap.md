@@ -9476,3 +9476,31 @@ quality solver remains `HOLD / NOT ESTABLISHED`, production provider remains
 `NOT ESTABLISHED`, Product integration/default remains `HOLD`, Human Review
 remains `NOT READY`, Adaptive Cascade remains inactive, and the Initial Layout
 Release blocker remains `OPEN`. Session 0077 records this new objective.
+
+### LiaisonScape Frontier vs G3 vs Post Current-Source Actual Product Comparison 1 (2026-09-15)
+
+The [comparison handoff](liaisonscape-frontier-g3-post-current-source-comparison1-handoff.md)
+materializes Frontier, Global Placement 3, and Post from current source on the
+same Lighthouse EN/JA, Apollo 11 EN/JA, Titanic, Japanese long-label, and
+dense `k7-7` rows. All candidates use the same current Product surface and
+remain read-only, non-adopting previews. The companion LiaisonScape artifact
+records selected family, complete geometry, fingerprint, elapsed time,
+candidate count, Product presentation evaluation count, and metrics per
+candidate.
+
+G3 is fingerprint-equivalent to Frontier on the canonical public rows and
+therefore supplies no distinct visual geometry signal. Post is generally more
+compact and easier to inspect on Lighthouse/Apollo smoke checks, but retains
+route/Relation-label association residuals; the Japanese long-label control
+remains capacity-bound. Dense `k7-7` selects the same geometry for G3 and Post
+and remains non-release-readable. These are Codex smoke observations only;
+the checkpoint deliberately stops for user visual judgment and does not name a
+winner.
+
+The checkpoint is classified `CURRENT-SOURCE THREE-WAY ACTUAL PRODUCT
+COMPARISON READY / WAITING FOR USER JUDGMENT`. It is not formal acceptance and
+creates no Human Review candidate. Gate 2 remains `OPEN`, quality solver
+remains `HOLD / NOT ESTABLISHED`, production provider remains `NOT
+ESTABLISHED`, Product integration/default remains `HOLD`, Human Review
+remains `NOT READY`, Adaptive Cascade remains inactive, and the Initial Layout
+Release blocker remains `OPEN`. Session 0078 records this new objective.

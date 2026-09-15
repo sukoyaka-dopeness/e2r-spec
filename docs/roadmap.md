@@ -9071,3 +9071,19 @@ Keep visual quality and Human Review `NOT READY`, quality solver `HOLD / NOT
 ESTABLISHED`, production provider `NOT ESTABLISHED`, Product integration/default
 `HOLD`, and the release blocker `OPEN`. Next investigate metric/candidate
 formulation against the visual failures; retain Self-loop as a missing control.
+
+### LiaisonScape HQ Metric / Candidate Formulation Visual Failure Audit 1 (2026-09-15)
+
+The [checkpoint result](liaisonscape-hq-metric-candidate-formulation-visual-failure-audit1-result.md)
+classifies the failure as `C. METRIC AND CANDIDATE FORMULATION BOTH
+INSUFFICIENT`. The current score omits Relation/Relation and Node/Relation label
+overlap, foreign-route/Relation-label collision, ownership ambiguity, and
+post-fit readability. Existing pools contain lower-risk candidates, but bounded
+Actual Product comparison shows that even those candidates remain unacceptable
+for dense and Japanese long-label cases.
+
+Keep the quality solver and provider `NOT ESTABLISHED`, Product
+integration/default `HOLD`, Human Review `NOT READY`, and the Initial Layout
+Release blocker `OPEN`. Next test one explicit label-capacity candidate
+formulation against the fixed diagnostic vectors; do not start another broad
+solver search or retune a production scalar from these observations alone.

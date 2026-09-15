@@ -9126,6 +9126,36 @@ records the checkpoint; the next bounded question is Product-authoritative
 Relation-label ownership/corridor feedback, not stronger expansion or
 Adaptive Cascade.
 
+### LiaisonScape Occupied-Geometry Feasibility-First Extent Growth 1 (2026-09-15)
+
+The [checkpoint result](liaisonscape-occupied-geometry-feasibility-first-extent-growth1-result.md)
+tests a bounded Product-presentation feedback loop instead of another fixed
+expansion multiplier. Actual Node body, Node-label, and Relation-label bounds
+are measured after each presentation pass; deterministic penetration
+displacement drives at most 2, 4, or 8 geometry feedback sweeps. Viewport fit,
+fit budget, and fit scale remain camera diagnostics only.
+
+Dense occupied overlap falls `5 -> 2`, Japanese `1 -> 0`, and the
+single-connected control `28 -> 10`; connected visual label overlap falls
+`12 -> 3` and foreign-route hits `225 -> 160`. Node-body overlap is zero, but
+single-connected remains not hard-feasible with label/body and label/label
+collisions. Canonical, Parallel/Incident, and Self-loop controls remain
+occupied-feasible.
+
+Actual Product smoke at `36%` reset overview and `78%` native zoom confirms
+that the connected candidate still has crowded long Relation-label and route
+association. The attempted pan was not accepted because browser automation
+timed out.
+
+Disposition: `B. GEOMETRY CAPACITY FURTHER IMPROVES / RELATION OWNERSHIP
+RESIDUAL CONFIRMED`; the single-connected hard-feasibility boundary remains
+open. Keep quality solver `HOLD / NOT ESTABLISHED`, production provider `NOT
+ESTABLISHED`, Product integration/default `HOLD`, Human Review `NOT READY`,
+Adaptive Initial Placement Cascade inactive, and the Initial Layout Release
+blocker `OPEN`. Session 0067 records the checkpoint. Continue with a narrow
+bounded owner-aware feasibility study or make the residual an explicit Product
+presentation boundary; do not transfer routing/labels or advance Human Review.
+
 ### LiaisonScape Infinite-Canvas Local-Density / Extent-Growth Re-baseline 1 (2026-09-15)
 
 The [checkpoint result](liaisonscape-infinite-canvas-local-density-extent-growth-rebaseline1-result.md)

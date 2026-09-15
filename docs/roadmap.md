@@ -9371,3 +9371,31 @@ created. Gate 2 remains `OPEN`, quality solver remains `HOLD / NOT ESTABLISHED`,
 production provider `NOT ESTABLISHED`, Product integration/default `HOLD`,
 Human Review `NOT READY`, and the Initial Layout Release blocker `OPEN`.
 Session 0073 records this new objective.
+
+### LiaisonScape Common-Fixture Cross-Lineage Comparison 1 - Historical Structural Candidates vs Current Capacity Candidates (2026-09-15)
+
+The [checkpoint result](liaisonscape-common-fixture-cross-lineage-comparison1-result.md)
+materializes the historical structural lineages (as current-source
+reconstructions) and the current Label-Capacity / Infinite-Canvas /
+Occupied-Geometry lineages on the same bounded Dataset topology, Entity/
+Relation IDs, labels, and current Product presentation evaluator. Lighthouse
+EN, Apollo JA, dense K7x7, and a Parallel/Self-loop control were covered.
+
+The common fixture removes the prior cardinality/materialization confound.
+Structural reconstructions retain the strongest canonical crossing and
+ordering signal. Capacity reconstructions do not establish a general spacing,
+occupied-geometry, or long-label win on the same rows; dense remains globally
+coupled with high crossing, label-near, and foreign-route pressure. An Actual
+Product smoke reached the real App: the structural Post reconstruction was
+inside the viewport, while the same-fixture Label-Capacity candidate clipped
+right/lower Nodes. The smoke was not formal acceptance and no Human Review
+candidate was created.
+
+The checkpoint is `D. COMMON-FIXTURE COMPARISON MATERIALIZED / HISTORICAL
+REPLAY STILL INCOMPLETE`: old historical artifact replay on this exact new
+topology is not established, and no cross-lineage winner or portfolio
+selector is adopted. Gate 2 remains `OPEN`, quality solver remains `HOLD /
+NOT ESTABLISHED`, production provider `NOT ESTABLISHED`, Product
+integration/default `HOLD`, Human Review `NOT READY`, Adaptive Cascade
+inactive, and the Initial Layout Release blocker `OPEN`. Session 0074 records
+this new objective.

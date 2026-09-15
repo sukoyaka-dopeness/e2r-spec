@@ -9687,3 +9687,30 @@ default/adoption remains `HOLD`, production provider remains `NOT ESTABLISHED`,
 Human Review remains `NOT READY`, local relaxation remains absent, and the
 Initial Layout Release blocker remains `OPEN`. Session 0084 records this new
 objective.
+
+### LiaisonScape Product-Owned Orientation-Aware Parallel Label Capacity + Stagger Experiment 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-product-owned-orientation-aware-label-capacity-stagger1-result.md)
+holds the Session 0084 bundle-local spacing maps fixed and adds a bounded
+Product-owned Relation-label tangent/normal footprint diagnostic with
+along-owner-route stagger. Horizontal labels use tangential footprint versus
+usable owner span; vertical labels receive bounded stagger; diagonal labels use
+continuous projection. One-line labels remain the only candidate, while
+deficits are recorded for a future display-only wrap study.
+
+The primary control remains non-regressed with zero churn. The shared-endpoint
+control improves its remaining ownership ambiguity under fixed `16/16`, and
+horizontal staggering improves foreign-route ordering, but the two long
+horizontal labels still exceed one-line usable span by roughly `184` and `197`
+units. Vertical stagger produces readable positions without improving the
+machine ownership ambiguity, and diagonal behavior remains smooth without a
+binary orientation rule. Higher-multiplicity ordinary-route churn remains.
+
+The outcome is `B/C COMBINED`: orientation-aware label capacity is a useful
+Product presentation diagnostic, but vertical stagger is not generally
+established and one-line horizontal capacity remains open. No wrap, routing,
+endpoint-plan, Structural Placement, Parallel/Incident, Self-loop, default,
+provider, or Human Review adoption follows. Product default/adoption remains
+`HOLD`, production provider remains `NOT ESTABLISHED`, Human Review remains
+`NOT READY`, Adaptive Cascade remains inactive, and the Initial Layout Release
+blocker remains `OPEN`. Session 0085 records this new objective.

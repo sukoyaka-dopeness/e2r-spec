@@ -9125,3 +9125,28 @@ ESTABLISHED`, production provider `NOT ESTABLISHED`, Product integration
 records the checkpoint; the next bounded question is Product-authoritative
 Relation-label ownership/corridor feedback, not stronger expansion or
 Adaptive Cascade.
+
+### LiaisonScape Infinite-Canvas Local-Density / Extent-Growth Re-baseline 1 (2026-09-15)
+
+The [checkpoint result](liaisonscape-infinite-canvas-local-density-extent-growth-rebaseline1-result.md)
+re-baselines the previous fit interpretation against the Product owner's
+effectively infinite canvas model. `fitGraphView(..., 800, 500)`, `fitScale`,
+`fitBudget`, and `extentScale` remain historical or camera diagnostics; the new
+bounded candidate permits label-demand-driven extent growth without a viewport
+fit clamp and retains actual Product label geometry and local grouping.
+
+The single-connected 14/49 control improves from label-overlap `56` to `12`
+and grows from `420 x 466` to `765 x 739`; Node-label bounds overlap is zero.
+Dense and Japanese multi-component cases also improve overlap, while Parallel
+and Self-loop controls show no obvious regression. The connected case still
+has `225` foreign-route/Relation-label hits and is visibly crowded at 82%
+Product zoom.
+
+Disposition: `C. SINGLE-CONNECTED CAPACITY IMPROVES WHEN EXTENT MAY GROW /
+PRODUCT ROUTE-LABEL RESIDUAL REMAINS OPEN`. Keep quality solver `HOLD / NOT
+ESTABLISHED`, production provider `NOT ESTABLISHED`, Product integration/
+default `HOLD`, Human Review `NOT READY`, Adaptive Initial Placement Cascade
+inactive, and the Initial Layout Release blocker `OPEN`. Session 0066 records
+the checkpoint. Continue with bounded Product-authoritative route/label
+ownership work; do not treat the smoke check as formal acceptance or begin
+Adaptive Cascade.

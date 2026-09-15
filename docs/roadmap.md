@@ -9662,3 +9662,28 @@ SPACING IS NOT SAFE`. Product default/adoption remains `HOLD`, production
 provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive
 Cascade remains inactive, and the Initial Layout Release blocker remains
 `OPEN`. Session 0083 records this new objective.
+
+### LiaisonScape Product-Owned Bundle-Local Capacity + Cross-Bundle Feasibility Experiment 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-product-owned-bundle-local-capacity-cross-bundle-feasibility1-result.md)
+replaces the rejected graph-wide adaptive scalar with per-bundle demand
+candidates and a bounded full-Product joint feasibility selection. The largest
+control explores 42 combinations. Selected spacing is `20/12` for the primary
+reverse/same-direction graph, `16` for higher multiplicity, `24` for mixed
+incident, `16/16` for a new shared-endpoint control, and `12` for Lighthouse.
+
+The primary selection removes ownership ambiguity and foreign-closer labels
+while preserving the good gamma/delta bundle, directly avoiding the prior
+global-spacing-20 collapse. Higher multiplicity falls back to 16 because its
+requested 24 changes two ordinary routes. The shared-endpoint control retains
+one ownership residual because the wider arm that removes it slightly regresses
+the neighboring bundle. This proves local demand is useful but bundle decisions
+are not independent; bounded joint Product feasibility is required.
+
+The outcome is `B. BUNDLE-LOCAL POLICY PROMISING / C. BOUNDED JOINT
+FEASIBILITY REQUIRED`. The candidate remains diagnostic and is not uniformly
+better than fixed 16. Parallel/Incident architecture remains `CLOSED`, Product
+default/adoption remains `HOLD`, production provider remains `NOT ESTABLISHED`,
+Human Review remains `NOT READY`, local relaxation remains absent, and the
+Initial Layout Release blocker remains `OPEN`. Session 0084 records this new
+objective.

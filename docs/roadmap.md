@@ -9399,3 +9399,30 @@ NOT ESTABLISHED`, production provider `NOT ESTABLISHED`, Product
 integration/default `HOLD`, Human Review `NOT READY`, Adaptive Cascade
 inactive, and the Initial Layout Release blocker `OPEN`. Session 0074 records
 this new objective.
+
+### LiaisonScape Structural-Seeded Capacity Refinement 1 - Strong Structural Geometry + Capacity / Occupied Feedback (2026-09-15)
+
+The [checkpoint result](liaisonscape-structural-seeded-capacity-refinement1-result.md)
+applies the existing Label-Capacity, Infinite-Canvas, and Occupied-Geometry
+diagnostics after an existing structural seed on the exact common fixtures.
+Frontier is the primary seed because it retains canonical zero-crossing
+signals with materially fewer current-source Product evaluations than Post;
+Post remains the quality reference/control.
+
+The bounded preservation contract requires component-local pair ordering to
+remain unchanged, crossings not to increase, and Node-body overlap not to
+increase. Lighthouse permits Frontier + Label-Capacity under this contract;
+Parallel/Self-loop permits Frontier + Infinite-Canvas + Occupied-Geometry.
+Apollo has no preserving Frontier refinement, and Dense rejects all tested
+capacity stages. The successful Lighthouse refinement expands extent to about
+`1016 x 811`; Actual Product Reset view recovers the overview around 35%, but
+Relation-label readability at that overview remains open.
+
+The checkpoint is `B. FRONTIER-SEEDED HQ DIRECTION PROMISING / PRODUCT
+READABILITY OPEN`. It establishes a diagnostic stage boundary, not a general
+pipeline, solver, portfolio selector, provider, Product default, Adaptive
+Cascade, or Human Review candidate. Gate 2 remains `OPEN`, quality solver
+remains `HOLD / NOT ESTABLISHED`, production provider `NOT ESTABLISHED`,
+Product integration/default `HOLD`, Human Review `NOT READY`, Adaptive
+Cascade inactive, and the Initial Layout Release blocker `OPEN`. Session 0075
+records this new objective.

@@ -10273,3 +10273,16 @@ candidate. However, `.tmp-normal-offset-output.json`, the older untracked
 canonical baseline. No commit or cleanup was performed. The accepted source
 state and Frontier provenance therefore remain HEAD plus working tree until a
 fresh worktree or explicit ownership map provides a safe boundary.
+
+### LiaisonScape Accepted Dirty Worktree Ownership Resolution / Canonical Baseline Commit 2 (2026-09-16)
+
+The [canonical-baseline result](liaisonscape-accepted-dirty-worktree-ownership-resolution-canonical-baseline-commit2-result.md)
+records **ACCEPTED BASELINE ESTABLISHED / CANONICAL COMMITS CREATED**.
+LiaisonScape `9616a75` fixes the accepted runtime/source, Frontier
+generator/Worker/adapter chain, focused tests, and related evidence; E2R-SPEC
+`d68d7f1` fixes the accepted guidance, result documents, roadmap, and formal
+Session-0052 history. The temporary `.tmp-normal-offset-output.json`, older
+`experimental/product-evaluation-seam/spacing-inspection2/`, and spec
+`work/` remain uncommitted and preserved. No runtime behavior was changed to
+create the boundary. Source-level adoption is canonical; rollout remains
+deferred.

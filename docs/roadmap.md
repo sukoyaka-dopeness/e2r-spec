@@ -9856,3 +9856,34 @@ ESTABLISHED`, Human Review remains `NOT READY`, Adaptive Cascade remains
 inactive, and the Initial Layout Release blocker remains `OPEN`. No new Human
 Review candidate or production adoption follows. Session 0090 records this
 new objective.
+
+### LiaisonScape Product Node-label Recovery Integration / Feasibility Experiment 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-product-node-label-recovery-integration1-result.md)
+places the bounded Node-label recovery rule inside the normal Product
+presentation path as an explicit development-only candidate switch:
+`?node-label-recovery=candidate`. The normal `App` caller does not pass a
+recovery prop, previous-label override, or diagnostic feedback override. The
+candidate uses the existing previous Node-label ref, normal feedback policy,
+and the unchanged first-pass continuity / settled-pass recovery formulation.
+
+The five-fixture integration sequence passes clean/identical stability,
+active-drag suppression, Relation-change feedback, finalization, manual
+authority, reset, and repeated post-recovery stability. The Product-derived
+primary stale case recovers `3` times with `32` candidates per Node and makes
+the recovered result the next previous snapshot. Candidate evaluation delta is
+`0` against baseline in clean, settled, and stale measurements; recovery
+comparison median is at most `0.0126 ms` and added Node-label stage median at
+most `0.7895 ms` in the measured source process. The largest measured full
+derive median is approximately `28.1 ms` on Lighthouse EN, but this is not a
+browser SLA and candidate rows are still materialized on every candidate-mode
+pass.
+
+The Actual Product smoke used the candidate URL switch without recovery
+diagnostic props on primary, high-degree, Parallel/Self-loop, Lighthouse EN,
+and Lighthouse JA. All settled to the expected surface with no console
+warnings/errors. The outcome is `C. INTEGRATION ESTABLISHED / PERFORMANCE /
+RECOMPUTATION BOUNDARY REMAINS`. Product default/adoption remains `HOLD`,
+production provider remains `NOT ESTABLISHED`, Human Review remains `NOT
+READY`, Adaptive Cascade remains inactive, and the Initial Layout Release
+blocker remains `OPEN`. Session 0091 records this new objective.

@@ -9827,3 +9827,32 @@ Review candidate follows. Product default/adoption remains `HOLD`, production
 provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive
 Cascade remains inactive, and the Initial Layout Release blocker remains
 `OPEN`. Session 0089 records this new objective.
+
+### LiaisonScape Product Node-label Recovery Lifecycle Source-Parity Experiment 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-product-node-label-recovery-lifecycle-source-parity1-result.md)
+verifies the recovery direction through the actual Product presentation source
+and the tested previous-snapshot lifecycle. The development-only mode uses the
+normal `deriveBoundedAutomaticPresentation` path, retains continuity on the
+first pass, and permits bounded recovery only on the settled feedback pass.
+The displayed result is committed as the next previous Node-label snapshot,
+while active drag, finalizing, manual Node-label, reset, route, Relation-label,
+endpoint-plan, and Self-loop boundaries remain unchanged.
+
+The five-fixture lifecycle harness covers primary horizontal, high-degree,
+Parallel/Self-loop, Lighthouse EN, and Lighthouse JA controls. All lifecycle
+controls pass, repeated settled derives are stable, no recovery oscillation is
+observed, manual offsets remain authoritative, reset clears previous input,
+and each Node retains a bounded 32-candidate set. A Product-derived stale
+seed triggers `3` recoveries with `32` candidates and becomes the next previous
+snapshot. It intentionally does not byte-match the prior diagnostic recovery
+arm because the earlier arm recovered with feedback disabled, whereas this
+source-parity arm preserves first-pass continuity and recovers in the normal
+feedback/final lifecycle.
+
+The outcome is `A QUALIFIED / SOURCE-PARITY ESTABLISHED IN TESTED ENVELOPE`.
+Product default/adoption remains `HOLD`, production provider remains `NOT
+ESTABLISHED`, Human Review remains `NOT READY`, Adaptive Cascade remains
+inactive, and the Initial Layout Release blocker remains `OPEN`. No new Human
+Review candidate or production adoption follows. Session 0090 records this
+new objective.

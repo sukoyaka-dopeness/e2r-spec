@@ -9797,3 +9797,33 @@ Review decision follows. Product default/adoption remains `HOLD`, production
 provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive
 Cascade remains inactive, and the Initial Layout Release blocker remains
 `OPEN`. Session 0088 records this new objective.
+
+### LiaisonScape Product Node-label Hysteresis / Recovery Attribution Experiment 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-product-node-label-hysteresis-recovery-attribution1-result.md)
+reuses the current Product 32-angle Node-label scorer with the existing
+previous-placement movement term exposed as a candidate-level diagnostic. It
+compares current-fresh, current-previous, hysteresis-ablation,
+bounded-recovery, active-drag, and finalizing-drag controls on the same
+horizontal, orientation, dense, high-degree, Parallel/Self-loop, and
+Lighthouse EN/JA fixture set.
+
+The prior checkpoint's Product `current-previous` output is used as the main
+previous snapshot. Previous selection changes directions in every fixture
+family, while hysteresis ablation exactly matches fresh selection. A bounded
+diagnostic recovery rule returns the fresh labels for all eight fixtures,
+handles both fresh-gain and hard-conflict triggers, and is stable on repeated
+identical input without changing fixed routes or Relation-label rectangles.
+The Actual Product smoke shows no new rendering or console failure on the
+primary, high-degree, Self-loop, or Lighthouse controls.
+
+The outcome is `A QUALIFIED FOR CONTINUED BOUNDED NODE-LABEL RESEARCH / PRODUCTION NOT ESTABLISHED`:
+previous-placement hysteresis is now the primary tested Node-label residual,
+and an explicit recovery semantic is a viable next bounded formulation. The
+recovery rule remains diagnostic-only. No movement-weight retune, Structural
+Placement change, routing/Relation-label/endpoint-plan/Self-loop authority
+change, Adaptive Cascade entry, Product default/provider decision, or Human
+Review candidate follows. Product default/adoption remains `HOLD`, production
+provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive
+Cascade remains inactive, and the Initial Layout Release blocker remains
+`OPEN`. Session 0089 records this new objective.

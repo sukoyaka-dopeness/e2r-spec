@@ -9887,3 +9887,34 @@ RECOMPUTATION BOUNDARY REMAINS`. Product default/adoption remains `HOLD`,
 production provider remains `NOT ESTABLISHED`, Human Review remains `NOT
 READY`, Adaptive Cascade remains inactive, and the Initial Layout Release
 blocker remains `OPEN`. Session 0091 records this new objective.
+
+### LiaisonScape Product Node-label Recovery Dense / Browser Main-thread Feasibility Experiment 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-product-node-label-recovery-dense-browser-feasibility1-result.md)
+extends the preceding Product-shaped recovery integration to seven deterministic
+controls: Lighthouse-ish, medium dense, large dense, high-degree-heavy,
+label-heavy EN/JA, and Parallel/Self-loop coexistence. Clean baseline and
+`product-candidate` presentation outputs remain identical, and the recovery
+comparison itself remains approximately sub-millisecond in source probes. The
+candidate-row counter scales at 64 rows per Node across two passes, but this
+was not the primary observed runtime cost.
+
+The browser-native boundary is not closed. Medium/high-degree Product derives
+are roughly `0.42–0.58 s`, while the 28-node/200-edge large-dense control is
+roughly `2.6–2.8 s` per observed derive and reaches approximately `11 s`
+longtask/rAF gaps during the initial Product sequence. Source and browser
+evidence attribute the dominant cost to the full presentation pipeline rather
+than recovery comparison. A separate lifecycle issue also remains: high-degree,
+label-heavy EN, and Parallel/Self-loop controls produced multiple recovery
+fingerprints across reuse probes.
+
+The Actual Product smoke reached `graph-stable` with zero console errors for all
+seven controls, but medium dense showed obvious long-Relation-label congestion.
+No formal visual evidence or Human Review followed. The outcome is `F.
+BROWSER FEASIBILITY NOT ESTABLISHED`, with runtime attribution `E. FULL
+PRESENTATION PIPELINE PRIMARY BOTTLENECK` and a remaining quality/lifecycle
+boundary. Product default/adoption remains `HOLD`, production provider remains
+`NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive Cascade remains
+inactive, and the Initial Layout Release blocker remains `OPEN`. Workerization,
+cooperative scheduling, and candidate-row optimization are not adopted by this
+checkpoint. Session 0092 records this new objective.

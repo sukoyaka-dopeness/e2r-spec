@@ -10286,3 +10286,24 @@ Session-0052 history. The temporary `.tmp-normal-offset-output.json`, older
 `work/` remain uncommitted and preserved. No runtime behavior was changed to
 create the boundary. Source-level adoption is canonical; rollout remains
 deferred.
+
+### LiaisonScape Explicit Auto Layout Completion Readiness / Current-State Gap Audit 1 (2026-09-16)
+
+The [current-state audit result](liaisonscape-explicit-auto-layout-completion-readiness-current-state-gap-audit1-result.md)
+confirms that the current Explicit Auto Layout button synchronously runs the
+deterministic `solveAutoLayout` structural Node solver on the main thread,
+directly updates working positions, marks graph-visible Entities adopted and
+dirty, and leaves Dataset persistence to the existing Save Coordinates action.
+Downstream Product routing, Relation-label, Node-label, Self-loop, and
+viewport presentation recompute afterward; they are not part of the current
+solver's candidate evaluation.
+
+The resulting quality ceiling explains disorderly final presentation: the
+current solver does not score crossings, occupied paths, label envelopes,
+Self-loop pressure, or viewport quality. Frontier/Worker/Product computation
+is reusable only behind a separate Explicit Auto Layout operation boundary;
+the Initial Automatic Display adapter's coordinate-less fallback and
+render-only semantics are not directly reusable. The checkpoint stops with an
+explicit proposal-vs-direct-adoption lifecycle decision still required.
+Initial Automatic Display and all Dataset/Coordinate/persistence authority
+remain unchanged.

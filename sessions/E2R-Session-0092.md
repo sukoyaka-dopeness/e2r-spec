@@ -69,3 +69,41 @@ adopted. No unrelated dirty work was reset, stashed, deleted, or rewritten.
 This file is intentionally new because the objective changed from integration
 feasibility to dense/browser feasibility. Future work that remains within this
 same objective may append here; a new objective receives a new session file.
+
+## Closure update
+
+The checkpoint was completed and recorded without changing any Product
+authority. The actual Product smoke campaign reached `graph-stable` with zero
+console errors for all seven controls. Medium dense showed visible long-label
+congestion, so formal visual evidence and Human Review were intentionally not
+started.
+
+Validation completed after the source and browser artifacts were generated:
+
+- LiaisonScape `npm test`: 577/577 passed;
+- LiaisonScape `npm run lint`: passed;
+- LiaisonScape `npm run build`: passed;
+- E2R specification `npm run validate`: passed;
+- both repository `git diff --check` gates: passed.
+
+The owned changes were committed locally and remain unpushed:
+
+- LiaisonScape `942f3f6` — `Add dense Node-label browser feasibility checkpoint`;
+- e2r-spec `024fe35` — `Record dense Node-label browser feasibility checkpoint`.
+
+Unrelated dirty work was preserved. At closure, the LiaisonScape worktree
+still contained the pre-existing `tests/graph-presentation.test.ts` edit,
+`.tmp-normal-offset-output.json`, and
+`experimental/product-evaluation-seam/spacing-inspection2/`; the specification
+worktree still contained the pre-existing `sessions/E2R-Session-0052.md` edit
+and `work/`.
+
+## Updated session-log granularity policy
+
+Session logs are now grouped by a broader continuous objective rather than by
+every bounded checkpoint. Checkpoints, experiments, validation results, and
+small follow-up results that serve the same objective should be appended to the
+same session file. A new session file is created only when the overarching
+objective or responsibility boundary changes materially. This policy is
+effective from the next objective onward; this file remains the consolidated
+record for the dense/browser feasibility objective.

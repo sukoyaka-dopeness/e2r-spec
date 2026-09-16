@@ -4,7 +4,8 @@
 
 The central workspace knowledge base is `C:\Users\extra\E2R\ai-knowledge`.
 Search its `INDEX.md` before specification work involving Dataset safety,
-Handoff, History, application boundaries, or cross-repository decisions.
+Handoff, History, application boundaries, or cross-repository decisions, and
+read only the matching scoped entries.
 Treat the specification as authoritative; knowledge entries provide scoped
 evidence and reusable process guidance only.
 
@@ -21,9 +22,10 @@ E2R is a general-purpose data specification centered on four Core concepts:
 
 This repository is the source of truth for the E2R data model and its Extensions.
 
-## Required Reading
+## Specification References
 
-Before making specification changes, read the relevant documents, especially:
+Before changing the Core or an Extension, read the relevant source-of-truth
+documents as applicable:
 
 * `spec/core.md`
 * `spec/philosophy.md`
@@ -33,7 +35,9 @@ Before making specification changes, read the relevant documents, especially:
 * `docs/application-design-principles.md`
 * `docs/application-recommendations.md`
 
-Also inspect related examples and research documents when the task concerns them.
+Inspect related examples and research documents when the task concerns them;
+documentation-only or repository-local research updates do not require all
+Core references.
 
 ## Core Principles
 
@@ -85,6 +89,11 @@ ownership semantics merely to support modularization.
   explicitly requested work. Do not push, publish, or rewrite history without
   explicit authorization.
 * Review the final diff for contradictions and terminology drift.
+
+Choose investigation order, instrumentation, implementation method, and
+focused validation from the task and diff scope. Retain authority order,
+data-safety boundaries, and explicit stop points for destructive or externally
+visible actions and important design forks.
 
 ## Git Checkpoint Policy
 

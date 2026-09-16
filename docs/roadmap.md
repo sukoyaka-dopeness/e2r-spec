@@ -1309,6 +1309,23 @@ Cross-App Locale consumer implementation, or Hub locale producer completion:
    explanatory secondary information; defer exact DOM placement until the
    bounded audit.
 
+### Automatic Display crossing refinement follow-up (2026-09-16)
+
+Frontier-12 Automatic Display is **QUALIFIED** by Human Review for normal
+automatic display: it appears immediately and is sufficient as an initial view.
+Titanic, Ashen Crown, and related canonical/public presentation may still show
+a small number of avoidable-looking ordinary Edge crossings. Human Review found
+these understandable and below the level of a gross comprehension defect, so
+they are not a release or adoption blocker and do not reopen provider selection.
+
+This is a presentation-quality follow-up only. If prioritized later, investigate
+local crossing reduction, routing pressure, and placement/presentation coupling
+within the existing authority boundary. Preserve current runtime expectations,
+canonical readability, downstream Product presentation authority, and the
+accepted Frontier-12 contract. Do not begin that implementation or solver study
+under this closure. The follow-up is analogous to the documented Self-loop
+residual: accepted current contract plus a separately tracked quality question.
+
 ### F2-LS1 acceptance checkpoint
 
 LiaisonScape F2-LS1 Home / Workspace Header Locale Placement is
@@ -9918,3 +9935,341 @@ boundary. Product default/adoption remains `HOLD`, production provider remains
 inactive, and the Initial Layout Release blocker remains `OPEN`. Workerization,
 cooperative scheduling, and candidate-row optimization are not adopted by this
 checkpoint. Session 0092 records this new objective.
+
+### LiaisonScape Product Node-label Recovery Reuse Fingerprint Attribution 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-product-node-label-recovery-reuse-fingerprint-attribution1-result.md)
+confirms that the prior dense reuse arm was not fully source-parity: the
+Actual Product stores and reuses Node-label, Relation-label, and automatic-route
+snapshots together, while the prior harness rolled forward only Node-label
+history. A new diagnostic arm rolls forward all three snapshots and hashes
+route, Relation-label, Node-label, recovery, and final-output traces.
+
+In the source-parity arm, the first changing stage is route reuse; changes then
+propagate through Relation-label placement and Node-label placement. The
+difficult fixtures do not settle to one state, but neither do several former
+stable controls under this more faithful lifecycle. The result is therefore
+`B/C COMBINED`: prior harness parity artifact confirmed / broader Product
+presentation settling behavior open. Node-label recovery semantics, authority
+boundaries, Product defaults, and all standing holds remain unchanged. Session
+0093 records this bounded attribution checkpoint.
+
+### LiaisonScape Self-loop Residual Responsibility Closure 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-self-loop-responsibility-closure1-result.md)
+confirms the current Product Self-loop contract: the selector owns automatic
+angle/radius geometry, uses only other-Node pressure plus preferred orientation,
+and leaves ordinary paths, Relation labels, Node labels, peer loops, and
+viewport constraints to their existing authorities. Existing source, focused
+tests, and diagnostic/Actual Product evidence show no local defect that must be
+fixed before closing this research phase.
+
+The result is `A/B QUALIFIED`: the bounded Node-only avoidance contract is
+acceptable with an explicit collision boundary; joint Product collision quality
+is deferred follow-up. No Self-loop solver, authority movement, Product
+adoption, Human Review, or Adaptive Cascade follows. Session 0094 records this
+closure checkpoint.
+
+### LiaisonScape Automatic Display Placement Final Bake-off 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-automatic-display-placement-final-bakeoff1-result.md)
+closes the existing automatic-display candidate comparison without adding a
+solver family. Frontier-12, Post/constrained relaxation, and G3/structural
+portfolio were compared through the current Product-authoritative metrics on
+canonical/public EN/JA, label-heavy, and dense controls. Free-form remains
+excluded by crossing-gate regressions, and Fast remains internal/emergency
+fallback material rather than a normal provider.
+
+Frontier is the sole normal automatic-display integration candidate for the
+next separate engineering step: it has the strongest combined quality,
+determinism, and runtime evidence, while dense/long-label presentation and
+multi-second runtime remain documented risks. No production default switch,
+Human Review, Explicit Auto Layout decision, or Adaptive Cascade follows.
+Session 0095 records this candidate decision.
+
+### LiaisonScape Frontier Automatic Display Integration Candidate Staging 1 (2026-09-16)
+
+The [checkpoint result](liaisonscape-frontier-automatic-display-integration-candidate-staging1-result.md)
+connects the existing development-only acceptance layout seam to the
+`frontier-12` arm for coordinate-less Dataset review staging. The normal
+production path remains `settleInitialPlacement`; stored and mixed Coordinates
+retain their existing authority, and Frontier positions remain derived without
+persistence or dirty-state changes.
+
+The seam preserves all downstream Product presentation authorities and is
+sufficient to prepare a formal visual-review candidate. It does not perform
+production default adoption or Human Review. Session 0096 records this staging
+checkpoint.
+
+### LiaisonScape Frontier Automatic Display Formal Visual Review Preparation 1 (2026-09-16)
+
+The [formal visual review result](liaisonscape-frontier-automatic-display-formal-visual-review1-result.md)
+prepares a reproducible Actual Product read-only preview surface for the
+Frontier-12 candidate across canonical/public, locale, label-heavy, dense, and
+Parallel/Self-loop controls. The package keeps machine metrics supplemental to
+human judgment and records per-unit coverage without assuming unreviewed units
+are accepted. Production default/adoption remains unchanged.
+
+### LiaisonScape HQ Preview Viewport Interaction Fix 1 (2026-09-16)
+
+The same preview surface now separates viewport navigation from graph editing:
+canvas pan, native Ctrl+wheel zoom, toolbar zoom, and Reset remain available,
+while Node/Relation/label/Self-loop editing, context menu, and relation creation
+remain read-only-disabled. Candidate, Dataset, persistence, and dirty-state
+semantics are unchanged. This was a local preview interaction fix, not a
+production behavior or solver change.
+
+### LiaisonScape Frontier Automatic Display Human Review Closure 1 (2026-09-16)
+
+The user's Human Review disposition is **QUALIFIED**: Frontier-12 is accepted
+as sufficient for an immediate normal automatic display, with no gross defect
+blocking graph comprehension. A small number of avoidable-looking ordinary
+Edge crossings remain in Titanic/Ashen Crown and related presentation; the
+user did not provide complete per-fixture dispositions, so no unconfirmed unit
+is marked PASS. The crossing residual does not reopen provider selection and is
+tracked as presentation-quality follow-up.
+
+### LiaisonScape Frontier Automatic Display Production Adoption Readiness 1 (2026-09-16)
+
+The [adoption-readiness result](liaisonscape-frontier-automatic-display-production-adoption-readiness1-result.md)
+audits the current source and prior Frontier evidence without changing runtime
+behavior. Frontier remains DEV-only today; normal coordinate-less opening still
+uses `settleInitialPlacement`, while stored and mixed Coordinates retain their
+existing authorities. The outcome is **READY WITH EXPLICIT OPERATIONAL
+BOUNDARY** for a separate bounded adoption-implementation checkpoint, not a
+production-default decision.
+
+That next checkpoint must define technical failure classes, discard partial
+results, provide deterministic bounded fallback behavior, and preserve the
+Dataset/dirty-state/manual-authority matrix. Fast remains internal/emergency
+material rather than a quality competitor. Dense/long-label congestion and
+multi-second runtime remain explicit operational boundaries; large-dense SLA is
+not established. Session chronology is preserved; historical `HOLD`/`NOT READY`
+entries are not rewritten.
+
+### LiaisonScape Frontier Automatic Display User-Abort / Cancellation Feasibility Audit 1 (2026-09-16)
+
+The [cancellation feasibility result](liaisonscape-frontier-automatic-display-user-abort-cancellation-feasibility-audit1-result.md)
+classifies user abort as **not justified for initial adoption**. The current
+Frontier acceptance seam fetches a precomputed artifact and applies it during a
+synchronous open; Frontier is not a browser-side production computation and
+has no current interruptible solver boundary. A future browser computation
+would require an explicit cooperative-execution or worker-isolation decision
+before responsive abort UI is added. No production, fallback, timeout, or UI
+behavior changed.
+
+### LiaisonScape Frontier Automatic Display Production Execution / Transient Preview Architecture Audit 1 (2026-09-16)
+
+The [execution architecture result](liaisonscape-frontier-automatic-display-production-execution-transient-preview-architecture-audit1-result.md)
+finds that a production Frontier solver boundary does not yet exist. The
+current `frontier-12` seam is a DEV/review-only precomputed artifact fetch,
+while normal opening remains synchronous `settleInitialPlacement`. The
+checkpoint therefore stops before Workerization, cooperative scheduling,
+Cancel UI, or transient styling: deterministic solver extraction, serializable
+input/output, stale-result rejection, and preview ownership are prerequisites.
+Production default and all existing authority boundaries remain unchanged.
+
+### LiaisonScape Frontier Production Solver Extraction Readiness / Contract 1 (2026-09-16)
+
+The [extraction-readiness result](liaisonscape-frontier-production-solver-extraction-readiness1-result.md)
+classifies the checkpoint as **BLOCKED: FRONTIER LINEAGE NOT REPRODUCIBLE FROM
+CURRENT SOURCE**. Current artifacts and the DEV seam identify Frontier-12, but
+no single current-source pipeline reproduces its reviewed result; the existing
+runtime provider is a separate prototype and is explicitly not wired to App.
+Extraction, Worker/cooperative execution, Cancel UI, and transient snapshots
+remain deferred until a source-level solver and artifact-parity gate exist.
+
+### LiaisonScape Frontier-12 Lineage Recovery / Reproduction 1 (2026-09-16)
+
+The [lineage-recovery result](liaisonscape-frontier-12-lineage-recovery-reproduction1-result.md)
+reconstructs the research lineage at `e7d6cbc`: the Frontier Actual Product
+Visual Sweep generator invokes `tools/generic-crossing-search.mjs` with the
+recorded Frontier-12 environment. Replaying the current source matched the
+saved selected family and position fingerprint for 10 file-backed fixtures and
+3 dense synthetic fixtures. The remaining two custom synthetic controls have
+their source constructors recovered but were not independently replayed in this
+bounded parity command, so the result is **B. LINEAGE RECONSTRUCTABLE WITH
+BOUNDED EVIDENCE**, not a claim of full artifact-wide exact parity. This closes
+the lineage-identity blocker but does not create a production solver or change
+the production default.
+
+### LiaisonScape Frontier-12 Bounded Solver Extraction / Standalone Characterization 1 (2026-09-16)
+
+The [extraction result](liaisonscape-frontier-12-bounded-solver-extraction-standalone-characterization1-result.md)
+stops with **BLOCKED: PRODUCT-AUTHORITATIVE SELECTION DEPENDENCY**. The
+structural Frontier candidate pool is identifiable, but the reviewed final
+position is selected through Product presentation metrics, eligibility/sorting,
+and final canonicalization in the research runner. Extracting a placement-only
+complete-position solver would therefore alter the recovered behavior or move
+Product authority. Solver-only runtime was not claimed; existing sweep timing
+remains end-to-end evidence. No source, production, or Human Review behavior
+changed.
+
+### LiaisonScape Frontier-12 Candidate / Product Selection Authority Decision 1 (2026-09-16)
+
+The [authority decision](liaisonscape-frontier-12-candidate-product-selection-authority-decision1-result.md)
+selects **A: candidate-set generator with Product-owned downstream selection**.
+Frontier owns normalized placement input, deterministic structural candidate
+generation, and finite derived candidates. Product retains presentation
+evaluation, routing/label/Self-loop authority, ranking, final selection, and
+canonicalization. This preserves reviewed parity and keeps Frontier runtime
+measurable separately from Product evaluation/rendering. A bounded candidate-set
+extraction checkpoint may begin; Worker/cooperative/Cancel architecture remains
+undecided and production default remains unchanged.
+
+### LiaisonScape Frontier-12 Single-Implementation Structural Refactor / Candidate Boundary 1 (2026-09-16)
+
+The [structural refactor result](liaisonscape-frontier-12-single-implementation-structural-refactor-candidate-boundary1-result.md)
+records **COMPLETED: SHARED CANDIDATE BOUNDARY / PARITY GATE PASSED** after the
+explicitly authorized structural move. `src/frontier-candidate-generator.ts`
+is now the single normalized-input/config Frontier implementation, and
+`tools/generic-crossing-search.mjs` consumes it without the former Frontier
+candidate-generation closure. Candidate-set determinism plus Product-selected
+family/fingerprint parity passed for 10 file-backed and 3 dense synthetic
+controls. Candidate generation and Product presentation timing are separately
+recorded in the [replay artifact](../e2r-liaison-scape/experimental/frontier-12-shared-candidate-generator-parity1/result.json).
+The two private custom synthetic constructors remain explicitly outside this
+independent replay artifact. No App wiring, production default change,
+authority move, retuning, or execution-architecture decision was made.
+
+### LiaisonScape Frontier-12 Candidate-Set Extraction / Product-Selector Parity & Standalone Characterization 1 (2026-09-16)
+
+The [candidate-set extraction result](liaisonscape-frontier-12-candidate-set-extraction-product-selector-parity-standalone-characterization1-result.md)
+keeps architecture A canonical but stops with **BLOCKED: CURRENT RESEARCH
+RUNNER IS NOT A BOUNDED EXTRACTABLE MODULE**. The structural generator is
+private and coupled to runner graph/config globals; copying it would create a
+second implementation and break provenance. No extraction or solver-only timing
+was claimed. A future checkpoint must scope a single-implementation structural
+refactor and candidate-set parity before execution architecture decisions.
+
+### LiaisonScape Frontier / Product Execution Architecture & Lifecycle Decision 1 (2026-09-16)
+
+The [execution architecture result](liaisonscape-frontier-product-execution-architecture-lifecycle-decision1-result.md)
+selects a future `hybrid-worker-proposal-main-thread-commit` boundary for the
+Frontier automatic-display proposal path. Frontier candidate generation and
+pure Product presentation evaluation/selection may execute sequentially in one
+Worker from an immutable serializable snapshot; main thread retains snapshot
+validation, render, session adoption, Dataset authority, persistence, and
+dirty-state responsibility. The current normal provider remains
+`settleInitialPlacement`. Main-thread synchronous Frontier execution is not
+accepted for measured dense workloads, while cooperative execution remains
+unselected because the current generator has no natural resumable yield
+boundary. Actual Worker parity, browser responsiveness, cancellation, and App
+orchestration remain a separate implementation checkpoint; no production
+wiring, default switch, Cancel UI, or transient preview was made.
+
+### LiaisonScape Frontier / Product Worker Execution Proof 1 (2026-09-16)
+
+The [Worker execution proof result](liaisonscape-frontier-product-worker-execution-proof1-result.md)
+records an actual browser Web Worker run of the shared Frontier candidate
+generator plus current pure Product presentation/proposal selection. Lighthouse
+EN, Apollo EN, and dense K7-7 matched the direct current-source path for
+candidate set, Product proposal output, selected family, and final position
+fingerprint. The dense Worker run kept the main-thread interval/RAF gaps at
+14.1/16.9 ms in the measured browser and cancellation terminated before any
+result was published. The reproducible browser artifact is
+`../e2r-liaison-scape/experimental/frontier-product-worker-execution-proof1/browser-result.json`.
+
+This establishes the Worker execution envelope only. The normal App path and
+production default remain unchanged; coordinate-authority gating, replacement
+replacement/remount invalidation, fallback, and derived-position adoption remain the next
+bounded integration checkpoint.
+
+### LiaisonScape Frontier Automatic Display App Async Adapter / Lifecycle Staging 1 (2026-09-16)
+
+The async adapter result adds a DEV-only initial-layout=frontier-12-worker
+seam from the actual Dataset-open lifecycle. It gates Frontier on
+coordinate-less non-empty Datasets, snapshots serializable graph/config data,
+runs the existing Frontier/Product Worker, validates operation/generation/
+snapshot identity and complete finite positions, and adopts success only into
+render-only derived positions. Replacement, mutation, workspace exit, unmount,
+failure, cancel, and stale completion cannot publish late output; the existing
+settleInitialPlacement result remains the bounded fallback. Stored and mixed
+Coordinates remain authoritative. Focused adapter tests and a Lighthouse EN
+browser smoke passed. The normal provider/default, visible Cancel UI,
+transient preview, and production integration remain on hold.
+
+### LiaisonScape Frontier Automatic Display Pending UX / Production-Integration Lifecycle Acceptance 1 (2026-09-16)
+
+The [pending UX result](liaisonscape-frontier-automatic-display-pending-ux-production-integration-lifecycle-acceptance1-result.md)
+stages visible pending feedback on the existing DEV-only
+`initial-layout=frontier-12-worker` seam. The existing settleInitialPlacement
+graph remains usable as fallback, only the graph receives provisional styling,
+Cancel terminates the operation without publishing a result, and application
+chrome remains available. Apollo EN and Titanic JA browser smokes observed the
+pending status, Cancel, provisional graph class, and no console errors; the
+normal Lighthouse EN URL had no staging state or provisional class. Focused
+adapter tests cover the deterministic cancellation/race, failure, stale, and
+coordinate-authority gates. No production default, solver, Product authority,
+Dataset, persistence, or Human Review decision changed. A separate production
+adoption/integration checkpoint remains required.
+
+### LiaisonScape Frontier Automatic Display Pending + Cancel Production UX Acceptance 1 (2026-09-16)
+
+The [pending + Cancel UX result](liaisonscape-frontier-automatic-display-pending-cancel-production-ux-acceptance1-result.md)
+accepts the lifecycle policy for eventual production use while keeping the
+default switch separate. Pending status is shown only during an active
+operation, Cancel keeps the already usable settleInitialPlacement graph,
+graph-only provisional treatment is retained, and success clears the affordance
+without a success banner. Browser controls covered Lighthouse EN, Apollo EN,
+Titanic EN, and Ashen Crown JA. A real status/viewport-toolbar overlap found in
+Titanic was fixed by keeping status outside the graph section; stale terminal
+state is cleared on invalidation/replacement, and narrow layouts wrap the
+status. No solver, Dataset, persistence, Product authority, Human Review, or
+production default change was made. Normal coordinate-less Frontier wiring
+remains a separate adoption checkpoint.
+
+### LiaisonScape Frontier Automatic Display Production Adoption Implementation 1 (2026-09-16)
+
+The [production adoption implementation result](liaisonscape-frontier-automatic-display-production-adoption-implementation1-result.md)
+connects the existing Frontier/Product Worker flow to the normal coordinate-less
+Dataset-open path. `settleInitialPlacement` remains the immediately published
+usable fallback; pending + Cancel, graph-only provisional treatment, current
+complete-finite validation, render-only adoption, and lifecycle invalidation
+remain in force. Stored and mixed/partial Coordinates retain their existing
+authority. Worker construction errors now resolve through bounded fallback.
+The normal URL smoke entered `started` without the DEV query and reached
+`completed` with no console errors. Production Acceptance / Closure remains
+the next checkpoint; no solver, Product authority, Dataset semantics, or
+Human Review decision changed.
+
+### LiaisonScape Frontier Automatic Display Production Acceptance / Closure 1 (2026-09-16)
+
+The [Production Acceptance / Closure result](liaisonscape-frontier-automatic-display-production-acceptance-closure1-result.md)
+records **PASS — PRODUCTION ACCEPTED / SOURCE-LEVEL ADOPTION CLOSED /
+ROLLOUT DEFERRED**. The normal coordinate-less path is now the Frontier async
+Automatic Display flow with immediate `settleInitialPlacement` fallback and
+the accepted Pending / Cancel UX. Normal URL browser coverage across ordinary,
+slower/label-heavy, and EN/JA controls reached completion with terminal cleanup
+and no console errors. Focused lifecycle evidence closes coordinate authority,
+cancel, failure, stale, replacement, invalid-result, and unmount boundaries;
+the full suite remained passing. No solver, Product authority, Dataset
+semantics, or Human Review decision changed. Deployment/public rollout remains
+a separately authorized checkpoint.
+
+### LiaisonScape Frontier Automatic Display Production Adoption Provenance Freeze / Commit Boundary 1 (2026-09-16)
+
+The [provenance-freeze result](liaisonscape-frontier-automatic-display-production-adoption-provenance-freeze-commit-boundary1-result.md)
+classifies the checkpoint as **PROVENANCE FREEZE BLOCKED / DIRTY-WORKTREE
+OWNERSHIP NOT SAFELY SEPARABLE**. The accepted normal-path implementation is
+present, and its source-backed execution chain remains traceable, but the
+required App/i18n/styles paths contain mixed accumulated changes and the spec
+roadmap/session paths likewise contain prior checkpoint material. No commit
+was created, and no dirty work was discarded or moved. The canonical reference
+therefore remains the prior HEAD plus working tree; a clean or explicitly
+hunk-owned boundary is required before a committed revision can be declared
+canonical. Production adoption remains source-level accepted; rollout remains
+deferred.
+
+### LiaisonScape Accepted Dirty Worktree Baseline Audit / Canonical Commit 1 (2026-09-16)
+
+The [baseline audit result](liaisonscape-accepted-dirty-worktree-baseline-audit-canonical-commit1-result.md)
+classifies the checkpoint as **BASELINE COMMIT BLOCKED / UNRESOLVED DIRTY
+OWNERSHIP REMAINS**. The Frontier normal-path implementation, its research and
+acceptance evidence, and the accepted guidance form a coherent baseline
+candidate. However, `.tmp-normal-offset-output.json`, the older untracked
+`experimental/product-evaluation-seam/spacing-inspection2/` surface, spec
+`work/`, and cumulative session/roadmap paths are not all justified as one
+canonical baseline. No commit or cleanup was performed. The accepted source
+state and Frontier provenance therefore remain HEAD plus working tree until a
+fresh worktree or explicit ownership map provides a safe boundary.

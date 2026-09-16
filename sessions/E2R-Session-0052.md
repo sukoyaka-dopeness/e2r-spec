@@ -574,3 +574,237 @@ is a separately authorized Fresh Browser Capture Restart Protocol A
 checkpoint; it was not started in this session.
 
 `SESSION LOGGED - REMOTE HANDOFF PUBLISHED; PROTOCOL A NOT STARTED`
+
+### ProcMon backing-file finalization operational note
+
+When Process Monitor is used for Browser Capture qualification, stopping the
+capture does not necessarily materialize the selected `.pml` as a completed
+file. The backing-file row and event count may be visible while the file is
+still absent or incomplete on disk. The run must therefore be finalized with
+`File -> Exit`; verify the `.pml` only after Process Monitor has exited, and
+convert it to CSV afterward.
+
+For each independent run, launch `Procmon64.exe` directly rather than opening
+an old `.pml` log, set the new `Use file named` path, capture, press `Ctrl+E`
+once to stop, and then use `File -> Exit` once to materialize the PML. If the
+window title points to an old PML, exit and relaunch the executable before
+configuring the next run.
+
+`OPERATIONAL NOTE - PROCMon PML MATERIALIZES AFTER PROCESS MONITOR EXIT`
+
+### ProcMon qualification evidence completeness — accepted closure
+
+On 2026-09-06, the ProcMon qualification evidence completeness checkpoint was
+accepted as closed. The evidence-complete qualification completed `3 / 3
+PASS`, and current-host runtime qualification was raised to `PASS`.
+
+The three runs retained browser-level success, Edge root Process Start/Exit,
+GPU child Process Start/Exit, helper observation, File System and Registry
+events, and independent PML/CSV artifacts. Edge root Exit 1 is classified as
+expected capture cleanup; GPU child Exit 0 is treated separately. GPU fatal or
+persistent cache-lock causal strings were absent in all three runs.
+
+The cumulative diagnostic result is:
+
+- source-equivalent execution: previous `3 / 3 PASS`;
+- source-equivalent control: `1 / 1 PASS`;
+- bounded functional qualification: `5 / 5 PASS`;
+- evidence-complete qualification: `3 / 3 PASS`;
+- historical-style GPU failure: `NOT REPRODUCED`;
+- historical exact root cause: `UNRESOLVED / PARTIALLY RESOLVED`;
+- historical GPU sandbox involvement: `CONFIRMED HISTORICALLY`;
+- repository-local defect: `NOT PROVEN`;
+- helper defect: `NOT PROVEN`;
+- accepted correction: `NONE`.
+
+The lineage and execution boundaries remain unchanged: Fresh lineage1 is
+`HISTORICAL FAILED B1 / LOCKED / IMMUTABLE`, Restart8 partial is
+`PRESERVED / IMMUTABLE`, no new Fresh lineage was created, governed Browser
+execution was `NOT PERFORMED`, and `PR-3 = NO`. Whether the next Fresh lineage
+prerequisite closure can be raised to `READY` remains subject to the separate
+closure audit for all non-runtime prerequisites.
+
+`CHECKPOINT ACCEPTED - PROCMON EVIDENCE COMPLETENESS CLOSED; CURRENT-HOST RUNTIME QUALIFICATION PASS`
+
+### Fresh Browser lineage prerequisite closure audit - BLOCKED
+
+On 2026-09-06, the Fresh Browser lineage prerequisite closure audit was
+performed against correction-repository HEAD
+`d1cde011db1c1941f00ed917b872ae758120d198` on
+`evidence/browser-capture-helper-receive-lifetime-correction1`. No new Fresh
+lineage, B1, V3, governed Browser execution, Review, ranking, selection, PR-3,
+push, tag, release, or deploy was performed.
+
+The accepted runtime prerequisites remain valid: source authority is `VALID`,
+Browser/helper authority is `VALID`, production-equivalent semantics are
+supported, and current-host runtime qualification is `PASS`. The static
+application suite completed `309 / 309 PASS`. The focused authority/preflight
+suite completed `139 / 147 PASS`; its eight failures are closure-relevant and
+are caused by the current historical artifact/worktree state, not by a new
+runtime execution.
+
+The closure is `BLOCKED` for two concrete reasons:
+
+1. The current worktree contains Fresh lineage1 historical failed-B1 outputs
+   (`artifacts/browser-capture-fresh-lineage1-2026-09-06/b1/` and
+   `b1-execution-summary.json`). `resolveRunBinding()` rejects these existing
+   execution markers, while `assertFreshB1Preflight()` accepts only the exact
+   Restart8 preserved-artifact status set. The historical outputs must not be
+   deleted, moved, renamed, or reused; the current preflight does not yet
+   classify them safely as tolerated historical state.
+2. `validateFreshLineageAuthority()` is bound to the fixed
+   `browser-capture-fresh-lineage1-2026-09-06` identity and its single
+   authority record. `generateProtocolA()` can create a disposable static
+   Protocol A root with a new phaseRunId, but there is no generic Fresh
+   authority-record generation/binding seam for a new lineage. Reusing the
+   lineage1 authority record for a new identity is rejected by the authority
+   contract.
+
+The resulting state is:
+
+- source authority: `VALID`;
+- Browser/helper authority: `VALID`;
+- current-host runtime qualification: `PASS`;
+- Fresh lineage1: `HISTORICAL FAILED B1 / LOCKED / IMMUTABLE`;
+- Restart8 partial: `PRESERVED / IMMUTABLE / NON-RESUMABLE`;
+- new Fresh identity path: `BLOCKED` (generic static identity generation
+  exists, but new-lineage authority binding is absent);
+- new Fresh materialization path: `BLOCKED`;
+- worktree preflight: `BLOCKED`;
+- B1 binding: `BLOCKED`;
+- B1 -> V3 gate enforcement: present, but execution remains closed;
+- Fresh V3 authority resolution: `BLOCKED` for a new lineage;
+- V3 recovery isolation: `READY` once a valid new-lineage binding exists;
+- protocolACommit follow-up: `NON-BLOCKING FOR NEW FRESH EXECUTION / REQUIRED
+  BEFORE FORMAL ACCEPTANCE`;
+- repository-local pre-execution blocker: `PROVEN`;
+- source correction performed: `NO`;
+- new Fresh lineage: `NOT CREATED`;
+- governed Browser execution: `NOT PERFORMED`;
+- PR-3: `NO`.
+
+The next corrective checkpoint is limited to designing and statically
+validating the minimal historical-artifact classification and generic
+new-lineage authority/materialization binding. It must not alter accepted
+authority meaning, delete historical evidence, reuse Fresh lineage1 or
+Restart8 outputs, or start governed B1/V3 execution before the closure audit
+returns `READY`.
+
+`CLOSURE AUDIT - NEW FRESH LINEAGE PREREQUISITE BLOCKED; NO LINEAGE CREATED`
+
+### Fresh Browser lineage prerequisite correction - FIXED / READY CANDIDATE
+
+On 2026-09-06, the two repository-local pre-execution blockers identified by
+the preceding closure audit were corrected on
+`evidence/browser-capture-helper-receive-lifetime-correction1`.
+
+The correction is recorded in these local commits:
+
+- `2b9eb65` `fix: support isolated fresh browser lineages`;
+- `27c2053` `fix: preserve git worktree status markers`;
+- `91bc89e` `test: align fresh lineage drift assertion`.
+
+Blocker 1 is fixed: Fresh preflight now admits the exact byte-pinned historical
+Restart8 partial set and Fresh lineage1 failed-B1 set, including their exact
+worktree status, paths, byte counts, and SHA-256 values. Unrelated files,
+status drift, and content drift fail closed. Existing historical execution
+markers remain non-runnable and are not reused.
+
+Blocker 2 is fixed: Protocol A generation and authority resolution now support
+a generic new phaseRunId/finalPr3RunId seam with a lineage-local authority
+record at `artifacts/<phaseRunId>/fresh-lineage-authority.json`. Protocol A,
+identity input, executor source, client authority, artifact root, and V3
+resolution are bound to that identity. Missing, unknown, or crossover
+authority references fail closed; there is no fallback to Fresh lineage1.
+
+Verification completed:
+
+- focused Browser authority/preflight/V3 boundary suite: `143 / 143 PASS`;
+- application suite: `309 / 309 PASS`;
+- `npm run lint`: `PASS`;
+- `npm run build`: `PASS`;
+- historical artifact files were not staged, modified by the correction, or
+  reused for execution;
+- new Fresh lineage: `NOT CREATED`;
+- governed B1/V3 Browser execution: `NOT PERFORMED`;
+- PR-3, push, tag, release, and deploy: `NOT PERFORMED`.
+
+The two pre-execution blockers are `FIXED`. Historical coexistence is
+`supported`, the generic Fresh authority seam is `supported`, and the next
+Fresh-lineage closure state is a `READY` candidate pending the normal final
+closure audit. The correction commits remain local and unpushed.
+
+`CORRECTION CHECKPOINT - FRESH LINEAGE BLOCKERS FIXED; NO LINEAGE CREATED`
+
+### Chat-room retrospective / handoff summary
+
+This entry closes the retrospective of the current chat room. Detailed
+records already present above are intentionally not duplicated:
+
+- the Process Monitor configuration and backing-file finalization procedure
+  are recorded under `ProcMon backing-file finalization operational note`;
+- the three-run evidence-completeness result and current-host runtime
+  qualification are recorded under `ProcMon qualification evidence
+  completeness - accepted closure`;
+- the initial Fresh prerequisite closure failure and its two concrete blockers
+  are recorded under `Fresh Browser lineage prerequisite closure audit -
+  BLOCKED`;
+- the implementation correction, commits, and complete verification are
+  recorded under `Fresh Browser lineage prerequisite correction - FIXED /
+  READY CANDIDATE`.
+
+The cumulative handoff state at the end of this chat is therefore:
+
+- current-host runtime capability: `PASS`;
+- historical GPU exact root cause: `UNRESOLVED / PARTIALLY RESOLVED`;
+- ProcMon evidence completeness: `PASS`;
+- historical Fresh lineage1 and Restart8 evidence: preserved, immutable, and
+  non-runnable;
+- historical artifact coexistence and strict drift rejection: supported;
+- generic Fresh authority/materialization seam: supported;
+- new Fresh lineage: `NOT CREATED`;
+- governed B1/V3 execution: `NOT PERFORMED`;
+- correction commits: local and unpushed;
+- next action: perform the final Fresh prerequisite closure audit, then decide
+  whether to create a new Fresh lineage. No historical lineage or artifact may
+  be reused.
+
+`CHAT-ROOM HANDOFF - PRIOR CHECKPOINTS PRESERVED; DUPLICATE DETAIL OMITTED`
+
+### E2R / LiaisonScape Initial Placement chat-room handoff
+
+On 2026-09-14, the LiaisonScape Initial Placement research state was handed
+off to the next chat room. The authoritative handoff record is
+`docs/liaisonscape-initial-placement-chatroom-handoff.md`; this session entry
+records the resume point without duplicating its detailed evidence.
+
+The active track is Structural Placement / Angular Ordering / Initial Node
+Placement. Parallel / Incident architecture is closed, while General
+Crossing-Aware Placement 1, Joint-Constrained Crossing-Aware Placement 2, and
+Discrete Feasibility-First Structural Placement 1 remain rejected or pivoted
+research checkpoints and are not production candidates. Product adoption is
+`HOLD`, the production provider is `NOT ESTABLISHED`, the Initial Layout
+release blocker is `OPEN`, and Human Review is `NOT READY`.
+
+The next bounded research question is whether narrow graph decomposition plus
+explicit cross-boundary capacity contracts can preserve topology quality while
+keeping Structural Placement production-native and bounded. The first step is
+an architecture/feasibility audit, not a broad production implementation.
+If decomposition still requires global combinatorial search or loses
+topology/presentation quality, the documented fallback is to evaluate Fast
+Initial Placement plus explicit High-quality Auto Layout. Adaptive Cascade is
+not yet an active decision.
+
+The handoff preserves Product routing, Parallel / Incident routing,
+endpoint-plan authority, final Relation-label placement, Self-loop routing,
+authored/stored coordinates, Dataset persistence, dirty-state, and Save
+Coordinates semantics as outside Structural Placement authority. No Product
+default, Dataset semantics, Human Review status, or historical evidence was
+changed. No push, release, deployment, or publication was performed.
+
+The LiaisonScape research commits and the E2R-SPEC handoff commit remain local
+and unpushed. Existing unrelated dirty work in LiaisonScape and E2R-SPEC was
+preserved. The E2R-SPEC validation baseline remained passing before this log
+update.
+
+`SESSION LOGGED - INITIAL PLACEMENT HANDOFF COMPLETE; DECOMPOSITION AUDIT NEXT`

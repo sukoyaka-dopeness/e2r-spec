@@ -11234,3 +11234,20 @@ Relation-label congestion, broader Node-label quality, complexity/circular
 ordering, and ordinary Edge crossing refinement remain documented non-blocking
 follow-ups. Existing historical entries that describe earlier open gates are
 preserved as history; this entry is the current release-readiness status.
+
+### E2R-WORKSPACE-RETIRED-TEST-UTILS-CLEANUP1 (2026-09-17)
+
+The [retired test-utils cleanup result](e2r-workspace-retired-test-utils-cleanup1-result.md)
+classifies the unmanaged `e2r-test-utils` directory as safely removed after a
+final provenance and consumer check. Its final inventory was metadata-only
+(`package.json`, `package-lock.json`, `README.md`, and `tsconfig.json`), with
+no Git repository, executable source, unique evidence, or active consumer.
+The canonical `@sukoyaka-dopeness/e2r-dom-test-environment@0.1.0` package and
+its LiaisonScape / NarrativeLine consumers were preserved unchanged.
+
+Historical E2R-SPEC references remain as provenance. The root IDE workspace
+file still contains the deleted folder as a non-executable local membership;
+it was intentionally left untouched under this exact-directory cleanup
+boundary and is a separate workspace-housekeeping follow-up. No application,
+Dataset, UI, or test-runtime behavior changed, and no duplicate Knowledge
+entry was needed.

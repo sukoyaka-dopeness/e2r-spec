@@ -11235,6 +11235,96 @@ ordering, and ordinary Edge crossing refinement remain documented non-blocking
 follow-ups. Existing historical entries that describe earlier open gates are
 preserved as history; this entry is the current release-readiness status.
 
+### E2R-NARRATIVELINE-NEXT-PHASE-AND-SOURCE-HANDOFF-PLANNING1 (2026-09-17)
+
+The [NarrativeLine next-phase and source-handoff planning result](e2r-narrativeline-next-phase-and-source-handoff-planning1-result.md)
+classifies the current state as **NARRATIVELINE NEXT PHASE CLEAR / SOURCE
+HANDOFF READY**. Current NarrativeLine source is stable at `a525d2e`; its only
+tracked dirty work is the pre-existing `AGENTS.md` guidance update, which was
+preserved outside this planning checkpoint. Fresh validation is `222/222 PASS`
+with natural completion, lint PASS, and build PASS. The full test still emits
+app-local Vite middleware `24678` warnings, but they do not prevent completion.
+
+Current source and later acceptance records supersede older candidate lists for
+Timeline sticky/More, Header Home and nested Back, CoordinatePanel 600/601
+geometry, locale, replacement safety, Dataset title editing, and Relation
+deletion presentation. The remaining practical pre-release candidates are a
+bounded Cross-App visual-consistency audit (Detail actions, dialogs,
+metadata/ID and title/action affinity), followed by implementation only if a
+concrete defect is confirmed, then documentation synchronization and a
+NarrativeLine release-readiness audit. The Vite warning is an optional
+operational follow-up, not a current product blocker.
+
+The result defines a minimum source handoff instead of requesting the whole
+repository. It preserves the boundary `e2r-spec` = specification/roadmap,
+`e2r-narrative-line` = implementation, and `e2r-ai-knowledge` = reusable
+guidance. No runtime, test, schema, UI, or Knowledge change was made.
+
+### E2R-NARRATIVELINE-DOCUMENTATION-AND-FINAL-RELEASE-READINESS-AUDIT1 (2026-09-17)
+
+The [NarrativeLine documentation and final release-readiness audit result](e2r-narrativeline-documentation-and-final-release-readiness-audit1-result.md)
+classifies the current state as **RELEASE-READY WITH DOCUMENTED NON-BLOCKING
+FOLLOW-UPS**. Current source is at `a525d2e`, with the pre-existing dirty
+`AGENTS.md` preserved. Documentation drift in the NarrativeLine MVP and UI
+specification was synchronized for the already implemented bounded clock
+editing and EN/JA locale support; deferred Time Zone, UTC offset, Instant,
+Relative Time, aliases, Citation, confidence, and other research/spec work
+remain deferred. Full tests complete naturally with all assertions passing,
+lint/build and E2R-SPEC validation pass, and the `24678` Vite warning remains
+operational and non-blocking. NarrativeLine's source-level implementation
+phase is **CLOSED**; rollout, deploy, public release, and publication remain
+separate decisions.
+
+### E2R-NARRATIVELINE-DOCUMENTATION-CLOSURE-RECONCILIATION1 (2026-09-17)
+
+The [NarrativeLine documentation closure reconciliation result](e2r-narrativeline-documentation-closure-reconciliation1-result.md)
+confirmed and corrected two remaining wording drifts in the current working
+tree: `docs/MVP.md` now consistently distinguishes implemented bounded local
+time fields from deferred Time Zone/UTC offset/Instant work, and `docs/ui-spec.md`
+now assigns the locale selector to the Header and descriptor/Credits to the
+Home Footer. No source, test, schema, runtime, or LiaisonScape artifact was
+changed. NarrativeLine source-level implementation remains **CLOSED**.
+
+### E2R-INITIAL-PUBLIC-RELEASE-REMAINING-GATES-RECONCILIATION1 (2026-09-17)
+
+The [Initial Public Release remaining-gates reconciliation result](e2r-initial-public-release-remaining-gates-reconciliation1-result.md)
+reconstructs the current cross-repository critical path without reopening
+NarrativeLine or LiaisonScape implementation. Remaining gates are human
+licensing/provenance confirmation, exact release-set selection, clean release
+commits, explicit push/deploy/publication authorization, and public URL
+deployment acceptance. Older Auto Layout `OPEN` records remain historical and
+superseded for source-level readiness. No public write was authorized or
+performed.
+
+### E2R-INITIAL-PUBLIC-RELEASE-TRANSACTION-READINESS-DECISION1 (2026-09-17)
+
+The [Initial Public Release transaction-readiness decision result](e2r-initial-public-release-transaction-readiness-decision1-result.md)
+prepares, without selecting, the human decision packet for software licensing,
+sample stewardship/rights, exact cross-repository revisions, and public URL
+acceptance. The current classification is **TRANSACTION READINESS DECISIONS
+PREPARED / HUMAN APPROVAL REQUIRED**. No release set, license artifact,
+package metadata, sample, public URL, or public transaction was changed.
+
+### E2R-PUBLIC-SAMPLE-RIGHTS-PROVENANCE-AND-RELEASE-DECISION-RECONCILIATION1 (2026-09-17)
+
+The [public sample rights/provenance reconciliation result](e2r-public-sample-rights-provenance-and-release-decision-reconciliation1-result.md)
+records all five current sample families as Initial Public Release candidates
+under the human policy, while retaining per-sample stewardship/rights
+confirmation. Bounded repository inspection found no concrete copy evidence,
+but this is not legal certification. The reusable review process is recorded
+in the central Knowledge playbook. No sample, translation, license artifact,
+or release revision was changed or selected.
+
+### E2R-PWA-AND-OFFLINE-CAPABILITY-ROADMAP1 (2026-09-17)
+
+The [PWA and offline capability roadmap result](e2r-pwa-and-offline-capability-roadmap1-result.md)
+records NarrativeLine and LiaisonScape as independent future PWA candidates
+and adopts the boundary **offline capability is application- and
+capability-specific**. PWA installability and offline completeness are not
+Initial Public Release blockers. Manifest, Service Worker, cache, persistence,
+update, quota, and offline Handoff semantics remain future bounded design and
+implementation checkpoints. No runtime or release artifact was changed.
+
 ### E2R-WORKSPACE-RETIRED-TEST-UTILS-CLEANUP1 (2026-09-17)
 
 The [retired test-utils cleanup result](e2r-workspace-retired-test-utils-cleanup1-result.md)

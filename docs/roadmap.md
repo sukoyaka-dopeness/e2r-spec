@@ -11199,8 +11199,9 @@ and fresh validation show no concrete release blocker in the audited
 LiaisonScape implementation. The source-level implementation phase may close;
 this does not authorize public rollout, deployment, or release.
 
-The current canonical revisions are LiaisonScape `e6a66df`, E2R-SPEC
-`2b84915`, and e2r-ai-knowledge `fa66c51`. The accepted Initial Automatic
+The audited source revisions are LiaisonScape `e6a66df`, E2R-SPEC source
+baseline `2b84915`, and e2r-ai-knowledge `fa66c51`; this current-status result
+and roadmap entry are committed in E2R-SPEC `76d4f6b`. The accepted Initial Automatic
 Display contract, Coordinate/persistence authority, Explicit Auto Layout
 `QUALIFIED` lifecycle, Pin behavior, Product presentation authority, and
 failure/stale/replacement safety remain unchanged. Current validation is

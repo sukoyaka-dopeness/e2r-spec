@@ -18,8 +18,11 @@ The audit used the current committed repositories rather than the older
 baseline references retained in historical checkpoint records:
 
 - LiaisonScape: `e6a66dfecc3187e2be895c960eb3ff7804f1bb69`
-- E2R-SPEC: `2b84915b2a737a46d0c28a0bbbbefd0b7f4f9b69`
+- E2R-SPEC source baseline audited: `2b84915b2a737a46d0c28a0bbbbefd0b7f4f9b69`
 - e2r-ai-knowledge: `fa66c512a3d6e7ad11bbeccd2ce9f3cc349264fb`
+
+This audit record and its current-status roadmap entry are committed in
+E2R-SPEC `76d4f6b`.
 
 LiaisonScape has no tracked or staged drift. Its remaining worktree material
 is the previously retained `.tmp-*` output and

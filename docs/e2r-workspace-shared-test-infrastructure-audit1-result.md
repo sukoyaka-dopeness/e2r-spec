@@ -5,7 +5,7 @@ Checkpoint: `E2R-WORKSPACE-SHARED-TEST-INFRASTRUCTURE-AUDIT1`
 
 ## Classification
 
-**A. SHARED DOM INFRASTRUCTURE ACTIVE / RETIRED SNAPSHOT NOT CANONICAL**
+**B. ONE ACTIVE / ONE RETIREMENT CANDIDATE**
 
 The two primary paths have different roles. The Git-managed
 `e2r-dom-test-environment` repository is active shared test infrastructure.

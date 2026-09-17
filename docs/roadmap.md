@@ -1035,6 +1035,18 @@ semantics:
   LiaisonScape's current header treatment, while keeping navigation semantics
   explicit and preserving the active Dataset;
 - audit modal and confirmation-dialog focus behavior in both applications.
+- **Cross-App metadata/action visual affinity audit** — Human Review observed
+  that LiaisonScape Workspace Dataset title metadata can place the title/value
+  on the left and its `Edit` action at the far edge of the row, weakening the
+  visual connection between the action and its target. At a future
+  cross-application CSS / visual-consistency pass, audit whether metadata
+  label, value, and action should read as one visual group without imposing a
+  permanent adjacent-button rule. Include any comparable NarrativeLine
+  metadata/action surface, wide-viewport separation, natural narrow-viewport
+  wrapping, existing Header/toolbar/Detail/metadata hierarchy, and EN/JA
+  label length. A future section-level action for multi-field Dataset metadata
+  remains a valid alternative; exact DOM, flex/grid, gap, and breakpoint
+  choices are intentionally left open.
 - **NarrativeLine Event Detail responsive action layout audit** — review the
   intermediate-width wrapping and grouping of the primary Save action,
   secondary Save / Add Related Entity action, and destructive / Return action.
@@ -10307,3 +10319,873 @@ render-only semantics are not directly reusable. The checkpoint stops with an
 explicit proposal-vs-direct-adoption lifecycle decision still required.
 Initial Automatic Display and all Dataset/Coordinate/persistence authority
 remain unchanged.
+
+### Roadmap Sync — Explicit Auto Layout / Pin / Post-LiaisonScape Follow-ups 1 (2026-09-17)
+
+This entry synchronizes the current planning direction from the Explicit Auto
+Layout readiness audit and the subsequent design discussion. It is a
+non-normative roadmap record. It does not change runtime source, the E2R Core,
+an Extension schema, Dataset semantics, or the accepted Initial Automatic
+Display contract.
+
+#### LiaisonScape Explicit Auto Layout — active release blocker
+
+The current synchronous `solveAutoLayout` path is not yet sufficient for the
+pre-release quality bar: it produces deterministic Node geometry but does not
+evaluate crossing, occupied-path, label-envelope, Self-loop, or viewport
+pressure as a Product-quality result. Initial Automatic Display is already
+production accepted and is not reopened by this item.
+
+The preferred Explicit Auto Layout direction is:
+
+```text
+Auto Layout → async calculation → candidate Preview → Accept / Reject
+```
+
+This remains an implementation direction, not a completed runtime contract:
+
+- Cancel while running preserves the display from immediately before the
+  operation.
+- Reject returns to that pre-operation display.
+- Only Accept adopts the candidate into working positions and then uses the
+  existing dirty / Save Coordinates semantics.
+- This is a different contract from Initial Automatic Display's usable
+  fallback and render-only adoption.
+- The shared Frontier generator, Worker transport, and Product evaluation are
+  reuse candidates, but Explicit Auto Layout needs its own operation/lifecycle
+  adapter and manual-authority snapshot.
+
+The next implementation work must first make the lifecycle and authority
+boundary explicit. It must not silently replace the current direct-apply
+semantics with a preview contract, or move routing, Relation-label,
+Node-label, Self-loop, Dataset, Coordinate, persistence, or dirty-state
+authority into the solver.
+
+#### Entity Pin / Unpin — Explicit Auto Layout constraint direction
+
+Persistent Entity Pin is recorded as a strong design direction for Explicit
+Auto Layout:
+
+- a Pinned Entity is a hard position constraint;
+- only Unpinned Entities may move during Explicit Auto Layout;
+- `manual move != Pin`; moving an Entity does not implicitly pin it;
+- the fixed operation is intended to express reusable layout intent across
+  repeated Auto Layout runs and later opens.
+
+The preferred UI candidates are `Pin / Unpin` in the Entity Context Menu and a
+Pin state control in Entity Detail. A small Node glyph may communicate state,
+but should not be the primary click target. The visual treatment should remain
+shape-independent, use more than shadow alone, and remain compatible with
+hover, selection, and touch ownership. Glyph color and exact control/copy are
+open questions.
+
+Pin is not currently a Core concept. The preferred direction is a
+LiaisonScape-owned layout/presentation Extension that associates saved Entity
+position with pinned state, for example:
+
+```json
+{ "x": 420, "y": 180, "pinned": true }
+```
+
+This example is illustrative only. Exact schema, `pinned: false` versus field
+omission, unknown-extension preservation, and the relationship to the explicit
+Save Coordinates transaction remain open. Pin changes should remain working
+layout state until an explicit save rather than silently mutating the Dataset.
+
+#### Edge and presentation authority during Explicit Auto Layout
+
+Auto Layout owns Node placement. Automatic Edge routing and curvature should
+be re-derived and evaluated by Product for the new candidate geometry. Existing
+manual Edge route/curvature, manual Relation-label, manual Node-label, and
+manual Self-loop state remain user authority; Node Pin and Edge-route fixing
+are separate concepts. Whether the preserved manual presentation state gives
+the candidate adequate Product quality is an implementation/acceptance gate,
+not permission to transfer that authority to Auto Layout.
+
+#### Post-LiaisonScape and other product follow-ups
+
+The existing [GitHub Sponsors follow-up](#github-sponsors-follow-up-2026-09-02)
+remains the post-LiaisonScape direction: a restrained secondary link near the
+bottom of Home, never a primary action. No runtime Sponsor implementation is
+authorized by this synchronization.
+
+Existing roadmap entries remain the canonical records for the following
+separate follow-ups; this entry does not duplicate or close them:
+
+- Dataset title editing for `extensions.metadata.title`, with unknown-field
+  preservation and Dataset Replacement Safety;
+- Entity deletion parity and the unresolved confirmation/cascade policy;
+- user-provided images/media as an application Extension direction, with
+  browser-security, portability, external-reference, and copyright questions;
+- NarrativeLine and Hub completion before new diagram applications.
+
+Before new ER or State Diagram applications, complete NarrativeLine and Hub.
+For NarrativeLine, date-less Order-only Events remain a direction to reconnect
+with existing research; mixed date/Event ordering and authority are to be
+reconfirmed when that implementation begins, not decided by this roadmap sync.
+ER, State Diagram, four-quadrant/radar Graph, and Random Character Generator
+applications remain future context rather than current implementation work.
+
+#### Status language and open questions
+
+This roadmap distinguishes accepted direction, strong preference, candidate
+implementation, and open question. It must not present an unresolved design as
+canonical specification. The following remain explicitly open: Pin Extension
+exact schema; omission versus `false`; Pin glyph/color; exact preview controls
+and copy; cascade-deletion confirmation; and the exact external/local media
+schema and security model.
+
+No runtime, source, schema, or implementation change was made by this sync.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PREVIEW-PIN-CONTRACT1 (2026-09-17)
+
+The [Preview / Pin contract result](liaisonscape-explicit-auto-layout-preview-pin-contract1-result.md)
+closes with **C. BLOCKED BY PERSISTENCE / AUTHORITY CONTRACT**. The
+Preview → Accept / Reject lifecycle is bounded as a separate Explicit Auto
+Layout operation: calculation is asynchronous and isolated, Cancel/Reject
+preserve the pre-operation display, and only Accept creates the existing
+working-coordinate/dirty transaction. Initial Automatic Display's fallback and
+render-only semantics are not reused.
+
+Persistent Entity Pin remains a strong direction for Explicit Auto Layout, not
+a Core or Coordinate field. The preferred boundary is a LiaisonScape-owned
+Layout/Presentation Extension whose Pin intent refers to a compatible saved
+Coordinate anchor. Exact payload/schema, orphan-Pin behavior, Unpin
+canonicalization, and atomic Save Coordinates responsibility remain open and
+must be closed before implementation.
+
+The current Frontier generator accepts topology/configuration only and does
+not implement fixed-position constraints. The current Worker/Product proof
+also uses empty manual route, label, Self-loop, and previous-placement state.
+Therefore pinned Frontier feasibility and a snapshot-aware Product input path
+are required before Explicit Auto Layout integration. Post-hoc restoration of
+Pinned coordinates is not accepted as hard-constraint support. No runtime,
+schema, UI, or provider behavior changed; Initial Automatic Display remains
+accepted and unchanged.
+
+### E2R-LIAISONSCAPE-PIN-PERSISTENCE-AUTHORITY-CONTRACT2 (2026-09-17)
+
+The [Pin persistence authority result](liaisonscape-pin-persistence-authority-contract2-result.md)
+records **A. PIN PERSISTENCE CONTRACT CLOSED / READY FOR PINNED FRONTIER
+FEASIBILITY**. Pin is now bounded as a LiaisonScape-owned draft Layout
+Extension, separate from Core, Coordinate, and Presentation responsibilities:
+`draft.github.sukoyaka-dopeness.liaisonscape-layout` version `0.1.0`.
+
+The exact active record is an Entity-ID keyed `{ pinned: true, spaceId }`
+entry. `spaceId` must resolve to exactly one compatible finite `x/y` Coordinate
+anchor; Pin stores no second coordinate. Unpin is canonical record omission.
+Orphan, malformed, unsupported, or incompatible Pins are preserved when
+practical, diagnosed, and inactive; no guessed anchor is allowed.
+
+Pin/Unpin remains unsaved working layout state and participates in pending-work
+and replacement/exit safety. Existing `Save Coordinates` is selected as the
+single atomic transaction coordinator for compatible Coordinates plus Pin
+state; production writer/reader behavior is not yet implemented. The draft
+schema and focused validator are added, but no Core or Coordinate schema is
+changed.
+
+The next checkpoint may begin Pinned Frontier feasibility using saved or staged
+`Entity ID → finite anchor` inputs. Initial Automatic Display, Frontier
+provider behavior, Product presentation authority, and runtime application
+behavior remain unchanged.
+
+### E2R-LIAISONSCAPE-PINNED-FRONTIER-FEASIBILITY1 (2026-09-17)
+
+The [Pinned Frontier feasibility result](liaisonscape-pinned-frontier-feasibility1-result.md)
+establishes the hard-constraint and execution boundary but does not close
+Explicit Auto Layout quality. A diagnostic candidate construction installs
+saved/staged fixed anchors before bounded movable-node relaxation, preserves
+all pinned coordinates exactly, and produces deterministic complete finite
+maps for no/few/many/all pin cases. The all-pinned and one-movable cases are
+explicitly covered.
+
+The existing shared no-pin Frontier generator and Product selection retain
+representative-identity and selected-position fingerprint parity. A plain-data
+Product snapshot containing route, Relation-label, Node-label, Self-loop, and
+previous-route state was evaluated through the current Product presentation
+stage, and a real diagnostic Worker transport completed with matching operation
+and snapshot identity. No production App wiring or Pin persistence behavior
+was changed.
+
+The dense-k7-7 control retained substantial routed crossing pressure in every
+pin case, and the parallel/self-loop one-movable case retained a crossing.
+The classification is therefore **C. PINNED FRONTIER HARD CONSTRAINT
+ESTABLISHED / PRODUCT QUALITY INSUFFICIENT ON DENSE CONTROL**. The diagnostic
+anchor-aware construction is not claimed to be the reviewed Frontier-12
+lineage. Explicit Auto Layout remains an active release-quality gap; its
+operation lifecycle, manual-authority treatment, and quality gate remain for a
+separate bounded implementation decision.
+
+### E2R-LIAISONSCAPE-DENSITY-ADAPTIVE-NODE-SEPARATION-EXPERIMENT1 (2026-09-17)
+
+The [density-adaptive Node separation result](liaisonscape-density-adaptive-node-separation-experiment1-result.md)
+is classified **C. MIXED**. The diagnostic comparison covered Lighthouse EN,
+Apollo EN, label-heavy JA, dense-k7-7, and a parallel/Self-loop control across
+no, few, many, one-movable, and all-pinned conditions. It compared current
+fixed separation, a bounded larger-fixed Graph-space control, and a
+per-Node density-adaptive separation policy through the current Product
+presentation evaluator.
+
+Adaptive separation relieved some score and label-nearness pressure in
+ordinary, label-heavy, and selected pinned cases, but regressed other cases.
+The dense control retained crossing pressure in every non-all-pinned case and
+therefore does not support a general dense-quality or release claim. Increased
+Graph bounds and reduced fit scale are recorded as separate viewport/framing
+effects, not as a reason to change fit policy.
+
+The experiment retained the Pin hard constraint and Product ownership of
+routing, Relation-label, Node-label, Self-loop, and previous presentation
+state. No spacing policy was promoted to production, Initial Automatic
+Display, or shared production source. Explicit Auto Layout remains an active
+quality gap; any later implementation must preserve this boundary and require
+moderate-case quality plus dense graceful-degradation evidence.
+
+### E2R-LIAISONSCAPE-PINNED-CROSS-FAMILY-PRODUCT-PORTFOLIO-EXPERIMENT1 (2026-09-17)
+
+The [pinned cross-family Product portfolio result](liaisonscape-pinned-cross-family-product-portfolio-experiment1-result.md)
+is classified **C. PORTFOLIO HELPS SELECT CASES / GENERAL RELEASE-QUALITY
+BENEFIT NOT ESTABLISHED**. Under one operation-local Product presentation
+snapshot, the diagnostic compared Pin-aware Frontier, density-adaptive, and
+topology-aware free-form candidate families across ordinary, label-heavy,
+dense, and parallel/Self-loop controls. Exact anchors were preserved during
+construction, all candidate maps were complete and finite, and independent
+replay reproduced candidate fingerprints.
+
+The combined Product selector chose a non-Frontier family in every row, but
+some choices were deterministic tie reuse of the Frontier geometry. The
+distinct portfolio choices improved bounded Product score and crossing signals
+in several cases, while one case increased node overlap and no candidate passed
+the non-empty snapshot's full Product eligibility gate. Dense `bipartite(7,7)`
+(historical `dense-k7-7`) retained substantial crossing pressure. This supports
+case selection as a diagnostic direction, not a general release-quality or
+production-provider claim.
+
+Post is excluded from the pin-aware portfolio because current evidence does not
+provide a source-faithful pin-aware generator; post-hoc pin restoration is not
+accepted. Product routing, Relation-label, Node-label, Self-loop, previous
+presentation, viewport, Dataset, persistence, and dirty-state authorities are
+unchanged. No Human Review or provider reselection is opened, and Explicit Auto
+Layout remains an active implementation/quality gap.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PRODUCT-ELIGIBILITY-SEMANTICS1 (2026-09-17)
+
+The [Product eligibility semantics result](liaisonscape-explicit-auto-layout-product-eligibility-semantics1-result.md)
+is classified **C. MIXED**. The current
+`isAutomaticLayoutPresentationEligible` predicate is a strict five-condition
+Product presentation gate: zero routed crossings, Node-body overlap, label-
+route hits, label overlap, and label nearness. Current source uses it in
+research/selection proposal paths; `App.tsx` Explicit Auto Layout calls
+`solveAutoLayout` directly and does not use this boolean as its completion or
+adoption gate.
+
+Across ordinary, label-heavy, dense, and parallel/Self-loop controls with no,
+few-mixed, and all Pins, all 30 primary candidate comparisons were ineligible.
+The diagnostic separated non-empty, no-manual-field, empty, and pre-operation
+views. Failures included real crossing/overlap/presentation pressure, but also
+inherited pre-operation and previous-state residuals; one case changed boolean
+outcome when manual fields were removed. The distinction is evidence for a
+semantic split, not permission to discard manual authority or relax the
+predicate.
+
+The predicate does not directly gate finite/completeness, Pin preservation,
+minimum separation, extent/aspect, viewport fit, route length, corridor
+pressure, short hops, or a Self-loop-specific metric. No predicate, solver,
+Product authority, Initial Automatic Display, Pin persistence, Dataset, or
+Human Review behavior changed. The next Explicit Auto Layout implementation
+checkpoint must define separate structural-validity, Preview-admissibility, and
+release-acceptance semantics before adopting this boolean for user-facing
+Preview or release decisions.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PREVIEW-ADOPTION-CONTRACT-RECONCILIATION1 (2026-09-17)
+
+The [Preview / Adoption contract reconciliation result](liaisonscape-explicit-auto-layout-preview-adoption-contract-reconciliation1-result.md)
+is classified **B. CONTRACT MOSTLY CLOSED / ONE EXPLICIT PRODUCT DECISION
+REQUIRED**. The solver-independent Explicit Auto Layout lifecycle remains
+closed: immutable snapshot, cancellation/stale validation, isolated Preview,
+session-only Accept, explicit Reject, bounded coordinate revert, and Save
+Coordinates persistence boundary. The Pin persistence/authority draft is also
+closed at its stated draft level.
+
+The remaining decision is Preview admissibility for structurally valid
+candidates with inherited, manual-authority-dependent, or soft Product
+presentation residuals. The strict five-condition
+`isAutomaticLayoutPresentationEligible` predicate remains a valid Product
+eligibility signal but is not established as the complete Explicit Auto Layout
+Preview/release gate. Strict blocking, advisory Preview, or a two-tier
+catastrophic/soft policy are documented choices requiring Product judgment.
+
+No threshold, solver, provider, lifecycle, Dataset, Pin, persistence, or Human
+Review behavior changed. Production Explicit Auto Layout implementation may
+begin its adapter design after the Product policy is explicitly selected; it
+must not silently reinterpret the current research predicate.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PREVIEW-ADMISSIBILITY-VISUAL-GATE1 (2026-09-17)
+
+The [Preview admissibility visual gate result](liaisonscape-explicit-auto-layout-preview-admissibility-visual-gate1-result.md)
+records **B. TWO-TIER PREVIEW POLICY SUPPORTED / CATASTROPHIC CLASSIFIER
+REMAINS OPEN**. The selected policy preserves the pre-operation working
+display for structurally invalid or catastrophic Product presentation, while
+allowing a complete finite, non-catastrophic residual candidate to be shown as
+the best available review Preview with warnings/evidence. No single crossing
+or label-nearness count is a catastrophic decision by itself.
+
+The current 15-case diagnostic had 0/15 candidate-none cases and 0/15
+structurally invalid cases, while the best-by-score candidate passed the
+existing strict five-condition Product eligibility predicate in 0/15 cases.
+Actual Product / Product-faithful browser evidence covered ordinary EN/JA,
+Titanic, label-heavy JA, and dense controls. Dense candidate-ready observation
+exceeded nine seconds in the browser surface and retained substantial
+line/label congestion; this is a usability boundary, not a standalone solver
+benchmark.
+
+No solver, threshold, production UI, Initial Automatic Display, Product
+authority, persistence, or Human Review behavior changed. Before Preview
+implementation, the catastrophic definition, warning presentation, failure /
+candidate-none branch, and consistent overview/local-zoom evidence remain to
+be closed. Human Review and provider selection remain closed.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-CATASTROPHIC-PREVIEW-BOUNDARY1 (2026-09-17)
+
+The [Catastrophic Preview boundary result](liaisonscape-explicit-auto-layout-catastrophic-preview-boundary1-result.md)
+records **C. CATASTROPHIC CONCEPT CLOSED / AUTOMATED CLASSIFIER NOT YET
+JUSTIFIED / IMPLEMENTATION CAN STAGE WITH EXPLICIT POLICY SEAM**. A
+structurally valid candidate may still be blocked when its Product rendering
+loses practical graph comprehension, such as a severe Node pile-up or
+relation/label collapse. Structural invalidity remains a separate hard gate.
+
+Diagnostic pile-up and micro-collapse controls were complete and finite but
+visibly unusable in the Product-faithful surface. An extent outlier was kept as
+a separate viewport/framing concern. The normal 15-case diagnostic remained
+15/15 complete finite and 0/15 candidate-none; strict eligibility remains a
+separate signal and was not relaxed or repurposed.
+
+No general catastrophic threshold or classifier is justified yet because
+false-positive risk is material for dense/congested but reviewable candidates,
+while broader false-negative evidence is still missing. No solver, spacing
+study, production Preview UI, Product authority, persistence, or Human Review
+behavior changed. Future Preview implementation may stage the two-tier policy
+explicitly, with warnings and residual evidence kept separate from hard
+blocking.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PRODUCTION-OPERATION-STAGING1 (2026-09-17)
+
+The [Production operation staging result](liaisonscape-explicit-auto-layout-production-operation-staging1-result.md)
+is classified **D. STAGING EXPOSED ARCHITECTURE CONFLICT / PRODUCTION
+IMPLEMENTATION HOLD**. Current `App.tsx` still uses the synchronous
+`solveAutoLayout` direct-apply path. The existing Worker adapter is scoped to
+coordinate-less Initial Automatic Display, the Worker Product evaluator uses
+empty manual/previous presentation state, and Pin runtime reader/writer
+integration is absent.
+
+The accepted Explicit lifecycle contract remains diagnostic-only until a
+separate production operation snapshot, transport-neutral adapter,
+snapshot-aware Product selection boundary, structural/catastrophic policy
+seam, and Pin/non-Pin scope are made explicit. Reusing Initial Automatic
+Display fallback semantics or copying the diagnostic lifecycle into App is not
+accepted. Initial Automatic Display, Product authority, Dataset/Coordinate
+semantics, persistence, and Human Review remain unchanged.
+
+The dense Product-faithful Preview remains a later quality follow-up: it was
+reviewable but visibly congested, and greater Graph-space separation may be
+desirable. This is not permission to retune spacing in the staging checkpoint.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-OPERATION-BOUNDARY1 (2026-09-17)
+
+The [Explicit Auto Layout operation boundary result](liaisonscape-explicit-auto-layout-operation-boundary1-result.md)
+is classified **B. OPERATION BOUNDARY ESTABLISHED / PIN INTEGRATION GAP
+REMAINS**. `src/explicit-auto-layout-operation.ts` now provides an immutable,
+serializable Explicit operation snapshot, shared Frontier candidate generation,
+snapshot-aware Product presentation evaluation/ranking, complete finite
+validation, an explicit structurally-valid Preview policy seam, Preview DTO,
+and transport-neutral Cancel/stale/failure handling. It never adopts positions
+or writes a Dataset.
+
+Active Pin anchors are captured as first-class `{ x, y, source }` input and
+checked for exact preservation, but current production Pin extraction and
+fixed-anchor Frontier generation do not exist. Pin-bearing operations therefore
+fail closed rather than being treated as unpinned. The Initial Automatic
+Display adapter, Product authorities, persistence, and App behavior remain
+unchanged. App integration, Pin runtime connection, and execution-architecture
+selection remain separate checkpoints.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PIN-RUNTIME-INTEGRATION1 (2026-09-17)
+
+The [Pin runtime integration result](liaisonscape-explicit-auto-layout-pin-runtime-integration1-result.md)
+is classified **B. FIXED-ANCHOR OPERATION ESTABLISHED / PIN WRITER GAP
+REMAINS**. The Explicit operation now has a read-only Pin resolver for the
+accepted draft Layout Extension, exact compatible Coordinate anchors, staged
+working anchors, and explicitly identified manual moves of already-Pinned
+Nodes. Invalid, orphan, unsupported, missing, partial, duplicate, or
+incompatible active Pins fail closed with diagnostics.
+
+The bounded fixed-anchor candidate construction is now a single shared source
+implementation in `src/pinned-frontier-candidate-generator.ts`; the existing
+diagnostic feasibility consumer delegates to it. No-Pin input delegates to the
+existing shared Frontier generator, partial Pins keep anchors fixed from the
+start, and all-Pinned input returns the unchanged finite anchor map. Product
+routing, Relation-label, Node-label, Self-loop, previous presentation, and
+strict eligibility responsibilities remain downstream.
+
+Pin mutation/UI and atomic Save Coordinates writer integration remain a
+separate checkpoint. This item does not change Initial Automatic Display,
+Dataset data, Coordinate persistence, dirty-state semantics, App wiring, or
+production rollout.
+
+### E2R-LIAISONSCAPE-PIN-WRITER-ATOMIC-SAVE1 (2026-09-17)
+
+The [Pin writer / atomic Save result](liaisonscape-pin-writer-atomic-save1-result.md)
+is classified **B. PIN WRITER ESTABLISHED / ONE BOUNDED SAVE-INTEGRATION GAP
+REMAINS**. `src/pin-persistence.ts` now owns the bounded working Pin state
+operations and builds a cloned Dataset candidate that combines the existing
+Coordinate writer with canonical LiaisonScape Layout Pin persistence. It
+preserves unknown fields, omits recognized Pin records on Unpin, validates
+complete finite Pin anchors, and returns the original Dataset on failure.
+
+The existing Coordinate serialization and Save Coordinates authorities remain
+unchanged. Focused evidence covers new Pins, saved-Pin moves, Unpin omission,
+Pin-then-Unpin coordinate discard, invalid anchors, unsupported versions, and
+reader round-trip. Initial Automatic Display and Product presentation
+responsibilities remain isolated.
+
+App-owned Pin working state integration into `pendingUserWork`, replacement /
+beforeunload safety, the existing Save Coordinates action, and Pin/Unpin UI
+remain the next bounded gap. This item does not change runtime App behavior,
+Dataset schema, persistence behavior outside the new pure writer boundary, or
+production rollout.
+
+### E2R-LIAISONSCAPE-PIN-APP-WORKING-STATE-SAVE-INTEGRATION1 (2026-09-17)
+
+The [Pin App working-state / Save integration result](liaisonscape-pin-app-working-state-save-integration1-result.md)
+is classified **E. APP WORKING-STATE / ATOMIC SAVE INTEGRATION ESTABLISHED /
+PIN UI REMAINS OPEN**. App-owned Pin state is initialized from accepted
+Datasets, reconciled across in-session Entity mutations, and kept distinct
+from `coordinatesDirty`. `unsavedPins` now participates in the existing
+`pendingUserWork`, Dataset replacement, and `beforeunload` safety boundary.
+
+The existing Save Coordinates action accepts Pin-only pending work and routes
+Coordinate plus canonical Layout Pin persistence through the atomic writer.
+Success refreshes the Dataset and Pin baseline together; failure preserves the
+Dataset and all working pending state. No Extension JSON is written directly
+from a UI because Pin/Unpin UI is not part of this checkpoint.
+
+Pin UI / Human Check A remains the next bounded step. Explicit Auto Layout
+Preview/Accept/Reject App lifecycle remains separate. Initial Automatic Display,
+Product authorities, Dataset schema, and rollout behavior are unchanged.
+
+### E2R-LIAISONSCAPE-PIN-UI1 (2026-09-17)
+
+The [Pin UI 1 result](liaisonscape-pin-ui1-result.md) is classified **B. PIN UI
+FUNCTIONAL / FIRST VISUAL CANDIDATE REJECTED**. Entity Context Menu and Entity Detail
+now
+expose the same working Pin state and call the App-owned Pin mutation seams.
+Human Check A rejected the persistent glyph and pinned/unpinned shadow
+distinction as ambiguous and visually inconsistent. Existing drag, selection,
+Relation creation, and long-press Context Menu semantics remained unchanged.
+
+The UI adds no direct Extension or Coordinate writes, autosave, Pin All/Unpin
+All control, or Explicit Auto Layout lifecycle. Existing atomic Save Coordinates,
+replacement/beforeunload safety, and manual movement of Pinned Nodes remain the
+authority. EN/JA state/action messages and a bounded Human Check A checklist
+were prepared, but no visual or accessibility PASS was inferred.
+
+### E2R-LIAISONSCAPE-PIN-UI-HUMAN-CHECK-A-VISUAL-ITERATION1 (2026-09-17)
+
+The [Pin UI Human Check A visual iteration result](liaisonscape-pin-ui-human-check-a-visual-iteration1-result.md)
+is classified **A. PIN VISUAL ITERATION STAGED / READY TO RESUME HUMAN CHECK
+A**. Persistent Pin decoration has been removed from the Canvas, and pinned
+and unpinned Nodes now share the same ordinary shadow and presentation. Pin
+state/action remains explicit and synchronized in Entity Context Menu and
+Entity Detail with the accepted `Pinned` / `Unpinned`, `Pin` / `Unpin`, and
+Japanese vocabulary.
+
+Working Pin state, pending-work and replacement safety, atomic persistence,
+manual movement of pinned Nodes, Initial Automatic Display, and the current
+Explicit Auto Layout boundary remain unchanged. Pin All / Unpin All and new
+hover/selection Pin popovers remain deferred. Human Check A must resume before
+visual acceptance or any rollout conclusion.
+
+### E2R-LIAISONSCAPE-PIN-UI-HUMAN-CHECK-A-POPOVER-ITERATION2 (2026-09-17)
+
+The [Pin UI Human Check A popover iteration result](liaisonscape-pin-ui-human-check-a-popover-iteration2-result.md)
+is classified **A. PIN POPOVER ITERATION STAGED / READY TO RESUME HUMAN CHECK
+A**. Pinned Nodes now show localized `Pinned` / `ピン留め済み` state text in
+the existing Entity ownership popover. Unpinned Nodes show no Pin state text.
+The state line reuses existing ownership typography without reinterpreting Pin
+as automatic or user placement.
+
+Human Check A subsequently accepted and closed this presentation: no persistent
+Pin glyph, one common Node shadow, pinned-only Entity popover state, and the
+existing localized Context Menu and Entity Detail vocabulary. Pin All / Unpin
+All remains deferred.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-APP-LIFECYCLE-INTEGRATION1 (2026-09-17)
+
+The [Explicit Auto Layout App lifecycle integration result](liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md)
+is classified **B. LIFECYCLE INTEGRATED / READY FOR HUMAN CHECK B**. The normal
+Product command captures immutable App working state, runs the shared
+Frontier/Pin-aware/Product-selection path in a dedicated Worker, and exposes a
+read-only Preview with Apply/Keep-current actions. Only Apply adopts Node
+positions into working state; Save Coordinates remains the sole persistence
+authority. Cancel, Reject, failure, and stale input preserve pre-operation
+state.
+
+Structural invalidity remains a hard refusal; non-strict Product eligibility
+is a visible review warning. Initial Automatic Display, Product presentation
+authorities, Dataset schema, and persistence semantics are unchanged. Human
+Check B remains open; release closure is not inferred before that review.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PREVIEW-SURFACE-REFINEMENT1 (2026-09-17)
+
+The [Explicit Auto Layout Preview surface refinement result](liaisonscape-explicit-auto-layout-preview-surface-refinement1-result.md)
+is classified **A. PREVIEW SURFACE REFINED / READY TO RESUME HUMAN CHECK B**.
+Human Check B confirmed lifecycle function and actual unpinned Node movement,
+then identified a bounded surface defect: Preview text/actions shared the
+Graph section with the floating viewport toolbar. Preview is now an
+operation-level surface between Dataset metadata and the Graph section, and
+the EN/JA decision copy is `Review Auto Layout` / `Use this layout` /
+`Return to previous layout` and `自動レイアウトを確認` /
+`このレイアウトを使う` / `元の配置に戻る`. The later DEV failure
+diagnostic checkpoint records the user-accepted correction to
+`元の配置に戻す`.
+
+The fix is limited to surface ownership, layout, and user-facing copy.
+Algorithm, Worker, Pin, lifecycle, Product presentation, Dataset, Coordinate,
+dirty-state, and persistence semantics are unchanged. Human Check B remains
+open and must not be inferred complete from this refinement.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-HUMAN-CHECK-B-RESUME1 (2026-09-17)
+
+The [Human Check B resume result](liaisonscape-explicit-auto-layout-human-check-b-resume1-result.md)
+is classified **A. COPY CORRECTED / HUMAN CHECK B READY**. Current source and
+Actual Product evidence confirm the accepted EN/JA Preview title and actions:
+`Review Auto Layout` / `Use this layout` / `Return to previous layout` and
+`自動レイアウトを確認` / `このレイアウトを使う` / `元の配置に戻る` at
+that checkpoint. The subsequently clarified accepted Japanese Reject copy is
+`元の配置に戻す` and is applied by the DEV failure diagnostic checkpoint.
+
+The operation-level Preview surface remains separate from the Graph section
+and floating viewport toolbar. Human Check B is resumed, but no overall visual
+PASS, QUALIFIED, or FAIL is recorded here. Pin/lifecycle interaction review,
+warning acceptability, viewport behavior, and ordinary/dense quality remain
+for human judgement; no solver or presentation retuning is authorized.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-SAFE-PREVIEW-FAILURE-DIAGNOSIS1 (2026-09-17)
+
+The [Safe Preview failure diagnosis result](liaisonscape-explicit-auto-layout-safe-preview-failure-diagnosis1-result.md)
+is classified **E. ROOT CAUSE NOT YET ESTABLISHED / HUMAN CHECK B HOLD**.
+Fresh Titanic EN and Lighthouse JA fixtures reached Running and Product
+Preview on both the 5173 and 5176 Vite instances. A focused source diagnostic
+also shows that a manually moved ordinary unpinned graph and a valid working
+Pin reach Preview; an invalid saved Pin without a compatible finite anchor
+fails closed at capture with `PIN_RESOLUTION_FAILED` / `PIN_SPACE_UNSUPPORTED`.
+
+The current App collapses capture failure and Worker/operation failure into the
+same Safe Preview message, so the historical browser observation does not
+identify its exact branch or payload. Strict Product quality warnings remain
+Preview-admissible and are not this failure. No source behavior, Pin contract,
+solver, Product authority, or Japanese copy was changed. Human Check B must
+not be closed from fresh-fixture success alone; the exact failing Dataset/state
+or a future diagnostic-only reason capture is still required.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-DEV-FAILURE-DIAGNOSTIC1 (2026-09-17)
+
+The [DEV failure diagnostic result](liaisonscape-explicit-auto-layout-dev-failure-diagnostic1-result.md)
+is classified **A. DEV FAILURE DIAGNOSTIC ESTABLISHED / READY TO CAPTURE NEXT
+HUMAN CHECK B FAILURE**. Explicit Auto Layout hard failures now retain stage,
+reason, operation/snapshot/graph identity, Entity/Pin counts, Pin diagnostics,
+Worker status, and bounded reached-stage evidence in structured App state.
+Development builds render that record only after a hard failure; production
+UI, successful Preview, quality-warning Preview, Cancel, and stale outcomes do
+not expose it.
+
+An explicit DEV-only Lighthouse Pin-resolution probe reproduced the existing
+fallback with `snapshot-capture` / `PIN_RESOLUTION_FAILED` /
+`PIN_SPACE_UNSUPPORTED` visible in the Actual Product. The ordinary Lighthouse
+JA path still reached Preview without the diagnostic. This proves observability
+but does not attribute the intermittent Human Check B failure to Pin input.
+The accepted Japanese Reject action is now `元の配置に戻す`. Solver quality,
+Product scoring/presentation, Pin semantics, lifecycle, Dataset, Coordinates,
+dirty-state, and persistence are unchanged. Human Check B remains HOLD until
+the next real failure reason is captured and reviewed; dense Graph-space
+quality remains a separate follow-up.
+
+### E2R-LIAISONSCAPE-PIN-WORKING-ANCHOR-CONSISTENCY1 (2026-09-17)
+
+The [Pin working-anchor consistency result](liaisonscape-pin-working-anchor-consistency1-result.md)
+is classified **B. TWO DISTINCT PIN FAILURES IDENTIFIED AND FIXED / READY TO
+RETEST HUMAN CHECK B**. Human Check established that stationary Pins are exact
+hard constraints, while both move -> Pin and Pin -> move previously failed at
+`result-validation / PIN_VIOLATION`; moved Pin Save independently failed with
+`PIN_DATASET_INVALID`.
+
+The Auto Layout path resolved and carried the correct current working anchor
+through candidate selection, but final `round-once` canonicalization rounded
+fractional dragged Pin coordinates immediately before exact validation. Final
+canonicalization now preserves fixed anchors exactly and rounds only unpinned
+positions. The Save path correctly produced Coordinate and Pin payloads but
+failed to add the Layout Extension to an existing Specification `uses` list;
+the atomic writer now synchronizes that declaration without repairing invalid
+or conflicting declarations implicitly.
+
+Focused and Actual Product evidence now covers both moved-Pin operation
+orderings, stationary/all-Pinned constraints, canonical Lighthouse atomic
+Save, saved/reloaded anchor resolution, and move -> Pin -> Preview -> Reject ->
+Save. Frontier quality, Product scoring/presentation, Pin meaning, Preview
+adoption, Dataset persistence authority, and Initial Automatic Display remain
+unchanged. Human Check B may resume but is not closed by this checkpoint;
+dense Graph-space quality remains separate.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-HUMAN-CHECK-B-RETEST1 (2026-09-17)
+
+The [Human Check B retest result](liaisonscape-explicit-auto-layout-human-check-b-retest1-result.md)
+is classified **B. HUMAN CHECK B RETEST READY / FULL-SUITE ENVIRONMENTAL GATE
+STILL OPEN**. Current Actual Product evidence on the Lighthouse JA fixture
+shows fresh Unpinned Auto Layout reaching Preview with its quality warning,
+and the same graph with a stationary Pin reaching Preview without
+`PIN_VIOLATION` or a hard-failure diagnostic. The prior move -> Pin -> Preview
+-> Reject -> Save sequence also succeeds; complementary Pin -> move and
+saved/reloaded anchor cases are covered by focused executable tests.
+
+The Preview actions are `Review Auto Layout` / `Use this layout` /
+`Return to previous layout` and `自動レイアウトを確認` / `このレイアウトを使う`
+/ `元の配置に戻す`. Preview remains read-only until Use, and Save Coordinates
+remains the Dataset persistence authority. Targeted evidence is `30/30 PASS`.
+The full suite was attempted but remained open after the known WebSocket
+`Port 24678 is already in use` lifecycle condition and is not recorded as
+Full PASS. The accepted automatic-integer/manual-float precision direction is
+recorded: Explicit Auto Layout preserves fixed Pin/manual anchors exactly and
+rounds only unpinned automatic positions; Initial Automatic Display
+integerization remains a separate follow-up. Human Check B final disposition
+remains user-owned, and dense Graph-space quality remains separate.
+
+### Explicit Auto Layout quality follow-ups
+
+The current Explicit Auto Layout Preview / Pin lifecycle contract remains
+accepted independently of the following quality work. These items are
+follow-ups, not blockers for Pin lifecycle correctness, persistence, or the
+existing Preview contract.
+
+- **Pinned global recovery:** With one or more Pins, a severely degraded
+  current working layout can be preserved too locally. If unpinned Nodes have
+  been manually collapsed into dense or overlapping positions, Pin-aware
+  candidate generation may retain substantial crossings and congestion
+  instead of reconstructing a cleaner global arrangement. Future work should
+  keep Pinned Nodes as hard anchors while allowing unpinned Nodes to participate
+  in broader/global candidate generation or recovery. This remains separate
+  from Pin lifecycle correctness and persistence acceptance.
+- **Presentation-aware local relaxation:** Automatically placed Node labels
+  can remain rough beyond isolated dense cases. After structural candidate
+  selection, future work may investigate a bounded local perturb/relax pass
+  that re-evaluates Node labels, Relation labels, routing, overlaps, and other
+  Product presentation pressure around the selected candidate. This is not
+  authorization to retune spacing or routing heuristics without separate
+  evidence.
+
+Both follow-ups remain in the broader Explicit Auto Layout quality track,
+alongside dense Graph-space separation and Relation-label congestion. Any
+future improvement must preserve the current authority boundaries, runtime
+expectations, Pin semantics, and canonical readability.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-HUMAN-CHECK-B-CLOSURE-GATE1 (2026-09-17)
+
+The [Human Check B Closure Gate result](liaisonscape-explicit-auto-layout-human-check-b-closure-gate1-result.md)
+consolidates the accepted lifecycle, Pin, Preview, and Save evidence and
+records the Human Review quality findings for **Pinned global recovery** and
+**Presentation-aware local relaxation**. The gate is classified **B. EVIDENCE
+CONSOLIDATED / FULL-SUITE LIFECYCLE GATE OPEN / USER DISPOSITION REQUIRED**.
+The final Human Check B `PASS`, `QUALIFIED`, or `FAIL` decision is not inferred
+by Codex.
+
+The ordinary `npm test` rerun reproduced Vite middleware HMR WebSocket port
+`24678` conflict after an initially clean port check. A serial diagnostic run
+removed the conflict message but still hung without a completion summary,
+indicating a separate test/Vite lifecycle or open-handle follow-up. Neither
+run is recorded as Full PASS; focused regressions remain `30/30 PASS`, and
+lint, build, E2R-SPEC validation, and diff checks remain green.
+
+The two quality findings are deferred follow-ups, not Pin lifecycle or Preview
+contract blockers. Production defaults, solver quality, Product authorities,
+Dataset semantics, and rollout remain unchanged. Based on the current evidence,
+`QUALIFIED` is the natural Human Check B disposition candidate if the user
+accepts these quality limitations, but the final decision remains user-owned.
+The separate Initial Automatic Display automatic-coordinate integerization
+follow-up remains open; Explicit Auto Layout preserves fractional manual/Pin
+anchors while integer-canonicalizing unpinned automatic positions. The primary
+focused campaign is `72/72 PASS`, with a final provider-boundary rerun of
+`30/30 PASS` after the last source adjustment.
+
+### E2R-LIAISONSCAPE-INITIAL-AUTOMATIC-DISPLAY-INTEGER-CANONICALIZATION-HUMAN-CHECK1 (2026-09-17)
+
+The [Initial Automatic Display integerization Human Check result](liaisonscape-initial-automatic-display-integer-canonicalization-human-check1-result.md)
+is classified **A. HUMAN CHECK READY / NO INTEGERIZATION REGRESSION OBSERVED**.
+Fresh coordinate-less Lighthouse EN Actual Product smoke on the current Vite
+`5176` source showed an immediately usable Graph and normal async completion;
+the final 10-Entity/14-Relation display, labels, routes, and Self-loop showed
+no visible integerization-attributable regression or hard-failure diagnostic.
+Stored fractional Coordinates and manual fractional placement remain covered
+by focused executable evidence because raw coordinate precision is not exposed
+on the normal review surface.
+
+The final Human Review disposition is not inferred here. The suggested review
+procedure is limited to fresh coordinate-less display, stored fractional
+authority, and manual fractional placement. Provider selection, quality
+follow-ups, Explicit Auto Layout lifecycle, and the separate full-suite
+Vite/HMR lifecycle gate remain unchanged.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-HUMAN-CHECK-B-QUALIFIED-CLOSURE1 (2026-09-17)
+
+The [Human Check B qualified closure result](liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md)
+records the user's final disposition: **QUALIFIED**. Actual Product evidence
+accepted the Explicit Auto Layout lifecycle, Preview, Pin hard constraints,
+manual movement of Pinned Nodes, Save Coordinates, and reload consistency.
+The imperfect visual quality is represented by deferred **Pinned global
+recovery**, **Presentation-aware local relaxation**, and dense Graph-space /
+Relation-label congestion follow-ups; these do not reopen lifecycle acceptance
+or provider selection. The full `npm test` Vite/HMR lifecycle gate remains
+open separately.
+
+### E2R-LIAISONSCAPE-INITIAL-AUTOMATIC-DISPLAY-INTEGER-CANONICALIZATION1 (2026-09-17)
+
+The [Initial Automatic Display integer canonicalization result](liaisonscape-initial-automatic-display-integer-canonicalization1-result.md)
+is classified **A. INITIAL AUTOMATIC DISPLAY INTEGER CANONICALIZATION
+ESTABLISHED / HUMAN CHECK READY**. Internal `solveAutoLayout` calculation may
+remain fractional, while `settleInitialPlacement` canonicalizes the immediate
+coordinate-less fallback to integer Node positions. The existing Frontier async
+selected result already rounds before re-evaluating Product presentation, so
+the final render-only adoption is integer as well.
+
+Stored and mixed fractional Coordinates remain authoritative, and manual Node
+placement retains fractional precision. No Dataset, persistence, dirty-state,
+Explicit Auto Layout, Pin, routing, label, Self-loop, or quality follow-up
+behavior changed. Focused evidence is `72/72 PASS`; lint, build, E2R-SPEC
+validation, and diff checks pass. The known full-suite Vite/HMR lifecycle gate
+remains separate and is not recorded as Full PASS.
+
+### E2R-LIAISONSCAPE-INITIAL-AUTOMATIC-DISPLAY-INTEGER-CANONICALIZATION-HUMAN-CHECK-PASS-CLOSURE1 (2026-09-17)
+
+The [Initial Automatic Display integerization Human Check PASS closure](liaisonscape-initial-automatic-display-integer-canonicalization-human-check-pass-closure1-result.md)
+records the user's explicit Human Review disposition: **PASS**. The immediate
+fallback/provisional Graph was usable, Cancel preserved it, Frontier completion
+introduced no unnatural jump or collapse, and no obvious integerization-related
+regression or visible hard-failure diagnostic was observed. Stored and manual
+fractional Coordinate behavior remains supported by focused executable evidence.
+This acceptance is limited to the automatic-coordinate precision boundary; it
+does not revisit Frontier/dense quality, Pinned global recovery, or
+Presentation-aware local relaxation.
+
+The previously open full-suite lifecycle gate is now **CLOSED**. Current source
+and reproduction identified Vite middleware test-server WebSocket setup as the
+cause: `hmr: false` alone still allowed Vite to allocate its default `24678`
+WebSocket listener for parallel test workers. The test-only harness fix sets
+`server.ws: false` in the three middleware-mode test server configurations.
+The normal `npm test` now completes naturally with `634/634 PASS`, a complete
+summary, exit code 0, and no residual 24678 listener. No production runtime or
+Product semantics changed; historical records that described the gate as open
+are retained. Existing quality follow-ups remain unchanged.
+
+### E2R-LIAISONSCAPE-GENERAL-COMPLEX-DATASET-PRACTICALITY-REASSESSMENT1 (2026-09-17)
+
+The [General / Complex Dataset practicality reassessment](liaisonscape-general-complex-dataset-practicality-reassessment1-result.md)
+classifies the current Product as **B. PRACTICALITY ACCEPTABLE WITH
+NON-BLOCKING QUALITY FOLLOW-UPS**. Current coordinate-less Initial Automatic
+Display opens an immediately usable fallback Graph, exposes accepted Pending /
+Cancel behavior, and asynchronously adopts only a current complete Frontier
+result. Stored and mixed Coordinates retain their authority. Explicit Auto
+Layout remains a Worker/Preview/Use/Return operation with Human Check B
+`QUALIFIED`; its known quality follow-ups are not reopened.
+
+Current-source Actual Product observations covered Lighthouse EN/JA and Titanic
+EN on the 5176 dev surface; the existing normal-path acceptance matrix covers
+Apollo EN, Titanic JA, and Ashen Crown JA. The current full suite is
+`634/634 PASS` with natural termination. Seconds-order Frontier completion is
+treated as practical diagnostic evidence only, not a hard browser-independent
+SLA. Dense Graph-space, Relation-label congestion, Pinned global recovery,
+Presentation-aware local relaxation, and broader Node-label quality remain
+documented non-blocking follow-ups.
+
+The practicality concern for the accepted Automatic Display operation may close
+on this evidence. This does not close Explicit Auto Layout quality, authorize
+deployment/public rollout, or change any Product authority or persistence
+semantics. Historical Gate 1-3 classifications are retained as history.
+
+### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-REFERENCE-PLACEMENT-REGRESSION-FIXTURE1 (2026-09-17)
+
+The [Explicit Auto Layout reference-placement regression fixture result](liaisonscape-explicit-auto-layout-reference-placement-regression-fixture1-result.md)
+classifies the checkpoint **B. REGRESSION REPRODUCED / RESPONSIBILITY STILL
+MIXED**. A neutral moderate 12-Entity / 19-Relation graph is available as a
+saved-coordinate reference and a topology-identical coordinate-less control,
+with EN/JA-shaped labels, local clusters, high-degree hubs, and cross-cluster
+Relations. The DEV acceptance URL reaches the current `Running` → `Review Auto
+Layout` path. The saved reference retains separated clusters while the current
+Preview visibly rearranges the graph into a compact central/circular layout.
+
+The current machine metrics do not prove a solver-only regression: reported
+crossings are equal for the saved reference and Preview, while other signals
+favor different arrangements. The result is therefore a reproducible visual
+difference with mixed responsibility, not a final Human Review disposition.
+The fixture is **READY_TO_REVIEW_NOT_JUDGED**. No quality fix, retuning, or
+authority change is authorized. Pinned global recovery, Presentation-aware local
+relaxation, and dense Graph-space / Relation-label congestion remain separate
+non-blocking follow-ups; Human Check B remains `QUALIFIED`.
+
+### E2R-LIAISONSCAPE-AUTO-LAYOUT-QUALITY-FREEZE-AND-WORKTREE-BASELINE-AUDIT1 (2026-09-17)
+
+The [Auto Layout quality freeze and worktree baseline audit result](liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md)
+records the current research boundary. The controlled 12-Entity / 19-Relation
+reference-placement fixture was reviewed in both JA and EN, and the user
+judged that **Preview improves the controlled fixture**. The prior diagnostic
+record remains historical: it records a reproducible reference-to-Preview
+difference with mixed attribution, not a confirmed Human-visible regression.
+
+A separate observation on the private real Dataset `天の葬列20260710a` found a
+more compact Preview with increased Relation / Relation-label congestion
+relative to its saved layout. The Dataset is not copied into the repository,
+and the observation is retained as non-blocking evidence rather than a release
+blocker. The complexity boundary is unresolved across graph size, density,
+label pressure, and topology; no threshold exploration is started here.
+
+Additional Explicit / Initial Auto Layout quality research is frozen for the
+post-release follow-up track. Pinned global recovery, Presentation-aware local
+relaxation, Graph-space separation, Relation-label congestion, broader
+Node-label quality, circular-order behavior, and the broader complexity
+threshold remain documented non-blocking follow-ups. Explicit Auto Layout
+Human Check B remains `QUALIFIED`, Initial Automatic Display remains accepted,
+and release practicality remains `B. PRACTICALITY ACCEPTABLE WITH
+NON-BLOCKING QUALITY FOLLOW-UPS`. This freeze does not approve production
+rollout, deploy, release, or a production-default change.
+
+The current worktrees were audited without reset, restore, stash, clean, delete,
+or commit. Accumulated accepted runtime/lifecycle source, tests, DEV fixtures,
+research artifacts, and specification records have proposed logical commit
+groups. `.tmp-*`, the older `experimental/product-evaluation-seam/spacing-inspection2/`,
+and `e2r-spec/work/` diagnostic material remain preserved outside the proposed
+baseline pending ownership/canonical-status review. The current classification
+is **C. MIXED OWNERSHIP / COMMIT BOUNDARY NOT YET SAFE**; a follow-up may create
+bounded local commits after human review.
+
+### E2R-LIAISONSCAPE-WORKTREE-BASELINE-COMMIT-READINESS1 (2026-09-17)
+
+The [worktree baseline commit-readiness result](liaisonscape-worktree-baseline-commit-readiness1-result.md)
+converts the prior mixed-ownership audit into exact path manifests without
+creating a commit. The current status is 57 status paths in LiaisonScape and
+40 in e2r-spec (the new readiness record is included); neither index has
+staged changes.
+
+The proposed order is: accepted LiaisonScape runtime plus inseparable direct
+tests; Layout/Pin extension plus validator; DEV acceptance seam and the
+controlled reference fixture; reproducible research experiments/evidence; and
+e2r-spec result records/roadmap. Cumulative source files are intentionally not
+split by historical checkpoint. The two `.tmp-*` files,
+`experimental/product-evaluation-seam/spacing-inspection2/`, and `work/` are
+preserved outside the baseline. Historical research retention remains the
+small human decision set.
+
+The classification is **B. COMMIT MANIFEST ESTABLISHED / SMALL HUMAN DECISION
+SET REMAINS**. No solver, scoring, routing, label, UI, Dataset, or persistence
+change was made. The prior `636/636 PASS` remains historical evidence; the
+future runtime baseline commit was verified with `636/636 PASS`, natural
+termination, lint, and build. The later bounded commits are `17be25a`
+(LiaisonScape accepted runtime/direct tests), `e4f6856` (Layout/Pin extension
+and validator), `c692cdf` (DEV seam and controlled fixture), and `e6a66df`
+(canonical historical research evidence). Public rollout, deploy, and release
+remain separate checkpoints.

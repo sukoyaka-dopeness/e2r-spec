@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/sukoyaka-dopeness/e2r-spec/main/schemas/extensions/liaisonscape-layout-draft.schema.json",
+  "title": "E2R LiaisonScape Layout Extension Draft 0.1.0",
+  "description": "Structural validation schema for the draft.github.sukoyaka-dopeness.liaisonscape-layout Extension payload at exact version 0.1.0.",
+  "$comment": "This schema validates the Extension payload only. Entity-ID resolution, Coordinate anchor compatibility, orphan diagnostics, atomic Save Coordinates behavior, and canonical omission are semantic responsibilities described in extensions/liaisonscape-layout-extension-draft.md.",
+  "type": "object",
+  "required": [
+    "specVersion"
+  ],
+  "properties": {
+    "specVersion": {
+      "const": "0.1.0"
+    },
+    "entities": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "\\S"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/entityPin"
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "entityPin": {
+      "type": "object",
+      "required": [
+        "pinned",
+        "spaceId"
+      ],
+      "properties": {
+        "pinned": {
+          "const": true
+        },
+        "spaceId": {
+          "type": "string",
+          "pattern": "\\S"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

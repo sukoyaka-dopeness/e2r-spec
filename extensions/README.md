@@ -26,6 +26,9 @@ registered as Stable:
   (`experimental.github.sukoyaka-dopeness.coordinate`, frozen prototype
   `0.1.0`; retained as the migration source and interoperability baseline)
 - [Layout Extension](layout-extension.md)
+- [LiaisonScape Layout Extension Draft](liaisonscape-layout-extension-draft.md)
+  (`draft.github.sukoyaka-dopeness.liaisonscape-layout`, draft `0.1.0`; Entity
+  Pin intent only)
 - [Dictionary Extension](dictionary-extension.md)
 - [Specification Extension](specification-extension.md)
   (`draft.github.sukoyaka-dopeness.specification`, draft `0.1.0`)

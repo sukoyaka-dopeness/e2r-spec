@@ -11190,6 +11190,27 @@ and validator), `c692cdf` (DEV seam and controlled fixture), and `e6a66df`
 (canonical historical research evidence). Public rollout, deploy, and release
 remain separate checkpoints.
 
+### E2R-WORKSPACE-SHARED-TEST-INFRASTRUCTURE-AUDIT1 (2026-09-17)
+
+The [shared test infrastructure audit result](e2r-workspace-shared-test-infrastructure-audit1-result.md)
+classifies `@sukoyaka-dopeness/e2r-dom-test-environment@0.1.0` as active shared
+infrastructure used by LiaisonScape and NarrativeLine. Its responsibility is
+limited to framework-neutral JSDOM/global/cleanup lifecycle; application
+adapters retain app-specific URLs and globals, while Vite middleware, fixtures,
+selectors, and Product assertions remain app-owned.
+
+`e2r-test-utils` is confirmed as a non-canonical, unmanaged `0.0.0-h12.0`
+historical packaging snapshot with no active consumer. It remains untouched as
+a future archive/delete candidate requiring separate authorization. Hub still
+has an active local helper with overlapping generic lifecycle code and is a
+future migration candidate, not a current shared-package consumer.
+
+The shared package tests pass `2/2`; LiaisonScape current evidence is
+`636/636 PASS`; NarrativeLine is `222/222 PASS` with app-local Vite
+`24678` warnings; and Hub is `1/1 PASS`. No package or application source was
+changed. Existing Knowledge ownership guidance and retirement records already
+cover the reusable conclusion, so no duplicate Knowledge entry was added.
+
 ### E2R-LIAISONSCAPE-FINAL-RELEASE-READINESS-AUDIT1 (2026-09-17)
 
 The [Final Release-Readiness Audit result](liaisonscape-final-release-readiness-audit1-result.md)

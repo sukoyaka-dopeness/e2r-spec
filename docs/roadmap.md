@@ -689,16 +689,14 @@ the application still resolves the registry validator `0.4.0` rather than the
 candidate-supporting Validator checkpoint. The dependency/release audit selects
 a normal published `@sukoyaka-dopeness/e2r-validator` package as the canonical
 production path; a sibling file, workspace, or Git dependency is temporary
-evidence only and is not the application release model. The current Validator
-HEAD is not release-ready yet because package metadata and lockfile remain
-`0.4.0` and the release changelog entry is still Unreleased. Existing SemVer
-policy and the prior compatible validation additions make `0.5.0` the
-recommended next version, but version bump, release, and publication require
-human authorization. NL-H2-R1 follows the completed Validator release and a
-separate NarrativeLine lockfile/dependency checkpoint. This is a readiness
-record only: it does not authorize runtime changes, migration, sample changes,
-deployment, or release, and Relative Time authoring/order inference remains
-deferred.
+evidence only and is not the application release model. Validator `0.5.0`
+release preparation is now complete locally at commit `00bcda7`; the latest
+published package remains `0.4.0` until the separate authorization, push, tag,
+and publication steps occur. NL-H2-R1 follows the completed Validator
+publication and a separate NarrativeLine lockfile/dependency checkpoint. This
+is a readiness record only: it does not authorize runtime changes, migration,
+sample changes, deployment, or release, and Relative Time authoring/order
+inference remains deferred.
 
 ### Perceived name impression and character-name generation research
 

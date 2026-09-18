@@ -185,10 +185,13 @@ the current visual follow-up cluster. If it confirms one defect, the next step
 must be one smallest app-local implementation surface. If it confirms multiple
 independent defects, human prioritization is required before implementation.
 
+The NL-H2-R1 fixture-loading issue mentioned in this result was subsequently
+recovered and manual acceptance completed without a runtime fix. It remains
+outside this visual audit.
+
 The existing User Guide / Public Sample refresh remains a separate pre-release
-content/provenance checkpoint. The NL-H2-R1 fixture-loading blocker remains an
-environmental manual-acceptance issue with no runtime fix indicated and is not
-part of this visual audit.
+content/provenance checkpoint. NL-H2-R1 is accepted as recorded in the current
+addendum above and is not part of this visual audit.
 
 ## Safety and validation boundary
 

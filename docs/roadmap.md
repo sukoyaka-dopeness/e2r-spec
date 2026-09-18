@@ -11392,7 +11392,17 @@ implementation checkpoints. No runtime or release artifact was changed.
 
 ### E2R-NARRATIVELINE-NL-H2-R1 (2026-09-19)
 
-The NarrativeLine bounded runtime result `NL-H2-R1` is implemented at
+Current status: **ACCEPTED / MANUAL ACCEPTANCE COMPLETE**. The fixture-loading
+blocker described below is retained as history and is superseded. Chrome CDP
+loaded the canonical Candidate through NarrativeLine's real file input without
+a production change. Real Chrome acceptance then passed Stable History, the
+exact Candidate, mixed validation refusal, unknown and unsupported History,
+unrelated edit plus export/re-import preservation, EN/JA, keyboard/focus, and a
+360 px narrow viewport. No runtime defect was found. The detailed result is
+recorded in NarrativeLine's
+`docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md`.
+
+Historical attempt record: the NarrativeLine bounded runtime result `NL-H2-R1` is implemented at
 NarrativeLine commit `1c1d068`. Its latest manual acceptance attempt is
 **BLOCKED BY FIXTURE-LOADING ENVIRONMENT — NO RUNTIME FIX INDICATED**: the
 stable History browser checks passed, but Candidate fixture acquisition through

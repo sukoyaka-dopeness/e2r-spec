@@ -117,7 +117,15 @@ surface and must not change Dataset semantics, navigation, or locale behavior.
 
 ## NL-H2-R1 status reconciliation
 
-The existing roadmap entry previously said **READY FOR MANUAL ACCEPTANCE**.
+Current addendum: **ACCEPTED / MANUAL ACCEPTANCE COMPLETE**. The blocked status
+below is retained as evidence of the earlier attempt and is superseded. Chrome
+CDP subsequently loaded the canonical Candidate through NarrativeLine's real
+file input, and the remaining Candidate/unknown/mixed, unrelated-edit
+preservation, narrow, EN/JA, and keyboard/focus matrix passed without a runtime
+change. This closure does not promote History 2.0.0 Candidate or Relative Time
+to the public release scope.
+
+Historical attempt record: the existing roadmap entry previously said **READY FOR MANUAL ACCEPTANCE**.
 The latest manual attempt reached the stable History browser checks, but
 Candidate fixture loading through the Chrome automation file chooser was
 blocked by the browser-control environment. Candidate/unknown/mixed fixture

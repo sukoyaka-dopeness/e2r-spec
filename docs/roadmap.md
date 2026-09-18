@@ -664,9 +664,12 @@ preceded the first schema candidate. The normalized boundary keeps History
 2.x under the same registered `history` identifier as a same-responsibility
 major-version direction, accepts basic strict `before` and basic `within`
 transitivity only as Derived semantic rules with supported premises, and limits
-the initial approximation candidate to Temporal Positions. Exact schema and
-version details, derivation applicability and solver policy, and whole-
-assertion approximation remain open or deferred as recorded in the audit.
+the initial approximation candidate to Temporal Positions. The History `2.0.0`
+candidate and Relative Time `0.1.0` candidate version/schema details are now
+selected and implemented in the specification and Validator checkpoints.
+Advanced derivation applicability and solver policy, whole-assertion
+approximation, Stable registration, and application writer/migration/UI remain
+open or deferred as recorded in the audit.
 The first specification checkpoint now defines History `2.0.0` candidate and
 Relative Time Draft `0.1.0` prose, structural schemas, representative fixtures,
 exact Feature declarations, and repository-local validation. This does not
@@ -683,11 +686,19 @@ History and Relative Time payloads are preserved or warned about as opaque data,
 not semantically presented or authored. The current History editor must not be
 used on candidate or mixed payloads because it writes stable `history.time`, and
 the application still resolves the registry validator `0.4.0` rather than the
-candidate-supporting Validator checkpoint. The selected next application slice
-is a future preservation/read-only boundary with History edit refusal, subject
-to an explicit validator dependency decision. This is a readiness record only:
-it does not authorize runtime changes, migration, sample changes, deployment, or
-release, and Relative Time authoring/order inference remains deferred.
+candidate-supporting Validator checkpoint. The dependency/release audit selects
+a normal published `@sukoyaka-dopeness/e2r-validator` package as the canonical
+production path; a sibling file, workspace, or Git dependency is temporary
+evidence only and is not the application release model. The current Validator
+HEAD is not release-ready yet because package metadata and lockfile remain
+`0.4.0` and the release changelog entry is still Unreleased. Existing SemVer
+policy and the prior compatible validation additions make `0.5.0` the
+recommended next version, but version bump, release, and publication require
+human authorization. NL-H2-R1 follows the completed Validator release and a
+separate NarrativeLine lockfile/dependency checkpoint. This is a readiness
+record only: it does not authorize runtime changes, migration, sample changes,
+deployment, or release, and Relative Time authoring/order inference remains
+deferred.
 
 ### Perceived name impression and character-name generation research
 

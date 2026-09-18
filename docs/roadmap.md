@@ -11390,6 +11390,23 @@ Initial Public Release blockers. Manifest, Service Worker, cache, persistence,
 update, quota, and offline Handoff semantics remain future bounded design and
 implementation checkpoints. No runtime or release artifact was changed.
 
+### E2R-NARRATIVELINE-NL-H2-R1 (2026-09-19)
+
+The NarrativeLine bounded runtime result `NL-H2-R1` is implemented at
+NarrativeLine commit `1c1d068` and is **READY FOR MANUAL ACCEPTANCE**. The
+application now recognizes the exact supported History `2.0.0` Candidate
+boundary, keeps candidate/unknown/mixed/unsupported History read-only, refuses
+Stable History writes for those shapes, and preserves candidate and Relative
+Time payloads on unrelated edit/export paths. Stable History behavior remains
+unchanged.
+
+This checkpoint does not promote History 2 or Relative Time, add semantic
+ordering or authoring, migrate data, change Dataset/Core/Extension schema,
+modify Validator, or change sample Datasets. Live-browser desktop/narrow and
+keyboard/focus acceptance remains the next application acceptance step. The
+NarrativeLine source-level release boundary and public rollout/deploy/release
+decisions remain separate.
+
 ### E2R-WORKSPACE-RETIRED-TEST-UTILS-CLEANUP1 (2026-09-17)
 
 The [retired test-utils cleanup result](e2r-workspace-retired-test-utils-cleanup1-result.md)

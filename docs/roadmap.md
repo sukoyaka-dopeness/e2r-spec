@@ -696,6 +696,16 @@ NarrativeLine implementation checkpoint. This is a readiness record only: it
 does not authorize runtime changes, migration, sample changes, deployment, or
 release, and Relative Time authoring/order inference remains deferred.
 
+The source-first NarrativeLine modularization readiness audit is recorded in
+`e2r-narrative-line/docs/narrativeline-modularization-readiness-audit.md`.
+It finds meaningful existing service/screen separation and does not justify a
+wholesale App rewrite or mechanical file splitting. If NL-H2-R1 is authorized,
+the next bounded architecture checkpoint should evaluate a pure History
+capability/policy seam before candidate logic is spread across Event Detail,
+Dataset mutation, export declaration, and App orchestration. This remains
+**RECORDED / IMPLEMENTATION NOT STARTED**: it does not authorize runtime
+refactoring, History 2 UI, edit refusal, migration, or Relative Time behavior.
+
 ### Perceived name impression and character-name generation research
 
 The research seed [Perceived Name Impression Database and Character Name

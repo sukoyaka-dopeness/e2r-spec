@@ -11393,11 +11393,17 @@ implementation checkpoints. No runtime or release artifact was changed.
 ### E2R-NARRATIVELINE-NL-H2-R1 (2026-09-19)
 
 The NarrativeLine bounded runtime result `NL-H2-R1` is implemented at
-NarrativeLine commit `1c1d068` and is **READY FOR MANUAL ACCEPTANCE**. The
-application now recognizes the exact supported History `2.0.0` Candidate
-boundary, keeps candidate/unknown/mixed/unsupported History read-only, refuses
-Stable History writes for those shapes, and preserves candidate and Relative
-Time payloads on unrelated edit/export paths. Stable History behavior remains
+NarrativeLine commit `1c1d068`. Its latest manual acceptance attempt is
+**BLOCKED BY FIXTURE-LOADING ENVIRONMENT — NO RUNTIME FIX INDICATED**: the
+stable History browser checks passed, but Candidate fixture acquisition through
+the Chrome automation file chooser was unavailable, so the remaining
+Candidate/unknown/mixed, unrelated-edit preservation, narrow-layout, and
+Candidate keyboard/focus scenarios did not run. The implementation remains
+ready for manual acceptance when the fixture path is available. The
+application recognizes the exact supported History `2.0.0` Candidate boundary,
+keeps candidate/unknown/mixed/unsupported History read-only, refuses Stable
+History writes for those shapes, and preserves candidate and Relative-Time
+payloads on unrelated edit/export paths. Stable History behavior remains
 unchanged.
 
 This checkpoint does not promote History 2 or Relative Time, add semantic
@@ -11406,6 +11412,36 @@ modify Validator, or change sample Datasets. Live-browser desktop/narrow and
 keyboard/focus acceptance remains the next application acceptance step. The
 NarrativeLine source-level release boundary and public rollout/deploy/release
 decisions remain separate.
+
+### E2R-INITIAL-PUBLIC-RELEASE-CROSS-APP-FOLLOW-UPS-RECONCILIATION1 (2026-09-19)
+
+The [Cross-App Follow-Ups Reconciliation result](e2r-initial-public-release-cross-app-follow-ups-reconciliation1-result.md)
+records two bounded pre-public-release follow-ups from current source and
+accepted evidence. This is a roadmap/documentation checkpoint only; it does
+not authorize runtime, CSS, sample, User Guide, Hub, Validator, or release
+artifact changes.
+
+1. **NarrativeLine / LiaisonScape User Guide and Public Sample refresh —
+   REQUIRED BEFORE INITIAL PUBLIC RELEASE:** reconcile current EN/JA guides,
+   app-owned and E2R-SPEC canonical samples, Hub registry/Handoff links,
+   capability coverage, credits, license/provenance, redistribution status,
+   and Stable versus Experimental roles. Do not promote History 2.0.0
+   Candidate, Relative Time, or other research/draft semantics into public
+   samples without a separate public-support decision.
+2. **NarrativeLine / LiaisonScape Name input and form geometry audit —
+   REQUIRED BEFORE INITIAL PUBLIC RELEASE / QUALITY AUDIT:** compare the
+   equivalent detail surfaces in EN/JA desktop and narrow browser states,
+   measure actual control geometry and localized-label behavior, and identify
+   the owning app before any fix. Current source shows a local CSS difference,
+   not a confirmed defect; no universal `width: 100%` rule or shared CSS is
+   established. Any implementation must be a separately accepted, smallest
+   app-local change after reproducible evidence.
+
+The next bounded checkpoint is the content/sample refresh audit because its
+public capability and provenance decisions gate guide and sample claims. The
+form-geometry audit follows as a separate evidence checkpoint. Push,
+deployment, publication, and public-release decisions remain explicitly
+authorized human actions.
 
 ### E2R-WORKSPACE-RETIRED-TEST-UTILS-CLEANUP1 (2026-09-17)
 

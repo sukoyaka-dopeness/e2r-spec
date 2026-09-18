@@ -681,22 +681,20 @@ writes, migration, deployment, or release.
 
 The subsequent NarrativeLine application-readiness audit is recorded in
 `e2r-narrative-line/docs/history-2-relative-time-application-readiness.md`.
-NarrativeLine currently consumes stable History `1.0.0` only; candidate-shaped
-History and Relative Time payloads are preserved or warned about as opaque data,
-not semantically presented or authored. The current History editor must not be
-used on candidate or mixed payloads because it writes stable `history.time`, and
-the application still resolves the registry validator `0.4.0` rather than the
-candidate-supporting Validator checkpoint. The dependency/release audit selects
-a normal published `@sukoyaka-dopeness/e2r-validator` package as the canonical
-production path; a sibling file, workspace, or Git dependency is temporary
-evidence only and is not the application release model. Validator `0.5.0`
-release preparation is now complete locally at commit `00bcda7`; the latest
-published package remains `0.4.0` until the separate authorization, push, tag,
-and publication steps occur. NL-H2-R1 follows the completed Validator
-publication and a separate NarrativeLine lockfile/dependency checkpoint. This
-is a readiness record only: it does not authorize runtime changes, migration,
-sample changes, deployment, or release, and Relative Time authoring/order
-inference remains deferred.
+NarrativeLine currently consumes stable History `1.0.0` semantically; candidate-
+shaped History and Relative Time payloads are preserved but not semantically
+presented or authored. The current History editor must not be used on candidate
+or mixed payloads because it writes stable `history.time`. The application now
+resolves the published registry validator `0.5.0` through its lockfile, making
+candidate structural diagnostics available at the existing validation boundary
+without adding candidate UI, writer, migration, or Relative Time ordering.
+The dependency/release audit selects a normal published
+`@sukoyaka-dopeness/e2r-validator` package as the canonical production path; a
+sibling file, workspace, or Git dependency is temporary evidence only and is
+not the application release model. NL-H2-R1 remains a separate, unstarted
+NarrativeLine implementation checkpoint. This is a readiness record only: it
+does not authorize runtime changes, migration, sample changes, deployment, or
+release, and Relative Time authoring/order inference remains deferred.
 
 ### Perceived name impression and character-name generation research
 

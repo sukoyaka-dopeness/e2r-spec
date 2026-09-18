@@ -11428,20 +11428,45 @@ artifact changes.
    and Stable versus Experimental roles. Do not promote History 2.0.0
    Candidate, Relative Time, or other research/draft semantics into public
    samples without a separate public-support decision.
-2. **NarrativeLine / LiaisonScape Name input and form geometry audit —
-   REQUIRED BEFORE INITIAL PUBLIC RELEASE / QUALITY AUDIT:** compare the
-   equivalent detail surfaces in EN/JA desktop and narrow browser states,
-   measure actual control geometry and localized-label behavior, and identify
-   the owning app before any fix. Current source shows a local CSS difference,
-   not a confirmed defect; no universal `width: 100%` rule or shared CSS is
+2. **NarrativeLine / LiaisonScape Cross-App Visual Hierarchy / Form Geometry
+   Audit — REQUIRED BEFORE INITIAL PUBLIC RELEASE / QUALITY AUDIT:** the prior
+   Name-input item is now consolidated with screen-title hierarchy, Dataset
+   title field/action affinity, and the existing control-density observation.
+   Compare role-equivalent surfaces in EN/JA desktop and narrow browser states,
+   measure actual geometry and localized-label behavior, and identify the owning
+   app before any fix. Current source shows implementation differences, not a
+   confirmed defect; no universal `width: 100%` rule or shared CSS is
    established. Any implementation must be a separately accepted, smallest
-   app-local change after reproducible evidence.
+   app-local change after reproducible evidence. See the unified [audit
+   result](e2r-cross-app-visual-hierarchy-form-geometry-audit1-result.md).
 
-The next bounded checkpoint is the content/sample refresh audit because its
-public capability and provenance decisions gate guide and sample claims. The
-form-geometry audit follows as a separate evidence checkpoint. Push,
-deployment, publication, and public-release decisions remain explicitly
-authorized human actions.
+The next content/sample refresh audit remains separate because its public
+capability and provenance decisions gate guide and sample claims. The unified
+visual hierarchy/form-geometry audit is the single visual checkpoint for the
+consolidated cluster. Push, deployment, publication, and public-release
+decisions remain explicitly authorized human actions.
+
+### E2R-CROSS-APP-VISUAL-HIERARCHY-FORM-GEOMETRY-AUDIT1 (2026-09-19)
+
+The [Cross-App Visual Hierarchy / Form Geometry Audit result](e2r-cross-app-visual-hierarchy-form-geometry-audit1-result.md)
+consolidates the current screen-title hierarchy, Dataset title
+field/action-affinity, Name-input geometry, and control-density observations
+into one bounded audit. Existing accepted metadata alignment, divider spacing,
+Dataset title editing, and the prior `E2R-CROSS-APP-VISUAL-CONSISTENCY-AUDIT1`
+classification remain closed; historical records are not reopened.
+
+This is **AUDIT CONSOLIDATED / NO IMPLEMENTATION AUTHORIZED**. The audit must
+compare role-equivalent surfaces using EN/JA, wide/intermediate/narrow, normal
+and edit states, pointer/keyboard focus-visible behavior, short/long labels,
+wrapping, overflow, and actual browser geometry followed by human acceptance.
+It does not require identical DOM, HTML heading levels, text, CSS selectors,
+breakpoints, or pixel dimensions. The Cross-App Visual Style / Flatness
+Experiment remains a separate surface-styling boundary.
+
+If the later audit confirms no defect, this visual follow-up cluster can close.
+If it confirms one defect, the next checkpoint is one smallest app-local fix;
+multiple independent defects require human prioritization first. No runtime,
+CSS, test, locale, sample, User Guide, or schema change is authorized here.
 
 ### E2R-WORKSPACE-RETIRED-TEST-UTILS-CLEANUP1 (2026-09-17)
 

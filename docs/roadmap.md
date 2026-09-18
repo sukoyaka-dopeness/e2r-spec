@@ -623,7 +623,12 @@ publication/acquisition chronology, partial order, and 1D/2D/3D projections.
 It preserves current `temporalOrder` semantics, keeps semantic dimensions
 separate from visual projection, and remains `EXPLORATORY / NOT ACTIVE`.
 No schema, Core, Extension, NarrativeLine, LiaisonScape, or implementation
-change follows from this research.
+change follows from this research. The 2026-09-18 design addendum also keeps
+recorded position, precedence, offsets, durations, and scoped perspectives
+distinct; it selects no common payload or ownership model. The same addendum
+records a future Temporal Frame hypothesis for shared-origin coordinates,
+including wide-range precision and serialization as research requirements;
+it does not select an origin or coordinate representation.
 
 ### Causal order, Relative Time, and undated Event placement
 
@@ -639,7 +644,37 @@ conflict/cycle and dated-anchor semantics, and derived-display boundaries.
 Human-readable Relation names do not provide causal typing. This is exploratory
 research only; no schema, Relation type, History change, NarrativeLine,
 LiaisonScape, or implementation change follows, and the active Initial
-Placement priority remains unchanged.
+Placement priority remains unchanged. The 2026-09-18 addendum further records
+that a future Relation carrier must preserve Relation identity, endpoints,
+lifecycle, and provenance, while derived placement is not an adopted fact.
+Common-origin frame coordinates remain separate from these pairwise
+constraints.
+
+The [History 2.x and Relative Time Candidate Cross-Audit](../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md)
+records a non-normative candidate draft and cross-audit. It keeps History
+`1.0.0` stable, treats `position`, `bounded-point`, and `temporal-extent` as
+History shape candidates, treats approximation initially as a Temporal
+Position capability, and treats Relative Time
+`relative-position`, `containment`, `calendar-granule-relation`, and
+`elapsed-offset` as separate candidate families. Recorded/Derived,
+conflict/structural validity, partial understanding, and presentation
+separation remain design gates. Its 2026-09-18 normalization records established
+research boundaries separately from the smaller set of human decisions that
+preceded the first schema candidate. The normalized boundary keeps History
+2.x under the same registered `history` identifier as a same-responsibility
+major-version direction, accepts basic strict `before` and basic `within`
+transitivity only as Derived semantic rules with supported premises, and limits
+the initial approximation candidate to Temporal Positions. Exact schema and
+version details, derivation applicability and solver policy, and whole-
+assertion approximation remain open or deferred as recorded in the audit.
+The first specification checkpoint now defines History `2.0.0` candidate and
+Relative Time Draft `0.1.0` prose, structural schemas, representative fixtures,
+exact Feature declarations, and repository-local validation. This does not
+change Stable registration, application, migration UX, deployment, or release
+implementation. A subsequent bounded Validator checkpoint adds exact-version-
+gated, read-only structural diagnostics and limited two-edge Derived evidence;
+it does not promote either candidate, create Relations, or authorize application
+writes, migration, deployment, or release.
 
 ### Perceived name impression and character-name generation research
 

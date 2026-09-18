@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/sukoyaka-dopeness/e2r-spec/main/schemas/extensions/relative-time-draft.schema.json",
+  "title": "E2R Relative Time Extension Draft 0.1.0",
+  "description": "Structural validation schema for one draft.github.sukoyaka-dopeness.relative-time Relation payload at exact version 0.1.0.",
+  "$comment": "The normative candidate requirements remain in extensions/relative-time-extension-draft.md. Relation-only placement, exact Feature declarations, endpoint integrity, temporal conflicts, and derivation require validation beyond this payload schema.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/relativePosition"
+    },
+    {
+      "$ref": "#/$defs/containment"
+    },
+    {
+      "$ref": "#/$defs/calendarGranuleRelation"
+    },
+    {
+      "$ref": "#/$defs/elapsedOffset"
+    }
+  ],
+  "$defs": {
+    "nonWhitespaceString": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "relativePosition": {
+      "type": "object",
+      "required": [
+        "type",
+        "relation"
+      ],
+      "properties": {
+        "type": {
+          "const": "relative-position"
+        },
+        "relation": {
+          "enum": [
+            "before",
+            "after",
+            "same-instant"
+          ]
+        },
+        "granularity": false,
+        "displacement": false,
+        "calendar": false,
+        "direction": false,
+        "value": false,
+        "unit": false
+      },
+      "additionalProperties": true
+    },
+    "containment": {
+      "type": "object",
+      "required": [
+        "type",
+        "relation"
+      ],
+      "properties": {
+        "type": {
+          "const": "containment"
+        },
+        "relation": {
+          "const": "within"
+        },
+        "granularity": false,
+        "displacement": false,
+        "calendar": false,
+        "direction": false,
+        "value": false,
+        "unit": false
+      },
+      "additionalProperties": true
+    },
+    "calendarGranuleRelation": {
+      "type": "object",
+      "required": [
+        "type",
+        "granularity",
+        "displacement"
+      ],
+      "properties": {
+        "type": {
+          "const": "calendar-granule-relation"
+        },
+        "granularity": {
+          "enum": [
+            "year",
+            "month",
+            "day",
+            "hour",
+            "minute",
+            "second"
+          ]
+        },
+        "displacement": {
+          "type": "integer"
+        },
+        "calendar": {
+          "$ref": "#/$defs/nonWhitespaceString"
+        },
+        "relation": false,
+        "direction": false,
+        "value": false,
+        "unit": false
+      },
+      "additionalProperties": true
+    },
+    "elapsedOffset": {
+      "type": "object",
+      "required": [
+        "type",
+        "direction",
+        "value",
+        "unit"
+      ],
+      "properties": {
+        "type": {
+          "const": "elapsed-offset"
+        },
+        "direction": {
+          "enum": [
+            "before",
+            "after"
+          ]
+        },
+        "value": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "unit": {
+          "enum": [
+            "second",
+            "minute",
+            "hour"
+          ]
+        },
+        "relation": false,
+        "granularity": false,
+        "displacement": false,
+        "calendar": false
+      },
+      "additionalProperties": true
+    }
+  }
+}

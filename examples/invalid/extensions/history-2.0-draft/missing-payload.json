@@ -1,0 +1,9 @@
+{
+  "assertions": [
+    {
+      "id": "time-1",
+      "type": "bounded-point",
+      "earliest": { "year": 1900 }
+    }
+  ]
+}

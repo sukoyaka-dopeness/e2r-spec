@@ -1,0 +1,9 @@
+{
+  "assertions": [
+    {
+      "id": "time-1",
+      "type": "position",
+      "position": { "month": 9 }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [
+    {
+      "id": "event-invalid-placement",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.relative-time": {
+          "type": "relative-position",
+          "relation": "before"
+        }
+      }
+    }
+  ],
+  "relations": [],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "draft.github.sukoyaka-dopeness.relative-time",
+          "version": "0.1.0",
+          "features": [
+            "relative-position"
+          ]
+        }
+      ]
+    }
+  }
+}

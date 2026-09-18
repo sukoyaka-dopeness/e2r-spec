@@ -72,6 +72,25 @@ The following Event examples demonstrate Time Zone resolution:
 
 Some History files are fragments rather than complete Core Objects or Datasets. Their purpose is to isolate the Extension structure or absence of History information being demonstrated.
 
+### History 2.0.0 Candidate and Relative Time Draft Examples
+
+Complete History `2.0.0` candidate Datasets are stored in
+`examples/history-2.0-draft/`. They cover position, `temporalOrder`, multiple
+assertions, bounded point, every initial Temporal Boundary occurrence/position
+combination, Temporal Position approximation, unknown sibling preservation,
+and explicit History `1.0.0` upgrade/refusal evidence.
+
+Relative Time Draft `0.1.0` examples are stored in
+`examples/relative-time-draft/`. The all-families fixture covers strict
+before/after/same-instant, within, Calendar-granule displacement, and elapsed
+offset variants with exact Feature declarations.
+
+Negative payload and Dataset-level fixtures are stored under the corresponding
+`examples/invalid/extensions/history-2.0-draft*` and
+`examples/invalid/extensions/relative-time-draft*` directories. Temporal
+conflicts remain diagnostic concerns and are intentionally not modeled as JSON
+Schema-invalid fixtures.
+
 ## Valid Examples
 
 Unless a file is placed under `examples/invalid/`, it is intended as a positive example according to the specification revision in the same working tree. Fragment examples are valid only in their documented context and are not standalone Dataset validation targets.

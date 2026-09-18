@@ -1,0 +1,10 @@
+{
+  "assertions": [
+    {
+      "id": "time-1",
+      "type": "position",
+      "position": { "year": 1900 },
+      "earliest": { "year": 1899 }
+    }
+  ]
+}

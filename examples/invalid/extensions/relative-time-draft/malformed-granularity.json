@@ -1,0 +1,5 @@
+{
+  "type": "calendar-granule-relation",
+  "granularity": "week",
+  "displacement": 1
+}

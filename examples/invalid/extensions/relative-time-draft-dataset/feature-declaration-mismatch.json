@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [
+    { "id": "reference" },
+    { "id": "target" }
+  ],
+  "relations": [
+    {
+      "id": "relative-before",
+      "sourceId": "reference",
+      "targetId": "target",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.relative-time": {
+          "type": "relative-position",
+          "relation": "before"
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "draft.github.sukoyaka-dopeness.relative-time",
+          "version": "0.1.0",
+          "features": [
+            "elapsed-offset"
+          ]
+        }
+      ]
+    }
+  }
+}

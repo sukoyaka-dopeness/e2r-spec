@@ -1,0 +1,14 @@
+{
+  "assertions": [
+    {
+      "id": "duplicate",
+      "type": "position",
+      "position": { "year": 1900 }
+    },
+    {
+      "id": "duplicate",
+      "type": "position",
+      "position": { "year": 1901 }
+    }
+  ]
+}

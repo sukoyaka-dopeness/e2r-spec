@@ -1,0 +1,8 @@
+{
+  "assertions": [
+    {
+      "id": "time-1",
+      "position": { "year": 1900 }
+    }
+  ]
+}

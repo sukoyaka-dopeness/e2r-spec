@@ -1,0 +1,10 @@
+{
+  "assertions": [
+    {
+      "id": "time-1",
+      "type": "temporal-extent",
+      "start": { "occurrence": "completed" },
+      "end": { "occurrence": "unknown" }
+    }
+  ]
+}

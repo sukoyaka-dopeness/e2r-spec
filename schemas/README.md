@@ -6,9 +6,15 @@ This directory contains machine-readable schemas for the E2R Core and official E
 
 No normative schema is published in this directory yet.
 
-The following draft schema is currently available:
+The following Extension schemas are currently available:
 
-- `extensions/history.schema.json` validates the value of an `extensions.history` property using JSON Schema Draft 2020-12.
+- `extensions/history.schema.json` validates Stable History `1.0.0` payloads.
+- `extensions/history-2.0-draft.schema.json` validates History `2.0.0`
+  candidate payloads.
+- `extensions/relative-time-draft.schema.json` validates Relative Time Draft
+  `0.1.0` Relation payloads.
+- Additional draft schemas cover Coordinate, Names, Presentation, and
+  LiaisonScape Layout candidates.
 
 The application-evidence schema at
 `schemas/evidence/visual-review-result-v1.schema.json` is maintained
@@ -18,7 +24,10 @@ E2R Dataset schema or an official E2R Extension schema. Its normative process
 boundary is the corresponding review-execution authority document in
 `docs/`.
 
-The History schema is a structural validation aid. A Core Dataset schema and composed schemas for complete Datasets are not yet available.
+The Extension schemas are structural validation aids. Repository validation
+scripts add bounded Dataset-level checks such as local ID uniqueness, exact
+Feature declarations, and placement. A Core Dataset schema and general composed
+schemas for complete Datasets are not yet available.
 
 The Markdown specifications in `spec/` and `extensions/` remain the source of truth. Files in `examples/` demonstrate intended structures but do not define validity by themselves.
 
@@ -46,9 +55,12 @@ schemas/
   README.md
   extensions/
     history.schema.json
+    history-2.0-draft.schema.json
+    relative-time-draft.schema.json
 ```
 
-The History schema path, JSON Schema dialect, and schema identifier are defined in the current draft file.
+Each schema path, JSON Schema dialect, and schema identifier are defined in its
+schema file.
 
 A future Core schema is expected at `schemas/core.schema.json`. It should reflect
 the Core Dataset structure defined in `spec/core.md`, including:

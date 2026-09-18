@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [
+    {
+      "id": "event-bounded",
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "bounded-1",
+              "type": "bounded-point",
+              "earliest": {
+                "year": 1900,
+                "approximation": "circa"
+              },
+              "latest": {
+                "year": 1904
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "relations": [],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "history",
+          "version": "2.0.0",
+          "features": [
+            "approximation",
+            "bounded-point"
+          ]
+        }
+      ]
+    }
+  }
+}

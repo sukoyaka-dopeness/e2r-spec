@@ -1,0 +1,111 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [
+    {
+      "id": "event-extent-boundaries",
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "occurred-known",
+              "type": "temporal-extent",
+              "start": {
+                "occurrence": "occurred",
+                "position": {
+                  "year": 2000,
+                  "approximation": "circa"
+                }
+              },
+              "end": {
+                "occurrence": "occurred",
+                "position": {
+                  "year": 2001
+                }
+              }
+            },
+            {
+              "id": "occurred-unknown-position",
+              "type": "temporal-extent",
+              "start": {
+                "occurrence": "occurred"
+              },
+              "end": {
+                "occurrence": "occurred"
+              }
+            },
+            {
+              "id": "not-occurred-future-position",
+              "type": "temporal-extent",
+              "start": {
+                "occurrence": "not-occurred",
+                "position": {
+                  "year": 2100
+                }
+              },
+              "end": {
+                "occurrence": "not-occurred",
+                "position": {
+                  "year": 2101
+                }
+              }
+            },
+            {
+              "id": "not-occurred-no-position",
+              "type": "temporal-extent",
+              "start": {
+                "occurrence": "not-occurred"
+              },
+              "end": {
+                "occurrence": "not-occurred"
+              }
+            },
+            {
+              "id": "unknown-with-position",
+              "type": "temporal-extent",
+              "start": {
+                "occurrence": "unknown",
+                "position": {
+                  "year": 2200
+                }
+              },
+              "end": {
+                "occurrence": "unknown",
+                "position": {
+                  "year": 2201
+                }
+              }
+            },
+            {
+              "id": "unknown-no-position",
+              "type": "temporal-extent",
+              "start": {
+                "occurrence": "unknown"
+              },
+              "end": {
+                "occurrence": "unknown"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "relations": [],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "history",
+          "version": "2.0.0",
+          "features": [
+            "approximation",
+            "multiple-assertions",
+            "temporal-extent"
+          ]
+        }
+      ]
+    }
+  }
+}

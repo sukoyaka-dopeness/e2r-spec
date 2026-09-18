@@ -20,6 +20,10 @@ registered as Stable:
 
 - [Coordinate Extension Draft](coordinate-extension-draft.md)
   (`draft.github.sukoyaka-dopeness.coordinate`, draft `0.1.0`)
+- [History Extension 2.0.0 Candidate](history-extension-2.0-draft.md)
+  (`history`, candidate version `2.0.0`; Stable `1.0.0` remains unchanged)
+- [Relative Time Extension Draft](relative-time-extension-draft.md)
+  (`draft.github.sukoyaka-dopeness.relative-time`, draft `0.1.0`)
 - [Lineage Extension Draft](lineage-extension-draft.md)
   (`draft.github.sukoyaka-dopeness.lineage`, draft `0.1.0`)
 - [Coordinate Extension Prototype](coordinate-extension.md)
@@ -92,19 +96,12 @@ History Extension may reference Calendar Extension in future versions.
 
 ---
 
-### Temporal Relation Extension
+### Relative Time beyond Draft 0.1.0
 
-Defines relative temporal relationships between Events.
-
-Examples include:
-
-- before
-- after
-- during
-- overlaps
-- meets
-
-These relationships describe constraints between multiple Events rather than properties of individual Events.
+The initial [Relative Time Extension Draft](relative-time-extension-draft.md)
+defines strict before/after/same-instant, within, Calendar-granule displacement,
+and elapsed offsets. Overlaps, meets, same-temporal-extent authoring, advanced
+constraints, and solver behavior remain future work.
 
 ---
 

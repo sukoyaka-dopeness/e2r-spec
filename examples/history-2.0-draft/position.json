@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [
+    {
+      "id": "event-position",
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1969,
+                "month": 7,
+                "day": 20
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "relations": [],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "history",
+          "version": "2.0.0"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [
+    {
+      "id": "event-multiple",
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "recorded-a",
+              "type": "position",
+              "position": {
+                "year": 1900,
+                "approximation": "circa",
+                "futurePositionField": "preserve-me"
+              },
+              "futureAssertionField": {
+                "opaque": true
+              }
+            },
+            {
+              "id": "recorded-b",
+              "type": "position",
+              "position": {
+                "year": 1902
+              }
+            }
+          ],
+          "futureHistoryField": [
+            "preserve-me"
+          ]
+        }
+      }
+    }
+  ],
+  "relations": [],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "history",
+          "version": "2.0.0",
+          "features": [
+            "approximation",
+            "multiple-assertions"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -676,6 +676,19 @@ gated, read-only structural diagnostics and limited two-edge Derived evidence;
 it does not promote either candidate, create Relations, or authorize application
 writes, migration, deployment, or release.
 
+The subsequent NarrativeLine application-readiness audit is recorded in
+`e2r-narrative-line/docs/history-2-relative-time-application-readiness.md`.
+NarrativeLine currently consumes stable History `1.0.0` only; candidate-shaped
+History and Relative Time payloads are preserved or warned about as opaque data,
+not semantically presented or authored. The current History editor must not be
+used on candidate or mixed payloads because it writes stable `history.time`, and
+the application still resolves the registry validator `0.4.0` rather than the
+candidate-supporting Validator checkpoint. The selected next application slice
+is a future preservation/read-only boundary with History edit refusal, subject
+to an explicit validator dependency decision. This is a readiness record only:
+it does not authorize runtime changes, migration, sample changes, deployment, or
+release, and Relative Time authoring/order inference remains deferred.
+
 ### Perceived name impression and character-name generation research
 
 The research seed [Perceived Name Impression Database and Character Name

@@ -11423,6 +11423,22 @@ keyboard/focus acceptance remains the next application acceptance step. The
 NarrativeLine source-level release boundary and public rollout/deploy/release
 decisions remain separate.
 
+### E2R-HISTORY-2-USER-FACING-AUTHORING-SCOPE-DESIGN (2026-09-19)
+
+The [History 2 User-Facing Authoring Scope result](history-2-user-facing-authoring-scope-result.md)
+records a documentation-only design checkpoint after `NL-H2-R1` acceptance.
+Current Candidate recognition and read-only preservation remain **ACCEPTED /
+CLOSED**; this checkpoint does not reopen them or authorize runtime work.
+
+The smallest proposed meaningful public History 2 experience is one
+`position` assertion with optional position-level `approximation: "circa"`,
+using an explicit History `1.0.0` to `2.0.0` upgrade only when the H2-only
+capability is selected. Bounded-point, temporal-extent, multiple assertions,
+Relative Time, and broader Timeline semantics remain deferred. The proposal
+requires human scope approval, especially for non-fabricating Timeline display
+and approximate-value ordering, before a bounded NarrativeLine implementation
+checkpoint may begin.
+
 ### E2R-INITIAL-PUBLIC-RELEASE-CROSS-APP-FOLLOW-UPS-RECONCILIATION1 (2026-09-19)
 
 The [Cross-App Follow-Ups Reconciliation result](e2r-initial-public-release-cross-app-follow-ups-reconciliation1-result.md)

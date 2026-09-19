@@ -665,6 +665,38 @@ and receive separate Human approval. Visual capture7, the shared harness,
 machine evidence, other cleanup groups, and any visual-capture acceptance
 work remain outside this checkpoint.
 
+### Visual capture1–6 approved deletion result — 2026-09-20
+
+Human approved Option A in the exact delete-approval packet at
+`C:\Users\extra\E2R\artifacts\visual-capture-browser-captures-delete-approval-packet-2026-09-20.md`.
+The approved action was limited to the six root-level workspaces named in
+that packet: visual-evidence browser-capture1 through browser-capture6. A
+pre-delete reflight confirmed packet/filesystem identity, detached HEADs,
+zero tracked/staged/modified files, the expected untracked payload counts,
+archive hash agreement, capture7 ancestry, no active process or path
+dependency, no reparse point, and no additional worktree. The six exact
+directories were then deleted; no glob, parent, sibling, archive, or other
+cleanup target was included.
+
+Post-delete verification confirms all six approved paths are absent. The
+E2R direct-child inventory is now 65 directories and 62 Git repositories,
+matching the expected 71-to-65 and 68-to-62 change. The preserved archive
+remains intact with 35 payload files, 63,982 bytes, six manifests, zero hash
+mismatches, zero JSON parse failures, zero unexpected payload files, and zero
+nested Git repositories. Capture7 HEAD
+`06acff14d5e27e3c9a775057c608d203854cab20`, the retained visual harness,
+machine evidence, and the shared `artifacts`, `diagnostics`, and
+`experimental` roots remain present. The captures3–6 `phaseRunId` mismatch
+remains an unchanged historical provenance caveat.
+
+Remaining references to the six names are historical roadmap provenance or
+the delete-approval packet; no active runtime/config dependency was found.
+This closes only the visual capture1–6 cleanup group. Capture7, retained
+harness and machine evidence, other cleanup groups, canonical repositories,
+root guidance, ai-knowledge, and unrelated dirty work remain outside this
+action and require separate checkpoints. This roadmap result is intentionally
+left uncommitted for Human review.
+
 ## Current baseline
 
 ### Roadmap/status synchronization — 2026-08-17

@@ -8,6 +8,10 @@ This is a non-normative, pre-implementation design result. It does not promote
 History `2.0.0` from candidate status, change the schema, authorize a writer,
 or reopen the accepted `NL-H2-R1` recognition and preservation boundary.
 
+> Historical design checkpoint: the pending-scope language in this document is
+> retained as chronology and is superseded for current H2-POSITION-CIRCA status
+> by the [bounded scope closure result](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md).
+
 The follow-up [H2-POSITION-CIRCA human scope decision preparation](history-2-position-circa-human-scope-decision-preparation-result.md)
 narrows the remaining human decision to approximate Timeline presentation,
 explicit upgrade/downgrade boundaries, and declaration cleanup. It remains

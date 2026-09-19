@@ -2,7 +2,20 @@
 
 Date: 2026-09-19
 
-Status: **DECISION PREPARATION COMPLETE / HUMAN APPROVAL REQUIRED**
+Status: **SUPERSEDED BY BOUNDED SCOPE CLOSURE**
+
+The recommendation recorded here was subsequently approved, implemented, and
+accepted for the bounded H2-POSITION-CIRCA surface. The final authority for
+current status is the [Dataset-wide H1 to H2 upgrade scope closure
+result](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md), which
+records `H2-POSITION-CIRCA: ACCEPTED / CLOSED` while retaining History 2.0.0
+as a non-Stable Candidate. The proposal and decision analysis below remain
+historical evidence and are not rewritten wholesale.
+
+> Historical checkpoint: the recommendation and pending-decision language below
+> describes the pre-implementation state. It is superseded for current status
+> by the linked bounded-scope closure result; the retained `RECOMMENDED` /
+> `REQUIRED` wording is not an open decision.
 
 ## Scope and classification
 

@@ -51,8 +51,8 @@ words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | History 2 user-facing authoring scope | **DESIGN RESULT / HUMAN SCOPE DECISION REQUIRED** | [scope result](history-2-user-facing-authoring-scope-result.md) |
-| H2-POSITION-CIRCA | **BOUNDARY CLARIFIED / AUTOMATED GREEN / REAL-BROWSER ACCEPTANCE PENDING** | [decision preparation](history-2-position-circa-human-scope-decision-preparation-result.md); [NarrativeLine repair result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-declaration-blocker-fix-result.md) |
-| Dataset-wide History 1 to History 2 upgrade | **IMPLEMENTED / AUTOMATED GREEN / BROWSER INFRASTRUCTURE DIAGNOSIS NEXT** | [NarrativeLine implementation result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/history-2-dataset-wide-upgrade-implementation-result.md); [scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md) |
+| H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
+| Dataset-wide History 1 to History 2 upgrade | **IMPLEMENTED / AUTOMATED GREEN / BOUNDED REAL-BROWSER AND HUMAN ACCEPTANCE COMPLETE** | [NarrativeLine implementation result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/history-2-dataset-wide-upgrade-implementation-result.md); [scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md) |
 | Initial Public Release | **SEPARATE RELEASE PLANNING TRACK** | [remaining gates reconciliation](e2r-initial-public-release-remaining-gates-reconciliation1-result.md); rollout, deployment, and publication remain separately authorized |
 
 ### How to maintain current and historical entries
@@ -11468,6 +11468,9 @@ release artifact changed.
 
 ### E2R-HISTORY-2-USER-FACING-AUTHORING-SCOPE-DESIGN (2026-09-19)
 
+> Historical planning checkpoint; current H2-POSITION-CIRCA status is governed
+> by the bounded authoring closure entry below.
+
 The [History 2 User-Facing Authoring Scope result](history-2-user-facing-authoring-scope-result.md)
 records a documentation-only design checkpoint after `NL-H2-R1` acceptance.
 Current Candidate recognition and read-only preservation remain **ACCEPTED /
@@ -11484,6 +11487,9 @@ checkpoint may begin.
 
 ### E2R-H2-POSITION-CIRCA-HUMAN-SCOPE-DECISION-PREPARATION (2026-09-19)
 
+> Historical checkpoint; the retained recommendation is superseded for current
+> status by `E2R-H2-POSITION-CIRCA-BOUNDED-AUTHORING-CLOSURE` below.
+
 The [H2-POSITION-CIRCA decision preparation](history-2-position-circa-human-scope-decision-preparation-result.md)
 is complete. It recommends acceptance of one History 2 `position` assertion
 with position-level `approximation: "circa"`, subject to explicit human
@@ -11493,6 +11499,9 @@ This remains **RECOMMENDED FOR ACCEPTANCE / HUMAN APPROVAL REQUIRED** and does
 not authorize NarrativeLine runtime work.
 
 ### E2R-H2-POSITION-CIRCA-BOUNDED-AUTHORING (2026-09-19)
+
+> Historical implementation checkpoint; its pending human-acceptance status is
+> superseded by the bounded closure entry below.
 
 The explicitly approved H2-POSITION-CIRCA slice is implemented in
 NarrativeLine and automated validation is green. The bounded surface is one
@@ -11507,6 +11516,9 @@ and broader temporal semantics remain deferred.
 
 ### E2R-H2-POSITION-CIRCA-DECLARATION-BLOCKER-FIX (2026-09-19)
 
+> Historical repair checkpoint; its pending real-browser status is superseded
+> by the bounded closure entry below.
+
 The NarrativeLine repair result records the declaration boundary exposed when
 a Dataset contained an existing Stable History 1 Event alongside the
 explicitly upgraded circa Event. Current Validator evidence shows that
@@ -11517,7 +11529,33 @@ status is **BOUNDARY CLARIFIED / REAL-BROWSER ACCEPTANCE PENDING** because the
 fresh browser rerun could not initialize in the available browser connector.
 This does not promote History 2.0.0 or close human acceptance.
 
+### E2R-H2-POSITION-CIRCA-BOUNDED-AUTHORING-CLOSURE (2026-09-19)
+
+The bounded H2-POSITION-CIRCA authoring scope is now **ACCEPTED / CLOSED**.
+Human and Real Browser acceptance reconciled the safe and unsafe Dataset-wide
+upgrade paths, confirmation dismissal/focus behavior, Entity/Event/Relation
+conversion, atomicity, Option A Timeline presentation, circa removal,
+History removal, EN/JA and locale behavior, narrow layout, export/reload/
+re-import, unknown/unsupported/mixed refusal, Relative Time preservation, and
+the multi-H2 exact-edit declaration regression fix.
+
+History 2.0.0 remains a non-Stable Candidate. This closure does not accept
+bounded-point, temporal-extent, multiple-assertion, Relative Time authoring or
+solving, H2 to H1 conversion, Entity/Relation History authoring UI, History 2
+Stable promotion, release, deployment, or publication. The canonical Relative
+Time live import passed with all 11 Events undated and no Dataset mutation or
+runtime error; its raw browser download artifact was not directly captured in
+one run, so automated exact JSON round-trip remains the payload-preservation
+evidence for that boundary.
+
+The earlier implementation, blocker-fix, and planning entries above retain
+their historical chronology. Current status is governed by this closure entry
+and the linked [scope closure result](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md).
+
 ### HISTORY-2-DATASET-WIDE-H1-TO-H2-UPGRADE-PLANNING (2026-09-19)
+
+> Historical implementation-planning checkpoint; its open acceptance status is
+> superseded by the bounded closure entry above.
 
 The [scope-closure result](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md)
 was approved for implementation. The [NarrativeLine implementation result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/history-2-dataset-wide-upgrade-implementation-result.md)

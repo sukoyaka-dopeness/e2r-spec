@@ -2,20 +2,25 @@
 
 Date: 2026-09-19
 
-Status: **SCOPE RECOMMENDED / HUMAN APPROVAL REQUIRED**
+Status: **BOUNDED SCOPE ACCEPTED / CLOSED**
 
 Scope: Pre-implementation contract for an explicit atomic Dataset-wide
 History `1.0.0` to History `2.0.0` Candidate upgrade.
 
 Authority: The History specifications and schemas are authoritative for data
 semantics. Current NarrativeLine and Validator source provide implementation
-evidence. This result is non-normative and does not authorize runtime work.
+and acceptance evidence. This result is non-normative, and closes only the
+accepted H2-POSITION-CIRCA bounded application scope.
 
 Related records:
 
 - [`history-2-position-circa-human-scope-decision-preparation-result.md`](history-2-position-circa-human-scope-decision-preparation-result.md)
 - [NarrativeLine H2-POSITION-CIRCA declaration blocker result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-declaration-blocker-fix-result.md)
 - [`roadmap.md`](roadmap.md)
+
+The pre-implementation recommendation and human-decision language below is
+retained as chronology. The final closure section supersedes its earlier
+`RECOMMENDED` / `REQUIRED` status language.
 
 ## Decision summary
 
@@ -372,8 +377,72 @@ application-local implementation choice inside the stated constraints.
 
 ## Classification
 
+> Historical pre-implementation classification — retained for chronology and
+> superseded by the final bounded-scope acceptance section below.
+
 **DATASET-WIDE H1 TO H2 HISTORY UPGRADE — SCOPE RECOMMENDED / HUMAN APPROVAL
 REQUIRED**
 
 Implementation, automated migration gates, browser diagnosis, real-browser
 acceptance, and human acceptance remain later checkpoints.
+
+## Final bounded-scope acceptance and closure — 2026-09-19
+
+The implementation and acceptance checkpoints described above are now
+complete for the explicitly bounded H2-POSITION-CIRCA surface. The final
+status is:
+
+```text
+H2-POSITION-CIRCA: ACCEPTED / CLOSED
+History 2.0.0: Candidate / NON-STABLE
+```
+
+The accepted scope is limited to one History `2.0.0` `position` assertion
+with optional position-level `approximation: "circa"`, explicit atomic H1 to
+H2 upgrade confirmation, safe H2 exact editing, Dataset-wide declaration and
+Feature synchronization, the non-fabricating recorded-Civil-Time Timeline
+projection, and safe removal/declaration cleanup for the accepted surface.
+
+Final evidence reconciled for closure includes:
+
+- H1 open, ordinary exact edit/save, explicit circa upgrade, confirmation
+  Cancel/Escape/backdrop/inside-click/focus behavior, and unsafe preflight
+  refusal with draft and Dataset preservation;
+- Entity, Event, and Relation Dataset-wide conversion and atomicity;
+- circa OFF without H2 to H1 downgrade, including last-circa Feature cleanup;
+- EN/JA, locale switching, keyboard/focus, narrow layout, export/reload/
+  re-import, and History removal acceptance;
+- the multi-H2 exact-edit regression repair, with automated and Real Browser
+  verification that an unrelated circa payload keeps the Dataset-wide
+  `approximation` Feature declaration; and
+- unknown, unsupported, and mixed History refusal/read-only behavior plus the
+  Relative Time preservation boundary. Relative Time remains preservation-only:
+  it is not accepted as authoring, semantic Timeline ordering, or Derived
+  writeback.
+
+The Relative Time live browser checkpoint imported the canonical
+`examples/relative-time-draft/all-families.json` through the normal file input.
+All 11 Events remained undated in the Timeline, no Dataset mutation or
+runtime error was observed, and the page returned to a clean Home state. The
+browser download artifact was not directly captured in that run because the
+download observer timed out; the existing automated export validation and
+JSON round-trip equality remain the direct payload-preservation evidence.
+This tooling boundary does not change the live import/presentation result or
+claim a raw artifact that was not obtained.
+
+The following remain explicitly outside this closure and are not accepted:
+
+- bounded-point, temporal-extent, or multiple-assertion authoring;
+- Relative Time authoring, solving, semantic ordering, or Derived writeback;
+- H2 to H1 conversion/downgrade;
+- Entity or Relation History authoring UI;
+- History 2 Stable promotion; and
+- release, deployment, publication, or public-sample support.
+
+No new reusable Knowledge entry is needed. Edge recovery, dedicated CDP
+viewport automation, and workspace hygiene are already recorded in their
+respective guidance. This closure records application-specific evidence and
+does not promote those observations into new general Knowledge.
+
+The earlier classification is therefore superseded by
+**H2-POSITION-CIRCA: ACCEPTED / CLOSED** for this bounded scope only.

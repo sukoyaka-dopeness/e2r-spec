@@ -53,6 +53,7 @@ words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`.
 | History 2 user-facing authoring scope | **DESIGN RESULT / HUMAN SCOPE DECISION REQUIRED** | [scope result](history-2-user-facing-authoring-scope-result.md) |
 | H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
 | Dataset-wide History 1 to History 2 upgrade | **IMPLEMENTED / AUTOMATED GREEN / BOUNDED REAL-BROWSER AND HUMAN ACCEPTANCE COMPLETE** | [NarrativeLine implementation result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/history-2-dataset-wide-upgrade-implementation-result.md); [scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md) |
+| E2R workspace clone and evidence hygiene | **PLACEMENT POLICY ACTIVE / PHYSICAL CLEANUP ELIGIBLE IN SEPARATE CHECKPOINT** | [workspace clone and evidence hygiene follow-up](#workspace-clone-and-evidence-hygiene-follow-up); H2 closure is complete, but no physical cleanup has started and Human review remains required |
 | Initial Public Release | **SEPARATE RELEASE PLANNING TRACK** | [remaining gates reconciliation](e2r-initial-public-release-remaining-gates-reconciliation1-result.md); rollout, deployment, and publication remain separately authorized |
 
 ### How to maintain current and historical entries
@@ -66,6 +67,198 @@ words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`.
   current entry; do not rewrite the historical record wholesale.
 - Keep normative requirements in `spec/`, `extensions/`, `schemas/`, and
   canonical `examples/`. This roadmap is non-normative planning authority.
+
+### Workspace clone and evidence hygiene follow-up
+
+An audit of the direct children of `C:\Users\extra\E2R\` on 2026-09-19
+found 76 directories: 73 Git repositories and three non-Git shared roots
+(`artifacts`, `diagnostics`, and `experimental`). The canonical keep set is
+`e2r-spec`, `e2r-narrative-line`, `e2r-liaison-scape`, `e2r-hub`,
+`e2r-validator`, `e2r-dom-test-environment`, and `ai-knowledge`.
+
+The 66 non-canonical Git directories are historical isolated workspaces,
+including 22 browser-capture/CDP diagnostics, 16 visual-evidence runs, nine
+host/runtime qualification workspaces, ten product-evaluation-seam
+experiments, six structural-assignment/layout experiments, one production
+candidate materialization workspace, and two other previews/follow-ups. They
+are cleanup candidates in principle, but none is approved for deletion by
+this entry. The three shared roots are also not deletion candidates without a
+separate content and reference review.
+
+The audit identified 15 non-canonical Git directories with dirty or
+artifact-bearing work, in addition to dirty canonical repositories. In
+particular, the helper receive-lifetime workspace has 646 status entries, a
+failed-clone workspace has 114 staged deletions, the production-candidate
+materialization workspace has 21 untracked materializer/fixture/artifact
+files, and the routing preview has modified source. The visual-evidence and
+structural-assignment workspaces also contain untracked capture artifacts,
+fixtures, result files, or runners. These must be treated as
+`must inspect before cleanup`, not as disposable merely because their names
+look experimental.
+
+Git reachability is not yet sufficient for deletion decisions. Ten clone
+HEADs are older commits reachable from the canonical LiaisonScape checkout,
+while 56 clone HEADs have no common commit object available in that local
+object database. Because no fetch or reconstruction was performed, the latter
+is recorded as `reachability unresolved`, not as proof that those commits are
+unique or disposable. Several current e2r-spec documents, sessions, and
+ai-knowledge entries also reference clone paths and their artifacts.
+
+The observed provenance is primarily isolated browser-capture/CDP,
+visual-evidence, host/runtime, product-seam, structural-assignment, and
+materialization work. The audit found no evidence that a docs physical
+reorganization itself created these directories; documentation and session
+records currently reference them as historical evidence. This distinction
+must be preserved until references and artifacts are reconciled.
+
+Before any cleanup, perform a bounded follow-up that:
+
+1. records each exact path, role, Git HEAD/branch/remote, status, and size;
+2. reconciles references from roadmap/result docs, sessions, and Knowledge;
+3. preserves or materializes unique commits, artifacts, screenshots,
+   manifests, and acceptance evidence into canonical locations where
+   appropriate;
+4. produces a Human-reviewed keep/archive/delete list; and
+5. deletes only explicitly approved disposable clones, without changing
+   canonical repositories or unique evidence.
+
+Effective immediately, new isolated clones, experiment workspaces, and
+materialization workspaces must not be created directly under
+`C:\Users\extra\E2R\`. Keep the seven canonical repositories directly under
+that root. Use `experimental\workspaces\...` for non-canonical clones and
+experiments, `diagnostics\...` for browser/CDP/runtime/host diagnostics, and
+`artifacts\...` for screenshots, visual evidence, and generated artifacts.
+Do not create a new nested Git repository or isolated clone inside a
+canonical repository. Existing repository-owned paths and the 66 audited
+non-canonical workspaces are grandfathered and are not physically moved by
+this decision.
+
+This is development workspace hygiene, not feature implementation or an
+H2-POSITION-CIRCA acceptance gate. The placement policy applies now. The H2
+closure prerequisite is now satisfied, so physical cleanup may be scheduled
+as a separate checkpoint, but it was not started by this closure. It remains
+targeted for completion before the Hub-publication final audit. Before any
+move, consolidation, or deletion, resolve each workspace's unique commits,
+dirty work, artifacts, evidence, and documentation references, then obtain
+Human review of the keep/archive/delete list. No physical cleanup operation
+is authorized by this roadmap entry.
+
+### Final pre-cleanup classification audit — 2026-09-19
+
+The read-only re-audit after H2-POSITION-CIRCA closure found the same 76
+direct-child directories: 73 Git repositories, seven canonical repositories,
+66 non-canonical Git workspaces, and the three shared non-Git roots
+`artifacts`, `diagnostics`, and `experimental`. No new direct-child workspace
+was observed. The canonical repositories are at the closure-era heads,
+including NarrativeLine `4ff1e1e` and E2R-SPEC `514c34a`; their existing dirty
+work remains outside this cleanup checkpoint.
+
+Local Git reachability is now classified as follows for the 66 non-canonical
+workspaces: seven HEADs are older/contained in the canonical LiaisonScape
+history, 50 HEADs are not present in the canonical local object database, and
+nine repositories have no resolvable HEAD because their Git metadata is broken
+or incomplete. No network fetch was performed. The 50 local-only HEADs are
+`reachability unresolved`, not proof of disposable or unique history; no
+unique commit was proven safely absorbed by the canonical repository.
+
+The current worktree audit found 13 non-canonical repositories with dirty
+status. Separately, 56 of the 66 contain tracked `artifacts`, `diagnostics`,
+`experimental`, `public`, fixture, or screenshot material. The most dangerous
+states remain the receive-lifetime helper with modified and untracked capture
+manifests/screenshots, the failed clone with 114 staged deletions, the routing
+preview with modified source, the CSS provenance LF-check with modified source,
+and the materialization/structural/visual-evidence workspaces with untracked
+fixtures or generated artifacts. The earlier estimate of 15 dirty or
+artifact-bearing workspaces was broader; this re-audit records the direct Git
+dirty count separately from committed artifact-bearing content.
+
+Reference audit found 58 of 66 workspace names in current `e2r-spec` docs,
+sessions, or Knowledge: 132 document matches, two session matches, and one
+Knowledge match. Most are historical provenance or evidence-location records,
+not proof of an active runtime dependency. The browser-runtime-convergence
+diagnostic is the exception requiring current preservation review because the
+Knowledge playbook names it as diagnostic provenance. Eight workspaces have no
+name match in those sources, but unreferenced artifacts are not disposable
+without content review.
+
+The provisional final classification for all 76 direct children is:
+
+- **Keep in place — 11:** seven canonical repositories, the three shared roots,
+  and `e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1`
+  while its Knowledge-linked evidence is preserved;
+- **Move under `experimental\workspaces\...` — 2 candidates:** the clean,
+  canonical-contained `e2r-liaison-scape-assignment-sensitivity-followup1` and
+  `e2r-liaison-scape-topology-aware-assignment-experiment1`, subject to reference
+  review and a later path-migration decision;
+- **Archive/evidence extraction before deletion — 10 candidates:** the
+  receive-lifetime capture workspace, production-candidate materialization,
+  structural-assignment experiments 3 and 4-rerun, and visual-evidence
+  captures 1–6; artifacts, manifests, fixtures, and screenshots must be
+  preserved or rejected explicitly first;
+- **Delete candidate — 0:** no workspace currently satisfies canonical
+  reachability, clean state, no unique artifact, and no reference dependency
+  simultaneously;
+- **Human review required — 53:** all broken/no-HEAD repositories, unresolved
+  local histories, dirty source states, the failed clone, routing preview, and
+  remaining unresolved workspaces.
+
+The next physical-cleanup plan is intentionally staged: (1) Human review of
+the 53 ambiguous/dirty/broken workspaces and any unique commits; (2) archive or
+extract the ten evidence-bearing candidates; (3) decide and execute the two
+clean move candidates with references handled in a separate approved step; and
+(4) delete only a future explicitly approved Delete-candidate batch. No path
+rewrite, move, archive, deletion, branch/worktree operation, or broken-repo
+repair is authorized by this audit. Completion remains targeted before the
+Hub-publication final audit.
+
+### Human-review refinement for the 53-workspace set — 2026-09-20
+
+The follow-up audit is limited to the 53 entries above; the ten
+archive/evidence-extraction candidates, two clean move candidates, and the one
+Knowledge-linked keep workspace remain outside this refinement. The 53 now have
+the following non-overlapping review packets:
+
+- **Broken-history packet — 9:** Git has no usable HEAD/ref. Two repositories
+  point at missing symbolic branches and seven contain raw commit IDs whose
+  commit objects are absent locally. No repair or deletion is implied.
+- **Dirty-state packet — 3:** the failed clone has 114 staged deletions; the
+  CSS-provenance LF-check has one modified tracked test; and the routing
+  preview has two modified tracked source files. These require content review
+  before any physical action. The failed-clone commit tree matches one clean
+  product-evaluation snapshot, but its staged deletion state is not safe to
+  discard or reset.
+- **Fetch-assisted diagnostic packet — 24:** clean browser/CDP/host-runtime
+  qualification workspaces with HEADs absent from the canonical local object
+  database. Their local sibling-origin chains do not prove absorption, and no
+  network fetch was performed, so commit reachability remains unresolved.
+- **Unique-code/commit review packet — 7:** clean product-evaluation snapshots
+  with implementation, refactor, test, or CSS-provenance commit subjects.
+  Their commits are not present in the canonical local object database and
+  their documented results must be compared with canonical source before any
+  extraction or removal decision.
+- **Evidence/artifact ambiguity packet — 10:** clean visual-evidence and
+  run-configuration snapshots containing evidence-oriented commit subjects or
+  tracked artifact paths. Screenshots, manifests, and referenced result
+  records must be mapped and deduplicated before a cleanup decision.
+
+This refinement yields **strong delete — 0**, **extract-then-delete — 0**,
+and **move/preserve — 0** within the 53-workspace scope. The absence of a
+canonical-local commit object is not evidence of disposable history; likewise,
+clean status does not prove that evidence is reproducible or referenced only
+historically. The reference scan found eight of the 53 without an exact match
+in current e2r-spec docs, sessions, or Knowledge; the other 45 have historical
+or evidence-location references. Those references do not by themselves prove
+active runtime dependency, but they must be classified before path changes.
+
+The human review packet should therefore be handled in this order: preserve
+the broken and dirty entries; decide whether the 24 diagnostic chains need a
+fetch-assisted evidence pass; review the seven product-code snapshots for
+unique implementation; and map the ten visual-evidence snapshots to their
+artifacts and result records. A low-risk future physical batch is still the
+two clean, canonical-contained move candidates, after reference handling is
+approved. No member of the 53-workspace set is currently a safe deletion
+candidate, and this refinement authorizes no move, extraction, fetch, repair,
+archive, or deletion.
 
 ## Current baseline
 

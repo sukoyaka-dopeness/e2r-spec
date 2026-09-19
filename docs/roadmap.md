@@ -39,6 +39,32 @@ The architecture baseline comes from:
 - Keep ordinary Dataset use and Core validation independent of network access
   or an external registry.
 
+## Current status index — 2026-09-19
+
+This short section is the entry point for current status. Detailed checkpoint
+records and older planning entries remain below for evidence and chronology;
+they do not override this index merely because they contain stronger-looking
+words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`.
+
+| Workstream | Current status | Authority / next decision |
+| --- | --- | --- |
+| Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
+| NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
+| History 2 user-facing authoring scope | **DESIGN RESULT / HUMAN SCOPE DECISION REQUIRED** | [scope result](history-2-user-facing-authoring-scope-result.md) |
+| Initial Public Release | **SEPARATE RELEASE PLANNING TRACK** | [remaining gates reconciliation](e2r-initial-public-release-remaining-gates-reconciliation1-result.md); rollout, deployment, and publication remain separately authorized |
+
+### How to maintain current and historical entries
+
+- Add a short current-status entry to this roadmap only when it changes the
+  current priority, state, dependency, or required human decision.
+- Link the detailed result, acceptance, audit, or reconciliation document
+  instead of duplicating its evidence in the roadmap.
+- Preserve older entries as chronology. When an old status could be mistaken
+  for current, add a brief historical/superseded label or a link to the later
+  current entry; do not rewrite the historical record wholesale.
+- Keep normative requirements in `spec/`, `extensions/`, `schemas/`, and
+  canonical `examples/`. This roadmap is non-normative planning authority.
+
 ## Current baseline
 
 ### Roadmap/status synchronization — 2026-08-17
@@ -678,6 +704,10 @@ implementation. A subsequent bounded Validator checkpoint adds exact-version-
 gated, read-only structural diagnostics and limited two-edge Derived evidence;
 it does not promote either candidate, create Relations, or authorize application
 writes, migration, deployment, or release.
+
+> Historical snapshot — superseded by the current `NL-H2-R1` entry near the
+> end of this roadmap. The following readiness text records the pre-acceptance
+> state and is retained for chronology.
 
 The subsequent NarrativeLine application-readiness audit is recorded in
 `e2r-narrative-line/docs/history-2-relative-time-application-readiness.md`.

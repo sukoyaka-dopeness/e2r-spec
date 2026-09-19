@@ -23,6 +23,52 @@ and do not override them.
 The Documentation Hub in `docs/README.md` organizes these materials by reader
 intent.
 
+## Placement and authority policy
+
+Choose a document path from its responsibility, not from the checkpoint name
+or the convenience of the author. Existing paths are stable; this policy is
+for new documents and focused future maintenance.
+
+| Responsibility | Default location | Meaning |
+| --- | --- | --- |
+| Core, Extension, schema, or canonical example requirement | `spec/`, `extensions/`, `schemas/`, or `examples/` | Normative specification or canonical machine-readable artifact |
+| Repository-wide guide or cross-repository current checkpoint result | `docs/` root, linked from `docs/README.md` | Stable entry document or bounded evidence record |
+| Application design or application-owned acceptance | `applications/` in this repository or the owning application repository | Informative design or implementation evidence; source remains authoritative for behavior |
+| Exploratory research, hypothesis, or design decision | Existing responsibility-matched directory under top-level `research/` | Non-normative research; do not duplicate it under `docs/research/` |
+| Session chronology and handoff history | `sessions/` | Historical record; it does not define current status |
+| Reusable process knowledge | Sibling `ai-knowledge` repository | Guidance and decisions; it does not override this specification |
+
+Do not create a new directory merely to make filenames look cleaner. In
+particular, `docs/research/`, `docs/applications/`, and `docs/sessions/` are
+not parallel authorities because those responsibilities already have
+top-level homes. A new `docs/guides/` or `docs/results/` directory is not
+required by the current inventory; it may be proposed later only if a real
+navigation or ownership problem is demonstrated and the migration cost is
+accepted.
+
+For a new cross-cutting document kept in the `docs/` root, include a compact
+header stating `Date`, `Status`, `Scope`, `Authority`, and `Related records`.
+Use established suffixes such as `-result.md`, `-acceptance.md`,
+`-audit1-result.md`, or `-reconciliation1-result.md`. The suffix is a
+navigation aid, not proof that the document is normative.
+
+Use these status distinctions consistently:
+
+- **Current**: the active status supported by current source or accepted
+  evidence.
+- **Accepted / closed**: a completed bounded checkpoint whose evidence remains
+  useful.
+- **Designed**: a proposal or design result awaiting implementation or human
+  scope approval.
+- **Experimental / research**: exploratory work, not a released capability.
+- **Historical / superseded**: retained chronology that was replaced by a
+  later checkpoint.
+
+Historical records should be annotated or linked to the later status when
+their wording could otherwise be mistaken for current work. They should not
+be rewritten wholesale merely to make old plans agree with the present. A
+closed checkpoint is not automatically an archive candidate.
+
 ## Language policy
 
 Important introductory and user-facing documentation is maintained in Japanese

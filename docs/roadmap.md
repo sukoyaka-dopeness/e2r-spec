@@ -282,6 +282,51 @@ keep for now — 1**, and **Human review required — 9**. No original workspace
 was deleted, moved, renamed, repaired, fetched, or otherwise modified, and no
 other non-canonical workspace was touched.
 
+### Production-candidate PR2 source-adoption review — 2026-09-20
+
+The three previously identified PR2-specific source files in
+`e2r-liaison-scape-production-candidate-materialization-implementation1` were
+reviewed read-only:
+
+- `experimental/production-candidate-materialization/pr2-nonvisual-evidence-completion1/fixture-corpus.mjs`
+  (9,894 bytes, 173 lines, SHA-256
+  `04EDCEFF94DC8B02A6164F7C1781430DE14DAD2328CBD60945BD047BE82740B6`):
+  committed-fixture reader, graph projection, candidate input, and synthetic
+  control definitions. It reads fixed bytes from `e2r-spec`, LiaisonScape, and
+  NarrativeLine through hard-coded local paths and Git revisions.
+- `.../pr2-evidence.test.mjs` (3,272 bytes, 57 lines, SHA-256
+  `82CDFBF7721FAD770F669F21C641CBF77675D447CC5F08301E9E663DE0DECEE0`):
+  four Node tests for the bounded PR2 evaluation surface, not Product tests.
+- `.../run-pr2-evidence.mjs` (7,085 bytes, 107 lines, SHA-256
+  `2EAC3366A91AC5888E420002990E36D8D34AE7DCD55CB580DF4241EF575CBA07`):
+  an artifact-writing evidence runner for the same bounded evaluation.
+
+All three files are untracked in the disposable clone and have no unique Git
+commit. They are not present in the canonical LiaisonScape source tree. The
+canonical application instead uses its current Product initial-layout provider;
+the existing PR2 result and compatibility documents explicitly prohibit live
+App import, Production replacement, persistence, candidate selection, and
+Production integration. The research materializer/support files are byte-
+identical to the corresponding files in the retained visual-evidence harness
+workspace, but the three PR2 files themselves have no sibling copy there.
+The PR2 test was replayed read-only and passed 4/4; no artifact generation was
+run during this review.
+
+Provisional classification is **C / experiment-only source, preserve as a
+replay/provenance kit** rather than Product source adoption. The corpus reader
+and evidence test are useful only with their fixed authorities; the runner has
+hard-coded workspace paths and writes generated artifacts. No current Product
+behavior, roadmap commitment, or accepted design authorizes adopting them into
+canonical LiaisonScape. Human choice remains open between `Preserve as replay
+kit only`, `Preserve as reusable research tooling` after path/configuration
+hardening, or `Do not adopt; superseded`. This entry records a provisional
+review only; it does not select a candidate or authorize source adoption.
+
+The production-candidate workspace remains in place with its untracked
+evidence surface. Structural experiments and visual capture workspaces remain
+unreviewed in this checkpoint. No source was copied, merged, cherry-picked,
+committed, extracted, moved, renamed, deleted, fetched, or repaired.
+
 ## Current baseline
 
 ### Roadmap/status synchronization — 2026-08-17

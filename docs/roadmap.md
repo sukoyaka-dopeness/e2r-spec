@@ -143,6 +143,48 @@ dirty work, artifacts, evidence, and documentation references, then obtain
 Human review of the keep/archive/delete list. No physical cleanup operation
 is authorized by this roadmap entry.
 
+### Consolidated workspace root migration — 2026-09-20
+
+Human adopted the consolidated `C:\Users\extra\E2R\workspace\` root. The
+three bounded shared-root moves were completed without changing their
+payloads:
+
+- `C:\Users\extra\E2R\experimental` →
+  `C:\Users\extra\E2R\workspace\experimental`;
+- `C:\Users\extra\E2R\diagnostics` →
+  `C:\Users\extra\E2R\workspace\diagnostics`; and
+- `C:\Users\extra\E2R\artifacts` →
+  `C:\Users\extra\E2R\workspace\artifacts`.
+
+The old three paths are absent and the new paths are present. Pre/post
+file-count, directory-count, and byte-count checks matched: experimental
+289 files / 72 directories / 3,400,393 bytes; diagnostics 669 files / 31
+directories / 28,063,432 bytes; and artifacts 50 files / 54 directories /
+212,712 bytes. The two nested Git workspaces under experimental retained
+their detached HEAD `fd563340...`, clean status, canonical LiaisonScape
+origin, and standalone Git metadata; no alternates, submodules, or additional
+worktree dependency was found.
+
+The new placement authority is:
+
+- canonical repositories directly under `C:\Users\extra\E2R\`;
+- retained non-canonical Git workspaces, experiments, materializations, and
+  replay environments under `workspace\experimental\workspaces\...`;
+- browser/CDP/runtime/host diagnostic payload under `workspace\diagnostics\`;
+  and
+- historical evidence, screenshots, manifests, decision packets, and
+  generated preservation material under `workspace\artifacts\`.
+
+Historical documents, manifests, audit packets, and result records retain
+old absolute paths where those paths describe historical provenance. No broad
+path rewrite was performed, and the post-move scan found no active script,
+launcher, Git relation, or current placement authority depending on the old
+three roots. The seven canonical repositories remained unmoved. The 55
+remaining non-canonical direct-child Git workspaces are migration-pending and
+are not moved by this entry. This was placement cleanup, not delete
+authorization; deletion, source adoption, remote rewrite, and further
+workspace moves remain separately bounded actions.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

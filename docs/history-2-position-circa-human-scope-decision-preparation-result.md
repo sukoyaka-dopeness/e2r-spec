@@ -24,6 +24,15 @@ APPROVAL REQUIRED**. It is not an accepted product capability. The accepted
 NarrativeLine `NL-H2-R1` recognition, preservation, and edit-refusal boundary
 remains closed.
 
+## Implementation follow-up
+
+The explicitly bounded H2-POSITION-CIRCA scope was subsequently authorized for
+NarrativeLine implementation. NarrativeLine records the resulting capability
+as **IMPLEMENTED / AUTOMATED GREEN / HUMAN ACCEPTANCE REQUIRED** in
+[`h2-position-circa-bounded-authoring-implementation-result.md`](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md).
+This follow-up does not make History 2.0.0 Stable, change the candidate
+schema, or close the remaining human product-acceptance decision.
+
 ## Authority and repository evidence
 
 The decision is based on current repository evidence, in this order:

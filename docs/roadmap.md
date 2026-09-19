@@ -11423,6 +11423,17 @@ keyboard/focus acceptance remains the next application acceptance step. The
 NarrativeLine source-level release boundary and public rollout/deploy/release
 decisions remain separate.
 
+### E2R-DOCUMENTATION-INFORMATION-ARCHITECTURE-ROADMAP-MODULARIZATION-AUDIT1 (2026-09-19)
+
+The [Documentation Information Architecture / Roadmap Modularization Audit](documentation-information-architecture-roadmap-modularization-audit1-result.md)
+is complete. Current recommendation: preserve existing documentation paths and
+the single roadmap, strengthen `docs/README.md` as a responsibility-based
+navigation hub, and keep detailed checkpoint evidence in dedicated result
+documents. Existing-file moves, renames, archive migration, and roadmap
+splitting require a separate human structure decision. This is a
+documentation-only planning record; no runtime, normative specification, or
+release artifact changed.
+
 ### E2R-HISTORY-2-USER-FACING-AUTHORING-SCOPE-DESIGN (2026-09-19)
 
 The [History 2 User-Facing Authoring Scope result](history-2-user-facing-authoring-scope-result.md)

@@ -405,6 +405,41 @@ outputs may be treated as dispensable after the documented hash/reference
 record, or whether they must receive a separate evidence archive. No physical
 cleanup operation is authorized by this audit.
 
+### Production-candidate MAT-C2 historical artifact archive and delete-readiness reassessment — 2026-09-20
+
+Human approved preserving the four exact historical `implementation-validation1`
+outputs before any delete decision. They were copied, without replacement or
+mutation, to the non-Git shared archive at
+`C:\Users\extra\E2R\artifacts\liaisonscape-initial-placement-seed-production-candidate-materialization-implementation1\implementation-validation1`:
+
+- `manifest.json` — 2,898 bytes, SHA-256
+  `1C016D90103B1E4AA1A1D194900F33C62B704D4A6F40B880349DD20DF8D6F644`;
+- `raw-materialization.json` — 82,066 bytes, SHA-256
+  `335B632E2E3DB5C73F78261725EE362A35DD7551451233B5F997D5336B74CA6F`;
+- `audit-results.json` — 10,241 bytes, SHA-256
+  `82DCEF30A38F0B7746C86C763A8588F86339BB59DD36AD8AB702130ED35BB595`;
+- `artifact-index.json` — 461 bytes, SHA-256
+  `CAE01944D77445E5590ACD4D386AA6FC75620D171C897E0038612DB0A52DD785`.
+
+The archive has an `archive-manifest.md` recording the original path, detached
+Git revision, canonical ancestry, artifact roles, source paths, hashes, and
+the distinction from the separate PR2 replay kit. Read-only verification found
+4/4 source/archive byte and SHA-256 matches (95,666 payload bytes in each
+location), matching hashes in `artifact-index.json`, valid JSON for all four
+JSON files, and no nested Git metadata in the archive. The original workspace
+still has exactly 21 untracked files; the 12 source files and five PR2
+artifacts remain represented by the replay kit, while these four exact MAT-C2
+outputs are now independently preserved. Historical documentation references
+were not rewritten, and no active script/configuration dependency on the old
+path was found.
+
+The original workspace is therefore classified
+**READY FOR HUMAN-APPROVED DELETE** for a later, explicitly authorized
+destructive checkpoint. This is a readiness classification only: the original
+workspace, its files, and its Git metadata were not deleted, moved, renamed,
+or repaired in this checkpoint. Any deletion still requires a separate Human
+approval and a final pre-delete status/reference check.
+
 ## Current baseline
 
 ### Roadmap/status synchronization — 2026-08-17

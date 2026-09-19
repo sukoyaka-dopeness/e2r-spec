@@ -327,6 +327,35 @@ evidence surface. Structural experiments and visual capture workspaces remain
 unreviewed in this checkpoint. No source was copied, merged, cherry-picked,
 committed, extracted, moved, renamed, deleted, fetched, or repaired.
 
+### Production-candidate PR2 replay-kit extraction — 2026-09-20
+
+Human selected `Preserve as replay kit only` for the three PR2-specific source
+files. The bounded kit was extracted to the non-Git shared root
+`C:\Users\extra\E2R\experimental\workspaces\production-candidate-materialization-pr2-replay-kit1`.
+It contains 12 executable source files (the three PR2 files plus the nine
+support files they import), five prior PR2 reference artifacts, and an
+`extraction-manifest.md`. The fixture corpus retains the recorded cross-repo
+fixture authorities and synthetic controls; fixture bytes were not silently
+replaced or re-authored.
+
+Integrity verification found 0 SHA-256 mismatches across all 17 copied
+payload files. The destination contains 18 files including the manifest,
+totalling 312,555 bytes, and contains no nested `.git` directory. The copied
+kit-side read-only `node --test pr2/pr2-evidence.test.mjs` replay passed 4/4.
+The runner was not executed because it writes fresh artifacts; its command,
+runtime, expected 65-cell result, domain-boundary result, and volatility rules
+are recorded in the manifest. The four older MAT-C2/MAT-C3
+`implementation-validation1` artifacts were intentionally omitted and remain
+in the original workspace.
+
+The original production-candidate workspace remains in place and is classified
+**EXTRACTED BUT KEEP FOR NOW / delete readiness not established**. A later
+delete decision still requires reference reconciliation, confirmation that the
+omitted historical artifacts are not uniquely required, and Human approval.
+No canonical source, Product runtime, structural experiment, visual capture
+workspace, or unrelated dirty work was changed. No deletion, move, rename,
+repair, fetch, or source adoption was performed.
+
 ## Current baseline
 
 ### Roadmap/status synchronization — 2026-08-17

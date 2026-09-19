@@ -440,6 +440,41 @@ workspace, its files, and its Git metadata were not deleted, moved, renamed,
 or repaired in this checkpoint. Any deletion still requires a separate Human
 approval and a final pre-delete status/reference check.
 
+### Production-candidate workspace deletion — 2026-09-20
+
+Following the completed delete-readiness audit, Human approved deletion of
+exactly one workspace:
+`C:\Users\extra\E2R\e2r-liaison-scape-production-candidate-materialization-implementation1`.
+The deletion preflight passed: the exact directory existed as a normal
+directory, was detached at
+`fd563340625fd3d88dc25baedc93c4f8fe69e5e7`, had only the expected 21
+untracked files under `experimental/`, had no tracked, staged, or newly
+unaccounted dirty content, had no local-only commit or ref, and its commit was
+contained by the current canonical LiaisonScape HEAD. No reparse point or
+additional worktree was present, and no active operational dependency on the
+old path was found.
+
+The workspace directory was then deleted as the sole destructive target. The
+PR2 replay kit remains at
+`C:\Users\extra\E2R\experimental\workspaces\production-candidate-materialization-pr2-replay-kit1`;
+its 18 files and no nested Git metadata remain intact. The MAT-C2 historical
+archive remains at
+`C:\Users\extra\E2R\artifacts\liaisonscape-initial-placement-seed-production-candidate-materialization-implementation1\implementation-validation1`;
+its four payload hashes still match the recorded values, its index and JSON
+remain valid, and its archive manifest remains present. The canonical
+LiaisonScape repository remains at HEAD
+`e6a66dfecc3187e2be895c960eb3ff7804f1bb69` with its pre-existing dirty files
+unchanged.
+
+Post-delete verification confirmed that the old workspace path is absent, the
+replay kit and historical archive are present and intact, and no sibling,
+canonical repository, shared root, or other workspace was deleted. Historical
+documentation and session references to the former path remain intentionally
+unchanged as provenance; they are not active filesystem dependencies. The
+production-candidate workspace cleanup is **complete**. Remaining structural,
+visual, diagnostic, and other noncanonical workspace cleanup stays outside
+this checkpoint and requires its own review.
+
 ## Current baseline
 
 ### Roadmap/status synchronization — 2026-08-17

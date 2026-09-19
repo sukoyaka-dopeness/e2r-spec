@@ -95,3 +95,175 @@ continuity. No new Knowledge entry was justified.
 No commit, push, deploy, release, or publication was performed.
 
 `SESSION LOGGED - NARRATIVELINE NEXT-PHASE PLAN AND SOURCE HANDOFF READY`
+
+---
+
+## Continuation - History 2 authoring, Dataset-wide upgrade, and browser infrastructure
+
+Date: 2026-09-19
+
+Status:
+
+```text
+HISTORY 2 POSITION/CIRCA AUTHORING IMPLEMENTED
+DATASET-WIDE H1 -> H2 UPGRADE AUTOMATED GREEN
+BACKDROP DISMISSAL ALIGNED
+REAL-BROWSER ACCEPTANCE BLOCKED BY CONNECTOR REATTACH
+```
+
+This continuation records the work completed after the original Session 0093
+planning checkpoint and the exact boundary for moving to a new chat.
+
+### Completed specification and implementation sequence
+
+History 2.0.0 Candidate and Relative Time Draft 0.1.0 research, decision
+normalization, schema-first validation, diagnostics, Validator `0.5.0`
+preparation/publication, and the NarrativeLine dependency checkpoint were
+completed through their recorded bounded checkpoints. NarrativeLine then
+implemented and accepted the read-only Candidate boundary, bounded
+single-position `circa` authoring, declaration synchronization, and the
+Dataset-wide History 1 to History 2 upgrade.
+
+The Dataset-wide upgrade implementation is on NarrativeLine `main` in:
+
+- `538292e feat: implement Dataset-wide History 2 upgrade`
+
+Its synchronized E2R-SPEC result is:
+
+- `453f3ef docs: record Dataset-wide History implementation`
+
+The implementation performs one strict, atomic Dataset-wide conversion across
+Entity, Event, and Relation History when the user confirms the first H2-only
+`circa` use. It preserves supported Civil Time fields, granularity, Time Zone,
+offset, and `temporalOrder`; synchronizes the exact History 2 declaration and
+Features; validates the complete result before commit; and refuses malformed,
+unknown, mixed, or otherwise unsafe states without mutating the source Dataset.
+Known-shape undeclared legacy H1 is accepted only when a complete declaration
+can be generated safely. Cancel and conversion/refusal failures preserve the
+H1 Dataset and the unsaved Event draft.
+
+No schema, Validator semantics, sample Dataset, Relative Time behavior,
+bounded-point, temporal-extent, multiple-assertion authoring, Entity/Relation
+authoring UI, or H2-to-H1 downgrade was added by that implementation.
+
+### H2 confirmation interaction consistency
+
+The H2 upgrade confirmation now treats Cancel, Escape, and direct backdrop
+click as the same safe cancellation path. Dialog-interior clicks do not
+dismiss it, and the shared `ModalDialog` restores opener focus. The bounded fix
+is on NarrativeLine `main` in:
+
+- `1eeb590 fix: allow backdrop cancel for History upgrade dialog`
+
+H2-specific integration evidence verifies that backdrop dismissal preserves
+the H1 Dataset, unsaved Event draft, and approximation control state, and does
+not leave a partial H2 declaration, Feature, or migration result. This did not
+create a global backdrop policy for destructive dialogs.
+
+Current NarrativeLine automated baseline after this fix:
+
+- focused H2 application-path tests: **5/5 PASS**;
+- full suite: **247/247 PASS**, exit 0, natural completion;
+- `npm.cmd run lint`: PASS;
+- `npm.cmd run build`: PASS;
+- `git diff --check`: PASS.
+
+The recurring Vite middleware warning `Port 24678 is already in use` remains
+non-failing. The listener was absent before the suite, at the sampled point
+during the suite, and after suite completion. The connector timeout was
+already reproducible before the test run, so current evidence separates this
+warning from the Computer Use connector failure.
+
+### Real-browser acceptance infrastructure diagnosis
+
+NarrativeLine's dev server remained healthy at `127.0.0.1:5173`, owned by Vite
+PID `28348`. Ports `24678`, `9222`, and `9223` had no persistent listener.
+Normal Edge and Chrome processes remained available and were not restarted or
+terminated.
+
+The Computer Use connector failed before H2 acceptance could start:
+
+- `cua_repl.getState()` repeatedly timed out after 30 seconds, including after
+  automatic and explicit JavaScript-session resets;
+- direct Computer Use app inventory succeeded and detected Chrome, Edge, and
+  the Edge NarrativeLine window;
+- attempting the Edge window-state smoke stopped because the tooling could not
+  determine the current browser URL with enough confidence for policy
+  enforcement;
+- therefore browser discovery worked, while the wrapper/window-state URL
+  boundary remained unhealthy.
+
+This supports a connector/tooling-layer diagnosis, not a NarrativeLine repo,
+dev-server, browser-process, CDP-port, or `24678` cause.
+
+### Safe connector restart and current stop point
+
+The only documented supported lifecycle operation was session/kernel reset;
+it did not recover health. Process inspection then confirmed a Codex-owned
+connector chain that had remained alive since 2026-09-17:
+
+- `cua-repl` Node PID `26604`, parent Codex app-server PID `1936`;
+- dedicated child `node_repl` PID `24000`.
+
+With explicit user authorization, only PIDs `24000` and `26604` were ended.
+The parent Codex app-server, VS Code, Vite, Edge, Chrome, and unrelated Node
+processes were not touched. The old connector processes exited, but the current
+Codex session did not respawn or reattach a replacement. Subsequent connector
+state/reset calls returned immediate `Transport closed` rather than timing
+out. No new `cua-repl` process was present at the final check.
+
+The parent app-server was deliberately not restarted because doing so could
+destroy the current task/session without a supported in-session resume path.
+The safe classification at handoff is therefore:
+
+```text
+SAFE CONNECTOR CHILD RESTART DID NOT REATTACH
+/ HUMAN OR TOOLING-SIDE ACTION REQUIRED
+```
+
+### Exact next-chat resume boundary
+
+The next chat should begin after a human-side Codex / VS Code extension session
+restart has created a fresh Computer Use connector transport. Before starting
+the H2 Real Browser acceptance matrix, perform only this infrastructure smoke:
+
+1. confirm a new `cua-repl` process and current start time;
+2. confirm `127.0.0.1:5173` is listening;
+3. call `cua_repl.getState()` or the current equivalent;
+4. confirm Edge and the NarrativeLine window appear in app inventory;
+5. confirm window-state capture and browser URL determination succeed.
+
+If these pass, proceed in a separate bounded checkpoint to the fresh H2 Real
+Browser acceptance matrix. Do not treat connector recovery itself as H2 Human
+Acceptance. If URL confidence or transport failure recurs in the fresh
+session, stop at the external tooling boundary rather than changing
+NarrativeLine, Vite ports, browser profiles, timeouts, or retry counts.
+
+### Repository and publication state at handoff
+
+NarrativeLine:
+
+- branch `main`;
+- HEAD `1eeb590`;
+- `origin/main` ahead by 17 commits;
+- only the pre-existing dirty `AGENTS.md` remains unstaged.
+
+E2R-SPEC before this session-log update:
+
+- branch `main`;
+- HEAD `453f3ef`;
+- `origin/main` ahead by 242 commits;
+- pre-existing dirty research files
+  `research/exploratory/e2r-causal-relative-order-and-undated-event-placement.md`
+  and
+  `research/exploratory/e2r-multidimensional-history-temporal-perspectives.md`;
+- pre-existing untracked `work/`.
+
+Validator remains at `00bcda7` and was not changed in the final implementation
+or connector checkpoints. No application source, runtime, schema, sample,
+browser profile, firewall, global Node/npm installation, or persistent port
+configuration was changed during connector diagnosis. Real Browser H2
+acceptance remains unperformed. No push, tag, deploy, release, or publication
+was performed in these final checkpoints.
+
+`SESSION CONTINUATION LOGGED - H2 AUTOMATED GREEN / CONNECTOR REATTACH REQUIRED`

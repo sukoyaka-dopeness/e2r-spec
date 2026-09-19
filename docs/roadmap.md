@@ -260,6 +260,28 @@ approved. No member of the 53-workspace set is currently a safe deletion
 candidate, and this refinement authorizes no move, extraction, fetch, repair,
 archive, or deletion.
 
+### Archive/extraction checkpoint — 2026-09-20
+
+The ten previously classified archive/extract candidates were rechecked from
+the current filesystem. The receive-lifetime workspace was the only safe
+evidence-only subset: six dirty Fresh Lineage run directories were copied to
+`C:\Users\extra\E2R\diagnostics\browser-capture-helper-receive-lifetime-correction1`.
+The extraction contains 668 files and 28,061,339 bytes; source/destination
+SHA-256 comparison reported zero mismatches. Its manifest records the original
+path, HEAD, branch, origin, selected runs, omissions, and verification:
+`diagnostics/browser-capture-helper-receive-lifetime-correction1/extraction-manifest.md`.
+
+The original receive-lifetime workspace remains in place because the
+extraction is partial and its non-canonical Git provenance and remaining runs
+have not been approved for deletion. The production-materialization workspace,
+two structural-assignment workspaces, and six visual-capture workspaces were
+not extracted: current evidence shows materializer/runner/test source or
+capture-runner revisions that require Human review before any archive/delete
+decision. This yields **ready for Human-approved delete — 0**, **extracted but
+keep for now — 1**, and **Human review required — 9**. No original workspace
+was deleted, moved, renamed, repaired, fetched, or otherwise modified, and no
+other non-canonical workspace was touched.
+
 ## Current baseline
 
 ### Roadmap/status synchronization — 2026-08-17

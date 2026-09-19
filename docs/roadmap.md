@@ -577,6 +577,58 @@ ambiguous, stop and report rather than infer authorization. Visual capture,
 receive-lifetime, PR2/MAT-C2, fetch-assisted, broken/failed-clone, routing,
 and other remaining groups are not approved by this record.
 
+### Visual capture1–6 read-only workspace audit — 2026-09-20
+
+The six direct-child visual-evidence workspaces identified by the earlier
+workspace audit were inspected without extraction, archive copy, move, rename,
+or deletion:
+
+| Workspace | HEAD / state | Files / bytes | Dirty evidence | Provisional classification |
+| --- | --- | ---: | --- | --- |
+| `e2r-liaison-scape-visual-evidence-browser-capture1` | `6334e42`; detached | 2,755 / 97,658,714 | one untracked `capture-input.json`; no screenshot/result output | **PRESERVE EXACT HISTORICAL ARTIFACTS** |
+| `e2r-liaison-scape-visual-evidence-browser-capture2` | `2fc81b8`; detached | 2,772 / 97,683,917 | four untracked B1 failure JSON records plus one untracked input | **POTENTIAL DELETE AFTER EXTRACTION** |
+| `e2r-liaison-scape-visual-evidence-browser-capture3` | `b964a58`; detached | 2,795 / 97,759,889 | eleven untracked B1 failure JSON records plus one untracked input | **POTENTIAL DELETE AFTER EXTRACTION** |
+| `e2r-liaison-scape-visual-evidence-browser-capture4` | `d1479e9`; detached | 2,805 / 97,812,105 | five untracked B1 failure JSON records plus one untracked input | **POTENTIAL DELETE AFTER EXTRACTION** |
+| `e2r-liaison-scape-visual-evidence-browser-capture5` | `6aa1008`; detached | 2,820 / 97,873,425 | four untracked B1 failure JSON records plus one untracked input | **POTENTIAL DELETE AFTER EXTRACTION** |
+| `e2r-liaison-scape-visual-evidence-browser-capture6` | `348bc2c`; detached | 2,837 / 97,937,925 | five untracked B1 failure JSON records plus one untracked input | **POTENTIAL DELETE AFTER EXTRACTION** |
+
+All six are ordinary Git directories, have no reparse points, and have no
+additional worktree entries. Their local `origin` values form a sibling
+lineage (`capture1` through `capture6`) rather than pointing to canonical
+LiaisonScape. None has a common local commit with canonical LiaisonScape, so
+canonical reachability is not a substitute for preserving their evidence.
+However, all six HEADs are ancestors of the later
+`e2r-liaison-scape-visual-evidence-browser-capture7` commit
+`06acff14d5e27e3c9a775057c608d203854cab20`; the runner/source revision history
+is therefore retained by that later lineage. The six runner files have
+distinct hashes, while the shared harness/support source is repeated across
+the clones and is also present in the retained harness workspace.
+
+The run records establish a failed or incomplete browser-capture lineage, not
+accepted visual evidence. Capture1 has no generated B1 result. Captures2–6
+retain only untracked B1 failure records (4, 11, 5, 4, and 5 respectively)
+and no successful screenshot/PNG output. Their manifests and protocol files
+record `review = NOT STARTED`, `noHumanReview = true`, `pr3 = NO`, and zero
+terminal B1/V3 rows at preregistration. The later capture7 result records the
+same lineage family as blocked at the B1 browser infrastructure gate; it
+supersedes these pre-dynamic/failed lineages for current execution authority,
+but does not make their untracked failure records byte-identical duplicates.
+
+Reference review found no active references to the exact six workspace paths
+from `e2r-spec`, `ai-knowledge`, or root guidance. Existing specification
+records refer to the harness, machine evidence, later capture7 lineage, and
+historical browser-capture process rather than requiring these six paths at
+runtime. No active runner process for these six workspaces was found.
+
+The untracked inputs and B1 failure records are exact historical execution
+artifacts and must be preserved before any deletion decision. A future
+bounded checkpoint may choose between extracting those records into an
+artifact namespace and retaining the full workspace for path-local replay
+context. This audit does not select either option, does not authorize
+extraction or deletion, and does not classify any of the six as delete-ready.
+Visual capture7, the retained harness, machine evidence, and all other
+cleanup groups remain outside this checkpoint.
+
 ## Current baseline
 
 ### Roadmap/status synchronization — 2026-08-17

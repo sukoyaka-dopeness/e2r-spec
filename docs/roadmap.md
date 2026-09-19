@@ -356,6 +356,55 @@ No canonical source, Product runtime, structural experiment, visual capture
 workspace, or unrelated dirty work was changed. No deletion, move, rename,
 repair, fetch, or source adoption was performed.
 
+### Production-candidate PR2 post-extraction delete-readiness audit — 2026-09-20
+
+The extraction checkpoint was selectively committed as
+`6d6053e docs: record PR2 replay-kit extraction`; unrelated e2r-spec research
+changes and `work/` remain unstaged. The original workspace still contains
+exactly 21 untracked files: 12 source files and nine JSON artifacts. The 12
+source files and five PR2 artifacts are preserved in the replay kit. The four
+remaining `implementation-validation1` artifacts were audited but not copied,
+deleted, or modified:
+
+| Artifact | Bytes | SHA-256 | Provisional result |
+| --- | ---: | --- | --- |
+| `manifest.json` | 2,898 | `1C016D90103B1E4AA1A1D194900F33C62B704D4A6F40B880349DD20DF8D6F644` | historical implementation provenance; reproducible, not duplicated |
+| `raw-materialization.json` | 82,066 | `335B632E2E3DB5C73F78261725EE362A35DD7551451233B5F997D5336B74CA6F` | historical 15-cell materialization evidence; reproducible, not duplicated |
+| `audit-results.json` | 10,241 | `82DCEF30A38F0B7746C86C763A8588F86339BB59DD36AD8AB702130ED35BB595` | historical bounded audit result; reproducible, not duplicated |
+| `artifact-index.json` | 461 | `CAE01944D77445E5590ACD4D386AA6FC75620D171C897E0038612DB0A52DD785` | hash index for the three artifacts above; not duplicated |
+
+The four hashes are referenced by the PR2 result and the surrounding
+Implementation1/Validation1 records as historical evidence. The PR2 replay
+kit contains a different checkpoint's five reference artifacts, so it does not
+semantically or byte-for-byte supersede these four Implementation1 outputs.
+The old runner can regenerate them from the preserved support source, but
+regeneration is not the same as retaining the exact historical output.
+
+Reference search found historical source/artifact/path mentions across the
+e2r-spec result documents, Session-0052, and the roadmap. No exact active
+script/configuration or ai-knowledge dependency was found. These historical
+references were not rewritten. The replay-kit manifest is sufficient to
+explain the PR2 replay chain, external repository revisions, commands, runtime,
+and absolute-path assumptions, but the old Implementation1 artifacts remain
+outside the kit by explicit decision.
+
+Git provenance is not a deletion blocker by itself: the workspace is detached
+at `fd563340625fd3d88dc25baedc93c4f8fe69e5e7`, its local `main` and origin refs
+point to that same commit, the canonical LiaisonScape repository contains that
+commit as an ancestor of its current `e6a66dfecc3187e2be895c960eb3ff7804f1bb69`
+HEAD, and no local-only commit or ref was found. The clone reflog contains only
+clone/checkout history. This does not erase the historical artifact and
+reference decision.
+
+Final classification for the original workspace is
+**HUMAN REVIEW REQUIRED** rather than `READY FOR HUMAN-APPROVED DELETE` or
+`EXTRACTED BUT KEEP FOR NOW`: the exact four historical artifacts remain only
+at the original path, and their deletion significance has not been approved.
+The next Human decision is whether those reproducible-but-unique historical
+outputs may be treated as dispensable after the documented hash/reference
+record, or whether they must receive a separate evidence archive. No physical
+cleanup operation is authorized by this audit.
+
 ## Current baseline
 
 ### Roadmap/status synchronization — 2026-08-17

@@ -629,6 +629,42 @@ extraction or deletion, and does not classify any of the six as delete-ready.
 Visual capture7, the retained harness, machine evidence, and all other
 cleanup groups remain outside this checkpoint.
 
+### Visual capture1–6 artifact archive extraction — 2026-09-20
+
+The Human-approved extraction checkpoint preserved the six runs' untracked
+historical inputs and B1 browser-capture failure records under the separate
+run namespace
+`C:\Users\extra\E2R\artifacts\visual-capture-browser-captures-2026-09-04`.
+Only those payload files were copied; no full Git clone, runner, source tree,
+or shared harness was copied into the archive. The six original workspaces
+remain in place and were not modified, moved, renamed, or deleted.
+
+The archive contains 35 payload files totaling 63,982 bytes. Source-to-archive
+hash verification matched all 35 files with zero mismatches; all 35 JSON
+payloads parsed successfully; the expected file set matched exactly; no nested
+Git repository was created; and each run has an extraction manifest. The
+per-run payload counts are capture1: 1, capture2: 5, capture3: 12,
+capture4: 6, capture5: 5, and capture6: 6. Capture1 remains input-only with
+no execution result or screenshot. Captures2–6 preserve B1 failure records
+and have no successful PNG/screenshot evidence.
+
+Capture7 commit `06acff14d5e27e3c9a775057c608d203854cab20` retains the runner
+and source history for all six earlier HEADs, while the retained harness and
+machine evidence remain outside this archive. Duplicate input payloads from
+capture2/capture5 and capture4/capture6 remain in separate run namespaces.
+The manifests also preserve, without normalizing or repairing, the observed
+`phaseRunId` mismatch in captures3–6; this is a provenance caveat, not an
+acceptance claim. No active dependency or process was found for the six old
+workspaces at extraction time.
+
+Post-extraction classification is per workspace: capture1 and captures2–6
+are each **READY FOR HUMAN-APPROVED DELETE**, with the captures3–6 provenance
+caveat recorded above. This is readiness only, not authorization. A later
+destructive checkpoint must name the exact workspace path(s) and delete action
+and receive separate Human approval. Visual capture7, the shared harness,
+machine evidence, other cleanup groups, and any visual-capture acceptance
+work remain outside this checkpoint.
+
 ## Current baseline
 
 ### Roadmap/status synchronization — 2026-08-17

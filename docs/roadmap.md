@@ -39,7 +39,7 @@ The architecture baseline comes from:
 - Keep ordinary Dataset use and Core validation independent of network access
   or an external registry.
 
-## Current status index — 2026-09-19
+## Current status index — 2026-09-20
 
 This short section is the entry point for current status. Detailed checkpoint
 records and older planning entries remain below for evidence and chronology;
@@ -53,7 +53,7 @@ words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`.
 | History 2 user-facing authoring scope | **DESIGN RESULT / HUMAN SCOPE DECISION REQUIRED** | [scope result](history-2-user-facing-authoring-scope-result.md) |
 | H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
 | Dataset-wide History 1 to History 2 upgrade | **IMPLEMENTED / AUTOMATED GREEN / BOUNDED REAL-BROWSER AND HUMAN ACCEPTANCE COMPLETE** | [NarrativeLine implementation result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/history-2-dataset-wide-upgrade-implementation-result.md); [scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md) |
-| E2R workspace clone and evidence hygiene | **PLACEMENT POLICY ACTIVE / PHYSICAL CLEANUP ELIGIBLE IN SEPARATE CHECKPOINT** | [workspace clone and evidence hygiene follow-up](#workspace-clone-and-evidence-hygiene-follow-up); H2 closure is complete, but no physical cleanup has started and Human review remains required |
+| E2R workspace clone and evidence hygiene | **PLACEMENT POLICY ACTIVE / BOUNDED CLEANUP PARTIALLY COMPLETE** | [workspace clone and evidence hygiene follow-up](#workspace-clone-and-evidence-hygiene-follow-up); production-candidate and structural groups have completed bounded technical cleanup, while remaining groups require individual review, preservation decisions, and explicit Human approval of exact destructive targets/actions |
 | Initial Public Release | **SEPARATE RELEASE PLANNING TRACK** | [remaining gates reconciliation](e2r-initial-public-release-remaining-gates-reconciliation1-result.md); rollout, deployment, and publication remain separately authorized |
 
 ### How to maintain current and historical entries

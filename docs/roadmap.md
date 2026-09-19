@@ -51,7 +51,7 @@ words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | History 2 user-facing authoring scope | **DESIGN RESULT / HUMAN SCOPE DECISION REQUIRED** | [scope result](history-2-user-facing-authoring-scope-result.md) |
-| H2-POSITION-CIRCA | **BLOCKER FIXED / AUTOMATED GREEN / REAL-BROWSER ACCEPTANCE PENDING** | [decision preparation](history-2-position-circa-human-scope-decision-preparation-result.md); [NarrativeLine repair result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-declaration-blocker-fix-result.md) |
+| H2-POSITION-CIRCA | **BOUNDARY CLARIFIED / AUTOMATED GREEN / REAL-BROWSER ACCEPTANCE PENDING** | [decision preparation](history-2-position-circa-human-scope-decision-preparation-result.md); [NarrativeLine repair result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-declaration-blocker-fix-result.md) |
 | Initial Public Release | **SEPARATE RELEASE PLANNING TRACK** | [remaining gates reconciliation](e2r-initial-public-release-remaining-gates-reconciliation1-result.md); rollout, deployment, and publication remain separately authorized |
 
 ### How to maintain current and historical entries
@@ -11506,14 +11506,15 @@ and broader temporal semantics remain deferred.
 
 ### E2R-H2-POSITION-CIRCA-DECLARATION-BLOCKER-FIX (2026-09-19)
 
-The NarrativeLine repair result records and fixes the declaration creation
-failure observed when a Dataset contained an existing Stable History 1 Event
-alongside the explicitly upgraded circa Event. Sibling Stable payloads remain
-preserved; unknown and mixed payloads remain refused. Automated validation is
-green, but the current status is **BLOCKER FIXED / REAL-BROWSER ACCEPTANCE
-PENDING** because the fresh browser rerun could not initialize in the available
-browser connector. This does not promote History 2.0.0 or close human
-acceptance.
+The NarrativeLine repair result records the declaration boundary exposed when
+a Dataset contained an existing Stable History 1 Event alongside the
+explicitly upgraded circa Event. Current Validator evidence shows that
+silently placing that H1 sibling under a History 2 declaration would be
+invalid, so the application does not migrate or accept that mixed state.
+The approved single-representation path is automated-green, but the current
+status is **BOUNDARY CLARIFIED / REAL-BROWSER ACCEPTANCE PENDING** because the
+fresh browser rerun could not initialize in the available browser connector.
+This does not promote History 2.0.0 or close human acceptance.
 
 ### E2R-INITIAL-PUBLIC-RELEASE-CROSS-APP-FOLLOW-UPS-RECONCILIATION1 (2026-09-19)
 

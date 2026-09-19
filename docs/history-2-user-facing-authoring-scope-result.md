@@ -8,6 +8,12 @@ This is a non-normative, pre-implementation design result. It does not promote
 History `2.0.0` from candidate status, change the schema, authorize a writer,
 or reopen the accepted `NL-H2-R1` recognition and preservation boundary.
 
+The follow-up [H2-POSITION-CIRCA human scope decision preparation](history-2-position-circa-human-scope-decision-preparation-result.md)
+narrows the remaining human decision to approximate Timeline presentation,
+explicit upgrade/downgrade boundaries, and declaration cleanup. It remains
+**RECOMMENDED FOR ACCEPTANCE / HUMAN APPROVAL REQUIRED** and does not authorize
+runtime implementation.
+
 ## Executive conclusion
 
 Current NarrativeLine has a safe boundary, not a public History 2 authoring

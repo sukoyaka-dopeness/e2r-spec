@@ -51,6 +51,7 @@ words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | History 2 user-facing authoring scope | **DESIGN RESULT / HUMAN SCOPE DECISION REQUIRED** | [scope result](history-2-user-facing-authoring-scope-result.md) |
+| H2-POSITION-CIRCA | **DECISION PREPARATION COMPLETE / HUMAN APPROVAL REQUIRED** | [decision preparation](history-2-position-circa-human-scope-decision-preparation-result.md); no runtime implementation authorized |
 | Initial Public Release | **SEPARATE RELEASE PLANNING TRACK** | [remaining gates reconciliation](e2r-initial-public-release-remaining-gates-reconciliation1-result.md); rollout, deployment, and publication remain separately authorized |
 
 ### How to maintain current and historical entries
@@ -11479,6 +11480,16 @@ Relative Time, and broader Timeline semantics remain deferred. The proposal
 requires human scope approval, especially for non-fabricating Timeline display
 and approximate-value ordering, before a bounded NarrativeLine implementation
 checkpoint may begin.
+
+### E2R-H2-POSITION-CIRCA-HUMAN-SCOPE-DECISION-PREPARATION (2026-09-19)
+
+The [H2-POSITION-CIRCA decision preparation](history-2-position-circa-human-scope-decision-preparation-result.md)
+is complete. It recommends acceptance of one History 2 `position` assertion
+with position-level `approximation: "circa"`, subject to explicit human
+approval of the non-fabricating Timeline presentation projection, H1-to-H2
+upgrade confirmation, H2-to-H1 downgrade boundary, and declaration cleanup.
+This remains **RECOMMENDED FOR ACCEPTANCE / HUMAN APPROVAL REQUIRED** and does
+not authorize NarrativeLine runtime work.
 
 ### E2R-INITIAL-PUBLIC-RELEASE-CROSS-APP-FOLLOW-UPS-RECONCILIATION1 (2026-09-19)
 

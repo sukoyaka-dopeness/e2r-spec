@@ -52,6 +52,7 @@ words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`.
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | History 2 user-facing authoring scope | **DESIGN RESULT / HUMAN SCOPE DECISION REQUIRED** | [scope result](history-2-user-facing-authoring-scope-result.md) |
 | H2-POSITION-CIRCA | **BOUNDARY CLARIFIED / AUTOMATED GREEN / REAL-BROWSER ACCEPTANCE PENDING** | [decision preparation](history-2-position-circa-human-scope-decision-preparation-result.md); [NarrativeLine repair result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-declaration-blocker-fix-result.md) |
+| Dataset-wide History 1 to History 2 upgrade | **PLANNED / SCOPE CLOSURE NEXT** | Explicit atomic Dataset-wide upgrade on first H2-only use; implementation has not started |
 | Initial Public Release | **SEPARATE RELEASE PLANNING TRACK** | [remaining gates reconciliation](e2r-initial-public-release-remaining-gates-reconciliation1-result.md); rollout, deployment, and publication remain separately authorized |
 
 ### How to maintain current and historical entries
@@ -11515,6 +11516,44 @@ The approved single-representation path is automated-green, but the current
 status is **BOUNDARY CLARIFIED / REAL-BROWSER ACCEPTANCE PENDING** because the
 fresh browser rerun could not initialize in the available browser connector.
 This does not promote History 2.0.0 or close human acceptance.
+
+### HISTORY-2-DATASET-WIDE-H1-TO-H2-UPGRADE-PLANNING (2026-09-19)
+
+The next History 2 design checkpoint is scope closure for an explicit atomic
+Dataset-wide History `1.0.0` to `2.0.0` upgrade. Opening, viewing, ordinary
+exact date/time editing, saving, exporting, or reloading an H1 Dataset without
+using an H2-only capability must keep its H1 representation. The first
+explicit use of an H2-only capability, currently
+`approximation: "circa"`, is the planned upgrade trigger.
+
+Because the exact History declaration is Dataset-level, the target is not an
+Event-local H1/H2 mixture. A successful upgrade would convert relevant H1
+exact positions across the Dataset to equivalent H2 exact positions, apply
+`circa` only where selected, and change the declaration atomically. Exact and
+approximate Events may coexist in a fully H2 Dataset; the refused state is a
+mixed H1/H2 representation under one exact declaration. Detailed conversion
+rules remain for the scope-closure checkpoint and are not fixed here.
+
+The safety direction is explicit and atomic: Cancel leaves the Dataset in H1;
+failure must not leave a partial migration; any relevant H1 History that
+cannot be converted safely causes refusal; and unknown data must not be
+silently discarded. The planned sequence is:
+
+1. Dataset-wide H1 to H2 History Upgrade Scope Closure.
+2. NarrativeLine Dataset-wide upgrade implementation.
+3. Automated migration gate.
+4. Browser acceptance infrastructure timeout diagnosis.
+5. Real-browser acceptance.
+6. Human acceptance and H2-POSITION-CIRCA acceptance closure.
+7. Documentation and roadmap structural cleanup.
+
+The browser connector timeout cause is not established; in particular, port
+`24678` is not identified as its cause. Timeout diagnosis is a separate
+bounded checkpoint before real-browser acceptance. Roadmap splitting, archive
+migration, and broader documentation IA cleanup remain deferred until after
+H2-POSITION-CIRCA human acceptance closure. No migration implementation,
+schema change, Validator change, sample change, or Relative Time change is
+authorized by this planning entry.
 
 ### E2R-INITIAL-PUBLIC-RELEASE-CROSS-APP-FOLLOW-UPS-RECONCILIATION1 (2026-09-19)
 

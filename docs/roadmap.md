@@ -6,6 +6,20 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Structural-quality experiment workspace relocation - 2026-09-21
+
+Human-approved relocation moved the exact
+`e2r-liaison-scape-structural-quality-experiment` workspace from the E2R root
+to `workspace\experimental\workspaces`, preserving its full Git metadata,
+detached clean HEAD `fd563340625fd3d88dc25baedc93c4f8fe69e5e7`, canonical
+LiaisonScape origin, refs, packed objects, committed source/tests/examples/docs,
+and the `.git`-excluded baseline of 104 files, 11 directories, and 886,522
+bytes. No origin rewrite was required because there were no incoming local
+origin dependents. Historical structural experiment references and provenance
+records were left unchanged. The root inventory is now 17 direct-child
+directories, 16 direct-child Git repositories, and 9 remaining non-canonical
+direct-child workspaces.
+
 ### Browser/CDP runtime diagnostic trio relocation - 2026-09-21
 
 Human-approved relocation moved the exact restart4 B1 refusal diagnostic,

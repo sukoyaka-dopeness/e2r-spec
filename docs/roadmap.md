@@ -6,6 +6,25 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Browser/CDP runtime qualification stale-origin relocation - 2026-09-21
+
+Human-approved coordinated relocation repaired the stale origin of
+`browser-runtime-stability-qualification1` from the deleted root-level
+readiness3 path to the relocated
+`workspace\experimental\workspaces\e2r-liaison-scape-browser-cdp-readiness-diagnostic3`
+target, then moved the full workspace while preserving its
+`qualification1` branch, HEAD `fd222947b1af7a6f7ae5b440cc132b0dd6a3c9b1`,
+refs, objects, and `.git`-excluded baseline of 243 files, 53 directories, and
+1,911,808 bytes. After that move, the exact dependent
+`host-runtime-post-reboot-qualification1` origin was updated to the relocated
+browser-runtime target and its full workspace was moved, preserving its
+`post-reboot-qualification1` branch, HEAD
+`e8990298a35d32b2a86d9199710535403f0d4e64`, refs, objects, and baseline of 257
+files, 62 directories, and 2,123,038 bytes. No source, tests, historical
+paths, or neighboring workspaces were rewritten. The root inventory is now 13
+direct-child directories, 12 direct-child Git repositories, and 5 remaining
+non-canonical direct-child workspaces.
+
 ### Structural-assignment objective experiment relocations - 2026-09-21
 
 Human-approved placement work moved the exact

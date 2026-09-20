@@ -6,6 +6,24 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Browser/CDP runtime diagnostic trio relocation - 2026-09-21
+
+Human-approved relocation moved the exact restart4 B1 refusal diagnostic,
+edge-process host-runtime diagnostic, and edge-process recurrence-readiness
+workspaces from the E2R root to `workspace\experimental\workspaces`,
+preserving their full Git metadata, detached clean HEADs, relocated
+EXE-helper-runtime origins, object connectivity, existing unreachable lineage
+commits, and the `.git`-excluded baselines of 2,721/366/100,534,827;
+2,719/366/101,853,870; and 2,763/370/108,724,103 (files/directories/bytes).
+
+After move integrity verification, exactly two recurrence-readiness dependent
+operational origins were updated: `application-readiness-recurrence-diagnostic1`
+and `browser-capture-runtime-convergence-diagnostic1` now point to the
+relocated recurrence-readiness workspace. No source, tests, fixtures,
+historical paths, or neighboring workspaces were rewritten. The root inventory
+is now 18 direct-child directories, 17 direct-child Git repositories, and 10
+remaining non-canonical direct-child workspaces.
+
 ### Browser/CDP EXE-helper runtime diagnostic relocation - 2026-09-20
 
 Human-approved relocation moved the exact

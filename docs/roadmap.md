@@ -213,6 +213,30 @@ seven canonical repositories and `workspace` remain directly under E2R.
 and all other root-level workspaces remain unmoved. This was bounded placement
 cleanup and full-provenance preservation, not deletion or source adoption.
 
+### Baseline2 / implementation1 replay-path portability — 2026-09-20
+
+The baseline2 / implementation1 pair's move blocker was an active relative
+replay dependency: baseline2's v1/v2 comparison runner resolved
+implementation1's characterization1 artifacts through the former E2R-direct-
+child sibling path. A baseline2-only compatibility commit (`3a17299`,
+`test: make characterization comparison paths portable`) now accepts explicit
+v1 and v2 artifact roots and an explicit output path, validates all required
+artifacts, and fails closed without a silent sibling fallback. The historical
+default invocation remains compatible.
+
+Focused replay validation and the existing characterization suite passed, and
+default versus relocated-root comparison output was byte-identical with no
+unexpected differences. The baseline-v2 Product revision and all v1/v2
+characterization artifacts remain unchanged; implementation1 and canonical
+LiaisonScape were not modified. A result record is preserved at
+`workspace/artifacts/product-evaluation-seam-baseline2-replay-portability-compatibility-result-2026-09-20.md`.
+
+The old active path dependency is resolved, so the exact pair is now
+`MOVE READY ONLY AS A PAIR — AWAITING HUMAN APPROVAL`. The physical move is
+not recorded as complete here. A new approval must name both exact source
+paths, both exact `workspace\experimental\workspaces\` targets, and the
+portable artifact-root invocation contract.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

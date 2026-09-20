@@ -635,6 +635,34 @@ The physical relocation result is recorded in the corresponding move audit
 and is eligible for selective local commit; future runner execution remains
 subject to its existing fail-closed artifact-output guards.
 
+### Visual-evidence browser-capture runner relocation - 2026-09-20
+
+Human-approved restart2, restart3, and restart4 were subsequently moved as
+three exact full directories from the E2R root to
+`workspace/experimental/workspaces/`. The original placement packet remains
+historical; its numeric file/byte values included `.git` contents despite the
+label saying `.git`-excluded. The correction packet
+`workspace/artifacts/visual-evidence-browser-capture-runner-placement-
+correction-packet-2026-09-20.md` records the corrected contract and preserves
+the original packet unchanged.
+
+Using the corrected `.git`-subtree-excluded baselines, restart2 retained
+2,690 files / 362 directories / 97,867,245 bytes, restart3 retained 2,701 /
+366 / 97,938,016, and restart4 retained 2,705 / 366 / 98,070,403. All three
+retained their expected detached HEADs, clean status, origins, refs, object
+connectivity, source, tests, evidence, and generated content. Restart3's one
+and restart4's two pre-existing dangling commits remained present; no cleanup
+or history repair was performed. No incoming local-origin dependent was found,
+so no origin rewrite was needed.
+
+The old sources are absent and the exact targets exist. The five active
+browser-capture runners continue to expose the accepted
+`E2R_MACHINE_EXECUTION_ROOT` binding, and the relocated machine target remains
+available. The root inventory changed from 43 / 42 / 35 to 40 / 39 / 32.
+Restart1 and capture7, their stale origins, the machine workspace, diagnostic
+and replay workspaces, historical paths, and unrelated dirty work remained
+outside this bounded relocation.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

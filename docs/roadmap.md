@@ -491,6 +491,48 @@ to 45 / 44 / 37. No neighboring workspace, source, test, historical path, or
 artifact was rewritten; no stale-origin repair, portability fix, deletion,
 extraction, fetch, or push was performed.
 
+### Visual-evidence harness relocation audit - 2026-09-20
+
+The read-only audit of the remaining root-level visual harness found exactly
+three local-origin dependents: machine-execution1, the relocated
+run-configuration-evidence1 parent, and the relocated
+run-configuration-canonical-origin-evidence2 sibling. The harness is classified
+`MOVE READY WITH BOUNDED DEPENDENT ORIGIN REWRITES`; each dependent requires
+only a mechanical `remote.origin.url` update from the old harness path to the
+new experimental target after the full-directory move.
+
+Machine-execution remains at the E2R root. Its active `E2R_WORKSPACE_ROOT`
+fallback and root-level machine path do not need to change when the harness is
+moved, so machine source-path portability is a separate concern rather than a
+blocker for harness placement. Historical diagnostic materializations that
+enumerate the harness name are not active current runners and remain a separate
+future replay-portability boundary. The corrected harness baseline is 2,668
+files / 356 directories / 100,362,818 bytes excluding `.git`; current and
+projected root inventory is 45 / 44 / 37 → 44 / 43 / 36. Detailed dependent
+identities, old/new origins, boundaries, and approval text are recorded in
+`workspace/artifacts/visual-evidence-harness-implementation1-move-approval-
+packet-2026-09-20.md`. No move or origin rewrite was performed in this audit.
+
+### Visual-evidence harness relocation - 2026-09-20
+
+With explicit Human approval, the root-level visual-evidence harness was moved
+as a complete directory to
+`workspace/experimental/workspaces/e2r-liaison-scape-visual-evidence-harness-
+implementation1`. HEAD
+`9bd3f3b819bf07ccdfa0339be9a953d045c4e4fc`, detached state, clean status,
+three refs, object connectivity, canonical origin, and the `.git`-excluded
+baseline of 2,668 files / 356 directories / 100,362,818 bytes were preserved.
+
+The three approved dependents—machine-execution1, relocated
+run-configuration-evidence1, and relocated canonical-origin-evidence2—had
+only their operational `remote.origin.url` changed from the old harness path
+to the new target. Their HEADs, clean status, refs, object connectivity, and
+non-origin Git configuration were preserved. Machine-execution stayed at the
+E2R root with its source configuration unchanged; its portability issue was
+not expanded. The root inventory changed from 45 / 44 / 37 to 44 / 43 / 36.
+No historical path or artifact was rewritten, and no neighboring visual or
+diagnostic workspace was changed.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

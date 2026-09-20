@@ -609,6 +609,32 @@ and full restart1 environment validation remain separate checkpoints. No
 machine move, origin rewrite, additional consumer update, or historical-path
 rewrite is authorized by this closure.
 
+### Visual-evidence machine-execution physical relocation - 2026-09-20
+
+With the source-only portability checkpoint accepted, the root-level machine
+workspace was moved as one complete directory to
+`workspace/experimental/workspaces/e2r-liaison-scape-visual-evidence-machine-
+execution1`. The old source is absent and the exact target is present. HEAD
+`b0bd0f1a9f70915c639cbee61cf5f8370c78766f`, detached/clean state, one ref,
+object connectivity, worktree metadata, and the harness origin were preserved.
+
+The `.git`-excluded manifest remained exactly 2,997 files / 367 directories /
+107,743,148 bytes with manifest SHA-256
+`3c9b1ad4ce8cf777735dac4315a59227f9433b821ae41111d589b3c584364c9e`. The
+machine artifact set remained readable at the new root; the artifact index,
+run manifest, browser-eligibility record, and representative B1 payload
+retained their expected hashes. All five approved runners resolved the new
+root through `E2R_MACHINE_EXECUTION_ROOT`; no runner source was changed in
+this relocation checkpoint. The root inventory changed from 44 / 43 / 36 to
+43 / 42 / 35, and neighboring harness/run-configuration workspaces remained
+unchanged.
+
+No origin rewrite, historical-path rewrite, diagnostic/replay-copy update,
+stale-origin repair, deletion, or additional workspace move was performed.
+The physical relocation result is recorded in the corresponding move audit
+and is eligible for selective local commit; future runner execution remains
+subject to its existing fail-closed artifact-output guards.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

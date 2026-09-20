@@ -185,6 +185,34 @@ are not moved by this entry. This was placement cleanup, not delete
 authorization; deletion, source adoption, remote rewrite, and further
 workspace moves remain separately bounded actions.
 
+### Product-evaluation first move wave — 2026-09-20
+
+Human approved the exact five-workspace first move wave under the full-workspace
+preservation policy. The following direct-child workspaces were moved to
+`C:\Users\extra\E2R\workspace\experimental\workspaces\` with their original
+basenames:
+
+- `e2r-liaison-scape-product-evaluation-seam-implementation1b`;
+- `e2r-liaison-scape-product-evaluation-seam-implementation1c`;
+- `e2r-liaison-scape-product-evaluation-seam-implementation1d`;
+- `e2r-liaison-scape-product-evaluation-seam-implementation1e`; and
+- `e2r-liaison-scape-product-evaluation-seam-implementation1g`.
+
+Post-move checks confirmed that each old source path is absent and each exact
+target exists. All five retained their recorded HEAD, branch or detached
+state, clean Git status, local refs, canonical LiaisonScape origin, candidate
+source/test/replay surface, and Git object database. File count, directory
+count, and byte count matched the pre-move baseline for every workspace. No
+remote, ref, branch, worktree metadata, historical absolute path, or payload
+was rewritten.
+
+The root inventory is now 58 direct-child directories, 57 direct-child Git
+repositories, and 50 remaining non-canonical direct-child Git workspaces. The
+seven canonical repositories and `workspace` remain directly under E2R.
+`baseline2`, `implementation1`, the 1F/CSS-reconciliation pair, the LF-check,
+and all other root-level workspaces remain unmoved. This was bounded placement
+cleanup and full-provenance preservation, not deletion or source adoption.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

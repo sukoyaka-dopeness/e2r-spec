@@ -451,6 +451,25 @@ Human approval boundaries are recorded in
 decision-packet-2026-09-20.md`. No move or origin rewrite was performed in
 this audit.
 
+### Visual run-configuration canonical-origin singleton relocation - 2026-09-20
+
+With explicit Human approval, the exact singleton
+`visual-evidence-run-configuration-canonical-origin-evidence2` was moved as a
+complete directory from the E2R root to
+`workspace/experimental/workspaces/`. Post-move verification preserved HEAD
+`ecad472c48b12e4fccb0d71f2edd44ec2e13f55c`, detached state, clean status, refs,
+and object connectivity. The `.git`-excluded baseline remained 2,697 files /
+361 directories / 104,374,450 bytes. The old source is absent and the exact
+target is present.
+
+The existing origin remains the root-level
+`visual-evidence-harness-implementation1`; its provenance relation is
+unchanged and no origin rewrite was needed. No incoming dependent existed.
+The root inventory changed from 47 / 46 / 39 to 46 / 45 / 38. The parent,
+harness, machine-execution, and other visual/diagnostic workspaces remained
+unchanged. No historical path or artifact was rewritten, and no stale-origin
+repair, portability fix, deletion, extraction, fetch, or push was performed.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

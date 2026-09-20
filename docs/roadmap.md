@@ -6,6 +6,23 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Final two-candidate placement wave - 2026-09-21
+
+Human-approved final placement moved the exact
+`application-readiness-recurrence-diagnostic1` and
+`browser-capture-runtime-convergence-diagnostic1` workspaces to
+`workspace\experimental\workspaces`, preserving their detached HEADs,
+full Git metadata, three existing dangling commits each, and `.git`-excluded
+baselines of 2,717/367/100,602,820 and 2,771/367/106,604,800
+(files/directories/bytes). The special-preservation
+`browser-capture-helper-receive-lifetime-correction1` workspace remained at
+the E2R root with its branch, HEAD `e59bec02e0cd921e6caef49d08013b67b90f65c4`,
+646-entry dirty artifact state, local-only provenance, existing extraction,
+and `.git`-excluded baseline of 3,778/432/179,684,308. Its only mutation was
+the approved `remote.origin.url` update to the relocated runtime-convergence
+target. The root inventory is now 9 direct-child directories, 8 direct-child
+Git repositories, and 1 remaining non-canonical direct-child workspace.
+
 ### Failed receive-lifetime clone exact deletion - 2026-09-21
 
 Human-approved destructive action removed only the exact failed-clone

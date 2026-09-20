@@ -6,6 +6,19 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Final receive-lifetime placement - 2026-09-21
+
+Human-approved final placement moved the exact special-preservation
+`browser-capture-helper-receive-lifetime-correction1` workspace from the E2R
+root to `workspace\experimental\workspaces`, preserving its full Git tree,
+branch, HEAD `e59bec02e0cd921e6caef49d08013b67b90f65c4`, 646-entry dirty state,
+634 untracked artifacts, Restart8 evidence, local-only chronology, existing
+dangling objects, and `.git`-excluded baseline of 3,778/432/179,684,308
+(files/directories/bytes). Its origin remained the relocated
+runtime-convergence target; no content, historical path, extraction, or Git
+history was changed. The root inventory is now 8 direct-child directories, 7
+direct-child Git repositories, and 0 non-canonical direct-child workspaces.
+
 ### Final two-candidate placement wave - 2026-09-21
 
 Human-approved final placement moved the exact

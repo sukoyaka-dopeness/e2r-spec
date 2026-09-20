@@ -6,6 +6,24 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Browser/CDP EXE-helper runtime diagnostic relocation - 2026-09-20
+
+Human-approved relocation moved the exact
+`browser-capture-dotnet-exe-helper-runtime-diagnostic1` workspace from the E2R
+root to `workspace\experimental\workspaces`, preserving its full Git
+metadata, detached clean HEAD, relocated EXE-helper origin, object
+connectivity, existing unreachable commits, and the `.git`-excluded baseline of
+2,726 files, 366 directories, and 100,780,270 bytes.
+
+After move integrity verification, exactly three dependent operational origins
+were updated: `browser-capture-restart4-b1-websocket-refusal-diagnostic1`,
+`edge-process-lifetime-host-runtime-diagnostic1`, and
+`edge-process-lifetime-recurrence-readiness1` now point to the relocated
+runtime-diagnostic workspace. No source, tests, fixtures, historical paths, or
+neighboring workspaces were rewritten. The root inventory is now 21
+direct-child directories, 20 direct-child Git repositories, and 13 remaining
+non-canonical direct-child workspaces.
+
 ### Browser/CDP .NET helper trio relocation - 2026-09-20
 
 Human-approved relocation moved the exact EXE-helper implementation, non-script

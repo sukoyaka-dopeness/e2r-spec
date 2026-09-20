@@ -533,6 +533,82 @@ not expanded. The root inventory changed from 45 / 44 / 37 to 44 / 43 / 36.
 No historical path or artifact was rewritten, and no neighboring visual or
 diagnostic workspace was changed.
 
+### Visual-evidence machine-execution portability audit - 2026-09-20
+
+The read-only audit of the remaining root-level machine-execution workspace
+confirmed HEAD `b0bd0f1a9f70915c639cbee61cf5f8370c78766f`, detached/clean state,
+the relocated harness origin, no target collision, and a `.git`-excluded
+baseline of 2,997 files / 367 directories / 107,743,148 bytes. The current
+root inventory is 44 / 43 / 36; a later exact move would project 43 / 42 / 35.
+
+The active operational consumer set is exactly the five visual-evidence
+browser-capture runners `restart1` through `restart4` and `capture7`. Their
+runner sources still hard-code the old machine root. The existing
+`E2R_WORKSPACE_ROOT` fallback resolves Product/spec inputs in the machine
+runner but does not resolve this browser-capture machine-artifact path, so it
+does not establish move portability. A separate source-only portability
+checkpoint and dual-root validation are required before moving machine-
+execution. A fresh scan also found 30 additional browser-capture source copies
+and 11 diagnostic/result/packet records with the old string; they remain
+historical or replay provenance unless a later invocation audit proves active
+use and are not rewritten here.
+
+Classification is **MACHINE PATH PORTABILITY BLOCKED — ACTIVE RUNNER SOURCE
+DEPENDENCY**. The exact binding boundary, five-file source checkpoint, and
+future move verification requirements are recorded in
+`workspace/artifacts/visual-evidence-machine-execution-portability-decision-
+packet-2026-09-20.md`. No move, source change, runner change, origin rewrite,
+or historical-path rewrite was performed.
+
+### Visual-evidence machine-execution source-only portability - 2026-09-20
+
+The Human-approved source-only portability checkpoint updated exactly the five
+active visual-evidence browser-capture runners (`restart1` through `restart4`
+and `capture7`). Each now accepts `E2R_MACHINE_EXECUTION_ROOT` and retains the
+existing root-level machine path as its compatibility fallback. The machine
+workspace, its artifact layout, frozen protocol/evidence IDs, and all other
+diagnostic/replay copies were left unchanged.
+
+All five runner files passed `node --check` and `git diff --check`. The four
+available dependency-complete runner suites (`restart2`, `restart3`,
+`restart4`, and `capture7`) passed 309/309; `restart1` could not start its
+full suite because its existing checkout lacks `react` and
+`@sukoyaka-dopeness/e2r-validator`. A read-only dual-binding smoke resolved
+the current root and the proposed future root, and matched 326 machine
+artifact files / 7,356,662 bytes and their hashes through a future-style alias.
+The physical future target remains absent and was not created.
+
+The source-path portability blocker is therefore resolved for the approved
+five-runner scope, but physical machine relocation remains a separate
+checkpoint requiring target creation, full-workspace preservation, and
+post-move runner validation. No machine move, origin rewrite, historical-path
+rewrite, or additional consumer update was performed.
+
+### Visual-evidence machine-execution source-only portability acceptance - 2026-09-20
+
+Final audit accepts the source-only checkpoint as
+**SOURCE-ONLY MACHINE PATH PORTABILITY ACCEPTED — PHYSICAL MOVE STILL
+DEFERRED**. The five approved runner diffs remain exactly one
+`browser-capture.mjs` file each, with no diagnostic/replay copy or machine
+workspace change. The explicit `E2R_MACHINE_EXECUTION_ROOT` binding, legacy
+fallback, current-root evidence hashes, and future-style path resolution remain
+consistent with the approved contract.
+
+The restart1 full-suite gap is classified as an existing environment/dependency
+constraint, not a portability implementation failure: its checkout has no
+`node_modules`, while `package.json` declares the missing `react` and
+`@sukoyaka-dopeness/e2r-validator` packages. Its runner syntax check and
+direct auto-layout/graph focused tests passed 32/32. Restart2, restart3,
+restart4, and capture7 each passed 309/309. No dependency or environment
+repair was made, so restart1 full-suite green remains a separate environment
+follow-up rather than a blocker for this source-only acceptance.
+
+The five runner source commits and this bounded roadmap record are eligible for
+selective local commit. Physical machine relocation, post-move preservation,
+and full restart1 environment validation remain separate checkpoints. No
+machine move, origin rewrite, additional consumer update, or historical-path
+rewrite is authorized by this closure.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

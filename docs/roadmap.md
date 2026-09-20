@@ -408,6 +408,27 @@ are recorded in
 decision-packet-2026-09-20.md`. No workspace move, origin repair, source
 change, extraction, deletion, fetch, or push was performed by this audit.
 
+### Visual-evidence exact singleton relocation - 2026-09-20
+
+With explicit Human approval, the bounded singleton
+`e2r-liaison-scape-visual-evidence-run-configuration-evidence1-exact-restart1`
+was moved as a complete directory from the E2R root to
+`workspace/experimental/workspaces/`. The move preserved HEAD
+`9738ff477d3d216507d1fba562f45dd77aa72797`, detached state, clean status,
+refs, readable object connectivity, and the existing origin
+`e2r-liaison-scape-visual-evidence-run-configuration-evidence1`; no origin
+rewrite was needed. The corrected `.git`-excluded preservation baseline was
+unchanged at 2,666 files / 359 directories / 98,610,178 bytes. The old source
+is absent and the exact target is present.
+
+Post-move inventory is 47 direct-child directories / 46 direct-child Git
+repositories / 39 noncanonical root workspaces. The nine neighboring visual
+and run-configuration workspaces remained present and clean. No stale origin
+was repaired, no historical path or artifact was rewritten, and no source,
+test, diagnostic, browser-CDP, B1, parent, harness, or machine-execution
+workspace was moved. This was a bounded placement relocation, not deletion,
+extraction, source portability work, or scope expansion.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

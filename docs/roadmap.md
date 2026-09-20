@@ -714,6 +714,30 @@ all five active runner bindings remain unchanged. Root inventory changed from
 38 / 37 / 30 to 36 / 35 / 28. No source, test, historical path, diagnostic
 copy, or unrelated workspace was changed.
 
+### Browser/CDP readiness1/readiness2 coordinated relocation - 2026-09-20
+
+Human-approved readiness1 and readiness2 were moved as one bounded
+full-directory wave into `workspace/experimental/workspaces/`. Both old source
+paths are absent and exact targets exist. Readiness1 retained its origin to the
+relocated capture7 target; readiness2's origin was updated only from the old
+readiness1 path to the new readiness1 target. The already-relocated readiness3
+origin was updated only from the old readiness2 path to the new readiness2
+target.
+
+Readiness1 retained detached HEAD
+`15659d0abec53e4a21d0f55eb03e1f9ae256849c`, clean state, baseline 199 files /
+35 directories / 1,509,034 bytes, and dangling commit
+`06acff14d5e27e3c9a775057c608d203854cab20`. Readiness2 retained detached HEAD
+`3e1a9b1649cbf77af67e4a2703cd2d12200a070f`, clean state, baseline 204 files /
+36 directories / 1,536,606 bytes, and the same dangling commit. Readiness3
+retained HEAD `1fac80210e8137207547673aa580019fd5c8f3f1`, branch `diagnostic3`,
+clean state, local ref, and object database.
+
+The resulting lineage is relocated capture7 -> relocated readiness1 ->
+relocated readiness2 -> relocated readiness3. Historical paths and records
+were not rewritten, and no source, test, cleanup, or other workspace action
+was performed. Root inventory changed from 36 / 35 / 28 to 34 / 33 / 26.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

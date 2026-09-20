@@ -342,6 +342,41 @@ decision-packet-2026-09-20.md`. No move, origin rewrite, fetch, or deletion was
 performed by this audit; the next step requires Human approval of the exact
 bounded wave.
 
+### Browser/CDP/host-runtime five-workspace relocation - 2026-09-20
+
+The first move attempt stopped before mutation because the original approval
+packet labelled its filesystem metrics as excluding `.git` while recording
+inclusive values. The original packet remains historical provenance. A
+superseding correction packet established the unambiguous metric: recursively
+count all files, directories, and aggregate bytes below each workspace root
+while excluding only the `.git` subtree. The corrected pre-move baselines were
+verified before retry.
+
+Human-approved exact bounded relocation then completed for the five-workspace
+host-runtime component. All five full directories moved to
+`workspace/experimental/workspaces/`; all old direct-child paths are absent and
+all exact targets exist. HEADs, detached state, clean status, refs, object
+databases, source, tests, diagnostics, evidence, generated artifacts, and the
+corrected file/directory/byte counts were preserved. The four dependent local
+operational origins were updated mechanically to the four new component target
+paths. The canonical origin of `host-gpu-runtime-diagnostic1` was unchanged.
+
+The four relocated dependent edges retain a locally verifiable parent-to-child
+commit relation; the canonical host-GPU edge remains the previously recorded
+local-only provenance boundary. No active old-path dependency remains in
+source/config/script files. Historical result paths and generated GUI JSON
+paths were not rewritten. The root inventory is now 48 direct-child
+directories, 47 direct-child Git repositories, and 40 remaining
+non-canonical direct-child workspaces. Receive-lifetime, runtime-convergence,
+failed-clone, browser-CDP readiness, visual-evidence, structural/routing, and
+all canonical repositories were unchanged. No deletion, source adoption,
+fetch, repair, or push occurred.
+
+The corrected baseline and preservation contract are recorded in
+`workspace/artifacts/browser-cdp-host-runtime-five-workspace-move-approval-
+packet-correction-2026-09-20.md`. This was bounded placement cleanup, not
+delete authorization or a scope expansion.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

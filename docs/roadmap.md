@@ -6,6 +6,22 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Browser/CDP independent-client relocation - 2026-09-20
+
+Human-approved relocation moved the exact
+`browser-cdp-independent-client-diagnostic1` workspace from the E2R root to
+`workspace\experimental\workspaces\`, preserving its full Git metadata,
+detached clean HEAD, relocated transport-client origin, object connectivity,
+unreachable commits `03b5f91e...` and `72a4a600...`, and the `.git`-excluded
+baseline of 2,704 files, 365 directories, and 97,896,124 bytes.
+
+After move integrity verification, exactly one dependent operational origin was
+updated: `browser-capture-websocket-client-design1` now points to the
+relocated independent-client workspace. No source, tests, fixtures, historical
+paths, or neighboring workspaces were rewritten. The root inventory is now 27
+direct-child directories, 26 direct-child Git repositories, and 19 remaining
+non-canonical direct-child workspaces.
+
 ### Browser/CDP transport-client relocation - 2026-09-20
 
 Human-approved relocation moved the exact

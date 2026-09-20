@@ -310,6 +310,38 @@ targets when run sequentially. The E2R root inventory is now 53 direct-child
 directories, 52 direct-child Git repositories, and 45 remaining non-canonical
 direct-child workspaces. No deletion, source adoption, fetch, or push occurred.
 
+### Browser/CDP/host-runtime diagnostic lineage audit - 2026-09-20
+
+The read-only reconciliation of the remaining 45 non-canonical direct-child
+Git workspaces confirmed 29 Browser/CDP/host-runtime diagnostic workspaces,
+two special receive-lifetime/runtime-convergence nodes, 10 visual-evidence
+workspaces, and four structural/routing workspaces. The prior migration packet
+labelled the diagnostic group as 29 but listed 28 names; the filesystem
+reconciliation identified the omitted member as the dirty
+`browser-capture-helper-receive-lifetime-correction1-failed-clone` workspace.
+
+The diagnostic origin graph is acyclic in the observed state. A five-workspace
+host-runtime chain is the smallest closed clean component rooted at canonical
+`e2r-liaison-scape`: host-GPU diagnostic, host-GPU graphics diagnostic,
+stable-exclusion qualification, stable-present/absent confirmation, and
+browser-capture readiness requalification. It is classified `MOVE READY AS
+COMPONENT - ORIGIN REWRITE REQUIRED`, not approved or moved. Four operational
+origins would require exact target-path rewrites after full-directory moves;
+historical documentation paths remain provenance. The receive-lifetime chain is
+`MOVE REQUIRES DIRTY-STATE PRESERVATION CHECKPOINT`, the failed clone requires
+Human review of its 114-entry dirty state, and the CDP-readiness chain remains
+cross-group Human review because it points into visual-evidence lineage.
+
+No diagnostic workspace is deletion-ready. The local-only/unresolved Git
+object evidence is not proof of unique history or disposability, and the
+source/configuration scan found no active absolute E2R path dependency beyond
+Git origin metadata. The detailed membership, origin graph, classifications,
+and exact five-workspace recommendation are recorded in
+`workspace/artifacts/browser-cdp-host-runtime-diagnostic-lineage-migration-
+decision-packet-2026-09-20.md`. No move, origin rewrite, fetch, or deletion was
+performed by this audit; the next step requires Human approval of the exact
+bounded wave.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

@@ -260,6 +260,28 @@ repositories, and 48 remaining non-canonical direct-child workspaces. The
 portable replay result and move approval packet remain under
 `workspace\artifacts\`.
 
+### Implementation1F / CSS reconciliation / LF-check dirty-state audit — 2026-09-20
+
+The read-only audit of the previously excluded LF-check workspace confirmed
+that its modified `render-wrapper.test.ts` contains substantive F-R11/F-R13
+CSS provenance logic, not merely EOL noise. The semantic change is already
+formalized by clean CSS reconciliation commit `0af4437c`, while the LF-check
+retains a distinct LF-materialized verification surface and exact dirty
+worktree state. It is therefore classified as `DIRTY CHANGE ALREADY
+FORMALIZED ELSEWHERE — PRESERVE EXACT LF WORKTREE`; no restore, normalization,
+or deletion is implied.
+
+Because LF-check's local origin also points to the old Implementation1F path,
+the clean pair cannot move safely by itself. The three-workspace group is
+`THREE-WORKSPACE MOVE READY AFTER DIRTY PRESERVATION CHECKPOINT — AWAITING
+HUMAN APPROVAL`. A future bounded wave must preserve LF-check's exact diff,
+bytes, and EOL counts in a pre-move manifest, move all three full workspaces,
+and update only the CSS-reconciliation and LF-check operational origins to the
+new Implementation1F target. Historical paths remain provenance. No move or
+origin rewrite has occurred. The detailed packet is
+`workspace/artifacts/product-evaluation-seam-implementation1f-lf-check-dirty-
+state-decision-packet-2026-09-20.md`.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

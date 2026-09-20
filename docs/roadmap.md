@@ -6,6 +6,23 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Structural-assignment objective experiment relocations - 2026-09-21
+
+Human-approved placement work moved the exact
+`structural-assignment-objective-experiment4` workspace and then the exact
+`structural-assignment-objective-experiment2` workspace from the E2R root to
+`workspace\experimental\workspaces`. Experiment4 preserved its detached clean
+HEAD, canonical origin, full Git metadata, and its three untracked experiment
+artifacts with the `.git`-excluded baseline of 2,627 files, 344 directories,
+and 100,288,451 bytes. Experiment2 first received the bounded source-only
+runner portability change that derives its workspace root from `import.meta.url`;
+its later move preserved detached HEAD `fd563340625fd3d88dc25baedc93c4f8fe69e5e7`,
+canonical origin, full Git metadata, its untracked runner and results, and the
+`.git`-excluded baseline of 2,626 files, 344 directories, and 100,319,205
+bytes. No origin rewrites or historical path rewrites were required. The root
+inventory is now 15 direct-child directories, 14 direct-child Git repositories,
+and 7 remaining non-canonical direct-child workspaces.
+
 ### Structural-quality experiment workspace relocation - 2026-09-21
 
 Human-approved relocation moved the exact

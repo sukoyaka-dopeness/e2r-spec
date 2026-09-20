@@ -6,318 +6,37 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
-### Final receive-lifetime placement - 2026-09-21
+### Workspace placement migration — COMPLETED — 2026-09-21
 
-Human-approved final placement moved the exact special-preservation
-`browser-capture-helper-receive-lifetime-correction1` workspace from the E2R
-root to `workspace\experimental\workspaces`, preserving its full Git tree,
-branch, HEAD `e59bec02e0cd921e6caef49d08013b67b90f65c4`, 646-entry dirty state,
-634 untracked artifacts, Restart8 evidence, local-only chronology, existing
-dangling objects, and `.git`-excluded baseline of 3,778/432/179,684,308
-(files/directories/bytes). Its origin remained the relocated
-runtime-convergence target; no content, historical path, extraction, or Git
-history was changed. The root inventory is now 8 direct-child directories, 7
-direct-child Git repositories, and 0 non-canonical direct-child workspaces.
+The E2R root workspace placement migration is complete. The final direct-child
+inventory is:
 
-### Final two-candidate placement wave - 2026-09-21
+`8 directories / 7 Git repositories / 0 noncanonical root workspaces`
 
-Human-approved final placement moved the exact
-`application-readiness-recurrence-diagnostic1` and
-`browser-capture-runtime-convergence-diagnostic1` workspaces to
-`workspace\experimental\workspaces`, preserving their detached HEADs,
-full Git metadata, three existing dangling commits each, and `.git`-excluded
-baselines of 2,717/367/100,602,820 and 2,771/367/106,604,800
-(files/directories/bytes). The special-preservation
-`browser-capture-helper-receive-lifetime-correction1` workspace remained at
-the E2R root with its branch, HEAD `e59bec02e0cd921e6caef49d08013b67b90f65c4`,
-646-entry dirty artifact state, local-only provenance, existing extraction,
-and `.git`-excluded baseline of 3,778/432/179,684,308. Its only mutation was
-the approved `remote.origin.url` update to the relocated runtime-convergence
-target. The root inventory is now 9 direct-child directories, 8 direct-child
-Git repositories, and 1 remaining non-canonical direct-child workspace.
+The seven canonical repositories remain direct children of
+`C:\Users\\extra\\E2R`, and the `workspace` infrastructure container
+holds all noncanonical experimental and diagnostic workspaces under the
+approved placement policy. The migration covered the visual-evidence and
+run-configuration waves, browser/CDP and runtime qualification lineages,
+structural and routing experiments, the linked-worktree administration update,
+the failed-clone disposition, and the final receive-lifetime special-
+preservation relocation.
 
-### Failed receive-lifetime clone exact deletion - 2026-09-21
+All approved relocations preserved each workspace's full `.git` tree, refs,
+objects, source/tests, evidence, generated content, dirty state where
+applicable, and relative paths. Approved dependent `remote.origin.url`
+updates and the single linked-worktree admin metadata update were bounded to
+their operational targets. Historical paths and provenance records were left
+unchanged. The final receive-lifetime relocation preserved its branch,
+646-entry dirty state, 634 untracked artifacts, Restart8 evidence, local-only
+Git chronology, existing extraction, and dangling objects.
 
-Human-approved destructive action removed only the exact failed-clone
-directory
-`e2r-liaison-scape-browser-capture-helper-receive-lifetime-correction1-failed-clone`.
-Pre-delete evidence showed an empty worktree with 114 staged deletions, no
-untracked content, no missing/unreachable Git objects, and no unique reachable
-objects beyond canonical and special-preservation storage. The special-
-preservation receive-lifetime workspace, its 646-entry dirty artifact state,
-branch, local-only provenance, and existing extraction remained unchanged. The
-root inventory is now 11 direct-child directories, 10 direct-child Git
-repositories, and 3 remaining non-canonical direct-child workspaces.
-
-### Routing-preview linked-worktree relocation - 2026-09-21
-
-Human-approved coordinated placement moved the exact linked worktree
-`e2r-liaison-scape-routing-preview` to
-`workspace\experimental\workspaces\e2r-liaison-scape-routing-preview` and
-updated only the canonical LiaisonScape worktree-admin `gitdir` metadata to
-the target `.git` path. The detached HEAD
-`fd563340625fd3d88dc25baedc93c4f8fe69e5e7`, the tracked dirty changes in
-`src/App.tsx` and `src/viewport.ts`, shared refs/objects, nine dangling blobs,
-and the `.git`-excluded baseline of 2,652 files, 344 directories, and
-105,623,378 bytes were preserved. The canonical repository's existing
-untracked work and origin were unchanged. The root inventory is now 12
-direct-child directories, 11 direct-child Git repositories, and 4 remaining
-non-canonical direct-child workspaces.
-
-### Browser/CDP runtime qualification stale-origin relocation - 2026-09-21
-
-Human-approved coordinated relocation repaired the stale origin of
-`browser-runtime-stability-qualification1` from the deleted root-level
-readiness3 path to the relocated
-`workspace\experimental\workspaces\e2r-liaison-scape-browser-cdp-readiness-diagnostic3`
-target, then moved the full workspace while preserving its
-`qualification1` branch, HEAD `fd222947b1af7a6f7ae5b440cc132b0dd6a3c9b1`,
-refs, objects, and `.git`-excluded baseline of 243 files, 53 directories, and
-1,911,808 bytes. After that move, the exact dependent
-`host-runtime-post-reboot-qualification1` origin was updated to the relocated
-browser-runtime target and its full workspace was moved, preserving its
-`post-reboot-qualification1` branch, HEAD
-`e8990298a35d32b2a86d9199710535403f0d4e64`, refs, objects, and baseline of 257
-files, 62 directories, and 2,123,038 bytes. No source, tests, historical
-paths, or neighboring workspaces were rewritten. The root inventory is now 13
-direct-child directories, 12 direct-child Git repositories, and 5 remaining
-non-canonical direct-child workspaces.
-
-### Structural-assignment objective experiment relocations - 2026-09-21
-
-Human-approved placement work moved the exact
-`structural-assignment-objective-experiment4` workspace and then the exact
-`structural-assignment-objective-experiment2` workspace from the E2R root to
-`workspace\experimental\workspaces`. Experiment4 preserved its detached clean
-HEAD, canonical origin, full Git metadata, and its three untracked experiment
-artifacts with the `.git`-excluded baseline of 2,627 files, 344 directories,
-and 100,288,451 bytes. Experiment2 first received the bounded source-only
-runner portability change that derives its workspace root from `import.meta.url`;
-its later move preserved detached HEAD `fd563340625fd3d88dc25baedc93c4f8fe69e5e7`,
-canonical origin, full Git metadata, its untracked runner and results, and the
-`.git`-excluded baseline of 2,626 files, 344 directories, and 100,319,205
-bytes. No origin rewrites or historical path rewrites were required. The root
-inventory is now 15 direct-child directories, 14 direct-child Git repositories,
-and 7 remaining non-canonical direct-child workspaces.
-
-### Structural-quality experiment workspace relocation - 2026-09-21
-
-Human-approved relocation moved the exact
-`e2r-liaison-scape-structural-quality-experiment` workspace from the E2R root
-to `workspace\experimental\workspaces`, preserving its full Git metadata,
-detached clean HEAD `fd563340625fd3d88dc25baedc93c4f8fe69e5e7`, canonical
-LiaisonScape origin, refs, packed objects, committed source/tests/examples/docs,
-and the `.git`-excluded baseline of 104 files, 11 directories, and 886,522
-bytes. No origin rewrite was required because there were no incoming local
-origin dependents. Historical structural experiment references and provenance
-records were left unchanged. The root inventory is now 17 direct-child
-directories, 16 direct-child Git repositories, and 9 remaining non-canonical
-direct-child workspaces.
-
-### Browser/CDP runtime diagnostic trio relocation - 2026-09-21
-
-Human-approved relocation moved the exact restart4 B1 refusal diagnostic,
-edge-process host-runtime diagnostic, and edge-process recurrence-readiness
-workspaces from the E2R root to `workspace\experimental\workspaces`,
-preserving their full Git metadata, detached clean HEADs, relocated
-EXE-helper-runtime origins, object connectivity, existing unreachable lineage
-commits, and the `.git`-excluded baselines of 2,721/366/100,534,827;
-2,719/366/101,853,870; and 2,763/370/108,724,103 (files/directories/bytes).
-
-After move integrity verification, exactly two recurrence-readiness dependent
-operational origins were updated: `application-readiness-recurrence-diagnostic1`
-and `browser-capture-runtime-convergence-diagnostic1` now point to the
-relocated recurrence-readiness workspace. No source, tests, fixtures,
-historical paths, or neighboring workspaces were rewritten. The root inventory
-is now 18 direct-child directories, 17 direct-child Git repositories, and 10
-remaining non-canonical direct-child workspaces.
-
-### Browser/CDP EXE-helper runtime diagnostic relocation - 2026-09-20
-
-Human-approved relocation moved the exact
-`browser-capture-dotnet-exe-helper-runtime-diagnostic1` workspace from the E2R
-root to `workspace\experimental\workspaces`, preserving its full Git
-metadata, detached clean HEAD, relocated EXE-helper origin, object
-connectivity, existing unreachable commits, and the `.git`-excluded baseline of
-2,726 files, 366 directories, and 100,780,270 bytes.
-
-After move integrity verification, exactly three dependent operational origins
-were updated: `browser-capture-restart4-b1-websocket-refusal-diagnostic1`,
-`edge-process-lifetime-host-runtime-diagnostic1`, and
-`edge-process-lifetime-recurrence-readiness1` now point to the relocated
-runtime-diagnostic workspace. No source, tests, fixtures, historical paths, or
-neighboring workspaces were rewritten. The root inventory is now 21
-direct-child directories, 20 direct-child Git repositories, and 13 remaining
-non-canonical direct-child workspaces.
-
-### Browser/CDP .NET helper trio relocation - 2026-09-20
-
-Human-approved relocation moved the exact EXE-helper implementation, non-script
-helper design, and helper execution-policy qualification workspaces from the
-E2R root to `workspace\experimental\workspaces`. Each full Git workspace was
-preserved with detached clean HEAD, relocated bridge origin, object
-connectivity, existing unreachable commit `e6230e8c...`, and the following
-`.git`-excluded baselines: 2,722/365/100,617,965; 2,729/365/100,583,997; and
-2,723/365/100,598,433 (files/directories/bytes).
-
-After move integrity verification, exactly one dependent operational origin was
-updated: `browser-capture-dotnet-exe-helper-runtime-diagnostic1` now points to
-the relocated EXE-helper implementation workspace. No source, tests, fixtures,
-historical paths, or neighboring workspaces were rewritten. The root inventory
-is now 22 direct-child directories, 21 direct-child Git repositories, and 14
-remaining non-canonical direct-child workspaces.
-
-### Browser/CDP .NET WebSocket-bridge relocation - 2026-09-20
-
-Human-approved relocation moved the exact
-`browser-capture-dotnet-websocket-bridge-implementation1` workspace from the
-E2R root to `workspace\experimental\workspaces\`, preserving its full Git
-metadata, detached clean HEAD, relocated websocket-client design origin,
-object connectivity, existing unreachable objects/commits, and the
-`.git`-excluded baseline of 2,711 files, 365 directories, and 100,395,944
-bytes.
-
-After move integrity verification, exactly three dependent operational origins
-were updated: `browser-capture-dotnet-exe-helper-implementation1`,
-`browser-capture-dotnet-nonscript-helper-design1`, and
-`browser-capture-helper-execution-policy-qualification1` now point to the
-relocated bridge-implementation workspace. No source, tests, fixtures,
-historical paths, or neighboring workspaces were rewritten. The root inventory
-is now 25 direct-child directories, 24 direct-child Git repositories, and 17
-remaining non-canonical direct-child workspaces.
-
-### Browser/CDP WebSocket-client design relocation - 2026-09-20
-
-Human-approved relocation moved the exact
-`browser-capture-websocket-client-design1` workspace from the E2R root to
-`workspace\experimental\workspaces\`, preserving its full Git metadata,
-detached clean HEAD, relocated independent-client origin, object connectivity,
-existing unreachable objects/commits, and the `.git`-excluded baseline of
-2,717 files, 366 directories, and 100,559,402 bytes.
-
-After move integrity verification, exactly one dependent operational origin was
-updated: `browser-capture-dotnet-websocket-bridge-implementation1` now points
-to the relocated websocket-client design workspace. No source, tests,
-fixtures, historical paths, or neighboring workspaces were rewritten. The root
-inventory is now 26 direct-child directories, 25 direct-child Git repositories,
-and 18 remaining non-canonical direct-child workspaces.
-
-### Browser/CDP independent-client relocation - 2026-09-20
-
-Human-approved relocation moved the exact
-`browser-cdp-independent-client-diagnostic1` workspace from the E2R root to
-`workspace\experimental\workspaces\`, preserving its full Git metadata,
-detached clean HEAD, relocated transport-client origin, object connectivity,
-unreachable commits `03b5f91e...` and `72a4a600...`, and the `.git`-excluded
-baseline of 2,704 files, 365 directories, and 97,896,124 bytes.
-
-After move integrity verification, exactly one dependent operational origin was
-updated: `browser-capture-websocket-client-design1` now points to the
-relocated independent-client workspace. No source, tests, fixtures, historical
-paths, or neighboring workspaces were rewritten. The root inventory is now 27
-direct-child directories, 26 direct-child Git repositories, and 19 remaining
-non-canonical direct-child workspaces.
-
-### Browser/CDP transport-client relocation - 2026-09-20
-
-Human-approved relocation moved the exact
-`browser-cdp-transport-client-correction1` workspace from the E2R root to
-`workspace\experimental\workspaces\`, preserving its full Git metadata,
-detached clean HEAD, relocated app-readiness origin, object connectivity,
-unreachable commit `c83bd5dc...`, and the `.git`-excluded baseline of 2,721
-files, 366 directories, and 100,601,070 bytes.
-
-After move integrity verification, exactly one dependent operational origin was
-updated: `browser-cdp-independent-client-diagnostic1` now points to the
-relocated transport-client workspace. No source, tests, fixtures, historical
-paths, or neighboring workspaces were rewritten. The root inventory is now 28
-direct-child directories, 27 direct-child Git repositories, and 20 remaining
-non-canonical direct-child workspaces.
-
-### Browser/CDP app-readiness relocation - 2026-09-20
-
-Human-approved relocation moved the exact
-`browser-capture-app-readiness-cdp-call-correction1` workspace from the E2R
-root to `workspace\experimental\workspaces\`, preserving its full Git
-metadata, detached clean HEAD, relocated target-selection origin, object
-connectivity, unreachable commit `44292322...`, and the `.git`-excluded
-baseline of 2,719 files, 367 directories, and 100,589,355 bytes.
-
-After move integrity verification, exactly one dependent operational origin was
-updated: `browser-cdp-transport-client-correction1` now points to the
-relocated app-readiness workspace. No source, tests, fixtures, historical
-paths, or neighboring workspaces were rewritten. The root inventory is now 29
-direct-child directories, 28 direct-child Git repositories, and 21 remaining
-non-canonical direct-child workspaces.
-
-### Browser/CDP target-selection relocation - 2026-09-20
-
-Human-approved relocation moved the exact
-`browser-capture-target-selection-correction1` workspace from the E2R root to
-`workspace\experimental\workspaces\`, preserving its full Git metadata,
-detached clean HEAD, relocated run-binding origin, object connectivity,
-unreachable commit `8167168...`, and the `.git`-excluded baseline of 2,713
-files, 366 directories, and 100,552,736 bytes.
-
-After move integrity verification, exactly one dependent operational origin was
-updated: `browser-capture-app-readiness-cdp-call-correction1` now points to the
-relocated target-selection workspace. No source, tests, fixtures, historical
-paths, or neighboring workspaces were rewritten. The root inventory is now 30
-direct-child directories, 29 direct-child Git repositories, and 22 remaining
-non-canonical direct-child workspaces.
-
-### Browser/CDP B1 seam and implementation-authority relocation - 2026-09-20
-
-Human-approved coordinated relocation moved the exact B1 seam and
-implementation-authority workspaces from direct E2R children to
-`workspace\experimental\workspaces\`, preserving their full Git metadata,
-detached HEADs, clean status, object connectivity, and corrected `.git`-
-excluded file/directory/byte baselines. The seam baseline was 2,713 files,
-366 directories, and 103,195,518 bytes; the implementation-authority
-baseline was 181 files, 33 directories, and 1,194,901 bytes.
-
-After move integrity checks, exactly three operational local origins were
-updated: implementation-authority now points to the relocated seam;
-relocated visual-evidence restart2 now points to the relocated
-implementation-authority; and `browser-capture-run-binding-correction1` now
-points to the relocated implementation-authority. No historical paths,
-source, tests, diagnostic copies, or neighboring workspaces were rewritten.
-The root inventory is now 32 direct-child directories, 31 direct-child Git
-repositories, and 24 remaining non-canonical direct-child workspaces.
-
-### Browser/CDP run-binding relocation - 2026-09-20
-
-Human-approved relocation moved the exact `run-binding-correction1` workspace
-from the E2R root to `workspace/experimental/workspaces/`, preserving its
-full Git metadata, detached clean HEAD, origin to the relocated
-implementation-authority workspace, object connectivity, and `.git`-excluded
-baseline of 2,709 files, 365 directories, and 100,531,268 bytes.
-
-After move integrity verification, exactly two dependent operational origins
-were updated: relocated visual-evidence restart3 and the root-level
-`browser-capture-target-selection-correction1`. Restart3's explicit
-`E2R_BROWSER_CAPTURE_RUN_BINDING_ROOT` binding resolved the relocated
-repository and preserved the existing semantic Git evidence. Existing
-dangling commit `8167168...` in both dependents was preserved. The root
-inventory is now 31 direct-child directories, 30 direct-child Git
-repositories, and 23 remaining non-canonical direct-child workspaces.
-
-This roadmap is the current priority summary for the E2R specification,
-Validator, NarrativeLine, and LiaisonScape. Session logs remain historical records
-and must not override this document merely because they contain older
-future-work lists.
-
-The architecture baseline comes from:
-
-- `research/exploratory/extension-architecture-agenda-audit.md`;
-- `research/extension-architecture/decisions/extension-identity-and-payload-key-decision.md`;
-- `research/coordinate/decisions/coordinate-maturity-and-identifier-decision.md`;
-- `research/coordinate/decisions/coordinate-space-component-compatibility-decision.md`;
-- `research/coordinate/decisions/coordinate-external-reference-decision.md`;
-- `research/coordinate/decisions/coordinate-version-and-space-evolution-decision.md`;
-- `research/exploratory/linkscape-layout-and-view-state.md`;
-- `research/exploratory/deterministic-generation.md`; and
-- `research/exploratory/view-generation.md`.
+Detailed checkpoint evidence remains in `workspace\artifacts`, the
+workspace-specific documents, and Git history. Those records retain the
+migration sequence and preservation measurements; this summary is the current
+roadmap authority for placement status. Future disposition of archived
+evidence, historical provenance, or any later cleanup is separate work and is
+not reopened by this closure.
 
 ## Operating principles
 
@@ -335,7 +54,7 @@ The architecture baseline comes from:
 - Keep ordinary Dataset use and Core validation independent of network access
   or an external registry.
 
-## Current status index — 2026-09-20
+## Current status index — 2026-09-21
 
 This short section is the entry point for current status. Detailed checkpoint
 records and older planning entries remain below for evidence and chronology;
@@ -349,7 +68,7 @@ words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`.
 | History 2 user-facing authoring scope | **DESIGN RESULT / HUMAN SCOPE DECISION REQUIRED** | [scope result](history-2-user-facing-authoring-scope-result.md) |
 | H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
 | Dataset-wide History 1 to History 2 upgrade | **IMPLEMENTED / AUTOMATED GREEN / BOUNDED REAL-BROWSER AND HUMAN ACCEPTANCE COMPLETE** | [NarrativeLine implementation result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/history-2-dataset-wide-upgrade-implementation-result.md); [scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md) |
-| E2R workspace clone and evidence hygiene | **PLACEMENT POLICY ACTIVE / BOUNDED CLEANUP PARTIALLY COMPLETE** | [workspace clone and evidence hygiene follow-up](#workspace-clone-and-evidence-hygiene-follow-up); production-candidate and structural groups have completed bounded technical cleanup, while remaining groups require individual review, preservation decisions, and explicit Human approval of exact destructive targets/actions |
+| E2R workspace clone and evidence hygiene | **COMPLETED / ROOT PLACEMENT CLOSED (8 / 7 / 0)** | [workspace placement migration summary](#workspace-placement-migration--completed--2026-09-21); detailed evidence remains in workspace artifacts and Git history; future evidence disposition is separate work |
 | Initial Public Release | **SEPARATE RELEASE PLANNING TRACK** | [remaining gates reconciliation](e2r-initial-public-release-remaining-gates-reconciliation1-result.md); rollout, deployment, and publication remain separately authorized |
 
 ### How to maintain current and historical entries
@@ -364,7 +83,12 @@ words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`.
 - Keep normative requirements in `spec/`, `extensions/`, `schemas/`, and
   canonical `examples/`. This roadmap is non-normative planning authority.
 
-### Workspace clone and evidence hygiene follow-up
+### Historical workspace clone and evidence hygiene baseline — 2026-09-19
+
+This section records the pre-migration audit and is historical. Its counts and
+cleanup classifications describe the state before the completed placement
+migration above; they are not the current root inventory or an authorization
+for new cleanup.
 
 An audit of the direct children of `C:\Users\extra\E2R\` on 2026-09-19
 found 76 directories: 73 Git repositories and three non-Git shared roots

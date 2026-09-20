@@ -689,6 +689,31 @@ relocated machine target remains clean and available. Root inventory changed
 from 40 / 39 / 32 to 38 / 37 / 30. No source, test, historical path,
 diagnostic/replay copy, unrelated workspace, or stale origin was changed.
 
+### Browser/CDP diagnostic leaf relocation - 2026-09-20
+
+Human-approved leaf moves relocated
+`browser-capture-b1-entry-readiness-diagnostic1` and
+`browser-cdp-readiness-diagnostic3` as complete directories into
+`workspace/experimental/workspaces/`. Both old source paths are absent and
+both exact targets exist. No dependent origin rewrite was needed: the B1
+readiness diagnostic's origin remains the relocated restart1 target, and
+diagnostic3's origin remains CDP readiness diagnostic2.
+
+B1 readiness retained detached HEAD
+`a9fa2d7890a1a9db65178b38e5434fa8c1de5477`, clean state, its corrected
+`.git`-excluded baseline of 2,677 files / 364 directories / 97,265,322 bytes,
+and dangling blob `77a8a3b66db522750c87e233856176cea769545e`. Diagnostic3
+retained branch `diagnostic3`, HEAD
+`1fac80210e8137207547673aa580019fd5c8f3f1`, clean state, its local ref, and
+baseline of 229 files / 44 directories / 1,797,562 bytes. The readiness
+diagnostic's historical old-restart1 output string was not rewritten.
+
+The B1 seam/implementation-authority chain and CDP readiness1/readiness2
+chain remain unmoved for later coordinated waves. The relocated machine and
+all five active runner bindings remain unchanged. Root inventory changed from
+38 / 37 / 30 to 36 / 35 / 28. No source, test, historical path, diagnostic
+copy, or unrelated workspace was changed.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

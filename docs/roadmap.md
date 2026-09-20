@@ -6,6 +6,23 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Browser/CDP .NET helper trio relocation - 2026-09-20
+
+Human-approved relocation moved the exact EXE-helper implementation, non-script
+helper design, and helper execution-policy qualification workspaces from the
+E2R root to `workspace\experimental\workspaces`. Each full Git workspace was
+preserved with detached clean HEAD, relocated bridge origin, object
+connectivity, existing unreachable commit `e6230e8c...`, and the following
+`.git`-excluded baselines: 2,722/365/100,617,965; 2,729/365/100,583,997; and
+2,723/365/100,598,433 (files/directories/bytes).
+
+After move integrity verification, exactly one dependent operational origin was
+updated: `browser-capture-dotnet-exe-helper-runtime-diagnostic1` now points to
+the relocated EXE-helper implementation workspace. No source, tests, fixtures,
+historical paths, or neighboring workspaces were rewritten. The root inventory
+is now 22 direct-child directories, 21 direct-child Git repositories, and 14
+remaining non-canonical direct-child workspaces.
+
 ### Browser/CDP .NET WebSocket-bridge relocation - 2026-09-20
 
 Human-approved relocation moved the exact

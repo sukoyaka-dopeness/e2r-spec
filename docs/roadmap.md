@@ -663,6 +663,32 @@ Restart1 and capture7, their stale origins, the machine workspace, diagnostic
 and replay workspaces, historical paths, and unrelated dirty work remained
 outside this bounded relocation.
 
+### Visual-evidence stale-origin runner relocations - 2026-09-20
+
+Human-approved restart1 and capture7 were moved as two exact full-directory
+waves into `workspace/experimental/workspaces/`. Their stale local origins
+remain unchanged: restart1 still records the deleted capture1 workspace and
+capture7 still records the deleted capture6 workspace. The capture1-6 payloads
+remain in the preserved visual-capture archive; no replacement Git origin was
+guessed or recreated.
+
+After each runner integrity check, only the three approved dependent
+`remote.origin.url` values were updated: the two B1-entry diagnostics now
+point to the relocated restart1 target, and browser-cdp-readiness-diagnostic1
+now points to the relocated capture7 target. Dependent HEADs, detached state,
+clean status, refs, object databases, and non-origin metadata were preserved.
+The readiness diagnostic's historical old-restart1 output string was retained
+unchanged. Its and the CDP dependent's pre-existing dangling objects were
+also retained without cleanup.
+
+Restart1 retained 163 files / 30 directories / 1,138,640 bytes excluding
+`.git`; capture7 retained 2,708 / 363 / 100,258,542 under the same corrected
+contract. Both old sources are absent and exact targets exist. All five active
+browser-capture runners still expose `E2R_MACHINE_EXECUTION_ROOT`, and the
+relocated machine target remains clean and available. Root inventory changed
+from 40 / 39 / 32 to 38 / 37 / 30. No source, test, historical path,
+diagnostic/replay copy, unrelated workspace, or stale origin was changed.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

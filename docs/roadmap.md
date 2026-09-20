@@ -6,6 +6,22 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Browser/CDP app-readiness relocation - 2026-09-20
+
+Human-approved relocation moved the exact
+`browser-capture-app-readiness-cdp-call-correction1` workspace from the E2R
+root to `workspace\experimental\workspaces\`, preserving its full Git
+metadata, detached clean HEAD, relocated target-selection origin, object
+connectivity, unreachable commit `44292322...`, and the `.git`-excluded
+baseline of 2,719 files, 367 directories, and 100,589,355 bytes.
+
+After move integrity verification, exactly one dependent operational origin was
+updated: `browser-cdp-transport-client-correction1` now points to the
+relocated app-readiness workspace. No source, tests, fixtures, historical
+paths, or neighboring workspaces were rewritten. The root inventory is now 29
+direct-child directories, 28 direct-child Git repositories, and 21 remaining
+non-canonical direct-child workspaces.
+
 ### Browser/CDP target-selection relocation - 2026-09-20
 
 Human-approved relocation moved the exact

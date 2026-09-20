@@ -25,6 +25,23 @@ source, tests, diagnostic copies, or neighboring workspaces were rewritten.
 The root inventory is now 32 direct-child directories, 31 direct-child Git
 repositories, and 24 remaining non-canonical direct-child workspaces.
 
+### Browser/CDP run-binding relocation - 2026-09-20
+
+Human-approved relocation moved the exact `run-binding-correction1` workspace
+from the E2R root to `workspace/experimental/workspaces/`, preserving its
+full Git metadata, detached clean HEAD, origin to the relocated
+implementation-authority workspace, object connectivity, and `.git`-excluded
+baseline of 2,709 files, 365 directories, and 100,531,268 bytes.
+
+After move integrity verification, exactly two dependent operational origins
+were updated: relocated visual-evidence restart3 and the root-level
+`browser-capture-target-selection-correction1`. Restart3's explicit
+`E2R_BROWSER_CAPTURE_RUN_BINDING_ROOT` binding resolved the relocated
+repository and preserved the existing semantic Git evidence. Existing
+dangling commit `8167168...` in both dependents was preserved. The root
+inventory is now 31 direct-child directories, 30 direct-child Git
+repositories, and 23 remaining non-canonical direct-child workspaces.
+
 This roadmap is the current priority summary for the E2R specification,
 Validator, NarrativeLine, and LiaisonScape. Session logs remain historical records
 and must not override this document merely because they contain older

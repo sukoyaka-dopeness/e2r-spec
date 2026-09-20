@@ -6,6 +6,22 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Browser/CDP WebSocket-client design relocation - 2026-09-20
+
+Human-approved relocation moved the exact
+`browser-capture-websocket-client-design1` workspace from the E2R root to
+`workspace\experimental\workspaces\`, preserving its full Git metadata,
+detached clean HEAD, relocated independent-client origin, object connectivity,
+existing unreachable objects/commits, and the `.git`-excluded baseline of
+2,717 files, 366 directories, and 100,559,402 bytes.
+
+After move integrity verification, exactly one dependent operational origin was
+updated: `browser-capture-dotnet-websocket-bridge-implementation1` now points
+to the relocated websocket-client design workspace. No source, tests,
+fixtures, historical paths, or neighboring workspaces were rewritten. The root
+inventory is now 26 direct-child directories, 25 direct-child Git repositories,
+and 18 remaining non-canonical direct-child workspaces.
+
 ### Browser/CDP independent-client relocation - 2026-09-20
 
 Human-approved relocation moved the exact

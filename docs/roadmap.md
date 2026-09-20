@@ -282,6 +282,34 @@ origin rewrite has occurred. The detailed packet is
 `workspace/artifacts/product-evaluation-seam-implementation1f-lf-check-dirty-
 state-decision-packet-2026-09-20.md`.
 
+### Implementation1F / CSS reconciliation / LF-check bounded relocation — 2026-09-20
+
+Human approved and completed the exact three-workspace full-directory move of
+Implementation1F, CSS provenance reconciliation, and LF-check into
+`workspace\experimental\workspaces\`. The pre-move LF-check preservation
+manifest is
+`workspace/artifacts/product-evaluation-seam-implementation1f-lf-check-
+preservation-manifest-2026-09-20.md`.
+
+Post-move verification found all three old direct-child paths absent and all
+three exact targets present. Implementation1F remained at detached HEAD
+`60373836bc1ccea56151593afc22a9b8f324d0a3` with its canonical LiaisonScape
+origin; CSS reconciliation remained at detached HEAD
+`0af4437c469bdee2f5636a87e6b5489a1f53c60b` with its parent/merge-base at the
+Implementation1F HEAD; and LF-check remained at detached HEAD
+`60373836bc1ccea56151593afc22a9b8f324d0a3` with exactly its one modified
+tracked test. The CSS reconciliation and LF-check operational origins were
+updated only from the old 1F path to the new 1F target. Refs, history, source,
+tests, artifacts, and historical old-path records were not rewritten.
+
+The LF-check manifest's working-file SHA-256, Git blob, byte count, and LF/CRLF
+counts matched after relocation. Its pre-existing trailing blank line remains
+part of the preserved dirty state; it was not normalized. The focused F-R1–F-R13
+provenance suite passed 13/13 in both the CSS reconciliation and LF-check
+targets when run sequentially. The E2R root inventory is now 53 direct-child
+directories, 52 direct-child Git repositories, and 45 remaining non-canonical
+direct-child workspaces. No deletion, source adoption, fetch, or push occurred.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

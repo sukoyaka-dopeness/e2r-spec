@@ -6,6 +6,25 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Browser/CDP B1 seam and implementation-authority relocation - 2026-09-20
+
+Human-approved coordinated relocation moved the exact B1 seam and
+implementation-authority workspaces from direct E2R children to
+`workspace\experimental\workspaces\`, preserving their full Git metadata,
+detached HEADs, clean status, object connectivity, and corrected `.git`-
+excluded file/directory/byte baselines. The seam baseline was 2,713 files,
+366 directories, and 103,195,518 bytes; the implementation-authority
+baseline was 181 files, 33 directories, and 1,194,901 bytes.
+
+After move integrity checks, exactly three operational local origins were
+updated: implementation-authority now points to the relocated seam;
+relocated visual-evidence restart2 now points to the relocated
+implementation-authority; and `browser-capture-run-binding-correction1` now
+points to the relocated implementation-authority. No historical paths,
+source, tests, diagnostic copies, or neighboring workspaces were rewritten.
+The root inventory is now 32 direct-child directories, 31 direct-child Git
+repositories, and 24 remaining non-canonical direct-child workspaces.
+
 This roadmap is the current priority summary for the E2R specification,
 Validator, NarrativeLine, and LiaisonScape. Session logs remain historical records
 and must not override this document merely because they contain older

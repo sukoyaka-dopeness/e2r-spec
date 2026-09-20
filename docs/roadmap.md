@@ -6,6 +6,21 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Routing-preview linked-worktree relocation - 2026-09-21
+
+Human-approved coordinated placement moved the exact linked worktree
+`e2r-liaison-scape-routing-preview` to
+`workspace\experimental\workspaces\e2r-liaison-scape-routing-preview` and
+updated only the canonical LiaisonScape worktree-admin `gitdir` metadata to
+the target `.git` path. The detached HEAD
+`fd563340625fd3d88dc25baedc93c4f8fe69e5e7`, the tracked dirty changes in
+`src/App.tsx` and `src/viewport.ts`, shared refs/objects, nine dangling blobs,
+and the `.git`-excluded baseline of 2,652 files, 344 directories, and
+105,623,378 bytes were preserved. The canonical repository's existing
+untracked work and origin were unchanged. The root inventory is now 12
+direct-child directories, 11 direct-child Git repositories, and 4 remaining
+non-canonical direct-child workspaces.
+
 ### Browser/CDP runtime qualification stale-origin relocation - 2026-09-21
 
 Human-approved coordinated relocation repaired the stale origin of

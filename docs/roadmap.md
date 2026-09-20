@@ -6,6 +6,22 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Browser/CDP target-selection relocation - 2026-09-20
+
+Human-approved relocation moved the exact
+`browser-capture-target-selection-correction1` workspace from the E2R root to
+`workspace\experimental\workspaces\`, preserving its full Git metadata,
+detached clean HEAD, relocated run-binding origin, object connectivity,
+unreachable commit `8167168...`, and the `.git`-excluded baseline of 2,713
+files, 366 directories, and 100,552,736 bytes.
+
+After move integrity verification, exactly one dependent operational origin was
+updated: `browser-capture-app-readiness-cdp-call-correction1` now points to the
+relocated target-selection workspace. No source, tests, fixtures, historical
+paths, or neighboring workspaces were rewritten. The root inventory is now 30
+direct-child directories, 29 direct-child Git repositories, and 22 remaining
+non-canonical direct-child workspaces.
+
 ### Browser/CDP B1 seam and implementation-authority relocation - 2026-09-20
 
 Human-approved coordinated relocation moved the exact B1 seam and

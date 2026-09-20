@@ -6,6 +6,19 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+### Failed receive-lifetime clone exact deletion - 2026-09-21
+
+Human-approved destructive action removed only the exact failed-clone
+directory
+`e2r-liaison-scape-browser-capture-helper-receive-lifetime-correction1-failed-clone`.
+Pre-delete evidence showed an empty worktree with 114 staged deletions, no
+untracked content, no missing/unreachable Git objects, and no unique reachable
+objects beyond canonical and special-preservation storage. The special-
+preservation receive-lifetime workspace, its 646-entry dirty artifact state,
+branch, local-only provenance, and existing extraction remained unchanged. The
+root inventory is now 11 direct-child directories, 10 direct-child Git
+repositories, and 3 remaining non-canonical direct-child workspaces.
+
 ### Routing-preview linked-worktree relocation - 2026-09-21
 
 Human-approved coordinated placement moved the exact linked worktree

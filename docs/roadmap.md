@@ -377,6 +377,37 @@ The corrected baseline and preservation contract are recorded in
 packet-correction-2026-09-20.md`. This was bounded placement cleanup, not
 delete authorization or a scope expansion.
 
+### Visual-evidence / run-configuration lineage audit - 2026-09-20
+
+The read-only audit after host-runtime relocation reconciled the exact 10
+remaining visual-evidence/run-configuration workspaces. All are detached and
+clean with one worktree, no submodules, alternates, or reparse points. Two
+local origins are stale because the previously Human-approved visual capture1
+and capture6 workspaces were separately archived and deleted:
+`browser-capture-restart1` points to deleted capture1, and retained capture7
+points to deleted capture6. No stale origin was repaired or recreated.
+
+The graph also confirmed the browser-CDP cross-group boundary:
+`browser-cdp-readiness-diagnostic1` points to capture7, while two B1 diagnostic
+workspaces point to restart1. In addition, restart1-4 and capture7 contain
+active runner references to the root-level machine-execution workspace. That
+machine workspace therefore cannot be moved without a separate source-path
+portability decision for its five active consumers. Generated JSON/log/result
+paths remain historical evidence and were not rewritten.
+
+The smallest provisional next wave is the exact clean leaf
+`visual-evidence-run-configuration-evidence1-exact-restart1`, classified
+`MOVE READY - NO ORIGIN REWRITE`: its root-level origin target exists, it has
+no external dependent or active absolute-path dependency, and its corrected
+baseline is 2,666 files / 359 directories / 98,610,178 bytes excluding only
+`.git`. This is a recommendation, not move authorization. Restart1, capture7,
+the machine/capture runner group, and the larger harness/run-configuration
+component remain Human-review items. The detailed graph and candidate packet
+are recorded in
+`workspace/artifacts/visual-evidence-run-configuration-lineage-migration-
+decision-packet-2026-09-20.md`. No workspace move, origin repair, source
+change, extraction, deletion, fetch, or push was performed by this audit.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

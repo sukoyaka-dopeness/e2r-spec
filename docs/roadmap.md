@@ -470,6 +470,27 @@ harness, machine-execution, and other visual/diagnostic workspaces remained
 unchanged. No historical path or artifact was rewritten, and no stale-origin
 repair, portability fix, deletion, extraction, fetch, or push was performed.
 
+### Visual run-configuration parent relocation - 2026-09-20
+
+With explicit Human approval, the parent
+`visual-evidence-run-configuration-evidence1` was moved as a complete
+directory from the E2R root to
+`workspace/experimental/workspaces/`. Its HEAD
+`ad8011eba9c83127f3d32fda151a185414e04425`, detached state, clean status,
+refs, object connectivity, and `.git`-excluded baseline of 2,682 files / 360
+directories / 101,314,428 bytes were preserved. The parent origin to the
+root-level harness remained unchanged.
+
+After parent integrity verification, the already relocated
+`exact-restart1` dependent's `remote.origin.url` was changed exactly once from
+the old parent path to the new parent target. Its HEAD
+`9738ff477d3d216507d1fba562f45dd77aa72797`, detached state, clean status,
+refs, and object connectivity were preserved. The new parent has exactly this
+one incoming local-origin dependent. Root inventory changed from 46 / 45 / 38
+to 45 / 44 / 37. No neighboring workspace, source, test, historical path, or
+artifact was rewritten; no stale-origin repair, portability fix, deletion,
+extraction, fetch, or push was performed.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

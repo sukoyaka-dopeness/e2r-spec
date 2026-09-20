@@ -237,6 +237,29 @@ not recorded as complete here. A new approval must name both exact source
 paths, both exact `workspace\experimental\workspaces\` targets, and the
 portable artifact-root invocation contract.
 
+### Baseline2 / implementation1 pair move — 2026-09-20
+
+Human approved and completed the exact bounded full-workspace move of
+`e2r-liaison-scape-product-evaluation-seam-baseline2` and
+`e2r-liaison-scape-product-evaluation-seam-implementation1` from direct E2R
+children to `workspace\experimental\workspaces\`. No neighboring
+product-evaluation workspace or canonical repository was moved.
+
+Post-move checks confirmed both old source paths are absent and both exact
+targets exist. Each workspace retained its HEAD, main or detached state, clean
+status, refs, canonical LiaisonScape origin, Git object database, source,
+tests, characterization data, and full file/directory/byte counts. The
+relocated explicit `--v1-artifact-root` / `--v2-artifact-root` comparison
+replay exited 0, matched the expected output SHA-256, and reported zero
+unexpected differences. Historical absolute paths remain provenance and were
+not rewritten. This was placement cleanup with full provenance preservation,
+not deletion, extraction, or source adoption.
+
+The E2R root inventory is now 56 direct-child directories, 55 direct-child Git
+repositories, and 48 remaining non-canonical direct-child workspaces. The
+portable replay result and move approval packet remain under
+`workspace\artifacts\`.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

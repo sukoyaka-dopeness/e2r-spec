@@ -429,6 +429,28 @@ test, diagnostic, browser-CDP, B1, parent, harness, or machine-execution
 workspace was moved. This was a bounded placement relocation, not deletion,
 extraction, source portability work, or scope expansion.
 
+### Remaining visual run-configuration subgroup audit - 2026-09-20
+
+The read-only follow-up after the exact-restart1 relocation reconciled the
+remaining parent/sibling run-configuration subgroup. The sibling
+`visual-evidence-run-configuration-canonical-origin-evidence2` has no incoming
+dependent, no active old-path dependency, an absent experimental target, and a
+root-level harness origin that can remain unchanged. It is classified
+`MOVE READY - NO ORIGIN REWRITE` and is the recommended smallest next wave.
+
+The parent `visual-evidence-run-configuration-evidence1` has exactly one
+incoming dependent: the already relocated exact-restart1 workspace. A parent
+move is classified `MOVE READY WITH ONE BOUNDED DEPENDENT ORIGIN REWRITE`; the
+dependent's `remote.origin.url` would need an explicit old-parent → new-parent
+rewrite after the physical move. The harness and machine-execution workspaces
+remain out of scope because their active browser-capture path consumers require
+a separate portability decision. Historical/generated path records remain
+unchanged. Detailed identities, provenance, baselines, wave options, and
+Human approval boundaries are recorded in
+`workspace/artifacts/visual-evidence-run-configuration-subgroup-next-wave-
+decision-packet-2026-09-20.md`. No move or origin rewrite was performed in
+this audit.
+
 ### Final pre-cleanup classification audit — 2026-09-19
 
 The read-only re-audit after H2-POSITION-CIRCA closure found the same 76

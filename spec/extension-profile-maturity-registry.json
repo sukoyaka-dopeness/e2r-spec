@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sukoyaka-dopeness/e2r-spec/main/schemas/extension-profile-maturity-registry.schema.json",
+  "registryVersion": "1.0.0",
+  "profiles": [
+    {
+      "extension": "history",
+      "version": "2.0.0",
+      "profile": "position-circa",
+      "maturity": "stable",
+      "baseCapabilities": ["position"],
+      "optionalFeatures": ["approximation"],
+      "constraints": {
+        "maxAssertionsPerPayload": 1,
+        "allowedAssertionTypes": ["position"],
+        "approximationScope": "position",
+        "civilTime": "history-2.0.0",
+        "h1ToH2Contract": "accepted-atomic-preservation-refusal"
+      },
+      "deferredFeatures": [
+        "bounded-point",
+        "temporal-extent",
+        "multiple-assertions"
+      ],
+      "preservation": "preserve-unknown-or-refuse-unsafe-edit",
+      "references": [
+        "extensions/history-extension-2.0-draft.md",
+        "docs/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md"
+      ]
+    }
+  ]
+}

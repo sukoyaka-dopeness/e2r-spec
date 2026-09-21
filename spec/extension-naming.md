@@ -64,6 +64,16 @@ Coordinate remains unregistered after its prototype maturity review;
 remain candidate Extensions until their maturity and registration status are
 reviewed. None of these names appears in the Stable registry above.
 
+### Stable support profiles
+
+Stable Extension registration and Stable support-profile registration are
+separate claims. The profile maturity registry in
+[`extension-profile-maturity.md`](extension-profile-maturity.md) may register
+an immutable profile for an exact Extension identifier and version without
+making that entire version Stable. A profile is identified by the tuple
+`(Extension identifier, exact Extension version, profile identifier)` and does
+not create a second payload key or Extension identifier.
+
 ## Namespaced Extension Names
 
 Draft, experimental, and vendor-specific Extensions SHOULD use:

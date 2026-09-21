@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/sukoyaka-dopeness/e2r-spec/main/schemas/extension-profile-maturity-registry.schema.json",
+  "title": "E2R Extension Profile Maturity Registry",
+  "type": "object",
+  "required": ["registryVersion", "profiles"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string", "minLength": 1},
+    "registryVersion": {"type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"},
+    "profiles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/profile"}
+    }
+  },
+  "$defs": {
+    "identifier": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
+    "version": {"type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"},
+    "profile": {
+      "type": "object",
+      "required": ["extension", "version", "profile", "maturity", "baseCapabilities", "optionalFeatures", "constraints", "deferredFeatures", "preservation", "references"],
+      "additionalProperties": false,
+      "properties": {
+        "extension": {"type": "string", "minLength": 1},
+        "version": {"$ref": "#/$defs/version"},
+        "profile": {"$ref": "#/$defs/identifier"},
+        "maturity": {"enum": ["stable", "candidate", "deferred"]},
+        "baseCapabilities": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/identifier"}, "uniqueItems": true},
+        "optionalFeatures": {"type": "array", "items": {"$ref": "#/$defs/identifier"}, "uniqueItems": true},
+        "constraints": {
+          "type": "object",
+          "required": ["maxAssertionsPerPayload", "allowedAssertionTypes", "approximationScope", "civilTime", "h1ToH2Contract"],
+          "additionalProperties": false,
+          "properties": {
+            "maxAssertionsPerPayload": {"type": "integer", "minimum": 1},
+            "allowedAssertionTypes": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+            "approximationScope": {"type": "string", "minLength": 1},
+            "civilTime": {"type": "string", "minLength": 1},
+            "h1ToH2Contract": {"type": "string", "minLength": 1}
+          }
+        },
+        "deferredFeatures": {"type": "array", "items": {"$ref": "#/$defs/identifier"}, "uniqueItems": true},
+        "preservation": {"type": "string", "minLength": 1},
+        "references": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+      }
+    }
+  }
+}

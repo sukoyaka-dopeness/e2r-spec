@@ -56,9 +56,10 @@ central record without putting full license text on an application Home
 screen. Application/software licenses remain separate from Dataset-content
 licenses.
 
-The accepted bounded History 2 `position + circa` surface proceeds as a
-separate Stable-registration workstream. This provenance record does not alter
-History 2 schema, declaration, Validator, package, or application behavior.
+The accepted bounded History 2 `position + circa` surface is registered as the
+`history@2.0.0 / position-circa` Stable profile while History 2.0.0 remains
+Candidate overall. This provenance record does not alter History 2 schema,
+declaration, Validator, package, or application behavior.
 
 ## Sample ledger
 

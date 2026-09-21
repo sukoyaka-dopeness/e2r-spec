@@ -74,13 +74,19 @@
       "description": "タイタニックが処女航海を開始する。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 10,
-            "hour": 12,
-            "minute": 0
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 10,
+                "hour": 12,
+                "minute": 0
+              }
+            }
+          ]
         }
       }
     },
@@ -90,13 +96,19 @@
       "description": "タイタニックがシェルブールに寄港する。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 10,
-            "hour": 18,
-            "minute": 35
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 10,
+                "hour": 18,
+                "minute": 35
+              }
+            }
+          ]
         }
       }
     },
@@ -106,13 +118,19 @@
       "description": "タイタニックがニューヨークへ向けて出港する。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 11,
-            "hour": 13,
-            "minute": 30
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 11,
+                "hour": 13,
+                "minute": 30
+              }
+            }
+          ]
         }
       }
     },
@@ -122,11 +140,17 @@
       "description": "氷山に関する無線警告を受ける。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 14
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 14
+              }
+            }
+          ]
         }
       }
     },
@@ -136,11 +160,17 @@
       "description": "氷山警告の記録が続く。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 14
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 14
+              }
+            }
+          ]
         }
       }
     },
@@ -150,13 +180,19 @@
       "description": "フリートが前方の氷山を報告する。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 14,
-            "hour": 23,
-            "minute": 40
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 14,
+                "hour": 23,
+                "minute": 40
+              }
+            }
+          ]
         }
       }
     },
@@ -166,13 +202,19 @@
       "description": "氷山に衝突し、浸水が始まる。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 14,
-            "hour": 23,
-            "minute": 40
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 14,
+                "hour": 23,
+                "minute": 40
+              }
+            }
+          ]
         }
       }
     },
@@ -182,13 +224,19 @@
       "description": "損傷と浸水の状況が確認される。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 14,
-            "hour": 23,
-            "minute": 55
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 14,
+                "hour": 23,
+                "minute": 55
+              }
+            }
+          ]
         }
       }
     },
@@ -198,13 +246,19 @@
       "description": "無線通信士が遭難信号を送信し始める。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 0,
-            "minute": 25
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 0,
+                "minute": 25
+              }
+            }
+          ]
         }
       }
     },
@@ -214,13 +268,19 @@
       "description": "遭難信号を受け、タイタニックへ向かう。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 0,
-            "minute": 35
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 0,
+                "minute": 35
+              }
+            }
+          ]
         }
       }
     },
@@ -230,13 +290,19 @@
       "description": "救命ボートによる避難が始まる。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 0,
-            "minute": 45
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 0,
+                "minute": 45
+              }
+            }
+          ]
         }
       }
     },
@@ -246,13 +312,19 @@
       "description": "夜間に複数の救命ボートが離れる。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 1,
-            "minute": 30
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 1,
+                "minute": 30
+              }
+            }
+          ]
         }
       }
     },
@@ -262,13 +334,19 @@
       "description": "沈没に伴い無線通信が途絶える。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 2,
-            "minute": 10
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 2,
+                "minute": 10
+              }
+            }
+          ]
         }
       }
     },
@@ -278,13 +356,19 @@
       "description": "北大西洋で沈没する。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 2,
-            "minute": 20
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 2,
+                "minute": 20
+              }
+            }
+          ]
         }
       }
     },
@@ -294,13 +378,19 @@
       "description": "早朝、救命ボートに到着する。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 4,
-            "minute": 0
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 4,
+                "minute": 0
+              }
+            }
+          ]
         }
       }
     },
@@ -310,13 +400,19 @@
       "description": "カルパチアが生存者を収容する。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 8,
-            "minute": 0
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 8,
+                "minute": 0
+              }
+            }
+          ]
         }
       }
     },
@@ -326,13 +422,19 @@
       "description": "生存者を乗せて出港する。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 20,
-            "minute": 0
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 20,
+                "minute": 0
+              }
+            }
+          ]
         }
       }
     },
@@ -342,13 +444,19 @@
       "description": "生存者を乗せたカルパチアが到着する。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 18,
-            "hour": 21,
-            "minute": 0
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 18,
+                "hour": 21,
+                "minute": 0
+              }
+            }
+          ]
         }
       }
     }
@@ -581,7 +689,7 @@
         },
         {
           "extension": "history",
-          "version": "1.0.0"
+          "version": "2.0.0"
         }
       ]
     }

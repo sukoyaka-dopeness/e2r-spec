@@ -74,13 +74,19 @@
       "description": "Titanic begins her maiden voyage.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 10,
-            "hour": 12,
-            "minute": 0
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 10,
+                "hour": 12,
+                "minute": 0
+              }
+            }
+          ]
         }
       }
     },
@@ -90,13 +96,19 @@
       "description": "Titanic calls at Cherbourg.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 10,
-            "hour": 18,
-            "minute": 35
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 10,
+                "hour": 18,
+                "minute": 35
+              }
+            }
+          ]
         }
       }
     },
@@ -106,13 +118,19 @@
       "description": "Titanic leaves Queenstown for New York.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 11,
-            "hour": 13,
-            "minute": 30
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 11,
+                "hour": 13,
+                "minute": 30
+              }
+            }
+          ]
         }
       }
     },
@@ -122,11 +140,17 @@
       "description": "Titanic receives a wireless warning about ice.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 14
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 14
+              }
+            }
+          ]
         }
       }
     },
@@ -136,11 +160,17 @@
       "description": "A further warning contributes to the documented ice-warning sequence.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 14
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 14
+              }
+            }
+          ]
         }
       }
     },
@@ -150,13 +180,19 @@
       "description": "Frederick Fleet reports an iceberg ahead.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 14,
-            "hour": 23,
-            "minute": 40
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 14,
+                "hour": 23,
+                "minute": 40
+              }
+            }
+          ]
         }
       }
     },
@@ -166,13 +202,19 @@
       "description": "Titanic strikes an iceberg and begins to flood.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 14,
-            "hour": 23,
-            "minute": 40
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 14,
+                "hour": 23,
+                "minute": 40
+              }
+            }
+          ]
         }
       }
     },
@@ -182,13 +224,19 @@
       "description": "The damage and flooding are assessed aboard Titanic.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 14,
-            "hour": 23,
-            "minute": 55
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 14,
+                "hour": 23,
+                "minute": 55
+              }
+            }
+          ]
         }
       }
     },
@@ -198,13 +246,19 @@
       "description": "Titanic's wireless operators begin transmitting distress calls.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 0,
-            "minute": 25
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 0,
+                "minute": 25
+              }
+            }
+          ]
         }
       }
     },
@@ -214,13 +268,19 @@
       "description": "Carpathia receives the distress call and turns toward Titanic.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 0,
-            "minute": 35
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 0,
+                "minute": 35
+              }
+            }
+          ]
         }
       }
     },
@@ -230,13 +290,19 @@
       "description": "The evacuation by lifeboat begins.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 0,
-            "minute": 45
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 0,
+                "minute": 45
+              }
+            }
+          ]
         }
       }
     },
@@ -246,13 +312,19 @@
       "description": "Multiple lifeboats leave Titanic during the night.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 1,
-            "minute": 30
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 1,
+                "minute": 30
+              }
+            }
+          ]
         }
       }
     },
@@ -262,13 +334,19 @@
       "description": "Wireless contact and distress transmissions cease as Titanic founders.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 2,
-            "minute": 10
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 2,
+                "minute": 10
+              }
+            }
+          ]
         }
       }
     },
@@ -278,13 +356,19 @@
       "description": "Titanic founders in the North Atlantic.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 2,
-            "minute": 20
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 2,
+                "minute": 20
+              }
+            }
+          ]
         }
       }
     },
@@ -294,13 +378,19 @@
       "description": "Carpathia reaches the lifeboats in the early morning.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 4,
-            "minute": 0
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 4,
+                "minute": 0
+              }
+            }
+          ]
         }
       }
     },
@@ -310,13 +400,19 @@
       "description": "Carpathia takes survivors aboard.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 8,
-            "minute": 0
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 8,
+                "minute": 0
+              }
+            }
+          ]
         }
       }
     },
@@ -326,13 +422,19 @@
       "description": "Carpathia leaves with survivors aboard.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 15,
-            "hour": 20,
-            "minute": 0
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 15,
+                "hour": 20,
+                "minute": 0
+              }
+            }
+          ]
         }
       }
     },
@@ -342,13 +444,19 @@
       "description": "Carpathia arrives carrying Titanic survivors.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1912,
-            "month": 4,
-            "day": 18,
-            "hour": 21,
-            "minute": 0
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1912,
+                "month": 4,
+                "day": 18,
+                "hour": 21,
+                "minute": 0
+              }
+            }
+          ]
         }
       }
     }
@@ -581,7 +689,7 @@
         },
         {
           "extension": "history",
-          "version": "1.0.0"
+          "version": "2.0.0"
         }
       ]
     }

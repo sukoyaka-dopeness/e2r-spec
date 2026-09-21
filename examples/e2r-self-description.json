@@ -18,8 +18,8 @@
     },
     {
       "id": "history-extension",
-      "name": "History Extension 1.0.0 — Stable",
-      "description": "Stable Extension for temporal information on Events."
+      "name": "History Extension 2.0.0 - Candidate / position-circa Stable profile",
+      "description": "Candidate History Extension 2.0.0 with an adopted Stable position-circa profile; broader History 2 surfaces remain outside that profile."
     },
     {
       "id": "coordinate-draft",
@@ -49,7 +49,7 @@
     {
       "id": "e2r-validator",
       "name": "E2R Validator",
-      "description": "Validator for E2R Core and selected Extension structures, including Lineage Draft 0.1.0."
+      "description": "Validator for E2R Core and selected Extension structures, including profile-scoped History 2 stable support and Lineage Draft 0.1.0."
     },
     {
       "id": "e2r-hub",
@@ -67,87 +67,349 @@
       "id": "lineage-draft-created",
       "name": "Lineage Draft 0.1.0 created",
       "description": "The Lineage Extension candidate became an explicit Draft document and payload shape.",
-      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 25, "temporalOrder": 10}}}
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 2026,
+                "month": 8,
+                "day": 25
+              },
+              "temporalOrder": 10
+            }
+          ]
+        }
+      }
     },
     {
       "id": "cross-app-roundtrip-evidence",
       "name": "Cross-application opaque round-trip evidence completed",
       "description": "NarrativeLine and LiaisonScape preserved unsupported Lineage Draft data through representative load, edit, and export workflows.",
-      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 25, "temporalOrder": 20}}}
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 2026,
+                "month": 8,
+                "day": 25
+              },
+              "temporalOrder": 20
+            }
+          ]
+        }
+      }
     },
     {
       "id": "lineage-diagnostic-design",
       "name": "Lineage Validator diagnostic design completed",
       "description": "Structural and local-semantic diagnostic behavior was designed without production Validator changes.",
-      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 25, "temporalOrder": 30}}}
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 2026,
+                "month": 8,
+                "day": 25
+              },
+              "temporalOrder": 30
+            }
+          ]
+        }
+      }
     },
     {
       "id": "lineage-validator-recognized",
       "name": "Validator gained Lineage Draft recognition",
       "description": "E2R Validator 0.3.0 began recognizing and locally validating Lineage Draft 0.1.0.",
-      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 25, "temporalOrder": 40}}}
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 2026,
+                "month": 8,
+                "day": 25
+              },
+              "temporalOrder": 40
+            }
+          ]
+        }
+      }
     },
     {
       "id": "history-extension-established",
       "name": "History Extension 1.0.0 established",
       "description": "The stable History Extension defined the authoritative temporal representation, date precision, and relative temporal ordering for E2R Events.",
-      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 5}}}
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 2026,
+                "month": 8,
+                "day": 5
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "narrative-line-mvp-completed",
       "name": "NarrativeLine MVP completed",
       "description": "NarrativeLine completed its bilingual MVP with Dataset editing, validation, import/export, and manual acceptance.",
-      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 8, "temporalOrder": 10}}}
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 2026,
+                "month": 8,
+                "day": 8
+              },
+              "temporalOrder": 10
+            }
+          ]
+        }
+      }
     },
     {
       "id": "validator-mvp-integrated",
       "name": "E2R Validator MVP integrated",
       "description": "The standalone E2R Validator completed its MVP and was integrated into the NarrativeLine workflow.",
-      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 8, "temporalOrder": 20}}}
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 2026,
+                "month": 8,
+                "day": 8
+              },
+              "temporalOrder": 20
+            }
+          ]
+        }
+      }
     },
     {
       "id": "liaison-scape-first-distribution",
       "name": "LiaisonScape first distribution completed",
       "description": "LiaisonScape completed its first distributed application slice with cross-application sample and guide coverage.",
-      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 16}}}
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 2026,
+                "month": 8,
+                "day": 16
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "e2r-hub-first-distribution",
       "name": "E2R Hub first distribution completed",
       "description": "E2R Hub completed its first distributed entry-point application slice for the E2R ecosystem.",
-      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 18}}}
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 2026,
+                "month": 8,
+                "day": 18
+              }
+            }
+          ]
+        }
+      }
     },
     {
       "id": "self-description-created",
       "name": "E2R Self-Description dogfood created",
       "description": "The bounded machine-readable E2R Self-Description Dataset was created as an informative, experimental dogfood artifact.",
-      "extensions": {"history": {"time": {"year": 2026, "month": 8, "day": 25, "temporalOrder": 50}}}
+      "extensions": {
+        "history": {
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 2026,
+                "month": 8,
+                "day": 25
+              },
+              "temporalOrder": 50
+            }
+          ]
+        }
+      }
     }
   ],
   "relations": [
-    {"id": "e2r-describes-core", "sourceId": "e2r", "targetId": "e2r-core", "description": "describes"},
-    {"id": "metadata-extends-core", "sourceId": "metadata-extension", "targetId": "e2r-core", "description": "extends"},
-    {"id": "history-extends-core", "sourceId": "history-extension", "targetId": "e2r-core", "description": "extends"},
-    {"id": "coordinate-extends-core", "sourceId": "coordinate-draft", "targetId": "e2r-core", "description": "extends"},
-    {"id": "specification-extends-core", "sourceId": "specification-draft", "targetId": "e2r-core", "description": "extends"},
-    {"id": "lineage-extends-core", "sourceId": "lineage-draft", "targetId": "e2r-core", "description": "extends"},
-    {"id": "narrative-implements-e2r", "sourceId": "narrative-line", "targetId": "e2r", "description": "implements"},
-    {"id": "liaison-implements-e2r", "sourceId": "liaison-scape", "targetId": "e2r", "description": "implements"},
-    {"id": "validator-validates-e2r", "sourceId": "e2r-validator", "targetId": "e2r", "description": "validates"},
-    {"id": "hub-entry-point", "sourceId": "e2r-hub", "targetId": "e2r", "description": "entry point for"},
-    {"id": "self-description-describes-e2r", "sourceId": "self-description", "targetId": "e2r", "description": "describes"},
-    {"id": "self-description-uses-core", "sourceId": "self-description", "targetId": "e2r-core", "description": "uses"},
-    {"id": "self-description-uses-lineage", "sourceId": "self-description", "targetId": "lineage-draft", "description": "uses"},
-    {"id": "lineage-draft-event", "sourceId": "lineage-draft-created", "targetId": "lineage-draft", "description": "milestone"},
-    {"id": "roundtrip-event", "sourceId": "cross-app-roundtrip-evidence", "targetId": "e2r", "description": "milestone"},
-    {"id": "diagnostic-event", "sourceId": "lineage-diagnostic-design", "targetId": "e2r-validator", "description": "milestone"},
-    {"id": "validator-event", "sourceId": "lineage-validator-recognized", "targetId": "e2r-validator", "description": "milestone"},
-    {"id": "history-extension-event", "sourceId": "history-extension-established", "targetId": "history-extension", "description": "milestone"},
-    {"id": "narrative-line-mvp-event", "sourceId": "narrative-line-mvp-completed", "targetId": "narrative-line", "description": "milestone"},
-    {"id": "validator-mvp-event", "sourceId": "validator-mvp-integrated", "targetId": "e2r-validator", "description": "milestone"},
-    {"id": "liaison-scape-distribution-event", "sourceId": "liaison-scape-first-distribution", "targetId": "liaison-scape", "description": "milestone"},
-    {"id": "hub-distribution-event", "sourceId": "e2r-hub-first-distribution", "targetId": "e2r-hub", "description": "milestone"},
-    {"id": "self-description-event", "sourceId": "self-description-created", "targetId": "self-description", "description": "milestone"}
+    {
+      "id": "e2r-describes-core",
+      "sourceId": "e2r",
+      "targetId": "e2r-core",
+      "description": "describes"
+    },
+    {
+      "id": "metadata-extends-core",
+      "sourceId": "metadata-extension",
+      "targetId": "e2r-core",
+      "description": "extends"
+    },
+    {
+      "id": "history-extends-core",
+      "sourceId": "history-extension",
+      "targetId": "e2r-core",
+      "description": "extends"
+    },
+    {
+      "id": "coordinate-extends-core",
+      "sourceId": "coordinate-draft",
+      "targetId": "e2r-core",
+      "description": "extends"
+    },
+    {
+      "id": "specification-extends-core",
+      "sourceId": "specification-draft",
+      "targetId": "e2r-core",
+      "description": "extends"
+    },
+    {
+      "id": "lineage-extends-core",
+      "sourceId": "lineage-draft",
+      "targetId": "e2r-core",
+      "description": "extends"
+    },
+    {
+      "id": "narrative-implements-e2r",
+      "sourceId": "narrative-line",
+      "targetId": "e2r",
+      "description": "implements"
+    },
+    {
+      "id": "liaison-implements-e2r",
+      "sourceId": "liaison-scape",
+      "targetId": "e2r",
+      "description": "implements"
+    },
+    {
+      "id": "validator-validates-e2r",
+      "sourceId": "e2r-validator",
+      "targetId": "e2r",
+      "description": "validates"
+    },
+    {
+      "id": "hub-entry-point",
+      "sourceId": "e2r-hub",
+      "targetId": "e2r",
+      "description": "entry point for"
+    },
+    {
+      "id": "self-description-describes-e2r",
+      "sourceId": "self-description",
+      "targetId": "e2r",
+      "description": "describes"
+    },
+    {
+      "id": "self-description-uses-core",
+      "sourceId": "self-description",
+      "targetId": "e2r-core",
+      "description": "uses"
+    },
+    {
+      "id": "self-description-uses-lineage",
+      "sourceId": "self-description",
+      "targetId": "lineage-draft",
+      "description": "uses"
+    },
+    {
+      "id": "lineage-draft-event",
+      "sourceId": "lineage-draft-created",
+      "targetId": "lineage-draft",
+      "description": "milestone"
+    },
+    {
+      "id": "roundtrip-event",
+      "sourceId": "cross-app-roundtrip-evidence",
+      "targetId": "e2r",
+      "description": "milestone"
+    },
+    {
+      "id": "diagnostic-event",
+      "sourceId": "lineage-diagnostic-design",
+      "targetId": "e2r-validator",
+      "description": "milestone"
+    },
+    {
+      "id": "validator-event",
+      "sourceId": "lineage-validator-recognized",
+      "targetId": "e2r-validator",
+      "description": "milestone"
+    },
+    {
+      "id": "history-extension-event",
+      "sourceId": "history-extension-established",
+      "targetId": "history-extension",
+      "description": "milestone"
+    },
+    {
+      "id": "narrative-line-mvp-event",
+      "sourceId": "narrative-line-mvp-completed",
+      "targetId": "narrative-line",
+      "description": "milestone"
+    },
+    {
+      "id": "validator-mvp-event",
+      "sourceId": "validator-mvp-integrated",
+      "targetId": "e2r-validator",
+      "description": "milestone"
+    },
+    {
+      "id": "liaison-scape-distribution-event",
+      "sourceId": "liaison-scape-first-distribution",
+      "targetId": "liaison-scape",
+      "description": "milestone"
+    },
+    {
+      "id": "hub-distribution-event",
+      "sourceId": "e2r-hub-first-distribution",
+      "targetId": "e2r-hub",
+      "description": "milestone"
+    },
+    {
+      "id": "self-description-event",
+      "sourceId": "self-description-created",
+      "targetId": "self-description",
+      "description": "milestone"
+    }
   ],
   "extensions": {
     "metadata": {
@@ -158,7 +420,29 @@
     "draft.github.sukoyaka-dopeness.lineage": {
       "specVersion": "0.1.0",
       "parents": [
-        {"kind": "derived", "target": {"datasetId": "l0-e2r-lineage-self-description"}}
+        {
+          "kind": "derived",
+          "target": {
+            "datasetId": "l0-e2r-lineage-self-description"
+          }
+        }
+      ]
+    },
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "metadata",
+          "version": "1.0.0"
+        },
+        {
+          "extension": "history",
+          "version": "2.0.0"
+        },
+        {
+          "extension": "draft.github.sukoyaka-dopeness.lineage",
+          "version": "0.1.0"
+        }
       ]
     }
   }

@@ -5,6 +5,7 @@ const files = ["examples/apollo-11-mission.en.e2r.json", "examples/apollo-11-mis
 const datasets = await Promise.all(files.map(async (file) => JSON.parse(await readFile(file, "utf8"))));
 const [en, ja] = datasets;
 for (const dataset of datasets) {
+  assert.equal(dataset.extensions?.["draft.github.sukoyaka-dopeness.specification"]?.uses?.find(({ extension }) => extension === "history")?.version, "2.0.0");
   assert.equal(dataset.entities.length, 9);
   assert.equal(dataset.events.length, 12);
   assert.equal(dataset.relations.length, 66);
@@ -14,9 +15,12 @@ for (const dataset of datasets) {
     assert.ok(ids.has(relation.targetId));
   }
   for (const event of dataset.events) {
-    const time = event.extensions.history.time;
-    assert.equal(time.timeZone, "Etc/UTC");
-    assert.equal(time.offset, "+00:00");
+    const assertions = event.extensions.history.assertions;
+    assert.equal(assertions.length, 1);
+    assert.equal(assertions[0].id, "time-1");
+    assert.equal(assertions[0].type, "position");
+    assert.equal(assertions[0].position.timeZone, "Etc/UTC");
+    assert.equal(assertions[0].position.offset, "+00:00");
   }
 }
 const relatedTargets = (dataset, eventId) => dataset.relations.filter(({ sourceId }) => sourceId === eventId).map(({ targetId }) => targetId);

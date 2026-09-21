@@ -59,9 +59,15 @@
       "description": "先王が突然亡くなる。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 742
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 742
+              }
+            }
+          ]
         }
       }
     },
@@ -71,9 +77,15 @@
       "description": "エララが摂政を引き受ける。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 743
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 743
+              }
+            }
+          ]
         }
       }
     },
@@ -83,9 +95,15 @@
       "description": "北方諸侯が王税を拒む。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 744
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 744
+              }
+            }
+          ]
         }
       }
     },
@@ -95,9 +113,15 @@
       "description": "セレネが封印された地下庫を開く。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 745
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 745
+              }
+            }
+          ]
         }
       }
     },
@@ -107,9 +131,15 @@
       "description": "ナイラが和平交渉のため到着する。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 746
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 746
+              }
+            }
+          ]
         }
       }
     },
@@ -119,9 +149,15 @@
       "description": "エララの命が狙われる。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 747
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 747
+              }
+            }
+          ]
         }
       }
     },
@@ -131,9 +167,15 @@
       "description": "カエルの反乱が首都に届く。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 748
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 748
+              }
+            }
+          ]
         }
       }
     },
@@ -143,9 +185,15 @@
       "description": "騒乱の中で聖域が焼け落ちる。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 749
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 749
+              }
+            }
+          ]
         }
       }
     },
@@ -155,9 +203,15 @@
       "description": "古代竜がシンダー峰の地下で目覚める。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 750
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 750
+              }
+            }
+          ]
         }
       }
     },
@@ -167,9 +221,15 @@
       "description": "エララとヴァルグリムが危険な盟約を結ぶ。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 751
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 751
+              }
+            }
+          ]
         }
       }
     },
@@ -179,9 +239,15 @@
       "description": "対立する勢力がアスターフォールで衝突する。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 752
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 752
+              }
+            }
+          ]
         }
       }
     },
@@ -191,9 +257,15 @@
       "description": "諸勢力が新たな秩序に合意する。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 755
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 755
+              }
+            }
+          ]
         }
       }
     }
@@ -516,7 +588,7 @@
         },
         {
           "extension": "history",
-          "version": "1.0.0"
+          "version": "2.0.0"
         }
       ]
     }

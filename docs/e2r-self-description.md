@@ -3,10 +3,11 @@
 `examples/e2r-self-description.json` is an informative, experimental
 Machine-Readable Dogfood Dataset: **E2R describing E2R using E2R**.
 
-It is intentionally small and current-focused. It represents E2R Core, the
-two registered Stable Extensions (Metadata and History), selected Draft or
-Experimental Extensions, the reference applications, the Validator, and the
-Hub entry point. The ordinary `describes` Relation from `E2R Self-Description`
+It is intentionally small and current-focused. It represents E2R Core,
+Metadata 1.0.0, History 1.0.0, the History 2.0.0 Candidate and its registered
+`position-circa` Stable profile, selected Draft or Experimental Extensions, the
+reference applications, the Validator, and the Hub entry point. The ordinary
+`describes` Relation from `E2R Self-Description`
 to `E2R` is content-level self-description; it is not Lineage self-reference.
 
 The Dataset has identity `e2r-self-description-0.1.0` and Core version `1.0`.
@@ -18,7 +19,8 @@ The artifact is intended for:
 
 - NarrativeLine timeline reading of the bounded milestone Events;
 - LiaisonScape graph reading of the ecosystem Entities and Relations; and
-- e2r-validator validation of Core, Metadata, and Lineage Draft structure.
+- e2r-validator validation of Core, Metadata, the bounded History 2
+  `position-circa` profile, and Lineage Draft structure.
 
 The descriptive Relation words (`extends`, `implements`, `validates`, `uses`,
 and `milestone`) are ordinary domain vocabulary, not a new machine-semantic

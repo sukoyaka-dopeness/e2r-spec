@@ -54,15 +54,21 @@
       "description": "アポロ11号打上げ。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1969,
-            "month": 7,
-            "day": 16,
-            "hour": 13,
-            "minute": 32,
-            "timeZone": "Etc/UTC",
-            "offset": "+00:00"
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1969,
+                "month": 7,
+                "day": 16,
+                "hour": 13,
+                "minute": 32,
+                "timeZone": "Etc/UTC",
+                "offset": "+00:00"
+              }
+            }
+          ]
         }
       }
     },
@@ -72,15 +78,21 @@
       "description": "月遷移軌道投入。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1969,
-            "month": 7,
-            "day": 16,
-            "hour": 16,
-            "minute": 16,
-            "timeZone": "Etc/UTC",
-            "offset": "+00:00"
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1969,
+                "month": 7,
+                "day": 16,
+                "hour": 16,
+                "minute": 16,
+                "timeZone": "Etc/UTC",
+                "offset": "+00:00"
+              }
+            }
+          ]
         }
       }
     },
@@ -90,15 +102,21 @@
       "description": "月周回軌道投入。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1969,
-            "month": 7,
-            "day": 19,
-            "hour": 17,
-            "minute": 21,
-            "timeZone": "Etc/UTC",
-            "offset": "+00:00"
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1969,
+                "month": 7,
+                "day": 19,
+                "hour": 17,
+                "minute": 21,
+                "timeZone": "Etc/UTC",
+                "offset": "+00:00"
+              }
+            }
+          ]
         }
       }
     },
@@ -108,15 +126,21 @@
       "description": "イーグル分離。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1969,
-            "month": 7,
-            "day": 20,
-            "hour": 17,
-            "minute": 44,
-            "timeZone": "Etc/UTC",
-            "offset": "+00:00"
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1969,
+                "month": 7,
+                "day": 20,
+                "hour": 17,
+                "minute": 44,
+                "timeZone": "Etc/UTC",
+                "offset": "+00:00"
+              }
+            }
+          ]
         }
       }
     },
@@ -126,15 +150,21 @@
       "description": "月面着陸。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1969,
-            "month": 7,
-            "day": 20,
-            "hour": 20,
-            "minute": 17,
-            "timeZone": "Etc/UTC",
-            "offset": "+00:00"
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1969,
+                "month": 7,
+                "day": 20,
+                "hour": 20,
+                "minute": 17,
+                "timeZone": "Etc/UTC",
+                "offset": "+00:00"
+              }
+            }
+          ]
         }
       }
     },
@@ -144,15 +174,21 @@
       "description": "月面活動開始。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1969,
-            "month": 7,
-            "day": 21,
-            "hour": 2,
-            "minute": 56,
-            "timeZone": "Etc/UTC",
-            "offset": "+00:00"
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1969,
+                "month": 7,
+                "day": 21,
+                "hour": 2,
+                "minute": 56,
+                "timeZone": "Etc/UTC",
+                "offset": "+00:00"
+              }
+            }
+          ]
         }
       }
     },
@@ -162,15 +198,21 @@
       "description": "月着陸船上昇。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1969,
-            "month": 7,
-            "day": 21,
-            "hour": 17,
-            "minute": 54,
-            "timeZone": "Etc/UTC",
-            "offset": "+00:00"
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1969,
+                "month": 7,
+                "day": 21,
+                "hour": 17,
+                "minute": 54,
+                "timeZone": "Etc/UTC",
+                "offset": "+00:00"
+              }
+            }
+          ]
         }
       }
     },
@@ -180,15 +222,21 @@
       "description": "ランデブーとドッキング。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1969,
-            "month": 7,
-            "day": 21,
-            "hour": 21,
-            "minute": 35,
-            "timeZone": "Etc/UTC",
-            "offset": "+00:00"
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1969,
+                "month": 7,
+                "day": 21,
+                "hour": 21,
+                "minute": 35,
+                "timeZone": "Etc/UTC",
+                "offset": "+00:00"
+              }
+            }
+          ]
         }
       }
     },
@@ -198,15 +246,21 @@
       "description": "地球帰還軌道投入。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1969,
-            "month": 7,
-            "day": 22,
-            "hour": 4,
-            "minute": 55,
-            "timeZone": "Etc/UTC",
-            "offset": "+00:00"
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1969,
+                "month": 7,
+                "day": 22,
+                "hour": 4,
+                "minute": 55,
+                "timeZone": "Etc/UTC",
+                "offset": "+00:00"
+              }
+            }
+          ]
         }
       }
     },
@@ -216,15 +270,21 @@
       "description": "大気圏再突入。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1969,
-            "month": 7,
-            "day": 24,
-            "hour": 16,
-            "minute": 21,
-            "timeZone": "Etc/UTC",
-            "offset": "+00:00"
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1969,
+                "month": 7,
+                "day": 24,
+                "hour": 16,
+                "minute": 21,
+                "timeZone": "Etc/UTC",
+                "offset": "+00:00"
+              }
+            }
+          ]
         }
       }
     },
@@ -234,15 +294,21 @@
       "description": "着水。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1969,
-            "month": 7,
-            "day": 24,
-            "hour": 16,
-            "minute": 50,
-            "timeZone": "Etc/UTC",
-            "offset": "+00:00"
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1969,
+                "month": 7,
+                "day": 24,
+                "hour": 16,
+                "minute": 50,
+                "timeZone": "Etc/UTC",
+                "offset": "+00:00"
+              }
+            }
+          ]
         }
       }
     },
@@ -252,15 +318,21 @@
       "description": "USSホーネットでの回収。",
       "extensions": {
         "history": {
-          "time": {
-            "year": 1969,
-            "month": 7,
-            "day": 24,
-            "hour": 17,
-            "minute": 20,
-            "timeZone": "Etc/UTC",
-            "offset": "+00:00"
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 1969,
+                "month": 7,
+                "day": 24,
+                "hour": 17,
+                "minute": 20,
+                "timeZone": "Etc/UTC",
+                "offset": "+00:00"
+              }
+            }
+          ]
         }
       }
     }
@@ -622,7 +694,7 @@
         },
         {
           "extension": "history",
-          "version": "1.0.0"
+          "version": "2.0.0"
         }
       ]
     }

@@ -59,9 +59,15 @@
       "description": "The old king dies unexpectedly.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 742
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 742
+              }
+            }
+          ]
         }
       }
     },
@@ -71,9 +77,15 @@
       "description": "Elara assumes the regency.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 743
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 743
+              }
+            }
+          ]
         }
       }
     },
@@ -83,9 +95,15 @@
       "description": "Northern houses refuse the crown tax.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 744
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 744
+              }
+            }
+          ]
         }
       }
     },
@@ -95,9 +113,15 @@
       "description": "Selene opens the sealed vault.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 745
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 745
+              }
+            }
+          ]
         }
       }
     },
@@ -107,9 +131,15 @@
       "description": "Nyra arrives to negotiate peace.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 746
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 746
+              }
+            }
+          ]
         }
       }
     },
@@ -119,9 +149,15 @@
       "description": "An attempt is made on Elara's life.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 747
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 747
+              }
+            }
+          ]
         }
       }
     },
@@ -131,9 +167,15 @@
       "description": "Kael's rebellion reaches the capital.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 748
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 748
+              }
+            }
+          ]
         }
       }
     },
@@ -143,9 +185,15 @@
       "description": "The sanctuary burns during the unrest.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 749
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 749
+              }
+            }
+          ]
         }
       }
     },
@@ -155,9 +203,15 @@
       "description": "The ancient dragon wakes beneath Cinder Peak.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 750
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 750
+              }
+            }
+          ]
         }
       }
     },
@@ -167,9 +221,15 @@
       "description": "Elara and Vhalgrim make a dangerous pact.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 751
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 751
+              }
+            }
+          ]
         }
       }
     },
@@ -179,9 +239,15 @@
       "description": "The rival factions meet at Asterfall.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 752
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 752
+              }
+            }
+          ]
         }
       }
     },
@@ -191,9 +257,15 @@
       "description": "The factions agree to a new order.",
       "extensions": {
         "history": {
-          "time": {
-            "year": 755
-          }
+          "assertions": [
+            {
+              "id": "time-1",
+              "type": "position",
+              "position": {
+                "year": 755
+              }
+            }
+          ]
         }
       }
     }
@@ -516,7 +588,7 @@
         },
         {
           "extension": "history",
-          "version": "1.0.0"
+          "version": "2.0.0"
         }
       ]
     }

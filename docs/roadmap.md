@@ -75,16 +75,18 @@ words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`.
 | NarrativeLine pre-public feature candidates | **SAMPLE ROLE / PROVENANCE DECISION PREPARATION COMPLETE / HUMAN RELEASE-SET DECISIONS REQUIRED** | [candidate audit](e2r-narrativeline-pre-public-feature-candidate-audit1-result.md), [content/sample/provenance audit](e2r-initial-public-release-content-sample-provenance-refresh-audit1-result.md), and [sample role decision preparation](e2r-public-sample-role-decision-preparation1-result.md): representative roles, H2 boundary, Self-Description placement, rights, and public release set remain Human decisions; no content or runtime change is authorized |
 | Recent application identity and shell corrections | **IMPLEMENTED / ACCEPTANCE STATUS SPLIT** | Timeline `↑/↓`, Timeline Footer, Detail bottom action/AppFrame continuity, Dataset title hierarchy/direct editing, product-name-only document titles, and title input chrome/terminology have implementation evidence but are not wholesale `ACCEPTED / CLOSED` without explicit visual acceptance. The common SVG favicon has Human browser-tab/narrow confirmation |
 | E2R workspace clone and evidence hygiene | **COMPLETED / ROOT PLACEMENT CLOSED (8 / 7 / 0)** | [workspace placement migration summary](#workspace-placement-migration--completed--2026-09-21); detailed evidence remains in workspace artifacts and Git history; future evidence disposition is separate work |
-| Initial Public Release | **HUMAN DECISION REQUIRED / H2 MATURITY AND SAMPLE PROVENANCE** | [H2 circa and provenance readiness audit](e2r-initial-public-release-h2-circa-and-provenance-ui-readiness-audit1-result.md); bounded H2 technical evidence is green but Stable registration, shared provenance UI scope, sample rights/release-set, and software licensing remain Human/release gates; rollout, deployment, and publication remain separately authorized |
+| Initial Public Release | **BOUNDED PROVENANCE AUTHORITY + CROSS-APP ACCESS IMPLEMENTED / HUMAN RELEASE GATES REMAIN** | [provenance authority and access result](e2r-initial-public-release-provenance-authority-cross-app-access-implementation1-result.md); five ordinary Gallery samples, separate Self-Description dogfood access, and Hub/NarrativeLine/LiaisonScape provenance links are implemented; factual-source citations, final rights/steward confirmation, H2 Stable registration, rollout, deployment, and publication remain separately gated |
 
 The current runtime order recorded by this index no longer treats the H2 `circa`,
 viewport-toolbar, or bounded Detail/control-geometry corrections as open next
-items. The current pre-public planning order is the candidate audit linked above:
-first public guide/sample/provenance readiness, then release-set/licensing and
-public-state evidence. Any new runtime or visual implementation must be selected
-from a concrete current-evidence candidate by Human decision. This does not
-reopen accepted H2-POSITION-CIRCA behavior or promote deferred History 2
-authoring.
+items. The current pre-public planning order is now the remaining release
+evidence: factual-source and rights/steward confirmation, H2 Stable registration,
+and public-state/release gates. The bounded provenance authority and application
+access path are implemented; they do not by themselves constitute legal
+clearance or publication. Any new runtime or visual implementation must be
+selected from a concrete current-evidence candidate by Human decision. This
+does not reopen accepted H2-POSITION-CIRCA behavior or promote deferred
+History 2 authoring.
 
 ### How to maintain current and historical entries
 

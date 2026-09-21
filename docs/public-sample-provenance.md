@@ -22,6 +22,42 @@ The Dataset-level `metadata.license` candidate is intentionally not added.
 Repository licensing and this provenance record are the current formalization
 boundary. Software repository licensing is separate.
 
+## Current Human release and access decisions (2026-09-21)
+
+The five existing Hub sample families are the ordinary Initial Public Release
+Sample Gallery set: Berlin Wall, Apollo 11, Lighthouse Restoration, Ashen
+Crown, and Titanic. No flagship ranking or separate Experimental Gallery is
+introduced by this record. Lighthouse remains an ordinary Gallery sample even
+though its current LiaisonScape relation presentation uses the Presentation
+Draft. That Draft status must not be described as Stable E2R semantics.
+
+E2R Self-Description is a separate dogfood/technical entry, not a sixth
+ordinary Sample Gallery card. Its bounded public entry may explain E2R itself,
+show the Dataset, and provide the existing Handoff paths to NarrativeLine and
+LiaisonScape. It remains non-normative and publication-governed; no prominent
+Experimental warning is required by this decision.
+
+The confirmed creation-provenance wording for the current public sample set
+is:
+
+> E2R project-created, AI-assisted/generated with OpenAI Codex under Human
+> direction and review.
+
+This describes project creation and review provenance. It does not replace
+repository-specific attribution policy or establish rights in external facts,
+names, or source material. Existing canonical wording takes precedence where
+it is more specific.
+
+Hub sample cards use `Sources / License`; built-in sample entry points in
+NarrativeLine and LiaisonScape use `Sample info`. These links expose this
+central record without putting full license text on an application Home
+screen. Application/software licenses remain separate from Dataset-content
+licenses.
+
+The accepted bounded History 2 `position + circa` surface proceeds as a
+separate Stable-registration workstream. This provenance record does not alter
+History 2 schema, declaration, Validator, package, or application behavior.
+
 ## Sample ledger
 
 | Pair | EN canonical | JA canonical | Class | History / authorship evidence | External basis | JA status | Verbatim audit | Bucket |
@@ -106,3 +142,17 @@ the category map is in `LICENSE.md`, README is synchronized, canonical official
 license texts are linked, provenance is recorded, and no third-party material
 was intentionally relicensed. Formal legal review or software-repository MIT
 application remains outside this checkpoint.
+
+## E2R Self-Description
+
+Canonical Dataset: `examples/e2r-self-description.json`.
+
+This is a project-owned dogfood/technical Dataset describing the E2R
+specification, applications, and development history. It is not a normative
+replacement for the specification and is not automatically part of the five-
+family Sample Gallery release set. Its public placement and final
+redistribution wording remain subject to the separate Human release decision.
+The current project policy identifies eligible project-created example and
+dogfood content as a CC0 1.0 target, but this entry must not be presented as a
+completed legal grant when the applicable release authority has not made that
+decision for the selected public revision.

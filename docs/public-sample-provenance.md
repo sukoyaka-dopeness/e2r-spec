@@ -14,9 +14,11 @@ Canonical paths, Git history, README/sample documentation, and current Dataset
 content were inspected. The sample pairs were introduced and maintained by the
 `sukoyaka-dopeness` project history. No obvious long verbatim third-party prose
 was identified in this bounded review; this is not a comprehensive plagiarism
-or rights investigation. Where an exact original translation method is not
-recoverable, the record says so rather than inferring whether AI assistance was
-used.
+or rights investigation. Where the exact EN/JA translation workflow is not
+recoverable, the record says so rather than claiming direct translation,
+post-editing, or model-specific localization. The Human-confirmed
+creation-provenance statement below applies to project authoring and review as
+a whole; it does not invent a per-language workflow.
 
 The Dataset-level `metadata.license` candidate is intentionally not added.
 Repository licensing and this provenance record are the current formalization
@@ -67,6 +69,14 @@ History 2 schema, declaration, Validator, package, or application behavior.
 | Lighthouse | `e2r-spec/examples/lighthouse-restoration-demo.en.e2r.json` | `e2r-spec/examples/lighthouse-restoration-demo.ja.e2r.json` | project-created fictional demo | canonical sample moved to e2r-spec; LiaisonScape `public/` remains the deployment/compatibility mirror | no external story dependency known | project-created/adopted localization; exact method not recoverable | no obvious long match found | CC0 candidate after project authority |
 | Ashen Crown | `e2r-spec/examples/ashen-crown.en.e2r.json` | `e2r-spec/examples/ashen-crown.ja.e2r.json` | project-created fictional Dataset | introduced in `e9ed7dd`; later graph readability refinements | no external story dependency known | project-created/adopted localization; exact method not recoverable | no obvious long match found | CC0 candidate after project authority |
 | Titanic | `e2r-spec/examples/titanic-final-voyage.en.e2r.json` | `e2r-spec/examples/titanic-final-voyage.ja.e2r.json` | factual project-authored Dataset | introduced in `7d8b11c` | Titanic voyage facts; dedicated source bibliography still needed | PROJECT-ADOPTED TRANSLATION — ORIGINAL AUTHORING METHOD NOT RECOVERABLE | no obvious long match found | CC0 candidate, factual sources not relicensed |
+
+### Source-role clarification
+
+For Berlin Wall, Apollo 11, and Titanic, the factual authorities named below
+are retained as later release-time review references. Current evidence does not
+establish that they were the concrete sources used when the Datasets were
+created. They must not be presented as original creation sources, and the
+corresponding factual material is not relicensed by E2R.
 
 ## Pair-specific evidence
 
@@ -149,10 +159,11 @@ Canonical Dataset: `examples/e2r-self-description.json`.
 
 This is a project-owned dogfood/technical Dataset describing the E2R
 specification, applications, and development history. It is not a normative
-replacement for the specification and is not automatically part of the five-
-family Sample Gallery release set. Its public placement and final
-redistribution wording remain subject to the separate Human release decision.
-The current project policy identifies eligible project-created example and
-dogfood content as a CC0 1.0 target, but this entry must not be presented as a
-completed legal grant when the applicable release authority has not made that
-decision for the selected public revision.
+replacement for the specification and is not part of the five-family Sample
+Gallery. Its separate Hub placement and application access are Human-approved
+and implemented. Final public publication/deployment, redistribution wording,
+and any legal Dataset-content grant remain separately authorized. The current
+project policy identifies eligible project-created example and dogfood content
+as a CC0 1.0 target, but this entry must not be presented as a completed legal
+grant when the applicable release authority has not made that decision for the
+selected public revision.

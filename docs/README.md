@@ -24,7 +24,7 @@ repository. Start with the responsibility that matches the question:
 
 - [Documentation IA / roadmap modularization audit](documentation-information-architecture-roadmap-modularization-audit1-result.md): navigation-first policy accepted for implementation; existing paths remain stable.
 - [NarrativeLine NL-H2-R1](roadmap.md): **ACCEPTED / MANUAL ACCEPTANCE COMPLETE**.
-- [History 2 user-facing authoring scope](history-2-user-facing-authoring-scope-result.md): **DESIGN RESULT / HUMAN SCOPE DECISION REQUIRED**.
+- [History 2 broader authoring scope](history-2-user-facing-authoring-scope-result.md): **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED**.
 
 The roadmap is the short current-status index. The linked result or
 acceptance document contains the detailed evidence. If a historical entry

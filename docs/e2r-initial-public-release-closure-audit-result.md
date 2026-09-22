@@ -2,7 +2,7 @@
 
 Date: 2026-09-22
 
-Classification: **INITIAL PUBLIC RELEASE CLOSURE AUDIT / HUMAN DECISION REQUIRED**
+Classification: **INITIAL PUBLIC RELEASE RIGHTS/PROVENANCE BLOCKER CLEARED / REMAINING BOUNDED RELEASE-HYGIENE WORK CONFIRMED**
 
 ## Public authority and deployment result
 
@@ -34,15 +34,24 @@ for all ordinary samples and the accepted Self-Description warning boundary.
 The local 0.6.0 suite passed 123 tests plus 3 fixture tests. The published tag
 `v0.6.0`, public `main`, and npm `latest` `0.6.0` were reachable.
 
-## Closure blockers
+## Rights / provenance reassessment
 
-1. The current public provenance record still states that factual-source,
-   translation, and final steward confirmation must accompany a public release.
-   Current evidence does not contain a later explicit Human confirmation that
-   closes those sample-by-sample rights and redistribution gates. This cannot
-   be inferred from deployment or `REDIST-A` classification.
+The previous rights/provenance blocker is cleared. Human-approved authority
+already covers the five ordinary public sample families and the separate public
+Self-Description dogfood/technical entry. The current provenance authority
+records the creation-provenance statement, the `REDIST-A — READY UNDER CURRENT
+PROJECT AUTHORITY` classification, the EN/JA scope, and the boundary that
+external facts and third-party material are excluded from the E2R CC0 claim.
 
-2. Public Validator 0.6.0 release-facing metadata is inconsistent with the
+The records also explicitly preserve unrecoverable authoring/localization
+details as unknown rather than inventing them. That accepted limitation is not
+itself a release blocker. The public files and provenance authority match the
+approved five-family plus Self-Description exposure, and no new third-party
+rights or redistribution issue was found in this reassessment.
+
+## Remaining bounded release-hygiene blockers
+
+1. Public Validator 0.6.0 release-facing metadata is inconsistent with the
    accepted release state: its published README still says that 0.5.0 is the
    latest published package, while npm reports `latest = 0.6.0`. The public
    Validator repository/package also has no MIT license artifact or package
@@ -50,7 +59,7 @@ The local 0.6.0 suite passed 123 tests plus 3 fixture tests. The published tag
    software as MIT. A bounded corrective package/documentation transaction is
    required; its exact version/publication sequence remains a Human decision.
 
-3. The e2r-spec current-status roadmap entry still says exact release and
+2. The e2r-spec current-status roadmap entry still says exact release and
    public-write gates remain, although the accepted public revisions and writes
    now exist. Historical checkpoint documents remain historical, but the
    current-status entry needs a separate documentary synchronization before
@@ -62,8 +71,6 @@ annotations remain non-blocking under the accepted boundary.
 
 ## Next Human decisions
 
-- confirm or resolve the sample-specific steward, source, translation, and
-  redistribution boundary for the selected public set;
 - decide the bounded Validator 0.6.0 metadata/license correction and any
   required corrective package release;
 - authorize a current-status documentation synchronization; and

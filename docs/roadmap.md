@@ -54,7 +54,7 @@ not reopened by this closure.
 - Keep ordinary Dataset use and Core validation independent of network access
   or an external registry.
 
-## Current status index — 2026-09-21
+## Current status index — 2026-09-22
 
 This short section is the entry point for current status. Detailed checkpoint
 records and older planning entries remain below for evidence and chronology;
@@ -68,26 +68,24 @@ words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`.
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
 | H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
-| History 2 bounded Stable registration | **IMPLEMENTED / PROFILE REGISTERED / VALIDATOR GREEN / LOCAL PUBLIC SAMPLE MIGRATION COMPLETE** | [implementation result](history-2-position-circa-stable-profile-implementation-result.md); [sample migration result](public-sample-h2-migration-and-self-description-current-state-refresh-result.md); `history@2.0.0` remains Candidate while `history@2.0.0 / position-circa` is the adopted Stable profile; public write and release remain separately gated |
+| History 2 bounded Stable registration | **IMPLEMENTED / PROFILE REGISTERED / VALIDATOR GREEN / PUBLIC SAMPLE RELEASE COMPLETE** | [implementation result](history-2-position-circa-stable-profile-implementation-result.md); [sample migration result](public-sample-h2-migration-and-self-description-current-state-refresh-result.md); `history@2.0.0` remains Candidate while `history@2.0.0 / position-circa` is the adopted Stable profile; broader H2 surfaces remain deferred |
 | Dataset-wide History 1 to History 2 upgrade | **IMPLEMENTED / AUTOMATED GREEN / BOUNDED REAL-BROWSER AND HUMAN ACCEPTANCE COMPLETE** | [NarrativeLine implementation result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/history-2-dataset-wide-upgrade-implementation-result.md); [scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md) |
 | Cross-App control density / Visual Style / Flatness | **BOUNDED CORRECTIONS ACCEPTED / BROADER STYLE FOLLOW-UP AUDIT OR DESIGN ONLY** | LiaisonScape `589e3bd` and NarrativeLine `e4c2dcb`, `df69e8e`, `8495724` cover the accepted More/ordinary/detail geometry corrections. A broader Hub-reference visual-language experiment remains a separate Human-selected design question; it does not authorize a blanket CSS rewrite. |
 | LiaisonScape viewport toolbar | **ACCEPTED / HUMAN VISUAL AND INTERACTION ACCEPTANCE COMPLETE** | LiaisonScape `8743fb0` records compact canvas-utility geometry and pointer-versus-keyboard focus/tooltip treatment while retaining drag, disclosure, zoom, reset, 720px, and keyboard behavior |
 | NarrativeLine Detail controls | **ACCEPTED / BOUNDED GEOMETRY CORRECTIONS COMPLETE** | NarrativeLine `df69e8e` and `8495724` cover destructive/detail action geometry, Timeline Edit, and Entity Detail form width; further Picker/Create or visual-style work requires a separate current-evidence audit |
-| NarrativeLine pre-public feature candidates | **SAMPLE ROLE DECISIONS RECORDED / PROVENANCE ACCESS IMPLEMENTED / PUBLIC WRITE GATE REMAINS** | [provenance authority and access result](e2r-initial-public-release-provenance-authority-cross-app-access-implementation1-result.md), [sample role decision preparation](e2r-public-sample-role-decision-preparation1-result.md), and [content/provenance audit](e2r-initial-public-release-content-sample-provenance-refresh-audit1-result.md); five ordinary Gallery families and separate Self-Description dogfood access are recorded; factual-source caveats remain provenance boundaries, while exact release revision and public write remain gated |
+| NarrativeLine pre-public feature candidates | **SAMPLE ROLE / PROVENANCE DECISIONS RECORDED / PUBLIC ACCESS RELEASED** | [provenance authority and access result](e2r-initial-public-release-provenance-authority-cross-app-access-implementation1-result.md), [sample role decision preparation](e2r-public-sample-role-decision-preparation1-result.md), and [content/provenance audit](e2r-initial-public-release-content-sample-provenance-refresh-audit1-result.md); five ordinary Gallery families and separate Self-Description dogfood access are public; factual-source caveats remain provenance boundaries |
 | Recent application identity and shell corrections | **IMPLEMENTED / ACCEPTANCE STATUS SPLIT** | Timeline `↑/↓`, Timeline Footer, Detail bottom action/AppFrame continuity, Dataset title hierarchy/direct editing, product-name-only document titles, and title input chrome/terminology have implementation evidence but are not wholesale `ACCEPTED / CLOSED` without explicit visual acceptance. The common SVG favicon has Human browser-tab/narrow confirmation |
 | E2R workspace clone and evidence hygiene | **COMPLETED / ROOT PLACEMENT CLOSED (8 / 7 / 0)** | [workspace placement migration summary](#workspace-placement-migration--completed--2026-09-21); detailed evidence remains in workspace artifacts and Git history; future evidence disposition is separate work |
-| Initial Public Release | **BOUNDED PROVENANCE AUTHORITY + CROSS-APP ACCESS + LOCAL H2 SAMPLE MIGRATION IMPLEMENTED / EXACT REVISION AND PUBLIC WRITE GATES REMAIN** | [provenance reconciliation](e2r-initial-public-release-provenance-authority-reconciliation1-result.md), [implementation result](e2r-initial-public-release-provenance-authority-cross-app-access-implementation1-result.md), and [sample migration result](public-sample-h2-migration-and-self-description-current-state-refresh-result.md); five ordinary Gallery samples, separate Self-Description dogfood access, and Hub/NarrativeLine/LiaisonScape provenance links are implemented; Human-approved rights/publication policy is recorded, while exact release revision, rollout, deployment, and publication remain separately gated |
+| Initial Public Release | **FORMALLY CLOSED / PUBLIC AUTHORITIES VERIFIED / ACCEPTED BOUNDARIES PRESERVED** | [final closure audit](e2r-initial-public-release-closure-audit-result.md); five ordinary Gallery samples, separate Self-Description dogfood access, Hub/NarrativeLine/LiaisonScape provenance links, Validator `0.6.1`, and the accepted rights/provenance boundary are public and verified; deferred History 2, Lineage, visual-quality, and future product work remain separate follow-ups |
 
-The current runtime order recorded by this index no longer treats the H2 `circa`,
-viewport-toolbar, or bounded Detail/control-geometry corrections as open next
-items. The current pre-public planning order is now the remaining release
-evidence: exact release revision, the cross-repository Validator publication
-transaction, and public-state/release gates. Factual-source caveats remain
-provenance boundaries rather than reopened rights gates. The bounded provenance authority and application
-access path are implemented; they do not by themselves constitute legal
-clearance or publication. Any new runtime or visual implementation must be
-selected from a concrete current-evidence candidate by Human decision. This
-does not reopen accepted H2-POSITION-CIRCA behavior or promote deferred
+The current runtime order recorded by this index no longer treats the H2
+`circa`, viewport-toolbar, or bounded Detail/control-geometry corrections as
+open next items. The accepted Initial Public Release transaction is complete:
+the public authorities, sample access, provenance boundary, and Validator
+package hygiene are recorded in the final closure audit. Factual-source
+caveats remain provenance boundaries rather than reopened rights gates.
+Future visual, Lineage, deferred-History-2, and product-quality work remains
+separate follow-up and does not reopen this closure or promote deferred
 History 2 authoring.
 
 ### How to maintain current and historical entries

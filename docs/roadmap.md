@@ -2180,6 +2180,12 @@ direction does not change H2-POSITION-CIRCA **ACCEPTED / CLOSED**, adopt History
 
 ### Current Relative Time extensible-vocabulary direction (2026-09-24)
 
+> Historical current-state snapshot: this entry records the selected
+> extensible-vocabulary direction before the later adoption of atomic
+> Recorded assertion semantics. Its statements that semantics were not yet
+> adopted and that broader semantic-contract research was the next checkpoint
+> describe that earlier state; see the current adoption status below.
+
 The current Human-selected design/research direction is recorded in
 [`docs/relative-time-extensible-temporal-assertion-direction1.md`](relative-time-extensible-temporal-assertion-direction1.md),
 committed as `d0d6f54947b43fa4e4bad8e646bc01b6135f9a62` (`docs: record
@@ -2236,11 +2242,17 @@ status are unchanged.
 
 ### Human-selected next-workstream sequence — Relative Time then Documentation IA (2026-09-24)
 
-The current Relative Time atomic Recorded-assertion checkpoint is the
-immediate work to close. Its [adoption-readiness audit](relative-time-atomic-semantics-adoption-readiness1.md)
-was committed as `53a7ae283003edac865161c4666c08f38023c361`; the atomic wording
-proposal remains non-normative pending a separate Human disposition. The
-sequence selected for the next work is:
+> Historical sequencing snapshot: this plan was recorded before the Human
+> disposition and the following minimum state synchronization. Its first two
+> steps are complete; the minimum state synchronization and current next
+> workstream are recorded below.
+
+At the time this sequence was selected, the Relative Time atomic
+Recorded-assertion checkpoint remained to be closed. Its
+[adoption-readiness audit](relative-time-atomic-semantics-adoption-readiness1.md)
+was committed as `53a7ae283003edac865161c4666c08f38023c361`, and the atomic
+wording proposal awaited a separate Human disposition. The planned sequence
+was:
 
 1. Close the adoption-readiness review checkpoint.
 2. Obtain and record the Human disposition of the atomic semantic proposal
@@ -2309,6 +2321,26 @@ upcoming decision is explicitly to reconsider whether one roadmap remains
 appropriate and whether chronology should be separated first. No directory
 structure, archive location, split unit, compatibility-link policy, or
 migration is approved here.
+
+#### Current Relative Time atomic-semantics status after Human adoption (2026-09-24)
+
+The Human adopted the atomic Recorded assertion semantics and stated
+cross-cutting boundaries in [Relative Time Atomic Recorded Assertion
+Semantics Adoption 1](relative-time-atomic-recorded-assertion-semantics-adoption1.md),
+commit `a5e26b0c5b3d04ea69bfd1f6b90476fede1bb17e` (`docs: adopt Relative Time
+atomic semantics`). The adoption record is the current normative semantic
+authority for that bounded atomic layer. The proposal and readiness audit
+remain historical proposal and audit evidence; they have not been rewritten.
+
+This adoption does not extend current Draft/schema support, promote the
+Relative Time Extension to Stable, or adopt representation, versioning,
+machine evaluation, boundary rules, History mapping, cross-assertion policy,
+Derived rules, Validator, migration, UI, or application implementation. Those
+remain separate work. The Human-disposition step in the sequence above is
+complete; this entry records the minimum project-state synchronization. The
+next planned workstream is the Documentation IA / Roadmap Physical
+Modularization Human structure-decision checkpoint described above. No
+structure decision or migration is made by this status update.
 
 > Historical snapshot — superseded by the current `NL-H2-R1` entry near the
 > end of this roadmap. The following readiness text records the pre-acceptance

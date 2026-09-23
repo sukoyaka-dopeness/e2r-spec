@@ -12,6 +12,10 @@ Public site.
 
 Status: `GUIDE COVERAGE UPDATED / BOUNDED UI ACCEPTANCE CLOSED / RELATIVE TIME AND HISTORY 2 RESEARCH RESULTS PREPARED / TEMPORAL HUMAN DECISION PREPARATION COMPLETE / NO DECISIONS ADOPTED`
 
+The Status above records the session's original capture and is retained as a
+historical snapshot. Subsequent Relative Time decisions and current handoff
+state are recorded in the dated checkpoint syncs below.
+
 The bounded UI checkpoints recorded below are closed where their linked
 acceptance results say so. The original device-specific Header observation,
 physical-device coverage, and exact Public artifact revision remain
@@ -462,3 +466,30 @@ accepted/closed; History 2 deferred shapes, `same-instant` laws, detailed
 interval boundaries, Derived rules, solver policy, and Causal order / Temporal
 Perspectives remain unadopted or separate. No schema, version, Validator,
 application, or UI work was started; push/deploy state is unchanged.
+
+### Relative Time atomic semantics adoption and current handoff — 2026-09-24
+
+The Human adopted the atomic Recorded assertion semantics and stated
+cross-cutting boundaries in [Relative Time Atomic Recorded Assertion
+Semantics Adoption 1](../docs/relative-time-atomic-recorded-assertion-semantics-adoption1.md),
+commit `a5e26b0c5b3d04ea69bfd1f6b90476fede1bb17e` (`docs: adopt Relative Time
+atomic semantics`). That record is the current normative authority for the
+bounded atomic semantic layer. The earlier proposal and readiness audit remain
+historical evidence of proposal and review; the original session Status and
+pre-adoption checkpoint snapshots above are not current-state claims.
+
+The adoption does not extend Relative Time Draft/schema support or authorize
+Feature/version integration, machine evaluation, boundary or History-shape
+rules, cross-assertion policy, Derived semantics, Validator, migration,
+Stable promotion, UI, or application implementation. Those remain separate
+checkpoints. The atomic semantic disposition is recorded; this entry is the
+minimum project-state/handoff synchronization, not an implementation start.
+
+Following the sequence in [the roadmap](../docs/roadmap.md#human-selected-next-workstream-sequence--relative-time-then-documentation-ia-2026-09-24),
+the next planned workstream after this synchronization is the Documentation
+Information Architecture / Roadmap Physical Modularization Human structure-
+decision checkpoint. The initial structural candidate is separating completed,
+superseded, and historical chronology from current roadmap planning. The
+flat `docs/` root and roadmap length are assessed together; issue-per-file
+proliferation is not the default. No split, directory layout, archive target,
+move, rename, or migration has been selected or started.

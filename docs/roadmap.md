@@ -2139,6 +2139,45 @@ gated, read-only structural diagnostics and limited two-edge Derived evidence;
 it does not promote either candidate, create Relations, or authorize application
 writes, migration, deployment, or release.
 
+### Human-selected future interval-semantics and Timeline direction (2026-09-23)
+
+The Human selected a separate future design/research direction for period
+relationships and Timeline placement. This is a project direction only; it
+does not adopt Stable or normative semantics, amend an Extension draft, or
+authorize schema, Validator, runtime, UI, or application implementation.
+
+- The committed [Relative Time bounded contract proposal](relative-time-bounded-contract-proposal1.md)
+  (`e7c9bc21deca695ade11ebdb19ab5c3245cfee4d`) remains a standalone
+  non-normative / not-adopted proposal limited to direct pairwise `before` /
+  `after`. Its scope is not expanded by this roadmap entry.
+- A separate future interval-semantics checkpoint is to consider the existing
+  candidate `within` / containment together with `overlap`. `within` is not to
+  be advanced as a standalone adopted interval relation ahead of that joint
+  consideration. Containment and partial overlap are intended as distinct
+  semantic categories; their portable definitions are not yet adopted. The
+  Cross-Audit's earlier “accepted” basic `within` transitivity remains a
+  non-normative Derived-rule candidate only; it does not adopt user-facing
+  Recorded `within` authoring or settle `within` together with `overlap`.
+- History values, including coarse values such as a year, do not automatically
+  create Recorded Relative Time Relations such as `within`, `overlap`,
+  `same-temporal-extent`, or boundary contact. A Recorded Relation represents
+  a time relationship explicitly recorded by a user. Any relation Derived from
+  History evidence is a separate question and must remain distinct from
+  Recorded data; no Derived/inference contract is selected here. Matching
+  coarse precision alone does not establish equal full extents or touching
+  boundaries.
+- Separately from semantic Relations, where semantic evidence does not
+  determine an Event's Timeline position, the future presentation design
+  direction is to let a user explicitly place that Event before or after
+  another Event. Long-distance dragging is not a required interaction model.
+  This does not define persisted placement, create a semantic Relation, or
+  authorize Timeline implementation.
+
+The meaning of `overlap`, `same-temporal-extent`, interval boundary occurrence
+and contact, and Derived relationships from History remain unresolved. This
+direction does not change H2-POSITION-CIRCA **ACCEPTED / CLOSED**, adopt History
+2 deferred shapes, or determine future branch priority or sequencing.
+
 > Historical snapshot — superseded by the current `NL-H2-R1` entry near the
 > end of this roadmap. The following readiness text records the pre-acceptance
 > state and is retained for chronology.

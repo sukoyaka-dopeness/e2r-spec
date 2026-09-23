@@ -6,9 +6,10 @@ Status: **PROPOSAL FOR HUMAN REVIEW — NON-NORMATIVE / NOT ADOPTED**
 ## Purpose and authorization boundary
 
 This document prepares proposed wording for the Human-selected Branch B in
-[Temporal Next-Phase Human Decision Gate 1](temporal-next-phase-human-decision-gate1.md).
+[Temporal Next-Phase Human Decision Gate 1](temporal-next-phase-human-decision-gate1.md),
+as bounded by the Human-selected [RT-BR-1 semantic direction](relative-time-before-after-semantic-direction-decision1.md).
 Its scope is limited to the direct pairwise meaning and endpoint orientation
-of Relative Time `before` and `after` assertions.
+of user-recorded Relative Time `before` and `after` assertions.
 
 This is a proposal, not an adopted specification. It does not amend the
 Relative Time Draft, Stable Core, Stable History, schema, Validator, runtime,
@@ -35,15 +36,18 @@ or application behavior. It does not authorize implementation.
 - [The Human-selected Branch B record](temporal-next-phase-human-decision-gate1.md)
   authorizes proposed wording for direct pairwise `before` / `after` only.
   Proposal preparation is not normative adoption.
+- The committed [RT-BR-1 semantic direction](relative-time-before-after-semantic-direction-decision1.md)
+  selects a bounded qualitative Recorded claim between the selected Core
+  Objects. It does not require a particular History assertion or authorize
+  inference of a more precise temporal referent.
 - Current [Relative Time structural validation](../scripts/validate-relative-time-draft-schema.mjs)
   and the sibling `e2r-validator` diagnostics/tests are implementation
   evidence only. They map `before` and `after` using the draft orientation;
   they do not establish normative authority.
 
-The gate is newer than the pre-selection roadmap and Session 0094 snapshots:
-Branch B is Human-selected as the next bounded activity, while roadmap/Session
-synchronization remains a separate documentation task. This proposal does not
-change either record.
+RT-BR-1 Choice 1 is a Human-selected semantic direction for this wording
+proposal, not a normative adoption disposition. The direction does not expand
+the proposal to interval relations or implementation.
 
 ## Proposed normative wording for Human review
 
@@ -56,7 +60,18 @@ change either record.
 > `sourceId`-to-`targetId` direction does not by itself express either temporal
 > direction; consumers MUST interpret these values according to this
 > Extension's endpoint orientation, not infer temporal meaning from Core
-> Relation direction, Relation name, or presentation order.
+> Relation direction, Relation name, or presentation order. A Recorded
+> assertion is the user's qualitative temporal-precedence claim between the
+> selected Core Objects; it does not require grounding in a particular History
+> assertion. The existence or number of History assertions does not select,
+> reconcile, or replace that Recorded claim. History values MUST NOT by
+> themselves create or overwrite a Recorded `before` / `after` Relation.
+> Relationships computed from History, if any, are Derived evidence and are
+> outside this direct Recorded-assertion contract. The assertion does not by
+> itself specify or imply a start-to-start or end-to-start comparison, an
+> Object's start or end, duration, whole temporal extent, boundary or boundary
+> contact, or precision beyond the qualitative claim. A user is not required
+> to record a Relation when the relationship is unknown.
 
 ### Reading of the proposed wording
 
@@ -65,22 +80,25 @@ change either record.
 - For `sourceId = A`, `targetId = B`, `relation = "after"`, the direct
   recorded claim is **B is later than A** (the same pairwise orientation as
   the first example).
-- The words `earlier` and `later` express only the direct temporal claim in
-  the assertion. They do not encode elapsed duration, a calendar date, a
-  causal relationship, or a display position.
+- The words `earlier` and `later` express only the user's direct qualitative
+  temporal-precedence claim between the selected Objects. They do not encode
+  elapsed duration, a calendar date, a causal relationship, or a display
+  position, nor do they identify a start, end, or whole extent as the
+  comparison referent.
 - A Relation carrying the assertion is recorded evidence, not a Derived
-  assertion. This wording does not permit changing, merging, deleting, or
-  choosing a winner among user-authored Relations.
+  assertion. History does not automatically create or overwrite it. This
+  wording does not permit changing, merging, deleting, or choosing a winner
+  among user-authored Relations.
 
 ## Deliberate limits and unresolved questions
 
 This proposal intentionally does not determine:
 
-- **Temporal referent/scope:** whether the comparison concerns Event
-  occurrence, another Object's temporal position, or a perspective, and how
-  endpoints with multiple History assertions are grounded. The draft's
-  reference/target orientation is clear, but this broader semantic scope
-  remains a Human decision.
+- any more precise temporal referent than the qualitative claim between the
+  selected Core Objects. It neither identifies an Event's start/end/extent as
+  the referent nor requires or chooses among History assertions. Under the
+  Human-selected RT-BR-1 direction, this lack of additional grounding is not a
+  blocker to recognizing the bounded Recorded claim proposed above.
 - `same-instant` is outside this proposal and receives no definition here.
 - **Order laws and conflict handling:** transitivity, irreflexivity,
   self-reference, reverse-pair contradiction, cycles, diagnostic severity,
@@ -94,15 +112,16 @@ This proposal intentionally does not determine:
   duplicate detection, consolidation, or winner-selection policy.
 - **History comparison or mutation:** there is no comparison with History 1
   dates or `temporalOrder`, History 2 assertions, or any other History shape;
-  no History date/order or persisted Timeline placement is generated or
-  written back.
+  no History-derived Relation is created as a Recorded assertion, and no
+  History date/order or persisted Timeline placement is generated or written
+  back. A separate Derived/inference contract is outside this proposal.
 - **Presentation and implementation:** no UI, Timeline projection, or
   application behavior is specified or authorized.
 
-The proposed direct wording can be reviewed independently of those decisions,
-but it is not ready to be treated as complete normative semantics while the
-temporal referent/scope question remains open. Human may approve, revise, defer,
-or reject the wording without thereby authorizing implementation.
+The proposed direct wording can be reviewed independently of these excluded
+questions. Human may approve, revise, defer, or reject the wording without
+thereby authorizing implementation. Approval of this proposal remains a
+separate Human disposition; the RT-BR-1 direction alone does not adopt it.
 
 ## Existing boundaries preserved
 
@@ -116,6 +135,9 @@ or reject the wording without thereby authorizing implementation.
 
 ## Validation and disposition
 
-This document is a Human-review proposal only. No normative wording was added
-to a canonical specification, no semantic decision was adopted, and no code,
-schema, Validator, test, roadmap, or Session 0094 change was made.
+This document remains a Human-review proposal: its proposed wording is
+non-normative and not adopted. It reflects the Human-selected RT-BR-1
+direction, but does not itself make a normative adoption or Stable promotion.
+No wording was added to a canonical specification, and no code, schema,
+Validator, test, roadmap, or Session 0094 change was made. No implementation
+is authorized.

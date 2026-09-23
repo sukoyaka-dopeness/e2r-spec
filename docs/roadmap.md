@@ -2091,8 +2091,15 @@ compares current authority and implementation evidence and lists a minimum
 contract candidate plus unresolved Human decision points; it does not adopt the
 candidate, promote either draft, or authorize schema, Validator, runtime, or
 application changes. Relative Time semantics and derived-display adoption
-remain open. The separate History 2 deferred-shapes Research remains
-**NOT STARTED**; the existing sequence and priorities are unchanged.
+remain open. The separate [History 2 deferred-shapes authoring-scope Research
+result](../research/exploratory/e2r-history2-deferred-shapes-authoring-scope-research1.md)
+is recorded at commit `855a6090313aed7d77f14f0917be0e6eb0bdf4e4` as an
+**EXPLORATORY / RESEARCH RESULT — NON-NORMATIVE**, pending Human review. It
+compares the deferred shapes and identifies unresolved authoring contracts;
+it does not adopt any shape, select an implementation scope or order, change
+the accepted H2-POSITION-CIRCA boundary, or authorize specification, schema,
+Validator, or application changes. The three broader shapes remain deferred,
+and the existing sequence and priorities are unchanged.
 
 The [History 2.x and Relative Time Candidate Cross-Audit](../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md)
 records a non-normative candidate draft and cross-audit. It keeps History

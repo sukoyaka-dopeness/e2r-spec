@@ -10,7 +10,7 @@ raised during the session, record their evidence and completion boundaries,
 and diagnose the NarrativeLine narrow Header wrapping observed on the current
 Public site.
 
-Status: `GUIDE COVERAGE UPDATED / BOUNDED UI ACCEPTANCE CLOSED / RELATIVE TIME RESEARCH RESULT PREPARED FOR HUMAN REVIEW / HISTORY 2 RESEARCH NOT STARTED`
+Status: `GUIDE COVERAGE UPDATED / BOUNDED UI ACCEPTANCE CLOSED / RELATIVE TIME RESEARCH RESULT PREPARED FOR HUMAN REVIEW / HISTORY 2 DEFERRED-SHAPES RESEARCH RESULT PREPARED FOR HUMAN REVIEW`
 
 The bounded UI checkpoints recorded below are closed where their linked
 acceptance results say so. The original device-specific Header observation,
@@ -18,8 +18,9 @@ physical-device coverage, and exact Public artifact revision remain
 unverified; these limitations do not leave the bounded local acceptance open.
 The Relative Time minimum temporal-precedence Research result has since been
 prepared and committed for Human review; it remains exploratory and
-non-normative. The separate History 2 deferred-shapes Research remains
-unstarted.
+non-normative. The History 2 deferred-shapes authoring-scope Research result
+has also been completed and committed for Human review; it is exploratory and
+non-normative and does not adopt a deferred shape or implementation scope.
 
 ## Work completed and accepted
 
@@ -242,11 +243,25 @@ No schema, Validator, runtime, or application implementation was changed.
 This synchronization records research progress only and does not change the
 existing Human decision queue or priority order.
 
-History 2 deferred-shapes authoring-scope Research remains **NOT STARTED**.
-The original recommended sequence is retained: that separate Research follows
-the Relative Time result, and any Human decisions are processed before a
-bounded implementation scope is considered. Temporal Perspectives and Causal
-order remain later/separate workstreams.
+### History 2 deferred-shapes Research checkpoint sync — 2026-09-23
+
+The [standalone exploratory result](../research/exploratory/e2r-history2-deferred-shapes-authoring-scope-research1.md)
+is committed as `855a6090313aed7d77f14f0917be0e6eb0bdf4e4`
+(`docs: research History 2 deferred authoring shapes`). Its status is
+**EXPLORATORY / RESEARCH RESULT — NON-NORMATIVE**, prepared for Human review.
+It distinguishes candidate structure, implementation evidence, and unresolved
+authoring requirements; it does not adopt a deferred shape, choose an
+implementation scope or sequence, or alter the accepted H2-POSITION-CIRCA
+boundary. `bounded-point`, `temporal-extent`, and multiple assertions remain
+deferred. No normative specification, schema, Validator, or application
+implementation was changed.
+
+The original prioritized handoff above remains a historical snapshot and
+records **NOT STARTED** as of its capture. The recommended ordering and Human
+decision queue are unchanged: review the Relative Time and History 2 Research
+results and process Human decisions before considering any bounded
+implementation scope. Temporal Perspectives and Causal order remain
+later/separate workstreams.
 
 ## Validation summary
 

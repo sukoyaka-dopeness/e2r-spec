@@ -4,6 +4,14 @@ Status: EXPLORATORY / EARLY-CAPABILITY RESEARCH
 
 Date: 2026-09-02
 
+Historical-state clarification: The base analysis and final-boundary statements
+in this 2026-09-02 snapshot describe the project state at that time; they are
+not a current account of later Relative Time Draft or Validator progress. The
+2026-09-18 addendum below is also exploratory and non-normative. Current status
+is recorded in the [roadmap](../../docs/roadmap.md) and [Session 0094
+handoff](../../sessions/E2R-Session-0094.md): the minimum temporal-precedence
+contract Research and History 2 deferred-shapes Research remain **NOT STARTED**.
+
 This record investigates whether a bounded relative-temporal capability could be
 delivered earlier than full History vNext. EARLY-CAPABILITY describes research
 only. It does not authorize a schema, Extension, semantic vocabulary,
@@ -471,6 +479,37 @@ Timeline coordinates.
 No ai-knowledge entry was created or promoted.
 
 ## Roadmap and final boundary
+
+## Design discussion addendum — 2026-09-18
+
+The current design discussion confirms the following research boundary:
+
+- `before(A, B)` is a qualitative temporal-precedence assertion, not a
+  replacement for an Event's recorded History value or `temporalOrder`.
+- Relative offset or duration is quantitative temporal information and remains
+  distinct from ordinal rank; calendar-relative and elapsed-duration meanings
+  must not be silently treated as equivalent.
+- A future temporal responsibility may use a Core Relation as a carrier only
+  if Relation identity, endpoints, lifecycle, and provenance remain intact.
+  A human-readable Relation name does not create temporal meaning.
+- Event-local bounds, Event-to-Event constraints, anchors, and derived
+  placement are separate concerns. Derived placement must not be written back
+  as an intentionally recorded fact without explicit adoption.
+- Causal order and temporal precedence may coexist for one Event pair but must
+  remain distinct assertions. Temporal-precedence cycles and causal cycles are
+  separate research cases.
+
+This is a non-normative clarification. It selects no payload, carrier,
+solver, Extension, or application behavior and does not reopen the current
+NarrativeLine release baseline.
+
+The common-origin Temporal Frame discussion is recorded separately in the
+Multidimensional History research. A frame coordinate is not another name for
+a pairwise `before` edge or relative-duration constraint: the former locates
+Events against a shared origin, while the latter constrains relationships
+between Events. The two may later participate in one derivation, subject to
+explicit time-scale semantics and the existing no-write-back rule for derived
+results.
 
 The existing History/chronology roadmap direction is refined with a compact
 cross-reference to this narrower research. The existing Multidimensional

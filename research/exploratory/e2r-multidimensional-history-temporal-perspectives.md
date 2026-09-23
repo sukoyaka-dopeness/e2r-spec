@@ -563,6 +563,76 @@ projections of richer future semantics. No promotion was made and
 
 ## Roadmap and final boundary
 
+## Design discussion addendum — 2026-09-18
+
+The discussion confirms that Relative Time and temporal perspectives are
+related research areas, but not one undifferentiated feature. A future model
+may distinguish recorded position, qualitative precedence, calendar-relative
+offset, elapsed duration, and scoped orders such as experience, publication,
+acquisition, or presentation order.
+
+The same Event set may support several scoped interpretations, each partial,
+sparse, or contested. A visible Timeline order is a derived projection, not
+evidence of a total semantic order. Current `temporalOrder` retains its
+existing limited comparison meaning.
+
+No common `TemporalPerspective`, `RelativeTime`, interval, duration, or
+assertion payload is selected. Ownership, target identity, adoption, conflict
+handling, and partial-support rules remain design gates. This addendum is
+non-normative and authorizes no implementation or release change.
+
+## Temporal Frame and common-origin coordinates — 2026-09-18
+
+A future History model may need to represent a Timeline whose Events are
+located by elapsed coordinates from a shared origin rather than by ordinary
+calendar dates. A conceptual frame could provide an origin or epoch and the
+semantics of its coordinate scale, while an Event supplies a coordinate or
+offset within that frame:
+
+```text
+Temporal Frame: origin = Big Bang; scale = elapsed seconds
+Event A: coordinate = 10^-32 seconds
+Event B: coordinate = 10^-6 seconds
+Event C: coordinate = 13.8 billion years
+```
+
+This is a candidate temporal-frame responsibility, not a selected schema.
+The origin might eventually identify an Event or a named/reference epoch;
+whether `t = 0` is itself an Event is domain-dependent and remains open.
+The frame must state or reference its time-scale and unit semantics without
+assuming that calendar-relative offsets, elapsed durations, alternative
+calendars, physical/proper time, and ordinary chronology are interchangeable.
+
+Temporal coordinates and pairwise constraints are complementary but distinct:
+
+- a coordinate answers where an Event lies relative to a common origin;
+- `before(A, B)` or `B = A + duration` constrains a pair of Events; and
+- a solver may derive a bound such as `coordinate(A) < coordinate(B) <
+  coordinate(C)` when the evidence and semantics permit it.
+
+Core Relation carrier research primarily concerns the second category. It does
+not require creating an origin Relation for every Event. Derived bounds and
+placements remain derived results and must not be written back as recorded
+facts without explicit adoption.
+
+The possible coordinate range creates a representation research requirement:
+cosmic-scale examples may span roughly `10^-43` seconds through `10^17`
+seconds or more. Floating-point adequacy, decimal/scientific notation,
+rational values, mantissa/exponent forms, precision, ordering, and lossless
+serialization must be evaluated before any canonical representation is
+chosen. No numeric representation is selected here.
+
+Semantic coordinates remain separate from Timeline presentation. Linear,
+logarithmic, segmented/broken, or zoomable scales may be useful for a wide
+dynamic range, but the pixels and layout chosen by NarrativeLine are a
+presentation projection, not the stored temporal meaning. This direction also
+connects to named epochs, alternative calendars, worldlines, branching
+timelines, and other reference-frame research without merging those concerns.
+
+This section is exploratory and does not authorize a Temporal Frame object,
+origin field, coordinate field, duration solver, UI scale, migration, or
+application behavior.
+
 The roadmap receives one compact future-direction cross-reference under the
 existing History/temporal research area. It does not change the active
 LiaisonScape checkpoint or reorder any Suite, OSINT, Storage, Federation, or

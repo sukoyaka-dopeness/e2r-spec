@@ -282,6 +282,36 @@ the three broader History 2 shapes remain unadopted/deferred. The Human
 decision queue, original handoff ordering, and separate Causal order / Temporal
 Perspectives workstreams are unchanged.
 
+### Relative Time Branch B and interval-semantics direction sync — 2026-09-23
+
+The Human-selected Branch B was recorded in the committed [Temporal Next-Phase
+Decision Gate](../docs/temporal-next-phase-human-decision-gate1.md)
+(`b25b246`, `docs: record Human-selected temporal next phase`). The bounded
+direct pairwise `before` / `after` proposal was then committed separately as
+[`docs/relative-time-bounded-contract-proposal1.md`](../docs/relative-time-bounded-contract-proposal1.md)
+(`e7c9bc21deca695ade11ebdb19ab5c3245cfee4d`,
+`docs: propose bounded Relative Time contract`). It remains a standalone
+**non-normative / not adopted** proposal; its creation does not authorize
+normative adoption, schema/runtime changes, or implementation.
+
+The subsequent roadmap checkpoint records the Human-selected future
+interval-semantics direction (`b27dd42186cc017ff68277e13ec1ad03b25c44e8`,
+`docs: record Relative Time interval semantics direction`): consider `within`
+and `overlap` together, distinguish containment from partial overlap, do not
+infer or create Recorded Relative Time assertions from coarse History values,
+keep Recorded assertions distinct from possible Derived/inference behavior,
+and treat explicit Timeline presentation placement as separate from Relative
+Time semantics. This is a future design/research direction, not normative
+adoption or implementation authorization. The meaning of `overlap`,
+same-temporal-extent, boundary contact, and Derived inference remains
+unresolved.
+
+These later checkpoints update current status without rewriting the earlier
+handoff and decision-preparation snapshots. The accepted/closed
+H2-POSITION-CIRCA boundary remains unchanged; History 2 deferred authoring
+shapes remain unadopted. Causal order and Temporal Perspectives remain separate
+workstreams; no new sequencing or implementation scope is established here.
+
 ## Validation summary
 
 Validation counts below are from the individual checkpoint reports unless

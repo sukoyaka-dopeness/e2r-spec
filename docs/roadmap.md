@@ -12965,3 +12965,86 @@ it was intentionally left untouched under this exact-directory cleanup
 boundary and is a separate workspace-housekeeping follow-up. No application,
 Dataset, UI, or test-runtime behavior changed, and no duplicate Knowledge
 entry was needed.
+
+### LiaisonScape selected Relation identity display policy audit (2026-09-23)
+
+This records the **pre-implementation OBSERVED / DISPLAY POLICY COMPARISON**.
+The later bounded implementation completed the Human-selected three-line
+Relation status structure; this historical comparison is retained for
+decision provenance and is not an open implementation task. The current
+selected-status line is built from the existing Relation-name/endpoint
+display helper, while full Relation IDs remain in technical details. No new
+Relation display policy is opened by this inventory.
+
+The existing Relation Detail and related-Relation surfaces provide reusable
+evidence but not an automatic policy for this status line: they prefer
+trimmed endpoint Names, disambiguate duplicate Names with the existing
+eight-character-or-longer ID prefix, and retain full IDs in technical
+details. Empty endpoint Names currently fall back to the existing raw ID
+value. The normal Entity deletion contract removes incident Relations, so a
+new orphan fallback policy is not implied.
+
+The bounded comparison covered: keeping the full ID; Relation Name primary
+with an ID auxiliary; Relation Name plus endpoint Names; a direction-neutral
+natural relationship presentation without Source/Target labels; a short ID
+auxiliary; and reuse of the existing Detail/card data policy. Full IDs have
+the best uniqueness and diagnostic value but the weakest first-glance
+comprehension and the highest narrow-width risk. Name-first alternatives are
+more readable but require explicit handling for unnamed or duplicate
+Relations and for long EN/JA wrapping. Endpoint composition is more
+informative but is longer and raises a direction/punctuation decision.
+
+Recommended next checkpoint (not a decision): compare a Name-first status
+line with the existing endpoint-label fallback, while keeping the canonical
+full Relation ID in Relation Detail technical details. Human must choose
+whether unnamed Relations use the natural endpoint pair or an ID fallback,
+and whether endpoint names appear for named Relations. No implementation is
+authorized by this audit.
+
+### 2026-09-23 session status inventory
+
+This inventory separates remaining evidence or decision gaps from work that
+was accepted or completed during the session. It does not authorize
+application, User Guide, sample, schema, Validator, or runtime changes.
+
+#### Accepted / completed and excluded from open work
+
+| Candidate | Classification | Current evidence | Minimum next checkpoint |
+| --- | --- | --- | --- |
+| LiaisonScape selected Entity status Name display | **ACCEPTED / CLOSED** | At 390x844, a long selected Name wrapped within a 343px status box (x=16..359); document scroll width equaled the 390px viewport. Two same-name Entities remained independently selectable and produced the same name-based status; EN/JA integration tests cover empty-name ID fallback. Canvas tap cleared the status; locale switching updated the prefix. Current Dataset-open path clears selection. NarrativeLine's related Event→Entity Detail navigation was checked separately at 390px and stayed within a 390px document width. No source changes were needed. See [acceptance result](narrativeline-entity-selection-status-narrow-acceptance1-result.md). | None. Other selection-policy or display changes require a separate Human decision. |
+| LiaisonScape Pin / Unpin User Guide coverage | **IMPLEMENTED / GUIDE COVERAGE UPDATED** | The EN/JA guides now document Pin/Unpin in Entity Detail and the Entity context menu, its Explicit Auto Layout constraint meaning, the working-state boundary, and persistence through Save node coordinates. The guides also record the related Add Relation empty-Entity boundary and explicit Auto Layout preview flow. Runtime, Pin semantics, Dataset, and Export behavior were not changed by this documentation checkpoint. |
+
+- NarrativeLine narrow Header robustness: **LOCAL ACCEPTANCE PASS / CLOSED**.
+  Current local correction, narrow cold-load/reload and SPA flow, EN/JA,
+  focus-visible, and horizontal bounds were verified; the live Public artifact
+  also passed the tested Chromium 390px flow but its exact source revision is
+  unidentifiable. Physical-device reproduction/deployment of the correction is
+  not claimed. See [acceptance result](narrativeline-narrow-header-robustness-acceptance1-result.md).
+
+#### Remaining open follow-ups and decisions
+
+- LiaisonScape Detail modal: **LOCAL MATRIX ACCEPTED / NO DEFECT** for the
+  tested portrait/landscape browser matrix; physical safe-area and OS-keyboard
+  coverage remains environment-specific follow-up.
+- LiaisonScape phone-landscape graph-canvas expansion: **EXPLORATORY / HUMAN
+  SCOPE DECISION PENDING**; no feature adoption is recorded.
+
+#### Completed and excluded from the open inventory
+
+The following are not re-registered as open tasks because current evidence and
+the session's accepted boundaries treat them as complete or already covered:
+
+- LiaisonScape zero-Node Add Relation disabled entry-point correction;
+- selected Relation three-line status structure, Entity-status typography
+  alignment, and removal of the obsolete curve-guidance message;
+- the accepted browser-confirmed range for Entity/Relation selection display;
+- NarrativeLine Entity Create form-width correction;
+- Dataset Handoff audit and Hub link-registry verification;
+- History 2 `position + circa`, Dataset-wide H1-to-H2 upgrade, and their
+  accepted preservation boundaries.
+
+The Relation technical Object ID remains a separate accepted technical-detail
+surface. None of these completed boundaries is reopened by the remaining
+verification or documentation candidates above. Existing dirty and untracked
+work in e2r-spec, NarrativeLine, and LiaisonScape remains outside this record
+and must be preserved.

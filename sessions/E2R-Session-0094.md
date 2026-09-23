@@ -415,3 +415,50 @@ Research result or specification decision had been recorded; both Relative
 Time and History 2 Research were then **NOT STARTED**. The Relative Time status
 is superseded only by the checkpoint sync above. No UI acceptance or Human
 decision recorded in this historical reconciliation is reopened.
+
+### Relative Time extensible-vocabulary direction sync — 2026-09-24
+
+The Human-selected broader Relative Time design/research direction is recorded
+in [Relative Time Extensible Temporal Assertion Direction 1](../docs/relative-time-extensible-temporal-assertion-direction1.md),
+committed as `d0d6f54947b43fa4e4bad8e646bc01b6135f9a62` (`docs: record
+extensible Relative Time direction`). Relative Time is to be organized as an
+extensible temporal-assertion vocabulary for present and future applications,
+not as an application-specific feature. This is a non-normative direction;
+it does not adopt semantics, schema/version, Stable status, Validator/runtime
+behavior, solver, or application implementation.
+
+The earlier Human-selected `before` / `after` bounded qualitative direction
+remains valid. Its proposal (`9b3eadb479f35f5920128de941332b4be8fef835`)
+remains non-normative evidence and is not withdrawn, but a standalone adoption
+disposition is not the current next checkpoint. The broader vocabulary's
+semantic contract is to be organized through research/design before schema or
+version work; this does not itself select further semantics or implementation
+scope.
+
+The selected direction organizes qualitative `before` / `after`, interval
+topology (`within` / `contains`, `overlap`, `touching`, and
+`same-temporal-extent`), existing `same-instant`, and the existing
+calendar-granule / elapsed-offset candidates as distinct families. It records
+one Relation per Recorded assertion, no required mirror Relation, possible
+coexistence of independent Relations for the same Object pair, and no forced
+exclusive classification. History does not automatically create, overwrite,
+or refine Recorded Relations; History-derived results remain separate
+Derived/inference responsibilities without automatic write-back.
+
+Point-like Event `within` period Event is a selected direction; exact
+boundary/applicability rules remain open. Period Events do not automatically
+require or create start/end Events; an optional future UI suggestion for a
+separately meaningful start/end Event remains unimplemented. Gantt and other
+precise scheduling needs are future extension space, and coarse `before` /
+`after` is not to be reinterpreted as a boundary scheduling rule. Allen
+interval algebra is a reference, not a compatibility or adoption claim.
+
+This newer current-state sync supersedes the earlier sequencing implication
+that standalone `before` / `after` adoption or an interval-topology-only
+checkpoint should proceed next. The earlier Branch B, interval-direction, and
+pre-selection entries remain historical records. The separate Timeline
+presentation direction remains separate. `H2-POSITION-CIRCA` stays
+accepted/closed; History 2 deferred shapes, `same-instant` laws, detailed
+interval boundaries, Derived rules, solver policy, and Causal order / Temporal
+Perspectives remain unadopted or separate. No schema, version, Validator,
+application, or UI work was started; push/deploy state is unchanged.

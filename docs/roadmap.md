@@ -2234,6 +2234,82 @@ remain open; no new priority among implementation branches is set. The
 H2-POSITION-CIRCA accepted/closed boundary and History 2 deferred-shapes
 status are unchanged.
 
+### Human-selected next-workstream sequence — Relative Time then Documentation IA (2026-09-24)
+
+The current Relative Time atomic Recorded-assertion checkpoint is the
+immediate work to close. Its [adoption-readiness audit](relative-time-atomic-semantics-adoption-readiness1.md)
+was committed as `53a7ae283003edac865161c4666c08f38023c361`; the atomic wording
+proposal remains non-normative pending a separate Human disposition. The
+sequence selected for the next work is:
+
+1. Close the adoption-readiness review checkpoint.
+2. Obtain and record the Human disposition of the atomic semantic proposal
+   (adopt, request revision, defer, or reject); this roadmap entry does not
+   choose that disposition.
+3. Complete only the minimum Relative Time project-state/documentation sync
+   needed to record that disposition.
+4. Then begin a separate **Documentation Information Architecture / Roadmap
+   Physical Modularization** Human structure-decision checkpoint.
+5. Treat any actual directory changes, file moves/renames, archive migration,
+   or roadmap split as a later, separately reviewed checkpoint after that
+   structure decision.
+
+This sequence does not wait for all Relative Time work to finish: schema or
+version integration, machine evaluation, Derived semantics, Validator work,
+and runtime/application implementation are not prerequisites to starting the
+Documentation IA structure decision. Nor does it authorize any of them.
+
+The [Documentation IA / Roadmap Modularization Audit](documentation-information-architecture-roadmap-modularization-audit1-result.md)
+and its recommendation to retain existing paths and one roadmap for now,
+strengthen navigation/current-status responsibility, and require a separate
+Human structure decision remain historical evidence of that audit's
+recommendation. The earlier H2-POSITION-CIRCA closure gate is already
+historically satisfied; this newer sequencing decision places the structure
+decision after the current atomic Relative Time disposition instead. The
+latest Human-selected planning direction for that structure decision is
+recorded below; neither entry itself selects a directory layout, archive
+target, split unit, move/rename plan, or link-compatibility policy.
+
+The audit's 2026-09-19 inventory found 613 files under `docs/` and an
+11,508-line roadmap. A read-only count on 2026-09-24 finds 651 files under
+`docs/` (649 Markdown files) and 13,315 lines in `docs/roadmap.md`. These
+figures support revisiting the information architecture; they are not a
+structure decision or authorization to migrate files.
+
+#### Current Human-selected Documentation IA review direction (2026-09-24)
+
+The next Documentation IA structure decision will review roadmap length and
+the flat `docs/` root together as one information-architecture workstream.
+The latest read-only inventory above records 649 Markdown files under
+`docs/`, many at the same root level, while `roadmap.md` carries current
+planning alongside extensive completed, superseded, and historical chronology.
+The Human-selected direction is to evaluate how current planning authority
+can remain easy to find without growing the flat root or duplicating detailed
+checkpoint evidence.
+
+The first high-impact structural candidate to evaluate is separating
+completed/superseded/historical chronology from the current roadmap body. The
+future `docs/roadmap.md` is intended to remain a concise planning entry point
+for current status, priority, dependencies, active workstreams, and the next
+Human decision. Dedicated decision, audit, and result documents remain the
+authority/evidence for checkpoint detail; the roadmap should link rather
+than duplicate that detail.
+
+Issue-by-issue files are not the default direction because they would further
+increase the already large document inventory. If chronology separation alone
+proves insufficient, a small number of broad responsibility/domain units may
+be considered, but their boundaries are not selected. The `docs/` flat-root
+organization and roadmap length are to be evaluated together, not treated as
+unrelated cleanup tasks.
+
+This updates the *sequencing and questions for the next Human structure
+decision*, not the structure itself. The prior audit's single-roadmap and
+existing-path recommendation is retained as historical evidence, while the
+upcoming decision is explicitly to reconsider whether one roadmap remains
+appropriate and whether chronology should be separated first. No directory
+structure, archive location, split unit, compatibility-link policy, or
+migration is approved here.
+
 > Historical snapshot — superseded by the current `NL-H2-R1` entry near the
 > end of this roadmap. The following readiness text records the pre-acceptance
 > state and is retained for chronology.

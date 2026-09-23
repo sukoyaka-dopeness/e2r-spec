@@ -2729,14 +2729,12 @@ The same F2-LS1 manual acceptance added two cross-application UX questions:
   drag-handle plus disclosure-trigger contract. Runtime implementation remains
   a separate checkpoint; the `720px` handoff and no-keyboard-repositioning
   boundary remain unchanged.
-- **Cross-App Dataset Replacement destructive styling parity** — compare
-  NarrativeLine and LiaisonScape for modified-only, pending-only, and
-  modified-and-pending states, including Cancel, Discard and Continue, Discard
-  work and Continue, Export and Continue, and Export Dataset. Evaluate color,
-  background, border, text emphasis, action hierarchy, safe-side initial focus,
-  disabled state, hover, focus-visible, narrow layout, EN/JA, and danger
-  semantics. The target is equivalent visual hierarchy for equivalent semantic
-  risk, not identical CSS or DOM.
+- **Cross-App Dataset Replacement destructive styling parity — ACCEPTED / CLOSED**
+  — the modified-only, pending-only, and modified-and-pending action matrices,
+  safe-side focus, danger/hover hierarchy, EN/JA copy, and representative
+  normal/narrow browser surfaces were audited. NarrativeLine's weaker
+  destructive treatment was corrected locally for this dialog only. See the
+  [audit result](cross-app-dataset-replacement-destructive-styling-parity-audit1-result.md).
 
 The following observations are recorded as non-issues and are not additional
 roadmap items: extreme-narrow Footer wrap/clip differences caused by available
@@ -2754,11 +2752,13 @@ and extreme-narrow brand behavior.
 
 ### Cross-App shell action hover parity
 
-Record a future bounded audit for Home and locale controls that share a Header
-action role. Semantic behavior and keyboard accessibility are accepted, but
-their hover / focus-visible visual hierarchy is not currently identical. The
-audit should compare the controls across EN/JA and narrow layouts without
-assuming identical DOM or CSS.
+**ACCEPTED / CLOSED — LOCAL HOVER CORRECTION.** The bounded Chrome audit found
+matching 3px purple `focus-visible` rings and matching locale hover colors, but
+LiaisonScape's bordered Home anchor lacked hover feedback while NarrativeLine
+Header buttons and both locale controls had it. LiaisonScape now gives that
+Home anchor the existing light-purple background/purple border hover treatment.
+EN/JA, representative wide, and 390px browser states pass without overflow.
+See [audit result](cross-app-shell-action-hover-focus-parity-audit1-result.md).
 
 ### Home-first Dataset acquisition hierarchy
 
@@ -12595,6 +12595,40 @@ follow-ups. Existing historical entries that describe earlier open gates are
 preserved as history; this entry is the current release-readiness status.
 
 ### E2R-NARRATIVELINE-NEXT-PHASE-AND-SOURCE-HANDOFF-PLANNING1 (2026-09-17)
+
+### E2R-NARRATIVELINE-VITE-24678-WARNING-DIAGNOSTIC1 (2026-09-23)
+
+The follow-up [test WS cleanup result](narrativeline-vite-test-ws-cleanup1-result.md)
+is **IMPLEMENTED / ACCEPTED / CLOSED**. All 18 current NarrativeLine Vite
+middleware test servers use SSR loading/transform only and do not consume
+WebSocket/HMR APIs. Their per-server options now set `ws:false`, which disables
+the unnecessary listener itself without changing assertions or test semantics.
+Full tests pass 259/259 naturally; captured output has zero port 24678
+warnings, zero listener observations during the run, and zero post-run
+listeners/workers. Lint, build, and diff checks pass. No product/runtime or
+Public behavior changed. Future tests that exercise Vite WS/HMR must opt in
+explicitly for their own server.
+
+The [Vite 24678 warning diagnostic result](narrativeline-vite-24678-warning-diagnostic1-result.md)
+classifies the warning as **REPRODUCED TWICE / TEST-ONLY OPERATIONAL / ACCEPTED
+NON-BLOCKING / CLOSED**. A fresh `npm test` run emitted 89 middleware Vite
+WebSocket port warnings while completing naturally with 259/259 passing tests
+and exit code 0. A second full run independently reproduced the warning and
+also passed 259/259. Listener ownership was transiently in Node test workers; no
+24678 listener or test worker remained after exit. The current middleware test
+calls disable HMR but do not disable Vite's WebSocket server; production/dev
+Vite configuration is separate. No code/configuration change was made because
+the warning has no demonstrated test, process-lifecycle, product-runtime, or
+Public behavior impact. The previous LiaisonScape harness mitigation remains
+supporting evidence only; no cross-repository change was made.
+
+The follow-up [trigger audit](narrativeline-vite-24678-warning-trigger-audit1-result.md)
+inspected installed Vite 8.1.5 and reproduced the trigger with eight parallel
+middleware-mode servers: one bound fixed WS port 24678 and seven logged
+`EADDRINUSE`. `hmr:false` does not disable this listener; `server.ws:false`
+does. NarrativeLine's parallel test workers contribute the condition, but no
+cleanup leak or runtime impact was found. The existing warning remains
+**ACCEPTED / CLOSED** without test changes or output suppression.
 
 The [NarrativeLine next-phase and source-handoff planning result](e2r-narrativeline-next-phase-and-source-handoff-planning1-result.md)
 classifies the current state as **NARRATIVELINE NEXT PHASE CLEAR / SOURCE

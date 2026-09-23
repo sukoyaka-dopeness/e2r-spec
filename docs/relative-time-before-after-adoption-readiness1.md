@@ -12,10 +12,12 @@ adopt that proposal and does not determine whether E2R should promote Relative
 Time to Stable.
 
 The proposal is limited to direct pairwise `before` / `after` assertions and
-their endpoint orientation. Its stated blocker to treating the wording as
-complete normative semantics is the unresolved temporal referent / assertion
-scope. This document isolates that issue rather than reopening topics already
-excluded from the selected Branch B scope.
+their endpoint orientation. The proposal and later project direction treat a
+user-recorded Relation as Recorded evidence and keep History-derived
+relationships separate. This document asks whether the direct Recorded claim
+can be normatively recognized without requiring a particular History
+assertion or start/end/extent grounding, while leaving any meaning beyond the
+claim itself unspecified.
 
 ## Current authority and evidence
 
@@ -27,10 +29,11 @@ excluded from the selected Branch B scope.
   relative to it; `before` makes the target earlier than the source, and
   `after` makes it later. Core Relation direction itself supplies no temporal
   meaning.
-- The proposal says that temporal referent / scope and grounding when an
-  endpoint has multiple History assertions remain Human decisions. It also
-  states that this unresolved scope prevents treating the wording as complete
-  normative semantics.
+- The proposal lists temporal referent / scope and the treatment of endpoints
+  with multiple History assertions as unresolved. It does not establish that
+  an assertion must be grounded in a History assertion; the later Human-
+  selected roadmap direction says History-derived relationships are a
+  separate question and are not automatically Recorded Relations.
 - Minimum Temporal-Precedence Research 1 and the broader Temporal Research
   Human Decision Preparation document distinguish recorded assertions from
   Derived evidence and list Event occurrence, Object temporal position, and a
@@ -42,68 +45,67 @@ excluded from the selected Branch B scope.
   implementation evidence does not resolve the referent question or confer
   normative authority.
 - The committed roadmap direction for a future `within` + `overlap` checkpoint
-  is separate. It distinguishes Recorded from possible Derived relations and
-  does not expand this direct `before` / `after` proposal.
+  is separate. It records a direction to consider these as distinct,
+  explicitly user-recorded Relations rather than automatically classifying
+  them from History, while distinguishing possible Derived relations. It does
+  not adopt their semantics or expand this direct `before` / `after` proposal.
 
 ## The one remaining semantic decision
 
-### RT-BR-1 — What temporal referent does a direct assertion compare?
+### RT-BR-1 — Is a bounded qualitative Recorded claim sufficient?
 
-**Decision question.** When a Relative Time `before` / `after` assertion
-connects two Core Objects, what temporal fact is being compared, and how is
-that fact identified when an endpoint has more than one History assertion?
+**Decision question.** Should a direct Recorded `before` / `after` assertion
+be recognized as a qualitative temporal-precedence claim between the user-
+selected Core Objects, without requiring additional grounding in a particular
+History assertion or in a start/end/extent referent? Or is that bounded claim
+insufficient for normative semantics until an explicit temporal-referent
+model is defined?
 
 **Already settled and not up for reconsideration here:** the `sourceId` /
 `targetId` orientation and the direct target-relative meanings of `before` and
-`after` stated above. This decision concerns what those endpoint Objects stand
-for temporally, not which endpoint is earlier.
+`after` stated above. The question is not whether the user must also supply
+History data. It is whether the explicit Relation claim alone can be the
+Recorded evidence, with no extra interpretation inferred beyond what it
+asserts.
 
 **Choices for Human consideration (not ranked):**
 
-1. **Object temporal position.** Treat the assertion as comparing the
-   temporal positions of the referenced Objects without restricting it to
-   Events. A normative text would still need to say what constitutes the
-   relevant position where an Object has multiple History assertions, or
-   explicitly limit interpretation to cases where the compared position is
-   identifiable. This does not make every Entity or Event intrinsically
-   point-like.
-2. **Event occurrence.** Restrict the referent to an Event's occurrence.
-   This narrows applicability and would require the contract to state how
-   Event occurrence is represented or identified. Choosing an Event does not
-   automatically make its occurrence a single temporal point: an Event may
-   have duration, and this option alone does not say whether comparison means
-   its beginning, ending, or extent as a whole. It would not silently assign
-   the same meaning to an Entity's existence or to a duration/extent.
-3. **Explicitly scoped temporal referent.** Require a separately identified
-   temporal referent or perspective for the comparison. This could clarify
-   which of multiple temporal claims is meant, but may require a model or
-   representation beyond the current bounded proposal; that expansion would
-   need separate approval before being designed or specified.
-4. **Defer adoption.** Keep the proposal non-normative and the current draft
-   status unchanged until the referent question is resolved. No data or
-   implementation changes follow.
+1. **Recognize the bounded qualitative claim.** Treat the user-authored
+   Relation itself as the Recorded claim that one selected Core Object is
+   temporally before/after the other. Do not require a particular History
+   assertion or select one automatically when several exist. This does not
+   infer start-to-start, end-to-start, duration, whole-extent, or boundary
+   facts beyond the claim. If the user does not know or choose such a
+   relationship, no Relation need be recorded. A normative text may need a
+   short clarification that the claim carries no additional endpoint-level
+   precision or History grounding.
+2. **Defer until a referent model is defined.** Treat a qualitative claim
+   between Core Objects as insufficiently specified for normative adoption
+   unless a temporal referent model is first defined. The proposal remains
+   non-normative / not adopted; this choice does not select which referent
+   model to design.
 
-These choices must not conflate an Entity's temporal position, an Event's
-occurrence, a duration, and a temporal extent. In particular, this proposal
-does not define whether an Event occurrence is point-like or extended, whether
-its beginning, ending, or whole extent is compared, interval endpoints,
-boundary occurrence, elapsed duration, or which of several History assertions
-is authoritative. These remain separate unresolved questions; selecting
-Event occurrence would not settle them. Treating any of those as the same
-referent would require an explicit Human decision and appropriate scope
-approval.
+**Limits under either choice.** Entity, Event, duration, temporal extent, and
+boundary are not interchangeable. An Event occurrence need not be a single
+point. This proposal does not infer a start, end, extent comparison,
+duration, or boundary condition from `before` / `after`; it also does not
+select or require a History assertion as the basis for a direct Recorded
+claim. Any History-derived relationship remains a separate Derived/inference
+question. Multiple History assertions are not automatically selected or
+collapsed. The user is not required to record a Relation when the relationship
+is unknown.
 
-**Effect on the proposal.** Options 1 or 2 could potentially keep the proposal
-bounded, but the selected referent and any multiple-History grounding limit
-would need to be stated clearly in the normative text. Option 3 may require a
-new or expanded proposal and a separately approved scope. Option 4 leaves the
-proposal unchanged and unadopted. No option changes the already-reviewed
-endpoint orientation unless Human separately requests a revision.
+**Effect on the proposal.** Choice 1 could retain the direct pairwise scope
+while making its non-inference boundary explicit; it does not decide any
+start/end/extent semantics. Choice 2 leaves the proposal unchanged and
+unadopted pending a separate referent-model decision. Neither choice changes
+endpoint orientation or authorizes History comparison, Derived output,
+schema/runtime changes, or implementation.
 
-**Can it be deferred?** Yes, by choosing option 4. Under the proposal's own
-readiness statement, a normative adoption decision should wait until this
-semantic scope is resolved. The choice does not authorize schema, Validator,
-runtime, or application implementation.
+**Can it be deferred?** Yes. Choosing option 2 retains the present draft and
+proposal status without changing data or implementation. Even choosing option
+1 here would be a semantic direction only; normative wording and adoption
+would still require a separate explicit Human review and approval.
 
 ## Matters deliberately not brought back as decisions
 

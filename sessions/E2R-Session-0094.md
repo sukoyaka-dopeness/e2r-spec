@@ -10,7 +10,7 @@ raised during the session, record their evidence and completion boundaries,
 and diagnose the NarrativeLine narrow Header wrapping observed on the current
 Public site.
 
-Status: `GUIDE COVERAGE UPDATED / BOUNDED UI ACCEPTANCE CLOSED / RELATIVE TIME RESEARCH RESULT PREPARED FOR HUMAN REVIEW / HISTORY 2 DEFERRED-SHAPES RESEARCH RESULT PREPARED FOR HUMAN REVIEW`
+Status: `GUIDE COVERAGE UPDATED / BOUNDED UI ACCEPTANCE CLOSED / RELATIVE TIME AND HISTORY 2 RESEARCH RESULTS PREPARED / TEMPORAL HUMAN DECISION PREPARATION COMPLETE / NO DECISIONS ADOPTED`
 
 The bounded UI checkpoints recorded below are closed where their linked
 acceptance results say so. The original device-specific Header observation,
@@ -21,6 +21,10 @@ prepared and committed for Human review; it remains exploratory and
 non-normative. The History 2 deferred-shapes authoring-scope Research result
 has also been completed and committed for Human review; it is exploratory and
 non-normative and does not adopt a deferred shape or implementation scope.
+The cross-workstream Temporal Research Human Decision Preparation is also
+committed. It organizes options and dependencies for Human review; no
+substantive option, priority, sequence, or implementation scope has been
+selected.
 
 ## Work completed and accepted
 
@@ -262,6 +266,21 @@ decision queue are unchanged: review the Relative Time and History 2 Research
 results and process Human decisions before considering any bounded
 implementation scope. Temporal Perspectives and Causal order remain
 later/separate workstreams.
+
+### Temporal Research Human Decision Preparation sync — 2026-09-23
+
+The [decision-preparation document](../docs/temporal-research-human-decision-preparation1.md)
+is committed as `f1f7a21d6cf4da3b66df966dd38254d5ef4bcb44`
+(`docs: prepare temporal research human decisions`). Its status is
+**DECISION PREPARATION / NON-NORMATIVE — NO DECISIONS ADOPTED**. It consolidates
+the open Relative Time and History 2 decision points and their conditional
+dependencies so Human can address only the decisions relevant to a future
+bounded proposal. It does not adopt normative semantics, a deferred authoring
+shape, or any priority, sequence, or implementation scope. The accepted
+H2-POSITION-CIRCA boundary remains unchanged; the Relative Time candidate and
+the three broader History 2 shapes remain unadopted/deferred. The Human
+decision queue, original handoff ordering, and separate Causal order / Temporal
+Perspectives workstreams are unchanged.
 
 ## Validation summary
 

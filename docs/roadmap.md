@@ -2101,6 +2101,15 @@ the accepted H2-POSITION-CIRCA boundary, or authorize specification, schema,
 Validator, or application changes. The three broader shapes remain deferred,
 and the existing sequence and priorities are unchanged.
 
+The cross-workstream [Temporal Research Human Decision Preparation](temporal-research-human-decision-preparation1.md)
+is complete and recorded at commit `f1f7a21d6cf4da3b66df966dd38254d5ef4bcb44`.
+It organizes the unresolved Relative Time and History 2 questions, options,
+dependencies, and deferrable choices; it adopts **no Human decision**,
+normative semantics, deferred authoring scope, priority, sequence, or bounded
+implementation. `position + circa` remains accepted/closed, the Relative Time
+candidate remains unadopted, and the three broader History 2 shapes remain
+deferred. Causal order and Temporal Perspectives remain separate workstreams.
+
 The [History 2.x and Relative Time Candidate Cross-Audit](../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md)
 records a non-normative candidate draft and cross-audit. It keeps History
 `1.0.0` stable, treats `position`, `bounded-point`, and `temporal-extent` as

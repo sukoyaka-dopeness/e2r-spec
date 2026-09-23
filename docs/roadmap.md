@@ -88,6 +88,150 @@ Future visual, Lineage, deferred-History-2, and product-quality work remains
 separate follow-up and does not reopen this closure or promote deferred
 History 2 authoring.
 
+### Post-release LiaisonScape / NarrativeLine observation audit — 2026-09-23
+
+This is a read-only audit record based on the current application source,
+focused tests, existing result documents, current roadmap authority, and the
+served public Pages entry points. No application, sample, schema, Validator,
+or runtime behavior was changed by this audit. Existing accepted Handoff,
+History 2, graph interaction, and deletion boundaries remain closed.
+
+The classifications below are dated audit observations, not all current task
+statuses. Later evidence and dispositions are recorded in the follow-up
+sections and linked acceptance results; historical observations are retained
+without reopening a closed boundary.
+
+| Observation / surface | Classification | Evidence at audit time and bounded next step |
+| --- | --- | --- |
+| LiaisonScape narrow Entity/Relation Detail modal at approximately 390px | **INITIAL OBSERVATION; BOUNDED MATRIX LATER ACCEPTED / NO DEFECT** | At audit time, `.detail` was width-bounded with internal vertical scrolling and fields were width-constrained, but no explicit safe-area, keyboard, or orientation contract was identified. The later narrow UI follow-up below records the tested portrait/landscape matrix as accepted with no defect. Physical safe-area and OS-keyboard coverage remains environment-specific follow-up; this is not a current claim of modal overflow. |
+| LiaisonScape phone landscape graph-canvas expansion | **EXPLORATORY / HUMAN SCOPE DECISION PENDING** | The current roadmap inventory retains this as a Human scope decision; no feature adoption is recorded. The earlier suggestion of an orientation audit is not authorization to implement or prioritize a landscape mode. |
+| LiaisonScape `Add Relation` with zero graph Nodes | **ALREADY COMPLETE / NO FOLLOW-UP** | The earlier audit confirmed the enabled-but-unsatisfiable entry point. The bounded entry-point guard has since been implemented and the accepted Node 1/self-Relation and multi-Node flows remain separate regression boundaries. No Relation, Core, schema, or Validator semantics are reopened. |
+| LiaisonScape selected Relation identity line | **ALREADY COMPLETE / NO FOLLOW-UP** | The earlier full-ID observation led to the accepted three-line Relation name/Source/Target status correction, Entity-status typography alignment, and removal of the obsolete curve-guidance message. Full Relation IDs remain in Relation Detail technical details; no new display-policy task is open here. |
+| LiaisonScape selected Relation curve guidance | **ACCEPTED / NO DEFECT** | The current source starts curve manipulation only for the selected edge, and the existing closure document/tests record the matching guidance and Escape/pointer-cancel behavior. No implementation change is authorized by this observation. |
+| NarrativeLine no-date Event creation and History notice | **ALREADY IMPLEMENTED / OBSERVATION MISMATCH** | Current `classifyHistoryCapability()` treats absent History as editable, and the Event Detail notice is used for candidate, unknown, unsupported, or mixed History states. The current tests pass for a new Dataset with no existing H1 records: circa initialization does not show the Dataset-wide migration confirmation. If the notice appears for a genuinely new no-History Event, the payload/state or served revision must first be identified; do not alter the accepted H1→H2 boundary. |
+| NarrativeLine public Pages revision for the History observation | **REVISION UNVERIFIABLE** | At audit time, the public entry point responded and served a NarrativeLine bundle containing the read-only copy, but the HTML/assets exposed no commit SHA or deployment metadata. The then-recorded local source was `0600465df14e561bcf176d23c5ba9c471bc45027`, versus `origin/main` at `db49ceff2aa38398d716001d9e1bca35bb46732f`; these are historical references, not current application-repository state. The served artifact could not be mapped to either revision from the available evidence. |
+| NarrativeLine English-label narrow Header wrapping | **HISTORICAL OBSERVATION; BOUNDED LOCAL ACCEPTANCE LATER CLOSED** | The reported initial wrap and its unconfirmed cause are retained as the original observation. The later [narrow Header acceptance result](narrativeline-narrow-header-robustness-acceptance1-result.md) records the local robustness correction and tested narrow EN/JA, navigation, focus-visible, and overflow checks as **ACCEPTED / CLOSED**. The original device-specific observation is not claimed disproven; physical-device reproduction or confirmation of a deployed artifact containing the correction remains outside that bounded closure. |
+
+#### Detailed audit boundary
+
+The LiaisonScape Relation Detail already renders endpoint names when available,
+and the Relation service resolves endpoints from Entities or Events. The
+Entity deletion contract refuses deletion while incident Relations remain;
+therefore normal accepted deletion does not leave an orphaned Relation that
+would require a new fallback presentation. Malformed or hidden graph records
+may still expose raw IDs, which is a diagnostic fallback rather than evidence
+that deleted Nodes are normally retained.
+
+The existing human-facing short-ID rule was confirmed in application source:
+endpoint and related-Relation displays start at an eight-character prefix and
+extend it only to resolve a collision. This is existing LiaisonScape evidence
+and remains a hypothesis scoped to human-facing Object ID hints; it does not
+authorize applying the rule to the selected-status line without a bounded
+presentation decision.
+
+The current selected-edge interaction is consistent with the accepted Direct
+Graph Authoring closure: only a selected Relation edge starts the curve-drag
+path, and the guidance is conditional on Relation selection. The audit did not
+reopen viewport-toolbar, graph routing, or touch interaction work.
+
+#### Narrow UI audit follow-up — 2026-09-23
+
+This additional pass remains read-only and narrows the evidence without
+overwriting the earlier classifications. No application, CSS, test, sample,
+schema, Validator, or runtime change was made.
+
+| Application / surface | Classification | Additional local-browser evidence |
+| --- | --- | --- |
+| LiaisonScape Entity Detail / Relation Detail at 390px portrait and 844×390px landscape | **ACCEPTED / NO DEFECT** for the tested matrix | The local Vite app opened the Lighthouse sample through the normal sample action. At 390px portrait, the Entity Detail modal was `x=8, width=374, right=382` within the 390px viewport; Relation Detail was also `x=8, width=374, right=382`. Long Relation name/description values stayed inside the fields and used field-level scrolling/wrapping. At 844×390px landscape, both tested modal forms stayed within the viewport (`x=134, width=576, right=710`, `y=16, height=358, bottom=374`) and used internal vertical scrolling for the longer form. No horizontal document overflow was observed. This does not claim a physical-device safe-area or OS keyboard audit; those remain a separate environment-specific acceptance concern if the original report persists. |
+| NarrativeLine narrow Header with `戻る` + `English` | **INITIAL LOCAL MATRIX DID NOT REPRODUCE; BOUNDED ACCEPTANCE LATER CLOSED** | Cold/reload and SPA navigation were exercised through the local sample flow. At 390px, the Header buttons measured `戻る=46.44px` and `English=67.03px`, both at `y=16..52`; the same row remained intact at 375, 360, 350, 340, 320, and 300px with no document horizontal overflow. After toggling, the English-locale labels measured `Back=50.63px` and `日本語=65px`, also on one row. This non-reproduction remains part of the audit history. The later [narrow Header acceptance result](narrativeline-narrow-header-robustness-acceptance1-result.md) closes the bounded local acceptance; it does not claim equivalent physical-device reproduction or identify the Public artifact's source revision. |
+
+For the LiaisonScape pass, Escape closed the open Relation Detail modal and keyboard Tab produced the existing visible focus outline on the graph action. The modal source continues to provide a backdrop close button, dialog semantics, and `overflow: auto`; no accepted focus or dismissal contract was changed. For NarrativeLine, the Header flex/grid source was inspected together with the rendered button widths; no implementation conclusion is drawn from the non-reproduction.
+
+#### Add Relation zero-node audit follow-up - 2026-09-23
+
+This focused audit records the pre-fix evidence and classification at that
+checkpoint. It is retained as historical provenance; later roadmap status
+records the bounded entry-point guard as implemented. No application, CSS,
+test, sample, schema, Validator, or runtime behavior was changed by this audit.
+
+Audit-time classification: **DEFECT CONFIRMED / BOUNDED FIX READY**.
+
+In the local LiaisonScape browser at a 390px portrait viewport, a newly
+created empty Dataset reported `0` Entities and `0` Relations, while the
+`Add Relation` action was visible, enabled, and keyboard-focusable
+(`tabIndex=0`). Pointer activation opened the Relation Creation dialog. Both
+endpoint selects contained only their placeholder option, and the Create
+Relation action was still enabled. Activating it produced the existing
+localized `relation_endpoint_required` refusal (`Source Entity` and `Target
+Entity` must be selected); the Dataset remained `0/0` and the dialog stayed
+open. Document scroll width remained equal to the 390px viewport.
+
+With one locally created Entity, the summary changed to `1` Entity and `0`
+Relations, the Add Relation action remained enabled, and both endpoint selects
+contained the Entity as a valid option. This is a valid creation precondition:
+the current Relation service permits a self-Relation, so the relation count is
+not the gating condition. The Lighthouse Restoration sample browser surface
+also showed `10` Entities and `14` Relations with Add Relation enabled.
+
+At audit time, the source boundary was narrow and application-local:
+`src/App.tsx` disabled the action only when no Dataset existed or an active
+preview was shown; it did not check `graph.nodes.length`.
+`src/services/RelationService.ts`
+requires both endpoint IDs to resolve to existing Entities and returns the
+original Dataset on refusal. Existing direct-graph documentation records the
+same refusal/no-mutation boundary and permits self/parallel Relations.
+
+The audit's bounded implementation candidate was an entry-point guard for the
+LiaisonScape Add Relation action when `graph.nodes.length === 0`, without
+changing Relation semantics or the CreationDialog. The later inventory above
+records that guard as implemented and the accepted Node 1/self-Relation and
+multi-Node flows as separate regression boundaries. This historical candidate
+does not request reimplementation or reopen the completed boundary.
+
+#### Public-web evidence boundary
+
+The following public entry points returned HTTP 200 on 2026-09-23:
+
+- `https://sukoyaka-dopeness.github.io/e2r-liaison-scape/`
+- `https://sukoyaka-dopeness.github.io/e2r-narrative-line/`
+- `https://sukoyaka-dopeness.github.io/e2r-hub/`
+
+The served HTML exposes product titles and hashed JavaScript assets, but no
+commit or deployment revision. Public UI state requiring Dataset interaction
+could not be used to establish a revision-specific reproduction in the
+available browser surface. Therefore public revision claims remain
+**REVISION UNVERIFIABLE**, not evidence that the local source is stale or that
+the reported behavior is reproduced.
+
+#### Validation and retained work
+
+The figures below are the audit-time validation snapshot, not a statement of
+current application-repository status. Later [shell parity](cross-app-shell-action-hover-focus-parity-audit1-result.md)
+and [Dataset Replacement parity](cross-app-dataset-replacement-destructive-styling-parity-audit1-result.md)
+results record LiaisonScape's full suite at 641/641; the earlier 635/636
+result and its unrelated failure are retained here as historical diagnostic
+evidence.
+
+- LiaisonScape focused UI, Relation service, and deletion tests: **51/51 PASS**.
+- NarrativeLine History/H2 focused run: **PASS**; the new no-History Dataset
+  circa case passed.
+- e2r-spec `npm run validate`: **PASS**.
+- LiaisonScape full suite: **635/636 PASS**; the single failure is the
+  existing `tests/initial-layout-provider.test.ts` expectation of
+  `prototype` versus actual `fallback`, unrelated to these UI/History
+  observations. Repeated jsdom `attachEvent`/`detachEvent` diagnostics and
+  test-server port messages were environment noise, not new product failures.
+
+At that audit checkpoint, existing dirty and untracked work was preserved:
+NarrativeLine `AGENTS.md`,
+Entity Create/test changes; LiaisonScape `.tmp-*` and research/temp paths; and
+e2r-spec's two modified exploratory research files and `work/`.
+
+This record does not reopen accepted Relation Handoff, History 2
+`position + circa`, Relative Time preservation, Causal/Undated research, or
+any public-release closure. No implementation, commit, push, deploy, or
+publication was performed.
+
 ### How to maintain current and historical entries
 
 - Add a short current-status entry to this roadmap only when it changes the

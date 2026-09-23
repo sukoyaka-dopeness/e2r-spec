@@ -2084,6 +2084,16 @@ lifecycle, and provenance, while derived placement is not an adopted fact.
 Common-origin frame coordinates remain separate from these pairwise
 constraints.
 
+The [Relative Time minimum temporal-precedence Research result](../research/exploratory/e2r-relative-time-minimum-temporal-precedence-research1.md)
+is now recorded at commit `a88dd2c5f7d3f93b42e7e89c3cbf0fc8cb2fc784` as an
+**EXPLORATORY / RESEARCH RESULT — NON-NORMATIVE**, pending Human review. It
+compares current authority and implementation evidence and lists a minimum
+contract candidate plus unresolved Human decision points; it does not adopt the
+candidate, promote either draft, or authorize schema, Validator, runtime, or
+application changes. Relative Time semantics and derived-display adoption
+remain open. The separate History 2 deferred-shapes Research remains
+**NOT STARTED**; the existing sequence and priorities are unchanged.
+
 The [History 2.x and Relative Time Candidate Cross-Audit](../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md)
 records a non-normative candidate draft and cross-audit. It keeps History
 `1.0.0` stable, treats `position`, `bounded-point`, and `temporal-extent` as

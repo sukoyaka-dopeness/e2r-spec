@@ -10,13 +10,16 @@ raised during the session, record their evidence and completion boundaries,
 and diagnose the NarrativeLine narrow Header wrapping observed on the current
 Public site.
 
-Status: `GUIDE COVERAGE UPDATED / BOUNDED UI ACCEPTANCE CLOSED / RESEARCH HANDOFF NOT STARTED`
+Status: `GUIDE COVERAGE UPDATED / BOUNDED UI ACCEPTANCE CLOSED / RELATIVE TIME RESEARCH RESULT PREPARED FOR HUMAN REVIEW / HISTORY 2 RESEARCH NOT STARTED`
 
 The bounded UI checkpoints recorded below are closed where their linked
 acceptance results say so. The original device-specific Header observation,
 physical-device coverage, and exact Public artifact revision remain
 unverified; these limitations do not leave the bounded local acceptance open.
-The Relative Time and History 2 Research handoff remains unstarted.
+The Relative Time minimum temporal-precedence Research result has since been
+prepared and committed for Human review; it remains exploratory and
+non-normative. The separate History 2 deferred-shapes Research remains
+unstarted.
 
 ## Work completed and accepted
 
@@ -166,16 +169,19 @@ History 2 deferred-shapes authoring-scope comparison. Temporal Perspectives
 remains a later stage; no schema, Validator, solver, authoring, or Stable
 promotion was started in this session.
 
-### Prioritized next-work Research handoff — NOT STARTED
+### Prioritized next-work Research handoff — original session-start snapshot
 
 The user supplied a more detailed priority order for the next research phase.
-This plan is recorded here for the next session; it has **not** yet been
-executed, adopted as specification, or implemented.
+At the time this handoff was recorded, it had **not** yet been executed,
+adopted as specification, or implemented. The original plan and sequence are
+retained as a historical snapshot; the current checkpoint status is recorded
+below.
 
-Reconciliation status: **NOT STARTED**. The evidence inventory, Relative Time
-contract comparison, and History 2 deferred-shapes authoring-scope comparison
-remain future Research tasks; no conclusions or design decisions are implied
-by the completed UI/roadmap checkpoints recorded elsewhere in this session.
+Reconciliation status at handoff capture: **NOT STARTED**. At that point, the
+evidence inventory, Relative Time contract comparison, and History 2 deferred-
+shapes authoring-scope comparison remained future Research tasks; no
+conclusions or design decisions were implied by the completed UI/roadmap
+checkpoints recorded elsewhere in this session.
 
 1. **Lightweight evidence preparation:** assemble a Relative Time authority
    matrix; a `before` / `after` / `same-instant` source-target direction table;
@@ -224,6 +230,23 @@ Explicitly not being reopened by this plan: `position + circa`, H1→H2
 migration, NarrativeLine Entity Create width, Handoff acceptance, Hub registry
 confirmation, History 2 Candidate recognition, H2→H1 downgrade, PWA/offline,
 Lineage, or new semantics in Public Samples/User Guides.
+
+### Relative Time Research checkpoint sync — 2026-09-23
+
+The Relative Time minimum temporal-precedence Research is recorded in the
+[standalone exploratory result](../research/exploratory/e2r-relative-time-minimum-temporal-precedence-research1.md),
+committed as `a88dd2c5f7d3f93b42e7e89c3cbf0fc8cb2fc784`. Its status is
+**EXPLORATORY / RESEARCH RESULT — NON-NORMATIVE**, prepared for Human review.
+The candidate is not adopted; its Human decision points remain unresolved.
+No schema, Validator, runtime, or application implementation was changed.
+This synchronization records research progress only and does not change the
+existing Human decision queue or priority order.
+
+History 2 deferred-shapes authoring-scope Research remains **NOT STARTED**.
+The original recommended sequence is retained: that separate Research follows
+the Relative Time result, and any Human decisions are processed before a
+bounded implementation scope is considered. Temporal Perspectives and Causal
+order remain later/separate workstreams.
 
 ## Validation summary
 
@@ -322,9 +345,9 @@ At the start of this reconciliation, canonical e2r-spec was `main` at
   acceptance superseded it, without closing the phone-landscape Human scope
   decision or claiming physical-device verification.
 
-The standalone result documents and roadmap links for these checkpoints are
-present in the current e2r-spec HEAD. This reconciliation adds no new
-application acceptance, Research result, or specification decision. The
-Relative Time minimum temporal-precedence contract Research and History 2
-deferred-shapes authoring-scope Research remain **NOT STARTED**, as set out in
-the prioritized handoff.
+At the time of this earlier reconciliation, the standalone result documents
+and roadmap links for the UI checkpoints were present in HEAD and no new
+Research result or specification decision had been recorded; both Relative
+Time and History 2 Research were then **NOT STARTED**. The Relative Time status
+is superseded only by the checkpoint sync above. No UI acceptance or Human
+decision recorded in this historical reconciliation is reopened.

@@ -75,6 +75,50 @@ does not extend that transport contract. Private/authenticated Dataset
 handoff, account identity, server-side editing credentials, or new Handoff
 behavior would require separate design and acceptance.
 
+## Hosted Dataset management authority without user identity
+
+This is an exploratory authorization direction, not a hosting contract. A
+service could potentially let a holder of a Dataset-specific management
+capability perform permitted operations on that hosted copy without requiring
+a user account or login. That would authorize by possession of a credential;
+it would not prove that the credential holder is the same person who uploaded
+the Dataset. The distinction is:
+
+`Dataset identity != uploader identity != hosting-management authority`
+
+At publication time, one candidate flow would issue a management credential
+separately from the public Dataset URL or reference, then require the
+credential for management operations. The credential must not be stored in
+the portable E2R Dataset: downloading a public copy must not transfer
+authority over the hosting service's copy. A local publication/management
+receipt could help a publisher retain the URL and credential, but such a
+receipt would be local management information, not Dataset content, an E2R
+schema, or an interoperable artifact. Which operations it would authorize
+(for example, deletion, unpublication, or replacement) remains open.
+
+Candidate mechanisms include a bearer-style opaque secret and a
+signature-based capability using a public/private key pair. They are options
+to compare, not a selection; credential format, cryptographic scheme, API
+contract, storage, rotation, and transport are all undecided. This possibility
+also does not make anonymous public uploads safe, unlimited, or production
+ready. Abuse controls and service operations remain part of the research.
+
+Account/login-based management may be worth comparing where people need
+credential recovery, access from multiple devices, a list of their hosted
+Datasets, delegation, shared management, or collaborative editing. Those needs
+do not make an account model a prerequisite for portable Dataset use. If the
+requirement is literally that only the uploading person may manage or delete a
+hosted copy, possession of a capability is not equivalent: an identity and
+authentication architecture would be needed to establish that claim.
+
+Open security and operations questions include loss of a credential making a
+hosted copy unmanageable; disclosure allowing another holder to exercise its
+permitted authority; recovery, rotation, and revocation; whether the service
+must retain a credential or can verify a capability; abuse, rate limits, and
+moderation or administrative intervention; and how management authority
+relates to copies already downloaded by others. No security mechanism or
+policy is selected here.
+
 ## Relationship to existing E2R authorities
 
 This note explores a Wiki-specific application and content/view hypothesis; it
@@ -104,8 +148,10 @@ responsibilities:
   `Relation.name`.
 - [Dataset Handoff v0 design](../../docs/dataset-handoff-v0-design.md) remains
   the current handoff contract, while [Anonymous Dataset Sharing research](anonymous-dataset-sharing.md)
-  explores public sharing. This Wiki concept defines no additional transport
-  or sharing protocol.
+  explores public sharing and already distinguishes a public reference from a
+  creator-held management capability without establishing identity or
+  authorship. This Wiki concept adds no additional transport or sharing
+  protocol and does not redefine that research.
 
 The following are distinct possible operations and should not be conflated:
 
@@ -187,6 +233,9 @@ provider availability, and migration/export behavior remain research inputs.
    revision, and cost controls for any private or public experiment?
 9. Which hosting/storage candidate best fits a bounded workload after current
    primary documentation and account/terms requirements are reviewed?
+10. What properties and operational responsibilities distinguish
+    accountless, Dataset-specific management capabilities from account-based
+    identity, and which management operations (if any) should each permit?
 
 ## Explicit non-decisions
 
@@ -196,7 +245,7 @@ This research does not authorize or adopt:
 - Cloudflare or another hosting/storage provider, account, resource, or paid
   contract;
 - user accounts, authentication, authorization, multi-user write access, or
-  an identity model;
+  an identity model or accountless management-capability contract;
 - a server-side canonical storage architecture, object versioning, a
   conflict/history model, or row-based materialization;
 - a Core `body` field, Content/Text Extension, Markdown, or another long-form

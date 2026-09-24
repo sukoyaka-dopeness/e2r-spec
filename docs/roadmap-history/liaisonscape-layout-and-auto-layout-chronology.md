@@ -3162,3 +3162,38 @@ explicit High-quality Auto Layout `PROVISIONALLY ADOPT`, quality solver
 provider `NOT ESTABLISHED`, Adaptive Initial Placement Cascade `INACTIVE`,
 Human Review `NOT READY`, and the Initial Layout Release blocker `OPEN`.
 Session log remains intentionally unchanged.
+
+### LiaisonScape Product-authoritative Verification Scaling Envelope / Main-thread Viability 1 (2026-09-14)
+
+The following Roadmap block was extracted from `docs/roadmap.md` at parent
+commit `0a48396` under the second bounded Hybrid reconstruction pilot. Its
+original heading, date, status wording, source order, and dedicated authority
+link are preserved here. This is historical evidence only; the current
+planning consequence remains in the current Roadmap's Product-authoritative
+Verification Execution / Budget summary.
+
+The [Product-authoritative Verification Scaling Envelope / Main-thread Viability 1 result](../liaisonscape-product-authoritative-verification-scaling-envelope-main-thread-viability1-result.md)
+measures the current source-faithful verification authority across six bounded
+workload families—sparse, dense, parallel, label-heavy, Self-loop, and mixed—at
+small, medium, and large levels: 18 cases total. The declared upper case is 24
+Nodes / 80 Relations, with parallel, Self-loop, and long-label pressure.
+
+All cases preserved exact staged and scheduler semantic equivalence, and all
+diagnostics-on samples preserved normalized trace equivalence. Within this
+tested envelope, main-thread verification completed without a `50ms` source
+step or turn and without a material scheduler gap. The maximum diagnostics-off
+turn/source-step was `21.3ms` on dense-large, specifically the Node-label
+initialization phase transition; no authoritative Route, Relation-label, or
+Node-label work unit reached `16ms`. Dense aggregate Route and Relation-label
+work, rather than one long authority unit, dominated total compute.
+
+Disposition: `VERIFICATION SCALING ENVELOPE ESTABLISHED / MAIN-THREAD VIABLE
+WITHIN TESTED ENVELOPE / DENSE-LARGE NODE-LABEL PHASE TRANSITION EXCEEDS
+PREFERRED 16MS / NO 50MS SOURCE-STEP BLOCKER / NO NEW MICRO-SPLIT JUSTIFIED /
+WORKER ARCHITECTURE STUDY NOT JUSTIFIED BY THIS ENVELOPE / PRODUCT-WIDE
+UNBOUNDED BUDGET NOT ESTABLISHED`. Keep Fast deterministic Initial Placement
+plus explicit High-quality Auto Layout `PROVISIONALLY ADOPT`, quality solver
+`HOLD / NOT ESTABLISHED`, Product integration/default `HOLD`, production
+provider `NOT ESTABLISHED`, Adaptive Initial Placement Cascade `INACTIVE`,
+Human Review `NOT READY`, and the Initial Layout Release blocker `OPEN`.
+Session log remains intentionally unchanged.

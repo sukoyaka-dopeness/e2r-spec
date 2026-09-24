@@ -35,6 +35,7 @@ repository. Start with the responsibility that matches the question:
 - [Roadmap Hybrid Reconstruction - G2-B2 Pilot Result 1](roadmap-hybrid-reconstruction-g2-b2-pilot-result1.md): preserves the G2-B2 diagnostic boundary while keeping G2-B4 risk and target qualification separate.
 - [Roadmap Hybrid Reconstruction - G2-B3 A-style Preparation 1](roadmap-hybrid-reconstruction-g2-b3-preparation1.md): prepares a standalone tested-set-qualified boundary-completion compression pilot without changing G2-B4.
 - [Roadmap Hybrid Reconstruction - G2-B3 Pilot Result 1](roadmap-hybrid-reconstruction-g2-b3-pilot-result1.md): preserves tested-set quality closure and capped-completion boundaries while keeping G2-B4 live qualification separate.
+- [Roadmap Hybrid Reconstruction - G2-B4 A-style Preparation 1](roadmap-hybrid-reconstruction-g2-b4-preparation1.md): separates fail-closed diagnostic safety from the still-open target/risk qualification.
 - [NarrativeLine NL-H2-R1](roadmap.md): **ACCEPTED / MANUAL ACCEPTANCE COMPLETE**.
 - [History 2 broader authoring scope](history-2-user-facing-authoring-scope-result.md): **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED**.
 

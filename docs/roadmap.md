@@ -1161,6 +1161,12 @@ roadmap remains the sole current-planning authority. Ambiguous mixed regions
 remain here; their retention is not a claim that they are permanently current.
 The wider `docs/` taxonomy and relocation of other documents remain deferred.
 
+The read-only [Roadmap Slimming Audit](roadmap-slimming-audit1.md) classifies
+the remaining roadmap by responsibility and identifies bounded future
+compression/history candidates. It authorizes no extraction, shortening, or
+link migration; the mixed regions remain pending a separately reviewed
+migration manifest.
+
 #### Current Relative Time atomic-semantics status after Human adoption (2026-09-24)
 
 The Human adopted the atomic Recorded assertion semantics and stated

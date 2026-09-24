@@ -3680,43 +3680,25 @@ and the [dedicated diagnostic result](liaisonscape-explicit-auto-layout-dev-fail
 
 ### Explicit Auto Layout quality follow-ups
 
-The current Explicit Auto Layout Preview / Pin lifecycle contract remains
-accepted independently of the following quality work. These items are
-follow-ups, not blockers for Pin lifecycle correctness, persistence, or the
-existing Preview contract.
-
-- **Pinned global recovery:** With one or more Pins, a severely degraded
-  current working layout can be preserved too locally. If unpinned Nodes have
-  been manually collapsed into dense or overlapping positions, Pin-aware
-  candidate generation may retain substantial crossings and congestion
-  instead of reconstructing a cleaner global arrangement. Future work should
-  keep Pinned Nodes as hard anchors while allowing unpinned Nodes to participate
-  in broader/global candidate generation or recovery. This remains separate
-  from Pin lifecycle correctness and persistence acceptance.
-- **Presentation-aware local relaxation:** Automatically placed Node labels
-  can remain rough beyond isolated dense cases. After structural candidate
-  selection, future work may investigate a bounded local perturb/relax pass
-  that re-evaluates Node labels, Relation labels, routing, overlaps, and other
-  Product presentation pressure around the selected candidate. This is not
-  authorization to retune spacing or routing heuristics without separate
-  evidence.
-
-Both follow-ups remain in the broader Explicit Auto Layout quality track,
-alongside dense Graph-space separation and Relation-label congestion. Any
-future improvement must preserve the current authority boundaries, runtime
-expectations, Pin semantics, and canonical readability.
+Explicit Auto Layout lifecycle / Preview / Pin / Save remains **QUALIFIED**
+within Human Check B's recorded scope. Additional quality work is frozen as
+non-blocking follow-up and does not reopen that acceptance. Follow-ups include
+Pinned global recovery, Presentation-aware local relaxation, Graph-space
+separation, Relation-label congestion, broader Node-label quality,
+circular-order behavior, and graph-size / density / label / topology effects.
+The [quality-freeze result](liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md)
+holds the detailed evidence; no general quality closure or complexity
+threshold is established.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-HUMAN-CHECK-B-QUALIFIED-CLOSURE1 (2026-09-17)
 
-The [Human Check B qualified closure result](liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md)
-records the user's final disposition: **QUALIFIED**. Actual Product evidence
-accepted the Explicit Auto Layout lifecycle, Preview, Pin hard constraints,
-manual movement of Pinned Nodes, Save Coordinates, and reload consistency.
-The imperfect visual quality is represented by deferred **Pinned global
-recovery**, **Presentation-aware local relaxation**, and dense Graph-space /
-Relation-label congestion follow-ups; these do not reopen lifecycle acceptance
-or provider selection. The full `npm test` Vite/HMR lifecycle gate remains
-open separately.
+Human Check B remains **QUALIFIED** for its recorded Actual Product scope:
+the Explicit Auto Layout lifecycle / Preview, Pin hard constraints, manual
+movement of Pinned Nodes, Save Coordinates, and reload consistency. This is not
+unqualified or general visual-quality acceptance. Frozen quality follow-ups do
+not reopen the disposition; the full `npm test` Vite/HMR lifecycle gate remains
+a separate test-infrastructure gate, not a Product failure. See the [qualified
+closure result](liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md).
 
 ### E2R-LIAISONSCAPE-GENERAL-COMPLEX-DATASET-PRACTICALITY-REASSESSMENT1 (2026-09-17)
 
@@ -3745,29 +3727,18 @@ semantics. Historical Gate 1-3 classifications are retained as history.
 
 ### E2R-LIAISONSCAPE-AUTO-LAYOUT-QUALITY-FREEZE-AND-WORKTREE-BASELINE-AUDIT1 (2026-09-17)
 
-The [Auto Layout quality freeze and worktree baseline audit result](liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md)
-records the current research boundary. The controlled 12-Entity / 19-Relation
-reference-placement fixture was reviewed in both JA and EN, and the user
-judged that **Preview improves the controlled fixture**. The prior diagnostic
-record remains historical: it records a reproducible reference-to-Preview
-difference with mixed attribution, not a confirmed Human-visible regression.
-
-A separate observation on the private real Dataset `天の葬列20260710a` found a
-more compact Preview with increased Relation / Relation-label congestion
-relative to its saved layout. The Dataset is not copied into the repository,
-and the observation is retained as non-blocking evidence rather than a release
-blocker. The complexity boundary is unresolved across graph size, density,
-label pressure, and topology; no threshold exploration is started here.
-
-Additional Explicit / Initial Auto Layout quality research is frozen for the
-post-release follow-up track. Pinned global recovery, Presentation-aware local
-relaxation, Graph-space separation, Relation-label congestion, broader
-Node-label quality, circular-order behavior, and the broader complexity
-threshold remain documented non-blocking follow-ups. Explicit Auto Layout
-Human Check B remains `QUALIFIED`, Initial Automatic Display remains accepted,
-and release practicality remains `B. PRACTICALITY ACCEPTABLE WITH
-NON-BLOCKING QUALITY FOLLOW-UPS`. This freeze does not approve production
-rollout, deploy, release, or a production-default change.
+Additional Explicit / Initial Auto Layout quality research remains frozen as
+non-blocking post-release follow-up; this is not quality closure or approval to
+deploy, release, or change a production default. The controlled
+12-Entity / 19-Relation fixture was judged to improve in Preview, while a
+separate private real-Dataset observation found a more compact Preview with
+increased Relation / Relation-label congestion. Cause and any complexity
+threshold across size, density, label pressure, and topology remain unresolved.
+The detailed evidence and frozen follow-up list are in the [quality-freeze
+result](liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md).
+Initial Automatic Display remains accepted; Explicit Auto Layout Human Check B
+remains `QUALIFIED`. Neither status absorbs the other's lifecycle or quality
+boundary.
 
 The current worktrees were audited without reset, restore, stash, clean, delete,
 or commit. Accumulated accepted runtime/lifecycle source, tests, DEV fixtures,

@@ -33,6 +33,7 @@ repository. Start with the responsibility that matches the question:
   the readiness / blocker / DEV diagnostic progression was reconciled while
   current Pin, ownership, and failure-attribution boundaries remain in the
   Roadmap.
+- [Explicit Auto Layout / Pin second-group reconstruction result](roadmap-hybrid-reconstruction-explicit-auto-layout-pin-group-pilot-result2.md): compresses the quality and qualified-closure summaries while retaining the mixed practicality and worktree boundaries.
 - [Roadmap Hybrid Reconstruction — Product Verification Pilot Preparation 1](roadmap-hybrid-reconstruction-product-verification-pilot-preparation1.md): claim-level B/A/HOLD manifest for the first proposed pilot; no Roadmap or History edit is authorized by the preparation.
 - [Roadmap Hybrid Reconstruction — Product Verification Pilot Result 1](roadmap-hybrid-reconstruction-product-verification-pilot-result1.md): PV-01–PV-10 current synthesis and History delegation; PV-11–PV-14 remain out of scope.
 - [Roadmap Hybrid Reconstruction — Second Pilot Preparation 1](roadmap-hybrid-reconstruction-second-pilot-preparation1.md): splits the PV-11–PV-14 responsibility area into bounded verification, candidate/risk, provider/Worker, and visual-quality groups; recommends only the isolated verification-envelope group for the next pilot.

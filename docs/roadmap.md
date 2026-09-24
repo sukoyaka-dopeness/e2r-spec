@@ -859,23 +859,13 @@ Enter/Escape behavior, and destructive-action safety before release.
 
 ### Cross-App Relation Deletion Ownership / Visibility Safety
 
-This follow-up audits Relations outside an application's presentation or
-management scope. Current evidence records that LiaisonScape manages
-Entity-to-Entity Relations in its graph while Event-related Relations are not
-graph-visible, and blocks Entity deletion while connected Relations exist.
-NarrativeLine is Event-centered and currently allows Entity deletion with
-cascade removal of connected Relations, while Entity-to-Entity Relations are
-outside its direct surface.
-
-The cross-app design direction is now recorded as **ACCEPTED / IMPLEMENTATION
-NOT YET ALIGNED** in [Cross-App Relation Deletion Capability](cross-app-relation-deletion-capability.md): Relation is a Dataset Object;
-provenance is distinct from deletion authority; capabilities are distinct; and
-endpoint deletion should wait until incident Relations are explicitly
-resolved. The earlier NarrativeLine count/details-with-cascade direction is
-held and superseded as the preferred final model. NarrativeLine currently
-cascades while LiaisonScape blocks, so this entry does not close the runtime
-follow-up or authorize implementation. Capability-based handoff and
-application-specific inspect/delete UX remain future bounded work.
+This retained heading is a historical pointer, not an open audit. The former
+implementation-asymmetry and “not yet aligned” statements are superseded by
+the **FORMALLY ACCEPTED / CROSS-APP IMPLEMENTATION ALIGNED / COMPLETE** status
+in [Cross-App Relation Deletion Capability Closure](cross-app-relation-deletion-capability-closure.md).
+The dated progression remains in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
+Targeted Handoff/discovery and generalized Relation management remain separate
+deferred responsibilities; neither reopens this closure.
 
 ### Future application surface concepts
 
@@ -1232,18 +1222,12 @@ checkpoints.
 
 ### Audit and align Cross-App Entity deletion semantics
 
-LiaisonScape currently blocks deletion of an Entity when incident Relations
-remain, while NarrativeLine can cascade-delete Relations connected through the
-Entity's `sourceId` / `targetId`. This creates a Cross-App interoperability and
-destructive-safety asymmetry: a Dataset authored in LiaisonScape may lose
-incident Relations when opened and edited in NarrativeLine.
-
-Record this as a future audit, not an implementation decision. The audit should
-compare Relation-preservation and deletion-blocking behavior, confirmation and
-cascade options, Event–Entity versus ordinary Entity–Entity Relations, self and
-parallel Relations, Event endpoints, and LiaisonScape/NarrativeLine round-trip
-safety. The Core Relation model must remain application-neutral; this item does
-not authorize changing either application's deletion behavior.
+This **2026-08-24 planning snapshot is superseded**, not a current audit task.
+The bounded deletion contract, NarrativeLine/LiaisonScape alignment, and
+bidirectional acceptance are closed in [Cross-App Relation Deletion Capability
+Closure](cross-app-relation-deletion-capability-closure.md); the historical
+progression is retained in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
+No additional deletion-semantics or cascade-policy decision is pending here.
 
 ### Reusable UI integration test harness research
 
@@ -1349,10 +1333,12 @@ acceptance, and capability-Handoff progression are preserved as dated evidence
 in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
 That historical progression does not reopen the accepted ownership, no-cascade,
 explicit Relation-deletion, self/parallel Relation, or interoperability
-boundaries. The closure's non-blocking presentation follow-ups are the
-NarrativeLine endpoint-separator rendering issue and LiaisonScape generic
-confirmation spacing; targeted Handoff/discovery and broader Relation
-management remain separate deferred work, not closure prerequisites.
+boundaries. The NarrativeLine endpoint-separator observation was corrected and
+included in its [later formal presentation acceptance](narrativeline-relation-blocker-presentation-formal-acceptance.md).
+The later [Cross-App visual consistency audit](e2r-cross-app-visual-consistency-audit1-result.md)
+found no bounded current visual defect, without requiring pixel-identical UI.
+Targeted Handoff/discovery and broader Relation management remain separate
+deferred work, not closure prerequisites.
 
 ### Application modularization readiness policy
 
@@ -4521,7 +4507,6 @@ separate follow-ups; this entry does not duplicate or close them:
 
 - Dataset title editing for `extensions.metadata.title`, with unknown-field
   preservation and Dataset Replacement Safety;
-- Entity deletion parity and the unresolved confirmation/cascade policy;
 - user-provided images/media as an application Extension direction, with
   browser-security, portability, external-reference, and copyright questions;
 - NarrativeLine and Hub completion before new diagram applications.
@@ -4539,7 +4524,7 @@ This roadmap distinguishes accepted direction, strong preference, candidate
 implementation, and open question. It must not present an unresolved design as
 canonical specification. The following remain explicitly open: Pin Extension
 exact schema; omission versus `false`; Pin glyph/color; exact preview controls
-and copy; cascade-deletion confirmation; and the exact external/local media
+and copy; and the exact external/local media
 schema and security model.
 
 No runtime, source, schema, or implementation change was made by this sync.

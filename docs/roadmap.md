@@ -66,7 +66,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Workstream | Current status | Authority / next decision |
 | --- | --- | --- |
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
-| Roadmap chronology / slimming tranches 1–2, Initial Placement, post-release observations, and early Layout experiments | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); [Initial Placement / routing chronology migration](roadmap-initial-placement-routing-history-migration1-result.md); [2026-09-23 observation history migration](roadmap-post-release-cross-app-observation-history-migration1-result.md); [Early Automatic Layout history migration](roadmap-early-automatic-layout-experiment1-history-migration1-result.md); this roadmap remains the sole current-planning authority |
+| Roadmap chronology / slimming tranches 1–2, Initial Placement, post-release observations, and early Layout experiments | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); [Initial Placement / routing chronology migration](roadmap-initial-placement-routing-history-migration1-result.md); [2026-09-23 observation history migration](roadmap-post-release-cross-app-observation-history-migration1-result.md); [Pre-reconstruction application UX acceptance history migration](roadmap-application-ux-shell-acceptance-history-migration1-result.md); [Early Automatic Layout history migration](roadmap-early-automatic-layout-experiment1-history-migration1-result.md); this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
 | Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; SEED RESEARCH, PR-2, PR-3 PRE-BROWSER, AND BROWSER DIAGNOSTIC LINEAGES POINTER-COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
@@ -1252,16 +1252,7 @@ residual: accepted current contract plus a separately tracked quality question.
 
 ### F2-LS1 acceptance checkpoint
 
-LiaisonScape F2-LS1 Home / Workspace Header Locale Placement is
-**Accepted / Closed** at the recorded evidence boundary. Acceptance evidence
-and the runtime checkpoint are recorded in
-`docs/liaisonscape-cross-app-shell-alignment-f2-ls1-acceptance.md`.
-
-The accepted checkpoint includes the Workspace Header blank-area hit-area fix,
-stable vertical editor-shell geometry at the 600px breakpoint, Credits opener
-focus restoration, and the accepted Home / Workspace / Footer shell hierarchy.
-It does not close the unrelated residual UX follow-ups below or authorize
-runtime work outside the checkpoint.
+**Accepted / Closed** at the bounded acceptance recorded in [the F2-LS1 acceptance authority](liaisonscape-cross-app-shell-alignment-f2-ls1-acceptance.md). Locale-consumer completion is separate. The minimum-width observation and unrelated follow-ups below remain distinct.
 
 ### Minimum-width observation boundary
 
@@ -1282,12 +1273,7 @@ The same F2-LS1 manual acceptance added two cross-application UX questions:
   drag-handle plus disclosure-trigger contract. Runtime implementation remains
   a separate checkpoint; the `720px` handoff and no-keyboard-repositioning
   boundary remain unchanged.
-- **Cross-App Dataset Replacement destructive styling parity — ACCEPTED / CLOSED**
-  — the modified-only, pending-only, and modified-and-pending action matrices,
-  safe-side focus, danger/hover hierarchy, EN/JA copy, and representative
-  normal/narrow browser surfaces were audited. NarrativeLine's weaker
-  destructive treatment was corrected locally for this dialog only. See the
-  [audit result](cross-app-dataset-replacement-destructive-styling-parity-audit1-result.md).
+- **Cross-App Dataset Replacement destructive styling parity is ACCEPTED / CLOSED.** The bounded audit result is preserved in Roadmap History; Dataset Replacement Safety semantics and other action contracts are unchanged.
 
 The following observations are recorded as non-issues and are not additional
 roadmap items: extreme-narrow Footer wrap/clip differences caused by available
@@ -1296,22 +1282,11 @@ the browser's sequential-focus behavior remains correct. The accepted
 approximately 240px boundary remains bounded and is not a universal minimum
 width requirement.
 
-F2-LS1 is no longer an open blocker. Previously accepted checks include
-Workspace Header blank-area regression correction, brand and explicit Home
-navigation, Dataset/selection preservation through locale switching, Credits
-backdrop/Escape dismissal, opener focus restoration, representative Dataset
-Replacement Dialog focus and dismissal behavior, toolbar breakpoint behavior,
-and extreme-narrow brand behavior.
+F2-LS1 remains **Accepted / Closed**. Its accepted-check inventory is preserved in Roadmap History; the minimum-width and other follow-ups above remain separately bounded.
 
 ### Cross-App shell action hover parity
 
-**ACCEPTED / CLOSED — LOCAL HOVER CORRECTION.** The bounded Chrome audit found
-matching 3px purple `focus-visible` rings and matching locale hover colors, but
-LiaisonScape's bordered Home anchor lacked hover feedback while NarrativeLine
-Header buttons and both locale controls had it. LiaisonScape now gives that
-Home anchor the existing light-purple background/purple border hover treatment.
-EN/JA, representative wide, and 390px browser states pass without overflow.
-See [audit result](cross-app-shell-action-hover-focus-parity-audit1-result.md).
+**ACCEPTED / CLOSED** for the tested browser, width, and locale matrix. Physical-device and other browser-family coverage is not implied. Detailed evidence remains in [the audit result](cross-app-shell-action-hover-focus-parity-audit1-result.md).
 
 ### Home-first Dataset acquisition hierarchy
 
@@ -1335,139 +1310,30 @@ Dataset acquisition is not assigned to right-click context menus.
 
 ### NarrativeLine Workspace More acceptance — 2026-08-25
 
-The C2 deferral above is historical and remains accurate for the point at
-which only Open Dataset was considered. During the subsequent NarrativeLine
-C3/C4 work, Export was accepted as a second meaningful secondary action. The
-current accepted result is a text `More` / `その他` menu containing `Open E2R
-Dataset` and `Export E2R JSON`.
-
-Add Event remains visible as the Timeline's primary editing action. Home
-New / Open / Sample remains the canonical primary Dataset acquisition and
-replacement path; workspace Open is secondary convenience access. LiaisonScape
-keeps its current Workspace Open / Import presentation, with conceptual parity
-deferred to a later separately scoped follow-up.
-
-TimelineScreen owns surface-local file acquisition through the local picker,
-file read, same-file reset, and local loading/error presentation. App owns
-Dataset parsing, validation, candidate staging, replacement safety, and final
-acceptance. The accepted C4 modal contract includes backdrop dismissal and
-opener focus restoration; native OS file selection, picker Cancel focus, and
-real touch remain explicit manual boundaries.
-
-The accepted NarrativeLine evidence is 181/181 automated tests passing, zero
-React `act(...)` warnings, and passing lint, build, and diff checks. A Home
-replacement-Cancel observation that ended on `body` remains non-blocking and
-was not silently fixed.
+**ACCEPTED / COMPLETE.** Workspace More contains Open E2R Dataset and Export E2R JSON; Add Event remains the visible primary editing action. Home-first acquisition remains canonical, Workspace Open is secondary, and LiaisonScape parity remains deferred. TimelineScreen owns local picker/read/loading behavior; App owns parsing, validation, replacement safety, and acceptance. Native picker/touch boundaries remain manual. Detailed evidence: [Session 0049](../sessions/E2R-Session-0049.md) and the [modernization authority](../research/exploratory/liaisonscape-workspace-modernization-audit.md).
 
 ### NarrativeLine Timeline Back-to-Top acceptance — 2026-08-25
 
-The accepted NarrativeLine Timeline Back-to-Top follow-up adds a conditional
-text action to the sticky Timeline toolbar. The action is hidden while the
-Timeline top sentinel is visible and appears after meaningful scroll, using
-`IntersectionObserver`. Its accepted labels are `↑ Top` and `↑ 上へ`.
-
-The accepted visible action order is `[Add Event] [↑ Top] [More]`; at the page
-top it remains `[Add Event] [More]`. Add Event remains the visible primary
-editing action, Back-to-Top is a transient navigation affordance, and More
-remains the terminal secondary workspace-action container with its existing
-panel alignment and behavior.
-
-Activation focuses the Timeline heading and then uses the document-level native
-scroll target `window.scrollTo({ top: 0, left: 0, behavior: "auto" })`. Smooth
-scrolling is not adopted. Manual acceptance passed for EN/JA, long Timeline
-top/middle/bottom states, sticky behavior, keyboard and pointer activation,
-heading focus handoff, desktop and 701/700/601/600px layouts, approximately
-320px layout, More alignment/stacking, and absence of horizontal overflow.
-The approximately 320px Japanese wrap of More is accepted. Automated evidence
-remains 181/181 tests passing with no React `act(...)` warnings and passing
-lint, build, and diff checks. No Dataset, navigation, modal, locale, Core, or
-Extension semantics changed, and no push was performed.
+**ACCEPTED.** Back-to-Top remains a transient Timeline navigation affordance; Add Event is primary and More remains the terminal secondary-action container. Detailed implementation and manual-acceptance evidence is preserved in Roadmap History and the [NarrativeLine next-phase result](e2r-narrativeline-next-phase-and-source-handoff-planning1-result.md).
 
 ## Active follow-up ledger — 2026-08-25
 
 ### LiaisonScape LS-M2A acceptance — 2026-08-25
 
-LS-M2A Workspace More / Action Hierarchy is **ACCEPTED / COMPLETE**. This
-acceptance supersedes the earlier deferred LS-M2 wording in this roadmap. The
-durable acceptance record is
-`research/exploratory/liaisonscape-workspace-modernization-audit.md`.
-
-The final contract is: above the Workspace-specific `720px` breakpoint, the
-current graph-visible Entity / Relation count is at the toolbar inline start
-and `Add Entity`, `Add Relation`, `Save node coordinates`, and `More` form one
-inline-end action group. At `720px` and below, the count has its own readable
-row, `Add Entity`, `Add Relation`, and `More` remain visible, and Save
-Coordinates is inside More. The shell's global `600px` breakpoint is unchanged.
-
-The accepted checkpoint also records the More keyboard contract, preserved
-Dataset Replacement Safety for `datasetModified` and `pendingUserWork`, the
-removal of persistent successful-load status and the unselected placeholder,
-and the unchanged semantics of the Event-related capability notice now shown
-below the graph. The next bounded application checkpoint is **LS-M2B —
-Dataset title editing**; LS-M2D remains responsible for final capability-notice
-presentation.
-
-Retained follow-ups from acceptance: the bounded viewport toolbar
-drag-handle/disclosure implementation following
-`docs/liaisonscape-viewport-toolbar-collapse-follow-up.md`, LiaisonScape
-Credits descriptive-copy localization, common E2R favicon, and Long-form
-Object Content / Media responsibility research. No new knowledge candidate was
-added.
-
-Small follow-ups must not be lost when development focus moves between
-repositories or workstreams. Record a bounded UX, consistency, safety, or
-visual follow-up when a concrete observation is discovered, even when it is
-intentionally deferred. Recording an item does not raise its implementation
-priority or authorize implementation; this ledger is not an unbounded wishlist.
+**ACCEPTED / COMPLETE.** Workspace action hierarchy and More interaction are application-local; Open/Export are secondary and Dataset Replacement Safety was preserved. Detailed breakpoint, keyboard, and acceptance evidence is in [Session 0049](../sessions/E2R-Session-0049.md) and the [modernization authority](../research/exploratory/liaisonscape-workspace-modernization-audit.md). Current deferred items and priority remain in their current Roadmap entries; the dated next-step statement is historical.
 
 ### Current execution order
 
-1. **P0 — ledger synchronization** — this checkpoint; complete.
-2. **LS-M1 — LiaisonScape Workspace Modernization Audit** — next phase;
-   implementation deferred until the audit is accepted.
-3. **LS-M2 — bounded LiaisonScape workspace UX implementation** — deferred;
-   depends on LS-M1.
-4. **LS-M3 — Initial Node Placement Objective Audit** — major follow-up;
-   deferred until workspace modernization is complete.
-5. Placement experiments — deferred until LS-M3 justifies them.
-6. **S3 — Standards License Formalization & Provenance Audit** — ready but
-   intentionally deferred during the bounded LiaisonScape sequence.
-7. Metadata 1.1.0 Draft and implementation evidence — deferred after S3.
-8. Hub machine-readable dogfood publication readiness — deferred until
-   licensing formalization and public redistribution checks.
-9. NarrativeLine display-order reordering — explicitly deferred for now.
-10. Public interoperability, deployment, and final release audit — later.
-
-S3 remains **READY**; this ordering is temporary, not a permanent
-architectural priority. History vNext, Relative Time, Target Reference,
-Source/Citation, Semantic/Dictionary, and Layout/Presentation remain
-independently gated research or design tracks.
+This 2026-08-25 execution-order snapshot is superseded and is retained in Roadmap History only. Use the [current canonical reconstruction summary](#roadmap-reconstruction-checkpoint-current-canonical-summary) for current order and priority.
 
 ### Planned visual follow-ups before public release
 
 The following two visual follow-ups are intentionally separate. Recording them
 does not authorize runtime, CSS, or experiment work.
 
-The current status of the Dataset metadata Edit / divider spacing item is
-**FIXED / ACCEPTED** at LiaisonScape runtime `72685dc fix: separate Dataset
-metadata from toolbar`. The accepted change is `.dataset-metadata`;
-`margin-top: 12px` was changed to `16px`. Wide and narrow browser matrices,
-EN/JA, Edit mode, keyboard/focus, and no-overflow checks passed, as did
-225/225 tests, lint, build, and diff-check. No Dataset behavior changed.
-The original near-contact wording in item 1 remains historical; the remaining
-Cross-App Flatness Experiment is separate.
+The Dataset metadata divider-spacing and label/value alignment checkpoints are marked **FIXED / ACCEPTED**; their dated detail is preserved in Roadmap History. The general 600/601px responsive topic remains separate.
 
-1. **LiaisonScape Dataset metadata Edit / divider spacing — bounded visual
-   fix, relatively early:** review the apparent near-contact between the
-   Dataset metadata-row `Edit` button and the preceding horizontal divider.
-   The bounded scope is vertical separation between the toolbar divider and
-   the metadata/Edit control, while preserving the current visual language.
-   This is a spacing defect, not a redesign: button radius, global control
-   density, hover styling, and the known approximately 600/601px responsive
-   follow-up remain separate. Implementation acceptance should check both
-   narrow and wide layouts for spacing regression. Do not defer this item
-   until the Cross-App Flatness Experiment.
-2. **NarrativeLine / LiaisonScape Cross-App Visual Style / Flatness
+1. **NarrativeLine / LiaisonScape Cross-App Visual Style / Flatness
    Experiment — public-release design experiment:** after the principal
    feature, UX, and known visual-defect work has substantially converged,
    compare the two applications as one cross-app visual language. Evaluate
@@ -1488,57 +1354,7 @@ Cross-App Flatness Experiment is separate.
 
 ### LS-METADATA-ALIGN1 — LiaisonScape Dataset metadata label/value alignment
 
-**FIXED / ACCEPTED / COMPLETE / CLOSED** at LiaisonScape runtime
-`ce446e5 fix: align Dataset metadata text`.
-
-The completed bounded follow-up is supported by [LiaisonScape Dataset metadata
-alignment audit](liaisonscape-dataset-metadata-alignment-audit.md), whose design
-result was **READY — BASELINE ALIGNMENT ONLY**. The accepted contract is local to
-the Dataset metadata label/value text pair: baseline alignment applies across
-the covered responsive metadata-row regimes (wide, 721px, 720px, 601px, 600px,
-and approximately 360px); Edit remains a separately aligned control inside the
-nested value group; nested `dd` centering remains unchanged; horizontal spacing
-remains unchanged; and the accepted `margin-top: 16px` divider spacing remains
-unchanged.
-
-This is a local LiaisonScape presentation result. It does not establish a global
-baseline rule for `dt` / `dd` layouts or flex rows, a shared text baseline for
-buttons, NarrativeLine layout parity, or identical metadata geometry across
-applications. The earlier pre-implementation observations below remain
-historical evidence; they do not represent an open defect after `ce446e5`.
-
-Historical pre-implementation observation (before `ce446e5`): in the
-post-spacing-fix browser view, the Dataset metadata label and title value were
-one logical row but did not appear vertically aligned. The
-label appears slightly higher than the value, weakening the perception that
-they form one metadata pair. The observed Japanese example was label
-`タイトル`
-`灯台修復プロジェクト`. The adjacent `邱ｨ髮・` / Edit button has
-its own control geometry and must be evaluated separately from the
-label/value text baseline.
-
-Possible causes are recorded for audit only and are not confirmed: different
-line-height, element or default inline metrics, row `align-items`, font
-metrics, grid/flex alignment, and label/value wrapper geometry.
-
-The horizontal label-to-value distance was investigated by the completed audit
-and classified **H1 / ACCEPTABLE / INTENTIONAL**. No horizontal-gap change was
-required by this workstream; the earlier observation is historical and is not
-an unresolved implementation defect.
-
-The completed audit compared EN and JA; short and long Dataset titles; wide
-desktop; approximately 720px; 601/600px; approximately 360px; read-only and
-Edit states; keyboard focus-visible; label/value baseline; label/value
-horizontal relationship; the text pair's relationship to Edit; and
-overflow/wrapping. Its accepted implementation result is recorded above.
-
-`LS-METADATA-ALIGN1` must not reopen the accepted divider-spacing fix. The
-current baseline remains `.dataset-metadata { margin-top: 16px; }` from
-`72685dc`. This local metadata-row alignment follow-up is separate from the
-Cross-App Visual Style / Flatness Experiment, the general 600/601 responsive
-topic, and any NarrativeLine parity requirement. Dataset title semantics,
-`extensions.metadata.title`, modified/pending state, Save/Cancel,
-Replacement Safety, and unknown-field preservation remain unchanged.
+The LiaisonScape-local label/value alignment checkpoint is **FIXED / ACCEPTED** at the recorded runtime boundary. The 16px divider-spacing baseline remains unchanged. The general 600/601px topic, Cross-App Visual Style / Flatness, and NarrativeLine parity remain separate; detailed measurements and dated observations are in Roadmap History and the [alignment audit](liaisonscape-dataset-metadata-alignment-audit.md).
 
 ### Cross-application object identity direction
 
@@ -1654,10 +1470,7 @@ completion / final cross-app closure**.
 
 ### Non-blocking NarrativeLine follow-ups
 
-- The 600/601px Header/Footer vertical geometry follow-up is CLOSED / ACCEPTED
-  at runtime commit `b9ad92f055df64b0a1960f22b95d3c2a25fecd05`.
-- The CoordinatePanel 600/601 geometry and Space placement follow-up is CLOSED /
-  ACCEPTED at runtime commit `ef0026b0a43affa227ce4c10969a231d6c92f2f4`.
+- The completed Header/Footer and CoordinatePanel 600/601px geometry checkpoints are preserved in Roadmap History; the remaining bullets below stay open or deferred.
 - Audit nested Event Detail / Entity Detail / Entity Picker / Entity Create Header Back alignment.
 - Keep Detail lower editing action areas as-is unless later evidence changes that decision.
 - Polish the Detail Back Confirmation Dialog visual hierarchy, widths, and
@@ -1697,22 +1510,7 @@ concept-page update remain separate cross-app or future work and do not reopen
 the LiaisonScape version decision by themselves.
 
 ### LS-DETAIL-RR1 Related Relation readability — ACCEPTED / CLOSED
-
-LiaisonScape Related Relations now use structured human-readable Relation name,
-Source, and Target fields. Names are trimmed for presentation; blank,
-whitespace-only, and unresolved values fall back to Object ID. Event endpoint
-names may be shown without making Events graph nodes or editing targets.
-Duplicate names receive a conditional short Object ID hint in parentheses;
-unique names remain uncluttered.
-
-The complete Dataset incident Relation set and exact `relation.id` interaction
-are preserved. Dataset identity, schema, graph visibility, technical Object
-ID details, and Delete semantics are unchanged. Wide and 320px acceptance,
-duplicate-name presentation, Event endpoint presentation, interaction, 191
-tests, lint, build, and diff checks passed.
-
-Remaining follow-ups are `LS-REL-ENDPOINT-ID1`, `LS-DIALOG-DRAFT1`,
-`LS-CTX-R1`, and `LS-GRAPH-DRAG1`; none is accepted or implemented by RR1.
+**ACCEPTED / CLOSED** at the project-specific acceptance boundary. Detailed implementation and manual evidence are retained in Roadmap History and the [modernization audit](../research/exploratory/liaisonscape-workspace-modernization-audit.md). Dataset identity, graph visibility, and Delete semantics remain unchanged. Current follow-ups remain: `LS-REL-ENDPOINT-ID1` (audit needed), `LS-DIALOG-DRAFT1` (audit needed), `LS-CTX-R1` (bug/fix needed), and `LS-GRAPH-DRAG1` (bug/audit needed).
 
 ## Roadmap reconstruction checkpoint — current canonical summary
 

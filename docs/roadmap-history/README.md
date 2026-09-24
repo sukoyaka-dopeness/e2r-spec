@@ -20,6 +20,11 @@ not a second planning authority. Statements such as `current`, `next`, or
   observation audit](release-and-cross-app-chronology.md#post-release-liaisonscape-narrativeline-observation-audit-2026-09-23)
   preserves dated audit evidence; current dispositions remain in the roadmap,
   with details in the [bounded migration result](../roadmap-post-release-cross-app-observation-history-migration1-result.md).
+  The [pre-reconstruction application UX and shell acceptance extraction](release-and-cross-app-chronology.md#pre-reconstruction-application-ux-and-shell-acceptance-extraction-roadmap-source-snapshot-2026-09-24)
+  preserves completed F2-LS1, cross-app shell, NarrativeLine workspace, and
+  LiaisonScape metadata / readability checkpoint details; current and deferred
+  UX boundaries remain in the roadmap and are summarized in the [bounded
+  migration result](../roadmap-application-ux-shell-acceptance-history-migration1-result.md).
   The [pre-release chronology](release-and-cross-app-chronology.md#pre-release-and-liaison-scape-020-release-preparation-chronology)
   preserves its original dated status language; current release and capability
   status remain in the roadmap.

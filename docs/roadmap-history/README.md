@@ -19,10 +19,12 @@ not a second planning authority. Statements such as `current`, `next`, or
   preserves its original dated status language; current release and capability
   status remain in the roadmap.
 - [LiaisonScape Layout and Auto Layout chronology](liaisonscape-layout-and-auto-layout-chronology.md)
-  preserves the early Initial Placement / routing progression and selected
-  completed Automatic Display and Explicit Auto Layout implementation /
-  acceptance chronology. Current Initial Layout priorities, Human Check B
-  qualification, diagnostics, and quality follow-ups remain in the roadmap.
+  preserves the early Initial Placement / routing progression, the
+  pre-coordination Product / Provider / Frontier / Presentation progression,
+  and selected completed Automatic Display and Explicit Auto Layout
+  implementation / acceptance chronology. Current Initial Layout priorities,
+  Human Check B qualification, diagnostics, and quality follow-ups remain in
+  the roadmap.
 - [Current roadmap and migration status](../roadmap.md#current-roadmap-first-chronology-migration-status-2026-09-24)
   remains authoritative for current status and links to the [chronology
   migration result](../documentation-ia-roadmap-chronology-migration1-result.md)

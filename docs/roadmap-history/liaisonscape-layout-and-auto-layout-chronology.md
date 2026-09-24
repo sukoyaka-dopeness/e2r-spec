@@ -8,6 +8,10 @@ lineage`) in its original source order. The later Automatic Display and
 Explicit Auto Layout entries preserve complete original H3 blocks extracted
 from `docs/roadmap.md` at `e17e778` (`docs: slim roadmap release and cross-app
 tranche`). Dates, status wording, evidence, and scope limitations are retained.
+The pre-coordination Initial Layout Product / Provider / Frontier / Presentation
+progression was extracted from `docs/roadmap.md` at `c275018`
+(`docs: migrate Initial Placement routing chronology`), preserving its dated
+checkpoint wording and source order.
 Relative Markdown hrefs are adjusted only to resolve from this file; original
 path-only prose is unchanged. Current priorities, accepted Automatic Display
 status, Human Check B's qualified disposition, and open diagnostics/quality
@@ -860,6 +864,423 @@ controls confirm that automorphic Nodes cannot receive a unique topology-only or
 Detailed evidence and qualifications remain in the linked authority; this dated
 checkpoint does not change current execution order or authorize work beyond its recorded
 scope.
+
+## Initial Layout Product, Provider, Frontier, and Presentation Progression (2026-09-11 to 2026-09-13)
+
+The following complete pre-coordination checkpoint blocks were extracted from
+`docs/roadmap.md` at commit `c2750181170a160cf10e115eebcf215612b9222f`, in
+source order. Their dated status language is historical evidence; current
+planning remains in the [Current Initial Layout / Parallel Presentation
+Coordination section](../roadmap.md#current-initial-layout-parallel-
+presentation-coordination-2026-09-13).
+
+### LiaisonScape Initial-Layout Runtime Provider Prototype 1 (2026-09-11)
+
+The [runtime provider prototype result](../liaisonscape-initial-layout-runtime-provider-prototype1-result.md)
+records a bounded opt-in provider boundary in the LiaisonScape repository.
+It validates deterministic Node/label-envelope refinement, whole-result
+fallback, finite/complete positions, and non-persistence, but it is not wired
+into `App.tsx` and does not reproduce the diagnostic Post materializer's
+routing-aware metrics. Runtime integration and Product adoption remain
+`NOT STARTED` / `HOLD`; actual Product opt-in inspection and
+candidate-equivalence/budget evidence are still required.
+
+### LiaisonScape Initial-Layout Candidate Equivalence / Budget 1 (2026-09-11)
+
+The [candidate equivalence and budget result](../liaisonscape-initial-layout-candidate-equivalence-budget1-result.md)
+records that the bounded provider is safe as an opt-in experiment but does not
+yet reproduce `post-structural-relaxation-v1`: Apollo EN/JA use whole-result
+fallback, while other public samples complete a smaller Node/label-only
+refinement. Product opt-in integration remains `NOT STARTED` and adoption
+remains `HOLD`; routing/label quality equivalence and actual Product inspection
+are still required.
+
+### LiaisonScape initial-layout candidate cross-fixture acceptance (2026-09-11)
+
+The user's Actual Product comparison across Lighthouse Restoration, Apollo 11,
+Berlin Wall, Ashen Crown, and Titanic Final Voyage in EN/JA is recorded in
+[Initial-Layout Candidate Cross-Fixture Acceptance 2](../liaisonscape-initial-layout-candidate-cross-fixture-acceptance2-result.md).
+The user preferred `post-structural-relaxation-v1` in every compared cell.
+This establishes strong bounded research evidence, including the fact that
+Titanic EN/JA may have materially different locale-specific geometry; it does
+not permit cross-locale coordinate reuse or a cross-fixture scalar ranking.
+
+The explicit adoption result is `HOLD`: the current Product authority remains
+the generic `settleInitialPlacement()` path, while Post is still a diagnostic
+materializer with no generic runtime authority, budget, fallback, or
+locale-aware policy for arbitrary coordinate-less Datasets. Self-loop,
+non-semantic curve-crossing, and parallel-Edge side-balance concerns remain
+separate routing/presentation tracks. No Product source, Dataset, or governed
+evidence was changed.
+
+### LiaisonScape Initial-Layout Product Adoption Design / Runtime Authority (2026-09-11)
+
+The [Initial-Layout Product Adoption Design](../liaisonscape-initial-layout-product-adoption-design1.md)
+defines the boundary for a future runtime provider. Stored Coordinates remain
+authoritative; coordinate-less placement remains transient Derived state until
+an explicit Save Coordinates action. A future provider must be generic,
+deterministic, locale-input-scoped, budgeted, safety-gated, and able to fall
+back to the current provider without dirtying the Dataset.
+
+`post-structural-relaxation-v1` currently satisfies research comparison
+eligibility but not this runtime authority contract. Therefore Product
+integration is **NOT YET AUTHORIZED** and adoption remains **HOLD**. The next
+possible implementation checkpoint is a bounded runtime-provider prototype
+against these gates; no public-sample-specific coordinate switch is allowed.
+
+### LiaisonScape Initial-Layout research synchronization (2026-09-11)
+
+This section is the current execution-order authority for the Initial Layout
+research branch and supersedes earlier local "next step" wording in the
+individual result entries below.
+
+1. **Acceptance evidence — RECORDED.**
+   `post-structural-relaxation-v1` is strongly preferred by the user across
+   the bounded cross-fixture / cross-locale Actual Product comparison. This is
+   research evidence, not a universal ranking or Product adoption.
+2. **Runtime authority / bounded provider — SAFETY PASS, HOLD.** Stored
+   Coordinates remain authoritative; coordinate-less output remains Derived;
+   the provider has whole-result fallback and does not dirty or persist the
+   Dataset. Post equivalence is not proven.
+3. **Post runtime feasibility — CLOSED NEGATIVE.** The full Post evaluator is
+   seconds-scale and routing/presentation-coupled; direct generic runtime
+   integration is not justified.
+4. **Coarse objective — NEXT.** The diagnostic proxy is implementable without
+   taking routing authority. Comparative evaluation must first recheck its
+   Relation-label corridor geometry sensitivity and Node-label rectangle
+   approximation before any adoption discussion.
+
+Separate presentation tracks are not children of Initial Layout authority:
+
+- Node-owned label glyph halo / white-outline symmetry: presentation
+  experiment candidate; collision geometry and rendering remain separate.
+- Node-label connector termination, layering, and glyph integration: separate
+  connector track.
+- Titanic EN `Carpathia -> Titanic` `r10/r11` parallel Edge plus long
+  Relation-label interaction: downstream routing/presentation track; runtime
+  routing fix not started.
+- Self-loop angle bias: separate unresolved routing/presentation track.
+
+### LiaisonScape Initial-Layout Coarse Objective Actual Product Comparison 2 (2026-09-11)
+
+The [Actual Product comparison result](../liaisonscape-initial-layout-coarse-objective-actual-product-comparison2-result.md)
+records that Post remains visually preferred and that the coarse candidate
+follows the same improvement direction, with acceptable observed Node
+placement, label readability, Node--Edge spacing, graph cohesion, and viewport
+usability. Absence of a coarse-specific new defect remains unconfirmed, so the
+bounded provider branch may continue diagnostically while Product adoption
+remains `HOLD`.
+
+### LiaisonScape Initial-Layout Bounded Coarse Provider 1 (2026-09-11)
+
+The [bounded provider result](../liaisonscape-initial-layout-bounded-coarse-provider1-result.md)
+records that `coarse-objective-prototype-v1` is now available through the
+existing opt-in provider boundary. Lighthouse and Titanic completed within the
+diagnostic budget; Apollo EN/JA safely used whole-result fallback after unsafe
+seed rejection. Derived ownership, deterministic output, and fallback are
+verified, while Post equivalence, arbitrary-Dataset generality, and normal
+Product integration remain unresolved. The next gate is opt-in Actual Product
+evaluation; Product adoption remains `HOLD`.
+
+### LiaisonScape Initial-Layout Bounded Provider Contract Audit 1 (2026-09-11)
+
+The [provider contract audit](../liaisonscape-initial-layout-bounded-provider-contract-audit1-result.md)
+found and corrected a graph-input boundary mismatch: candidate and fallback
+now use the same Product-visible Relation projection. It also corrected the
+default provider identity so the simplified envelope prototype is not named as
+`post-structural-relaxation-v1`. The coarse strategy remains a
+presentation-informed geometric proxy, not a presentation-independent
+materializer or Post implementation. Tests, lint, and build pass; opt-in
+Actual Product evaluation is the next gate and Product adoption remains
+`HOLD`.
+
+### LiaisonScape Initial-Layout Coarse Objective Comparative Evaluation 1 (2026-09-11)
+
+The [comparative evaluation result](../liaisonscape-initial-layout-coarse-objective-comparative-evaluation1-result.md)
+records a diagnostic bounded candidate. It reduced the proxy score modestly on
+Lighthouse and Titanic within roughly 0.3–10.5 ms, while Apollo EN/JA used safe
+whole-result fallback. The real Product inspection surface is ready for
+current/Post/coarse user comparison, but proxy-to-visual agreement and Post
+approximation remain unresolved; Product adoption is not authorized.
+
+### LiaisonScape Initial-Layout Coarse Objective Proxy Audit 1 (2026-09-11)
+
+The [coarse objective proxy audit](../liaisonscape-initial-layout-coarse-objective-proxy-audit1-result.md)
+found and corrected a Relation-label corridor bug: the former self-chord
+midpoint measurement was always zero and was not geometry-sensitive. The
+corrected proxy responds to foreign Node and foreign straight-chord occupancy.
+Node-label rectangles are explicitly only estimated occupancy envelopes, not
+glyph or actual label-placement authority. The proxy is now ready for bounded
+comparative evaluation, while Product integration and adoption remain
+unauthorized.
+
+These tracks may inform diagnostic proxies, but do not authorize Product
+initial-placement, routing, label, connector, Self-loop, or parallel-Edge
+adoption.
+
+### LiaisonScape Initial-Layout Post-Objective Runtime Feasibility 1 (2026-09-11)
+
+The [Post-objective runtime feasibility result](../liaisonscape-initial-layout-post-objective-runtime-feasibility1-result.md)
+measured the existing diagnostic search at approximately 7–12 seconds and
+208–269 Post presentation evaluations on representative public samples. This
+does not fit the bounded runtime-provider budget, and the fast provider remains
+non-equivalent. Direct Product opt-in is therefore not authorized; the next
+possible work is a separate coarse-objective or offline-assistance design
+checkpoint.
+
+### E2R-LIAISONSCAPE-NODE-LABEL-CONNECTOR-VISIBILITY-AUDIT1 (2026-09-13)
+
+The Node-label geometry and connector audit is recorded in [LiaisonScape
+Node-label Geometry and Connector Audit 1](../liaisonscape-node-label-geometry-connector-audit1-result.md).
+Its result is `PASS / BOUNDED PRESENTATION FIX`: the shared conservative
+collision/hit `LabelRect` is retained, while connector attachment uses a
+deterministic text-plus-outline visual envelope. This removes the apparent
+diagonal and upper/lower connector gap without changing route obstacles,
+Relation-label authority, manual placement, or Dataset behavior.
+
+The six Global Placement 3 canonical surfaces loaded through the normal Product
+rendering path in browser inspection, with one Node-label group and connector
+per displayed Node. This is machine/browser evidence, not a new external human
+acceptance. No Initial Layout, Global Placement 3, default, persistence,
+canonical sample, or publication change was made. Ink-based collision
+tightening remains separate and is not reopened by this checkpoint.
+
+The Node-side attachment follow-up is also complete: the former
+`direction * 33` virtual-circle start now uses the shared
+`getEntityAttachment` dispatch with `ENTITY_ATTACHMENT_SHAPE`. Current
+rounded-rectangle Nodes attach at 32px on cardinal directions and at the
+corner-aware boundary on diagonals. The change preserves connector z-order,
+collision/hit rectangles, routing, label placement, and Dataset behavior; no
+new human acceptance is implied by this browser inspection.
+
+### E2R-LIAISONSCAPE-NODE-LABEL-CONNECTOR-PRESENTATION-FOLLOWUP1 (2026-09-13)
+
+The Node-label connector presentation follow-up is recorded in [LiaisonScape
+Node-label Geometry and Connector Audit 1](../liaisonscape-node-label-geometry-connector-audit1-result.md).
+Its result is `PASS / BOUNDED PRESENTATION FIX`. The connector now prefers a
+deterministic per-line text-plus-outline visual envelope for multiline labels,
+with the prior enclosing visual envelope retained only as a gap fallback.
+The conservative collision/hit `LabelRect`, Node-label placement, routing,
+Relation-label authority, and Dataset semantics remain unchanged.
+
+The connector is painted below connection affordances, the selected/focused
+Node body, and the label group, so it cannot cover the Node selection/focus
+indication. The six Global Placement 3 canonical surfaces loaded without
+Product errors in browser inspection, and automated geometry/UI tests pass.
+This remains machine/browser evidence rather than a new external human
+acceptance; Product default/adoption and the Initial Layout Release blocker
+are unchanged.
+
+### LiaisonScape Initial-Layout Global Placement 3 Production Simplification / Quality-Contributor Ablation 1 (2026-09-13)
+
+The [Global Placement 3 production simplification result](../liaisonscape-initial-layout-global-placement3-production-simplification-ablation1-result.md)
+isolated the accepted viewport-anisotropic transform from the structural
+candidate search and authoritative presentation selection. A deterministic
+current seed plus the transform reduced the 46/62-call G3 diagnostic arm to
+one full presentation call, and one/two-arm bounded grid probes reduced the
+same volume to one or two calls. The speedup was not quality-safe: direct arms
+introduced routed crossings, label conflicts, or overlap in all six canonical
+cells, while bounded grid arms retained defects and degraded sharply on the
+14-node/49-relation synthetic case.
+
+The quality contribution is therefore mixed: the global transform improves
+screen-space shape, but candidate diversity and authoritative selection are
+also required. This checkpoint pivots from transform-only and tiny-arm
+simplification; no production-native provider was established, no new human
+review was authorized, Product default/adoption remains `HOLD`, and the
+Initial Layout Release blocker remains `OPEN`.
+
+### LiaisonScape Initial-Layout Global Placement 3 Frontier-12 Human Review Handoff (2026-09-13)
+
+The [Frontier-12 human review handoff](../liaisonscape-initial-layout-global-placement3-frontier12-human-review-handoff.md)
+adds `frontier-12` to the existing development-only Actual Product review
+surface. It provides explicit G3 (`global-placement3`) and Frontier-12 URLs
+for Lighthouse/Titanic/Apollo in EN/JA, using the same canonical Dataset and
+normal App rendering path. Machine evidence is summarized separately: the
+candidate retains G3 output in 5/6 cells and changes Titanic JA, so no G3
+human ACCEPT is inherited. The status is `READY FOR HUMAN REVIEW`; user
+acceptance, Product default/adoption, and the Initial Layout Release blocker
+remain unchanged.
+
+### LiaisonScape Initial-Layout Global Placement 3 Frontier-12 Human Review Execution (2026-09-13)
+
+The [Frontier-12 human review result](../liaisonscape-initial-layout-global-placement3-frontier12-human-review-result.md)
+records a Codex browser inspection of all six G3/reference versus
+Frontier-12/candidate pairs on the normal Product surface. All six cells
+loaded through the expected Dataset, fit, routing, and label path. No obvious
+candidate-only defect was observed in that inspection; Titanic JA visibly
+requires particular attention because its selected output differs and its
+compact fitted view creates a readability/spacing trade-off.
+
+This is not external human acceptance. All six user judgments and the overall
+Frontier-12 disposition remain `UNCONFIRMED / PENDING USER HUMAN REVIEW` until
+the user supplies the visual observations. G3 Human ACCEPT, Product
+default/adoption, dense scaling, production-provider readiness, and the
+Initial Layout Release blocker are unchanged.
+
+### LiaisonScape Initial-Layout Global Placement 3 Frontier-12 User Human Review Evidence (2026-09-13)
+
+The [Frontier-12 user evidence result](../liaisonscape-initial-layout-global-placement3-frontier12-human-review-user-evidence-result.md)
+records the user's direct observation separately from Codex browser inspection
+and machine metrics. Frontier-12 speed was satisfactory and the canonical
+six-cell result was broadly good, with no Frontier-12-specific visual
+regression observed.
+
+The user also identified unnecessary Edge crossings weakening
+Relation-label association in Titanic EN/JA and short horizontal Edges making
+Relation-labels appear detached in Apollo EN. The user reports both issues
+were already present in Global Placement 3; they are therefore recorded as
+separate downstream routing/Relation-label presentation follow-ups, not
+Frontier-12 defects.
+
+Because the user did not explicitly use the project's formal `ACCEPT` wording,
+the canonical checkpoint is recorded as human evidence received but formal
+acceptance not closed. A bounded dense/topology Frontier-12 retune research
+checkpoint may proceed; Product default/adoption remains `HOLD` and the
+Initial Layout Release blocker remains `OPEN`.
+
+### LiaisonScape Initial-Layout Global Placement 3 Production-native Structural Diversity / Frontier Reduction 1 (2026-09-13)
+
+The [Frontier Reduction 1 result](../liaisonscape-initial-layout-global-placement3-production-native-frontier-reduction1-result.md)
+tested a cheap structural Pareto frontier plus normalized farthest-point
+representatives before authoritative Product presentation. Frontier-12 reduced
+the matched G3 46/62-call arm to 13 calls including round-once finalization and
+retained the G3 selected structural candidate/output in 5/6 canonical cells.
+All six canonical cells had zero routed crossings, Relation-label route hits,
+and overlap pairs; Titanic JA selected a new output and therefore does not
+inherit the G3 human ACCEPT.
+
+The 14-Node/49-Relation dense case retained no G3 candidate and still had 143
+routed crossings at Frontier-12, despite a runtime reduction from 8.46 s to
+3.62 s. The formulation is consequently `RETUNE` for density-aware portfolio
+selection, not a production provider. A canonical-scope new Actual Product
+human review may follow, while Product default/adoption remains `HOLD` and the
+Initial Layout Release blocker remains `OPEN`.
+
+### LiaisonScape Initial-Layout Frontier-12 Dense / Topology Retune 1 (2026-09-13)
+
+The [Frontier-12 dense/topology retune result](../liaisonscape-initial-layout-global-placement3-frontier12-dense-topology-retune1-result.md)
+audited the dense loss boundary and found that the G3-selected source was
+present in the 44-candidate pool and 22-candidate cheap frontier, but was lost
+when the frontier was compressed to 12 representatives. A crossing
+relation-pair signature did not improve the dense result and introduced a
+canonical Lighthouse label-nearness drift, so it is not a quality-safe rule.
+
+A density-aware adaptive portfolio was then tested: it keeps the 12-call
+portfolio for sparse frontiers and evaluates the whole cheap frontier when it
+is denser than 12. It used 22 calls on `synthetic:k7-7`, 18 on `k6-8`, and 12
+on `k8-8`, recovering the G3 selected output and hard metrics in all three
+cases. Canonical cells stayed at the existing 13-call Frontier-12 result.
+The dense `k7-7` runtime was still about 6.6--6.8 seconds, so this is a
+quality-retention research candidate, not a production provider or release
+solution. Disposition is `CONTINUE` for bounded density-aware research;
+Product default/adoption remains `HOLD` and the Release blocker remains
+`OPEN`. A new Actual Product human review is required for any adoption
+consideration.
+
+### LiaisonScape Initial-Layout Frontier Adaptive Dense Cost Reduction 2 (2026-09-13)
+
+The [Frontier Adaptive Dense Cost Reduction 2 result](../liaisonscape-initial-layout-frontier-adaptive-dense-cost-reduction2-result.md)
+tested whether a cheap structural stratum could be evaluated first and the
+remaining frontier widened only when needed. The matched audit found the
+G3-quality source at frontier-order positions 22/22 for `k7-7`, 11/18 for
+`k6-8`, and 1/4 for `k8-8`; the first case prevents a conservative early-stop
+claim from the current cheap signals.
+
+The diagnostic progressive probe reduced canonical evaluation count to five in
+Lighthouse and Apollo and used 12 calls in Titanic and the dense cases, but it
+introduced canonical Lighthouse label-nearness drift, Titanic EN drift, and
+Apollo EN/JA route/crossing drift relative to Frontier-12. The density-aware
+whole-frontier reference remained quality-retaining in the tested dense cases
+at 22/18/12 calls, but remained several seconds from the roughly two-second
+planning direction. The frontier early-stop line is therefore `PIVOT`; the
+adaptive whole-frontier arm remains diagnostic reference only. Production-native
+provider readiness, Product default/adoption, and the Initial Layout Release
+blocker are unchanged (`NOT ESTABLISHED`, `HOLD`, `OPEN`).
+
+### LiaisonScape Initial-Layout Authoritative Presentation Cost Audit 1 (2026-09-13)
+
+The [Authoritative Presentation Cost Audit 1 result](../liaisonscape-initial-layout-authoritative-presentation-cost-audit1-result.md)
+reprofiled one full Product presentation evaluation without changing the
+candidate arm or evaluator authority. Existing exact geometry/metadata reuse
+was output-equivalent in all nine matched cells and reduced measured
+authoritative time by roughly 14--22%, but only reduced profiled E2E time by
+about 9--15%. Full evaluation count was unchanged.
+
+Dense residual cost remained route candidate generation and sequential
+occupied-path checks; `k8-8` retained about 2.06 seconds of occupied-path work
+even after reuse. The cache reached 72--87% hit rates but required up to about
+20,394 geometry entries plus matching metadata entries in one process. No
+2--3x exact per-evaluation opportunity was found. The micro-optimization line
+is therefore `PIVOT`; the next direction is a larger production-native
+structural formulation or an explicit Initial Placement/high-quality Auto
+Layout responsibility split. Product default/adoption and the Initial Layout
+Release blocker remain `HOLD` and `OPEN`.
+
+### Production-native structural formulation 1 (2026-09-13)
+
+The [structural formulation research](../liaisonscape-initial-layout-production-native-structural-formulation1-result.md)
+implemented layered barycenter, graph-distance stress, structural-twin spokes,
+crossing-aware circular ordering, and ordered stress. A six-candidate portfolio
+retained the ten-arm audit's selected output on eleven measured cells and used
+seven full evaluations including round-once. Dense k7-7/k6-8/k8-8 crossings
+fell from 129/123/229 to 81/72/144 at about 1.05--1.99 seconds, but fit shrank
+screen separation and canonical Apollo still had a crossing. Titanic JA had
+label-nearness drift relative to Frontier-12. Larger dense 24/144 took 7.23 s.
+
+Disposition: RETUNE the portfolio and continue bounded structural research;
+no general human-review readiness or production provider is established.
+The dense topology signal is evidence against declaring structural research
+exhausted. Fast Initial Placement plus explicit high-quality Auto Layout
+remains an architecture option for larger graphs, not an adopted behavior.
+Product default/adoption remains HOLD and Release blocker OPEN. No human
+acceptance is inherited; vertical parallel-edge spacing remains separate.
+
+### LiaisonScape Initial-Layout Obstacle-sensitive Crossing / Placement-vs-Presentation Decomposition Audit 1 (2026-09-13)
+
+The [obstacle-sensitive crossing decomposition result](../liaisonscape-initial-layout-obstacle-sensitive-crossing-decomposition-audit1-result.md)
+added an opt-in diagnostic that uses the existing Product route samples and
+60-unit Node-influence predicate to identify obstacle-sensitive routes, then
+tests eight deterministic one-clearance local Node moves per inferred obstacle.
+The audit found a placement-sensitive signal in Lighthouse, Apollo, and dense
+`k7-7`, but no quality-safe general move rule: crossing reductions changed
+route sets or traded against labels/overlap. Titanic EN/JA had no inferred
+obstacle Node; its four crossings were two ordinary-route and two parallel
+Relation presentation cases, with nearest non-endpoint Nodes outside the
+router influence radius. The Titanic long-label/parallel issue therefore
+remains a separate presentation track.
+
+Disposition is `RETUNE` for structural placement research. No retune provider,
+routing fix, parallel-spacing fix, or Self-loop fix was implemented. Product
+default/adoption remains `HOLD`, production provider remains `NOT ESTABLISHED`,
+and the Initial Layout Release blocker remains `OPEN`. The independent
+parallel Edge spacing checkpoint may proceed; existing human evidence is not
+inherited by any new candidate.
+
+### LiaisonScape Parallel Edge / Incident Bundle Presentation Retune 1 (2026-09-13)
+
+The [parallel Edge / incident bundle retune result](../liaisonscape-parallel-edge-incident-bundle-presentation-retune1-result.md)
+added an opt-in presentation-only slot policy. Pair widening improves the
+two-Relation case, while bundle-aware widening also separates same-side slots
+in 3+ groups and preserves reverse-direction, manual-route, obstacle, ordinary
+Relation, and Self-loop boundaries. The six-cell machine comparison was mostly
+neutral; Titanic EN improved one label-route hit, while Lighthouse JA incurred
+a route-length increase and Titanic crossings remained. The candidate is
+`RETUNE / READY FOR HUMAN REVIEW`, not human-accepted. Existing Titanic and
+Apollo Relation-label issues remain a separate presentation track. Product
+default/adoption remains `HOLD` and the Initial Layout Release blocker remains
+`OPEN`.
+
+### LiaisonScape Parallel Edge / Incident Bundle Presentation Human Review Handoff (2026-09-13)
+
+The [parallel Edge / incident bundle human-review handoff](../liaisonscape-parallel-edge-incident-bundle-human-review-handoff.md)
+publishes explicit six-cell URLs for the G3 baseline, `parallel-pair-16`, and
+`parallel-bundle-16` arms. The candidate arms reuse G3 coordinates and use the
+normal Product open/routing/label/fit surface; no new Initial Layout provider
+is introduced. Titanic EN/JA are the priority review cells. Codex verified the
+Titanic EN baseline/pair/bundle pages and arm banners in the local browser,
+but USER HUMAN REVIEW remains `PENDING`. Product default/adoption remains
+`HOLD` and the Initial Layout Release blocker remains `OPEN`.
 
 ### LiaisonScape Automatic Display Placement Final Bake-off 1 (2026-09-16)
 

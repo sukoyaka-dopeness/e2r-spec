@@ -67,7 +67,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | --- | --- | --- |
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | Roadmap chronology / slimming tranches 1–2 | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); this roadmap remains the sole current-planning authority |
-| Roadmap → Research responsibility audit | **AUDIT COMPLETE / NO MIGRATION AUTHORIZED** | [audit result](roadmap-research-responsibility-audit1-result.md); candidate detail moves and current-planning constraints require a separate Human-reviewed migration manifest |
+| Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -966,167 +966,63 @@ Dataset mutation, export declaration, and App orchestration. This remains
 **RECORDED / IMPLEMENTATION NOT STARTED**: it does not authorize runtime
 refactoring, History 2 UI, edit refusal, migration, or Relative Time behavior.
 
-### Perceived name impression and character-name generation research
+### Character Generator and character-name research (non-active)
 
-The research seed [Perceived Name Impression Database and Character Name
-Generation](../research/exploratory/name-impression-database-and-character-name-generation.md)
-records a future study of Japanese and English surname/given-name sources,
-human-perceived name impressions, quadrant or radar profiles, and a possible
-character-name generator. It explicitly separates perceived impression from
-demographic or historical fact and remains non-normative.
-
-This is research/post-release growth only. It does not reopen Names P1, change
-the Core `name` contract, authorize source fetching, define a Names or
-Generation Extension, change priority, or create a release blocker. Any future
-generator must address source licensing, privacy, bias, deterministic
-reproducibility, and intentional adoption before implementation.
+Detailed research on perceived name impressions, external vocabulary and
+source policy, large-graph scenarios, and deterministic Dataset tendency/seeds
+remains in the [Character Generator Application research
+sections](../applications/character-generator-app.md) and the [name-impression
+research seed](../research/exploratory/name-impression-database-and-character-name-generation.md).
+This is non-active future research, not a release blocker or an implementation
+authorization. No external source is selected, and fetching/import is not
+authorized. Large-graph sizes remain illustrative, not requirements; the
+current Initial Placement priority is unchanged.
 
 ### Character Generator external vocabulary and large-graph research
 
-The existing [Character Generator Application](../applications/character-generator-app.md)
-entry was updated additively by
-`E2R-CHARACTER-GENERATOR-EXTERNAL-VOCABULARY-AND-LARGE-GRAPH-RESEARCH-NOTE1`.
-It records `CHARACTER-GENERATOR-LARGE-GRAPH-HYPOTHESIS-v1` as
-`RECORDED / UNPROVEN`: an illustrative scenario of approximately 100
-character Entities and potentially hundreds of Relations may later be used
-to examine LiaisonScape readability, settling, routing, labels, viewport
-usability, performance, and manual-correction burden. The 100-Entity value is
-not a limit or requirement, and no generated Dataset enters the current PR-3
-fixture corpus.
-
-The same entry records
-`EXTERNAL-VOCABULARY-ACQUISITION-PREREQUISITE-v1`, covering personal names,
-Relation vocabulary, thesauri, and later organization/occupation/place
-vocabularies. Any future source work must address identity, licensing,
-provenance, reproducibility, drift, language/script, privacy, bias, and the
-distinction between text equality and semantic identity. The bounded
-`EXTERNAL-VOCABULARY-WEB-FETCH-EXPERIMENT1` remains `FUTURE / NOT STARTED`;
-no source is selected and no fetch or importer is authorized.
-
-The addition keeps raw sources, normalized vocabulary, generated proposals,
-and intentionally adopted E2R data separate. Validator structural validity is
-not factual/content correctness, human review remains relevant, and
-deterministic non-AI generation remains possible. Explicit semantic Groups,
-derived graph clusters, and visual layout clusters remain separate; Group
-schema and implementation are not authorized. This direction is
-research/post-release growth only, does not promote to ACTIVE or NEXT, does
-not change the current Initial Placement priority, and is not a release
-blocker.
+The [Character Generator Application research](../applications/character-generator-app.md)
+retains the large-graph and external-vocabulary detail. This remains non-active
+future research: the approximately 100-Entity scale is illustrative, no source
+is selected, and `EXTERNAL-VOCABULARY-WEB-FETCH-EXPERIMENT1` is
+`FUTURE / NOT STARTED`; no fetch or importer is authorized. Current Initial
+Placement priority is unchanged.
 
 ### Character Generator portable vocabulary source policy
 
-The existing [Character Generator Application](../applications/character-generator-app.md)
-entry was updated additively by
-`E2R-CHARACTER-GENERATOR-PORTABLE-TRAIT-VOCABULARY-SOURCE-POLICY-RESEARCH-NOTE2`.
-This Research direction records `PORTABLE-VOCABULARY-NO-ATTRIBUTION-PREFERENCE-v1`:
-the initial portable Character Trait Vocabulary should prefer verified Public
-Domain, CC0, or equivalent no-attribution sources. Attribution-bearing,
-mandatory-notice, ShareAlike/copyleft, restricted, research-only, and unclear
-sources are deprioritized until source-specific rights evidence and a separate
-licensing decision exist. No named source is approved.
-
-The note separates legal attribution from informational Dataset provenance,
-and distinguishes axis, concept, preferred label, aliases, related/opposite
-terms, and generator output. `CHARACTER-TRAIT-VOCABULARY` is the first likely
-external-vocabulary research target; `PREFERRED-LABEL-SOURCE` and
-`DATASET-VOCABULARY-PROVENANCE-QUESTION-v1` remain OPEN. Future Web fetch must
-pass a source-rights preflight covering identity, authoritative rights,
-commercial use, modification, redistribution, derived-data redistribution,
-attribution, notice, ShareAlike, restrictions, and provenance/version.
-
-No fetch, source approval, vocabulary ingestion, dictionary, schema, Credits
-UI, Character Generator, Event generation, 100-Entity Dataset, NarrativeLine,
-LiaisonScape, Core, or Extension implementation occurred. The approximate
-100-character multi-person Event direction remains future research, with 100
-illustrative rather than a limit. Active LiaisonScape engineering priority is
-unchanged and this is not a release blocker or ACTIVE/NEXT engineering work.
-`EXTERNAL-VOCABULARY-WEB-FETCH-EXPERIMENT1` remains FUTURE / NOT STARTED.
+The [Character Generator Application research](../applications/character-generator-app.md)
+retains the source-policy and provenance detail. No named source is approved;
+source-specific rights evidence and a separate licensing decision remain
+prerequisites before any future fetch or adoption. This is not active work or a
+release blocker.
 
 ### Character Generator deterministic Dataset tendency and seed research
 
-The existing [Character Generator Application](../applications/character-generator-app.md)
-entry was updated additively by
-`E2R-CHARACTER-GENERATOR-DETERMINISTIC-DATASET-TENDENCY-SEED-RESEARCH-NOTE3`.
-It records `DETERMINISTIC-DATASET-TENDENCY-SEED-HYPOTHESIS-v1` as
-`RECORDED / UNPROVEN`: a future generator may derive a Dataset-level tendency
-before generating individual Characters, Relations, and Events. Generation
-should use opaque generation-specific seed material rather than actual user,
-email, GitHub, repository, or machine identity. Root, private/profile,
-Dataset, and domain-specific seeds remain conceptual and open; no schema,
-algorithm, hash, PRNG, KDF, UUID, or bit width is selected.
-
-The direction distinguishes exact reproduction from same-tendency regeneration,
-records `SEED-ONLY-REPRODUCIBILITY = INSUFFICIENT`, and identifies generator
-version, configuration/profile version, seed lineage, and vocabulary
-snapshot/version as future reproducibility inputs. `DATASET-GENERATION-PROFILE-v1`
-describes fictional-world distributions rather than real-user profiling.
-Privacy/linkability risks, private-root versus portable-reproduction material,
-cross-provider portability, generated-object identity, partial regeneration,
-Relation/Event/Trait consistency, and D0–D4 determinism levels remain research
-questions. The illustrative approximately-100-character graph remains a
-scenario, not a limit.
-
-The note preserves the distinction between generated proposals and Owned
-Dataset data, and between Character Generator generation quality and
-LiaisonScape/NarrativeLine presentation. Future G1–G7 scenarios are recorded
-but were not run. Character Generator implementation, generation execution,
-user/account access, Core/Extension changes, Dataset generation metadata,
-VSCode/GitHub integration, LiaisonScape, and NarrativeLine changes remain NO.
-This is future research only, not ACTIVE/NEXT work, not a release blocker, and
-the current LiaisonScape priority is unchanged.
+The [Character Generator Application research](../applications/character-generator-app.md)
+retains this unproven hypothesis and its seed, privacy, and reproducibility
+questions. No algorithm, schema, or generation implementation is selected;
+this remains non-active future research and does not change current placement
+priority.
 
 ### Grouping evidence and feedback direction
 
-Entity grouping is not an accepted Dataset semantic or implementation plan.
-LiaisonScape has evidence that large graphs benefit from meaningful grouping,
-and NarrativeLine has a corresponding need to organize long Entity lists and
-Timeline participants. NarrativeLine modernization should collect evidence
-about grouping, collapse/expand, Entity versus Event grouping, hierarchy, and
-membership before a bounded LiaisonScape grouping experiment is considered.
-Neither application alone should decide the Dataset semantics. Any initial
-experiment must remain bounded; arbitrary nesting, multiple membership, Group
-relations, persistence, and Core-versus-Extension ownership remain open.
-
-Cross-application current-edit handoff, Group Entity, multiple-Dataset merge,
-advanced semantics, and AI assistance are future directions rather than
-conditions that indefinitely delay the first public release.
+Collect cross-application evidence, including NarrativeLine needs, before any
+bounded LiaisonScape grouping experiment. No Dataset grouping semantic or
+implementation is accepted. This remains future work, not a release blocker;
+the detailed design space is linked below.
 
 ### User-defined graph Groups
 
-The future capability note [LiaisonScape User-defined Graph
-Groups](../research/exploratory/liaisonscape-user-defined-graph-groups.md)
-records a user-facing goal for meaningful visible grouping and Group-aware
-positioning. It keeps explicit user-defined Groups separate from derived
-motif-overlap clusters: the latter remain topology-based layout/research
-scopes and are not semantic Groups. Multiple membership must remain possible
-in the design space. Group ownership, Entity/Event eligibility, hierarchy,
-Group relations, collapse/expand, persistence, serialization, deletion,
-bounds, internal layout, boundary routing, and interoperability remain open.
-
-This is research/post-release growth only. It is not an accepted Dataset
-semantic, implementation authorization, priority change, or release blocker.
+The [user-defined Groups research](../research/exploratory/liaisonscape-user-defined-graph-groups.md)
+retains the goal and open design questions, including the distinction from
+derived layout clusters. No implementation is authorized.
 
 ### One-button high-quality automatic coordinate generation
 
-The future capability note [LiaisonScape One-button High-quality Automatic
-Coordinate Generation](../research/exploratory/liaisonscape-one-button-automatic-coordinate-generation.md)
-records a long-term user-facing goal: one clear action should be able to
-request a practical, high-quality Derived coordinate set with low manual
-correction. "One-button" describes the workflow, not one force, one pass, or
-one universal objective. A future bounded pipeline may combine global
-placement, graph/motif analysis, cluster quality handling, local
-regularization, route and label evaluation, and feedback.
-
-The goal does not promise mathematical or global optimality. Generated
-coordinates remain Derived until an explicit adoption/save workflow exists;
-Coordinate persistence and Layout persistence remain separate. Current motif
-and cluster research may contribute a local geometry stage, while explicit
-user-defined Groups remain a distinct future concept. Reuse beyond
-LiaisonScape is a hypothesis only.
-
-This is research/post-release growth only. It does not change the current
-research order, selected checkpoint, implementation status, or release
-blocker status.
+This remains a non-active future goal and does not change the current
+authoritative Initial Placement priority or selected checkpoint. The
+[dedicated research](../research/exploratory/liaisonscape-one-button-automatic-coordinate-generation.md)
+retains the quality, pipeline, and Derived-coordinate boundaries. No broader
+placement implementation is authorized by this pointer.
 
 ## Research priority
 
@@ -1501,22 +1397,10 @@ or meaning system.
 
 ### E2R Suite - long-term milestone (EXPLORATORY / DISTANT / NOT ACTIVE)
 
-The exploratory [E2R Suite - Long-term Multi-application
-Ecosystem](../research/exploratory/e2r-suite-long-term-milestone.md) record
-explores a possible future ecosystem of focused interoperable E2R
-applications over portable Datasets and, where appropriate, larger workspace
-contexts. NarrativeLine, LiaisonScape, and Hub are treated only as early
-examples of focused responsibilities; possible Evidence, Map, Search,
-Reporting, multidimensional, AI-assisted, VS Code, Desktop, and third-party
-surfaces remain illustrative possibilities.
-
-This is a long-term, distant milestone with no target version, target date,
-release assignment, or implementation order. It does not select a Suite shell,
-relabel Hub, choose VS Code or Desktop, change Handoff, define capabilities,
-change Core/Extensions/Dataset semantics, or authorize a new application or
-repository. Browser apps remain first-class. The current active LiaisonScape
-Initial Placement checkpoint remains unchanged and authoritative; this Suite
-record does not become active or scheduled.
+The [E2R Suite long-term research](../research/exploratory/e2r-suite-long-term-milestone.md)
+remains unscheduled, with no target version, date, or implementation order.
+It does not change the current active LiaisonScape Initial Placement
+checkpoint or authorize a Suite shell or new application.
 
 ## Evidence gates for candidate Extensions
 

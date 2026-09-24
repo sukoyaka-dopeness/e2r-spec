@@ -1349,7 +1349,10 @@ acceptance, and capability-Handoff progression are preserved as dated evidence
 in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
 That historical progression does not reopen the accepted ownership, no-cascade,
 explicit Relation-deletion, self/parallel Relation, or interoperability
-boundaries. Remaining presentation follow-ups stay separately identified below.
+boundaries. The closure's non-blocking presentation follow-ups are the
+NarrativeLine endpoint-separator rendering issue and LiaisonScape generic
+confirmation spacing; targeted Handoff/discovery and broader Relation
+management remain separate deferred work, not closure prerequisites.
 
 ### Application modularization readiness policy
 
@@ -1365,12 +1368,12 @@ Existing applications are not subject to wholesale rewrite. Before adding
 further workflow to an already large root or controller, the affected
 application should perform a readiness review and identify the smallest useful
 bounded extraction, or explicitly record why extraction is deferred. For
-LiaisonScape's readiness review is recorded in [LiaisonScape Detail / Deletion
-Modularization Readiness](liaisonscape-detail-deletion-modularization-readiness.md).
-The recommended next checkpoint is a bounded Detail/deletion state-controller
-extraction around `src/App.tsx`. This policy does not change the Cross-App
-Relation Deletion status, accepted Dataset/Core/Extension semantics, or the
-current execution order.
+LiaisonScape, the bounded Detail/deletion state-controller extraction is
+**IMPLEMENTED / ACCEPTED** at commit `98f7751`; its ownership boundary and
+evidence remain in [LiaisonScape Detail / Deletion Modularization Readiness](liaisonscape-detail-deletion-modularization-readiness.md).
+The record states that a separate 2B wiring checkpoint is unnecessary. Any
+future extraction requires its own readiness review under the workspace
+policy; no further Detail/deletion extraction is currently sequenced here.
 
 The following remain **Accepted implementation — visual/presentation
 follow-up**, not acceptance blockers: Entity Delete button position across
@@ -1392,100 +1395,39 @@ Relation list scrolls. Browser H1-H8 and the six-part hard gate passed. DELETE2
 accepted semantics remain unchanged, and this checkpoint does not claim that
 LiaisonScape or the cross-app implementation has reached final alignment.
 
-### Next Cross-App deletion follow-up sequence
+### Cross-App Relation Deletion closure and remaining boundaries
 
-The following is the near-term sequence within the Cross-App Relation
-deletion workstream. It does not reorder the broader roadmap or reopen the
-accepted DELETE2/DELETE3 semantics.
-
-1. `NL-ENTITY-DELETE4-CARD-PRESENTATION1` — refine the narrow Relation
-   blocker card into semantic blocks, place the Relation action at the card
-   bottom, and verify normal and narrow browser presentation. The preferred
-   information order is Relation name, endpoint/direction, endpoint identity
-   hint when needed, Relation identity hint when needed, then the Remove
-   Relation action. Exact left/right/full-width button geometry remains an
-   implementation decision to be made from existing card/action conventions
-   and browser evidence.
-2. `E2R-CDP-STABILIZATION1` is implemented and accepted as a separate
-   operational track; its helper and evidence boundary are recorded below.
-3. `LS-DETAIL-DELETION-MODULARIZATION1-READINESS` and
-   `LS-DETAIL-DELETION-MODULARIZATION2A-STATE-CONTROLLER` are complete. 2A is
-   accepted at LiaisonScape commit `98f7751`
-   (`refactor: extract detail deletion workflow state`) as a
-   behavior-preserving bounded extraction. Its hook owns Detail/deletion
-   workflow state and transitions; App retains Dataset, clean-baseline,
-   graph-selection, graph-interaction, placement, and creation ownership.
-   Do not copy NarrativeLine UI or alter its accepted semantics.
-4. `LS-CROSS-APP-RELATION-DELETION1-BLOCKER-RESOLUTION` is implemented at
-   LiaisonScape commit `33d0427` with automated verification, and its
-   `LS-CROSS-APP-RELATION-DELETION2-REAL-EDGE-ACCEPTANCE` rerun is accepted
-   after `LS-CROSS-APP-RELATION-DELETION3-FOCUS-FIX` at commit `0a3c446`.
-5. Run final Cross-App interoperability acceptance in both directions,
-   including self Relations, parallel Relations, hidden/non-normal
-   presentation, and ambiguous endpoint/Relation identity.
-6. Close the capability status from `design accepted / implementation not yet
-   aligned` after the preceding evidence is complete.
+The Cross-App Relation Deletion capability is **FORMALLY ACCEPTED / COMPLETE /
+CLOSED** by the [capability closure](cross-app-relation-deletion-capability-closure.md);
+the detailed dated implementation and acceptance progression remains in the
+[Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
+The old `NL-ENTITY-DELETE4-CARD-PRESENTATION1` sequence is not a current
+capability blocker. Retain only the closure's explicitly named non-blocking
+presentation findings above; do not infer universal UI parity or reopen the
+accepted deletion contract. Handoff/discovery and generalized Relation
+management remain deferred and outside that closure.
 
 ### E2R-CDP-STABILIZATION1 — CDP/browser acceptance workflow
 
-**IMPLEMENTED / ACCEPTED** in the cross-application verification-tooling
-checkpoint. The reusable helper is located at
-[`tools/edge-cdp/`](../tools/edge-cdp/) and is owned by e2r-spec. It uses the
-Node.js 24 built-in WebSocket implementation and does not add a production
-dependency or change application runtime source.
-
-The recent browser evidence showed that a native reload/discard/cancel dialog
-can stop a scenario while remaining visible, and background CDP/DOM
-evaluation can otherwise continue against an unclear browser state. Native
-dialog state is therefore an acceptance precondition. If a native dialog is
-open, it must be explicitly handled through the known page target and
-`Page.handleJavaScriptDialog`, then its closed state must be verified before
-the scenario continues. If it remains open, the run is not visual/manual
-PASS; any background DOM result is **programmatic evidence only** and must be
-reported as such. Browser-native dialog state, application `ModalDialog`, and
-background DOM state must not be conflated.
-
-Checkpoint-specific fixtures and selectors remain temporary evidence rather
-than generic helper behavior. Reusable helper scope is limited to target
-discovery, WebSocket connection, `Runtime.evaluate`, focus inspection, native
-dialog handling, acceptance-state reporting, and target/URL reporting.
-Automated helper tests cover target selection, command/event separation,
-focus inspection, dialog state transitions, acceptance blocking, and explicit
-recovery. The existing dirty playbook is preserved unchanged; the clean helper
-documentation and implementation live in e2r-spec.
-
-Real Edge smoke evidence on 2026-08-27 used a dedicated loopback CDP profile
-against LiaisonScape. Target discovery, WebSocket connection,
-`Runtime.evaluate("document.title")`, focus inspection, and explicit
-native-dialog recovery passed. The helper reported initial native-dialog state
-as `unknown` and blocked visual/manual acceptance; after an explicit no-dialog
-probe it reported `closed` and allowed acceptance. A real `alert` reproduced
-the `open` state, blocked visual/manual PASS, and returned to `closed` after
-explicit `accept: false` recovery. Machine-specific target IDs and WebSocket
-URLs are intentionally not recorded here.
+The e2r-spec-owned helper is **IMPLEMENTED / ACCEPTED** and maintained in
+[`tools/edge-cdp/`](../tools/edge-cdp/), with its operational scope in the
+[README](../tools/edge-cdp/README.md) and regression coverage in
+[`edge-cdp-helper.test.mjs`](../tools/edge-cdp/edge-cdp-helper.test.mjs).
+The bounded real-Edge acceptance evidence, including native-dialog gating, is
+recorded in [LiaisonScape Relation Deletion Resolution Acceptance](liaisonscape-relation-deletion-resolution-acceptance.md).
+This helper supplies evidence tooling; each scenario retains its own acceptance
+authority. It adds no production application dependency or runtime behavior.
 
 ### LS-DETAIL-DELETION-MODULARIZATION1-READINESS
 
-**READINESS AUDIT COMPLETE / READY FOR A BOUNDED EXTRACTION.** The audit is
-recorded in [LiaisonScape Detail / Deletion Modularization
-Readiness](liaisonscape-detail-deletion-modularization-readiness.md). It
-recommends Option A: one narrow Detail/deletion application workflow
-coordinator, while App retains Dataset and clean-baseline ownership, and graph
-selection and graph-interaction state remain outside the first boundary.
-
-The follow-up `LS-DETAIL-DELETION-MODULARIZATION2A-STATE-CONTROLLER` is now
-**IMPLEMENTED / ACCEPTED** at LiaisonScape commit `98f7751`. It extracts the
-bounded Detail/deletion state and transition controller into
-`src/hooks/useDetailDeletionWorkflow.ts`; Dataset mutation remains behind
-App's existing `updateDataset` boundary, and graph selection/placement remain
-App-owned. LiaisonScape passed 209 tests, lint, build, and diff check.
-
-The LiaisonScape-native Cross-App blocker-resolution implementation is recorded
-at commit `33d0427` with automated verification. Its modal focus remediation is
-accepted at commit `0a3c446`, with the 2026-08-28 fresh Real Edge rerun
-recorded in [LiaisonScape Relation Deletion Resolution Real Edge Acceptance](liaisonscape-relation-deletion-resolution-acceptance.md).
-Final Cross-App interoperability and Dataset/Core/Extension/schema changes
-remain separate follow-up work.
+The readiness recommendation and accepted 2A state-controller boundary are
+preserved in [LiaisonScape Detail / Deletion Modularization Readiness](liaisonscape-detail-deletion-modularization-readiness.md).
+Cross-App blocker resolution, focused acceptance, bidirectional
+interoperability, and final capability closure are recorded in the [closure authority](cross-app-relation-deletion-capability-closure.md)
+and [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
+The former “final interoperability remains follow-up” sequence is superseded
+by that closure; the exclusions and non-blocking presentation items stated in
+the current status above remain operative.
 
 ### Open / deferred
 

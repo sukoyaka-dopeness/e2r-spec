@@ -68,7 +68,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | Roadmap chronology / slimming tranches 1–2 | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
-| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; INDEPENDENT RESEARCH CAPSULES AND SEED RESEARCH POINTERS COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
+| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; SEED RESEARCH AND PR-2 NONVISUAL LINEAGES POINTER-COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -3634,168 +3634,41 @@ Detailed checkpoint evidence and dated disposition remain in [Experiment4 Interp
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-READINESS-DESIGN1 (2026-09-02)
 
-The [Production Readiness Design1 result](liaisonscape-initial-placement-seed-production-readiness-design1.md)
-freezes a non-ranking acceptance contract before candidate selection. Hard
-validity, deterministic/runtime correctness, structural preference, visual
-acceptance, settling, routing/labels, viewport, performance, compatibility,
-provenance, and fixture evidence remain separate classes. PP-M3 remains
-fixture-local preference evidence; incomparability and equivalence are
-preserved, and no cross-fixture score or winner is authorized.
-
-Criteria are frozen, but candidate eligibility is not yet audited. Visual and
-runtime evidence are not accepted by this checkpoint, and no Production
-candidate is selected. The exact next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-READINESS-EVIDENCE-AUDIT1`.
+Detailed readiness criteria and the checkpoint's dated disposition remain in the [Production Readiness Design1 authority](liaisonscape-initial-placement-seed-production-readiness-design1.md). The later PR-2 completion result is the current pointer for bounded nonvisual status and remaining-stage boundaries.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-READINESS-EVIDENCE-AUDIT1 (2026-09-02)
 
-The [nonvisual evidence audit result](liaisonscape-initial-placement-seed-production-readiness-evidence-audit1-result.md)
-reconciles the candidate inventory. The current Production baseline is kept
-separate from the TA0-TA3 research witnesses, FP1-NGP research family, and K3
-control. Research hard evidence reaches only bounded `PR-1`; no research
-candidate reaches `PR-2` because a Production-compatible materializer,
-runtime compatibility evidence, and complete Production provenance are absent.
-
-The common blocker is B2, not a quality ranking. The common fixture-role set
-also has a later ROLE GAP; visual, settling, routing, viewport, and performance
-evidence remain unaccepted. No candidate is selected and no visual stage is
-authorized yet. The next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-DESIGN1`.
+The inventory reconciliation and its dated findings remain in the [readiness evidence audit result](liaisonscape-initial-placement-seed-production-readiness-evidence-audit1-result.md). Its historical blocker/sequence snapshot is superseded for current bounded PR-2 status by the later completion result.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-DESIGN1 (2026-09-03)
 
-The [candidate materialization design](liaisonscape-initial-placement-seed-production-candidate-materialization-design1.md)
-freezes a bounded M2 disposable harness with an M1 pure core. It consumes a
-normalized Entity graph and emits ephemeral Derived coordinates only; it is
-not imported by the live App, included in the Production bundle, or allowed
-to persist or mutate Stored/Owned coordinates. The first domain is
-`1<=N<=65` with an explicit positive uniform affine runtime transform.
-
-TA0/REP-0, TA2 degree, TA2 motif, TA3 Forward, TA3 Reverse, and FP1-NGP are
-authorized as research-only identities for the bounded implementation
-surface. TA1-W1 remains fixture-witness-only and K3 remains control-only; no
-fixture witness is generalized into runtime semantics. The common fixture
-ROLE GAP, settling/routing/label, visual, viewport, and performance evidence
-remain open. No candidate is selected. The exact next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-IMPLEMENTATION1`.
+The bounded, disposable materialization contract and its role boundaries remain in the [candidate materialization design](liaisonscape-initial-placement-seed-production-candidate-materialization-design1.md); the evaluation surface is not Production integration or candidate selection.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-IMPLEMENTATION1 (2026-09-03)
 
-The [Implementation1 result](liaisonscape-initial-placement-seed-production-candidate-materialization-implementation1-result.md)
-records CASE 1 / DECISION A. The frozen M2 disposable harness and M1 pure
-core were implemented in the required detached clone at the accepted
-LiaisonScape source commit. The five authorized research-only materializers
-(`TA0/REP-0`, TA2 degree, TA2 motif, TA3 Forward, and TA3 Reverse) passed on
-the Lighthouse, Ashen Crown, and K3 control fixtures: 15/15 cells, with
-exact rational FP1 substrate, explicit transform, provenance, deterministic
-failures, and HARD-1..7 evidence. FP1 remains a family dependency only;
-TA1-W1, K3, and the reference baseline are not candidate identities.
-
-The clone's unchanged application gate passed 280/280 tests, lint, and build.
-The evaluation surface is not imported by Production, persisted, bundled, or
-used for visual, settling, routing, label, structural-objective, ranking, or
-PR-2 acceptance. No candidate is selected and the common fixture ROLE GAP
-remains open. The disposable clone is retained for the next exact checkpoint:
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-VALIDATION1`.
+Implementation evidence and its dated result remain in the [materialization implementation result](liaisonscape-initial-placement-seed-production-candidate-materialization-implementation1-result.md). Its bounded harness results do not establish Production integration or candidate selection.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-VALIDATION1 (2026-09-03)
 
-The [Validation1 result](liaisonscape-initial-placement-seed-production-candidate-materialization-validation1-result.md)
-records `CASE 1 / DECISION A`: the frozen Implementation1 source and initial
-artifact hashes matched, the existing harness reproduced all 15 authorized
-fixture/candidate cells, and nonvolatile materialization evidence matched
-after expected `generatedAt` volatility was removed. Pure-core tests passed
-13/13; the unchanged application gate passed 280/280 tests, lint, and build;
-Production isolation remained intact.
-
-This establishes bounded `MAT-C3` runtime/nonvisual materialization evidence
-only. It does not establish `PR-2`, select a candidate, accept visual,
-settling, routing/label, viewport, performance, or Production integration
-evidence, or claim that Initial Placement is solved. The exact smallest next
-prerequisite is nonvisual evidence completion for PR-2, beginning with the
-candidate-specific Production compatibility/persistence/migration/fallback
-audit and extending hard-gate/runtime and Production provenance evidence
-beyond the bounded materializer surface. That prerequisite is not started.
+Validation evidence and its bounded claims remain in the [materialization validation result](liaisonscape-initial-placement-seed-production-candidate-materialization-validation1-result.md). The old “next PR-2 prerequisite” wording is a dated snapshot; PR-2's later disposition is recorded under the completion checkpoint below.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-COMPATIBILITY-AUDIT1 (2026-09-03)
 
-The [candidate compatibility audit](liaisonscape-initial-placement-seed-production-candidate-compatibility-audit1-result.md)
-records `CASE 2 / DECISION B`. All five authorized materialized identities are
-compatible as bounded EVAL-FULL-SEED evaluations, but current Production
-semantics do not define a candidate transform owner, partial Stored/Owned
-merge, candidate persistence/adoption, migration handoff, failure/fallback
-policy, or integrated provenance boundary. No candidate-specific blocker was
-found; these are common compatibility gaps.
-
-`PR-2` remains `NO`. No candidate was selected, no Production integration or
-runtime implementation was started, and no visual, settling, routing/label,
-viewport, or performance evidence was accepted. The exact smallest next
-prerequisite is a bounded common Production compatibility contract design,
-beginning with runtime-transform ownership and the EVAL-FULL-SEED versus
-partial Stored/Owned boundary. It is not started.
+The compatibility audit's dated findings remain in the [candidate compatibility audit result](liaisonscape-initial-placement-seed-production-candidate-compatibility-audit1-result.md); its earlier PR-2 status is superseded by the later bounded completion result.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-COMPATIBILITY-DESIGN1 (2026-09-03)
 
-The [candidate compatibility design](liaisonscape-initial-placement-seed-production-candidate-compatibility-design1-result.md)
-records `CASE 1 / DECISION A`. It freezes a minimum common Product contract:
-the explicit transform belongs to a dedicated pure placement-space evaluation
-adapter; candidate evaluation is optional and startup-external; EVAL-FULL-SEED
-is permitted only for a clean zero-Stored state; Stored/Owned coordinates
-remain authoritative; Derived output requires explicit user-owned adoption;
-accepted Coordinate and canonical Space migration precede evaluation; failure
-is attributable with no silent fallback or candidate retry; and provenance
-remains in a separate evaluation record.
-
-The complete-Stored distinction is explicit: Stored/Owned precedence is
-`PASS`, while candidate evaluation over complete Stored input remains
-`NOT-DEFINED` because EVAL-FULL-SEED rejects Stored input. No Production code,
-candidate selection, schema, registry, persistence, migration, fallback,
-visual, settling, routing/label, viewport, performance, or structural
-objective work was started. `PR-2` remains `NO`. The exact next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-COMPATIBILITY-VALIDATION1`.
+The validated common compatibility contract remains in the [candidate compatibility design result](liaisonscape-initial-placement-seed-production-candidate-compatibility-design1-result.md). Compatibility evidence defines bounded evaluation boundaries; it is not candidate selection or Production integration.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-COMPATIBILITY-VALIDATION1 (2026-09-03)
 
-The [candidate compatibility validation](liaisonscape-initial-placement-seed-production-candidate-compatibility-validation1-result.md)
-records `CASE 1 / DECISION A`: the frozen PCOMP common compatibility contract
-is validated for the bounded nonvisual evaluation surface. The five fixed
-materializer source hashes match; fresh pure-core evidence is 13/13; fresh
-authorized fixture/candidate evidence is 15/15; Production tests are 280/280;
-lint, build, and diff-check pass; and nonvolatile artifact evidence remains
-stable across two harness runs.
-
-The validation confirms the shared transform, ownership, adoption, persistence,
-migration, failure, safety, and provenance boundaries without implementing the
-future Product adapter or live evaluation path. The three defensive failure
-paths without individual injected artifact cases are recorded as a bounded
-evidence boundary. No candidate-specific compatibility gap or design conflict
-was found. No candidate was selected and no Production integration was made.
-`PR-2` remains `NO`; visual, settling, routing/label, viewport, performance,
-selection, and live-integration evidence remain separate. The exact smallest
-next prerequisite is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-PR2-NONVISUAL-EVIDENCE-COMPLETION1`,
-which is not started.
+The validated bounded compatibility evidence and its limitations remain in the [candidate compatibility validation result](liaisonscape-initial-placement-seed-production-candidate-compatibility-validation1-result.md). Its earlier “PR-2 not started” sequencing is superseded by the completion checkpoint below.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-PR2-NONVISUAL-EVIDENCE-COMPLETION1 (2026-09-03)
 
-The [PR-2 nonvisual evidence completion result](liaisonscape-initial-placement-seed-production-pr2-nonvisual-evidence-completion1-result.md)
-records `CASE 1 / DECISION A`: the four exact PR-2 classes—hard validity,
-determinism/runtime, compatibility, and provenance—are complete-bounded for
-the five frozen materializer identities on `1 <= N <= 65`. The expanded
-evidence covers seven committed real fixtures and six deterministic controls:
-65 eligible candidate cells pass all HARD-1..7 gates, while N=0 and N=66 fail
-closed for every candidate. Projection boundaries for self, parallel, and
-Event Relations are recorded explicitly.
+**Current bounded disposition: PR-2 nonvisual evidence is COMPLETE-BOUNDED** for the four required classes (hard validity, determinism/runtime, compatibility, and provenance), the five frozen research materializer identities, and `1 <= N <= 65`; the dedicated [PR-2 completion result](liaisonscape-initial-placement-seed-production-pr2-nonvisual-evidence-completion1-result.md) is the detailed evidence authority. The bounded run covered seven committed real fixtures and six deterministic controls; all 65 eligible cells passed HARD-1..7, while N=0 and N=66 failed closed.
 
-The frozen pure-core tests pass 13/13, the MAT-C3 harness passes 15/15, the
-new PR-2 evidence tests pass 4/4, and unchanged Production passes 280/280,
-lint, build, and diff-check. No candidate-specific failure occurred. The
-realistic fixture ROLE GAP remains open for later stages; visual, settling,
-routing/label, viewport, performance, Production integration, and selection
-remain separate and unaccepted. No candidate is selected and `PR-C3` through
-`PR-C5` remain `NO`. The exact next prerequisite is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-DESIGN1`,
-which is selected only and not started.
+This does not select a candidate or establish a Production provider, Product adoption, Production integration, or visual acceptance; no candidate is selected and `PR-C3` through `PR-C5` remain `NO`. Compatibility evidence and candidate selection remain separate. The realistic fixture ROLE GAP remains open for later stages. PR-3 visual/settling/routing and subsequent integration evidence are separate, unaccepted scopes; see the [PR-3 evidence design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-design1-result.md) for their current contract and status.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-DESIGN1 (2026-09-03)
 

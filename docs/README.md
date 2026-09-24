@@ -32,6 +32,7 @@ repository. Start with the responsibility that matches the question:
 - [Roadmap Hybrid Reconstruction - Second Pilot Result 1](roadmap-hybrid-reconstruction-second-pilot-result1.md): applies the G2-A bounded verification-envelope B pilot; G2-B-G2-D remain unchanged.
 - [Roadmap Hybrid Reconstruction - G2-B A-style Preparation 1](roadmap-hybrid-reconstruction-second-pilot-preparation2.md): separates screening, probing, boundary completion, and risk claims; recommends a G2-B1-only A pilot.
 - [Roadmap Hybrid Reconstruction - G2-B1 Pilot Result 1](roadmap-hybrid-reconstruction-g2-b1-pilot-result1.md): preserves the G2-B1 heading and current screening boundary while delegating dated finalist-recall evidence to History.
+- [Roadmap Hybrid Reconstruction - G2-B2 Pilot Result 1](roadmap-hybrid-reconstruction-g2-b2-pilot-result1.md): preserves the G2-B2 diagnostic boundary while keeping G2-B4 risk and target qualification separate.
 - [NarrativeLine NL-H2-R1](roadmap.md): **ACCEPTED / MANUAL ACCEPTANCE COMPLETE**.
 - [History 2 broader authoring scope](history-2-user-facing-authoring-scope-result.md): **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED**.
 

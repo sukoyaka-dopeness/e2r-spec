@@ -2502,30 +2502,25 @@ not closed. The current planning consequence is:
 ### LiaisonScape Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1 (2026-09-14)
 
 The [Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1 result](liaisonscape-bounded-multi-stage-product-probe1-result.md)
-evaluates the next bounded architecture candidate after finalist screening:
-existing candidate generation, cheap lexicographic K=4, a graph-derived
-cheap-equivalence/high-risk gate, and zero, one, or two complete
-Product-authoritative ambiguity probes. No new solver family or Product
-authority was introduced.
+records a bounded one-probe diagnostic campaign over the existing candidate
+families and Product-authoritative verification seam. The campaign is useful
+evidence for diagnostic reduction, but it does not establish a production
+selection policy.
 
-The zero-probe baseline reproduced `24/26` exact-best with two meaningful
-dense misses. One bounded probe triggered on `3/26` operations, recovered both
-known misses, and reached `26/26` exact-best with zero meaningful false
-negatives, `107` Product evaluations versus `311` oracle evaluations, and
-`100%` baseline-improvement retention. Two probes added cost without improving
-the result. The gate produced one unnecessary trigger on `dense-k6-8`, no
-canonical trigger, and no trigger on `dense-k7-7-minus-one` or `dense-k8-8`.
+The current planning consequence is:
 
-Disposition: `A. BOUNDED MULTI-STAGE SELECTOR ESTABLISHED` for this diagnostic
-campaign, with multi-stage selector readiness only `DIAGNOSTICALLY PROMISING /
-PRODUCTION INTEGRATION NOT ESTABLISHED`. Cheap-only screening remains
-`HOLD / NOT ESTABLISHED`; quality solver remains `HOLD / NOT ESTABLISHED`,
-Product integration/default remains `HOLD`, production provider remains `NOT
-ESTABLISHED`, Adaptive Initial Placement Cascade remains `INACTIVE`, Actual
-Product visual evaluation remains `NOT READY`, Human Review remains `NOT
-READY`, and the Initial Layout Release blocker remains `OPEN`. The next bounded
-question is independent gate/target validation; do not advance Adaptive
-Cascade, Product adoption, or Human Review.
+- multi-stage selection remains `DIAGNOSTICALLY PROMISING / PRODUCTION
+  INTEGRATION NOT ESTABLISHED`;
+- cheap-only screening remains `HOLD / NOT ESTABLISHED`, and this campaign
+  does not establish a quality solver, Product default/integration, production
+  provider, Adaptive Cascade, visual acceptance, Human Review, SLA, or release
+  readiness;
+- the bounded one-probe result must remain subject to the separate G2-B4
+  risk-gate, failure-closure, and probe-target stability qualification; and
+- the detailed probe counts, candidate-evaluation totals, trigger/cost
+  matrices, and dated campaign progression are delegated to the [dedicated
+  result](liaisonscape-bounded-multi-stage-product-probe1-result.md) and the
+  [existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-bounded-multi-stage-product-probe-dense-cheap-equivalence-closure-1-2026-09-14).
 
 ### LiaisonScape Boundary Equivalence-Class Product Completion / Cost Envelope 1 (2026-09-14)
 

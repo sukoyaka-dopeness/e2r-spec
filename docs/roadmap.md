@@ -68,7 +68,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | Roadmap chronology / slimming tranches 1–2 | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
-| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; PERSONAL STORAGE POINTER COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); other mixed groups remain unchanged; current execution order is unchanged |
+| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; PERSONAL STORAGE AND GAMEBOOK POINTERS COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -5157,24 +5157,14 @@ deploy, or publication occurred.
 
 ### E2R-GAMEBOOK-VSCODE-EXTENSION-RESEARCH-NOTE1 (2026-09-03)
 
-The [E2R Gamebook / Interactive Narrative VS Code Extension research note](e2r-gamebook-vscode-extension-research-note1.md)
-records CASE 1 / Decision A. This is `FUTURE RESEARCH / DEFERRED IDEA`, not
-active work. The individual feature ideas are currently mostly not novel and
-the prior-art names Yarn Spinner, Twine, ink/Inky, articy:draft, and Ren'Py
-remain unverified prior-art leads in this checkpoint.
-
-H1–H5 are retained as differentiation hypotheses only: E2R as a shared data
-foundation, one Dataset across applications, explicit Gamebook/Media
-separation, provenance-preserving authoring and execution, and stateful
-branching beyond gamebooks. The E2R Core scene/passage/Event question remains
-open. `RESTART-TRIGGER-v1` requires a concrete, testable, materially
-E2R-specific differentiation claim before research restarts.
-
-Gamebook Extension and Media Extension relations remain exploratory and
-unfrozen. No VS Code extension repository, prototype, schema, player runtime,
-implementation, Product change, or prior-art feature-parity work is started.
-This idea is not added as ACTIVE, NEXT, or PRIORITY work. `ai-knowledge` is
-unchanged, and no push, tag, release, deploy, or publication occurred.
+**DEFERRED / IDEA HOLD.** Research may reopen only when a concrete, testable,
+materially E2R-specific differentiation claim satisfies the frozen
+`RESTART-TRIGGER-v1` and is separately reviewed. This capsule is not active,
+next, or priority work; no extension repository, prototype, schema, player
+runtime, implementation, or Product change is authorized. See the [E2R
+Gamebook / Interactive Narrative VS Code Extension research note](e2r-gamebook-vscode-extension-research-note1.md)
+for the hypotheses, unverified prior-art leads, open Core mapping question,
+and complete restart criteria.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-DESIGN1-CORRECTION1 (2026-09-03)
 

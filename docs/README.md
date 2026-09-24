@@ -23,6 +23,7 @@ repository. Start with the responsibility that matches the question:
 ### Current status at a glance
 
 - [Roadmap Hybrid Reconstruction - Candidates 2 and 3 Claim Reconciliation Preparation 1](roadmap-hybrid-reconstruction-candidates2-3-claim-reconciliation-preparation1.md): separates Product-owned presentation evidence from bounded History 2 authoring/upgrade closure; preparation only, with no Roadmap or History reconstruction.
+- [History 2 Candidate 3 B reconstruction result](roadmap-hybrid-reconstruction-history2-candidate3-migration-result1.md): records the five-heading historical transfer and retained bounded H2 status boundaries.
 
 - [Earlier Documentation IA / roadmap modularization audit](documentation-information-architecture-roadmap-modularization-audit1-result.md): its navigation-first and path-stability recommendation remains historical evidence. The later [Roadmap-first structure decision](documentation-ia-roadmap-physical-modularization-direction-decision1.md) governs current structure direction. [Roadmap → Research Responsibility Audit 1](roadmap-research-responsibility-audit1-result.md) and its [first bounded compression result](roadmap-research-responsibility-migration1-result.md) record the approved tranche; other candidates remain unmigrated.
 - [Residual Roadmap Responsibility Audit 1](roadmap-residual-responsibility-audit1.md): current-roadmap classifications and a proposed next bounded tranche; no migration is authorized by the audit.

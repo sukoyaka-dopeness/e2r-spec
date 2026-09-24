@@ -881,6 +881,126 @@ now next, followed by the NarrativeLine Display-Order Reordering Audit. The
 Final Pre-Public-Release Audit has not been rerun, and public release remains
 unauthorized.
 
+## History 2 position/circa authoring and Dataset upgrade chronology (2026-09-19)
+
+The following five dated Roadmap blocks are preserved in their original source
+order and wording. Their `current`, `pending`, `open`, and `next` language is
+the status of each original checkpoint, not current planning authority. The
+bounded closure checkpoint originally placed between the declaration repair
+and Dataset-wide planning blocks remains in the [current Roadmap closure
+entry](../roadmap.md#e2r-h2-position-circa-bounded-authoring-closure-2026-09-19);
+its closure result governs present status. Relative Markdown links are
+adjusted only for this file's location.
+
+### E2R-HISTORY-2-USER-FACING-AUTHORING-SCOPE-DESIGN (2026-09-19)
+
+> Historical planning checkpoint; current H2-POSITION-CIRCA status is governed
+> by the bounded authoring closure entry below.
+
+The [History 2 User-Facing Authoring Scope result](../history-2-user-facing-authoring-scope-result.md)
+records a documentation-only design checkpoint after `NL-H2-R1` acceptance.
+Current Candidate recognition and read-only preservation remain **ACCEPTED /
+CLOSED**; this checkpoint does not reopen them or authorize runtime work.
+
+The smallest proposed meaningful public History 2 experience is one
+`position` assertion with optional position-level `approximation: "circa"`,
+using an explicit History `1.0.0` to `2.0.0` upgrade only when the H2-only
+capability is selected. Bounded-point, temporal-extent, multiple assertions,
+Relative Time, and broader Timeline semantics remain deferred. The proposal
+requires human scope approval, especially for non-fabricating Timeline display
+and approximate-value ordering, before a bounded NarrativeLine implementation
+checkpoint may begin.
+
+### E2R-H2-POSITION-CIRCA-HUMAN-SCOPE-DECISION-PREPARATION (2026-09-19)
+
+> Historical checkpoint; the retained recommendation is superseded for current
+> status by `E2R-H2-POSITION-CIRCA-BOUNDED-AUTHORING-CLOSURE` below.
+
+The [H2-POSITION-CIRCA decision preparation](../history-2-position-circa-human-scope-decision-preparation-result.md)
+is complete. It recommends acceptance of one History 2 `position` assertion
+with position-level `approximation: "circa"`, subject to explicit human
+approval of the non-fabricating Timeline presentation projection, H1-to-H2
+upgrade confirmation, H2-to-H1 downgrade boundary, and declaration cleanup.
+This remains **RECOMMENDED FOR ACCEPTANCE / HUMAN APPROVAL REQUIRED** and does
+not authorize NarrativeLine runtime work.
+
+### E2R-H2-POSITION-CIRCA-BOUNDED-AUTHORING (2026-09-19)
+
+> Historical implementation checkpoint; its pending human-acceptance status is
+> superseded by the bounded closure entry below.
+
+The explicitly approved H2-POSITION-CIRCA slice is implemented in
+NarrativeLine and automated validation is green. The bounded surface is one
+History `2.0.0` `position` assertion with optional position-level
+`approximation: "circa"`, explicit History 1 to History 2 upgrade confirmation,
+safe H2 exact editing, and the non-fabricating recorded-position Timeline
+projection. The application result is **IMPLEMENTED / AUTOMATED GREEN / HUMAN
+ACCEPTANCE REQUIRED**. Human acceptance remains required before this
+capability is considered accepted, and History 2.0.0 remains a non-Stable
+candidate. Bounded-point, temporal-extent, multiple assertions, Relative Time,
+and broader temporal semantics remain deferred.
+
+### E2R-H2-POSITION-CIRCA-DECLARATION-BLOCKER-FIX (2026-09-19)
+
+> Historical repair checkpoint; its pending real-browser status is superseded
+> by the bounded closure entry below.
+
+The NarrativeLine repair result records the declaration boundary exposed when
+a Dataset contained an existing Stable History 1 Event alongside the
+explicitly upgraded circa Event. Current Validator evidence shows that
+silently placing that H1 sibling under a History 2 declaration would be
+invalid, so the application does not migrate or accept that mixed state.
+The approved single-representation path is automated-green, but the current
+status is **BOUNDARY CLARIFIED / REAL-BROWSER ACCEPTANCE PENDING** because the
+fresh browser rerun could not initialize in the available browser connector.
+This does not promote History 2.0.0 or close human acceptance.
+
+### HISTORY-2-DATASET-WIDE-H1-TO-H2-UPGRADE-PLANNING (2026-09-19)
+
+> Historical implementation-planning checkpoint; its open acceptance status is
+> superseded by the bounded closure entry above.
+
+The [scope-closure result](../history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md)
+was approved for implementation. The [NarrativeLine implementation result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/history-2-dataset-wide-upgrade-implementation-result.md)
+records **IMPLEMENTED / AUTOMATED GREEN** across Entity, Event, and Relation
+History payloads, with strict preflight, atomic refusal, declaration
+synchronization, and draft-preserving confirmation behavior. Browser
+infrastructure diagnosis, Real Browser acceptance, and Human acceptance remain
+open; History 2.0.0 remains a non-Stable Candidate.
+
+The implemented scope defines an explicit atomic Dataset-wide History `1.0.0`
+to `2.0.0` upgrade. Opening, viewing, ordinary
+exact date/time editing, saving, exporting, or reloading an H1 Dataset without
+using an H2-only capability must keep its H1 representation. The first
+explicit use of an H2-only capability, currently
+`approximation: "circa"`, is the planned upgrade trigger.
+
+Because the exact History declaration is Dataset-level, the target is not an
+Event-local H1/H2 mixture. The implementation converts relevant H1 exact
+positions across the Dataset to equivalent H2 exact positions, applies
+`circa` only where selected, and changes the declaration atomically. Exact and
+approximate Events may coexist in a fully H2 Dataset; the refused state is a
+mixed H1/H2 representation under one exact declaration. Detailed conversion
+rules are recorded in the linked implementation result.
+
+The safety direction is explicit and atomic: Cancel leaves the Dataset in H1;
+failure must not leave a partial migration; any relevant H1 History that
+cannot be converted safely causes refusal; and unknown data must not be
+silently discarded. The planned sequence is:
+
+1. Browser acceptance infrastructure timeout diagnosis.
+2. Real-browser acceptance.
+3. Human acceptance and H2-POSITION-CIRCA acceptance closure.
+4. Documentation and roadmap structural cleanup.
+
+The browser connector timeout cause is not established; in particular, port
+`24678` is not identified as its cause. Timeout diagnosis is a separate
+bounded checkpoint before real-browser acceptance. Roadmap splitting, archive
+migration, and broader documentation IA cleanup remain deferred until after
+H2-POSITION-CIRCA human acceptance closure. No further migration
+implementation, schema change, Validator change, sample change, or Relative
+Time change is authorized by this planning entry.
+
 ## Post-release LiaisonScape / NarrativeLine Observation Audit (2026-09-23)
 
 The following dated audit and follow-up blocks are preserved as historical

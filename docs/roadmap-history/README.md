@@ -28,6 +28,10 @@ not a second planning authority. Statements such as `current`, `next`, or
   The [pre-release chronology](release-and-cross-app-chronology.md#pre-release-and-liaison-scape-020-release-preparation-chronology)
   preserves its original dated status language; current release and capability
   status remain in the roadmap.
+  The [History 2 position/circa chronology](release-and-cross-app-chronology.md#history-2-position-circa-authoring-and-dataset-upgrade-chronology-2026-09-19)
+  preserves five superseded 2026-09-19 proposal, decision, implementation,
+  blocker-repair, and upgrade-planning snapshots; the bounded closure remains
+  current in the roadmap and is summarized in the [migration result](../roadmap-hybrid-reconstruction-history2-candidate3-migration-result1.md).
 - [LiaisonScape Layout and Auto Layout chronology](liaisonscape-layout-and-auto-layout-chronology.md)
   preserves the early Initial Placement / routing progression, the historical
   Seed candidate-generation, assignment, structural-objective, and PR-2

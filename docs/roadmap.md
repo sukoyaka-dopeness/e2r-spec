@@ -43,7 +43,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable; [bounded baseline milestone outline consolidation](roadmap-baseline-milestone-outline-consolidation1-result.md); [exploratory Suite heading consolidation](roadmap-exploratory-suite-heading-consolidation1-result.md) |
 | Roadmap chronology / planning-history compression | **BOUNDED EXTRACTIONS AND COMPRESSIONS RECORDED** | [history index](roadmap-history/README.md); [Roadmap slimming results](roadmap-slimming-migration1-result.md), [tranche 2](roadmap-slimming-migration2-result.md), and [Relative Time / Documentation IA snapshot compression](roadmap-relative-time-and-documentation-ia-snapshot-compression1-result.md); detailed history-migration results remain linked from their entries; this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
-| Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](roadmap-residual-responsibility-audit3.md); [audit 2](roadmap-residual-responsibility-audit2.md); [audit 1](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); [Seed PR-3 Browser history migration result](roadmap-seed-pr3-browser-history-migration1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
+| Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](roadmap-residual-responsibility-audit3.md); [audit 2](roadmap-residual-responsibility-audit2.md); [audit 1](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); [Seed PR-3 Browser history migration result](roadmap-seed-pr3-browser-history-migration1-result.md); [this PR-3 pre-Browser history migration](roadmap-seed-pr3-prebrowser-history-migration1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -1954,86 +1954,9 @@ The validated bounded compatibility evidence and its limitations remain in the [
 
 This does not select a candidate or establish a Production provider, Product adoption, Production integration, or visual acceptance; no candidate is selected and `PR-C3` through `PR-C5` remain `NO`. Compatibility evidence and candidate selection remain separate. The realistic fixture ROLE GAP remains open for later stages. PR-3 visual/settling/routing and subsequent integration evidence are separate, unaccepted scopes; see the [PR-3 evidence design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-design1-result.md) for their current contract and status.
 
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-DESIGN1 (2026-09-03)
-The frozen PR-3 visual/settling/routing evidence contract remains in [visual, settling, and routing evidence design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-design1-result.md). It is a preparation contract, not visual acceptance or PR-3 completion; PR-2 remains a separate COMPLETE-BOUNDED input.
+### Seed PR-3 pre-Browser preparation and evaluation lineage — historical (2026-09-03 to 2026-09-04)
 
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-FIXTURE-ROLE-ACQUISITION-DESIGN1 (2026-09-03)
-The acquisition contract and then-incomplete corpus snapshot remain in [fixture-role acquisition design result](liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition-design1-result.md); the later acquisition result below is authoritative for the resulting corpus status.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-FIXTURE-ROLE-ACQUISITION1 (2026-09-03)
-Current corpus status: CORPUS-COMPLETE; PR-3 remains unestablished. Role assignments and provenance are recorded in [visual fixture role acquisition result](liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition1-result.md). Corpus completion alone is not candidate materialization, visual acceptance, or PR-3 completion.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-HARNESS-DESIGN1 (2026-09-03)
-The initial harness contract and its design-blocked disposition remain in [visual evidence harness design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-harness-design1-result.md); the later implementation result records the bounded harness candidate status.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-DESIGN1 (2026-09-03)
-Product modularization was explicitly partial: the Product-owned pure evaluation seams remained distinct from App-owned lifecycle, manual state, and interaction. The detailed equivalence and isolation contract remains in [Product evaluation seam design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-design1-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1A (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Implementation1A characterization result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1a-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CONFLICT-RESOLUTION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Relation-order conflict resolution result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-conflict-resolution1-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-IMPLEMENTATION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [order canonicalization implementation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-implementation1-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-ADOPTION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [order canonicalization adoption result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-adoption1-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-BASELINE2 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [post-correction baseline-v2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-baseline2-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-EQUIVALENCE-RECONCILIATION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [authority and equivalence reconciliation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-equivalence-reconciliation1-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1B (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Implementation1B settling-kernel refactor result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1b-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1B-ADOPTION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Implementation1B Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1b-adoption1-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1C (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Implementation1C result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1c-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1C-ADOPTION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Implementation1C Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1c-adoption1-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1D (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Implementation1D result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1d-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1D-ADOPTION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Implementation1D Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1d-adoption1-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1E (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Implementation1E result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1e-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1E-ADOPTION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Implementation1E Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1e-adoption1-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Implementation1F result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-ADOPTION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Implementation1F Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-adoption1-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-CSS-PROVENANCE-RECONCILIATION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [CSS provenance reconciliation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-css-provenance-reconciliation1-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-ADOPTION1-RETRY1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Adoption1-Retry1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-adoption1-retry1-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1G (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Implementation1G result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1g-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1G-ADOPTION1 (2026-09-03)
-The 1B-1E Product-owned seam refactors were adopted under their recorded behavior-preservation baselines. The 1F/1G evaluation render/browser infrastructure was separately adopted as isolated evaluation infrastructure; it did not integrate a research candidate or alter Dataset semantics. This lineage's recorded Product/evaluation authority is 563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf; later Product-source evolution has separate authority, so this is not a claim that the sibling repository's current source is unchanged. See [Implementation1G Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1g-adoption1-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-HARNESS-IMPLEMENTATION1 (2026-09-03)
-The disposable harness was validated as an implementation candidate, not adopted to Live as a complete harness; its result is in [dedicated harness implementation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-harness-implementation1-result.md). This checkpoint did not produce PR-3 candidate/visual evidence. The separately adopted evaluation entry infrastructure is recorded under Implementation1G Adoption1.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-DESIGN1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Run Configuration Design1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-design1.md).
+The dated preparation, bounded evaluation-seam adoptions, run-configuration evidence, and phase-bridge records are preserved in the [LiaisonScape Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#seed-pr-3-pre-browser-preparation-and-evaluation-chronology-2026-09-03-to-2026-09-04). The current PR-2 disposition and PR-3 Browser blocker remain separate below; this historical lineage does not establish PR-3 acceptance or change any current boundary.
 
 ### E2R-GAMEBOOK-VSCODE-EXTENSION-RESEARCH-NOTE1 (2026-09-03)
 
@@ -2046,35 +1969,9 @@ Gamebook / Interactive Narrative VS Code Extension research note](e2r-gamebook-v
 for the hypotheses, unverified prior-art leads, open Core mapping question,
 and complete restart criteria.
 
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-DESIGN1-CORRECTION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Run Configuration Design1 Correction1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-design1-correction1.md).
 
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Run Configuration Evidence1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence1-result.md).
 
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE1-PROTOCOL-PROVENANCE-RECONCILIATION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Evidence1 protocol provenance reconciliation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence1-protocol-provenance-reconciliation1.md).
 
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-TRANSLATION-COVARIANCE-DESIGN-RECONCILIATION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [translation covariance design reconciliation](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-translation-covariance-design-reconciliation1.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-CANONICAL-ORIGIN-EVIDENCE2 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [canonical-origin Evidence2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-canonical-origin-evidence2-result.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE2-SOURCE-HASH-PROVENANCE-RECONCILIATION1 (2026-09-03)
-Detailed checkpoint evidence and dated disposition remain in [Evidence2 source-hash provenance reconciliation](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence2-source-hash-provenance-reconciliation1.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-MACHINE-EXECUTION1 (2026-09-03)
-Machine Execution1's bounded machine matrix completed V0 40/40, V1 40/40, V2 80/80 (160 total), with B0 8 and B1 machine-side 16 complete. Its immutable evidence and limits remain in [Machine Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-result.md). Browser-side status is not carried forward from this dated machine snapshot.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-ADOPTION1 (2026-09-03)
-PR3-RUNTIME-TRANSFORM-v1 is ADOPTED/FROZEN only for this bounded PR-3 seed-evaluation lineage (origin 0/1,0/1; scale 6144/1). It is not Product coordinate policy or candidate semantics and does not establish visual acceptance, selection, or PR-3 completion. Details: [Run Configuration Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-adoption1.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-MACHINE-EXECUTION1-BROWSER-LINEAGE-READINESS-RECONCILIATION1 (2026-09-04)
-This audit's cross-phase identity ambiguity was resolved by the following phase-bridge correction; Machine evidence remains valid and is not rewritten. Audit detail: [Machine Execution1 browser-lineage readiness reconciliation](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-browser-lineage-readiness-reconciliation1.md).
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-IDENTITY-PHASE-BRIDGE-DESIGN-CORRECTION1 (2026-09-04)
-The frozen phase bridge keeps Machine evidence immutable and phase-local; the later Browser lineage references its exact artifacts without copying, rewriting, or re-identifying them. This summary makes no Browser Capture execution/status claim. Contract: [Run-Identity Phase-Bridge Design Correction1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-identity-phase-bridge-design-correction1.md).
 
 ### Seed PR-3 Browser Capture / runtime diagnostic lineage — historical
 

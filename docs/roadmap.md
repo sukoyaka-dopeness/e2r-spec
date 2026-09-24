@@ -222,18 +222,17 @@ not authorize changes in other screens or applications (runtime checkpoint
 The design milestone produced the Specification Extension draft `0.1.0` in
 `extensions/specification-extension.md`. That draft remains a draft, not a
 registered Stable Extension. Its version/dependency/Feature/bootstrap
-contract and deferred registry, authentication, migration, and Core changes
-are defined in the draft itself; this roadmap does not duplicate its design
-checklist. Coordinate and other candidate Extensions retain their separate
-maturity boundaries.
+contract and deferred work are defined in the [draft](../extensions/specification-extension.md).
+This milestone does not authorize Stable registration, migration, or Core
+changes; other candidate Extensions retain separate maturity boundaries.
 
 ## Completed implementation milestone 2: Validator interoperability model
 
-The read-only Validator interoperability milestone is implemented for the
-Specification Extension draft. Its diagnostic and fixture detail is retained
-in `production-validator-extension-integration-acceptance.md` and related
-result evidence. This milestone does not promote the draft to Stable or
-authorize network retrieval, migration, or application writers.
+Read-only Validator interoperability for the Specification Extension draft is
+implemented within the bounded evidence in the [acceptance](production-validator-extension-integration-acceptance.md)
+and [result](production-validator-extension-integration-result.md). It does
+not promote the draft to Stable or authorize network retrieval, migration, or
+application writers.
 
 ## Application evidence track
 
@@ -241,23 +240,20 @@ This track may prepare fixtures and experiments while the Specification
 Extension is designed, but it must not pre-empt its schema decisions.
 
 ### Completed evidence milestone 3: Coordinate prototype
-Coordinate prototype `0.1.0` evidence is complete and remains frozen as the
-compatibility/migration baseline. Its cross-application and external-reference
-evidence is retained in `foreign-graph-coordinate-interop-experiment-result.md`;
-the prototype is not a Stable Extension.
+Coordinate prototype `0.1.0` remains frozen as the experimental
+compatibility/migration baseline, not a Stable Extension. See the [interop result](foreign-graph-coordinate-interop-experiment-result.md).
 
 ### Completed design milestone 4: Coordinate draft `0.1.0`
-The Coordinate draft candidate is assembled in
-`extensions/coordinate-extension-draft.md`. Its accepted compatibility,
-external-reference, version/evolution, and review decisions remain in the
-dedicated `research/coordinate/decisions/` records; the roadmap retains the
-current draft/prototype boundary rather than repeating those contracts.
+Coordinate draft `0.1.0` remains a Draft candidate, not Stable. Its exact
+definition and bounded review are in the [draft](../extensions/coordinate-extension-draft.md)
+and [review](../research/coordinate/decisions/coordinate-draft-0.1.0-review.md);
+dedicated decision records retain compatibility and evolution details.
 
 ### Completed implementation milestone 5: read-only Validator support
-Read-only Validator support recognizes the Coordinate Draft and Prototype
-identities and remains separate from application writing or migration. The
-maturity and identifier decision is retained in
-`research/coordinate/decisions/coordinate-maturity-and-identifier-decision.md`.
+Read-only Validator support recognizes Coordinate Draft and Prototype
+identities; application writing and migration remain separate and unauthorized
+by this milestone. See the [maturity decision](../research/coordinate/decisions/coordinate-maturity-and-identifier-decision.md)
+and [draft review](../research/coordinate/decisions/coordinate-draft-0.1.0-review.md).
 
 ### Layout persistence experiment
 

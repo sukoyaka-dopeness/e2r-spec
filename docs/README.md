@@ -22,7 +22,7 @@ repository. Start with the responsibility that matches the question:
 
 ### Current status at a glance
 
-- [Documentation IA / roadmap modularization audit](documentation-information-architecture-roadmap-modularization-audit1-result.md): navigation-first policy accepted for implementation; existing paths remain stable.
+- [Earlier Documentation IA / roadmap modularization audit](documentation-information-architecture-roadmap-modularization-audit1-result.md): its navigation-first and path-stability recommendation remains historical evidence. The later [Roadmap-first structure decision](documentation-ia-roadmap-physical-modularization-direction-decision1.md) governs current structure direction; the [Roadmap → Research Responsibility Audit](roadmap-research-responsibility-audit1-result.md) authorizes no content migration.
 - [NarrativeLine NL-H2-R1](roadmap.md): **ACCEPTED / MANUAL ACCEPTANCE COMPLETE**.
 - [History 2 broader authoring scope](history-2-user-facing-authoring-scope-result.md): **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED**.
 

@@ -988,6 +988,170 @@ Detailed evidence and qualifications remain in the linked authority; this dated
 checkpoint does not change current execution order or authorize work beyond its recorded
 scope.
 
+## Seed PR-3 Browser Capture and runtime diagnostic chronology (2026-09-04 to 2026-09-05)
+
+These 40 dated Browser Capture, host/runtime qualification, restart, run-identity, transport/helper, and convergence checkpoint blocks were moved from `docs/roadmap.md` at E2R-SPEC commit `e6b1862`. Their original heading text, date/status wording, relative order, and linked evidence pointers are preserved. `current`, `blocked`, qualification, and retry wording below describes those historical checkpoints; the current blocker and resume condition remain in the Roadmap's current-host synchronization entry and its dedicated authority.
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-result.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-CDP-LAUNCH-READINESS-DIAGNOSTIC1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 CDP launch/readiness diagnostic result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-cdp-launch-readiness-diagnostic1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-CDP-LAUNCH-READINESS-DIAGNOSTIC3 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 CDP Launch/Readiness Diagnostic3 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-cdp-launch-readiness-diagnostic3.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-CDP-LAUNCH-READINESS-DIAGNOSTIC2 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 CDP Launch/Readiness Diagnostic2 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-cdp-launch-readiness-diagnostic2.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-POST-REBOOT-QUALIFICATION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Host Runtime Post-Reboot Qualification1 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-post-reboot-qualification1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-BROWSER-RUNTIME-STABILITY-QUALIFICATION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Runtime Stability Qualification1 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-browser-runtime-stability-qualification1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-GPU-RUNTIME-DIAGNOSTIC1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Host/GPU Runtime Diagnostic1 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-gpu-runtime-diagnostic1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-GPU-RUNTIME-GRAPHICS-DIAGNOSTIC2 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Host/GPU Runtime Graphics Diagnostic2 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-gpu-runtime-graphics-diagnostic2.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-VSCODE-STABLE-EXCLUSION-QUALIFICATION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [VS Code Stable Exclusion Qualification1 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-vscode-stable-exclusion-qualification1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-VSCODE-STABLE-PRESENT-ABSENT-CONFIRMATION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [VS Code Stable Present/Absent Confirmation1 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-vscode-stable-present-absent-confirmation1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-BROWSER-CAPTURE-READINESS-REQUALIFICATION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture Readiness Requalification1 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-browser-capture-readiness-requalification1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-PROTOCOL-A (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart1 Protocol A result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-protocol-a.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-B1-EXECUTION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart1 B1 Execution1 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-b1-execution1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-B1-ENTRY-SEAM-CORRECTION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart1 B1 Entry-Seam Correction1 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-b1-entry-seam-correction1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-B1-ENTRY-READINESS-DIAGNOSTIC1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart1 B1 Entry Readiness Diagnostic1 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-b1-entry-readiness-diagnostic1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-PROTOCOL-A (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart2 Protocol A result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-protocol-a.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-PR3-RUN-IDENTITY-BROWSER-IMPLEMENTATION-AUTHORITY-DESIGN-CORRECTION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture implementation-authority design correction result](../liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-design-correction1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-PR3-RUN-IDENTITY-BROWSER-IMPLEMENTATION-AUTHORITY-IMPLEMENTATION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture implementation-authority implementation result](../liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-implementation1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-APP-READINESS-CDP-CALL-CORRECTION-QUALIFICATION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart3 app-readiness/CDP-call correction qualification result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-app-readiness-cdp-call-correction-qualification1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-PROTOCOL-A (2026-09-04) - v2 binding
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart2 Protocol A v2 binding result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-protocol-a-v2-binding.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-B1-EXECUTION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart2 B1 Execution1 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-b1-execution1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-EXECUTOR-RUN-ROOT-BINDING-CORRECTION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart2 executor/run-root binding correction result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-executor-run-root-binding-correction1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-PROTOCOL-A (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart3 Protocol A result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-protocol-a.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-B1-EXECUTION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart3 B1 Execution1 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-b1-execution1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-TARGET-SELECTION-RUNTIME-CORRECTION-QUALIFICATION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart3 target-selection runtime correction qualification result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-target-selection-runtime-correction-qualification1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-SHARED-CDP-TRANSPORT-CLIENT-CORRECTION-QUALIFICATION1 (2026-09-04)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart3 shared CDP transport/client correction qualification result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-shared-cdp-transport-client-correction-qualification1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-SHARED-CDP-WEBSOCKET-INDEPENDENT-CLIENT-DIAGNOSTIC1 (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart3 independent CDP WebSocket client diagnostic result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-shared-cdp-websocket-independent-client-diagnostic1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-WEBSOCKET-CLIENT-AUTHORITY-REPLACEMENT-DESIGN-CORRECTION1 (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 WebSocket client authority / replacement design correction result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-websocket-client-authority-replacement-design-correction1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-WEBSOCKET-BRIDGE-IMPLEMENTATION1 (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [ClientWebSocket bridge implementation result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-websocket-bridge-implementation1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-WEBSOCKET-BRIDGE-HELPER-EXECUTION-POLICY-COMPATIBILITY-QUALIFICATION1 (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [helper execution-policy compatibility result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-websocket-bridge-helper-execution-policy-compatibility-qualification1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-NON-SCRIPT-WEBSOCKET-HELPER-AUTHORITY-DESIGN-CORRECTION1 (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [non-script WebSocket helper authority design correction result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-non-script-websocket-helper-authority-design-correction1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-EXE-WEBSOCKET-HELPER-IMPLEMENTATION1 (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [production .NET executable helper implementation result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-exe-websocket-helper-implementation1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-EXE-HELPER-RUNTIME-QUALIFICATION-DIAGNOSTIC-CORRECTION1 (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [executable helper runtime qualification diagnostic result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-exe-helper-runtime-qualification-diagnostic-correction1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-PROTOCOL-A (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart4 Protocol A result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-protocol-a.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-B1-EXECUTION1 (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart4 B1 Execution1 result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-b1-execution1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-B1-LOCAL-WEBSOCKET-CONNECTION-REFUSAL-DIAGNOSTIC-CORRECTION1 (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart4 B1 local WebSocket refusal diagnostic](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-b1-local-websocket-connection-refusal-diagnostic-correction1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-EDGE-PROCESS-LIFETIME-HOST-RUNTIME-DIAGNOSTIC1 (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [Edge process lifetime / host runtime diagnostic](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-edge-process-lifetime-host-runtime-diagnostic1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-EDGE-PROCESS-LIFETIME-RECURRENCE-READINESS-DECISION1 (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [recurrence/readiness decision](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-edge-process-lifetime-recurrence-readiness-decision1.md).
+
+### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-APPLICATION-READINESS-RECURRENCE-DIAGNOSTIC1 (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [application-readiness diagnostic](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-application-readiness-recurrence-diagnostic1.md).
+
+### Browser Capture Runtime Convergence Diagnostic/Correction1 (2026-09-05)
+
+Detailed dated checkpoint evidence and immutable lineage state remain in [runtime convergence result](../liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-runtime-convergence-diagnostic-correction1.md).
+
 ## Initial Layout Product, Provider, Frontier, and Presentation Progression (2026-09-11 to 2026-09-13)
 
 The following complete pre-coordination checkpoint blocks were extracted from

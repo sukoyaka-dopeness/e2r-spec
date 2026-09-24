@@ -11,6 +11,11 @@ not a second planning authority. Statements such as `current`, `next`, or
 - [Legacy chronology](legacy-chronology.md) preserves the first bounded,
   verbatim extraction from the roadmap. It is a one-time preservation unit,
   not the default destination for unlimited future additions.
+- [Release and Cross-App chronology](release-and-cross-app-chronology.md)
+  preserves the first bounded Roadmap Slimming tranche's superseded release,
+  shell, and locale-readiness snapshots in original source order. Its dated
+  status language is historical; current release status remains in the
+  roadmap's status index.
 - [Current roadmap and migration status](../roadmap.md#current-roadmap-first-chronology-migration-status-2026-09-24)
   remains authoritative for current status and links to the [migration result
   record](../documentation-ia-roadmap-chronology-migration1-result.md).

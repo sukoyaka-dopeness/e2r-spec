@@ -66,7 +66,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Workstream | Current status | Authority / next decision |
 | --- | --- | --- |
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
-| Roadmap chronology | **BOUNDED HISTORICAL EXTRACTION COMPLETE** | [history index](roadmap-history/README.md); [migration result](documentation-ia-roadmap-chronology-migration1-result.md); this roadmap remains the sole current-planning authority |
+| Roadmap chronology / slimming tranche 1 | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [chronology migration](documentation-ia-roadmap-chronology-migration1-result.md); [slimming migration result](roadmap-slimming-migration1-result.md); this roadmap remains the sole current-planning authority |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -337,189 +337,58 @@ implementation and Stable promotion remain separate follow-ups.
   specification versions remain separate.
 
 ### Architecture work completed
-
-- Agendas 1 through 9 have been consolidated and audited against the repository
-  and current applications.
-- Coordinate, Layout, provisional Perspective, Presentation, and Application
-  View State responsibilities have been separated.
-- Owned and Derived application data have been distinguished.
-- Timeline, Graph, Tree, Table, Calendar, Map, and Spiral are now described as
-  Application Visualizations rather than persisted Views.
-- Determinism, reproducibility, and incremental stability have been separated
-  around a versioned Engine research model.
-- The Extension identifier remains the payload key. A second canonical
-  identifier is not currently introduced.
+The architecture agendas consolidated Coordinate, Layout, Perspective,
+Presentation, and Application View State responsibilities; distinguished Owned
+from Derived data; and kept visualizations distinct from persisted Dataset
+data. Current normative and research authority remains in the Core, Extensions,
+and dedicated research documents.
 
 ### Agenda 1--9 reflection status
-
-The repository-level reflection of the nine architecture agendas is
-substantially complete. The accepted responsibility boundaries, terminology,
-identifier model, exact-version model, deterministic-generation boundary, and
-Coordinate evidence process are represented in current specification,
-research, application, and Validator documents.
-
-The remaining work is not mainly transcription from the agenda handoffs. It is
-evidence-dependent follow-through:
-
-- decide final Stable names and registration only after draft evidence gates
-  pass;
-- review and implement the separately identified Coordinate draft without
-  changing the frozen prototype;
-- implement and assess Layout, Semantic, Media, Presentation, and Perspective
-  experiments independently; and
-- repeat the formal cross-document audit before any Stable registrations.
-
-For planning purposes, agenda-conclusion reflection is approximately 97%
-complete. The larger implementation and candidate-formalization roadmap is
-much less complete and must not be represented by that percentage.
+Repository-level reflection of Agendas 1-9 is substantially complete.
+Remaining work is evidence-dependent candidate follow-through and separate
+Extension maturity decisions; no completion percentage is used as a proxy for
+implementation or Stable readiness. Current priorities and gates are listed
+under `## Research priority` and `## Evidence gates for candidate Extensions`.
 
 ### Application and tooling evidence
-
-- Published Validator `0.3.0` includes the completed bounded Names P1
-  validation release.
-- Read-only Coordinate draft `0.1.0` Validator support is complete at the
-  current evidence boundary. Applications do not write the Draft, and this
-  support does not authorize migration or Stable registration.
-- NarrativeLine `0.1.0` edits supported Metadata and History data, reads
-  Coordinate prototype `0.1.0` in Entity/Event Detail, and provides a bounded
-  second writer for existing Entity `x`/`y` values in LiaisonScape's exact shared
-  Space while preserving unknown fields and Extensions.
-- LiaisonScape `0.1.0` implements the Entity-first MVP, including graph
-  interaction, deterministic fallback behavior, explicit Entity-coordinate
-  save/restore, Relation editing, route and label interaction, and unknown-data
-  preservation.
-- `examples/cross-application-demo.json` exercises reusable Core, Metadata,
-  History, parallel Relations, multiple self-Relations, Dataset Spaces,
-  partial Event Coordinates, and multiple-Space Entity Coordinates across the
-  applications.
-
-LiaisonScape now migrates its legacy `coordinate` payload into the
-authority-qualified Coordinate prototype `0.1.0`. The prototype remains an
-application experiment, not an official Stable Coordinate Extension.
+Names P1 validation and read-only Coordinate Draft Validator support are
+complete at their recorded boundaries. Coordinate Prototype `0.1.0` remains
+frozen; its separate Draft candidate is not Stable and application
+writers/migration remain bounded by their accepted evidence. See
+`research/coordinate/decisions/coordinate-draft-0.1.0-review.md` and
+`examples/cross-application-demo.json`.
 
 ### Dataset Replacement Safety implementation checkpoint — 2026-08-20
-
-- LiaisonScape Dataset Replacement Safety D1-D7 is implemented and manually
-  accepted through commit `79451ca43758a14195cf9f549d8785cb9415482a`.
-- The accepted implementation covers Dataset baseline and pending-work safety,
-  D6 replacement confirmation, and D7 browser-native exit protection without
-  changing Core, Extension, Coordinate, routing, label geometry, or Layout
-  persistence semantics.
-- Dataset Handoff v0 is implemented and manually accepted for LiaisonScape;
-  its accepted implementation checkpoints and evidence are recorded in
-  `docs/dataset-handoff-v0-liaison-scape-implementation-result.md`.
-- Direct Hub handoff remains a later workstream.
-- NarrativeLine Replacement Safety and Dataset Handoff v0 parity remain
-  deferred. The current accepted bounded implementation evidence is for
-  LiaisonScape; NarrativeLine acceptance documents and Formal Completion
-  Acceptance are a later workstream, not current evidence.
+LiaisonScape Dataset Replacement Safety D1-D7 and Dataset Handoff v0 were
+implemented and manually accepted within their bounded scope. Detailed
+authority and evidence remain in `dataset-replacement-safety-design.md` and
+`dataset-replacement-safety-liaison-scape-implementation-result.md`; application
+parity is separate.
 
 ### NarrativeLine Focus Phase 2 closure — 2026-08-23
-
-- Focus Phase 2 is COMPLETE / CLOSED for the bounded NarrativeLine scope.
-- Fresh Entity Create entered through explicit `Create New Entity` intent
-  focuses Name once; `Resume Draft` and Browser history restoration do not
-  force a focus target.
-- Existing Event Detail and Existing Entity Detail retain no generic
-  autofocus because the intended editing field is not unambiguous at entry.
-- Safe Enter/form semantics and Timeline title autofocus remain deferred
-  follow-up experiments, not current release blockers.
-- This closure does not authorize autofocus changes in other screens or in
-  LiaisonScape. The accepted runtime checkpoint is NarrativeLine commit
-  `1d6d609`; related reusable evidence remains a Hypothesis in Knowledge.
-
+Focus Phase 2 is closed for its bounded NarrativeLine scope: explicit
+fresh-Entity creation focuses Name once; draft resume/history restoration do
+not force focus; existing Detail screens retain no generic autofocus. Safe
+Enter/form semantics and Timeline title autofocus remain deferred; this does
+not authorize changes in other screens or applications (runtime checkpoint
+`1d6d609`).
 ## Completed design milestone 1: Specification Extension redesign
 
-Draft version `0.1.0` is now defined in
-`extensions/specification-extension.md` as one coherent responsibility. It is
-a design draft, not a registered Stable Extension.
-
-### Accepted inputs
-
-- The Extension identifier is also its Dataset payload key.
-- `metadata` and `history` are not renamed.
-- Core `version` remains separate from Extension specification versions.
-- An exact used Extension version may be declared centrally at Dataset level.
-- A payload without such a declaration means the Extension is present with its
-  specification version unspecified.
-- Unknown or unsupported declarations and payloads remain preservable.
-- Specification interpretation and validation must work offline when the
-  required implementation is locally available.
-- The Specification Extension needs a finite one-level bootstrap for its own
-  exact version.
-
-### Design scope
-
-The redesign should define conceptual records for:
-
-1. Extension identifier and exact used specification version;
-2. required dependencies and optional uses;
-3. optional Features used by the Dataset;
-4. compatibility statements distinct from dependencies;
-5. immutable specification identity/version information;
-6. mutable lifecycle and evolution metadata; and
-7. the Specification Extension's own bootstrap.
-
-### Deferred during the first pass
-
-- a general online registry or discovery protocol;
-- automatic schema downloads;
-- publisher authentication;
-- migration algorithms for every split or merge;
-- a universal capability manifest for applications;
-- changes to the Core schema; and
-- registration of Coordinate, Layout, Perspective, Presentation, Semantic, or
-  Media Extensions.
-
-### Completion result
-
-The draft now:
-
-- declares exact versions for the Extensions actually used by a Dataset;
-- distinguishes missing declaration, unsupported version, unavailable local
-  specification, and invalid declared payload;
-- expresses required and optional dependencies without invalidating unrelated
-  Core data;
-- supports partial Feature understanding without fragmenting every field into a
-  Feature;
-- resolves its own version with one finite bootstrap layer;
-- retains older published specification versions as identifiable definitions;
-  and
-- includes representative valid, legacy, unsupported, and conflicting
-  examples.
-
-The remaining implementation evidence belongs to the Validator milestone
-below. Stable naming, publisher authentication, and migration remain deferred.
+The design milestone produced the Specification Extension draft `0.1.0` in
+`extensions/specification-extension.md`. That draft remains a draft, not a
+registered Stable Extension. Its version/dependency/Feature/bootstrap
+contract and deferred registry, authentication, migration, and Core changes
+are defined in the draft itself; this roadmap does not duplicate its design
+checklist. Coordinate and other candidate Extensions retain their separate
+maturity boundaries.
 
 ## Completed implementation milestone 2: Validator interoperability model
 
-Validator design now follows Specification Extension draft `0.1.0`.
-Implementation must keep the draft replaceable and must not promote the
-candidate to Stable by implication.
-
-Planned diagnostics and fixtures should distinguish:
-
-- Core validation failure;
-- known Extension with version unspecified;
-- exact declared version supported locally;
-- declared version unsupported locally;
-- specification unavailable locally;
-- missing required dependency data;
-- unsupported required dependency implementation;
-- declaration referring to an absent payload;
-- payload/declaration inconsistency; and
-- unknown data that remains safely preservable.
-
-Warnings and unsupported states must not be reported as Core structural errors.
-Offline validation remains the baseline; network retrieval may only be an
-optional future convenience.
-
-The Validator now implements this model across Dataset, Entity, Event, and
-Relation Extension containers. Specification fixtures cover exact support,
-version unspecified, unsupported versions, unavailable specifications,
-dependency absence, unsupported dependency implementations, declaration
-conflicts, and invalid declared payloads. Exact declarations at unsupported
-versions are not validated using a different version's rules.
+The read-only Validator interoperability milestone is implemented for the
+Specification Extension draft. Its diagnostic and fixture detail is retained
+in `production-validator-extension-integration-acceptance.md` and related
+result evidence. This milestone does not promote the draft to Stable or
+authorize network retrieval, migration, or application writers.
 
 ## Application evidence track
 
@@ -527,88 +396,22 @@ This track may prepare fixtures and experiments while the Specification
 Extension is designed, but it must not pre-empt its schema decisions.
 
 ### Completed evidence milestone 3: Coordinate prototype
-
-Replace or explicitly migrate LiaisonScape's experimental
-`{spaceId, x, y}`-style data through an unregistered prototype that tests:
-
-- Dataset-level Coordinate Space definitions;
-- stable Space and Component identifiers;
-- component-keyed finite numeric values;
-- partial coordinates;
-- multiple Spaces;
-- the same candidate structure for Entity and Event;
-- relevant external coordinate standards; and
-- a second application that interprets, rather than merely preserves, the
-  coordinates.
-
-Prototype `0.1.0` now implements all eight listed experiments in
-`extensions/coordinate-extension.md` and
-`examples/cross-application-demo.json`. LiaisonScape interprets and explicitly
-saves Entity positions, including controlled migration from its legacy
-payload. NarrativeLine independently resolves the same Dataset Spaces,
-Components, units, partial values, and multiple-Space values in Entity/Event
-Detail, with bounded editing only for compatible existing Entity `x`/`y`.
-It also proves preservation through a supported Event edit and round trip. The
-unreleased Validator now interprets exact
-prototype `0.1.0`, reports `coordinate_*` conformance diagnostics separately
-from Core diagnostics, and treats unsupported prototype versions as warnings.
-
-The executable evidence milestone is complete. An external-reference fixture
-is interpreted and round-tripped offline. Duplicate Space and per-object
-Coordinate claims exercise the conflict baseline, and LiaisonScape refuses
-incompatible definitions instead of overwriting them. NarrativeLine explicitly
-updates only existing Entity `x`/`y` values in the same compatible
-`liaisonscape-graph` Space. The tested sequential round trip through both
-applications and the Coordinate-aware Validator preserves other Spaces and
-unknown data.
-
-The maturity review chose **revise**, not direct Stable promotion or indefinite
-deferral. Experimental prototype `0.1.0` is frozen as the compatibility and
-migration baseline. The separately identified normative candidate is now
-assembled under `draft.github.sukoyaka-dopeness.coordinate` as draft `0.1.0`;
-no Stable identifier has been selected or registered.
+Coordinate prototype `0.1.0` evidence is complete and remains frozen as the
+compatibility/migration baseline. Its cross-application and external-reference
+evidence is retained in `foreign-graph-coordinate-interop-experiment-result.md`;
+the prototype is not a Stable Extension.
 
 ### Completed design milestone 4: Coordinate draft `0.1.0`
-
-Accepted draft-design input now defines exact lexical matching for Space and
-Component IDs and opaque semantic descriptors. Human-readable names never
-authorize a write. A processor may write only through an explicit capability
-profile matching the required `kind`, Component IDs, units, directions, and
-period behavior. Coordinate itself does not infer aliases or perform unit
-conversion. See
-`research/coordinate/decisions/coordinate-space-component-compatibility-decision.md`.
-
-Accepted external-reference input keeps Dataset-local definitions as the
-offline operational source of truth. The draft uses explicit
-Component-level external bindings; unresolved or conflicting bindings prevent
-external-aware writes but do not invalidate or replace locally valid data. See
-`research/coordinate/decisions/coordinate-external-reference-decision.md`.
-
-Accepted bootstrap and evolution input makes the draft's required
-Dataset-level `specVersion` authoritative and treats a supported Specification
-declaration as a consistency assertion. Display names and bounds that preserve
-all existing values may retain a Space ID; Component or semantic-definition
-changes require a new Space ID and explicit migration. See
-`research/coordinate/decisions/coordinate-version-and-space-evolution-decision.md`.
-
-The normative contract is assembled in
-`extensions/coordinate-extension-draft.md`, with a complete-Dataset JSON
-Schema, five valid fixtures, eighteen invalid fixtures, semantic fixture
-validation, and atomic migration and refusal fixtures. Repository review found
-and resolved ambiguity around context-only external writes, unsupported
-Specification data, unknown Prototype fields, existing Draft collisions,
-duplicate declarations, and opaque-ID diagnostic paths. See
-`research/coordinate/decisions/coordinate-draft-0.1.0-review.md`.
+The Coordinate draft candidate is assembled in
+`extensions/coordinate-extension-draft.md`. Its accepted compatibility,
+external-reference, version/evolution, and review decisions remain in the
+dedicated `research/coordinate/decisions/` records; the roadmap retains the
+current draft/prototype boundary rather than repeating those contracts.
 
 ### Completed implementation milestone 5: read-only Validator support
-
-Validator independently recognizes the Draft and Prototype identities,
-bootstraps before schema selection, reports schema and semantic diagnostics,
-distinguishes unsupported versions from malformed supported data, and
-integrates Specification agreement. It remains read-only and does not migrate
-application data.
-
-The accepted decision and its alternatives are recorded in
+Read-only Validator support recognizes the Coordinate Draft and Prototype
+identities and remains separate from application writing or migration. The
+maturity and identifier decision is retained in
 `research/coordinate/decisions/coordinate-maturity-and-identifier-decision.md`.
 
 ### Layout persistence experiment
@@ -751,67 +554,11 @@ values become Owned experimental Layout data. Zoom, pan, selection, modal, and
 scroll state remain outside the Dataset.
 
 ### Cross-application checkpoint
-
-The current neutral sample now supports the tested workflow:
-
-```text
-NarrativeLine import/edit/export
-    -> Validator
-    -> LiaisonScape import/use/explicit save/export
-    -> NarrativeLine re-import
-```
-
-The checkpoint verifies preservation of Core IDs, unknown fields, unsupported
-Extensions, exact-version declarations, untouched experimental payloads, and
-the shared Coordinate after sequential writes by NarrativeLine and LiaisonScape.
-It is repeatable from the specification repository with
-`npm run validate:coordinate-interoperability`; the ordinary `npm run validate`
-remains independent of sibling application repositories.
-
-## Initial Public Release critical path
-
-The first public release should establish a complete user journey:
-
-`learn E2R -> discover samples in the Hub -> open a Dataset in NarrativeLine
-or LiaisonScape -> edit safely -> export -> return to documentation`.
-
-The Hub / Portal public entry point is complete for the accepted Hub Public
-Entry Point Information Architecture (Milestone 1) and the manually accepted
-Static E2R Landing Page Implementation (Milestone 2). The current evidence
-covers E2R introduction, application purposes, capability and maturity status,
-sample cards, documentation, user guides, and application entry points.
-Direct Hub Handoff and Initial Public Release remain incomplete.
-
-The critical path is:
-
-1. **NarrativeLine modernization** — COMPLETE for the accepted bounded
-   Dataset Replacement Safety and Dataset Handoff v0 scope after auditing NarrativeLine's
-   existing temporal editing and pending-work model. The accepted work includes
-   safe Open, New, and Sample
-   replacement, loss-risk tracking, pending-work protection, browser-native
-   exit warning, explicit handoff failure, no silent fallback, startup-only
-   handoff, and the distinction between acquisition URL and Dataset identity.
-   Acceptance evidence is recorded in the NarrativeLine NL-D4, NL-D5A, NL-D5B,
-   NL-H1A, NL-H1B, and Formal Completion documents.
-2. **NarrativeLine navigation ownership** — audit Browser Back/Forward,
-   `history.state`, `popstate`, Home/editor navigation, fragment ownership,
-   runtime fragment changes, and the separation of screen navigation from
-   Dataset replacement. Foreign history state must not be misinterpreted.
-3. **Hub / Portal public entry point** — provide E2R introduction, application
-   purposes, capability and maturity status, sample gallery, documentation,
-   user guides, and application entry points.
-4. **Public interoperability evidence** — continue Validator, canonical and
-   sample Dataset, public handoff fixture, cross-application fixture, and
-   unknown-Extension preservation checks.
-5. **Release documentation synchronization** — align each repository's README,
-   user guide, roadmap, implementation status, deployment state, and sample
-   links. Use `implemented`, `manually accepted`, `research / experimental`,
-   and `deferred / on hold` consistently.
-
-Direct Hub handoff can be evaluated as a later workstream. NarrativeLine Handoff
-v0 completion does not claim Hub direct handoff, public release completion,
-private/authenticated Handoff support, or any future multi-Dataset workflow, and
-this section does not promote Direct Hub handoff to a release blocker.
+The tested NarrativeLine to Validator to LiaisonScape round trip preserves
+Core IDs, unknown/unsupported data, and shared Coordinate values. The
+reproducible repository-local gate remains
+`npm run validate:coordinate-interoperability`; broader application behavior
+remains governed by its dedicated evidence.
 
 ## Research / post-release growth
 
@@ -1154,18 +901,16 @@ separate later checkpoint.
 The Human-selected bounded migration is recorded in [Roadmap Chronology
 Structure Decision 1](documentation-ia-roadmap-chronology-structure-decision1.md)
 and its [migration result](documentation-ia-roadmap-chronology-migration1-result.md).
-The verified historical workspace-migration block is preserved in
-[`roadmap-history/legacy-chronology.md`](roadmap-history/legacy-chronology.md),
-navigated by [`roadmap-history/README.md`](roadmap-history/README.md). This
-roadmap remains the sole current-planning authority. Ambiguous mixed regions
-remain here; their retention is not a claim that they are permanently current.
-The wider `docs/` taxonomy and relocation of other documents remain deferred.
-
-The read-only [Roadmap Slimming Audit](roadmap-slimming-audit1.md) classifies
-the remaining roadmap by responsibility and identifies bounded future
-compression/history candidates. It authorizes no extraction, shortening, or
-link migration; the mixed regions remain pending a separately reviewed
-migration manifest.
+The verified historical workspace-migration block remains preserved in
+[`roadmap-history/legacy-chronology.md`](roadmap-history/legacy-chronology.md).
+The first bounded slimming tranche moved superseded release and Cross-App
+snapshots to [`roadmap-history/release-and-cross-app-chronology.md`](roadmap-history/release-and-cross-app-chronology.md);
+the [migration result](roadmap-slimming-migration1-result.md) records its
+preservation and validation. The [Roadmap Slimming Audit](roadmap-slimming-audit1.md)
+remains the candidate-classification evidence, not authority for further
+migration. Mixed regions remain pending a separately reviewed tranche; this
+roadmap remains the sole current-planning authority. The wider `docs/` taxonomy
+and relocation of other documents remain deferred.
 
 #### Current Relative Time atomic-semantics status after Human adoption (2026-09-24)
 
@@ -1800,63 +1545,6 @@ Unless new evidence changes the decision, do not currently:
 - treat arbitrary Relation direction as semantic hierarchy; or
 - make external registry or network access mandatory.
 
-## Current public-release execution priority (2026-08-22)
-
-The current bounded execution order is:
-
-1. Cross-App Locale Recipient-Preference closure / production readiness;
-2. NarrativeLine locale consumer implementation (blocked until Priority 1
-   closure is accepted);
-3. LiaisonScape locale consumer implementation;
-4. Hub startup locale producer completion;
-5. Hub Direct Handoff and localized Sample Gallery local acceptance;
-6. Hub residual quality audit and Formal Completion;
-7. E2R common favicon design and application to Hub, NarrativeLine, and
-   LiaisonScape (Validator remains excluded unless deployment evidence changes);
-8. LiaisonScape selectable SVG icons;
-9. NarrativeLine display-order reordering;
-10. push and deployment readiness;
-11. Public Handoff/interoperability evidence; and
-12. final pre-public-release audit.
-
-This current priority supersedes the earlier recommendation to make Public
-Interoperability Evidence / Sample Workflow the immediate next workstream. That
-workstream remains planned and is intentionally deferred until the public-facing
-product state is closer to final. The ordering does not make Dataset language
-metadata, localized-counterpart architecture, Dictionary, or Semantic research
-an Initial Public Release blocker.
-
-## Cross-App Shell follow-up record (2026-08-23)
-
-Cross-App Shell Alignment identified two bounded NarrativeLine follow-ups. The
-Timeline item is now closed by the accepted runtime checkpoint below. The
-remaining Credits item is already closed by the locale-consumer checkpoint.
-These records do not reopen the accepted F2-NL1 locale Header
-placement, F2-NL1b Footer geometry, or F2-NL1c extreme-narrow Header geometry:
-
-1. **NarrativeLine Timeline shell navigation** — **CLOSED / ACCEPTED** at
-   runtime commit `4868111b02aa850bb0c652ab3b3470dcd92595a0`. The explicit
-   localized `Home` action is in the Timeline Header beside the NarrativeLine
-   brand and locale control; the lower sticky area retains Add Event only.
-   Existing contextual `Back` behavior for nested surfaces remains separate.
-2. **NarrativeLine Credits dismissal** — **CLOSED / ACCEPTED** through the
-   NarrativeLine locale-consumer checkpoint: explicit Close, Escape, and
-   backdrop click, with focus and state behavior preserved.
-
-These are application-shell checkpoints, not changes to `#locale`, recipient
-preference semantics, Dataset Handoff, Dataset language, Dataset state, or graph
-state. LiaisonScape's Credits backdrop dismissal is already implemented and is
-not part of this record. The work should be evaluated before Cross-App Shell
-Alignment is marked formally complete and before the final pre-public-release
-audit; it is not by itself a claim that public release is blocked.
-
-The Timeline Header change must include bounded browser and human-acceptance
-checks for EN/JA, desktop, 601px/600px, representative narrow widths, roughly
-270px and 240px boundaries, locale-button wrapping, brand/Home/locale overlap,
-keyboard Tab order, and preservation of nested-surface Back semantics. No
-workspace-wide minimum width is implied by the existing narrow-viewport
-acceptance boundary.
-
 ## LiaisonScape residual UX / quality follow-up (2026-08-23)
 
 Manual review during F2-LS1 identified the following bounded LiaisonScape
@@ -2269,75 +1957,6 @@ consistency, and destructive styling parity remain deferred. Accepted items —
 Timeline sticky toolbar, More menu, Header Home / nested Back, Back-to-Top,
 locale shell, Credits, CoordinatePanel 600/601 geometry, Dataset Replacement
 Safety, and Dataset Handoff v0 — are not reopened.
-
-## Immediate sequence
-
-The ledger above is the current short execution sequence. Existing locale,
-shell, and application checkpoints below remain historical evidence and
-independently scoped follow-ups; they are not silently promoted by this ledger.
-
-The ordering above does not select the next product feature. A later handoff or
-explicit planning decision may choose one bounded follow-up without reopening
-unrelated workstreams.
-
-At every step, prefer the smallest change that increases executable evidence
-and keeps Core and Extension responsibilities distinct.
-
-## Cross-App Locale consumer readiness checkpoint (2026-08-23)
-
-The latest read-only NarrativeLine Locale Consumer Readiness Audit records the
-current production-migration status as **NOT READY**. The existing
-recipient-preference implementation is a bounded experimental checkpoint, not
-production Cross-App Locale consumer parity. NarrativeLine's runtime worktree
-is clean and the relevant experiment implementation is recorded at commit
-`bfe88f6`.
-
-Priority 1 is therefore **Cross-App Locale Recipient-Preference closure /
-production readiness**. The following bounded closure items must be accepted
-before production locale consumer migration begins:
-
-1. Confirm the browser fallback contract and its NarrativeLine implementation
-   direction while preserving the requested / persisted / browser / default
-   distinction.
-2. Complete manual startup evidence for locale-only, invalid, duplicate,
-   malformed, and unsupported locale requests; effective-locale Handoff
-   errors; temporary-choice reload; and repeated Conflict Dialog behavior.
-3. Record the Experiment 2C applicability audit: current startup Locale
-   Conflict cannot coexist with pre-existing modified or pending work, so no
-   combined implementation case is active until a future entry permits that
-   coexistence; Dataset Replacement Safety remains independently accepted.
-4. Add and accept selector URL synchronization: immediate UI update,
-   explicit persistence, `locale`-only `replaceState`, no new history entry,
-   and preservation of `datasetUrl` and unknown fragment parameters.
-5. Close the locale URL lifecycle evidence for Back / Forward, startup-only
-   semantics, ignored runtime hash mutation, and Dataset Handoff fragment
-   preservation.
-6. Close NarrativeLine Timeline Header locale-control acceptance for EN and
-   JA at desktop, narrow, and touch conditions.
-
-The existing NarrativeLine experiment acceptance documents remain valid within
-their bounded scopes. Experiment 1 does not close the manual/lifecycle items
-above, and Experiment 2B does not accept startup Handoff with pre-existing
-dirty work. These exclusions must not be treated as production-readiness
-evidence.
-
-The production implementation sequence remains deferred until this checkpoint
-is accepted. Once ready, the smallest sequence is: locale fragment parser and
-updater; requested / persisted / browser / effective state model; Conflict
-Dialog and startup orchestration; Handoff ordering and StrictMode regression;
-AppFrame selector persistence and fragment synchronization; Dataset,
-selection, draft, and Replacement Safety regression; then browser acceptance.
-
-This checkpoint does not reopen accepted F2-NL1/NL1b/NL1c or F2-LS1. Existing
-Cross-App shell follow-ups, Dataset acquisition hierarchy, Header action parity,
-and Dataset Replacement styling remain separate follow-up lanes. The accepted
-LiaisonScape F2-LS1 checkpoint remains closed; its brand hit-area,
-Credits-focus, and stable vertical shell fixes are not locale-readiness gaps.
-
-No runtime, design-authority, or `ai-knowledge` files are changed by this
-roadmap synchronization. The existing untracked files
-`research/exploratory/anonymous-dataset-sharing.md` and
-`sessions/E2R-Session-0048.md` remain preserved and outside this checkpoint.
 
 ## Deferred Cross-App safety and test-infrastructure follow-ups (2026-08-24)
 

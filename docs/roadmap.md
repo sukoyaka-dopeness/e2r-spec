@@ -102,6 +102,17 @@ The current root-placement status remains summarized in the status index above.
 
 ## Current baseline
 
+Current-state reconciliation (2026-09-24): e2r-spec S3 repository-level
+standards/data licensing application and public-sample provenance formalization
+are **COMPLETE**; see the [S3 result](public-sample-provenance-formalization-result.md)
+and [provenance authority](public-sample-provenance.md). The Initial Public
+Release is **FORMALLY CLOSED** per the [closure audit](e2r-initial-public-release-closure-audit-result.md).
+The dated baseline and release-planning statements below that describe S3,
+publication, or release-readiness as pending are historical snapshots, not
+current blockers. This does not claim completion of formal legal review or
+software-repository licensing outside e2r-spec, nor authorize any future public
+write.
+
 ### Roadmap/status synchronization — 2026-08-17
 
 - Research Physical Reorganization is completed. Its closure record is
@@ -139,9 +150,9 @@ and reusable E2R software utilities, including the planned
 itself a license grant; each software repository must receive its own
 `LICENSE` and package metadata synchronization in a separate bounded phase.
 
-`e2r-spec` is deliberately excluded. Its standards/document licensing requires
-a separate decision, to be resolved before the final public-release audit and
-preferably before Push/deployment readiness.
+`e2r-spec` is excluded from that software-license direction. Its separate
+standards/document role-based licensing policy was decided and applied under
+S3; see the [S3 result](public-sample-provenance-formalization-result.md).
 
 ### Standards licensing policy decision — 2026-08-25
 
@@ -153,10 +164,12 @@ project-created example, research fixture, and machine-readable dogfood data.
 The existing MIT direction for E2R software repositories is reaffirmed. This
 is a policy decision, not license-file or package-metadata implementation.
 
-S3 remains required for the formal repository license application and
-provenance audit. Hub publication of the Self-Description Dataset remains
-blocked until that formalization and the ordinary public URL/redistribution
-readiness checks are complete.
+At this dated planning point, S3 remained required for the formal repository
+license application and provenance audit, and Hub publication of the
+Self-Description Dataset remained blocked. The e2r-spec S3 result and later
+Initial Public Release closure linked above supersede that pending status;
+they do not settle formal legal review or licensing in other software
+repositories.
 
 S2.1 now records a Metadata 1.1.0 candidate for optional
 `extensions.metadata.license` as an SPDX License Expression. The field is a
@@ -1472,13 +1485,15 @@ to mandatory implementation.
 
 ### Current execution order
 
-The active sequence is Cross-App Locale production readiness, NarrativeLine and
-LiaisonScape locale consumers, Hub locale/Handoff closure, residual quality and
-bounded visual/safety follow-ups, release assets and placement/display-order
+Historical execution-order snapshot: at this roadmap reconstruction checkpoint,
+the active sequence was Cross-App Locale production readiness, NarrativeLine
+and LiaisonScape locale consumers, Hub locale/Handoff closure, residual quality
+and bounded visual/safety follow-ups, release assets and placement/display-order
 audits, S3 licensing/provenance and sample redistribution checks, then
 push/deployment readiness, public interoperability evidence, and the final
-pre-public-release audit. This records execution shape without selecting a new
-priority among the open follow-ups.
+pre-public-release audit. The later S3 result and Initial Public Release closure
+supersede this sequence as release planning; it is not the current execution
+order. Current status is in the [status index](#current-status-index-2026-09-22).
 
 When a completed item appears in an older ledger as current-open, that wording
 is historical. When the same follow-up appears in multiple sections, the
@@ -2290,13 +2305,19 @@ must precede drag-and-drop.
 
 The [Pre-Public-Release Push and Deployment Readiness Audit](pre-public-release-push-deployment-readiness-audit.md)
 is **COMPLETE / DEFER FOR NOW / PUBLIC WRITE NOT AUTHORIZED**. The audit
-confirmed that the local Validator 0.4.0 publication, consumer integration,
-local Public Sample acceptance, S3 licensing/provenance formalization, and
+recorded the state at its 2026-09-07 checkpoint: local Validator 0.4.0
+publication and consumer integration, local Public Sample acceptance, S3
+licensing/provenance formalization, and
 LiaisonScape 0.2.0 preparation are recorded as complete, but the exact public
 release set is not yet stable: e2r-spec retains an unrelated dirty session-log
 change, LiaisonScape retains modified sample mirrors and twelve local commits
 ahead of its tracked `origin/main`, and public propagation/deployment
 acceptance plus the final Cross-App / Release Audit remain outstanding.
+
+Its pending public-release status was superseded by the [2026-09-22 Initial
+Public Release closure audit](e2r-initial-public-release-closure-audit-result.md).
+The audit remains evidence of its earlier no-public-write disposition; it does
+not describe the current release status or authorize a new public transaction.
 
 No push, tag, deploy, publication, cleanup, or cross-repository source change
 was performed. PR-3 Browser Evidence remains formally BLOCKED and is not
@@ -4794,23 +4815,27 @@ changed. NarrativeLine source-level implementation remains **CLOSED**.
 
 ### E2R-INITIAL-PUBLIC-RELEASE-REMAINING-GATES-RECONCILIATION1 (2026-09-17)
 
-The [Initial Public Release remaining-gates reconciliation result](e2r-initial-public-release-remaining-gates-reconciliation1-result.md)
-reconstructs the current cross-repository critical path without reopening
-NarrativeLine or LiaisonScape implementation. Remaining gates are human
+Historical release-planning snapshot (2026-09-17): the [Initial Public Release
+remaining-gates reconciliation result](e2r-initial-public-release-remaining-gates-reconciliation1-result.md)
+recorded the then-current cross-repository critical path: human
 licensing/provenance confirmation, exact release-set selection, clean release
 commits, explicit push/deploy/publication authorization, and public URL
-deployment acceptance. Older Auto Layout `OPEN` records remain historical and
-superseded for source-level readiness. No public write was authorized or
-performed.
+deployment acceptance. Its pending-release classification was superseded by
+the [2026-09-22 closure audit](e2r-initial-public-release-closure-audit-result.md);
+the result remains historical evidence and does not authorize future public
+writes. Older Auto Layout `OPEN` records remain historical and superseded for
+source-level readiness.
 
 ### E2R-INITIAL-PUBLIC-RELEASE-TRANSACTION-READINESS-DECISION1 (2026-09-17)
 
-The [Initial Public Release transaction-readiness decision result](e2r-initial-public-release-transaction-readiness-decision1-result.md)
-prepares, without selecting, the human decision packet for software licensing,
+Historical decision-preparation snapshot (2026-09-17): the [Initial Public
+Release transaction-readiness decision result](e2r-initial-public-release-transaction-readiness-decision1-result.md)
+prepared, without selecting, a human decision packet for software licensing,
 sample stewardship/rights, exact cross-repository revisions, and public URL
-acceptance. The current classification is **TRANSACTION READINESS DECISIONS
-PREPARED / HUMAN APPROVAL REQUIRED**. No release set, license artifact,
-package metadata, sample, public URL, or public transaction was changed.
+acceptance. Its **HUMAN APPROVAL REQUIRED** classification was superseded for
+the Initial Public Release by the 2026-09-22 closure audit. It remains evidence
+of the earlier preparation state; it does not establish current licensing
+requirements or authorize future public writes.
 
 ### E2R-PUBLIC-SAMPLE-RIGHTS-PROVENANCE-AND-RELEASE-DECISION-RECONCILIATION1 (2026-09-17)
 
@@ -5009,6 +5034,11 @@ implementation, schema change, Validator change, sample change, or Relative
 Time change is authorized by this planning entry.
 
 ### E2R-INITIAL-PUBLIC-RELEASE-CROSS-APP-FOLLOW-UPS-RECONCILIATION1 (2026-09-19)
+
+Historical pre-release follow-up snapshot: the dated “REQUIRED BEFORE INITIAL
+PUBLIC RELEASE” labels below were superseded as release gates by the 2026-09-22
+closure audit. Any visual-quality or product follow-up that remains operative
+is separate from release closure and is tracked under current status.
 
 The [Cross-App Follow-Ups Reconciliation result](e2r-initial-public-release-cross-app-follow-ups-reconciliation1-result.md)
 records two bounded pre-public-release follow-ups from current source and

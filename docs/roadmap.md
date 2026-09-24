@@ -2525,36 +2525,23 @@ The current planning consequence is:
 ### LiaisonScape Boundary Equivalence-Class Product Completion / Cost Envelope 1 (2026-09-14)
 
 The [Boundary Equivalence-Class Product Completion / Cost Envelope 1 result](liaisonscape-boundary-equivalence-class-product-completion1-result.md)
-follows the order-dependency result by evaluating the entire cheap-equivalence
-class that crosses the normal K=4 boundary. The class is defined only by the
-existing six-decimal quantized cheap feature vector and must contain both K=4
-and outside members. Product metrics, fixture identity, candidate index, and
-known Product-best identity are excluded from membership and triggering.
+records a bounded boundary-equivalence completion architecture. The current
+planning consequence is:
 
-Across the previous 26 operations plus eight independent controls, cheap K=4
-reached `30/34` exact-best with four meaningful misses. The previous density +
-one index policy reached `32/34` but remained order-dependent. Full boundary
-completion reached `34/34` exact-best and top-3-any, zero meaningful misses,
-zero regret, and `100%` baseline retention. It evaluated 182 of 420 oracle
-candidates, avoided 238 evaluations, and added at most eight evaluations per
-operation. Seven boundary classes showed material Product variance, including
-crossing ranges up to 43.
+- full boundary completion is `QUALITY CLOSED IN TESTED SET` only within the
+  tested envelope;
+- capped completion remains `NOT CLOSED`;
+- the boundary-equivalence trigger is `DIAGNOSTICALLY SUPPORTED`, not a
+  production selection policy;
+- G2-B4 remains a separate live qualification with risk gate `OPEN` and
+  probe target `NOT ESTABLISHED`; and
+- cheap-only selector, quality solver, Product integration/default, provider,
+  Product adoption, visual acceptance, Human Review, and release readiness
+  remain unestablished or open.
 
-Stable geometry-ordered caps were order-invariant but remained incomplete:
-`+2` left four misses, `+4` left two, and `+6` left one. Failure injection
-failed closed on all 34 operations and produced no unverified selected result.
-
-Disposition: `A. BOUNDARY CLASS COMPLETION ESTABLISHED WITH ACCEPTABLE COST`
-for this diagnostic completion architecture. Boundary-equivalence trigger is
-`DIAGNOSTICALLY SUPPORTED`, full completion is `QUALITY CLOSED IN TESTED SET`
-within the tested envelope, and capped completion remains `NOT CLOSED`.
-Keep cheap-only selector `HOLD / NOT ESTABLISHED`, risk gate `OPEN`, probe
-target `NOT ESTABLISHED`, quality solver `HOLD / NOT ESTABLISHED`, Product
-integration/default `HOLD`, production provider `NOT ESTABLISHED`, Adaptive
-Initial Placement Cascade `INACTIVE`, Actual Product visual evaluation `NOT
-READY`, Human Review `NOT READY`, and the Initial Layout Release blocker
-`OPEN`. Do not treat this as Product adoption or production provider evidence.
-Session log is synchronized in Session 0058.
+Class definitions, cost/order matrices, failure-injection detail, candidate
+counts, and dated progression remain in the [dedicated result](liaisonscape-boundary-equivalence-class-product-completion1-result.md)
+and the [existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-boundary-equivalence-class-product-completion-cost-envelope-1-2026-09-14).
 
 ### LiaisonScape Independent Risk-Gate / Probe-Target Stability Validation 1 (2026-09-14)
 

@@ -30,8 +30,9 @@ not a second planning authority. Statements such as `current`, `next`, or
   status remain in the roadmap.
 - [LiaisonScape Layout and Auto Layout chronology](liaisonscape-layout-and-auto-layout-chronology.md)
   preserves the early Initial Placement / routing progression, the historical
-  Seed PR-3 pre-Browser preparation/evaluation lineage and Browser Capture /
-  runtime diagnostic lineage
+  Seed candidate-generation, assignment, structural-objective, and PR-2
+  preparation chronology, the Seed PR-3 pre-Browser preparation/evaluation
+  lineage and Browser Capture / runtime diagnostic lineage
   (including dated qualification, restart, run-identity, helper, and
   convergence pointers), the
   pre-coordination Product / Provider / Frontier / Presentation progression,

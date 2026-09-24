@@ -1663,27 +1663,19 @@ available. No provider, account/auth model, schema, or implementation is
 selected. This research does not change the current LiaisonScape Initial
 Placement order. See [E2R-managed Personal Storage Research](../research/exploratory/e2r-managed-personal-storage.md).
 
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-AWARE-SEED-GEOMETRY-SEMANTICS-AUDIT1 (2026-09-01)
+The 2026-09-01 to 2026-09-03 Seed candidate-generation, assignment,
+structural-objective, and PR-2 preparation chronology is preserved in the
+[existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#seed-candidate-generation-assignment-structural-objective-and-pr-2-preparation-chronology-2026-09-01-to-2026-09-03).
+Its [bounded migration result](roadmap-seed-pr2-history-migration1-result.md)
+records scope and reference checks. All 55 dated checkpoint blocks and their
+dedicated evidence pointers remain there in source order.
 
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape
-Initial-placement Motif-aware Seed-geometry Semantics
-Audit](liaisonscape-initial-placement-motif-aware-seed-geometry-semantics-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-SPACE-AUDIT1 (2026-09-01)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement
-Seed Candidate-space Audit](liaisonscape-initial-placement-seed-candidate-space-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-SEMANTICS-AUDIT1 (2026-09-01)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape
-Initial-placement Seed Candidate-generation Semantics
-Audit](liaisonscape-initial-placement-seed-candidate-generation-semantics-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-SEMANTICS-VALIDATION1 (2026-09-01)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Candidate-generation Semantics
-Validation](liaisonscape-initial-placement-seed-candidate-generation-semantics-validation.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
+The TA0-TA3 synthesis closed only the fixture-local research branch at its
+recorded INF-W0 / INF-W1 ceiling. It does not justify Experiment5, a universal
+winner, cross-fixture ranking, Production selection, Product adoption, or
+visual acceptance. Current PR-2 disposition and its bounded limits remain
+summarized immediately below; current Initial Layout sequencing remains in the
+coordination authority.
 
 ### GitHub Sponsors follow-up (2026-09-02)
 
@@ -1703,36 +1695,6 @@ Validation](liaisonscape-initial-placement-seed-candidate-generation-semantics-v
 This status-only update does not reorder the active LiaisonScape Initial
 Placement sequence and does not authorize changes to application source,
 runtime behavior, or repository-local funding files.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-INPUT-BOUNDARY-AUDIT1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Candidate-generation Input Boundary Audit](liaisonscape-initial-placement-seed-candidate-generation-input-boundary-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-DESIGN-BOUNDARY-AUDIT1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Candidate-generation Design Boundary Audit](liaisonscape-initial-placement-seed-candidate-generation-design-boundary-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-FAMILY-OFFLINE-EXPERIMENT1-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Candidate-family Offline Experiment 1 Design](liaisonscape-initial-placement-seed-candidate-family-offline-experiment1-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-FAMILY-OFFLINE-EXPERIMENT1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Candidate-family Offline Experiment 1 Result](liaisonscape-initial-placement-seed-candidate-family-offline-experiment1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-GENERATION-ASSIGNMENT-RESPONSIBILITY-AUDIT1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Generation / Assignment Responsibility Audit](liaisonscape-initial-placement-seed-generation-assignment-responsibility-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-SEMANTICS-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape
-Initial-placement Seed-assignment Semantics Design](liaisonscape-initial-placement-seed-assignment-semantics-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape
-Initial-placement Seed Family / Assignment Experiment Seam Design](liaisonscape-initial-placement-seed-family-assignment-experiment-seam-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-VSCODE-OSINT-WORKBENCH-RESEARCH1 (2026-09-02)
 
@@ -1756,15 +1718,6 @@ Authority research](../research/exploratory/e2r-web-vscode-host-authority.md)
 for the responsibility model, alternatives, risks, open questions, and
 conditional research sequence if the direction is separately reopened.
 
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Family / Assignment
-Experiment Seam 1](liaisonscape-initial-placement-seed-family-assignment-experiment-seam1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-EQUIVARIANCE-FOLLOWUP1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Assignment Equivariance Follow-up](liaisonscape-initial-placement-seed-assignment-equivariance-followup.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
 ### E2R-OSINT-EXTERNAL-DATASET-ACQUISITION-TRUST-RESEARCH1 (2026-09-02)
 
 **EXPLORATORY / NOT ACTIVE.** The research direction is established, but
@@ -1779,174 +1732,6 @@ assertion-level modeling, and trust/provenance ownership remain unresolved;
 no client, downloader, registry, schema, or implementation is authorized. See
 the [E2R OSINT External Dataset Acquisition, Trust, and Provenance research](../research/exploratory/e2r-osint-external-dataset-acquisition-and-trust.md)
 for the full evidence, distinctions, open questions, and non-goals.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-CANDIDATE-FAMILY-EXPERIMENT-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape practical seed-family experiment design](liaisonscape-initial-placement-seed-practical-candidate-family-experiment-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-CANDIDATE-FAMILY-EXPERIMENT1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape practical candidate-family experiment](liaisonscape-initial-placement-seed-practical-candidate-family-experiment1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-QUALITY-EXPERIMENT-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape practical-family structural-quality experiment design](liaisonscape-initial-placement-seed-practical-family-structural-quality-experiment-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-QUALITY-EXPERIMENT1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape practical-family structural-quality experiment](liaisonscape-initial-placement-seed-practical-family-structural-quality-experiment1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-ASSIGNMENT-SENSITIVITY-FOLLOWUP1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape practical-family structural assignment-sensitivity follow-up](liaisonscape-initial-placement-seed-practical-family-structural-assignment-sensitivity-followup1.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-EXPERIMENT-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape topology-aware assignment experiment design](liaisonscape-initial-placement-seed-topology-aware-assignment-experiment-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-EXPERIMENT1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape topology-aware assignment experiment](liaisonscape-initial-placement-seed-topology-aware-assignment-experiment1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-RESEARCH1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape structural-assignment objective research](liaisonscape-initial-placement-seed-structural-assignment-objective-research1.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-PARTIAL-PREFERENCE-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape structural-assignment partial-preference design](liaisonscape-initial-placement-seed-structural-assignment-partial-preference-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FANOUT-PARTIAL-PREFERENCE-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape fan-out partial-preference design](liaisonscape-initial-placement-seed-fanout-partial-preference-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-EXACT-ANGULAR-GAP-COMPARATOR-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape exact angular-gap comparator design](liaisonscape-initial-placement-seed-exact-angular-gap-comparator-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape structural-assignment objective experiment design](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-MANIFEST-RECONSTRUCTION-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [LiaisonScape assignment manifest reconstruction design](liaisonscape-initial-placement-seed-topology-aware-assignment-manifest-reconstruction-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA1-QUALITY-NEUTRAL-WITNESS-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [TA-1 quality-neutral witness design](liaisonscape-initial-placement-seed-ta1-quality-neutral-witness-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA1-OPERATIONAL-WITNESS-RECONSTRUCTION1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [TA-1 operational witness reconstruction](liaisonscape-initial-placement-seed-ta1-operational-witness-reconstruction1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-LIGHTHOUSE-FIXTURE-PROVENANCE-RECONCILIATION1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [Lighthouse fixture provenance reconciliation](liaisonscape-initial-placement-seed-lighthouse-fixture-provenance-reconciliation1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN2 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [reduced structural-assignment objective design](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design2.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT2 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [Experiment2 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment2-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-POLICY-MANIFEST-RECOVERY1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [TA-2 policy manifest recovery result](liaisonscape-initial-placement-seed-ta2-policy-manifest-recovery1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-POLICY-SEMANTICS-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [TA-2 policy semantics design](liaisonscape-initial-placement-seed-ta2-policy-semantics-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-OPERATIONAL-WITNESS-RECONSTRUCTION1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [TA-2 operational witness reconstruction result](liaisonscape-initial-placement-seed-ta2-operational-witness-reconstruction1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-MOTIF-RESPONSIBILITY-ENCODING-RECONCILIATION1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [TA-2 motif responsibility encoding reconciliation result](liaisonscape-initial-placement-seed-ta2-motif-responsibility-encoding-reconciliation1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-MOTIF-OPERATIONAL-WITNESS-RECONSTRUCTION1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [TA-2 motif operational witness reconstruction result](liaisonscape-initial-placement-seed-ta2-motif-operational-witness-reconstruction1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN3 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [Design3 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design3.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT3 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [Experiment3 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment3-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-MANIFEST-RECOVERY1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [TA-3 correspondence manifest recovery result](liaisonscape-initial-placement-seed-ta3-correspondence-manifest-recovery1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-SEMANTICS-DESIGN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [new TA-3 correspondence semantics design](liaisonscape-initial-placement-seed-ta3-correspondence-semantics-design1.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-OPERATIONAL-WITNESS-RECONSTRUCTION1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [TA-3 operational witness reconstruction result](liaisonscape-initial-placement-seed-ta3-correspondence-operational-witness-reconstruction1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN4 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [Design4 specification](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design4.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [Experiment4 preflight result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-INTEGRITY-RECONCILIATION1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [Experiment4 integrity reconciliation result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-integrity-reconciliation1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-RERUN1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [Experiment4 Rerun1 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-rerun1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-INTERPRETATION1 (2026-09-02)
-
-Detailed checkpoint evidence and dated disposition remain in [Experiment4 Interpretation1 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-interpretation1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-RESEARCH-SYNTHESIS1 (2026-09-02)
-
-**RESEARCH CLOSURE ONLY — FIXTURE-LOCAL; INF-W0 / INF-W1 CEILING.** The TA0–TA3 branch is saturated at current scope; no Experiment5 is justified. Hard-validity, fixture-local structural preference, visual quality, and Production acceptance remain separate; no universal winner, cross-fixture ranking, Production selection, or visual acceptance follows. Full synthesis and correction authority: [Research Synthesis1 result](liaisonscape-initial-placement-seed-structural-assignment-research-synthesis1-result.md). The dated Production Readiness next-step is a checkpoint snapshot; current sequencing remains in `Current Initial Layout / Parallel Presentation Coordination`.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-READINESS-DESIGN1 (2026-09-02)
-
-Detailed readiness criteria and the checkpoint's dated disposition remain in the [Production Readiness Design1 authority](liaisonscape-initial-placement-seed-production-readiness-design1.md). The later PR-2 completion result is the current pointer for bounded nonvisual status and remaining-stage boundaries.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-READINESS-EVIDENCE-AUDIT1 (2026-09-02)
-
-The inventory reconciliation and its dated findings remain in the [readiness evidence audit result](liaisonscape-initial-placement-seed-production-readiness-evidence-audit1-result.md). Its historical blocker/sequence snapshot is superseded for current bounded PR-2 status by the later completion result.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-DESIGN1 (2026-09-03)
-
-The bounded, disposable materialization contract and its role boundaries remain in the [candidate materialization design](liaisonscape-initial-placement-seed-production-candidate-materialization-design1.md); the evaluation surface is not Production integration or candidate selection.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-IMPLEMENTATION1 (2026-09-03)
-
-Implementation evidence and its dated result remain in the [materialization implementation result](liaisonscape-initial-placement-seed-production-candidate-materialization-implementation1-result.md). Its bounded harness results do not establish Production integration or candidate selection.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-MATERIALIZATION-VALIDATION1 (2026-09-03)
-
-Validation evidence and its bounded claims remain in the [materialization validation result](liaisonscape-initial-placement-seed-production-candidate-materialization-validation1-result.md). The old “next PR-2 prerequisite” wording is a dated snapshot; PR-2's later disposition is recorded under the completion checkpoint below.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-COMPATIBILITY-AUDIT1 (2026-09-03)
-
-The compatibility audit's dated findings remain in the [candidate compatibility audit result](liaisonscape-initial-placement-seed-production-candidate-compatibility-audit1-result.md); its earlier PR-2 status is superseded by the later bounded completion result.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-COMPATIBILITY-DESIGN1 (2026-09-03)
-
-The validated common compatibility contract remains in the [candidate compatibility design result](liaisonscape-initial-placement-seed-production-candidate-compatibility-design1-result.md). Compatibility evidence defines bounded evaluation boundaries; it is not candidate selection or Production integration.
-
-### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-CANDIDATE-COMPATIBILITY-VALIDATION1 (2026-09-03)
-
-The validated bounded compatibility evidence and its limitations remain in the [candidate compatibility validation result](liaisonscape-initial-placement-seed-production-candidate-compatibility-validation1-result.md). Its earlier “PR-2 not started” sequencing is superseded by the completion checkpoint below.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-PR2-NONVISUAL-EVIDENCE-COMPLETION1 (2026-09-03)
 

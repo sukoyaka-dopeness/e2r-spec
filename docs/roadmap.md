@@ -1701,181 +1701,80 @@ vocabulary, deletion, or cross-app parity fix is opened by this checkpoint.
 
 ### LS-RELATION-DETAIL-PRESENTATION-DIRECTIONALITY-DECISION1 (2026-08-29)
 
-The Relation Detail presentation decision is recorded in the reconciled
-[Relation Endpoint Vocabulary Surface Adoption Audit](../research/exploratory/relation-endpoint-vocabulary-surface-adoption-audit.md)
-and the bounded [Relation Direction and Arrow Appearance](../research/exploratory/relation-direction-and-arrow-appearance.md)
-UI consequence. Ordinary Relation Detail is now conceptually inspection plus
-future presentation configuration: `Name`, two singular `Connected object`
-rows in stable canonical source/target order, and a visual control between
-them. The Japanese control concept is `つながりの表示`; Normal, Reverse,
-Undirected, and Bidirectional remain presentation-only choices.
-
-Canonical `sourceId` / `targetId`, Relation name/description, Create/Edit,
-Entity Detail, and the accepted deletion-blocker presentation remain unchanged.
-The English control label and persistence ownership are unresolved, so runtime
-implementation is not ready. No arrow control, rendering, persistence, Core,
-Extension, schema, or application change is authorized by this decision.
+The accepted presentation-only direction and its Relation Detail consequence
+are retained in the [directionality research authority](../research/exploratory/relation-direction-and-arrow-appearance.md)
+and the [Presentation reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md).
+This is a historical decision checkpoint; later entries below record the
+selected labels, serialization contract, schema, and implementation evidence.
 
 ### LS-RELATION-DETAIL-DISPLAY-CONTROL-EN1 (2026-08-29)
 
-The English visible label for the future Relation Detail presentation control
-is now accepted as **`Relation display`**. It matches the established `Relation`
-UI term and describes presentation rather than canonical direction. The
-Japanese label remains `つながりの表示`; Normal, Reverse, Undirected, and
-Bidirectional remain presentation-only choices, with endpoint names shown once
-outside the control.
-
-Persistence ownership remains the sole named prerequisite before runtime
-implementation. No ARIA wording, arrow control, rendering, persistence, Core,
-Extension, schema, or application change is authorized by this vocabulary
-decision.
+The accepted broader label `Relation display` is recorded in the
+[directionality research authority](../research/exploratory/relation-direction-and-arrow-appearance.md).
+It was later superseded for the four-mode control by the narrower `Arrow
+display` decision below; details and provenance are summarized in the
+[reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md).
 
 ### LS-RELATION-DISPLAY-PERSISTENCE-OWNERSHIP1 (2026-08-29)
 
-The [Relation Direction and Arrow Appearance](../research/exploratory/relation-direction-and-arrow-appearance.md)
-authority now records **RELATION DISPLAY PERSISTENCE OWNER ACCEPTED /
-SERIALIZATION DETAIL REMAINS**. An explicitly adopted Relation display choice
-is Presentation-owned, Dataset-contained LiaisonScape state under a future
-bounded Presentation mechanism. It is not Core, Coordinate, Layout geometry,
-Application View State, or the provisional Perspective responsibility.
-
-An absent choice defaults to canonical Normal (`sourceId -> targetId`); an
-adopted choice is expected to travel through Dataset export/import and may
-contribute to `datasetModified` and future undo/redo. Unsupported presentation
-data must not block Core Relation use and should be preserved where applicable
-Extension rules require it. Exact Extension identifier/version, serialized
-tokens, payload shape, Relation-ID addressing, and orphan-record rules remain
-the next bounded schema-contract decision. Relation display runtime work is
-therefore not yet ready, and no Core, schema, Extension, Validator, or
-application change is authorized by this checkpoint.
+The [directionality research authority](../research/exploratory/relation-direction-and-arrow-appearance.md)
+records the accepted Presentation-owned, Dataset-contained persistence
+responsibility and its boundaries. The later [Presentation Draft](../extensions/presentation-extension-draft.md)
+and schema define the serialization contract; LiaisonScape implementation
+evidence and limits are summarized in the [reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md).
 
 ### LS-RELATION-DETAIL-ARROW-DISPLAY-ORDER-DECISION1 (2026-08-29)
 
-The [Relation Direction and Arrow Appearance](../research/exploratory/relation-direction-and-arrow-appearance.md)
-authority now records **RELATION DETAIL ARROW-DISPLAY PRESENTATION ACCEPTED**.
-The four-mode control is narrowed from the previously accepted broader
-`Relation display` concept to the accepted English label `Arrow display` and
-Japanese label `遏｢蜊ｰ縺ｮ陦ｨ遉ｺ`. `Relation display` remains valid historical
-wording for a possible broader presentation section; future line/stroke style
-is separate.
-
-Relation Detail's accepted future ordinary order is `Name`, `Connected object`,
-`Arrow display`, `Connected object`, `Description`, with the control between
-the endpoint rows. The current live endpoint-first order is a redesign target,
-not a data defect. Normal, Reverse, Undirected, and Bidirectional semantics,
-canonical `sourceId` / `targetId`, Create/Edit, Entity Detail, and deletion
-blocker boundaries remain unchanged. The persistence owner remains the future
-LiaisonScape-owned Dataset-contained Presentation mechanism; serialization and
-runtime implementation remain deferred.
+The accepted four-mode `Arrow display` label, presentation-only choices, and
+Relation Detail information order remain in the [directionality research authority](../research/exploratory/relation-direction-and-arrow-appearance.md).
+The [Presentation reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md)
+distinguishes that accepted design from committed LiaisonScape implementation
+and does not claim separate Human acceptance of the runtime feature.
 
 ### LS-RELATION-PRESENTATION-SERIALIZATION-DESIGN1 (2026-08-29)
 
-The [LiaisonScape Presentation Extension Draft](../extensions/presentation-extension-draft.md)
-now defines the Dataset-contained serialization contract as draft candidate
-`draft.github.sukoyaka-dopeness.liaisonscape-presentation`, version `0.1.0`.
-It uses one Relation-ID-scoped `relations` map and the `arrowDisplay` tokens
-`normal`, `reverse`, `undirected`, and `bidirectional`; absence means Normal.
-The contract preserves canonical Core endpoints, omits redundant defaults, and
-supports future independently named Presentation properties in the same
-Relation record without defining line-style data here.
-
-Schema/reader-writer implementation remains a separate next phase, followed by
-Arrow display runtime, line-style design/implementation, and Lighthouse
-Restoration sample refresh. No schema, runtime, Validator, or sample change is
-authorized by this checkpoint.
+The current [Presentation Draft](../extensions/presentation-extension-draft.md)
+defines the Dataset-contained `0.1.0` candidate contract; the [structural schema](../schemas/extensions/presentation-draft.schema.json)
+and LiaisonScape reader/writer implementation are separately evidenced. See
+the [Presentation reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md)
+for the implementation checkpoints and the boundary between them and
+Draft/Stable status.
 
 ### E2R-LS-PRESENTATION-EXTENSION-SCHEMA1 (2026-08-29)
 
-The accepted LiaisonScape Presentation Extension Draft `0.1.0` now has a
-machine-readable structural schema at
-[`schemas/extensions/presentation-draft.schema.json`](../schemas/extensions/presentation-draft.schema.json)
-and a targeted validator registered as `npm run validate:presentation-draft`.
-The schema validates the payload's exact `specVersion`, optional Relation-ID
-map, current `arrowDisplay` string shape, and unknown-field preservation
-boundary. Known values remain `normal`, `reverse`, `undirected`, and
-`bidirectional`; unknown strings remain structurally preservable for the
-reader's Normal fallback.
-
-Relation-ID resolution, orphan diagnostics, canonical default/empty-state
-omission, and application interpretation remain outside JSON Schema. The
-Presentation Extension remains a Draft candidate and does not change Core,
-Coordinate, Layout, Validator semantics, Dataset samples, or application
-runtime. The next checkpoint may implement a bounded LiaisonScape
-Presentation reader/writer responsibility, following the accepted incremental
-application modularization policy; it must not begin as arbitrary Extension
-traversal distributed through `App.tsx`.
+The [Presentation Draft](../extensions/presentation-extension-draft.md) and
+[structural schema](../schemas/extensions/presentation-draft.schema.json)
+remain the contract authorities; `npm run validate:presentation-draft`
+checks the schema. Production Validator support has its own
+[integration result](production-validator-extension-integration-result.md)
+and [acceptance](production-validator-extension-integration-acceptance.md).
+The Extension remains a Draft candidate, not Stable; the [reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md)
+records application implementation separately from those authorities.
 
 ### LS-RELATION-LINE-STYLE-DESIGN1 (2026-08-29)
 
-The [LiaisonScape Presentation Extension Draft](../extensions/presentation-extension-draft.md)
-and [Relation Direction and Arrow Appearance research](../research/exploratory/relation-direction-and-arrow-appearance.md)
-now record **RELATION LINE-STYLE PRESENTATION MODEL ACCEPTED / SCHEMA UPDATE
-READY**. Relation line appearance is an independent Presentation responsibility
-from `arrowDisplay`: the exact property is `lineStyle`, with `solid`, `dashed`,
-and `dotted` tokens. Absence means `solid`, and canonical writing omits
-explicit Solid while preserving unknown fields and unknown non-empty tokens
-until an explicit line-style edit.
-
-The selected future Relation Detail vocabulary is `Line style` / `線のスタイル`,
-with a native textual select using `Solid` / `実線`, `Dashed` / `破線`, and
-`Dotted` / `点線`. The accepted ordinary order is `Name`, `Connected object`,
-`Arrow display`, `Line style`, `Connected object`, `Description`. The control
-is initially Relation Detail-only; Relation Creation uses the default Solid.
-All line styles combine independently with all four accepted arrow-display
-modes, and none changes Core endpoints, Relation identity/text, or semantic
-data. Self-Relations retain their routed loop geometry, and parallel Relations
-are independently addressed by Relation ID. Hidden or Event-related Relations
-remain eligible for Relation-ID-scoped Presentation storage regardless of
-current graph visibility.
-
-The Presentation Extension remains Draft candidate `0.1.0`; this additive
-optional field does not warrant a version bump because the existing contract
-reserved separately named Presentation properties and requires unknown-field
-preservation. A later schema checkpoint must document and validate the
-standardized field/tokens; schema work remains separate. Runtime reader/writer,
-graph rendering, and Relation Detail integration also remain separate and are
-not authorized by this documentation checkpoint.
-
-The rendering boundary is limited to the visible Relation line path. Halo,
-hit-area, selection target, route/self-loop geometry, labels, arrowhead shape,
-and the Relation-creation preview remain separate responsibilities. Existing
-Layout research remains authoritative for route, curvature, self-loop
-orientation/radius, label placement, and spatial layering. Node automatic
-placement remains an independent Layout/placement work item, and the likely
-LiaisonScape `0.2.0` application release decision is recorded separately;
-actual version preparation remains release-time. No application version,
-schema, runtime, Validator, sample, or other repository change follows from
-this historical design checkpoint.
+The accepted independent `lineStyle` responsibility, tokens, defaults, and
+Presentation/Layout boundaries remain in the [directionality research authority](../research/exploratory/relation-direction-and-arrow-appearance.md)
+and [Presentation Draft](../extensions/presentation-extension-draft.md).
+The schema and LiaisonScape reader/writer/UI implementation checkpoints are
+complete in their respective authorities; their evidence and non-acceptance
+limits are summarized in the [reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md).
 
 ### LS-RELATION-LINE-STYLE-SCHEMA1 (2026-08-29)
 
-The Presentation Draft schema now formally standardizes the optional
-Relation-record `lineStyle` property as a non-empty string. The known tokens
-are `solid`, `dashed`, and `dotted`; unknown non-empty tokens remain structurally
-valid for forward-compatible runtime fallback and preservation. The existing
-`arrowDisplay` behavior, `additionalProperties` policy, empty-record rule,
-Relation-ID map, and `specVersion: "0.1.0"` are unchanged.
-
-The coherent `validate:presentation-draft` fixture matrix now covers the three
-known line-style tokens, Arrow + lineStyle combinations, unknown lineStyle and
-sibling fields, and invalid empty/non-string lineStyle values. Schema behavior
-remains structural: effective Solid fallback, canonical omission, UI labels,
-CSS/SVG rendering, orphan resolution, and graph interpretation remain outside
-the schema. The schema checkpoint is complete and LiaisonScape line-style
-reader/writer work is ready as a separate follow-up; this checkpoint does not
-authorize runtime implementation, application version changes, or node
-automatic placement.
+The [structural schema](../schemas/extensions/presentation-draft.schema.json)
+includes `lineStyle` and its non-empty-string shape alongside `arrowDisplay`;
+the targeted gate is `npm run validate:presentation-draft`. Runtime fallback,
+preservation, rendering, and edit behavior belong to the Draft and application,
+not the schema. See the [reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md)
+for implementation evidence; no Stable promotion is implied.
 
 ### LS-PRESENTATION-RELATION-DELETION-CLEANUP1 (2026-08-30)
 
-The previously remaining Presentation lifecycle cleanup item is closed. The
-existing LiaisonScape implementation removes only the Presentation record
-keyed by an explicitly deleted Relation ID, preserves siblings and unrelated
-orphan records, and applies the accepted empty-container canonicalization.
-Malformed or unsupported Presentation payloads remain fail-closed. This
-closure is recorded in
-`docs/liaisonscape-presentation-relation-deletion-cleanup-result.md`; it does
-not introduce global orphan repair or change Validator/schema semantics.
+This bounded lifecycle item is **CLOSED** in the [cleanup result](liaisonscape-presentation-relation-deletion-cleanup-result.md):
+explicit Relation deletion removes only its keyed Presentation record and
+preserves siblings and unrelated orphans. No global orphan repair or
+Validator/schema policy change is implied.
 
 The Initial Public Release is formally closed; its current status and retained boundaries remain in the status index and [closure audit](e2r-initial-public-release-closure-audit-result.md). The superseded pre-release and LiaisonScape 0.2.0 sequence is preserved, in original order and wording, in the [release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#pre-release-and-liaison-scape-020-release-preparation-chronology); its dated `current`, `next`, `blocked`, and `unauthorized` statements are historical snapshots.
 

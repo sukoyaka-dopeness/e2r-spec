@@ -8,35 +8,15 @@ Status: Current planning document; non-normative
 
 ### Workspace placement migration — COMPLETED — 2026-09-21
 
-The E2R root workspace placement migration is complete. The final direct-child
-inventory is:
-
-`8 directories / 7 Git repositories / 0 noncanonical root workspaces`
-
-The seven canonical repositories remain direct children of
-`C:\Users\\extra\\E2R`, and the `workspace` infrastructure container
-holds all noncanonical experimental and diagnostic workspaces under the
-approved placement policy. The migration covered the visual-evidence and
-run-configuration waves, browser/CDP and runtime qualification lineages,
-structural and routing experiments, the linked-worktree administration update,
-the failed-clone disposition, and the final receive-lifetime special-
-preservation relocation.
-
-All approved relocations preserved each workspace's full `.git` tree, refs,
-objects, source/tests, evidence, generated content, dirty state where
-applicable, and relative paths. Approved dependent `remote.origin.url`
-updates and the single linked-worktree admin metadata update were bounded to
-their operational targets. Historical paths and provenance records were left
-unchanged. The final receive-lifetime relocation preserved its branch,
-646-entry dirty state, 634 untracked artifacts, Restart8 evidence, local-only
-Git chronology, existing extraction, and dangling objects.
-
-Detailed checkpoint evidence remains in `workspace\artifacts`, the
-workspace-specific documents, and Git history. Those records retain the
-migration sequence and preservation measurements; this summary is the current
-roadmap authority for placement status. Future disposition of archived
-evidence, historical provenance, or any later cleanup is separate work and is
-not reopened by this closure.
+The migration closed with `8 directories / 7 Git repositories / 0 noncanonical
+root workspaces`. The seven canonical repositories remain direct children of
+`C:\Users\\extra\\E2R`; noncanonical experimental and diagnostic workspaces
+are under the `workspace` container, including the separately preserved
+receive-lifetime workspace. Detailed chronology and preservation evidence
+remain in workspace artifacts, workspace-specific records, and Git history;
+this entry and the status index are the current placement summary. Any future
+evidence disposition, provenance capture, archive, or cleanup is separate work
+and is not reopened by placement closure.
 
 ## Operating principles
 

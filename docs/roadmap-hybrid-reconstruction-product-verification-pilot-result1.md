@@ -51,9 +51,9 @@ the B headings no longer duplicate dated progression in the current planning
 entry point. The current Initial Layout parent and its compatibility-sensitive
 anchor were preserved.
 
-The Roadmap changed from **4,646 lines / 243 ATX headings** to **4,419 lines /
+The Roadmap changed from **4,646 lines / 243 ATX headings** to **4,422 lines /
 238 ATX headings**. The broad History unit grew from **2,826 lines** to
-**3,163 lines**. These are measurement results of this bounded edit, not a
+**3,164 lines**. These are measurement results of this bounded edit, not a
 general slimming target.
 
 ## History and provenance

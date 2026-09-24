@@ -68,7 +68,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | Roadmap chronology / slimming tranches 1–2 | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
-| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; SEED RESEARCH, PR-2, AND PR-3 PRE-BROWSER PREPARATION LINEAGES POINTER-COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
+| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; SEED RESEARCH, PR-2, PR-3 PRE-BROWSER, AND BROWSER DIAGNOSTIC LINEAGES POINTER-COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -3794,938 +3794,167 @@ The frozen phase bridge keeps Machine evidence immutable and phase-local; the la
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1 (2026-09-04)
 
-The first authorized Phase B execution was attempted in disposable Browser
-lineages based on the accepted Harness authority. Machine Evidence B, the
-80-cell eligible V2 set, the 16-cell B1 pending set, the adopted transform,
-and the exact Edge Stable authority were frozen before dynamic capture. The
-final Browser identity was
-`pr3r1-95ff619e25deb4c5edc281041bf6c4d32324e6765c4f5999a98ff68a343d8762`.
-
-The checkpoint is **CASE 7 / DECISION G — B1 PHASE GATE BLOCKS CANDIDATE V3**.
-The final disposable lineage committed Browser Protocol A, then reached seven
-terminal B1 browser-side failures after 21 attempts; the common CDP launch /
-readiness failure prevented the remaining B1 rows and blocked all candidate
-V3 captures. No screenshot succeeded, no Browser Evidence B completion commit
-was created, and no V3, visual review, ranking, selection, E-VISUAL, Product
-integration, or PR-3 assessment occurred. Partial B1 failure records remain in
-the Browser clone for diagnosis. Edge VersionInfo and an independent CDP probe
-both reported `152.0.4191.53`; Chrome fallback was not used.
-
-The exact next prerequisite remains
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-REVIEW1`,
-but it is **NOT STARTED**. A future Browser retry requires a new lineage and
-Protocol A after correcting the runner launch/readiness fault. Machine
-Execution1, Browser Lineage Readiness Reconciliation1, and Run-Identity
-Phase-Bridge Design Correction1 remain preserved.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-CDP-LAUNCH-READINESS-DIAGNOSTIC1 (2026-09-04)
 
-The [Browser Capture1 CDP launch/readiness diagnostic result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-cdp-launch-readiness-diagnostic1.md)
-records **CASE 6 / DECISION F — CORRECTION UNSTABLE**. The failed capture7
-lineage remains immutable at `06acff14d5e27e3c9a775057c608d203854cab20` and
-was not resumed. A fresh diagnostic clone was based on the exact failed
-Protocol A source `a7a2aafad8fa25b66b183b8685827ae3fb938d4a` and recorded
-reproduction, launch-difference, transport, profile, timing, process, and
-focused-test artifacts in diagnostic commit `15659d0`.
-
-The first failed readiness layer was R1: the failed Node `child_process.spawn`
-path did not obtain a usable `/json/version` endpoint, while Edge later emitted
-`DevTools listening` followed by `GPU process isn't usable. Goodbye.` The
-strongest causal difference is the Windows process-launch seam: an isolated
-same-argv PowerShell `Start-Process` comparison passed three fresh cycles, but
-a later repeat of the diagnostic correction failed three cycles with the same
-GPU fatal. The root is therefore **LIKELY**, classified as
-`WINDOWS-SPAWN-SEMANTICS-DEFECT` with unresolved process-lifecycle/GPU
-instability; no stable correction candidate was accepted.
-
-No Product, Original Harness, Machine Evidence B, transform, viewport,
-candidate, B1, V3, screenshot, Browser Evidence B, review, ranking, selection,
-E-VISUAL, Product integration, or PR-3 work occurred. Product, Machine,
-materializer, Baseline2, ai-knowledge, and the failed Browser lineage remain
-unchanged. `REVIEW1 = NOT ELIGIBLE`; the historical Review1 pointer is a stale
-downstream pointer, not the active prerequisite. Fresh Browser Capture1 retry
-eligibility remains **NO / BLOCKED** until a stable diagnostic correction is
-proven. The active next prerequisite is a bounded follow-up diagnostic for the
-remaining Edge CDP launch/readiness process-lifecycle instability. That next
-diagnostic and any fresh Browser Capture1 retry are **NOT STARTED**. PR-3
-remains `NO`; no push, tag, release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 CDP launch/readiness diagnostic result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-cdp-launch-readiness-diagnostic1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-CDP-LAUNCH-READINESS-DIAGNOSTIC3 (2026-09-04)
 
-The [Browser Capture1 CDP Launch/Readiness Diagnostic3 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-cdp-launch-readiness-diagnostic3.md)
-records **CASE 4 / DECISION D - GPU/Edge environment instability dominates**.
-The bounded quiescent crossover ran in the preregistered order
-`N1 -> P1 -> N2 -> P2 -> N3 -> P3` with six unique profiles and six unique
-ports. All six cycles reached CDP at approximately 5.750-6.022 seconds, but
-all six became `GPU-FATAL-AFTER-CDP` before the 3-second stability window.
-
-Node and PowerShell each failed 3/3 under the same semantic argv, common Node
-HTTP poller, 12-second observation window, fresh-profile policy, and
-quiescence procedure. GPU fatal and `GPUPersistentCache` file-in-use errors
-occurred in all six cycles; all six process/port/profile cleanup checks passed.
-The classifications are `SPAWN-C / CORRELATED ONLY`,
-`LIFECYCLE-C / NOT SUPPORTED`, `PROFILE-C / NOT SUPPORTED`,
-`GPU-A / FATAL PREVENTS STABLE CDP`, and `TIMEOUT-B / CONTRIBUTING`.
-
-The first N1 attempt was invalidated as a diagnostic-helper snapshot bug and
-was not counted; it used a unique profile and was followed by a corrected N1
-with no profile or port reuse. Historical Diagnostic1/2 TEMP profiles were
-cleaned only from their isolated E2R diagnostic roots: 18 and 2 profiles,
-all `CLEANUP-PASS`. No normal Edge profile was touched.
-
-No stable causal Browser runner correction was identified. Browser Capture1
-retry remains **NOT ELIGIBLE**; Review1 remains **NOT ELIGIBLE**; B1 and V3
-remain `0`; Browser Evidence B remains `NONE`; PR-3 remains `NO`. The exact
-next prerequisite is a bounded browser/runtime environment stability
-qualification focused on Edge/GPU resource state and external process
-ownership. It is **NOT STARTED**. Product, Harness, Machine Evidence B,
-failed capture7, materializer, Baseline2, and `ai-knowledge` remain unchanged;
-no push, tag, release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 CDP Launch/Readiness Diagnostic3 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-cdp-launch-readiness-diagnostic3.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-CDP-LAUNCH-READINESS-DIAGNOSTIC2 (2026-09-04)
 
-The [Browser Capture1 CDP Launch/Readiness Diagnostic2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-cdp-launch-readiness-diagnostic2.md)
-records **CASE 4 / DECISION D — MULTI-FACTOR INSTABILITY**. Diagnostic1's
-CASE 6 / Decision F remains historical and was not amended. Diagnostic2
-reconciles the retained chronology: Edge process start is `PASS`; first failed
-readiness is R1 CDP HTTP discovery; one extended exact failed-runner run
-reached `/json/version` at 5765 ms, after the original 5-second window, then
-became GPU-fatal after only two successful responses.
-
-The timeout classification is `TIMEOUT-B / CONTRIBUTING`. The launcher result
-is `SPAWN-B / LIKELY CONTRIBUTING`, not confirmed: Node direct spawn repeatedly
-failed, isolated same-argv PowerShell passed three cycles, and later PowerShell
-runs also failed. The final layered model is multi-factor launcher,
-process-lifecycle, profile/cache, and GPU instability; Vite is not causal at
-R1. Independent probe authority is `PROBE-AUTHORITY-B`: retained artifacts
-contain mixed PASS/FAIL, with the final retained probe artifact at port 9712
-recording PASS. The earlier prose-only port-9691 PASS is not authoritative.
-
-No Browser Capture1 retry, B1, V3, Browser Evidence B, screenshot, Review1,
-ranking, selection, E-VISUAL, Product integration, or PR-3 work occurred.
-`REVIEW1 = NOT ELIGIBLE`; the historical Review1 pointer is stale. Fresh
-Browser Capture1 retry eligibility remains **NO / BLOCKED**. The exact next
-prerequisite is a bounded CDP launch/readiness process-quiescence and
-launcher-crossover stability diagnostic with fresh profiles, explicit
-targeted process-tree exit confirmation, extended observation, and GPU/cache
-state recording. It is **NOT STARTED**. Product, Original Harness, Machine
-Evidence B, failed capture7, materializer, Baseline2, and `ai-knowledge`
-remain unchanged. PR-3 remains `NO`; no push, tag, release, deploy, or
-publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 CDP Launch/Readiness Diagnostic2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-cdp-launch-readiness-diagnostic2.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-POST-REBOOT-QUALIFICATION1 (2026-09-04)
 
-The [Host Runtime Post-Reboot Qualification1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-post-reboot-qualification1.md)
-records **POST-REBOOT-C / DECISION C - HOST / CHROMIUM / GPU RUNTIME
-INSTABILITY PERSISTS ACROSS REBOOT**. A full Windows reboot was confirmed
-after Qualification1: boot time was `2026-09-03T19:11:25.1487986Z`, after the
-Qualification1 completion timestamp.
-
-Updated Edge Stable `152.0.4191.62` failed 3/3 controlled Node cycles with
-first CDP at `5569-5719 ms`, GPU fatal 3/3, cache-lock 3/3, and quiescence
-3/3. Because Edge remained unstable, Chrome Stable was run as a non-evidence
-comparator; current Chrome `152.0.7977.75` also failed 3/3, reaching CDP at
-`329-477 ms` but producing GPU fatal and cache-lock errors in every cycle.
-
-The pre- and post-reboot GPU signatures are **UNCHANGED**. Edge-specific
-instability is **NO**; persistent host/Chromium/GPU runtime instability is
-**YES**. Product, Harness, and Machine Evidence defects were not demonstrated.
-The accepted PR-3 authority remains Edge Stable; no Browser Authority
-Correction occurred and Chrome is not qualified as a replacement.
-
-Fresh Browser Capture1 remains **NOT ELIGIBLE**; Review1 remains **NOT
-ELIGIBLE**; B1 and V3 remain `0`; Browser Evidence B remains `NONE`; PR-3
-remains `NO`. The exact next prerequisite is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-GPU-RUNTIME-DIAGNOSTIC1`,
-which is **NOT STARTED**. No driver/settings/browser-authority/runner change,
-Product change, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Host Runtime Post-Reboot Qualification1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-post-reboot-qualification1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-BROWSER-RUNTIME-STABILITY-QUALIFICATION1 (2026-09-04)
 
-The [Browser Runtime Stability Qualification1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-browser-runtime-stability-qualification1.md)
-records **CASE 3 / DECISION C - HOST / CHROMIUM / GPU ENVIRONMENT
-INSTABILITY**. Updated Edge Stable was resolved as `152.0.4191.62`, drifted
-from the historical failed authority `152.0.4191.53`, and failed 3/3
-controlled Node cycles. Each reached CDP around 5.756-5.795 seconds, then
-became `GPU-FATAL-AFTER-CDP` before the 3-second stability window.
-
-Because updated Edge failed, the user-authorized Chrome direction was tested
-as a non-evidence comparator. Chrome Stable `151.0.7922.175` also failed 3/3
-under the same semantic argv, Node HTTP poller, fresh-profile policy, unique
-ports, 12-second observation, 3-second stability, and targeted quiescence.
-Chrome reached CDP at 363-503 ms but had GPU fatal and cache-lock errors in
-all three cycles. Edge-specific instability is therefore **NO**; host-wide
-Chromium/GPU instability is **YES**. Product, Harness data, and Machine
-Evidence defects were not demonstrated.
-
-Chrome is not a stable replacement and the accepted PR-3 authority remains
-Edge Stable. Browser Authority Correction1 is not required from this result.
-Fresh Browser Capture1 remains **NOT ELIGIBLE**; Review1 remains **NOT
-ELIGIBLE**; B1 and V3 remain `0`; Browser Evidence B remains `NONE`; PR-3
-remains `NO`. The exact next prerequisite is a bounded host/Chromium/GPU
-runtime qualification focused on the common GPU/cache failure and external
-runtime state. It is **NOT STARTED**. No Product, Harness, Machine Evidence,
-capture7, or `ai-knowledge` change occurred; no push, tag, release, deploy, or
-publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Runtime Stability Qualification1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-browser-runtime-stability-qualification1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-GPU-RUNTIME-DIAGNOSTIC1 (2026-09-04)
 
-The [Host/GPU Runtime Diagnostic1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-gpu-runtime-diagnostic1.md)
-records **CASE 2 / DECISION B — HOST-GPU-B / FIREFOX ALSO FAILS**. The
-post-reboot Edge/Chrome baseline was reused without rerunning Chromium. A
-fresh Microsoft Store Firefox `154.0.1` executable was run in three sequential
-headless cycles against a neutral local text/CSS/SVG control page, with three
-fresh profiles. All three processes exited code 0 but emitted
-`RenderCompositorSWGL failed mapping default framebuffer, no dt`; no PNG was
-produced. All three profiles were cleaned and the Firefox process set was
-quiescent.
-
-The update-free host snapshot records Windows 11 Home 64-bit, build
-`26200.9168`, Intel UHD Graphics / Intel driver `32.0.101.7088`, WDDM 3.2,
-DirectX 12, and no installed KB5120998. GPU/WMI inventory was restricted, so
-PnP and dxdiag evidence were retained. No display-driver reset,
-LiveKernelEvent, or browser crash entry appeared in the narrow event window.
-The independent Firefox failure makes cross-engine host/GPU graphics failure
-strongly supported. Product, Harness, Machine Evidence, runner causality, and
-Browser Authority defects were not demonstrated.
-
-Fresh Browser Capture1 remains **NOT ELIGIBLE**; Review1 remains **NOT
-ELIGIBLE**; B1 and V3 remain `0`; Browser Evidence B remains `NONE`; PR-3
-remains `NO`. The exact next prerequisite is a bounded GPU driver/Windows
-graphics diagnostic beginning with read-only pre-change evidence. It is **NOT
-STARTED**. Windows Update, GPU driver, graphics settings, Product, Harness,
-Machine Evidence, failed capture7, materializer, Baseline2, and `ai-knowledge`
-remain unchanged; no push, tag, release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Host/GPU Runtime Diagnostic1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-gpu-runtime-diagnostic1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-GPU-RUNTIME-GRAPHICS-DIAGNOSTIC2 (2026-09-04)
 
-The [Host/GPU Runtime Graphics Diagnostic2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-gpu-runtime-graphics-diagnostic2.md)
-records **CASE 1 / DECISION A - HEADLESS CHROMIUM GPU-SANDBOX/RUNTIME PATH
-STRONGLY IMPLICATED**. Normal visible GUI controls all rendered the same
-neutral local page: Edge `GUI-RENDER-PASS`, Chrome `GUI-RENDER-PASS`, and
-Firefox `GUI-RENDER-PASS` from the user's bounded manual acceptance
-(`page YES, text YES, SVG YES, corruption NO`). Firefox remains open on that
-local page.
-
-The retained headless Chromium baseline remains GPU-fatal, but adding only
-`--disable-gpu-sandbox` to the otherwise identical Edge baseline produced
-three late-stable passes. First CDP arrived at `5574-5632 ms`; all three
-completed the 3-second stability window with zero GPU fatal, zero cache-lock,
-and 3/3 targeted quiescence/cleanup passes. The result is
-`SANDBOX-A / STRONGLY SUPPORTED`. This is diagnostic-only and is not a
-production Browser Capture or PR-3 launch configuration.
-
-Diagnostic1's total-host-graphics wording is refined additively to:
-**CROSS-ENGINE HEADLESS/AUTOMATED GRAPHICS-COMPOSITOR FAILURE OBSERVED;
-NORMAL GUI GRAPHICS PATH REMAINS FUNCTIONAL.** Total GPU hardware or total
-Windows graphics failure is not demonstrated. Fresh Browser Capture1 remains
-**NOT ELIGIBLE**; Review1 remains **NOT ELIGIBLE**; B1 and V3 remain `0`;
-Browser Evidence B remains `NONE`; PR-3 remains `NO`. The exact next
-prerequisite is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-WINDOWS-UPDATE-QUALIFICATION1`.
-KB5120998 was not installed. Product, Harness, Machine Evidence, Browser
-authority, driver, settings, and `ai-knowledge` remain unchanged; no push,
-tag, release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Host/GPU Runtime Graphics Diagnostic2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-gpu-runtime-graphics-diagnostic2.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-VSCODE-STABLE-EXCLUSION-QUALIFICATION1 (2026-09-04)
 
-The [VS Code Stable Exclusion Qualification1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-vscode-stable-exclusion-qualification1.md)
-records **CASE 3 / DECISION C - `VSCODE-STABLE-C / MIXED / INCONCLUSIVE`**.
-VS Code Stable was installed at `1.136.0` but was already absent before the
-test and remained absent before and after all three cycles. VS Code Insiders
-`1.137.0-insider`, hosting Codex, remained running throughout. It was not
-stopped or modified.
-
-With Stable excluded and Insiders retained, Edge `152.0.4191.62` using the
-original Diagnostic2 normal-sandbox argv passed `3/3` with first CDP at
-`289-308 ms`, zero GPU fatal, zero cache-lock, and quiescence `3/3`. One
-optional sandbox-disabled integrity control also passed. The result answers
-the operational question as YES, but because Stable was not running at
-preflight there is no matched Stable-running baseline; active Stable-process
-causality is therefore **INCONCLUSIVE**, and installation causality is not
-demonstrated.
-
-The retained headless Chromium GPU-sandbox/runtime issue remains supported,
-but KB5120998 is **not** the immediate next variable. The exact next
-prerequisite is a bounded VS Code Stable-present/Stable-absent confirmation
-checkpoint. Browser Capture1 remains **NOT ELIGIBLE**; Review1 remains **NOT
-ELIGIBLE**; B1 and V3 remain `0`; Browser Evidence B remains `NONE`; PR-3
-remains `NO`. No Product, Harness, Machine Evidence, browser authority,
-driver, settings, Windows Update, or `ai-knowledge` change occurred; no push,
-tag, release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [VS Code Stable Exclusion Qualification1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-vscode-stable-exclusion-qualification1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-VSCODE-STABLE-PRESENT-ABSENT-CONFIRMATION1 (2026-09-04)
 
-The [VS Code Stable Present/Absent Confirmation1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-vscode-stable-present-absent-confirmation1.md)
-records **CASE 1 / DECISION A - `VSCODE-STABLE-PRESENT-A / PRESENCE NOT
-SUPPORTED AS CAUSE`**. The reused Stable-absent A1 result and the fresh
-Stable-present B result both pass `3/3` under the exact retained Edge original
-normal-sandbox argv. During B, Stable and Insiders were identified by their
-installation paths and remained present before and after every cycle; first
-CDP was `293-309 ms`, GPU fatal and cache-lock counts were both `0`, and
-quiescence was `3/3`.
-
-The matched comparison does not support VS Code Stable process presence as the
-cause. A2 was therefore not run, Stable was not uninstalled, and KB5120998
-remains deferred. The exact next prerequisite is
-`HOST-RUNTIME-BROWSER-CAPTURE-READINESS-REQUALIFICATION1`. Browser Capture1
-remains **NOT STARTED** and **NOT ELIGIBLE**; Review1 remains **NOT ELIGIBLE**;
-B1 and V3 remain `0`; Browser Evidence B remains `NONE`; PR-3 remains `NO`.
-No Product, Harness, Machine Evidence, browser authority, driver, settings,
-Windows Update, registry, policy, or `ai-knowledge` change occurred; no push,
-tag, release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [VS Code Stable Present/Absent Confirmation1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-vscode-stable-present-absent-confirmation1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-HOST-RUNTIME-BROWSER-CAPTURE-READINESS-REQUALIFICATION1 (2026-09-04)
 
-The [Browser Capture Readiness Requalification1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-browser-capture-readiness-requalification1.md)
-records **CASE 1 / DECISION A - `BROWSER-RUNTIME-READY`**. The current
-Microsoft Edge Stable authority remains `152.0.4191.62` at the resolved
-`msedge.exe` path, unchanged from the preceding checkpoint. Six fresh
-sequential cycles using the exact original normal-sandbox contract all passed:
-first CDP `267-312 ms`, six `READINESS-STABLE-PASS`, GPU fatal `0`,
-cache-lock `0`, and quiescence `6/6`.
-
-The one deterministic local evaluation-entry smoke also passed: page, root,
-SVG, fixed viewBox `0 0 800 500`, stable CDP, no runtime exception, and
-quiescence all passed. It is explicitly `NON-EVIDENCE-READINESS-SMOKE`, not
-Browser Evidence B, B1, V3, or PR-3. Browser Capture1 remains **NOT STARTED**
-in this checkpoint, but a fresh lineage is eligible at the exact next
-prerequisite:
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-PROTOCOL-A`.
-KB5120998 remains deferred; B1/V3 remain `0`; Browser Evidence B remains
-`NONE`; Review1 remains **NOT ELIGIBLE**; PR-3 remains **NO**. No Product,
-Harness, Machine Evidence, browser authority, driver, graphics setting,
-Windows Update, registry, policy, `ai-knowledge`, failed lineage, push, tag,
-release, deploy, or publication changed.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture Readiness Requalification1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-host-runtime-browser-capture-readiness-requalification1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-PROTOCOL-A (2026-09-04)
 
-The [Browser Capture1 Restart1 Protocol A result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-protocol-a.md)
-records **CASE 1 / DECISION A - `RESTART1-PROTOCOL-A-READY`**. A fresh
-phase-local run `browser-capture-restart1-2026-09-04` and fresh semantic run
-`pr3r1-6560dd8187ddaa1ff002034ab99ffe91a3336b430f449cc1f1c7da85e26659d9`
-were minted under `VSR-ARTIFACT-CANONICAL-v1`, distinct from the failed
-lineage. The current Edge Stable authority remains `152.0.4191.62`, exactly
-matching the preceding `BROWSER-RUNTIME-READY` authority. The Machine-to-
-Browser bridge remains bound to Machine Evidence B `b0bd0f1a9f70915c639cbee61cf5f8370c78766f`,
-with eligible V2 count 80 and B1 pending count 16 and their recorded hashes.
-
-Protocol A froze the normal-sandbox contract, including
-`--disable-extensions` and excluding `--disable-gpu-sandbox`, the
-`1280x900` / DSF 1 / 100% / `0 0 800 500` viewport, fresh profiles, and
-initial retry 1 plus at most 2 retries. B1-first ordering is fixed: 16 B1
-items precede 80 candidate V3 items. No browser was launched; B1, V3,
-screenshots, Browser Evidence B, Human Review, Review1, ranking, selection,
-E-VISUAL, and PR-3 remain `0`/`NONE`/`NO` as applicable. The exact next
-prerequisite is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-B1-EXECUTION1`.
-The failed lineage remains immutable and no Product, Machine Evidence,
-Harness, host graphics, or `ai-knowledge` state changed; no push, tag,
-release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart1 Protocol A result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-protocol-a.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-B1-EXECUTION1 (2026-09-04)
 
-The [Browser Capture1 Restart1 B1 Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-b1-execution1.md)
-records **CASE 2 / DECISION B - `B1-BROWSER-GATE-FAIL`**. The fresh
-Restart1 lineage began the frozen 16-item B1 gate under Edge Stable
-`152.0.4191.62`, but the first item `apollo-11/en` reached the same
-`BROWSER-CAPTURE-FAILURE` after 3 attempts. The isolated browser entry did not
-become ready; the remaining 15 B1 items were not started. GPU-fatal and
-cache-lock counts were `0`; exact first-CDP timing was not emitted for these
-failure records and is not inferred.
-
-The B1 gate is `B1-BROWSER-GATE-FAIL`; V3 eligibility is `NO`. V3 records,
-candidate screenshots, Browser Evidence B, Human Review, Review1, ranking,
-selection, E-VISUAL, Product integration, and PR-3 remain absent or `NO` as
-applicable. The run manifest and canonical artifact index preserve the one
-blocking B1 record and its three attempts. The failed lineage, Machine
-Evidence, Product, Harness, host graphics state, and `ai-knowledge` remain
-unchanged. The exact next prerequisite is a separately bounded browser/runtime
-diagnosis or Windows Update qualification based on this failure; V3 execution
-is not started and remains prohibited.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart1 B1 Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-b1-execution1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-B1-ENTRY-SEAM-CORRECTION1 (2026-09-04)
 
-The [Browser Capture1 Restart1 B1 Entry-Seam Correction1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-b1-entry-seam-correction1.md)
-records **CASE 1 / DECISION A — `B1-ENTRY-SEAM-CORRECTED`** with
-`SEMANTIC-IMPACT-B`. The isolated `browser-capture1/main.tsx` entry now resolves
-the executor-written input from the Vite public root as
-`/capture-input.json?...`, instead of the document-relative
-`/e2r-liaison-scape/capture-input.json?...` HTML fallback.
-
-The static probe returned `200 application/json` with matching expected and
-response SHA-256 for `apollo-11/en`. One fresh normal-sandbox Edge validation
-passed: target navigation, `readyState: complete`, evaluation root, SVG,
-viewBox `0 0 800 500`, and the unchanged B1 ready marker all succeeded; Runtime
-exceptions, network failures, GPU fatal, and cache-lock counts were `0`. No
-screenshot was created. The B1 full gate was not resumed; the remaining 15 B1
-items and V3 remain prohibited, Browser Evidence B remains `NONE`, Review1 is
-**NOT ELIGIBLE**, and PR-3 is `NO`.
-
-Because implementation bytes changed after Protocol A, the existing Restart1
-semantic ID is not reusable for corrected future evidence and the old blocked
-lineage is not resumable for corrected evidence. The exact next prerequisite is
-the fresh corrected Browser Capture Protocol A / Restart2 checkpoint:
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-PROTOCOL-A`.
-It is **NOT STARTED**. Windows Update, GPU driver/settings, Product, Harness,
-Machine Evidence, fixture corpus, and `ai-knowledge` remain unchanged; no push,
-tag, release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart1 B1 Entry-Seam Correction1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-b1-entry-seam-correction1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART1-B1-ENTRY-READINESS-DIAGNOSTIC1 (2026-09-04)
 
-The [Browser Capture1 Restart1 B1 Entry Readiness Diagnostic1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-b1-entry-readiness-diagnostic1.md)
-records **CASE 1 / DECISION A — `B1-ENTRY-SEAM-IDENTIFIED`** with primary
-classification **`ENTRY-B / URL-ROUTE-MISMATCH`** and subordinate
-`PAGE-BOOTSTRAP-FAILURE`. The retained blocking item is `apollo-11/en`; all
-three attempts failed, while B1 remains success `0`, terminal failure `1`, and
-pending `15`.
-
-The local Vite server started and the exact B1 target returned HTTP `200`, but
-the browser resolved `./capture-input.json` to
-`/e2r-liaison-scape/capture-input.json?cacheBust=...`, which returned the Vite
-HTML fallback (`200 text/html`) instead of JSON. The document reached
-`DOMContentLoaded`, `load`, and `readyState: complete`; `#evaluation-root`
-existed, but no SVG/viewBox mounted and the B1 ready marker never became true.
-The resulting JSON parse exception is the first meaningful divergence from the
-successful readiness smoke, which used a different static entry, route,
-startup path, fixture delivery, bootstrap, predicate, and timeout. No GPU-fatal
-or cache-lock signal occurred, no browser runtime defect was demonstrated, and
-Windows Update / KB5120998 remains deferred.
-
-B1 remains blocked; V3 is prohibited and remains `0`; Browser Evidence B is
-`NONE / INCOMPLETE`; Review1 is **NOT ELIGIBLE**; and PR-3 is `NO`. The exact
-next prerequisite is a bounded Restart1 B1 entry-seam correction checkpoint.
-No B1 resume, V3 execution, Product/Harness change, `ai-knowledge` change,
-push, tag, release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart1 B1 Entry Readiness Diagnostic1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart1-b1-entry-readiness-diagnostic1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-PROTOCOL-A (2026-09-04)
 
-The [Browser Capture1 Restart2 Protocol A result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-protocol-a.md)
-records **CASE 2 / DECISION B — `RESTART2-IDENTITY-BINDING-BLOCKED`** with
-`IDENTITY-BINDING-B`. The corrected `browser-capture1/main.tsx` passed its
-bounded `apollo-11/en` correction validation, but the accepted
-`PR3-RUN-IDENTITY-v1` input has no legitimate field binding the corrected
-Browser Capture implementation commit/blob/hash. `harnessAuthority` alone is
-insufficient, so no misleading new `pr3r1-*` was minted.
-
-No Restart2 clone or Protocol A artifact root was created. No B1 or V3
-execution occurred; the old Restart1 blocked lineage and artifacts remain
-historical and unchanged. B1 fresh planned state remains `16` with executed
-`0`; V3 remains planned `80`; Browser Evidence B is `NONE`; Review1 is **NOT
-ELIGIBLE**; and PR-3 is `NO`. The exact next prerequisite is a bounded Browser
-Capture implementation authority / PR3 run-identity design correction
-checkpoint. It is **NOT STARTED**. Product, Harness, Machine Evidence, fixture
-corpus, materializer, host/GPU state, Windows Update, and `ai-knowledge` remain
-unchanged; no push, tag, release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart2 Protocol A result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-protocol-a.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-PR3-RUN-IDENTITY-BROWSER-IMPLEMENTATION-AUTHORITY-DESIGN-CORRECTION1 (2026-09-04)
 
-The [Browser Capture implementation-authority design correction result](liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-design-correction1.md)
-records **CASE 1 / DECISION A - `PR3-RUN-IDENTITY-BROWSER-IMPLEMENTATION-AUTHORITY-DESIGNED`**.
-The prior `IDENTITY-BINDING-B` result was valid: accepted
-`PR3-RUN-IDENTITY-v1` did not bind the corrected Browser Capture entry or its
-executor. The prospective design selects a dedicated
-`PR3-BROWSER-CAPTURE-IMPLEMENTATION-AUTHORITY-v1` field in
-`PR3-RUN-IDENTITY-v2`, with an explicit frozen semantic-runtime source
-manifest, Git blob identities, and raw Git blob SHA-256 values. Product,
-Harness, Machine Evidence, and browser-executable authorities remain separate.
-
-The historical v1 IDs remain unchanged. A future Browser Protocol A requires
-the additive `PR3-PHASE-BRIDGE-v2` binding of both browser executable and
-Browser Capture implementation authorities. The Machine-to-Browser reference
-remains valid and no Machine rerun is required. This checkpoint did not
-implement the field, create Restart2, mint a semantic ID, launch a browser,
-execute B1/V3, create Browser Evidence B, or run Review1. B1/V3 remain `0`,
-Review1 remains **NOT ELIGIBLE**, and PR-3 remains **NO**. The exact next
-prerequisite is the bounded implementation checkpoint for the authority field
-and Restart2 Protocol A generator/tests; it is **NOT STARTED**. No Product,
-Harness, Machine, materializer, host/GPU, Windows Update, or `ai-knowledge`
-state changed; no push, tag, release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture implementation-authority design correction result](liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-design-correction1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-PR3-RUN-IDENTITY-BROWSER-IMPLEMENTATION-AUTHORITY-IMPLEMENTATION1 (2026-09-04)
 
-The [Browser Capture implementation-authority implementation result](liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-implementation1.md)
-records **CASE 1 / DECISION A - `PR3-BROWSER-CAPTURE-IMPLEMENTATION-AUTHORITY-IMPLEMENTED`**.
-In a fresh clone based on the corrected entry-seam authority, the dedicated
-`PR3-BROWSER-CAPTURE-IMPLEMENTATION-AUTHORITY-v1` is implemented with an
-explicit 19-path semantic runtime manifest, Git blob/raw SHA-256 identities,
-and a fail-closed local runtime closure audit. Prospective
-`PR3-RUN-IDENTITY-v2` and `PR3-PHASE-BRIDGE-v2` builders bind the Browser
-Capture authority separately from Product, Harness, Machine Evidence, and
-browser executable authorities.
-
-Focused verification passed 7/7 tests, including I1-I8, generated/test-only
-exclusions, dirty-source rejection, and CRLF/LF stability. Clone-wide npm
-gates were attempted but remain dependency-blocked (`react`, validator, and
-`tsc` are not installed). Package/toolchain provenance remains a follow-up.
-The historical v1 lineages remain unchanged and Machine Evidence remains
-valid without rerun. Restart2 is still not created, no semantic ID is minted,
-B1/V3 remain `0`, Browser Evidence B is `NONE`, Review1 is **NOT ELIGIBLE**,
-and PR-3 is **NO**. The exact next prerequisite is the bounded Restart2
-Protocol A checkpoint using the implemented v2 authority; it is **NOT
-STARTED**. No Product, fixture, Machine, host/GPU, Windows Update, or
-`ai-knowledge` state changed; no push, tag, release, deploy, or publication
-occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture implementation-authority implementation result](liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-implementation1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-APP-READINESS-CDP-CALL-CORRECTION-QUALIFICATION1 (2026-09-04)
 
-The [Restart3 app-readiness/CDP-call correction qualification result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-app-readiness-cdp-call-correction-qualification1.md)
-records **CASE 4 / DECISION D - `CDP-CLIENT-PROTOCOL-BLOCKED`**. The
-production CDP client correction retains the target-selection and run-binding
-seams, bounds WebSocket lifecycle and command handling, normalizes messages,
-correlates request IDs, rejects CDP errors, and clears pending state after
-timeout/close/error. Focused tests pass `58/58`; full test/lint/build gates
-also pass.
-
-The primary Edge qualification selected the exact expected application page
-and reached WebSocket OPEN, but the first generic `Runtime.evaluate` command
-failed with WebSocket close `1006`. Installed Chrome reproduced the same
-low-level result. `Page.enable` remains unremoved because its necessity could
-not be tested after transport failure and downstream production calls include
-`Page.navigate` and `Page.captureScreenshot`. Edge app readiness therefore
-remains blocked, with no B1/V3/screenshots/Browser Evidence B/Review1 and no
-Restart4. The historical Restart3 clone and semantic ID remain immutable.
-The exact next prerequisite is a bounded shared low-level CDP
-transport/client correction qualification; after that passes, a fresh
-Restart4 Protocol A may be considered. No Product, fixture, Machine, Harness,
-host/GPU, Windows Update, or `ai-knowledge` state changed; no push, tag,
-release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart3 app-readiness/CDP-call correction qualification result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-app-readiness-cdp-call-correction-qualification1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-PROTOCOL-A (2026-09-04) - v2 binding
 
-The [Browser Capture1 Restart2 Protocol A v2 binding result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-protocol-a-v2-binding.md)
-records **CASE 1 / DECISION A - `RESTART2-PROTOCOL-A-READY`** with
-`IDENTITY-BINDING-A`. A fresh Restart2 clone was based exactly on the
-implemented Browser Capture authority commit
-`b9b6530ecc937dc2d7dcb9b661445f6c301444a5`, and the first legitimate
-Restart2 semantic ID is bound by `PR3-RUN-IDENTITY-v2` plus
-`PR3-BROWSER-CAPTURE-IMPLEMENTATION-AUTHORITY-v1`:
-`pr3r1-4ba49e9f8d9ad79112b4a3cfaff95aa01648eeba1eb8e181ed0e2c725510206a`.
-The v2 phase bridge is `PR3-PHASE-BRIDGE-v2`; the 19-path implementation
-closure is `19/19` with omitted `0` and unexpected `0`.
-
-Protocol A is `PREPARED / READY` under Edge Stable `152.0.4191.62`, with
-the corrected `/capture-input.json` contract, the existing ready marker,
-normal-sandbox launch arguments, and no `--disable-gpu-sandbox`. Its fresh
-artifact root contains exactly the eight Protocol A files. B1 is **NOT
-STARTED** with `0 / 0 / 0 / 16` success/failure/terminal/pending; V3 is
-planned `80` and executed `0`; screenshots and Browser Evidence B are absent;
-Review1 is **NOT ELIGIBLE** and PR-3 remains **NO**. Focused Protocol A tests
-passed `5/5`. Clone-wide npm test/lint/build remain dependency-blocked and no
-package or toolchain changes were made.
-
-The earlier blocked Restart2 result remains immutable and is explicitly
-distinguished from this successor binding. Product, Harness, Machine Evidence,
-materializer, fixture corpus, host/GPU state, Windows Update, and
-`ai-knowledge` remain unchanged. Restart2 is eligible for the exact next
-bounded B1 Execution1 checkpoint, which is **NOT STARTED**. No push, tag,
-release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart2 Protocol A v2 binding result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-protocol-a-v2-binding.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-B1-EXECUTION1 (2026-09-04)
 
-The [Browser Capture1 Restart2 B1 Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-b1-execution1.md)
-records **CASE 5 / DECISION E - `B1-HARNESS-PROTOCOL-BLOCKED`**. All
-authority, host, B1-set, and V2-parent preflights passed, but the committed
-executor still hard-codes the historical Restart1 phase-local ID and artifact
-root. Its pre-item guard stopped with `BC1-HARD-GATE: B1 output already
-exists`. No B1 item, browser process, CDP attempt, screenshot, V3 call, or
-Browser Evidence B packet was created, and no semantic source was changed.
-
-B1 remains planned `16`, executed `0`, success `0`, failure `0`, pending `16`;
-V3 remains `NOT STARTED` and prohibited; Browser Evidence B is
-`NONE / INCOMPLETE`; Review1 is **NOT ELIGIBLE**; and PR-3 is **NO**. The
-Restart2 artifact index validates all indexed hashes, and the focused
-Protocol A/B1 suite passes `8/8`. The exact next prerequisite is a bounded
-Restart2 executor/run-root binding correction checkpoint, which is **NOT
-STARTED**. The old copied Restart1 artifact root was removed from Restart2;
-Product, Machine, Harness, fixture, host/GPU, Windows Update, and
-`ai-knowledge` state remain unchanged. No push, tag, release, deploy, or
-publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart2 B1 Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-b1-execution1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART2-EXECUTOR-RUN-ROOT-BINDING-CORRECTION1 (2026-09-04)
 
-The [Restart2 executor/run-root binding correction result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-executor-run-root-binding-correction1.md)
-records **CASE 1 / DECISION A - `EXECUTOR-RUN-ROOT-BINDING-CORRECTED`**. A
-fresh correction clone based exactly on implementation-authority commit
-`b9b6530ecc937dc2d7dcb9b661445f6c301444a5` now requires an explicit accepted
-Protocol A locator and derives `phaseRunId`, `artifactRoot`, and
-`finalPr3RunId` from that canonical metadata. Wrong lineage, identity drift,
-and existing B1/V3/screenshot outputs fail closed before Vite or browser
-launch. Production executor restart-specific hardcodes are absent; the
-corrected executor is `SEMANTIC-IMPACT-B`, while `main.tsx` remains byte
-identity-equivalent.
-
-Focused T1-T15 verification passed `16/16`; syntax checks, full npm test
-`309/309`, lint, and build passed. Exact-lockfile `npm ci --ignore-scripts`
-was used without package changes. Dry-run resolved the historical Restart2
-metadata in a temporary Protocol A-only fixture with zero browser/Vite
-launches. B1, V3, Browser Capture, screenshots, Browser Evidence B, Restart3,
-and new semantic-ID minting were not performed. The historical Restart2 clone
-remains clean and immutable. The exact next prerequisite is Restart3 Protocol
-A, which is **NOT STARTED**. No Product, Machine, Harness, fixture, host/GPU,
-Windows Update, or `ai-knowledge` state changed; no push, tag, release, deploy,
-or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart2 executor/run-root binding correction result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-executor-run-root-binding-correction1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-PROTOCOL-A (2026-09-04)
 
-The [Restart3 Protocol A result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-protocol-a.md)
-records **CASE 1 / DECISION A - `RESTART3-PROTOCOL-A-READY`**. Restart2's
-historical pre-item block remains immutable, and the accepted executor
-run-root binding correction is based on semantic commit
-`5e1581b2fb59f6f241e715604fdd4f2e082f2d1b`; its diagnostic descendant was
-proven byte-neutral across all 19 semantic manifest paths. A fresh Restart3
-clone and fresh root now bind the corrected implementation authority,
-`PR3-RUN-IDENTITY-v2`, `PR3-PHASE-BRIDGE-v2`, and
-`PR3-BROWSER-CAPTURE-RUN-BINDING-v1`.
-
-Restart3 minted the distinct semantic ID
-`pr3r1-e8af40d999fb33bf7efb46b135121eca81f1e33deb17e96c14670265d2929461`.
-Protocol A contains exactly eight metadata files. The binding dry-run is
-`RUN-BINDING-VALID` with zero browser/Vite/CDP launches. Fresh B1 is `16`
-pending with `0` executed; V3 is planned `80` and executed `0`; screenshots
-and Browser Evidence B are absent; Review1 is **NOT ELIGIBLE** and PR-3 is
-**NO**. Focused Protocol A tests pass `11/11`; full npm test is `309/309`,
-lint and build pass, and no package files changed. The exact next prerequisite
-is Restart3 B1 Execution1, which is **NOT STARTED**. No Product, Machine,
-Harness, fixture, host/GPU, Windows Update, or `ai-knowledge` state changed;
-no push, tag, release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart3 Protocol A result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-protocol-a.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-B1-EXECUTION1 (2026-09-04)
 
-The [Restart3 B1 Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-b1-execution1.md)
-records **CASE 3 / DECISION C - `B1-BROWSER-RUNTIME-BLOCKED`**. The exact
-frozen B1 order entered `apollo-11 / en` first, but the frozen executor's
-first `/json/list` target was Edge's `edge://sync-confirmation-dialog/`
-instead of the LiaisonScape page. Its unbounded ready wait was stopped after
-two fresh invocations; the remaining 15 items were not started.
-
-B1 is planned `16`, executed `1`, success `0`, failure `1`, pending `15`;
-V3 is `NOT STARTED` and prohibited; screenshots are `0`; Browser Evidence B
-is `NONE / INCOMPLETE`; Review1 is **NOT ELIGIBLE**; and PR-3 is **NO**. The
-canonical failure item, execution summary, run manifest, and artifact index
-are committed in Restart3 commit `45a8a1c55a41f767b3f22ad963321dda6fd9a755`.
-The exact next prerequisite is bounded Browser Capture executor target-
-selection/runtime correction qualification followed by a fresh authorized
-Restart3 B1 gate. No semantic source, Product, Machine, Harness, fixture,
-host/GPU, Windows Update, or `ai-knowledge` state changed; no push, tag,
-release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart3 B1 Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-b1-execution1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-TARGET-SELECTION-RUNTIME-CORRECTION-QUALIFICATION1 (2026-09-04)
 
-The [Restart3 target-selection runtime correction qualification result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-target-selection-runtime-correction-qualification1.md)
-records **CASE 2 / DECISION B - `TARGET-SELECTION-CORRECTED-APP-READINESS-BLOCKED`**.
-The corrected Browser Capture executor now selects the exact expected
-LiaisonScape page URL from `/json/list`, ignores internal Edge extension
-targets, fails closed on no-match/ambiguous/missing-websocket states, and
-keeps the existing 80 x 100 ms target and 100 x 100 ms readiness authorities
-while bounding awaited CDP operations. The semantic correction is
-`SEMANTIC-IMPACT-B`.
-
-The bounded runtime qualification selected the expected app at target-list
-position 5 with a valid websocket, but `Page.enable` timed out within the
-retained readiness window. Target selection is therefore **PASS** and app
-readiness remains **BLOCKED**. Teardown/quiescence passed; GPU fatal and
-cache-lock counts were zero; screenshots, B1, V3, Browser Evidence B, and
-Review1 remain absent. The historical Restart3 clone and semantic ID remain
-immutable, no Restart4 was created, and the exact next prerequisite is a
-bounded Browser Capture app-readiness/CDP-call correction qualification.
-No Product, fixture, Machine, Harness, host/GPU, Windows Update, or
-`ai-knowledge` state changed; no push, tag, release, deploy, or publication
-occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart3 target-selection runtime correction qualification result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-target-selection-runtime-correction-qualification1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-SHARED-CDP-TRANSPORT-CLIENT-CORRECTION-QUALIFICATION1 (2026-09-04)
 
-The [Restart3 shared CDP transport/client correction qualification result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-shared-cdp-transport-client-correction-qualification1.md)
-records **CASE 5 / DECISION E - `SHARED-CDP-WEBSOCKET-TRANSPORT-BLOCKED`**.
-The production client already sends the exact 89-byte canonical command as a
-JavaScript string; explicit text and binary controls both fail against the
-selected direct target in Edge and Chrome with no successful response and
-close `1006`. The Edge browser-level WebSocket and `Target.getTargets`
-respond, but `Target.attachToTarget` closes before a session ID, so the shared
-transport/client seam remains blocked.
-
-No semantic correction was proven or applied; the implementation authority
-remains `f2d25e98d75aa208e176105a5b33acc2d6742aa5`, with 19/19 closure and
-omitted/unexpected 0/0. Focused retained regressions pass 58/58, framing
-checks pass 12/12, full npm test is 309/309, and lint/build pass. Restart3
-remains historical and immutable; real B1 evidence is 0, V3 is 0, screenshots
-are 0, Browser Evidence B is `NONE / INCOMPLETE`, Review1 is **NOT ELIGIBLE**,
-PR-3 is **NO**, and Restart4 was not created. The exact next prerequisite is a
-bounded shared CDP WebSocket/client transport diagnostic or design correction.
-No Product, Machine, Harness, fixture, host/GPU, Windows Update, or
-`ai-knowledge` state changed; no push, tag, release, deploy, or publication
-occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart3 shared CDP transport/client correction qualification result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-shared-cdp-transport-client-correction-qualification1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-SHARED-CDP-WEBSOCKET-INDEPENDENT-CLIENT-DIAGNOSTIC1 (2026-09-05)
 
-The [Restart3 independent CDP WebSocket client diagnostic result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-shared-cdp-websocket-independent-client-diagnostic1.md)
-records **CASE 6 / DECISION F - `NODE-WEBSOCKET-CLIENT-SEAM-CONFIRMED`**.
-The exact 89-byte command failed through the existing Node global WebSocket
-controls, while an independent `.NET System.Net.WebSockets.ClientWebSocket`
-completed Edge direct-target `Runtime.evaluate` and Edge browser-endpoint
-`Target.getTargets` → `Target.attachToTarget` → session-scoped evaluation with
-result `2`. Chrome direct control reached the target transport but observed
-`Inspector.targetCrashed`; Chrome browser-endpoint discovery was separately
-blocked by the observed Chrome GPU fatal.
-
-The diagnostic clone is based exactly on semantic authority
-`f2d25e98d75aa208e176105a5b33acc2d6742aa5` and is locally committed, with no
-production source or dependency change. Retained focused regressions pass
-`58/58`, prior framing controls pass `12/12`, combined focused qualification
-is `70/70`, full npm test is `309/309`, and lint/build pass. Policy inventory
-was read-only; no pipe control was feasible or executed. B1 remains the
-historical `1 executed / 0 success / 1 failure / 15 pending` state, V3 is `0`,
-screenshots are `0`, Browser Evidence B is `NONE / INCOMPLETE`, Review1 is
-**NOT ELIGIBLE**, and PR-3 is **NO**. No fresh semantic ID or Restart4 was
-created.
-
-The exact next prerequisite is a bounded Browser Capture WebSocket client
-authority/replacement design-correction checkpoint. No Product, Machine,
-Harness, fixture, host/GPU setting, Windows Update, or `ai-knowledge` state
-changed; no push, tag, release, deploy, or publication occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart3 independent CDP WebSocket client diagnostic result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart3-shared-cdp-websocket-independent-client-diagnostic1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-WEBSOCKET-CLIENT-AUTHORITY-REPLACEMENT-DESIGN-CORRECTION1 (2026-09-05)
 
-The [Browser Capture1 WebSocket client authority / replacement design correction result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-websocket-client-authority-replacement-design-correction1.md)
-records **CASE 1 / DECISION A - `DOTNET-CLIENTWEBSOCKET-BRIDGE-DESIGNED`**.
-Option A is the selected future replacement design for the current PR3
-boundary: Node remains the owner of browser launch, exact target selection,
-run binding, retries, evidence state, and artifacts; one static Windows
-PowerShell/.NET `System.Net.WebSockets.ClientWebSocket` helper owns one CDP
-WebSocket session per capture attempt through a structured IPC contract.
-
-The decision is based on the prior independent Edge direct and browser-
-endpoint/session proof. Option B is deferred because no standalone WebSocket
-package is present and a new dependency qualification would be required;
-Option C has no independent supported Node builtin; Option D is disfavored;
-and Option E remains deferred because pipe mechanics are not authoritative.
-The qualitative matrix uses no arithmetic score.
-
-This is design-only: no production source, semantic manifest, run identity,
-phase bridge, Product behavior, package file, B1/V3 evidence, screenshot,
-Browser Evidence B, Restart4, or semantic ID changed. The proposed
-`PR3-BROWSER-CAPTURE-WEBSOCKET-CLIENT-AUTHORITY-v1` is documentation-only.
-PowerShell/.NET, helper/adapter/IPC source, OS assembly, and timeout/error
-authorities remain an explicit expansion required before Restart4. Current
-focused tests are `58/58`, prior framing is `12/12`, combined `70/70`; full
-npm test is `309/309`, lint/build pass. The exact next prerequisite is
-`E2R-LIAISONSCAPE-...-BROWSER-CAPTURE1-DOTNET-WEBSOCKET-BRIDGE-IMPLEMENTATION1`.
-No Product, Machine, Harness, fixture, host/GPU setting, Windows Update, or
-`ai-knowledge` state changed; no push, tag, release, deploy, or publication
-occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 WebSocket client authority / replacement design correction result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-websocket-client-authority-replacement-design-correction1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-WEBSOCKET-BRIDGE-IMPLEMENTATION1 (2026-09-05)
 
-The [ClientWebSocket bridge implementation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-websocket-bridge-implementation1.md)
-records **CASE 10 / `DOTNET-BRIDGE-IMPLEMENTATION-INFRA-BLOCKED`**. The
-production transport replacement is committed locally: Node retains browser,
-run-binding, CDP state, retry, evidence, and artifact ownership; a committed
-PowerShell 5.1 / .NET `System.Net.WebSockets.ClientWebSocket` helper provides
-one structured IPC-backed CDP session per attempt. The semantic closure is
-explicitly 20/20 with zero omitted or unexpected paths, the client authority
-is materialized and synthetically bound into future v3 identity/phase
-contracts, and focused/full verification is 102/102 and 309/309 with lint and
-build passing.
-
-Real Edge qualification stopped on the first governed attempt because Windows
-execution policy blocked the committed helper. The checkpoint did not use an
-execution-policy workaround and did not change host policy, registry,
-security settings, browser/GPU state, Product, Machine, Harness, fixtures, or
-ai-knowledge. Edge qualification is therefore not PASS: 0/1 qualified, runs 2
-and 3 were not started. Restart3 remains immutable and non-resumable; Restart4
-is required but not started; B1/V3/screenshots/Browser Evidence B/Review1 and
-an accepted final semantic run ID remain absent. The exact next prerequisite is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-PROTOCOL-A`.
+Detailed dated checkpoint evidence and immutable lineage state remain in [ClientWebSocket bridge implementation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-websocket-bridge-implementation1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-WEBSOCKET-BRIDGE-HELPER-EXECUTION-POLICY-COMPATIBILITY-QUALIFICATION1 (2026-09-05)
 
-The [helper execution-policy compatibility result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-websocket-bridge-helper-execution-policy-compatibility-qualification1.md)
-records **CASE 2 / `POWERSHELL-SCRIPT-HELPER-HOST-INCOMPATIBLE`**. Read-only
-inventory resolved the effective Windows PowerShell policy as `Restricted`;
-MachinePolicy, UserPolicy, Process, CurrentUser, and LocalMachine were all
-`Undefined`, with no relevant policy registry keys present. Both the exact
-committed helper and a harmless trivial `.ps1 -File` control failed with
-`UnauthorizedAccess` before script output, proving a general static script
-host incompatibility rather than a helper-specific invocation defect.
-
-No policy override, `Set-ExecutionPolicy`, registry change, `Unblock-File`,
-Zone.Identifier removal, signing, command-mode execution, security change, or
-production correction was performed. The helper execution gate therefore
-failed and Edge was not launched; qualification runs 2 and 3 were not
-started. The bridge/client authority remained unchanged, Restart3 remains
-immutable, Restart4 is not eligible, and the exact next prerequisite is a
-bounded non-script .NET ClientWebSocket helper design correction. B1, V3,
-screenshots, Browser Evidence B, Review1, and a fresh semantic run ID remain
-absent.
+Detailed dated checkpoint evidence and immutable lineage state remain in [helper execution-policy compatibility result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-websocket-bridge-helper-execution-policy-compatibility-qualification1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-NON-SCRIPT-WEBSOCKET-HELPER-AUTHORITY-DESIGN-CORRECTION1 (2026-09-05)
 
-The [non-script WebSocket helper authority design correction result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-non-script-websocket-helper-authority-design-correction1.md)
-records **CASE 3 / `DOTNET-PREBUILT-HELPER-BINARY-AUTHORITY-DESIGN-REQUIRED`**.
-The installed .NET Framework `csc.exe` can compile a BCL-only x64 EXE and a
-trivial EXE launches directly under the current host, but the compiler does
-not support `/deterministic`; two controlled builds produced different output
-bytes. Option C is therefore accepted as a design: committed C# source plus
-an explicitly reviewed, prebuilt helper EXE whose exact bytes, compiler,
-reference assemblies, build inputs, and runtime authority are bound before
-use. No binary is added in this checkpoint.
-
-IPC-v1 remains preservable with `JavaScriptSerializer` from the framework, and
-Node retains browser, target, run, retry, CDP, evidence, and artifact
-ownership. The proposed build contract is
-`PR3-BROWSER-CAPTURE-DOTNET-HELPER-BUILD-AUTHORITY-v1`; the proposed client
-successor is `PR3-BROWSER-CAPTURE-WEBSOCKET-CLIENT-AUTHORITY-v2`. Existing
-`PR3-RUN-IDENTITY-v3` and `PR3-PHASE-BRIDGE-v3` remain sufficient. This is
-design-only: production source, helper form, package files, Product, B1/V3,
-screenshots, Browser Evidence B, Restart4, and semantic run identity remain
-unchanged. Focused tests are `102/102`, full npm test is `309/309`, and
-lint/build pass. The exact next prerequisite is the bounded non-script EXE
-WebSocket helper implementation and authority qualification checkpoint;
-Restart4 remains not eligible.
+Detailed dated checkpoint evidence and immutable lineage state remain in [non-script WebSocket helper authority design correction result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-non-script-websocket-helper-authority-design-correction1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-EXE-WEBSOCKET-HELPER-IMPLEMENTATION1 (2026-09-05)
 
-The [production .NET executable helper implementation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-exe-websocket-helper-implementation1.md)
-records **CASE 9 / `DOTNET-EXE-HELPER-RUNTIME-QUALIFICATION-BLOCKED`** with
-semantic impact B. The production `.ps1` helper was removed and committed C#
-source plus a reviewed x64 `.exe` were added. Build authority v1 and client
-authority v2 are bound, while IPC-v1, Run Identity v3, and Phase Bridge v3
-remain preserved and sufficient.
-
-The direct Edge qualification reached the fresh Run1 target but received
-`Inspector.targetCrashed` before `Runtime.evaluate`, `Page.enable`, or the
-ready marker. Per the bounded stop-on-first-failure rule, Run2 and Run3 were
-not started. Restart4 is not eligible; B1, V3, screenshots, Browser Evidence
-B, Human Review, and a fresh accepted semantic run ID remain absent. No
-product/Machine/Harness/fixture changes, policy/security changes, or push were
-performed.
+Detailed dated checkpoint evidence and immutable lineage state remain in [production .NET executable helper implementation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-exe-websocket-helper-implementation1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-DOTNET-EXE-HELPER-RUNTIME-QUALIFICATION-DIAGNOSTIC-CORRECTION1 (2026-09-05)
 
-The [executable helper runtime qualification diagnostic result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-exe-helper-runtime-qualification-diagnostic-correction1.md)
-records **CASE 1 / `DOTNET-EXE-HELPER-RUNTIME-QUALIFICATION-PASS`**. The prior
-Run1 `Inspector.targetCrashed` observation was not reproduced: Control A
-(application target without helper), Control B (direct production EXE with
-`Runtime.evaluate("1 + 1") = 2`), and the conditional canonical qualification
-all passed. Canonical Edge qualification completed fresh 3/3 with
-`Runtime.enable`, `Page.enable`, the ready marker, SVG presence, and
-`viewBox = 0 0 800 500`; the committed EXE SHA was identical in all runs.
-
-No semantic correction, EXE rebuild, Product/Machine/Harness/fixture change,
-browser-flag change, policy/security change, or push was performed. Restart4
-is now eligible but was not created; B1, V3, screenshots, Browser Evidence B,
-Human Review, and a fresh accepted semantic run ID remain absent. The exact
-next prerequisite is bounded Restart4 Protocol A.
+Detailed dated checkpoint evidence and immutable lineage state remain in [executable helper runtime qualification diagnostic result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-dotnet-exe-helper-runtime-qualification-diagnostic-correction1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-PROTOCOL-A (2026-09-05)
 
-The [Browser Capture1 Restart4 Protocol A result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-protocol-a.md)
-records **CASE 1 / `RESTART4-PROTOCOL-A-READY`**. A fresh Restart4 clone is
-bound to semantic authority `ba3cb3dd50ab723a7b4a4a5c2b839bc2abef87d4` with
-the prequalified .NET EXE helper, client authority v2, build authority v1,
-Run Identity v3, and Phase Bridge v3. The Protocol A dry-run passed with
-Restart4-root binding and no Browser, Vite runtime server, helper, or CDP
-launch; B1 is `0/16`, V3 is `0`, and Browser Evidence B is
-`NONE / INCOMPLETE`.
-
-The exact next prerequisite is Restart4 B1 Execution1. B1 is not started;
-no screenshots, Browser Evidence B, Human Review, Review1, ranking, selection,
-or PR-3 completion occurred.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart4 Protocol A result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-protocol-a.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-B1-EXECUTION1 (2026-09-05)
 
-The [Browser Capture1 Restart4 B1 Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-b1-execution1.md)
-records **CASE 2 / `RESTART4-B1-EXECUTION-INCOMPLETE`**. The canonical
-executor began the real B1 run, launched one executor-owned Vite runtime and
-three fresh Edge/helper attempts for `apollo-11/en`, then stopped after the
-third helper WebSocket connection refusal. B1 is `1/16` entered, `0` success,
-`1` failure, `15` pending, with two retries; V3 remains `0` and
-Browser Evidence B remains `NONE / INCOMPLETE`.
-
-The semantic ID, EXE/build/client authorities, Restart3, Product, Machine,
-Harness, and fixture authorities remain unchanged. No B1 rerun or V3 execution
-is authorized; a separately bounded B1 runtime-infrastructure diagnosis or
-correction is required and has not started.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture1 Restart4 B1 Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-b1-execution1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-B1-LOCAL-WEBSOCKET-CONNECTION-REFUSAL-DIAGNOSTIC-CORRECTION1 (2026-09-05)
 
-The [Restart4 B1 local WebSocket refusal diagnostic](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-b1-local-websocket-connection-refusal-diagnostic-correction1.md)
-records **CASE 4 / `B1-EDGE-PROCESS-LIFETIME-BLOCKED`** with semantic impact
-NONE. Restart4 remains immutable at `0` B1 success, `1` terminal failure, and
-`15` pending. The historical helper errors were reproduced in three fresh
-production-like direct-helper controls, but immediate TCP probes were
-`CONNECTED` before helper CONNECT. Edge then exited with code `2147483651`,
-its debugging listener became `ECONNREFUSED`, and Control A showed the same
-exit with no helper at all.
-
-No URI normalization, address-family, helper, C#, EXE, executor, or Browser
-Capture semantic correction is justified by this evidence. Control C was not
-eligible because Control B did not pass. No B1 rerun, V3 execution,
-screenshots, Browser Evidence B, review, or new restart occurred. The exact
-next prerequisite is a separately bounded Edge process-lifetime/host-runtime
-diagnostic before any fresh Browser Capture lineage decision.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Restart4 B1 local WebSocket refusal diagnostic](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-b1-local-websocket-connection-refusal-diagnostic-correction1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-EDGE-PROCESS-LIFETIME-HOST-RUNTIME-DIAGNOSTIC1 (2026-09-05)
 
-The [Edge process lifetime / host runtime diagnostic](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-edge-process-lifetime-host-runtime-diagnostic1.md) records **CASE 7 / `EDGE-PROCESS-LIFETIME-NONREPRODUCED`** with semantic impact NONE. Under the unchanged frozen launch contract, App/no-helper and trivial-local-page/no-helper controls each survived 3/3 bounded root-process observations, with listener and discovery endpoints still available.
-
-Restart4 remains immutable at one failed B1 item and 15 pending; B1 was not rerun, V3 was not started, and Browser Evidence B remains incomplete. No production correction, browser-flag change, or fresh restart is eligible. The exact next prerequisite is a bounded recurrence/readiness decision checkpoint.
+Detailed dated checkpoint evidence and immutable lineage state remain in [Edge process lifetime / host runtime diagnostic](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-edge-process-lifetime-host-runtime-diagnostic1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-EDGE-PROCESS-LIFETIME-RECURRENCE-READINESS-DECISION1 (2026-09-05)
 
-The [recurrence/readiness decision](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-edge-process-lifetime-recurrence-readiness-decision1.md) records **CASE 6 / `BROWSER-CAPTURE-APPLICATION-READINESS-RECURRENCE-BLOCKED`** with semantic impact NONE. The exact production-like recurrence gate passed Run 1, but Run 2 failed at application readiness; mandatory stop-on-first-failure left Runs 3–6 unexecuted. Restart4 remains immutable, B1/V3 were not executed, and fresh restart eligibility is NO. The next prerequisite is a bounded application-readiness recurrence diagnostic based on Run 2.
+Detailed dated checkpoint evidence and immutable lineage state remain in [recurrence/readiness decision](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-edge-process-lifetime-recurrence-readiness-decision1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-APPLICATION-READINESS-RECURRENCE-DIAGNOSTIC1 (2026-09-05)
 
-The [application-readiness diagnostic](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-application-readiness-recurrence-diagnostic1.md) records **CASE 11 / `APPLICATION-READINESS-DIAGNOSTIC-INFRA-BLOCKED`** with semantic impact NONE. One fresh production-like run reached the exact target and a Node websocket probe, but direct production helper IPC-v1 connection was refused before CDP/readiness observation; stop-on-first-failure left the remaining two runs unexecuted. Restart4 remains immutable, no B1/V3 rerun occurred, and fresh restart eligibility is NO. The next prerequisite is a bounded helper/CDP transport diagnostic.
+Detailed dated checkpoint evidence and immutable lineage state remain in [application-readiness diagnostic](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-application-readiness-recurrence-diagnostic1.md).
 
 ### Browser Capture Runtime Convergence Diagnostic/Correction1 (2026-09-05)
 
-The [runtime convergence result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-runtime-convergence-diagnostic-correction1.md)
-records **CASE 10 / `RUNTIME-CONVERGENCE-HELPER-SOURCE-CORRECTION-REQUIRED`**,
-semantic impact NONE. Historical Edge exit/listener loss/refusal remains
-preserved with its initiating cause unresolved. Source comparison also identifies
-the recurrence diagnostic's one-shot readiness assertion and the later
-diagnostic's different Vite entry, helper adapter, cleanup and retention paths;
-the earlier aggregate labels are not equivalent production-path observations.
-
-Five connected short controls passed, including three with the Node page probe.
-An initial extra diagnostic input assertion failed before browser launch and is
-retained separately. Unchanged-authority qualification then stopped on Q1:
-readiness and browser-only survival passed, but the helper emitted a receive-loop
-OperationCanceledException 10,038ms after its last message, before teardown,
-while root/listener/exact target remained healthy. Its C# hard-codes a 10-second
-pending-receive timer. Qualification is 6 planned, 1 executed, 0 success,
-1 failure, 5 pending, no retries; helper-inclusive survival is FAIL.
-
-Semantic correction: NO; C# and EXE unchanged. Fresh restart eligibility: NO.
-The next prerequisite is a separately authorized receive-lifetime correction and
-controlled prebuilt EXE materialization, authority closure and fresh non-evidence
-6-run qualification. That checkpoint has not started. Restart4 remains immutable,
-governed B1 was not rerun, V3 was not started, screenshots remain zero, and
-Browser Evidence B remains incomplete. Historical blocked entries are retained.
+Detailed dated checkpoint evidence and immutable lineage state remain in [runtime convergence result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-runtime-convergence-diagnostic-correction1.md).
 
 ### PR-3 Browser Evidence current-host runtime blocker synchronization (2026-09-07)
 
-The [current-host runtime blocker synchronization record](liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md)
-formalizes the latest current-host qualification boundary as **PR-3 Browser
-runtime blocker = FORMALLY CONFIRMED** and **current-host Browser execution =
-BLOCKED**. Microsoft Edge Stable `152.0.4191.66` reproduces the GPU child
-`0xC0000022 / STATUS_ACCESS_DENIED` failure, followed by Edge root-process
-termination and CDP continuity loss. The exact denied resource, ACL or sandbox
-operation, and external product/host cause remain unresolved; the observed
-`GPUPersistentCache\\DawnGraphiteCache` message is not classified as root cause.
-
-Repository-local bounded hypotheses have not produced a safe correction.
-Therefore repository-local correction is **NONE IDENTIFIED**, the `.62`
-Browser authority pin remains **KNOWN / DEFERRED UNTIL QUALIFIED SUCCESSOR
-EXISTS**, no `.66` authority candidate is materialized, B1 is not passed, and
-V3 has not started. Fresh lineage1/2/3, Restart1, and Restart8 historical
-state remains preserved and immutable; Fresh lineage4 eligibility is **NO**.
-This additive current-status entry does not revise historical records or grant
-READY status. The defined resume condition is a qualified current or successor
-Edge runtime under the same accepted security boundary, followed by Browser
-authority qualification without historical rewrite.
+Current status is maintained in the [current-host runtime blocker synchronization](liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md): current-host Browser execution and PR-3 Browser Evidence are **BLOCKED**; the exact runtime root cause remains **UNRESOLVED**, no repository-local safe correction is identified, and the existing .62 authority pin remains deferred pending a qualified successor. B1 is not passed, V3 has not started, no successor authority is available, and Fresh lineage4 is ineligible. Resume only after runtime qualification passes under the same accepted security boundary and Browser authority is qualified/reconciled without rewriting historical evidence. This is not READY or PR-3 acceptance.
 
 ### NarrativeLine Display-Order Reordering Audit (2026-09-07)
 

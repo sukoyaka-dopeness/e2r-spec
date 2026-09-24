@@ -66,7 +66,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Workstream | Current status | Authority / next decision |
 | --- | --- | --- |
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
-| Roadmap chronology / slimming tranches 1–2, Initial Placement, and post-release observation history | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); [Initial Placement / routing chronology migration](roadmap-initial-placement-routing-history-migration1-result.md); [2026-09-23 observation history migration](roadmap-post-release-cross-app-observation-history-migration1-result.md); this roadmap remains the sole current-planning authority |
+| Roadmap chronology / slimming tranches 1–2, Initial Placement, post-release observations, and early Layout experiments | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); [Initial Placement / routing chronology migration](roadmap-initial-placement-routing-history-migration1-result.md); [2026-09-23 observation history migration](roadmap-post-release-cross-app-observation-history-migration1-result.md); [Early Automatic Layout history migration](roadmap-early-automatic-layout-experiment1-history-migration1-result.md); this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
 | Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; SEED RESEARCH, PR-2, PR-3 PRE-BROWSER, AND BROWSER DIAGNOSTIC LINEAGES POINTER-COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
@@ -291,118 +291,14 @@ documented in `docs/automatic-layout-experiment-plan.md`. This remains an
 experiment plan and does not establish a Layout identifier, schema, algorithm,
 or maturity model.
 
-Experiment 1 Label Stability is complete as bounded evidence. The
-previous-placement approach showed partial improvement without changing
-Dataset or Layout persistence. The next bounded experiment is graph density /
-spacing, recorded in
-`docs/automatic-layout-experiment-1-label-stability-result.md`.
-
-Experiment 1B Density/Framing is now recorded as inconclusive evidence. Its
-temporary spacing and initial-framing implementation was not adopted, and
-current evidence does not support viewport framing as the primary cause of
-label jumps. The next bounded experiment is Experiment 1C Angular Freedom.
-Layout schema and identifier work remain not started.
-
-The Experiment 1B follow-up found that expanding uniform Derived spacing from
-`240 x 180` to the temporary `360 x 270` comparison did not materially
-increase screen-space breathing room because automatic fit reduced the display
-scale as graph bounds grew. Graph-space collision conditions may still change.
-Node-based fit bounds, fixed 16-direction Node-label candidates, collision
-penalties, and Relation-path effects remain separate unresolved factors. No
-new spacing value or fit behavior was accepted, and Experiment 1B remains
-`INCONCLUSIVE`.
-
-Experiment 1C Angular Freedom is now recorded as bounded evidence with a
-`CLEAR IMPROVEMENT / DIRECTION SUPPORTED` result. Increasing Node-label
-candidate resolution from 16 to the temporary 32-direction comparison
-exposed useful intermediate directions and improved some collision-triggered
-placements. The comparison did not select 32 as a final constant or change
-label distance, collision scoring, geometry, fit behavior, routing, or
-persistence. The next bounded experiment is Experiment 1D Owning-Node
-Proximity.
-
-Experiment 1D Owning-Node Proximity is now recorded as
-`MIXED / BOUNDED IMPROVEMENT`. The temporary axis-separated distance formula
-showed some near-vertical improvement, but no clear diagonal or
-long-description improvement. The exact formula was not adopted and the
-baseline distance calculation was restored. Owning-Node proximity remains
-unresolved; Angular Freedom remains the stronger supported direction. The next
-bounded experiment is Experiment 1E Node-Label Recovery.
-
-Experiment 1E Node-Label Recovery is now recorded as
-`INCONCLUSIVE / DENSITY-LIMITED`. Recovery could return labels closer when
-nearby preferred candidates became genuinely free after substantial Node
-separation, but ordinary initial density often kept those candidates blocked.
-The exact recovery gate was not adopted; previous-placement hysteresis and
-the 32-direction baseline remain. Graph geometry density has stronger evidence
-as an upstream factor. The next bounded experiment is Experiment 1F
-Anisotropic Derived Spacing.
-
-Experiment 1F Anisotropic Derived Spacing is recorded as
-`INCONCLUSIVE / LIMITED APPLICABILITY`. The `360 x 180` fallback comparison
-did not adequately exercise the main manual targets because stored Coordinates
-and temporary direct-creation positions bypass the fallback grid. The
-temporary spacing was not adopted and the `240 x 180` baseline was restored.
-Future work should provide an intentional Coordinate-free automatic-layout
-demonstration Dataset. Relation-label midpoint recovery and normal-distance
-recovery remain separate future experiments.
-
-Experiment 1G Node-Label Cardinal Preference is recorded as
-`BOUNDED IMPROVEMENT / DIRECTION SUPPORTED`. A temporary `0.5` penalty per
-11.25-degree step from the nearest cardinal axis made sparse placements more
-orderly while retaining all 32 legal directions for dense-graph escape. The
-weight is not final, cardinal-only placement is not accepted, and proximity
-and density remain separate concerns. Future work now includes Node-label
-drag-follow responsiveness during active Node movement and bounded
-multi-line description wrapping; wrapping was not implemented. The next
-temporary experiment is Experiment 1H Node-Label Drag-Follow Responsiveness.
-
-Experiment 1H Node-Label Drag-Follow Responsiveness is recorded as
-`CLEAR IMPROVEMENT / DIRECTION SUPPORTED`. Bypassing previous-placement
-hysteresis only for the actively dragged Node's own label removed the observed
-fast-drag trailing while preserving hysteresis for other labels. The exact
-rule remains experimental. Future routing evidence should distinguish label
-readability and ownership from edge overlap/crossing, and self-loop
-orientation versus Node-label clearance remains a separate candidate.
-
-Experiment 1I Bounded Description Wrapping is recorded as
-`CLEAR IMPROVEMENT / DIRECTION SUPPORTED`. Preserving the 28-character visible
-content limit while wrapping to a temporary maximum of two lines at width 20
-reduced wide description footprints and improved dense readability and
-automatic placement in English and Japanese. The geometry audit found an
-8-unit Node-boundary-to-LabelRect-edge gap in both pure vertical and horizontal
-placement; optical glyph inset remains separate. The temporary global +3
-vertical shift was rejected. The next experiment is 1J Node-Facing Optical
-Inset.
-
-Experiment 1J Node-Facing Optical Inset is recorded as
-`MIXED / DIRECTIONAL OPTICAL ASYMMETRY CONFIRMED`. A uniform 3px radial
-text-only nudge produced little improvement above Nodes and over-corrected
-below Nodes, so it was not adopted. LabelRect clearance remains unchanged;
-future work should inspect visual geometry before another optical adjustment.
-Qualitatively, 32 directions plus cardinal preference also appear to reduce
-manual Node-label repositioning, though this is not yet a measured metric. The
-next audit is Experiment 1K Directional Optical Geometry.
-
-Experiment 1K Directional Optical Geometry is recorded as
-`AUDIT COMPLETE / GEOMETRY CLARIFIED`. The audit confirmed an 8-unit
-Node-boundary-to-LabelRect-edge clearance for pure horizontal and vertical
-placements, a transparent hit rectangle, and TRUE GEOMETRIC TERMINATION at
-the invisible LabelRect boundary. Directional optical asymmetry remains a
-rendered-glyph question; adaptive connector visibility is recorded only as
-future presentation research. No production geometry change was adopted.
-The next temporary experiment is 1L Relation-label Drag-Follow
-Responsiveness.
-
-Experiment 1L Relation-label Drag-Follow Responsiveness is recorded as
-`CLEAR IMPROVEMENT / DIRECTION SUPPORTED`. Bypassing previous-placement
-hysteresis only for Relations incident to the actively dragged Node reduced
-horizontal, vertical, and diagonal trailing while preserving stability for
-unrelated Relations. Self-loops were included by the same endpoint condition.
-Some labels still remain too far from their edge after movement; normal-
-distance recovery and along-edge / midpoint recovery remain independent,
-separate experiments. The next temporary experiment is 1M Relation-label
-Normal-Distance Recovery.
+The early Automatic Layout Experiment 1 progression, from Label Stability
+through 1L Relation-label Drag-Follow Responsiveness, is preserved as
+historical evidence in the [LiaisonScape Layout and Auto Layout
+chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#early-automatic-layout-experiment-1-progression-2026-08-18).
+Its dated results and then-proposed next experiments are historical snapshots,
+not current execution instructions; detailed evidence remains in the dedicated
+experiment result and audit documents. This migration adopts no experimental
+parameter or behavior.
 
 Use a clearly authority-qualified, LiaisonScape-owned experimental payload to
 test selected persistence of:

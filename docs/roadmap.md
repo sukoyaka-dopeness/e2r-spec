@@ -68,7 +68,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | Roadmap chronology / slimming tranches 1–2 | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
-| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; PERSONAL STORAGE AND GAMEBOOK POINTERS COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); other mixed groups remain unchanged; current execution order is unchanged |
+| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; PERSONAL STORAGE, GAMEBOOK, AND OSINT POINTERS COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -3619,18 +3619,13 @@ it is selected only and is not started by this record.
 
 ### E2R-VSCODE-OSINT-WORKBENCH-RESEARCH1 (2026-09-02)
 
-The exploratory [E2R for VS Code — OSINT Workbench](../research/exploratory/e2r-vscode-osint-workbench.md)
-record examines VS Code as a possible power-user/research client between the
-existing browser applications and a possible future Desktop client. It covers
-large local investigation workspaces, bounded local storage/index/query
-responsibilities, AI/agent tool boundaries, human review and provenance, and
-local/private OSINT risks. It does not select an extension, desktop framework,
-database, AI provider, schema, cloud backend, or authentication model.
-
-This is exploratory research only. The current LiaisonScape Initial Placement
-priority and selected checkpoint remain unchanged. The GitHub Sponsors and
-Personal Storage roadmap sections remain separate and unchanged; no
-`ai-knowledge` promotion was made.
+**EXPLORATORY / FUTURE DIRECTION — NOT ACTIVE OR SELECTED.** No VS Code or
+Desktop implementation, platform, storage, AI provider, schema, cloud backend,
+or authentication model is authorized. The current LiaisonScape Initial
+Placement priority and selected checkpoint remain unchanged. See the [E2R
+for VS Code — OSINT Workbench research](../research/exploratory/e2r-vscode-osint-workbench.md)
+for the research question, design space, risks, and open questions; related
+Host Authority and External Dataset research remain separate.
 
 ### E2R-WEB-VSCODE-HOST-AUTHORITY-RESEARCH1 (2026-09-10)
 

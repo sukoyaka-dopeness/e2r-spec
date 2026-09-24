@@ -75,6 +75,38 @@ does not extend that transport contract. Private/authenticated Dataset
 handoff, account identity, server-side editing credentials, or new Handoff
 behavior would require separate design and acceptance.
 
+## Relationship to existing E2R authorities
+
+This note explores a Wiki-specific application and content/view hypothesis; it
+does not replace the authorities for the underlying format or adjacent
+responsibilities:
+
+- The [Core specification](../../spec/core.md) remains authoritative for
+  Dataset, Entity, Event, Relation, and `description`. “Relation as an
+  inspectable connection record” here means an application view of a Core
+  Relation, not a new Core object kind, endpoint rule, or semantic contract.
+- [Personal Journal and long-form workspace research](personal-journal-planner-and-multi-dataset-workspaces.md)
+  already explores long-form content alongside concise descriptions. This Wiki
+  note adds an article-oriented use case but selects no representation and
+  does not supersede that broader question or the Roadmap's working candidate.
+- [E2R-managed Personal Storage research](e2r-managed-personal-storage.md)
+  owns broader storage, provider, account, save/publish/share, and offline
+  questions. The Wiki concept does not choose those policies or a provider.
+- [Web / VS Code Host Authority research](e2r-web-vscode-host-authority.md)
+  addresses host responsibilities. This note does not select a Hub, browser,
+  or VS Code host architecture.
+- [External Dataset Acquisition, Trust, and Provenance research](e2r-osint-external-dataset-acquisition-and-trust.md)
+  covers acquisition and trust. Displaying, importing, or publishing a Dataset
+  does not establish factual accuracy or trust.
+- [Semantic Vocabulary Architecture research](semantic-vocabulary-architecture.md)
+  is the separate place to investigate controlled relation vocabulary; this
+  note proposes no vocabulary and assigns no interoperable meaning to
+  `Relation.name`.
+- [Dataset Handoff v0 design](../../docs/dataset-handoff-v0-design.md) remains
+  the current handoff contract, while [Anonymous Dataset Sharing research](anonymous-dataset-sharing.md)
+  explores public sharing. This Wiki concept defines no additional transport
+  or sharing protocol.
+
 The following are distinct possible operations and should not be conflated:
 
 1. browse a public Dataset;

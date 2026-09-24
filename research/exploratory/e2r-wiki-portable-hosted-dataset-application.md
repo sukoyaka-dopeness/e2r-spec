@@ -86,15 +86,18 @@ the Dataset. The distinction is:
 
 `Dataset identity != uploader identity != hosting-management authority`
 
-At publication time, one candidate flow would issue a management credential
-separately from the public Dataset URL or reference, then require the
-credential for management operations. The credential must not be stored in
-the portable E2R Dataset: downloading a public copy must not transfer
-authority over the hosting service's copy. A local publication/management
-receipt could help a publisher retain the URL and credential, but such a
-receipt would be local management information, not Dataset content, an E2R
-schema, or an interoperable artifact. Which operations it would authorize
-(for example, deletion, unpublication, or replacement) remains open.
+At publication time, one candidate flow would issue an unguessable,
+Dataset-specific management credential separately from the public Dataset
+URL or reference, then require the credential for management operations.
+Issuance, verification, and enforcement would be hosting-service
+responsibilities, separate from portable Dataset semantics. The credential
+must not be stored in the portable E2R Dataset: downloading a public copy must
+not transfer authority over the hosting service's copy. A local
+publication/management receipt could help a publisher retain the URL and
+credential, but such a receipt would be local management information, not
+Dataset content, an E2R schema, or an interoperable artifact. Which
+operations it would authorize (for example, deletion, unpublication, or
+replacement) remains open.
 
 Candidate mechanisms include a bearer-style opaque secret and a
 signature-based capability using a public/private key pair. They are options
@@ -115,9 +118,9 @@ Open security and operations questions include loss of a credential making a
 hosted copy unmanageable; disclosure allowing another holder to exercise its
 permitted authority; recovery, rotation, and revocation; whether the service
 must retain a credential or can verify a capability; abuse, rate limits, and
-moderation or administrative intervention; and how management authority
-relates to copies already downloaded by others. No security mechanism or
-policy is selected here.
+moderation, administrative override, or admin-assisted recovery; and how
+management authority relates to copies already downloaded by others. No
+security mechanism or policy is selected here.
 
 ## Relationship to existing E2R authorities
 

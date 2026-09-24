@@ -43,7 +43,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | Roadmap chronology / planning-history compression | **BOUNDED EXTRACTIONS AND COMPRESSIONS RECORDED** | [history index](roadmap-history/README.md); [Roadmap slimming results](roadmap-slimming-migration1-result.md), [tranche 2](roadmap-slimming-migration2-result.md), and [Relative Time / Documentation IA snapshot compression](roadmap-relative-time-and-documentation-ia-snapshot-compression1-result.md); detailed history-migration results remain linked from their entries; this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
-| Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / HUB-vs-E2R-WIDE MILESTONE AUTHORITY HUMAN SELECTION PENDING** | [Hub vs E2R-wide milestone authority decision preparation](documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](roadmap-residual-responsibility-audit3.md); [audit 2](roadmap-residual-responsibility-audit2.md); [audit 1](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
+| Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](roadmap-residual-responsibility-audit3.md); [audit 2](roadmap-residual-responsibility-audit2.md); [audit 1](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -628,105 +628,51 @@ Other continuing topics include:
 
 ## E2R ecosystem hub / portal track
 
-The E2R Studio idea recorded in `sessions/E2R-Session-0010.md` is retained as
-an active application-planning direction: create a top-level hub or portal
-that introduces E2R, presents the available applications, links to their
-individual top pages, offers samples and documentation, and helps users move
-between compatible application workflows. The hub is an application and
-distribution surface, not a new Core object or a requirement that all E2R
-applications share one UI.
+The E2R Studio direction recorded in `sessions/E2R-Session-0010.md` remains a
+Hub application-planning responsibility: introduce E2R, present applications,
+samples and documentation, and provide Hub-owned user entry points. Hub is an
+application/distribution surface, not a Core object or a requirement for a
+universal application UI.
 
-The following ten milestones are ordered as a planning proposal. They balance
-implementation difficulty, likely user need, and the amount of foundation they
-provide for later E2R applications and distributable packs.
+**Planning authority:** the [E2R-wide milestone map](#proposed-e2r-wide-milestones)
+is the sole canonical ecosystem milestone sequence. This section is a scoped
+Hub supplement, not a second ecosystem sequence. Hub Milestone 1 remains
+**COMPLETE / ACCEPTED DESIGN** and Milestone 2 remains **COMPLETE / MANUALLY
+ACCEPTED**, as recorded in the [IA authority](e2r-hub-public-entry-point-information-architecture.md)
+and [Milestone 2 acceptance](e2r-hub-public-entry-point-milestone-2-acceptance.md).
 
-Milestone 1, **Hub scope and information architecture**, is COMPLETE / ACCEPTED
-DESIGN. Milestone 2, **Static E2R landing page**, is COMPLETE / MANUALLY
-ACCEPTED. Their acceptance is recorded in
-`docs/e2r-hub-public-entry-point-information-architecture.md` and
-`docs/e2r-hub-public-entry-point-milestone-2-acceptance.md`. The remaining
-items below are future planning context; they do not reopen either accepted
-checkpoint.
+Hub-specific planning retained here:
 
-1. **Hub scope and information architecture** — COMPLETE / ACCEPTED DESIGN;
-   see the [IA authority](e2r-hub-public-entry-point-information-architecture.md).
-2. **Static E2R landing page** — COMPLETE / MANUALLY ACCEPTED; see the
-   [acceptance record](e2r-hub-public-entry-point-milestone-2-acceptance.md).
-3. **Application catalog and status cards** — turn the application catalog into
-   discoverable entries with purpose, maturity, supported capabilities, links,
-   and explicit experimental/deferred labels.
-4. **Shared sample gallery** — provide a small set of canonical datasets with
-   previews and “open in application” links, while keeping samples versioned
-   and self-contained.
-5. **Onboarding and documentation paths** — add short guided paths for a first
-   Dataset, timeline workflow, relationship workflow, validation, and
-   cross-application preservation.
-6. **Cross-application handoff links** — make the portal demonstrate import,
-   export, validation, and preservation between NarrativeLine, LiaisonScape,
-   and Validator without requiring a monolithic application.
-7. **Capability and compatibility metadata** — define a lightweight,
-   versioned description of application capabilities and supported Extension
-   profiles so the hub can explain compatibility without guessing from names.
-8. **Pack distribution foundation** — prototype discovery and manifest display
-   for future Calendar, Locale, Dictionary, Orthography, and Style Packs;
-   keep pack resources and Dataset declarations as separate responsibilities.
-9. **User workspace and project entry model** — research a safe way to retain
-   recent Datasets, selected applications, and project links without silently
-   turning local application state into interoperable Dataset content.
-10. **E2R ecosystem release surface** — establish a maintainable portal release
-    process for applications, samples, documentation, compatibility metadata,
-    and packs, including provenance, version selection, and offline/failure
-    behavior.
+- Hub catalog/status-card presentation and onboarding/documentation paths
+  contribute to canonical ecosystem milestone 2; they do not define another
+  first-use sequence.
+- Hub sample-gallery presentation contributes to canonical milestone 3;
+  canonical sample content and cross-application sample responsibility remain
+  governed by that milestone.
+- Hub-provided sample and Self-Description access/Handoff surfaces contribute
+  to canonical interoperability milestone 4. Some Dataset Handoff link
+  generation exists in current Hub source, but this is implementation
+  evidence only; it does not establish Human acceptance or completion of the
+  broader evidence responsibility.
+- Hub-facing capability/compatibility and pack discovery/display contribute
+  to canonical milestones 5 and 7; definitions, compatibility policy and
+  manifest foundations are not duplicated here.
+- The existing [E2R Self-Description Dataset](../examples/e2r-self-description.json)
+  remains owned at this repository path; a suitable Hub entry point is a
+  Hub-specific follow-up. Placement, presentation, URL/Handoff behavior and
+  relation to sample-gallery UI remain implementation-checkpoint decisions.
+- Browser-local locale preference and retained-Dataset/project workspace
+  remain exploratory Hub responsibilities, not Dataset content or an
+  implicit Extension. Storage choices are not selected here. Browser storage
+  is origin-scoped; an explicit bridge or server-backed workspace must be
+  investigated before assuming cross-origin sharing.
+- Hub portal release mechanics contribute to canonical milestone 10; they do
+  not replace ecosystem-wide evidence-gated release coordination.
 
-The next practical step is a bounded follow-up after Milestones 1 and 2. The
-current Hub already provides application links, sample cards, and a
-Documentation section, so the next workstream should be selected from the
-remaining gap rather than inferred from the historical milestone order.
-Candidates include Application Catalog and Maturity Clarity, Shared Sample
-Gallery refinement, Onboarding and documentation path refinement, Hub direct
-Dataset Handoff, or public interoperability evidence / sample workflow. No
-single candidate is selected here without its own bounded scope and evidence
-gate. None of these milestones authorizes a Core change, a universal
-application UI, or automatic interpretation of unknown application and pack
-metadata.
-
-### Hub self-history Dataset access follow-up
-
-The existing [E2R Self-Description Dataset](../examples/e2r-self-description.json)
-is an informative, experimental dogfooding artifact that represents E2R's own
-project history in E2R form. When Hub is next modified, provide an appropriate
-Hub entry point for users to access this Dataset. The exact Hub placement,
-presentation, public URL or Handoff behavior, and relationship to the shared
-sample gallery are implementation-checkpoint decisions; this roadmap entry
-does not select them. The Dataset remains owned by its current specification
-repository location, and this follow-up does not authorize changing or
-duplicating the Dataset.
-
-### Shared browser preference and workspace direction
-
-The Hub should investigate a browser-local sharing layer for the E2R
-ecosystem. A user who selects Japanese in NarrativeLine should be able to open
-LiaisonScape with Japanese selected as well when the applications share an
-origin. This is a user preference, not Dataset content: a future shared key
-such as `e2r.preference.locale` may be stored in `localStorage`, with each
-application reading it at startup. Optional live synchronization through
-`BroadcastChannel` may be considered later, but next-startup sharing is the
-initially sufficient behavior.
-
-Dataset retention and application handoff belong to a separate browser
-workspace layer. Small preferences may fit `localStorage`; retained Datasets,
-recent projects, and application handoff records should be evaluated against
-IndexedDB. A Hub could pass an opaque workspace key between applications
-instead of placing a large Dataset in a URL. Neither layer should alter the
-Dataset or become an implicit E2R Extension.
-
-This direction depends on deployment topology. `localStorage`, IndexedDB, and
-`BroadcastChannel` are origin-scoped, so two applications under the same
-scheme, host, and port but different paths can share them, whereas different
-localhost ports or future separate subdomains cannot. The Hub roadmap must
-therefore research an explicit bridge or server-backed workspace before
-assuming cross-origin sharing. This is a future architecture question, not a
-current application or Core implementation requirement.
+These supplements do not authorize a Core change, universal application UI,
+automatic interpretation of unknown metadata, or implementation of deferred
+workspace architecture. Hub-specific next work still requires a bounded
+scope and evidence gate; it is not inferred from the former Hub list order.
 
 ## Canonical sample follow-up
 
@@ -873,7 +819,10 @@ They are not accepted or implemented by this roadmap entry.
 
 ## Proposed E2R-wide milestones
 
-The following ten milestones provide a cross-repository sequence using three
+**Canonical planning authority:** the following ten milestones provide the
+sole E2R-wide cross-repository milestone sequence. The Hub section above is a
+Hub-specific supplement and does not establish a parallel ecosystem sequence.
+The existing sequence and descriptions are retained unchanged. They use three
 selection criteria: low implementation risk, clear user need, and value as a
 foundation for future E2R applications and Extensions.
 

@@ -511,3 +511,15 @@ and link migration, and any physical operation remain undecided and require
 Human review. The `docs/` flat-root taxonomy remains a separate later
 checkpoint. No roadmap split, move, rename, deletion, archive migration, or
 link rewrite has been performed or authorized.
+
+### Roadmap modularization implementation-preparation gate — 2026-09-24
+
+The read-only migration preparation is recorded in [Documentation IA / Roadmap
+Physical Modularization Implementation Preparation 1](../docs/documentation-ia-roadmap-physical-modularization-implementation-preparation1.md).
+It documents two bounded physical layout branches, identifies a contiguous
+completed workspace-migration chronology block as the clearest initial
+extraction candidate, maps mixed current/history regions, and records the
+observed link/path impact. Layout, partition, exact extraction manifest, and
+any exceptional anchor-compatibility handling remain subject to Human review.
+No physical migration or link rewrite has been performed. The `docs/`-wide
+taxonomy remains deferred.

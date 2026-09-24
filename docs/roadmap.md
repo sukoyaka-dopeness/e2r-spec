@@ -2343,6 +2343,16 @@ checkpoint; no general taxonomy or relocation of existing docs is selected.
 No split, move, rename, delete, archive migration, or link rewrite is
 authorized by this direction.
 
+#### Current Roadmap-first migration-preparation status (2026-09-24)
+
+The bounded [Roadmap Physical Modularization implementation-preparation
+record](documentation-ia-roadmap-physical-modularization-implementation-preparation1.md)
+maps the mixed current/history regions, candidate layouts, extraction gate,
+and observed path/anchor references. Physical destination, unit count, and
+the exact extraction manifest remain for Human selection/review. No roadmap
+content or links have been migrated; the `docs/`-wide taxonomy remains a
+separate later checkpoint.
+
 #### Current Relative Time atomic-semantics status after Human adoption (2026-09-24)
 
 The Human adopted the atomic Recorded assertion semantics and stated

@@ -2484,26 +2484,20 @@ unchanged.
 ### LiaisonScape Bounded Screening Formulation / Finalist Recall 1 (2026-09-14)
 
 The [Bounded Screening Formulation / Finalist Recall 1 result](liaisonscape-bounded-screening-finalist-recall1-result.md)
-reuses the existing candidate families and Product-authoritative oracle to
-compare deterministic finalist screens at K=2/3/4/6. The previous current
-top-4 exact-best recall was reproduced at `20/26`. A lexicographic geometry,
-topology, label/corridor, angular, and extent formulation improved top-4 exact
-recall to `24/26`, retained a Product top-3 candidate in `26/26`, and retained
-all 24 oracle baseline improvements while reducing simulated Product
-evaluations from 311 to 104.
+supports a bounded diagnostic reduction of finalist candidates, but recall is
+not closed. The current planning consequence is:
 
-Two meaningful dense misses remain. In `dense-k7-7` and `dense-k5-9`, the
-missed Product-best and retained grid candidates are equivalent under the
-tested cheap summaries while Product routing differs by nine and seven
-crossings. Increasing K to six does not recover them; Pareto and mandatory
-family diversity also performed worse. Disposition: `B. RECALL IMPROVED BUT
-NOT CLOSED`. Cheap-only production screening remains `NOT ESTABLISHED`; the
-next bounded architecture candidate is one/two complete Product-authoritative
-probes gated only for cheap-equivalent/high-risk classes. Quality solver and
-Product integration remain `HOLD / NOT ESTABLISHED` and `HOLD`; production
-provider remains `NOT ESTABLISHED`, Adaptive Cascade remains `INACTIVE`, Human
-Review remains `NOT READY`, and the Initial Layout Release blocker remains
-`OPEN`.
+- cheap-only production screening remains `NOT ESTABLISHED`;
+- meaningful dense misses remain where cheap summaries do not distinguish
+  materially different Product routing outcomes;
+- the evidence does not establish a production selector, quality solver,
+  Product default/integration, provider, or general quality closure;
+- later probe and risk-gate work is a separate responsibility and does not
+  retroactively close this screening boundary; and
+- detailed K comparisons, fixture-level misses, timing/regret measurements,
+  and dated progression are preserved in the [existing Layout and Auto Layout
+  chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-bounded-screening-formulation-finalist-recall-1-2026-09-14)
+  and the dedicated result.
 
 ### LiaisonScape Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1 (2026-09-14)
 

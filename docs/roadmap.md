@@ -8,15 +8,10 @@ Status: Current planning document; non-normative
 
 ### Workspace placement migration — COMPLETED — 2026-09-21
 
-The migration closed with `8 directories / 7 Git repositories / 0 noncanonical
-root workspaces`. The seven canonical repositories remain direct children of
-`C:\Users\\extra\\E2R`; noncanonical experimental and diagnostic workspaces
-are under the `workspace` container, including the separately preserved
-receive-lifetime workspace. Detailed chronology and preservation evidence
-remain in workspace artifacts, workspace-specific records, and Git history;
-this entry and the status index are the current placement summary. Any future
-evidence disposition, provenance capture, archive, or cleanup is separate work
-and is not reopened by placement closure.
+Placement is closed at `8 directories / 7 Git repositories / 0 noncanonical root workspaces`.
+Seven canonical repositories remain direct children of `C:\Users\extra\E2R`; experimental and diagnostic workspaces, including the preserved receive-lifetime workspace, remain under `workspace/`.
+Current status is in the [status index](#current-status-index-2026-09-22); chronology and preservation evidence remain in the [legacy chronology](roadmap-history/legacy-chronology.md), workspace artifacts, and Git history.
+Future evidence disposition, provenance, archiving, and cleanup remain separate; placement closure does not authorize them.
 
 ## Operating principles
 

@@ -40,7 +40,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 
 | Workstream | Current status | Authority / next decision |
 | --- | --- | --- |
-| Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
+| Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable; [bounded baseline milestone outline consolidation](roadmap-baseline-milestone-outline-consolidation1-result.md) |
 | Roadmap chronology / planning-history compression | **BOUNDED EXTRACTIONS AND COMPRESSIONS RECORDED** | [history index](roadmap-history/README.md); [Roadmap slimming results](roadmap-slimming-migration1-result.md), [tranche 2](roadmap-slimming-migration2-result.md), and [Relative Time / Documentation IA snapshot compression](roadmap-relative-time-and-documentation-ia-snapshot-compression1-result.md); detailed history-migration results remain linked from their entries; this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
 | Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](roadmap-residual-responsibility-audit3.md); [audit 2](roadmap-residual-responsibility-audit2.md); [audit 1](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
@@ -225,40 +225,38 @@ semantics and Timeline title autofocus remain deferred, and this closure does
 not authorize changes in other screens or applications. See the [Session 0047
 closure record](../sessions/E2R-Session-0047.md) and runtime checkpoint
 `1d6d609`.
-## Completed design milestone 1: Specification Extension redesign
+### Completed baseline milestones 1–5
 
-The result is Specification Extension draft `0.1.0`, not a registered Stable
-Extension. Its contract and deferred work remain defined by the
-[draft](../extensions/specification-extension.md); this milestone authorizes
-no Stable registration, migration, or Core change.
+These completed design, implementation, and evidence milestones are retained
+as a compact baseline inventory; their detailed authorities remain the source
+for their respective contracts and evidence.
 
-## Completed implementation milestone 2: Validator interoperability model
-
-Read-only Validator interoperability is implemented at the recorded boundary
-([acceptance](production-validator-extension-integration-acceptance.md),
-[result](production-validator-extension-integration-result.md)); this does
-not promote the Specification Extension draft to Stable or authorize network
-retrieval, migration, or application writers.
+1. **Specification Extension redesign — COMPLETE; Draft `0.1.0`, not Stable.**
+   The [draft](../extensions/specification-extension.md) defines the contract
+   and deferred work. No Stable registration, migration, or Core change is
+   authorized.
+2. **Validator interoperability model — IMPLEMENTED / ACCEPTED at its
+   recorded read-only boundary.** See the
+   [acceptance](production-validator-extension-integration-acceptance.md) and
+   [result](production-validator-extension-integration-result.md). This does
+   not promote the Specification Extension Draft or authorize network
+   retrieval, migration, or application writers.
+3. **Coordinate Prototype `0.1.0` — FROZEN experimental compatibility /
+   migration baseline, not Stable.** See the
+   [interoperability result](foreign-graph-coordinate-interop-experiment-result.md).
+4. **Coordinate Draft `0.1.0` — Draft candidate, not Stable.** See its
+   [definition](../extensions/coordinate-extension-draft.md) and
+   [bounded review](../research/coordinate/decisions/coordinate-draft-0.1.0-review.md).
+5. **Read-only Validator support for Coordinate — IMPLEMENTED.** Recognition
+   of Draft and Prototype identities authorizes neither application writing
+   nor migration; see the
+   [maturity decision](../research/coordinate/decisions/coordinate-maturity-and-identifier-decision.md)
+   and [Draft review](../research/coordinate/decisions/coordinate-draft-0.1.0-review.md).
 
 ## Application evidence track
 
 This track may prepare fixtures and experiments while the Specification
 Extension is designed, but it must not pre-empt its schema decisions.
-
-### Completed evidence milestone 3: Coordinate prototype
-Coordinate Prototype `0.1.0` remains frozen as an experimental
-compatibility/migration baseline, not Stable ([interoperability result](foreign-graph-coordinate-interop-experiment-result.md)).
-
-### Completed design milestone 4: Coordinate draft `0.1.0`
-Coordinate Draft `0.1.0` remains a Draft candidate, not Stable; see its
-[definition](../extensions/coordinate-extension-draft.md) and
-[bounded review](../research/coordinate/decisions/coordinate-draft-0.1.0-review.md).
-
-### Completed implementation milestone 5: read-only Validator support
-Read-only Validator support recognizes Coordinate Draft and Prototype
-identities; it authorizes neither application writing nor migration (see the
-[maturity decision](../research/coordinate/decisions/coordinate-maturity-and-identifier-decision.md)
-and [Draft review](../research/coordinate/decisions/coordinate-draft-0.1.0-review.md)).
 
 ### Layout persistence experiment
 

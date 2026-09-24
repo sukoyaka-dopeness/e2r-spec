@@ -68,7 +68,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | Roadmap chronology / slimming tranches 1–2 | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
-| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; PERSONAL STORAGE, GAMEBOOK, OSINT, AND HOST-AUTHORITY POINTERS COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); other mixed groups remain unchanged; current execution order is unchanged |
+| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; PERSONAL STORAGE, GAMEBOOK, OSINT, HOST-AUTHORITY, AND EXTERNAL-DATASET POINTERS COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -3678,23 +3678,18 @@ it is selected only and is not started by this record.
 
 ### E2R-OSINT-EXTERNAL-DATASET-ACQUISITION-TRUST-RESEARCH1 (2026-09-02)
 
-The exploratory [E2R OSINT External Dataset Acquisition, Trust, and
-Provenance research](../research/exploratory/e2r-osint-external-dataset-acquisition-and-trust.md)
-examines discovering, snapshotting, reviewing, comparing, and selectively
-adopting third-party E2R Datasets while preserving provenance and local
-assessment ownership. Its result is `CASE 10 / MIXED / DECISION A`: acquisition
-and factual acceptance, discovery and trust, integrity and truth, and source
-count and independent corroboration remain distinct responsibilities. A
-decentralized discovery direction with optional indexes is coherent, but
-assertion-level modeling and the location of trust/provenance metadata remain
-open.
-
-This is `EXPLORATORY / NOT ACTIVE` research only. It does not implement an
-OSINT client, downloader, crawler, trust system, snapshot store, registry,
-publication profile, or schema, and it does not start follow-up research. The
-LiaisonScape Initial Placement priority and selected checkpoint remain
-unchanged; Suite, VS Code OSINT, Personal Storage, Federated Constellation, and
-GitHub Sponsors roadmap items remain separate.
+**EXPLORATORY / NOT ACTIVE.** The research direction is established, but
+implementation is deferred until OSINT Workbench architecture becomes active;
+no follow-up starts automatically. The current LiaisonScape Initial Placement
+priority and checkpoint remain unchanged. Acquisition is not factual
+acceptance; discovery is distinct from trust; integrity/authenticity do not
+establish truth; and Dataset count does not establish independent
+corroboration. Decentralized discovery with optional indexes is a supported
+direction, not a selected protocol. Local assessment, snapshot identity,
+assertion-level modeling, and trust/provenance ownership remain unresolved;
+no client, downloader, registry, schema, or implementation is authorized. See
+the [E2R OSINT External Dataset Acquisition, Trust, and Provenance research](../research/exploratory/e2r-osint-external-dataset-acquisition-and-trust.md)
+for the full evidence, distinctions, open questions, and non-goals.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-CANDIDATE-FAMILY-EXPERIMENT-DESIGN1 (2026-09-02)
 

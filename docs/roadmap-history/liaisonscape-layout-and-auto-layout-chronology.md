@@ -3163,6 +3163,109 @@ provider `NOT ESTABLISHED`, Adaptive Initial Placement Cascade `INACTIVE`,
 Human Review `NOT READY`, and the Initial Layout Release blocker `OPEN`.
 Session log remains intentionally unchanged.
 
+### Explicit Auto Layout readiness and pre-release blocker — Roadmap source snapshot (2026-09-25)
+
+The following dated Roadmap blocks are preserved from `docs/roadmap.md` at
+parent commit `94e9c7aa046886bd015d89bcbebd09d781409e30`. Their original
+status language and sequence describe that snapshot, not current planning.
+The current lifecycle and qualification boundary remain in the Roadmap; the
+[readiness audit](../liaisonscape-explicit-auto-layout-completion-readiness-current-state-gap-audit1-result.md),
+[production integration](../liaisonscape-explicit-auto-layout-production-integration-result.md),
+and [lifecycle integration](../liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md)
+remain their dedicated evidence authorities.
+
+#### LiaisonScape Explicit Auto Layout Completion Readiness / Current-State Gap Audit 1 (2026-09-16)
+
+The [current-state audit result](../liaisonscape-explicit-auto-layout-completion-readiness-current-state-gap-audit1-result.md)
+confirms that the current Explicit Auto Layout button synchronously runs the
+deterministic `solveAutoLayout` structural Node solver on the main thread,
+directly updates working positions, marks graph-visible Entities adopted and
+dirty, and leaves Dataset persistence to the existing Save Coordinates action.
+Downstream Product routing, Relation-label, Node-label, Self-loop, and
+viewport presentation recompute afterward; they are not part of the current
+solver's candidate evaluation.
+
+The resulting quality ceiling explains disorderly final presentation: the
+current solver does not score crossings, occupied paths, label envelopes,
+Self-loop pressure, or viewport quality. Frontier/Worker/Product computation
+is reusable only behind a separate Explicit Auto Layout operation boundary;
+the Initial Automatic Display adapter's coordinate-less fallback and
+render-only semantics are not directly reusable. The checkpoint stops with an
+explicit proposal-vs-direct-adoption lifecycle decision still required.
+Initial Automatic Display and all Dataset/Coordinate/persistence authority
+remain unchanged.
+
+#### LiaisonScape Explicit Auto Layout — active release blocker
+
+The current synchronous `solveAutoLayout` path is not yet sufficient for the
+pre-release quality bar: it produces deterministic Node geometry but does not
+evaluate crossing, occupied-path, label-envelope, Self-loop, or viewport
+pressure as a Product-quality result. Initial Automatic Display is already
+production accepted and is not reopened by this item.
+
+The preferred Explicit Auto Layout direction is:
+
+```text
+Auto Layout → async calculation → candidate Preview → Accept / Reject
+```
+
+This remains an implementation direction, not a completed runtime contract:
+
+- Cancel while running preserves the display from immediately before the
+  operation.
+- Reject returns to that pre-operation display.
+- Only Accept adopts the candidate into working positions and then uses the
+  existing dirty / Save Coordinates semantics.
+- This is a different contract from Initial Automatic Display's usable
+  fallback and render-only adoption.
+- The shared Frontier generator, Worker transport, and Product evaluation are
+  reuse candidates, but Explicit Auto Layout needs its own operation/lifecycle
+  adapter and manual-authority snapshot.
+
+The next implementation work must first make the lifecycle and authority
+boundary explicit. It must not silently replace the current direct-apply
+semantics with a preview contract, or move routing, Relation-label,
+Node-label, Self-loop, Dataset, Coordinate, persistence, or dirty-state
+authority into the solver.
+
+### DEV failure diagnostic — Roadmap source snapshot (2026-09-25)
+
+This dated diagnostic progression is preserved from `docs/roadmap.md` at
+parent commit `94e9c7aa046886bd015d89bcbebd09d781409e30`. Its `READY TO
+CAPTURE NEXT HUMAN CHECK B FAILURE` / `HOLD` wording records the diagnostic
+checkpoint at that time. The [dedicated DEV diagnostic result](../liaisonscape-explicit-auto-layout-dev-failure-diagnostic1-result.md)
+owns the probe evidence; current cause-attribution status remains in the
+Roadmap.
+
+#### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-DEV-FAILURE-DIAGNOSTIC1 (2026-09-17)
+
+The [DEV failure diagnostic result](../liaisonscape-explicit-auto-layout-dev-failure-diagnostic1-result.md)
+is classified **A. DEV FAILURE DIAGNOSTIC ESTABLISHED / READY TO CAPTURE NEXT
+HUMAN CHECK B FAILURE**. Explicit Auto Layout hard failures now retain stage,
+reason, operation/snapshot/graph identity, Entity/Pin counts, Pin diagnostics,
+Worker status, and bounded reached-stage evidence in structured App state.
+Development builds render that record only after a hard failure; production
+UI, successful Preview, quality-warning Preview, Cancel, and stale outcomes do
+not expose it.
+
+An explicit DEV-only Lighthouse Pin-resolution probe reproduced the existing
+fallback with `snapshot-capture` / `PIN_RESOLUTION_FAILED` /
+`PIN_SPACE_UNSUPPORTED` visible in the Actual Product. The ordinary Lighthouse
+JA path still reached Preview without the diagnostic. This proves observability
+but does not attribute the intermittent Human Check B failure to Pin input.
+The accepted Japanese Reject action is now `元の配置に戻す`. Solver quality,
+Product scoring/presentation, Pin semantics, lifecycle, Dataset, Coordinates,
+dirty-state, and persistence are unchanged. Human Check B remains HOLD until
+the next real failure reason is captured and reviewed; dense Graph-space
+quality remains a separate follow-up.
+
+**Current-state clarification:** the `HOLD` wording above is the dated status
+of those diagnostic checkpoints. The later Human disposition is **QUALIFIED**
+([closure result](../liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md)).
+That bounded acceptance did not identify the cause of the earlier hard-failure
+observation; cause attribution remains a separate unresolved diagnostic
+question and does not reopen the qualified lifecycle acceptance.
+
 ### LiaisonScape Independent Risk-Gate / Probe-Target Stability Validation 1 (2026-09-14)
 
 The following Roadmap block was extracted from `docs/roadmap.md` at parent

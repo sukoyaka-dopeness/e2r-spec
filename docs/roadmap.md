@@ -3583,106 +3583,53 @@ deferred.
 
 ### LiaisonScape Explicit Auto Layout Completion Readiness / Current-State Gap Audit 1 (2026-09-16)
 
-The [current-state audit result](liaisonscape-explicit-auto-layout-completion-readiness-current-state-gap-audit1-result.md)
-confirms that the current Explicit Auto Layout button synchronously runs the
-deterministic `solveAutoLayout` structural Node solver on the main thread,
-directly updates working positions, marks graph-visible Entities adopted and
-dirty, and leaves Dataset persistence to the existing Save Coordinates action.
-Downstream Product routing, Relation-label, Node-label, Self-loop, and
-viewport presentation recompute afterward; they are not part of the current
-solver's candidate evaluation.
-
-The resulting quality ceiling explains disorderly final presentation: the
-current solver does not score crossings, occupied paths, label envelopes,
-Self-loop pressure, or viewport quality. Frontier/Worker/Product computation
-is reusable only behind a separate Explicit Auto Layout operation boundary;
-the Initial Automatic Display adapter's coordinate-less fallback and
-render-only semantics are not directly reusable. The checkpoint stops with an
-explicit proposal-vs-direct-adoption lifecycle decision still required.
-Initial Automatic Display and all Dataset/Coordinate/persistence authority
-remain unchanged.
+This dated readiness snapshot is retained as a navigation anchor; its execution
+state and proposal-vs-direct-apply discussion are historical. The later
+[Explicit Auto Layout lifecycle integration](liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md)
+and [qualified Human Check B disposition](liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md)
+own their bounded results. The original snapshot is preserved in the [Layout
+and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#explicit-auto-layout-readiness-and-pre-release-blocker-roadmap-source-snapshot-2026-09-25).
+This does not establish general visual-quality acceptance or change Initial
+Automatic Display authority.
 
 ### Roadmap Sync — Explicit Auto Layout / Pin / Post-LiaisonScape Follow-ups 1 (2026-09-17)
 
-This entry synchronizes the current planning direction from the Explicit Auto
-Layout readiness audit and the subsequent design discussion. It is a
-non-normative roadmap record. It does not change runtime source, the E2R Core,
-an Extension schema, Dataset semantics, or the accepted Initial Automatic
-Display contract.
+This heading retains its historical anchor. Current Explicit Auto Layout,
+Pin, and presentation responsibilities are summarized below; the dated
+readiness and pre-release progression is in the [existing broad
+chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#explicit-auto-layout-readiness-and-pre-release-blocker-roadmap-source-snapshot-2026-09-25).
+Dedicated results linked here remain the evidence authorities.
 
 #### LiaisonScape Explicit Auto Layout — active release blocker
 
-The current synchronous `solveAutoLayout` path is not yet sufficient for the
-pre-release quality bar: it produces deterministic Node geometry but does not
-evaluate crossing, occupied-path, label-envelope, Self-loop, or viewport
-pressure as a Product-quality result. Initial Automatic Display is already
-production accepted and is not reopened by this item.
-
-The preferred Explicit Auto Layout direction is:
-
-```text
-Auto Layout → async calculation → candidate Preview → Accept / Reject
-```
-
-This remains an implementation direction, not a completed runtime contract:
-
-- Cancel while running preserves the display from immediately before the
-  operation.
-- Reject returns to that pre-operation display.
-- Only Accept adopts the candidate into working positions and then uses the
-  existing dirty / Save Coordinates semantics.
-- This is a different contract from Initial Automatic Display's usable
-  fallback and render-only adoption.
-- The shared Frontier generator, Worker transport, and Product evaluation are
-  reuse candidates, but Explicit Auto Layout needs its own operation/lifecycle
-  adapter and manual-authority snapshot.
-
-The next implementation work must first make the lifecycle and authority
-boundary explicit. It must not silently replace the current direct-apply
-semantics with a preview contract, or move routing, Relation-label,
-Node-label, Self-loop, Dataset, Coordinate, persistence, or dirty-state
-authority into the solver.
+The dated pre-release blocker is no longer current planning status. Explicit
+Auto Layout has a bounded accepted Product lifecycle; Human Check B is
+**QUALIFIED** only for its recorded scope. This does not imply general visual
+quality acceptance, Pin maturity, rollout, or a change to Initial Automatic
+Display. See the [production integration](liaisonscape-explicit-auto-layout-production-integration-result.md),
+[lifecycle integration](liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md),
+[qualified closure](liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md),
+and [dated blocker chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#explicit-auto-layout-readiness-and-pre-release-blocker-roadmap-source-snapshot-2026-09-25).
 
 #### Entity Pin / Unpin — Explicit Auto Layout constraint direction
 
-Persistent Entity Pin is recorded as a strong design direction for Explicit
-Auto Layout:
-
-- a Pinned Entity is a hard position constraint;
-- only Unpinned Entities may move during Explicit Auto Layout;
-- `manual move != Pin`; moving an Entity does not implicitly pin it;
-- the fixed operation is intended to express reusable layout intent across
-  repeated Auto Layout runs and later opens.
-
-The preferred UI candidates are `Pin / Unpin` in the Entity Context Menu and a
-Pin state control in Entity Detail. A small Node glyph may communicate state,
-but should not be the primary click target. The visual treatment should remain
-shape-independent, use more than shadow alone, and remain compatible with
-hover, selection, and touch ownership. Glyph color and exact control/copy are
-open questions.
-
-Pin is not currently a Core concept. The preferred direction is a
-LiaisonScape-owned layout/presentation Extension that associates saved Entity
-position with pinned state, for example:
-
-```json
-{ "x": 420, "y": 180, "pinned": true }
-```
-
-This example is illustrative only. Exact schema, `pinned: false` versus field
-omission, unknown-extension preservation, and the relationship to the explicit
-Save Coordinates transaction remain open. Pin changes should remain working
-layout state until an explicit save rather than silently mutating the Dataset.
+Pin is LiaisonScape Layout intent under the **Draft / non-Stable** Layout
+Extension contract, not Core data or a Coordinate field. A Pin is a hard
+placement constraint; moving an Entity does not itself Pin it. Pin changes are
+working state and persist through the explicit Save boundary. The exact
+contract and authority are in the [Pin persistence decision](liaisonscape-pin-persistence-authority-contract2-result.md),
+[runtime integration](liaisonscape-explicit-auto-layout-pin-runtime-integration1-result.md),
+[working-state / Save integration](liaisonscape-pin-app-working-state-save-integration1-result.md),
+and [Pin UI Human Check A result](liaisonscape-pin-ui-human-check-a-popover-iteration2-result.md).
+The UI result does not make the Extension Stable.
 
 #### Edge and presentation authority during Explicit Auto Layout
 
-Auto Layout owns Node placement. Automatic Edge routing and curvature should
-be re-derived and evaluated by Product for the new candidate geometry. Existing
-manual Edge route/curvature, manual Relation-label, manual Node-label, and
-manual Self-loop state remain user authority; Node Pin and Edge-route fixing
-are separate concepts. Whether the preserved manual presentation state gives
-the candidate adequate Product quality is an implementation/acceptance gate,
-not permission to transfer that authority to Auto Layout.
+Explicit Auto Layout computes placement candidates; LiaisonScape Product owns
+routing and derived Relation-label, Node-label, Self-loop, and viewport
+presentation. Existing manual presentation remains user-owned; a Node Pin is a
+placement constraint, not an Edge-route lock. See the [operation boundary](liaisonscape-explicit-auto-layout-operation-boundary1-result.md)
+and [lifecycle integration](liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md).
 
 #### Post-LiaisonScape and other product follow-ups
 
@@ -3709,61 +3656,27 @@ applications remain future context rather than current implementation work.
 
 #### Status language and open questions
 
-This roadmap distinguishes accepted direction, strong preference, candidate
-implementation, and open question. It must not present an unresolved design as
-canonical specification. The following remain explicitly open: Pin Extension
-exact schema; omission versus `false`; Pin glyph/color; exact preview controls
-and copy; and the exact external/local media
-schema and security model.
-
-No runtime, source, schema, or implementation change was made by this sync.
+Pin UI glyph and copy have a bounded Human Check A result; the Pin Extension
+contract remains **Draft / non-Stable**, with exact maturity and schema
+questions governed by its [authority decision](liaisonscape-pin-persistence-authority-contract2-result.md).
+The following remains explicitly open: the exact external/local media schema
+and security model.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-SAFE-PREVIEW-FAILURE-DIAGNOSIS1 (2026-09-17)
 
-The [Safe Preview failure diagnosis result](liaisonscape-explicit-auto-layout-safe-preview-failure-diagnosis1-result.md)
-is classified **E. ROOT CAUSE NOT YET ESTABLISHED / HUMAN CHECK B HOLD**.
-Fresh Titanic EN and Lighthouse JA fixtures reached Running and Product
-Preview on both the 5173 and 5176 Vite instances. A focused source diagnostic
-also shows that a manually moved ordinary unpinned graph and a valid working
-Pin reach Preview; an invalid saved Pin without a compatible finite anchor
-fails closed at capture with `PIN_RESOLUTION_FAILED` / `PIN_SPACE_UNSUPPORTED`.
-
-The current App collapses capture failure and Worker/operation failure into the
-same Safe Preview message, so the historical browser observation does not
-identify its exact branch or payload. Strict Product quality warnings remain
-Preview-admissible and are not this failure. No source behavior, Pin contract,
-solver, Product authority, or Japanese copy was changed. Human Check B must
-not be closed from fresh-fixture success alone; the exact failing Dataset/state
-or a future diagnostic-only reason capture is still required.
+The original intermittent Safe Preview hard failure remains unattributed: its
+exact input and failure branch were not captured. Later qualified lifecycle
+review and successful ordinary/valid-Pin cases do not establish its cause. See
+the [failure diagnosis](liaisonscape-explicit-auto-layout-safe-preview-failure-diagnosis1-result.md)
+and the separate [Human Check B closure](liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md).
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-DEV-FAILURE-DIAGNOSTIC1 (2026-09-17)
 
-The [DEV failure diagnostic result](liaisonscape-explicit-auto-layout-dev-failure-diagnostic1-result.md)
-is classified **A. DEV FAILURE DIAGNOSTIC ESTABLISHED / READY TO CAPTURE NEXT
-HUMAN CHECK B FAILURE**. Explicit Auto Layout hard failures now retain stage,
-reason, operation/snapshot/graph identity, Entity/Pin counts, Pin diagnostics,
-Worker status, and bounded reached-stage evidence in structured App state.
-Development builds render that record only after a hard failure; production
-UI, successful Preview, quality-warning Preview, Cancel, and stale outcomes do
-not expose it.
-
-An explicit DEV-only Lighthouse Pin-resolution probe reproduced the existing
-fallback with `snapshot-capture` / `PIN_RESOLUTION_FAILED` /
-`PIN_SPACE_UNSUPPORTED` visible in the Actual Product. The ordinary Lighthouse
-JA path still reached Preview without the diagnostic. This proves observability
-but does not attribute the intermittent Human Check B failure to Pin input.
-The accepted Japanese Reject action is now `元の配置に戻す`. Solver quality,
-Product scoring/presentation, Pin semantics, lifecycle, Dataset, Coordinates,
-dirty-state, and persistence are unchanged. Human Check B remains HOLD until
-the next real failure reason is captured and reviewed; dense Graph-space
-quality remains a separate follow-up.
-
-**Current-state clarification:** the `HOLD` wording above is the dated status
-of those diagnostic checkpoints. The later Human disposition is **QUALIFIED**
-([closure result](liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md)).
-That bounded acceptance did not identify the cause of the earlier hard-failure
-observation; cause attribution remains a separate unresolved diagnostic
-question and does not reopen the qualified lifecycle acceptance.
+The DEV diagnostic makes a known invalid-Pin snapshot-capture failure
+observable; it did **not** identify the cause of the earlier intermittent Safe
+Preview failure. Its dated probe and diagnostic details are preserved in the
+[Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#dev-failure-diagnostic-roadmap-source-snapshot-2026-09-25)
+and the [dedicated diagnostic result](liaisonscape-explicit-auto-layout-dev-failure-diagnostic1-result.md).
 
 ### Explicit Auto Layout quality follow-ups
 

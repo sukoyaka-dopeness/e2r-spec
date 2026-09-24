@@ -38,9 +38,15 @@ not a second planning authority. Statements such as `current`, `next`, or
   pre-coordination Product / Provider / Frontier / Presentation progression,
   the early Automatic Layout Experiment 1 progression through 1L, and selected
   completed Automatic Display and Explicit Auto Layout
-  implementation / acceptance chronology. Current Layout persistence and
-  Owned / Derived boundaries, Initial Layout priorities, Human Check B
-  qualification, diagnostics, and quality follow-ups remain in the roadmap.
+  implementation / acceptance chronology. It also preserves the dated
+  Explicit Auto Layout readiness / pre-release blocker snapshot and DEV
+  failure-diagnostic progression; current lifecycle, Pin, presentation
+  ownership, and unresolved failure attribution remain in the roadmap and are
+  summarized in the [group-level reconstruction
+  result](../roadmap-hybrid-reconstruction-explicit-auto-layout-pin-group-pilot-result1.md).
+  Current Layout persistence and Owned / Derived boundaries, Initial Layout
+  priorities, Human Check B qualification, and quality follow-ups remain in
+  the roadmap.
   The [Product Verification Execution / Budget pilot](liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution-budget-pilot-roadmap-source-snapshot-2026-09-25)
   preserves the PV-01–PV-10 dated execution, interruptibility, scheduler, and
   source-step attribution progression; current planning remains in the

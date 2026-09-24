@@ -26,6 +26,7 @@ repository. Start with the responsibility that matches the question:
 - [Residual Roadmap Responsibility Audit 1](roadmap-residual-responsibility-audit1.md): current-roadmap classifications and a proposed next bounded tranche; no migration is authorized by the audit.
 - [Roadmap Semantic Decomposition / Canonical Planning Synthesis Audit 1](roadmap-semantic-decomposition-canonical-planning-synthesis-audit1.md): current-planning and dated-evidence responsibilities after the chronology migrations;
   compares guarded synthesis paths without changing the Roadmap.
+- [Roadmap Hybrid Reconstruction — Product Verification Pilot Preparation 1](roadmap-hybrid-reconstruction-product-verification-pilot-preparation1.md): claim-level B/A/HOLD manifest for the first proposed pilot; no Roadmap or History edit is authorized by the preparation.
 - [NarrativeLine NL-H2-R1](roadmap.md): **ACCEPTED / MANUAL ACCEPTANCE COMPLETE**.
 - [History 2 broader authoring scope](history-2-user-facing-authoring-scope-result.md): **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED**.
 

@@ -68,7 +68,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | Roadmap chronology / slimming tranches 1–2 | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
-| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; PERSONAL STORAGE, GAMEBOOK, OSINT, HOST-AUTHORITY, AND EXTERNAL-DATASET POINTERS COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); other mixed groups remain unchanged; current execution order is unchanged |
+| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; INDEPENDENT RESEARCH CAPSULES AND SEED RESEARCH POINTERS COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -3381,102 +3381,25 @@ Placement order. See [E2R-managed Personal Storage Research](../research/explora
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-AWARE-SEED-GEOMETRY-SEMANTICS-AUDIT1 (2026-09-01)
 
-The motif-aware seed-geometry semantics audit is recorded in [LiaisonScape
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape
 Initial-placement Motif-aware Seed-geometry Semantics
-Audit](liaisonscape-initial-placement-motif-aware-seed-geometry-semantics-audit.md).
-Its result is `CASE 5 / EXACT RESULT 5 / DECISION D`: exact motif
-non-degeneracy and shared-Node same-ray distinctness form a coherent,
-threshold-free seed admissibility floor, compatible with automorphic Nodes
-when expressed as symmetry-compatible geometry. The floor does not define
-near-collapse quality, an ideal shape, a scalar objective, or a semantic
-movement target.
-
-The current finite center/ring/slot vocabulary contains an admissible
-assignment for the tested Lighthouse and Ashen instances and the small
-controls, but the G7 slot-capacity control shows that it cannot represent the
-hard profile generally: 16 incident motif neighbors cannot occupy 16 distinct
-directions in the current eight-direction rings. Continuous feasibility
-remains available in that control. No Production seed, assignment, slot,
-radius, phase, settling, routing, feedback, label, sample, preview, schema,
-Core, Extension, Handoff, or Storage Research change was made. The selected
-next bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-SPACE-AUDIT1`;
-it is selected only and is not started by this record.
+Audit](liaisonscape-initial-placement-motif-aware-seed-geometry-semantics-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-SPACE-AUDIT1 (2026-09-01)
 
-The seed candidate-space audit is recorded in [LiaisonScape Initial-placement
-Seed Candidate-space Audit](liaisonscape-initial-placement-seed-candidate-space-audit.md).
-Its result is `CASE 6 / EXACT RESULT 6 / DECISION E`: the current finite
-center/ring vocabulary grows position count without generally growing
-directional capacity, because later rings repeat the same eight directions.
-The G7 control has 16 incident motif neighbors but only 8 distinct center
-directions, while diagnostic staggered and topology-derived directional
-families can express the hard witness. This supports scalable candidate-space
-capacity as a requirement, but does not select a Production generator,
-direction count, radius, phase, or assignment algorithm.
-
-`F-CURRENT`, `F-ROLE`, and `F-SET` were kept separate. Lighthouse and Ashen
-remain existentially representable by the current point set despite their
-current-assignment failures; G7 is not representable in that finite set. The
-audit remains an existence boundary only: near-collapse, labels, routes,
-settling, crossings, and global quality objectives remain separate. No
-Production seed, slot, radius, phase, settling, routing, feedback, label,
-sample, preview, schema, Core, Extension, Handoff, Storage Research, or
-`ai-knowledge` change was made. The selected next bounded checkpoint is
-exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-SEMANTICS-AUDIT1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement
+Seed Candidate-space Audit](liaisonscape-initial-placement-seed-candidate-space-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-SEMANTICS-AUDIT1 (2026-09-01)
 
-The seed candidate-generation semantics audit is recorded in [LiaisonScape
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape
 Initial-placement Seed Candidate-generation Semantics
-Audit](liaisonscape-initial-placement-seed-candidate-generation-semantics-audit.md).
-Its result is `CASE 7 / EXACT RESULT 3 / DECISION A`: source-independent,
-ID-neutral candidate generation can be described semantically without choosing
-exact coordinates. Geometric freedom must scale with topology-derived hard
-constraint demand, not Node count alone; both position capacity and usable
-directional capacity must avoid fixed-direction saturation.
-
-The current fixed-phase family remains only a baseline: its position count
-grows while the center direction set remains eight, so G7 (`R(s)=16`) is not
-representable. Diagnostic phase-diverse, graph-relative, and general-position
-families remove the observed boundary, but no exact generator, phase, radius,
-slot count, assignment algorithm, solver, or Production rule was selected.
-Global simultaneous hard feasibility remains a validation oracle, and
-capability distribution, practical symmetry-compatible construction, and
-cluster allocation remain partial/open boundaries. No Production seed,
-candidate vocabulary, settling, routing, feedback, label, sample, preview,
-schema, Core, Extension, Handoff, Storage Research, or `ai-knowledge` change
-was made. The selected next bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-SEMANTICS-VALIDATION1`;
-it is selected only and is not started by this record.
+Audit](liaisonscape-initial-placement-seed-candidate-generation-semantics-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-SEMANTICS-VALIDATION1 (2026-09-01)
 
-The seed candidate-generation semantics validation is recorded in
-[LiaisonScape Initial-placement Seed Candidate-generation Semantics
-Validation](liaisonscape-initial-placement-seed-candidate-generation-semantics-validation.md).
-Its result is `CASE 2 / EXACT RESULT 2 / DECISION B`: representational
-sufficiency for topology-derived exact hard constraints remains required, but
-topology need not be a direct generator input. Same-Node-count controls and
-the high-R series falsified Node-count-only sufficiency for the current
-fixed-direction family, while an N-only general-position diagnostic family
-provided hard-feasible witnesses for all tested controls and real samples.
-
-The result refines, rather than discards, the prior semantic: topology-derived
-demand remains the validation target, while a sufficiently rich topology-
-agnostic family may satisfy that target. Phase-diverse, graph-relative, and
-general-position families remain diagnostics only. Capability distribution,
-global simultaneous feasibility, practical symmetry-compatible construction,
-and downstream presentation remain separate boundaries. No Production
-generator, candidate vocabulary, slot count, radius, phase, assignment,
-settling, routing, feedback, label, sample, preview, schema, Core, Extension,
-Handoff, Storage Research, or `ai-knowledge` change was made. The selected
-next bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-INPUT-BOUNDARY-AUDIT1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Candidate-generation Semantics
+Validation](liaisonscape-initial-placement-seed-candidate-generation-semantics-validation.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### GitHub Sponsors follow-up (2026-09-02)
 
@@ -3499,123 +3422,33 @@ runtime behavior, or repository-local funding files.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-INPUT-BOUNDARY-AUDIT1 (2026-09-02)
 
-The seed candidate-generation input boundary audit is recorded in
-[LiaisonScape Initial-placement Seed Candidate-generation Input Boundary Audit](liaisonscape-initial-placement-seed-candidate-generation-input-boundary-audit.md).
-Its result is `CASE 2 / EXACT RESULT 1+2+3 / DECISION B+C`: Node count is the
-minimum required graph-derived capacity parameter for a finite, ID-neutral
-candidate family; topology may optionally adapt generation, while topology-
-derived motif and shared-ray constraints remain validation targets. Generator
-input and validation input can therefore be separated without losing the exact
-safety floor.
-
-Current source-stage coupling, ID/order use, and the separate frame/scale
-context are recorded as boundaries, not implementation instructions. No
-Production generator, assignment, settling, routing, label, sample, preview,
-or `ai-knowledge` change was made. The selected next bounded checkpoint is
-exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-DESIGN-BOUNDARY-AUDIT1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Candidate-generation Input Boundary Audit](liaisonscape-initial-placement-seed-candidate-generation-input-boundary-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-GENERATION-DESIGN-BOUNDARY-AUDIT1 (2026-09-02)
 
-The seed candidate-generation design boundary audit is recorded in
-[LiaisonScape Initial-placement Seed Candidate-generation Design Boundary Audit](liaisonscape-initial-placement-seed-candidate-generation-design-boundary-audit.md).
-Its result is `CASE 11 / EXACT RESULT 1+2+3+4+5 / DECISION E`: a finite,
-deterministic, ID-neutral capacity contract is sufficiently bounded for an
-offline family experiment design, while a generic N-only base and optional
-topology adaptation remain equally permitted. General-position-like families
-are diagnostic only; no exact coordinates or Production design was selected.
-
-The current runtime's discovery, ranking, candidate creation, assignment,
-settling, and packing coupling is recorded as a causal limitation. No
-Production source, assignment, settling, routing, label, sample, preview, or
-`ai-knowledge` change was made. The selected next bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-FAMILY-OFFLINE-EXPERIMENT1-DESIGN1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Candidate-generation Design Boundary Audit](liaisonscape-initial-placement-seed-candidate-generation-design-boundary-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-FAMILY-OFFLINE-EXPERIMENT1-DESIGN1 (2026-09-02)
 
-The offline candidate-family Experiment 1 design is recorded in
-[LiaisonScape Initial-placement Seed Candidate-family Offline Experiment 1 Design](liaisonscape-initial-placement-seed-candidate-family-offline-experiment1-design.md).
-The design is ready with `F0` (the current fixed eight-direction family) and
-`F1-ALG` (an exact N-only algebraic general-position-like diagnostic family).
-`F2` structured geometry is deferred because a distinct exact/provable
-comparator is not yet selected. `F-SET` is the primary level and F-MAP-CURRENT
-is secondary only.
-
-The future run will use exact GEO-0/GEO-3 predicates, no thresholds or scores,
-and will remain offline in a disposable worktree. No Production generator,
-assignment, settling, packing, routing, label, sample, preview, or
-`ai-knowledge` change was made. The selected next bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-FAMILY-OFFLINE-EXPERIMENT1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Candidate-family Offline Experiment 1 Design](liaisonscape-initial-placement-seed-candidate-family-offline-experiment1-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-FAMILY-OFFLINE-EXPERIMENT1 (2026-09-02)
 
-The offline candidate-family Experiment 1 result is recorded in
-[LiaisonScape Initial-placement Seed Candidate-family Offline Experiment 1 Result](liaisonscape-initial-placement-seed-candidate-family-offline-experiment1-result.md).
-The result is `CASE 1 / EXACT RESULT 1+2+3 / DECISION A`: exact F1-ALG
-(`P_i=(i,i²)`) removed the bounded candidate-space GEO-0/GEO-3 capacity
-failure in the required offline corpus, while current-mapping failures remain
-a separate assignment problem. F0 reproduced the expected fixed-direction
-contrast, including the G7/high-R capacity boundary.
-
-This validates the exact safety-floor diagnostic only. F1-ALG is not a
-Production layout design; no visual-quality or runtime conclusion was made.
-The selected next checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-GENERATION-ASSIGNMENT-RESPONSIBILITY-AUDIT1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Candidate-family Offline Experiment 1 Result](liaisonscape-initial-placement-seed-candidate-family-offline-experiment1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-GENERATION-ASSIGNMENT-RESPONSIBILITY-AUDIT1 (2026-09-02)
 
-The seed generation/assignment responsibility audit is recorded in
-[LiaisonScape Initial-placement Seed Generation / Assignment Responsibility Audit](liaisonscape-initial-placement-seed-generation-assignment-responsibility-audit.md).
-Its result is `CASE 11 / EXACT RESULT 1+2+3+4+5+6+7+8 / DECISION A`: for a
-mapping-sensitive candidate family, assignment must preserve available
-GEO-0/GEO-3 feasibility and must not use ID spelling or input order to choose
-non-equivalent geometry roles. F1-ALG demonstrates the conditional escape
-hatch in which every injective mapping is hard-safe; G7/K6 remain family-
-infeasible and cannot be repaired by assignment.
-
-Current degree-plus-lexical mapping is recorded as A0-CURRENT, not as a
-semantic rule. True automorphism orbits prevent a unique topology-only named
-order, and visual-quality-neutral tie handling remains open. No Production or
-preview change was made. The selected next checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-SEMANTICS-DESIGN1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Generation / Assignment Responsibility Audit](liaisonscape-initial-placement-seed-generation-assignment-responsibility-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-SEMANTICS-DESIGN1 (2026-09-02)
 
-The seed-assignment semantics design is recorded in [LiaisonScape
-Initial-placement Seed-assignment Semantics Design](liaisonscape-initial-placement-seed-assignment-semantics-design.md).
-Its result is `CASE 11 / EXACT RESULT 1+2+3+4+5+6+7+8 / DECISION A`: the exact
-assignment semantic is the set-valued hard-valid mapping relation, with a
-separate materialization responsibility. Assignment must be sound and
-conditionally complete for mapping-sensitive families when `HardValid` is
-non-empty; family infeasibility remains a separate result. True automorphism
-orbits do not justify a unique named topology-only role, and hard-valid
-non-equivalent mappings remain outside the deferred visual-quality selector.
-
-No Production, candidate-family, runtime-seam, preview, sample, or
-`ai-knowledge` change was made. The selected next checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM-DESIGN1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape
+Initial-placement Seed-assignment Semantics Design](liaisonscape-initial-placement-seed-assignment-semantics-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM-DESIGN1 (2026-09-02)
 
-The family/assignment experiment seam design is recorded in [LiaisonScape
-Initial-placement Seed Family / Assignment Experiment Seam Design](liaisonscape-initial-placement-seed-family-assignment-experiment-seam-design.md).
-Its result is `CASE 11 / EXACT RESULT 1+2+3+4+5+6 / DECISION A`: a disposable
-pre-settling seam can independently expose candidate family and assignment
-policy while preserving the existing downstream stages. `F0+A0` baseline
-transparency is mandatory; `F0+A1` isolates assignment loss; `F1-ALG` remains a
-diagnostic control. Headless execution is sufficient, and post-settling output
-is smoke evidence only.
-
-No LiaisonScape source, temporary seam, runtime switch, preview, sample, or
-`ai-knowledge` change was made. The selected next checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape
+Initial-placement Seed Family / Assignment Experiment Seam Design](liaisonscape-initial-placement-seed-family-assignment-experiment-seam-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-VSCODE-OSINT-WORKBENCH-RESEARCH1 (2026-09-02)
 
@@ -3641,40 +3474,12 @@ conditional research sequence if the direction is separately reopened.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM1 (2026-09-02)
 
-The disposable [LiaisonScape Initial-placement Seed Family / Assignment
-Experiment Seam 1](liaisonscape-initial-placement-seed-family-assignment-experiment-seam1-result.md)
-result is `CASE 11 / EXACT RESULT 1+2+3+4 / DECISION E`. The experiment
-validated that F0 candidate-family capacity and current A0 assignment loss
-are separable at the exact pre-settling hard-safety stage: Lighthouse and
-Ashen Crown retain F0 hard-valid mappings that A0 can lose, while proof-
-infeasible F0 G7/K6 remain infeasible and diagnostic F1-ALG is hard-valid
-under both assignments.
-
-The result also found that a deterministic ID rename changes Lighthouse's
-F0+A0 hard-validity classification. Identity/equivariance therefore remains
-an explicit follow-up boundary. No Production source, candidate family,
-assignment, settling, routing, label, sample, preview, or `ai-knowledge`
-change was made. The selected next checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-EQUIVARIANCE-FOLLOWUP1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Family / Assignment
+Experiment Seam 1](liaisonscape-initial-placement-seed-family-assignment-experiment-seam1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-EQUIVARIANCE-FOLLOWUP1 (2026-09-02)
 
-The [LiaisonScape Initial-placement Seed Assignment Equivariance Follow-up](liaisonscape-initial-placement-seed-assignment-equivariance-followup.md)
-is recorded as `CASE 6 / EXACT RESULT 1+2+3+4+5+6+7 / DECISION A`. The audit
-found that the Lighthouse rename failure belongs to the current A0 selector,
-while the underlying GEO-0/GEO-3 `HardValid` relation is representation-
-neutral. Identifier spelling may remain an operational order, but must not
-control hard-safety classification.
-
-For mapping-sensitive candidate families, hard-safe assignment remains a
-required contract. An assignment-insensitive family can remove that burden at
-the hard-safety level, without proving visual-quality invariance. The current
-finite-graph hard-safe direction is qualified to the exact GEO-0/GEO-3 floor;
-no Production family or assignment was selected. The selected next checkpoint
-is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-CANDIDATE-FAMILY-EXPERIMENT-DESIGN1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape Initial-placement Seed Assignment Equivariance Follow-up](liaisonscape-initial-placement-seed-assignment-equivariance-followup.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-OSINT-EXTERNAL-DATASET-ACQUISITION-TRUST-RESEARCH1 (2026-09-02)
 
@@ -3693,572 +3498,139 @@ for the full evidence, distinctions, open questions, and non-goals.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-CANDIDATE-FAMILY-EXPERIMENT-DESIGN1 (2026-09-02)
 
-The [LiaisonScape practical seed-family experiment design](liaisonscape-initial-placement-seed-practical-candidate-family-experiment-design.md)
-is complete with `CASE 1 / EXACT RESULT 1+2+3+4+5 / DECISION A`. It selects
-`FP1-NGP`, a bounded, deterministic, exact normalized general-position family,
-as the one primary practical diagnostic candidate. `F0-CURRENT` and `F1-ALG`
-remain controls; the structured F2 family remains deferred.
-
-The design keeps exact GEO-0/GEO-3 pre-settling evidence primary, separates
-normalization and runtime smoke from hard-safety authority, and leaves visual
-quality and Production suitability open. No candidate family, assignment,
-settling, routing, label, or application source changed. The selected next
-checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-CANDIDATE-FAMILY-EXPERIMENT1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape practical seed-family experiment design](liaisonscape-initial-placement-seed-practical-candidate-family-experiment-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-CANDIDATE-FAMILY-EXPERIMENT1 (2026-09-02)
 
-The [LiaisonScape practical candidate-family experiment](liaisonscape-initial-placement-seed-practical-candidate-family-experiment1-result.md)
-is recorded as `CASE 2 / EXACT RESULT 1+2+3+4+5+6 / DECISION A`. `FP1-NGP`
-preserved the current exact GEO-0/GEO-3 hard-safety floor, remained
-assignment-insensitive, bounded the normalized coordinate envelope, avoided
-F0's fixed eight-ray saturation in the bounded high-R controls, and remained
-finite/distinct through the tested `N<=65` materialization domain.
-
-This is a practical diagnostic result only: visual quality, routing, labels,
-crossings, settling quality, and Production suitability remain unassessed.
-No candidate family, assignment, application source, sample, preview, or
-`ai-knowledge` change was made. The selected next checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-QUALITY-EXPERIMENT-DESIGN1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape practical candidate-family experiment](liaisonscape-initial-placement-seed-practical-candidate-family-experiment1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-QUALITY-EXPERIMENT-DESIGN1 (2026-09-02)
 
-The [LiaisonScape practical-family structural-quality experiment design](liaisonscape-initial-placement-seed-practical-family-structural-quality-experiment-design.md)
-is complete with `CASE 9 / EXACT RESULT 1+2+3+4+5+6 / DECISION A`. It keeps
-the accepted two-layer motif/overlap-cluster profile, separates exact
-GEO-0/GEO-3 safety from structural descriptors, and defines bounded
-pre-settling/post-settling evidence with unchanged settling, a small
-representative-assignment probe, and an F1/FP1 affine diagnostic.
-
-The design selects `VIS-0`: no manual visual evidence is required for the next
-structural run, and routing, labels, crossings, and Production quality remain
-outside scope. No source, candidate family, assignment, settling, sample,
-preview, or `ai-knowledge` change was made. The selected next checkpoint is
-exactly `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-QUALITY-EXPERIMENT1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape practical-family structural-quality experiment design](liaisonscape-initial-placement-seed-practical-family-structural-quality-experiment-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-QUALITY-EXPERIMENT1 (2026-09-02)
 
-The [LiaisonScape practical-family structural-quality experiment](liaisonscape-initial-placement-seed-practical-family-structural-quality-experiment1-result.md)
-is recorded as `CASE 9 / MIXED / EXACT RESULT 1+2+3+4+5+6+7+8+9 / DECISION B`.
-The source-transparent F0 path passed for Lighthouse and Ashen Crown. FP1
-remained hard-valid across the executed primary controls, while the two-layer
-profile exposed motif/cluster bottlenecks, high-R capacity-versus-distribution
-differences, F1/FP1 affine descriptor changes, and mixed unchanged-settling
-transitions. Lighthouse and Ashen profiles changed under the fixed
-representation-neutral assignment probes; K3 remained symmetry-equivalent.
-
-This remains a headless structural diagnostic only. Visual, routing, label,
-crossing, edge-length, and Production quality remain unassessed, and no source,
-candidate family, assignment, settling, sample, preview, or `ai-knowledge`
-change was made. The selected next checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-ASSIGNMENT-SENSITIVITY-FOLLOWUP1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape practical-family structural-quality experiment](liaisonscape-initial-placement-seed-practical-family-structural-quality-experiment1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRACTICAL-FAMILY-STRUCTURAL-ASSIGNMENT-SENSITIVITY-FOLLOWUP1 (2026-09-02)
 
-The [LiaisonScape practical-family structural assignment-sensitivity follow-up](liaisonscape-initial-placement-seed-practical-family-structural-assignment-sensitivity-followup1.md)
-is recorded as `CASE 1 / DECISION A`. The bounded FP1 pre-settling
-single-swap audit found structural profile variation beyond the preceding
-three representatives: 21/45 Lighthouse swaps and 44/45 Ashen Crown swaps
-changed profile, while all 93 swaps remained injective and current-floor
-GEO-0/GEO-3 hard-valid. K3 swaps remained equivalent at the topology orbit
-level. FP1 candidate positions are non-equivalent geometric roles, and Ashen
-showed structural trade-offs; therefore no best mapping or scalar objective was
-selected.
-
-The result supports topology-aware assignment as the smallest next question,
-while candidate-family responsibility and visual quality remain open. No
-Production assignment, candidate family, source, settling, routing, label,
-sample, preview, or `ai-knowledge` change was made. The selected next
-checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-EXPERIMENT-DESIGN1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape practical-family structural assignment-sensitivity follow-up](liaisonscape-initial-placement-seed-practical-family-structural-assignment-sensitivity-followup1.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-EXPERIMENT-DESIGN1 (2026-09-02)
 
-The [LiaisonScape topology-aware assignment experiment design](liaisonscape-initial-placement-seed-topology-aware-assignment-experiment-design.md)
-is complete as `CASE 1 / DECISION A`. Existing graph-derived topology roles,
-deterministic FP1 candidate-role descriptions, and the two-layer structural
-profile are sufficient for a bounded headless experiment without a scalar
-objective. The design keeps topology role classification, candidate geometric
-role classification, role-to-candidate correspondence, admissible assignment
-sets, and literal materialization separate. K3 orbit semantics, a stronger
-same-degree lexical rename, input-order control, Ashen trade-offs, and FP1
-family asymmetry are explicit boundaries.
-
-No topology order, candidate family, assignment, Production behavior, settling,
-routing, label, sample, preview, or `ai-knowledge` change was made. The
-selected next checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-EXPERIMENT1`;
-it is selected only and is not started by this record.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape topology-aware assignment experiment design](liaisonscape-initial-placement-seed-topology-aware-assignment-experiment-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-EXPERIMENT1 (2026-09-02)
 
-The [LiaisonScape topology-aware assignment experiment](liaisonscape-initial-placement-seed-topology-aware-assignment-experiment1-result.md)
-is recorded as `CASE 9 / MIXED / EXACT RESULT 1+2+3+4+5+6+7+8+9+10 / DECISION B`.
-Across Lighthouse, Ashen Crown, and the K3 orbit control, all six bounded
-policies remained FP1 hard-valid. TA-0 retained lexical sensitivity under the
-strong same-degree rename, while TA-1 through TA-3 transported topology,
-assignment, literal-witness, and anonymous-profile classes and remained stable
-under Entity/Relation input reorder. Real-graph structural profiles changed
-with topology field order and with the RC-H2 forward/reverse correspondence
-direction; K3 remained orbit-equivalent.
-
-No policy is adopted for Production because candidate index has no accepted
-quality meaning and the observed profile differences are not a quality verdict.
-The next responsibility is a bounded structural assignment-objective and
-candidate-family research checkpoint, with clearance, local curvature,
-parallel/self-loop separation, node-movement shape preservation, and later
-crossing reduction kept distinct. No source, candidate family, assignment,
-settling, routing, label, sample, preview, or `ai-knowledge` change was made.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape topology-aware assignment experiment](liaisonscape-initial-placement-seed-topology-aware-assignment-experiment1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-RESEARCH1 (2026-09-02)
 
-The [LiaisonScape structural-assignment objective research](liaisonscape-initial-placement-seed-structural-assignment-objective-research1.md)
-is recorded as `CASE 2 / EXACT RESULT 1+2+3+4+5+6+7+8+9+10 / DECISION B`.
-The accepted evidence supports a scalar-free, partial structural preference in
-principle: exact GEO-0/GEO-3 remain hard constraints, while normalized
-motif-altitude and local fan-out distribution are only conditional candidate
-axes. Shape, compactness, bottleneck identity, total edge length, and other
-descriptors remain descriptive or trade-off-prone. Ashen trade-offs therefore
-remain incomparable without weights, and routed/label/visual quality remains
-downstream except for future explicitly justified presentation-independent
-proxies.
-
-No objective, materializer, solver, candidate family, Production assignment,
-settling, routing, label, sample, preview, or `ai-knowledge` change was made.
-The next checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-PARTIAL-PREFERENCE-DESIGN1`;
-it is selected only and is not auto-started.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape structural-assignment objective research](liaisonscape-initial-placement-seed-structural-assignment-objective-research1.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-PARTIAL-PREFERENCE-DESIGN1 (2026-09-02)
 
-The [LiaisonScape structural-assignment partial-preference design](liaisonscape-initial-placement-seed-structural-assignment-partial-preference-design.md)
-is recorded as `CASE 2 / EXACT RESULT 1+2+3+4+5+6+7+8+9+10+11 / DECISION B`.
-Hard admissibility remains prior to preference, and normalized motif altitude
-is accepted only as a conditional same-motif local axis. Fan-out distribution
-is not yet registered because the fixed-sum circular gap vector does not supply
-a non-arbitrary comparator; a narrower fan-out semantics design is required.
-Incomparability, unknown, not-applicable, preference-equivalence, and full
-profile-equivalence remain distinct states, with no total ranking or weights.
-
-No objective, materializer, solver, candidate family, Production assignment,
-settling, routing, label, sample, preview, or `ai-knowledge` change was made.
-The next checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FANOUT-PARTIAL-PREFERENCE-DESIGN1`;
-it is selected only and is not auto-started.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape structural-assignment partial-preference design](liaisonscape-initial-placement-seed-structural-assignment-partial-preference-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FANOUT-PARTIAL-PREFERENCE-DESIGN1 (2026-09-02)
 
-The [LiaisonScape fan-out partial-preference design](liaisonscape-initial-placement-seed-fanout-partial-preference-design.md)
-is recorded as `CASE 2 / EXACT RESULT 1+2+3+4+5+6+7+8+9+11 / DECISION B`.
-The complete circular gap vector remains descriptive because its components
-have a fixed sum. A larger minimum positive gap is a coherent, narrowly local
-candidate for relieving the worst motif-neighbor angular bottleneck under
-fixed transported coverage; it is not a uniformity objective. Bottleneck
-identity, tie multiplicity, pair-specific gaps, multiple shared Nodes, and
-fan-out capacity remain descriptive or separate records, with conflicts kept
-incomparable and missing exactness kept unknown.
-
-FAN-P1 is therefore `FANOUT-PARTIAL`, not registered. The exact angular
-comparison and representation boundary is the single selected next checkpoint:
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-EXACT-ANGULAR-GAP-COMPARATOR-DESIGN1`.
-No objective, candidate family, assignment, Production, settling, routing,
-label, sample, preview, or `ai-knowledge` change was made.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape fan-out partial-preference design](liaisonscape-initial-placement-seed-fanout-partial-preference-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-EXACT-ANGULAR-GAP-COMPARATOR-DESIGN1 (2026-09-02)
 
-The [LiaisonScape exact angular-gap comparator design](liaisonscape-initial-placement-seed-exact-angular-gap-comparator-design.md)
-is recorded as `CASE 1 / EXACT RESULT 1+2+3+4+5+6+7+8+9+10 / DECISION A`.
-Exact half-plane/cross/dot predicates close cyclic ray ordering, directed
-`<pi`/`pi`/`>pi` classification, and same-class gap comparison without
-`atan2`, square roots, or epsilon. Exact integer/rational geometry, including
-the current FP1 diagnostic family after positive denominator clearing, is
-sufficient for bounded research registration of FAN-P1. Float-only, rendered,
-and future runtime-authority cases remain conditional or `UNKNOWN` rather than
-Production support.
-
-The comparator status is `ANGULAR-COMPARATOR-READY` for the bounded exact-
-rational FP1 research contract; FAN-P1 is registered for that research scope
-only. The selected next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN1`.
-No comparator, objective, candidate-family, assignment, Production, settling,
-routing, label, sample, preview, or `ai-knowledge` change was made.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape exact angular-gap comparator design](liaisonscape-initial-placement-seed-exact-angular-gap-comparator-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN1 (2026-09-02)
 
-The [LiaisonScape structural-assignment objective experiment design](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design.md)
-is recorded as `CASE 3 / EXACT RESULT 2+6+7+8+9+11 / DECISION C`.
-The bounded experiment contract is otherwise defined: exact-rational FP1,
-PRE-settling, normalized altitude plus FAN-P1, fixed coverage, record-level
-PP-M3 comparison, and 15 unordered policy pairs per graph. Exact altitude
-comparison is ready and K3 remains orbit-safe with `k=2` fan-out excluded.
-
-Execution is not ready because committed evidence does not contain complete
-literal Node-to-FP1-index witness mappings and tie/fallback manifests for
-TA-1 through TA-3. No mapping is guessed or newly optimized. The selected next
-checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-MANIFEST-RECONSTRUCTION-DESIGN1`.
-No experiment, source, assignment, Production, settling, routing, label,
-sample, preview, or `ai-knowledge` change was made.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape structural-assignment objective experiment design](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TOPOLOGY-AWARE-ASSIGNMENT-MANIFEST-RECONSTRUCTION-DESIGN1 (2026-09-02)
 
-The [LiaisonScape assignment manifest reconstruction design](liaisonscape-initial-placement-seed-topology-aware-assignment-manifest-reconstruction-design.md)
-records `CASE 5 / EXACT RESULT 1+2+3+4+5+6+7+8+9+10 / DECISION I`.
-TA-0 / REP-0 is a `WIT-DERIVED` control, TA-1 remains `WIT-CLASS-ONLY`, and
-TA-2-degree, TA-2-motif, and TA-3 forward/reverse remain excluded because their
-complete policy semantics and literal correspondence are not committed.
-
-The six-policy objective matrix is therefore not ready; no historical mapping
-was recovered from deleted output, profile inversion, or residual shells. The
-smallest selected next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA1-QUALITY-NEUTRAL-WITNESS-DESIGN1`.
-No source, assignment, objective, materializer, solver, settling, routing,
-label, sample, preview, or `ai-knowledge` change was made.
+Detailed checkpoint evidence and dated disposition remain in [LiaisonScape assignment manifest reconstruction design](liaisonscape-initial-placement-seed-topology-aware-assignment-manifest-reconstruction-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA1-QUALITY-NEUTRAL-WITNESS-DESIGN1 (2026-09-02)
 
-The [TA-1 quality-neutral witness design](liaisonscape-initial-placement-seed-ta1-quality-neutral-witness-design.md)
-records `CASE 2 / DECISION B`: a deterministic fixture-local witness can be
-defined independently of objective output, but it is not semantically neutral
-because FP1 candidate roles are non-equivalent. It is therefore named
-`WIT-NEW-OPERATIONAL`, not `WIT-NEW-NEUTRAL`, and is limited to `CLAIM-P0`.
-
-One witness is selected conceptually; it has not been created or executed. TA-1
-remains set-valued at policy level, and the next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA1-OPERATIONAL-WITNESS-RECONSTRUCTION1`.
-No objective, assignment, source, materializer, solver, settling, routing,
-label, sample, preview, or `ai-knowledge` change was made.
+Detailed checkpoint evidence and dated disposition remain in [TA-1 quality-neutral witness design](liaisonscape-initial-placement-seed-ta1-quality-neutral-witness-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA1-OPERATIONAL-WITNESS-RECONSTRUCTION1 (2026-09-02)
 
-The [TA-1 operational witness reconstruction](liaisonscape-initial-placement-seed-ta1-operational-witness-reconstruction1-result.md)
-records `CASE 7 / DECISION G`. The predeclared `TA1-W1-OP-v1` rule produced
-deterministic exact manifests for Ashen Crown and K3 at `W1-MAN-5`; Lighthouse
-passed the exact hard gate but remains at `W1-MAN-4` because its current
-committed blob hash does not reconcile with the preceding recorded provenance
-hash. W1 remains `WIT-NEW-OPERATIONAL` / `CLAIM-P0`, and TA-1 remains
-`WIT-CLASS-ONLY / MAN-2`.
-
-The selected next checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-LIGHTHOUSE-FIXTURE-PROVENANCE-RECONCILIATION1`.
-No objective, Production, source, candidate family, assignment, settling,
-routing, label, sample, preview, or `ai-knowledge` change was made.
+Detailed checkpoint evidence and dated disposition remain in [TA-1 operational witness reconstruction](liaisonscape-initial-placement-seed-ta1-operational-witness-reconstruction1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-LIGHTHOUSE-FIXTURE-PROVENANCE-RECONCILIATION1 (2026-09-02)
 
-The [Lighthouse fixture provenance reconciliation](liaisonscape-initial-placement-seed-lighthouse-fixture-provenance-reconciliation1-result.md)
-records `CASE 4 / DECISION B`. The previously recorded `3038…` content hash
-was not found in any reachable committed Lighthouse blob or documented
-canonicalization. LF-to-CRLF of the current committed blob reproduces it as a
-diagnostic only, so the old value is `PROV-P3` and is not a future authority.
-
-Future W1 research uses `AUTH-LH0`: LiaisonScape commit
-`fd563340625fd3d88dc25baedc93c4f8fe69e5e7`,
-`public/lighthouse-restoration-demo.en.e2r.json`, Git blob
-`b96092b0c2b88c6c1ea41c11c1b36dccca3e9726`, raw SHA-256 `C671…`, and W1-input
-projection SHA-256 `4CDDB0…`. The W1 mapping is unchanged and Lighthouse is
-promoted from `W1-MAN-4` to `W1-MAN-5`; Ashen Crown and K3 remain
-`W1-MAN-5`. The exact next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN2`.
-No objective, Production, source, sample, or `ai-knowledge` change was made.
+Detailed checkpoint evidence and dated disposition remain in [Lighthouse fixture provenance reconciliation](liaisonscape-initial-placement-seed-lighthouse-fixture-provenance-reconciliation1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN2 (2026-09-02)
 
-The [reduced structural-assignment objective design](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design2.md)
-records `CASE 3 / DECISION C`: the six-policy matrix is reduced to TA-0/REP-0
-versus TA-1/W1 across Lighthouse, Ashen Crown, and K3. TA-0 manifests are now
-frozen as `WIT-DERIVED`; TA-1/W1 remains `WIT-NEW-OPERATIONAL` / `CLAIM-P0`.
-
-The reduced experiment is justified only as exact pipeline validation and a
-literal-witness contrast, with maximum inference `INF-W0/INF-W1`. Its three
-fixture-local cells must not become a cross-fixture score, policy ranking, or
-Production selection. TA-2 and TA-3 remain excluded for missing semantics, not
-quality failure. `EXEC-YES` is selected for the exact next checkpoint:
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT2`.
-No objective values, application source, sample, or `ai-knowledge` change was
-made.
+Detailed checkpoint evidence and dated disposition remain in [reduced structural-assignment objective design](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design2.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT2 (2026-09-02)
 
-The [Experiment2 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment2-result.md)
-records `CASE 3 / DECISION A`. The reduced exact-rational pipeline completed
-for the three frozen literal witness pairs: Lighthouse
-`TA0-DOMINATES-W1`, Ashen Crown `TA0-DOMINATES-W1`, and K3
-`PP-PREF-EQUIVALENT` through the identity oracle. The result remains
-`INF-W0/INF-W1` and `CLAIM-P0`; no policy ranking, cross-fixture score, or
-Production conclusion is permitted.
-
-The exact pipeline is validated, TA-2/TA-3 remain excluded for missing
-semantics, and the selected next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-POLICY-MANIFEST-RECOVERY1`.
-No source, sample, `ai-knowledge`, or Production change was made.
+Detailed checkpoint evidence and dated disposition remain in [Experiment2 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment2-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-POLICY-MANIFEST-RECOVERY1 (2026-09-02)
 
-The [TA-2 policy manifest recovery result](liaisonscape-initial-placement-seed-ta2-policy-manifest-recovery1-result.md)
-records `CASE 7 / DECISION G`. Reachable committed history contains only the
-high-level `degree-first` and `motif/overlap responsibility-first` hypotheses;
-neither TA-2-degree nor TA-2-motif has a recoverable complete role tuple,
-candidate correspondence, tie/fallback, materializer, or literal manifest.
-Both remain `TA2-MAN-1 / TA2-WIT-RECOVERY-INCOMPLETE` and are not eligible for
-objective design. Experiment2 outputs were not used for recovery.
-
-The selected next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-POLICY-SEMANTICS-DESIGN1`.
-No source, sample, `ai-knowledge`, or Production change was made.
+Detailed checkpoint evidence and dated disposition remain in [TA-2 policy manifest recovery result](liaisonscape-initial-placement-seed-ta2-policy-manifest-recovery1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-POLICY-SEMANTICS-DESIGN1 (2026-09-02)
 
-The [TA-2 policy semantics design](liaisonscape-initial-placement-seed-ta2-policy-semantics-design.md)
-records `CASE 1 / DECISION A`. Both variants are explicitly new designs:
-TA-2-degree uses distinct-neighbor degree as a descending semantic preorder
-with equal-degree classes; TA-2-motif uses a three-component componentwise
-motif/overlap responsibility relation. Both use the experiment-only
-`TA2-OP-LIN-v1` materializer boundary, with no candidate-quality meaning.
-Future witnesses remain `TA2-WIT-NEW-OPERATIONAL` / `CLAIM-P0`; no literal
-mapping or objective result is implied.
-
-The selected next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-OPERATIONAL-WITNESS-RECONSTRUCTION1`.
-No source, sample, `ai-knowledge`, or Production change was made.
+Detailed checkpoint evidence and dated disposition remain in [TA-2 policy semantics design](liaisonscape-initial-placement-seed-ta2-policy-semantics-design.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-OPERATIONAL-WITNESS-RECONSTRUCTION1 (2026-09-02)
 
-The [TA-2 operational witness reconstruction result](liaisonscape-initial-placement-seed-ta2-operational-witness-reconstruction1-result.md)
-records CASE 2 / DECISION B. The new TA-2-degree contract was materialized as
-the fixture-local witness TA2-DEG-W1-OP-v1 for Lighthouse, Ashen Crown, and
-K3; all three are deterministic and pass the exact GEO-0/GEO-3 hard gate.
-The TA-2-motif witness was not materialized because Design1's
-overlapClusterMembershipCount definition conflicts with the recorded Ashen
-vectors: one overlap cluster cannot yield second-component values of 4.
-
-TA2-WIT-NEW-OPERATIONAL / CLAIM-P0 remains the degree-witness boundary.
-No objective, mapping optimization, Production, or ai-knowledge change was
-made. The selected next checkpoint is
-E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-MOTIF-RESPONSIBILITY-ENCODING-RECONCILIATION1.
+Detailed checkpoint evidence and dated disposition remain in [TA-2 operational witness reconstruction result](liaisonscape-initial-placement-seed-ta2-operational-witness-reconstruction1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-MOTIF-RESPONSIBILITY-ENCODING-RECONCILIATION1 (2026-09-02)
 
-The [TA-2 motif responsibility encoding reconciliation result](liaisonscape-initial-placement-seed-ta2-motif-responsibility-encoding-reconciliation1-result.md)
-records CASE 1 / DECISION A and classifies the seam as ENC-R1
-(audit derivation error). The authoritative o(V) meaning remains the count
-of derived motif-overlap clusters containing V; Ashen has one cluster, so the
-recorded second components that duplicate motifMembershipCount are superseded
-topology-only audit evidence. TA2-MOTIF-NEW-v1 itself is unchanged.
-
-The corrected topology-only vectors are frozen without creating a literal
-witness, mapping, hard gate, or objective result. TA2-degree remains unchanged
-at TA2W-MAN-5. The selected next checkpoint is
-E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-MOTIF-OPERATIONAL-WITNESS-RECONSTRUCTION1.
-No Production, sample, or ai-knowledge change was made.
+Detailed checkpoint evidence and dated disposition remain in [TA-2 motif responsibility encoding reconciliation result](liaisonscape-initial-placement-seed-ta2-motif-responsibility-encoding-reconciliation1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA2-MOTIF-OPERATIONAL-WITNESS-RECONSTRUCTION1 (2026-09-02)
 
-The [TA-2 motif operational witness reconstruction result](liaisonscape-initial-placement-seed-ta2-motif-operational-witness-reconstruction1-result.md)
-records CASE 1 / DECISION A. The corrected `TA2-MOTIF-NEW-v1` vectors were
-materialized as `TA2-MOTIF-W1-OP-v1` for Lighthouse, Ashen Crown, and K3.
-All three witnesses are deterministic under Entity/Relation input reorder,
-semantic rename transport passes, K3 remains one orbit, and all exact
-GEO-0/GEO-3 hard gates pass. Each reaches TA2W-MAN-5 with
-`TA2-WIT-NEW-OPERATIONAL` / `CLAIM-P0`.
-
-The complete safe TA2 witness set is Design3-ready. The selected next
-checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN3`.
-No objective run, Production, sample, or `ai-knowledge` change was made.
+Detailed checkpoint evidence and dated disposition remain in [TA-2 motif operational witness reconstruction result](liaisonscape-initial-placement-seed-ta2-motif-operational-witness-reconstruction1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN3 (2026-09-02)
 
-The [Design3 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design3.md)
-records CASE 1 / DECISION A. The four provenance-safe witness labels resolve
-to three exact geometry classes on Lighthouse, three on Ashen Crown, and one
-on K3. The frozen future matrix has 7 executed cells: 6 substantive
-geometry-class comparisons, including 2 Experiment2 regression cells and 4
-new TA2-motif cells, plus 1 K3 identity control.
-
-The maximum inference remains INF-W0/INF-W1; TA3 remains excluded, and no
-cross-fixture score or policy ranking is allowed. The selected next checkpoint
-is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT3`.
-No objective value, Production, sample, or `ai-knowledge` change was made.
+Detailed checkpoint evidence and dated disposition remain in [Design3 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design3.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT3 (2026-09-02)
 
-The [Experiment3 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment3-result.md)
-records CASE 1 / DECISION A. The 7-cell matrix completed cleanly: both
-Experiment2 regressions passed, all 4 new TA2-motif real-fixture cells
-produced valid literal-geometry relations, and the K3 identity control passed
-as `PP-PREF-EQUIVALENT`. The new relations are Lighthouse G0/G2
-`LEFT-DOMINATES-RIGHT`, Lighthouse G1/G2 `RIGHT-DOMINATES-LEFT`, Ashen G0/G2
-`PP-INCOMPARABLE`, and Ashen G1/G2 `RIGHT-DOMINATES-LEFT`.
-
-The maximum inference remains INF-W0/INF-W1. Aliases retain
-`evidenceMultiplicity=1`; no cross-fixture aggregation, ranking, policy
-selection, Production change, or FP1 conclusion is authorized. The selected
-next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-MANIFEST-RECOVERY1`.
-No runtime, sample, or `ai-knowledge` change was made.
+Detailed checkpoint evidence and dated disposition remain in [Experiment3 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment3-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-MANIFEST-RECOVERY1 (2026-09-02)
 
-The [TA-3 correspondence manifest recovery result](liaisonscape-initial-placement-seed-ta3-correspondence-manifest-recovery1-result.md)
-records `TA3-REC-1 / CASE 4 / DECISION D`. Git archaeology recovered the
-exact historical labels `TA-3-forward` and `TA-3-reverse` and the high-level
-RC-H2 diagnostic intent, but not an exact operational correspondence,
-tie/fallback semantics, or fixture-local Node-to-FP1 manifests. The historical
-Experiment1 scope includes Lighthouse, Ashen Crown, and K3, but no fixture is
-objective-eligible from this recovery.
-
-No TA3 objective value was calculated, and no Experiment2/3 result, later
-TA1/TA2 semantics, visual output, or residual artifact was used to backfill
-history. Any next TA3 contract must be explicitly NEW. The selected next
-checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-SEMANTICS-DESIGN1`.
-No Production, runtime, sample, or `ai-knowledge` change was made.
+Detailed checkpoint evidence and dated disposition remain in [TA-3 correspondence manifest recovery result](liaisonscape-initial-placement-seed-ta3-correspondence-manifest-recovery1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-SEMANTICS-DESIGN1 (2026-09-02)
 
-The [new TA-3 correspondence semantics design](liaisonscape-initial-placement-seed-ta3-correspondence-semantics-design1.md)
-records CASE 1 / DECISION A. This is explicitly a NEW operational semantic
-family, not historical replay. It selects one shared responsibility contract,
-`TA3-RESP-NEW-v1`, using the exact `R(V)=(m(V),o(V),s(V))` componentwise partial
-order by new normative reuse of `TA2-MOTIF-NEW-v1`; it does not backfill the
-historical TA3 record.
-
-It also selects one exact candidate-only local-spacing contract,
-`TA3-SPACE-NEW-v1` (SPACE-S1 mirrored local chord span), with exact integer
-monotonicity for `N>=3` and an explicit `N=2` tie boundary. Forward and reverse
-share responsibility, Node linearization, and spacing semantics, differing
-only by larger-versus-smaller spacing orientation. Future witnesses are
-reserved under `TA3-WIT-NEW-OPERATIONAL` / `CLAIM-P0`; no fixture mapping,
-objective, hard gate, Production, runtime, sample, or `ai-knowledge` change
-was made. The selected next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-OPERATIONAL-WITNESS-RECONSTRUCTION1`.
+Detailed checkpoint evidence and dated disposition remain in [new TA-3 correspondence semantics design](liaisonscape-initial-placement-seed-ta3-correspondence-semantics-design1.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-TA3-CORRESPONDENCE-OPERATIONAL-WITNESS-RECONSTRUCTION1 (2026-09-02)
 
-The [TA-3 operational witness reconstruction result](liaisonscape-initial-placement-seed-ta3-correspondence-operational-witness-reconstruction1-result.md)
-records CASE 1 / DECISION A. The new witnesses
-`TA3-FWD-W1-OP-v1` and `TA3-REV-W1-OP-v1` were materialized for Lighthouse,
-Ashen Crown, and K3 under `TA3-WIT-NEW-OPERATIONAL` / `CLAIM-P0`. All six
-cells are input-order deterministic, semantic-rename transport passes, K3
-remains one orbit, and every exact GEO-0/GEO-3 hard gate passes without
-remapping or repair; each reaches TA3W-MAN-5.
-
-Reverse is literally identical to TA2-motif on the three current fixtures,
-but remains semantically distinct by its NEW correspondence contract and
-provenance. Forward adds a literal mapping class on all three fixtures. This
-does not select a quality winner or Production assignment. Objective Design4
-is eligible next, with literal geometry deduplication and semantic-alias
-preservation required. No objective, runtime, sample, or `ai-knowledge`
-change was made.
+Detailed checkpoint evidence and dated disposition remain in [TA-3 operational witness reconstruction result](liaisonscape-initial-placement-seed-ta3-correspondence-operational-witness-reconstruction1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT-DESIGN4 (2026-09-02)
 
-The [Design4 specification](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design4.md)
-records CASE 1 / DECISION A. The six-label witness family recomputes to four
-Lighthouse geometry classes, four Ashen Crown classes, and two K3 classes.
-The 45 conceptual fixture-local pairs reconcile as 14 identity-implied pairs
-and 31 cross-class aliases, covered by 13 future executed class-pair cells:
-six Experiment3 regressions, six new real-fixture TA3-Forward cells, and one
-K3 orbit control.
-
-TA3-Reverse remains a provenance-visible alias of the TA2-motif geometry class
-without duplicated evidence; TA3-Forward is a new literal class on all three
-fixtures. Objective coverage and comparator semantics remain unchanged, with
-the inference ceiling at `INF-W0/INF-W1`. No objective was run, no Experiment4
-clone was created, and no Production, runtime, sample, or `ai-knowledge`
-change was made. The selected next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4`.
+Detailed checkpoint evidence and dated disposition remain in [Design4 specification](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment-design4.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4 (2026-09-02)
 
-The [Experiment4 preflight result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-result.md)
-records CASE 5 / DECISION E. Literal manifest recomputation passes Lighthouse
-`4/4` and K3 `2/2`, but Ashen Crown recomputes to `3` classes rather than the
-Design4-required `4`: `TA1/W1` and `TA3-FWD-W1-OP-v1` have the same exact
-Node-to-FP1 fingerprint. The mandatory geometry-class gate therefore failed
-before objective execution. Regression cells, K3 orbit-control, and all six
-new TA3-Forward cells were not run; no class relations, D4-INF0–3 evidence,
-winner, ranking, or Production selection was produced. `D4-INF4=true` and the
-maximum inference ceiling remains `INF-W1`. The selected next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-INTEGRITY-RECONCILIATION1`.
-No Production, runtime, sample, or `ai-knowledge` change was made.
+Detailed checkpoint evidence and dated disposition remain in [Experiment4 preflight result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-INTEGRITY-RECONCILIATION1 (2026-09-02)
 
-The [Experiment4 integrity reconciliation result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-integrity-reconciliation1-result.md)
-records CASE 1 / DECISION A. A derived identity-audit error was found in the
-previous TA3 result: Ashen Crown TA3 Forward and TA1/W1 use opposite row
-orders but have the same keyed Node-to-FP1 mapping. The literal witness tables,
-TA3W-MAN-5 gates, and GEO gates remain valid.
-
-The corrected geometry classes are Lighthouse 4, Ashen Crown 3, and K3 2.
-The 45 conceptual pairs therefore reduce to 15 identity-implied and 30
-cross-class aliases. The corrected future matrix has 10 cells: six
-Experiment3 regressions, three new Lighthouse TA3-Forward cells, and one K3
-orbit control. No objective was run, no witness was remapped, and no
-Production, runtime, sample, or `ai-knowledge` change was made. The next
-separately authorized checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-RERUN1`.
+Detailed checkpoint evidence and dated disposition remain in [Experiment4 integrity reconciliation result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-integrity-reconciliation1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-RERUN1 (2026-09-02)
 
-The [Experiment4 Rerun1 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-rerun1-result.md)
-records CASE 1 / DECISION A. The corrected preflight passed 4/3/2 geometry
-classes and 45/15/30/10 accounting. All six Experiment3 regressions matched;
-the K3 orbit control passed as `PP-PREF-EQUIVALENT`; and the three new
-Lighthouse TA3-Forward cells returned exact relations:
-`LEFT-DOMINATES-RIGHT`, `LEFT-DOMINATES-RIGHT`, and
-`LEFT-DOMINATES-RIGHT` for `G0-G3`, `G1-G3`, and `G2-G3` respectively.
-
-Ashen TA3-Forward remains a keyed geometry alias of TA1/W1 and generated no
-duplicate execution or evidence. `D4-INF0=false`, `D4-INF1=true`,
-`D4-INF2=false`, `D4-INF3=false`, and `D4-INF4=false`; the maximum inference
-remains `INF-W1`. No win counts, cross-fixture aggregation, ranking, winner,
-or Production selection was recorded. The next separately authorized
-checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-INTERPRETATION1`.
+Detailed checkpoint evidence and dated disposition remain in [Experiment4 Rerun1 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-rerun1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-OBJECTIVE-EXPERIMENT4-INTERPRETATION1 (2026-09-02)
 
-The [Experiment4 Interpretation1 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-interpretation1-result.md)
-records CASE 1 / DECISION A. Rerun1 is internally coherent: Lighthouse has
-all 6/6 class-pair relations and forms the fixture-local chain
-`G0 > G2 > G1 > G3`; Ashen has all 3/3 relations with `G0` and `G2`
-incomparable and both PP-maximal; K3 passes only as an orbit control.
-
-TA3 Forward adds substantive literal geometry only on Lighthouse in the
-current real-fixture set; on Ashen it aliases TA1/W1, and on K3 it is
-control-only. TA3 Reverse adds no new literal geometry. There are no UNKNOWN,
-INELIGIBLE, manifest, comparator, regression, or class-pair gaps. The current
-TA0–TA3 structural-assignment objective branch is current-scope saturated;
-Experiment5 is not justified by a specific unresolved question. The maximum
-inference remains `INF-W1`; no visual or Production conclusion is made. The
-next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-RESEARCH-SYNTHESIS1`.
+Detailed checkpoint evidence and dated disposition remain in [Experiment4 Interpretation1 result](liaisonscape-initial-placement-seed-structural-assignment-objective-experiment4-interpretation1-result.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-STRUCTURAL-ASSIGNMENT-RESEARCH-SYNTHESIS1 (2026-09-02)
 
-The [Research Synthesis1 result](liaisonscape-initial-placement-seed-structural-assignment-research-synthesis1-result.md)
-reconciles the TA0–TA3 structural-assignment lineage through the
-`INF-W0 / INF-W1` evidence ceiling. The current-scope branch is saturated:
-the bounded relation matrix is complete, the corrected Lighthouse/Ashen/K3
-topologies are recorded, and no specific unresolved same-level question
-justifies Experiment5.
-
-This is a research closure only. Hard-validity, fixture-local structural
-preference, visual quality, and Production acceptance remain separate layers.
-No universal winner, cross-fixture ranking, FP1 superiority, visual acceptance,
-or Production candidate selection is recorded. The remaining concrete
-pre-Production responsibility is to freeze auditable acceptance criteria. The
-next checkpoint is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-READINESS-DESIGN1`.
+**RESEARCH CLOSURE ONLY — FIXTURE-LOCAL; INF-W0 / INF-W1 CEILING.** The TA0–TA3 branch is saturated at current scope; no Experiment5 is justified. Hard-validity, fixture-local structural preference, visual quality, and Production acceptance remain separate; no universal winner, cross-fixture ranking, Production selection, or visual acceptance follows. Full synthesis and correction authority: [Research Synthesis1 result](liaisonscape-initial-placement-seed-structural-assignment-research-synthesis1-result.md). The dated Production Readiness next-step is a checkpoint snapshot; current sequencing remains in `Current Initial Layout / Parallel Presentation Coordination`.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-READINESS-DESIGN1 (2026-09-02)
 

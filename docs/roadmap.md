@@ -648,12 +648,10 @@ ACCEPTED. Their acceptance is recorded in
 items below are future planning context; they do not reopen either accepted
 checkpoint.
 
-1. **Hub scope and information architecture** — define the audiences, first
-   actions, application categories, links, sample flow, and the boundary
-   between the portal and each application's own Home page.
-2. **Static E2R landing page** — publish a small, fast top page explaining E2R,
-   linking the four current repositories/apps, and providing a clear starting
-   path for new users.
+1. **Hub scope and information architecture** — COMPLETE / ACCEPTED DESIGN;
+   see the [IA authority](e2r-hub-public-entry-point-information-architecture.md).
+2. **Static E2R landing page** — COMPLETE / MANUALLY ACCEPTED; see the
+   [acceptance record](e2r-hub-public-entry-point-milestone-2-acceptance.md).
 3. **Application catalog and status cards** — turn the application catalog into
    discoverable entries with purpose, maturity, supported capabilities, links,
    and explicit experimental/deferred labels.

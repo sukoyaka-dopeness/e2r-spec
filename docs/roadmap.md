@@ -40,7 +40,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 
 | Workstream | Current status | Authority / next decision |
 | --- | --- | --- |
-| Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable; [bounded baseline milestone outline consolidation](roadmap-baseline-milestone-outline-consolidation1-result.md) |
+| Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable; [bounded baseline milestone outline consolidation](roadmap-baseline-milestone-outline-consolidation1-result.md); [exploratory Suite heading consolidation](roadmap-exploratory-suite-heading-consolidation1-result.md) |
 | Roadmap chronology / planning-history compression | **BOUNDED EXTRACTIONS AND COMPRESSIONS RECORDED** | [history index](roadmap-history/README.md); [Roadmap slimming results](roadmap-slimming-migration1-result.md), [tranche 2](roadmap-slimming-migration2-result.md), and [Relative Time / Documentation IA snapshot compression](roadmap-relative-time-and-documentation-ia-snapshot-compression1-result.md); detailed history-migration results remain linked from their entries; this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
 | Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](roadmap-residual-responsibility-audit3.md); [audit 2](roadmap-residual-responsibility-audit2.md); [audit 1](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
@@ -863,12 +863,11 @@ only after the Dictionary/Semantic responsibility boundary is written down;
 otherwise a convenient lookup can accidentally become an unreviewed identity
 or meaning system.
 
-### E2R Suite - long-term milestone (EXPLORATORY / DISTANT / NOT ACTIVE)
-
 The [E2R Suite long-term research](../research/exploratory/e2r-suite-long-term-milestone.md)
-remains unscheduled, with no target version, date, or implementation order.
-It does not change the current active LiaisonScape Initial Placement
-checkpoint or authorize a Suite shell or new application.
+remains **EXPLORATORY / DISTANT / NOT ACTIVE**, unscheduled with no target
+version, date, or implementation order; it does not change the active
+LiaisonScape Initial Placement checkpoint or authorize a Suite shell or new
+application.
 
 ## Evidence gates for candidate Extensions
 

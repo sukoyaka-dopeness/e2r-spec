@@ -2288,7 +2288,12 @@ The audit's 2026-09-19 inventory found 613 files under `docs/` and an
 figures support revisiting the information architecture; they are not a
 structure decision or authorization to migrate files.
 
-#### Current Human-selected Documentation IA review direction (2026-09-24)
+#### Historical Human-selected Documentation IA review direction (2026-09-24)
+
+> Historical preparation-stage direction: the Human structure decision below
+> supersedes this section's statement that chronology separation is only a
+> candidate for the next decision. The evidence and prior-audit history here
+> remain unchanged.
 
 The next Documentation IA structure decision will review roadmap length and
 the flat `docs/` root together as one information-architecture workstream.
@@ -2314,13 +2319,29 @@ be considered, but their boundaries are not selected. The `docs/` flat-root
 organization and roadmap length are to be evaluated together, not treated as
 unrelated cleanup tasks.
 
-This updates the *sequencing and questions for the next Human structure
-decision*, not the structure itself. The prior audit's single-roadmap and
-existing-path recommendation is retained as historical evidence, while the
-upcoming decision is explicitly to reconsider whether one roadmap remains
-appropriate and whether chronology should be separated first. No directory
-structure, archive location, split unit, compatibility-link policy, or
-migration is approved here.
+At the time, this updated the sequencing and questions for a future Human
+structure decision; it did not select a structure. The prior audit's
+single-roadmap and existing-path recommendation remains historical evidence.
+
+#### Current Human-selected Roadmap-first structure direction (2026-09-24)
+
+The Human selected the Roadmap-first direction recorded in [Documentation IA
+/ Roadmap Physical Modularization Direction Decision 1](documentation-ia-roadmap-physical-modularization-direction-decision1.md).
+Keep `docs/roadmap.md` as the concise current-planning entry point and
+physically separate completed, superseded, and historical chronology while
+retaining it as evidence. Detailed checkpoint authority/evidence stays in its
+dedicated documents and should be linked rather than duplicated. Issue-per-file
+modularization is not the default.
+
+The selected scope is roadmap planning/chronology responsibility separation
+and the reference integrity needed for that separation. The next step is a
+bounded implementation-preparation / migration-gate review. The chronology's
+destination, file count and division, directory creation, anchor/link plan,
+and any physical moves remain unselected and require Human review before
+implementation. The `docs/` flat-root issue remains a separate future IA
+checkpoint; no general taxonomy or relocation of existing docs is selected.
+No split, move, rename, delete, archive migration, or link rewrite is
+authorized by this direction.
 
 #### Current Relative Time atomic-semantics status after Human adoption (2026-09-24)
 

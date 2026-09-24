@@ -493,3 +493,21 @@ superseded, and historical chronology from current roadmap planning. The
 flat `docs/` root and roadmap length are assessed together; issue-per-file
 proliferation is not the default. No split, directory layout, archive target,
 move, rename, or migration has been selected or started.
+
+### Documentation IA Roadmap-first structure direction — 2026-09-24
+
+The Human selected the Roadmap-first direction in [Documentation IA / Roadmap
+Physical Modularization Direction Decision 1](../docs/documentation-ia-roadmap-physical-modularization-direction-decision1.md),
+using the preceding [decision-preparation record](../docs/documentation-ia-roadmap-physical-modularization-decision-preparation1.md)
+as comparison evidence. Keep `docs/roadmap.md` as a concise current-planning
+entry point; retain detailed checkpoint evidence in its dedicated records;
+and separate completed/superseded/historical chronology from current planning
+without deleting or reinterpreting that evidence. Issue-per-file growth is
+not the default.
+
+The next checkpoint is bounded implementation-preparation / migration-gate
+review. Chronology destination and partition, file/directory layout, anchor
+and link migration, and any physical operation remain undecided and require
+Human review. The `docs/` flat-root taxonomy remains a separate later
+checkpoint. No roadmap split, move, rename, deletion, archive migration, or
+link rewrite has been performed or authorized.

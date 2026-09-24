@@ -68,7 +68,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | Roadmap chronology / slimming tranches 1–2 | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
-| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; PERSONAL STORAGE, GAMEBOOK, AND OSINT POINTERS COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); other mixed groups remain unchanged; current execution order is unchanged |
+| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; PERSONAL STORAGE, GAMEBOOK, OSINT, AND HOST-AUTHORITY POINTERS COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -3629,21 +3629,15 @@ Host Authority and External Dataset research remain separate.
 
 ### E2R-WEB-VSCODE-HOST-AUTHORITY-RESEARCH1 (2026-09-10)
 
-The exploratory [E2R Web / VS Code Host Authority research](../research/exploratory/e2r-web-vscode-host-authority.md)
-records a distinct cross-application hosting boundary for NarrativeLine and
-LiaisonScape. E2R-SPEC remains the Dataset/interoperability authority; shared
-Product source remains the implementation authority; the Web build remains a
-first-class public, portable surface; and a possible VS Code host remains a
-future workspace-integrated surface. Browser lifecycle and VS Code
-document/workspace lifecycle are treated as host responsibilities, while
-host-independent Product semantics should be shared where practical.
-
-No VS Code extension, Webview, Custom Editor, package boundary, desktop
-framework, schema, storage engine, or deployment architecture was selected or
-implemented. The existing OSINT workbench and Gamebook extension research
-remain separate. This is exploratory research only; no Product, Dataset,
-Handoff, Fresh lineage, release, deployment, publication, or `ai-knowledge`
-change was made.
+**EXPLORATORY / FUTURE DIRECTION — NOT AN ACCEPTED ARCHITECTURE OR ACTIVE
+IMPLEMENTATION.** The research preserves the distinction between E2R-SPEC's
+Dataset/interoperability authority, shared Product source, the first-class Web
+surface, and a possible future VS Code host; exact host, package, runtime, and
+deployment choices remain unselected. No extension, Webview, Custom Editor,
+schema, or implementation is authorized. See the [E2R Web / VS Code Host
+Authority research](../research/exploratory/e2r-web-vscode-host-authority.md)
+for the responsibility model, alternatives, risks, open questions, and
+conditional research sequence if the direction is separately reopened.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-FAMILY-ASSIGNMENT-EXPERIMENT-SEAM1 (2026-09-02)
 

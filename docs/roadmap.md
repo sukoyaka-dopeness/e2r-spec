@@ -1078,17 +1078,17 @@ Dataset acquisition is not assigned to right-click context menus.
 
 ### NarrativeLine Workspace More acceptance — 2026-08-25
 
-**ACCEPTED / COMPLETE.** Workspace More contains Open E2R Dataset and Export E2R JSON; Add Event remains the visible primary editing action. Home-first acquisition remains canonical, Workspace Open is secondary, and LiaisonScape parity remains deferred. TimelineScreen owns local picker/read/loading behavior; App owns parsing, validation, replacement safety, and acceptance. Native picker/touch boundaries remain manual. Detailed evidence: [Session 0049](../sessions/E2R-Session-0049.md) and the [modernization authority](../research/exploratory/liaisonscape-workspace-modernization-audit.md).
+**ACCEPTED / COMPLETE.** Add Event remains primary; Open and Export are secondary actions. Home-first acquisition remains canonical, and LiaisonScape parity remains deferred under the current [Home-first direction](#home-first-dataset-acquisition-hierarchy). Native picker and real-touch acceptance remain outside the recorded browser acceptance. Detailed checkpoint evidence is preserved in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#narrativeline-workspace-more-acceptance-2026-08-25) and [modernization authority](../research/exploratory/liaisonscape-workspace-modernization-audit.md).
 
 ### NarrativeLine Timeline Back-to-Top acceptance — 2026-08-25
 
-**ACCEPTED.** Back-to-Top remains a transient Timeline navigation affordance; Add Event is primary and More remains the terminal secondary-action container. Detailed implementation and manual-acceptance evidence is preserved in Roadmap History and the [NarrativeLine next-phase result](e2r-narrativeline-next-phase-and-source-handoff-planning1-result.md).
+**ACCEPTED.** Back-to-Top is a transient Timeline navigation affordance; Add Event remains primary and More the terminal secondary-action container. Detailed behavior and acceptance evidence is preserved in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#narrativeline-timeline-back-to-top-acceptance-2026-08-25) and [NarrativeLine next-phase result](e2r-narrativeline-next-phase-and-source-handoff-planning1-result.md).
 
 ## Active follow-up ledger — 2026-08-25
 
 ### LiaisonScape LS-M2A acceptance — 2026-08-25
 
-**ACCEPTED / COMPLETE.** Workspace action hierarchy and More interaction are application-local; Open/Export are secondary and Dataset Replacement Safety was preserved. Detailed breakpoint, keyboard, and acceptance evidence is in [Session 0049](../sessions/E2R-Session-0049.md) and the [modernization authority](../research/exploratory/liaisonscape-workspace-modernization-audit.md). Current deferred items and priority remain in their current Roadmap entries; the dated next-step statement is historical.
+**ACCEPTED / COMPLETE at the application-local boundary.** Open/Export remain secondary, and Dataset Replacement Safety is preserved. This does not establish cross-app parity; current deferrals and follow-ups remain in the entries below. Detailed scope and acceptance evidence is preserved in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#liaisonscape-ls-m2a-acceptance-2026-08-25) and [modernization authority](../research/exploratory/liaisonscape-workspace-modernization-audit.md). The dated next-step sequence is historical.
 
 ### Current execution order
 
@@ -1137,9 +1137,12 @@ is reserved for a future Dataset-level information/inspection surface.
 
 ### LiaisonScape modernization ledger
 
-- **Workspace action hierarchy — audit needed / Cross-app:** evaluate Open
-  Dataset and Export E2R JSON under visible `More / その他`; Home-first
-  acquisition remains canonical and workspace access remains secondary.
+- **Workspace action hierarchy — app-local checkpoints accepted; conceptual
+  cross-app secondary-access parity deferred:** NarrativeLine Workspace More
+  and LiaisonScape LS-M2A are recorded as accepted at their application-local
+  boundaries above. The old “audit needed” label is superseded; retain the
+  [Home-first direction](#home-first-dataset-acquisition-hierarchy) and its
+  deferral boundary without reopening either accepted checkpoint.
 - **Dataset title editing — LS follow-up:** evaluate prominent top-level
   Workspace title editing. NarrativeLine retains top-level title editing;
   title is primary Dataset identity/presentation, not a More action.

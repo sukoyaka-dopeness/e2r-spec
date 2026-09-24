@@ -745,3 +745,138 @@ recipient parity remains accepted by Handoff11. Hub and ai-knowledge were
 untouched. Cross-App Relation deletion remains CLOSED. Generic capability
 discovery, `relation.delete` emission from NarrativeLine, presentation work,
 and future capability expansion remain separate and deferred.
+
+## Pre-release and LiaisonScape 0.2.0 release preparation chronology
+
+The following five complete roadmap blocks were transferred from the bounded
+pre-release / release-preparation sequence in `docs/roadmap.md` at source
+commit `9cd1c3eebdfc7133458fd8d64a56fe6aa207b228`. Source wording, dates,
+status language, block order, and provenance are preserved verbatim below.
+All `current`, `next`, `blocked`, and `unauthorized` language describes its
+dated snapshot, not current planning authority. See the current roadmap status
+index and current Initial Layout coordination section for current state.
+
+### PRE-RELEASE-VALIDATOR-AND-SEQUENCING-ROADMAP-SYNC1 (2026-08-29)
+
+The remaining pre-release path is now synchronized around a mandatory
+production Validator checkpoint. This is a roadmap record only; it does not
+implement Validator behavior, node placement, sample refresh, application
+version changes, or deployment.
+
+Before Public Sample Dataset Refresh can be accepted, production Validator
+integration and acceptance MUST cover the Presentation Extension Draft
+`draft.github.sukoyaka-dopeness.liaisonscape-presentation`, version `0.1.0`:
+
+* `arrowDisplay`: known `normal`, `reverse`, `undirected`, and
+  `bidirectional` values.
+* `lineStyle`: known `solid`, `dashed`, and `dotted` values.
+* Unknown non-empty future tokens for both properties remain forward
+  compatible: they must not make an otherwise valid payload fail solely for
+  being unknown, and must remain preservable at the accepted boundary.
+* Malformed payloads, including invalid types, empty tokens, and invalid
+  structural shapes, must be rejected or reported at the appropriate
+  Validator boundary without weakening Core validation.
+* Core-only datasets remain unaffected, and unknown unrelated Extensions
+  remain safely ignorable/preservable according to the Extension rules.
+* Orphan Relation-ID Presentation records require an explicit semantic
+  validation decision about diagnostic severity and boundary. That question
+  remains open here; this sync does not decide orphan behavior.
+
+Node automatic placement remains a separate Layout/placement responsibility.
+Before the Validator checkpoint is complete, the project must determine
+whether placement uses the existing Coordinate/Layout serialization or
+introduces or changes a serialized contract. This sync assumes neither
+outcome and chooses no placement algorithm or serialization. If placement
+does introduce or change serialized data, its schema and Validator coverage
+must be included before Public Sample Dataset Refresh; if it remains entirely
+within existing valid serialization, the Presentation Validator scope stays
+independent.
+
+The remaining release sequence is:
+
+1. Design, implement, and accept node automatic placement.
+2. Resolve any resulting Coordinate/Layout serialization and schema
+   implications. **CLOSED 2026-08-30:** the accepted automatic placement
+   implementation introduces no new serialized contract, schema, or Validator
+   work; see [Automatic Placement Serialization Impact](../liaisonscape-automatic-placement-serialization-impact-result.md).
+3. Complete the separate Presentation lifecycle cleanup, including removal
+   of a deleted Relation ID's Presentation record where appropriate.
+4. Integrate and accept production Validator coverage for the release-
+   relevant Extensions, including any newly serialized placement contract.
+5. Refresh and accept the Public Sample Dataset only after the Validator
+   checkpoint passes. Eventual acceptance also requires LiaisonScape
+   open/render/edit smoke coverage, NarrativeLine open/round-trip coverage,
+   Extension preservation, Hub/Handoff evidence, and license, credits, and
+   sample-metadata checks.
+6. Run the cross-application and release integration audit.
+7. The LiaisonScape application version decision is now recorded as
+   `0.2.0`. The current metadata remains `0.1.0`; the actual bump is deferred
+   to bounded release preparation. See
+   `docs/liaisonscape-application-version-decision.md`.
+8. Run the final pre-public-release audit.
+9. Obtain explicit authorization before any push or deployment.
+10. Perform public deployment acceptance only after that authorization.
+
+Lighthouse Restoration remains a later Public Sample Dataset workstream. It
+does not authorize adding Relations or inferring Relations between mojibake
+sample names. The completed Relation Arrow display work, Relation Line style
+work, and LiaisonScape Credits locale-parity work remain closed and are not
+reopened by this sequencing record. The existing application modularization
+and repository boundaries remain in force.
+
+### E2R-LIAISONSCAPE-0.2.0-RELEASE-PREPARATION1 (2026-08-30)
+
+The bounded LiaisonScape application release preparation is complete locally.
+Application metadata and Credits now identify `0.2.0`; the First Distribution
+provenance date `2026-08-16` remains preserved, and the update metadata date is
+`2026-08-30`. The README now reflects Validator `0.4.0` and the `0.2.0`
+release-candidate state.
+
+This preparation changes no Dataset, Core, Extension, schema, Handoff,
+Validator, Coordinate, Presentation, DOM-package, or dependency version. The
+application remains `private: true`. Tagging, GitHub Release, deployment, and
+public acceptance remain separate later actions requiring explicit
+authorization.
+
+### E2R-PRE-RELEASE-ROADMAP-PLACEMENT-ORDER-LICENSE-RECORD1 (2026-08-30)
+
+The current pre-public-release authority now supersedes the sequencing details
+above while retaining them as historical records. LiaisonScape 0.2.0 remains
+blocked on repository-owned `LICENSE`/`LICENSE.md` remediation; this checkpoint
+does not add that file. The bounded audits and active sequence are recorded in
+[Pre-Public-Release Placement, Display-Order, and License Sequencing](../pre-public-release-placement-order-license-sequencing.md).
+
+The active order is license remediation, Initial Node Placement Objective Audit,
+NarrativeLine Display-Order Reordering Audit, result-driven samples and release
+evidence, Final Pre-Public-Release Audit, and—only if READY and explicitly
+authorized—public sync, tag, GitHub Release, deployment, and public acceptance.
+Neither audit authorizes Core, History, schema, or runtime implementation;
+Research shelf inventory and the Hub concept page remain separate workstreams.
+
+### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-OBJECTIVE-AUDIT1 (2026-08-30)
+
+The Initial Node Placement Objective Audit is recorded in [LiaisonScape Initial Node Placement Objective Audit](../liaisonscape-initial-node-placement-objective-audit.md).
+The result is `SAMPLE REFRESH REQUIRED - INITIAL PLACEMENT ALGORITHM
+ACCEPTABLE`: both Lighthouse Restoration samples contain stored coordinates
+for all 10 Entities, so Dataset open does not exercise the missing-coordinate
+placement path. The observation therefore does not establish that the
+placement algorithm is the primary cause.
+
+The next bounded activity is a stored-versus-derived diagnostic comparison and
+sample-coordinate refresh decision. No runtime, schema, Coordinate, Core,
+Extension, sample, or release operation was authorized by this audit. The
+NarrativeLine Display-Order audit remains next in the pre-release sequence.
+
+### E2R-LIAISONSCAPE-LICENSE-REMEDIATION1 (2026-08-30)
+
+The LiaisonScape repository-owned MIT license blocker is now remediated. The
+root `LICENSE` uses `Copyright (c) 2026 sukoyaka-dopeness`; `package.json`,
+`package-lock.json`, and README are synchronized. The evidence is recorded in
+[LiaisonScape License Remediation Result](../liaisonscape-license-remediation-result.md).
+
+This closes only the license checkpoint. LiaisonScape remains `0.2.0` and
+`private: true`; runtime, Dataset, sample, Core, Extension, and specification
+licensing boundaries are unchanged. Initial Node Placement Objective Audit is
+now next, followed by the NarrativeLine Display-Order Reordering Audit. The
+Final Pre-Public-Release Audit has not been rerun, and public release remains
+unauthorized.

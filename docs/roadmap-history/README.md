@@ -13,9 +13,11 @@ not a second planning authority. Statements such as `current`, `next`, or
   not the default destination for unlimited future additions.
 - [Release and Cross-App chronology](release-and-cross-app-chronology.md)
   preserves the first tranche's superseded release, shell, and locale-readiness
-  snapshots plus the second tranche's completed Cross-App Relation Deletion
-  and capability-Handoff progression. Original dated status language remains
-  historical; current capability status remains in the roadmap.
+  snapshots, the bounded pre-release / LiaisonScape 0.2.0 release-preparation
+  sequence, and the second tranche's completed Cross-App Relation Deletion and
+  capability-Handoff progression. The [pre-release chronology](release-and-cross-app-chronology.md#pre-release-and-liaison-scape-020-release-preparation-chronology)
+  preserves its original dated status language; current release and capability
+  status remain in the roadmap.
 - [LiaisonScape Layout and Auto Layout chronology](liaisonscape-layout-and-auto-layout-chronology.md)
   preserves selected completed Automatic Display and Explicit Auto Layout
   implementation/acceptance progression. Current Human Check B qualification,

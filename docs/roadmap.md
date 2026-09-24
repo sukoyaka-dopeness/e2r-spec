@@ -321,19 +321,11 @@ public release:
 
 ### Multidimensional History / Temporal Perspectives
 
-The exploratory [E2R Multidimensional History and Temporal Perspectives](../research/exploratory/e2r-multidimensional-history-temporal-perspectives.md)
-research examines multiple scoped temporal values and orderings over the same
-Event set, including recorded chronology, experience/recollection order,
-publication/acquisition chronology, partial order, and 1D/2D/3D projections.
-It preserves current `temporalOrder` semantics, keeps semantic dimensions
-separate from visual projection, and remains `EXPLORATORY / NOT ACTIVE`.
-No schema, Core, Extension, NarrativeLine, LiaisonScape, or implementation
-change follows from this research. The 2026-09-18 design addendum also keeps
-recorded position, precedence, offsets, durations, and scoped perspectives
-distinct; it selects no common payload or ownership model. The same addendum
-records a future Temporal Frame hypothesis for shared-origin coordinates,
-including wide-range precision and serialization as research requirements;
-it does not select an origin or coordinate representation.
+**EXPLORATORY / NOT ACTIVE.** The [dedicated research](../research/exploratory/e2r-multidimensional-history-temporal-perspectives.md)
+preserves current `temporalOrder`, separates temporal semantics from visual
+projection, and leaves any common payload/model and Temporal Frame
+representation unselected. No schema, application, or implementation change
+is authorized; active Initial Placement priority is unchanged.
 
 ### Causal order, Relative Time, and undated Event placement
 

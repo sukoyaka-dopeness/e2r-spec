@@ -68,7 +68,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | Roadmap chronology / slimming tranches 1–2 | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
-| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; SEED RESEARCH AND PR-2 NONVISUAL LINEAGES POINTER-COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
+| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; SEED RESEARCH, PR-2, AND PR-3 PRE-BROWSER PREPARATION LINEAGES POINTER-COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -3671,718 +3671,85 @@ The validated bounded compatibility evidence and its limitations remain in the [
 This does not select a candidate or establish a Production provider, Product adoption, Production integration, or visual acceptance; no candidate is selected and `PR-C3` through `PR-C5` remain `NO`. Compatibility evidence and candidate selection remain separate. The realistic fixture ROLE GAP remains open for later stages. PR-3 visual/settling/routing and subsequent integration evidence are separate, unaccepted scopes; see the [PR-3 evidence design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-design1-result.md) for their current contract and status.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-DESIGN1 (2026-09-03)
-
-The [visual, settling, and routing evidence design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-design1-result.md)
-records `CASE 1 / DECISION A`: the PR-3 evidence contract is frozen without
-executing visual acceptance. PR-2 remains `COMPLETE-BOUNDED`; PR-3 remains
-`NO`. The design separates candidate seed output from Product settling,
-routing, labels, viewport fit, and browser rendering, and freezes V0-V3
-ablation, observable visual criteria, downstream failure attribution, review,
-and provenance contracts. `E-VIEWPORT` and `E-PERFORMANCE` are classified as
-separate post-PR3 evidence, not assumed PR-3 gates.
-
-The common realistic fixture ROLE GAP remains open: high-fanout, sparse, dense,
-realistic symmetry, and realistic larger-size roles require committed fixture
-authority and validation. K3 remains control-only and N=65 remains a
-synthetic boundary control. No candidate is ranked or selected, no Production
-integration is made, and no screenshots are produced. The exact next
-prerequisite is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-FIXTURE-ROLE-ACQUISITION-DESIGN1`,
-which is selected only and not started.
+The frozen PR-3 visual/settling/routing evidence contract remains in [visual, settling, and routing evidence design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-design1-result.md). It is a preparation contract, not visual acceptance or PR-3 completion; PR-2 remains a separate COMPLETE-BOUNDED input.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-FIXTURE-ROLE-ACQUISITION-DESIGN1 (2026-09-03)
-
-The [fixture-role acquisition design result](liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition-design1-result.md)
-records `CASE 2 / DECISION A`: all 17 committed Dataset paths across
-e2r-spec, LiaisonScape, NarrativeLine, and Hub were audited from committed
-bytes under `FIXTURE-SELECTION-BLIND-v1`. Existing realistic ordinary and
-motif-rich authorities remain frozen; high-fanout, sparse, dense, realistic
-symmetry, and realistic larger-size remain role gaps. K3 remains control-only,
-and EN/JA files are presentation variants of structural fixtures rather than
-additional roles.
-
-The result freezes `VSR-FIXTURE-AUTHORITY-v1`, the role matrix, Product-visible
-routing/label coverage, locale policy, future manifest shape, and the
-candidate-blind acquisition/authoring contract. No fixture bytes were
-modified, no candidate materializer or visual/browser harness was run, no
-screenshots were produced, and no candidate was ranked or selected. PR-2
-remains `COMPLETE-BOUNDED`; PR-3 remains `NO`; the common corpus is
-`CORPUS-INCOMPLETE`.
+The acquisition contract and then-incomplete corpus snapshot remain in [fixture-role acquisition design result](liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition-design1-result.md); the later acquisition result below is authoritative for the resulting corpus status.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-FIXTURE-ROLE-ACQUISITION1 (2026-09-03)
-
-The [visual fixture role acquisition result](liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition1-result.md)
-records the additive formal reconciliation of Design1 as `CASE 2 / DECISION B`.
-The corrected inventory wording is “four repositories audited; 16 tracked
-Dataset paths inventoried; Hub contained no tracked Dataset”; the historical
-Design1 entry is not rewritten. The five missing realistic roles were
-candidate-blindly briefed and acquired as three coherent structural fixtures
-with EN/JA variants: `regional-care-coordination` (`high-fanout` and
-`larger-size`), `district-solar-cooperatives` (`sparse` and `realistic-symmetry`),
-and `regional-emergency-response` (`dense`). Existing ordinary and motif-rich
-authorities remain frozen, and no existing fixture was newly promoted.
-
-Commit A is `4d59010d8c13886c188d89a8b4c6c839e75f26e6`
-(`testdata: add LiaisonScape visual role fixtures`). The immutable role
-manifest is `docs/evidence/visual-fixture-role-manifest-v1.json`. All six new
-Datasets validate, EN/JA structures are equivalent, and the common realistic
-corpus is `CORPUS-COMPLETE`. `K3_CONTROL = PRESENT` and
-`REALISTIC_ROLE = NO`. The acquisition result is `CASE 1 / DECISION A`:
-the common corpus is frozen, PR-3 remains `NO`, no candidate materialization,
-comparison, screenshots, browser review, selection, or Production integration
-was performed. The exact next prerequisite is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-EXECUTION1`.
+Current corpus status: CORPUS-COMPLETE; PR-3 remains unestablished. Role assignments and provenance are recorded in [visual fixture role acquisition result](liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition1-result.md). Corpus completion alone is not candidate materialization, visual acceptance, or PR-3 completion.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-HARNESS-DESIGN1 (2026-09-03)
-
-The [visual evidence harness design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-harness-design1-result.md)
-records the additive reconciliation of Acquisition1's skipped seam. The
-Acquisition1 Decision A remains unchanged; its `EXECUTION1` next pointer is
-`DEFERRED / NOT YET ELIGIBLE`, and this Harness Design1 identifier is the
-corrected next prerequisite.
-
-The frozen input is the `CORPUS-COMPLETE` role manifest with 8 structural
-fixtures and 16 EN/JA presentation variants. The planned matrix is 80
-candidate/presentation cells, with 240 V0–V3 stage records after structural
-V0/V1 deduplication; B0/B1 diagnostic coverage is 40 records. Multi-role
-fixtures execute once per candidate/locale/stage and role results reference
-the shared artifact.
-
-The source audit found pure importable graph/route/label helpers, but current
-`settleInitialPlacement`/`solveAutoLayout` accept no explicit V0 seed, while
-App-owned routing orchestration, manual state, and SVG/CSS rendering have no
-stable isolated seam. This is `S-H3`; `VSR-SEED-ADAPTER-v1` is required. The
-target architecture is a disposable H-B Vite/browser entry with an H-D-style
-wrapper in the detached clone at
-`experimental/production-candidate-materialization/visual-evidence-harness/`,
-but implementation is deferred until the Product/evaluation seam is designed.
-The canonical capture viewport is `PR3-CAPTURE-VIEWPORT-v1` at 1280×900 CSS px,
-DSF 1, browser zoom 100%, with logical SVG viewBox 800×500.
-
-This checkpoint is `CASE 2 / DECISION B`: no harness implementation, candidate
-execution, V0–V3 evidence, screenshots, browser review, candidate selection, or
-Production integration occurred. PR-3 remains `NO`. The exact next prerequisite
-is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-DESIGN1`.
+The initial harness contract and its design-blocked disposition remain in [visual evidence harness design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-harness-design1-result.md); the later implementation result records the bounded harness candidate status.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-DESIGN1 (2026-09-03)
-
-The [Product evaluation seam design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-design1-result.md)
-records CASE 1 / DECISION A and Product modularization PARTIAL. Reliable future
-PR-3 evidence requires a Product-owned explicit-seed settling kernel and a
-layered pure automatic route/label derivation boundary. The design keeps
-manual state, reconciliation, Dataset lifecycle, interaction, and SVG
-composition App-owned; no render-component extraction is authorized now
-(P-A). Product modules remain candidate-, TA-, manifest-, and harness-blind.
-
-The design freezes PES-SETTLING-v1, PES-ROUTING-v1, PES-LABEL-v1,
-PES-RENDER-v1, PES-ISOLATION-v1, and PRODUCT-SEAM-EQUIVALENCE-v1. Exact
-characterization must precede refactoring, with exact numeric equality and
-arithmetic-order preservation for default behavior. The preferred future
-workspace is a new disposable clone based at accepted source commit
-fd563340625fd3d88dc25baedc93c4f8fe69e5e7; the retained materializer clone
-remains unchanged.
-
-No Product implementation, harness implementation, candidate materialization,
-V0-V3 execution, screenshot/browser review, comparison, ranking, selection,
-Production integration, fixture change, or PR-3 claim was made. PR-2 remains
-COMPLETE-BOUNDED, PR-3 remains NO, and the exact next prerequisite is the
-not-started
-E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1A.
+Product modularization was explicitly partial: the Product-owned pure evaluation seams remained distinct from App-owned lifecycle, manual state, and interaction. The detailed equivalence and isolation contract remains in [Product evaluation seam design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-design1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1A (2026-09-03)
-
-The [Implementation1A characterization result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1a-result.md)
-records CASE 3 / DECISION C. The new W-C clone captured 38 auto-layout
-baseline cases, 9 pure routing cases, 8 pure label cases, and 16 App
-automatic routing/label DOM records from immutable fixture bytes. Exact
-in-process replay and fresh-process auto-layout replay pass. Product source
-and package files remain unchanged.
-
-Characterization found a frozen-invariant conflict before refactoring:
-Node-array reversal is exact for 16/16 fixture variants, while Relation-array
-reversal is exact for only 2/16; 14/16 have IEEE-754-level coordinate changes
-from the current adjacency accumulation order. The behavior is recorded
-without tolerance, rounding, normalization, or Product repair. Therefore
-characterization artifacts are complete, but the checkpoint is BLOCKED before
-IMPLEMENTATION1B. No candidate execution, V0-V3 evidence, screenshot, browser
-review, selection, Production integration, or PR-3 claim occurred.
-
-The exact next prerequisite is the not-started
-E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CONFLICT-RESOLUTION1.
+Detailed checkpoint evidence and dated disposition remain in [Implementation1A characterization result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1a-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CONFLICT-RESOLUTION1 (2026-09-03)
-
-The [Relation-order conflict resolution result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-conflict-resolution1-result.md)
-records CASE 2 / Decision B. E2R Core collection order is non-semantic, and
-LiaisonScape's existing exact “ignores relation order” test establishes the
-intended Product behavior. The accepted `fd563340...` implementation retains
-Relation insertion order in adjacency Sets used by floating-point settling, so
-the current sensitivity is classified as incidental numeric order sensitivity,
-not accepted layout semantics.
-
-Implementation1A baseline v1 artifacts are preserved as historical pre-order-
-resolution evidence. A separately authorized Product correction must establish
-canonical locale-independent Relation/neighbor order and a post-correction
-baseline v2 before Implementation1B settling extraction can resume. No Product
-source, tests, fixtures, baseline, harness, candidate, V0-V3, screenshot,
-browser review, selection, Production integration, or PR-3 claim was made.
-The exact smallest next prerequisite is the not-started
-E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-IMPLEMENTATION1.
+Detailed checkpoint evidence and dated disposition remain in [Relation-order conflict resolution result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-conflict-resolution1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-IMPLEMENTATION1 (2026-09-03)
-
-The [order canonicalization implementation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-implementation1-result.md)
-records CASE 1 / Decision A. The W-C correction candidate
-`d7271f5bc2c56d6ae7d46992140dc9cc165ecfee` replaces incidental adjacency-Set
-iteration with one-time canonical Unicode code-point neighbor ordering and
-adds focused exact permutation/comparator coverage. Immutable fixture replay
-passes Relation reversal 16/16, Node reversal 16/16, and no-mutation 16/16
-for both `solveAutoLayout` and `settleInitialPlacement`; full Product tests pass
-283/283 with lint and build.
-
-Historical baseline-v1 remains byte-identical. Twelve of 38 in-memory
-auto-layout cases intentionally change by at most
-`5.684341886080802e-14`; topology and component membership do not change, and
-baseline-v2 is not generated. The correction remains a local unpushed
-candidate; accepted Product authority remains `fd563340...`, IMPLEMENTATION1B
-remains blocked, and PR-3 remains NO. The exact smallest next prerequisite is
-the not-started
-E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-ADOPTION1.
+Detailed checkpoint evidence and dated disposition remain in [order canonicalization implementation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-implementation1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-ADOPTION1 (2026-09-03)
-
-The [order canonicalization adoption result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-adoption1-result.md)
-records CASE 1 / Decision A. The validated W-C correction was transferred into
-live Production and committed as `0937d7768136ff63e74924480551d370b2935c2e`
-(`fix: canonicalize layout neighbor order`), with parent historical authority
-`fd563340625fd3d88dc25baedc93c4f8fe69e5e7`. The two Product files match the W-C
-candidate byte-for-byte; Product tests pass 283/283, focused permutation and
-immutable fixture diagnostics pass, and lint/build/diff-check pass.
-
-The new Product commit is the CURRENT ACCEPTED PRODUCT SOURCE AUTHORITY for the
-next checkpoint. Historical `fd563340...` and baseline-v1 remain preserved;
-W-C remains unchanged at `d7271f5...`; the materializer remains detached at
-historical `fd563340...`; and the existing dirty EN/JA sample files remain
-unchanged. Baseline-v2 is not generated, Implementation1B remains blocked,
-PR-3 remains NO, and no candidate materialization, V0-V3, selection, or
-publication occurred. The sample-coordinate authoring follow-up is unchanged.
-
-The exact next prerequisite is the not-started
-E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-BASELINE2.
+Detailed checkpoint evidence and dated disposition remain in [order canonicalization adoption result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-adoption1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-BASELINE2 (2026-09-03)
-
-The [post-correction baseline-v2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-baseline2-result.md)
-records CASE 1 / Decision A. Adoption1 final-state reconciliation is recorded
-additively: its stale pending-documentation sentence is only a pre-finalization
-snapshot; Adoption1 commit `a5348e742b7f8939c13fa0d34eaf9c192178829e` was
-validated and clean, and its accepted Product authority remains
-`0937d7768136ff63e74924480551d370b2935c2e`.
-
-From a new exact-source clone, the same 38 auto-layout, 9 pure routing, 8 pure
-label, and 16+16 App records were reproduced. Baseline-v2 is frozen with
-auto-layout 12 changed / 26 unchanged and maximum delta
-`5.684341886080802e-14`; every auto-layout difference is
-`EXPECTED-ORDER-CORRECTION`. Pure routing and pure labels are exact. App
-routing changed in 2 records and App labels changed in 2 records; all are
-`UPSTREAM-POSITION-PROPAGATION`, with unexplained drift count 0.
-
-The v2 evidence commit is
-`324193eda5924d2c5f5d0e0cad8a92b64d2ea6a8`
-(`test: freeze LiaisonScape post-correction characterization`), based on
-`0937d776...`. Historical v1 remains unchanged, live Production remains
-unchanged apart from its two protected dirty samples, W-C remains at
-`d7271f5...`, and the materializer remains detached at historical
-`fd563340...`. No Product source, sample, candidate, V0-V3, or publication
-change occurred.
-
-Product-seam equivalence is not fully reconciled, Implementation1B remains
-blocked, PR-3 remains NO, and the exact next prerequisite is the not-started
-E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-EQUIVALENCE-RECONCILIATION1.
+Detailed checkpoint evidence and dated disposition remain in [post-correction baseline-v2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-baseline2-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-CHARACTERIZATION-ORDER-CANONICALIZATION-EQUIVALENCE-RECONCILIATION1 (2026-09-03)
-
-The [authority and equivalence reconciliation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-equivalence-reconciliation1-result.md)
-records CASE 1 / Decision A. The current Product authority is
-`0937d776...`; historical `fd563340...` remains the pre-order-correction v1
-authority, W-C `d7271f5...` remains correction provenance, and baseline2
-`324193e...` remains post-correction evidence only. `PRODUCT-SEAM-EQUIVALENCE-v1`
-is retained with the `POST-ORDER-RESOLUTION` profile and v2 is the exact future
-refactor target.
-
-The S-C settling boundary remains valid but is refined to a Product-owned
-kernel receiving a normalized layout graph and explicit initial positions, so
-canonical neighbor ordering is shared rather than duplicated or bypassed.
-Materializer source drift is `UNAFFECTED`: the retained fd materializer uses
-its own graph/FP1/rational implementation and does not import Product
-auto-layout. M-A is retained with later pre-PR-3 environment revalidation.
-
-Implementation1B entry gate is `PASS`. The future workspace policy is W4: a
-new clean disposable clone from `0937d776...` at the proposed
-`e2r-liaison-scape-product-evaluation-seam-implementation1b` path; it was not
-created here. The machine baseline does not define frozen curves during drag:
-automatic routes must recompute from current Node positions, while manual
-routes, direct Relation drag, and label follow remain App-owned.
-
-Implementation1B remains not started, PR-3 remains NO, and no Product,
-materializer, sample, candidate, or interaction change occurred. The exact
-next prerequisite is the not-started
-E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1B.
+Detailed checkpoint evidence and dated disposition remain in [authority and equivalence reconciliation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-characterization-order-canonicalization-equivalence-reconciliation1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1B (2026-09-03)
-
-The [Implementation1B settling-kernel refactor result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1b-result.md)
-records CASE 1 / Decision A. Reconciliation1 CASE 1 / Decision A and its
-`PRODUCT-SEAM-EQUIVALENCE-v1` post-order-resolution profile remain the input.
-From a new clean clone at Product authority `0937d7768136ff63e74924480551d370b2935c2e`,
-the Product-owned normalized layout graph, automatic seed generation, and
-component-scoped settling kernel were separated in `src/auto-layout.ts` while
-preserving the existing arithmetic and sequential packing order.
-
-The refactor candidate is commit `a5bc4b5f13731a6e29acab9cd941e014d7a603c0`
-(`refactor: extract LiaisonScape layout settling kernel`). Exact baseline-v2
-replay is 38/38 with SHA
-`F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`;
-Relation and Node reversal checks are 16/16 for both solve and settle, and
-pure/App routing and label replay is exact to v2. Product behavior change is
-`NONE`; interaction source is unchanged. Product tests pass 287/287 with lint,
-build, and diff-check passing.
-
-This is a refactor candidate only. The current accepted Product authority
-remains `0937d776...` until adoption. Implementation1C is `NOT STARTED`, PR-3
-is `NO`, no candidate materialization or Product candidate integration occurred,
-and the exact next prerequisite is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1B-ADOPTION1`.
+Detailed checkpoint evidence and dated disposition remain in [Implementation1B settling-kernel refactor result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1b-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1B-ADOPTION1 (2026-09-03)
-
-The [Implementation1B Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1b-adoption1-result.md)
-records CASE 1 / Decision A. The validated candidate
-`a5bc4b5f13731a6e29acab9cd941e014d7a603c0` was adopted into live Production
-through the selected `E-A` policy: only `src/auto-layout.ts` and
-`tests/auto-layout.test.ts` were transferred. The candidate's copied
-characterization2 evidence surface remains disposable-clone-only; baseline2
-`324193eda...` remains the immutable evidence authority.
-
-Live adoption commit is `3b5fb4d2b8d6360cc630e7e910182927e1d8459a`
-(`refactor: extract layout settling kernel`), parent `0937d776...`, and is
-the new CURRENT ACCEPTED PRODUCT SOURCE AUTHORITY. The existing
-`characterization-v2-post-order-resolution` remains the exact behavioral target:
-38/38 replay with unchanged SHA, Relation/Node reversal 16/16 for solve and
-settle, pure/App routing and labels exact to v2, Product tests 287/287, lint,
-build, and diff-check passing. No baseline-v3 was created and baseline-v2 was
-not rewritten; Product behavior change is `NONE`.
-
-Interaction and routing source remain unchanged. Implementation1C is eligible
-but `NOT STARTED`; PR-3 is `NO`, with no adapter, candidate materialization,
-V0-V3 execution, candidate selection, or Product candidate integration. The
-exact next prerequisite is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1C`.
+Detailed checkpoint evidence and dated disposition remain in [Implementation1B Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1b-adoption1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1C (2026-09-03)
-
-The [Implementation1C result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1c-result.md)
-records CASE 1 / Decision A. From a new clean clone at accepted Product
-authority `3b5fb4d...`, the pre-edit v2 replay passed exactly before source
-editing. The existing Product seam was insufficient for the requested
-evaluation path because sequential multi-component P3 packing remained in the
-`solveAutoLayout` composition, so Decision `P-B` added the smallest generic
-composition seam in `src/auto-layout.ts` only.
-
-The candidate exposes Product-owned settling from complete explicit initial
-positions while retaining the existing normalized graph, canonical neighbor
-order, settling arithmetic, and sequential composition. The separate
-evaluation-only `VSR-SEED-ADAPTER-v1` validates exact Node-ID coverage and
-finite positions, has no fallback, and remains blind to candidates,
-materialization, V0-V3, persistence, normal App entry, and rendering.
-
-The local candidate commit is `bb4f603` (`feat: expose LiaisonScape explicit-seed
-settling seam`). Characterization2 replay is 38/38 exact with unchanged SHA
-`F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`, the
-adapter tests pass 10/10, full Product tests pass 287/287, and lint/build/
-diff-check pass. The candidate clone is clean and unpushed.
-
-Live Production remains unchanged at `3b5fb4d...` apart from its two protected
-dirty samples; baseline2, W-C, the 1B candidate, and the retained materializer
-remain unchanged. No candidate materialization, V0-V3 execution, screenshot,
-browser review, selection, Production integration, or PR-3 claim occurred.
-Implementation1C Adoption1 is now eligible but not started. PR-3 remains NO,
-and the exact next prerequisite is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1C-ADOPTION1`.
+Detailed checkpoint evidence and dated disposition remain in [Implementation1C result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1c-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1C-ADOPTION1 (2026-09-03)
-
-The [Implementation1C Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1c-adoption1-result.md)
-records CASE 1 / Decision A. Live Production was verified at the exact 1C
-parent authority `3b5fb4d...`; the candidate `bb4f603...` was verified with
-that exact parent and its complete path inventory was inspected.
-
-Transfer policy `T-A` was selected: only `src/auto-layout.ts` and
-`experimental/product-evaluation-seam/explicit-seed-adapter1/` were adopted.
-The copied `characterization2` evidence was excluded because baseline2
-`324193e...` remains the separate default-behavior evidence authority. All
-selected files byte-matched the candidate. `VSR-SEED-ADAPTER-v1` is frozen;
-exact Node-ID coverage, finite coordinates, deterministic failures, no
-fallback, no mutation, Product-owned normalization, and Product-owned P3
-composition are adopted.
-
-The live adoption commit is `681ef0a90d06e4c88f3e77289c165b7a5bfbc647`
-(`feat: expose explicit-seed settling seam`), parent `3b5fb4d...`, and is the
-new CURRENT ACCEPTED PRODUCT / EVALUATION-SEAM SOURCE AUTHORITY. Default
-Product behavior remains exact to unchanged characterization-v2: 38/38 with
-SHA `F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`;
-downstream routing/label replay is exact; Product tests pass 287/287; and
-lint/build/diff-check pass.
-
-Protected EN/JA sample hashes are unchanged. Live contains no copied
-`characterization2`; baseline-v2 is unchanged and baseline-v3 was not
-created. No candidate execution, V0-V3 evidence, screenshot, browser review,
-selection, materializer update, Product candidate integration, or PR-3 claim
-occurred. Implementation1D is eligible but remains `NOT STARTED`; the exact
-next prerequisite is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1D`.
+Detailed checkpoint evidence and dated disposition remain in [Implementation1C Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1c-adoption1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1D (2026-09-03)
-
-The [Implementation1D result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1d-result.md)
-records CASE 1 / Decision A. A new clean disposable clone started exactly at
-the accepted Product/evaluation-seam authority `681ef0a...`. The pre-edit
-characterization reproduced auto-layout 38/38, pure routing 9/9, App routing
-16/16, pure labels 8/8, App labels 16/16, fresh replay PASS, and the unchanged
-v2 SHA.
-
-The old App `routedEdges` orchestration was fully mapped, including fixed and
-automatic partitioning, existing localeCompare priority, overlap indexing,
-Node-label obstacles, occupiedPaths, route diagnostics, parallel eligibility,
-and original graph-edge output order. A pure Product-owned
-`deriveAutomaticRoutes(...)` seam was extracted to `src/graph-presentation.ts`.
-App still owns React/manual/persistence state and continues to derive and pass
-provisional Node-label geometry as data. Relation-label and Node-label
-derivation remain deferred to Implementation1E.
-
-The 1D candidate commit is `63753950e4f1b004ba22d7bdc39e4732b218d53f`
-(`refactor: extract LiaisonScape automatic routing derivation`), parent
-`681ef0a...`. Focused routing tests pass 10/10; pure/App routing and labels
-remain exact to v2; auto-layout remains 38/38 exact; full Product tests pass
-297/297; and lint/build/diff-check pass. Dynamic recomputation for current
-Node positions, curve offsets, and self-loop overrides is explicitly proven;
-frozen-edge-during-drag remains NOT CORRECT.
-
-Live Production remains unchanged at `681ef0a...` with only protected EN/JA
-samples dirty. No candidate execution, materializer execution, V0-V3,
-screenshot, browser review, selection, baseline update, label extraction, or
-PR-3 claim occurred. Implementation1E remains `NOT STARTED`; the exact next
-prerequisite is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1D-ADOPTION1`.
+Detailed checkpoint evidence and dated disposition remain in [Implementation1D result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1d-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1D-ADOPTION1 (2026-09-03)
-
-The [Implementation1D Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1d-adoption1-result.md)
-records CASE 1 / Decision A. Live Production was verified at the exact
-pre-adoption authority `681ef0a...`; the Implementation1D candidate
-`63753950...` was verified with that exact parent and its three-path inventory
-was adopted through an exact-path transfer. All three selected files
-byte-matched the validated candidate.
-
-The pure Product-owned `deriveAutomaticRoutes(...)` seam is now adopted. App
-continues to own React/manual/persistence/interaction state and provisional
-Node-label geometry, while routing preserves the existing comparator,
-fixed-first order, overlap indexing, occupiedPaths sequencing, diagnostics,
-parallel eligibility, and original graph-edge output order. `viewport.ts` and
-`auto-layout.ts` remain unchanged; frozen-edge-during-drag remains NOT
-CORRECT.
-
-Live replay remains exact to unchanged characterization-v2: pure routing 9/9,
-App routing 16/16, pure labels 8/8, App labels 16/16, auto-layout 38/38 with
-SHA `F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`,
-Relation and Node reversal solve/settle 16/16 each, and focused seam tests
-10/10. Full Product tests pass 297/297; lint/build/diff-check pass. Dynamic
-Node-position, curve-offset, self-loop-override, and provisional-label
-recomputation proofs pass.
-
-The live adoption commit is `e2ede7f...` (`refactor: extract automatic routing
-derivation`), parent `681ef0a...`, and is the new current Product/evaluation/
-presentation-seam authority. Baseline-v2 is unchanged; baseline-v3 was not
-created. Protected EN/JA samples are unchanged. No label extraction,
-candidate/materializer execution, V0-V3, screenshot, browser review,
-candidate selection, Product candidate integration, or PR-3 claim occurred.
-Implementation1E is technically eligible but remains NOT STARTED. The exact
-next prerequisite is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1E`.
+Detailed checkpoint evidence and dated disposition remain in [Implementation1D Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1d-adoption1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1E (2026-09-03)
-
-The [Implementation1E result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1e-result.md)
-records CASE 1 / Decision A. A new clean disposable clone started at the
-accepted Product/evaluation/presentation authority `e2ede7f...`. The old
-Node-label and Relation-label App orchestration was mapped before editing,
-including current positions/routes, primitive inputs, processing order,
-occupied rectangle order, previous placement inputs, and manual override
-application points.
-
-The existing `src/graph-presentation.ts` now owns the pure automatic
-`deriveAutomaticNodeLabels(...)` and `deriveAutomaticRelationLabels(...)`
-orchestration. App remains the owner of React/manual/persistence/interaction
-state and passes snapshot Maps for previous placements and manual offsets or
-anchors. `placeNodeLabel(...)` and `placeEdgeLabel(...)` remain unchanged and
-single-owned in `viewport.ts`; routing and viewport behavior are unchanged.
-
-Focused presentation tests pass 22/22. Exact characterization remains pure
-routing 9/9, App routing 16/16, pure labels 8/8, App labels 16/16, and
-auto-layout 38/38 with SHA
-`F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`.
-Relation and Node reversal solve/settle remain 16/16 each, fresh-process and
-no-mutation checks pass, and Node movement plus route/curve/self-loop changes
-recompute label geometry. Full Product tests pass 309/309; lint/build/
-diff-check pass.
-
-The local 1E candidate commit is `dd8ea0c917eae78399411b10ad3beeec705f706d`
-(`refactor: extract LiaisonScape automatic label derivation`), parent
-`e2ede7f...`. It is a candidate only and was not adopted into live Production.
-Baseline-v2 is unchanged; baseline-v3 was not created. Manual label ownership,
-drag/follow/reset semantics, routing, persistence, and Dataset behavior remain
-unchanged. Implementation1F is NOT STARTED, PR-3 is NO, and V0/V1/V2/V3 are
-NONE. The exact next prerequisite is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1E-ADOPTION1`.
+Detailed checkpoint evidence and dated disposition remain in [Implementation1E result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1e-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1E-ADOPTION1 (2026-09-03)
-
-The [Implementation1E Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1e-adoption1-result.md)
-records CASE 1 / Decision A. The validated three-file candidate was adopted
-into live Production with exact candidate/live bytes. The new accepted
-Product/evaluation/presentation-seam authority is
-`c7e7745ad883f8434f56dd62e5b933aafabf548d` (`refactor: extract automatic
-label derivation`), parent `e2ede7f...`.
-
-Automatic Node-label and Relation-label derivation are now pure
-Product-owned seams. Dynamic Node-label recomputation, Relation-label
-route-follow, curve-offset and self-loop follow, manual App ownership, and
-dependency lists are preserved. Exact baseline evidence remains pure routing
-9/9, App routing 16/16, pure labels 8/8, App labels 16/16, auto-layout 38/38
-with unchanged v2 SHA
-`F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`, and
-the focused presentation suite is 22/22 (routing subset 10/10). Product tests
-pass 309/309; lint/build/diff-check pass. Baseline-v2 is unchanged and
-baseline-v3 was not created.
-
-Implementation1F is technically eligible but remains NOT STARTED. PR-3 is
-NO; V0/V1/V2/V3, candidate execution, materializer execution, browser review,
-screenshots, and Product candidate integration remain absent.
+Detailed checkpoint evidence and dated disposition remain in [Implementation1E Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1e-adoption1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F (2026-09-03)
-
-The [Implementation1F result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-result.md)
-records CASE 1 / Decision A. A clean disposable clone started at the current
-accepted Product/evaluation/presentation-seam authority
-`c7e7745ad883f8434f56dd62e5b933aafabf548d`. The P-A evaluation-only render
-wrapper candidate is committed locally as `60373836bc1ccea56151593afc22a9b8f324d0a3`
-(`test: add LiaisonScape evaluation render wrapper`).
-
-`VSR-RENDER-PROJECTION-v1` and `APP-RENDER-EQUIVALENCE-v1` are frozen and
-pass. The focused wrapper suite passes 12/12, including deterministic output,
-non-mutation, neutral markup, Product class/CSS provenance, and the
-independent App-authority structural proof. The wrapper consumes already-
-derived presentation data and directly imports the existing `src/styles.css`
-under CSS policy C-A. Product render source, `App.tsx`, and Product CSS remain
-unchanged; the accepted baseline and v2 SHA remain exact.
-
-Full Product tests pass 309/309; lint/build/diff-check pass. Browser execution,
-screenshots, E-VISUAL, candidate/materializer execution, V0-V3, and PR-3
-remain absent. Implementation1G is NOT STARTED, the candidate is not selected,
-and Product candidate integration has not occurred. The exact next prerequisite
-is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-ADOPTION1`.
+Detailed checkpoint evidence and dated disposition remain in [Implementation1F result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-ADOPTION1 (2026-09-03)
-
-The [Implementation1F Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-adoption1-result.md)
-records CASE 3 / Decision C. The exact two-file F-A transfer was performed
-against Live HEAD `c7e7745ad883f8434f56dd62e5b933aafabf548d`; both wrapper files
-matched the 1F candidate byte-for-byte. Adoption stopped because the focused
-wrapper suite was 11/12: F-R11 found that the candidate's raw CSS SHA reflects
-CRLF working-tree bytes while Live has LF working-tree bytes. The Git blob and
-normalized stylesheet text are equal, and Product CSS was not changed.
-
-No Live adoption commit was created. The normal Product runtime remains
-byte-identical to c7e7745..., Product tests pass 309/309, lint/build and
-baseline evidence pass, while `APP-RENDER-EQUIVALENCE-v1` remains structurally
-valid but the CSS provenance gate is unresolved. Browser execution, screenshots,
-E-VISUAL, candidate/materializer execution, V0-V3, and PR-3 remain absent.
-Implementation1G is NOT STARTED. A separately authorized CSS working-tree
-reconciliation is required before retrying Adoption1.
+Detailed checkpoint evidence and dated disposition remain in [Implementation1F Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-adoption1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-CSS-PROVENANCE-RECONCILIATION1 (2026-09-03)
-
-The [CSS provenance reconciliation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-css-provenance-reconciliation1-result.md)
-records CASE 1 / Decision A. The blocked Adoption1 raw SHA mismatch was
-classified as an EOL-dependent working-tree provenance assertion: candidate and
-Live share Git blob `ae41e48b34d72067d92517a5d42a57a4cc1d409f`, while candidate
-checks out CRLF and Live checks out LF. Product CSS content was not changed.
-
-`PRODUCT-CSS-PROVENANCE-v1` is frozen with Git blob authority and an LF-
-normalized canonical content digest; raw working-tree SHA is diagnostic only.
-The reconciliation candidate is `0af4437c469bdee2f5636a87e6b5489a1f53c60b`
-(`test: make render wrapper CSS provenance EOL-stable`), changing only the
-wrapper test. The corrected suite passes 13/13 in both CRLF and isolated LF
-checkouts, including EOL equivalence and real-content-mutation rejection.
-
-Live remains untouched at `c7e7745ad883f8434f56dd62e5b933aafabf548d`; the
-blocked-Adoption1 wrapper files remain untracked there and unchanged. No Live
-adoption, browser work, E-VISUAL, candidate/materializer execution, V0-V3, or
-PR-3 claim occurred. Implementation1G is NOT STARTED and NOT ELIGIBLE. The
-exact next prerequisite is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-ADOPTION1-RETRY1`.
+Detailed checkpoint evidence and dated disposition remain in [CSS provenance reconciliation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-css-provenance-reconciliation1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1F-ADOPTION1-RETRY1 (2026-09-03)
-
-The [Adoption1-Retry1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-adoption1-retry1-result.md)
-records CASE 1 / Decision A. The reconciled two-file F-RETRY-A transfer was
-adopted into Live as `bce55702cf79ce0047627125fe759893ffd6fc15`
-(`test: adopt evaluation render wrapper`), parent `c7e7745...`. The wrapper
-implementation was left byte-untouched; the corrected EOL-stable test was
-adopted from reconciliation candidate `0af4437...`.
-
-`PRODUCT-CSS-PROVENANCE-v1` passes in the Live LF checkout using committed Git
-blob authority plus canonical LF-normalized content identity. `VSR-RENDER-
-PROJECTION-v1`, `APP-RENDER-EQUIVALENCE-v1`, and C-A CSS direct-import policy
-remain frozen. The corrected wrapper suite passes 13/13, Product tests pass
-309/309, and lint/build/baseline evidence pass. Normal Product runtime source
-remains byte-identical to c7e7745...; only evaluation infrastructure advanced
-repository HEAD.
-
-Implementation1G is technically eligible but NOT STARTED. Browser execution,
-E-VISUAL, candidate/materializer execution, V0-V3, and PR-3 remain absent. The
-exact next prerequisite is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1G`.
+Detailed checkpoint evidence and dated disposition remain in [Adoption1-Retry1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1f-adoption1-retry1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1G (2026-09-03)
-
-The [Implementation1G result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1g-result.md)
-records CASE 1 / Decision A. A clean disposable clone started at the current
-Live authority `bce55702cf79ce0047627125fe759893ffd6fc15`, and candidate commit
-`ff7c399c006ae841aa7ee811e46313f2ebb0dfe4` adds only the isolated
-`experimental/product-evaluation-seam/browser1/` entry, smoke fixture, and
-focused isolation test.
-
-`VSR-BROWSER-ENTRY-v1`, `PRODUCT-RUNTIME-ISOLATION-v1`,
-`EVALUATION-ENTRY-ISOLATION-v1`, and `H-B-BUILD-v1` all PASS. The entry reaches
-the adopted render wrapper but not normal App runtime, materializer, or
-candidate code; normal Product cannot reach the experimental seam. H-BUILD-A
-passes with the existing Vite CLI and dependencies, while normal Product
-source and build remain unchanged/green. Product CSS C-A and
-`PRODUCT-CSS-PROVENANCE-v1` remain PASS.
-
-The full Product suite passes 309/309; wrapper 13/13, graph-presentation
-22/22, routing/labels exact, auto-layout 38/38 with unchanged v2 SHA, and
-baseline2 replay 4/4 remain green. Browser execution, dev-server visual
-review, screenshots, E-VISUAL, candidate/materializer execution, V0-V3, and
-PR-3 remain NO/NONE. The candidate is not adopted or selected; Live remains at
-`bce55702...` with only the protected EN/JA sample modifications. The exact
-next prerequisite is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1G-ADOPTION1`,
-NOT STARTED.
+Detailed checkpoint evidence and dated disposition remain in [Implementation1G result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1g-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-PRODUCT-EVALUATION-SEAM-IMPLEMENTATION1G-ADOPTION1 (2026-09-03)
-
-The [Implementation1G Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1g-adoption1-result.md)
-records CASE 1 / Decision A. The validated four-file 1G candidate was
-transferred under G-A and adopted into Live as
-`563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf`, parent
-`bce55702cf79ce0047627125fe759893ffd6fc15`. The new repository/evaluation
-authority is the adoption commit; normal Product runtime source remains
-unchanged.
-
-`VSR-BROWSER-ENTRY-v1`, `PRODUCT-RUNTIME-ISOLATION-v1`,
-`EVALUATION-ENTRY-ISOLATION-v1`, and `H-B-BUILD-v1` are frozen in Live and
-PASS. The browser1 entry remains evaluation-only at `#evaluation-root`, uses
-the adopted wrapper and neutral smoke fixture, and cannot be reached by the
-normal Product graph. No Product CSS, wrapper, package, normal Vite config,
-App, entry, routing, label, layout, viewport, or baseline bytes changed.
-
-The Product Evaluation Seam implementation sequence 1B-1G is COMPLETE. This
-does not complete PR-3 or E-VISUAL. Browser execution, visual review,
-screenshots, candidate/materializer execution, V0-V3, and PR-3 remain NO/NONE;
-no candidate was selected and no Product candidate integration occurred. The
-full Product suite remains 309/309, wrapper 13/13, graph-presentation 22/22,
-routing/labels exact, auto-layout 38/38, and baseline2 replay 4/4.
-
-The exact next prerequisite is the separately authorized
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-HARNESS-IMPLEMENTATION1`,
-NOT STARTED.
+The 1B-1E Product-owned seam refactors were adopted under their recorded behavior-preservation baselines. The 1F/1G evaluation render/browser infrastructure was separately adopted as isolated evaluation infrastructure; it did not integrate a research candidate or alter Dataset semantics. This lineage's recorded Product/evaluation authority is 563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf; later Product-source evolution has separate authority, so this is not a claim that the sibling repository's current source is unchanged. See [Implementation1G Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1g-adoption1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-HARNESS-IMPLEMENTATION1 (2026-09-03)
-
-The disposable Harness Implementation1 candidate is validated in CASE 1 /
-Decision A. Product Evaluation Seam 1B–1G remains COMPLETE, and future
-evidence is explicitly rebound to current accepted Product authority
-`563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf`; the historical Harness Design1
-freeze `fd563340625fd3d88dc25baedc93c4f8fe69e5e7` remains historical
-provenance only. `MATERIALIZER-SOURCE-DRIFT = UNAFFECTED`,
-`PRODUCT-DOWNSTREAM-SOURCE-DRIFT = REVALIDATED / NEW EVIDENCE AUTHORITY`,
-and `HARNESS-SOURCE-DRIFT-REVALIDATION1 = PASS`.
-
-The self-contained clone is
-`C:\Users\extra\E2R\e2r-liaison-scape-visual-evidence-harness-implementation1`,
-with local candidate commit
-`9bd3f3b819bf07ccdfa0339be9a953d045c4e4fc` (`test: tighten visual review
-packet contract`), on implementation commit
-`36650462f7f2def95478098a01cb345b9c89cfa1` (`test: implement LiaisonScape
-visual evidence harness`). Its materializer snapshot is exact against the
-retained Implementation1 source, and the frozen fixture role manifest
-`B867E9FF7B84107E8B4DDCCC02458B7B9AA535AB6FACE4AD10A2942CC8C8D8F5` verifies
-8 structural IDs and 16 EN/JA authorities.
-
-`VSR-HARNESS-IMPLEMENTATION-v1` and `VSR-RUN-PLAN-v1` are implemented. The
-plan contains 240 candidate records (V0 40, V1 40, V2 80, V3 80) and 40
-diagnostic records (B0 8, B1 32), with 0 executed as PR-3 evidence.
-`PR3-RUNTIME-TRANSFORM = UNFROZEN`; the only transform used was explicitly
-labeled implementation-test configuration. T1–T17 and H-T18–H-T28 pass,
-historical materializer checks are 13/13 plus 15/15 bounded replay, and the
-harness browser build passes without browser execution or generated evidence
-artifacts. `E-VISUAL = NO` and `PR-3 = NO`.
-
-The local harness candidate is not adopted to Live; no candidate is selected,
-no Product integration occurred, and no push/tag/release/deploy/publication
-occurred. The next evidence checkpoint is not started. The exact name
-requires roadmap/design reconciliation because the prior
-`...EVIDENCE-EXECUTION1` pointer is deferred:
-
-`NEXT EVIDENCE CHECKPOINT NAME REQUIRES ROADMAP/DESIGN RECONCILIATION`
+The disposable harness was validated as an implementation candidate, not adopted to Live as a complete harness; its result is in [dedicated harness implementation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-harness-implementation1-result.md). This checkpoint did not produce PR-3 candidate/visual evidence. The separately adopted evaluation entry infrastructure is recorded under Implementation1G Adoption1.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-DESIGN1 (2026-09-03)
-
-The [Run Configuration Design1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-design1.md)
-records CASE 2 / Decision B. The current Product authority remains
-`563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf`; future evidence binds directly to
-the validated Harness Implementation1 candidate
-`9bd3f3b819bf07ccdfa0339be9a953d045c4e4fc`, which remains unchanged and
-unadopted.
-
-The complete run-configuration and execution-sequence contract is frozen
-except for the numeric `PR3-RUNTIME-TRANSFORM-v1`. The materializer's positive
-uniform affine transform remains caller-supplied, and the current Product
-solver/viewport constants do not establish a normalized-domain origin or
-scale. Therefore the implementation-validation values `100/1`, `200/1`, and
-`10/1` remain non-authoritative and are not promoted to PR-3 configuration.
-
-The next exact prerequisite is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE1`,
-which may collect only candidate-neutral transform compatibility evidence and
-is NOT STARTED. The subsequent decomposition is run-configuration adoption,
-machine V0/V1/V2 execution, browser V3 capture, human review, and PR-3
-assessment, each as a separately bounded checkpoint. The selected execution
-strategy is E-C bounded batches with machine-first gating, fresh browser per
-V3 cell, explicit retry/resume rules, immutable run artifacts, deterministic
-anonymized review ordering, and full-corpus B0/B1 diagnostics excluded from
-candidate accounting.
-
-The historical monolithic `...EVIDENCE-EXECUTION1` pointer is classified
-`RENAMED / SPLIT`; historical documents are not rewritten. Planned scope
-remains 240 candidate records plus 40 diagnostics, with 0 PR-3 records
-executed. Browser execution, screenshots, human review, `E-VISUAL`, candidate
-selection, Product integration, and `PR-3` remain NO. No push, tag, release,
-deploy, or publication occurred.
+Detailed checkpoint evidence and dated disposition remain in [Run Configuration Design1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-design1.md).
 
 ### E2R-GAMEBOOK-VSCODE-EXTENSION-RESEARCH-NOTE1 (2026-09-03)
 
@@ -4396,298 +3763,34 @@ for the hypotheses, unverified prior-art leads, open Core mapping question,
 and complete restart criteria.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-DESIGN1-CORRECTION1 (2026-09-03)
-
-The [Run Configuration Design1 Correction1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-design1-correction1.md)
-records CASE 1 / Decision A. The original Design1 CASE 2 / Decision B remains
-valid; Correction1 fixes only the phase-cardinality defect in its completeness
-wording.
-
-The corrected accounting is: candidate Machine V0/V1/V2 = `160` rows
-(40 + 40 + 80), candidate Browser V3 = `80` rows, full candidate V0–V3 =
-`240` rows, and diagnostics B0/B1 = `40` rows (8 + 32). Phase M therefore
-requires 160 candidate machine rows plus 40 diagnostic rows and does not wait
-for Phase B. Phase B remains responsible for all 80 V3 rows. B1 remains the
-32-row presentation diagnostic contract spanning V2/V3; no secondary
-diagnostic ambiguity was found.
-
-No other Design1 contract changed: T-D remains selected,
-`PR3-RUNTIME-TRANSFORM-v1` remains UNFROZEN, Edge/viewport/DSF/zoom,
-E-C, M/B/R/P, retry/resume, artifact, review, and historical pointer policies
-remain unchanged. The exact next prerequisite remains
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE1`,
-NOT STARTED. PR-3 remains NO; no candidate, materializer, browser, screenshot,
-or review execution occurred. The original Design1 history was not rewritten.
+Detailed checkpoint evidence and dated disposition remain in [Run Configuration Design1 Correction1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-design1-correction1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE1 (2026-09-03)
-
-The [Run Configuration Evidence1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence1-result.md)
-records CASE 4 / Decision D. Design1 remains CASE 2 / Decision B and its
-additive Correction1 remains CASE 1 / Decision A. Protocol Commit A was
-preregistered before dynamic execution; the valid clean restart used only
-candidate-neutral family, explicit-seed settling, Product downstream, and
-exact translation-covariance probes.
-
-FP1 authority and Nmax 65 passed, the candidate-independent point-set proof
-passed, Product clearance 96 and three settling iterations passed, and the
-minimal exact RC-SPACING-v1 scale derived as 6144/1. Family,
-initial-pairwise-clearance, settling, routing, labels, fit, replay, and
-non-mutation gates passed. The exact translation-covariance gate failed on
-Product floating-point representation drift; no tolerance was introduced
-after observing results.
-
-No candidate, real PR-3 fixture, B0/B1, browser, screenshot, human review,
-E-VISUAL, ranking, selection, Product integration, or PR-3 execution occurred.
-`PR3-RUNTIME-TRANSFORM-v1` remains UNFROZEN. No transform is recommended,
-zero origin is not justified, and Adoption1 is ineligible. The valid Evidence
-Commit B is `9738ff477d3d216507d1fba562f45dd77aa72797`. Product regression
-remains green at 309/309 with the expected baseline-v2 SHA
-`F18C4C98607B9412BD6C035803002BE1DFEE1F2AF721942C8D8FF69A5496795B`.
-
-The exact next prerequisite is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-TRANSLATION-COVARIANCE-DESIGN-RECONCILIATION1`.
-No push, tag, release, deploy, or publication occurred.
+Detailed checkpoint evidence and dated disposition remain in [Run Configuration Evidence1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence1-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE1-PROTOCOL-PROVENANCE-RECONCILIATION1 (2026-09-03)
-
-The [Evidence1 protocol provenance reconciliation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence1-protocol-provenance-reconciliation1.md)
-records CASE 2 / Decision B. The reported topology is confirmed:
-`9bd3f3b...` → `ff28b5a...` → `68fde7f...` → `9738ff4...`.
-
-`protocol.json` is byte-identical at A/P/B. The A→P changes are limited to
-the pre-dynamic import-path correction, its source-audit hash bookkeeping, and
-an additive correction record; no evidence semantics, inputs, transform,
-gates, comparison rule, or CASE mapping changed. The executable probe bytes
-therefore have PI-B provenance: semantic protocol authority remains
-`ff28b5a4afce56aa4f5ac57181a1f33ebd35d20f`, while executable preregistration
-authority is `68fde7f3600b152f9d88351829796f1115e65e28`. No dynamic result
-predated the correction, and P→B contains only generated artifacts.
-
-Evidence1 remains formally valid with corrected provenance wording; its CASE 4
-/ Decision D translation-covariance failure remains unchanged. No transform is
-recommended, `PR3-RUNTIME-TRANSFORM-v1` remains UNFROZEN, and Adoption1 remains
-ineligible. No new probe, candidate, fixture, browser, screenshot, review,
-E-VISUAL, Product, Harness, materializer, Live, or baseline work occurred.
-
-The exact next prerequisite remains the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-TRANSLATION-COVARIANCE-DESIGN-RECONCILIATION1`.
-No push, tag, release, deploy, or publication occurred.
+Detailed checkpoint evidence and dated disposition remain in [Evidence1 protocol provenance reconciliation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence1-protocol-provenance-reconciliation1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-TRANSLATION-COVARIANCE-DESIGN-RECONCILIATION1 (2026-09-03)
-
-The [translation covariance design reconciliation](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-translation-covariance-design-reconciliation1.md)
-records CASE 1 / Decision A. The provenance audit finds that R1–R7 remain
-accepted hard requirements: candidate-, fixture-, and locale-neutrality;
-determinism; one global transform; no visual tuning; and an explicit positive
-uniform affine transform. Arbitrary-origin downstream raw JavaScript Number
-equality (R8–R11) first appears in the Evidence1 Protocol A translation
-controls and runner gate; it was not an accepted Design1 or Product semantic
-invariant.
-
-Evidence1 remains formally valid and permanently retains CASE 4 / Decision D:
-exact translation covariance FAILS under its preregistered strict comparison.
-The observed CP1 and CP10 differences are classified as finite floating
-representation drift (F-C), without claiming visual, semantic-geometry, or
-branch equivalence. No tolerance or ULP rule was introduced, and no observed
-mismatch was used to set a threshold.
-
-TC-B + TC-D is selected prospectively. `PR3-CANONICAL-RUNTIME-ORIGIN-v1` is
-frozen as a canonical no-added-translation policy with `originX=0/1` and
-`originY=0/1`; it is not translation equivalence, a Product coordinate policy,
-candidate semantics, or a runtime-transform adoption. `RC-SPACING-v1` and
-`SCALE-COMPATIBILITY-EVIDENCED` remain valid, including the exact scale
-derivation `6144/1`, but `PR3-RUNTIME-TRANSFORM-v1` remains UNFROZEN.
-
-The eight-class `TRANSLATION-BRANCH-RISK-INVENTORY-v1` is recorded. Fresh
-preregistered canonical-origin / branch-stability Evidence2 is required;
-existing Evidence1 is diagnostic/supporting prior evidence only. Adoption1,
-candidate execution, real-fixture execution, B0/B1, browser, screenshot,
-review, ranking, selection, Product integration, and PR-3 remain NO/0. The
-exact next prerequisite is
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-CANONICAL-ORIGIN-EVIDENCE2`,
-which is NOT STARTED. No Product, Harness, materializer, Live, baseline, or
-`ai-knowledge` change occurred; no push, tag, release, deploy, or publication
-occurred.
+Detailed checkpoint evidence and dated disposition remain in [translation covariance design reconciliation](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-translation-covariance-design-reconciliation1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-CANONICAL-ORIGIN-EVIDENCE2 (2026-09-03)
-
-The [canonical-origin Evidence2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-canonical-origin-evidence2-result.md)
-records CASE 1 / Decision A. Fresh preregistered candidate-neutral evidence
-supports the single transform `originX=0/1`, `originY=0/1`, `scale=6144/1`.
-All BS1-BS10 and E2-H1-E2-H22 gates pass; all eight branch-risk classes are
-accounted for, with zero blocking O-D responsibilities. The global transform
-consistency audit has one fingerprint.
-
-No candidate, authorized candidate materialization, real PR-3 fixture,
-alternate-origin run, B0/B1, browser, screenshot, human review, E-VISUAL,
-ranking, candidate selection, Product integration, Adoption1 execution, or
-PR-3 claim occurred. Candidate execution is 0, real fixture execution is 0,
-and alternate-origin execution is 0. The transform is recommended for the
-separate Adoption1 checkpoint and `RUN-CONFIGURATION-ADOPTION1 = ELIGIBLE`,
-while `PR3-RUNTIME-TRANSFORM-v1` remains UNFROZEN.
-
-The valid Evidence2 clone is separate from Product and ends at Evidence Commit
-B `ecad472c48b12e4fccb0d71f2edd44ec2e13f55c`; its valid preregistration
-authority is `91d6cea340a717b11806b0563aeb43f861badf1c`. Focused regression is
-188/188 and the full Product suite is 309/309; lint, build, and diff-check
-pass. The exact next prerequisite is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-ADOPTION1`.
-No Product, Harness, materializer, Live, baseline, or `ai-knowledge` change
-occurred; no push, tag, release, deploy, or publication occurred.
+Detailed checkpoint evidence and dated disposition remain in [canonical-origin Evidence2 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-canonical-origin-evidence2-result.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-EVIDENCE2-SOURCE-HASH-PROVENANCE-RECONCILIATION1 (2026-09-03)
-
-The [Evidence2 source-hash provenance reconciliation](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence2-source-hash-provenance-reconciliation1.md)
-records CASE 1 / Decision A. The exact Product Git blob for
-`563d5bc3ce8d3a915c75dd13b33188ae6f7fccaf:src/auto-layout.ts` is
-`a7bb99d6628fe127eef7defe9ffdd957591de150`; its canonical raw-byte SHA-256 is
-`63547927D0B5DE990D596EEAF5925A7877F2677165A3DF676DA9123FC3030212`.
-
-Evidence1's `257B...` is the CRLF checkout representation, while Evidence2's
-`2F...` is the Live mixed-EOL working-tree representation. Evidence2's actual
-checkout imports resolve to the same Product blob, and no Product source drift
-exists. The discrepancy is HASH-RECORD-DRIFT / metadata error only; no
-invalidated Evidence2 artifacts entered Evidence Commit B `ecad472...`, whose
-13 artifacts remain bound to valid Protocol A `91d6cea...`.
-
-Evidence1 remains formally valid with its historical CASE 4 / Decision D
-translation-covariance result. Evidence2 remains valid with CASE 1 / Decision
-A, the recommended transform `originX=0/1`, `originY=0/1`, `scale=6144/1`, and
-`RUN-CONFIGURATION-ADOPTION1 = ELIGIBLE`. `PR3-RUNTIME-TRANSFORM-v1` remains
-UNFROZEN. `PRODUCT-SOURCE-RAW-BLOB-SHA256-v1` is frozen prospectively as an
-additive convention binding commit, path, Git blob ID, and SHA-256 of exact raw
-blob bytes; historical hashes are preserved. The exact next prerequisite is the
-not-started `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-ADOPTION1`.
-
-No Product, Harness, Evidence1, Evidence2, materializer, baseline, or
-`ai-knowledge` history changed; no new execution, push, tag, release, deploy,
-or publication occurred.
+Detailed checkpoint evidence and dated disposition remain in [Evidence2 source-hash provenance reconciliation](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence2-source-hash-provenance-reconciliation1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-MACHINE-EXECUTION1 (2026-09-03)
-
-The [Machine Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-result.md)
-records `CASE 1 / Decision A`. The final Protocol / Executable Commit A is
-`06f66142812be03a8a3a138e2b774cbc9926b91f`; it preceded all dynamic work.
-Evidence Commit B is `b0bd0f1a9f70915c639cbee61cf5f8370c78766f`, containing
-generated evidence artifacts only.
-
-The frozen matrix completed with V0 `40/40`, V1 `40/40`, V2 `80/80`, for
-machine candidate total `160/160`. B0 is `8/8` complete. B1 has `16` complete
-V2 machine-side diagnostics and `16` pending V3 browser-side obligations.
-Deterministic replay, input mutation, stage linkage, fixture authority, and
-canonical artifact index gates pass; there are no candidate, Product
-downstream, Harness, or fixture-authority failures. All `80` V2 cells are
-machine-eligible for later Browser Execution1.
-
-The adopted transform remains the single global
-`PR3-RUNTIME-TRANSFORM-v1`: `originX=0/1`, `originY=0/1`, `scale=6144/1`, with
-the Evidence2 fingerprint retained. No V3, browser, screenshot, human review,
-ranking, selection, Product integration, or PR-3 claim occurred. `E-VISUAL =
-NO` and `PR-3 = NO`.
-
-Product regression is `309/309 PASS`; lint and build pass. Live Product,
-original Harness, Evidence1 clone, Evidence2 clone, retained materializer,
-Baseline2, and `ai-knowledge` remain unchanged. The exact next prerequisite is
-the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-EXECUTION1`.
-No push, tag, release, deploy, or publication occurred.
+Machine Execution1's bounded machine matrix completed V0 40/40, V1 40/40, V2 80/80 (160 total), with B0 8 and B1 machine-side 16 complete. Its immutable evidence and limits remain in [Machine Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-result.md). Browser-side status is not carried forward from this dated machine snapshot.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-CONFIGURATION-ADOPTION1 (2026-09-03)
-
-The [Run Configuration Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-adoption1.md)
-records `CASE 1 / Decision A`. The accepted Evidence2 result and source-hash
-provenance reconciliation remain valid, Product source drift is `NO`, and the
-canonical raw-blob convention is applied prospectively to the adopted source
-bundle.
-
-`PR3-RUNTIME-TRANSFORM-v1` is now `ADOPTED / FROZEN` as the single global
-transform `originX=0/1`, `originY=0/1`, `scale=6144/1`. Its scope is limited to
-the LiaisonScape Initial Placement Seed production-candidate PR-3 evaluation
-lineage. This does not establish Product coordinate policy, candidate
-semantics, visual acceptance, selection, Product integration, or PR-3
-completion. `PR3-CANONICAL-RUNTIME-ORIGIN-v1` is `FROZEN`,
-`RC-SPACING-v1` and `SCALE-COMPATIBILITY-EVIDENCED` are `RETAINED`, and
-`RUN-CONFIGURATION-ADOPTION1 = COMPLETE`.
-
-Machine Execution1 is `ELIGIBLE / NOT STARTED`. Candidate execution is `0`,
-real-fixture execution is `0`, V0/V1/V2/V3 and B0/B1 PR-3 evidence remain
-`NONE`/`0`, browser and screenshot work remain `NO`, `E-VISUAL = NO`, ranking,
-selection, Product integration, and PR-3 remain `NO`. No Product, Harness,
-materializer, baseline, fixture, or `ai-knowledge` file changed. The exact
-next prerequisite is the not-started
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-MACHINE-EXECUTION1`.
-No push, tag, release, deploy, or publication occurred.
+PR3-RUNTIME-TRANSFORM-v1 is ADOPTED/FROZEN only for this bounded PR-3 seed-evaluation lineage (origin 0/1,0/1; scale 6144/1). It is not Product coordinate policy or candidate semantics and does not establish visual acceptance, selection, or PR-3 completion. Details: [Run Configuration Adoption1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-adoption1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-MACHINE-EXECUTION1-BROWSER-LINEAGE-READINESS-RECONCILIATION1 (2026-09-04)
-
-The [Machine Execution1 browser-lineage readiness reconciliation](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-browser-lineage-readiness-reconciliation1.md)
-records `CASE 3 / Decision C`. Machine Evidence B remains valid historical
-machine evidence: V0 `40/40`, V1 `40/40`, V2 `80/80`, machine candidate total
-`160`, B0 `8 COMPLETE`, and B1 machine-side `16 COMPLETE`. The `16` B1
-browser-side diagnostics remain pending; V3 remains `0`.
-
-The static contract audit found that `PR3-RUN-IDENTITY-v1` requires a final
-`pr3r1-<lowercase-sha256>` identity containing the exact browser path/version,
-while the accepted C-class rule and browser-authority wording do not clearly
-state whether that value must be supplied before the first Phase M artifact or
-only before Phase B. The Machine-local
-`machine-execution1-2026-09-03` ID is therefore `M-R1`, not a final PR3 ID.
-No accepted final-manifest or `PR3-RESUME-v1` bridge was found that binds this
-phase-local run to a new browser-bound semantic identity. The existing VSR
-stage linkage remains valid for immutable V2 fingerprint references but does
-not by itself establish the final cross-phase identity.
-
-The Machine computational evidence is preserved and may be referenced
-byte-for-byte. It must not be copied, renamed, rewritten, or reidentified.
-The browser binding timing is `AMBIGUOUS before Phase M` and `YES before Phase
-B`; final PR-3 lineage eligibility is therefore `NO` pending a narrowly scoped
-`RUN-IDENTITY / PHASE-BRIDGE DESIGN CORRECTION`.
-
-The frozen Phase B order is corrected additively as B1 browser-side diagnostics
-(`16`, `candidate=NO-CANDIDATE`) followed by candidate V3 captures (`80`). The
-canonical checkpoint name remains
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1`.
-The later `BROWSER-EXECUTION1` wording is `POINTER-NAME-DRIFT` only; no formal
-rename was accepted and no second Phase B checkpoint is created.
-
-No browser, CDP, Vite browser run, V3, screenshot, human review, ranking,
-selection, Product integration, Machine rerun, or Machine artifact change
-occurred. Browser Capture1 is `NOT STARTED`. No new `ai-knowledge` entry was
-created, existing dirty knowledge was preserved, and no push, tag, release,
-deploy, or publication occurred.
+This audit's cross-phase identity ambiguity was resolved by the following phase-bridge correction; Machine evidence remains valid and is not rewritten. Audit detail: [Machine Execution1 browser-lineage readiness reconciliation](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-browser-lineage-readiness-reconciliation1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-RUN-IDENTITY-PHASE-BRIDGE-DESIGN-CORRECTION1 (2026-09-04)
-
-The [Run-Identity Phase-Bridge Design Correction1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-identity-phase-bridge-design-correction1.md)
-records `CASE 1 / Decision A`. The preferred phase-scoped model is frozen:
-Machine Execution1 remains immutable phase-local evidence, while the final
-browser-bound `pr3r1-<lowercase-sha256>` identity is minted during Browser
-Protocol A preregistration/preflight after exact Microsoft Edge path/version
-binding and before any Browser dynamic execution.
-
-`PR3-MACHINE-EVIDENCE-REFERENCE-v1` and `PR3-PHASE-BRIDGE-v1` are frozen as
-reference-only contracts. The final Browser/PR3 manifest references Machine
-Evidence B `b0bd0f1a9f70915c639cbee61cf5f8370c78766f` plus its exact artifact
-index/run-manifest hashes; it does not transfer ownership or rewrite, copy, or
-reidentify Machine artifacts. `PR3-RESUME-v1` remains intra-lineage resume
-only. Machine rerun is `NO`.
-
-The exact eligible V2 set is frozen at 80 records with set hash
-`E891C747394C492AE1D56AA1518F2E596E96756985BCBFBDFC93323070CC162C`. The B1
-pending set is frozen at 16 records with set hash
-`B02C9075A2758CF953F3D6BF50CC852E8394C0357A127F3B559708899D216335`. V3 rows
-must link exact V2 artifact references/hashes, and B1 browser rows must link
-exact B1 machine-side references/hashes while retaining `NO-CANDIDATE`.
-
-`PHASE-B-ORDER-v1` is B1 browser-side 16 first, then candidate V3 80. The
-canonical checkpoint remains
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1`.
-Browser Capture1 is eligible but `NOT STARTED`; V3, screenshots, review,
-selection, Product integration, and PR-3 remain `NO`.
-
-No Product, Harness, Machine clone, Evidence1/Evidence2, materializer, or
-Baseline2 change occurred. No new `ai-knowledge` entry was created; existing
-dirty knowledge was preserved. No push, tag, release, deploy, or publication
-occurred.
+The frozen phase bridge keeps Machine evidence immutable and phase-local; the later Browser lineage references its exact artifacts without copying, rewriting, or re-identifying them. This summary makes no Browser Capture execution/status claim. Contract: [Run-Identity Phase-Bridge Design Correction1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-identity-phase-bridge-design-correction1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1 (2026-09-04)
 

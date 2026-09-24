@@ -347,60 +347,25 @@ lifecycle, and provenance, while derived placement is not an adopted fact.
 Common-origin frame coordinates remain separate from these pairwise
 constraints.
 
-The [Relative Time minimum temporal-precedence Research result](../research/exploratory/e2r-relative-time-minimum-temporal-precedence-research1.md)
-is now recorded at commit `a88dd2c5f7d3f93b42e7e89c3cbf0fc8cb2fc784` as an
-**EXPLORATORY / RESEARCH RESULT — NON-NORMATIVE**, pending Human review. It
-compares current authority and implementation evidence and lists a minimum
-contract candidate plus unresolved Human decision points; it does not adopt the
-candidate, promote either draft, or authorize schema, Validator, runtime, or
-application changes. Relative Time semantics and derived-display adoption
-remain open. The separate [History 2 deferred-shapes authoring-scope Research
-result](../research/exploratory/e2r-history2-deferred-shapes-authoring-scope-research1.md)
-is recorded at commit `855a6090313aed7d77f14f0917be0e6eb0bdf4e4` as an
-**EXPLORATORY / RESEARCH RESULT — NON-NORMATIVE**, pending Human review. It
-compares the deferred shapes and identifies unresolved authoring contracts;
-it does not adopt any shape, select an implementation scope or order, change
-the accepted H2-POSITION-CIRCA boundary, or authorize specification, schema,
-Validator, or application changes. The three broader shapes remain deferred,
-and the existing sequence and priorities are unchanged.
+The [minimum temporal-precedence Research result](../research/exploratory/e2r-relative-time-minimum-temporal-precedence-research1.md)
+and [Temporal Research Human Decision Preparation](temporal-research-human-decision-preparation1.md)
+are historical preparation evidence. Their pre-adoption statements that
+Relative Time semantics awaited Human disposition are superseded by the
+[atomic Recorded semantics adoption](relative-time-atomic-recorded-assertion-semantics-adoption1.md).
+That adoption is limited to the atomic Recorded contract: it does not amend
+Draft/schema support or adopt machine evaluation, Derived rules, Validator, or
+application behavior. Causal-order research remains exploratory and separate;
+the active Initial Placement priority is unchanged.
 
-The cross-workstream [Temporal Research Human Decision Preparation](temporal-research-human-decision-preparation1.md)
-is complete and recorded at commit `f1f7a21d6cf4da3b66df966dd38254d5ef4bcb44`.
-It organizes the unresolved Relative Time and History 2 questions, options,
-dependencies, and deferrable choices; it adopts **no Human decision**,
-normative semantics, deferred authoring scope, priority, sequence, or bounded
-implementation. `position + circa` remains accepted/closed, the Relative Time
-candidate remains unadopted, and the three broader History 2 shapes remain
-deferred. Causal order and Temporal Perspectives remain separate workstreams.
-
-The [History 2.x and Relative Time Candidate Cross-Audit](../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md)
-records a non-normative candidate draft and cross-audit. It keeps History
-`1.0.0` stable, treats `position`, `bounded-point`, and `temporal-extent` as
-History shape candidates, treats approximation initially as a Temporal
-Position capability, and treats Relative Time
-`relative-position`, `containment`, `calendar-granule-relation`, and
-`elapsed-offset` as separate candidate families. Recorded/Derived,
-conflict/structural validity, partial understanding, and presentation
-separation remain design gates. Its 2026-09-18 normalization records established
-research boundaries separately from the smaller set of human decisions that
-preceded the first schema candidate. The normalized boundary keeps History
-2.x under the same registered `history` identifier as a same-responsibility
-major-version direction, accepts basic strict `before` and basic `within`
-transitivity only as Derived semantic rules with supported premises, and limits
-the initial approximation candidate to Temporal Positions. The History `2.0.0`
-candidate and Relative Time `0.1.0` candidate version/schema details are now
-selected and implemented in the specification and Validator checkpoints.
-Advanced derivation applicability and solver policy, whole-assertion
-approximation, Stable registration, and application writer/migration/UI remain
-open or deferred as recorded in the audit.
-The first specification checkpoint now defines History `2.0.0` candidate and
-Relative Time Draft `0.1.0` prose, structural schemas, representative fixtures,
-exact Feature declarations, and repository-local validation. This does not
-change Stable registration, application, migration UX, deployment, or release
-implementation. A subsequent bounded Validator checkpoint adds exact-version-
-gated, read-only structural diagnostics and limited two-edge Derived evidence;
-it does not promote either candidate, create Relations, or authorize application
-writes, migration, deployment, or release.
+The [History 2 deferred-shapes Research](../research/exploratory/e2r-history2-deferred-shapes-authoring-scope-research1.md)
+keeps `bounded-point`, `temporal-extent`, and multiple-assertion authoring
+deferred. The [History 2.x / Relative Time Cross-Audit](../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md),
+candidate Drafts, schemas, and bounded Validator results remain their detailed
+candidate-design and implementation evidence; they do not expand the adopted
+atomic meanings. History `2.0.0` and Relative Time `0.1.0` remain non-Stable
+candidates. Cross-Audit Derived-law candidates, advanced solver policy,
+application writing/migration/UI, and broader History 2 authoring remain
+separate open or deferred boundaries; no priority or execution order changes.
 
 ### Human-selected future interval-semantics and Timeline direction (2026-09-23)
 

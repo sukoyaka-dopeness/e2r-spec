@@ -15,7 +15,12 @@ not a second planning authority. Statements such as `current`, `next`, or
   preserves the first tranche's superseded release, shell, and locale-readiness
   snapshots, the bounded pre-release / LiaisonScape 0.2.0 release-preparation
   sequence, and the second tranche's completed Cross-App Relation Deletion and
-  capability-Handoff progression. The [pre-release chronology](release-and-cross-app-chronology.md#pre-release-and-liaison-scape-020-release-preparation-chronology)
+  capability-Handoff progression, plus the 2026-09-23 Post-release
+  LiaisonScape / NarrativeLine observation audit chronology. The [post-release
+  observation audit](release-and-cross-app-chronology.md#post-release-liaisonscape-narrativeline-observation-audit-2026-09-23)
+  preserves dated audit evidence; current dispositions remain in the roadmap,
+  with details in the [bounded migration result](../roadmap-post-release-cross-app-observation-history-migration1-result.md).
+  The [pre-release chronology](release-and-cross-app-chronology.md#pre-release-and-liaison-scape-020-release-preparation-chronology)
   preserves its original dated status language; current release and capability
   status remain in the roadmap.
 - [LiaisonScape Layout and Auto Layout chronology](liaisonscape-layout-and-auto-layout-chronology.md)

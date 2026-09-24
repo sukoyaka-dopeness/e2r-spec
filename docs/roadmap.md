@@ -205,43 +205,40 @@ implementation or Stable readiness. Current priorities and gates are listed
 under `## Research priority` and `## Evidence gates for candidate Extensions`.
 
 ### Application and tooling evidence
-Names P1 validation and read-only Coordinate Draft Validator support are
-complete at their recorded boundaries. Coordinate Prototype `0.1.0` remains
-frozen; its separate Draft candidate is not Stable and application
-writers/migration remain bounded by their accepted evidence. See
-`research/coordinate/decisions/coordinate-draft-0.1.0-review.md` and
-`examples/cross-application-demo.json`.
+Names P1 and its Validator release are closed at their recorded boundary; no
+application writer, migration, repair, or Core `name` synchronization is
+authorized ([closure handoff](../research/names/p1/current/names-workstream-closure-handoff.md)).
+Coordinate remains a frozen Prototype plus a separate non-Stable Draft
+candidate with read-only Validator support; application writing and migration
+remain unauthorized by that evidence ([maturity decision](../research/coordinate/decisions/coordinate-maturity-and-identifier-decision.md),
+[Draft review](../research/coordinate/decisions/coordinate-draft-0.1.0-review.md)).
 
 ### Dataset Replacement Safety implementation checkpoint — 2026-08-20
-LiaisonScape Dataset Replacement Safety D1-D7 and Dataset Handoff v0 were
-implemented and manually accepted within their bounded scope. Detailed
-authority and evidence remain in `dataset-replacement-safety-design.md` and
-`dataset-replacement-safety-liaison-scape-implementation-result.md`; application
-parity is separate.
+LiaisonScape D1-D7 and Dataset Handoff v0 are implemented and manually
+accepted within their recorded scope. See the [design](dataset-replacement-safety-design.md)
+and [implementation result](dataset-replacement-safety-liaison-scape-implementation-result.md);
+cross-application parity remains separate.
 
 ### NarrativeLine Focus Phase 2 closure — 2026-08-23
-Focus Phase 2 is closed for its bounded NarrativeLine scope: explicit
-fresh-Entity creation focuses Name once; draft resume/history restoration do
-not force focus; existing Detail screens retain no generic autofocus. Safe
-Enter/form semantics and Timeline title autofocus remain deferred; this does
-not authorize changes in other screens or applications (runtime checkpoint
-`1d6d609`).
+Focus Phase 2 is closed for its bounded NarrativeLine scope; safe Enter/form
+semantics and Timeline title autofocus remain deferred, and this closure does
+not authorize changes in other screens or applications. See the [Session 0047
+closure record](../sessions/E2R-Session-0047.md) and runtime checkpoint
+`1d6d609`.
 ## Completed design milestone 1: Specification Extension redesign
 
-The design milestone produced the Specification Extension draft `0.1.0` in
-`extensions/specification-extension.md`. That draft remains a draft, not a
-registered Stable Extension. Its version/dependency/Feature/bootstrap
-contract and deferred work are defined in the [draft](../extensions/specification-extension.md).
-This milestone does not authorize Stable registration, migration, or Core
-changes; other candidate Extensions retain separate maturity boundaries.
+The result is Specification Extension draft `0.1.0`, not a registered Stable
+Extension. Its contract and deferred work remain defined by the
+[draft](../extensions/specification-extension.md); this milestone authorizes
+no Stable registration, migration, or Core change.
 
 ## Completed implementation milestone 2: Validator interoperability model
 
-Read-only Validator interoperability for the Specification Extension draft is
-implemented within the bounded evidence in the [acceptance](production-validator-extension-integration-acceptance.md)
-and [result](production-validator-extension-integration-result.md). It does
-not promote the draft to Stable or authorize network retrieval, migration, or
-application writers.
+Read-only Validator interoperability is implemented at the recorded boundary
+([acceptance](production-validator-extension-integration-acceptance.md),
+[result](production-validator-extension-integration-result.md)); this does
+not promote the Specification Extension draft to Stable or authorize network
+retrieval, migration, or application writers.
 
 ## Application evidence track
 
@@ -249,20 +246,19 @@ This track may prepare fixtures and experiments while the Specification
 Extension is designed, but it must not pre-empt its schema decisions.
 
 ### Completed evidence milestone 3: Coordinate prototype
-Coordinate prototype `0.1.0` remains frozen as the experimental
-compatibility/migration baseline, not a Stable Extension. See the [interop result](foreign-graph-coordinate-interop-experiment-result.md).
+Coordinate Prototype `0.1.0` remains frozen as an experimental
+compatibility/migration baseline, not Stable ([interoperability result](foreign-graph-coordinate-interop-experiment-result.md)).
 
 ### Completed design milestone 4: Coordinate draft `0.1.0`
-Coordinate draft `0.1.0` remains a Draft candidate, not Stable. Its exact
-definition and bounded review are in the [draft](../extensions/coordinate-extension-draft.md)
-and [review](../research/coordinate/decisions/coordinate-draft-0.1.0-review.md);
-dedicated decision records retain compatibility and evolution details.
+Coordinate Draft `0.1.0` remains a Draft candidate, not Stable; see its
+[definition](../extensions/coordinate-extension-draft.md) and
+[bounded review](../research/coordinate/decisions/coordinate-draft-0.1.0-review.md).
 
 ### Completed implementation milestone 5: read-only Validator support
 Read-only Validator support recognizes Coordinate Draft and Prototype
-identities; application writing and migration remain separate and unauthorized
-by this milestone. See the [maturity decision](../research/coordinate/decisions/coordinate-maturity-and-identifier-decision.md)
-and [draft review](../research/coordinate/decisions/coordinate-draft-0.1.0-review.md).
+identities; it authorizes neither application writing nor migration (see the
+[maturity decision](../research/coordinate/decisions/coordinate-maturity-and-identifier-decision.md)
+and [Draft review](../research/coordinate/decisions/coordinate-draft-0.1.0-review.md)).
 
 ### Layout persistence experiment
 

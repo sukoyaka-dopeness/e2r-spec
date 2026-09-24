@@ -28,6 +28,7 @@ repository. Start with the responsibility that matches the question:
   compares guarded synthesis paths without changing the Roadmap.
 - [Roadmap Hybrid Reconstruction — Product Verification Pilot Preparation 1](roadmap-hybrid-reconstruction-product-verification-pilot-preparation1.md): claim-level B/A/HOLD manifest for the first proposed pilot; no Roadmap or History edit is authorized by the preparation.
 - [Roadmap Hybrid Reconstruction — Product Verification Pilot Result 1](roadmap-hybrid-reconstruction-product-verification-pilot-result1.md): PV-01–PV-10 current synthesis and History delegation; PV-11–PV-14 remain out of scope.
+- [Roadmap Hybrid Reconstruction — Second Pilot Preparation 1](roadmap-hybrid-reconstruction-second-pilot-preparation1.md): splits the PV-11–PV-14 responsibility area into bounded verification, candidate/risk, provider/Worker, and visual-quality groups; recommends only the isolated verification-envelope group for the next pilot.
 - [NarrativeLine NL-H2-R1](roadmap.md): **ACCEPTED / MANUAL ACCEPTANCE COMPLETE**.
 - [History 2 broader authoring scope](history-2-user-facing-authoring-scope-result.md): **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED**.
 

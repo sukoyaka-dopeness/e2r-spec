@@ -95,6 +95,42 @@ focused validation from the task and diff scope. Retain authority order,
 data-safety boundaries, and explicit stop points for destructive or externally
 visible actions and important design forks.
 
+## Documentation and Roadmap Policy
+
+* Keep `docs/roadmap.md` as the sole current-planning authority and entry
+  point. It should concisely cover current status, priorities, dependencies,
+  active work, relevant explicit deferrals, and pending Human decisions.
+* Keep detailed result, acceptance, audit, reconciliation, and research
+  evidence in their dedicated authority/evidence documents. The roadmap should
+  link to them and carry only the summary needed for current planning; do not
+  duplicate their detailed contents.
+* Move completed, superseded, and historical roadmap chronology to
+  `docs/roadmap-history/`. Maintain it in a few broad, long-lived workstream
+  units, not issue-, checkpoint-, or short-lived-milestone files. Treat
+  `legacy-chronology.md` as a bounded pre-migration preservation unit, not the
+  default append target. Give cross-workstream chronology one primary location
+  and link to it elsewhere rather than duplicating it.
+* Treat words such as `current`, `next`, and `open` in dated historical text as
+  descriptions of that original snapshot, not as current planning authority.
+  Preserve transferred historical blocks' wording, date/status language,
+  source order, and provenance; do not rewrite history to match current
+  understanding. Do not classify material as historical merely because it is
+  old or appears complete: check its authority and evidence against current,
+  open, deferred, qualified, and pending-decision state. Retain or mark mixed
+  or ambiguous material for review rather than guessing; return material
+  design branches to the Human.
+* Keep exploratory hypotheses, design space, possible capabilities, and
+  non-active research detail primarily in Research. Keep explicit deferrals,
+  evidence gates, dependencies, and pending Human decisions in the roadmap
+  when they constrain current planning. Decide the boundary by whether
+  information constrains current planning or is exploratory knowledge, not
+  solely by when work may happen. When moving detail to Research, retain the
+  roadmap pointer and any current dependency or decision boundary.
+* When moving or compressing documentation, check headings, anchors, local and
+  external references, and navigation back to the current authority. Prefer
+  current repository, filesystem, Git, tests, and documentation evidence over
+  older summaries or assumptions.
+
 ## Git Checkpoint Policy
 
 Codex may create local commits when a bounded logical unit is complete and

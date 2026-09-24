@@ -2546,28 +2546,25 @@ and the [existing Layout and Auto Layout chronology](roadmap-history/liaisonscap
 ### LiaisonScape Independent Risk-Gate / Probe-Target Stability Validation 1 (2026-09-14)
 
 The [Independent Risk-Gate / Probe-Target Stability Validation 1 result](liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
-rechecks the previous bounded multi-stage Product probe under failure
-injection, candidate-generation-order perturbation, and four independent
-graph-derived synthetic controls. The normal diagnostic path now requires
-zero fail-closed operations before it can retain an established classification;
-failure injection correctly produced fail-closed operations, no selected best
-candidate for failed probes, and limited-probing insufficiency.
+separates bounded fail-closed diagnostic safety from the still-open
+risk-gate and probe-target qualification. The current planning consequence is:
 
-The previous one-probe `26/26` closure was invariant to list-order reversal
-but not to generation-index perturbation: three targets changed and two
-meaningful dense misses returned (`24/26`). A stable family-plus-fingerprint
-target rule was order-invariant but also reached only `24/26`. Independent
-controls reached `6/8` exact-best and left two near-threshold frontier misses;
-the graph-derived risk gate remains open.
+- failed, timed-out, or nonzero-exit probes fail closed and cannot produce a
+  partial or unverified selected result;
+- generation-order sensitivity remains meaningful negative evidence, with
+  target changes and returned dense misses under generation-index perturbation;
+- independent controls still include meaningful misses, so the graph-derived
+  risk gate remains `OPEN`;
+- probe-target readiness remains `NOT ESTABLISHED`, and the multi-stage
+  selector remains diagnostic-only rather than a production selection policy;
+  and
+- quality solver, Product integration/default, provider, Product adoption,
+  Adaptive Cascade, visual acceptance, Human Review, SLA, and release
+  readiness remain unestablished or open.
 
-Disposition: `C. ORDER DEPENDENCY CONFIRMED / TARGET RULE NOT ESTABLISHED`.
-Keep the multi-stage selector diagnostic-only, quality solver `HOLD / NOT
-ESTABLISHED`, Product integration/default `HOLD`, production provider `NOT
-ESTABLISHED`, Adaptive Initial Placement Cascade `INACTIVE`, Actual Product
-visual evaluation `NOT READY`, Human Review `NOT READY`, and the Initial
-Layout Release blocker `OPEN`. Do not advance Product adoption or Human
-Review; no visual smoke check was warranted because this checkpoint produced
-no new Product visual candidate. Session log is synchronized in Session 0057.
+Perturbation matrices, independent-control detail, dated formulation, and
+checkpoint progression remain in the [dedicated result](liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
+and the [existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-independent-risk-gate-probe-target-stability-validation-1-2026-09-14).
 
 ### LiaisonScape Production-shaped Quality Provider Execution / Browser Cost Envelope 1 (2026-09-14)
 

@@ -2715,192 +2715,63 @@ remain summarized in the current entries below.
 
 ### LiaisonScape Parallel / Incident Bundle Geometry Attribution 1 (2026-09-13)
 
-The [Parallel / Incident Bundle Geometry Attribution 1 result](liaisonscape-parallel-incident-bundle-geometry-attribution1-result.md)
-classifies the bounded matched audit as `MIXED / RETUNE`. With coordinates
-held constant, pair/bundle slot policy directly changed parallel route geometry
-and Relation-label clearance. Titanic JA also changed one ordinary incident
-route and reduced measured outer clearance to about 0.1px after widening;
-`fleet` and `andrews` remained obstacle-influenced routes. This confirms that
-parallel readability cannot be accepted from internal lane separation alone.
-
-Mirror/rotation placement controls under the same routing semantics changed
-side bias and label clearance, including a 3-parallel long-label synthetic
-case. Placement therefore contributes through neighbor angular distribution,
-but no fixture-specific swap or circular-order rule is accepted. The next
-geometry hypothesis is a Relation-label-aware incident-bundle corridor that
-preserves internal physical-side ordering, outer ordinary-Edge clearance, and
-bundle-level obstacle coexistence. Fixed pair spacing is not sufficient.
-
-Parallel bundle geometry and Structural Placement / Angular Ordering remain
-adjacent retune tracks; the attribution result does not make them a serial
-dependency. Self-loop / ordinary-Edge interaction remains independent. No
-bounded production retune or new human acceptance was made. Product
-default/adoption remains `HOLD`, production provider remains `NOT ESTABLISHED`,
-and the Initial Layout Release blocker remains `OPEN`.
+**MIXED / RETUNE; no quality-safe presentation fix or Human acceptance.**
+Parallel geometry and Structural Placement / Angular Ordering remain adjacent,
+not serial; Self-loop interaction remains independent. No fixture-specific
+rule, Product default, or provider is selected. See the [dedicated result](liaisonscape-parallel-incident-bundle-geometry-attribution1-result.md).
 
 ### LiaisonScape Parallel Incident-Bundle Corridor Retune 2 (2026-09-13)
 
-The [Parallel Incident-Bundle Corridor Retune 2 result](liaisonscape-parallel-incident-bundle-corridor-retune2-result.md)
-implemented an opt-in label-aware slot probe. It used the existing deterministic
-Relation-label width, chord-normal projection, and gutter to widen internal
-parallel lanes without changing default routing, manual curvature, or
-Self-loop behavior.
-
-The probe improved internal label/lane measurements but was not quality-safe as
-a whole-bundle rule: Titanic EN side bias worsened to 10.38 and outer clearance
-fell to 1.6px; Titanic JA retained obstacle influence and near-zero outer
-clearance; the reverse synthetic bundle balanced its lanes while consuming all
-outer clearance. The 3-parallel long-label case likewise retained zero outer
-clearance. No human-review handoff was prepared for this candidate.
-
-The working contract is therefore escalated from internal label-aware spacing
-to true group-level corridor allocation: preserve physical-side ordering and
-label envelopes, then allocate bundle center/detour together with outer
-ordinary-Edge and obstacle guards. Endpoint/neighbor angular distribution
-remains an adjacent Structural Placement / Angular Ordering input. Parallel
-and structural tracks remain neighboring retune tracks; Self-loop remains
-independent. Product default/adoption is `HOLD` and the Initial Layout Release
-blocker remains `OPEN`.
+**RETUNE / NOT READY FOR HUMAN REVIEW.** The bounded label-aware corridor probe
+did not establish a quality-safe whole-bundle rule. Parallel and Structural
+Placement remain adjacent tracks; Self-loop remains independent. No routing
+default or acceptance is selected. See the [dedicated result](liaisonscape-parallel-incident-bundle-corridor-retune2-result.md).
 
 ### LiaisonScape Parallel / Incident Geometry Formulation Exploration 1 (2026-09-13)
 
-The [formulation exploration result](liaisonscape-parallel-incident-geometry-formulation-exploration1-result.md)
-classifies further offset/corridor tuning as `PIVOT / NOT READY FOR HUMAN
-REVIEW`. The current sequential route-then-label pipeline cannot reserve final
-parallel label envelopes and later ordinary incident routes in one decision.
-That decision boundary explains the repeated internal-clearance versus outer-
-gutter and side-bias trade-off.
-
-A diagnostic atomic-bundle portfolio plus incident ordinary rerouting was
-deterministic and materially improved the 2-label, 3-plus, reverse-direction,
-long/short, and obstacle synthetic controls. It also repaired Titanic EN label
-ownership and side balance, but canonical Lighthouse lost outer clearance and
-Titanic required 8 ordinary-route changes. The candidate is therefore causal
-evidence, not an accepted presentation rule.
-
-The next Parallel track is an endpoint-sector and atomic incident allocator
-above per-Relation routing. It must allocate the complete incident set,
-Relation-label reservations, bundle center/detour, obstacle guards, and
-physical-side order as one bounded decision. When no sector is feasible it may
-return a generic angular-capacity requirement to Structural Placement /
-Angular Ordering; a fixed placement correction is rejected because the 32-
-degree probe improved Titanic EN but reduced Lighthouse minimum Node
-separation from 85.5px to 40px.
-
-Parallel presentation and Structural Placement remain adjacent negotiating
-tracks. Self-loop remains independent. Product default/adoption remains
-`HOLD`, production provider remains `NOT ESTABLISHED`, Initial Layout
-re-baseline remains blocked, and the Release blocker remains `OPEN`.
+**PIVOT / NOT READY FOR HUMAN REVIEW.** Local offset/corridor tuning was not
+quality-safe; the bounded evidence supports continued investigation of an
+atomic incident-allocation boundary, not an accepted presentation rule.
+Parallel and Structural Placement remain adjacent; Self-loop remains
+independent. See the [dedicated formulation result](liaisonscape-parallel-incident-geometry-formulation-exploration1-result.md).
 
 ### LiaisonScape Parallel / Incident Routing Architecture Experiment 1 (2026-09-13)
 
-The [incident routing architecture experiment](liaisonscape-parallel-incident-geometry-formulation-exploration1-result.md)
-extends the previous corridor probe with a bounded atomic incident portfolio
-and a hard-feasibility-first gate. The candidate evaluates parallel lanes,
-Relation-label reservation, outer ordinary Relations, obstacle influence,
-physical-side uniqueness, and crossing safety before comparing side bias and
-detour cost. It is deterministic and improves the synthetic short/short,
-long/long, long/short, 3-plus, reverse, ordinary, and obstacle controls.
-
-The canonical result is not yet safe: no hard-feasible candidate was found in
-Lighthouse EN/JA or Titanic EN because outer clearance was unavailable; Titanic
-JA had only 3/35 feasible candidates and required 8 ordinary-route changes.
-This records a generic capacity shortage rather than silently accepting a
-scalar trade-off. A fixed 32-degree angular relief is also rejected because
-it reduced Lighthouse minimum Node separation from 85.5px to 40px.
-
-The next implementation boundary is therefore an endpoint-sector/port
-allocator above per-Relation routing. It should atomically reserve the whole
-incident set and return a generic angular-capacity request to Structural
-Placement when routing cannot satisfy the contract. No candidate is ready for
-Human Review. Product default/adoption remains `HOLD`, production provider
-remains `NOT ESTABLISHED`, and the Initial Layout Release blocker remains
-`OPEN`; Self-loop remains independent.
+**PIVOT / NOT READY FOR HUMAN REVIEW.** The diagnostic established a capacity-
+negotiation boundary but did not produce a Human-reviewable candidate. Any
+placement request remains evidence, not an adopted rule. Parallel and
+Structural Placement remain adjacent; Self-loop remains independent. See the
+[dedicated formulation result](liaisonscape-parallel-incident-geometry-formulation-exploration1-result.md).
 
 ### LiaisonScape Endpoint-Sector / Port Allocation Architecture Experiment 2 (2026-09-13)
 
-The [Experiment 2 result](liaisonscape-endpoint-sector-port-allocation-architecture-experiment2-result.md)
-classifies the bounded architecture as `RETUNE / NOT READY FOR HUMAN REVIEW`.
-A first-class contract now separates feasible allocation, structured capacity
-shortage, and diagnostic fallback rendering. Joint endpoint-budget search also
-showed that the previous Lighthouse shortage was a bundle-first search
-artifact: Lighthouse EN/JA became feasible with no ordinary-route churn, and
-Titanic JA churn fell from 8 Relations to 1. Titanic EN remained infeasible and
-returned an approximately 12.2-degree half-sector shortage plus outer/obstacle
-pressure.
-
-The next routing step is a multi-bundle endpoint plan with explicit port
-reservations and bounded backtracking. Structural Placement / Angular Ordering
-may concurrently test the generic Titanic EN capacity request, but must preserve
-Node separation, viewport fit, and unrelated corridors; fixed angular relief
-remains rejected. Self-loop remains independent. Product default/adoption is
-`HOLD`, production provider is `NOT ESTABLISHED`, Initial Layout re-baseline is
-blocked, and the Release blocker remains `OPEN`.
+**RETUNE / NOT READY FOR HUMAN REVIEW.** The bounded endpoint-sector
+architecture distinguishes feasible allocation from capacity shortage, but
+Titanic EN remains a shortage case and no Product routing change is adopted.
+Parallel and Structural Placement remain adjacent; Self-loop remains
+independent. See the [dedicated Experiment 2 result](liaisonscape-endpoint-sector-port-allocation-architecture-experiment2-result.md).
 
 ### LiaisonScape Endpoint Plan Candidate Compression + Capacity-Negotiated Placement Safety (2026-09-13)
 
-The [candidate compression and capacity safety result](liaisonscape-endpoint-plan-candidate-compression-capacity-safety-experiment-result.md)
-is `RETUNE / NOT READY FOR HUMAN REVIEW`. A conservative geometry-family
-portfolio reduced direct per-group candidate generation while retaining
-canonical feasible/shortage outcomes and the shared multi-bundle plan. Smaller
-families dropped rare feasible synthetic candidates; the retained family still
-drifts selected output in short/short, long/short, and multiple-ordinary cases,
-so no existing Human evidence is inherited.
-
-Titanic EN's structured 26.4-degree request was applied as a generic,
-request-driven placement counterfactual: endpoint planning became feasible and
-Node separation changed 68.3px to 64.4px, with crossings 0. Viewport, unrelated
-corridor, lifecycle, and Human readability evidence remain open. Continue with
-compression retuning and request-driven placement safety before Product-facing
-integration; Product default/adoption remains `HOLD`, production provider is
-`NOT ESTABLISHED`, and the Release blocker remains `OPEN`.
+**RETUNE / NOT READY FOR HUMAN REVIEW.** Candidate compression did not preserve
+selected-plan identity across all controls; the request-driven placement
+counterfactual remains unintegrated and unaccepted. No Product integration or
+Human evidence is inherited. See the [dedicated capacity-safety result](liaisonscape-endpoint-plan-candidate-compression-capacity-safety-experiment-result.md).
 
 ### LiaisonScape Endpoint Plan / Multi-Bundle Incident Allocation Experiment (2026-09-13)
 
-The [endpoint-plan result](liaisonscape-endpoint-plan-multi-bundle-incident-allocation-experiment-result.md)
-is `RETUNE / NOT READY FOR HUMAN REVIEW`. A deterministic branch-and-bound
-contract now reserves all parallel bundles at a shared endpoint before atomic
-commit, rejects sector and ordinary-route ownership conflicts, and performs a
-combined authoritative Product presentation validation before accepting a
-plan. The shared two-bundle synthetic was feasible in 6 of at most 512 explored
-states with no ordinary-route churn; canonical one-bundle results remained
-unchanged.
-
-Titanic EN still returned the structured routing capacity shortage. A bounded
-request-driven placement counterfactual made it feasible while changing minimum
-screen-space Node separation from 68.3px to 64.4px, but that is a new unreviewed
-placement candidate, not inherited Human evidence. Next work should reduce
-per-group port-family generation and test the capacity request with generic
-viewport/Node guards. Product default/adoption remains `HOLD`, production
-provider remains `NOT ESTABLISHED`, and the Release blocker remains `OPEN`.
+**RETUNE / NOT READY FOR HUMAN REVIEW.** The bounded endpoint-plan contract
+handles shared-endpoint bundle conflicts, but Titanic EN remains a routing
+capacity-shortage case; its placement counterfactual is unreviewed evidence,
+not a selected rule. See the [dedicated multi-bundle result](liaisonscape-endpoint-plan-multi-bundle-incident-allocation-experiment-result.md).
 
 ### Adaptive Initial Placement Cascade — HYPOTHESIS / FUTURE EXPERIMENT (2026-09-13)
 
-The [Adaptive Initial Placement Cascade and endpoint-plan safety checkpoint](liaisonscape-adaptive-initial-placement-cascade-and-endpoint-plan-safety-result.md)
-records a future hypothesis: try a fast bounded placement, accept only when a
-cheap gate is sufficiently predictive of Actual Product readability/safety,
-and escalate difficult Datasets to higher-quality placement or an explicit
-High-quality Auto Layout responsibility. This is not a current execution
-policy and does not change the current exact-runtime or endpoint/placement
-research priority.
-
-The hypothesis requires a cheap gate that predicts Product quality, low-cost
-escalation, explicit responsibility boundaries for each stage, and a separate
-interaction-stability solution for progressive re-layout. Endpoint-plan and
-capacity-negotiation evidence may inform the future gate, but routing-only,
-placement-escalation, cheap structural, and authoritative-presentation-only
-signals must remain distinct.
-
-The bounded geometry-derived candidate probe reduced typical endpoint families
-to 12--18 candidates, but dropped oracle-feasible results in Lighthouse EN and
-synthetic controls and drifted selected plans in other controls. It is
-`RETUNE / NOT READY FOR HUMAN REVIEW`; the old family remains the audit
-oracle. The request-driven placement lifecycle is only a pure, unintegrated
-contract: initial-open/idle application, drag/transition/manual-authority
-deferral, and stale/cancel discard. Whole-graph viewport, unrelated-corridor,
-interaction, and Actual Product evidence remain open. Product default/adoption
-is `HOLD`, production provider is `NOT ESTABLISHED`, and the Initial Layout
-Release blocker is `OPEN`.
+**HYPOTHESIS / FUTURE EXPERIMENT — inactive, not current execution policy.**
+The bounded candidate-family probe did not retain all oracle-feasible plans;
+request-driven placement remains a pure, unintegrated contract without
+whole-graph or Actual Product acceptance. It does not change current execution
+priority. See the [dedicated cascade and endpoint-plan safety result](liaisonscape-adaptive-initial-placement-cascade-and-endpoint-plan-safety-result.md).
 
 ### Current Initial Layout execution order — Parallel Closure, Structural Retune, and Presentation Re-evaluation (2026-09-14)
 

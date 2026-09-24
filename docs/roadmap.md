@@ -68,7 +68,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | Roadmap chronology / slimming tranches 1–2 | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
-| Residual Roadmap responsibility audit | **AUDIT COMPLETE / NO MIGRATION AUTHORIZED** | [residual audit](roadmap-residual-responsibility-audit1.md); next candidate requires its own bounded, evidence-checked migration manifest |
+| Residual Roadmap responsibility audit | **AUDIT COMPLETE / INITIAL-PLACEMENT POINTER TRANCHE COMPLETE** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); other candidates require separate evidence-checked manifests; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -2654,697 +2654,562 @@ comparative evaluation, with Product integration still unauthorized.
 ### E2R-LIAISONSCAPE-COORDINATELESS-PLACEMENT-COMPARISON-AUDIT1 (2026-08-30)
 
 The stored-versus-derived-versus-explicit-Auto-Layout comparison is recorded in
-[LiaisonScape Coordinate-less Placement Comparison Audit](liaisonscape-coordinate-less-placement-comparison-audit.md).
-The result is `ACCEPTED - CURRENT STORED SAMPLE COORDINATES REMAIN PREFERRED`.
-Both Lighthouse samples have identical 10-Entity / 28-Relation topology and
-stored coordinates for all 10 Entities. Coordinate-less derived placement is
-deterministic but elongated and is not a suitable automatic refresh basis for
-this curated sample; explicit Auto Layout remains a separate user workflow.
-
-No tracked sample or runtime implementation was changed. If the original
-visual concern remains release-relevant, the next bounded choice is manual
-sample-coordinate curation or a separate routing/presentation audit. The
-NarrativeLine Display-Order audit remains pending.
+[LiaisonScape Coordinate-less Placement Comparison
+Audit](liaisonscape-coordinate-less-placement-comparison-audit.md). The result is
+`ACCEPTED - CURRENT STORED SAMPLE COORDINATES REMAIN PREFERRED`. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-RELATION-ROUTING-PRESENTATION-QUALITY-AUDIT1 (2026-08-30)
 
-The Relation routing / presentation quality audit is recorded in [LiaisonScape Relation Routing / Presentation Quality Audit](liaisonscape-relation-routing-presentation-quality-audit.md).
-The result is `ROUTING / PRESENTATION FOLLOW-UP REQUIRED - INITIAL PLACEMENT IS
-NOT PRIMARY CAUSE`. Current stored coordinates remain the comparison basis;
-crossing, foreign-node clearance, Relation-label ownership, and parallel-set
-readability cannot be attributed to placement alone.
-
-Existing focused routing and label tests remain valid, but Lighthouse-scale
-quality evidence is incomplete. A future bounded comparison must separate
-straight conceptual edges, current routed edges, parallel offsets, and manual
-or stored Presentation. No runtime, sample, schema, or release operation was
-changed.
+The Relation routing / presentation quality audit is recorded in [LiaisonScape Relation
+Routing / Presentation Quality
+Audit](liaisonscape-relation-routing-presentation-quality-audit.md). The result is
+`ROUTING / PRESENTATION FOLLOW-UP REQUIRED - INITIAL PLACEMENT IS NOT PRIMARY CAUSE`.
+Detailed evidence and qualifications remain in the linked authority; this dated
+checkpoint does not change current execution order or authorize work beyond its recorded
+scope.
 
 ### E2R-LIAISONSCAPE-SELF-LOOP-SAME-GEOMETRY-COUNTERFACTUAL1 (2026-08-30)
 
-The self-loop same-geometry counterfactual is recorded in [LiaisonScape Self-Loop Same-Geometry Counterfactual](liaisonscape-self-loop-same-geometry-counterfactual.md).
-The result is `NOT JUSTIFIED - SAME-GEOMETRY COUNTERFACTUAL SHOWS NO CLEARLY
-BETTER SELF-LOOP ROUTE`. Ordinary-first routing produced identical self-loop
-geometry because current self-loop candidate selection does not consume
-`occupiedPaths`. `beacon-self-calibrate` remains near an ordinary route, but
-causality and an order-only fix are unproven.
-
-No runtime, sample, test, schema, or release operation was changed.
+The self-loop same-geometry counterfactual is recorded in [LiaisonScape Self-Loop
+Same-Geometry Counterfactual](liaisonscape-self-loop-same-geometry-counterfactual.md).
+The result is `NOT JUSTIFIED - SAME-GEOMETRY COUNTERFACTUAL SHOWS NO CLEARLY BETTER
+SELF-LOOP ROUTE`. Detailed evidence and qualifications remain in the linked authority;
+this dated checkpoint does not change current execution order or authorize work beyond
+its recorded scope.
 
 ### E2R-LIAISONSCAPE-REVERSE-ENDPOINT-PARALLEL-PHYSICAL-SIDE-FIX1 (2026-08-30)
 
-The reverse-endpoint parallel physical-side fix is recorded in [LiaisonScape Reverse-Endpoint Parallel Physical-Side Fix](liaisonscape-reverse-endpoint-parallel-physical-side-fix.md).
-Automatic non-self parallel base offsets now use a canonical unordered
-endpoint frame, so A->B and B->A retain opposite physical sides while their
-semantic directions and arrows remain unchanged. The correction applies only
-to parallel groups; single ordinary Relations, manual offsets, self-loops,
-and obstacle solver behavior remain bounded as before.
-
-LiaisonScape commit `96da8dd` passed 278/278 tests, lint, and build. The
-obstacle-induced collapse remains a separate follow-up. No sample, schema, or
-release operation was changed.
+The reverse-endpoint parallel physical-side fix is recorded in [LiaisonScape
+Reverse-Endpoint Parallel Physical-Side
+Fix](liaisonscape-reverse-endpoint-parallel-physical-side-fix.md). Automatic non-self
+parallel base offsets now use a canonical unordered endpoint frame, so A->B and B->A
+retain opposite physical sides while their semantic directions and arrows remain
+unchanged. Detailed evidence and qualifications remain in the linked authority; this
+dated checkpoint does not change current execution order or authorize work beyond its
+recorded scope.
 
 ### E2R-LIAISONSCAPE-PARALLEL-OBSTACLE-SIDE-COLLAPSE-AUDIT1 (2026-08-30)
 
-The obstacle side-collapse audit is recorded in [LiaisonScape Parallel Obstacle Side-Collapse Audit](liaisonscape-parallel-obstacle-side-collapse-audit.md).
-The result is `CAUSALITY CONFIRMED - OBSTACLE ROUTING INDEPENDENTLY COLLAPSES
-PARALLEL SIDES`: a one-sided obstacle can make individually scored routes
-choose the same escape side even after clean base normalization. The tested
-geometry also retained legal side-preserving candidates that lost under the
-current clearance/detour score, so the smallest next candidate is a bounded
-side-preservation preference in obstacle scoring.
-
-LiaisonScape commit `96da8dd` passed 278/278 tests, lint, and build. No runtime
-change was made by this audit; self-loop, foreign-node, label, crossing, and
-occupied-path/order follow-ups remain separate.
+The obstacle side-collapse audit is recorded in [LiaisonScape Parallel Obstacle
+Side-Collapse Audit](liaisonscape-parallel-obstacle-side-collapse-audit.md). The result
+is `CAUSALITY CONFIRMED - OBSTACLE ROUTING INDEPENDENTLY COLLAPSES PARALLEL SIDES`: a
+one-sided obstacle can make individually scored routes choose the same escape side even
+after clean base normalization. Detailed evidence and qualifications remain in the
+linked authority; this dated checkpoint does not change current execution order or
+authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-PARALLEL-OBSTACLE-SIDE-PRESERVATION-FIX1 (2026-08-30)
 
-The bounded obstacle side-preservation fix is recorded in [LiaisonScape Parallel Obstacle Side-Preservation Fix](liaisonscape-parallel-obstacle-side-preservation-fix.md).
-Safe candidates that preserve the existing parallel physical side are now
-preferred lexicographically, while the existing best-candidate fallback
-allows side switching when no such candidate is safe. No new numeric weight
-or clearance threshold was introduced.
-
-LiaisonScape commit `22f61a8` passed 279/279 tests, lint, and build. The
-change is limited to automatic ordinary parallel obstacle routing; group
-optimization, foreign-node, label, crossing, self-loop, and occupied-path
-redesign remain separate.
+The bounded obstacle side-preservation fix is recorded in [LiaisonScape Parallel
+Obstacle Side-Preservation
+Fix](liaisonscape-parallel-obstacle-side-preservation-fix.md). Safe candidates that
+preserve the existing parallel physical side are now preferred lexicographically, while
+the existing best-candidate fallback allows side switching when no such candidate is
+safe. Detailed evidence and qualifications remain in the linked authority; this dated
+checkpoint does not change current execution order or authorize work beyond its recorded
+scope.
 
 ### E2R-LIAISONSCAPE-FOREIGN-NODE-CLEARANCE-FIX1 (2026-08-30)
 
-The foreign-node clearance audit is recorded in [LiaisonScape Foreign-Node Clearance Audit](liaisonscape-foreign-node-clearance-audit.md).
-The result is `NOT REPRODUCED`: current Lighthouse stored coordinates keep
-all ordinary Relation routes outside the existing 60-unit node-influence
-region. The closest measured case, `clara-maya` near `lighthouse`, remains
-87.3 units from the foreign Node center and 55.3 units beyond the existing
-32-unit Node body radius.
-
-No runtime change was justified or made. New clearance thresholds, score
-weights, candidate redesign, label recovery, and crossing minimization remain
-separate follow-ups.
+The foreign-node clearance audit is recorded in [LiaisonScape Foreign-Node Clearance
+Audit](liaisonscape-foreign-node-clearance-audit.md). The result is `NOT REPRODUCED`:
+current Lighthouse stored coordinates keep all ordinary Relation routes outside the
+existing 60-unit node-influence region. Detailed evidence and qualifications remain in
+the linked authority; this dated checkpoint does not change current execution order or
+authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-RELATION-LABEL-NORMAL-DISTANCE-RECOVERY-FIX1 (2026-08-30)
 
-The Relation-label normal-distance audit is recorded in [LiaisonScape Relation-Label Normal-Distance Recovery Audit](liaisonscape-relation-label-normal-distance-recovery-audit.md).
-The result is `NOT JUSTIFIED`: the existing label helper already returns an
-automatic label toward its owner Edge when pressure disappears, while keeping
-the along-edge anchor stable and retaining necessary displacement when
-collisions remain.
-
-No runtime change was made. New normal-distance thresholds or score weights,
-along-edge recovery, global label layout, foreign-edge routing, and manual
-label semantics remain separate follow-ups.
+The Relation-label normal-distance audit is recorded in [LiaisonScape Relation-Label
+Normal-Distance Recovery
+Audit](liaisonscape-relation-label-normal-distance-recovery-audit.md). The result is
+`NOT JUSTIFIED`: the existing label helper already returns an automatic label toward its
+owner Edge when pressure disappears, while keeping the along-edge anchor stable and
+retaining necessary displacement when collisions remain. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-RELATION-LABEL-ALONG-EDGE-MIDPOINT-RECOVERY-FIX1 (2026-08-30)
 
-The along-edge / midpoint recovery audit is recorded in [LiaisonScape Relation-Label Along-Edge Recovery Audit](liaisonscape-relation-label-along-edge-recovery-audit.md).
-The result is `NOT JUSTIFIED`: existing candidate selection returns labels
-toward the preferred midpoint when pressure disappears, while preserving
-along-edge displacement whenever the preferred position remains blocked.
-
-No runtime change was made. Normal-distance, foreign-edge ownership,
-crossing, global label layout, and manual placement remain separate concerns.
+The along-edge / midpoint recovery audit is recorded in [LiaisonScape Relation-Label
+Along-Edge Recovery Audit](liaisonscape-relation-label-along-edge-recovery-audit.md).
+The result is `NOT JUSTIFIED`: existing candidate selection returns labels toward the
+preferred midpoint when pressure disappears, while preserving along-edge displacement
+whenever the preferred position remains blocked. Detailed evidence and qualifications
+remain in the linked authority; this dated checkpoint does not change current execution
+order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-RELATION-LABEL-FOREIGN-EDGE-OWNERSHIP-FIX1 (2026-08-30)
 
-The foreign-edge ownership audit is recorded in [LiaisonScape Relation-Label Foreign-Edge Ownership Audit](liaisonscape-relation-label-foreign-edge-ownership-audit.md).
-The result is `NOT JUSTIFIED`: current automatic label candidates already
-place representative Lighthouse labels nearer to their owning Relation than
-to the nearest foreign Relation. A new foreign-distance score, ratio, margin,
-or threshold is therefore not justified.
-
-No runtime change was made. Foreign-edge congestion caused by route crossing,
-manual/Owned labels, and global label coordination remain separate follow-ups.
+The foreign-edge ownership audit is recorded in [LiaisonScape Relation-Label
+Foreign-Edge Ownership
+Audit](liaisonscape-relation-label-foreign-edge-ownership-audit.md). The result is `NOT
+JUSTIFIED`: current automatic label candidates already place representative Lighthouse
+labels nearer to their owning Relation than to the nearest foreign Relation. Detailed
+evidence and qualifications remain in the linked authority; this dated checkpoint does
+not change current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-ORDINARY-EDGE-CROSSING-CONGESTION-FIX1 (2026-08-30)
 
-The ordinary-edge crossing audit is recorded in [LiaisonScape Ordinary-Edge Crossing Audit](liaisonscape-ordinary-edge-crossing-audit.md).
-The result is `NOT REPRODUCED`: the current Lighthouse stored geometry has
-zero true non-endpoint ordinary-edge crossings and no sampled near-crossing
-pair below the diagnostic 20-unit band. No crossing score, threshold, or
-global rerouting change was justified.
-
-No runtime change was made. Shared-endpoint fan-out, local congestion,
-self-loop interactions, and future route-order evidence remain separate.
+The ordinary-edge crossing audit is recorded in [LiaisonScape Ordinary-Edge Crossing
+Audit](liaisonscape-ordinary-edge-crossing-audit.md). The result is `NOT REPRODUCED`:
+the current Lighthouse stored geometry has zero true non-endpoint ordinary-edge
+crossings and no sampled near-crossing pair below the diagnostic 20-unit band. Detailed
+evidence and qualifications remain in the linked authority; this dated checkpoint does
+not change current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-SHARED-ENDPOINT-FANOUT-CONGESTION-FIX1 (2026-08-30)
 
-The shared-endpoint fan-out audit is recorded in [LiaisonScape Shared-Endpoint Fan-Out Audit](liaisonscape-shared-endpoint-fanout-audit.md).
-The result is `NOT REPRODUCED`: the current Lighthouse geometry has no
-material post-boundary bundling. The largest incident group, `clara`, has six
-ordinary Relations, and all routes diverge from the shared Node at the first
-post-boundary sample.
-
-No fan-out angle threshold, separation weight, Node-port design, group
-optimizer, or runtime routing change was justified. Parallel, label, crossing,
-and self-loop concerns remain separately bounded.
+The shared-endpoint fan-out audit is recorded in [LiaisonScape Shared-Endpoint Fan-Out
+Audit](liaisonscape-shared-endpoint-fanout-audit.md). The result is `NOT REPRODUCED`:
+the current Lighthouse geometry has no material post-boundary bundling. Detailed
+evidence and qualifications remain in the linked authority; this dated checkpoint does
+not change current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-GRIDNESS-COUNTERFACTUAL1 (2026-08-30)
 
-The gridness counterfactual is recorded in [LiaisonScape Initial Node Placement Gridness Counterfactual](liaisonscape-initial-node-placement-gridness-counterfactual.md).
-The result is `DIRECTION SUPPORTED`: the coordinate-less fallback exhibits
-strong repeated-row gridness, while the existing Auto Layout counterfactual
-removes exact X/Y alignments. The stored Lighthouse geometry remains a
-separate authored baseline with unknown provenance.
-
-No production initial-placement or sample change was made. A bounded
-non-grid initial-placement experiment is the next separate checkpoint.
+The gridness counterfactual is recorded in [LiaisonScape Initial Node Placement Gridness
+Counterfactual](liaisonscape-initial-node-placement-gridness-counterfactual.md). The
+result is `DIRECTION SUPPORTED`: the coordinate-less fallback exhibits strong
+repeated-row gridness, while the existing Auto Layout counterfactual removes exact X/Y
+alignments. Detailed evidence and qualifications remain in the linked authority; this
+dated checkpoint does not change current execution order or authorize work beyond its
+recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-NON-GRID-EXPERIMENT1 (2026-08-30)
 
-The non-grid experiment is recorded in [LiaisonScape Initial Node Placement Non-Grid Experiment](liaisonscape-initial-node-placement-non-grid-experiment.md).
-The result is `PARTIAL`: bounded runs of the existing Auto Layout mechanics
-remove the coordinate-less fallback's repeated-row gridness deterministically,
-but full startup reuse remains unproven for mixed Coordinates, routing/label
-quality, performance, and ownership semantics.
-
-No production runtime, sample, or Coordinate change was made. The next
-candidate checkpoint is bounded-settling implementation with a distinct
-initial-placement boundary.
+The non-grid experiment is recorded in [LiaisonScape Initial Node Placement Non-Grid
+Experiment](liaisonscape-initial-node-placement-non-grid-experiment.md). The result is
+`PARTIAL`: bounded runs of the existing Auto Layout mechanics remove the coordinate-less
+fallback's repeated-row gridness deterministically, but full startup reuse remains
+unproven for mixed Coordinates, routing/label quality, performance, and ownership
+semantics. Detailed evidence and qualifications remain in the linked authority; this
+dated checkpoint does not change current execution order or authorize work beyond its
+recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-BOUNDED-SETTLING-IMPLEMENTATION1 (2026-08-30)
 
-The bounded settling implementation is recorded in [LiaisonScape Initial Node
-Placement Bounded Settling Implementation](liaisonscape-initial-node-placement-bounded-settling-implementation.md).
-The result is `IMPLEMENTED`: Coordinate-less Dataset opening now uses a
-deterministic three-iteration derived placement helper based on the existing
-Auto Layout mechanics. Stored Coordinates remain authoritative, and mixed
-Coordinate opening retains the existing deterministic missing-node path pending
-a separate pinned-node ownership decision.
-
-LiaisonScape passed 280/280 tests, lint, and build. No explicit Auto Layout
-workflow, Dataset mutation, dirty/adoption state, sample, schema, or release
-operation changed.
+The bounded settling implementation is recorded in [LiaisonScape Initial Node Placement
+Bounded Settling
+Implementation](liaisonscape-initial-node-placement-bounded-settling-implementation.md).
+The result is `IMPLEMENTED`: Coordinate-less Dataset opening now uses a deterministic
+three-iteration derived placement helper based on the existing Auto Layout mechanics.
+Detailed evidence and qualifications remain in the linked authority; this dated
+checkpoint does not change current execution order or authorize work beyond its recorded
+scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-CONGESTION-SETTLING-DEPTH-EXPERIMENT1 (2026-08-30)
 
-The settling-depth experiment is recorded in [LiaisonScape Initial Node
-Placement Congestion / Settling Depth Experiment](liaisonscape-initial-node-placement-congestion-settling-depth-experiment.md).
-The result is `RESEARCH REQUIRED`: 6/12-iteration counterfactuals compact the
-Node geometry beyond the accepted 3-iteration candidate, but the existing
-solver is not Edge-crossing-, route-clearance-, or label-aware. No production
-iteration change or sample refresh was accepted; the uncommitted 3-iteration
-candidate remains available for manual review.
+The settling-depth experiment is recorded in [LiaisonScape Initial Node Placement
+Congestion / Settling Depth
+Experiment](liaisonscape-initial-node-placement-congestion-settling-depth-experiment.md).
+The result is `RESEARCH REQUIRED`: 6/12-iteration counterfactuals compact the Node
+geometry beyond the accepted 3-iteration candidate, but the existing solver is not
+Edge-crossing-, route-clearance-, or label-aware. Detailed evidence and qualifications
+remain in the linked authority; this dated checkpoint does not change current execution
+order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-NODE-LAYOUT-PRESENTATION-PRESSURE-OBJECTIVE-DECOMPOSITION1 (2026-08-30)
 
-The presentation-pressure decomposition is recorded in [LiaisonScape Initial
-Node Placement Presentation-Pressure Objective Decomposition](liaisonscape-initial-node-placement-presentation-pressure-objective-decomposition.md).
-The result is `RESEARCH REQUIRED`: the existing Node-only solver does not
-account for Edge, route-corridor, or label pressure, but direct integration of
-production routing and labels would create an unbounded feedback loop. No
-runtime, production iteration, routing, label, or sample change was made. The
-next checkpoint must define one coarse, lexicographic presentation proxy.
+The presentation-pressure decomposition is recorded in [LiaisonScape Initial Node
+Placement Presentation-Pressure Objective
+Decomposition](liaisonscape-initial-node-placement-presentation-pressure-objective-decomposition.md).
+The result is `RESEARCH REQUIRED`: the existing Node-only solver does not account for
+Edge, route-corridor, or label pressure, but direct integration of production routing
+and labels would create an unbounded feedback loop. Detailed evidence and qualifications
+remain in the linked authority; this dated checkpoint does not change current execution
+order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-PARALLEL-SYNTHETIC-PHYSICAL-SIDE-COUNTERFACTUAL1 (2026-08-30)
 
-The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel Synthetic Physical-Side Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md).
-The result is `CAUSALITY CONFIRMED - REVERSE-ENDPOINT PHYSICAL-SIDE
-NORMALIZATION FIX REQUIRED`. Same-direction pairs separate at the base slot
-stage, while an A->B plus B->A pair collapses to the same canonical physical
-side because the directed normal reverses while the slot sign does not.
-
-An obstacle can also switch one side and collapse a two-Relation pair. The
-smallest next implementation candidate is reverse-endpoint physical-side
-normalization, with obstacle-side preservation kept separate. No runtime,
-sample, test, or release operation was changed.
+The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel
+Synthetic Physical-Side
+Counterfactual](liaisonscape-parallel-synthetic-physical-side-counterfactual.md). The
+result is `CAUSALITY CONFIRMED - REVERSE-ENDPOINT PHYSICAL-SIDE NORMALIZATION FIX
+REQUIRED`. Detailed evidence and qualifications remain in the linked authority; this
+dated checkpoint does not change current execution order or authorize work beyond its
+recorded scope.
 
 ### E2R-LIAISONSCAPE-REVERSE-ENDPOINT-PARALLEL-PHYSICAL-SIDE-FIX1 (2026-08-30)
 
-The reverse-endpoint parallel physical-side fix is recorded in [LiaisonScape Reverse-Endpoint Parallel Physical-Side Fix](liaisonscape-reverse-endpoint-parallel-physical-side-fix.md).
-Automatic non-self parallel base offsets now use a canonical unordered
-endpoint frame, so A->B and B->A retain opposite physical sides while their
-semantic directions and arrows remain unchanged. The correction applies only
-to parallel groups; single ordinary Relations, manual offsets, self-loops,
-and obstacle solver behavior remain bounded as before.
-
-LiaisonScape commit `96da8dd` passed 278/278 tests, lint, and build. The
-obstacle-induced collapse remains a separate follow-up. No sample, schema, or
-release operation was changed.
+The reverse-endpoint parallel physical-side fix is recorded in [LiaisonScape
+Reverse-Endpoint Parallel Physical-Side
+Fix](liaisonscape-reverse-endpoint-parallel-physical-side-fix.md). Automatic non-self
+parallel base offsets now use a canonical unordered endpoint frame, so A->B and B->A
+retain opposite physical sides while their semantic directions and arrows remain
+unchanged. Detailed evidence and qualifications remain in the linked authority; this
+dated checkpoint does not change current execution order or authorize work beyond its
+recorded scope.
 
 ### E2R-LIAISONSCAPE-PARALLEL-PHYSICAL-SIDE-DECOMPOSITION-AUDIT1 (2026-08-30)
 
-The parallel physical-side decomposition is recorded in [LiaisonScape Parallel Physical-Side Decomposition Audit](liaisonscape-parallel-physical-side-decomposition-audit.md).
-The result is `INSUFFICIENT EVIDENCE - PARALLEL PHYSICAL-SIDE CAUSE NOT
-ISOLATED`. The Lighthouse sample has only one ordinary parallel group,
-`clara-thomas-mentors` / `clara-thomas-supervises`, both `clara -> thomas`;
-there is no reverse-direction ordinary parallel pair to establish a
-normalization defect.
-
-Existing deterministic slot, reversal, obstacle, occupied-path, and manual
-offset tests remain valid. A frozen stage-by-stage comparison with synthetic
-same-direction and reverse-direction groups is required before any parallel
-runtime change. No runtime, sample, schema, or release operation was changed.
+The parallel physical-side decomposition is recorded in [LiaisonScape Parallel
+Physical-Side Decomposition
+Audit](liaisonscape-parallel-physical-side-decomposition-audit.md). The result is
+`INSUFFICIENT EVIDENCE - PARALLEL PHYSICAL-SIDE CAUSE NOT ISOLATED`. Detailed evidence
+and qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-ROUTING-DECOMPOSITION-SELF-LOOP-AUDIT1 (2026-08-30)
 
-The routing decomposition and self-loop audit is recorded in [LiaisonScape Routing Decomposition / Self-Loop Audit](liaisonscape-routing-decomposition-self-loop-audit.md).
-The result is `SELF-LOOP ROUTING FIX NOT YET JUSTIFIED - INSUFFICIENT CAUSAL
-EVIDENCE`. The two Lighthouse `beacon` self-Relations and the fixed-before-
-ordinary `occupiedPaths` order create a plausible asymmetry, but do not prove
-the observed defect. A same-geometry counterfactual comparison is required.
+The routing decomposition and self-loop audit is recorded in [LiaisonScape Routing
+Decomposition / Self-Loop Audit](liaisonscape-routing-decomposition-self-loop-audit.md).
+The result is `SELF-LOOP ROUTING FIX NOT YET JUSTIFIED - INSUFFICIENT CAUSAL EVIDENCE`.
+Detailed evidence and qualifications remain in the linked authority; this dated
+checkpoint does not change current execution order or authorize work beyond its recorded
+scope.
 
-No runtime, sample, test, schema, or release operation was changed.
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-EDGE-CORRIDOR-PROXY-EXPERIMENT1 (2026-08-30)
 
-The Edge-corridor proxy experiment is recorded in [LiaisonScape Initial
-Placement Edge-Corridor Proxy Experiment](liaisonscape-initial-placement-edge-corridor-proxy-experiment.md).
-The result is `PARTIAL`: straight topological chord crossing (P1) and
-separation (P2) detect controlled synthetic cases, but Lighthouse ranking does
-not explain production routing or the manual congestion concern. No runtime,
-solver, routing, label, iteration, or sample change was made. The next bounded
-checkpoint is the label-pressure proxy experiment.
+The Edge-corridor proxy experiment is recorded in [LiaisonScape Initial Placement
+Edge-Corridor Proxy
+Experiment](liaisonscape-initial-placement-edge-corridor-proxy-experiment.md). The
+result is `PARTIAL`: straight topological chord crossing (P1) and separation (P2) detect
+controlled synthetic cases, but Lighthouse ranking does not explain production routing
+or the manual congestion concern. Detailed evidence and qualifications remain in the
+linked authority; this dated checkpoint does not change current execution order or
+authorize work beyond its recorded scope.
+
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LABEL-PRESSURE-PROXY-EXPERIMENT1 (2026-08-30)
 
-The Label-pressure proxy experiment is recorded in [LiaisonScape Initial
-Placement Label-Pressure Proxy Experiment](liaisonscape-initial-placement-label-pressure-proxy-experiment.md).
-The result is `RESEARCH REQUIRED`: actual label pressure depends on production
-route samples, candidate anchors, occupied paths, and localized text footprint,
-so a straight-chord proxy does not explain Lighthouse reliably. No runtime,
-solver, routing, label, iteration, or sample change was made. A combined proxy
-is not justified by the current evidence.
+The Label-pressure proxy experiment is recorded in [LiaisonScape Initial Placement
+Label-Pressure Proxy
+Experiment](liaisonscape-initial-placement-label-pressure-proxy-experiment.md). The
+result is `RESEARCH REQUIRED`: actual label pressure depends on production route
+samples, candidate anchors, occupied paths, and localized text footprint, so a
+straight-chord proxy does not explain Lighthouse reliably. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
+
 ### E2R-LIAISONSCAPE-DEGREE-CENTERED-OUTWARD-PLACEMENT-EXPERIMENT1 (2026-08-30)
 
-The degree-centered outward experiment is recorded in [LiaisonScape
-Degree-Centered Outward Placement Experiment](liaisonscape-degree-centered-outward-placement-experiment.md).
-The result is `PARTIAL`: Lighthouse centrality selects `clara` consistently,
-supporting a future central-hub seed experiment, but label-aware sectoring and
-the post-settle effect were not established. No runtime, iteration, routing,
-label, sample, or release change was made; the existing uncommitted sample
-candidate remains preserved.
+The degree-centered outward experiment is recorded in [LiaisonScape Degree-Centered
+Outward Placement
+Experiment](liaisonscape-degree-centered-outward-placement-experiment.md). The result is
+`PARTIAL`: Lighthouse centrality selects `clara` consistently, supporting a future
+central-hub seed experiment, but label-aware sectoring and the post-settle effect were
+not established. Detailed evidence and qualifications remain in the linked authority;
+this dated checkpoint does not change current execution order or authorize work beyond
+its recorded scope.
+
 ### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-NODE-REPULSION-SENSITIVITY-EXPERIMENT1 (2026-08-30)
 
-The Node-repulsion sensitivity experiment is recorded in [LiaisonScape
-Initial Placement Node-Repulsion Sensitivity Experiment](liaisonscape-initial-placement-node-repulsion-sensitivity-experiment.md).
-The result is `NOT SUPPORTED`: the current three-iteration candidate's minimum
-Node distance is already beyond the 96-unit repulsion activation distance, and
-repulsion tuning does not explain the presentation concern. No production
-constant, iteration count, routing, label, or sample change was made. The
-central-hub seed remains the stronger separate direction.
+The Node-repulsion sensitivity experiment is recorded in [LiaisonScape Initial Placement
+Node-Repulsion Sensitivity
+Experiment](liaisonscape-initial-placement-node-repulsion-sensitivity-experiment.md).
+The result is `NOT SUPPORTED`: the current three-iteration candidate's minimum Node
+distance is already beyond the 96-unit repulsion activation distance, and repulsion
+tuning does not explain the presentation concern. Detailed evidence and qualifications
+remain in the linked authority; this dated checkpoint does not change current execution
+order or authorize work beyond its recorded scope.
+
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SOURCE-RECONCILIATION-AND-TARGET-EDGE-LENGTH-EXPERIMENT1 (2026-08-30)
 
-The source reconciliation and target-edge-length experiment is recorded in
-[LiaisonScape Initial Placement Source Reconciliation and Target Edge Length
+The source reconciliation and target-edge-length experiment is recorded in [LiaisonScape
+Initial Placement Source Reconciliation and Target Edge Length
 Experiment](liaisonscape-initial-placement-source-reconciliation-and-target-edge-length-experiment.md).
-The result is `SUPPORTED BY EQUATIONS`: live source confirms that
-Coordinate-less opening uses the solver's own degree-ranked seed, not the
-previously described fallback seed, and that always-attractive connected-node
-force explains continued compression. A target Edge length was not selected or
-implemented; redundant `seededPositions` cleanup remains separate. No runtime,
-constant, iteration, routing, label, or sample change was made.
+The result is `SUPPORTED BY EQUATIONS`: live source confirms that Coordinate-less
+opening uses the solver's own degree-ranked seed, not the previously described fallback
+seed, and that always-attractive connected-node force explains continued compression.
+Detailed evidence and qualifications remain in the linked authority; this dated
+checkpoint does not change current execution order or authorize work beyond its recorded
+scope.
+
 ### E2R-LIAISONSCAPE-TARGET-EDGE-LENGTH-CANDIDATE-AND-SHARED-SOLVER-BOUNDARY-EXPERIMENT1 (2026-08-30)
 
 The target-edge-length and shared-solver boundary experiment is recorded in
 [LiaisonScape Target Edge Length Candidate and Shared Solver Boundary
 Experiment](liaisonscape-target-edge-length-candidate-and-shared-solver-boundary-experiment.md).
-The result is `BLOCKED`: current source equations explain continued
-compression, but no non-arbitrary target Edge length is justified by existing
-semantic or geometric evidence. No spring, solver, iteration, routing, label,
-or sample change was made; the existing uncommitted sample candidate remains
-preserved.
+The result is `BLOCKED`: current source equations explain continued compression, but no
+non-arbitrary target Edge length is justified by existing semantic or geometric
+evidence. Detailed evidence and qualifications remain in the linked authority; this
+dated checkpoint does not change current execution order or authorize work beyond its
+recorded scope.
+
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MULTI-HOP-TOPOLOGY-SEED-EXPERIMENT1 (2026-08-30)
 
-The multi-hop topology seed experiment is recorded in [LiaisonScape Initial
-Placement Multi-Hop Topology Seed Experiment](liaisonscape-initial-placement-multi-hop-topology-seed-experiment.md).
-The result is `NOT SUPPORTED`: live source shows a degree-ranked but
-topology-agnostic ring seed, while no bounded external-seed comparison
-established material multi-hop presentation benefit. No runtime, force,
-iteration, routing, label, or sample change was made; the existing uncommitted
-Lighthouse candidate remains preserved.
+The multi-hop topology seed experiment is recorded in [LiaisonScape Initial Placement
+Multi-Hop Topology Seed
+Experiment](liaisonscape-initial-placement-multi-hop-topology-seed-experiment.md). The
+result is `NOT SUPPORTED`: live source shows a degree-ranked but topology-agnostic ring
+seed, while no bounded external-seed comparison established material multi-hop
+presentation benefit. Detailed evidence and qualifications remain in the linked
+authority; this dated checkpoint does not change current execution order or authorize
+work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-EXTERNAL-SEED-INJECTION-AND-MULTI-HOP-COUNTERFACTUAL1 (2026-08-30)
 
-The causal external-seed experiment is recorded in [LiaisonScape External-Seed
-Injection and Multi-Hop Counterfactual](liaisonscape-external-seed-injection-and-multi-hop-counterfactual.md).
-The result is `PARTIAL`: round-trip injection was bit-identical, BFS hop rings
-improved Lighthouse spacing but mixed branches, and parent sectors materially
-improved Lighthouse routing and labels. Cycle, multi-hub, chain, and dense
-controls prevent a general production implementation. The preceding
-`NOT SUPPORTED` record did not perform this causal injection and remains as
-history; this result supplies its missing reconciliation. All temporary runtime
-instrumentation was removed, the existing sample candidate remains untouched
-and uncommitted, and no runtime, force, iteration, routing, label, release, or
-publication change was made.
+The causal external-seed experiment is recorded in [LiaisonScape External-Seed Injection
+and Multi-Hop
+Counterfactual](liaisonscape-external-seed-injection-and-multi-hop-counterfactual.md).
+The result is `PARTIAL`: round-trip injection was bit-identical, BFS hop rings improved
+Lighthouse spacing but mixed branches, and parent sectors materially improved Lighthouse
+routing and labels. Detailed evidence and qualifications remain in the linked authority;
+this dated checkpoint does not change current execution order or authorize work beyond
+its recorded scope.
 
 ### E2R-LIAISONSCAPE-BRANCH-PRESERVING-SEED-TOPOLOGY-GUARD-EXPERIMENT1 (2026-08-30)
 
-The topology-guard experiment is recorded in [LiaisonScape Branch-Preserving
-Seed Topology Guard Experiment](liaisonscape-branch-preserving-seed-topology-guard-experiment.md).
-The result is `PARTIAL`: categorical true branching plus a unique maximum root
-selects C for Lighthouse and protects chain, cycle, dense, and equal-two-hub
-controls, but it accepts unsafe unequal-two-hub and cross-linked-branch cases.
-No threshold-free sufficient production guard was established. All temporary
-runtime instrumentation was removed; the unaccepted Lighthouse candidate and
-protected session state remain untouched. No runtime, seed, force, iteration,
-routing, label, release, or publication change was made.
+The topology-guard experiment is recorded in [LiaisonScape Branch-Preserving Seed
+Topology Guard
+Experiment](liaisonscape-branch-preserving-seed-topology-guard-experiment.md). The
+result is `PARTIAL`: categorical true branching plus a unique maximum root selects C for
+Lighthouse and protects chain, cycle, dense, and equal-two-hub controls, but it accepts
+unsafe unequal-two-hub and cross-linked-branch cases. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-PRESENTATION-AWARE-LOCAL-EXPANSION-COUNTERFACTUAL1 (2026-08-30)
 
-The bounded post-presentation experiment is recorded in [LiaisonScape
-Presentation-Aware Local Expansion Counterfactual](liaisonscape-presentation-aware-local-expansion-counterfactual.md).
-The result is `PARTIAL`: one `clara`-centered 1-hop pass reduced actual
-Lighthouse Relation-label/Node conflicts but did not reduce any ordinary
-crossing, and one label conflict migrated. Cycle, chain, star, and unequal
-two-hub controls remained safe no-ops; cross-linked branches exposed a new
-label conflict at the Lighthouse diagnostic point, and dense 1-hop locality
-degenerated to nine of ten Nodes. The extra fresh presentation pass roughly
-doubled current initial-presentation cost.
-
-No Production displacement or applicability rule was selected. No runtime,
-solver, routing, label, iteration, schema, sample, release, or publication
-change was made. Single-root guard research remains deferred. The next bounded
-research candidate is local-expansion routing-signal decomposition with a
-genuinely multi-region pressure fixture, not Production implementation.
+The bounded post-presentation experiment is recorded in [LiaisonScape Presentation-Aware
+Local Expansion
+Counterfactual](liaisonscape-presentation-aware-local-expansion-counterfactual.md). The
+result is `PARTIAL`: one `clara`-centered 1-hop pass reduced actual Lighthouse
+Relation-label/Node conflicts but did not reduce any ordinary crossing, and one label
+conflict migrated. Detailed evidence and qualifications remain in the linked authority;
+this dated checkpoint does not change current execution order or authorize work beyond
+its recorded scope.
 
 ### E2R-LIAISONSCAPE-LOCAL-EXPANSION-ROUTING-SIGNAL-DECOMPOSITION1 (2026-08-30)
 
-The bounded causal diagnosis is recorded in [LiaisonScape Local-Expansion
-Routing-Signal Decomposition](liaisonscape-local-expansion-routing-signal-decomposition.md).
-The result is `MIXED`: two of seven Lighthouse H2 crossings have a safe bounded
-single-endpoint signal, while route-pair swaps, full route-order reversal, and
-occupied-path removal retain all seven identities. Foreign-Node and
-provisional-label avoidance are material, but removing them trades crossings
-for Node clearance loss or crossing migration because proper transverse
-crossings are not a current candidate-score term.
-
-No Production route, order, penalty, Node movement, label, sample, schema,
-release, or publication change was made. The selected next bounded checkpoint
-is `E2R-LIAISONSCAPE-ROUTING-CROSSING-MIXED-CAUSE-PRIORITIZATION1`; it is not
-started by this record.
+The bounded causal diagnosis is recorded in [LiaisonScape Local-Expansion Routing-Signal
+Decomposition](liaisonscape-local-expansion-routing-signal-decomposition.md). The result
+is `MIXED`: two of seven Lighthouse H2 crossings have a safe bounded single-endpoint
+signal, while route-pair swaps, full route-order reversal, and occupied-path removal
+retain all seven identities. Detailed evidence and qualifications remain in the linked
+authority; this dated checkpoint does not change current execution order or authorize
+work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-ROUTING-CROSSING-MIXED-CAUSE-PRIORITIZATION1 (2026-08-31)
 
-The bounded candidate-space experiment is recorded in [LiaisonScape Routing-
-Crossing Mixed-Cause Prioritization](liaisonscape-routing-crossing-mixed-cause-prioritization.md).
-Its result is `DIRECTION SUPPORTED`: current candidates can safely resolve five
-of seven English Lighthouse true crossings through two one-Relation
-replacements, and both benefits survive fresh routing and labels. No straight
-or lower-curvature candidate is safe. A bounded beacon trajectory also exposes
-a large route-sweep discontinuity when automatic offset selection flips side,
-but straight-following introduces foreign-Node penetration.
-
-This selects P1, router objective first. Candidate existence does not establish
-a Production selector because true crossings are not scored and sequential
-routing hides future routes. No runtime, route score, candidate set, Node
-placement, label, sample, schema, release, or publication change was made. The
-next bounded candidate is
-`E2R-LIAISONSCAPE-ORDINARY-ROUTE-TRUE-CROSSING-OBJECTIVE-EXPERIMENT1`; it is not
-started by this record.
+The bounded candidate-space experiment is recorded in [LiaisonScape Routing- Crossing
+Mixed-Cause
+Prioritization](liaisonscape-routing-crossing-mixed-cause-prioritization.md). Its result
+is `DIRECTION SUPPORTED`: current candidates can safely resolve five of seven English
+Lighthouse true crossings through two one-Relation replacements, and both benefits
+survive fresh routing and labels. Detailed evidence and qualifications remain in the
+linked authority; this dated checkpoint does not change current execution order or
+authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-ORDINARY-ROUTE-TRUE-CROSSING-OBJECTIVE-EXPERIMENT1 (2026-08-31)
 
 The bounded objective experiment is recorded in [LiaisonScape Ordinary-Route
-True-Crossing Objective Experiment](liaisonscape-ordinary-route-true-crossing-objective-experiment.md).
-Its result is `TRADE-OFF`: threshold-free X1 preserves hard Node and
-provisional-label safety but cannot select the previously proven Lighthouse
-crossing reductions because those candidates fail its provisional-label gate.
-Sequential and full-context Lighthouse results are identical, so future-route
-visibility is not the target-fixture blocker. Dense control reduces crossings
-but causes migration, more than 20% route churn, clearance regression, and
-high diagnostic cost.
-
-No runtime, routing, placement, label, candidate-set, sample, schema, release,
-or publication change was made. The selected next bounded checkpoint is
-`E2R-LIAISONSCAPE-ORDINARY-ROUTE-NODE-LABEL-CROSSING-PRIORITY-SEMANTICS-EXPERIMENT1`;
-it is selected only and is not started by this record.
+True-Crossing Objective
+Experiment](liaisonscape-ordinary-route-true-crossing-objective-experiment.md). Its
+result is `TRADE-OFF`: threshold-free X1 preserves hard Node and provisional-label
+safety but cannot select the previously proven Lighthouse crossing reductions because
+those candidates fail its provisional-label gate. Detailed evidence and qualifications
+remain in the linked authority; this dated checkpoint does not change current execution
+order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-NEAR-CENTER-WINNER-DISCONTINUITY-EXPERIMENT1 (2026-09-01)
 
 The live frontier experiment is recorded in [LiaisonScape Near-Center Winner
-Discontinuity Experiment](liaisonscape-automatic-route-near-center-winner-discontinuity-experiment.md).
-It is `F7 / MIXED`: near-center candidates exist, but different Relations lose
-them to Node-label pressure, occupied paths, or combined safety cliffs.
-
-No runtime, score, candidate-set, label, sample, parallel, self-loop, schema,
-release, or publication change was made. The selected next checkpoint is
-`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-NEAR-CENTER-LABEL-PRESSURE-CONTINUITY-EXPERIMENT1`;
-it is selected only and is not started by this record.
+Discontinuity
+Experiment](liaisonscape-automatic-route-near-center-winner-discontinuity-experiment.md).
+It is `F7 / MIXED`: near-center candidates exist, but different Relations lose them to
+Node-label pressure, occupied paths, or combined safety cliffs. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-THREE-LABEL-CORRIDOR-FEASIBILITY-AUDIT1 (2026-09-01)
 
-The feasibility audit is recorded in [LiaisonScape Three-Label Corridor
-Feasibility Audit](liaisonscape-automatic-route-three-label-corridor-feasibility-audit.md).
-It is `BLOCKED / F6`: pressure omission is established, but the current label
-placement API does not expose the full candidate inventory and exact safety
-semantics needed for a joint feasibility oracle. No second solver or copied
-safety logic was introduced.
-
-No runtime, routing, score, label, candidate-set, sample, parallel, self-loop,
-schema, release, or publication change was made. The selected next checkpoint
-is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-NEAR-CENTER-WINNER-DISCONTINUITY-EXPERIMENT1`;
-it is selected only and is not started by this record.
+The feasibility audit is recorded in [LiaisonScape Three-Label Corridor Feasibility
+Audit](liaisonscape-automatic-route-three-label-corridor-feasibility-audit.md). It is
+`BLOCKED / F6`: pressure omission is established, but the current label placement API
+does not expose the full candidate inventory and exact safety semantics needed for a
+joint feasibility oracle. Detailed evidence and qualifications remain in the linked
+authority; this dated checkpoint does not change current execution order or authorize
+work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-MULTI-LABEL-CORRIDOR-ISOLATION1 (2026-09-01)
 
-The canonical App-pipeline isolation is recorded in [LiaisonScape Multi-Label
-Corridor Isolation](liaisonscape-automatic-route-multi-label-corridor-isolation.md).
-It is `DIRECTION SUPPORTED`: both Clara/Thomas Relations require all three
-observed owners under live omission, while Sofia/Archive has alternative
-single-owner sets and Authority/Lighthouse is a foreign-label control.
-
-No runtime, routing, score, label, candidate-set, sample, parallel, self-loop,
-schema, release, or publication change was made. The selected next bounded
-checkpoint is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-THREE-LABEL-CORRIDOR-FEASIBILITY-AUDIT1`;
-it is selected only and is not started by this record.
+The canonical App-pipeline isolation is recorded in [LiaisonScape Multi-Label Corridor
+Isolation](liaisonscape-automatic-route-multi-label-corridor-isolation.md). It is
+`DIRECTION SUPPORTED`: both Clara/Thomas Relations require all three observed owners
+under live omission, while Sofia/Archive has alternative single-owner sets and
+Authority/Lighthouse is a foreign-label control. Detailed evidence and qualifications
+remain in the linked authority; this dated checkpoint does not change current execution
+order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-LIGHTHOUSE-LOCAL-CURVATURE-BLOCKER-INVENTORY1 (2026-09-01)
 
 The Japanese Lighthouse inventory is recorded in [LiaisonScape Lighthouse Local
-Curvature Blocker Inventory](liaisonscape-lighthouse-local-curvature-blocker-inventory.md).
-It is `MIXED`: Clara/Thomas and Sofia/Archive are multiple-label cases, while
-Authority/Lighthouse is a single foreign-label case; no single endpoint-label
-qualifying case was found.
-
-No runtime, routing, scoring, label placement, candidate-set, sample, parallel,
-self-loop, schema, release, or publication change was made. The selected next
-checkpoint is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-MULTI-LABEL-CORRIDOR-ISOLATION1`;
-it is selected only and is not started by this record.
+Curvature Blocker
+Inventory](liaisonscape-lighthouse-local-curvature-blocker-inventory.md). It is `MIXED`:
+Clara/Thomas and Sofia/Archive are multiple-label cases, while Authority/Lighthouse is a
+single foreign-label case; no single endpoint-label qualifying case was found. Detailed
+evidence and qualifications remain in the linked authority; this dated checkpoint does
+not change current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-ENDPOINT-LABEL-CORRIDOR-RELAXATION-EXPERIMENT1 (2026-09-01)
 
 The controlled experiment is recorded in [LiaisonScape Endpoint Label Corridor
-Relaxation Experiment](liaisonscape-automatic-route-endpoint-label-corridor-relaxation-experiment.md).
+Relaxation
+Experiment](liaisonscape-automatic-route-endpoint-label-corridor-relaxation-experiment.md).
 It is `PARTIAL`: existing candidates plus target-owner-only previous-placement
-preference removal reopened a single endpoint corridor through chord 160, but a
-second endpoint blocker remained decisive and no Lighthouse case was shown.
-
-No runtime, routing, scoring, candidate-set, label, sample, parallel, self-loop,
-schema, release, or publication change was made. The selected next bounded
-checkpoint is `E2R-LIAISONSCAPE-LIGHTHOUSE-LOCAL-CURVATURE-BLOCKER-INVENTORY1`;
-it is selected only and is not started by this record.
+preference removal reopened a single endpoint corridor through chord 160, but a second
+endpoint blocker remained decisive and no Lighthouse case was shown. Detailed evidence
+and qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-SHORT-EDGE-NORMALIZED-CURVATURE-AUDIT1 (2026-08-31)
 
-The controlled source audit is recorded in [LiaisonScape Automatic-Route
-Short-Edge / Normalized-Curvature Audit](liaisonscape-automatic-route-short-edge-normalized-curvature-audit.md).
-It is `MIXED`: absolute offsets amplify normalized curvature on short chords,
-while ordinary automatic endpoint labels alone did not curve the minimal
-fixture; endpoint labels occupying the corridor did select nonzero live routes.
-
-No runtime, routing, score, candidate-set, label, sample, parallel, self-loop,
-schema, release, or publication change was made. The selected next checkpoint
-is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-ENDPOINT-LABEL-CORRIDOR-RELAXATION-EXPERIMENT1`;
-it is selected only and is not started by this record.
+The controlled source audit is recorded in [LiaisonScape Automatic-Route Short-Edge /
+Normalized-Curvature
+Audit](liaisonscape-automatic-route-short-edge-normalized-curvature-audit.md). It is
+`MIXED`: absolute offsets amplify normalized curvature on short chords, while ordinary
+automatic endpoint labels alone did not curve the minimal fixture; endpoint labels
+occupying the corridor did select nonzero live routes. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-ORDINARY-ROUTE-NODE-LABEL-CROSSING-PRIORITY-SEMANTICS-EXPERIMENT1 (2026-08-31)
 
 The bounded semantics experiment is recorded in [LiaisonScape Ordinary-Route
-Node-Label-Crossing Priority Semantics Experiment](liaisonscape-ordinary-route-node-label-crossing-priority-semantics-experiment.md).
-Its result is `MIXED`: provisional route/Node-label intersections are only
-partially predictive of final presentation safety. In the English Lighthouse
-inventory, 13 of 21 provisional intersections persist and eight resolve, but
-all 14 label-blocked crossing-improvement candidates also migrate another
-measured label-conflict identity. Cross-linked and Japanese controls include
-cleanly resolving examples, while a final-presentation oracle reduces English
-H2 from seven to two with label-identity migration and one-step route/label
-feedback.
-
-No runtime, routing, label, placement, candidate-set, sample, schema, release,
-or publication change was made. The selected next bounded checkpoint is
-`E2R-LIAISONSCAPE-PROVISIONAL-LABEL-GATE-PREDICTIVENESS-SUBSET1`; it is
-selected only and is not started by this record.
+Node-Label-Crossing Priority Semantics
+Experiment](liaisonscape-ordinary-route-node-label-crossing-priority-semantics-experiment.md).
+Its result is `MIXED`: provisional route/Node-label intersections are only partially
+predictive of final presentation safety. Detailed evidence and qualifications remain in
+the linked authority; this dated checkpoint does not change current execution order or
+authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-HISTORICAL-REPLAY-AUDIT1 (2026-08-31)
 
-The historical detached-worktree replay is recorded in [LiaisonScape
-Automatic-Route Historical Replay Audit](liaisonscape-automatic-route-historical-replay-audit.md).
-Its result is `TRADE-OFF — EARLIER ROUTING IS TEMPORALLY SMOOTHER BUT
-REINTRODUCES ACCEPTED COLLISION REGRESSIONS`: G3/G4 have a stable beacon
-trajectory, while those generations predate accepted physical-side protections
-and omit current provisional-label behavior; G5 also fails the foreign-Node
-clearance control. The current beacon discontinuity begins at the provisional
-label-pressure change in `d0c885d`.
-
-No runtime, routing, placement, label, candidate-set, sample, schema, release,
-or publication change was made. The selected next bounded checkpoint is
-`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-HISTORICAL-SAFETY-DELTA-ISOLATION1`; it is
-selected only and is not started by this record.
+The historical detached-worktree replay is recorded in [LiaisonScape Automatic-Route
+Historical Replay Audit](liaisonscape-automatic-route-historical-replay-audit.md). Its
+result is `TRADE-OFF — EARLIER ROUTING IS TEMPORALLY SMOOTHER BUT REINTRODUCES ACCEPTED
+COLLISION REGRESSIONS`: G3/G4 have a stable beacon trajectory, while those generations
+predate accepted physical-side protections and omit current provisional-label behavior;
+G5 also fails the foreign-Node clearance control. Detailed evidence and qualifications
+remain in the linked authority; this dated checkpoint does not change current execution
+order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-HISTORICAL-SAFETY-DELTA-ISOLATION1 (2026-08-31)
 
-The property-level replay is recorded in [LiaisonScape Automatic-Route
-Historical Safety-Delta Isolation](liaisonscape-automatic-route-historical-safety-delta-isolation.md).
-Its result is `MIXED — PROVISIONAL-LABEL PRESSURE IS CAUSAL BUT NO GLOBAL
-RELAXATION IS SAFE`: the hard provisional-label boundary alone causes the
-beacon flip, while full removal recovers continuity but changes route and label
-identities across both locales.
-
-No runtime, routing, label, candidate-set, sample, schema, release, or
-publication change was made. The selected next bounded checkpoint is
-`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-PRESSURE-TEMPORAL-SEMANTICS-EXPERIMENT1`;
-it is selected only and is not started by this record.
+The property-level replay is recorded in [LiaisonScape Automatic-Route Historical
+Safety-Delta
+Isolation](liaisonscape-automatic-route-historical-safety-delta-isolation.md). Its
+result is `MIXED — PROVISIONAL-LABEL PRESSURE IS CAUSAL BUT NO GLOBAL RELAXATION IS
+SAFE`: the hard provisional-label boundary alone causes the beacon flip, while full
+removal recovers continuity but changes route and label identities across both locales.
+Detailed evidence and qualifications remain in the linked authority; this dated
+checkpoint does not change current execution order or authorize work beyond its recorded
+scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-PRESSURE-TEMPORAL-SEMANTICS-EXPERIMENT1 (2026-08-31)
 
-The active-drag and release comparison is recorded in [LiaisonScape Automatic-
-Route Label-Pressure Temporal Semantics Experiment](liaisonscape-automatic-route-label-pressure-temporal-semantics-experiment.md).
-Its result is `TRADE-OFF — DRAG-TIME LABEL DEFER REMOVES THE MID-DRAG FLIP BUT
-MOVES THE SAME DISCONTINUITY TO RELEASE`: snapshot, defer, and offset hold make
-the beacon drag smooth, but each restores the current 216-unit discontinuity
-when released, and defer has the largest temporary label-conflict inventory.
-
-No runtime, routing, drag, label, candidate-set, sample, schema, release, or
-publication change was made. The selected next bounded checkpoint is
-`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-RELEASE-TRANSITION-SEMANTICS-EXPERIMENT1`;
-it is selected only and is not started by this record.
+The active-drag and release comparison is recorded in [LiaisonScape Automatic- Route
+Label-Pressure Temporal Semantics
+Experiment](liaisonscape-automatic-route-label-pressure-temporal-semantics-experiment.md).
+Its result is `TRADE-OFF — DRAG-TIME LABEL DEFER REMOVES THE MID-DRAG FLIP BUT MOVES THE
+SAME DISCONTINUITY TO RELEASE`: snapshot, defer, and offset hold make the beacon drag
+smooth, but each restores the current 216-unit discontinuity when released, and defer
+has the largest temporary label-conflict inventory. Detailed evidence and qualifications
+remain in the linked authority; this dated checkpoint does not change current execution
+order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FINITE-REVALIDATION-EXPERIMENT1 (2026-08-31)
 
 The bounded two-stage experiment is recorded in [LiaisonScape Automatic-Route
-Final-Label Finite Revalidation Experiment](liaisonscape-automatic-route-final-label-finite-revalidation-experiment.md).
-Its result is `MIXED — FINAL-LABEL REVALIDATION IS INFORMATIVE BUT NOT YET A
-STABLE SELECTION SEMANTIC`: using Pass-1 final Node-label rectangles for one
-otherwise-current arbitration pass changes six English and two Japanese
-ordinary routes. A hypothetical next feed is stable in English but changes four
-Japanese routes, so the method cannot yet be a locale-independent Production
-selection boundary.
-
-No runtime, routing, drag/release behavior, label placement, candidate set,
-sample, schema, release, or publication change was made. The selected next
-bounded checkpoint is
-`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-STABILITY-EXPERIMENT1`;
-it is selected only and is not started by this record.
+Final-Label Finite Revalidation
+Experiment](liaisonscape-automatic-route-final-label-finite-revalidation-experiment.md).
+Its result is `MIXED — FINAL-LABEL REVALIDATION IS INFORMATIVE BUT NOT YET A STABLE
+SELECTION SEMANTIC`: using Pass-1 final Node-label rectangles for one otherwise-current
+arbitration pass changes six English and two Japanese ordinary routes. Detailed evidence
+and qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-STABILITY-EXPERIMENT1 (2026-08-31)
 
-The bounded feedback probe is recorded in [LiaisonScape Automatic-Route
-Final-Label Feedback Stability Experiment](liaisonscape-automatic-route-final-label-feedback-stability-experiment.md).
-Its result is `PARTIAL — JA REQUIRES ADDITIONAL FINAL-LABEL FEEDBACK PASSES
-BEFORE STABILIZING`: EN is fixed after Pass 2; JA changes two routes at Pass 2,
-four further routes at Pass 3, and is fixed at Pass 4. No cycle was observed.
-
-This does not authorize iterative Production routing: the cascade remains
-locale-dependent and its precise label/occupied-path cause, independent safety,
-and presentation effect are unverified. The selected next bounded checkpoint is
-`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-CASCADE-CAUSE-ISOLATION1`; it is
-selected only and is not started by this record.
+The bounded feedback probe is recorded in [LiaisonScape Automatic-Route Final-Label
+Feedback Stability
+Experiment](liaisonscape-automatic-route-final-label-feedback-stability-experiment.md).
+Its result is `PARTIAL — JA REQUIRES ADDITIONAL FINAL-LABEL FEEDBACK PASSES BEFORE
+STABILIZING`: EN is fixed after Pass 2; JA changes two routes at Pass 2, four further
+routes at Pass 3, and is fixed at Pass 4. Detailed evidence and qualifications remain in
+the linked authority; this dated checkpoint does not change current execution order or
+authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-CASCADE-CAUSE-ISOLATION1 (2026-08-31)
 
-The bounded cause isolation is recorded in [LiaisonScape Automatic-Route
-Final-Label Cascade Cause Isolation](liaisonscape-automatic-route-final-label-cascade-cause-isolation.md).
-Its result is `DIRECTION SUPPORTED`: reverting only the Pass-2 Clara final
-Node-label rectangle to its Pass-1 geometry removes all four Japanese Pass-3
-Clara-centred route changes. The first-stage source of Clara's movement and the
-hard-versus-halo score signal remain unisolated.
-
-No runtime, routing, order, label placement, candidate-set, sample, schema,
-release, or publication change was made. The selected next bounded checkpoint
-is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-HARD-BOUNDARY-SEMANTICS-EXPERIMENT1`;
-it is selected only and is not started by this record.
+The bounded cause isolation is recorded in [LiaisonScape Automatic-Route Final-Label
+Cascade Cause
+Isolation](liaisonscape-automatic-route-final-label-cascade-cause-isolation.md). Its
+result is `DIRECTION SUPPORTED`: reverting only the Pass-2 Clara final Node-label
+rectangle to its Pass-1 geometry removes all four Japanese Pass-3 Clara-centred route
+changes. Detailed evidence and qualifications remain in the linked authority; this dated
+checkpoint does not change current execution order or authorize work beyond its recorded
+scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-HARD-BOUNDARY-SEMANTICS-EXPERIMENT1 (2026-08-31)
 
-The score-boundary attribution attempt is recorded in [LiaisonScape
-Automatic-Route Final-Label Score-Boundary Semantics Experiment](liaisonscape-automatic-route-final-label-hard-boundary-semantics-experiment.md).
-It is `BLOCKED`: a partial score reconstruction did not reproduce all four live
-Japanese Pass-3 winners, so attributing them to hard, halo, occupied-path, or
-tie semantics would be unreliable.
-
-No runtime, routing, order, label placement, candidate-set, sample, schema,
-release, or publication change was made. The selected next bounded checkpoint
-is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-SCORE-TRACE-REPRODUCTION1`;
-it is selected only and is not started by this record.
+The score-boundary attribution attempt is recorded in [LiaisonScape Automatic-Route
+Final-Label Score-Boundary Semantics
+Experiment](liaisonscape-automatic-route-final-label-hard-boundary-semantics-experiment.md).
+It is `BLOCKED`: a partial score reconstruction did not reproduce all four live Japanese
+Pass-3 winners, so attributing them to hard, halo, occupied-path, or tie semantics would
+be unreliable. Detailed evidence and qualifications remain in the linked authority; this
+dated checkpoint does not change current execution order or authorize work beyond its
+recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-SCORE-TRACE-REPRODUCTION1 (2026-08-31)
 
-The live-score trace reproduction attempt is recorded in [LiaisonScape
-Automatic-Route Final-Label Score-Trace Reproduction](liaisonscape-automatic-route-final-label-score-trace-reproduction.md).
-It is `BLOCKED`: a read-only observer can compile inside the live candidate
-loop, but an App-pipeline L0/L1 harness has not yet attached it and reproduced
-the eight required target winners.
-
-No runtime, routing, scoring, order, label placement, candidate-set, sample,
-schema, release, or publication change was made. The selected next bounded
-checkpoint is `E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-APP-PIPELINE-TRACE-HARNESS1`;
-it is selected only and is not started by this record.
+The live-score trace reproduction attempt is recorded in [LiaisonScape Automatic-Route
+Final-Label Score-Trace
+Reproduction](liaisonscape-automatic-route-final-label-score-trace-reproduction.md). It
+is `BLOCKED`: a read-only observer can compile inside the live candidate loop, but an
+App-pipeline L0/L1 harness has not yet attached it and reproduced the eight required
+target winners. Detailed evidence and qualifications remain in the linked authority;
+this dated checkpoint does not change current execution order or authorize work beyond
+its recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-HALO-CONTINUITY-SEMANTICS-EXPERIMENT1 (2026-09-01)
 
-The bounded halo-semantics experiment is recorded in [LiaisonScape
-Automatic-Route Label-Halo Continuity Semantics Experiment](liaisonscape-automatic-route-label-halo-continuity-semantics-experiment.md).
-Its result is `PARTIAL`: a hard-preserving magnitude-first diagnostic recovers
-the `authority-lighthouse` straight candidate, but its minimum label distance
-falls from `20.087` to `5.809`, and the direction does not recover the main
-Clara/Thomas hard-label frontier. Halo-first reproduces the current JA
-selection; occupied-path and Node-safety controls remain intact.
-
-No runtime, routing, score, candidate-set, label placement, sample, parallel,
-self-loop, schema, release, or publication change was made. The selected next
-bounded checkpoint is
-`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-HALO-MINIMUM-CLEARANCE-BOUNDARY-AUDIT1`;
-it is selected only and is not started by this record.
+The bounded halo-semantics experiment is recorded in [LiaisonScape Automatic-Route
+Label-Halo Continuity Semantics
+Experiment](liaisonscape-automatic-route-label-halo-continuity-semantics-experiment.md).
+Its result is `PARTIAL`: a hard-preserving magnitude-first diagnostic recovers the
+`authority-lighthouse` straight candidate, but its minimum label distance falls from
+`20.087` to `5.809`, and the direction does not recover the main Clara/Thomas hard-label
+frontier. Detailed evidence and qualifications remain in the linked authority; this
+dated checkpoint does not change current execution order or authorize work beyond its
+recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-NEAR-CENTER-LABEL-PRESSURE-CONTINUITY-EXPERIMENT1 (2026-09-01)
 
-The canonical App-pipeline label-pressure experiment is recorded in
-[LiaisonScape Automatic-Route Near-Center Label-Pressure Continuity Experiment](liaisonscape-automatic-route-near-center-label-pressure-continuity-experiment.md).
-Its result is `MIXED`: label pressure is causal, but its boundary is
-Relation-specific. Mentors has a multi-owner hard-plus-halo boundary, while
-the Authority/Lighthouse straight candidate loses to foreign-label halo
-pressure alone. Removing only halo pressure recovers straight offset `0` for
-Authority/Lighthouse but leaves mentors at `-52`; occupied-path and Node-safety
-negative controls remain intact.
-
-No runtime, routing, score, candidate-set, label placement, sample, parallel,
-self-loop, schema, release, or publication change was made. The selected next
-bounded checkpoint is
-`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-HALO-CONTINUITY-SEMANTICS-EXPERIMENT1`;
-it is selected only and is not started by this record.
+The canonical App-pipeline label-pressure experiment is recorded in [LiaisonScape
+Automatic-Route Near-Center Label-Pressure Continuity
+Experiment](liaisonscape-automatic-route-near-center-label-pressure-continuity-experiment.md).
+Its result is `MIXED`: label pressure is causal, but its boundary is Relation-specific.
+Detailed evidence and qualifications remain in the linked authority; this dated
+checkpoint does not change current execution order or authorize work beyond its recorded
+scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-LABEL-HALO-MINIMUM-CLEARANCE-BOUNDARY-AUDIT1 (2026-09-01)
 
-The bounded minimum-clearance audit is recorded in [LiaisonScape
-Automatic-Route Label-Halo Minimum-Clearance Boundary Audit](liaisonscape-automatic-route-label-halo-minimum-clearance-boundary-audit.md).
-Its result is `PARTIAL`: JA authority/lighthouse has reproducible hard-safe
-breakpoints at approximately `5.809`, `12.840`, and `20.087`, but the broader
-graph has dense Relation-specific breakpoints and EN has no shared boundary
-with the same effect. Symbolic `Cmin = 0` recovers one JA straight route but
-does not reduce H2 crossings or resolve the Clara/Thomas hard-label frontier.
-
-No runtime, routing, score, candidate-set, label placement, sample, parallel,
-self-loop, schema, release, or publication change was made. The selected next
-bounded checkpoint is
-`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-HARD-LABEL-CORRIDOR-BOUNDARY-AUDIT1`;
-it is selected only and is not started by this record.
+The bounded minimum-clearance audit is recorded in [LiaisonScape Automatic-Route
+Label-Halo Minimum-Clearance Boundary
+Audit](liaisonscape-automatic-route-label-halo-minimum-clearance-boundary-audit.md). Its
+result is `PARTIAL`: JA authority/lighthouse has reproducible hard-safe breakpoints at
+approximately `5.809`, `12.840`, and `20.087`, but the broader graph has dense
+Relation-specific breakpoints and EN has no shared boundary with the same effect.
+Detailed evidence and qualifications remain in the linked authority; this dated
+checkpoint does not change current execution order or authorize work beyond its recorded
+scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-HARD-LABEL-CORRIDOR-BOUNDARY-AUDIT1 (2026-09-01)
 
-The bounded hard-label corridor audit is recorded in [LiaisonScape
-Automatic-Route Hard-Label Corridor Boundary Audit](liaisonscape-automatic-route-hard-label-corridor-boundary-audit.md).
-Its result is `MIXED`: in JA, the `clara + archive` hard corridor excludes
-the `+40/+52` near-center `mentors` candidates and `-52` is the first
-hard-safe opposite-side candidate. EN has a different Clara-only topology,
-and halo/occupied/Node signals still affect final winners across locales.
-
-The supplied `Experimental — Final-label feedback` clean-layout observation is
-recorded as manual context only. No runtime, routing, score, candidate-set,
-label placement, sample, parallel, self-loop, initial-placement, schema,
-release, or publication change was made. The selected next bounded checkpoint
-is
-`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-HARD-CORRIDOR-RELIEF-AUDIT1`;
-it is selected only and is not started by this record.
+The bounded hard-label corridor audit is recorded in [LiaisonScape Automatic-Route
+Hard-Label Corridor Boundary
+Audit](liaisonscape-automatic-route-hard-label-corridor-boundary-audit.md). Its result
+is `MIXED`: in JA, the `clara + archive` hard corridor excludes the `+40/+52`
+near-center `mentors` candidates and `-52` is the first hard-safe opposite-side
+candidate. Detailed evidence and qualifications remain in the linked authority; this
+dated checkpoint does not change current execution order or authorize work beyond its
+recorded scope.
 
 ### LiaisonScape Node-label collision geometry follow-ups (2026-09-01)
 
@@ -3402,465 +3267,230 @@ was made by this roadmap update.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-HARD-CORRIDOR-RELIEF-AUDIT1 (2026-09-01)
 
-The read-only Current-to-feedback audit is recorded in [LiaisonScape
-Automatic-Route Final-Label Feedback Hard-Corridor Relief Audit](liaisonscape-automatic-route-final-label-feedback-hard-corridor-relief-audit.md).
-Its result is `CASE10 / MIXED`: JA moves only the Clara final label and keeps
-the `mentors` winner at `-52`, while EN changes `mentors` from `-64` to `+40`
-and makes that route clear against feedback rectangles but hard-unsafe against
-the original provisional Clara rectangle. Feedback therefore provides local
-corridor relief without establishing a locale-independent safe selection
-semantic; route and crossing regressions remain.
-
-No runtime, routing, score, candidate-set, label placement, sample, preview,
-parallel, self-loop, initial-placement, schema, release, or publication change
-was made. The existing preview text `Feedback: fixed at pass 2` was confirmed
-to describe a single feedback replay, not a fixed-point solver. The selected
-next bounded checkpoint is
-`E2R-LIAISONSCAPE-NODE-LABEL-INK-GEOMETRY-COLLISION-AUDIT1`; it is selected
-only and is not started by this record.
+The read-only Current-to-feedback audit is recorded in [LiaisonScape Automatic-Route
+Final-Label Feedback Hard-Corridor Relief
+Audit](liaisonscape-automatic-route-final-label-feedback-hard-corridor-relief-audit.md).
+Its result is `CASE10 / MIXED`: JA moves only the Clara final label and keeps the
+`mentors` winner at `-52`, while EN changes `mentors` from `-64` to `+40` and makes that
+route clear against feedback rectangles but hard-unsafe against the original provisional
+Clara rectangle. Detailed evidence and qualifications remain in the linked authority;
+this dated checkpoint does not change current execution order or authorize work beyond
+its recorded scope.
 
 ### E2R-LIAISONSCAPE-NODE-LABEL-INK-GEOMETRY-COLLISION-AUDIT1 (2026-09-01)
 
-The bounded collision-geometry audit is recorded in [LiaisonScape Node-label
-Ink Geometry Collision Audit](liaisonscape-node-label-ink-geometry-collision-audit.md).
-Its result is `G2 / EXACT RESULT 2`: deterministic tight-content and per-line
-regions relieve some route pressure, but the JA and EN `mentors` primary hard
-owners remain in the estimated text region. JA keeps `mentors=-52`; EN changes
-`-64→-52` without straightening the route. The result is locale- and
-Relation-dependent, and no Production collision replacement is justified.
-
-No runtime, routing, collision, label rendering, sample, preview, parallel,
-self-loop, connector, initial-placement, schema, release, or publication
-change was made. Modes D (rendered ink) and E (true glyph outline) were not
-measured. The selected next bounded checkpoint is
-`E2R-LIAISONSCAPE-PARALLEL-EDGE-BUNDLE-SPACING-AUDIT1`; it is selected only
-and is not started by this record.
+The bounded collision-geometry audit is recorded in [LiaisonScape Node-label Ink
+Geometry Collision Audit](liaisonscape-node-label-ink-geometry-collision-audit.md). Its
+result is `G2 / EXACT RESULT 2`: deterministic tight-content and per-line regions
+relieve some route pressure, but the JA and EN `mentors` primary hard owners remain in
+the estimated text region. Detailed evidence and qualifications remain in the linked
+authority; this dated checkpoint does not change current execution order or authorize
+work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-PARALLEL-EDGE-BUNDLE-SPACING-AUDIT1 (2026-09-01)
 
-The bounded parallel ordinary-edge audit is recorded in [LiaisonScape
-Parallel Edge Bundle Spacing Audit](liaisonscape-parallel-edge-bundle-spacing-audit.md).
-Its result is `CASE 3 / EXACT RESULT 3 / DECISION C`: label pressure shifts an
-otherwise balanced `clara-thomas-mentors` / `clara-thomas-supervises` bundle.
-Without label pressure, JA and EN both return to the nominal `+40/-40`
-opposite-sided bundle. The sibling-only occupied ablation changes only the
-later edge's outward offset and collapses the bundle when removed; it is not a
-justification for changing occupied-path semantics.
-
-The current replay also shows a CASE 6 same-side symptom, but the label-only
-ablation restores the accepted physical-side arrangement. This does not
-demonstrate a reverse-endpoint or slot-normalization regression, and it does
-not justify Production changes to slot spacing, physical-side policy, score
-weights, or curvature. H2 identities remain unchanged; the lower diagnostic
-route totals are not an acceptance improvement, and JA incurs one additional
-provisional label conflict under the label ablation.
-
-No LiaisonScape runtime, test, sample, preview, coordinate, initial-placement,
-Final-label feedback, self-loop, connector, schema, release, or publication
-change was made. The selected next bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-PARALLEL-EDGE-LABEL-PRESSURE-ISOLATION-EXPERIMENT1`.
+The bounded parallel ordinary-edge audit is recorded in [LiaisonScape Parallel Edge
+Bundle Spacing Audit](liaisonscape-parallel-edge-bundle-spacing-audit.md). Its result is
+`CASE 3 / EXACT RESULT 3 / DECISION C`: label pressure shifts an otherwise balanced
+`clara-thomas-mentors` / `clara-thomas-supervises` bundle. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-PARALLEL-EDGE-LABEL-PRESSURE-ISOLATION-EXPERIMENT1 (2026-09-01)
 
-The bounded label-pressure experiment is recorded in [LiaisonScape Parallel
-Edge Label-pressure Isolation Experiment](liaisonscape-parallel-edge-label-pressure-isolation-experiment.md).
-Its result is `CASE 3 / EXACT RESULT 3 / DECISION C`: hard label collision
-starts the first parallel side switch, while soft halo and sibling
-occupied-path pressure amplify the final one-sided bundle. Current JA/EN
-replays are `mentors=-52/-64` and `supervises=-76/-88`; hard-only does not
-restore opposite sides, halo-only restores them only with hard-unsafe geometry,
-and no-label returns to `+40/-40` only as an unsafe diagnostic.
-
-JA has a Clara-plus-Archive hard blocker; EN is materially controlled by the
-Clara endpoint label. The hard-only full-graph comparison changes unrelated
-routes and increases JA H2, so it is not a Production candidate. No hard
-collision relaxation, halo change, label-geometry change, slot change,
-physical-side change, occupied-path change, runtime, sample, preview, or
-release change was made. The selected next bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-PARALLEL-EDGE-HARD-SIDE-SWITCH-CASCADE-AUDIT1`.
+The bounded label-pressure experiment is recorded in [LiaisonScape Parallel Edge
+Label-pressure Isolation
+Experiment](liaisonscape-parallel-edge-label-pressure-isolation-experiment.md). Its
+result is `CASE 3 / EXACT RESULT 3 / DECISION C`: hard label collision starts the first
+parallel side switch, while soft halo and sibling occupied-path pressure amplify the
+final one-sided bundle. Detailed evidence and qualifications remain in the linked
+authority; this dated checkpoint does not change current execution order or authorize
+work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-PARALLEL-EDGE-HARD-SIDE-SWITCH-CASCADE-AUDIT1 (2026-09-01)
 
-The bounded cascade audit is recorded in [LiaisonScape Parallel Edge
-Hard-Side-Switch Cascade Audit](liaisonscape-parallel-edge-hard-side-switch-cascade-audit.md).
-Its result is `CASE 4 / EXACT RESULT 4 / DECISION E`: the current label
-geometry leaves no hard-safe opposite-side pair for the Clara/Thomas parallel
-group. JA and EN each have 256 swapped-side candidate pairs; all are mutually
-occupied-safe, but zero are hard-safe. The first `mentors` side switch is
-therefore hard-label-driven, while the later `supervises` outward movement is
-the occupied-path/halo cascade after that switch. Reversing the bounded route
-order does not open a balanced safe pair.
-
-No runtime, routing, score, candidate-set, label placement, label geometry,
-parallel slot, occupied-path, self-loop, initial-placement, Final-label
-feedback, sample, preview, schema, release, or publication change was made.
-The favorable Initial Placement plus Experimental Final-label feedback image
-remains manual context only. The selected next bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-INITIAL-PLACEMENT-INTERACTION-AUDIT1`;
-it is selected only and is not started by this record.
+The bounded cascade audit is recorded in [LiaisonScape Parallel Edge Hard-Side-Switch
+Cascade Audit](liaisonscape-parallel-edge-hard-side-switch-cascade-audit.md). Its result
+is `CASE 4 / EXACT RESULT 4 / DECISION E`: the current label geometry leaves no
+hard-safe opposite-side pair for the Clara/Thomas parallel group. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-INITIAL-PLACEMENT-INTERACTION-AUDIT1 (2026-09-01)
 
-The bounded Final-label feedback / Initial Placement interaction audit is
-recorded in [LiaisonScape Automatic-Route Final-Label Feedback / Initial-Placement Interaction Audit](liaisonscape-automatic-route-final-label-feedback-initial-placement-interaction-audit.md).
-Its result is `CASE 5 / EXACT RESULT 5 / DECISION F`: feedback opens the
-balanced parallel corridor on the favorable clean HEAD geometry in both
-locales, but its effect changes with starting geometry and locale. Current
-Production coordinate-less placement reproduces the dirty stored geometry in
-this sample; the JA feedback result remains blocked, while the EN diagnostic
-opens only 24 safe candidate pairs and its selected `mentors=+40` route is
-hard-unsafe against the original provisional label.
-
-Initial Placement alone opens no hard-safe opposite-side pair in any measured
-start. R0 is zero in all six locale/start conditions; R1 is `91` for JA/EN
-S0, `0` for JA S1/S2, and `24` for EN S1/S2. The S0 improvement is therefore
-an interaction result, not evidence for universal feedback adoption or an
-Initial Placement objective change. The supplied clean screenshot remains
-manual evidence only because its exact coordinates are unavailable.
-
-No LiaisonScape runtime, routing, score, label, collision, parallel,
-Initial-placement, sample, preview, schema, release, or publication change
-was made. The selected next bounded checkpoint is
-`E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-FINAL-LABEL-FEEDBACK-LOCALE-START-REGRESSION-ISOLATION1`;
-it is selected only and is not started by this record.
+The bounded Final-label feedback / Initial Placement interaction audit is recorded in
+[LiaisonScape Automatic-Route Final-Label Feedback / Initial-Placement Interaction
+Audit](liaisonscape-automatic-route-final-label-feedback-initial-placement-interaction-audit.md).
+Its result is `CASE 5 / EXACT RESULT 5 / DECISION F`: feedback opens the balanced
+parallel corridor on the favorable clean HEAD geometry in both locales, but its effect
+changes with starting geometry and locale. Detailed evidence and qualifications remain
+in the linked authority; this dated checkpoint does not change current execution order
+or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-S0-S1-FOCAL-COORDINATE-ATTRIBUTION-EXPERIMENT1 (2026-09-01)
 
-The narrower S0/S1 focal coordinate attribution experiment is recorded in
-[LiaisonScape S0/S1 Focal Coordinate Attribution Experiment](liaisonscape-automatic-route-s0-s1-focal-coordinate-attribution-experiment.md).
-It replaced the broader locale/start regression audit for immediate
-execution; that broader checkpoint remains deferred, not completed or deleted.
-
-The experiment evaluated all 16 JA masks while restoring only the focal Nodes
-`Clara`, `Thomas`, `Archive`, and `Lighthouse` from S1 to exact S0 coordinates.
-Two inclusion-minimal V0 masks opened diagnostic R1 corridor pairs: `0011`
-(`Archive + Lighthouse`) with `12`, and `1001` (`Clara + Lighthouse`) with
-`16`. Only `0011` was conservative against its original R0 provisional labels.
-
-The critical control was `H1111` versus full S0: H1111 produced `0` safe pairs,
-while full S0 produced `91` and selected `+40/-40`. Therefore the result is
-`CASE 7 / EXACT RESULT 7 / DECISION E`: the four focal-node neighborhood is
-insufficient, and at least one non-focal coordinate difference or broader
-global topology interaction must be identified before changing placement
-parameters. EN bounded replay showed partial locale portability (`0000=24`,
-`1001=16`, full S0=`91`) but did not alter the primary decision.
-
-No LiaisonScape runtime, Initial Placement, routing, feedback, label,
-collision, parallel, sample, preview, schema, release, or publication change
-was made. The selected next bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-GLOBAL-TOPOLOGY-ATTRIBUTION-AUDIT1`;
-it is selected only and is not started by this record.
+The narrower S0/S1 focal coordinate attribution experiment is recorded in [LiaisonScape
+S0/S1 Focal Coordinate Attribution
+Experiment](liaisonscape-automatic-route-s0-s1-focal-coordinate-attribution-experiment.md).
+It replaced the broader locale/start regression audit for immediate execution; that
+broader checkpoint remains deferred, not completed or deleted. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-GLOBAL-TOPOLOGY-ATTRIBUTION-AUDIT1 (2026-09-01)
 
 The exhaustive non-focal attribution audit is recorded in [LiaisonScape
-Initial-placement Global-topology Attribution Audit](liaisonscape-initial-placement-global-topology-attribution-audit.md).
-Its result is `CASE 1 / EXACT RESULT 1 / DECISION A`: the single outside-focal
-Node `maya` is an inclusion-minimal V0 sufficient set in JA (`000010`), opening
-the H1111 feedback corridor from `0` to `63` safe pairs. Maya is a direct
-neighbor of both focal endpoints, while the final-label replay changes two
-Node labels and nine ordinary routes, so label-placement and route propagation
-are material.
-
-The result does not reproduce Full S0 presentation: Maya alone selects
-`+40/-100`, while JA strong-reproduction masks are `111011` and `111111`.
-The JA minimal mask does not open EN, so the attribution is locale-dependent
-and EN requires a different or broader non-focal coordinate set. No numeric
-placement rule, Production Initial Placement change, feedback adoption, or
-other runtime change is justified. The selected next checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-NONFOCAL-NODE-GEOMETRY-CRITERIA-AUDIT1`;
-it is selected only and is not started by this record.
+Initial-placement Global-topology Attribution
+Audit](liaisonscape-initial-placement-global-topology-attribution-audit.md). Its result
+is `CASE 1 / EXACT RESULT 1 / DECISION A`: the single outside-focal Node `maya` is an
+inclusion-minimal V0 sufficient set in JA (`000010`), opening the H1111 feedback
+corridor from `0` to `63` safe pairs. Detailed evidence and qualifications remain in the
+linked authority; this dated checkpoint does not change current execution order or
+authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-QUALITY-CRITERIA-VALIDATION1 (2026-09-01)
 
 The cross-neighborhood and cross-sample validation is recorded in [LiaisonScape
-Initial-placement Local-neighborhood Quality Criteria Validation](liaisonscape-initial-placement-local-neighborhood-quality-criteria-validation.md).
-Its result is `CASE 2 / EXACT RESULT 2 / DECISION A`: the shared-neighbor
-spacing criterion is supported by an ordinary Class O neighborhood in Ashen
-Crown JA/EN, without using labels, routes, locale, or rendered text as
-placement inputs and without a selected hard-safety counterexample.
-
-The inventory found four Class P and 50 Class O eligible instances across the
-available samples; seven bounded detail instances were replayed. The result
-is partial across locale presentation magnitude, and samples without a
-stored/auto pair remain uninformative, but the criterion is sufficiently
-supported for one bounded diagnostic implementation experiment. No Production
-Initial Placement, routing, feedback, label, collision, sample, preview,
-schema, release, or publication change was made. The selected next checkpoint
-is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-SPACING-EXPERIMENT1`;
-it is selected only and is not started by this record.
+Initial-placement Local-neighborhood Quality Criteria
+Validation](liaisonscape-initial-placement-local-neighborhood-quality-criteria-validation.md).
+Its result is `CASE 2 / EXACT RESULT 2 / DECISION A`: the shared-neighbor spacing
+criterion is supported by an ordinary Class O neighborhood in Ashen Crown JA/EN, without
+using labels, routes, locale, or rendered text as placement inputs and without a
+selected hard-safety counterexample. Detailed evidence and qualifications remain in the
+linked authority; this dated checkpoint does not change current execution order or
+authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-NONFOCAL-NODE-GEOMETRY-CRITERIA-AUDIT1 (2026-09-01)
 
-The bounded non-focal geometry audit is recorded in [LiaisonScape
-Initial-placement Non-focal Node Geometry Criteria Audit](liaisonscape-initial-placement-nonfocal-node-geometry-criteria-audit.md).
-Its result is `CASE 11 / EXACT RESULT 5 / DECISION B`: Maya's coordinate
-change combines direct corridor clearance with Node-label and route
-propagation. The dominant measurable component selected for follow-up is the
-shared-endpoint neighbor arrangement around Maya, Clara, Thomas, and Beacon.
-
-JA's coarse sweep changes from `0` safe pairs at `t=.75` to `49` at `.875`
-and `63` at S0, but midpoint refinement observes closed/open alternation in
-the bracket. PX opens while PY does not, so the result supports a local
-neighborhood criterion rather than an axis rule or numeric distance threshold.
-The first open point changes three final Node labels and nine ordinary routes;
-held-label controls show that direct and propagated effects are both material.
-The identical EN sweep remains closed on the main path, giving locale class
-L3 and preventing locale-independent adoption.
-
-No Production Initial Placement, routing, feedback, label, collision,
-parallel, self-loop, sample, preview, schema, release, or publication change
-was made. The selected next checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-QUALITY-CRITERIA-VALIDATION1`;
-it is selected only and is not started by this record.
+The bounded non-focal geometry audit is recorded in [LiaisonScape Initial-placement
+Non-focal Node Geometry Criteria
+Audit](liaisonscape-initial-placement-nonfocal-node-geometry-criteria-audit.md). Its
+result is `CASE 11 / EXACT RESULT 5 / DECISION B`: Maya's coordinate change combines
+direct corridor clearance with Node-label and route propagation. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-SPACING-EXPERIMENT1 (2026-09-01)
 
-The bounded implementation experiment is recorded in [LiaisonScape
-Initial-placement Local-neighborhood Spacing Experiment](liaisonscape-initial-placement-local-neighborhood-spacing-experiment.md).
-Its result is `CASE 6 / EXACT RESULT 6 / DECISION D`: the topology-only
-shared-neighbor adjustment opened the selected local angle in Lighthouse and
-Ashen Crown, but its displacement semantics introduced new R0 hard
-route/Node-label conflicts in Lighthouse and replaced the hard-conflict set in
-Ashen. The candidate had no new Node-body overlap, was deterministic,
-locale-independent, and exact no-op on the no-shared-neighbor controls, but it
-failed the primary safety gate.
-
-No Production Initial Placement, routing, feedback, label, collision,
-parallel, self-loop, sample, preview, schema, or release change was made. No
-LiaisonScape commit or candidate adoption occurred. The selected next
-checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-DISPLACEMENT-BOUNDARY-AUDIT1`;
-it is selected only and is not started by this record.
+The bounded implementation experiment is recorded in [LiaisonScape Initial-placement
+Local-neighborhood Spacing
+Experiment](liaisonscape-initial-placement-local-neighborhood-spacing-experiment.md).
+Its result is `CASE 6 / EXACT RESULT 6 / DECISION D`: the topology-only shared-neighbor
+adjustment opened the selected local angle in Lighthouse and Ashen Crown, but its
+displacement semantics introduced new R0 hard route/Node-label conflicts in Lighthouse
+and replaced the hard-conflict set in Ashen. Detailed evidence and qualifications remain
+in the linked authority; this dated checkpoint does not change current execution order
+or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-LOCAL-NEIGHBORHOOD-DISPLACEMENT-BOUNDARY-AUDIT1 (2026-09-01)
 
 The rejected-candidate displacement boundary audit is recorded in [LiaisonScape
-Initial-placement Local-neighborhood Displacement Boundary Audit](liaisonscape-initial-placement-local-neighborhood-displacement-boundary-audit.md).
+Initial-placement Local-neighborhood Displacement Boundary
+Audit](liaisonscape-initial-placement-local-neighborhood-displacement-boundary-audit.md).
 Its result is `CASE 4 / EXACT RESULT 2 / DECISION B`: a safe partial forward
-displacement region exists in both Lighthouse and Ashen before the first new
-final-label conflict, but the rejected minimum-line-distance selector chooses
-an endpoint as W rather than the validated shared neighbor in both topologies.
-The target-role mismatch is therefore the primary failure boundary; mirror
-direction is only partially safer and does not restore the intended local
-spacing semantics.
-
-No Production Initial Placement, routing, feedback, label, collision,
-parallel, self-loop, sample, preview, schema, or release change was made. No
-coefficient tuning or candidate resurrection occurred. The selected next
-checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SHARED-NEIGHBOR-TARGET-SELECTION-AUDIT1`;
-it is selected only and is not started by this record.
+displacement region exists in both Lighthouse and Ashen before the first new final-label
+conflict, but the rejected minimum-line-distance selector chooses an endpoint as W
+rather than the validated shared neighbor in both topologies. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SHARED-NEIGHBOR-TARGET-SELECTION-AUDIT1 (2026-09-01)
 
 The shared-neighbor target-selection audit is recorded in [LiaisonScape
-Initial-placement Shared-neighbor Target Selection Audit](liaisonscape-initial-placement-shared-neighbor-target-selection-audit.md).
-Its result is `CASE 6 / EXACT RESULT 5 / DECISION G`: Lighthouse has a
-topology-distinguishable shared-neighbor role because the Clara-Thomas pair
-has relation multiplicity two, but Ashen's 21-role overlap cluster leaves the
-validated Kael role non-unique. The generic minimum-line-distance selector
-still chooses Clara and Elara as W respectively, so geometry ranking is not a
-semantic target contract. Target role and adjustment scope remain
-under-specified, with a sample-split result.
-
-The exhaustive role inventory preserved directed Relation evidence without
-weighting it, excluded self-relations, compared stored and auto support
-triangles, and found identical topology/geometry in the JA/EN pairs. No
-Node movement, candidate placement rule, routing, feedback, label, sample,
-preview, schema, release, or publication change was made. The selected next
-bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SHARED-NEIGHBOR-ROLE-SYMMETRY-AUDIT1`;
-it is selected only and is not started by this record.
+Initial-placement Shared-neighbor Target Selection
+Audit](liaisonscape-initial-placement-shared-neighbor-target-selection-audit.md). Its
+result is `CASE 6 / EXACT RESULT 5 / DECISION G`: Lighthouse has a
+topology-distinguishable shared-neighbor role because the Clara-Thomas pair has relation
+multiplicity two, but Ashen's 21-role overlap cluster leaves the validated Kael role
+non-unique. Detailed evidence and qualifications remain in the linked authority; this
+dated checkpoint does not change current execution order or authorize work beyond its
+recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SHARED-NEIGHBOR-ROLE-SYMMETRY-AUDIT1 (2026-09-01)
 
-The shared-neighbor role-symmetry and motif-level identifiability audit is
-recorded in [LiaisonScape Initial-placement Shared-neighbor Role Symmetry
-Audit](liaisonscape-initial-placement-shared-neighbor-role-symmetry-audit.md).
-Its result is `CASE 10 / EXACT RESULT 5 / DECISION G`: Lighthouse has one
-unordered triangle whose Clara-Thomas multiplicity identifies the diagnostic
-ordered role `(Clara, Thomas; Maya)`, while Ashen's support triangle has
-structurally distinguishable Darius, Elara, and Kael but no source-grounded
-reason to designate Kael as W. The full inventory contains 19 unordered
-motifs and 57 ordered roles; literal local symmetry is `SYM0=15` and
-`SYM4=4`, but semantic-W ambiguity remains common among the 15 O motifs.
-
-The audit reinterprets the Maya result as motif presentation evidence and the
-Kael result as a support reference only. It records motif-level geometry and
-overlap scope without introducing a score, threshold, target movement, or
-placement rule. No Production Initial Placement, routing, feedback, label,
-sample, preview, schema, release, or publication change was made. The
-selected next bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SHARED-NEIGHBOR-ADJUSTMENT-SCOPE-AUDIT1`;
-it is selected only and is not started by this record.
+The shared-neighbor role-symmetry and motif-level identifiability audit is recorded in
+[LiaisonScape Initial-placement Shared-neighbor Role Symmetry
+Audit](liaisonscape-initial-placement-shared-neighbor-role-symmetry-audit.md). Its
+result is `CASE 10 / EXACT RESULT 5 / DECISION G`: Lighthouse has one unordered triangle
+whose Clara-Thomas multiplicity identifies the diagnostic ordered role `(Clara, Thomas;
+Maya)`, while Ashen's support triangle has structurally distinguishable Darius, Elara,
+and Kael but no source-grounded reason to designate Kael as W. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SHARED-NEIGHBOR-ADJUSTMENT-SCOPE-AUDIT1 (2026-09-01)
 
 The shared-neighbor adjustment-scope audit is recorded in [LiaisonScape
-Initial-placement Shared-neighbor Adjustment Scope Audit](liaisonscape-initial-placement-shared-neighbor-adjustment-scope-audit.md).
-Its result is `CASE 2 / EXACT RESULT 2 / DECISION A`: an overlap-cluster
-scope provides one structural model for isolated motifs and overlapping
-motifs. Lighthouse is one isolated motif, while Ashen has seven motifs in
-one nine-Node overlap cluster within a ten-Node component; five of seven
-motifs compress in the stored-to-auto comparison, so one-motif processing is
-too narrow and whole-component scope is too broad.
-
-The scope result does not define a quality threshold or movement rule. The
-node-packing result is partial, attraction is not identified as causal, and
-the available samples contain no component with multiple separate motif
-clusters. The overlap-cluster concept is retained as a reusable hypothesis
-only; no `ai-knowledge` entry was changed. No Node movement, placement
-candidate, force, routing, feedback, label, sample, preview, schema, release,
-or publication change was made. The selected next bounded checkpoint is
-exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-QUALITY-CRITERIA-AUDIT1`;
-it is selected only and is not started by this record.
+Initial-placement Shared-neighbor Adjustment Scope
+Audit](liaisonscape-initial-placement-shared-neighbor-adjustment-scope-audit.md). Its
+result is `CASE 2 / EXACT RESULT 2 / DECISION A`: an overlap-cluster scope provides one
+structural model for isolated motifs and overlapping motifs. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-QUALITY-CRITERIA-AUDIT1 (2026-09-01)
 
-The motif-cluster quality-criteria audit is recorded in [LiaisonScape
-Initial-placement Motif-cluster Quality Criteria Audit](liaisonscape-initial-placement-motif-cluster-quality-criteria-audit.md).
-Its result is `CASE 6 / EXACT RESULT 2 / DECISION D`: the evidence supports a
-two-layer descriptive bottleneck profile. Layer 1 describes per-motif shape
-and Node-to-chord bottlenecks, with absolute packing as context. Layer 2
-describes shared-Node fan-out, cluster aggregation, and boundary context.
-Lighthouse has an isolated motif with scale-and-shape collapse; Ashen has
-seven overlapping motifs, three clear shared-Node fan-out bottlenecks, and
-multiple chord bottlenecks. A single scalar score, dominance ordering, or
-numeric threshold is not supported.
-
-The full inventory reproduced 19 unordered motifs and 57 ordered roles across
-15 files. The clean Lighthouse and Ashen JA/EN pairs were topology- and
-geometry-identical within each pair. The geometry transform check preserved
-normalized shape and overlap topology while scaling raw distances, supporting
-separate absolute-packing and normalized-shape descriptors. The packing
-hypothesis remains partial; no causal force attribution was made. The profile
-is a reusable hypothesis only and no `ai-knowledge` entry was changed.
-
-No Production Initial Placement, routing, feedback, label, collision,
-parallel, self-loop, sample, preview, schema, release, or publication change
-was made. The selected next bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-QUALITY-CRITERIA-VALIDATION1`;
-it is selected only and is not started by this record.
+The motif-cluster quality-criteria audit is recorded in [LiaisonScape Initial-placement
+Motif-cluster Quality Criteria
+Audit](liaisonscape-initial-placement-motif-cluster-quality-criteria-audit.md). Its
+result is `CASE 6 / EXACT RESULT 2 / DECISION D`: the evidence supports a two-layer
+descriptive bottleneck profile. Detailed evidence and qualifications remain in the
+linked authority; this dated checkpoint does not change current execution order or
+authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-QUALITY-CRITERIA-VALIDATION1 (2026-09-01)
 
-The two-layer motif/overlap-cluster quality validation is recorded in
-[LiaisonScape Initial-placement Motif-cluster Quality Criteria
+The two-layer motif/overlap-cluster quality validation is recorded in [LiaisonScape
+Initial-placement Motif-cluster Quality Criteria
 Validation](liaisonscape-initial-placement-motif-cluster-quality-criteria-validation.md).
-Its result is `CASE 2 / EXACT RESULT 2 / DECISION B`: the two-layer profile is
-validated after collapsing redundant descriptors. P4 is the same geometric
-quantity as the P2 vertex-to-opposite-side altitude, and P1 motif-adjacent
-distances are the P2 side lengths. P1 cluster-wide absolute packing remains
-context; P3 shared-Node fan-out and P5 boundary context remain distinct
-cluster-layer information.
-
-The validation reproduced 19 unordered motifs and 57 ordered roles, passed
-zero-motif and two-disconnected-cluster controls, and confirmed translation,
-rotation, scale, Entity-order, Relation-order, locale, and deterministic
-invariance boundaries. A controlled shared-Node state changed fan-out from
-`60` to `25` degrees while preserving motif shape, confirming that the
-overlap layer adds information unavailable from one motif alone. Packing is
-supported as one context dimension but is only partial as a complete quality
-explanation; attraction was not assigned causality.
-
-No Node movement, force, scalar score, numeric threshold, route/label input,
-Production placement, sample, preview, schema, release, or publication change
-was made. The strengthened reusable result remains a hypothesis only and no
-`ai-knowledge` entry was changed. The selected next bounded checkpoint is
-exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-REGULARIZATION-SEMANTICS-AUDIT1`;
-it is selected only and is not started by this record.
+Its result is `CASE 2 / EXACT RESULT 2 / DECISION B`: the two-layer profile is validated
+after collapsing redundant descriptors. Detailed evidence and qualifications remain in
+the linked authority; this dated checkpoint does not change current execution order or
+authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-REGULARIZATION-SEMANTICS-AUDIT1 (2026-09-01)
 
 The motif-cluster regularization semantics audit is recorded in [LiaisonScape
 Initial-placement Motif-cluster Regularization Semantics
 Audit](liaisonscape-initial-placement-motif-cluster-regularization-semantics-audit.md).
-Its result is `CASE 5 / EXACT RESULT 4 / DECISION D`: source-independent
-improvement directions are definable, but source-independent activation remains
-unspecified. An isolated motif supports a symmetric centroid-preserving opening
-family; a shared Node supports symmetric angular fan-out with radial distances
-preserved; and an overlap cluster requires constraint inventory and composition
-because shared Nodes receive multiple motif and fan-out constraints.
-
-A single-vertex push was rejected as asymmetric, and always-on regularization
-was rejected as an implicit ideal-shape or spreading policy. The audit does not
-introduce a scalar score, numeric threshold, force, displacement amount, target
-shape, route/label input, or Production placement rule. No Node movement,
-routing, feedback, label, collision, parallel, self-loop, sample, preview,
-schema, release, publication, or `ai-knowledge` change was made. The selected
-next bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-REGULARIZATION-ACTIVATION-AUDIT1`;
-it is selected only and is not started by this record.
+Its result is `CASE 5 / EXACT RESULT 4 / DECISION D`: source-independent improvement
+directions are definable, but source-independent activation remains unspecified.
+Detailed evidence and qualifications remain in the linked authority; this dated
+checkpoint does not change current execution order or authorize work beyond its recorded
+scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-REGULARIZATION-ACTIVATION-AUDIT1 (2026-09-01)
 
-The source-independent regularization activation audit is recorded in
-[LiaisonScape Initial-placement Motif-cluster Regularization Activation
+The source-independent regularization activation audit is recorded in [LiaisonScape
+Initial-placement Motif-cluster Regularization Activation
 Audit](liaisonscape-initial-placement-motif-cluster-regularization-activation-audit.md).
-Its result is `CASE 5 / EXACT RESULT 3 / DECISION E`: transition history can
-detect and help prevent solver-induced deterioration after a comparable Derived
-geometry exists, but it cannot repair bottlenecks already present in the
-initial seed. Lighthouse is seed-born (`ORIGIN-L1`); Ashen combines seed-present
-geometry with mixed settling changes (`ORIGIN-L3/L4`).
-
-Per-constraint deterioration is detectable but too sensitive as a complete
-activation policy, while cluster Pareto activation remains underdetermined in
-mixed improvement/worsening states. Exact degeneracy is retained only as a
-safety floor, proposal-relative non-worsening is retained only as a guard, and
-workflow-bounded participation is supported. No threshold, ranking, reference,
-ideal shape, scalar score, force, Node movement, Production placement,
-routing, feedback, label, sample, preview, schema, release, publication, or
-`ai-knowledge` change was made. The selected next bounded checkpoint is
-exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-BOTTLENECK-ORIGIN-AUDIT1`;
-it is selected only and is not started by this record.
+Its result is `CASE 5 / EXACT RESULT 3 / DECISION E`: transition history can detect and
+help prevent solver-induced deterioration after a comparable Derived geometry exists,
+but it cannot repair bottlenecks already present in the initial seed. Detailed evidence
+and qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-CLUSTER-BOTTLENECK-ORIGIN-AUDIT1 (2026-09-01)
 
 The seed-versus-settling bottleneck-origin audit is recorded in [LiaisonScape
 Initial-placement Motif-cluster Bottleneck Origin
-Audit](liaisonscape-initial-placement-motif-cluster-bottleneck-origin-audit.md).
-Its result is `CASE 7 / EXACT RESULT 5 / DECISION F`: the current seed is
-deterministic but sensitive to topology-tie and lexical ID assignment. An
-isomorphic ID rename changes the Node-to-slot assignment and removes
-Lighthouse's exact motif collinearity and Ashen's exact zero-gap fan-out,
-whereas reversing Entity or Relation arrays does not change them.
-
-Settling remains a distinct secondary boundary: it partially recovers the
-Lighthouse seed-born collapse and creates mixed motif/fan-out changes in Ashen.
-Component packing does not materially create the observed one-component
-bottlenecks. No seed, slot, radius, phase, settling, coefficient, force,
-threshold, Production placement, routing, feedback, label, sample, preview,
-schema, release, publication, or `ai-knowledge` change was made. The selected
-next bounded checkpoint is exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-STABILITY-AUDIT1`;
-it is selected only and is not started by this record.
+Audit](liaisonscape-initial-placement-motif-cluster-bottleneck-origin-audit.md). Its
+result is `CASE 7 / EXACT RESULT 5 / DECISION F`: the current seed is deterministic but
+sensitive to topology-tie and lexical ID assignment. Detailed evidence and
+qualifications remain in the linked authority; this dated checkpoint does not change
+current execution order or authorize work beyond its recorded scope.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-ASSIGNMENT-STABILITY-AUDIT1 (2026-09-01)
 
-The seed-assignment stability audit is recorded in [LiaisonScape
-Initial-placement Seed-assignment Stability Audit](liaisonscape-initial-placement-seed-assignment-stability-audit.md).
-Its result is `CASE 7 / EXACT RESULT 5 / DECISION D`: higher-order topology
-distinguishes all Nodes in the tested Lighthouse and Ashen samples, but K3,
-star, path, symmetric-motif, and ring controls confirm that automorphic Nodes
-cannot receive a unique topology-only order. Structural partitioning and
-orbit-aware semantics are supported as assignment boundaries; current ID
-choices are not shown to be quality-neutral, and seed geometry quality remains
-a separate motif-aware question.
-
-The audit reproduced the current lexical seed's ID-rename-sensitive
-collinearity and zero-gap behavior, while Entity/Relation array reversal
-remained stable. It used only a temporary diagnostic signature/orbit observer;
-no Production seed, lexical tie-break, slot, radius, phase, settling,
-routing, feedback, label, sample, preview, schema, release, or
-`ai-knowledge` change was made. The selected next bounded checkpoint is
-exactly
-`E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-AWARE-SEED-GEOMETRY-SEMANTICS-AUDIT1`;
-it is selected only and is not started by this record.
+The seed-assignment stability audit is recorded in [LiaisonScape Initial-placement
+Seed-assignment Stability
+Audit](liaisonscape-initial-placement-seed-assignment-stability-audit.md). Its result is
+`CASE 7 / EXACT RESULT 5 / DECISION D`: higher-order topology distinguishes all Nodes in
+the tested Lighthouse and Ashen samples, but K3, star, path, symmetric-motif, and ring
+controls confirm that automorphic Nodes cannot receive a unique topology-only order.
+Detailed evidence and qualifications remain in the linked authority; this dated
+checkpoint does not change current execution order or authorize work beyond its recorded
+scope.
 
 ### E2R-PERSONAL-STORAGE-RESEARCH1 (2026-09-01)
 

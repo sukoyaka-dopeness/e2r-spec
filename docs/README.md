@@ -24,6 +24,8 @@ repository. Start with the responsibility that matches the question:
 
 - [Earlier Documentation IA / roadmap modularization audit](documentation-information-architecture-roadmap-modularization-audit1-result.md): its navigation-first and path-stability recommendation remains historical evidence. The later [Roadmap-first structure decision](documentation-ia-roadmap-physical-modularization-direction-decision1.md) governs current structure direction. [Roadmap → Research Responsibility Audit 1](roadmap-research-responsibility-audit1-result.md) and its [first bounded compression result](roadmap-research-responsibility-migration1-result.md) record the approved tranche; other candidates remain unmigrated.
 - [Residual Roadmap Responsibility Audit 1](roadmap-residual-responsibility-audit1.md): current-roadmap classifications and a proposed next bounded tranche; no migration is authorized by the audit.
+- [Roadmap Semantic Decomposition / Canonical Planning Synthesis Audit 1](roadmap-semantic-decomposition-canonical-planning-synthesis-audit1.md): current-planning and dated-evidence responsibilities after the chronology migrations;
+  compares guarded synthesis paths without changing the Roadmap.
 - [NarrativeLine NL-H2-R1](roadmap.md): **ACCEPTED / MANUAL ACCEPTANCE COMPLETE**.
 - [History 2 broader authoring scope](history-2-user-facing-authoring-scope-result.md): **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED**.
 

@@ -1,0 +1,31 @@
+# Roadmap History
+
+`docs/roadmap.md` is the single authority and entry point for current planning:
+current status, priorities, dependencies, active/deferred work, and pending
+Human decisions. This directory preserves historical roadmap evidence; it is
+not a second planning authority. Statements such as `current`, `next`, or
+`open` inside dated historical text describe their original snapshot only.
+
+## Preserved chronology
+
+- [Legacy chronology](legacy-chronology.md) preserves the first bounded,
+  verbatim extraction from the roadmap. It is a one-time preservation unit,
+  not the default destination for unlimited future additions.
+- [Current roadmap and migration status](../roadmap.md#current-roadmap-first-chronology-migration-status-2026-09-24)
+  remains authoritative for current status and links to the [migration result
+  record](../documentation-ia-roadmap-chronology-migration1-result.md).
+
+## Future chronology boundary
+
+When additional chronology needs to be recorded, use only a few broad,
+long-lived workstream units. Give each cross-workstream item one primary
+workstream location and link to it from other relevant places rather than
+duplicating it. Do not create issue-, checkpoint-, or short-lived-milestone
+files, and do not pre-create empty workstream files. `legacy-chronology.md`
+remains the bounded pre-migration record rather than an automatic append
+target.
+
+This policy does not choose future workstream filenames or partition them by
+domain. Reorganizing the wider `docs/` root, including its directory taxonomy
+and existing documents, remains deferred to a separate Human-reviewed
+Documentation IA checkpoint.

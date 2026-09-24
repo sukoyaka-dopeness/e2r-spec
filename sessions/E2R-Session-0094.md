@@ -505,6 +505,11 @@ and separate completed/superseded/historical chronology from current planning
 without deleting or reinterpreting that evidence. Issue-per-file growth is
 not the default.
 
+> This records the selected Roadmap-first direction and the next-step status
+> at that checkpoint. The direction remains current; its then-unselected
+> physical details and migration status are superseded by the later structure
+> decision and current migration entry below.
+
 The next checkpoint is bounded implementation-preparation / migration-gate
 review. Chronology destination and partition, file/directory layout, anchor
 and link migration, and any physical operation remain undecided and require
@@ -512,7 +517,7 @@ Human review. The `docs/` flat-root taxonomy remains a separate later
 checkpoint. No roadmap split, move, rename, deletion, archive migration, or
 link rewrite has been performed or authorized.
 
-### Roadmap modularization implementation-preparation gate — 2026-09-24
+### Historical snapshot — Roadmap modularization implementation-preparation gate — 2026-09-24
 
 The read-only migration preparation is recorded in [Documentation IA / Roadmap
 Physical Modularization Implementation Preparation 1](../docs/documentation-ia-roadmap-physical-modularization-implementation-preparation1.md).
@@ -523,3 +528,17 @@ observed link/path impact. Layout, partition, exact extraction manifest, and
 any exceptional anchor-compatibility handling remain subject to Human review.
 No physical migration or link rewrite has been performed. The `docs/`-wide
 taxonomy remains deferred.
+
+### Documentation IA bounded roadmap chronology migration — current state (2026-09-24)
+
+The Human-selected physical layout and conservative extraction gate are
+recorded in [Roadmap Chronology Structure Decision 1](../docs/documentation-ia-roadmap-chronology-structure-decision1.md)
+and the [migration result](../docs/documentation-ia-roadmap-chronology-migration1-result.md).
+The first verified historical tranche—workspace placement, relocation,
+extraction, acceptance, and cleanup chronology—is preserved in
+[`docs/roadmap-history/legacy-chronology.md`](../docs/roadmap-history/legacy-chronology.md),
+with navigation and authority boundaries in
+[`docs/roadmap-history/README.md`](../docs/roadmap-history/README.md).
+`docs/roadmap.md` remains the sole current-planning authority. Ambiguous mixed
+regions remain in the roadmap without being declared permanently current.
+The wider `docs/` taxonomy and other-document relocation remain deferred.

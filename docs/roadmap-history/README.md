@@ -12,13 +12,18 @@ not a second planning authority. Statements such as `current`, `next`, or
   verbatim extraction from the roadmap. It is a one-time preservation unit,
   not the default destination for unlimited future additions.
 - [Release and Cross-App chronology](release-and-cross-app-chronology.md)
-  preserves the first bounded Roadmap Slimming tranche's superseded release,
-  shell, and locale-readiness snapshots in original source order. Its dated
-  status language is historical; current release status remains in the
-  roadmap's status index.
+  preserves the first tranche's superseded release, shell, and locale-readiness
+  snapshots plus the second tranche's completed Cross-App Relation Deletion
+  and capability-Handoff progression. Original dated status language remains
+  historical; current capability status remains in the roadmap.
+- [LiaisonScape Layout and Auto Layout chronology](liaisonscape-layout-and-auto-layout-chronology.md)
+  preserves selected completed Automatic Display and Explicit Auto Layout
+  implementation/acceptance progression. Current Human Check B qualification,
+  diagnostics, and quality follow-ups remain in the roadmap.
 - [Current roadmap and migration status](../roadmap.md#current-roadmap-first-chronology-migration-status-2026-09-24)
-  remains authoritative for current status and links to the [migration result
-  record](../documentation-ia-roadmap-chronology-migration1-result.md).
+  remains authoritative for current status and links to the [chronology
+  migration result](../documentation-ia-roadmap-chronology-migration1-result.md)
+  and [Roadmap Slimming Migration 2 result](../roadmap-slimming-migration2-result.md).
 
 ## Future chronology boundary
 

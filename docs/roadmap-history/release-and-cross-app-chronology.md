@@ -187,3 +187,561 @@ No runtime, design-authority, or `ai-knowledge` files are changed by this
 roadmap synchronization. The existing untracked files
 `research/exploratory/anonymous-dataset-sharing.md` and
 `sessions/E2R-Session-0048.md` remain preserved and outside this checkpoint.
+## Roadmap reconstruction checkpoint — completed Cross-App deletion and capability Handoff progression
+
+Historical source: complete original H3 entries from `docs/roadmap.md` at
+`e17e778` (`docs: slim roadmap release and cross-app tranche`). Their source
+order, dates, status wording, and evidence text are retained. Relative Markdown
+hrefs are adjusted only to resolve from this chronology file; original
+path-only prose remains unchanged. Status terms inside these entries describe
+their dated checkpoint snapshots, not current planning authority. Current
+Cross-App status remains in [the roadmap](../roadmap.md#roadmap-reconstruction-checkpoint-current-canonical-summary).
+### LS-CROSS-APP-RELATION-DELETION4-PRESENTATION-FOLLOWUP
+
+**RECORDED / IMPLEMENTATION NOT STARTED** — 2026-08-28.
+
+The Formal Real Edge acceptance for LiaisonScape Entity deletion resolution is
+accepted for behavior and focus. A separate manual visual review recorded the
+following presentation and copy follow-ups. They are presentation polish, not
+acceptance blockers, and this record does not reopen the accepted deletion
+semantics or focus contract.
+
+1. **Human-facing blocker copy:** the Japanese `ブロッカー` wording is useful
+   as internal workflow terminology but is a candidate for clearer user-facing
+   copy describing the connected Relations that must be removed before the
+   Entity can be deleted. The candidate copy must be aligned in English and
+   Japanese before implementation; no runtime copy change is made here.
+2. **Zero-blocker action spacing:** the `Keep Entity` and `Delete Entity`
+   footer actions appear visually close in the resolved state. Review spacing
+   and grouping using the existing action-layout conventions across desktop,
+   narrow, EN, JA, and keyboard focus-visible states; do not prescribe a fixed
+   margin value in this record.
+3. **Keep Entity duplication:** the safe `Keep Entity` action is currently
+   available in both the dialog header and footer. Review whether the same
+   semantic action should remain in both locations or be consolidated, while
+   preserving the existing cancellation behavior and safe focus target.
+4. **Safe/destructive placement convention:** audit the placement of safe and
+   destructive actions across NarrativeLine Entity/Event Detail, deletion
+   resolution and confirmation, LiaisonScape Entity/Relation Detail, existing
+   confirmations, and the current Entity deletion resolution dialog. Compare
+   safe action position, destructive action position, Danger Zone placement,
+   footer grouping, gap, wrap order, narrow-width order, Tab order, and EN/JA
+   label width. This is an evidence-gathering follow-up, not a universal
+   Cross-App left/right rule.
+
+The follow-up remains separate from bidirectional Cross-App acceptance and
+overall capability closure. Any implementation should be a bounded
+presentation/copy checkpoint with its own desktop/narrow, EN/JA, and keyboard
+acceptance evidence. It must not change Entity/Relation deletion semantics,
+Relation visibility or identity, Dataset ownership, routing, viewport or
+pointer behavior, Handoff, Core/Extension/schema behavior, or the accepted
+focus-management fix.
+
+### LS-CROSS-APP-RELATION-DELETION5-ACTION-HIERARCHY-AUDIT
+
+**AUDIT COMPLETE / DESIGN DIRECTION RECORDED / IMPLEMENTATION NOT STARTED** —
+2026-08-28.
+
+The bounded action-hierarchy audit is recorded in
+[Cross-App Destructive Action Hierarchy Audit](../cross-app-destructive-action-hierarchy-audit.md).
+NarrativeLine and LiaisonScape evidence does not establish a universal
+safe-left / destructive-right rule. The reusable principle is one clearly
+identified safe choice before the destructive choice in DOM and keyboard order,
+with visual separation selected according to the host surface. For the current
+LiaisonScape Entity deletion resolution dialog, the recommended bounded
+direction is one footer `Keep Entity` followed by zero-blocker-only `Delete
+Entity`, with the duplicate header `Keep Entity` removed. Narrow stacking,
+final EN/JA copy, and exact spacing remain implementation work.
+
+This is a design/source audit only. Runtime, CSS, i18n, tests, deletion
+semantics, and the accepted focus fix are unchanged. Bidirectional Cross-App
+acceptance and overall capability closure remain pending.
+
+### LS-CROSS-APP-RELATION-DELETION6-PRESENTATION-IMPLEMENTATION
+
+**AUTOMATED IMPLEMENTATION COMPLETE / FORMAL BOUNDED REAL EDGE PRESENTATION
+ACCEPTANCE PENDING** — 2026-08-28.
+
+The bounded LiaisonScape presentation implementation is complete at commit
+`34d8164` (`fix: refine Entity deletion resolution presentation`) and is
+recorded in [LiaisonScape Relation Deletion Resolution Presentation
+Implementation](../liaisonscape-relation-deletion-resolution-presentation-implementation.md).
+The duplicate header `Keep Entity` was removed; the footer now keeps one safe
+action before zero-blocker-only `Delete Entity`, with a bounded desktop gap and
+safe-before-danger full-width narrow stacking. Human-facing EN/JA copy now
+describes connected Relations without exposing `blocker` terminology.
+
+Automated tests, lint, build, and diff checks passed. This checkpoint does not
+claim formal browser visual acceptance, bidirectional Cross-App acceptance, or
+capability closure. The next checkpoint is bounded Real Edge presentation
+acceptance; deletion semantics and the accepted focus fix remain unchanged.
+
+### LS-CROSS-APP-RELATION-DELETION7-PRESENTATION-REAL-EDGE-ACCEPTANCE
+
+**FORMALLY ACCEPTED / COMPLETE** — 2026-08-28.
+
+The bounded LiaisonScape presentation refinement passed dedicated Microsoft
+Edge visual/interaction acceptance at runtime commit `34d8164`. Evidence is
+recorded in [LiaisonScape Relation Deletion Resolution Presentation
+Acceptance](../liaisonscape-relation-deletion-resolution-presentation-acceptance.md).
+P1/P2 copy, P3 duplicate-action removal, P4/P5 zero-blocker EN/JA layout, P6
+desktop spacing, P7 narrow safe-before-danger stacking, and P10 focus
+regression all passed. P8/P9/P11/P12 passed as bounded regression evidence.
+
+The acceptance confirms one footer `Keep Entity`, zero-blocker-only `Delete
+Entity`, visible desktop separation, full-width narrow stacking, connected
+Relation wording, and preserved deletion/focus semantics. Bidirectional
+Cross-App acceptance and overall capability closure remain pending.
+
+### XAPP-REL-DELETE3 bidirectional acceptance (2026-08-28)
+
+`XAPP-REL-DELETE3-BIDIRECTIONAL-ACCEPTANCE` was executed as an acceptance-only
+checkpoint and is recorded in
+[Cross-App Relation Deletion Bidirectional Acceptance](../cross-app-relation-deletion-bidirectional-acceptance.md).
+The result is **FORMAL BIDIRECTIONAL ACCEPTANCE: FAIL**. NarrativeLine at
+`3b2078f` and LiaisonScape at `34d8164` passed the automated gates and the
+bounded Relation, self, parallel, hidden/Event, ambiguity, cancellation, and
+extension-preservation checks. LiaisonScape final Entity deletion passed, but
+NarrativeLine retained `entity-nl-final` after its two incident Relations were
+resolved and final Entity deletion was confirmed. No runtime source was
+changed; no runtime commit was created.
+
+The final Cross-App acceptance remains pending, and capability closure remains
+deferred. X11 must be resolved and the full bidirectional matrix, including
+locale parity, must be re-accepted before item 6 can advance. No targeted
+Handoff closure is claimed.
+
+### XAPP-REL-DELETE4 — NarrativeLine final Entity deletion fix (2026-08-28)
+
+**IMPLEMENTED / AUTOMATED GREEN / EXPLORATORY REAL EDGE PASS** at NarrativeLine
+commit `7a695b3` (`fix: complete final Entity deletion`). The X11 stale-state
+overwrite risk was corrected with a functional Dataset updater, and a focused
+real-App regression test now covers explicit resolution of both incident
+Relations, cancellation and reopening of final Entity confirmation, and
+confirmed target deletion with preservation of unrelated Entity/Event data.
+The full 187-test suite, lint, build, and diff checks passed; a fresh Edge
+smoke also passed the export assertions.
+
+The prior `XAPP-REL-DELETE3-BIDIRECTIONAL-ACCEPTANCE` FAIL record is preserved.
+Formal bidirectional acceptance must be rerun in both directions, including
+the full X1-X14 matrix and locale parity; capability closure remains deferred.
+The separately recorded NarrativeLine endpoint-separator mojibake and
+LiaisonScape generic-dialog button-spacing findings remain presentation
+follow-ups and were not fixed in this checkpoint. LiaisonScape runtime source
+and the pre-existing dirty CDP diagnostic playbook were unchanged.
+
+### XAPP-REL-DELETE5 bidirectional reacceptance (2026-08-28)
+
+`XAPP-REL-DELETE5-BIDIRECTIONAL-REACCEPTANCE` is **FORMALLY ACCEPTED / COMPLETE**
+at NarrativeLine `7a695b3` and LiaisonScape `34d8164`. The full X1-X14
+Cross-App matrix passed in both directions, including the repaired
+NarrativeLine final Entity deletion, LiaisonScape final Entity deletion,
+self/parallel/hidden Relations, duplicate identity, Cancel safety, unknown
+Extension preservation, Dataset export/open transfer, and EN/JA semantic
+parity. NarrativeLine (187), LiaisonScape (216), CDP helper (4), and e2r-spec
+validation gates were green; dedicated Edge evidence confirmed native dialog
+state `closed`.
+
+The original `XAPP-REL-DELETE3-BIDIRECTIONAL-ACCEPTANCE` FAIL record remains
+historical and unchanged. Bidirectional acceptance is now closed for this
+bounded workstream, but capability closure, targeted Handoff discovery, and
+the deferred NarrativeLine endpoint-separator mojibake and cross-app generic
+confirmation button-spacing findings remain separate follow-ups. No runtime
+source or ai-knowledge change was made in this acceptance-only checkpoint.
+
+### XAPP-REL-DELETE6 capability closure (2026-08-28)
+
+`XAPP-REL-DELETE6-CAPABILITY-CLOSURE` is **FORMALLY ACCEPTED / CROSS-APP
+IMPLEMENTATION ALIGNED / COMPLETE**. The closure is recorded in [Cross-App
+Relation Deletion Capability Closure](../cross-app-relation-deletion-capability-closure.md).
+The canonical status is now:
+
+- Cross-App Relation deletion design: **ACCEPTED**;
+- NarrativeLine implementation: **ACCEPTED / COMPLETE**;
+- LiaisonScape implementation: **ACCEPTED / COMPLETE**;
+- bidirectional Dataset interoperability: **FORMALLY ACCEPTED / COMPLETE**;
+- bounded Cross-App Relation deletion capability: **COMPLETE / CLOSED**.
+
+The closure covers the accepted semantic contract, explicit Relation deletion,
+no silent cascade, hidden and Event-related Relation handling, self and
+parallel Relation identity, final explicit Entity deletion, unrelated Dataset
+preservation, and the successful X1-X14 matrix in both directions. The prior
+XAPP-REL-DELETE3 FAIL record remains historical and unchanged; its X11 defect
+was corrected by NarrativeLine commit `7a695b3` and passed in the XAPP-REL-DELETE5
+reacceptance.
+
+Targeted capability-based Handoff, capability discovery/manifest, target-app
+discovery, Handoff URL syntax, provenance, generalized Relation editing, and
+bulk deletion remain separate future work. The deferred NarrativeLine endpoint
+separator mojibake and generic Cross-App confirmation button-spacing findings
+also remain separate presentation follow-ups. No Core, Extension, schema,
+runtime, or ai-knowledge change was made by this documentation-only closure.
+
+### XAPP-CAPABILITY-HANDOFF1 discovery audit (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF1-DISCOVERY-AUDIT` is **AUDIT COMPLETE / DESIGN
+DIRECTION RECORDED / IMPLEMENTATION NOT AUTHORIZED**. The audit is recorded in
+[Cross-App Capability Handoff Discovery Audit](../cross-app-capability-handoff-discovery-audit.md).
+
+The source audit confirms that NarrativeLine and LiaisonScape implement the
+accepted Dataset Handoff v0 `datasetUrl` startup flow, while Hub currently
+generates explicit sample links to those applications. None of the three
+currently publishes or consumes a target Object plus required-capability
+declaration for runtime routing. Existing Cross-App Relation deletion remains
+**FORMALLY ACCEPTED / CROSS-APP IMPLEMENTATION ALIGNED / COMPLETE** and is not
+reopened by this audit.
+
+The recorded first bounded direction is a reviewed static table of first-party
+known applications with operation-level capabilities such as `inspect Relation`
+and `delete Relation`, canonical full target Object IDs, explicit user action,
+recipient-side verification, no network dependency, no automatic third-party
+discovery, and a safe no-recipient fallback. Hub may later publish or explain
+the table but is not a required registry authority.
+
+The next bounded step is target contract design covering Dataset state,
+canonical target identity, required capability, recipient selection,
+URL/history ownership, stale target and stale metadata behavior, trust,
+privacy, and user confirmation. No manifest schema, URL syntax, runtime
+discovery, automatic redirect, registry, Core, Extension, schema, or
+application-source change is authorized by this audit.
+
+### XAPP-CAPABILITY-HANDOFF2 target contract design (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF2-TARGET-CONTRACT-DESIGN` is **DESIGN ACCEPTED / URL
+CONTRACT NOT YET DESIGNED / IMPLEMENTATION NOT AUTHORIZED**. The accepted
+transport-independent contract is recorded in [Cross-App Capability Handoff
+Target Contract](../cross-app-capability-handoff-target-contract.md).
+
+The minimum semantic tuple is a transferable Dataset context, the canonical
+full target Object ID, and one primary required capability. `targetObjectType`
+is an optional consistency hint and never replaces the canonical ID. The first
+capability identifiers are application-neutral `relation.inspect` and
+`relation.delete`; deletion requires inspection as a safety prerequisite and
+never means immediate mutation. Source application identity is optional
+diagnostic context, recipient identity is resolved separately, locale is
+orthogonal, and a separate Target Contract version must not be confused with
+Core, Extension, Dataset, or application version.
+
+Missing target, type mismatch, stale capability metadata, and unsupported
+capability all fail non-destructively. Inspect-only support is not a silent
+downgrade from delete. Existing Dataset Handoff v0 `datasetUrl` semantics and
+Hub sample links remain unchanged. The Cross-App Relation deletion capability
+remains **FORMALLY ACCEPTED / CROSS-APP IMPLEMENTATION ALIGNED / COMPLETE**.
+
+The next bounded step is recorded below as URL/transport contract design. No
+Core, Extension, schema, application source, capability manifest, runtime
+discovery, automatic redirect, or registry change is authorized by this
+checkpoint.
+
+### XAPP-CAPABILITY-HANDOFF3 URL/transport contract design (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF3-URL-TRANSPORT-CONTRACT-DESIGN` is **DESIGN ACCEPTED /
+TRANSPORT CONTRACT DEFINED / IMPLEMENTATION NOT AUTHORIZED**. The accepted
+transport is recorded in [Cross-App Capability Handoff URL/Transport
+Contract](../cross-app-capability-handoff-url-transport-contract.md).
+
+The first direction extends Dataset Handoff v0's flat URL fragment. It carries
+the existing retrievable absolute HTTPS `datasetUrl`, the canonical full
+`targetObjectId`, optional exact-case `targetObjectType`,
+`requiredCapability`, and `targetContractVersion=1`. Targeted requests are
+startup-only, validate duplicates and malformed values, preserve the existing
+locale contract, and never turn Handoff into an automatic deletion command.
+`relation.delete` still requires safe inspection/presentation and explicit user
+action; unknown, stale, mismatched, or unsupported input fails
+non-destructively.
+
+The first transport does not carry inline or current-edited Dataset state,
+pending drafts, recipient identity, source ownership, or capability
+negotiation. Existing v0 links remain unchanged, and an old recipient may
+open the Dataset but cannot claim that targeted intent was fulfilled. Cross-App
+Relation deletion remains **FORMALLY ACCEPTED / CROSS-APP IMPLEMENTATION
+ALIGNED / COMPLETE**. Endpoint-separator and dialog-spacing findings remain
+deferred.
+
+The next bounded step is the current Dataset transfer design below, followed by
+an implementation-readiness audit. Runtime implementation requires explicit
+authorization from a later checkpoint.
+
+### XAPP-CAPABILITY-HANDOFF4 current Dataset transfer design (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF4-CURRENT-DATASET-TRANSFER-DESIGN` is **DESIGN
+ACCEPTED / FIRST CURRENT-DATASET TRANSFER BOUNDARY DEFINED / IMPLEMENTATION
+NOT AUTHORIZED**. The design is recorded in [Cross-App Capability Handoff
+Current Dataset Transfer Design](../cross-app-capability-handoff-current-dataset-transfer-design.md).
+
+The accepted first direction has two lanes. A clean Dataset with a known
+retrievable URL may use the existing targeted URL Handoff. A modified committed
+Dataset or a local Dataset without a source URL uses explicit Export followed by
+explicit Open in the recipient; target metadata is not embedded in Core or an
+Extension, so the user re-selects the target. Pending work blocks current-state
+Handoff until explicitly committed or discarded. Modified plus pending work
+requires both boundaries to be resolved.
+
+The transfer is a committed snapshot at export time, using the existing
+validated export/serialization path and preserving unknown valid fields and
+Extensions. It does not introduce revision fields, fingerprints, hosted
+uploads, transfer tokens, live synchronization, or a new URL parameter. No
+silent public sharing, stale URL fallback, draft transfer, automatic target
+action, or destructive mutation is authorized. Discovery, Target Contract,
+URL/Transport Contract, and Cross-App Relation deletion remain accepted; the
+endpoint-separator and dialog-spacing findings remain deferred.
+
+The next bounded step is implementation-readiness review for this two-lane
+boundary: exact Export/Open ownership, round-trip preservation, dirty/pending
+transitions, failure states, and manual target re-selection. Runtime work
+requires explicit authorization from that checkpoint.
+
+### XAPP-CAPABILITY-HANDOFF5 implementation readiness (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF5-IMPLEMENTATION-READINESS` is **READINESS AUDIT
+COMPLETE / READY FOR A BOUNDED IMPLEMENTATION CHECKPOINT / IMPLEMENTATION NOT
+AUTHORIZED**. The audit is recorded in [Cross-App Capability Handoff
+Implementation Readiness](../cross-app-capability-handoff-implementation-readiness.md).
+
+The audit confirms that the accepted contracts can be implemented with
+responsibility-based application modularization. e2r-spec owns contract
+semantics; each recipient owns its supported capability and safe landing
+surface; the sender owns a small reviewed first-party catalog and current
+Dataset availability gate; and Hub remains an optional human-facing
+publication surface. No shared runtime package is introduced at this stage.
+
+The first bounded implementation target is LiaisonScape as the recipient:
+targeted parsing, exact Relation resolution, and safe `relation.inspect`
+landing on the existing Relation Detail surface. The first meaningful sender
+direction is then NarrativeLine's existing Entity deletion-resolution Relation
+row to LiaisonScape. It is inspect-only, does not open deletion confirmation,
+and does not authorize mutation. The current Dataset transfer two-lane safety
+boundary remains in force: clean known HTTPS source URLs may use targeted
+Handoff; modified/local or pending state uses explicit Export then Open.
+
+The next sequence is recipient implementation and acceptance, followed by
+targeted delete-intent compatibility, NarrativeLine source URL tracking and
+availability gating, the contextual sender trigger, and cross-app Real Edge
+acceptance. No runtime, Core, Extension, schema, Validator, Hub routing, or
+ai-knowledge change is authorized by this readiness audit. Endpoint-separator
+and dialog-spacing findings remain deferred, and Cross-App Relation deletion
+remains closed.
+
+### XAPP-CAPABILITY-HANDOFF6 LiaisonScape recipient inspect (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF6-LS-RECIPIENT-INSPECT1` is **IMPLEMENTED / AUTOMATED
+GREEN / BOUNDED BROWSER SMOKE PASS** at LiaisonScape commit `0f7fe1c`. The
+implementation record is [LiaisonScape Capability Handoff Relation Inspect
+Implementation](../liaisonscape-capability-handoff-relation-inspect-implementation.md).
+
+LiaisonScape now parses the accepted targeted flat fragment while preserving
+ordinary Dataset Handoff v0 behavior, reuses the existing HTTPS Dataset
+acquisition and validation path, resolves the exact canonical Relation ID,
+checks the optional exact `Relation` type hint, and lands on the existing
+Relation Detail surface for `relation.inspect`. Missing targets, type
+mismatches, malformed targeted metadata, and unsupported capabilities fail
+non-destructively. `relation.delete` is not implemented here; it cannot open
+Delete Confirmation or mutate the Dataset.
+
+The runtime gate passed with 223 tests, lint, build, and diff checks. A bounded
+Edge/CDP smoke against the public Lighthouse Dataset opened
+`clara-thomas-supervises` in Relation Detail with no confirmation dialog; the
+helper's native-dialog state was verified `closed` after its explicit probe.
+The targeted and locale fragment remained inspectable. No NarrativeLine,
+Hub, capability table, Core, Extension, schema, or Validator change was made.
+The next bounded step is the separate `relation.delete` intent compatibility
+checkpoint. Cross-App Relation deletion remains closed; endpoint-separator and
+dialog-spacing findings remain deferred.
+
+### XAPP-CAPABILITY-HANDOFF7 LiaisonScape recipient Relation delete intent (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF7-LS-RECIPIENT-DELETE-INTENT1` is **IMPLEMENTED /
+AUTOMATED GREEN / BOUNDED BROWSER SMOKE PASS** at LiaisonScape commit
+`95a8c56`. The implementation record is [LiaisonScape Capability Handoff
+Relation Delete Intent Implementation](../liaisonscape-capability-handoff-relation-delete-intent-implementation.md).
+
+LiaisonScape now treats accepted `relation.delete` as a non-destructive intent:
+it reuses Dataset Handoff v0 acquisition, resolves the exact canonical Relation,
+checks the optional `Relation` type hint and the bounded recipient capability,
+and lands on the existing Relation Detail surface. The existing explicit Delete
+action remains available, but Handoff receipt does not open Confirmation, focus
+the destructive control, inject input, or mutate the Dataset. `relation.inspect`
+and ordinary v0 behavior remain green; missing, mismatched, malformed, and
+unknown targeted requests fail safely.
+
+The LiaisonScape gate passed with 225 tests, lint, build, and diff checks. A
+dedicated Edge/CDP smoke confirmed the exact `clara-thomas-supervises` landing,
+closed native-dialog state, no initial destructive focus, explicit Delete then
+Cancel safety, locale coexistence, reload, and Back/Forward behavior. The
+closed Cross-App Relation deletion capability remains closed. NarrativeLine
+sender implementation is the next bounded step; capability table publication,
+Hub changes, Core/Extension/schema changes, endpoint-separator mojibake, and
+dialog-spacing findings remain deferred.
+
+### XAPP-CAPABILITY-HANDOFF8-NL-SENDER1 (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF8-NL-SENDER1` is **BLOCKED / NO RUNTIME CHANGE**. The
+requested NarrativeLine sender slice was stopped at the pre-implementation
+gate and is recorded in [NarrativeLine Capability Handoff
+Sender Implementation](../narrativeline-capability-handoff-sender-implementation.md).
+
+At that checkpoint, the readiness document still stated **IMPLEMENTATION NOT
+AUTHORIZED** and did not record whether targeted recipient navigation was
+same-tab or new-tab/window. No sender button, URL builder, source URL state,
+recipient config, or navigation handler was added. Modified/local/pending
+Dataset safety boundaries and the explicit Export/Open fallback remain
+unchanged. Generic capability-table publication, Hub changes, endpoint-
+separator work, and dialog-spacing work remain deferred.
+
+The next bounded step is to update the readiness authority with explicit
+sender authorization and navigation behavior, then retry the sender
+implementation.
+
+### XAPP-CAPABILITY-HANDOFF8A-SENDER-NAVIGATION-AUTHORIZATION (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF8A-SENDER-NAVIGATION-AUTHORIZATION` is **DESIGN
+COMPLETE / BOUNDED NARRATIVELINE SENDER AUTHORIZED / NO RUNTIME CHANGE**. The
+design record is [Cross-App Capability Handoff Sender Navigation
+Authorization](../cross-app-capability-handoff-sender-navigation-authorization.md).
+
+The two Handoff8 blockers are resolved. The next bounded NarrativeLine sender
+implementation is authorized for the existing Entity deletion-resolution
+Relation row and `relation.inspect` only. Navigation is **same-tab by default**
+using a native anchor and a pure targeted URL builder; ordinary browser
+modifier behavior may open another context. This avoids popup-blocker and
+opener-security concerns without forcing focus or a new window. The sender
+must use a reviewed, environment-aware LiaisonScape configuration, and the
+existing clean/no-pending/known-HTTPS-source gate and explicit Export/Open
+fallback remain mandatory.
+
+The Handoff8 blocked attempt remains historical evidence. Discovery, Target
+Contract, Transport Contract, Current Dataset Transfer, Relation deletion
+closure, and both LiaisonScape recipient capabilities remain accepted or
+implemented. Generic capability-table publication, Hub targeted Handoff,
+endpoint-separator work, dialog-spacing work, and formal cross-app acceptance
+remain deferred. The next checkpoint is the bounded NarrativeLine sender
+implementation; this authorization does not begin it automatically.
+
+### XAPP-CAPABILITY-HANDOFF8B-NL-SENDER-IMPLEMENTATION1 (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF8B-NL-SENDER-IMPLEMENTATION1` is **IMPLEMENTED /
+AUTOMATED GREEN / BOUNDED CROSS-APP SMOKE PARTIAL**. The implementation record
+is [NarrativeLine Capability Handoff Sender Runtime Implementation](../narrativeline-capability-handoff-sender-runtime-implementation.md).
+
+NarrativeLine now exposes the authorized Entity deletion-resolution Relation
+row sender surface for `relation.inspect`. It uses a pure targeted URL builder,
+the accepted flat-fragment fields, the canonical full Relation ID, an
+environment-aware LiaisonScape configuration, and a native same-tab `<a
+href>` with no imperative navigation. Clean/no-pending/known-HTTPS-source
+eligibility gates targeted navigation. Modified, local, source-less, invalid,
+and pending state retain the existing safe explicit Export/Open boundary; no
+Dataset or deletion mutation was added.
+
+NarrativeLine verification is green: 194 tests passed, lint passed, build
+passed, and diff checking passed. A dedicated Edge smoke confirmed the sender
+surface, exact URL fields, same-tab navigation to the public LiaisonScape
+origin, same Dataset acquisition, and absence of browser/delete confirmation.
+The current public deployment did not expose the targeted Relation Detail
+after fragment loading, so exact public recipient landing remains unclaimed
+and should be reconciled in a later compatibility/acceptance checkpoint.
+
+The historical Handoff8 BLOCKED record and Handoff8A authorization remain
+unchanged. Cross-App Relation deletion remains closed; discovery, target and
+transport contracts, current-Dataset transfer design, readiness, and both
+LiaisonScape recipient implementations remain accepted or implemented. No
+generic capability table, Hub targeted Handoff, Core/Extension/schema change,
+endpoint-separator correction, dialog-spacing correction, or ai-knowledge
+change was made.
+
+The next bounded step is a fresh recipient deployment/real-edge compatibility
+check for exact Relation Detail landing. Formal Cross-App Capability Handoff
+acceptance, generic discovery, modified-Dataset automatic transfer, and other
+deferred work remain separate.
+
+### XAPP-CAPABILITY-HANDOFF9-NL-LS-REAL-EDGE-ACCEPTANCE1 (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF9-NL-LS-REAL-EDGE-ACCEPTANCE1` is **FORMALLY ACCEPTED /
+CURRENT SOURCE REVISIONS**. The acceptance record is [Cross-App Capability
+Handoff NL-LS Real Edge Acceptance](../cross-app-capability-handoff-nl-ls-real-edge-acceptance.md).
+
+Current-source revisions `158adec` (NarrativeLine), `95a8c56` (LiaisonScape),
+and `39d6e08` (e2r-spec record) passed the fresh automated gates and bounded
+Edge acceptance. Ordinary Dataset Handoff v0, the authorized NL native-anchor
+sender, exact `relation.inspect` targeting, local LS Detail landing, hidden /
+self / parallel / same-name identity checks, modified/local/pending safety,
+locale coexistence, delete-intent safety, and Back/Forward behavior are
+accepted at the current source revisions. Cross-App Relation deletion remains
+closed.
+
+The public deployment state is deliberately separate:
+**PUBLIC DEPLOYMENT PARITY NOT YET ACCEPTED**. Prior public observation
+established Dataset acquisition but not targeted Relation Detail landing, and
+a fresh public probe encountered a CDP navigation timeout. This does not
+authorize a runtime fix, deployment, or push; the next bounded step is public
+revision/parity verification.
+
+Handoff8 BLOCKED history and Handoff8A authorization remain unchanged.
+Generic capability-table publication, dynamic discovery, Hub targeted Handoff,
+modified-Dataset automatic transfer, endpoint-separator work, dialog-spacing
+work, third-party interoperability, and ai-knowledge changes remain deferred.
+
+### XAPP-CAPABILITY-HANDOFF10-PUBLIC-DEPLOYMENT-PARITY-READINESS1 (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF10-PUBLIC-DEPLOYMENT-PARITY-READINESS1` is
+**DIAGNOSIS COMPLETE / PUSH-DEPLOY NOT PERFORMED**. The readiness record is
+[Cross-App Capability Handoff Public Deployment Parity Readiness](../cross-app-capability-handoff-public-deployment-parity-readiness.md).
+
+Current-source acceptance remains green at NarrativeLine `158adec`,
+LiaisonScape `95a8c56`, and the e2r-spec acceptance record `fb05042`.
+Read-only remote checks confirmed that both required runtime commits remain
+local-only on their remote `main` branches. Public NL and LS Pages URLs are
+reachable, but the deployed bundles do not expose the current targeted
+Handoff terms; public Relation Detail landing and deployed commit identity
+therefore remain unaccepted. The formal classification is **A — REQUIRED
+RUNTIME COMMITS NOT PUSHED**, with **C — DEPLOYED REVISION UNKNOWN** also
+confirmed. No config mismatch or confirmed service-worker cache was found.
+
+The documented decision is **READY TO AUTHORIZE PUSH/DEPLOY**, without taking
+that action in this checkpoint. If authorized later, deploy LiaisonScape first,
+verify its public targeted recipient and ordinary v0 paths, then deploy
+NarrativeLine and verify the sender-to-public-recipient path. Presentation
+issues, runtime fixes, generic discovery, Hub targeted Handoff, and
+ai-knowledge changes remain deferred.
+
+### XAPP-CAPABILITY-HANDOFF11-LS-RECIPIENT-PUBLIC-DEPLOYMENT1 (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF11-LS-RECIPIENT-PUBLIC-DEPLOYMENT1` is **PUBLIC
+LIAISONSCAPE RECIPIENT PARITY ACCEPTED**. The deployment record is
+[LiaisonScape Capability Handoff Public Recipient Deployment](../liaisonscape-capability-handoff-public-recipient-deployment.md).
+
+With explicit recipient-first authorization, LiaisonScape `95a8c56` was pushed
+to `main` and deployed by the existing GitHub Pages workflow. Actions run
+`33144996627` completed successfully for that exact head. Fresh dedicated Edge
+verification passed ordinary Dataset Handoff v0, direct `relation.inspect`
+targeting of `clara-thomas-supervises`, canonical self-Relation targeting,
+non-destructive `relation.delete` intent, malformed/unsupported safe failure,
+locale, reload, Back/Forward, and native-dialog closure. Public recipient
+parity is accepted.
+
+NarrativeLine public sender parity remains **NOT YET ACCEPTED** and full public
+NL-to-LS E2E remains separate. Cross-App Relation deletion remains CLOSED.
+Handoff8 historical BLOCKED evidence, generic capability-table/discovery,
+Hub targeted Handoff, `Remove connection` presentation, endpoint separator,
+dialog spacing, runtime fixes, and ai-knowledge changes remain deferred.
+
+### XAPP-CAPABILITY-HANDOFF12-NL-SENDER-PUBLIC-DEPLOYMENT1 (2026-08-28)
+
+`XAPP-CAPABILITY-HANDOFF12-NL-SENDER-PUBLIC-DEPLOYMENT1` is **PUBLIC
+NARRATIVELINE SENDER AND PUBLIC NL-to-LS E2E ACCEPTED**. The deployment and
+browser evidence is recorded in [Public NarrativeLine to LiaisonScape
+Capability Handoff Acceptance](../cross-app-capability-handoff-public-nl-ls-acceptance.md).
+
+With explicit authorization, NarrativeLine `158adec` was pushed to `main` and
+deployed through the existing GitHub Pages workflow. Actions run `33146076558`
+completed successfully for the exact head. Fresh public Edge verification
+passed ordinary Dataset Handoff v0, the Entity deletion blocker sender,
+`relation.inspect` URL generation, exact canonical `clara-lighthouse` landing,
+hidden Event-related `lead-clara` landing, modified/pending safety, English and
+Japanese locale transport, reload, Back/Forward, no Dataset mutation, and
+native-dialog closure.
+
+LiaisonScape `95a8c56` was unchanged and was not redeployed; its public
+recipient parity remains accepted by Handoff11. Hub and ai-knowledge were
+untouched. Cross-App Relation deletion remains CLOSED. Generic capability
+discovery, `relation.delete` emission from NarrativeLine, presentation work,
+and future capability expansion remain separate and deferred.

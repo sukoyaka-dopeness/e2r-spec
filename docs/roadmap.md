@@ -869,6 +869,10 @@ version, date, or implementation order; it does not change the active
 LiaisonScape Initial Placement checkpoint or authorize a Suite shell or new
 application.
 
+A separate [E2R Wiki / portable hosted Dataset research](../research/exploratory/e2r-wiki-portable-hosted-dataset-application.md)
+explores one possible application shape within that distant space; it does not
+change this status or authorize implementation.
+
 ## Evidence gates for candidate Extensions
 
 | Candidate | Current evidence | Missing before formalization |

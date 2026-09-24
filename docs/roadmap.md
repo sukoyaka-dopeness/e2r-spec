@@ -55,6 +55,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | NarrativeLine Detail controls | **ACCEPTED / BOUNDED GEOMETRY CORRECTIONS COMPLETE** | NarrativeLine `df69e8e` and `8495724` cover destructive/detail action geometry, Timeline Edit, and Entity Detail form width; further Picker/Create or visual-style work requires a separate current-evidence audit |
 | NarrativeLine pre-public feature candidates | **SAMPLE ROLE / PROVENANCE DECISIONS RECORDED / PUBLIC ACCESS RELEASED** | [provenance authority and access result](e2r-initial-public-release-provenance-authority-cross-app-access-implementation1-result.md), [sample role decision preparation](e2r-public-sample-role-decision-preparation1-result.md), and [content/provenance audit](e2r-initial-public-release-content-sample-provenance-refresh-audit1-result.md); five ordinary Gallery families and separate Self-Description dogfood access are public; factual-source caveats remain provenance boundaries |
 | Recent application identity and shell corrections | **IMPLEMENTED / ACCEPTANCE STATUS SPLIT** | Timeline `↑/↓`, Timeline Footer, Detail bottom action/AppFrame continuity, Dataset title hierarchy/direct editing, product-name-only document titles, and title input chrome/terminology have implementation evidence but are not wholesale `ACCEPTED / CLOSED` without explicit visual acceptance. The common SVG favicon has Human browser-tab/narrow confirmation |
+| Cross-App Locale recipient preference | **CROSS-APP CLOSURE NOT ESTABLISHED / NOT AN INITIAL-RELEASE GATE** | NarrativeLine's [consumer acceptance](narrativeline-locale-consumer-acceptance.md) explicitly says the overall workstream is not complete; LiaisonScape's i18n MVP and Hub's [bilingual landing acceptance](e2r-hub-public-entry-point-milestone-2-acceptance.md) are bounded component evidence, not closure of the shared startup-locale contract. No current priority is selected by this status sync. Hub direct Handoff remains a separate deferred capability under the Hub acceptance |
 | E2R workspace clone and evidence hygiene | **COMPLETED / ROOT PLACEMENT CLOSED (8 / 7 / 0)** | [workspace placement migration summary](#workspace-placement-migration--completed--2026-09-21); detailed evidence remains in workspace artifacts and Git history; future evidence disposition is separate work |
 | Initial Public Release | **FORMALLY CLOSED / PUBLIC AUTHORITIES VERIFIED / ACCEPTED BOUNDARIES PRESERVED** | [final closure audit](e2r-initial-public-release-closure-audit-result.md); five ordinary Gallery samples, separate Self-Description dogfood access, Hub/NarrativeLine/LiaisonScape provenance links, Validator `0.6.1`, and the accepted rights/provenance boundary are public and verified; deferred History 2, Lineage, visual-quality, and future product work remain separate follow-ups |
 
@@ -962,8 +963,9 @@ Unless new evidence changes the decision, do not currently:
 
 Manual review during F2-LS1 identified the following bounded LiaisonScape
 follow-ups. They are implementation and acceptance work, not Core or Extension
-changes, and they do not change the current execution priority of F2-LS1,
-Cross-App Locale consumer implementation, or Hub locale producer completion:
+changes. This 2026-08-23 note does not establish the current execution priority
+of F2-LS1, Cross-App Locale consumer implementation, or Hub locale producer
+completion:
 
 1. **Detail metadata / ID presentation audit** — review Entity Detail and
    Relation Detail ID placement and information hierarchy. Evaluate long UUID-
@@ -1218,15 +1220,20 @@ seed is `research/exploratory/reusable-ui-integration-test-harness.md`.
 
 ## Cross-App Locale execution update (2026-08-24)
 
-NarrativeLine Locale Consumer is now **COMPLETE / DOCUMENTED**, based on
+Historical component-status and sequencing snapshot (2026-08-24): NarrativeLine
+Locale Consumer was **COMPLETE / DOCUMENTED**, based on
 runtime checkpoint `ded44d6ca093431cc829d0aa47f6524ea789750a`, final automated
 evidence, and EN/JA manual acceptance. This records recipient-consumer
 readiness, not completion of Cross-App Locale or application release readiness.
 See [NarrativeLine Locale Consumer Acceptance](narrativeline-locale-consumer-acceptance.md).
 
-The next active implementation target is **LiaisonScape locale consumer
-implementation/alignment**, followed by **Hub startup locale producer
-completion / final cross-app closure**.
+The dated next-target sequence was LiaisonScape locale consumer
+implementation/alignment, followed by Hub startup locale producer completion
+and final cross-app closure. It is historical sequencing, not a current
+priority selection. Cross-App Locale remains not closed under the linked
+acceptance; the Initial Public Release closure does not complete it. The Hub
+direct Handoff capability is separate and remains deferred under the Hub
+milestone acceptance.
 
 ### Non-blocking NarrativeLine follow-ups
 
@@ -1254,11 +1261,15 @@ These do not reopen the accepted locale consumer checkpoint.
 
 ### Cross-app Credits alignment follow-up
 
-During LiaisonScape locale-consumer work, localize Credits application chrome
-while retaining creator/product/repository/version metadata unchanged, and
-verify Close, Escape, and backdrop dismissal parity. Check Hub against the same
-boundary. This is a follow-up, not a claim that either application is already
-aligned.
+NarrativeLine Credits behavior is accepted in the [locale-consumer authority](narrativeline-locale-consumer-acceptance.md),
+and LiaisonScape Credits locale parity is recorded closed in the [Release and
+Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
+Hub's accepted [bilingual landing-page milestone](e2r-hub-public-entry-point-milestone-2-acceptance.md)
+covers bounded locale and Credits behavior, but does not establish this
+follow-up's full Close/Escape/backdrop parity. No later closure record for that
+specific Hub check was found in the reviewed authorities; retain it as an
+open/deferred follow-up, not an Initial Public Release gate. The old entry does
+not authorize a runtime change.
 
 ### Version and queued research note
 
@@ -1494,6 +1505,9 @@ push/deployment readiness, public interoperability evidence, and the final
 pre-public-release audit. The later S3 result and Initial Public Release closure
 supersede this sequence as release planning; it is not the current execution
 order. Current status is in the [status index](#current-status-index-2026-09-22).
+Cross-App Locale itself is not closed, but this historical release sequence
+does not select its present priority or imply that the locale workstream blocks
+the already closed release.
 
 When a completed item appears in an older ledger as current-open, that wording
 is historical. When the same follow-up appears in multiple sections, the

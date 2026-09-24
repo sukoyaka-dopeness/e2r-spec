@@ -41,6 +41,10 @@ not a second planning authority. Statements such as `current`, `next`, or
   implementation / acceptance chronology. Current Layout persistence and
   Owned / Derived boundaries, Initial Layout priorities, Human Check B
   qualification, diagnostics, and quality follow-ups remain in the roadmap.
+  The [Product Verification Execution / Budget pilot](liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution-budget-pilot-roadmap-source-snapshot-2026-09-25)
+  preserves the PV-01–PV-10 dated execution, interruptibility, scheduler, and
+  source-step attribution progression; current planning remains in the
+  [bounded pilot result](../roadmap-hybrid-reconstruction-product-verification-pilot-result1.md).
 - [Current roadmap and migration status](../roadmap.md#current-roadmap-first-chronology-migration-status-2026-09-24)
   remains authoritative for current status and links to the [chronology
   migration result](../documentation-ia-roadmap-chronology-migration1-result.md)

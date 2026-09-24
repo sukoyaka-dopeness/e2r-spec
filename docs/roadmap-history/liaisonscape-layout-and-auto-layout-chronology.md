@@ -2824,3 +2824,341 @@ The fixture is **READY_TO_REVIEW_NOT_JUDGED**. No quality fix, retuning, or
 authority change is authorized. Pinned global recovery, Presentation-aware local
 relaxation, and dense Graph-space / Relation-label congestion remain separate
 non-blocking follow-ups; Human Check B remains `QUALIFIED`.
+
+## Product Verification Execution / Budget Pilot — Roadmap source snapshot 2026-09-25
+
+The following blocks were extracted from docs/roadmap.md at
+b316e86 (docs: prepare verification hybrid reconstruction pilot) under
+[Roadmap Hybrid Reconstruction — Product Verification Pilot Preparation 1](../roadmap-hybrid-reconstruction-product-verification-pilot-preparation1.md).
+They preserve the original heading order, dated status language, checkpoint
+wording, and evidence provenance. The current planning consequences remain in
+the Roadmap's [Current Initial Layout / Parallel Presentation Coordination](../roadmap.md#current-initial-layout-parallel-presentation-coordination-2026-09-13)
+and the bounded pilot result (added in this checkpoint).
+
+This section is historical evidence only; words such as current, next,
+OPEN, or HOLD describe the 2026-09-14 snapshot.
+
+### LiaisonScape Initial Layout Execution Architecture Decision 1 (2026-09-14)
+
+The [Initial Layout Execution Architecture Decision 1 result](../liaisonscape-initial-layout-execution-architecture-decision1-result.md)
+provisionally adopts the execution split `Fast deterministic Initial Placement
++ explicit High-quality Auto Layout`, while keeping quality-solver readiness
+at `HOLD / NOT ESTABLISHED`. The decision does not adopt a provider or change
+Product behavior. Current `settleInitialPlacement` remains the startup
+baseline; the existing explicit Auto Layout and explicit Save Coordinates
+boundary provides a compatible Product seam, but the current 12-iteration
+Auto Layout is not a high-quality solver.
+
+The future quality operation may propose Node geometry and consume repeated
+Product-authoritative feedback, but ordinary routing, Parallel/Incident,
+Self-loop, final labels, endpoint-plan, and viewport remain their current
+authorities. A production operation requires snapshot, cancellation,
+stale-result rejection, preview, accept/revert, manual-authority compatibility,
+and explicit runtime/state/memory bounds. Adaptive Initial Placement Cascade
+remains `INACTIVE`. Product default/adoption remains `HOLD`, production
+provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, and the
+Initial Layout Release blocker remains `OPEN`.
+
+### LiaisonScape Explicit High-quality Auto Layout Operation Lifecycle 1 (2026-09-14)
+
+The [Explicit High-quality Auto Layout Operation Lifecycle 1 result](../liaisonscape-explicit-high-quality-auto-layout-operation-lifecycle1-result.md)
+establishes the solver-independent lifecycle contract for the provisionally
+adopted execution split. The contract isolates an immutable input snapshot,
+generation-token cancellation, stale-result rejection, candidate/preview
+isolation, atomic session-coordinate accept, explicit reject, and bounded
+one-step revert. It preserves stored/authored Coordinates, `coordinatesDirty`,
+manual route/Self-loop/label authority, Product routing/endpoint-plan/final
+presentation authority, and explicit `Save Coordinates` persistence.
+
+The diagnostic implementation passes `13/13` focused tests and reproduces
+12 semantic invalidation reasons, cancellation/completion race safety, old
+operation protection, viewport-only preview invalidation, and dirty-baseline
+preserving revert. This is a lifecycle result, not a quality-solver or Product
+integration result: current `App.tsx` remains synchronous and does not yet
+implement cancellation, isolated preview, stale-result guards, or revert.
+Quality solver readiness remains `HOLD / NOT ESTABLISHED`, Product
+default/adoption remains `HOLD`, production provider remains `NOT ESTABLISHED`,
+Adaptive Initial Placement Cascade remains `INACTIVE`, Human Review remains
+`NOT READY`, and the Initial Layout Release blocker remains `OPEN`.
+
+### LiaisonScape Explicit High-quality Auto Layout Operation Lifecycle Contract Closure 1 (2026-09-14)
+
+The [Explicit High-quality Auto Layout Operation Lifecycle Contract Closure 1 result](../liaisonscape-explicit-high-quality-auto-layout-operation-lifecycle-contract-closure1-result.md)
+closes the previous lifecycle contract with corrections. Source-first review
+confirmed that active-job semantic identity and accepted Node-coordinate revert
+validity must be separate: manual route, Self-loop, Relation-label, Node-label,
+and locale changes stale running Product-dependent work, but do not by
+themselves invalidate a coordinate-only revert. Node movement, Dataset/graph
+change, coordinate load/reset/save, or another coordinate operation does
+invalidate it.
+
+The revert transaction now restores prior session positions, prior
+`coordinatesDirty`, and an explicit stored/adopted/derived coordinate
+ownership map plus adopted IDs. Accept remains session-only and
+`persistDataset: false`; `Save Coordinates` remains the sole explicit
+persistence boundary. Snapshot capture and job envelopes now use deep-frozen
+clones. The focused source contains and passes `18/18` lifecycle tests; the
+audit derives the count from the test source. The earlier `13/13` figure remains
+historical and is corrected in the closure document rather than silently
+rewriting the prior result.
+
+Disposition: `LIFECYCLE CONTRACT CLOSED WITH CORRECTIONS`. Quality solver
+readiness remains `HOLD / NOT ESTABLISHED`, Product integration/default remains
+`HOLD`, production provider remains `NOT ESTABLISHED`, Adaptive Initial
+Placement Cascade remains `INACTIVE`, Human Review remains `NOT READY`, and the
+Initial Layout Release blocker remains `OPEN`.
+
+### LiaisonScape Explicit High-quality Auto Layout Browser Execution Budget Study 1 (2026-09-14)
+
+The [Explicit High-quality Auto Layout Browser Execution Budget Study 1 result](../liaisonscape-explicit-high-quality-auto-layout-browser-execution-budget-study1-result.md)
+provides real-browser execution evidence without changing Product behavior.
+The Worker/background proposal path is feasible as a future execution
+hypothesis, but current Product-authoritative verification and preview remain
+main-thread work that is not browser-bounded: the dense `k7-7` control reached
+about `4.8s` for one cooperative slice, about `2.15s` for one hybrid
+verification slice, and about `2.77s` for preview. Cooperative scheduling did
+not deliver cancellation before dense work completed. Parallel, long-label,
+and self-loop-heavy controls also exceeded a proposed `50ms` main-thread
+slice. The browser harness nevertheless confirmed cancellation completion,
+stale old-generation rejection, and newer-operation preservation.
+
+Disposition: `WORKER-PROPOSAL PATH SUPPORTED / PRODUCT VERIFICATION BUDGET NOT
+ESTABLISHED`. Continue with a narrow Product-authoritative verification
+interruptibility/budget design study only. Do not implement or adopt a quality
+solver, Worker provider, Product default, Adaptive Initial Placement Cascade,
+or Human Review candidate from this evidence. Fast deterministic Initial
+Placement plus explicit High-quality Auto Layout remains `PROVISIONALLY ADOPT`
+as the execution-architecture direction; quality solver readiness remains
+`HOLD / NOT ESTABLISHED`, Product integration/default remains `HOLD`,
+production provider remains `NOT ESTABLISHED`, Human Review remains `NOT
+READY`, and the Initial Layout Release blocker remains `OPEN`.
+
+### LiaisonScape Product-authoritative Verification Interruptibility Design Study 1 (2026-09-14)
+
+The [Product-authoritative Verification Interruptibility Design Study 1 result](../liaisonscape-product-authoritative-verification-interruptibility-design-study1-result.md)
+decomposes the current source-faithful presentation evaluation into explicit
+label-free route, first route, Relation-label, Node-label, optional feedback
+route/label stages, and finalization. The diagnostic staged composition is
+exactly equivalent to the current synchronous Product authority for the
+focused control, and cancellation between stages preserves no partial Product
+result.
+
+The result is nevertheless only `PARTIAL INTERRUPTIBILITY ONLY`: each current
+stage remains a whole pass. Real-browser stage evidence reached `485.1ms` for
+the dense feedback route, `434ms` for dense first route, `103.1ms` for dense
+Relation-label placement, and `119.4ms` for dense Node-label placement.
+Canonical, parallel, and self-loop route stages also exceeded the diagnostic
+`50ms` threshold; long-label pressure did not in this run. The current
+Product-authoritative inner loops consume ordered occupied-path or occupied-
+label prefixes, so yielding safely inside them requires an explicit
+accumulator/resume seam and exact semantic-equivalence tests.
+
+Disposition: `SEMANTIC STAGE SEAM SUPPORTED / PARTIAL INTERRUPTIBILITY ONLY`.
+Proceed, if at all, with one-stage-at-a-time authority-preserving accumulator
+extraction and fail-closed budget tests. Do not treat replay-prefix or a
+whole-pass Worker call as resumable execution. Quality solver readiness remains
+`HOLD / NOT ESTABLISHED`, Product integration/default remains `HOLD`,
+production provider remains `NOT ESTABLISHED`, Adaptive Initial Placement
+Cascade remains `INACTIVE`, Human Review remains `NOT READY`, and the Initial
+Layout Release blocker remains `OPEN`.
+
+### LiaisonScape Product-authoritative Route Selection Inner-loop Accumulator / Interruptibility 1 (2026-09-14)
+
+The [Product-authoritative Route Selection Inner-loop Accumulator / Interruptibility 1 result](../liaisonscape-product-authoritative-route-selection-inner-loop-accumulator1-result.md)
+extracts the current ordinary route-selection inner loop into an explicit
+one-ordered-edge accumulator while retaining the existing synchronous Product
+entry point as a draining wrapper. Focused equivalence tests and five real
+Edge 152 controls (canonical, dense, parallel-pressure, long-label-pressure,
+and self-loop-pressure) matched the synchronous route authority exactly.
+
+Initialization measured `0--0.2ms` and the maximum observed one-edge route
+work unit measured `0.7--4.9ms`, below the preferred `16ms` slice and the
+diagnostic `50ms` ceiling in this run. Cooperative cancellation between units
+completed without exposing a partial Product result. The complete ordered edge
+list and precomputed parallel-label signals retain future-edge information;
+occupied paths and overlap counts remain explicit prefix state.
+
+Disposition: `ROUTE INNER-LOOP INTERRUPTIBILITY ESTABLISHED / PRODUCT
+VERIFICATION BUDGET STILL OPEN`. This is route-level execution evidence, not
+a Product verification SLA. Relation-label and Node-label inner loops remain
+the next separate budget boundary. Quality solver readiness remains `HOLD /
+NOT ESTABLISHED`, Product integration/default remains `HOLD`, production
+provider remains `NOT ESTABLISHED`, Adaptive Initial Placement Cascade remains
+`INACTIVE`, Human Review remains `NOT READY`, and the Initial Layout Release
+blocker remains `OPEN`.
+
+### LiaisonScape Product-authoritative Relation-label Inner-loop Accumulator / Interruptibility 1 (2026-09-14)
+
+The [Product-authoritative Relation-label Inner-loop Accumulator / Interruptibility 1 result](../liaisonscape-product-authoritative-relation-label-inner-loop-accumulator1-result.md)
+extracts the current Relation-label pass into one ordered routed-edge work
+unit, including empty-label no-ops, while retaining the existing synchronous
+Product API as a draining wrapper. The source-faithful state separates the
+immutable routed-edge order, Node points, and whole-route path-bounds cache
+from the mutable occupied-Relation-label prefix and accepted placement map.
+
+Focused tests and both first/feedback passes of five real Edge 152 controls
+were exactly equivalent to the current synchronous authority, including
+manual-anchor reconstruction and diagnostic trace identity. Initialization
+measured `0.3--1.0ms`; every observed unit stayed below the `50ms` diagnostic
+ceiling. Dense feedback reached `21.0ms`, so the preferred approximately
+`16ms` slice is not uniform even though the ordered seam is resumable and
+fail-closed between units.
+
+Disposition: `RELATION-LABEL ACCUMULATOR EQUIVALENT / DIAGNOSTIC CEILING MET /
+PREFERRED SLICE NOT UNIFORM`. Relation-label execution interruptibility is
+established for the observed controls, but Product-wide verification budget
+remains `NOT ESTABLISHED` pending the independent Node-label inner-loop
+checkpoint. Quality solver readiness remains `HOLD / NOT ESTABLISHED`, Product
+integration/default remains `HOLD`, production provider remains `NOT
+ESTABLISHED`, Adaptive Initial Placement Cascade remains `INACTIVE`, Human
+Review remains `NOT READY`, and the Initial Layout Release blocker remains
+`OPEN`.
+
+### LiaisonScape Product-authoritative Node-label Inner-loop Accumulator / Interruptibility 1 (2026-09-14)
+
+The [Product-authoritative Node-label Inner-loop Accumulator / Interruptibility 1 result](../liaisonscape-product-authoritative-node-label-inner-loop-accumulator1-result.md)
+extracts the current input-order Node-label pass into one Node work unit while
+retaining the existing synchronous Product API as a draining wrapper. The
+source-faithful state keeps the initial Relation-label occupancy immutable,
+tracks the accepted Node-label prefix separately, preserves active-drag and
+manual-offset behavior, and reuses the immutable routed-edge and yielding-route
+geometry for every step.
+
+Focused tests and both first/feedback passes of five real Edge 152 controls
+were exactly equivalent to the current synchronous authority, including
+diagnostic trace identity. Initialization measured `0--0.4ms`; every observed
+Node unit stayed below both the preferred approximately `16ms` reference and
+the `50ms` diagnostic ceiling. Cooperative cancellation stopped before any
+partial result was published. This is execution evidence for the selected
+controls, not a Product-wide verification SLA.
+
+Disposition: `NODE-LABEL INNER-LOOP INTERRUPTIBILITY ESTABLISHED /
+DIAGNOSTIC CEILING AND PREFERRED SLICE MET IN OBSERVED CONTROLS`. The ordered
+Node-label seam is now reproducible and fail-closed, but Product-wide
+verification budget remains `NOT ESTABLISHED`; the Relation-label dense-feedback
+`21ms` observation and full accumulator orchestration/stale-race budget remain
+open. Quality solver readiness remains `HOLD / NOT ESTABLISHED`, Product
+integration/default remains `HOLD`, production provider remains `NOT
+ESTABLISHED`, Adaptive Initial Placement Cascade remains `INACTIVE`, Human
+Review remains `NOT READY`, and the Initial Layout Release blocker remains
+`OPEN`.
+
+### LiaisonScape Product-authoritative Full Verification Resumable Orchestration / Budget Closure 1 (2026-09-14)
+
+The [Product-authoritative Full Verification Resumable Orchestration / Budget Closure 1 result](../liaisonscape-product-authoritative-full-verification-resumable-orchestration1-result.md)
+composes the existing Route Selection, Relation-label, and Node-label
+accumulators into one explicit state machine while preserving the source
+dependency order: label-free route, first route, yielding-route derivation,
+first Relation-label, first Node-label, feedback decision, optional feedback
+route/labels, and finalization. Route, Relation-label, and Node-label work
+units are respectively one ordered edge, one ordered routed edge, and one
+input-order Node. The current synchronous Product authority remains the
+reference path.
+
+Focused tests and five real Edge 152 controls are exact-equivalent in both
+semantic result and diagnostic traces. Cancellation and budget exhaustion are
+fail-closed with no partial Product result. The latest cooperative completion
+measurement reached `49.7ms` for a dense scheduler step, about `5.60s` elapsed
+wall time, and about `3.23s` scheduler overhead. Earlier browser runs observed
+scheduled slices above `50ms`, so the preferred approximately `16ms` slice is
+not uniform and the diagnostic `50ms` ceiling is not established product-wide.
+
+Disposition: `FULL VERIFICATION RESUMABLE SEAM ESTABLISHED / EXACT
+EQUIVALENCE ESTABLISHED / PRODUCT-WIDE VERIFICATION BUDGET NOT ESTABLISHED`.
+Continue with a bounded budget-closure question only; do not build or adopt a
+quality solver, Worker/provider, Product default, Adaptive Initial Placement
+Cascade, or Human Review candidate. Fast deterministic Initial Placement plus
+explicit High-quality Auto Layout remains `PROVISIONALLY ADOPT` as an
+execution-architecture direction, quality solver remains `HOLD / NOT
+ESTABLISHED`, Product integration/default remains `HOLD`, production provider
+remains `NOT ESTABLISHED`, Adaptive Initial Placement Cascade remains
+`INACTIVE`, Human Review remains `NOT READY`, and the Initial Layout Release
+blocker remains `OPEN`. Session log remains intentionally unchanged.
+
+### LiaisonScape Product-wide Verification Budget Closure / Scheduler Policy Study 1 (2026-09-14)
+
+The [Product-wide Verification Budget Closure / Scheduler Policy Study 1 result](../liaisonscape-product-wide-verification-budget-scheduler-policy-study1-result.md)
+compares one-unit, fixed-two, elapsed-eight-ms, and hybrid-eight-ms-two-unit
+scheduler policies around the existing exact-equivalent full-verification state
+machine. All four policies completed canonical, dense, parallel, long-label,
+and self-loop controls with exact semantic and normalized trace equivalence.
+Cancellation and budget exhaustion remained fail-closed with no partial Product
+result.
+
+The elapsed-eight-ms soft quota reduced observed turn count, cooperative wall
+time, and scheduler overhead most strongly in two Edge runs. In the second run
+it reached at most `9.0ms` cooperative scheduler step, about `232.3ms` maximum
+cooperative wall time, and about `86.5ms` maximum overhead across the controls.
+It can nevertheless overshoot its 8ms target, observed up to `45` small work
+units before cancellation, and does not bound a long current work unit. Prior
+full-verification runs with `49.7ms`, `53.4ms`, and `83.9ms` slices remain
+valid.
+
+Disposition: `SCHEDULER POLICY SEAM ESTABLISHED / ELAPSED SOFT QUOTA
+PROMISING / PRODUCT-WIDE VERIFICATION BUDGET NOT ESTABLISHED`. Continue only
+with a bounded authority-preserving micro-splitting or budget-contract study;
+do not adopt a production scheduler, build a quality solver, select a Worker
+provider, change Product defaults, activate Adaptive Initial Placement
+Cascade, or advance Human Review. Existing execution split remains
+`PROVISIONALLY ADOPT`, quality solver remains `HOLD / NOT ESTABLISHED`, Product
+integration/default remains `HOLD`, production provider remains `NOT
+ESTABLISHED`, Adaptive Initial Placement Cascade remains `INACTIVE`, Human
+Review remains `NOT READY`, and the Initial Layout Release blocker remains
+`OPEN`. Session log remains intentionally unchanged.
+
+### LiaisonScape Product-authoritative Verification Long-unit Attribution / Authority-preserving Micro-splitting 1 (2026-09-14)
+
+The [Product-authoritative Verification Long-unit Attribution / Authority-preserving Micro-splitting 1 result](../liaisonscape-product-authoritative-verification-long-unit-attribution-micro-splitting1-result.md)
+adds source-step attribution to the existing exact-equivalent full-verification
+state machine. Five Edge 152 controls were measured with the one-unit policy
+under diagnostics-off/on and first/repeat browser runs. Current authoritative
+Route, Relation-label, and Node-label work units stayed below `3.2ms`; the
+largest source-step observation was a `4.4ms` dense Node-label initialization
+phase transition. Diagnostics-on increased measured totals, and phase
+transitions were distinguishable from geometry work.
+
+The historical `49.7/53.4/83.9ms` scheduler slices remain valid, but the old
+artifact did not capture source-step identity, so their exact retroactive cause
+is not established. No authority-preserving micro-split is justified by the
+current controlled attribution. Product-wide verification budget, hard `50ms`
+ceiling, and preferred approximately `16ms` slice remain `NOT ESTABLISHED`.
+
+Disposition: `CURRENT AUTHORITATIVE SOURCE STEPS SHORT / HISTORICAL OUTLIER
+ATTRIBUTION INCONCLUSIVE / MICRO-SPLIT NOT JUSTIFIED`. Keep the one-edge,
+one-routed-edge, and one-Node seams; do not expand scheduler-policy search,
+add arbitrary internal splits, adopt a production scheduler, build a quality
+solver, change Product defaults, activate Adaptive Initial Placement Cascade,
+or advance Human Review. Fast deterministic Initial Placement plus explicit
+High-quality Auto Layout remains `PROVISIONALLY ADOPT`, quality solver remains
+`HOLD / NOT ESTABLISHED`, Product integration/default remains `HOLD`,
+production provider remains `NOT ESTABLISHED`, Adaptive Initial Placement
+Cascade remains `INACTIVE`, Human Review remains `NOT READY`, and the Initial
+Layout Release blocker remains `OPEN`. Session log remains intentionally
+unchanged.
+
+### LiaisonScape Product-authoritative Verification Historical Long-slice Reproduction / Same-run Source-step Attribution 1 (2026-09-14)
+
+The [Product-authoritative Verification Historical Long-slice Reproduction / Same-run Source-step Attribution 1 result](../liaisonscape-product-authoritative-verification-historical-long-slice-reproduction1-result.md)
+repeated the source-step attribution study in the same Edge browser run that
+records scheduler turn, source-step, authority, diagnostics mode, and
+scheduler-gap fields together. Three page reload cycles covered canonical,
+dense, parallel, long-label, and Self-loop-heavy controls under diagnostics-off
+and diagnostics-on first/repeat conditions: 60 attribution runs in total.
+
+Semantic equivalence was `60/60` and diagnostics-on normalized trace
+equivalence was `30/30`. The historical `49.7/53.4/83.9ms` slices were not
+reproduced. The current maximum was `16.2ms` on the dense control, and the
+source step itself was a Node-label initialization phase transition with
+`0ms` scheduler gap. No authoritative work-unit outlier reached `16ms`, no
+turn reached `50ms`, and the maximum observed scheduler gap was `0.1ms`.
+
+Disposition: `HISTORICAL LONG-SLICE NOT REPRODUCED / CURRENT SAME-RUN
+ATTRIBUTION ESTABLISHED / ONE PHASE-TRANSITION OUTLIER OBSERVED / EVENT-LOOP
+GAP NOT MATERIAL / MICRO-SPLIT NOT JUSTIFIED / PRODUCT-WIDE VERIFICATION
+BUDGET NOT ESTABLISHED`. Do not expand scheduler-policy search or add
+arbitrary micro-splits. Keep Fast deterministic Initial Placement plus
+explicit High-quality Auto Layout `PROVISIONALLY ADOPT`, quality solver
+`HOLD / NOT ESTABLISHED`, Product integration/default `HOLD`, production
+provider `NOT ESTABLISHED`, Adaptive Initial Placement Cascade `INACTIVE`,
+Human Review `NOT READY`, and the Initial Layout Release blocker `OPEN`.
+Session log remains intentionally unchanged.

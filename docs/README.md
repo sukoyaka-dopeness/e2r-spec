@@ -27,6 +27,7 @@ repository. Start with the responsibility that matches the question:
 - [Roadmap Semantic Decomposition / Canonical Planning Synthesis Audit 1](roadmap-semantic-decomposition-canonical-planning-synthesis-audit1.md): current-planning and dated-evidence responsibilities after the chronology migrations;
   compares guarded synthesis paths without changing the Roadmap.
 - [Roadmap Hybrid Reconstruction — Product Verification Pilot Preparation 1](roadmap-hybrid-reconstruction-product-verification-pilot-preparation1.md): claim-level B/A/HOLD manifest for the first proposed pilot; no Roadmap or History edit is authorized by the preparation.
+- [Roadmap Hybrid Reconstruction — Product Verification Pilot Result 1](roadmap-hybrid-reconstruction-product-verification-pilot-result1.md): PV-01–PV-10 current synthesis and History delegation; PV-11–PV-14 remain out of scope.
 - [NarrativeLine NL-H2-R1](roadmap.md): **ACCEPTED / MANUAL ACCEPTANCE COMPLETE**.
 - [History 2 broader authoring scope](history-2-user-facing-authoring-scope-result.md): **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED**.
 

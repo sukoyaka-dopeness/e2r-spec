@@ -68,7 +68,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
 | Roadmap chronology / slimming tranches 1–2 | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
-| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT COMPRESSION AND PRE-RELEASE HISTORY MIGRATION COMPLETE / MIXED SEED-READINESS-BROWSER AREA AUDITED; NO NEW MIGRATION SELECTED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); remaining candidates require separate evidence-checked manifests; current execution order is unchanged |
+| Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; PERSONAL STORAGE POINTER COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -3373,21 +3373,11 @@ scope.
 
 ### E2R-PERSONAL-STORAGE-RESEARCH1 (2026-09-01)
 
-The E2R-managed Personal Storage research is recorded in [E2R-managed
-Personal Storage](../research/exploratory/e2r-managed-personal-storage.md).
-It records an exploratory E2R Personal Storage / Personal E2R Space direction:
-authenticated durable private storage, candidate Google sign-in UX without a
-Google protocol dependency, provider abstraction, managed/BYO/hybrid models,
-resource responsibility separation, Save/Publish/Share semantics, portability,
-revision and security questions, and the distinction from Anonymous Dataset
-Sharing and Federated E2R.
-
-The preferred hybrid model is a research hypothesis only. Basic local and
-accountless use remains supported; no provider, backend, account, auth flow,
-manifest, Handoff, Core, Extension, schema, UI, deployment, or publication
-was selected or implemented. This research does not reorder the active
-LiaisonScape Initial Placement sequence; its current completed and selected
-checkpoints remain unchanged.
+**Exploratory / non-adopted.** Personal Storage remains optional: accountless,
+local/offline Dataset open, editing, validation, and ordinary export remain
+available. No provider, account/auth model, schema, or implementation is
+selected. This research does not change the current LiaisonScape Initial
+Placement order. See [E2R-managed Personal Storage Research](../research/exploratory/e2r-managed-personal-storage.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-MOTIF-AWARE-SEED-GEOMETRY-SEMANTICS-AUDIT1 (2026-09-01)
 

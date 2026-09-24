@@ -66,7 +66,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Workstream | Current status | Authority / next decision |
 | --- | --- | --- |
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable |
-| Roadmap chronology / slimming tranches 1–2, Initial Placement, post-release observations, and early Layout experiments | **BOUNDED EXTRACTIONS COMPLETE** | [history index](roadmap-history/README.md); [slimming migration 1](roadmap-slimming-migration1-result.md); [slimming migration 2](roadmap-slimming-migration2-result.md); [Initial Placement / routing chronology migration](roadmap-initial-placement-routing-history-migration1-result.md); [2026-09-23 observation history migration](roadmap-post-release-cross-app-observation-history-migration1-result.md); [Pre-reconstruction application UX acceptance history migration](roadmap-application-ux-shell-acceptance-history-migration1-result.md); [Early Automatic Layout history migration](roadmap-early-automatic-layout-experiment1-history-migration1-result.md); this roadmap remains the sole current-planning authority |
+| Roadmap chronology / planning-history compression | **BOUNDED EXTRACTIONS AND COMPRESSIONS RECORDED** | [history index](roadmap-history/README.md); [Roadmap slimming results](roadmap-slimming-migration1-result.md), [tranche 2](roadmap-slimming-migration2-result.md), and [Relative Time / Documentation IA snapshot compression](roadmap-relative-time-and-documentation-ia-snapshot-compression1-result.md); detailed history-migration results remain linked from their entries; this roadmap remains the sole current-planning authority |
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
 | Residual Roadmap responsibility audit | **INITIAL-PLACEMENT AND PRE-RELEASE COMPLETE / MIXED AREA AUDITED; SEED RESEARCH, PR-2, PR-3 PRE-BROWSER, AND BROWSER DIAGNOSTIC LINEAGES POINTER-COMPRESSED** | [residual audit](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
@@ -436,42 +436,13 @@ writes, migration, deployment, or release.
 
 ### Human-selected future interval-semantics and Timeline direction (2026-09-23)
 
-The Human selected a separate future design/research direction for period
-relationships and Timeline placement. This is a project direction only; it
-does not adopt Stable or normative semantics, amend an Extension draft, or
-authorize schema, Validator, runtime, UI, or application implementation.
-
-- The committed [Relative Time bounded contract proposal](relative-time-bounded-contract-proposal1.md)
-  (`e7c9bc21deca695ade11ebdb19ab5c3245cfee4d`) remains a standalone
-  non-normative / not-adopted proposal limited to direct pairwise `before` /
-  `after`. Its scope is not expanded by this roadmap entry.
-- A separate future interval-semantics checkpoint is to consider the existing
-  candidate `within` / containment together with `overlap`. `within` is not to
-  be advanced as a standalone adopted interval relation ahead of that joint
-  consideration. Containment and partial overlap are intended as distinct
-  semantic categories; their portable definitions are not yet adopted. The
-  Cross-Audit's earlier “accepted” basic `within` transitivity remains a
-  non-normative Derived-rule candidate only; it does not adopt user-facing
-  Recorded `within` authoring or settle `within` together with `overlap`.
-- History values, including coarse values such as a year, do not automatically
-  create Recorded Relative Time Relations such as `within`, `overlap`,
-  `same-temporal-extent`, or boundary contact. A Recorded Relation represents
-  a time relationship explicitly recorded by a user. Any relation Derived from
-  History evidence is a separate question and must remain distinct from
-  Recorded data; no Derived/inference contract is selected here. Matching
-  coarse precision alone does not establish equal full extents or touching
-  boundaries.
-- Separately from semantic Relations, where semantic evidence does not
-  determine an Event's Timeline position, the future presentation design
-  direction is to let a user explicitly place that Event before or after
-  another Event. Long-distance dragging is not a required interaction model.
-  This does not define persisted placement, create a semantic Relation, or
-  authorize Timeline implementation.
-
-The meaning of `overlap`, `same-temporal-extent`, interval boundary occurrence
-and contact, and Derived relationships from History remain unresolved. This
-direction does not change H2-POSITION-CIRCA **ACCEPTED / CLOSED**, adopt History
-2 deferred shapes, or determine future branch priority or sequencing.
+The atomic Recorded meanings and their adopted limits are governed by the
+[Human adoption record](relative-time-atomic-recorded-assertion-semantics-adoption1.md);
+this earlier interval-semantics snapshot is not a second semantic authority.
+The separate Timeline presentation direction remains: where semantic evidence
+does not determine an Event's position, explicit user placement may be
+considered without creating a semantic Relation or persisted placement
+contract. No Timeline implementation is authorized here.
 
 ### Current Relative Time extensible-vocabulary direction (2026-09-24)
 
@@ -481,107 +452,22 @@ direction does not change H2-POSITION-CIRCA **ACCEPTED / CLOSED**, adopt History
 > adopted and that broader semantic-contract research was the next checkpoint
 > describe that earlier state; see the current adoption status below.
 
-The current Human-selected design/research direction is recorded in
-[`docs/relative-time-extensible-temporal-assertion-direction1.md`](relative-time-extensible-temporal-assertion-direction1.md),
-committed as `d0d6f54947b43fa4e4bad8e646bc01b6135f9a62` (`docs: record
-extensible Relative Time direction`). It treats Relative Time as an extensible
-temporal-assertion vocabulary for multiple present and future applications,
-not as an application-specific feature. This is a non-normative direction
-record; it does not adopt an Extension contract, Stable status, schema/version,
-Validator, solver, runtime, UI, or application implementation.
-
-- The existing Human-selected qualitative `before` / `after` direction
-  remains in force. Its bounded wording proposal at
-  `9b3eadb479f35f5920128de941332b4be8fef835` remains valid non-normative
-  evidence and is not withdrawn, but standalone normative adoption is not the
-  current next checkpoint; broader vocabulary semantic-contract research /
-  design comes first.
-- The vocabulary is being organized into qualitative precedence
-  (`before` / `after`), interval topology (`within` / `contains`, `overlap`,
-  `touching`, `same-temporal-extent`), the existing point-coincidence
-  candidate (`same-instant`), and the existing quantitative
-  `calendar-granule-relation` / `elapsed-offset` candidates. These families
-  remain distinct; no schema representation or complete portable semantics
-  are selected here.
-- The direction is one Relation per Recorded assertion, no required mirror
-  Relation for an inverse/symmetric meaning, and allows multiple independent
-  Relations about the same Object pair. It does not set conflict, duplicate,
-  winner, or exclusivity rules.
-- A point-like Event may be explicitly related as `within` a period Event.
-  Period Events do not automatically require or create separate start/end
-  Events. An optional future UI suggestion for separately meaningful start/end
-  Events remains an unimplemented UX direction.
-- History is not a source for automatically creating, overwriting, or
-  refining Recorded Relations. History-derived relations or absolute
-  placement remain a separate Derived/inference responsibility, with no
-  automatic write-back. Matching coarse History values do not establish
-  `same-temporal-extent` or `touching`.
-- Gantt and other future scheduling use is an extensibility goal. Precise
-  scheduling constraints may be considered as a separate family later; the
-  coarse `before` / `after` direction must not be reinterpreted as a boundary
-  rule such as `end(A) < start(B)`. Allen interval algebra is a reference for
-  checking vocabulary coverage and inverse/symmetry, not an adopted algebra
-  or compatibility claim.
-
-The next substantive Relative Time research/design checkpoint is semantic
-contract organization across this selected vocabulary direction, before
-schema or version changes are considered. It is not schema work or
-implementation authorization. The earlier interval-topology-only `within` +
-`overlap` checkpoint is now considered within this broader direction rather
-than the sole next semantic checkpoint. The separate Timeline presentation
-direction remains separate from Relative Time Relations. Existing unresolved
-boundary/applicability, `same-instant` laws, derivation, and conflict matters
-remain open; no new priority among implementation branches is set. The
-H2-POSITION-CIRCA accepted/closed boundary and History 2 deferred-shapes
-status are unchanged.
+The broader Human-selected extensibility direction remains recorded in the
+[direction decision](relative-time-extensible-temporal-assertion-direction1.md).
+Its pre-adoption status and sequencing language are historical; the
+[atomic adoption record](relative-time-atomic-recorded-assertion-semantics-adoption1.md)
+is the normative authority for the adopted layer and explicitly preserves the
+Draft/schema, versioning, Derived, and implementation boundaries. Future
+vocabulary or scheduling expansion remains separate work, not implied by this
+adoption.
 
 ### Human-selected next-workstream sequence — Relative Time then Documentation IA (2026-09-24)
 
 > Historical sequencing snapshot: this plan was recorded before the Human
-> disposition and the following minimum state synchronization. Its first two
-> steps are complete; the minimum state synchronization and current next
-> workstream are recorded below.
-
-At the time this sequence was selected, the Relative Time atomic
-Recorded-assertion checkpoint remained to be closed. Its
-[adoption-readiness audit](relative-time-atomic-semantics-adoption-readiness1.md)
-was committed as `53a7ae283003edac865161c4666c08f38023c361`, and the atomic
-wording proposal awaited a separate Human disposition. The planned sequence
-was:
-
-1. Close the adoption-readiness review checkpoint.
-2. Obtain and record the Human disposition of the atomic semantic proposal
-   (adopt, request revision, defer, or reject); this roadmap entry does not
-   choose that disposition.
-3. Complete only the minimum Relative Time project-state/documentation sync
-   needed to record that disposition.
-4. Then begin a separate **Documentation Information Architecture / Roadmap
-   Physical Modularization** Human structure-decision checkpoint.
-5. Treat any actual directory changes, file moves/renames, archive migration,
-   or roadmap split as a later, separately reviewed checkpoint after that
-   structure decision.
-
-This sequence does not wait for all Relative Time work to finish: schema or
-version integration, machine evaluation, Derived semantics, Validator work,
-and runtime/application implementation are not prerequisites to starting the
-Documentation IA structure decision. Nor does it authorize any of them.
-
-The [Documentation IA / Roadmap Modularization Audit](documentation-information-architecture-roadmap-modularization-audit1-result.md)
-and its recommendation to retain existing paths and one roadmap for now,
-strengthen navigation/current-status responsibility, and require a separate
-Human structure decision remain historical evidence of that audit's
-recommendation. The earlier H2-POSITION-CIRCA closure gate is already
-historically satisfied; this newer sequencing decision places the structure
-decision after the current atomic Relative Time disposition instead. The
-latest Human-selected planning direction for that structure decision is
-recorded below; neither entry itself selects a directory layout, archive
-target, split unit, move/rename plan, or link-compatibility policy.
-
-The audit's 2026-09-19 inventory found 613 files under `docs/` and an
-11,508-line roadmap. A read-only count on 2026-09-24 finds 651 files under
-`docs/` (649 Markdown files) and 13,315 lines in `docs/roadmap.md`. These
-figures support revisiting the information architecture; they are not a
-structure decision or authorization to migrate files.
+> The readiness review, Human adoption disposition, and minimum state sync
+> recorded in this sequence are complete. The sequence remains historical
+> evidence; current Relative Time authority is in the adoption record and the
+> current IA direction/migration status appears below.
 
 #### Historical Human-selected Documentation IA review direction (2026-09-24)
 
@@ -590,58 +476,22 @@ structure decision or authorization to migrate files.
 > candidate for the next decision. The evidence and prior-audit history here
 > remain unchanged.
 
-The next Documentation IA structure decision will review roadmap length and
-the flat `docs/` root together as one information-architecture workstream.
-The latest read-only inventory above records 649 Markdown files under
-`docs/`, many at the same root level, while `roadmap.md` carries current
-planning alongside extensive completed, superseded, and historical chronology.
-The Human-selected direction is to evaluate how current planning authority
-can remain easy to find without growing the flat root or duplicating detailed
-checkpoint evidence.
-
-The first high-impact structural candidate to evaluate is separating
-completed/superseded/historical chronology from the current roadmap body. The
-future `docs/roadmap.md` is intended to remain a concise planning entry point
-for current status, priority, dependencies, active workstreams, and the next
-Human decision. Dedicated decision, audit, and result documents remain the
-authority/evidence for checkpoint detail; the roadmap should link rather
-than duplicate that detail.
-
-Issue-by-issue files are not the default direction because they would further
-increase the already large document inventory. If chronology separation alone
-proves insufficient, a small number of broad responsibility/domain units may
-be considered, but their boundaries are not selected. The `docs/` flat-root
-organization and roadmap length are to be evaluated together, not treated as
-unrelated cleanup tasks.
-
-At the time, this updated the sequencing and questions for a future Human
-structure decision; it did not select a structure. The prior audit's
-single-roadmap and existing-path recommendation remains historical evidence.
+The detailed evidence, alternatives, and prior-audit comparison remain in the
+[decision-preparation record](documentation-ia-roadmap-physical-modularization-decision-preparation1.md).
+The later [Roadmap-first structure decision](documentation-ia-roadmap-physical-modularization-direction-decision1.md)
+supersedes this preparation snapshot; its chronology-only scope and separate
+deferral of wider `docs/` taxonomy are summarized in the current direction
+below.
 
 #### Current Human-selected Roadmap-first structure direction (2026-09-24)
 
-The Human selected the Roadmap-first direction recorded in [Documentation IA
-/ Roadmap Physical Modularization Direction Decision 1](documentation-ia-roadmap-physical-modularization-direction-decision1.md).
-Keep `docs/roadmap.md` as the concise current-planning entry point and
-physically separate completed, superseded, and historical chronology while
-retaining it as evidence. Detailed checkpoint authority/evidence stays in its
-dedicated documents and should be linked rather than duplicated. Issue-per-file
-modularization is not the default.
-
-The selected scope is roadmap planning/chronology responsibility separation
-and the reference integrity needed for that separation. The bounded
-implementation-preparation and migration-gate review selected as the next
-step at that time is now complete; the current migration status is recorded
-below.
-
-> Historical selection boundary: when this direction was recorded, the
-> chronology destination, file count/division, directory creation, and
-> physical migration remained unselected. Those bounded details were selected
-> and authorized in a later decision and migration checkpoint; this historical
-> snapshot is not their current status.
-
-The `docs/` flat-root issue remains a separate future IA checkpoint; no
-general taxonomy or relocation of other docs is selected.
+The Human-selected [Roadmap-first structure direction](documentation-ia-roadmap-physical-modularization-direction-decision1.md)
+keeps this file as the sole current-planning entry point and separates completed
+and historical chronology into a few broad evidence units; detailed checkpoint
+authority stays in dedicated documents, not duplicate Roadmap prose. The
+bounded chronology structure and migration are recorded in the linked decision
+and result below. Wider `docs/` taxonomy and relocation remain deferred; issue-
+per-file modularization is not the default.
 
 #### Historical snapshot — Roadmap-first migration-preparation status (2026-09-24)
 
@@ -649,51 +499,36 @@ general taxonomy or relocation of other docs is selected.
 > below supersedes its statements that destination, manifest, and physical
 > migration remained undecided or had not started.
 
+The detailed gate and manifest remain in the
+[implementation-preparation record](documentation-ia-roadmap-physical-modularization-implementation-preparation1.md);
+this historical snapshot does not describe current migration status.
+
 #### Historical snapshot — Roadmap Physical Modularization implementation-preparation status (2026-09-24)
 
-The bounded [Roadmap Physical Modularization implementation-preparation
-record](documentation-ia-roadmap-physical-modularization-implementation-preparation1.md)
-maps the mixed current/history regions, candidate layouts, extraction gate,
-and observed path/anchor references. Physical destination, unit count, and
-the exact extraction manifest remain for Human selection/review. No roadmap
-content or links have been migrated; the `docs/`-wide taxonomy remains a
-separate later checkpoint.
+The preparation record preserves its candidate layouts, evidence, and
+reference analysis. Its pre-migration statement that no content had moved is a
+historical snapshot; see the current direction and migration status below.
 
 #### Current Roadmap-first chronology migration status (2026-09-24)
 
-The Human-selected bounded migration is recorded in [Roadmap Chronology
-Structure Decision 1](documentation-ia-roadmap-chronology-structure-decision1.md)
-and its [migration result](documentation-ia-roadmap-chronology-migration1-result.md).
-The verified historical workspace-migration block remains preserved in
-[`roadmap-history/legacy-chronology.md`](roadmap-history/legacy-chronology.md).
-The first two bounded slimming tranches moved verified completed/superseded
-entries from mixed regions into the existing Release/Cross-App unit and a new
-broad LiaisonScape layout/Auto Layout unit. The [first result](roadmap-slimming-migration1-result.md)
-and [second result](roadmap-slimming-migration2-result.md) record boundaries
-and validation. The [Roadmap Slimming Audit](roadmap-slimming-audit1.md)
-remains candidate-classification evidence, not blanket migration authority.
-Remaining mixed/open content stays in this sole current-planning authority;
-the wider `docs/` taxonomy and relocation remain deferred.
+The [chronology structure decision](documentation-ia-roadmap-chronology-structure-decision1.md),
+[migration result](documentation-ia-roadmap-chronology-migration1-result.md),
+[history index](roadmap-history/README.md), and bounded migration results
+linked from the current-status index record completed extractions and
+compressions. They do not establish that every historical-looking paragraph
+has been migrated: unverified mixed/open content remains here as current
+planning evidence. `docs/`-wide taxonomy and relocation remain deferred.
 
 #### Current Relative Time atomic-semantics status after Human adoption (2026-09-24)
 
-The Human adopted the atomic Recorded assertion semantics and stated
-cross-cutting boundaries in [Relative Time Atomic Recorded Assertion
-Semantics Adoption 1](relative-time-atomic-recorded-assertion-semantics-adoption1.md),
-commit `a5e26b0c5b3d04ea69bfd1f6b90476fede1bb17e` (`docs: adopt Relative Time
-atomic semantics`). The adoption record is the current normative semantic
-authority for that bounded atomic layer. The proposal and readiness audit
-remain historical proposal and audit evidence; they have not been rewritten.
-
-This adoption does not extend current Draft/schema support, promote the
-Relative Time Extension to Stable, or adopt representation, versioning,
-machine evaluation, boundary rules, History mapping, cross-assertion policy,
-Derived rules, Validator, migration, UI, or application implementation. Those
-remain separate work. The Human-disposition step in the sequence above is
-complete; this entry records the minimum project-state synchronization. The
-next planned workstream is the Documentation IA / Roadmap Physical
-Modularization Human structure-decision checkpoint described above. No
-structure decision or migration is made by this status update.
+The Human-adopted [atomic Recorded assertion semantics](relative-time-atomic-recorded-assertion-semantics-adoption1.md)
+are the normative authority for that bounded layer; the proposal and readiness
+audit remain historical evidence. The adoption does not extend Draft/schema
+support or authorize the separate representation, versioning, evaluation,
+Derived, Validator, migration, or application work listed in that record.
+The atomic-semantics phase and minimum state sync are closed. Current
+Documentation IA direction and migration status are recorded immediately
+above; this entry does not broaden either scope.
 
 > Historical snapshot — superseded by the current `NL-H2-R1` entry near the
 > end of this roadmap. The following readiness text records the pre-acceptance

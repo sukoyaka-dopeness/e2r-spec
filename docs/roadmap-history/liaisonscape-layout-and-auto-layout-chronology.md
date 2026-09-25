@@ -2267,7 +2267,7 @@ accepted and unchanged.
 
 ### E2R-LIAISONSCAPE-PIN-PERSISTENCE-AUTHORITY-CONTRACT2 (2026-09-17)
 
-The [Pin persistence authority result](../liaisonscape-pin-persistence-authority-contract2-result.md)
+The [Pin persistence authority result](../liaisonscape/liaisonscape-pin-persistence-authority-contract2-result.md)
 records **A. PIN PERSISTENCE CONTRACT CLOSED / READY FOR PINNED FRONTIER
 FEASIBILITY**. Pin is now bounded as a LiaisonScape-owned draft Layout
 Extension, separate from Core, Coordinate, and Presentation responsibilities:
@@ -2557,7 +2557,7 @@ production rollout.
 
 ### E2R-LIAISONSCAPE-PIN-APP-WORKING-STATE-SAVE-INTEGRATION1 (2026-09-17)
 
-The [Pin App working-state / Save integration result](../liaisonscape-pin-app-working-state-save-integration1-result.md)
+The [Pin App working-state / Save integration result](../liaisonscape/liaisonscape-pin-app-working-state-save-integration1-result.md)
 is classified **E. APP WORKING-STATE / ATOMIC SAVE INTEGRATION ESTABLISHED /
 PIN UI REMAINS OPEN**. App-owned Pin state is initialized from accepted
 Datasets, reconciled across in-session Entity mutations, and kept distinct
@@ -2576,7 +2576,7 @@ Product authorities, Dataset schema, and rollout behavior are unchanged.
 
 ### E2R-LIAISONSCAPE-PIN-UI1 (2026-09-17)
 
-The [Pin UI 1 result](../liaisonscape-pin-ui1-result.md) is classified **B. PIN UI
+The [Pin UI 1 result](../liaisonscape/liaisonscape-pin-ui1-result.md) is classified **B. PIN UI
 FUNCTIONAL / FIRST VISUAL CANDIDATE REJECTED**. Entity Context Menu and Entity Detail
 now
 expose the same working Pin state and call the App-owned Pin mutation seams.

@@ -218,11 +218,11 @@ docs/liaisonscape-general-complex-dataset-practicality-reassessment1-result.md
 docs/liaisonscape-initial-automatic-display-integer-canonicalization-human-check-pass-closure1-result.md
 docs/liaisonscape-initial-automatic-display-integer-canonicalization-human-check1-result.md
 docs/liaisonscape-initial-automatic-display-integer-canonicalization1-result.md
-docs/liaisonscape-pin-app-working-state-save-integration1-result.md
-docs/liaisonscape-pin-persistence-authority-contract2-result.md
+docs/liaisonscape/liaisonscape-pin-app-working-state-save-integration1-result.md
+docs/liaisonscape/liaisonscape-pin-persistence-authority-contract2-result.md
 docs/liaisonscape-pin-ui-human-check-a-popover-iteration2-result.md
 docs/liaisonscape-pin-ui-human-check-a-visual-iteration1-result.md
-docs/liaisonscape-pin-ui1-result.md
+docs/liaisonscape/liaisonscape-pin-ui1-result.md
 docs/liaisonscape-pin-working-anchor-consistency1-result.md
 docs/liaisonscape-pin-writer-atomic-save1-result.md
 docs/liaisonscape-pinned-cross-family-product-portfolio-experiment1-result.md

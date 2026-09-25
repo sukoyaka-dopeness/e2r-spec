@@ -180,3 +180,11 @@ Human later selected only the Production Validator Extension integration
 design, acceptance, and result records for `docs/validator/`. The three
 documents were moved separately without reconciling or rewriting their
 checkpoint statuses. See the [bounded migration result](documentation-ia-validator-integration-path-migration1-result.md).
+
+### Subsequent bounded migration disposition — LiaisonScape Pin evidence
+
+Human later selected only the Pin persistence authority contract result, Pin
+working-state / Save integration result, and Pin UI 1 result for
+`docs/liaisonscape/`. They remain separate records with their original
+dispositions and were moved without status reconciliation. See the
+[bounded migration result](documentation-ia-liaisonscape-pin-path-migration1-result.md).

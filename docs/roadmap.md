@@ -3402,9 +3402,9 @@ Pin is LiaisonScape Layout intent under the **Draft / non-Stable** Layout
 Extension contract, not Core data or a Coordinate field. A Pin is a hard
 placement constraint; moving an Entity does not itself Pin it. Pin changes are
 working state and persist through the explicit Save boundary. The exact
-contract and authority are in the [Pin persistence decision](liaisonscape-pin-persistence-authority-contract2-result.md),
+contract and authority are in the [Pin persistence decision](liaisonscape/liaisonscape-pin-persistence-authority-contract2-result.md),
 [runtime integration](liaisonscape-explicit-auto-layout-pin-runtime-integration1-result.md),
-[working-state / Save integration](liaisonscape-pin-app-working-state-save-integration1-result.md),
+[working-state / Save integration](liaisonscape/liaisonscape-pin-app-working-state-save-integration1-result.md),
 and [Pin UI Human Check A result](liaisonscape-pin-ui-human-check-a-popover-iteration2-result.md).
 The UI result does not make the Extension Stable.
 
@@ -3443,7 +3443,7 @@ applications remain future context rather than current implementation work.
 
 Pin UI glyph and copy have a bounded Human Check A result; the Pin Extension
 contract remains **Draft / non-Stable**, with exact maturity and schema
-questions governed by its [authority decision](liaisonscape-pin-persistence-authority-contract2-result.md).
+questions governed by its [authority decision](liaisonscape/liaisonscape-pin-persistence-authority-contract2-result.md).
 The following remains explicitly open: the exact external/local media schema
 and security model.
 

@@ -103,7 +103,7 @@ Examples of why a line-oriented reduction is unsafe:
   is `QUALIFIED`. The earlier hard-failure cause remains unresolved. A summary
   must preserve both the accepted lifecycle and the separate diagnostic gap.
 - The earlier Layout/Pin roadmap sync calls exact Pin schema an open question.
-  The later [Pin persistence contract](liaisonscape-pin-persistence-authority-contract2-result.md)
+  The later [Pin persistence contract](liaisonscape/liaisonscape-pin-persistence-authority-contract2-result.md)
   and [Layout Extension Draft](../extensions/liaisonscape-layout-extension-draft.md)
   establish a bounded draft representation, while later implementation and
   Human acceptance have their own evidence. Neither the old Roadmap wording

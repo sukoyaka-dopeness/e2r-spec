@@ -12,7 +12,7 @@ Pin is a LiaisonScape-owned Layout responsibility, not Core data and not a
 Coordinate field. The exact draft payload, Coordinate anchor, orphan behavior,
 Unpin canonicalization, working-state boundary, Save transaction, reopen rule,
 and cross-application preservation boundary are recorded below and in the
-[LiaisonScape Layout Extension Draft](../extensions/liaisonscape-layout-extension-draft.md).
+[LiaisonScape Layout Extension Draft](../../extensions/liaisonscape-layout-extension-draft.md).
 
 This does not implement a production Pin writer/reader, Pin UI, Explicit Auto
 Layout, or Pinned Frontier solver. It authorizes the next bounded Pinned

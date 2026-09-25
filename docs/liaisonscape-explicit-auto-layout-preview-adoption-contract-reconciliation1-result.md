@@ -164,7 +164,7 @@ Initial Automatic Display behavior, or Human Review status was changed.
 Primary evidence:
 
 - `liaisonscape-explicit-high-quality-auto-layout-operation-lifecycle-contract-closure1-result.md`;
-- `liaisonscape-pin-persistence-authority-contract2-result.md`;
+- `docs/liaisonscape/liaisonscape-pin-persistence-authority-contract2-result.md`;
 - `liaisonscape-pinned-frontier-feasibility1-result.md`;
 - `liaisonscape-pinned-cross-family-product-portfolio-experiment1-result.md`;
 - `liaisonscape-explicit-auto-layout-product-eligibility-semantics1-result.md`;
@@ -175,4 +175,3 @@ Primary evidence:
 No runtime or production source was changed. This documentation checkpoint
 requires no full application test campaign. The existing spec validator and
 diff checks remain the applicable gates.
-

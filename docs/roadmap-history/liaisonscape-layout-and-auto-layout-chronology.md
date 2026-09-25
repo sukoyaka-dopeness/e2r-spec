@@ -3163,6 +3163,73 @@ provider `NOT ESTABLISHED`, Adaptive Initial Placement Cascade `INACTIVE`,
 Human Review `NOT READY`, and the Initial Layout Release blocker `OPEN`.
 Session log remains intentionally unchanged.
 
+## Product Node-label diagnostic progression (Roadmap source snapshot 2026-09-25)
+
+The two B-disposition blocks below are preserved from the Roadmap in source
+order with their original heading, date/status wording, and body. Their status
+language describes the 2026-09-16 checkpoints, not current planning. Relative
+Markdown links are adjusted only to resolve from this History file. The four
+A-disposition Node-label headings remain in the current Roadmap with bounded
+consequences and links to their dedicated results.
+
+### LiaisonScape Product Node-label Relation-presentation-first Angular Escape Experiment 1 (2026-09-16)
+
+The [checkpoint result](../liaisonscape-product-node-label-relation-presentation-first-angular-escape1-result.md)
+holds the current Product routes and Relation-label rectangles fixed and adds
+only an opt-in diagnostic angular occupancy signal to the existing 32-angle
+automatic Node-label scorer. Horizontal, vertical, diagonal, high-degree,
+dense, Self-loop, and Lighthouse EN/JA controls compare current-fresh,
+current-previous, angular-fresh, and angular-previous arms.
+
+Fresh angular escape selected the same Node-label directions as the current arm
+on every fixture and introduced no measured overlap or foreign-route benefit.
+Previous-placement inputs changed directions across every fixture family and
+incurred the larger movement cost; angular pressure did not overcome that
+continuity term. The Actual Product smoke showed no angular-specific rendering
+or interaction regression, while the larger Lighthouse framing risk remained
+present in the control as well.
+
+The outcome is `E PRIMARY / C QUALIFIED`: current route-distance/collision
+scoring is sufficient in the tested envelope, previous-placement hysteresis is
+the stronger residual signal, and Relation-presentation-first angular escape is
+not established. No Structural Placement, routing, Relation-label,
+endpoint-plan, Self-loop, Adaptive Cascade, Product default/provider, or Human
+Review decision follows. Product default/adoption remains `HOLD`, production
+provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive
+Cascade remains inactive, and the Initial Layout Release blocker remains
+`OPEN`. Session 0088 records this new objective.
+
+### LiaisonScape Product Node-label Recovery Integration / Feasibility Experiment 1 (2026-09-16)
+
+The [checkpoint result](../liaisonscape-product-node-label-recovery-integration1-result.md)
+places the bounded Node-label recovery rule inside the normal Product
+presentation path as an explicit development-only candidate switch:
+`?node-label-recovery=candidate`. The normal `App` caller does not pass a
+recovery prop, previous-label override, or diagnostic feedback override. The
+candidate uses the existing previous Node-label ref, normal feedback policy,
+and the unchanged first-pass continuity / settled-pass recovery formulation.
+
+The five-fixture integration sequence passes clean/identical stability,
+active-drag suppression, Relation-change feedback, finalization, manual
+authority, reset, and repeated post-recovery stability. The Product-derived
+primary stale case recovers `3` times with `32` candidates per Node and makes
+the recovered result the next previous snapshot. Candidate evaluation delta is
+`0` against baseline in clean, settled, and stale measurements; recovery
+comparison median is at most `0.0126 ms` and added Node-label stage median at
+most `0.7895 ms` in the measured source process. The largest measured full
+derive median is approximately `28.1 ms` on Lighthouse EN, but this is not a
+browser SLA and candidate rows are still materialized on every candidate-mode
+pass.
+
+The Actual Product smoke used the candidate URL switch without recovery
+diagnostic props on primary, high-degree, Parallel/Self-loop, Lighthouse EN,
+and Lighthouse JA. All settled to the expected surface with no console
+warnings/errors. The outcome is `C. INTEGRATION ESTABLISHED / PERFORMANCE /
+RECOMPUTATION BOUNDARY REMAINS`. Product default/adoption remains `HOLD`,
+production provider remains `NOT ESTABLISHED`, Human Review remains `NOT
+READY`, Adaptive Cascade remains inactive, and the Initial Layout Release
+blocker remains `OPEN`. Session 0091 records this new objective.
+
 ### Explicit Auto Layout readiness and pre-release blocker — Roadmap source snapshot (2026-09-25)
 
 The following dated Roadmap blocks are preserved from `docs/roadmap.md` at

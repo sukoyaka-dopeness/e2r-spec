@@ -3361,169 +3361,65 @@ Cascade remains inactive, and the Initial Layout Release blocker remains
 
 ### LiaisonScape Product Node-label Relation-presentation-first Angular Escape Experiment 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-product-node-label-relation-presentation-first-angular-escape1-result.md)
-holds the current Product routes and Relation-label rectangles fixed and adds
-only an opt-in diagnostic angular occupancy signal to the existing 32-angle
-automatic Node-label scorer. Horizontal, vertical, diagonal, high-degree,
-dense, Self-loop, and Lighthouse EN/JA controls compare current-fresh,
-current-previous, angular-fresh, and angular-previous arms.
+The [dated angular-escape diagnostic](liaisonscape-product-node-label-relation-presentation-first-angular-escape1-result.md)
+and its bounded negative result are preserved in the [Layout / Auto Layout
+chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-node-label-diagnostic-progression-roadmap-source-snapshot-2026-09-25).
 
-Fresh angular escape selected the same Node-label directions as the current arm
-on every fixture and introduced no measured overlap or foreign-route benefit.
-Previous-placement inputs changed directions across every fixture family and
-incurred the larger movement cost; angular pressure did not overcome that
-continuity term. The Actual Product smoke showed no angular-specific rendering
-or interaction regression, while the larger Lighthouse framing risk remained
-present in the control as well.
-
-The outcome is `E PRIMARY / C QUALIFIED`: current route-distance/collision
-scoring is sufficient in the tested envelope, previous-placement hysteresis is
-the stronger residual signal, and Relation-presentation-first angular escape is
-not established. No Structural Placement, routing, Relation-label,
-endpoint-plan, Self-loop, Adaptive Cascade, Product default/provider, or Human
-Review decision follows. Product default/adoption remains `HOLD`, production
-provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive
-Cascade remains inactive, and the Initial Layout Release blocker remains
-`OPEN`. Session 0088 records this new objective.
+The result records that angular escape was not established in the tested
+envelope; this does not select a Node-label, routing, or presentation policy.
 
 ### LiaisonScape Product Node-label Hysteresis / Recovery Attribution Experiment 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-product-node-label-hysteresis-recovery-attribution1-result.md)
-reuses the current Product 32-angle Node-label scorer with the existing
-previous-placement movement term exposed as a candidate-level diagnostic. It
-compares current-fresh, current-previous, hysteresis-ablation,
-bounded-recovery, active-drag, and finalizing-drag controls on the same
-horizontal, orientation, dense, high-degree, Parallel/Self-loop, and
-Lighthouse EN/JA fixture set.
-
-The prior checkpoint's Product `current-previous` output is used as the main
-previous snapshot. Previous selection changes directions in every fixture
-family, while hysteresis ablation exactly matches fresh selection. A bounded
-diagnostic recovery rule returns the fresh labels for all eight fixtures,
-handles both fresh-gain and hard-conflict triggers, and is stable on repeated
-identical input without changing fixed routes or Relation-label rectangles.
-The Actual Product smoke shows no new rendering or console failure on the
-primary, high-degree, Self-loop, or Lighthouse controls.
-
-The outcome is `A QUALIFIED FOR CONTINUED BOUNDED NODE-LABEL RESEARCH / PRODUCTION NOT ESTABLISHED`:
-previous-placement hysteresis is now the primary tested Node-label residual,
-and an explicit recovery semantic is a viable next bounded formulation. The
-recovery rule remains diagnostic-only. No movement-weight retune, Structural
-Placement change, routing/Relation-label/endpoint-plan/Self-loop authority
-change, Adaptive Cascade entry, Product default/provider decision, or Human
-Review candidate follows. Product default/adoption remains `HOLD`, production
-provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive
-Cascade remains inactive, and the Initial Layout Release blocker remains
-`OPEN`. Session 0089 records this new objective.
+The [dedicated result](liaisonscape-product-node-label-hysteresis-recovery-attribution1-result.md)
+qualifies previous-placement hysteresis as the primary tested Node-label
+residual and the recovery formulation for continued bounded research only.
+Recovery remains diagnostic-only; this evidence does not establish production
+policy, Product adoption, or general visual-quality acceptance.
 
 ### LiaisonScape Product Node-label Recovery Lifecycle Source-Parity Experiment 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-product-node-label-recovery-lifecycle-source-parity1-result.md)
-verifies the recovery direction through the actual Product presentation source
-and the tested previous-snapshot lifecycle. The development-only mode uses the
-normal `deriveBoundedAutomaticPresentation` path, retains continuity on the
-first pass, and permits bounded recovery only on the settled feedback pass.
-The displayed result is committed as the next previous Node-label snapshot,
-while active drag, finalizing, manual Node-label, reset, route, Relation-label,
-endpoint-plan, and Self-loop boundaries remain unchanged.
-
-The five-fixture lifecycle harness covers primary horizontal, high-degree,
-Parallel/Self-loop, Lighthouse EN, and Lighthouse JA controls. All lifecycle
-controls pass, repeated settled derives are stable, no recovery oscillation is
-observed, manual offsets remain authoritative, reset clears previous input,
-and each Node retains a bounded 32-candidate set. A Product-derived stale
-seed triggers `3` recoveries with `32` candidates and becomes the next previous
-snapshot. It intentionally does not byte-match the prior diagnostic recovery
-arm because the earlier arm recovered with feedback disabled, whereas this
-source-parity arm preserves first-pass continuity and recovers in the normal
-feedback/final lifecycle.
-
-The outcome is `A QUALIFIED / SOURCE-PARITY ESTABLISHED IN TESTED ENVELOPE`.
-Product default/adoption remains `HOLD`, production provider remains `NOT
-ESTABLISHED`, Human Review remains `NOT READY`, Adaptive Cascade remains
-inactive, and the Initial Layout Release blocker remains `OPEN`. No new Human
-Review candidate or production adoption follows. Session 0090 records this
-new objective.
+The [dedicated result](liaisonscape-product-node-label-recovery-lifecycle-source-parity1-result.md)
+records `A QUALIFIED` source parity only within its tested lifecycle envelope.
+It does not establish general Product adoption, settling, or visual-quality
+acceptance. Manual presentation and route, Relation-label, endpoint-plan, and
+Self-loop boundaries remain unchanged.
 
 ### LiaisonScape Product Node-label Recovery Integration / Feasibility Experiment 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-product-node-label-recovery-integration1-result.md)
-places the bounded Node-label recovery rule inside the normal Product
-presentation path as an explicit development-only candidate switch:
-`?node-label-recovery=candidate`. The normal `App` caller does not pass a
-recovery prop, previous-label override, or diagnostic feedback override. The
-candidate uses the existing previous Node-label ref, normal feedback policy,
-and the unchanged first-pass continuity / settled-pass recovery formulation.
+The dated development-only integration/feasibility progression is preserved in
+the [Layout / Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-node-label-diagnostic-progression-roadmap-source-snapshot-2026-09-25).
+The [dedicated result](liaisonscape-product-node-label-recovery-integration1-result.md)
+records bounded integration evidence, not Product default or production
+policy.
 
-The five-fixture integration sequence passes clean/identical stability,
-active-drag suppression, Relation-change feedback, finalization, manual
-authority, reset, and repeated post-recovery stability. The Product-derived
-primary stale case recovers `3` times with `32` candidates per Node and makes
-the recovered result the next previous snapshot. Candidate evaluation delta is
-`0` against baseline in clean, settled, and stale measurements; recovery
-comparison median is at most `0.0126 ms` and added Node-label stage median at
-most `0.7895 ms` in the measured source process. The largest measured full
-derive median is approximately `28.1 ms` on Lighthouse EN, but this is not a
-browser SLA and candidate rows are still materialized on every candidate-mode
-pass.
-
-The Actual Product smoke used the candidate URL switch without recovery
-diagnostic props on primary, high-degree, Parallel/Self-loop, Lighthouse EN,
-and Lighthouse JA. All settled to the expected surface with no console
-warnings/errors. The outcome is `C. INTEGRATION ESTABLISHED / PERFORMANCE /
-RECOMPUTATION BOUNDARY REMAINS`. Product default/adoption remains `HOLD`,
-production provider remains `NOT ESTABLISHED`, Human Review remains `NOT
-READY`, Adaptive Cascade remains inactive, and the Initial Layout Release
-blocker remains `OPEN`. Session 0091 records this new objective.
+The development-only evidence retains a performance/recomputation boundary.
+Its bounded timings are not a browser SLA or Product-wide guarantee and do
+not establish a production selector, Product default, provider, or Worker
+responsibility.
 
 ### LiaisonScape Product Node-label Recovery Dense / Browser Main-thread Feasibility Experiment 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-product-node-label-recovery-dense-browser-feasibility1-result.md)
-extends the preceding Product-shaped recovery integration to seven deterministic
-controls: Lighthouse-ish, medium dense, large dense, high-degree-heavy,
-label-heavy EN/JA, and Parallel/Self-loop coexistence. Clean baseline and
-`product-candidate` presentation outputs remain identical, and the recovery
-comparison itself remains approximately sub-millisecond in source probes. The
-candidate-row counter scales at 64 rows per Node across two passes, but this
-was not the primary observed runtime cost.
+The [dedicated result](liaisonscape-product-node-label-recovery-dense-browser-feasibility1-result.md)
+is the authority for bounded dense-fixture and browser evidence.
 
-The browser-native boundary is not closed. Medium/high-degree Product derives
-are roughly `0.42–0.58 s`, while the 28-node/200-edge large-dense control is
-roughly `2.6–2.8 s` per observed derive and reaches approximately `11 s`
-longtask/rAF gaps during the initial Product sequence. Source and browser
-evidence attribute the dominant cost to the full presentation pipeline rather
-than recovery comparison. A separate lifecycle issue also remains: high-degree,
-label-heavy EN, and Parallel/Self-loop controls produced multiple recovery
-fingerprints across reuse probes.
+For the tested dense/full-presentation pipeline, browser-main-thread
+feasibility remains **NOT ESTABLISHED**; source and browser evidence attribute
+the dominant observed cost to the full pipeline, not recovery comparison.
 
-The Actual Product smoke reached `graph-stable` with zero console errors for all
-seven controls, but medium dense showed obvious long-Relation-label congestion.
-No formal visual evidence or Human Review followed. The outcome is `F.
-BROWSER FEASIBILITY NOT ESTABLISHED`, with runtime attribution `E. FULL
-PRESENTATION PIPELINE PRIMARY BOTTLENECK` and a remaining quality/lifecycle
-boundary. Product default/adoption remains `HOLD`, production provider remains
-`NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive Cascade remains
-inactive, and the Initial Layout Release blocker remains `OPEN`. Workerization,
-cooperative scheduling, and candidate-row optimization are not adopted by this
-checkpoint. Session 0092 records this new objective.
+Medium-dense long-label congestion was a smoke observation, not formal visual
+acceptance. No Workerization or performance guarantee follows; the bounded
+measurements are not an SLA, and the quality/lifecycle boundary remains.
 
 ### LiaisonScape Product Node-label Recovery Reuse Fingerprint Attribution 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-product-node-label-recovery-reuse-fingerprint-attribution1-result.md)
-confirms that the prior dense reuse arm was not fully source-parity: the
-Actual Product stores and reuses Node-label, Relation-label, and automatic-route
-snapshots together, while the prior harness rolled forward only Node-label
-history. A new diagnostic arm rolls forward all three snapshots and hashes
-route, Relation-label, Node-label, recovery, and final-output traces.
-
-In the source-parity arm, the first changing stage is route reuse; changes then
-propagate through Relation-label placement and Node-label placement. The
-difficult fixtures do not settle to one state, but neither do several former
-stable controls under this more faithful lifecycle. The result is therefore
-`B/C COMBINED`: prior harness parity artifact confirmed / broader Product
-presentation settling behavior open. Node-label recovery semantics, authority
-boundaries, Product defaults, and all standing holds remain unchanged. Session
-0093 records this bounded attribution checkpoint.
+The [latest reuse/fingerprint result](liaisonscape-product-node-label-recovery-reuse-fingerprint-attribution1-result.md)
+identified an earlier harness parity artifact: the source-parity arm first
+diverged at route reuse, then Relation-label and Node-label placement.
+Broader Product presentation settling remains **OPEN**; this attribution does
+not fully resolve its cause or change recovery semantics, authority boundaries,
+or Product adoption. Node-label recovery remains bounded diagnostic/research
+evidence: it establishes no general visual-quality acceptance, quality solver,
+provider, Product default/integration, or Human Review readiness.
 
 ### LiaisonScape Self-loop Residual Responsibility Closure 1 (2026-09-16)
 

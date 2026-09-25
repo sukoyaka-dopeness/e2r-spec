@@ -55,6 +55,10 @@ not a second planning authority. Statements such as `current`, `next`, or
   preserves the PV-01–PV-10 dated execution, interruptibility, scheduler, and
   source-step attribution progression; current planning remains in the
   [bounded pilot result](../roadmap-hybrid-reconstruction-product-verification-pilot-result1.md).
+  The [Product Node-label diagnostic progression](liaisonscape-layout-and-auto-layout-chronology.md#product-node-label-diagnostic-progression-roadmap-source-snapshot-2026-09-25)
+  preserves the dated Angular Escape and development-only recovery integration
+  checkpoints; the four qualified/current consequences remain in the Roadmap
+  and are summarized in the [group reconstruction result](../roadmap-hybrid-reconstruction-product-node-label-group-reconstruction-result1.md).
 - [Current roadmap and migration status](../roadmap.md#current-roadmap-first-chronology-migration-status-2026-09-24)
   remains authoritative for current status and links to the [chronology
   migration result](../documentation-ia-roadmap-chronology-migration1-result.md)

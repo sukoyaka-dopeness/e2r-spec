@@ -56,13 +56,13 @@ quality status.
 
 The clearest next actual pilot is an **A-style Node-label recovery subgroup**
 covering only the last six headings above (Angular Escape through Reuse
-Fingerprint Attribution). Retain all five heading identities and anchors.
+Fingerprint Attribution). Retain all six heading identities and anchors.
 Their minimum joint current synthesis would distinguish: (1) angular escape
 was not established; (2) recovery/source parity was qualified only in tested
 envelopes; (3) browser feasibility was not established for the tested dense
 full presentation pipeline; and (4) broader presentation settling remains
 open. Keep development-only/diagnostic status and no Product adoption/default
-as explicit limits. The five dedicated results retain exact fixture,
+as explicit limits. The six dedicated results retain exact fixture,
 measurement, and progression evidence; the existing broad Layout / Auto
 Layout History can receive dated chronology if a later approved edit needs to
 transfer it.

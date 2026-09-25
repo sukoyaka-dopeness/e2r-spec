@@ -14,6 +14,10 @@ Subsequent disposition: Human selected the two-file NarrativeLine Event
 Identity cohort, which was moved without content or status changes. See the
 [bounded migration result](documentation-ia-narrativeline-event-identity-path-migration1-result.md).
 
+The Hub Public Entry IA and Milestone 2 acceptance cohort was later selected
+and moved without content or status changes; see its
+[bounded migration result](documentation-ia-hub-public-entry-path-migration1-result.md).
+
 ## Inventory and method
 
 At this inspection, `docs/` contains 710 Markdown files: 700 directly in the

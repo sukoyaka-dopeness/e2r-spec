@@ -55,7 +55,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | NarrativeLine Detail controls | **ACCEPTED / BOUNDED GEOMETRY CORRECTIONS COMPLETE** | NarrativeLine `df69e8e` and `8495724` cover destructive/detail action geometry, Timeline Edit, and Entity Detail form width; further Picker/Create or visual-style work requires a separate current-evidence audit |
 | NarrativeLine pre-public feature candidates | **SAMPLE ROLE / PROVENANCE DECISIONS RECORDED / PUBLIC ACCESS RELEASED** | [provenance authority and access result](e2r-initial-public-release-provenance-authority-cross-app-access-implementation1-result.md), [sample role decision preparation](e2r-public-sample-role-decision-preparation1-result.md), and [content/provenance audit](e2r-initial-public-release-content-sample-provenance-refresh-audit1-result.md); five ordinary Gallery families and separate Self-Description dogfood access are public; factual-source caveats remain provenance boundaries |
 | Recent application identity and shell corrections | **IMPLEMENTED / ACCEPTANCE STATUS SPLIT** | Timeline `↑/↓`, Timeline Footer, Detail bottom action/AppFrame continuity, Dataset title hierarchy/direct editing, product-name-only document titles, and title input chrome/terminology have implementation evidence but are not wholesale `ACCEPTED / CLOSED` without explicit visual acceptance. The common SVG favicon has Human browser-tab/narrow confirmation |
-| Cross-App Locale recipient preference | **CROSS-APP CLOSURE NOT ESTABLISHED / NOT AN INITIAL-RELEASE GATE** | NarrativeLine's [consumer acceptance](narrativeline-locale-consumer-acceptance.md) explicitly says the overall workstream is not complete; LiaisonScape's i18n MVP and Hub's [bilingual landing acceptance](e2r-hub-public-entry-point-milestone-2-acceptance.md) are bounded component evidence, not closure of the shared startup-locale contract. No current priority is selected by this status sync. Hub direct Handoff remains a separate deferred capability under the Hub acceptance |
+| Cross-App Locale recipient preference | **CROSS-APP CLOSURE NOT ESTABLISHED / NOT AN INITIAL-RELEASE GATE** | NarrativeLine's [consumer acceptance](narrativeline-locale-consumer-acceptance.md) explicitly says the overall workstream is not complete; LiaisonScape's i18n MVP and Hub's [bilingual landing acceptance](hub/e2r-hub-public-entry-point-milestone-2-acceptance.md) are bounded component evidence, not closure of the shared startup-locale contract. No current priority is selected by this status sync. Hub direct Handoff remains a separate deferred capability under the Hub acceptance |
 | E2R workspace clone and evidence hygiene | **COMPLETED / ROOT PLACEMENT CLOSED (8 / 7 / 0)** | [workspace placement migration summary](#workspace-placement-migration--completed--2026-09-21); detailed evidence remains in workspace artifacts and Git history; future evidence disposition is separate work |
 | Initial Public Release | **FORMALLY CLOSED / PUBLIC AUTHORITIES VERIFIED / ACCEPTED BOUNDARIES PRESERVED** | [final closure audit](e2r-initial-public-release-closure-audit-result.md); five ordinary Gallery samples, separate Self-Description dogfood access, Hub/NarrativeLine/LiaisonScape provenance links, Validator `0.6.1`, and the accepted rights/provenance boundary are public and verified; deferred History 2, Lineage, visual-quality, and future product work remain separate follow-ups |
 
@@ -636,8 +636,8 @@ universal application UI.
 is the sole canonical ecosystem milestone sequence. This section is a scoped
 Hub supplement, not a second ecosystem sequence. Hub Milestone 1 remains
 **COMPLETE / ACCEPTED DESIGN** and Milestone 2 remains **COMPLETE / MANUALLY
-ACCEPTED**, as recorded in the [IA authority](e2r-hub-public-entry-point-information-architecture.md)
-and [Milestone 2 acceptance](e2r-hub-public-entry-point-milestone-2-acceptance.md).
+ACCEPTED**, as recorded in the [IA authority](hub/e2r-hub-public-entry-point-information-architecture.md)
+and [Milestone 2 acceptance](hub/e2r-hub-public-entry-point-milestone-2-acceptance.md).
 
 Hub-specific planning retained here:
 
@@ -1211,7 +1211,7 @@ These do not reopen the accepted locale consumer checkpoint.
 NarrativeLine Credits behavior is accepted in the [locale-consumer authority](narrativeline-locale-consumer-acceptance.md),
 and LiaisonScape Credits locale parity is recorded closed in the [Release and
 Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
-Hub's accepted [bilingual landing-page milestone](e2r-hub-public-entry-point-milestone-2-acceptance.md)
+Hub's accepted [bilingual landing-page milestone](hub/e2r-hub-public-entry-point-milestone-2-acceptance.md)
 covers bounded locale and Credits behavior, but does not establish this
 follow-up's full Close/Escape/backdrop parity. No later closure record for that
 specific Hub check was found in the reviewed authorities; retain it as an

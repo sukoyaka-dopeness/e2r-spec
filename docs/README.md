@@ -28,6 +28,7 @@ repository. Start with the responsibility that matches the question:
 - The accepted narrow-hybrid foldering policy and first six-guide path migration are recorded in the [Documentation Plan](documentation-plan.md) and [guide migration result](documentation-ia-guides-path-migration1-result.md). Other approved landing zones are not migrated by this checkpoint.
 - The [application/workstream landing-zone migration preparation](documentation-ia-application-workstream-landing-zone-migration-preparation1.md) records candidate cohorts and workspace reference risks; it authorizes no additional moves.
 - The bounded [NarrativeLine Event Identity path migration](documentation-ia-narrativeline-event-identity-path-migration1-result.md) moved only its separate design and formal acceptance records; no other NarrativeLine cohort was included.
+- The bounded [Hub Public Entry path migration](documentation-ia-hub-public-entry-path-migration1-result.md) moved only the Milestone 1 IA and Milestone 2 acceptance records; the E2R-wide milestone authority remains the Roadmap.
 - The [docs-wide organization audit](documentation-ia-docs-wide-organization-audit1.md) preserves the inventory and earlier options considered before the Human foldering decision.
 
 Follow links from the responsible planning or evidence authority for current

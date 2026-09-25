@@ -47,8 +47,9 @@ these approved landing-zone names: `docs/guides/`, `docs/liaisonscape/`,
 `docs/cross-app/`. The first bounded path migration moved only the six
 bilingual reader guides into `docs/guides/`; a second bounded migration moved
 only the separate NarrativeLine Event Identity design and formal-acceptance
-documents into `docs/narrativeline/`. The other named zones do not authorize
-prefix-based or bulk moves. Assess each later cohort by its actual
+documents into `docs/narrativeline/`; a third moved only the Hub Public Entry
+IA and Milestone 2 acceptance into `docs/hub/`. The other named zones do not
+authorize prefix-based or bulk moves. Assess each later cohort by its actual
 responsibility, references, and migration boundary. These directories are
 physical navigation, not a new authority or status hierarchy. Cross-cutting
 IA, planning, and authority documents may remain at the `docs/` root.

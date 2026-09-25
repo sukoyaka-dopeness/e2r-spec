@@ -10,6 +10,10 @@
   [Documentation Hub](README.md),
   [Guides path migration result](documentation-ia-guides-path-migration1-result.md)
 
+Subsequent disposition: Human selected the two-file NarrativeLine Event
+Identity cohort, which was moved without content or status changes. See the
+[bounded migration result](documentation-ia-narrativeline-event-identity-path-migration1-result.md).
+
 ## Inventory and method
 
 At this inspection, `docs/` contains 710 Markdown files: 700 directly in the

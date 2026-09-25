@@ -1472,7 +1472,7 @@ checkpoint. The current superseding status is:
 **FORMALLY ACCEPTED / COMPLETE / CLOSED.**
 
 Accepted runtime: NarrativeLine `4f066d5`. Acceptance evidence is recorded in
-[NarrativeLine Event Identity Formal Acceptance](narrativeline-event-identity-formal-acceptance.md),
+[NarrativeLine Event Identity Formal Acceptance](narrativeline/narrativeline-event-identity-formal-acceptance.md),
 with acceptance documentation commit `e7c7dd1`.
 
 The accepted implementation scope is limited to the Timeline Event list and

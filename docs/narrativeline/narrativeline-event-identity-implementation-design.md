@@ -20,7 +20,7 @@ Handoff remains **CLOSED / ACCEPTED**.
 # Audit input
 
 The input audit is
-[`NarrativeLine Event Human-readable Identity Audit`](narrativeline-event-human-readable-identity-audit.md).
+[`NarrativeLine Event Human-readable Identity Audit`](../narrativeline-event-human-readable-identity-audit.md).
 Its primary classification was **NAME + CONDITIONAL CHRONOLOGY + FINAL
 SHORT-ID FALLBACK**.
 

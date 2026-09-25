@@ -26,6 +26,7 @@ repository. Start with the responsibility that matches the question:
 - Current planning remains in the [Roadmap](roadmap.md); preserved chronology is indexed by [Roadmap History](roadmap-history/README.md).
 - The selected [Roadmap-first structure direction](documentation-ia-roadmap-physical-modularization-direction-decision1.md) and [Roadmap chronology structure decision](documentation-ia-roadmap-chronology-structure-decision1.md) govern that split.
 - The accepted narrow-hybrid foldering policy and first six-guide path migration are recorded in the [Documentation Plan](documentation-plan.md) and [guide migration result](documentation-ia-guides-path-migration1-result.md). Other approved landing zones are not migrated by this checkpoint.
+- The [application/workstream landing-zone migration preparation](documentation-ia-application-workstream-landing-zone-migration-preparation1.md) records candidate cohorts and workspace reference risks; it authorizes no additional moves.
 - The [docs-wide organization audit](documentation-ia-docs-wide-organization-audit1.md) preserves the inventory and earlier options considered before the Human foldering decision.
 
 Follow links from the responsible planning or evidence authority for current

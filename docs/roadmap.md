@@ -237,8 +237,8 @@ for their respective contracts and evidence.
    authorized.
 2. **Validator interoperability model — IMPLEMENTED / ACCEPTED at its
    recorded read-only boundary.** See the
-   [acceptance](production-validator-extension-integration-acceptance.md) and
-   [result](production-validator-extension-integration-result.md). This does
+   [acceptance](validator/production-validator-extension-integration-acceptance.md) and
+   [result](validator/production-validator-extension-integration-result.md). This does
    not promote the Specification Extension Draft or authorize network
    retrieval, migration, or application writers.
 3. **Coordinate Prototype `0.1.0` — FROZEN experimental compatibility /
@@ -1610,8 +1610,8 @@ The [Presentation Draft](../extensions/presentation-extension-draft.md) and
 [structural schema](../schemas/extensions/presentation-draft.schema.json)
 remain the contract authorities; `npm run validate:presentation-draft`
 checks the schema. Production Validator support has its own
-[integration result](production-validator-extension-integration-result.md)
-and [acceptance](production-validator-extension-integration-acceptance.md).
+[integration result](validator/production-validator-extension-integration-result.md)
+and [acceptance](validator/production-validator-extension-integration-acceptance.md).
 The Extension remains a Draft candidate, not Stable; the [reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md)
 records application implementation separately from those authorities.
 

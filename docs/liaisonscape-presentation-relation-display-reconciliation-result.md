@@ -20,8 +20,8 @@ Authority remains separated by responsibility:
 - Structural payload validation: [Presentation Draft schema](../schemas/extensions/presentation-draft.schema.json)
   and `npm run validate:presentation-draft`.
 - Validator implementation evidence: [Production Validator integration
-  result](production-validator-extension-integration-result.md) and
-  [acceptance](production-validator-extension-integration-acceptance.md).
+  result](validator/production-validator-extension-integration-result.md) and
+  [acceptance](validator/production-validator-extension-integration-acceptance.md).
 - Relation-deletion lifecycle disposition: [Presentation cleanup result](liaisonscape-presentation-relation-deletion-cleanup-result.md).
 - Current planning entry point: [Roadmap](roadmap.md), which remains the sole
   current-planning authority.

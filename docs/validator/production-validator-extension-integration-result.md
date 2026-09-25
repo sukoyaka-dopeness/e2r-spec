@@ -5,7 +5,7 @@
 - Scope: Production Validator の Coordinate 現行契約確認と LiaisonScape
   Presentation Draft `0.1.0` の read-only validation integration
 - Design1 authority: `production-validator-extension-integration-design.md`
-- Orphan policy authority: `presentation-orphan-relation-validation-policy-decision.md`
+- Orphan policy authority: `../presentation-orphan-relation-validation-policy-decision.md`
 
 ## Baselines and implementation
 

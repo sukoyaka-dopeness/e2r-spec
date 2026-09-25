@@ -173,3 +173,10 @@ path-specific validation. Workspace scan results do not make claims about the
 absence of external deep links.
 
 No application/workstream document was moved in this preparation.
+
+### Subsequent bounded migration disposition — Validator integration
+
+Human later selected only the Production Validator Extension integration
+design, acceptance, and result records for `docs/validator/`. The three
+documents were moved separately without reconciling or rewriting their
+checkpoint statuses. See the [bounded migration result](documentation-ia-validator-integration-path-migration1-result.md).

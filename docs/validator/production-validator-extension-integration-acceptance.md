@@ -5,7 +5,7 @@
 - Bounded scope: Production Validator の既存 Coordinate validation と
   Presentation Draft `0.1.0` validation integration
 - Design1: `production-validator-extension-integration-design.md`
-- Orphan policy: `presentation-orphan-relation-validation-policy-decision.md`
+- Orphan policy: `../presentation-orphan-relation-validation-policy-decision.md`
 - Result: `production-validator-extension-integration-result.md`
 - Validator commit: `4f5001e feat: validate liaison extension data`
 

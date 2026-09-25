@@ -10,8 +10,8 @@
 ## Authorities and repository baselines
 
 Production Validator acceptance は
-`docs/production-validator-extension-integration-acceptance.md`、Result は
-`docs/production-validator-extension-integration-result.md`、orphan policy は
+`docs/validator/production-validator-extension-integration-acceptance.md`、Result は
+`docs/validator/production-validator-extension-integration-result.md`、orphan policy は
 `docs/presentation-orphan-relation-validation-policy-decision.md` を authority
 とした。Roadmap の sequencing では Public Sample Refresh は Validator
 acceptance の後、cross-app/release audit の前である。

@@ -1,6 +1,6 @@
 # Datasetを段階的に作る
 
-この文書はE2R Datasetの構造を段階的に紹介するための解説です。規範的な要件は[E2R Core仕様](../spec/core.md)、[History Extension](../extensions/history-extension.md)、[Metadata Extension](../extensions/metadata-extension.md)を参照してください。完全な参照ファイルは、[空のDataset](../examples/empty-dataset.json)、[Eventの例](../examples/single-event.json)、[Event・Entity・Relationの例](../examples/event-with-entity.json)です。
+この文書はE2R Datasetの構造を段階的に紹介するための解説です。規範的な要件は[E2R Core仕様](../../spec/core.md)、[History Extension](../../extensions/history-extension.md)、[Metadata Extension](../../extensions/metadata-extension.md)を参照してください。完全な参照ファイルは、[空のDataset](../../examples/empty-dataset.json)、[Eventの例](../../examples/single-event.json)、[Event・Entity・Relationの例](../../examples/event-with-entity.json)です。
 
 ## 1. 最小のDatasetから始める
 
@@ -104,6 +104,6 @@ Validatorを使うと、Coreと対応するExtensionの構造を検証できま�
 
 ## 8. Datasetを再利用する
 
-この[Historyの精度が混在する例](../examples/mixed-history-precision.json)では、`precision`フィールドを追加せず、年・月・日・分・秒のEventを1つのDatasetに入れています。
+この[Historyの精度が混在する例](../../examples/mixed-history-precision.json)では、`precision`フィールドを追加せず、年・月・日・分・秒のEventを1つのDatasetに入れています。
 
 完成したDatasetは、対応するアプリケーションで再度開き、JSONとして交換し、別のワークフローへ構造化入力として渡せます。たとえばNarrativeLineはEvent中心のTimeline情報を表示できます。LiaisonScapeはEntity中心の関係グラフアプリケーションとして設計されていますが、設計文書は現在利用できる実装を保証するものではありません。AIや別のアプリケーションもDatasetを使って分析や出力を提案できますが、その結果にはワークフロー側の責任があります。

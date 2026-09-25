@@ -64,5 +64,5 @@ human judgment.
 ## Next steps
 
 Read the [Dataset Walkthrough](dataset-walkthrough-en.md) to build a Dataset
-step by step, then consult the [Core specification](../spec/core.md) for
+step by step, then consult the [Core specification](../../spec/core.md) for
 normative requirements.

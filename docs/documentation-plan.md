@@ -26,25 +26,36 @@ intent.
 ## Placement and authority policy
 
 Choose a document path from its responsibility, not from the checkpoint name
-or the convenience of the author. Existing paths are stable; this policy is
-for new documents and focused future maintenance.
+or the convenience of the author. Existing paths remain stable unless a
+bounded path migration is explicitly approved; this policy guides new
+documents and such approved focused maintenance.
 
 | Responsibility | Default location | Meaning |
 | --- | --- | --- |
 | Core, Extension, schema, or canonical example requirement | `spec/`, `extensions/`, `schemas/`, or `examples/` | Normative specification or canonical machine-readable artifact |
-| Repository-wide guide or cross-repository current checkpoint result | `docs/` root, linked from `docs/README.md` | Stable entry document or bounded evidence record |
+| Reader-facing guides and bilingual walkthroughs | `docs/guides/`, linked from `docs/README.md` | Informative reader guidance; paired language versions remain discoverable together |
+| Cross-cutting planning, policy, or bounded checkpoint result | `docs/` root, linked from `docs/README.md` | Stable entry document or current/evidence record; foldering does not change authority |
+| Application- or workstream-scoped documentation in this repository | Approved landing zones `docs/liaisonscape/`, `docs/narrativeline/`, `docs/hub/`, `docs/validator/`, or `docs/cross-app/`, when a bounded migration is approved | Physical navigation only; does not supersede the owning application, specification, or evidence authority |
 | Application design or application-owned acceptance | `applications/` in this repository or the owning application repository | Informative design or implementation evidence; source remains authoritative for behavior |
 | Exploratory research, hypothesis, or design decision | Existing responsibility-matched directory under top-level `research/` | Non-normative research; do not duplicate it under `docs/research/` |
 | Session chronology and handoff history | `sessions/` | Historical record; it does not define current status |
 | Reusable process knowledge | Sibling `ai-knowledge` repository | Guidance and decisions; it does not override this specification |
 
-Do not create a new directory merely to make filenames look cleaner. In
-particular, `docs/research/`, `docs/applications/`, and `docs/sessions/` are
-not parallel authorities because those responsibilities already have
-top-level homes. A new `docs/guides/` or `docs/results/` directory is not
-required by the current inventory; it may be proposed later only if a real
-navigation or ownership problem is demonstrated and the migration cost is
-accepted.
+Human has adopted a narrow, responsibility-first hybrid for `docs/`, with
+these approved landing-zone names: `docs/guides/`, `docs/liaisonscape/`,
+`docs/narrativeline/`, `docs/hub/`, `docs/validator/`, and
+`docs/cross-app/`. The first bounded path migration moved only the six
+bilingual reader guides into `docs/guides/`; the other named zones do not
+authorize prefix-based or bulk moves. Assess each later cohort by its actual
+responsibility, references, and migration boundary. These directories are
+physical navigation, not a new authority or status hierarchy. Cross-cutting
+IA, planning, and authority documents may remain at the `docs/` root.
+
+Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
+unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,
+`docs/audits/`, `docs/acceptances/`, `docs/applications/`, or `docs/sessions/`
+as document-type or parallel-authority taxonomies; Research and Sessions
+retain their existing top-level homes.
 
 For a new cross-cutting document kept in the `docs/` root, include a compact
 header stating `Date`, `Status`, `Scope`, `Authority`, and `Related records`.

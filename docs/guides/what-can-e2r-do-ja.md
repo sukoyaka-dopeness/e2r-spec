@@ -40,4 +40,4 @@ ValidatorはCoreと対応するExtensionの構造を検証します。入力を�
 
 ## 次に読むもの
 
-[Datasetを段階的に作る](dataset-walkthrough-ja.md)でDatasetの作成手順を確認し、規範的な要件は[E2R Core仕様](../spec/core.md)を参照してください。
+[Datasetを段階的に作る](dataset-walkthrough-ja.md)でDatasetの作成手順を確認し、規範的な要件は[E2R Core仕様](../../spec/core.md)を参照してください。

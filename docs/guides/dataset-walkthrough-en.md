@@ -1,10 +1,10 @@
 # Dataset Walkthrough
 
 This walkthrough introduces the structure of an E2R Dataset. It is informative:
-the [Core specification](../spec/core.md), [History Extension](../extensions/history-extension.md),
-and [Metadata Extension](../extensions/metadata-extension.md) define the
-requirements. The complete reference files are the [empty Dataset](../examples/empty-dataset.json),
-[single Event](../examples/single-event.json), and [Event, Entity, and Relation](../examples/event-with-entity.json)
+the [Core specification](../../spec/core.md), [History Extension](../../extensions/history-extension.md),
+and [Metadata Extension](../../extensions/metadata-extension.md) define the
+requirements. The complete reference files are the [empty Dataset](../../examples/empty-dataset.json),
+[single Event](../../examples/single-event.json), and [Event, Entity, and Relation](../../examples/event-with-entity.json)
 examples.
 
 ## 1. Start with a minimal Dataset
@@ -129,7 +129,7 @@ does not confirm that historical claims or other content are true.
 
 ## 8. Reuse the Dataset
 
-The [mixed History precision example](../examples/mixed-history-precision.json)
+The [mixed History precision example](../../examples/mixed-history-precision.json)
 shows how one Dataset can contain year-, month-, day-, minute-, and
 second-precision Events without adding a separate `precision` field.
 

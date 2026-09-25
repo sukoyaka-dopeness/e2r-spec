@@ -18,46 +18,17 @@ repository. Start with the responsibility that matches the question:
 | Application responsibilities and design | [Application documentation](../applications/README.md) | Informative application design authority |
 | A completed checkpoint or accepted evidence | A linked `*-result.md` or `*-acceptance.md` document | Evidence for the named checkpoint; it does not override the specification |
 | Open design questions and hypotheses | [Research](../research/) | Non-normative research |
-| Historical chronology | [Sessions](../sessions/) | Historical record; it does not override current status |
+| Session records | [Sessions](../sessions/) | Historical collaboration notes |
+| Roadmap historical chronology | [Roadmap History](roadmap-history/README.md) | Preserved chronology; it does not define current status |
 
-### Current status at a glance
+### Documentation IA decisions and audit
 
-- [Roadmap Hybrid Reconstruction - Candidates 2 and 3 Claim Reconciliation Preparation 1](roadmap-hybrid-reconstruction-candidates2-3-claim-reconciliation-preparation1.md): separates Product-owned presentation evidence from bounded History 2 authoring/upgrade closure; preparation only, with no Roadmap or History reconstruction.
-- [History 2 Candidate 3 B reconstruction result](roadmap-hybrid-reconstruction-history2-candidate3-migration-result1.md): records the five-heading historical transfer and retained bounded H2 status boundaries.
-- [Candidate 2 Node-label recovery group reconstruction result](roadmap-hybrid-reconstruction-product-node-label-group-reconstruction-result1.md): records the six-heading bounded reconstruction, preserving tested-only qualification and open presentation-settling boundaries.
-- [Candidate 2 Parallel / Relation-label group reconstruction result](roadmap-hybrid-reconstruction-product-parallel-relation-label-group-reconstruction-result1.md): records the six-heading subgroup reconstruction while retaining the current RETUNE, coupled-capacity, and non-adoption boundaries.
+- Current planning remains in the [Roadmap](roadmap.md); preserved chronology is indexed by [Roadmap History](roadmap-history/README.md).
+- The selected [Roadmap-first structure direction](documentation-ia-roadmap-physical-modularization-direction-decision1.md) and [Roadmap chronology structure decision](documentation-ia-roadmap-chronology-structure-decision1.md) govern that split. A taxonomy for `docs/` as a whole remains unselected.
+- [Documentation Plan](documentation-plan.md) records existing placement guidance; this [docs-wide organization audit](documentation-ia-docs-wide-organization-audit1.md) inventories foldering options without adopting one or authorizing path changes.
 
-- [Earlier Documentation IA / roadmap modularization audit](documentation-information-architecture-roadmap-modularization-audit1-result.md): its navigation-first and path-stability recommendation remains historical evidence. The later [Roadmap-first structure decision](documentation-ia-roadmap-physical-modularization-direction-decision1.md) governs current structure direction. [Roadmap → Research Responsibility Audit 1](roadmap-research-responsibility-audit1-result.md) and its [first bounded compression result](roadmap-research-responsibility-migration1-result.md) record the approved tranche; other candidates remain unmigrated.
-- [Residual Roadmap Responsibility Audit 1](roadmap-residual-responsibility-audit1.md): current-roadmap classifications and a proposed next bounded tranche; no migration is authorized by the audit.
-- [Roadmap Semantic Decomposition / Canonical Planning Synthesis Audit 1](roadmap-semantic-decomposition-canonical-planning-synthesis-audit1.md): current-planning and dated-evidence responsibilities after the chronology migrations;
-  compares guarded synthesis paths without changing the Roadmap.
-- [Residual Roadmap Semantic Reconstruction Re-Audit 1](roadmap-residual-semantic-reconstruction-reaudit1.md): post-G2-B whole-roadmap responsibility map and grouped next-candidate decision preparation; no reconstruction is authorized by the audit.
-- [Explicit Auto Layout / Pin Claim Reconciliation Preparation 1](roadmap-hybrid-reconstruction-explicit-auto-layout-pin-claim-reconciliation-preparation1.md)
-  and its [first group-level reconstruction
-  result](roadmap-hybrid-reconstruction-explicit-auto-layout-pin-group-pilot-result1.md):
-  the readiness / blocker / DEV diagnostic progression was reconciled while
-  current Pin, ownership, and failure-attribution boundaries remain in the
-  Roadmap.
-- [Explicit Auto Layout / Pin second-group reconstruction result](roadmap-hybrid-reconstruction-explicit-auto-layout-pin-group-pilot-result2.md): compresses the quality and qualified-closure summaries while retaining the mixed practicality and worktree boundaries.
-- [Roadmap Hybrid Reconstruction — Product Verification Pilot Preparation 1](roadmap-hybrid-reconstruction-product-verification-pilot-preparation1.md): claim-level B/A/HOLD manifest for the first proposed pilot; no Roadmap or History edit is authorized by the preparation.
-- [Roadmap Hybrid Reconstruction — Product Verification Pilot Result 1](roadmap-hybrid-reconstruction-product-verification-pilot-result1.md): PV-01–PV-10 current synthesis and History delegation; PV-11–PV-14 remain out of scope.
-- [Roadmap Hybrid Reconstruction — Second Pilot Preparation 1](roadmap-hybrid-reconstruction-second-pilot-preparation1.md): splits the PV-11–PV-14 responsibility area into bounded verification, candidate/risk, provider/Worker, and visual-quality groups; recommends only the isolated verification-envelope group for the next pilot.
-- [Roadmap Hybrid Reconstruction - Second Pilot Result 1](roadmap-hybrid-reconstruction-second-pilot-result1.md): applies the G2-A bounded verification-envelope B pilot; G2-B-G2-D remain unchanged.
-- [Roadmap Hybrid Reconstruction - G2-B A-style Preparation 1](roadmap-hybrid-reconstruction-second-pilot-preparation2.md): separates screening, probing, boundary completion, and risk claims; recommends a G2-B1-only A pilot.
-- [Roadmap Hybrid Reconstruction - G2-B1 Pilot Result 1](roadmap-hybrid-reconstruction-g2-b1-pilot-result1.md): preserves the G2-B1 heading and current screening boundary while delegating dated finalist-recall evidence to History.
-- [Roadmap Hybrid Reconstruction - G2-B2 Pilot Result 1](roadmap-hybrid-reconstruction-g2-b2-pilot-result1.md): preserves the G2-B2 diagnostic boundary while keeping G2-B4 risk and target qualification separate.
-- [Roadmap Hybrid Reconstruction - G2-B3 A-style Preparation 1](roadmap-hybrid-reconstruction-g2-b3-preparation1.md): prepares a standalone tested-set-qualified boundary-completion compression pilot without changing G2-B4.
-- [Roadmap Hybrid Reconstruction - G2-B3 Pilot Result 1](roadmap-hybrid-reconstruction-g2-b3-pilot-result1.md): preserves tested-set quality closure and capped-completion boundaries while keeping G2-B4 live qualification separate.
-- [Roadmap Hybrid Reconstruction - G2-B4 A-style Preparation 1](roadmap-hybrid-reconstruction-g2-b4-preparation1.md): separates fail-closed diagnostic safety from the still-open target/risk qualification.
-- [Roadmap Hybrid Reconstruction - G2-B4 Pilot Result 1](roadmap-hybrid-reconstruction-g2-b4-pilot-result1.md): preserves fail-closed safety while keeping target stability and risk-gate qualification open.
-- [NarrativeLine NL-H2-R1](roadmap.md): **ACCEPTED / MANUAL ACCEPTANCE COMPLETE**.
-- [History 2 broader authoring scope](history-2-user-facing-authoring-scope-result.md): **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED**.
-
-The roadmap is the short current-status index. The linked result or
-acceptance document contains the detailed evidence. If a historical entry
-uses words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`, read it as a
-record of that earlier checkpoint unless a later current-status entry says
-otherwise.
+Follow links from the responsible planning or evidence authority for current
+checkpoint details; this Hub is not an inventory of every audit and result.
 
 ### Responsibility and status vocabulary
 
@@ -104,8 +75,6 @@ application repository.
 ## AI and research / AIと研究
 
 - [AI Workflow Research Backlog](ai-workflow-research.md)
-- [Roadmap](roadmap.md)
-- [Documentation Plan](documentation-plan.md)
 
 ## Documentation policy
 

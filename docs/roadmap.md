@@ -3159,32 +3159,11 @@ provider/default from this result.
 ### LiaisonScape Diagnostic Preview Fixture Integrity + Parallel One-Sided Product Quality Audit 1 (2026-09-16)
 
 The [checkpoint result](liaisonscape-diagnostic-preview-fixture-integrity-parallel-one-sided-product-quality-audit1-result.md)
-corrects a diagnostic-only Japanese synthetic fixture and audits the reported
-one-sided Parallel presentation on the current Actual Product surface. The
-mojibake was caused by duplicated preview/tool literals, not by the Product
-renderer. A shared diagnostic fixture generator now preserves the same
-topology, IDs, labels, locale, and candidate geometry across the portfolio
-tool and preview seam.
-
-The corrected Parallel control contains two forward and two reverse Relations
-for `alpha`/`beta`. Current Product output has physical-side counts `1` and
-`3`; the `gamma`/`delta` pair remains balanced. The reverse routes' opposite
-base-side candidates are rejected by occupied-path conflict or Relation-label
-pressure, so the side imbalance is downstream routing/presentation behavior
-under hard feasibility pressure. The current Product path does not call the
-experimental incident allocator or expose endpoint-plan output. No safe fix
-was adopted because forcibly selecting the rejected side would introduce the
-known clearance conflicts.
-
-The checkpoint is classified `C. PREVIEW FIXTURE INTEGRITY RESTORED /
-ONE-SIDED RESULT IS HARD-FEASIBILITY-DRIVEN`, with `D. APPARENT ONE-SIDED
-ISSUE IS DOWNSTREAM ROUTING OR LABEL PRESENTATION` attribution. It is not
-formal acceptance and opens no Human Review candidate. Parallel/Incident
-architecture remains closed, quality solver remains `HOLD / NOT ESTABLISHED`,
-production provider remains `NOT ESTABLISHED`, Product integration/default
-remains `HOLD`, Human Review remains `NOT READY`, Adaptive Cascade remains
-inactive, and the Initial Layout Release blocker remains `OPEN`. Session 0081
-records this new objective.
+records the corrected fixture and one-sided observation as bounded diagnostic
+evidence: the rejected side was under hard feasibility pressure, and forcing
+it was not established as a safe fix. This is not formal acceptance or a
+general quality conclusion. The current Parallel / Incident Bundle Geometry
+coordination remains **RETUNE**.
 
 ### LiaisonScape Product Presentation Local Spacing + Parallel/Label/Self-loop Refinement 1 (2026-09-16)
 
@@ -3227,137 +3206,47 @@ Placement from this checkpoint.
 
 ### LiaisonScape Product-Owned Parallel Bundle + Relation-Label Ownership Generalization 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-product-owned-parallel-bundle-generalization1-result.md)
-generalizes the prior widened Product Parallel presentation direction across
-the reverse/same-direction control, a five-Relation bundle, a mixed-incident
-control, and the public Lighthouse EN sample. Fixed `bundle-16` improved lane
-and endpoint separation and reduced owner-route ambiguity on the primary
-control without crossings, final occupied-path conflicts, label overlap, Node
-collision, or ordinary-route churn. The higher-multiplicity control exposed a
-real ordinary-route coupling cost, so the fixed direction remains diagnostic.
-
-A graph-wide adaptive spacing scalar is rejected as a generalized policy: it
-selected spacing 20 on the primary graph and collapsed the balanced gamma/delta
-same-direction pair to one physical side. Higher-multiplicity spacing 24 also
-changed two ordinary routes. The evidence supports continuing with a
-bundle-local capacity policy or explicit cross-bundle feasibility check, not
-adopting a global adaptive scalar, changing Structural Placement, reopening
-Parallel/Incident architecture, or changing Self-loop/viewport authority.
-
-The checkpoint is classified `A/C QUALIFIED: WIDENED PRODUCT PARALLEL
-PRESENTATION GENERALIZES AS A DIAGNOSTIC DIRECTION / GRAPH-WIDE ADAPTIVE
-SPACING IS NOT SAFE`. Product default/adoption remains `HOLD`, production
-provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive
-Cascade remains inactive, and the Initial Layout Release blocker remains
-`OPEN`. Session 0083 records this new objective.
+The [dated generalization experiment](liaisonscape-product-owned-parallel-bundle-generalization1-result.md)
+is preserved in the existing [Layout / Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-parallel-and-relation-label-diagnostic-progression-roadmap-source-snapshot-2026-09-25).
+It rejects a graph-wide adaptive spacing scalar as a general policy; the tested
+widened-bundle direction remains diagnostic, not adopted. Current Parallel
+planning remains governed by the **RETUNE** coordination authority above.
 
 ### LiaisonScape Product-Owned Bundle-Local Capacity + Cross-Bundle Feasibility Experiment 1 (2026-09-16)
 
 The [checkpoint result](liaisonscape-product-owned-bundle-local-capacity-cross-bundle-feasibility1-result.md)
-replaces the rejected graph-wide adaptive scalar with per-bundle demand
-candidates and a bounded full-Product joint feasibility selection. The largest
-control explores 42 combinations. Selected spacing is `20/12` for the primary
-reverse/same-direction graph, `16` for higher multiplicity, `24` for mixed
-incident, `16/16` for a new shared-endpoint control, and `12` for Lighthouse.
-
-The primary selection removes ownership ambiguity and foreign-closer labels
-while preserving the good gamma/delta bundle, directly avoiding the prior
-global-spacing-20 collapse. Higher multiplicity falls back to 16 because its
-requested 24 changes two ordinary routes. The shared-endpoint control retains
-one ownership residual because the wider arm that removes it slightly regresses
-the neighboring bundle. This proves local demand is useful but bundle decisions
-are not independent; bounded joint Product feasibility is required.
-
-The outcome is `B. BUNDLE-LOCAL POLICY PROMISING / C. BOUNDED JOINT
-FEASIBILITY REQUIRED`. The candidate remains diagnostic and is not uniformly
-better than fixed 16. Parallel/Incident architecture remains `CLOSED`, Product
-default/adoption remains `HOLD`, production provider remains `NOT ESTABLISHED`,
-Human Review remains `NOT READY`, local relaxation remains absent, and the
-Initial Layout Release blocker remains `OPEN`. Session 0084 records this new
-objective.
+shows bundle-local demand can be a useful diagnostic signal, but bundle choices
+are coupled: shared-endpoint ownership and ordinary-route trade-offs remain,
+and joint-feasibility evidence is bounded. The candidate is not adopted or
+uniformly better than the fixed reference. This does not change the active
+Parallel **RETUNE** or establish an independent per-bundle rule.
 
 ### LiaisonScape Product-Owned Orientation-Aware Parallel Label Capacity + Stagger Experiment 1 (2026-09-16)
 
 The [checkpoint result](liaisonscape-product-owned-orientation-aware-label-capacity-stagger1-result.md)
-holds the Session 0084 bundle-local spacing maps fixed and adds a bounded
-Product-owned Relation-label tangent/normal footprint diagnostic with
-along-owner-route stagger. Horizontal labels use tangential footprint versus
-usable owner span; vertical labels receive bounded stagger; diagonal labels use
-continuous projection. One-line labels remain the only candidate, while
-deficits are recorded for a future display-only wrap study.
-
-The primary control remains non-regressed with zero churn. The shared-endpoint
-control improves its remaining ownership ambiguity under fixed `16/16`, and
-horizontal staggering improves foreign-route ordering, but the two long
-horizontal labels still exceed one-line usable span by roughly `184` and `197`
-units. Vertical stagger produces readable positions without improving the
-machine ownership ambiguity, and diagonal behavior remains smooth without a
-binary orientation rule. Higher-multiplicity ordinary-route churn remains.
-
-The outcome is `B/C COMBINED`: orientation-aware label capacity is a useful
-Product presentation diagnostic, but vertical stagger is not generally
-established and one-line horizontal capacity remains open. No wrap, routing,
-endpoint-plan, Structural Placement, Parallel/Incident, Self-loop, default,
-provider, or Human Review adoption follows. Product default/adoption remains
-`HOLD`, production provider remains `NOT ESTABLISHED`, Human Review remains
-`NOT READY`, Adaptive Cascade remains inactive, and the Initial Layout Release
-blocker remains `OPEN`. Session 0085 records this new objective.
+supports orientation-aware capacity as a bounded Product-presentation
+diagnostic only. One-line horizontal Relation-label capacity remains **OPEN**;
+vertical stagger is not established as a general rule, and higher-multiplicity
+ordinary-route churn remains. The smoke/experiment evidence is not visual
+acceptance and does not change routing, label, endpoint-plan, or Product policy.
 
 ### LiaisonScape Product Relation-label Normal-offset Granularity + Parallel Bundle Capacity Attribution Experiment 1 (2026-09-16)
 
 The [checkpoint result](liaisonscape-product-relation-label-normal-offset-granularity1-result.md)
-reproduces the current `placeEdgeLabel` normal candidates and scoring from
-source, then compares current/coarse, widened/coarse, current/fine, and
-widened/fine arms on fixed Node geometry. The expanded diagnostic trace names
-the foreign sibling route that enters a rejected zero-offset label rectangle:
-for example, primary `r-ab-2` is blocked by `r-ba-1`. This confirms foreign
-sibling pressure as the immediate cause of the observed zero-offset rejection.
-
-The primary control retains ambiguity `1` under finer candidates alone, while
-the prior Product-owned bundle-local widening closes it to `0` and restores
-Alpha/Beta side balance `2:2`. Finer candidates become useful after widening,
-selecting smaller offsets and improving owner-route margin; mixed and shared
-controls show secondary gains. Higher multiplicity retains one ordinary-route
-churn and Lighthouse has no gross regression.
-
-The outcome is `B PRIMARY / C QUALIFIED SECONDARY`: bundle widening is the
-primary owner-label capacity mechanism, with finer normal candidates a bounded
-secondary refinement. Collision-envelope retuning is not established. No wrap,
-routing, endpoint-plan, Structural Placement, Parallel/Incident, Self-loop,
-default, provider, or Human Review adoption follows. Product default/adoption
-remains `HOLD`, production provider remains `NOT ESTABLISHED`, Human Review
-remains `NOT READY`, Adaptive Cascade remains inactive, and the Initial Layout
-Release blocker remains `OPEN`. Session 0086 records this new objective.
+attributes the tested zero-offset rejection to foreign sibling-route pressure.
+This is bounded to the tested Product candidate/fixture envelope; collision-
+envelope retuning is **NOT ESTABLISHED**, and finer offsets do not independently
+resolve the capacity issue. No general label-placement, route, or endpoint
+policy follows.
 
 ### LiaisonScape Product Relation-label Display-only Automatic Wrap Capacity Experiment 1 (2026-09-16)
 
 The [checkpoint result](liaisonscape-product-relation-label-display-only-wrap1-result.md)
-tests a bounded, display-only two-line Relation-label presentation after the
-previously established Product-owned bundle widening and fine normal-offset
-reference. English uses whitespace-first breaking with bounded character
-fallback; Japanese uses character fallback. Dataset Relation names and all
-stored/authored state remain unchanged, and the same derived geometry is shared
-by SVG text, hit testing, and the label collision envelope.
-
-On horizontal English controls, two long labels reduce one-line span deficits
-from `103/116` to `0/5.5` and remove the reference ownership ambiguity. On the
-Japanese horizontal control, two-line character breaking is better balanced and
-removes the foreign-closer signal, but one ownership ambiguity remains. Token
-and punctuation controls expose an explicit readability trade-off. Vertical and
-diagonal controls do not wrap and retain their existing route/association
-residuals; higher multiplicity retains ordinary-route churn. The Actual Product
-smoke found no gross rendering or interaction regression, but the result is not
-formal visual acceptance.
-
-The outcome is `B/C PRIMARY / D QUALIFIED / F RESIDUAL CAPACITY OPEN`: display-
-only wrapping is useful for long horizontal labels after bundle capacity and
-fine placement, but it is not a general Product-quality solution. No local
-offset retune, Structural Placement change, routing authority change,
-endpoint-plan change, Self-loop adoption, Product default/provider, or Human
-Review candidate follows. Product default/adoption remains `HOLD`, production
-provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive
-Cascade remains inactive, and the Initial Layout Release blocker remains
-`OPEN`. Session 0087 records this new objective.
+finds display-only wrapping useful for some tested long horizontal labels, but
+vertical/diagonal association and higher-multiplicity routing residuals remain;
+it is not a general Product-quality solution. Relation names and authored
+Dataset state are unchanged by this diagnostic. No routing authority, stored
+presentation state, default policy, or visual acceptance follows.
 
 ### LiaisonScape Product Node-label Relation-presentation-first Angular Escape Experiment 1 (2026-09-16)
 

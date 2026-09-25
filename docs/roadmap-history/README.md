@@ -59,6 +59,10 @@ not a second planning authority. Statements such as `current`, `next`, or
   preserves the dated Angular Escape and development-only recovery integration
   checkpoints; the four qualified/current consequences remain in the Roadmap
   and are summarized in the [group reconstruction result](../roadmap-hybrid-reconstruction-product-node-label-group-reconstruction-result1.md).
+  The [Product Parallel / Relation-label diagnostic progression](liaisonscape-layout-and-auto-layout-chronology.md#product-parallel-and-relation-label-diagnostic-progression-roadmap-source-snapshot-2026-09-25)
+  preserves the dated graph-wide adaptive-spacing checkpoint; the active
+  coordination remains **RETUNE** in the Roadmap and the bounded current
+  consequences are summarized in the [group reconstruction result](../roadmap-hybrid-reconstruction-product-parallel-relation-label-group-reconstruction-result1.md).
 - [Current roadmap and migration status](../roadmap.md#current-roadmap-first-chronology-migration-status-2026-09-24)
   remains authoritative for current status and links to the [chronology
   migration result](../documentation-ia-roadmap-chronology-migration1-result.md)

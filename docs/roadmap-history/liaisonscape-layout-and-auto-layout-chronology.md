@@ -3230,6 +3230,39 @@ production provider remains `NOT ESTABLISHED`, Human Review remains `NOT
 READY`, Adaptive Cascade remains inactive, and the Initial Layout Release
 blocker remains `OPEN`. Session 0091 records this new objective.
 
+## Product Parallel and Relation-label diagnostic progression (Roadmap source snapshot 2026-09-25)
+
+This B-disposition checkpoint block is preserved from the Roadmap in source
+order with its original heading, date/status wording, and body. Its status
+language describes the 2026-09-16 snapshot, not current planning. Only the
+relative path to its dedicated result is adjusted for this History file.
+
+### LiaisonScape Product-Owned Parallel Bundle + Relation-Label Ownership Generalization 1 (2026-09-16)
+
+The [checkpoint result](../liaisonscape-product-owned-parallel-bundle-generalization1-result.md)
+generalizes the prior widened Product Parallel presentation direction across
+the reverse/same-direction control, a five-Relation bundle, a mixed-incident
+control, and the public Lighthouse EN sample. Fixed `bundle-16` improved lane
+and endpoint separation and reduced owner-route ambiguity on the primary
+control without crossings, final occupied-path conflicts, label overlap, Node
+collision, or ordinary-route churn. The higher-multiplicity control exposed a
+real ordinary-route coupling cost, so the fixed direction remains diagnostic.
+
+A graph-wide adaptive spacing scalar is rejected as a generalized policy: it
+selected spacing 20 on the primary graph and collapsed the balanced gamma/delta
+same-direction pair to one physical side. Higher-multiplicity spacing 24 also
+changed two ordinary routes. The evidence supports continuing with a
+bundle-local capacity policy or explicit cross-bundle feasibility check, not
+adopting a global adaptive scalar, changing Structural Placement, reopening
+Parallel/Incident architecture, or changing Self-loop/viewport authority.
+
+The checkpoint is classified `A/C QUALIFIED: WIDENED PRODUCT PARALLEL
+PRESENTATION GENERALIZES AS A DIAGNOSTIC DIRECTION / GRAPH-WIDE ADAPTIVE
+SPACING IS NOT SAFE`. Product default/adoption remains `HOLD`, production
+provider remains `NOT ESTABLISHED`, Human Review remains `NOT READY`, Adaptive
+Cascade remains inactive, and the Initial Layout Release blocker remains
+`OPEN`. Session 0083 records this new objective.
+
 ### Explicit Auto Layout readiness and pre-release blocker — Roadmap source snapshot (2026-09-25)
 
 The following dated Roadmap blocks are preserved from `docs/roadmap.md` at

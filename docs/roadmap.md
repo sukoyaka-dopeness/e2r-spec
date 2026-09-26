@@ -506,8 +506,13 @@ adopted a bounded application design: Event-to-Event `relative-position`
 `before`/`after`, pairwise display projection for undated Events, no persisted
 inference, and explicit incomparability/conflict boundaries. The local
 [implementation result](../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-slice-implementation-result1.md)
-records source implementation and automated evidence; real-browser acceptance
-remains pending. The preceding [implementation-scope preparation](../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-milestone-scope-preparation1.md)
+records source implementation and automated evidence. The Human clarified that
+reversing one existing Relation's direction replaces that same Recorded
+assertion; a direct contradiction means conflict with another independent
+Relation, not a same-Relation edit. Event Detail now identifies each recorded
+Relation and separates its edit control from the new-assertion form. Focused
+regression tests pass; real-browser acceptance remains pending. The preceding
+[implementation-scope preparation](../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-milestone-scope-preparation1.md)
 preserves its alternatives as a superseded preparation snapshot. This is an
 application-only slice: Relative Time `0.2.0` and History `2.0.0` remain
 Candidates, no normative/specification or Validator change is made, and the

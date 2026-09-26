@@ -64,9 +64,9 @@ IA, planning, and authority documents may remain at the `docs/` root.
 Wave 2A completed the bounded 13-document Capability / Dataset Handoff
 evidence migration across the Cross-App, NarrativeLine, and LiaisonScape
 landing zones; see the [migration result](documentation-ia-handoff-evidence-wave2-path-migration1-result.md).
-The separate Validator 0.4.0 lifecycle remains only a candidate in the
-[Wave 2 preparation](documentation-ia-application-workstream-foldering-wave2-preparation1.md)
-and requires its own exact authorization and fresh reference check.
+Wave 2B then moved only the five Validator 0.4.0 package / consumer lifecycle
+records; see the [Wave 2B result](documentation-ia-validator-0.4.0-lifecycle-wave2b-path-migration1-result.md).
+Neither path migration changed document authority or checkpoint status.
 
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,

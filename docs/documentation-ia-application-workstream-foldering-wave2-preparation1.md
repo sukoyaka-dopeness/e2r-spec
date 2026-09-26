@@ -259,3 +259,10 @@ Human later approved the exact 13-document Handoff evidence packet. The
 bounded path migration and reference repairs are recorded in the
 [Wave 2A migration result](documentation-ia-handoff-evidence-wave2-path-migration1-result.md).
 The separate Validator 0.4.0 cohort remains unperformed.
+
+### Subsequent disposition — Wave 2B
+
+Human later approved the exact five-document Validator 0.4.0 package /
+consumer lifecycle. The path migration is recorded in the
+[Wave 2B migration result](documentation-ia-validator-0.4.0-lifecycle-wave2b-path-migration1-result.md).
+No adjacent Validator document or package/runtime file was included.

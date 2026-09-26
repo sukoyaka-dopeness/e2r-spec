@@ -141,12 +141,11 @@ and does not implement the root-ingress gate; that gate remains deferred until
 Human approves a final placement baseline.
 
 The approved [minimal-root migration result](documentation-ia-minimal-root-wave1-path-migration1-result.md)
-records 62 of the 65 proposed moves. Three documents remain at root because
-execution-time scans found direct references in read-only application or
-Knowledge repositories. The root now contains eight Markdown files, so the
-conditional five-path validation gate was not implemented. No gate baseline
-may be approved until those references are resolved and the actual root is
-verified against the five Human-approved paths.
+records the initial 62-of-65 partial move. Its [completion and root-placement
+gate result](documentation-ia-minimal-root-wave1-completion-and-root-gate1-result.md)
+records the final three approved moves and the verified five-file root. The
+exact-path allowlist and validation gate enforce physical placement only; they
+do not infer ownership, authority, status, or acceptance.
 
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,

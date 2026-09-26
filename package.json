@@ -4,7 +4,9 @@
   "private": true,
   "description": "Development tooling for the E2R specification.",
   "scripts": {
-    "validate": "npm run validate:history && npm run validate:history-2-draft && npm run validate:relative-time-draft && npm run validate:coordinate-draft && npm run validate:names-draft && npm run validate:names-draft-ids && npm run validate:presentation-draft && npm run validate:liaisonscape-layout-draft && npm run validate:visual-review-result && npm run validate:extension-profile-maturity && npm run validate:apollo-sample && npm run validate:public-samples-coordinate-less",
+    "validate": "npm run test:docs-root-placement && npm run validate:docs-root-placement && npm run validate:history && npm run validate:history-2-draft && npm run validate:relative-time-draft && npm run validate:coordinate-draft && npm run validate:names-draft && npm run validate:names-draft-ids && npm run validate:presentation-draft && npm run validate:liaisonscape-layout-draft && npm run validate:visual-review-result && npm run validate:extension-profile-maturity && npm run validate:apollo-sample && npm run validate:public-samples-coordinate-less",
+    "validate:docs-root-placement": "node scripts/validate-docs-root-placement.mjs",
+    "test:docs-root-placement": "node --test scripts/validate-docs-root-placement.test.mjs",
     "validate:apollo-sample": "node scripts/validate-apollo-sample.mjs",
     "validate:coordinate-draft": "node scripts/validate-coordinate-draft-schema.mjs",
     "validate:history": "node scripts/validate-history-schema.mjs",

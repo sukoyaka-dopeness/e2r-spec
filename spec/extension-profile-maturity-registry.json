@@ -24,7 +24,7 @@
       "preservation": "preserve-unknown-or-refuse-unsafe-edit",
       "references": [
         "extensions/history-extension-2.0-draft.md",
-        "docs/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md"
+        "docs/temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md"
       ]
     }
   ]

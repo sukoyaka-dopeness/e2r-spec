@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "path": "docs/README.md",
+      "rationale": "Repository-wide documentation navigation hub and responsibility routing."
+    },
+    {
+      "path": "docs/roadmap.md",
+      "rationale": "Sole E2R-wide current-planning authority and entry point."
+    },
+    {
+      "path": "docs/application-design-principles.md",
+      "rationale": "Repository-wide, non-normative design principles spanning E2R applications."
+    },
+    {
+      "path": "docs/application-recommendations.md",
+      "rationale": "Repository-wide, non-normative recommendations for applications built on E2R."
+    },
+    {
+      "path": "docs/identifier.md",
+      "rationale": "E2R-wide identifier recommendations applying across datasets and applications."
+    }
+  ]
+}

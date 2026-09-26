@@ -15,8 +15,9 @@ document-type taxonomy or a second planning authority.
 - [Post-Wave-5 root placement preparation](documentation-ia-post-wave5-root-classification-audit1.md)
   records the proposed 65-document responsibility manifest.
 - [Minimal-root migration result](documentation-ia-minimal-root-wave1-path-migration1-result.md)
-  records 62 completed moves, three paths held for external reference repair,
-  and the resulting gate condition.
+  records the initial partial move; its [completion and root-ingress gate
+  result](documentation-ia-minimal-root-wave1-completion-and-root-gate1-result.md)
+  records the final three approved moves and the five-path baseline.
 
 Individual audit, decision, preparation, and migration records retain their
 own evidence scope and status. Their placement here does not merge or elevate

@@ -46,7 +46,7 @@ authority rather than copying it into this migration result.
   follow-up design issue; TA3 new witnesses are not historical replay; the
   original Experiment4 derived class accounting is not policy evidence; and
   the corrected identity reconciliation and clean Rerun1 govern that bounded
-  comparison. See the [structural-assignment research synthesis](liaisonscape-initial-placement-seed-structural-assignment-research-synthesis1-result.md)
+  comparison. See the [structural-assignment research synthesis](liaisonscape/liaisonscape-initial-placement-seed-structural-assignment-research-synthesis1-result.md)
   and its linked correction authorities.
 
 ## Excluded material and reference boundary

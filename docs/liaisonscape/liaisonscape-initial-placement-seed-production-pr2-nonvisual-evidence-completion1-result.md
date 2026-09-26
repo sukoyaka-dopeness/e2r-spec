@@ -310,7 +310,7 @@ was created. The clone remains detached at the Production source commit.
 ## 34. Result document path
 
 This document is
-`docs/liaisonscape-initial-placement-seed-production-pr2-nonvisual-evidence-completion1-result.md`.
+`docs/liaisonscape/liaisonscape-initial-placement-seed-production-pr2-nonvisual-evidence-completion1-result.md`.
 
 ## 35. Roadmap changed
 

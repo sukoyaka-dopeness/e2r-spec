@@ -306,7 +306,7 @@ pre-existing untracked `experimental/` content was preserved.
 105. Evidence1 clone changed: NO.
 106. Evidence2 clone changed: NO.
 107. Retained materializer changed: NO.
-108. e2r-spec result document: `docs/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-result.md`.
+108. e2r-spec result document: `docs/liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-result.md`.
 109. Roadmap: CHANGED additively.
 110. Knowledge Candidate decision: NO NEW ENTRY.
 111. ai-knowledge: UNCHANGED.

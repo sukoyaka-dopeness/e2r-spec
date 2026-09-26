@@ -528,7 +528,7 @@ No push, tag, release, deploy, or publication occurred.
 95. Candidate selection: `NO`.
 96. Product integration: `NO`.
 97. PR-3: `NO`.
-98. Result document path: `docs/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-identity-phase-bridge-design-correction1.md`.
+98. Result document path: `docs/liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-identity-phase-bridge-design-correction1.md`.
 99. Roadmap: changed additively.
 100. Knowledge Candidate decision: `NO NEW ENTRY`.
 101. ai-knowledge: unchanged; pre-existing dirt preserved.

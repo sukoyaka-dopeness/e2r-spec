@@ -29,8 +29,8 @@ PROVEN. Historical root-exit/listener-loss evidence remains valid with its
 initiating host/browser cause unresolved. Separate diagnostic-path defects and
 the new receive-idle defect explain why aggregate labels alone were misleading.
 
-Primary records: [root-cause.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/root-cause.json), [helper-idle-receive-audit.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/helper-idle-receive-audit.json),
-[run-summary.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/run-summary.json), [qualification-summary.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/qualification-summary.json). These are
+Primary records: [root-cause.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/root-cause.json), [helper-idle-receive-audit.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/helper-idle-receive-audit.json),
+[run-summary.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/run-summary.json), [qualification-summary.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/qualification-summary.json). These are
 diagnostic observations, not Browser Evidence B.
 
 ## Starting authority and lineage
@@ -87,7 +87,7 @@ Windows worktree text uses CRLF; worktree-raw text hashes therefore differ from
 Git-raw LF hashes. The existing authority validator normalizes text as designed,
 and all expected Git blobs/raw hashes match. The EXE raw bytes match directly.
 This is not a semantic correction or falsely retained authority. Full identities
-and closure: [authority-self-check.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/authority-self-check.json) and [authority-after.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/authority-after.json).
+and closure: [authority-self-check.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/authority-self-check.json) and [authority-after.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/authority-after.json).
 
 ## Six historical episodes, preserved separately
 
@@ -115,9 +115,9 @@ stop-on-first-failure statement cannot establish the total actual launch count.
 Its empty exception/navigation arrays were hard-coded: NOT OBSERVED, not zero.
 No missing raw event has been reconstructed as a measurement.
 
-References: [historical-observation-matrix.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/historical-observation-matrix.json),
-[source-extracts.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/source-extracts.json), [prior-readiness-reconstruction.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/prior-readiness-reconstruction.json),
-[restart4-preservation.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/restart4-preservation.json), [lineage.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/lineage.json).
+References: [historical-observation-matrix.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/historical-observation-matrix.json),
+[source-extracts.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/source-extracts.json), [prior-readiness-reconstruction.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/prior-readiness-reconstruction.json),
+[restart4-preservation.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/restart4-preservation.json), [lineage.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/lineage.json).
 
 ## Complete historical code-path delta audit
 
@@ -290,7 +290,7 @@ is disclosed; A1 remains a failed invocation. The pre-browser request returned
 200 text/html in all six later runs, whereas every actual browser capture-input
 fetch returned 200 application/json. Vite's cached publicFiles set and asynchronous
 watcher explain the publication window (local dependency source/hash/line excerpts
-in [capture-input-audit.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/capture-input-audit.json)). No production input/readiness failure
+in [capture-input-audit.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/capture-input-audit.json)). No production input/readiness failure
 was demonstrated by that early observational request.
 
 ## Controls, readiness and qualification
@@ -447,7 +447,7 @@ Original Harness, fixtures, Baseline2, retained materializer (including its
 pre-existing untracked experimental files), and all six historical diagnostic
 clones are unchanged. No historical file edits occurred. Before/after inventories
 compare HEAD, status, and raw file-tree fingerprints for 13 repositories:
-[preservation-before.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/preservation-before.json) / [preservation-after.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/preservation-after.json).
+[preservation-before.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/preservation-before.json) / [preservation-after.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/preservation-after.json).
 
 The previously orphaned F diagnostic Vite and its exact owned shell/npm ancestry
 were stopped after identity verification; no user browser was stopped.
@@ -483,7 +483,7 @@ package.json and package-lock.json unchanged; no dependency added/upgraded.
 These passing static gates do not exercise and qualify a real idle receive;
 they do not override Q1. Correction regression tests: N/A (no correction).
 All raw gate logs, source extracts, run JSON/JSONL and summaries are indexed in
-[artifact-index.json](../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/artifact-index.json).
+[artifact-index.json](../../../e2r-liaison-scape-browser-capture-runtime-convergence-diagnostic1/diagnostics/browser-capture-runtime-convergence-diagnostic1/artifact-index.json).
 
 E2R-SPEC changes: this informational result and an additive roadmap entry only.
 E2R-SPEC validate: PASS. Diff/staged-diff check: PASS. E2R-SPEC substantive

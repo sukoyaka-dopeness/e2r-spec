@@ -117,7 +117,7 @@ implementation, and stopped before B1 execution.
 111. Exact next prerequisite: `E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART4-B1-EXECUTION1`.
 112. Next checkpoint: `NOT STARTED`.
 113. Restart4 artifact root: `artifacts/browser-capture-restart4-2026-09-05`.
-114. Result document: `docs/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-protocol-a.md`.
+114. Result document: `docs/liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-protocol-a.md`.
 115. Roadmap changed/unchanged: `CHANGED` additively with Browser Capture1 Restart4 Protocol A.
 116. Knowledge Candidate: `CANDIDATE ONLY / NO NEW ENTRY`.
 117. `ai-knowledge` changed/unchanged: `UNCHANGED`.

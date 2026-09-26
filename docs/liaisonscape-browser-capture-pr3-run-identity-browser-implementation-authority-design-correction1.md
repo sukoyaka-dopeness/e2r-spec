@@ -22,7 +22,7 @@ unchanged.
 ## Previous binding block and historical contracts
 
 The preceding Restart2 Protocol A checkpoint is recorded in
-`docs/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-protocol-a.md`.
+`docs/liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart2-protocol-a.md`.
 It established:
 
 - correction authority: `4e7489c14618d9732c1e66aa7ef4852e2b03ea2b`;

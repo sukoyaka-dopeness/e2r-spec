@@ -71,7 +71,7 @@ were implementation-validation rechecks, not PR-3 evidence. No historical
 generated artifacts were copied as current evidence.
 
 The frozen role manifest is
-[`docs/evidence/visual-fixture-role-manifest-v1.json`](evidence/visual-fixture-role-manifest-v1.json),
+[`docs/evidence/visual-fixture-role-manifest-v1.json`](../evidence/visual-fixture-role-manifest-v1.json),
 SHA-256 `B867E9FF7B84107E8B4DDCCC02458B7B9AA535AB6FACE4AD10A2942CC8C8D8F5`.
 The loader verifies the manifest, 8 structural fixture IDs, 16 EN/JA
 authorities, raw hashes, projection hashes, source/path metadata,

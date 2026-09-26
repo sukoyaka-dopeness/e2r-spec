@@ -106,13 +106,14 @@ Explicit Auto Layout / Pin evidence records into `docs/liaisonscape/`; see the
 This changes physical placement only: accepted integration, Draft/non-Stable
 Pin status, Human Check B `QUALIFIED`, unresolved failure attribution, and
 frozen/non-blocking quality follow-up remain distinct. No Initial Placement
-Seed or other residual cohort is included.
+Seed or other residual cohort was included in that Wave 3C move.
 
-The [Initial Placement Seed 133-document path-migration readiness audit](documentation-ia-seed-133-path-migration-readiness-audit1.md)
-revalidates the candidate/assignment, PR-2, and PR-3 manifests and records
-reference-graph exceptions. It authorizes no path changes; an actual migration
-requires a fresh Human approval, including the identified Knowledge reference
-repair and decision on currently absent diagnostic artifacts.
+The [Initial Placement Seed 133-document readiness audit](documentation-ia-seed-133-path-migration-readiness-audit1.md)
+was followed by one approved path-only wave moving all 47 candidate/assignment,
+11 PR-2, and 75 PR-3 records to `docs/liaisonscape/`; see the [migration
+result](documentation-ia-seed-133-path-migration1-result.md). Their evidence
+lanes remain distinct, and the 15 diagnostic artifact links remain unresolved
+in the checked workspace.
 
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,

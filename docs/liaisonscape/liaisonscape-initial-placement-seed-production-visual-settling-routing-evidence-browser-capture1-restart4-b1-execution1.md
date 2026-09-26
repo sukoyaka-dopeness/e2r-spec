@@ -67,7 +67,7 @@ started.
 60. Exact next prerequisite: no V3 execution is authorized; a separately bounded B1 runtime-infrastructure diagnosis/correction is required before any retry.
 61. Next checkpoint: `NOT STARTED`.
 62. Restart4 artifact root: `artifacts/browser-capture-restart4-2026-09-05`.
-63. Result document: `docs/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-b1-execution1.md`.
+63. Result document: `docs/liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-browser-capture1-restart4-b1-execution1.md`.
 64. Roadmap status: `CHANGED` additively with the incomplete B1 result.
 65. E2R-SPEC validation: `PASS` (`npm.cmd run validate`).
 66. E2R-SPEC commit: `942e024f02fd6df93a1b7c0fea70cbc5dc7491f2` (`docs: record incomplete Browser Capture Restart4 B1`), substantive documentation commit.

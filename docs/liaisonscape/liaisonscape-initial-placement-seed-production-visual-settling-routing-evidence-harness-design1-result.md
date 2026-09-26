@@ -65,7 +65,7 @@ The canonical authority is `C:\Users\extra\E2R\e2r-spec`. The accepted
 Production source authority is
 `fd563340625fd3d88dc25baedc93c4f8fe69e5e7`. The frozen fixture authority is
 the role manifest
-[`docs/evidence/visual-fixture-role-manifest-v1.json`](evidence/visual-fixture-role-manifest-v1.json),
+[`docs/evidence/visual-fixture-role-manifest-v1.json`](../evidence/visual-fixture-role-manifest-v1.json),
 with 8 structural fixture IDs, 16 EN/JA presentation entries, and manifest
 SHA-256
 `B867E9FF7B84107E8B4DDCCC02458B7B9AA535AB6FACE4AD10A2942CC8C8D8F5`.
@@ -572,7 +572,7 @@ evidence pending independent confirmation or an explicit workspace decision.
 ## 23. Final state
 
 The result document is
-[`docs/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-harness-design1-result.md`](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-harness-design1-result.md).
+[`docs/liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-harness-design1-result.md`](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-harness-design1-result.md).
 The Roadmap is changed additively; previous entries are not rewritten. No
 Production source, tests, public samples, fixture bytes, manifest, frozen
 materializer, PR-2 implementation, NarrativeLine, Hub, Core, Extensions,

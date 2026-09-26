@@ -51,7 +51,7 @@ new design only.
 
 The first committed occurrence of the topology field names is in commit
 3c3d1cf06aa1a64742a7265a7001603ac190ba67,
-docs/liaisonscape-initial-placement-seed-topology-aware-assignment-experiment1-result.md,
+docs/liaisonscape/liaisonscape-initial-placement-seed-topology-aware-assignment-experiment1-result.md,
 where degree, neighbor-degree, motifMembershipCount,
 overlapClusterMembershipCount, sharedMotifNeighborCount,
 motif-neighbor-degree, boundary context, and component are listed as
@@ -60,12 +60,12 @@ not a complete TA-2 semantic or materializer contract.
 
 The exact field definitions were subsequently frozen in the TA-1 topology
 signature at commit 0a8d543a8af4a5ee2ae9b8b69ced319f9b61fc2c,
-docs/liaisonscape-initial-placement-seed-ta1-quality-neutral-witness-design.md,
+docs/liaisonscape/liaisonscape-initial-placement-seed-ta1-quality-neutral-witness-design.md,
 and repeated in the TA-1 operational witness record at commit 9203eadd.
 
 The combined responsibility vector R(V)=(m(V),o(V),s(V)) first appears as a
 TA-2-specific formal vector in commit effd1319440da323679acd59e35c419f6c57998a,
-docs/liaisonscape-initial-placement-seed-ta2-policy-semantics-design.md.
+docs/liaisonscape/liaisonscape-initial-placement-seed-ta2-policy-semantics-design.md.
 It was newly assembled by Design1; it was not a pre-existing complete vector
 contract.
 

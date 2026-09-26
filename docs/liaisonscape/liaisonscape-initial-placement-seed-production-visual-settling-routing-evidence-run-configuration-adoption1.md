@@ -305,7 +305,7 @@ changed.
 74. Candidate selected: NO.
 75. Product integration: NO.
 76. PR-3: NO.
-77. Result document path: `docs/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-adoption1.md`.
+77. Result document path: `docs/liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-adoption1.md`.
 78. Roadmap: CHANGED additively.
 79. Knowledge Candidate decision: NO NEW ENTRY.
 80. ai-knowledge: UNCHANGED.

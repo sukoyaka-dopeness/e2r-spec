@@ -397,7 +397,7 @@ No push, tag, release, deploy, or publication occurred.
 60. Candidate selection: `NO`.
 61. Product integration: `NO`.
 62. PR-3: `NO`.
-63. Result document path: `docs/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-browser-lineage-readiness-reconciliation1.md`.
+63. Result document path: `docs/liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-browser-lineage-readiness-reconciliation1.md`.
 64. Roadmap: changed additively.
 65. Knowledge Candidate decision: `NO NEW ENTRY`.
 66. ai-knowledge: unchanged; pre-existing dirt preserved.

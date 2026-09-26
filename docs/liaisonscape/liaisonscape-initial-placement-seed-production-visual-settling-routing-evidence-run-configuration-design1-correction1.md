@@ -26,7 +26,7 @@ transform and does not authorize that next checkpoint.
 
 The corrected source is the original Design1 result:
 
-`docs/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-design1.md`
+`docs/liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-design1.md`
 
 Original Design1 commit:
 

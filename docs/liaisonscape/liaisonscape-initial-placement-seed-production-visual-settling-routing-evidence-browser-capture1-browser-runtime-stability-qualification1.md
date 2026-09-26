@@ -198,7 +198,7 @@ The qualification clone commit is `fd222947b1af7a6f7ae5b440cc132b0dd6a3c9b1`
 with subject `diagnostic: qualify browser runtime stability`; it is local and
 clean.
 
-The result was recorded additively in [docs/roadmap.md](roadmap.md). e2r-spec
+The result was recorded additively in [docs/roadmap.md](../roadmap.md). e2r-spec
 validation and diff checks passed before the local documentation commit.
 Product's pre-existing dirty sample files were preserved. The materializer's
 pre-existing `experimental/` directory and the dirty knowledge playbook were

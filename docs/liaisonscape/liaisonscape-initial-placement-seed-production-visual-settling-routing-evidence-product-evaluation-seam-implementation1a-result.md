@@ -226,7 +226,7 @@ already-created artifacts. Both commits are local and unpushed.
 e2r-spec result document and roadmap entry are to be committed after this
 record is written. The current result path is:
 
-docs/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1a-result.md
+docs/liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1a-result.md
 
 Knowledge Candidate assessment: no ai-knowledge entry is created. The
 Relation-order floating-point finding is currently repository-specific

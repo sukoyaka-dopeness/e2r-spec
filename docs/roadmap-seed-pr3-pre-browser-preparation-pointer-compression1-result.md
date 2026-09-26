@@ -33,12 +33,12 @@ The 37 edited headings fall into these coherent groups:
 
 Detailed checkpoint evidence remains in the dedicated authorities linked
 from each preserved Roadmap heading. Representative current authorities are
-the [fixture acquisition result](liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition1-result.md),
-[Product seam Implementation1G adoption](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1g-adoption1-result.md),
-[disposable harness implementation result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-harness-implementation1-result.md),
-[run-configuration adoption](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-adoption1.md),
-[Machine Execution1 result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-result.md),
-and [phase-bridge design correction](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-identity-phase-bridge-design-correction1.md).
+the [fixture acquisition result](liaisonscape/liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition1-result.md),
+[Product seam Implementation1G adoption](liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-product-evaluation-seam-implementation1g-adoption1-result.md),
+[disposable harness implementation result](liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-harness-implementation1-result.md),
+[run-configuration adoption](liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-adoption1.md),
+[Machine Execution1 result](liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-machine-execution1-result.md),
+and [phase-bridge design correction](liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-identity-phase-bridge-design-correction1.md).
 
 ## Current consequences retained in Roadmap
 

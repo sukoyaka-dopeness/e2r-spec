@@ -15,14 +15,14 @@ All nine heading identities and dates remain unchanged.
 
 The first eight checkpoint bodies are compressed to direct authority pointers:
 
-1. Readiness Design1 → `liaisonscape-initial-placement-seed-production-readiness-design1.md`
-2. Readiness Evidence Audit1 → `liaisonscape-initial-placement-seed-production-readiness-evidence-audit1-result.md`
-3. Candidate Materialization Design1 → `liaisonscape-initial-placement-seed-production-candidate-materialization-design1.md`
-4. Candidate Materialization Implementation1 → `liaisonscape-initial-placement-seed-production-candidate-materialization-implementation1-result.md`
-5. Candidate Materialization Validation1 → `liaisonscape-initial-placement-seed-production-candidate-materialization-validation1-result.md`
-6. Candidate Compatibility Audit1 → `liaisonscape-initial-placement-seed-production-candidate-compatibility-audit1-result.md`
-7. Candidate Compatibility Design1 → `liaisonscape-initial-placement-seed-production-candidate-compatibility-design1-result.md`
-8. Candidate Compatibility Validation1 → `liaisonscape-initial-placement-seed-production-candidate-compatibility-validation1-result.md`
+1. Readiness Design1 → `liaisonscape/liaisonscape-initial-placement-seed-production-readiness-design1.md`
+2. Readiness Evidence Audit1 → `liaisonscape/liaisonscape-initial-placement-seed-production-readiness-evidence-audit1-result.md`
+3. Candidate Materialization Design1 → `liaisonscape/liaisonscape-initial-placement-seed-production-candidate-materialization-design1.md`
+4. Candidate Materialization Implementation1 → `liaisonscape/liaisonscape-initial-placement-seed-production-candidate-materialization-implementation1-result.md`
+5. Candidate Materialization Validation1 → `liaisonscape/liaisonscape-initial-placement-seed-production-candidate-materialization-validation1-result.md`
+6. Candidate Compatibility Audit1 → `liaisonscape/liaisonscape-initial-placement-seed-production-candidate-compatibility-audit1-result.md`
+7. Candidate Compatibility Design1 → `liaisonscape/liaisonscape-initial-placement-seed-production-candidate-compatibility-design1-result.md`
+8. Candidate Compatibility Validation1 → `liaisonscape/liaisonscape-initial-placement-seed-production-candidate-compatibility-validation1-result.md`
 
 The ninth heading retains the minimum current disposition and links to its
 detailed completion result and the later PR-3 evidence design. The earlier
@@ -47,8 +47,8 @@ removed from the Roadmap.
   PR-3 design independently confirms PR-2 remains `COMPLETE-BOUNDED`, PR-3
   remains `NO`, and the ROLE GAP remains open.
 
-The authoritative details are [PR-2 nonvisual evidence completion](liaisonscape-initial-placement-seed-production-pr2-nonvisual-evidence-completion1-result.md)
-and [PR-3 visual/settling/routing evidence design](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-design1-result.md).
+The authoritative details are [PR-2 nonvisual evidence completion](liaisonscape/liaisonscape-initial-placement-seed-production-pr2-nonvisual-evidence-completion1-result.md)
+and [PR-3 visual/settling/routing evidence design](liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-design1-result.md).
 
 ## Boundaries and reference check
 

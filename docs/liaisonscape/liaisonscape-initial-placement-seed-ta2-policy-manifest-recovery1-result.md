@@ -174,7 +174,7 @@ reuse was performed.
 The first reachable committed occurrence of each exact variant label is in
 commit `3c3d1cf06aa1a64742a7265a7001603ac190ba67`,
 path
-`docs/liaisonscape-initial-placement-seed-topology-aware-assignment-experiment1-result.md`.
+`docs/liaisonscape/liaisonscape-initial-placement-seed-topology-aware-assignment-experiment1-result.md`.
 
 | Term | First exact wording | Meaning at first appearance |
 |---|---|---|

@@ -385,7 +385,7 @@ NO PRODUCTION SELECTION
 ~~~
 
 The future result path is
-docs/liaisonscape-initial-placement-seed-structural-assignment-objective-experiment2-result.md.
+docs/liaisonscape/liaisonscape-initial-placement-seed-structural-assignment-objective-experiment2-result.md.
 It is not created now.
 
 ## Future execution freeze table

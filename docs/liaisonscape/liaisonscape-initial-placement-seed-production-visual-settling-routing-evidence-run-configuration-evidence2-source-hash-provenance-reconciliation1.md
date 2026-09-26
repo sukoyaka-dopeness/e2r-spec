@@ -312,7 +312,7 @@ Next checkpoint: NOT STARTED. Adoption1 was not started automatically.
 69. screenshot: NO.
 70. human review: NO.
 71. PR-3: NO.
-72. result document path: `docs/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence2-source-hash-provenance-reconciliation1.md`.
+72. result document path: `docs/liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-run-configuration-evidence2-source-hash-provenance-reconciliation1.md`.
 73. roadmap changed/unchanged: CHANGED additively; historical Evidence2 entry preserved.
 74. Knowledge Candidate decision: plausible reusable candidate; NO NEW ENTRY.
 75. ai-knowledge changed/unchanged: UNCHANGED.

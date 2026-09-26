@@ -478,7 +478,7 @@ The clone-local artifacts are:
 - `artifact-index.json`.
 
 Artifact SHA-256 values are recorded in the clone artifact index and in
-`docs/liaisonscape-initial-placement-seed-production-candidate-materialization-implementation1-result.md`.
+`docs/liaisonscape/liaisonscape-initial-placement-seed-production-candidate-materialization-implementation1-result.md`.
 
 The e2r-spec result document and roadmap were committed as:
 

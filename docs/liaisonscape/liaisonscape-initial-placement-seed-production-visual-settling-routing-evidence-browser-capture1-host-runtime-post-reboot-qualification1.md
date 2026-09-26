@@ -183,7 +183,7 @@ Artifacts are under
 The qualification clone commit is created locally with subject
 `diagnostic: qualify browser runtime after reboot`; no push occurred.
 
-The result was recorded additively in [docs/roadmap.md](roadmap.md). Product,
+The result was recorded additively in [docs/roadmap.md](../roadmap.md). Product,
 Original Harness, Machine Evidence, Diagnostic1/2/3, Qualification1,
 capture7, and `ai-knowledge` remain unchanged. Existing Product sample
 modifications and the materializer's `experimental/` directory were

@@ -1735,9 +1735,9 @@ for the full evidence, distinctions, open questions, and non-goals.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-PR2-NONVISUAL-EVIDENCE-COMPLETION1 (2026-09-03)
 
-**Current bounded disposition: PR-2 nonvisual evidence is COMPLETE-BOUNDED** for the four required classes (hard validity, determinism/runtime, compatibility, and provenance), the five frozen research materializer identities, and `1 <= N <= 65`; the dedicated [PR-2 completion result](liaisonscape-initial-placement-seed-production-pr2-nonvisual-evidence-completion1-result.md) is the detailed evidence authority. The bounded run covered seven committed real fixtures and six deterministic controls; all 65 eligible cells passed HARD-1..7, while N=0 and N=66 failed closed.
+**Current bounded disposition: PR-2 nonvisual evidence is COMPLETE-BOUNDED** for the four required classes (hard validity, determinism/runtime, compatibility, and provenance), the five frozen research materializer identities, and `1 <= N <= 65`; the dedicated [PR-2 completion result](liaisonscape/liaisonscape-initial-placement-seed-production-pr2-nonvisual-evidence-completion1-result.md) is the detailed evidence authority. The bounded run covered seven committed real fixtures and six deterministic controls; all 65 eligible cells passed HARD-1..7, while N=0 and N=66 failed closed.
 
-This does not select a candidate or establish a Production provider, Product adoption, Production integration, or visual acceptance; no candidate is selected and `PR-C3` through `PR-C5` remain `NO`. Compatibility evidence and candidate selection remain separate. The realistic fixture ROLE GAP remains open for later stages. PR-3 visual/settling/routing and subsequent integration evidence are separate, unaccepted scopes; see the [PR-3 evidence design result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-design1-result.md) for their current contract and status.
+This does not select a candidate or establish a Production provider, Product adoption, Production integration, or visual acceptance; no candidate is selected and `PR-C3` through `PR-C5` remain `NO`. Compatibility evidence and candidate selection remain separate. The realistic fixture ROLE GAP remains open for later stages. PR-3 visual/settling/routing and subsequent integration evidence are separate, unaccepted scopes; see the [PR-3 evidence design result](liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-design1-result.md) for their current contract and status.
 
 ### Seed PR-3 pre-Browser preparation and evaluation lineage — historical (2026-09-03 to 2026-09-04)
 
@@ -1815,7 +1815,7 @@ public write.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-REVIEW-EXECUTION-AUTHORITY1 (2026-09-08)
 
-The [visual review execution authority result](liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-review-execution-authority1.md)
+The [visual review execution authority result](liaisonscape/liaisonscape-initial-placement-seed-production-visual-settling-routing-evidence-review-execution-authority1.md)
 establishes the additive `VSR-REVIEW-RESULT-v1` contract for a future Human
 Review of an already-generated Browser Evidence B lineage. The canonical
 schema is `schemas/evidence/visual-review-result-v1.schema.json`; derived

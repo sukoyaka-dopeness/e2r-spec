@@ -94,7 +94,7 @@ preview, residual shells, and ai-knowledge were preserved.
 ## Semantic encoding reconciliation gate
 
 The authoritative Design1 wording is in
-docs/liaisonscape-initial-placement-seed-ta2-policy-semantics-design.md,
+docs/liaisonscape/liaisonscape-initial-placement-seed-ta2-policy-semantics-design.md,
 section 6: o(V) is the count of derived motif-overlap clusters containing V.
 
 The accepted topology definition is in

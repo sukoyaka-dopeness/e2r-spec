@@ -200,7 +200,7 @@ The complete role authority set is:
 | realistic larger-size | `regional-care-coordination`, Commit A, EN/JA |
 
 The machine-readable immutable manifest is
-[`docs/evidence/visual-fixture-role-manifest-v1.json`](evidence/visual-fixture-role-manifest-v1.json).
+[`docs/evidence/visual-fixture-role-manifest-v1.json`](../evidence/visual-fixture-role-manifest-v1.json).
 It contains all selected existing and new EN/JA authorities, full commit and
 blob identifiers, raw and projection hashes, counts, topology, routing
 features, rationales, selection reasons, and limitations. `candidateIds` is an
@@ -258,7 +258,7 @@ and does not alter the protected knowledge playbook.
 ## 13. Checkpoint record and repository state
 
 The result document is
-[`docs/liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition1-result.md`](liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition1-result.md).
+[`docs/liaisonscape/liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition1-result.md`](liaisonscape-initial-placement-seed-production-visual-fixture-role-acquisition1-result.md).
 The Roadmap was changed additively; historical Design1 entries were not
 rewritten. Commit B contains only this result, the manifest, and the Roadmap.
 

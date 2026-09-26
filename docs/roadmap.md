@@ -482,20 +482,21 @@ exact-version support checkpoint is recorded in the
 The [Validator `0.7.0` publication result](./validator/validator-0.7.0-relative-time-0.2.0-publication-result1.md)
 records normally consumable read-only exact-version support for `0.2.0`, with
 `0.1.0` behavior preserved. The Candidate is not Stable and no Dataset
-migration or application acceptance is implied. The
+migration or application release is implied. The
 [first-consumer readiness preparation](./temporal/relative-time-0.2.0-first-consumer-readiness1.md)
 records the evidence for the Human-selected NarrativeLine first-consumer scope
 A: exact-version read-only recognition, diagnostics, and round-trip
 preservation. The normal-package prerequisite is now met. The
 first slice uses existing generic diagnostics without dedicated Relative Time
 EN/JA guidance. Timeline ordering or ordinal presentation, authoring, Derived
-reasoning, solver, and migration are outside this scope; no application
-implementation was accepted by that planning decision. NarrativeLine's bounded
+reasoning, solver, and migration are outside this scope. NarrativeLine's bounded
 scope A implementation result
 (`e2r-narrative-line/docs/relative-time-0.2.0-first-consumer-scope-a-result.md`)
-now records local exact-version read-only support through the published
-Validator `0.7.0` dependency and round-trip tests. It does not establish
-Relative Time semantic presentation, Stable maturity, or an application release.
+records exact-version read-only support through the published Validator
+`0.7.0` dependency and **PASS / ACCEPTED / CLOSED** Human-confirmed real-browser
+manual acceptance, including export/re-import preservation. It does not
+establish Relative Time semantic presentation, Stable maturity, or an
+application release.
 
 > Historical snapshot — superseded by the current `NL-H2-R1` entry near the
 > end of this roadmap. The following readiness text records the pre-acceptance

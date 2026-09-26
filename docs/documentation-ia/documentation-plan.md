@@ -140,6 +140,14 @@ destinations for the remaining responsibility cohorts. It performs no moves
 and does not implement the root-ingress gate; that gate remains deferred until
 Human approves a final placement baseline.
 
+The approved [minimal-root migration result](documentation-ia-minimal-root-wave1-path-migration1-result.md)
+records 62 of the 65 proposed moves. Three documents remain at root because
+execution-time scans found direct references in read-only application or
+Knowledge repositories. The root now contains eight Markdown files, so the
+conditional five-path validation gate was not implemented. No gate baseline
+may be approved until those references are resolved and the actual root is
+verified against the five Human-approved paths.
+
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,
 `docs/audits/`, `docs/acceptances/`, `docs/applications/`, or `docs/sessions/`

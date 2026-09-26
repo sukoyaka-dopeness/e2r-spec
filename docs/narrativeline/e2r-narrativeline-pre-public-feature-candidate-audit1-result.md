@@ -69,7 +69,7 @@ actual accepted capabilities, locale behavior, handoff paths, maturity status,
 and ownership accurately.
 
 Current authority is
-`docs/e2r-initial-public-release-cross-app-follow-ups-reconciliation1-result.md`
+`docs/release-governance/e2r-initial-public-release-cross-app-follow-ups-reconciliation1-result.md`
 and the remaining-gates reconciliation. The bounded audit covers the
 NarrativeLine Berlin Wall sample and guides, the LiaisonScape Lighthouse sample
 and guides, E2R-SPEC canonical examples, and Hub registry/cards/links. It must

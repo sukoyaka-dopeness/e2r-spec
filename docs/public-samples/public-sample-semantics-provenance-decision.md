@@ -39,7 +39,7 @@ licensing/provenance application は別の release gate として残る。
 |---|---|---|---|---|---|---|---|---|
 | Berlin Wall | EN | FACTUAL PROJECT-AUTHORED DATASET | NarrativeLine bundled authored JSON/history | Berlin Wall history | none dedicated | CC0 candidate only after review | REDIST-B | source/redistribution record |
 | Berlin Wall | JA | FACTUAL PROJECT-AUTHORED DATASET | project-local Japanese JSON | same historical basis; translation authored locally | none dedicated | CC0 candidate only after review | REDIST-B | translation/provenance record |
-| Apollo 11 | EN | FACTUAL PROJECT-AUTHORED DATASET | e2r-spec canonical example/history | Apollo mission facts and UTC chronology | `docs/apollo-11-canonical-sample.md` | CC0 candidate only after source review | REDIST-B | formal source/license record |
+| Apollo 11 | EN | FACTUAL PROJECT-AUTHORED DATASET | e2r-spec canonical example/history | Apollo mission facts and UTC chronology | `docs/public-samples/apollo-11-canonical-sample.md` | CC0 candidate only after source review | REDIST-B | formal source/license record |
 | Apollo 11 | JA | FACTUAL PROJECT-AUTHORED DATASET | project-local Japanese localization | same Apollo facts/chronology | Apollo canonical sample doc | CC0 candidate only after translation review | REDIST-B | JA authoring/redistribution record |
 | Lighthouse | EN | PROJECT-CREATED FICTIONAL | LiaisonScape public demo and Git history | none; fictional restoration scenario | LiaisonScape README | CC0 candidate after S3 formalization | REDIST-B | explicit sample authority/license |
 | Lighthouse | JA | PROJECT-CREATED FICTIONAL | project-local Japanese demo | none; fictional scenario | LiaisonScape README | CC0 candidate after S3 formalization | REDIST-B | JA authoring/authority record |

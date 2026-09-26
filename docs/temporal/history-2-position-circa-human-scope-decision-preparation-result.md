@@ -7,7 +7,7 @@ Status: **SUPERSEDED BY BOUNDED SCOPE CLOSURE**
 The recommendation recorded here was subsequently approved, implemented, and
 accepted for the bounded H2-POSITION-CIRCA surface. The final authority for
 current status is the [Dataset-wide H1 to H2 upgrade scope closure
-result](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md), which
+result](../history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md), which
 records `H2-POSITION-CIRCA: ACCEPTED / CLOSED` while retaining History 2.0.0
 as a non-Stable Candidate. The proposal and decision analysis below remain
 historical evidence and are not rewritten wholesale.
@@ -23,7 +23,7 @@ This is a documentation-only decision-preparation checkpoint. It does not
 authorize a History 2 writer, Timeline behavior, schema change, Validator
 change, sample change, or NarrativeLine runtime work.
 
-The preceding [History 2 User-Facing Authoring Scope result](history-2-user-facing-authoring-scope-result.md)
+The preceding [History 2 User-Facing Authoring Scope result](./history-2-user-facing-authoring-scope-result.md)
 proposed **H2-POSITION-CIRCA** as the smallest meaningful public History 2
 slice:
 

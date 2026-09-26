@@ -26,10 +26,10 @@ the current local decision.
 The local authority is the current e2r-spec canonical EN/JA sample and these
 decision/result records:
 
-- `docs/lighthouse-semantic-enrichment-decision.md`
-- `docs/lighthouse-presentation-and-legibility-revision-decision.md`
-- `docs/lighthouse-presentation-semantic-revision-implementation-result.md`
-- `docs/liaisonscape-validator-release-residual-audit.md`
+- `docs/public-samples/lighthouse-semantic-enrichment-decision.md`
+- `docs/public-samples/lighthouse-presentation-and-legibility-revision-decision.md`
+- `docs/public-samples/lighthouse-presentation-semantic-revision-implementation-result.md`
+- `docs/release-governance/liaisonscape-validator-release-residual-audit.md`
 - the public-sample ownership and provenance decision/result documents
 
 The LiaisonScape mirror and `tests/lighthouse-sample.test.ts` were inspected
@@ -236,8 +236,8 @@ user-intent gap. Formal Acceptance is not resumed by this decision checkpoint.
 ## Superseded clauses
 
 The later implementation, once accepted, will supersede only the affected
-sample-local clauses in `docs/lighthouse-presentation-and-legibility-revision-decision.md`
-and `docs/lighthouse-presentation-semantic-revision-implementation-result.md`
+sample-local clauses in `docs/public-samples/lighthouse-presentation-and-legibility-revision-decision.md`
+and `docs/public-samples/lighthouse-presentation-semantic-revision-implementation-result.md`
 that state:
 
 - dashed is unused or there is no dashed showcase;

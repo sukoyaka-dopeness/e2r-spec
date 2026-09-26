@@ -267,7 +267,7 @@ This design is grounded in:
 - the prior Option 2/3 comparison in
   `history-2-stable-registration-option2-option3-decision-preparation-result.md`.
 
-Applied Knowledge: [`research-result-executable-provenance.md`](../../ai-knowledge/decisions/research-result-executable-provenance.md),
+Applied Knowledge: [`research-result-executable-provenance.md`](../../../ai-knowledge/decisions/research-result-executable-provenance.md),
 Accepted, workspace scope. It was applied by keeping executable acceptance
 evidence separate from the normative registry and profile authority. No
 Knowledge entry was changed.

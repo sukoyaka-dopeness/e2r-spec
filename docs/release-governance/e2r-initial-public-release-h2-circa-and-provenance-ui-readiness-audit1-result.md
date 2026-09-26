@@ -61,8 +61,8 @@ inferred from the other sample decisions.
 
 | Surface | Current evidence | Result |
 | --- | --- | --- |
-| Specification | [`extensions/history-extension-2.0-draft.md`](../extensions/history-extension-2.0-draft.md) defines exact History `2.0.0`, declaration-gated Features, position-level `circa`, and explicit non-goals | Bounded semantics are sufficiently explicit for this audit; the version remains Draft/Candidate and non-Stable |
-| Schema and Validator | [`schemas/extensions/history-2.0-draft.schema.json`](../schemas/extensions/history-2.0-draft.schema.json) and [`scripts/validate-history-2.0-draft-schema.mjs`](../scripts/validate-history-2.0-draft-schema.mjs) cover exact declarations, Feature matching, valid/invalid fixtures, upgrade/refusal boundaries, and unknown-field handling | No bounded schema/Validator mismatch was found; support is candidate-gated, not Stable registration |
+| Specification | [`extensions/history-extension-2.0-draft.md`](../../extensions/history-extension-2.0-draft.md) defines exact History `2.0.0`, declaration-gated Features, position-level `circa`, and explicit non-goals | Bounded semantics are sufficiently explicit for this audit; the version remains Draft/Candidate and non-Stable |
+| Schema and Validator | [`schemas/extensions/history-2.0-draft.schema.json`](../../schemas/extensions/history-2.0-draft.schema.json) and [`scripts/validate-history-2.0-draft-schema.mjs`](../../scripts/validate-history-2.0-draft-schema.mjs) cover exact declarations, Feature matching, valid/invalid fixtures, upgrade/refusal boundaries, and unknown-field handling | No bounded schema/Validator mismatch was found; support is candidate-gated, not Stable registration |
 | NarrativeLine writer/read/edit/export | [`h2-position-circa-bounded-authoring-implementation-result.md`](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md) and [`history-2-dataset-wide-upgrade-implementation-result.md`](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/history-2-dataset-wide-upgrade-implementation-result.md) record accepted bounded behavior, atomic upgrade, exact editing, preservation, export/reload/re-import, and EN/JA acceptance | Bounded application contract is accepted/closed; no new runtime blocker was identified in this documentation audit |
 | Migration contract | Explicit upgrade preserves Civil Time, time zone/offset/granularity, assertion identity, temporal order, and unknown data where lossless; unsafe unknown/unsupported/mixed input is refused | Stable-safe behavior is bounded by refusal rather than lossy migration |
 | Validator/package maturity | [`e2r-validator/docs/mvp-status.md`](https://github.com/sukoyaka-dopeness/e2r-validator/blob/main/docs/mvp-status.md) states that History `2.0.0` is exact-version, declaration-gated Candidate support; prepared `0.5.0` is not the published package, while `0.4.0` is latest published | Release/package maturity remains open |
@@ -108,11 +108,11 @@ details. The three applications therefore do not yet provide one consistent
 sample-provenance access path.
 
 The strongest existing authority is the centralized e2r-spec provenance record:
-[`docs/public-sample-provenance.md`](public-sample-provenance.md), supported by
+[`docs/public-sample-provenance.md`](../public-sample-provenance.md), supported by
 the repository policy in
-[`research/standards-licensing/decisions/e2r-standards-license-decision.md`](../research/standards-licensing/decisions/e2r-standards-license-decision.md)
+[`research/standards-licensing/decisions/e2r-standards-license-decision.md`](../../research/standards-licensing/decisions/e2r-standards-license-decision.md)
 and the separate Metadata license design
-[`research/metadata/decisions/dataset-license-metadata-design.md`](../research/metadata/decisions/dataset-license-metadata-design.md).
+[`research/metadata/decisions/dataset-license-metadata-design.md`](../../research/metadata/decisions/dataset-license-metadata-design.md).
 
 ### Recommended architecture
 

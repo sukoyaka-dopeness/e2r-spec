@@ -7,7 +7,7 @@ Status: **HUMAN-SELECTED BRANCH B — PROPOSAL PREPARATION AUTHORIZED / NO NORMA
 
 Choose only the next bounded activity after the completed exploratory
 Relative Time and History 2 Research and the committed
-[Temporal Research Human Decision Preparation](temporal-research-human-decision-preparation1.md).
+[Temporal Research Human Decision Preparation](./temporal-research-human-decision-preparation1.md).
 This gate does not repeat the full decision inventory and does not choose any
 semantic option within a branch.
 
@@ -86,7 +86,7 @@ required before adoption or implementation.
 
 ## Evidence and validation
 
-- `docs/temporal-research-human-decision-preparation1.md` — current decision
+- `docs/temporal/temporal-research-human-decision-preparation1.md` — current decision
   options, dependencies, deferrability, and boundaries.
 - `docs/roadmap.md` and `sessions/E2R-Session-0094.md` — committed current
   status and the earlier recommended sequence; the sequence does not choose

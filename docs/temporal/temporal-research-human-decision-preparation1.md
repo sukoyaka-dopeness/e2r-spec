@@ -8,9 +8,9 @@ Status: **DECISION PREPARATION / NON-NORMATIVE — NO DECISIONS ADOPTED**
 This document organizes the unresolved Human decision points from two completed
 exploratory Research checkpoints:
 
-- [Relative Time minimum temporal-precedence Research 1](../research/exploratory/e2r-relative-time-minimum-temporal-precedence-research1.md),
+- [Relative Time minimum temporal-precedence Research 1](../../research/exploratory/e2r-relative-time-minimum-temporal-precedence-research1.md),
   commit `a88dd2c5f7d3f93b42e7e89c3cbf0fc8cb2fc784`;
-- [History 2 deferred-shapes authoring-scope Research 1](../research/exploratory/e2r-history2-deferred-shapes-authoring-scope-research1.md),
+- [History 2 deferred-shapes authoring-scope Research 1](../../research/exploratory/e2r-history2-deferred-shapes-authoring-scope-research1.md),
   commit `855a6090313aed7d77f14f0917be0e6eb0bdf4e4`.
 
 Both results are **EXPLORATORY / NON-NORMATIVE**. Their checkpoint completion

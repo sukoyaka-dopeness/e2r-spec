@@ -8,7 +8,7 @@ Status: **HUMAN-SELECTED ATOMIC SEMANTIC DIRECTIONS — NON-NORMATIVE / NOT ADOP
 
 This record captures two Human decisions that resolve wording questions
 prepared in [Relative Time Atomic Wording Ambiguities Decision Preparation
-1](relative-time-atomic-wording-ambiguities-decision-preparation1.md). It is
+1](./relative-time-atomic-wording-ambiguities-decision-preparation1.md). It is
 limited to atomic Recorded assertion meaning for `same-instant` and the
 current contract's `within` / `contains` shape applicability.
 

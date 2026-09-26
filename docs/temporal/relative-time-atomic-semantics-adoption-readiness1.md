@@ -7,13 +7,13 @@ Status: **READINESS AUDIT / HUMAN DISPOSITION PREPARATION — NON-NORMATIVE; NO 
 ## Purpose and authority
 
 This bounded audit reviews whether the atomic Recorded assertion wording in
-[Atomic Recorded Assertion Semantics Proposal 1](relative-time-atomic-recorded-assertion-semantics-proposal1.md)
+[Atomic Recorded Assertion Semantics Proposal 1](./relative-time-atomic-recorded-assertion-semantics-proposal1.md)
 is ready for a Human normative-adoption disposition, against the Human-selected
 scope and decisions recorded in:
 
-- [Atomic Recorded Assertion Contract Scope Decision 1](relative-time-atomic-recorded-assertion-contract-scope-decision1.md);
-- [Atomic Wording Decisions 1](relative-time-atomic-wording-decisions1.md); and
-- [Extensible Temporal Assertion Direction 1](relative-time-extensible-temporal-assertion-direction1.md).
+- [Atomic Recorded Assertion Contract Scope Decision 1](./relative-time-atomic-recorded-assertion-contract-scope-decision1.md);
+- [Atomic Wording Decisions 1](./relative-time-atomic-wording-decisions1.md); and
+- [Extensible Temporal Assertion Direction 1](./relative-time-extensible-temporal-assertion-direction1.md).
 
 The reviewed proposal and decisions are in commit
 `8233268d4ac24ecccb141fc2dc4d9da97fef27c8` (`docs: propose atomic Relative
@@ -55,10 +55,10 @@ silently expanded by an adoption disposition here.
 | Recorded / Derived | **Human-selected separation; Derived detail deferred.** | Proposal defines only the direct Recorded claim and does not authorize write-back. Transitivity and other Derived laws are not adoption prerequisites for the atomic claim. |
 | Quantitative families | **Human-selected responsibility boundary:** calendar-granule and elapsed-offset are distinct from qualitative/topological claims. | Proposal preserves that separation and makes no conversion or entailment rule. No blocker identified. |
 
-These boundaries are supported by the [Core specification](../spec/core.md),
-[Stable History Extension](../extensions/history-extension.md), the
-[Human-selected extensible-vocabulary direction](relative-time-extensible-temporal-assertion-direction1.md),
-and the [scope decision](relative-time-atomic-recorded-assertion-contract-scope-decision1.md).
+These boundaries are supported by the [Core specification](../../spec/core.md),
+[Stable History Extension](../../extensions/history-extension.md), the
+[Human-selected extensible-vocabulary direction](./relative-time-extensible-temporal-assertion-direction1.md),
+and the [scope decision](./relative-time-atomic-recorded-assertion-contract-scope-decision1.md).
 
 ## Per-vocabulary atomic readiness
 
@@ -121,8 +121,8 @@ proposal. In particular:
 
 ## Draft, schema, and prior research differences
 
-The [Relative Time Draft 0.1.0](../extensions/relative-time-extension-draft.md)
-and [draft schema](../schemas/extensions/relative-time-draft.schema.json)
+The [Relative Time Draft 0.1.0](../../extensions/relative-time-extension-draft.md)
+and [draft schema](../../schemas/extensions/relative-time-draft.schema.json)
 currently encode only `before`, `after`, `same-instant`, `within`,
 `calendar-granule-relation`, and `elapsed-offset`. The proposal additionally
 states `contains`, `overlap`, `touching`, and `same-temporal-extent`, and
@@ -164,18 +164,18 @@ Human-approved checkpoints.
 
 ## Sources inspected
 
-- [Core](../spec/core.md)
-- [Stable History Extension](../extensions/history-extension.md)
-- [Relative Time Draft 0.1.0](../extensions/relative-time-extension-draft.md)
-- [Relative Time Draft 0.1.0 schema](../schemas/extensions/relative-time-draft.schema.json)
-- [Atomic wording proposal](relative-time-atomic-recorded-assertion-semantics-proposal1.md)
-- [Human-selected atomic wording decisions](relative-time-atomic-wording-decisions1.md)
-- [Atomic contract scope decision](relative-time-atomic-recorded-assertion-contract-scope-decision1.md)
-- [Extensible-vocabulary direction](relative-time-extensible-temporal-assertion-direction1.md)
-- [Semantic-contract Research 1](relative-time-extensible-semantic-contract-research1.md)
-- [History 2 / Relative Time Cross-Audit](../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md)
-- [Roadmap current Relative Time direction](roadmap.md#current-relative-time-extensible-vocabulary-direction-2026-09-24)
-- [Session 0094 Relative Time synchronization](../sessions/E2R-Session-0094.md)
+- [Core](../../spec/core.md)
+- [Stable History Extension](../../extensions/history-extension.md)
+- [Relative Time Draft 0.1.0](../../extensions/relative-time-extension-draft.md)
+- [Relative Time Draft 0.1.0 schema](../../schemas/extensions/relative-time-draft.schema.json)
+- [Atomic wording proposal](./relative-time-atomic-recorded-assertion-semantics-proposal1.md)
+- [Human-selected atomic wording decisions](./relative-time-atomic-wording-decisions1.md)
+- [Atomic contract scope decision](./relative-time-atomic-recorded-assertion-contract-scope-decision1.md)
+- [Extensible-vocabulary direction](./relative-time-extensible-temporal-assertion-direction1.md)
+- [Semantic-contract Research 1](./relative-time-extensible-semantic-contract-research1.md)
+- [History 2 / Relative Time Cross-Audit](../../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md)
+- [Roadmap current Relative Time direction](../roadmap.md#current-relative-time-extensible-vocabulary-direction-2026-09-24)
+- [Session 0094 Relative Time synchronization](../../sessions/E2R-Session-0094.md)
 
 ## Disposition
 

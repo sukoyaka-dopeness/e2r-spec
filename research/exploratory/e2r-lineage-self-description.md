@@ -887,7 +887,7 @@ Status: **MACHINE-READABLE DOGFOOD READY — HUB PUBLICATION DEFERRED**.
 
 Artifact: [`examples/e2r-self-description.json`](../../examples/e2r-self-description.json)
 
-Documentation: [`docs/e2r-self-description.md`](../../docs/e2r-self-description.md)
+Documentation: [`docs/public-samples/e2r-self-description.md`](../../docs/public-samples/e2r-self-description.md)
 
 The artifact is a bounded current-ecosystem Dataset with Core version `1.0`,
 Metadata `datasetId` `e2r-self-description-0.1.0`, 12 Entities, 4 Events, and

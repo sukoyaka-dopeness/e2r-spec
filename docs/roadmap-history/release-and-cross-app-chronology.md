@@ -844,7 +844,7 @@ The current pre-public-release authority now supersedes the sequencing details
 above while retaining them as historical records. LiaisonScape 0.2.0 remains
 blocked on repository-owned `LICENSE`/`LICENSE.md` remediation; this checkpoint
 does not add that file. The bounded audits and active sequence are recorded in
-[Pre-Public-Release Placement, Display-Order, and License Sequencing](../pre-public-release-placement-order-license-sequencing.md).
+[Pre-Public-Release Placement, Display-Order, and License Sequencing](../release-governance/pre-public-release-placement-order-license-sequencing.md).
 
 The active order is license remediation, Initial Node Placement Objective Audit,
 NarrativeLine Display-Order Reordering Audit, result-driven samples and release
@@ -897,7 +897,7 @@ adjusted only for this file's location.
 > Historical planning checkpoint; current H2-POSITION-CIRCA status is governed
 > by the bounded authoring closure entry below.
 
-The [History 2 User-Facing Authoring Scope result](../history-2-user-facing-authoring-scope-result.md)
+The [History 2 User-Facing Authoring Scope result](../temporal/history-2-user-facing-authoring-scope-result.md)
 records a documentation-only design checkpoint after `NL-H2-R1` acceptance.
 Current Candidate recognition and read-only preservation remain **ACCEPTED /
 CLOSED**; this checkpoint does not reopen them or authorize runtime work.
@@ -916,7 +916,7 @@ checkpoint may begin.
 > Historical checkpoint; the retained recommendation is superseded for current
 > status by `E2R-H2-POSITION-CIRCA-BOUNDED-AUTHORING-CLOSURE` below.
 
-The [H2-POSITION-CIRCA decision preparation](../history-2-position-circa-human-scope-decision-preparation-result.md)
+The [H2-POSITION-CIRCA decision preparation](../temporal/history-2-position-circa-human-scope-decision-preparation-result.md)
 is complete. It recommends acceptance of one History 2 `position` assertion
 with position-level `approximation: "circa"`, subject to explicit human
 approval of the non-fabricating Timeline presentation projection, H1-to-H2

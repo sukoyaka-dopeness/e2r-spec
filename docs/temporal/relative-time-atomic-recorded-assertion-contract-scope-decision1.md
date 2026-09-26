@@ -18,8 +18,8 @@ version, Validator, solver, runtime, or application changes. A later bounded
 semantic wording proposal may be prepared for Human review within this scope;
 that proposal would still require a separate Human adoption disposition.
 
-This decision follows the committed [Human-selected extensible vocabulary direction](relative-time-extensible-temporal-assertion-direction1.md)
-and [Semantic Contract Research 1](relative-time-extensible-semantic-contract-research1.md).
+This decision follows the committed [Human-selected extensible vocabulary direction](./relative-time-extensible-temporal-assertion-direction1.md)
+and [Semantic Contract Research 1](./relative-time-extensible-semantic-contract-research1.md).
 It scopes their next work; it does not replace their selected directions or
 resolve their open semantic questions.
 
@@ -115,20 +115,20 @@ separate workstreams.
 
 ## Relationship to existing evidence
 
-- The [Relative Time Draft 0.1.0](../extensions/relative-time-extension-draft.md)
+- The [Relative Time Draft 0.1.0](../../extensions/relative-time-extension-draft.md)
   is a non-Stable candidate with `relative-position`, `containment`,
   `calendar-granule-relation`, and `elapsed-offset` families. It does not yet
   define all vocabulary in this selected scope.
-- The [Human-selected extensible vocabulary direction](relative-time-extensible-temporal-assertion-direction1.md)
+- The [Human-selected extensible vocabulary direction](./relative-time-extensible-temporal-assertion-direction1.md)
   selects the broader vocabulary direction and cross-cutting boundaries, but
   explicitly leaves detailed portable semantics, applicability, and
   evaluation unadopted.
-- [Semantic Contract Research 1](relative-time-extensible-semantic-contract-research1.md)
+- [Semantic Contract Research 1](./relative-time-extensible-semantic-contract-research1.md)
   maps the remaining questions and evidence tensions. This decision narrows
   the first contract to atomic Recorded assertion meaning; it does not resolve
   the Research's separately identified evaluation, Derived, conflict, or
   representation questions.
-- The existing [bounded `before` / `after` wording proposal](relative-time-bounded-contract-proposal1.md)
+- The existing [bounded `before` / `after` wording proposal](./relative-time-bounded-contract-proposal1.md)
   remains non-normative and not adopted. The broader first-contract scope
   means its adoption is not the first contract checkpoint; its selected
   qualitative direction remains in force and may be represented in the later

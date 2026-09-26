@@ -7,10 +7,10 @@ Status: **HUMAN-SELECTED SEMANTIC DIRECTION — NON-NORMATIVE / NOT ADOPTED**
 ## Purpose and authority boundary
 
 This document records the Human's answer to RT-BR-1 in the [Relative Time
-`before` / `after` Adoption Readiness 1](relative-time-before-after-adoption-readiness1.md):
+`before` / `after` Adoption Readiness 1](./relative-time-before-after-adoption-readiness1.md):
 **Choice 1 — Recognize the bounded qualitative claim**. It records a semantic
 direction for preparing a subsequent normative wording review. It does not
-revise or adopt the separate [bounded contract proposal](relative-time-bounded-contract-proposal1.md),
+revise or adopt the separate [bounded contract proposal](./relative-time-bounded-contract-proposal1.md),
 promote Relative Time to Stable, or authorize implementation.
 
 The endpoint orientation already described by the proposal remains unchanged:

@@ -16,11 +16,11 @@ process evidence only.
 
 Related records:
 
-- [`history-extension-2.0-draft.md`](../extensions/history-extension-2.0-draft.md)
-- [`extension-naming.md`](../spec/extension-naming.md)
-- [`specification-extension.md`](../extensions/specification-extension.md)
-- [`history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md`](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md)
-- [`roadmap.md`](roadmap.md)
+- [`history-extension-2.0-draft.md`](../../extensions/history-extension-2.0-draft.md)
+- [`extension-naming.md`](../../spec/extension-naming.md)
+- [`specification-extension.md`](../../extensions/specification-extension.md)
+- [`history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md`](../history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md)
+- [`roadmap.md`](../roadmap.md)
 - Validator [specification interoperability profile](https://github.com/sukoyaka-dopeness/e2r-validator/blob/main/docs/specification-interoperability.md)
 
 ## Decision summary
@@ -289,6 +289,6 @@ authorized or performed.
 ## Applied Knowledge
 
 The Accepted workspace-scoped Knowledge entry
-[`research-result-executable-provenance.md`](../../ai-knowledge/decisions/research-result-executable-provenance.md)
+[`research-result-executable-provenance.md`](../../../ai-knowledge/decisions/research-result-executable-provenance.md)
 was applied to keep executable/application acceptance evidence separate from
 normative Stable registration. No Knowledge entry was created or modified.

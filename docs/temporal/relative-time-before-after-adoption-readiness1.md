@@ -7,7 +7,7 @@ Status: **HUMAN DECISION PREPARATION — NON-NORMATIVE / NO DECISIONS ADOPTED**
 
 This bounded decision aid identifies the remaining Human semantic decision
 explicitly left open by the committed [Relative Time bounded contract
-proposal](relative-time-bounded-contract-proposal1.md). It does not revise or
+proposal](./relative-time-bounded-contract-proposal1.md). It does not revise or
 adopt that proposal and does not determine whether E2R should promote Relative
 Time to Stable.
 
@@ -23,7 +23,7 @@ claim itself unspecified.
 
 - The Human-selected Branch B authorizes preparation of proposed wording for
   direct pairwise `before` / `after`, not its adoption. See the [Decision
-  Gate](temporal-next-phase-human-decision-gate1.md).
+  Gate](./temporal-next-phase-human-decision-gate1.md).
 - The proposal's endpoint orientation follows Relative Time Draft 0.1.0:
   `sourceId` is the selected reference/base Object; `targetId` is described
   relative to it; `before` makes the target earlier than the source, and

@@ -29,7 +29,7 @@ tree; its public GitHub path was not available during this read-only check.
 ## Local accepted authority
 
 The applicable local decisions are `OWNERSHIP-B` / `MIGRATE-LIGHTHOUSE-FIRST`
-from `docs/public-sample-canonical-ownership-decision.md` and `MIRROR-1` for
+from `docs/public-samples/public-sample-canonical-ownership-decision.md` and `MIRROR-1` for
 the future LiaisonScape compatibility copies. The earlier semantics decision
 kept Lighthouse topology unchanged and selected reverse/dashed Presentation
 showcases. The explicit current user requirements in this checkpoint supersede

@@ -14,12 +14,12 @@ not a normative Extension specification or implementation plan. It does not
 adopt schema shapes, Feature names, version numbers, derivation rules,
 diagnostic severity, UI behavior, or solver behavior.
 
-The direction is informed by the current [Relative Time Draft 0.1.0](../extensions/relative-time-extension-draft.md),
-the [Relative Time minimum temporal-precedence Research 1](../research/exploratory/e2r-relative-time-minimum-temporal-precedence-research1.md),
-the [History 2.x / Relative Time Cross-Audit 1](../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md),
-the [Human-selected `before` / `after` semantic direction](relative-time-before-after-semantic-direction-decision1.md),
-the [bounded `before` / `after` wording proposal](relative-time-bounded-contract-proposal1.md),
-and the [roadmap's future interval-semantics direction](roadmap.md#human-selected-future-interval-semantics-and-timeline-direction-2026-09-23).
+The direction is informed by the current [Relative Time Draft 0.1.0](../../extensions/relative-time-extension-draft.md),
+the [Relative Time minimum temporal-precedence Research 1](../../research/exploratory/e2r-relative-time-minimum-temporal-precedence-research1.md),
+the [History 2.x / Relative Time Cross-Audit 1](../../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md),
+the [Human-selected `before` / `after` semantic direction](./relative-time-before-after-semantic-direction-decision1.md),
+the [bounded `before` / `after` wording proposal](./relative-time-bounded-contract-proposal1.md),
+and the [roadmap's future interval-semantics direction](../roadmap.md#human-selected-future-interval-semantics-and-timeline-direction-2026-09-23).
 These sources have different authority levels; this record does not promote a
 draft or exploratory candidate to normative or Stable authority.
 

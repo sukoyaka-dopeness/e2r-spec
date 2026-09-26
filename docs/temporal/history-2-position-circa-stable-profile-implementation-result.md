@@ -32,9 +32,9 @@ solving remain outside the Stable profile.
 ## Registry authority
 
 The normative authority is
-[`spec/extension-profile-maturity.md`](../spec/extension-profile-maturity.md)
+[`spec/extension-profile-maturity.md`](../../spec/extension-profile-maturity.md)
 and its machine-readable
-[`spec/extension-profile-maturity-registry.json`](../spec/extension-profile-maturity-registry.json).
+[`spec/extension-profile-maturity-registry.json`](../../spec/extension-profile-maturity-registry.json).
 The registry entry is immutable by profile identity. A future contract change
 requires a new profile identity or a separately approved revision contract.
 No separate revision field was introduced in this checkpoint.

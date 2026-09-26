@@ -9,12 +9,12 @@ Status: **PROPOSAL FOR HUMAN REVIEW — NON-NORMATIVE / NOT ADOPTED**
 This document proposes bounded wording for the atomic meaning of one
 explicitly user-recorded Relative Time assertion. It follows the
 Human-selected scope in [Relative Time Atomic Recorded Assertion Contract
-Scope Decision 1](relative-time-atomic-recorded-assertion-contract-scope-decision1.md)
-and the previously selected [extensible vocabulary direction](relative-time-extensible-temporal-assertion-direction1.md).
+Scope Decision 1](./relative-time-atomic-recorded-assertion-contract-scope-decision1.md)
+and the previously selected [extensible vocabulary direction](./relative-time-extensible-temporal-assertion-direction1.md).
 
 The proposed statements are candidate normative wording for Human review;
 they are not adopted requirements. This document neither changes the
-non-Stable [Relative Time Draft 0.1.0](../extensions/relative-time-extension-draft.md)
+non-Stable [Relative Time Draft 0.1.0](../../extensions/relative-time-extension-draft.md)
 nor selects schema shapes, Features, versions, validation behavior, or
 implementation. A Human disposition of this proposal is a separate step.
 
@@ -56,12 +56,12 @@ does not decide them anew:
   quantitative assertion families, not synonyms for the qualitative or
   interval-topology vocabulary below.
 
-The basis is recorded in [the Human-selected semantic direction](relative-time-before-after-semantic-direction-decision1.md),
-[the extensible-vocabulary direction](relative-time-extensible-temporal-assertion-direction1.md),
-the [atomic-contract scope decision](relative-time-atomic-recorded-assertion-contract-scope-decision1.md),
-and the new [Human-selected atomic wording decisions](relative-time-atomic-wording-decisions1.md).
-The [semantic-contract Research 1](relative-time-extensible-semantic-contract-research1.md)
-and [History 2 / Relative Time Cross-Audit](../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md)
+The basis is recorded in [the Human-selected semantic direction](./relative-time-before-after-semantic-direction-decision1.md),
+[the extensible-vocabulary direction](./relative-time-extensible-temporal-assertion-direction1.md),
+the [atomic-contract scope decision](./relative-time-atomic-recorded-assertion-contract-scope-decision1.md),
+and the new [Human-selected atomic wording decisions](./relative-time-atomic-wording-decisions1.md).
+The [semantic-contract Research 1](./relative-time-extensible-semantic-contract-research1.md)
+and [History 2 / Relative Time Cross-Audit](../../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md)
 are research/candidate evidence, not normative authority.
 
 ## Proposed atomic wording

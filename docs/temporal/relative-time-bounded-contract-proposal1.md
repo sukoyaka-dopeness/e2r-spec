@@ -6,8 +6,8 @@ Status: **PROPOSAL FOR HUMAN REVIEW — NON-NORMATIVE / NOT ADOPTED**
 ## Purpose and authorization boundary
 
 This document prepares proposed wording for the Human-selected Branch B in
-[Temporal Next-Phase Human Decision Gate 1](temporal-next-phase-human-decision-gate1.md),
-as bounded by the Human-selected [RT-BR-1 semantic direction](relative-time-before-after-semantic-direction-decision1.md).
+[Temporal Next-Phase Human Decision Gate 1](./temporal-next-phase-human-decision-gate1.md),
+as bounded by the Human-selected [RT-BR-1 semantic direction](./relative-time-before-after-semantic-direction-decision1.md).
 Its scope is limited to the direct pairwise meaning and endpoint orientation
 of user-recorded Relative Time `before` and `after` assertions.
 
@@ -17,30 +17,30 @@ or application behavior. It does not authorize implementation.
 
 ## Evidence and authority
 
-- [Core](../spec/core.md) defines `sourceId` and `targetId` as Relation
+- [Core](../../spec/core.md) defines `sourceId` and `targetId` as Relation
   endpoints. Relation direction is structural; Core assigns it no semantic
   meaning. Core permits self-relations and Relation cycles.
-- [History Extension 1.0.0](../extensions/history-extension.md) records
+- [History Extension 1.0.0](../../extensions/history-extension.md) records
   temporal information about one Core Object. Its `temporalOrder` is limited
   relative ordering for otherwise indistinguishable recorded temporal values;
   it is not a general pairwise Relation or arbitrary presentation rank.
-- [Relative Time Extension Draft 0.1.0](../extensions/relative-time-extension-draft.md)
+- [Relative Time Extension Draft 0.1.0](../../extensions/relative-time-extension-draft.md)
   is a non-Stable draft candidate. It defines `sourceId` as the selected
   reference/base Object and `targetId` as the Object described relative to
   that source. The `before` / `after` payload meaning describes the target
   relative to the source. One Core Relation carries one assertion.
-- [Minimum Temporal-Precedence Research 1](../research/exploratory/e2r-relative-time-minimum-temporal-precedence-research1.md)
-  and [Temporal Research Human Decision Preparation](temporal-research-human-decision-preparation1.md)
+- [Minimum Temporal-Precedence Research 1](../../research/exploratory/e2r-relative-time-minimum-temporal-precedence-research1.md)
+  and [Temporal Research Human Decision Preparation](./temporal-research-human-decision-preparation1.md)
   record the orientation evidence and distinguish direct assertion meaning
   from unresolved scope, inference, conflict, and History questions.
-- [The Human-selected Branch B record](temporal-next-phase-human-decision-gate1.md)
+- [The Human-selected Branch B record](./temporal-next-phase-human-decision-gate1.md)
   authorizes proposed wording for direct pairwise `before` / `after` only.
   Proposal preparation is not normative adoption.
-- The committed [RT-BR-1 semantic direction](relative-time-before-after-semantic-direction-decision1.md)
+- The committed [RT-BR-1 semantic direction](./relative-time-before-after-semantic-direction-decision1.md)
   selects a bounded qualitative Recorded claim between the selected Core
   Objects. It does not require a particular History assertion or authorize
   inference of a more precise temporal referent.
-- Current [Relative Time structural validation](../scripts/validate-relative-time-draft-schema.mjs)
+- Current [Relative Time structural validation](../../scripts/validate-relative-time-draft-schema.mjs)
   and the sibling `e2r-validator` diagnostics/tests are implementation
   evidence only. They map `before` and `after` using the draft orientation;
   they do not establish normative authority.

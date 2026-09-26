@@ -7,7 +7,7 @@ Status: **HUMAN DECISION PREPARATION — NON-NORMATIVE / NO DECISIONS ADOPTED**
 ## Purpose and scope
 
 This document prepares Human decisions on only two wording questions in the
-uncommitted [Atomic Recorded Assertion Semantics Proposal 1](relative-time-atomic-recorded-assertion-semantics-proposal1.md):
+uncommitted [Atomic Recorded Assertion Semantics Proposal 1](./relative-time-atomic-recorded-assertion-semantics-proposal1.md):
 
 1. whether `same-instant`'s atomic point-coincidence meaning includes semantic
    symmetry; and
@@ -21,8 +21,8 @@ not adopt its wording, authorize implementation, or change other files.
 
 ## Existing authority and shared boundaries
 
-The committed [Human-selected extensible-vocabulary direction](relative-time-extensible-temporal-assertion-direction1.md)
-and [atomic-contract scope decision](relative-time-atomic-recorded-assertion-contract-scope-decision1.md)
+The committed [Human-selected extensible-vocabulary direction](./relative-time-extensible-temporal-assertion-direction1.md)
+and [atomic-contract scope decision](./relative-time-atomic-recorded-assertion-contract-scope-decision1.md)
 establish the following, without deciding the two questions below:
 
 - Core Relation endpoint direction is structural only. Relative Time uses
@@ -38,7 +38,7 @@ establish the following, without deciding the two questions below:
 - History does not create, overwrite, or refine Recorded Relative Time;
   Recorded and Derived remain separate.
 
-The [semantic-contract Research 1](relative-time-extensible-semantic-contract-research1.md)
+The [semantic-contract Research 1](./relative-time-extensible-semantic-contract-research1.md)
 and the current proposal are evidence/preparatory documents, not adopted
 semantics. Neither question here authorizes changing the scope decision.
 

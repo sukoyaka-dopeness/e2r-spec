@@ -7,16 +7,16 @@ Status: **NORMATIVE SEMANTIC ADOPTION RECORD — ATOMIC RECORDED ASSERTION CONTR
 ## Adoption and authority
 
 The Human adopts the atomic Recorded assertion semantics proposed in
-[Relative Time Atomic Recorded Assertion Semantics Proposal 1](relative-time-atomic-recorded-assertion-semantics-proposal1.md),
-reviewed by [Relative Time Atomic Semantics Adoption Readiness 1](relative-time-atomic-semantics-adoption-readiness1.md).
+[Relative Time Atomic Recorded Assertion Semantics Proposal 1](./relative-time-atomic-recorded-assertion-semantics-proposal1.md),
+reviewed by [Relative Time Atomic Semantics Adoption Readiness 1](./relative-time-atomic-semantics-adoption-readiness1.md).
 This record captures that disposition as normative semantic authority for
 the bounded scope below. The proposal and readiness audit remain unchanged as
 historical proposal and review records; neither is retroactively relabeled as
 an adoption record.
 
 The adopted decision follows the Human-selected
-[atomic contract scope](relative-time-atomic-recorded-assertion-contract-scope-decision1.md)
-and [atomic wording decisions](relative-time-atomic-wording-decisions1.md).
+[atomic contract scope](./relative-time-atomic-recorded-assertion-contract-scope-decision1.md)
+and [atomic wording decisions](./relative-time-atomic-wording-decisions1.md).
 The proposal was recorded in commit
 `8233268d4ac24ecccb141fc2dc4d9da97fef27c8` (`docs: propose atomic Relative
 Time semantics`), and the readiness audit in commit

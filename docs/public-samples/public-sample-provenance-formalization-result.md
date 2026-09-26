@@ -5,7 +5,7 @@
 - Scope: e2r-spec role-based licensing application and ten public sample Dataset
   provenance records
 - S2 authority: `research/standards-licensing/decisions/e2r-standards-license-decision.md`
-- S3-B authority: `docs/public-sample-semantics-provenance-decision.md`
+- S3-B authority: `docs/public-samples/public-sample-semantics-provenance-decision.md`
 
 ## Repository licensing application
 

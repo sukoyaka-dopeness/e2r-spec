@@ -20,7 +20,7 @@ Validator behavior/tests as implementation evidence, not normative authority.
 
 ## Current boundaries already selected
 
-The [Human-selected extensible-vocabulary direction](relative-time-extensible-temporal-assertion-direction1.md)
+The [Human-selected extensible-vocabulary direction](./relative-time-extensible-temporal-assertion-direction1.md)
 sets the following boundaries for future contract work:
 
 - Core Relation direction is structural only. Relative Time owns any temporal
@@ -55,12 +55,12 @@ consumer can validate.
 
 | Evidence | What it establishes | What it does not establish |
 | --- | --- | --- |
-| [`spec/core.md`](../spec/core.md) | Core Relation connects Core Objects; endpoint direction alone has no Extension-specific temporal meaning. | Relative Time semantics or interval boundary rules. |
-| [`extensions/history-extension.md`](../extensions/history-extension.md) | Stable History records temporal information about an Object; `temporalOrder` has its bounded existing role. | Pairwise Relative Time relations or interval topology. |
-| [`extensions/relative-time-extension-draft.md`](../extensions/relative-time-extension-draft.md) | Non-Stable 0.1.0 draft has `relative-position` (`before`, `after`, `same-instant`), `containment` (`within`), calendar-granule and elapsed-offset families; it separates Recorded from Derived and prohibits automatic Relation creation/merge. | `contains`, `overlap`, `touching`, `same-temporal-extent`; a complete boundary/applicability contract. |
-| [`relative-time-extensible-temporal-assertion-direction1.md`](relative-time-extensible-temporal-assertion-direction1.md) | Human-selected vocabulary families, inverse/symmetry directions, coexistence, no History fabrication, no precise reinterpretation of `before`, and broad future direction. | Adoption, serialization, evaluation, endpoint-membership rules, shape matrix, or solver behavior. |
-| [`relative-time-before-after-semantic-direction-decision1.md`](relative-time-before-after-semantic-direction-decision1.md) and [`relative-time-bounded-contract-proposal1.md`](relative-time-bounded-contract-proposal1.md) | RT-BR-1 Choice 1 and its bounded non-normative wording candidate; no mandatory History grounding or inferred event boundary. | Adoption of the proposal or resolution of the broader vocabulary. |
-| [`research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md`](../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md) | Exploratory compatibility/candidate analysis, including History-shape limits, boundary gaps, and candidate derivations. | Human-selected or Stable authority for its candidate applicability or derivation rules. |
+| [`spec/core.md`](../../spec/core.md) | Core Relation connects Core Objects; endpoint direction alone has no Extension-specific temporal meaning. | Relative Time semantics or interval boundary rules. |
+| [`extensions/history-extension.md`](../../extensions/history-extension.md) | Stable History records temporal information about an Object; `temporalOrder` has its bounded existing role. | Pairwise Relative Time relations or interval topology. |
+| [`extensions/relative-time-extension-draft.md`](../../extensions/relative-time-extension-draft.md) | Non-Stable 0.1.0 draft has `relative-position` (`before`, `after`, `same-instant`), `containment` (`within`), calendar-granule and elapsed-offset families; it separates Recorded from Derived and prohibits automatic Relation creation/merge. | `contains`, `overlap`, `touching`, `same-temporal-extent`; a complete boundary/applicability contract. |
+| [`relative-time-extensible-temporal-assertion-direction1.md`](./relative-time-extensible-temporal-assertion-direction1.md) | Human-selected vocabulary families, inverse/symmetry directions, coexistence, no History fabrication, no precise reinterpretation of `before`, and broad future direction. | Adoption, serialization, evaluation, endpoint-membership rules, shape matrix, or solver behavior. |
+| [`relative-time-before-after-semantic-direction-decision1.md`](./relative-time-before-after-semantic-direction-decision1.md) and [`relative-time-bounded-contract-proposal1.md`](./relative-time-bounded-contract-proposal1.md) | RT-BR-1 Choice 1 and its bounded non-normative wording candidate; no mandatory History grounding or inferred event boundary. | Adoption of the proposal or resolution of the broader vocabulary. |
+| [`research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md`](../../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md) | Exploratory compatibility/candidate analysis, including History-shape limits, boundary gaps, and candidate derivations. | Human-selected or Stable authority for its candidate applicability or derivation rules. |
 | Relative Time draft schema and Validator diagnostics/tests | Current structural shapes and a bounded implementation's supported diagnostics/derived examples. | Normative semantics or support for vocabulary absent from the current candidate schema. |
 
 The current draft schema does not encode the broader Human-selected interval
@@ -339,18 +339,18 @@ This Research does not:
 
 ## Sources inspected
 
-- [Core specification](../spec/core.md)
-- [Stable History Extension](../extensions/history-extension.md)
-- [Relative Time Extension Draft 0.1.0](../extensions/relative-time-extension-draft.md)
-- [Relative Time extensible-vocabulary Human direction](relative-time-extensible-temporal-assertion-direction1.md)
-- [Relative Time `before` / `after` semantic direction](relative-time-before-after-semantic-direction-decision1.md)
-- [Relative Time bounded wording proposal](relative-time-bounded-contract-proposal1.md)
-- [Relative Time minimum temporal-precedence Research 1](../research/exploratory/e2r-relative-time-minimum-temporal-precedence-research1.md)
-- [History 2.x / Relative Time Cross-Audit 1](../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md)
-- [Temporal Research Human Decision Preparation](temporal-research-human-decision-preparation1.md)
-- [Relative Time next-phase Human decision gate](temporal-next-phase-human-decision-gate1.md)
-- [Roadmap current Relative Time direction](roadmap.md#current-relative-time-extensible-vocabulary-direction-2026-09-24)
-- [Session 0094 current Relative Time sync](../sessions/E2R-Session-0094.md)
+- [Core specification](../../spec/core.md)
+- [Stable History Extension](../../extensions/history-extension.md)
+- [Relative Time Extension Draft 0.1.0](../../extensions/relative-time-extension-draft.md)
+- [Relative Time extensible-vocabulary Human direction](./relative-time-extensible-temporal-assertion-direction1.md)
+- [Relative Time `before` / `after` semantic direction](./relative-time-before-after-semantic-direction-decision1.md)
+- [Relative Time bounded wording proposal](./relative-time-bounded-contract-proposal1.md)
+- [Relative Time minimum temporal-precedence Research 1](../../research/exploratory/e2r-relative-time-minimum-temporal-precedence-research1.md)
+- [History 2.x / Relative Time Cross-Audit 1](../../research/history-vnext/decisions/history-2x-relative-time-cross-audit1.md)
+- [Temporal Research Human Decision Preparation](./temporal-research-human-decision-preparation1.md)
+- [Relative Time next-phase Human decision gate](./temporal-next-phase-human-decision-gate1.md)
+- [Roadmap current Relative Time direction](../roadmap.md#current-relative-time-extensible-vocabulary-direction-2026-09-24)
+- [Session 0094 current Relative Time sync](../../sessions/E2R-Session-0094.md)
 - Draft schema and read-only Validator temporal-diagnostics/tests as implementation evidence.
 
 ## Disposition

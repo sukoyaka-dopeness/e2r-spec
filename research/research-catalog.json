@@ -4357,7 +4357,7 @@
       "normativity": "non-normative",
       "entryPoint": false,
       "supersededBy": [],
-      "dependsOn": ["docs/e2r-self-description.md", "research/exploratory/e2r-lineage-self-description.md"],
+      "dependsOn": ["docs/public-samples/e2r-self-description.md", "research/exploratory/e2r-lineage-self-description.md"],
       "referencedBy": [],
       "moveRisk": "low",
       "adjudication": {"confidence": "high", "basis": "S1 exploratory research records a bounded standards/document licensing comparison and defers the final policy to S2."},

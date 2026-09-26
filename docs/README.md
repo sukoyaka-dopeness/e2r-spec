@@ -44,9 +44,28 @@ repository. Start with the responsibility that matches the question:
 - The [NarrativeLine Locale experiment path migration](documentation-ia/documentation-ia-narrativeline-locale-experiment-path-migration1-result.md) moved only the two bounded NarrativeLine experiment acceptances; shared Cross-App Locale closure remains separate.
 - The [owner-first residual root Wave 4 preparation](documentation-ia/documentation-ia-owner-first-residual-wave4-preparation1.md) preserves the audit-time 349-document manifest; the approved execution is recorded in the [Wave 4 path migration result](documentation-ia/documentation-ia-owner-first-residual-wave4-path-migration1-result.md).
 - [Documentation IA](documentation-ia/README.md) now holds repository documentation-governance records; the [Wave 5 result](documentation-ia/documentation-ia-wave5-final-residual-placement-migration1-result.md) records the four approved path-migration cohorts and the actual 70-file root census. The [post-Wave-5 root classification audit](documentation-ia/documentation-ia-post-wave5-root-classification-audit1.md) proposes five positive root placements and exact responsibility-based destinations for the remainder; it performs no moves and implements no root-ingress gate. The gate remains deferred until Human approves a final placement baseline.
+- The approved [minimal-root placement migration](documentation-ia/documentation-ia-minimal-root-wave1-path-migration1-result.md) moved 62 records. Three root paths remain because their direct references are in read-only sibling/Knowledge repositories; the root-placement gate is therefore not installed.
 
 Follow links from the responsible planning or evidence authority for current
 checkpoint details; this Hub is not an inventory of every audit and result.
+
+### Responsibility collections
+
+These folders provide physical navigation, not additional authority. The
+Roadmap, normative specifications, and each dedicated decision/result remain
+the responsible authorities.
+
+| Responsibility | Folder |
+|---|---|
+| Canonical public samples and sample stewardship | [Public Samples](public-samples/) |
+| E2R release gates and publication sequencing | [Release Governance](release-governance/) |
+| History / Relative Time and temporal design evidence | [Temporal](temporal/) |
+| Shared test environment and test utilities | [Test Infrastructure](test-infrastructure/) |
+| Application-suite capability direction | [Application Suite](application-suite/) |
+| Dataset semantic-validation policy | [Dataset Validation](dataset-validation/) |
+| Cross-application contracts and shared behavior | [Cross-App](cross-app/) |
+| Visual evidence workflow | [Evidence](evidence/) |
+| Hub-specific decisions and evidence | [Hub](hub/) |
 
 ### Responsibility and status vocabulary
 

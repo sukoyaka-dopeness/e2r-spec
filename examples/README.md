@@ -38,7 +38,7 @@ Object IDs, Event chronology, Relation topology, UTC History values, and
 no saved placement data, so LiaisonScape derives its initial placement.
 Natural-language fields and Dataset IDs are localized. The factual basis and
 precision policy are recorded in
-`docs/apollo-11-canonical-sample.md`.
+`docs/public-samples/apollo-11-canonical-sample.md`.
 
 The Lighthouse Restoration files are the canonical English/Japanese
 relationship-oriented Public Sample. They are coordinate-less and preserve

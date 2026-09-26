@@ -200,7 +200,7 @@ Temporal Perspectives, or a reopening of accepted History 2 work.
   coverage and limits stated in its schema comment.
 - `spec/extension-profile-maturity.md` and
   `spec/extension-profile-maturity-registry.json` — profile maturity boundary.
-- `docs/history-2-user-facing-authoring-scope-result.md` — earlier comparative
+- `docs/temporal/history-2-user-facing-authoring-scope-result.md` — earlier comparative
   design options, treated as historical research rather than current
   acceptance.
 - `docs/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md` —

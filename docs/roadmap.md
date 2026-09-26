@@ -46,18 +46,18 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia/documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia/documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](documentation-ia/roadmap-residual-responsibility-audit3.md); [audit 2](documentation-ia/roadmap-residual-responsibility-audit2.md); [audit 1](documentation-ia/roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](documentation-ia/roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](documentation-ia/roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](documentation-ia/roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](documentation-ia/roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](documentation-ia/roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](documentation-ia/roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](documentation-ia/roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); [Seed PR-3 Browser history migration result](documentation-ia/roadmap-seed-pr3-browser-history-migration1-result.md); [this PR-3 pre-Browser history migration](documentation-ia/roadmap-seed-pr3-prebrowser-history-migration1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
-| History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
-| H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
-| History 2 bounded Stable registration | **IMPLEMENTED / PROFILE REGISTERED / VALIDATOR GREEN / PUBLIC SAMPLE RELEASE COMPLETE** | [implementation result](history-2-position-circa-stable-profile-implementation-result.md); [sample migration result](public-sample-h2-migration-and-self-description-current-state-refresh-result.md); `history@2.0.0` remains Candidate while `history@2.0.0 / position-circa` is the adopted Stable profile; broader H2 surfaces remain deferred |
-| Dataset-wide History 1 to History 2 upgrade | **IMPLEMENTED / AUTOMATED GREEN / BOUNDED REAL-BROWSER AND HUMAN ACCEPTANCE COMPLETE** | [NarrativeLine implementation result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/history-2-dataset-wide-upgrade-implementation-result.md); [scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md) |
+| History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](./temporal/history-2-user-facing-authoring-scope-result.md); [bounded scope closure](./history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
+| H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](./history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
+| History 2 bounded Stable registration | **IMPLEMENTED / PROFILE REGISTERED / VALIDATOR GREEN / PUBLIC SAMPLE RELEASE COMPLETE** | [implementation result](./temporal/history-2-position-circa-stable-profile-implementation-result.md); [sample migration result](./public-samples/public-sample-h2-migration-and-self-description-current-state-refresh-result.md); `history@2.0.0` remains Candidate while `history@2.0.0 / position-circa` is the adopted Stable profile; broader H2 surfaces remain deferred |
+| Dataset-wide History 1 to History 2 upgrade | **IMPLEMENTED / AUTOMATED GREEN / BOUNDED REAL-BROWSER AND HUMAN ACCEPTANCE COMPLETE** | [NarrativeLine implementation result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/history-2-dataset-wide-upgrade-implementation-result.md); [scope closure](./history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md) |
 | Cross-App control density / Visual Style / Flatness | **BOUNDED CORRECTIONS ACCEPTED / BROADER STYLE FOLLOW-UP AUDIT OR DESIGN ONLY** | LiaisonScape `589e3bd` and NarrativeLine `e4c2dcb`, `df69e8e`, `8495724` cover the accepted More/ordinary/detail geometry corrections. A broader Hub-reference visual-language experiment remains a separate Human-selected design question; it does not authorize a blanket CSS rewrite. |
 | LiaisonScape viewport toolbar | **ACCEPTED / HUMAN VISUAL AND INTERACTION ACCEPTANCE COMPLETE** | LiaisonScape `8743fb0` records compact canvas-utility geometry and pointer-versus-keyboard focus/tooltip treatment while retaining drag, disclosure, zoom, reset, 720px, and keyboard behavior |
 | NarrativeLine Detail controls | **ACCEPTED / BOUNDED GEOMETRY CORRECTIONS COMPLETE** | NarrativeLine `df69e8e` and `8495724` cover destructive/detail action geometry, Timeline Edit, and Entity Detail form width; further Picker/Create or visual-style work requires a separate current-evidence audit |
-| NarrativeLine pre-public feature candidates | **SAMPLE ROLE / PROVENANCE DECISIONS RECORDED / PUBLIC ACCESS RELEASED** | [provenance authority and access result](e2r-initial-public-release-provenance-authority-cross-app-access-implementation1-result.md), [sample role decision preparation](e2r-public-sample-role-decision-preparation1-result.md), and [content/provenance audit](e2r-initial-public-release-content-sample-provenance-refresh-audit1-result.md); five ordinary Gallery families and separate Self-Description dogfood access are public; factual-source caveats remain provenance boundaries |
+| NarrativeLine pre-public feature candidates | **SAMPLE ROLE / PROVENANCE DECISIONS RECORDED / PUBLIC ACCESS RELEASED** | [provenance authority and access result](./cross-app/e2r-initial-public-release-provenance-authority-cross-app-access-implementation1-result.md), [sample role decision preparation](./public-samples/e2r-public-sample-role-decision-preparation1-result.md), and [content/provenance audit](./public-samples/e2r-initial-public-release-content-sample-provenance-refresh-audit1-result.md); five ordinary Gallery families and separate Self-Description dogfood access are public; factual-source caveats remain provenance boundaries |
 | Recent application identity and shell corrections | **IMPLEMENTED / ACCEPTANCE STATUS SPLIT** | Timeline `↑/↓`, Timeline Footer, Detail bottom action/AppFrame continuity, Dataset title hierarchy/direct editing, product-name-only document titles, and title input chrome/terminology have implementation evidence but are not wholesale `ACCEPTED / CLOSED` without explicit visual acceptance. The common SVG favicon has Human browser-tab/narrow confirmation |
 | Cross-App Locale recipient preference | **CROSS-APP CLOSURE NOT ESTABLISHED / NOT AN INITIAL-RELEASE GATE** | NarrativeLine's [consumer acceptance](narrativeline/narrativeline-locale-consumer-acceptance.md) explicitly says the overall workstream is not complete; LiaisonScape's i18n MVP and Hub's [bilingual landing acceptance](hub/e2r-hub-public-entry-point-milestone-2-acceptance.md) are bounded component evidence, not closure of the shared startup-locale contract. No current priority is selected by this status sync. Hub direct Handoff remains a separate deferred capability under the Hub acceptance |
 | E2R workspace clone and evidence hygiene | **COMPLETED / ROOT PLACEMENT CLOSED (8 / 7 / 0)** | [workspace placement migration summary](#workspace-placement-migration--completed--2026-09-21); detailed evidence remains in workspace artifacts and Git history; future evidence disposition is separate work |
-| Initial Public Release | **FORMALLY CLOSED / PUBLIC AUTHORITIES VERIFIED / ACCEPTED BOUNDARIES PRESERVED** | [final closure audit](e2r-initial-public-release-closure-audit-result.md); five ordinary Gallery samples, separate Self-Description dogfood access, Hub/NarrativeLine/LiaisonScape provenance links, Validator `0.6.1`, and the accepted rights/provenance boundary are public and verified; deferred History 2, Lineage, visual-quality, and future product work remain separate follow-ups |
+| Initial Public Release | **FORMALLY CLOSED / PUBLIC AUTHORITIES VERIFIED / ACCEPTED BOUNDARIES PRESERVED** | [final closure audit](./release-governance/e2r-initial-public-release-closure-audit-result.md); five ordinary Gallery samples, separate Self-Description dogfood access, Hub/NarrativeLine/LiaisonScape provenance links, Validator `0.6.1`, and the accepted rights/provenance boundary are public and verified; deferred History 2, Lineage, visual-quality, and future product work remain separate follow-ups |
 
 The current runtime order recorded by this index no longer treats the H2
 `circa`, viewport-toolbar, or bounded Detail/control-geometry corrections as
@@ -105,9 +105,9 @@ The current root-placement status remains summarized in the status index above.
 
 Current-state reconciliation (2026-09-24): e2r-spec S3 repository-level
 standards/data licensing application and public-sample provenance formalization
-are **COMPLETE**; see the [S3 result](public-sample-provenance-formalization-result.md)
-and [provenance authority](public-sample-provenance.md). The Initial Public
-Release is **FORMALLY CLOSED** per the [closure audit](e2r-initial-public-release-closure-audit-result.md).
+are **COMPLETE**; see the [S3 result](./public-samples/public-sample-provenance-formalization-result.md)
+and [provenance authority](./public-sample-provenance.md). The Initial Public
+Release is **FORMALLY CLOSED** per the [closure audit](./release-governance/e2r-initial-public-release-closure-audit-result.md).
 The dated baseline and release-planning statements below that describe S3,
 publication, or release-readiness as pending are historical snapshots, not
 current blockers. This does not claim completion of formal legal review or
@@ -153,7 +153,7 @@ itself a license grant; each software repository must receive its own
 
 `e2r-spec` is excluded from that software-license direction. Its separate
 standards/document role-based licensing policy was decided and applied under
-S3; see the [S3 result](public-sample-provenance-formalization-result.md).
+S3; see the [S3 result](./public-samples/public-sample-provenance-formalization-result.md).
 
 ### Standards licensing policy decision — 2026-08-25
 
@@ -351,10 +351,10 @@ Common-origin frame coordinates remain separate from these pairwise
 constraints.
 
 The [minimum temporal-precedence Research result](../research/exploratory/e2r-relative-time-minimum-temporal-precedence-research1.md)
-and [Temporal Research Human Decision Preparation](temporal-research-human-decision-preparation1.md)
+and [Temporal Research Human Decision Preparation](./temporal/temporal-research-human-decision-preparation1.md)
 are historical preparation evidence. Their pre-adoption statements that
 Relative Time semantics awaited Human disposition are superseded by the
-[atomic Recorded semantics adoption](relative-time-atomic-recorded-assertion-semantics-adoption1.md).
+[atomic Recorded semantics adoption](./temporal/relative-time-atomic-recorded-assertion-semantics-adoption1.md).
 That adoption is limited to the atomic Recorded contract: it does not amend
 Draft/schema support or adopt machine evaluation, Derived rules, Validator, or
 application behavior. Causal-order research remains exploratory and separate;
@@ -373,7 +373,7 @@ separate open or deferred boundaries; no priority or execution order changes.
 ### Human-selected future interval-semantics and Timeline direction (2026-09-23)
 
 The atomic Recorded meanings and their adopted limits are governed by the
-[Human adoption record](relative-time-atomic-recorded-assertion-semantics-adoption1.md);
+[Human adoption record](./temporal/relative-time-atomic-recorded-assertion-semantics-adoption1.md);
 this earlier interval-semantics snapshot is not a second semantic authority.
 The separate Timeline presentation direction remains: where semantic evidence
 does not determine an Event's position, explicit user placement may be
@@ -389,9 +389,9 @@ contract. No Timeline implementation is authorized here.
 > describe that earlier state; see the current adoption status below.
 
 The broader Human-selected extensibility direction remains recorded in the
-[direction decision](relative-time-extensible-temporal-assertion-direction1.md).
+[direction decision](./temporal/relative-time-extensible-temporal-assertion-direction1.md).
 Its pre-adoption status and sequencing language are historical; the
-[atomic adoption record](relative-time-atomic-recorded-assertion-semantics-adoption1.md)
+[atomic adoption record](./temporal/relative-time-atomic-recorded-assertion-semantics-adoption1.md)
 is the normative authority for the adopted layer and explicitly preserves the
 Draft/schema, versioning, Derived, and implementation boundaries. Future
 vocabulary or scheduling expansion remains separate work, not implied by this
@@ -457,7 +457,7 @@ planning evidence. `docs/`-wide taxonomy and relocation remain deferred.
 
 #### Current Relative Time atomic-semantics status after Human adoption (2026-09-24)
 
-The Human-adopted [atomic Recorded assertion semantics](relative-time-atomic-recorded-assertion-semantics-adoption1.md)
+The Human-adopted [atomic Recorded assertion semantics](./temporal/relative-time-atomic-recorded-assertion-semantics-adoption1.md)
 are the normative authority for that bounded layer; the proposal and readiness
 audit remain historical evidence. The adoption does not extend Draft/schema
 support or authorize the separate representation, versioning, evaluation,
@@ -1371,7 +1371,7 @@ the behavioral closure.
 
 ### REL-DIRECTIONALITY1 / PRE-RELEASE-FEATURE-RECONSIDERATION1
 
-The full planning record is [Pre-public-release Feature Reconsideration](pre-public-release-feature-reconsideration.md).
+The full planning record is [Pre-public-release Feature Reconsideration](./release-governance/pre-public-release-feature-reconsideration.md).
 The detailed Relation directionality supersession is already recorded
 separately and complete in [Relation Endpoint UI / Directionality
 Follow-up](cross-app/relation-endpoint-ui-directionality-follow-up.md). The remaining
@@ -1640,7 +1640,7 @@ explicit Relation deletion removes only its keyed Presentation record and
 preserves siblings and unrelated orphans. No global orphan repair or
 Validator/schema policy change is implied.
 
-The Initial Public Release is formally closed; its current status and retained boundaries remain in the status index and [closure audit](e2r-initial-public-release-closure-audit-result.md). The superseded pre-release and LiaisonScape 0.2.0 sequence is preserved, in original order and wording, in the [release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#pre-release-and-liaison-scape-020-release-preparation-chronology); its dated `current`, `next`, `blocked`, and `unauthorized` statements are historical snapshots.
+The Initial Public Release is formally closed; its current status and retained boundaries remain in the status index and [closure audit](./release-governance/e2r-initial-public-release-closure-audit-result.md). The superseded pre-release and LiaisonScape 0.2.0 sequence is preserved, in original order and wording, in the [release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#pre-release-and-liaison-scape-020-release-preparation-chronology); its dated `current`, `next`, `blocked`, and `unauthorized` statements are historical snapshots.
 
 The Initial Node Placement Objective Audit remains relevant as evidence, not as the old release sequence: both Lighthouse samples had stored coordinates and did not exercise missing-coordinate placement. Its [dedicated audit](liaisonscape/liaisonscape-initial-node-placement-objective-audit.md) is retained as context for the current Initial Layout attribution work below; it does not change the current execution order or authorize runtime, schema, or sample changes.
 
@@ -1790,7 +1790,7 @@ must precede drag-and-drop.
 
 ### Pre-Public-Release Push and Deployment Readiness Audit (2026-09-07)
 
-The [Pre-Public-Release Push and Deployment Readiness Audit](pre-public-release-push-deployment-readiness-audit.md)
+The [Pre-Public-Release Push and Deployment Readiness Audit](./release-governance/pre-public-release-push-deployment-readiness-audit.md)
 is **COMPLETE / DEFER FOR NOW / PUBLIC WRITE NOT AUTHORIZED**. The audit
 recorded the state at its 2026-09-07 checkpoint: local Validator 0.4.0
 publication and consumer integration, local Public Sample acceptance, S3
@@ -1802,7 +1802,7 @@ ahead of its tracked `origin/main`, and public propagation/deployment
 acceptance plus the final Cross-App / Release Audit remain outstanding.
 
 Its pending public-release status was superseded by the [2026-09-22 Initial
-Public Release closure audit](e2r-initial-public-release-closure-audit-result.md).
+Public Release closure audit](./release-governance/e2r-initial-public-release-closure-audit-result.md).
 The audit remains evidence of its earlier no-public-write disposition; it does
 not describe the current release status or authorize a new public transaction.
 
@@ -1839,7 +1839,7 @@ not authorized here. Fresh12 evidence is unchanged, Human Review remains
 
 ### Early diagnostic visual smoke check before expensive evidence (2026-09-08)
 
-The [Early Smoke Check policy](visual-evidence-early-smoke-check-policy.md)
+The [Early Smoke Check policy](./visual-evidence-early-smoke-check-policy.md)
 is accepted as a lightweight, non-authoritative process safeguard for visual
 output workflows. Before a large candidate matrix, long browser capture, or
 formal visual review, the workflow should inspect the first trustworthy output
@@ -3563,7 +3563,7 @@ remain separate checkpoints.
 
 ### E2R-WORKSPACE-SHARED-TEST-INFRASTRUCTURE-AUDIT1 (2026-09-17)
 
-The [shared test infrastructure audit result](e2r-workspace-shared-test-infrastructure-audit1-result.md)
+The [shared test infrastructure audit result](./test-infrastructure/e2r-workspace-shared-test-infrastructure-audit1-result.md)
 classifies `@sukoyaka-dopeness/e2r-dom-test-environment@0.1.0` as active shared
 infrastructure used by LiaisonScape and NarrativeLine. Its responsibility is
 limited to framework-neutral JSDOM/global/cleanup lifecycle; application
@@ -3693,12 +3693,12 @@ changed. NarrativeLine source-level implementation remains **CLOSED**.
 ### E2R-INITIAL-PUBLIC-RELEASE-REMAINING-GATES-RECONCILIATION1 (2026-09-17)
 
 Historical release-planning snapshot (2026-09-17): the [Initial Public Release
-remaining-gates reconciliation result](e2r-initial-public-release-remaining-gates-reconciliation1-result.md)
+remaining-gates reconciliation result](./release-governance/e2r-initial-public-release-remaining-gates-reconciliation1-result.md)
 recorded the then-current cross-repository critical path: human
 licensing/provenance confirmation, exact release-set selection, clean release
 commits, explicit push/deploy/publication authorization, and public URL
 deployment acceptance. Its pending-release classification was superseded by
-the [2026-09-22 closure audit](e2r-initial-public-release-closure-audit-result.md);
+the [2026-09-22 closure audit](./release-governance/e2r-initial-public-release-closure-audit-result.md);
 the result remains historical evidence and does not authorize future public
 writes. Older Auto Layout `OPEN` records remain historical and superseded for
 source-level readiness.
@@ -3706,7 +3706,7 @@ source-level readiness.
 ### E2R-INITIAL-PUBLIC-RELEASE-TRANSACTION-READINESS-DECISION1 (2026-09-17)
 
 Historical decision-preparation snapshot (2026-09-17): the [Initial Public
-Release transaction-readiness decision result](e2r-initial-public-release-transaction-readiness-decision1-result.md)
+Release transaction-readiness decision result](./release-governance/e2r-initial-public-release-transaction-readiness-decision1-result.md)
 prepared, without selecting, a human decision packet for software licensing,
 sample stewardship/rights, exact cross-repository revisions, and public URL
 acceptance. Its **HUMAN APPROVAL REQUIRED** classification was superseded for
@@ -3716,7 +3716,7 @@ requirements or authorize future public writes.
 
 ### E2R-PUBLIC-SAMPLE-RIGHTS-PROVENANCE-AND-RELEASE-DECISION-RECONCILIATION1 (2026-09-17)
 
-The [public sample rights/provenance reconciliation result](e2r-public-sample-rights-provenance-and-release-decision-reconciliation1-result.md)
+The [public sample rights/provenance reconciliation result](./release-governance/e2r-public-sample-rights-provenance-and-release-decision-reconciliation1-result.md)
 records all five current sample families as Initial Public Release candidates
 under the human policy, while retaining per-sample stewardship/rights
 confirmation. Bounded repository inspection found no concrete copy evidence,
@@ -3726,7 +3726,7 @@ or release revision was changed or selected.
 
 ### E2R-PWA-AND-OFFLINE-CAPABILITY-ROADMAP1 (2026-09-17)
 
-The [PWA and offline capability roadmap result](e2r-pwa-and-offline-capability-roadmap1-result.md)
+The [PWA and offline capability roadmap result](./application-suite/e2r-pwa-and-offline-capability-roadmap1-result.md)
 records NarrativeLine and LiaisonScape as independent future PWA candidates
 and adopts the boundary **offline capability is application- and
 capability-specific**. PWA installability and offline completeness are not
@@ -3798,7 +3798,7 @@ one run, so automated exact JSON round-trip remains the payload-preservation
 evidence for that boundary.
 
 Current status is governed by this closure entry and the linked [scope
-closure result](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md).
+closure result](./history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md).
 Historical proposal, decision-preparation, implementation, blocker-repair,
 and Dataset-wide planning snapshots are preserved in the [History 2 position/
 circa chronology](roadmap-history/release-and-cross-app-chronology.md#history-2-position-circa-authoring-and-dataset-upgrade-chronology-2026-09-19).
@@ -3810,7 +3810,7 @@ PUBLIC RELEASE” labels below were superseded as release gates by the 2026-09-2
 closure audit. Any visual-quality or product follow-up that remains operative
 is separate from release closure and is tracked under current status.
 
-The [Cross-App Follow-Ups Reconciliation result](e2r-initial-public-release-cross-app-follow-ups-reconciliation1-result.md)
+The [Cross-App Follow-Ups Reconciliation result](./release-governance/e2r-initial-public-release-cross-app-follow-ups-reconciliation1-result.md)
 records two bounded pre-public-release follow-ups from current source and
 accepted evidence. This is a roadmap/documentation checkpoint only; it does
 not authorize runtime, CSS, sample, User Guide, Hub, Validator, or release
@@ -3865,7 +3865,7 @@ CSS, test, locale, sample, User Guide, or schema change is authorized here.
 
 ### E2R-WORKSPACE-RETIRED-TEST-UTILS-CLEANUP1 (2026-09-17)
 
-The [retired test-utils cleanup result](e2r-workspace-retired-test-utils-cleanup1-result.md)
+The [retired test-utils cleanup result](./test-infrastructure/e2r-workspace-retired-test-utils-cleanup1-result.md)
 classifies the unmanaged `e2r-test-utils` directory as safely removed after a
 final provenance and consumer check. Its final inventory was metadata-only
 (`package.json`, `package-lock.json`, `README.md`, and `tsconfig.json`), with

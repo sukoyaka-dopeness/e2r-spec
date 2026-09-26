@@ -12,6 +12,11 @@ document-type taxonomy or a second planning authority.
   preserves the Wave 5 exact manifests and root-ingress gate design.
 - [Wave 5 migration result](documentation-ia-wave5-final-residual-placement-migration1-result.md)
   records the completed path-only migration and post-migration root census.
+- [Post-Wave-5 root placement preparation](documentation-ia-post-wave5-root-classification-audit1.md)
+  records the proposed 65-document responsibility manifest.
+- [Minimal-root migration result](documentation-ia-minimal-root-wave1-path-migration1-result.md)
+  records 62 completed moves, three paths held for external reference repair,
+  and the resulting gate condition.
 
 Individual audit, decision, preparation, and migration records retain their
 own evidence scope and status. Their placement here does not merge or elevate

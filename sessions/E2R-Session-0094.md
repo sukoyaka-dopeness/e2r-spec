@@ -273,7 +273,7 @@ later/separate workstreams.
 
 ### Temporal Research Human Decision Preparation sync — 2026-09-23
 
-The [decision-preparation document](../docs/temporal-research-human-decision-preparation1.md)
+The [decision-preparation document](../docs/temporal/temporal-research-human-decision-preparation1.md)
 is committed as `f1f7a21d6cf4da3b66df966dd38254d5ef4bcb44`
 (`docs: prepare temporal research human decisions`). Its status is
 **DECISION PREPARATION / NON-NORMATIVE — NO DECISIONS ADOPTED**. It consolidates
@@ -289,10 +289,10 @@ Perspectives workstreams are unchanged.
 ### Relative Time Branch B and interval-semantics direction sync — 2026-09-23
 
 The Human-selected Branch B was recorded in the committed [Temporal Next-Phase
-Decision Gate](../docs/temporal-next-phase-human-decision-gate1.md)
+Decision Gate](../docs/temporal/temporal-next-phase-human-decision-gate1.md)
 (`b25b246`, `docs: record Human-selected temporal next phase`). The bounded
 direct pairwise `before` / `after` proposal was then committed separately as
-[`docs/relative-time-bounded-contract-proposal1.md`](../docs/relative-time-bounded-contract-proposal1.md)
+[`docs/relative-time-bounded-contract-proposal1.md`](../docs/temporal/relative-time-bounded-contract-proposal1.md)
 (`e7c9bc21deca695ade11ebdb19ab5c3245cfee4d`,
 `docs: propose bounded Relative Time contract`). It remains a standalone
 **non-normative / not adopted** proposal; its creation does not authorize
@@ -423,7 +423,7 @@ decision recorded in this historical reconciliation is reopened.
 ### Relative Time extensible-vocabulary direction sync — 2026-09-24
 
 The Human-selected broader Relative Time design/research direction is recorded
-in [Relative Time Extensible Temporal Assertion Direction 1](../docs/relative-time-extensible-temporal-assertion-direction1.md),
+in [Relative Time Extensible Temporal Assertion Direction 1](../docs/temporal/relative-time-extensible-temporal-assertion-direction1.md),
 committed as `d0d6f54947b43fa4e4bad8e646bc01b6135f9a62` (`docs: record
 extensible Relative Time direction`). Relative Time is to be organized as an
 extensible temporal-assertion vocabulary for present and future applications,
@@ -471,7 +471,7 @@ application, or UI work was started; push/deploy state is unchanged.
 
 The Human adopted the atomic Recorded assertion semantics and stated
 cross-cutting boundaries in [Relative Time Atomic Recorded Assertion
-Semantics Adoption 1](../docs/relative-time-atomic-recorded-assertion-semantics-adoption1.md),
+Semantics Adoption 1](../docs/temporal/relative-time-atomic-recorded-assertion-semantics-adoption1.md),
 commit `a5e26b0c5b3d04ea69bfd1f6b90476fede1bb17e` (`docs: adopt Relative Time
 atomic semantics`). That record is the current normative authority for the
 bounded atomic semantic layer. The earlier proposal and readiness audit remain

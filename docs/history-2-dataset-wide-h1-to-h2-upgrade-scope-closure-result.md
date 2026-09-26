@@ -14,7 +14,7 @@ accepted H2-POSITION-CIRCA bounded application scope.
 
 Related records:
 
-- [`history-2-position-circa-human-scope-decision-preparation-result.md`](history-2-position-circa-human-scope-decision-preparation-result.md)
+- [`history-2-position-circa-human-scope-decision-preparation-result.md`](./temporal/history-2-position-circa-human-scope-decision-preparation-result.md)
 - [NarrativeLine H2-POSITION-CIRCA declaration blocker result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-declaration-blocker-fix-result.md)
 - [`roadmap.md`](roadmap.md)
 

@@ -13,8 +13,8 @@ readiness, not complete Cross-App Locale, public-release readiness, version
 ## Accepted startup contract
 
 NarrativeLine implements the recipient-preference model in the
-[startup design](cross-app-locale-startup-v0-design.md) and
-[recipient-preference design](cross-app-locale-startup-v0-recipient-preference-design.md).
+[startup design](cross-app/cross-app-locale-startup-v0-design.md) and
+[recipient-preference design](cross-app/cross-app-locale-startup-v0-recipient-preference-design.md).
 Startup resolves `requestedLocale`, `persistedUserLocale`, `browserLocale`,
 and temporary conflict resolution into `effectiveLocale`.
 

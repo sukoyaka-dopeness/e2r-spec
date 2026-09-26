@@ -17,7 +17,7 @@ runtime repositories remain unchanged.
 
 The initial Cross-App Locale Startup v0 design remains the accepted baseline:
 
-`docs/cross-app-locale-startup-v0-design.md`
+`docs/cross-app/cross-app-locale-startup-v0-design.md`
 
 - commit `f681327`;
 - exact URL values `en` and `ja`;
@@ -30,7 +30,7 @@ The initial Cross-App Locale Startup v0 design remains the accepted baseline:
 
 The recipient-preference refinement is recorded separately in:
 
-`docs/cross-app-locale-startup-v0-recipient-preference-design.md`
+`docs/cross-app/cross-app-locale-startup-v0-recipient-preference-design.md`
 
 - commit `d7b583a`;
 - status: `Design refinement / experiment plan`;

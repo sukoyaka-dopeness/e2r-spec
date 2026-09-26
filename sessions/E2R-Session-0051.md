@@ -70,7 +70,7 @@ application design direction:
   not normally shown by the current application.
 - Capability-based handoff is a future option, not a current hard-coded rule.
 
-The design record is [Cross-App Relation Deletion Capability](../docs/cross-app-relation-deletion-capability.md).
+The design record is [Cross-App Relation Deletion Capability](../docs/cross-app/cross-app-relation-deletion-capability.md).
 The roadmap was synchronized by commit `7978240`
 (`docs: define cross-app Relation deletion capability`).
 

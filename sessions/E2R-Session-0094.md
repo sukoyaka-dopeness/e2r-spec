@@ -84,7 +84,7 @@ workspace Home link lacked hover feedback despite its button-like border;
 focus-visible was already clear in both apps. A one-rule LiaisonScape CSS
 correction now matches the existing locale/button hover colors. EN/JA, wide,
 and 390px browser checks and the 641-test suite, lint, and build passed. See
-the [audit result](../docs/cross-app-shell-action-hover-focus-parity-audit1-result.md).
+the [audit result](../docs/cross-app/cross-app-shell-action-hover-focus-parity-audit1-result.md).
 
 The later `E2R-NARRATIVELINE-VITE-24678-WARNING-DIAGNOSTIC1` checkpoint
 reproduced the middleware test-server `24678` warning 89 times during a natural
@@ -378,7 +378,7 @@ red-outline Discard treatment and generic purple hover were materially weaker
 than LiaisonScape's solid-red treatment, so a Dataset Replacement-scoped CSS
 correction was made without changing behavior. NarrativeLine tests 259/259,
 LiaisonScape tests 641/641, and both builds passed. Result:
-`docs/cross-app-dataset-replacement-destructive-styling-parity-audit1-result.md`.
+`docs/cross-app/cross-app-dataset-replacement-destructive-styling-parity-audit1-result.md`.
 Roadmap status: **ACCEPTED / CLOSED**. No Public change, commit, or deploy.
 
 ## Subsequent checkpoint and repository reconciliation

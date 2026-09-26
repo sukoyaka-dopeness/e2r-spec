@@ -93,6 +93,13 @@ and one Validator Presentation-support result; see the [bounded migration
 result](documentation-ia-wave3a-app-owned-evidence-path-migration1-result.md).
 Other manifests remain preparation-only and require separate Human approval.
 
+Wave 3B then moved only the four shared Relation Deletion records, two shared
+Locale design records, and six shared shell/parity records into
+`docs/cross-app/`; see the [bounded migration result](documentation-ia-wave3b-cross-app-evidence-path-migration1-result.md).
+The original FAIL, later reacceptance, bounded closure, and the Locale and
+visual-parity qualifications remain separate. No other residual cohort is
+authorized by that move.
+
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,
 `docs/audits/`, `docs/acceptances/`, `docs/applications/`, or `docs/sessions/`

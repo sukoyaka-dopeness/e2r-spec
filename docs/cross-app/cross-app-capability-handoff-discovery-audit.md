@@ -7,7 +7,7 @@
 **Status:** **AUDIT COMPLETE / DESIGN DIRECTION RECORDED / IMPLEMENTATION NOT AUTHORIZED**
 
 This is a discovery and design audit following the closure of the bounded
-[Cross-App Relation deletion capability](../cross-app-relation-deletion-capability-closure.md).
+[Cross-App Relation deletion capability](cross-app-relation-deletion-capability-closure.md).
 It records how a future capability-based Handoff could identify a suitable
 recipient application. It does not implement Handoff routing, a manifest,
 runtime discovery, or a new URL syntax.
@@ -524,7 +524,7 @@ The bounded Cross-App Relation deletion capability remains:
 FORMALLY ACCEPTED / CROSS-APP IMPLEMENTATION ALIGNED / COMPLETE
 ```
 
-The [closure record](../cross-app-relation-deletion-capability-closure.md) is not
+The [closure record](cross-app-relation-deletion-capability-closure.md) is not
 reopened by this audit. Both accepted applications already support the tested
 explicit inspect/delete path, so this audit does not add a Handoff dependency
 to that capability. Capability Handoff is a separate future routing lane.

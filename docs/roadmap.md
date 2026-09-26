@@ -774,7 +774,7 @@ Enter/Escape behavior, and destructive-action safety before release.
 This retained heading is a historical pointer, not an open audit. The former
 implementation-asymmetry and “not yet aligned” statements are superseded by
 the **FORMALLY ACCEPTED / CROSS-APP IMPLEMENTATION ALIGNED / COMPLETE** status
-in [Cross-App Relation Deletion Capability Closure](cross-app-relation-deletion-capability-closure.md).
+in [Cross-App Relation Deletion Capability Closure](cross-app/cross-app-relation-deletion-capability-closure.md).
 The dated progression remains in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
 Targeted Handoff/discovery and generalized Relation management remain separate
 deferred responsibilities; neither reopens this closure.
@@ -964,7 +964,7 @@ residual: accepted current contract plus a separately tracked quality question.
 
 ### F2-LS1 acceptance checkpoint
 
-**Accepted / Closed** at the bounded acceptance recorded in [the F2-LS1 acceptance authority](liaisonscape-cross-app-shell-alignment-f2-ls1-acceptance.md). Locale-consumer completion is separate. The minimum-width observation and unrelated follow-ups below remain distinct.
+**Accepted / Closed** at the bounded acceptance recorded in [the F2-LS1 acceptance authority](cross-app/liaisonscape-cross-app-shell-alignment-f2-ls1-acceptance.md). Locale-consumer completion is separate. The minimum-width observation and unrelated follow-ups below remain distinct.
 
 ### Minimum-width observation boundary
 
@@ -998,7 +998,7 @@ F2-LS1 remains **Accepted / Closed**. Its accepted-check inventory is preserved 
 
 ### Cross-App shell action hover parity
 
-**ACCEPTED / CLOSED** for the tested browser, width, and locale matrix. Physical-device and other browser-family coverage is not implied. Detailed evidence remains in [the audit result](cross-app-shell-action-hover-focus-parity-audit1-result.md).
+**ACCEPTED / CLOSED** for the tested browser, width, and locale matrix. Physical-device and other browser-family coverage is not implied. Detailed evidence remains in [the audit result](cross-app/cross-app-shell-action-hover-focus-parity-audit1-result.md).
 
 ### Home-first Dataset acquisition hierarchy
 
@@ -1147,7 +1147,7 @@ checkpoints.
 This **2026-08-24 planning snapshot is superseded**, not a current audit task.
 The bounded deletion contract, NarrativeLine/LiaisonScape alignment, and
 bidirectional acceptance are closed in [Cross-App Relation Deletion Capability
-Closure](cross-app-relation-deletion-capability-closure.md); the historical
+Closure](cross-app/cross-app-relation-deletion-capability-closure.md); the historical
 progression is retained in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
 No additional deletion-semantics or cascade-policy decision is pending here.
 
@@ -1258,7 +1258,7 @@ following current summary takes precedence when older sections use stale
 Cross-App Relation Deletion Ownership / Visibility Safety is **FORMALLY
 ACCEPTED / CROSS-APP IMPLEMENTATION ALIGNED / COMPLETE** through
 `XAPP-REL-DELETE6-CAPABILITY-CLOSURE`. The current canonical contract and
-bounded scope are recorded in the [capability closure](cross-app-relation-deletion-capability-closure.md).
+bounded scope are recorded in the [capability closure](cross-app/cross-app-relation-deletion-capability-closure.md).
 The completed NarrativeLine/LiaisonScape implementation, bidirectional
 acceptance, and capability-Handoff progression are preserved as dated evidence
 in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
@@ -1266,7 +1266,7 @@ That historical progression does not reopen the accepted ownership, no-cascade,
 explicit Relation-deletion, self/parallel Relation, or interoperability
 boundaries. The NarrativeLine endpoint-separator observation was corrected and
 included in its [later formal presentation acceptance](narrativeline-relation-blocker-presentation-formal-acceptance.md).
-The later [Cross-App visual consistency audit](e2r-cross-app-visual-consistency-audit1-result.md)
+The later [Cross-App visual consistency audit](cross-app/e2r-cross-app-visual-consistency-audit1-result.md)
 found no bounded current visual defect, without requiring pixel-identical UI.
 Targeted Handoff/discovery and broader Relation management remain separate
 deferred work, not closure prerequisites.
@@ -1315,7 +1315,7 @@ LiaisonScape or the cross-app implementation has reached final alignment.
 ### Cross-App Relation Deletion closure and remaining boundaries
 
 The Cross-App Relation Deletion capability is **FORMALLY ACCEPTED / COMPLETE /
-CLOSED** by the [capability closure](cross-app-relation-deletion-capability-closure.md);
+CLOSED** by the [capability closure](cross-app/cross-app-relation-deletion-capability-closure.md);
 the detailed dated implementation and acceptance progression remains in the
 [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
 The old `NL-ENTITY-DELETE4-CARD-PRESENTATION1` sequence is not a current
@@ -1340,7 +1340,7 @@ authority. It adds no production application dependency or runtime behavior.
 The readiness recommendation and accepted 2A state-controller boundary are
 preserved in [LiaisonScape Detail / Deletion Modularization Readiness](liaisonscape-detail-deletion-modularization-readiness.md).
 Cross-App blocker resolution, focused acceptance, bidirectional
-interoperability, and final capability closure are recorded in the [closure authority](cross-app-relation-deletion-capability-closure.md)
+interoperability, and final capability closure are recorded in the [closure authority](cross-app/cross-app-relation-deletion-capability-closure.md)
 and [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
 The former “final interoperability remains follow-up” sequence is superseded
 by that closure; the exclusions and non-blocking presentation items stated in
@@ -3833,7 +3833,7 @@ artifact changes.
    confirmed defect; no universal `width: 100%` rule or shared CSS is
    established. Any implementation must be a separately accepted, smallest
    app-local change after reproducible evidence. See the unified [audit
-   result](e2r-cross-app-visual-hierarchy-form-geometry-audit1-result.md).
+   result](cross-app/e2r-cross-app-visual-hierarchy-form-geometry-audit1-result.md).
 
 The next content/sample refresh audit remains separate because its public
 capability and provenance decisions gate guide and sample claims. The unified
@@ -3843,7 +3843,7 @@ decisions remain explicitly authorized human actions.
 
 ### E2R-CROSS-APP-VISUAL-HIERARCHY-FORM-GEOMETRY-AUDIT1 (2026-09-19)
 
-The [Cross-App Visual Hierarchy / Form Geometry Audit result](e2r-cross-app-visual-hierarchy-form-geometry-audit1-result.md)
+The [Cross-App Visual Hierarchy / Form Geometry Audit result](cross-app/e2r-cross-app-visual-hierarchy-form-geometry-audit1-result.md)
 consolidates the current screen-title hierarchy, Dataset title
 field/action-affinity, Name-input geometry, and control-density observations
 into one bounded audit. Existing accepted metadata alignment, divider spacing,

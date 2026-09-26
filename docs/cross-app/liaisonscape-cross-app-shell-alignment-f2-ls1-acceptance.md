@@ -56,7 +56,7 @@ The final browser acceptance reported the following PASS results:
   narrow behavior.
 
 The acceptance uses the editor-shell geometry policy defined in
-`docs/cross-app-editor-shell-geometry-v0-design.md`. Same policy does not mean
+`docs/cross-app/cross-app-editor-shell-geometry-v0-design.md`. Same policy does not mean
 shared DOM or identical CSS values.
 
 ## Runtime change boundary

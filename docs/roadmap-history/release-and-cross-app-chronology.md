@@ -297,7 +297,7 @@ Cross-App acceptance and overall capability closure remain pending.
 
 `XAPP-REL-DELETE3-BIDIRECTIONAL-ACCEPTANCE` was executed as an acceptance-only
 checkpoint and is recorded in
-[Cross-App Relation Deletion Bidirectional Acceptance](../cross-app-relation-deletion-bidirectional-acceptance.md).
+[Cross-App Relation Deletion Bidirectional Acceptance](../cross-app/cross-app-relation-deletion-bidirectional-acceptance.md).
 The result is **FORMAL BIDIRECTIONAL ACCEPTANCE: FAIL**. NarrativeLine at
 `3b2078f` and LiaisonScape at `34d8164` passed the automated gates and the
 bounded Relation, self, parallel, hidden/Event, ambiguity, cancellation, and
@@ -353,7 +353,7 @@ source or ai-knowledge change was made in this acceptance-only checkpoint.
 
 `XAPP-REL-DELETE6-CAPABILITY-CLOSURE` is **FORMALLY ACCEPTED / CROSS-APP
 IMPLEMENTATION ALIGNED / COMPLETE**. The closure is recorded in [Cross-App
-Relation Deletion Capability Closure](../cross-app-relation-deletion-capability-closure.md).
+Relation Deletion Capability Closure](../cross-app/cross-app-relation-deletion-capability-closure.md).
 The canonical status is now:
 
 - Cross-App Relation deletion design: **ACCEPTED**;
@@ -1128,8 +1128,8 @@ the reported behavior is reproduced.
 #### Validation and retained work
 
 The figures below are the audit-time validation snapshot, not a statement of
-current application-repository status. Later [shell parity](../cross-app-shell-action-hover-focus-parity-audit1-result.md)
-and [Dataset Replacement parity](../cross-app-dataset-replacement-destructive-styling-parity-audit1-result.md)
+current application-repository status. Later [shell parity](../cross-app/cross-app-shell-action-hover-focus-parity-audit1-result.md)
+and [Dataset Replacement parity](../cross-app/cross-app-dataset-replacement-destructive-styling-parity-audit1-result.md)
 results record LiaisonScape's full suite at 641/641; the earlier 635/636
 result and its unrelated failure are retained here as historical diagnostic
 evidence.
@@ -1198,7 +1198,7 @@ The blocks below were extracted from the portion of `docs/roadmap.md` before its
 LiaisonScape F2-LS1 Home / Workspace Header Locale Placement is
 **Accepted / Closed** at the recorded evidence boundary. Acceptance evidence
 and the runtime checkpoint are recorded in
-`docs/liaisonscape-cross-app-shell-alignment-f2-ls1-acceptance.md`.
+`docs/cross-app/liaisonscape-cross-app-shell-alignment-f2-ls1-acceptance.md`.
 
 The accepted checkpoint includes the Workspace Header blank-area hit-area fix,
 stable vertical editor-shell geometry at the 600px breakpoint, Credits opener
@@ -1213,7 +1213,7 @@ runtime work outside the checkpoint.
   safe-side focus, danger/hover hierarchy, EN/JA copy, and representative
   normal/narrow browser surfaces were audited. NarrativeLine's weaker
   destructive treatment was corrected locally for this dialog only. See the
-  [audit result](../cross-app-dataset-replacement-destructive-styling-parity-audit1-result.md).
+  [audit result](../cross-app/cross-app-dataset-replacement-destructive-styling-parity-audit1-result.md).
 
 ### F2-LS1 accepted-check inventory
 
@@ -1232,7 +1232,7 @@ LiaisonScape's bordered Home anchor lacked hover feedback while NarrativeLine
 Header buttons and both locale controls had it. LiaisonScape now gives that
 Home anchor the existing light-purple background/purple border hover treatment.
 EN/JA, representative wide, and 390px browser states pass without overflow.
-See [audit result](../cross-app-shell-action-hover-focus-parity-audit1-result.md).
+See [audit result](../cross-app/cross-app-shell-action-hover-focus-parity-audit1-result.md).
 
 ### NarrativeLine Workspace More acceptance — 2026-08-25
 

@@ -24,7 +24,7 @@ the current roadmap and preserved in source order:
   These cover the dated deletion presentation/acceptance progression,
   XAPP-REL-DELETE3–6, and capability Handoff
   checkpoints 1–12. The current accepted capability status remains summarized
-  in the roadmap and linked to its [closure authority](cross-app-relation-deletion-capability-closure.md).
+  in the roadmap and linked to its [closure authority](cross-app/cross-app-relation-deletion-capability-closure.md).
 - Forty-seven completed/superseded LiaisonScape layout and Auto Layout entries
   were placed in the new broad
   [`roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md`](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md).

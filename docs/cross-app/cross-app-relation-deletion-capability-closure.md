@@ -45,10 +45,10 @@ The following contract is accepted for this capability:
 
 ## NarrativeLine evidence
 
-The [NarrativeLine Entity deletion resolution acceptance](narrativeline/narrativeline-entity-deletion-resolution-acceptance.md)
+The [NarrativeLine Entity deletion resolution acceptance](../narrativeline/narrativeline-entity-deletion-resolution-acceptance.md)
 records the bounded readiness/design lineage, explicit Relation resolution,
 no-cascade behavior, identity handling, safe focus, cancellation, and final
-Entity deletion evidence. The [final Entity deletion cross-app fix](narrativeline/narrativeline-final-entity-deletion-cross-app-fix.md)
+Entity deletion evidence. The [final Entity deletion cross-app fix](../narrativeline/narrativeline-final-entity-deletion-cross-app-fix.md)
 resolved the X11 stale-state defect at runtime commit `7a695b3`.
 
 The focused regression and the full NarrativeLine automated suite passed. The
@@ -61,16 +61,16 @@ Events, Relations, and the Extension sentinel remain preserved.
 ## LiaisonScape evidence
 
 The [LiaisonScape Detail / Deletion Modularization
-Readiness](liaisonscape-detail-deletion-modularization-readiness.md) records
+Readiness](../liaisonscape-detail-deletion-modularization-readiness.md) records
 the bounded state-controller responsibility decision. The [Relation deletion
-resolution implementation](liaisonscape-relation-deletion-resolution-implementation.md)
+resolution implementation](../liaisonscape-relation-deletion-resolution-implementation.md)
 records no-cascade Entity deletion and explicit resolution at commit `33d0427`.
 The accepted focus correction is recorded in the [Relation deletion resolution
-acceptance](liaisonscape-relation-deletion-resolution-acceptance.md), and the
+acceptance](../liaisonscape-relation-deletion-resolution-acceptance.md), and the
 presentation follow-up, implementation, and acceptance are recorded in the
-[action hierarchy audit](cross-app-destructive-action-hierarchy-audit.md), the
-[presentation implementation](liaisonscape-relation-deletion-resolution-presentation-implementation.md),
-and the [presentation acceptance](liaisonscape-relation-deletion-resolution-presentation-acceptance.md)
+[action hierarchy audit](../cross-app-destructive-action-hierarchy-audit.md), the
+[presentation implementation](../liaisonscape-relation-deletion-resolution-presentation-implementation.md),
+and the [presentation acceptance](../liaisonscape-relation-deletion-resolution-presentation-acceptance.md)
 at runtime commit `34d8164`.
 
 LiaisonScape passed its automated suite, lint, build, and diff checks. The
@@ -97,7 +97,7 @@ remains an unchanged historical **FAIL** record. Its X11 failure was that
 NarrativeLine retained `entity-nl-final` after its incident Relations were
 resolved and final deletion was confirmed.
 
-The [NarrativeLine final Entity deletion fix](narrativeline/narrativeline-final-entity-deletion-cross-app-fix.md)
+The [NarrativeLine final Entity deletion fix](../narrativeline/narrativeline-final-entity-deletion-cross-app-fix.md)
 diagnosed and corrected the stale Dataset update. XAPP-REL-DELETE5 then
 re-ran the complete X1-X14 matrix and passed X11 and X14 as well as all other
 items. The historical FAIL record was not rewritten.

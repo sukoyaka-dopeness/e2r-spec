@@ -185,7 +185,7 @@ parent manifest below, not additional work-item counts.
 - **COMPRESS / MOVE TO HISTORY:** the completed XAPP-REL-DELETE3–6
   acceptance/closure progression and the completed Cross-App capability
   Handoff1–12 sequence. Preserve the closure result and link to
-  `cross-app-relation-deletion-capability-closure.md` and the relevant
+  `docs/cross-app/cross-app-relation-deletion-capability-closure.md` and the relevant
   capability handoff evidence. Do not remove still-open later capability
   work.
 - **COMPRESS:** completed dated Relation-detail presentation decisions and
@@ -268,7 +268,7 @@ Representative duplication candidates include:
   `e2r-initial-public-release-transaction-readiness-decision1-result.md`,
   and `e2r-initial-public-release-closure-audit-result.md`;
 - XAPP deletion progression versus
-  `cross-app-relation-deletion-capability-closure.md`;
+  `docs/cross-app/cross-app-relation-deletion-capability-closure.md`;
 - NarrativeLine documentation closure versus
   `e2r-narrativeline-documentation-closure-reconciliation1-result.md`;
 - Explicit Auto Layout / Human Check B progression versus its qualified

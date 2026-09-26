@@ -42,7 +42,7 @@ deploy, or release was performed.
 
 The accepted Cross-App Locale Control Placement was recorded in:
 
-`docs/cross-app-locale-startup-v0-recipient-preference-design.md`
+`docs/cross-app/cross-app-locale-startup-v0-recipient-preference-design.md`
 
 Design checkpoint:
 

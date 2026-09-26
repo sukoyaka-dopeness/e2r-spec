@@ -5,7 +5,7 @@
 The historical design and implementation sequence below remain preserved. The
 current checkpoint is that NarrativeLine's locale consumer is **ACCEPTED / COMPLETE**
 at runtime commit `ded44d6ca093431cc829d0aa47f6524ea789750a`. See the bounded
-[NarrativeLine Locale Consumer Acceptance](narrativeline-locale-consumer-acceptance.md)
+[NarrativeLine Locale Consumer Acceptance](../narrativeline-locale-consumer-acceptance.md)
 record. This does not complete Cross-App Locale: LiaisonScape recipient
 consumer alignment and Hub startup locale producer work remain pending.
 
@@ -99,7 +99,7 @@ under Dataset Handoff v0, while locale is an optional presentation instruction.
 ## Precedence
 
 The recipient-preference refinement in
-`docs/cross-app-locale-startup-v0-recipient-preference-design.md` is the
+`docs/cross-app/cross-app-locale-startup-v0-recipient-preference-design.md` is the
 current authority for the narrower case where a valid URL request differs from
 a valid persisted explicit recipient preference: that case requires a
 temporary Conflict Dialog rather than silently applying URL precedence. This

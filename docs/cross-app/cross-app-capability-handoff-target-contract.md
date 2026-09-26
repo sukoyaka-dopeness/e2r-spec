@@ -20,7 +20,7 @@ application to open a specific Dataset Object with a specific capability. It
 defines the minimum semantic fields, identity rules, failure behavior, safety
 boundaries, and scenario expectations.
 
-It does not reopen the [completed Cross-App Relation deletion capability](../cross-app-relation-deletion-capability-closure.md),
+It does not reopen the [completed Cross-App Relation deletion capability](cross-app-relation-deletion-capability-closure.md),
 and it does not authorize implementation in NarrativeLine, LiaisonScape, Hub,
 or another application.
 
@@ -579,7 +579,7 @@ untouched.
 This design was checked against:
 
 - [Cross-App Capability Handoff Discovery Audit](cross-app-capability-handoff-discovery-audit.md);
-- [Cross-App Relation Deletion Capability Closure](../cross-app-relation-deletion-capability-closure.md);
+- [Cross-App Relation Deletion Capability Closure](cross-app-relation-deletion-capability-closure.md);
 - [Dataset Handoff v0](../dataset-handoff-v0-design.md);
 - [NarrativeLine Dataset Handoff v0 Formal Completion](../narrativeline/narrativeline-dataset-handoff-v0-formal-completion-acceptance.md);
 - [LiaisonScape Dataset Handoff v0 implementation](../liaisonscape/dataset-handoff-v0-liaison-scape-implementation-result.md);

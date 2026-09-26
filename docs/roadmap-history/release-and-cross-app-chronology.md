@@ -410,7 +410,7 @@ application-source change is authorized by this audit.
 `XAPP-CAPABILITY-HANDOFF2-TARGET-CONTRACT-DESIGN` is **DESIGN ACCEPTED / URL
 CONTRACT NOT YET DESIGNED / IMPLEMENTATION NOT AUTHORIZED**. The accepted
 transport-independent contract is recorded in [Cross-App Capability Handoff
-Target Contract](../cross-app-capability-handoff-target-contract.md).
+Target Contract](../cross-app/cross-app-capability-handoff-target-contract.md).
 
 The minimum semantic tuple is a transferable Dataset context, the canonical
 full target Object ID, and one primary required capability. `targetObjectType`
@@ -438,7 +438,7 @@ checkpoint.
 `XAPP-CAPABILITY-HANDOFF3-URL-TRANSPORT-CONTRACT-DESIGN` is **DESIGN ACCEPTED /
 TRANSPORT CONTRACT DEFINED / IMPLEMENTATION NOT AUTHORIZED**. The accepted
 transport is recorded in [Cross-App Capability Handoff URL/Transport
-Contract](../cross-app-capability-handoff-url-transport-contract.md).
+Contract](../cross-app/cross-app-capability-handoff-url-transport-contract.md).
 
 The first direction extends Dataset Handoff v0's flat URL fragment. It carries
 the existing retrievable absolute HTTPS `datasetUrl`, the canonical full
@@ -467,7 +467,7 @@ authorization from a later checkpoint.
 `XAPP-CAPABILITY-HANDOFF4-CURRENT-DATASET-TRANSFER-DESIGN` is **DESIGN
 ACCEPTED / FIRST CURRENT-DATASET TRANSFER BOUNDARY DEFINED / IMPLEMENTATION
 NOT AUTHORIZED**. The design is recorded in [Cross-App Capability Handoff
-Current Dataset Transfer Design](../cross-app-capability-handoff-current-dataset-transfer-design.md).
+Current Dataset Transfer Design](../cross-app/cross-app-capability-handoff-current-dataset-transfer-design.md).
 
 The accepted first direction has two lanes. A clean Dataset with a known
 retrievable URL may use the existing targeted URL Handoff. A modified committed
@@ -597,7 +597,7 @@ implementation.
 `XAPP-CAPABILITY-HANDOFF8A-SENDER-NAVIGATION-AUTHORIZATION` is **DESIGN
 COMPLETE / BOUNDED NARRATIVELINE SENDER AUTHORIZED / NO RUNTIME CHANGE**. The
 design record is [Cross-App Capability Handoff Sender Navigation
-Authorization](../cross-app-capability-handoff-sender-navigation-authorization.md).
+Authorization](../cross-app/cross-app-capability-handoff-sender-navigation-authorization.md).
 
 The two Handoff8 blockers are resolved. The next bounded NarrativeLine sender
 implementation is authorized for the existing Entity deletion-resolution

@@ -52,7 +52,10 @@ IA and Milestone 2 acceptance into `docs/hub/`; a fourth moved only the three
 separate Production Validator Extension integration design, acceptance, and
 result records into `docs/validator/`; a fifth moved only three distinct
 LiaisonScape Pin persistence, working-state / Save integration, and UI result
-records into `docs/liaisonscape/`. The other named zones do not
+records into `docs/liaisonscape/`; a sixth moved only the four Current Dataset
+Handoff design-contract and sender-navigation authorization records into
+`docs/cross-app/`. Runtime implementation and acceptance records remain in
+their existing locations. The other named zones do not
 authorize prefix-based or bulk moves. Assess each later cohort by its actual
 responsibility, references, and migration boundary. These directories are
 physical navigation, not a new authority or status hierarchy. Cross-cutting

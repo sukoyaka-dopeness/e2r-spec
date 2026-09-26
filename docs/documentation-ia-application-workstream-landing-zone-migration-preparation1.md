@@ -188,3 +188,11 @@ working-state / Save integration result, and Pin UI 1 result for
 `docs/liaisonscape/`. They remain separate records with their original
 dispositions and were moved without status reconciliation. See the
 [bounded migration result](documentation-ia-liaisonscape-pin-path-migration1-result.md).
+
+### Subsequent bounded migration disposition — Cross-App Current Dataset Handoff
+
+Human later selected the four Current Dataset Handoff design-contract and
+sender-navigation authorization records for `docs/cross-app/`. The first
+three contract records and the sender authorization remain separate in scope;
+no runtime implementation or acceptance record moved. See the
+[bounded migration result](documentation-ia-cross-app-current-dataset-handoff-path-migration1-result.md).

@@ -31,6 +31,7 @@ repository. Start with the responsibility that matches the question:
 - The bounded [Hub Public Entry path migration](documentation-ia-hub-public-entry-path-migration1-result.md) moved only the Milestone 1 IA and Milestone 2 acceptance records; the E2R-wide milestone authority remains the Roadmap.
 - The bounded [Validator integration path migration](documentation-ia-validator-integration-path-migration1-result.md) moved only the three separate Production Validator Extension integration lifecycle records; their recorded checkpoint statuses and normative specification authorities are unchanged.
 - The bounded [LiaisonScape Pin evidence path migration](documentation-ia-liaisonscape-pin-path-migration1-result.md) moved only three distinct Pin persistence, Save integration, and UI result records; their dispositions and Extension maturity remain separate.
+- The bounded [Cross-App Current Dataset Handoff contract path migration](documentation-ia-cross-app-current-dataset-handoff-path-migration1-result.md) moved only the four design-contract and sender-navigation authorization records; runtime implementation and acceptance evidence remain in their existing locations.
 - The [docs-wide organization audit](documentation-ia-docs-wide-organization-audit1.md) preserves the inventory and earlier options considered before the Human foldering decision.
 
 Follow links from the responsible planning or evidence authority for current

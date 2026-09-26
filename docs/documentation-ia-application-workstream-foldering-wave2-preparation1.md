@@ -191,7 +191,7 @@ dirty and out of scope regardless.
 
 ### Validator exclusions / adjacent root responsibility
 
-- `docs/production-validator-presentation-specification-support-fix-result.md`
+- `docs/validator/production-validator-presentation-specification-support-fix-result.md` (subsequently moved in Wave 3A; its ownership/status remain Validator-specific)
   has a direct inbound reference from `docs/lighthouse-semantic-enrichment-decision.md`;
   that decision is cross-workstream. Do not move it in the five-file package
   cohort without separately scoping and repairing that reference.

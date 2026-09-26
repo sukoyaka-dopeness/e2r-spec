@@ -45,10 +45,10 @@ The following contract is accepted for this capability:
 
 ## NarrativeLine evidence
 
-The [NarrativeLine Entity deletion resolution acceptance](narrativeline-entity-deletion-resolution-acceptance.md)
+The [NarrativeLine Entity deletion resolution acceptance](narrativeline/narrativeline-entity-deletion-resolution-acceptance.md)
 records the bounded readiness/design lineage, explicit Relation resolution,
 no-cascade behavior, identity handling, safe focus, cancellation, and final
-Entity deletion evidence. The [final Entity deletion cross-app fix](narrativeline-final-entity-deletion-cross-app-fix.md)
+Entity deletion evidence. The [final Entity deletion cross-app fix](narrativeline/narrativeline-final-entity-deletion-cross-app-fix.md)
 resolved the X11 stale-state defect at runtime commit `7a695b3`.
 
 The focused regression and the full NarrativeLine automated suite passed. The
@@ -97,7 +97,7 @@ remains an unchanged historical **FAIL** record. Its X11 failure was that
 NarrativeLine retained `entity-nl-final` after its incident Relations were
 resolved and final deletion was confirmed.
 
-The [NarrativeLine final Entity deletion fix](narrativeline-final-entity-deletion-cross-app-fix.md)
+The [NarrativeLine final Entity deletion fix](narrativeline/narrativeline-final-entity-deletion-cross-app-fix.md)
 diagnosed and corrected the stale Dataset update. XAPP-REL-DELETE5 then
 re-ran the complete X1-X14 matrix and passed X11 and X14 as well as all other
 items. The historical FAIL record was not rewritten.

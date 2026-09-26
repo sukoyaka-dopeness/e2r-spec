@@ -88,7 +88,7 @@ NarrativeLine commits:
 
 The formal acceptance record is e2r-spec commit `6f63a8d`:
 
-`docs/narrativeline-modernization-nl-d3-acceptance.md`
+`docs/narrativeline/narrativeline-modernization-nl-d3-acceptance.md`
 
 The accepted NL-D3 architecture separates Dataset acquisition from active
 Dataset acceptance using a short-lived application-level candidate:

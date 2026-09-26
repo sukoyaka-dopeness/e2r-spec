@@ -87,8 +87,11 @@ manifest.
 
 The [primary-responsibility residual classification audit](documentation-ia-primary-responsibility-residual-classification-audit1.md)
 applies the owner-first rule across residual root records and identifies
-candidate cohorts. It is also preparation only; exact candidates still require
-separate Human selection and a fresh reference scan before any move.
+candidate cohorts. Wave 3A subsequently moved only its seven NarrativeLine
+modernization acceptance records, two NarrativeLine Entity-deletion records,
+and one Validator Presentation-support result; see the [bounded migration
+result](documentation-ia-wave3a-app-owned-evidence-path-migration1-result.md).
+Other manifests remain preparation-only and require separate Human approval.
 
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,

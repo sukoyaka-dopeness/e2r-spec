@@ -18,7 +18,7 @@ deletion contract is implemented by every E2R application.
 
 ## Design lineage
 
-- [Cross-App Relation Deletion Capability](cross-app-relation-deletion-capability.md), which records the accepted cross-app design direction;
+- [Cross-App Relation Deletion Capability](../cross-app-relation-deletion-capability.md), which records the accepted cross-app design direction;
 - `NL-ENTITY-DELETE2-READINESS1`, implementation boundary E: atomic multi-surface alignment required;
 - `NL-ENTITY-DELETE2-DESIGN2`, marked **READY FOR ATOMIC IMPLEMENTATION**;
 - the initial NarrativeLine implementation and its prior blocked acceptance attempt;

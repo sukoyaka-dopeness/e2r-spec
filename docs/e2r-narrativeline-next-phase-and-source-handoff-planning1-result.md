@@ -188,7 +188,7 @@ by default.
 
 ### USEFUL
 
-- `docs/narrativeline-modernization-nl-0-acceptance.md` — original application
+- `docs/narrativeline/narrativeline-modernization-nl-0-acceptance.md` — original application
   boundary and known documentation drift.
 - `docs/narrativeline-display-order-reordering-audit.md` — deferred chronology
   and presentation-order boundary.

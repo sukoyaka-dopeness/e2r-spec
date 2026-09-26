@@ -7,7 +7,7 @@ The result is **IMPLEMENTED / AUTOMATED GREEN / EXPLORATORY REAL EDGE PASS**.
 Formal bidirectional Cross-App acceptance remains pending.
 
 This checkpoint addresses X11 from the preceding
-[XAPP-REL-DELETE3 bidirectional acceptance](cross-app-relation-deletion-bidirectional-acceptance.md).
+[XAPP-REL-DELETE3 bidirectional acceptance](../cross-app-relation-deletion-bidirectional-acceptance.md).
 That historical record remains unchanged and remains a FAIL record: after two
 incident Relations were explicitly resolved, NarrativeLine's final explicit
 Entity deletion left `entity-nl-final` in the Dataset.
@@ -87,7 +87,7 @@ The accepted workflow semantics remain:
 
 ## Regression evidence
 
-Added [the focused final-Entity integration test](../../e2r-narrative-line/tests/entityDeletionFinalIntegration.test.js)
+Added [the focused final-Entity integration test](../../../e2r-narrative-line/tests/entityDeletionFinalIntegration.test.js)
 which renders the real NarrativeLine App and verifies the complete sequence.
 It asserts that the target Entity and both incident Relations are absent from
 the persisted Dataset after confirmation, while the unrelated Entity and

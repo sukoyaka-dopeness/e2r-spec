@@ -15,7 +15,7 @@ The bounded Cross-App Relation deletion capability is **COMPLETE / CLOSED** as
 of 2026-08-28. The original design direction and the pre-alignment runtime
 description below are retained as historical context. Current implementation
 alignment is established by the [NarrativeLine final Entity deletion
-fix](narrativeline-final-entity-deletion-cross-app-fix.md), the [bidirectional
+fix](narrativeline/narrativeline-final-entity-deletion-cross-app-fix.md), the [bidirectional
 reacceptance](cross-app-relation-deletion-bidirectional-reacceptance.md), and
 the [capability closure record](cross-app-relation-deletion-capability-closure.md).
 

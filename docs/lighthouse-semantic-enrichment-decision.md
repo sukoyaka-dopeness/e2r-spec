@@ -35,7 +35,7 @@ kept Lighthouse topology unchanged and selected reverse/dashed Presentation
 showcases. The explicit current user requirements in this checkpoint supersede
 that earlier “no Core topology change” boundary only for the two Relations
 decided below. The accepted Validator integration result is
-`docs/production-validator-presentation-specification-support-fix-result.md`.
+`docs/validator/production-validator-presentation-specification-support-fix-result.md`.
 
 The current accepted commits are e2r-spec `7f0327f` and Validator `231ab2f`.
 
@@ -285,4 +285,3 @@ bump versions, or start release/deployment work.
 
 The next JSON implementation is **NOT STARTED**. Research audit, Cross-App
 release audit, app version decision, push, and deploy are also **NOT STARTED**.
-

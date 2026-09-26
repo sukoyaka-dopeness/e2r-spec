@@ -138,7 +138,7 @@ The E2R specification repository now contains the single-source design
 document:
 
 ```text
-docs/dataset-handoff-v0-design.md
+docs/cross-app/dataset-handoff-v0-design.md
 ```
 
 It is explicitly design/non-normative and records:

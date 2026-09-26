@@ -81,7 +81,7 @@ blockers and were not promoted to implementation in this checkpoint.
 - `e2r-narrative-line/docs/MVP.md`
 - `e2r-narrative-line/docs/ui-spec.md`
 - `e2r-spec/docs/roadmap.md`
-- `e2r-spec/docs/e2r-narrativeline-documentation-and-final-release-readiness-audit1-result.md`
+- `e2r-spec/docs/narrativeline/e2r-narrativeline-documentation-and-final-release-readiness-audit1-result.md`
 
 No source, test, schema, or runtime file was changed. No commit, push, deploy,
 release, or publication was performed.

@@ -76,9 +76,9 @@ they are not proposed for another migration.
 
 | Coherent responsibility band (snapshot) | Size | Current claim to retain / evidence to delegate |
 | --- | ---: | --- |
-| Parallel, structural, Self-loop, re-baseline coordination and shared status (1887–1978) | 92 lines / 5 H3 | Preserve separately scoped attribution, quality, and re-baseline gates. The [Parallel architecture closure](liaisonscape-parallel-incident-architecture-closure1-result.md) closed its contract, not all visual quality. Later results must be checked before calling the 2026-09-13 order current. |
-| Dated research and execution progression, from Parallel / Incident Attribution through Explicit Auto Layout gap audit (1979–3883) | **1,905 lines / 77 H3** | Individual experiments, corrections, numeric matrices, and old next steps have dedicated results in most cases. Retain the operative consequence of the [provisional execution split](liaisonscape-initial-layout-execution-architecture-decision1-result.md), Product/presentation ownership, Human Review limits, and remaining quality questions. Four H3s without direct local authority links need explicit disposition. |
-| Explicit Auto Layout / Pin, quality freeze, practicality, infrastructure, source-level release bridge (3884–4218) | 335 lines / 10 H3 / 5 H4 | Preserve accepted Preview/Pin/Save lifecycle and Human Check B **QUALIFIED**, with separate non-blocking quality and test-infrastructure boundaries. The [qualified closure](liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md), [practicality reassessment](liaisonscape-general-complex-dataset-practicality-reassessment1-result.md), and [quality freeze](liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md) limit earlier `HOLD`, `next`, and release-blocker wording. |
+| Parallel, structural, Self-loop, re-baseline coordination and shared status (1887–1978) | 92 lines / 5 H3 | Preserve separately scoped attribution, quality, and re-baseline gates. The [Parallel architecture closure](liaisonscape/liaisonscape-parallel-incident-architecture-closure1-result.md) closed its contract, not all visual quality. Later results must be checked before calling the 2026-09-13 order current. |
+| Dated research and execution progression, from Parallel / Incident Attribution through Explicit Auto Layout gap audit (1979–3883) | **1,905 lines / 77 H3** | Individual experiments, corrections, numeric matrices, and old next steps have dedicated results in most cases. Retain the operative consequence of the [provisional execution split](liaisonscape/liaisonscape-initial-layout-execution-architecture-decision1-result.md), Product/presentation ownership, Human Review limits, and remaining quality questions. Four H3s without direct local authority links need explicit disposition. |
+| Explicit Auto Layout / Pin, quality freeze, practicality, infrastructure, source-level release bridge (3884–4218) | 335 lines / 10 H3 / 5 H4 | Preserve accepted Preview/Pin/Save lifecycle and Human Check B **QUALIFIED**, with separate non-blocking quality and test-infrastructure boundaries. The [qualified closure](liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md), [practicality reassessment](liaisonscape/liaisonscape-general-complex-dataset-practicality-reassessment1-result.md), and [quality freeze](liaisonscape/liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md) limit earlier `HOLD`, `next`, and release-blocker wording. |
 | NarrativeLine, History 2, release, test, and 2026-09-23 session inventory (4219–4646) | 428 lines / 20 H3 / 3 H4 | Preserve PWA/deferred and environment-specific decisions. The [Initial Public Release closure](e2r-initial-public-release-closure-audit-result.md) supersedes dated pending-publication snapshots, while H2 Candidate and its bounded accepted authoring scope remain separate. Do not convert a test fix or source-level readiness into unrelated acceptance. |
 
 Of the 112 H3s in the full Initial Layout parent, **101 contain a Markdown
@@ -92,10 +92,10 @@ before any canonical statement replaces them.
 
 Examples of why a line-oriented reduction is unsafe:
 
-- The early [execution-architecture decision](liaisonscape-initial-layout-execution-architecture-decision1-result.md)
+- The early [execution-architecture decision](liaisonscape/liaisonscape-initial-layout-execution-architecture-decision1-result.md)
   provisionally selected a Fast Initial Placement plus explicit quality
   operation, while keeping Product adoption on hold at that checkpoint. The
-  later [Frontier production acceptance](liaisonscape-frontier-automatic-display-production-acceptance-closure1-result.md)
+  later [Frontier production acceptance](liaisonscape/liaisonscape-frontier-automatic-display-production-acceptance-closure1-result.md)
   accepts the normal async Automatic Display source path; it does not thereby
   establish a universal HQ solver or erase its qualified visual residuals.
 - The 2026-09-17 Safe Preview diagnosis says Human Check B `HOLD`; the later
@@ -109,10 +109,10 @@ Examples of why a line-oriented reduction is unsafe:
   Human acceptance have their own evidence. Neither the old Roadmap wording
   nor the Draft header alone is a complete current Product status.
 - Dated Initial Layout release-gate entries repeatedly say `OPEN`, while the
-  later [LiaisonScape source-level readiness audit](liaisonscape-final-release-readiness-audit1-result.md)
+  later [LiaisonScape source-level readiness audit](liaisonscape/liaisonscape-final-release-readiness-audit1-result.md)
   and [Initial Public Release closure](e2r-initial-public-release-closure-audit-result.md)
   have different accepted scopes. Quality research and a PR-3 Browser
-  [current-host blocker](liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md)
+  [current-host blocker](liaisonscape/liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md)
   must not be silently folded into or closed by those release records.
 - The NarrativeLine Vite warning, H2 authoring, and pre-release gate records
   near the end each contain an earlier pending/blocked stage followed by a
@@ -125,11 +125,11 @@ decide the still-mixed parent section's current execution order:
 
 | Scope | Evidence-backed consequence to retain |
 | --- | --- |
-| Initial Automatic Display | The [source-level production acceptance](liaisonscape-frontier-automatic-display-production-acceptance-closure1-result.md) accepts Frontier async display with an immediate fallback, Pending/Cancel, and render-only adoption; its Human visual disposition remains **QUALIFIED**, with bounded presentation-quality follow-up. |
-| Explicit Auto Layout and Pin | [Human Check B](liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md) is **QUALIFIED** for lifecycle/Preview/Pin/Save; [quality freeze](liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md) preserves separate non-blocking visual/complexity work. The LiaisonScape Layout representation remains a Draft, not a Core or Stable promotion. |
-| Parallel/Incident and Self-loop | [Parallel architecture](liaisonscape-parallel-incident-architecture-closure1-result.md) is closed with Product visual quality follow-up; the [Self-loop research phase](liaisonscape-self-loop-responsibility-closure1-result.md) is qualified with joint collision quality deferred. Neither result transfers Product routing/presentation authority into structural placement. |
-| PR-3 Browser Evidence | The [current-host synchronization](liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md) records its own blocked prerequisite, unresolved cause, and resume condition. It is neither PR-3 acceptance nor an Initial Public Release gate inferred from the later closure. |
-| Release and remaining Product work | The [Initial Public Release](e2r-initial-public-release-closure-audit-result.md) is formally closed; [Product practicality](liaisonscape-general-complex-dataset-practicality-reassessment1-result.md) has bounded acceptance with non-blocking quality follow-ups. Dated research `release blocker OPEN` claims need their precise historical scope before removal. |
+| Initial Automatic Display | The [source-level production acceptance](liaisonscape/liaisonscape-frontier-automatic-display-production-acceptance-closure1-result.md) accepts Frontier async display with an immediate fallback, Pending/Cancel, and render-only adoption; its Human visual disposition remains **QUALIFIED**, with bounded presentation-quality follow-up. |
+| Explicit Auto Layout and Pin | [Human Check B](liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md) is **QUALIFIED** for lifecycle/Preview/Pin/Save; [quality freeze](liaisonscape/liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md) preserves separate non-blocking visual/complexity work. The LiaisonScape Layout representation remains a Draft, not a Core or Stable promotion. |
+| Parallel/Incident and Self-loop | [Parallel architecture](liaisonscape/liaisonscape-parallel-incident-architecture-closure1-result.md) is closed with Product visual quality follow-up; the [Self-loop research phase](liaisonscape/liaisonscape-self-loop-responsibility-closure1-result.md) is qualified with joint collision quality deferred. Neither result transfers Product routing/presentation authority into structural placement. |
+| PR-3 Browser Evidence | The [current-host synchronization](liaisonscape/liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md) records its own blocked prerequisite, unresolved cause, and resume condition. It is neither PR-3 acceptance nor an Initial Public Release gate inferred from the later closure. |
+| Release and remaining Product work | The [Initial Public Release](e2r-initial-public-release-closure-audit-result.md) is formally closed; [Product practicality](liaisonscape/liaisonscape-general-complex-dataset-practicality-reassessment1-result.md) has bounded acceptance with non-blocking quality follow-ups. Dated research `release blocker OPEN` claims need their precise historical scope before removal. |
 
 ## Materially different reconstruction paths for Human review
 
@@ -179,8 +179,8 @@ The minimum Human structure choices are:
 
 An initial implementation preparation could isolate the Product verification
 execution/budget sequence as a pilot. Its dedicated records include
-[scaling/main-thread viability](liaisonscape-product-authoritative-verification-scaling-envelope-main-thread-viability1-result.md)
-and the later [verification architecture decision](liaisonscape-product-verification-execution-architecture-decision1-result.md).
+[scaling/main-thread viability](liaisonscape/liaisonscape-product-authoritative-verification-scaling-envelope-main-thread-viability1-result.md)
+and the later [verification architecture decision](liaisonscape/liaisonscape-product-verification-execution-architecture-decision1-result.md).
 That pilot should first determine the *current* execution consequence and
 correction order; it should not inherit a dated `next` or promote a diagnostic
 budget to a Product SLA. Further groups can follow only after the same check.

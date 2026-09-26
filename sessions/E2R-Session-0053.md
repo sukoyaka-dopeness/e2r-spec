@@ -30,7 +30,7 @@ unchanged. No new governed Fresh lineage, push, release, deploy, or
 publication was performed.
 
 The authoritative result is recorded in
-`docs/liaisonscape-initial-layout-bounded-coarse-provider1-result.md`.
+`docs/liaisonscape/liaisonscape-initial-layout-bounded-coarse-provider1-result.md`.
 
 `SESSION-0053 CHECKPOINT - BOUNDED COARSE PROVIDER CANDIDATE PASS; PRODUCT ADOPTION HOLD`
 
@@ -174,10 +174,10 @@ Frontier-12 Human evidence remains scoped to those historical arms.
 
 The detailed handoff and local-only source manifest are recorded in:
 
-- `docs/liaisonscape-initial-placement-chatroom-handoff.md`;
-- `docs/liaisonscape-general-crossing-aware-placement1-result.md`;
-- `docs/liaisonscape-joint-constrained-crossing-aware-placement2-result.md`;
-- `docs/liaisonscape-discrete-feasibility-first-placement1-result.md`;
+- `docs/liaisonscape/liaisonscape-initial-placement-chatroom-handoff.md`;
+- `docs/liaisonscape/liaisonscape-general-crossing-aware-placement1-result.md`;
+- `docs/liaisonscape/liaisonscape-joint-constrained-crossing-aware-placement2-result.md`;
+- `docs/liaisonscape/liaisonscape-discrete-feasibility-first-placement1-result.md`;
 - `docs/roadmap.md`.
 
 Important LiaisonScape sources include:

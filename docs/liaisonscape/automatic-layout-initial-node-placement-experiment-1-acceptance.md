@@ -9,8 +9,8 @@ Status: ACCEPTED / COMPLETE for the bounded EXP1 scope
 EXP1 accepts only fresh automatic Entity placement using deterministic
 nearest-free search. The authority documents are:
 
-- `docs/automatic-layout-initial-node-placement-design.md` (Design1); and
-- `docs/automatic-layout-initial-node-placement-experiment-1-result.md`
+- `docs/liaisonscape/automatic-layout-initial-node-placement-design.md` (Design1); and
+- `docs/liaisonscape/automatic-layout-initial-node-placement-experiment-1-result.md`
   (implementation result).
 
 The implementation commits are LiaisonScape `866b298` (`feat: avoid initial

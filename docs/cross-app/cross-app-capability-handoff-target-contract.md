@@ -43,7 +43,7 @@ The current status is therefore design-accepted, but not implementation-ready.
 
 ## Existing Dataset Handoff boundary
 
-The [Dataset Handoff v0 design](../dataset-handoff-v0-design.md) remains the
+The [Dataset Handoff v0 design](dataset-handoff-v0-design.md) remains the
 source of truth for the current minimal acquisition convention:
 
 ```text
@@ -580,7 +580,7 @@ This design was checked against:
 
 - [Cross-App Capability Handoff Discovery Audit](cross-app-capability-handoff-discovery-audit.md);
 - [Cross-App Relation Deletion Capability Closure](cross-app-relation-deletion-capability-closure.md);
-- [Dataset Handoff v0](../dataset-handoff-v0-design.md);
+- [Dataset Handoff v0](dataset-handoff-v0-design.md);
 - [NarrativeLine Dataset Handoff v0 Formal Completion](../narrativeline/narrativeline-dataset-handoff-v0-formal-completion-acceptance.md);
 - [LiaisonScape Dataset Handoff v0 implementation](../liaisonscape/dataset-handoff-v0-liaison-scape-implementation-result.md);
 - [Dataset Acquisition Entry Point Alignment](../dataset-acquisition-entry-point-alignment.md);

@@ -55,7 +55,7 @@ selected.
   the earlier handoff and Session wording used the wrong repository name.
   LiaisonScape's existing display prefers a non-empty Entity Name and falls
   back to its ID. EN/JA desktop checks passed, and direct 390px acceptance is
-  **ACCEPTED / CLOSED** in [the narrow acceptance result](../docs/narrativeline-entity-selection-status-narrow-acceptance1-result.md).
+  **ACCEPTED / CLOSED** in [the narrow acceptance result](../docs/narrativeline/narrativeline-entity-selection-status-narrow-acceptance1-result.md).
   NarrativeLine's Event-to-Entity Detail navigation is a separate flow; no
   application source change was needed for this acceptance.
 - Handoff was accepted for the existing Entity Detail deletion-blocker route
@@ -90,16 +90,16 @@ The later `E2R-NARRATIVELINE-VITE-24678-WARNING-DIAGNOSTIC1` checkpoint
 reproduced the middleware test-server `24678` warning 89 times during a natural
 259/259 test pass, confirmed transient Node test-worker listener ownership and
 no post-exit listener/process, and closed it as an accepted non-blocking
-test-tooling warning. See the [diagnostic result](../docs/narrativeline-vite-24678-warning-diagnostic1-result.md).
+test-tooling warning. See the [diagnostic result](../docs/narrativeline/narrativeline-vite-24678-warning-diagnostic1-result.md).
 The bounded follow-up identified the exact Vite 8.1.5 trigger as parallel
 middleware-mode test servers racing for the default WS port 24678; `hmr:false`
 does not disable that WS listener. The 8-server reproduction yielded 7 benign
 `EADDRINUSE` warnings and clean shutdown. No NarrativeLine test change was
-needed. See the [trigger audit](../docs/narrativeline-vite-24678-warning-trigger-audit1-result.md).
+needed. See the [trigger audit](../docs/narrativeline/narrativeline-vite-24678-warning-trigger-audit1-result.md).
 The subsequent NarrativeLine-local cleanup set `server.ws:false` in all 18
 SSR-only middleware test server setups. Full validation passed 259/259 with
 zero 24678 warnings/listener samples and no post-run listener or worker.
-Details: [test WS cleanup result](../docs/narrativeline-vite-test-ws-cleanup1-result.md).
+Details: [test WS cleanup result](../docs/narrativeline/narrativeline-vite-test-ws-cleanup1-result.md).
 
 - The Entity Create Name and Description fields were aligned with the existing
   full-width Entity Detail controls. EN/JA, desktop/narrow, keyboard, and
@@ -147,7 +147,7 @@ reload, focus-visible, and overflow were checked; tests, lint, and build passed.
 The Public artifact still uses the old `:has()` CSS and exposes no source SHA,
 so its deployed source cannot be tied to the local modifier correction, and the
 reported physical-device condition remains unverified. See [narrow Header
-acceptance result](../docs/narrativeline-narrow-header-robustness-acceptance1-result.md).
+acceptance result](../docs/narrativeline/narrativeline-narrow-header-robustness-acceptance1-result.md).
 
 ## Roadmap and Research disposition
 
@@ -160,7 +160,7 @@ include:
   unverified. See the acceptance result linked above.
 - LiaisonScape Entity Name selection status: accepted/closed after direct
   390px browser verification. See
-  [the narrow acceptance result](../docs/narrativeline-entity-selection-status-narrow-acceptance1-result.md).
+  [the narrow acceptance result](../docs/narrativeline/narrativeline-entity-selection-status-narrow-acceptance1-result.md).
 - LiaisonScape Detail dialogs: local matrix accepted; physical safe-area and
   OS-keyboard evidence remains environment-specific.
 - LiaisonScape phone-landscape graph-canvas expansion: exploratory; Human scope
@@ -333,7 +333,7 @@ otherwise indicated:
   `git diff --check` passed.
 - At the Header correction checkpoint, lint, build, and `git diff --check`
   passed; tests and narrow browser acceptance had not yet run. The later
-  [narrow Header acceptance result](../docs/narrativeline-narrow-header-robustness-acceptance1-result.md)
+  [narrow Header acceptance result](../docs/narrativeline/narrativeline-narrow-header-robustness-acceptance1-result.md)
   supersedes that pending state for the bounded scope: local narrow EN/JA,
   navigation, focus-visible, overflow, tests, lint, and build passed. Exact
   physical-device reproduction and deployed Public source revision remain

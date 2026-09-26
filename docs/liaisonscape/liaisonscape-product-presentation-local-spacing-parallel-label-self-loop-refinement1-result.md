@@ -18,7 +18,7 @@ The diagnostic experiment compared:
 - twelve diagnostic Self-loop angle/radius probes.
 
 The experiment is recorded in the LiaisonScape artifact
-[`result-summary.json`](../../e2r-liaison-scape/experimental/product-presentation-local-spacing-parallel-label-self-loop-refinement1/result-summary.json).
+[`result-summary.json`](../../../e2r-liaison-scape/experimental/product-presentation-local-spacing-parallel-label-self-loop-refinement1/result-summary.json).
 The Actual Product smoke surface is indexed in
 [`visual-evidence-index.md`](../../e2r-liaison-scape/experimental/product-evaluation-seam/product-presentation-local-spacing-parallel-label-self-loop-refinement1/visual-evidence-index.md).
 

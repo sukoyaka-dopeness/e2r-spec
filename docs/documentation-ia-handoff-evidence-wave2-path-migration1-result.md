@@ -87,7 +87,7 @@ manifest; this result records the later execution disposition.
 
 ## Preserved exclusions and authority boundaries
 
-The root `docs/dataset-handoff-v0-design.md`, LiaisonScape public-recipient
+The root `docs/cross-app/dataset-handoff-v0-design.md`, LiaisonScape public-recipient
 deployment result, NarrativeLine Relation blocker presentation follow-up,
 Locale, Cross-App Relation Deletion, release/provenance material, and Validator
 0.4.0 candidate were not moved. Wave 2B was not performed.

@@ -28,7 +28,7 @@ Checkpoint:
 
 Result document:
 
-- `docs/liaisonscape-direct-unselected-relation-drag-result.md`
+- `docs/liaisonscape/liaisonscape-direct-unselected-relation-drag-result.md`
 
 ## Experiment 2F - Connection Handle Visibility UX
 
@@ -65,7 +65,7 @@ Checkpoint:
 
 Result document:
 
-- `docs/liaisonscape-connection-handle-visibility-result.md`
+- `docs/liaisonscape/liaisonscape-connection-handle-visibility-result.md`
 
 ## Experiment 2G - Popover Anchor Consistency
 
@@ -100,7 +100,7 @@ Checkpoint:
 
 Result document:
 
-- `docs/liaisonscape-popover-anchor-consistency-result.md`
+- `docs/liaisonscape/liaisonscape-popover-anchor-consistency-result.md`
 
 ## Validation
 

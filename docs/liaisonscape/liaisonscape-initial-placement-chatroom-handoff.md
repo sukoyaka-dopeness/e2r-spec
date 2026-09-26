@@ -93,12 +93,12 @@ otherwise stated. They are retained research sources, not Product providers:
 
 Relative to `C:\Users\extra\E2R\e2r-spec`:
 
-- `docs/liaisonscape-general-crossing-aware-placement1-result.md`;
-- `docs/liaisonscape-joint-constrained-crossing-aware-placement2-result.md`;
-- `docs/liaisonscape-discrete-feasibility-first-placement1-result.md`;
-- `docs/liaisonscape-structural-placement-angular-ordering-retune1-result.md`;
-- `docs/liaisonscape-structural-placement-angular-ordering-retune2-result.md`;
-- `docs/liaisonscape-parallel-incident-architecture-closure1-result.md`;
+- `docs/liaisonscape/liaisonscape-general-crossing-aware-placement1-result.md`;
+- `docs/liaisonscape/liaisonscape-joint-constrained-crossing-aware-placement2-result.md`;
+- `docs/liaisonscape/liaisonscape-discrete-feasibility-first-placement1-result.md`;
+- `docs/liaisonscape/liaisonscape-structural-placement-angular-ordering-retune1-result.md`;
+- `docs/liaisonscape/liaisonscape-structural-placement-angular-ordering-retune2-result.md`;
+- `docs/liaisonscape/liaisonscape-parallel-incident-architecture-closure1-result.md`;
 - `docs/roadmap.md`.
 
 The full preceding chain is discoverable with:

@@ -4,7 +4,7 @@
 - Status: PATH MIGRATION COMPLETE; KNOWN WORKSPACE REFERENCES REPAIRED; 15 JSON DIAGNOSTIC ARTIFACT REFERENCES REMAIN UNRESOLVED
 - Scope: The exact 133-document manifest in the [readiness audit](documentation-ia-seed-133-path-migration-readiness-audit1.md): 47 candidate-generation / assignment records, 11 PR-2 production-candidate/readiness records, and 75 PR-3 visual-settling/browser-evidence records.
 - Authority: Human-approved path-migration scope; each moved design/result/acceptance retains its own evidence authority. `docs/roadmap.md` remains the sole current-planning authority.
-- Related records: [Primary-responsibility classification audit](documentation-ia-primary-responsibility-residual-classification-audit1.md), [Documentation Plan](documentation-plan.md), [Documentation Hub](README.md), [current-host runtime blocker synchronization](liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md), and [broad LiaisonScape layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md).
+- Related records: [Primary-responsibility classification audit](documentation-ia-primary-responsibility-residual-classification-audit1.md), [Documentation Plan](documentation-plan.md), [Documentation Hub](README.md), [current-host runtime blocker synchronization](liaisonscape/liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md), and [broad LiaisonScape layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md).
 
 ## Migration result
 

@@ -23,9 +23,9 @@ spacing excess/deficit, bundle geometry, and route length. Side symmetry is not
 an objective. The largest search was 42 combinations.
 
 The machine-readable evidence is
-[`result-summary.json`](../../e2r-liaison-scape/experimental/product-owned-bundle-local-capacity1/result-summary.json),
+[`result-summary.json`](../../../e2r-liaison-scape/experimental/product-owned-bundle-local-capacity1/result-summary.json),
 and the Actual Product smoke is indexed in
-[`visual-evidence-index.md`](../../e2r-liaison-scape/experimental/product-owned-bundle-local-capacity1/visual-evidence-index.md).
+[`visual-evidence-index.md`](../../../e2r-liaison-scape/experimental/product-owned-bundle-local-capacity1/visual-evidence-index.md).
 
 ## Results
 

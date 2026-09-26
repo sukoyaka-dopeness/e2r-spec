@@ -51,7 +51,7 @@ provider did not reach visual-readiness criteria. No knowledge candidate was
 promoted. No push, tag, release, deploy, or publication was performed.
 
 The authoritative result is recorded in
-`docs/liaisonscape-production-shaped-quality-provider-execution-browser-cost-envelope1-result.md`.
+`docs/liaisonscape/liaisonscape-production-shaped-quality-provider-execution-browser-cost-envelope1-result.md`.
 
 `SESSION-0059 CHECKPOINT - PROVIDER SEMANTICS ESTABLISHED; BROWSER DENSE COST
 OPEN; WORKER OR EXECUTION ARCHITECTURE STUDY REQUIRED`

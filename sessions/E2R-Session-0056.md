@@ -52,7 +52,7 @@ is `DIAGNOSTICALLY PROMISING / PRODUCTION INTEGRATION NOT ESTABLISHED`.
 - Initial Layout Release blocker: `OPEN`.
 
 The authoritative result is recorded in
-`docs/liaisonscape-bounded-multi-stage-product-probe1-result.md`.
+`docs/liaisonscape/liaisonscape-bounded-multi-stage-product-probe1-result.md`.
 
 No Product UI integration or visual smoke check was performed because this
 checkpoint produced no new visual candidate. No knowledge candidate was

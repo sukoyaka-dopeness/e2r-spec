@@ -375,7 +375,7 @@ This checkpoint does not authorize or claim:
 
 This design is consistent with:
 
-- `docs/dataset-handoff-v0-design.md`;
+- `docs/cross-app/dataset-handoff-v0-design.md`;
 - `docs/dataset-acquisition-entry-point-alignment.md`;
 - `docs/narrativeline/narrativeline-dataset-handoff-v0-formal-completion-acceptance.md`;
 - `docs/liaisonscape/dataset-handoff-v0-liaison-scape-implementation-result.md`;

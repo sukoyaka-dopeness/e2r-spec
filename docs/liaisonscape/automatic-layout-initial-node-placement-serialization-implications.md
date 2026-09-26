@@ -19,12 +19,12 @@ action, and whether the existing Coordinate contract is sufficient.
 
 ## Authority documents and commits
 
-- `docs/automatic-layout-initial-node-placement-design.md`
-- `docs/automatic-layout-initial-node-placement-experiment-1-result.md`
-- `docs/automatic-layout-initial-node-placement-experiment-1-acceptance.md`
+- `docs/liaisonscape/automatic-layout-initial-node-placement-design.md`
+- `docs/liaisonscape/automatic-layout-initial-node-placement-experiment-1-result.md`
+- `docs/liaisonscape/automatic-layout-initial-node-placement-experiment-1-acceptance.md`
 - `extensions/coordinate-extension-draft.md`
 - `docs/layout-persistence-responsibility-decision.md`
-- `docs/automatic-layout-placement-ownership-checkpoint.md`
+- `docs/liaisonscape/automatic-layout-placement-ownership-checkpoint.md`
 - `docs/dataset-replacement-safety-design.md`
 - `docs/dataset-replacement-safety-liaison-scape-implementation-result.md`
 - `docs/roadmap.md`

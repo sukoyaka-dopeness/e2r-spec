@@ -35,14 +35,14 @@ The current Roadmap remains the sole current-planning authority. The
 following dedicated result documents provide the claim-level evidence for
 this preparation:
 
-- [Product-authoritative Verification Scaling Envelope / Main-thread Viability 1](liaisonscape-product-authoritative-verification-scaling-envelope-main-thread-viability1-result.md)
-- [Bounded Screening Formulation / Finalist Recall 1](liaisonscape-bounded-screening-finalist-recall1-result.md)
-- [Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1](liaisonscape-bounded-multi-stage-product-probe1-result.md)
-- [Boundary Equivalence-Class Product Completion / Cost Envelope 1](liaisonscape-boundary-equivalence-class-product-completion1-result.md)
-- [Independent Risk-Gate / Probe-Target Stability Validation 1](liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
-- [Production-shaped Quality Provider Execution / Browser Cost Envelope 1](liaisonscape-production-shaped-quality-provider-execution-browser-cost-envelope1-result.md)
-- [Product Verification Execution Architecture Decision 1](liaisonscape-product-verification-execution-architecture-decision1-result.md)
-- [Worker Product Metric Parity / Actual Product Visual Candidate Gate 1](liaisonscape-worker-product-metric-parity-actual-product-visual-candidate-gate1-result.md)
+- [Product-authoritative Verification Scaling Envelope / Main-thread Viability 1](liaisonscape/liaisonscape-product-authoritative-verification-scaling-envelope-main-thread-viability1-result.md)
+- [Bounded Screening Formulation / Finalist Recall 1](liaisonscape/liaisonscape-bounded-screening-finalist-recall1-result.md)
+- [Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1](liaisonscape/liaisonscape-bounded-multi-stage-product-probe1-result.md)
+- [Boundary Equivalence-Class Product Completion / Cost Envelope 1](liaisonscape/liaisonscape-boundary-equivalence-class-product-completion1-result.md)
+- [Independent Risk-Gate / Probe-Target Stability Validation 1](liaisonscape/liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
+- [Production-shaped Quality Provider Execution / Browser Cost Envelope 1](liaisonscape/liaisonscape-production-shaped-quality-provider-execution-browser-cost-envelope1-result.md)
+- [Product Verification Execution Architecture Decision 1](liaisonscape/liaisonscape-product-verification-execution-architecture-decision1-result.md)
+- [Worker Product Metric Parity / Actual Product Visual Candidate Gate 1](liaisonscape/liaisonscape-worker-product-metric-parity-actual-product-visual-candidate-gate1-result.md)
 
 The existing [first-pilot result](roadmap-hybrid-reconstruction-product-verification-pilot-result1.md)
 and [first-pilot preparation](roadmap-hybrid-reconstruction-product-verification-pilot-preparation1.md)

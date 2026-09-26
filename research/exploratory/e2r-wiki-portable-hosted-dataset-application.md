@@ -149,7 +149,7 @@ responsibilities:
   is the separate place to investigate controlled relation vocabulary; this
   note proposes no vocabulary and assigns no interoperable meaning to
   `Relation.name`.
-- [Dataset Handoff v0 design](../../docs/dataset-handoff-v0-design.md) remains
+- [Dataset Handoff v0 design](../../docs/cross-app/dataset-handoff-v0-design.md) remains
   the current handoff contract, while [Anonymous Dataset Sharing research](anonymous-dataset-sharing.md)
   explores public sharing and already distinguishes a public reference from a
   creator-held management capability without establishing identity or

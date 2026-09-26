@@ -196,8 +196,8 @@ Knowledge and decisions:
 
 - `ai-knowledge/INDEX.md`
 - `ai-knowledge/decisions/application-modularization-and-incremental-extraction.md`
-- `docs/automatic-layout-experiment-plan.md`
-- `docs/automatic-layout-placement-ownership-checkpoint.md`
+- `docs/liaisonscape/automatic-layout-experiment-plan.md`
+- `docs/liaisonscape/automatic-layout-placement-ownership-checkpoint.md`
 - `docs/layout-persistence-responsibility-decision.md`
 - `docs/roadmap.md`
 

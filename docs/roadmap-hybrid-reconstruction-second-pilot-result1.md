@@ -40,7 +40,7 @@ The Roadmap continues to state that:
 - the Initial Layout current parent, priority, release blocker, and
   compatibility-sensitive navigation remain unchanged.
 
-The dedicated [scaling-envelope result](liaisonscape-product-authoritative-verification-scaling-envelope-main-thread-viability1-result.md)
+The dedicated [scaling-envelope result](liaisonscape/liaisonscape-product-authoritative-verification-scaling-envelope-main-thread-viability1-result.md)
 remains the evidence authority. The [existing broad chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md)
 is the historical authority for the transferred dated block.
 

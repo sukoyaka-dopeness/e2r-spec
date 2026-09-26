@@ -179,18 +179,18 @@ by default.
 - `docs/roadmap.md` — current status and priority authority.
 - `docs/liaisonscape/cross-app-destructive-action-hierarchy-audit.md` — action-role and
   focus boundary.
-- `docs/narrativeline-phase24-navigation-safety-acceptance.md` — accepted
+- `docs/narrativeline/narrativeline-phase24-navigation-safety-acceptance.md` — accepted
   navigation/loss-risk contract.
-- `docs/narrativeline-locale-consumer-acceptance.md` — accepted EN/JA boundary.
-- `docs/narrativeline-timeline-shell-acceptance.md` — accepted Timeline shell.
-- `docs/narrativeline-relation-blocker-presentation-formal-acceptance.md` —
+- `docs/narrativeline/narrativeline-locale-consumer-acceptance.md` — accepted EN/JA boundary.
+- `docs/narrativeline/narrativeline-timeline-shell-acceptance.md` — accepted Timeline shell.
+- `docs/narrativeline/narrativeline-relation-blocker-presentation-formal-acceptance.md` —
   accepted deletion/presentation boundary when comparing dialogs.
 
 ### USEFUL
 
 - `docs/narrativeline/narrativeline-modernization-nl-0-acceptance.md` — original application
   boundary and known documentation drift.
-- `docs/narrativeline-display-order-reordering-audit.md` — deferred chronology
+- `docs/narrativeline/narrativeline-display-order-reordering-audit.md` — deferred chronology
   and presentation-order boundary.
 - `docs/liaisonscape/cross-app-confirmation-dialog-spacing-audit.md` — related dialog
   comparison evidence.

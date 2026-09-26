@@ -107,7 +107,7 @@ Hub direct Handoff as a future formal acceptance item.
 
 ## Dataset Handoff v0 boundary
 
-The [Dataset Handoff v0 design](../dataset-handoff-v0-design.md) defines the
+The [Dataset Handoff v0 design](dataset-handoff-v0-design.md) defines the
 minimal existing transport:
 
 ```text

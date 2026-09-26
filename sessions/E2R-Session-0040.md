@@ -155,7 +155,7 @@ e2r-spec:
 The consolidated result document is:
 
 ```text
-docs/automatic-layout-placement-ownership-indicator-result.md
+docs/liaisonscape/automatic-layout-placement-ownership-indicator-result.md
 ```
 
 Both commits are local and unpushed.

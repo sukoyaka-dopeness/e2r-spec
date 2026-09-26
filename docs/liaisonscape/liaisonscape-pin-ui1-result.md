@@ -18,7 +18,7 @@ some Nodes appear visually inconsistent. Functionality and authority were
 accepted for continued review, but this first visual treatment was not.
 
 The replacement visual treatment is recorded in
-[Pin UI Human Check A Visual Iteration 1](../liaisonscape-pin-ui-human-check-a-visual-iteration1-result.md).
+[Pin UI Human Check A Visual Iteration 1](liaisonscape-pin-ui-human-check-a-visual-iteration1-result.md).
 Initial Automatic Display and Explicit Auto Layout behavior remain separate.
 
 ## Interaction boundary

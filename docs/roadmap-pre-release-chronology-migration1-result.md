@@ -32,7 +32,7 @@ closed and links its current closure authority. The Objective Audit's
 enduring placement consequence remains a concise pointer in the current
 Initial Layout planning context: both Lighthouse samples already had stored
 coordinates, so those samples did not exercise the missing-coordinate path.
-The dedicated [Objective Audit](liaisonscape-initial-node-placement-objective-audit.md)
+The dedicated [Objective Audit](liaisonscape/liaisonscape-initial-node-placement-objective-audit.md)
 remains evidence for causal separation, not a current release gate or
 implementation authorization. The later current execution order and all
 accepted, qualified, open, and deferred boundaries were otherwise left

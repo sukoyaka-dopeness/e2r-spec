@@ -45,7 +45,7 @@ The comparison was interpreted as:
 | Post | `post-structural-relaxation-v1`, bounded Stage 2 relaxation from the generic state | preferred by the user; candidate remains HOLD |
 
 The provenance and implementation chain are recorded in [the candidate
-provenance audit](C:/Users/extra/E2R/e2r-spec/docs/liaisonscape-initial-layout-candidate-provenance-audit.md).
+provenance audit](liaisonscape-initial-layout-candidate-provenance-audit.md).
 The comparison surface uses the real `src/App.tsx`; candidate coordinates are
 temporary values in an in-memory diagnostic clone and are not saved.
 

@@ -31,7 +31,7 @@ Experiment 1 Label Stability is complete as bounded evidence. The
 previous-placement approach showed partial improvement without changing
 Dataset or Layout persistence. The next bounded experiment is graph density /
 spacing, recorded in
-`docs/automatic-layout-experiment-1-label-stability-result.md`.
+`docs/liaisonscape/automatic-layout-experiment-1-label-stability-result.md`.
 
 Experiment 1B Density/Framing is now recorded as inconclusive evidence. Its
 temporary spacing and initial-framing implementation was not adopted, and
@@ -151,7 +151,7 @@ authority.
 
 The stored-versus-derived-versus-explicit-Auto-Layout comparison is recorded in
 [LiaisonScape Coordinate-less Placement Comparison
-Audit](../liaisonscape-coordinate-less-placement-comparison-audit.md). The result is
+Audit](../liaisonscape/liaisonscape-coordinate-less-placement-comparison-audit.md). The result is
 `ACCEPTED - CURRENT STORED SAMPLE COORDINATES REMAIN PREFERRED`. Detailed evidence and
 qualifications remain in the linked authority; this dated checkpoint does not change
 current execution order or authorize work beyond its recorded scope.
@@ -160,7 +160,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The Relation routing / presentation quality audit is recorded in [LiaisonScape Relation
 Routing / Presentation Quality
-Audit](../liaisonscape-relation-routing-presentation-quality-audit.md). The result is
+Audit](../liaisonscape/liaisonscape-relation-routing-presentation-quality-audit.md). The result is
 `ROUTING / PRESENTATION FOLLOW-UP REQUIRED - INITIAL PLACEMENT IS NOT PRIMARY CAUSE`.
 Detailed evidence and qualifications remain in the linked authority; this dated
 checkpoint does not change current execution order or authorize work beyond its recorded
@@ -169,7 +169,7 @@ scope.
 ### E2R-LIAISONSCAPE-SELF-LOOP-SAME-GEOMETRY-COUNTERFACTUAL1 (2026-08-30)
 
 The self-loop same-geometry counterfactual is recorded in [LiaisonScape Self-Loop
-Same-Geometry Counterfactual](../liaisonscape-self-loop-same-geometry-counterfactual.md).
+Same-Geometry Counterfactual](../liaisonscape/liaisonscape-self-loop-same-geometry-counterfactual.md).
 The result is `NOT JUSTIFIED - SAME-GEOMETRY COUNTERFACTUAL SHOWS NO CLEARLY BETTER
 SELF-LOOP ROUTE`. Detailed evidence and qualifications remain in the linked authority;
 this dated checkpoint does not change current execution order or authorize work beyond
@@ -179,7 +179,7 @@ its recorded scope.
 
 The reverse-endpoint parallel physical-side fix is recorded in [LiaisonScape
 Reverse-Endpoint Parallel Physical-Side
-Fix](../liaisonscape-reverse-endpoint-parallel-physical-side-fix.md). Automatic non-self
+Fix](../liaisonscape/liaisonscape-reverse-endpoint-parallel-physical-side-fix.md). Automatic non-self
 parallel base offsets now use a canonical unordered endpoint frame, so A->B and B->A
 retain opposite physical sides while their semantic directions and arrows remain
 unchanged. Detailed evidence and qualifications remain in the linked authority; this
@@ -189,7 +189,7 @@ recorded scope.
 ### E2R-LIAISONSCAPE-PARALLEL-OBSTACLE-SIDE-COLLAPSE-AUDIT1 (2026-08-30)
 
 The obstacle side-collapse audit is recorded in [LiaisonScape Parallel Obstacle
-Side-Collapse Audit](../liaisonscape-parallel-obstacle-side-collapse-audit.md). The result
+Side-Collapse Audit](../liaisonscape/liaisonscape-parallel-obstacle-side-collapse-audit.md). The result
 is `CAUSALITY CONFIRMED - OBSTACLE ROUTING INDEPENDENTLY COLLAPSES PARALLEL SIDES`: a
 one-sided obstacle can make individually scored routes choose the same escape side even
 after clean base normalization. Detailed evidence and qualifications remain in the
@@ -200,7 +200,7 @@ authorize work beyond its recorded scope.
 
 The bounded obstacle side-preservation fix is recorded in [LiaisonScape Parallel
 Obstacle Side-Preservation
-Fix](../liaisonscape-parallel-obstacle-side-preservation-fix.md). Safe candidates that
+Fix](../liaisonscape/liaisonscape-parallel-obstacle-side-preservation-fix.md). Safe candidates that
 preserve the existing parallel physical side are now preferred lexicographically, while
 the existing best-candidate fallback allows side switching when no such candidate is
 safe. Detailed evidence and qualifications remain in the linked authority; this dated
@@ -210,7 +210,7 @@ scope.
 ### E2R-LIAISONSCAPE-FOREIGN-NODE-CLEARANCE-FIX1 (2026-08-30)
 
 The foreign-node clearance audit is recorded in [LiaisonScape Foreign-Node Clearance
-Audit](../liaisonscape-foreign-node-clearance-audit.md). The result is `NOT REPRODUCED`:
+Audit](../liaisonscape/liaisonscape-foreign-node-clearance-audit.md). The result is `NOT REPRODUCED`:
 current Lighthouse stored coordinates keep all ordinary Relation routes outside the
 existing 60-unit node-influence region. Detailed evidence and qualifications remain in
 the linked authority; this dated checkpoint does not change current execution order or
@@ -220,7 +220,7 @@ authorize work beyond its recorded scope.
 
 The Relation-label normal-distance audit is recorded in [LiaisonScape Relation-Label
 Normal-Distance Recovery
-Audit](../liaisonscape-relation-label-normal-distance-recovery-audit.md). The result is
+Audit](../liaisonscape/liaisonscape-relation-label-normal-distance-recovery-audit.md). The result is
 `NOT JUSTIFIED`: the existing label helper already returns an automatic label toward its
 owner Edge when pressure disappears, while keeping the along-edge anchor stable and
 retaining necessary displacement when collisions remain. Detailed evidence and
@@ -230,7 +230,7 @@ current execution order or authorize work beyond its recorded scope.
 ### E2R-LIAISONSCAPE-RELATION-LABEL-ALONG-EDGE-MIDPOINT-RECOVERY-FIX1 (2026-08-30)
 
 The along-edge / midpoint recovery audit is recorded in [LiaisonScape Relation-Label
-Along-Edge Recovery Audit](../liaisonscape-relation-label-along-edge-recovery-audit.md).
+Along-Edge Recovery Audit](../liaisonscape/liaisonscape-relation-label-along-edge-recovery-audit.md).
 The result is `NOT JUSTIFIED`: existing candidate selection returns labels toward the
 preferred midpoint when pressure disappears, while preserving along-edge displacement
 whenever the preferred position remains blocked. Detailed evidence and qualifications
@@ -241,7 +241,7 @@ order or authorize work beyond its recorded scope.
 
 The foreign-edge ownership audit is recorded in [LiaisonScape Relation-Label
 Foreign-Edge Ownership
-Audit](../liaisonscape-relation-label-foreign-edge-ownership-audit.md). The result is `NOT
+Audit](../liaisonscape/liaisonscape-relation-label-foreign-edge-ownership-audit.md). The result is `NOT
 JUSTIFIED`: current automatic label candidates already place representative Lighthouse
 labels nearer to their owning Relation than to the nearest foreign Relation. Detailed
 evidence and qualifications remain in the linked authority; this dated checkpoint does
@@ -250,7 +250,7 @@ not change current execution order or authorize work beyond its recorded scope.
 ### E2R-LIAISONSCAPE-ORDINARY-EDGE-CROSSING-CONGESTION-FIX1 (2026-08-30)
 
 The ordinary-edge crossing audit is recorded in [LiaisonScape Ordinary-Edge Crossing
-Audit](../liaisonscape-ordinary-edge-crossing-audit.md). The result is `NOT REPRODUCED`:
+Audit](../liaisonscape/liaisonscape-ordinary-edge-crossing-audit.md). The result is `NOT REPRODUCED`:
 the current Lighthouse stored geometry has zero true non-endpoint ordinary-edge
 crossings and no sampled near-crossing pair below the diagnostic 20-unit band. Detailed
 evidence and qualifications remain in the linked authority; this dated checkpoint does
@@ -259,7 +259,7 @@ not change current execution order or authorize work beyond its recorded scope.
 ### E2R-LIAISONSCAPE-SHARED-ENDPOINT-FANOUT-CONGESTION-FIX1 (2026-08-30)
 
 The shared-endpoint fan-out audit is recorded in [LiaisonScape Shared-Endpoint Fan-Out
-Audit](../liaisonscape-shared-endpoint-fanout-audit.md). The result is `NOT REPRODUCED`:
+Audit](../liaisonscape/liaisonscape-shared-endpoint-fanout-audit.md). The result is `NOT REPRODUCED`:
 the current Lighthouse geometry has no material post-boundary bundling. Detailed
 evidence and qualifications remain in the linked authority; this dated checkpoint does
 not change current execution order or authorize work beyond its recorded scope.
@@ -267,7 +267,7 @@ not change current execution order or authorize work beyond its recorded scope.
 ### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-GRIDNESS-COUNTERFACTUAL1 (2026-08-30)
 
 The gridness counterfactual is recorded in [LiaisonScape Initial Node Placement Gridness
-Counterfactual](../liaisonscape-initial-node-placement-gridness-counterfactual.md). The
+Counterfactual](../liaisonscape/liaisonscape-initial-node-placement-gridness-counterfactual.md). The
 result is `DIRECTION SUPPORTED`: the coordinate-less fallback exhibits strong
 repeated-row gridness, while the existing Auto Layout counterfactual removes exact X/Y
 alignments. Detailed evidence and qualifications remain in the linked authority; this
@@ -277,7 +277,7 @@ recorded scope.
 ### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-NON-GRID-EXPERIMENT1 (2026-08-30)
 
 The non-grid experiment is recorded in [LiaisonScape Initial Node Placement Non-Grid
-Experiment](../liaisonscape-initial-node-placement-non-grid-experiment.md). The result is
+Experiment](../liaisonscape/liaisonscape-initial-node-placement-non-grid-experiment.md). The result is
 `PARTIAL`: bounded runs of the existing Auto Layout mechanics remove the coordinate-less
 fallback's repeated-row gridness deterministically, but full startup reuse remains
 unproven for mixed Coordinates, routing/label quality, performance, and ownership
@@ -289,7 +289,7 @@ recorded scope.
 
 The bounded settling implementation is recorded in [LiaisonScape Initial Node Placement
 Bounded Settling
-Implementation](../liaisonscape-initial-node-placement-bounded-settling-implementation.md).
+Implementation](../liaisonscape/liaisonscape-initial-node-placement-bounded-settling-implementation.md).
 The result is `IMPLEMENTED`: Coordinate-less Dataset opening now uses a deterministic
 three-iteration derived placement helper based on the existing Auto Layout mechanics.
 Detailed evidence and qualifications remain in the linked authority; this dated
@@ -300,7 +300,7 @@ scope.
 
 The settling-depth experiment is recorded in [LiaisonScape Initial Node Placement
 Congestion / Settling Depth
-Experiment](../liaisonscape-initial-node-placement-congestion-settling-depth-experiment.md).
+Experiment](../liaisonscape/liaisonscape-initial-node-placement-congestion-settling-depth-experiment.md).
 The result is `RESEARCH REQUIRED`: 6/12-iteration counterfactuals compact the Node
 geometry beyond the accepted 3-iteration candidate, but the existing solver is not
 Edge-crossing-, route-clearance-, or label-aware. Detailed evidence and qualifications
@@ -311,7 +311,7 @@ order or authorize work beyond its recorded scope.
 
 The presentation-pressure decomposition is recorded in [LiaisonScape Initial Node
 Placement Presentation-Pressure Objective
-Decomposition](../liaisonscape-initial-node-placement-presentation-pressure-objective-decomposition.md).
+Decomposition](../liaisonscape/liaisonscape-initial-node-placement-presentation-pressure-objective-decomposition.md).
 The result is `RESEARCH REQUIRED`: the existing Node-only solver does not account for
 Edge, route-corridor, or label pressure, but direct integration of production routing
 and labels would create an unbounded feedback loop. Detailed evidence and qualifications
@@ -322,7 +322,7 @@ order or authorize work beyond its recorded scope.
 
 The synthetic physical-side counterfactual is recorded in [LiaisonScape Parallel
 Synthetic Physical-Side
-Counterfactual](../liaisonscape-parallel-synthetic-physical-side-counterfactual.md). The
+Counterfactual](../liaisonscape/liaisonscape-parallel-synthetic-physical-side-counterfactual.md). The
 result is `CAUSALITY CONFIRMED - REVERSE-ENDPOINT PHYSICAL-SIDE NORMALIZATION FIX
 REQUIRED`. Detailed evidence and qualifications remain in the linked authority; this
 dated checkpoint does not change current execution order or authorize work beyond its
@@ -332,7 +332,7 @@ recorded scope.
 
 The reverse-endpoint parallel physical-side fix is recorded in [LiaisonScape
 Reverse-Endpoint Parallel Physical-Side
-Fix](../liaisonscape-reverse-endpoint-parallel-physical-side-fix.md). Automatic non-self
+Fix](../liaisonscape/liaisonscape-reverse-endpoint-parallel-physical-side-fix.md). Automatic non-self
 parallel base offsets now use a canonical unordered endpoint frame, so A->B and B->A
 retain opposite physical sides while their semantic directions and arrows remain
 unchanged. Detailed evidence and qualifications remain in the linked authority; this
@@ -343,7 +343,7 @@ recorded scope.
 
 The parallel physical-side decomposition is recorded in [LiaisonScape Parallel
 Physical-Side Decomposition
-Audit](../liaisonscape-parallel-physical-side-decomposition-audit.md). The result is
+Audit](../liaisonscape/liaisonscape-parallel-physical-side-decomposition-audit.md). The result is
 `INSUFFICIENT EVIDENCE - PARALLEL PHYSICAL-SIDE CAUSE NOT ISOLATED`. Detailed evidence
 and qualifications remain in the linked authority; this dated checkpoint does not change
 current execution order or authorize work beyond its recorded scope.
@@ -351,7 +351,7 @@ current execution order or authorize work beyond its recorded scope.
 ### E2R-LIAISONSCAPE-ROUTING-DECOMPOSITION-SELF-LOOP-AUDIT1 (2026-08-30)
 
 The routing decomposition and self-loop audit is recorded in [LiaisonScape Routing
-Decomposition / Self-Loop Audit](../liaisonscape-routing-decomposition-self-loop-audit.md).
+Decomposition / Self-Loop Audit](../liaisonscape/liaisonscape-routing-decomposition-self-loop-audit.md).
 The result is `SELF-LOOP ROUTING FIX NOT YET JUSTIFIED - INSUFFICIENT CAUSAL EVIDENCE`.
 Detailed evidence and qualifications remain in the linked authority; this dated
 checkpoint does not change current execution order or authorize work beyond its recorded
@@ -361,7 +361,7 @@ scope.
 
 The Edge-corridor proxy experiment is recorded in [LiaisonScape Initial Placement
 Edge-Corridor Proxy
-Experiment](../liaisonscape-initial-placement-edge-corridor-proxy-experiment.md). The
+Experiment](../liaisonscape/liaisonscape-initial-placement-edge-corridor-proxy-experiment.md). The
 result is `PARTIAL`: straight topological chord crossing (P1) and separation (P2) detect
 controlled synthetic cases, but Lighthouse ranking does not explain production routing
 or the manual congestion concern. Detailed evidence and qualifications remain in the
@@ -372,7 +372,7 @@ authorize work beyond its recorded scope.
 
 The Label-pressure proxy experiment is recorded in [LiaisonScape Initial Placement
 Label-Pressure Proxy
-Experiment](../liaisonscape-initial-placement-label-pressure-proxy-experiment.md). The
+Experiment](../liaisonscape/liaisonscape-initial-placement-label-pressure-proxy-experiment.md). The
 result is `RESEARCH REQUIRED`: actual label pressure depends on production route
 samples, candidate anchors, occupied paths, and localized text footprint, so a
 straight-chord proxy does not explain Lighthouse reliably. Detailed evidence and
@@ -383,7 +383,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The degree-centered outward experiment is recorded in [LiaisonScape Degree-Centered
 Outward Placement
-Experiment](../liaisonscape-degree-centered-outward-placement-experiment.md). The result is
+Experiment](../liaisonscape/liaisonscape-degree-centered-outward-placement-experiment.md). The result is
 `PARTIAL`: Lighthouse centrality selects `clara` consistently, supporting a future
 central-hub seed experiment, but label-aware sectoring and the post-settle effect were
 not established. Detailed evidence and qualifications remain in the linked authority;
@@ -394,7 +394,7 @@ its recorded scope.
 
 The Node-repulsion sensitivity experiment is recorded in [LiaisonScape Initial Placement
 Node-Repulsion Sensitivity
-Experiment](../liaisonscape-initial-placement-node-repulsion-sensitivity-experiment.md).
+Experiment](../liaisonscape/liaisonscape-initial-placement-node-repulsion-sensitivity-experiment.md).
 The result is `NOT SUPPORTED`: the current three-iteration candidate's minimum Node
 distance is already beyond the 96-unit repulsion activation distance, and repulsion
 tuning does not explain the presentation concern. Detailed evidence and qualifications
@@ -405,7 +405,7 @@ order or authorize work beyond its recorded scope.
 
 The source reconciliation and target-edge-length experiment is recorded in [LiaisonScape
 Initial Placement Source Reconciliation and Target Edge Length
-Experiment](../liaisonscape-initial-placement-source-reconciliation-and-target-edge-length-experiment.md).
+Experiment](../liaisonscape/liaisonscape-initial-placement-source-reconciliation-and-target-edge-length-experiment.md).
 The result is `SUPPORTED BY EQUATIONS`: live source confirms that Coordinate-less
 opening uses the solver's own degree-ranked seed, not the previously described fallback
 seed, and that always-attractive connected-node force explains continued compression.
@@ -417,7 +417,7 @@ scope.
 
 The target-edge-length and shared-solver boundary experiment is recorded in
 [LiaisonScape Target Edge Length Candidate and Shared Solver Boundary
-Experiment](../liaisonscape-target-edge-length-candidate-and-shared-solver-boundary-experiment.md).
+Experiment](../liaisonscape/liaisonscape-target-edge-length-candidate-and-shared-solver-boundary-experiment.md).
 The result is `BLOCKED`: current source equations explain continued compression, but no
 non-arbitrary target Edge length is justified by existing semantic or geometric
 evidence. Detailed evidence and qualifications remain in the linked authority; this
@@ -428,7 +428,7 @@ recorded scope.
 
 The multi-hop topology seed experiment is recorded in [LiaisonScape Initial Placement
 Multi-Hop Topology Seed
-Experiment](../liaisonscape-initial-placement-multi-hop-topology-seed-experiment.md). The
+Experiment](../liaisonscape/liaisonscape-initial-placement-multi-hop-topology-seed-experiment.md). The
 result is `NOT SUPPORTED`: live source shows a degree-ranked but topology-agnostic ring
 seed, while no bounded external-seed comparison established material multi-hop
 presentation benefit. Detailed evidence and qualifications remain in the linked
@@ -439,7 +439,7 @@ work beyond its recorded scope.
 
 The causal external-seed experiment is recorded in [LiaisonScape External-Seed Injection
 and Multi-Hop
-Counterfactual](../liaisonscape-external-seed-injection-and-multi-hop-counterfactual.md).
+Counterfactual](../liaisonscape/liaisonscape-external-seed-injection-and-multi-hop-counterfactual.md).
 The result is `PARTIAL`: round-trip injection was bit-identical, BFS hop rings improved
 Lighthouse spacing but mixed branches, and parent sectors materially improved Lighthouse
 routing and labels. Detailed evidence and qualifications remain in the linked authority;
@@ -450,7 +450,7 @@ its recorded scope.
 
 The topology-guard experiment is recorded in [LiaisonScape Branch-Preserving Seed
 Topology Guard
-Experiment](../liaisonscape-branch-preserving-seed-topology-guard-experiment.md). The
+Experiment](../liaisonscape/liaisonscape-branch-preserving-seed-topology-guard-experiment.md). The
 result is `PARTIAL`: categorical true branching plus a unique maximum root selects C for
 Lighthouse and protects chain, cycle, dense, and equal-two-hub controls, but it accepts
 unsafe unequal-two-hub and cross-linked-branch cases. Detailed evidence and
@@ -461,7 +461,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The bounded post-presentation experiment is recorded in [LiaisonScape Presentation-Aware
 Local Expansion
-Counterfactual](../liaisonscape-presentation-aware-local-expansion-counterfactual.md). The
+Counterfactual](../liaisonscape/liaisonscape-presentation-aware-local-expansion-counterfactual.md). The
 result is `PARTIAL`: one `clara`-centered 1-hop pass reduced actual Lighthouse
 Relation-label/Node conflicts but did not reduce any ordinary crossing, and one label
 conflict migrated. Detailed evidence and qualifications remain in the linked authority;
@@ -471,7 +471,7 @@ its recorded scope.
 ### E2R-LIAISONSCAPE-LOCAL-EXPANSION-ROUTING-SIGNAL-DECOMPOSITION1 (2026-08-30)
 
 The bounded causal diagnosis is recorded in [LiaisonScape Local-Expansion Routing-Signal
-Decomposition](../liaisonscape-local-expansion-routing-signal-decomposition.md). The result
+Decomposition](../liaisonscape/liaisonscape-local-expansion-routing-signal-decomposition.md). The result
 is `MIXED`: two of seven Lighthouse H2 crossings have a safe bounded single-endpoint
 signal, while route-pair swaps, full route-order reversal, and occupied-path removal
 retain all seven identities. Detailed evidence and qualifications remain in the linked
@@ -482,7 +482,7 @@ work beyond its recorded scope.
 
 The bounded candidate-space experiment is recorded in [LiaisonScape Routing- Crossing
 Mixed-Cause
-Prioritization](../liaisonscape-routing-crossing-mixed-cause-prioritization.md). Its result
+Prioritization](../liaisonscape/liaisonscape-routing-crossing-mixed-cause-prioritization.md). Its result
 is `DIRECTION SUPPORTED`: current candidates can safely resolve five of seven English
 Lighthouse true crossings through two one-Relation replacements, and both benefits
 survive fresh routing and labels. Detailed evidence and qualifications remain in the
@@ -493,7 +493,7 @@ authorize work beyond its recorded scope.
 
 The bounded objective experiment is recorded in [LiaisonScape Ordinary-Route
 True-Crossing Objective
-Experiment](../liaisonscape-ordinary-route-true-crossing-objective-experiment.md). Its
+Experiment](../liaisonscape/liaisonscape-ordinary-route-true-crossing-objective-experiment.md). Its
 result is `TRADE-OFF`: threshold-free X1 preserves hard Node and provisional-label
 safety but cannot select the previously proven Lighthouse crossing reductions because
 those candidates fail its provisional-label gate. Detailed evidence and qualifications
@@ -504,7 +504,7 @@ order or authorize work beyond its recorded scope.
 
 The live frontier experiment is recorded in [LiaisonScape Near-Center Winner
 Discontinuity
-Experiment](../liaisonscape-automatic-route-near-center-winner-discontinuity-experiment.md).
+Experiment](../liaisonscape/liaisonscape-automatic-route-near-center-winner-discontinuity-experiment.md).
 It is `F7 / MIXED`: near-center candidates exist, but different Relations lose them to
 Node-label pressure, occupied paths, or combined safety cliffs. Detailed evidence and
 qualifications remain in the linked authority; this dated checkpoint does not change
@@ -513,7 +513,7 @@ current execution order or authorize work beyond its recorded scope.
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-THREE-LABEL-CORRIDOR-FEASIBILITY-AUDIT1 (2026-09-01)
 
 The feasibility audit is recorded in [LiaisonScape Three-Label Corridor Feasibility
-Audit](../liaisonscape-automatic-route-three-label-corridor-feasibility-audit.md). It is
+Audit](../liaisonscape/liaisonscape-automatic-route-three-label-corridor-feasibility-audit.md). It is
 `BLOCKED / F6`: pressure omission is established, but the current label placement API
 does not expose the full candidate inventory and exact safety semantics needed for a
 joint feasibility oracle. Detailed evidence and qualifications remain in the linked
@@ -523,7 +523,7 @@ work beyond its recorded scope.
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-MULTI-LABEL-CORRIDOR-ISOLATION1 (2026-09-01)
 
 The canonical App-pipeline isolation is recorded in [LiaisonScape Multi-Label Corridor
-Isolation](../liaisonscape-automatic-route-multi-label-corridor-isolation.md). It is
+Isolation](../liaisonscape/liaisonscape-automatic-route-multi-label-corridor-isolation.md). It is
 `DIRECTION SUPPORTED`: both Clara/Thomas Relations require all three observed owners
 under live omission, while Sofia/Archive has alternative single-owner sets and
 Authority/Lighthouse is a foreign-label control. Detailed evidence and qualifications
@@ -534,7 +534,7 @@ order or authorize work beyond its recorded scope.
 
 The Japanese Lighthouse inventory is recorded in [LiaisonScape Lighthouse Local
 Curvature Blocker
-Inventory](../liaisonscape-lighthouse-local-curvature-blocker-inventory.md). It is `MIXED`:
+Inventory](../liaisonscape/liaisonscape-lighthouse-local-curvature-blocker-inventory.md). It is `MIXED`:
 Clara/Thomas and Sofia/Archive are multiple-label cases, while Authority/Lighthouse is a
 single foreign-label case; no single endpoint-label qualifying case was found. Detailed
 evidence and qualifications remain in the linked authority; this dated checkpoint does
@@ -544,7 +544,7 @@ not change current execution order or authorize work beyond its recorded scope.
 
 The controlled experiment is recorded in [LiaisonScape Endpoint Label Corridor
 Relaxation
-Experiment](../liaisonscape-automatic-route-endpoint-label-corridor-relaxation-experiment.md).
+Experiment](../liaisonscape/liaisonscape-automatic-route-endpoint-label-corridor-relaxation-experiment.md).
 It is `PARTIAL`: existing candidates plus target-owner-only previous-placement
 preference removal reopened a single endpoint corridor through chord 160, but a second
 endpoint blocker remained decisive and no Lighthouse case was shown. Detailed evidence
@@ -555,7 +555,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The controlled source audit is recorded in [LiaisonScape Automatic-Route Short-Edge /
 Normalized-Curvature
-Audit](../liaisonscape-automatic-route-short-edge-normalized-curvature-audit.md). It is
+Audit](../liaisonscape/liaisonscape-automatic-route-short-edge-normalized-curvature-audit.md). It is
 `MIXED`: absolute offsets amplify normalized curvature on short chords, while ordinary
 automatic endpoint labels alone did not curve the minimal fixture; endpoint labels
 occupying the corridor did select nonzero live routes. Detailed evidence and
@@ -566,7 +566,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The bounded semantics experiment is recorded in [LiaisonScape Ordinary-Route
 Node-Label-Crossing Priority Semantics
-Experiment](../liaisonscape-ordinary-route-node-label-crossing-priority-semantics-experiment.md).
+Experiment](../liaisonscape/liaisonscape-ordinary-route-node-label-crossing-priority-semantics-experiment.md).
 Its result is `MIXED`: provisional route/Node-label intersections are only partially
 predictive of final presentation safety. Detailed evidence and qualifications remain in
 the linked authority; this dated checkpoint does not change current execution order or
@@ -575,7 +575,7 @@ authorize work beyond its recorded scope.
 ### E2R-LIAISONSCAPE-AUTOMATIC-ROUTE-HISTORICAL-REPLAY-AUDIT1 (2026-08-31)
 
 The historical detached-worktree replay is recorded in [LiaisonScape Automatic-Route
-Historical Replay Audit](../liaisonscape-automatic-route-historical-replay-audit.md). Its
+Historical Replay Audit](../liaisonscape/liaisonscape-automatic-route-historical-replay-audit.md). Its
 result is `TRADE-OFF — EARLIER ROUTING IS TEMPORALLY SMOOTHER BUT REINTRODUCES ACCEPTED
 COLLISION REGRESSIONS`: G3/G4 have a stable beacon trajectory, while those generations
 predate accepted physical-side protections and omit current provisional-label behavior;
@@ -587,7 +587,7 @@ order or authorize work beyond its recorded scope.
 
 The property-level replay is recorded in [LiaisonScape Automatic-Route Historical
 Safety-Delta
-Isolation](../liaisonscape-automatic-route-historical-safety-delta-isolation.md). Its
+Isolation](../liaisonscape/liaisonscape-automatic-route-historical-safety-delta-isolation.md). Its
 result is `MIXED — PROVISIONAL-LABEL PRESSURE IS CAUSAL BUT NO GLOBAL RELAXATION IS
 SAFE`: the hard provisional-label boundary alone causes the beacon flip, while full
 removal recovers continuity but changes route and label identities across both locales.
@@ -599,7 +599,7 @@ scope.
 
 The active-drag and release comparison is recorded in [LiaisonScape Automatic- Route
 Label-Pressure Temporal Semantics
-Experiment](../liaisonscape-automatic-route-label-pressure-temporal-semantics-experiment.md).
+Experiment](../liaisonscape/liaisonscape-automatic-route-label-pressure-temporal-semantics-experiment.md).
 Its result is `TRADE-OFF — DRAG-TIME LABEL DEFER REMOVES THE MID-DRAG FLIP BUT MOVES THE
 SAME DISCONTINUITY TO RELEASE`: snapshot, defer, and offset hold make the beacon drag
 smooth, but each restores the current 216-unit discontinuity when released, and defer
@@ -611,7 +611,7 @@ order or authorize work beyond its recorded scope.
 
 The bounded two-stage experiment is recorded in [LiaisonScape Automatic-Route
 Final-Label Finite Revalidation
-Experiment](../liaisonscape-automatic-route-final-label-finite-revalidation-experiment.md).
+Experiment](../liaisonscape/liaisonscape-automatic-route-final-label-finite-revalidation-experiment.md).
 Its result is `MIXED — FINAL-LABEL REVALIDATION IS INFORMATIVE BUT NOT YET A STABLE
 SELECTION SEMANTIC`: using Pass-1 final Node-label rectangles for one otherwise-current
 arbitration pass changes six English and two Japanese ordinary routes. Detailed evidence
@@ -622,7 +622,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The bounded feedback probe is recorded in [LiaisonScape Automatic-Route Final-Label
 Feedback Stability
-Experiment](../liaisonscape-automatic-route-final-label-feedback-stability-experiment.md).
+Experiment](../liaisonscape/liaisonscape-automatic-route-final-label-feedback-stability-experiment.md).
 Its result is `PARTIAL — JA REQUIRES ADDITIONAL FINAL-LABEL FEEDBACK PASSES BEFORE
 STABILIZING`: EN is fixed after Pass 2; JA changes two routes at Pass 2, four further
 routes at Pass 3, and is fixed at Pass 4. Detailed evidence and qualifications remain in
@@ -633,7 +633,7 @@ authorize work beyond its recorded scope.
 
 The bounded cause isolation is recorded in [LiaisonScape Automatic-Route Final-Label
 Cascade Cause
-Isolation](../liaisonscape-automatic-route-final-label-cascade-cause-isolation.md). Its
+Isolation](../liaisonscape/liaisonscape-automatic-route-final-label-cascade-cause-isolation.md). Its
 result is `DIRECTION SUPPORTED`: reverting only the Pass-2 Clara final Node-label
 rectangle to its Pass-1 geometry removes all four Japanese Pass-3 Clara-centred route
 changes. Detailed evidence and qualifications remain in the linked authority; this dated
@@ -644,7 +644,7 @@ scope.
 
 The score-boundary attribution attempt is recorded in [LiaisonScape Automatic-Route
 Final-Label Score-Boundary Semantics
-Experiment](../liaisonscape-automatic-route-final-label-hard-boundary-semantics-experiment.md).
+Experiment](../liaisonscape/liaisonscape-automatic-route-final-label-hard-boundary-semantics-experiment.md).
 It is `BLOCKED`: a partial score reconstruction did not reproduce all four live Japanese
 Pass-3 winners, so attributing them to hard, halo, occupied-path, or tie semantics would
 be unreliable. Detailed evidence and qualifications remain in the linked authority; this
@@ -655,7 +655,7 @@ recorded scope.
 
 The live-score trace reproduction attempt is recorded in [LiaisonScape Automatic-Route
 Final-Label Score-Trace
-Reproduction](../liaisonscape-automatic-route-final-label-score-trace-reproduction.md). It
+Reproduction](../liaisonscape/liaisonscape-automatic-route-final-label-score-trace-reproduction.md). It
 is `BLOCKED`: a read-only observer can compile inside the live candidate loop, but an
 App-pipeline L0/L1 harness has not yet attached it and reproduced the eight required
 target winners. Detailed evidence and qualifications remain in the linked authority;
@@ -666,7 +666,7 @@ its recorded scope.
 
 The bounded halo-semantics experiment is recorded in [LiaisonScape Automatic-Route
 Label-Halo Continuity Semantics
-Experiment](../liaisonscape-automatic-route-label-halo-continuity-semantics-experiment.md).
+Experiment](../liaisonscape/liaisonscape-automatic-route-label-halo-continuity-semantics-experiment.md).
 Its result is `PARTIAL`: a hard-preserving magnitude-first diagnostic recovers the
 `authority-lighthouse` straight candidate, but its minimum label distance falls from
 `20.087` to `5.809`, and the direction does not recover the main Clara/Thomas hard-label
@@ -678,7 +678,7 @@ recorded scope.
 
 The canonical App-pipeline label-pressure experiment is recorded in [LiaisonScape
 Automatic-Route Near-Center Label-Pressure Continuity
-Experiment](../liaisonscape-automatic-route-near-center-label-pressure-continuity-experiment.md).
+Experiment](../liaisonscape/liaisonscape-automatic-route-near-center-label-pressure-continuity-experiment.md).
 Its result is `MIXED`: label pressure is causal, but its boundary is Relation-specific.
 Detailed evidence and qualifications remain in the linked authority; this dated
 checkpoint does not change current execution order or authorize work beyond its recorded
@@ -688,7 +688,7 @@ scope.
 
 The bounded minimum-clearance audit is recorded in [LiaisonScape Automatic-Route
 Label-Halo Minimum-Clearance Boundary
-Audit](../liaisonscape-automatic-route-label-halo-minimum-clearance-boundary-audit.md). Its
+Audit](../liaisonscape/liaisonscape-automatic-route-label-halo-minimum-clearance-boundary-audit.md). Its
 result is `PARTIAL`: JA authority/lighthouse has reproducible hard-safe breakpoints at
 approximately `5.809`, `12.840`, and `20.087`, but the broader graph has dense
 Relation-specific breakpoints and EN has no shared boundary with the same effect.
@@ -700,7 +700,7 @@ scope.
 
 The bounded hard-label corridor audit is recorded in [LiaisonScape Automatic-Route
 Hard-Label Corridor Boundary
-Audit](../liaisonscape-automatic-route-hard-label-corridor-boundary-audit.md). Its result
+Audit](../liaisonscape/liaisonscape-automatic-route-hard-label-corridor-boundary-audit.md). Its result
 is `MIXED`: in JA, the `clara + archive` hard corridor excludes the `+40/+52`
 near-center `mentors` candidates and `-52` is the first hard-safe opposite-side
 candidate. Detailed evidence and qualifications remain in the linked authority; this
@@ -765,7 +765,7 @@ was made by this roadmap update.
 
 The read-only Current-to-feedback audit is recorded in [LiaisonScape Automatic-Route
 Final-Label Feedback Hard-Corridor Relief
-Audit](../liaisonscape-automatic-route-final-label-feedback-hard-corridor-relief-audit.md).
+Audit](../liaisonscape/liaisonscape-automatic-route-final-label-feedback-hard-corridor-relief-audit.md).
 Its result is `CASE10 / MIXED`: JA moves only the Clara final label and keeps the
 `mentors` winner at `-52`, while EN changes `mentors` from `-64` to `+40` and makes that
 route clear against feedback rectangles but hard-unsafe against the original provisional
@@ -776,7 +776,7 @@ its recorded scope.
 ### E2R-LIAISONSCAPE-NODE-LABEL-INK-GEOMETRY-COLLISION-AUDIT1 (2026-09-01)
 
 The bounded collision-geometry audit is recorded in [LiaisonScape Node-label Ink
-Geometry Collision Audit](../liaisonscape-node-label-ink-geometry-collision-audit.md). Its
+Geometry Collision Audit](../liaisonscape/liaisonscape-node-label-ink-geometry-collision-audit.md). Its
 result is `G2 / EXACT RESULT 2`: deterministic tight-content and per-line regions
 relieve some route pressure, but the JA and EN `mentors` primary hard owners remain in
 the estimated text region. Detailed evidence and qualifications remain in the linked
@@ -786,7 +786,7 @@ work beyond its recorded scope.
 ### E2R-LIAISONSCAPE-PARALLEL-EDGE-BUNDLE-SPACING-AUDIT1 (2026-09-01)
 
 The bounded parallel ordinary-edge audit is recorded in [LiaisonScape Parallel Edge
-Bundle Spacing Audit](../liaisonscape-parallel-edge-bundle-spacing-audit.md). Its result is
+Bundle Spacing Audit](../liaisonscape/liaisonscape-parallel-edge-bundle-spacing-audit.md). Its result is
 `CASE 3 / EXACT RESULT 3 / DECISION C`: label pressure shifts an otherwise balanced
 `clara-thomas-mentors` / `clara-thomas-supervises` bundle. Detailed evidence and
 qualifications remain in the linked authority; this dated checkpoint does not change
@@ -796,7 +796,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The bounded label-pressure experiment is recorded in [LiaisonScape Parallel Edge
 Label-pressure Isolation
-Experiment](../liaisonscape-parallel-edge-label-pressure-isolation-experiment.md). Its
+Experiment](../liaisonscape/liaisonscape-parallel-edge-label-pressure-isolation-experiment.md). Its
 result is `CASE 3 / EXACT RESULT 3 / DECISION C`: hard label collision starts the first
 parallel side switch, while soft halo and sibling occupied-path pressure amplify the
 final one-sided bundle. Detailed evidence and qualifications remain in the linked
@@ -806,7 +806,7 @@ work beyond its recorded scope.
 ### E2R-LIAISONSCAPE-PARALLEL-EDGE-HARD-SIDE-SWITCH-CASCADE-AUDIT1 (2026-09-01)
 
 The bounded cascade audit is recorded in [LiaisonScape Parallel Edge Hard-Side-Switch
-Cascade Audit](../liaisonscape-parallel-edge-hard-side-switch-cascade-audit.md). Its result
+Cascade Audit](../liaisonscape/liaisonscape-parallel-edge-hard-side-switch-cascade-audit.md). Its result
 is `CASE 4 / EXACT RESULT 4 / DECISION E`: the current label geometry leaves no
 hard-safe opposite-side pair for the Clara/Thomas parallel group. Detailed evidence and
 qualifications remain in the linked authority; this dated checkpoint does not change
@@ -816,7 +816,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The bounded Final-label feedback / Initial Placement interaction audit is recorded in
 [LiaisonScape Automatic-Route Final-Label Feedback / Initial-Placement Interaction
-Audit](../liaisonscape-automatic-route-final-label-feedback-initial-placement-interaction-audit.md).
+Audit](../liaisonscape/liaisonscape-automatic-route-final-label-feedback-initial-placement-interaction-audit.md).
 Its result is `CASE 5 / EXACT RESULT 5 / DECISION F`: feedback opens the balanced
 parallel corridor on the favorable clean HEAD geometry in both locales, but its effect
 changes with starting geometry and locale. Detailed evidence and qualifications remain
@@ -827,7 +827,7 @@ or authorize work beyond its recorded scope.
 
 The narrower S0/S1 focal coordinate attribution experiment is recorded in [LiaisonScape
 S0/S1 Focal Coordinate Attribution
-Experiment](../liaisonscape-automatic-route-s0-s1-focal-coordinate-attribution-experiment.md).
+Experiment](../liaisonscape/liaisonscape-automatic-route-s0-s1-focal-coordinate-attribution-experiment.md).
 It replaced the broader locale/start regression audit for immediate execution; that
 broader checkpoint remains deferred, not completed or deleted. Detailed evidence and
 qualifications remain in the linked authority; this dated checkpoint does not change
@@ -837,7 +837,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The exhaustive non-focal attribution audit is recorded in [LiaisonScape
 Initial-placement Global-topology Attribution
-Audit](../liaisonscape-initial-placement-global-topology-attribution-audit.md). Its result
+Audit](../liaisonscape/liaisonscape-initial-placement-global-topology-attribution-audit.md). Its result
 is `CASE 1 / EXACT RESULT 1 / DECISION A`: the single outside-focal Node `maya` is an
 inclusion-minimal V0 sufficient set in JA (`000010`), opening the H1111 feedback
 corridor from `0` to `63` safe pairs. Detailed evidence and qualifications remain in the
@@ -848,7 +848,7 @@ authorize work beyond its recorded scope.
 
 The cross-neighborhood and cross-sample validation is recorded in [LiaisonScape
 Initial-placement Local-neighborhood Quality Criteria
-Validation](../liaisonscape-initial-placement-local-neighborhood-quality-criteria-validation.md).
+Validation](../liaisonscape/liaisonscape-initial-placement-local-neighborhood-quality-criteria-validation.md).
 Its result is `CASE 2 / EXACT RESULT 2 / DECISION A`: the shared-neighbor spacing
 criterion is supported by an ordinary Class O neighborhood in Ashen Crown JA/EN, without
 using labels, routes, locale, or rendered text as placement inputs and without a
@@ -860,7 +860,7 @@ authorize work beyond its recorded scope.
 
 The bounded non-focal geometry audit is recorded in [LiaisonScape Initial-placement
 Non-focal Node Geometry Criteria
-Audit](../liaisonscape-initial-placement-nonfocal-node-geometry-criteria-audit.md). Its
+Audit](../liaisonscape/liaisonscape-initial-placement-nonfocal-node-geometry-criteria-audit.md). Its
 result is `CASE 11 / EXACT RESULT 5 / DECISION B`: Maya's coordinate change combines
 direct corridor clearance with Node-label and route propagation. Detailed evidence and
 qualifications remain in the linked authority; this dated checkpoint does not change
@@ -870,7 +870,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The bounded implementation experiment is recorded in [LiaisonScape Initial-placement
 Local-neighborhood Spacing
-Experiment](../liaisonscape-initial-placement-local-neighborhood-spacing-experiment.md).
+Experiment](../liaisonscape/liaisonscape-initial-placement-local-neighborhood-spacing-experiment.md).
 Its result is `CASE 6 / EXACT RESULT 6 / DECISION D`: the topology-only shared-neighbor
 adjustment opened the selected local angle in Lighthouse and Ashen Crown, but its
 displacement semantics introduced new R0 hard route/Node-label conflicts in Lighthouse
@@ -882,7 +882,7 @@ or authorize work beyond its recorded scope.
 
 The rejected-candidate displacement boundary audit is recorded in [LiaisonScape
 Initial-placement Local-neighborhood Displacement Boundary
-Audit](../liaisonscape-initial-placement-local-neighborhood-displacement-boundary-audit.md).
+Audit](../liaisonscape/liaisonscape-initial-placement-local-neighborhood-displacement-boundary-audit.md).
 Its result is `CASE 4 / EXACT RESULT 2 / DECISION B`: a safe partial forward
 displacement region exists in both Lighthouse and Ashen before the first new final-label
 conflict, but the rejected minimum-line-distance selector chooses an endpoint as W
@@ -894,7 +894,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The shared-neighbor target-selection audit is recorded in [LiaisonScape
 Initial-placement Shared-neighbor Target Selection
-Audit](../liaisonscape-initial-placement-shared-neighbor-target-selection-audit.md). Its
+Audit](../liaisonscape/liaisonscape-initial-placement-shared-neighbor-target-selection-audit.md). Its
 result is `CASE 6 / EXACT RESULT 5 / DECISION G`: Lighthouse has a
 topology-distinguishable shared-neighbor role because the Clara-Thomas pair has relation
 multiplicity two, but Ashen's 21-role overlap cluster leaves the validated Kael role
@@ -906,7 +906,7 @@ recorded scope.
 
 The shared-neighbor role-symmetry and motif-level identifiability audit is recorded in
 [LiaisonScape Initial-placement Shared-neighbor Role Symmetry
-Audit](../liaisonscape-initial-placement-shared-neighbor-role-symmetry-audit.md). Its
+Audit](../liaisonscape/liaisonscape-initial-placement-shared-neighbor-role-symmetry-audit.md). Its
 result is `CASE 10 / EXACT RESULT 5 / DECISION G`: Lighthouse has one unordered triangle
 whose Clara-Thomas multiplicity identifies the diagnostic ordered role `(Clara, Thomas;
 Maya)`, while Ashen's support triangle has structurally distinguishable Darius, Elara,
@@ -918,7 +918,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The shared-neighbor adjustment-scope audit is recorded in [LiaisonScape
 Initial-placement Shared-neighbor Adjustment Scope
-Audit](../liaisonscape-initial-placement-shared-neighbor-adjustment-scope-audit.md). Its
+Audit](../liaisonscape/liaisonscape-initial-placement-shared-neighbor-adjustment-scope-audit.md). Its
 result is `CASE 2 / EXACT RESULT 2 / DECISION A`: an overlap-cluster scope provides one
 structural model for isolated motifs and overlapping motifs. Detailed evidence and
 qualifications remain in the linked authority; this dated checkpoint does not change
@@ -928,7 +928,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The motif-cluster quality-criteria audit is recorded in [LiaisonScape Initial-placement
 Motif-cluster Quality Criteria
-Audit](../liaisonscape-initial-placement-motif-cluster-quality-criteria-audit.md). Its
+Audit](../liaisonscape/liaisonscape-initial-placement-motif-cluster-quality-criteria-audit.md). Its
 result is `CASE 6 / EXACT RESULT 2 / DECISION D`: the evidence supports a two-layer
 descriptive bottleneck profile. Detailed evidence and qualifications remain in the
 linked authority; this dated checkpoint does not change current execution order or
@@ -938,7 +938,7 @@ authorize work beyond its recorded scope.
 
 The two-layer motif/overlap-cluster quality validation is recorded in [LiaisonScape
 Initial-placement Motif-cluster Quality Criteria
-Validation](../liaisonscape-initial-placement-motif-cluster-quality-criteria-validation.md).
+Validation](../liaisonscape/liaisonscape-initial-placement-motif-cluster-quality-criteria-validation.md).
 Its result is `CASE 2 / EXACT RESULT 2 / DECISION B`: the two-layer profile is validated
 after collapsing redundant descriptors. Detailed evidence and qualifications remain in
 the linked authority; this dated checkpoint does not change current execution order or
@@ -948,7 +948,7 @@ authorize work beyond its recorded scope.
 
 The motif-cluster regularization semantics audit is recorded in [LiaisonScape
 Initial-placement Motif-cluster Regularization Semantics
-Audit](../liaisonscape-initial-placement-motif-cluster-regularization-semantics-audit.md).
+Audit](../liaisonscape/liaisonscape-initial-placement-motif-cluster-regularization-semantics-audit.md).
 Its result is `CASE 5 / EXACT RESULT 4 / DECISION D`: source-independent improvement
 directions are definable, but source-independent activation remains unspecified.
 Detailed evidence and qualifications remain in the linked authority; this dated
@@ -959,7 +959,7 @@ scope.
 
 The source-independent regularization activation audit is recorded in [LiaisonScape
 Initial-placement Motif-cluster Regularization Activation
-Audit](../liaisonscape-initial-placement-motif-cluster-regularization-activation-audit.md).
+Audit](../liaisonscape/liaisonscape-initial-placement-motif-cluster-regularization-activation-audit.md).
 Its result is `CASE 5 / EXACT RESULT 3 / DECISION E`: transition history can detect and
 help prevent solver-induced deterioration after a comparable Derived geometry exists,
 but it cannot repair bottlenecks already present in the initial seed. Detailed evidence
@@ -970,7 +970,7 @@ current execution order or authorize work beyond its recorded scope.
 
 The seed-versus-settling bottleneck-origin audit is recorded in [LiaisonScape
 Initial-placement Motif-cluster Bottleneck Origin
-Audit](../liaisonscape-initial-placement-motif-cluster-bottleneck-origin-audit.md). Its
+Audit](../liaisonscape/liaisonscape-initial-placement-motif-cluster-bottleneck-origin-audit.md). Its
 result is `CASE 7 / EXACT RESULT 5 / DECISION F`: the current seed is deterministic but
 sensitive to topology-tie and lexical ID assignment. Detailed evidence and
 qualifications remain in the linked authority; this dated checkpoint does not change
@@ -1005,7 +1005,7 @@ unaccepted PR-3 scope remain in the Roadmap.
 
 Detailed checkpoint evidence and dated disposition remain in [LiaisonScape
 Initial-placement Motif-aware Seed-geometry Semantics
-Audit](../liaisonscape-initial-placement-motif-aware-seed-geometry-semantics-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
+Audit](../liaisonscape/liaisonscape-initial-placement-motif-aware-seed-geometry-semantics-audit.md). This research/design snapshot is not current execution authority and does not authorize Production selection, Product adoption, or visual acceptance.
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-CANDIDATE-SPACE-AUDIT1 (2026-09-01)
 
@@ -1457,11 +1457,11 @@ Detailed dated checkpoint evidence and immutable lineage state remain in [Browse
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-PR3-RUN-IDENTITY-BROWSER-IMPLEMENTATION-AUTHORITY-DESIGN-CORRECTION1 (2026-09-04)
 
-Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture implementation-authority design correction result](../liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-design-correction1.md).
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture implementation-authority design correction result](../liaisonscape/liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-design-correction1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-PR3-RUN-IDENTITY-BROWSER-IMPLEMENTATION-AUTHORITY-IMPLEMENTATION1 (2026-09-04)
 
-Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture implementation-authority implementation result](../liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-implementation1.md).
+Detailed dated checkpoint evidence and immutable lineage state remain in [Browser Capture implementation-authority implementation result](../liaisonscape/liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-implementation1.md).
 
 ### E2R-LIAISONSCAPE-INITIAL-PLACEMENT-SEED-PRODUCTION-VISUAL-SETTLING-ROUTING-EVIDENCE-BROWSER-CAPTURE1-RESTART3-APP-READINESS-CDP-CALL-CORRECTION-QUALIFICATION1 (2026-09-04)
 
@@ -1562,7 +1562,7 @@ presentation-coordination-2026-09-13).
 
 ### LiaisonScape Initial-Layout Runtime Provider Prototype 1 (2026-09-11)
 
-The [runtime provider prototype result](../liaisonscape-initial-layout-runtime-provider-prototype1-result.md)
+The [runtime provider prototype result](../liaisonscape/liaisonscape-initial-layout-runtime-provider-prototype1-result.md)
 records a bounded opt-in provider boundary in the LiaisonScape repository.
 It validates deterministic Node/label-envelope refinement, whole-result
 fallback, finite/complete positions, and non-persistence, but it is not wired
@@ -1573,7 +1573,7 @@ candidate-equivalence/budget evidence are still required.
 
 ### LiaisonScape Initial-Layout Candidate Equivalence / Budget 1 (2026-09-11)
 
-The [candidate equivalence and budget result](../liaisonscape-initial-layout-candidate-equivalence-budget1-result.md)
+The [candidate equivalence and budget result](../liaisonscape/liaisonscape-initial-layout-candidate-equivalence-budget1-result.md)
 records that the bounded provider is safe as an opt-in experiment but does not
 yet reproduce `post-structural-relaxation-v1`: Apollo EN/JA use whole-result
 fallback, while other public samples complete a smaller Node/label-only
@@ -1585,7 +1585,7 @@ are still required.
 
 The user's Actual Product comparison across Lighthouse Restoration, Apollo 11,
 Berlin Wall, Ashen Crown, and Titanic Final Voyage in EN/JA is recorded in
-[Initial-Layout Candidate Cross-Fixture Acceptance 2](../liaisonscape-initial-layout-candidate-cross-fixture-acceptance2-result.md).
+[Initial-Layout Candidate Cross-Fixture Acceptance 2](../liaisonscape/liaisonscape-initial-layout-candidate-cross-fixture-acceptance2-result.md).
 The user preferred `post-structural-relaxation-v1` in every compared cell.
 This establishes strong bounded research evidence, including the fact that
 Titanic EN/JA may have materially different locale-specific geometry; it does
@@ -1601,7 +1601,7 @@ evidence was changed.
 
 ### LiaisonScape Initial-Layout Product Adoption Design / Runtime Authority (2026-09-11)
 
-The [Initial-Layout Product Adoption Design](../liaisonscape-initial-layout-product-adoption-design1.md)
+The [Initial-Layout Product Adoption Design](../liaisonscape/liaisonscape-initial-layout-product-adoption-design1.md)
 defines the boundary for a future runtime provider. Stored Coordinates remain
 authoritative; coordinate-less placement remains transient Derived state until
 an explicit Save Coordinates action. A future provider must be generic,
@@ -1649,7 +1649,7 @@ Separate presentation tracks are not children of Initial Layout authority:
 
 ### LiaisonScape Initial-Layout Coarse Objective Actual Product Comparison 2 (2026-09-11)
 
-The [Actual Product comparison result](../liaisonscape-initial-layout-coarse-objective-actual-product-comparison2-result.md)
+The [Actual Product comparison result](../liaisonscape/liaisonscape-initial-layout-coarse-objective-actual-product-comparison2-result.md)
 records that Post remains visually preferred and that the coarse candidate
 follows the same improvement direction, with acceptable observed Node
 placement, label readability, Node--Edge spacing, graph cohesion, and viewport
@@ -1659,7 +1659,7 @@ remains `HOLD`.
 
 ### LiaisonScape Initial-Layout Bounded Coarse Provider 1 (2026-09-11)
 
-The [bounded provider result](../liaisonscape-initial-layout-bounded-coarse-provider1-result.md)
+The [bounded provider result](../liaisonscape/liaisonscape-initial-layout-bounded-coarse-provider1-result.md)
 records that `coarse-objective-prototype-v1` is now available through the
 existing opt-in provider boundary. Lighthouse and Titanic completed within the
 diagnostic budget; Apollo EN/JA safely used whole-result fallback after unsafe
@@ -1670,7 +1670,7 @@ evaluation; Product adoption remains `HOLD`.
 
 ### LiaisonScape Initial-Layout Bounded Provider Contract Audit 1 (2026-09-11)
 
-The [provider contract audit](../liaisonscape-initial-layout-bounded-provider-contract-audit1-result.md)
+The [provider contract audit](../liaisonscape/liaisonscape-initial-layout-bounded-provider-contract-audit1-result.md)
 found and corrected a graph-input boundary mismatch: candidate and fallback
 now use the same Product-visible Relation projection. It also corrected the
 default provider identity so the simplified envelope prototype is not named as
@@ -1682,7 +1682,7 @@ Actual Product evaluation is the next gate and Product adoption remains
 
 ### LiaisonScape Initial-Layout Coarse Objective Comparative Evaluation 1 (2026-09-11)
 
-The [comparative evaluation result](../liaisonscape-initial-layout-coarse-objective-comparative-evaluation1-result.md)
+The [comparative evaluation result](../liaisonscape/liaisonscape-initial-layout-coarse-objective-comparative-evaluation1-result.md)
 records a diagnostic bounded candidate. It reduced the proxy score modestly on
 Lighthouse and Titanic within roughly 0.3–10.5 ms, while Apollo EN/JA used safe
 whole-result fallback. The real Product inspection surface is ready for
@@ -1691,7 +1691,7 @@ approximation remain unresolved; Product adoption is not authorized.
 
 ### LiaisonScape Initial-Layout Coarse Objective Proxy Audit 1 (2026-09-11)
 
-The [coarse objective proxy audit](../liaisonscape-initial-layout-coarse-objective-proxy-audit1-result.md)
+The [coarse objective proxy audit](../liaisonscape/liaisonscape-initial-layout-coarse-objective-proxy-audit1-result.md)
 found and corrected a Relation-label corridor bug: the former self-chord
 midpoint measurement was always zero and was not geometry-sensitive. The
 corrected proxy responds to foreign Node and foreign straight-chord occupancy.
@@ -1706,7 +1706,7 @@ adoption.
 
 ### LiaisonScape Initial-Layout Post-Objective Runtime Feasibility 1 (2026-09-11)
 
-The [Post-objective runtime feasibility result](../liaisonscape-initial-layout-post-objective-runtime-feasibility1-result.md)
+The [Post-objective runtime feasibility result](../liaisonscape/liaisonscape-initial-layout-post-objective-runtime-feasibility1-result.md)
 measured the existing diagnostic search at approximately 7–12 seconds and
 208–269 Post presentation evaluations on representative public samples. This
 does not fit the bounded runtime-provider budget, and the fast provider remains
@@ -1717,7 +1717,7 @@ checkpoint.
 ### E2R-LIAISONSCAPE-NODE-LABEL-CONNECTOR-VISIBILITY-AUDIT1 (2026-09-13)
 
 The Node-label geometry and connector audit is recorded in [LiaisonScape
-Node-label Geometry and Connector Audit 1](../liaisonscape-node-label-geometry-connector-audit1-result.md).
+Node-label Geometry and Connector Audit 1](../liaisonscape/liaisonscape-node-label-geometry-connector-audit1-result.md).
 Its result is `PASS / BOUNDED PRESENTATION FIX`: the shared conservative
 collision/hit `LabelRect` is retained, while connector attachment uses a
 deterministic text-plus-outline visual envelope. This removes the apparent
@@ -1742,7 +1742,7 @@ new human acceptance is implied by this browser inspection.
 ### E2R-LIAISONSCAPE-NODE-LABEL-CONNECTOR-PRESENTATION-FOLLOWUP1 (2026-09-13)
 
 The Node-label connector presentation follow-up is recorded in [LiaisonScape
-Node-label Geometry and Connector Audit 1](../liaisonscape-node-label-geometry-connector-audit1-result.md).
+Node-label Geometry and Connector Audit 1](../liaisonscape/liaisonscape-node-label-geometry-connector-audit1-result.md).
 Its result is `PASS / BOUNDED PRESENTATION FIX`. The connector now prefers a
 deterministic per-line text-plus-outline visual envelope for multiline labels,
 with the prior enclosing visual envelope retained only as a gap fallback.
@@ -1759,7 +1759,7 @@ are unchanged.
 
 ### LiaisonScape Initial-Layout Global Placement 3 Production Simplification / Quality-Contributor Ablation 1 (2026-09-13)
 
-The [Global Placement 3 production simplification result](../liaisonscape-initial-layout-global-placement3-production-simplification-ablation1-result.md)
+The [Global Placement 3 production simplification result](../liaisonscape/liaisonscape-initial-layout-global-placement3-production-simplification-ablation1-result.md)
 isolated the accepted viewport-anisotropic transform from the structural
 candidate search and authoritative presentation selection. A deterministic
 current seed plus the transform reduced the 46/62-call G3 diagnostic arm to
@@ -1778,7 +1778,7 @@ Initial Layout Release blocker remains `OPEN`.
 
 ### LiaisonScape Initial-Layout Global Placement 3 Frontier-12 Human Review Handoff (2026-09-13)
 
-The [Frontier-12 human review handoff](../liaisonscape-initial-layout-global-placement3-frontier12-human-review-handoff.md)
+The [Frontier-12 human review handoff](../liaisonscape/liaisonscape-initial-layout-global-placement3-frontier12-human-review-handoff.md)
 adds `frontier-12` to the existing development-only Actual Product review
 surface. It provides explicit G3 (`global-placement3`) and Frontier-12 URLs
 for Lighthouse/Titanic/Apollo in EN/JA, using the same canonical Dataset and
@@ -1790,7 +1790,7 @@ remain unchanged.
 
 ### LiaisonScape Initial-Layout Global Placement 3 Frontier-12 Human Review Execution (2026-09-13)
 
-The [Frontier-12 human review result](../liaisonscape-initial-layout-global-placement3-frontier12-human-review-result.md)
+The [Frontier-12 human review result](../liaisonscape/liaisonscape-initial-layout-global-placement3-frontier12-human-review-result.md)
 records a Codex browser inspection of all six G3/reference versus
 Frontier-12/candidate pairs on the normal Product surface. All six cells
 loaded through the expected Dataset, fit, routing, and label path. No obvious
@@ -1806,7 +1806,7 @@ Initial Layout Release blocker are unchanged.
 
 ### LiaisonScape Initial-Layout Global Placement 3 Frontier-12 User Human Review Evidence (2026-09-13)
 
-The [Frontier-12 user evidence result](../liaisonscape-initial-layout-global-placement3-frontier12-human-review-user-evidence-result.md)
+The [Frontier-12 user evidence result](../liaisonscape/liaisonscape-initial-layout-global-placement3-frontier12-human-review-user-evidence-result.md)
 records the user's direct observation separately from Codex browser inspection
 and machine metrics. Frontier-12 speed was satisfactory and the canonical
 six-cell result was broadly good, with no Frontier-12-specific visual
@@ -1827,7 +1827,7 @@ Initial Layout Release blocker remains `OPEN`.
 
 ### LiaisonScape Initial-Layout Global Placement 3 Production-native Structural Diversity / Frontier Reduction 1 (2026-09-13)
 
-The [Frontier Reduction 1 result](../liaisonscape-initial-layout-global-placement3-production-native-frontier-reduction1-result.md)
+The [Frontier Reduction 1 result](../liaisonscape/liaisonscape-initial-layout-global-placement3-production-native-frontier-reduction1-result.md)
 tested a cheap structural Pareto frontier plus normalized farthest-point
 representatives before authoritative Product presentation. Frontier-12 reduced
 the matched G3 46/62-call arm to 13 calls including round-once finalization and
@@ -1845,7 +1845,7 @@ Initial Layout Release blocker remains `OPEN`.
 
 ### LiaisonScape Initial-Layout Frontier-12 Dense / Topology Retune 1 (2026-09-13)
 
-The [Frontier-12 dense/topology retune result](../liaisonscape-initial-layout-global-placement3-frontier12-dense-topology-retune1-result.md)
+The [Frontier-12 dense/topology retune result](../liaisonscape/liaisonscape-initial-layout-global-placement3-frontier12-dense-topology-retune1-result.md)
 audited the dense loss boundary and found that the G3-selected source was
 present in the 44-candidate pool and 22-candidate cheap frontier, but was lost
 when the frontier was compressed to 12 representatives. A crossing
@@ -1866,7 +1866,7 @@ consideration.
 
 ### LiaisonScape Initial-Layout Frontier Adaptive Dense Cost Reduction 2 (2026-09-13)
 
-The [Frontier Adaptive Dense Cost Reduction 2 result](../liaisonscape-initial-layout-frontier-adaptive-dense-cost-reduction2-result.md)
+The [Frontier Adaptive Dense Cost Reduction 2 result](../liaisonscape/liaisonscape-initial-layout-frontier-adaptive-dense-cost-reduction2-result.md)
 tested whether a cheap structural stratum could be evaluated first and the
 remaining frontier widened only when needed. The matched audit found the
 G3-quality source at frontier-order positions 22/22 for `k7-7`, 11/18 for
@@ -1886,7 +1886,7 @@ blocker are unchanged (`NOT ESTABLISHED`, `HOLD`, `OPEN`).
 
 ### LiaisonScape Initial-Layout Authoritative Presentation Cost Audit 1 (2026-09-13)
 
-The [Authoritative Presentation Cost Audit 1 result](../liaisonscape-initial-layout-authoritative-presentation-cost-audit1-result.md)
+The [Authoritative Presentation Cost Audit 1 result](../liaisonscape/liaisonscape-initial-layout-authoritative-presentation-cost-audit1-result.md)
 reprofiled one full Product presentation evaluation without changing the
 candidate arm or evaluator authority. Existing exact geometry/metadata reuse
 was output-equivalent in all nine matched cells and reduced measured
@@ -1905,7 +1905,7 @@ Release blocker remain `HOLD` and `OPEN`.
 
 ### Production-native structural formulation 1 (2026-09-13)
 
-The [structural formulation research](../liaisonscape-initial-layout-production-native-structural-formulation1-result.md)
+The [structural formulation research](../liaisonscape/liaisonscape-initial-layout-production-native-structural-formulation1-result.md)
 implemented layered barycenter, graph-distance stress, structural-twin spokes,
 crossing-aware circular ordering, and ordered stress. A six-candidate portfolio
 retained the ten-arm audit's selected output on eleven measured cells and used
@@ -1924,7 +1924,7 @@ acceptance is inherited; vertical parallel-edge spacing remains separate.
 
 ### LiaisonScape Initial-Layout Obstacle-sensitive Crossing / Placement-vs-Presentation Decomposition Audit 1 (2026-09-13)
 
-The [obstacle-sensitive crossing decomposition result](../liaisonscape-initial-layout-obstacle-sensitive-crossing-decomposition-audit1-result.md)
+The [obstacle-sensitive crossing decomposition result](../liaisonscape/liaisonscape-initial-layout-obstacle-sensitive-crossing-decomposition-audit1-result.md)
 added an opt-in diagnostic that uses the existing Product route samples and
 60-unit Node-influence predicate to identify obstacle-sensitive routes, then
 tests eight deterministic one-clearance local Node moves per inferred obstacle.
@@ -1945,7 +1945,7 @@ inherited by any new candidate.
 
 ### LiaisonScape Parallel Edge / Incident Bundle Presentation Retune 1 (2026-09-13)
 
-The [parallel Edge / incident bundle retune result](../liaisonscape-parallel-edge-incident-bundle-presentation-retune1-result.md)
+The [parallel Edge / incident bundle retune result](../liaisonscape/liaisonscape-parallel-edge-incident-bundle-presentation-retune1-result.md)
 added an opt-in presentation-only slot policy. Pair widening improves the
 two-Relation case, while bundle-aware widening also separates same-side slots
 in 3+ groups and preserves reverse-direction, manual-route, obstacle, ordinary
@@ -1959,7 +1959,7 @@ default/adoption remains `HOLD` and the Initial Layout Release blocker remains
 
 ### LiaisonScape Parallel Edge / Incident Bundle Presentation Human Review Handoff (2026-09-13)
 
-The [parallel Edge / incident bundle human-review handoff](../liaisonscape-parallel-edge-incident-bundle-human-review-handoff.md)
+The [parallel Edge / incident bundle human-review handoff](../liaisonscape/liaisonscape-parallel-edge-incident-bundle-human-review-handoff.md)
 publishes explicit six-cell URLs for the G3 baseline, `parallel-pair-16`, and
 `parallel-bundle-16` arms. The candidate arms reuse G3 coordinates and use the
 normal Product open/routing/label/fit surface; no new Initial Layout provider
@@ -1970,7 +1970,7 @@ but USER HUMAN REVIEW remains `PENDING`. Product default/adoption remains
 
 ### LiaisonScape Automatic Display Placement Final Bake-off 1 (2026-09-16)
 
-The [checkpoint result](../liaisonscape-automatic-display-placement-final-bakeoff1-result.md)
+The [checkpoint result](../liaisonscape/liaisonscape-automatic-display-placement-final-bakeoff1-result.md)
 closes the existing automatic-display candidate comparison without adding a
 solver family. Frontier-12, Post/constrained relaxation, and G3/structural
 portfolio were compared through the current Product-authoritative metrics on
@@ -1987,7 +1987,7 @@ Session 0095 records this candidate decision.
 
 ### LiaisonScape Frontier Automatic Display Integration Candidate Staging 1 (2026-09-16)
 
-The [checkpoint result](../liaisonscape-frontier-automatic-display-integration-candidate-staging1-result.md)
+The [checkpoint result](../liaisonscape/liaisonscape-frontier-automatic-display-integration-candidate-staging1-result.md)
 connects the existing development-only acceptance layout seam to the
 `frontier-12` arm for coordinate-less Dataset review staging. The normal
 production path remains `settleInitialPlacement`; stored and mixed Coordinates
@@ -2001,7 +2001,7 @@ checkpoint.
 
 ### LiaisonScape Frontier Automatic Display Formal Visual Review Preparation 1 (2026-09-16)
 
-The [formal visual review result](../liaisonscape-frontier-automatic-display-formal-visual-review1-result.md)
+The [formal visual review result](../liaisonscape/liaisonscape-frontier-automatic-display-formal-visual-review1-result.md)
 prepares a reproducible Actual Product read-only preview surface for the
 Frontier-12 candidate across canonical/public, locale, label-heavy, dense, and
 Parallel/Self-loop controls. The package keeps machine metrics supplemental to
@@ -2010,7 +2010,7 @@ are accepted. Production default/adoption remains unchanged.
 
 ### LiaisonScape Frontier Automatic Display Production Adoption Readiness 1 (2026-09-16)
 
-The [adoption-readiness result](../liaisonscape-frontier-automatic-display-production-adoption-readiness1-result.md)
+The [adoption-readiness result](../liaisonscape/liaisonscape-frontier-automatic-display-production-adoption-readiness1-result.md)
 audits the current source and prior Frontier evidence without changing runtime
 behavior. Frontier remains DEV-only today; normal coordinate-less opening still
 uses `settleInitialPlacement`, while stored and mixed Coordinates retain their
@@ -2028,7 +2028,7 @@ entries are not rewritten.
 
 ### LiaisonScape Frontier Automatic Display User-Abort / Cancellation Feasibility Audit 1 (2026-09-16)
 
-The [cancellation feasibility result](../liaisonscape-frontier-automatic-display-user-abort-cancellation-feasibility-audit1-result.md)
+The [cancellation feasibility result](../liaisonscape/liaisonscape-frontier-automatic-display-user-abort-cancellation-feasibility-audit1-result.md)
 classifies user abort as **not justified for initial adoption**. The current
 Frontier acceptance seam fetches a precomputed artifact and applies it during a
 synchronous open; Frontier is not a browser-side production computation and
@@ -2039,7 +2039,7 @@ behavior changed.
 
 ### LiaisonScape Frontier Automatic Display Production Execution / Transient Preview Architecture Audit 1 (2026-09-16)
 
-The [execution architecture result](../liaisonscape-frontier-automatic-display-production-execution-transient-preview-architecture-audit1-result.md)
+The [execution architecture result](../liaisonscape/liaisonscape-frontier-automatic-display-production-execution-transient-preview-architecture-audit1-result.md)
 finds that a production Frontier solver boundary does not yet exist. The
 current `frontier-12` seam is a DEV/review-only precomputed artifact fetch,
 while normal opening remains synchronous `settleInitialPlacement`. The
@@ -2050,7 +2050,7 @@ Production default and all existing authority boundaries remain unchanged.
 
 ### LiaisonScape Frontier Production Solver Extraction Readiness / Contract 1 (2026-09-16)
 
-The [extraction-readiness result](../liaisonscape-frontier-production-solver-extraction-readiness1-result.md)
+The [extraction-readiness result](../liaisonscape/liaisonscape-frontier-production-solver-extraction-readiness1-result.md)
 classifies the checkpoint as **BLOCKED: FRONTIER LINEAGE NOT REPRODUCIBLE FROM
 CURRENT SOURCE**. Current artifacts and the DEV seam identify Frontier-12, but
 no single current-source pipeline reproduces its reviewed result; the existing
@@ -2060,7 +2060,7 @@ remain deferred until a source-level solver and artifact-parity gate exist.
 
 ### LiaisonScape Frontier-12 Lineage Recovery / Reproduction 1 (2026-09-16)
 
-The [lineage-recovery result](../liaisonscape-frontier-12-lineage-recovery-reproduction1-result.md)
+The [lineage-recovery result](../liaisonscape/liaisonscape-frontier-12-lineage-recovery-reproduction1-result.md)
 reconstructs the research lineage at `e7d6cbc`: the Frontier Actual Product
 Visual Sweep generator invokes `tools/generic-crossing-search.mjs` with the
 recorded Frontier-12 environment. Replaying the current source matched the
@@ -2074,7 +2074,7 @@ the production default.
 
 ### LiaisonScape Frontier-12 Bounded Solver Extraction / Standalone Characterization 1 (2026-09-16)
 
-The [extraction result](../liaisonscape-frontier-12-bounded-solver-extraction-standalone-characterization1-result.md)
+The [extraction result](../liaisonscape/liaisonscape-frontier-12-bounded-solver-extraction-standalone-characterization1-result.md)
 stops with **BLOCKED: PRODUCT-AUTHORITATIVE SELECTION DEPENDENCY**. The
 structural Frontier candidate pool is identifiable, but the reviewed final
 position is selected through Product presentation metrics, eligibility/sorting,
@@ -2086,7 +2086,7 @@ changed.
 
 ### LiaisonScape Frontier-12 Candidate / Product Selection Authority Decision 1 (2026-09-16)
 
-The [authority decision](../liaisonscape-frontier-12-candidate-product-selection-authority-decision1-result.md)
+The [authority decision](../liaisonscape/liaisonscape-frontier-12-candidate-product-selection-authority-decision1-result.md)
 selects **A: candidate-set generator with Product-owned downstream selection**.
 Frontier owns normalized placement input, deterministic structural candidate
 generation, and finite derived candidates. Product retains presentation
@@ -2098,7 +2098,7 @@ undecided and production default remains unchanged.
 
 ### LiaisonScape Frontier-12 Single-Implementation Structural Refactor / Candidate Boundary 1 (2026-09-16)
 
-The [structural refactor result](../liaisonscape-frontier-12-single-implementation-structural-refactor-candidate-boundary1-result.md)
+The [structural refactor result](../liaisonscape/liaisonscape-frontier-12-single-implementation-structural-refactor-candidate-boundary1-result.md)
 records **COMPLETED: SHARED CANDIDATE BOUNDARY / PARITY GATE PASSED** after the
 explicitly authorized structural move. `src/frontier-candidate-generator.ts`
 is now the single normalized-input/config Frontier implementation, and
@@ -2113,7 +2113,7 @@ authority move, retuning, or execution-architecture decision was made.
 
 ### LiaisonScape Frontier-12 Candidate-Set Extraction / Product-Selector Parity & Standalone Characterization 1 (2026-09-16)
 
-The [candidate-set extraction result](../liaisonscape-frontier-12-candidate-set-extraction-product-selector-parity-standalone-characterization1-result.md)
+The [candidate-set extraction result](../liaisonscape/liaisonscape-frontier-12-candidate-set-extraction-product-selector-parity-standalone-characterization1-result.md)
 keeps architecture A canonical but stops with **BLOCKED: CURRENT RESEARCH
 RUNNER IS NOT A BOUNDED EXTRACTABLE MODULE**. The structural generator is
 private and coupled to runner graph/config globals; copying it would create a
@@ -2123,7 +2123,7 @@ refactor and candidate-set parity before execution architecture decisions.
 
 ### LiaisonScape Frontier / Product Execution Architecture & Lifecycle Decision 1 (2026-09-16)
 
-The [execution architecture result](../liaisonscape-frontier-product-execution-architecture-lifecycle-decision1-result.md)
+The [execution architecture result](../liaisonscape/liaisonscape-frontier-product-execution-architecture-lifecycle-decision1-result.md)
 selects a future `hybrid-worker-proposal-main-thread-commit` boundary for the
 Frontier automatic-display proposal path. Frontier candidate generation and
 pure Product presentation evaluation/selection may execute sequentially in one
@@ -2139,7 +2139,7 @@ wiring, default switch, Cancel UI, or transient preview was made.
 
 ### LiaisonScape Frontier / Product Worker Execution Proof 1 (2026-09-16)
 
-The [Worker execution proof result](../liaisonscape-frontier-product-worker-execution-proof1-result.md)
+The [Worker execution proof result](../liaisonscape/liaisonscape-frontier-product-worker-execution-proof1-result.md)
 records an actual browser Web Worker run of the shared Frontier candidate
 generator plus current pure Product presentation/proposal selection. Lighthouse
 EN, Apollo EN, and dense K7-7 matched the direct current-source path for
@@ -2156,7 +2156,7 @@ bounded integration checkpoint.
 
 ### LiaisonScape Frontier Automatic Display Pending UX / Production-Integration Lifecycle Acceptance 1 (2026-09-16)
 
-The [pending UX result](../liaisonscape-frontier-automatic-display-pending-ux-production-integration-lifecycle-acceptance1-result.md)
+The [pending UX result](../liaisonscape/liaisonscape-frontier-automatic-display-pending-ux-production-integration-lifecycle-acceptance1-result.md)
 stages visible pending feedback on the existing DEV-only
 `initial-layout=frontier-12-worker` seam. The existing settleInitialPlacement
 graph remains usable as fallback, only the graph receives provisional styling,
@@ -2171,7 +2171,7 @@ adoption/integration checkpoint remains required.
 
 ### LiaisonScape Frontier Automatic Display Pending + Cancel Production UX Acceptance 1 (2026-09-16)
 
-The [pending + Cancel UX result](../liaisonscape-frontier-automatic-display-pending-cancel-production-ux-acceptance1-result.md)
+The [pending + Cancel UX result](../liaisonscape/liaisonscape-frontier-automatic-display-pending-cancel-production-ux-acceptance1-result.md)
 accepts the lifecycle policy for eventual production use while keeping the
 default switch separate. Pending status is shown only during an active
 operation, Cancel keeps the already usable settleInitialPlacement graph,
@@ -2186,7 +2186,7 @@ remains a separate adoption checkpoint.
 
 ### LiaisonScape Frontier Automatic Display Production Adoption Implementation 1 (2026-09-16)
 
-The [production adoption implementation result](../liaisonscape-frontier-automatic-display-production-adoption-implementation1-result.md)
+The [production adoption implementation result](../liaisonscape/liaisonscape-frontier-automatic-display-production-adoption-implementation1-result.md)
 connects the existing Frontier/Product Worker flow to the normal coordinate-less
 Dataset-open path. `settleInitialPlacement` remains the immediately published
 usable fallback; pending + Cancel, graph-only provisional treatment, current
@@ -2200,7 +2200,7 @@ Human Review decision changed.
 
 ### LiaisonScape Frontier Automatic Display Production Acceptance / Closure 1 (2026-09-16)
 
-The [Production Acceptance / Closure result](../liaisonscape-frontier-automatic-display-production-acceptance-closure1-result.md)
+The [Production Acceptance / Closure result](../liaisonscape/liaisonscape-frontier-automatic-display-production-acceptance-closure1-result.md)
 records **PASS — PRODUCTION ACCEPTED / SOURCE-LEVEL ADOPTION CLOSED /
 ROLLOUT DEFERRED**. The normal coordinate-less path is now the Frontier async
 Automatic Display flow with immediate `settleInitialPlacement` fallback and
@@ -2214,7 +2214,7 @@ a separately authorized checkpoint.
 
 ### LiaisonScape Frontier Automatic Display Production Adoption Provenance Freeze / Commit Boundary 1 (2026-09-16)
 
-The [provenance-freeze result](../liaisonscape-frontier-automatic-display-production-adoption-provenance-freeze-commit-boundary1-result.md)
+The [provenance-freeze result](../liaisonscape/liaisonscape-frontier-automatic-display-production-adoption-provenance-freeze-commit-boundary1-result.md)
 classifies the checkpoint as **PROVENANCE FREEZE BLOCKED / DIRTY-WORKTREE
 OWNERSHIP NOT SAFELY SEPARABLE**. The accepted normal-path implementation is
 present, and its source-backed execution chain remains traceable, but the
@@ -2228,7 +2228,7 @@ deferred.
 
 ### LiaisonScape Accepted Dirty Worktree Baseline Audit / Canonical Commit 1 (2026-09-16)
 
-The [baseline audit result](../liaisonscape-accepted-dirty-worktree-baseline-audit-canonical-commit1-result.md)
+The [baseline audit result](../liaisonscape/liaisonscape-accepted-dirty-worktree-baseline-audit-canonical-commit1-result.md)
 classifies the checkpoint as **BASELINE COMMIT BLOCKED / UNRESOLVED DIRTY
 OWNERSHIP REMAINS**. The Frontier normal-path implementation, its research and
 acceptance evidence, and the accepted guidance form a coherent baseline
@@ -2293,7 +2293,7 @@ behavior remain unchanged.
 
 ### E2R-LIAISONSCAPE-PINNED-FRONTIER-FEASIBILITY1 (2026-09-17)
 
-The [Pinned Frontier feasibility result](../liaisonscape-pinned-frontier-feasibility1-result.md)
+The [Pinned Frontier feasibility result](../liaisonscape/liaisonscape-pinned-frontier-feasibility1-result.md)
 establishes the hard-constraint and execution boundary but does not close
 Explicit Auto Layout quality. A diagnostic candidate construction installs
 saved/staged fixed anchors before bounded movable-node relaxation, preserves
@@ -2320,7 +2320,7 @@ separate bounded implementation decision.
 
 ### E2R-LIAISONSCAPE-DENSITY-ADAPTIVE-NODE-SEPARATION-EXPERIMENT1 (2026-09-17)
 
-The [density-adaptive Node separation result](../liaisonscape-density-adaptive-node-separation-experiment1-result.md)
+The [density-adaptive Node separation result](../liaisonscape/liaisonscape-density-adaptive-node-separation-experiment1-result.md)
 is classified **C. MIXED**. The diagnostic comparison covered Lighthouse EN,
 Apollo EN, label-heavy JA, dense-k7-7, and a parallel/Self-loop control across
 no, few, many, one-movable, and all-pinned conditions. It compared current
@@ -2344,7 +2344,7 @@ moderate-case quality plus dense graceful-degradation evidence.
 
 ### E2R-LIAISONSCAPE-PINNED-CROSS-FAMILY-PRODUCT-PORTFOLIO-EXPERIMENT1 (2026-09-17)
 
-The [pinned cross-family Product portfolio result](../liaisonscape-pinned-cross-family-product-portfolio-experiment1-result.md)
+The [pinned cross-family Product portfolio result](../liaisonscape/liaisonscape-pinned-cross-family-product-portfolio-experiment1-result.md)
 is classified **C. PORTFOLIO HELPS SELECT CASES / GENERAL RELEASE-QUALITY
 BENEFIT NOT ESTABLISHED**. Under one operation-local Product presentation
 snapshot, the diagnostic compared Pin-aware Frontier, density-adaptive, and
@@ -2535,7 +2535,7 @@ production rollout.
 
 ### E2R-LIAISONSCAPE-PIN-WRITER-ATOMIC-SAVE1 (2026-09-17)
 
-The [Pin writer / atomic Save result](../liaisonscape-pin-writer-atomic-save1-result.md)
+The [Pin writer / atomic Save result](../liaisonscape/liaisonscape-pin-writer-atomic-save1-result.md)
 is classified **B. PIN WRITER ESTABLISHED / ONE BOUNDED SAVE-INTEGRATION GAP
 REMAINS**. `src/pin-persistence.ts` now owns the bounded working Pin state
 operations and builds a cloned Dataset candidate that combines the existing
@@ -2592,7 +2592,7 @@ were prepared, but no visual or accessibility PASS was inferred.
 
 ### E2R-LIAISONSCAPE-PIN-UI-HUMAN-CHECK-A-VISUAL-ITERATION1 (2026-09-17)
 
-The [Pin UI Human Check A visual iteration result](../liaisonscape-pin-ui-human-check-a-visual-iteration1-result.md)
+The [Pin UI Human Check A visual iteration result](../liaisonscape/liaisonscape-pin-ui-human-check-a-visual-iteration1-result.md)
 is classified **A. PIN VISUAL ITERATION STAGED / READY TO RESUME HUMAN CHECK
 A**. Persistent Pin decoration has been removed from the Canvas, and pinned
 and unpinned Nodes now share the same ordinary shadow and presentation. Pin
@@ -2608,7 +2608,7 @@ visual acceptance or any rollout conclusion.
 
 ### E2R-LIAISONSCAPE-PIN-UI-HUMAN-CHECK-A-POPOVER-ITERATION2 (2026-09-17)
 
-The [Pin UI Human Check A popover iteration result](../liaisonscape-pin-ui-human-check-a-popover-iteration2-result.md)
+The [Pin UI Human Check A popover iteration result](../liaisonscape/liaisonscape-pin-ui-human-check-a-popover-iteration2-result.md)
 is classified **A. PIN POPOVER ITERATION STAGED / READY TO RESUME HUMAN CHECK
 A**. Pinned Nodes now show localized `Pinned` / `ピン留め済み` state text in
 the existing Entity ownership popover. Unpinned Nodes show no Pin state text.
@@ -2673,7 +2673,7 @@ for human judgement; no solver or presentation retuning is authorized.
 
 ### E2R-LIAISONSCAPE-PIN-WORKING-ANCHOR-CONSISTENCY1 (2026-09-17)
 
-The [Pin working-anchor consistency result](../liaisonscape-pin-working-anchor-consistency1-result.md)
+The [Pin working-anchor consistency result](../liaisonscape/liaisonscape-pin-working-anchor-consistency1-result.md)
 is classified **B. TWO DISTINCT PIN FAILURES IDENTIFIED AND FIXED / READY TO
 RETEST HUMAN CHECK B**. Human Check established that stationary Pins are exact
 hard constraints, while both move -> Pin and Pin -> move previously failed at
@@ -2750,7 +2750,7 @@ focused campaign is `72/72 PASS`, with a final provider-boundary rerun of
 
 ### E2R-LIAISONSCAPE-INITIAL-AUTOMATIC-DISPLAY-INTEGER-CANONICALIZATION-HUMAN-CHECK1 (2026-09-17)
 
-The [Initial Automatic Display integerization Human Check result](../liaisonscape-initial-automatic-display-integer-canonicalization-human-check1-result.md)
+The [Initial Automatic Display integerization Human Check result](../liaisonscape/liaisonscape-initial-automatic-display-integer-canonicalization-human-check1-result.md)
 is classified **A. HUMAN CHECK READY / NO INTEGERIZATION REGRESSION OBSERVED**.
 Fresh coordinate-less Lighthouse EN Actual Product smoke on the current Vite
 `5176` source showed an immediately usable Graph and normal async completion;
@@ -2768,7 +2768,7 @@ Vite/HMR lifecycle gate remain unchanged.
 
 ### E2R-LIAISONSCAPE-INITIAL-AUTOMATIC-DISPLAY-INTEGER-CANONICALIZATION1 (2026-09-17)
 
-The [Initial Automatic Display integer canonicalization result](../liaisonscape-initial-automatic-display-integer-canonicalization1-result.md)
+The [Initial Automatic Display integer canonicalization result](../liaisonscape/liaisonscape-initial-automatic-display-integer-canonicalization1-result.md)
 is classified **A. INITIAL AUTOMATIC DISPLAY INTEGER CANONICALIZATION
 ESTABLISHED / HUMAN CHECK READY**. Internal `solveAutoLayout` calculation may
 remain fractional, while `settleInitialPlacement` canonicalizes the immediate
@@ -2785,7 +2785,7 @@ remains separate and is not recorded as Full PASS.
 
 ### E2R-LIAISONSCAPE-INITIAL-AUTOMATIC-DISPLAY-INTEGER-CANONICALIZATION-HUMAN-CHECK-PASS-CLOSURE1 (2026-09-17)
 
-The [Initial Automatic Display integerization Human Check PASS closure](../liaisonscape-initial-automatic-display-integer-canonicalization-human-check-pass-closure1-result.md)
+The [Initial Automatic Display integerization Human Check PASS closure](../liaisonscape/liaisonscape-initial-automatic-display-integer-canonicalization-human-check-pass-closure1-result.md)
 records the user's explicit Human Review disposition: **PASS**. The immediate
 fallback/provisional Graph was usable, Cancel preserved it, Frontier completion
 introduced no unnatural jump or collapse, and no obvious integerization-related
@@ -2840,7 +2840,7 @@ OPEN, or HOLD describe the 2026-09-14 snapshot.
 
 ### LiaisonScape Initial Layout Execution Architecture Decision 1 (2026-09-14)
 
-The [Initial Layout Execution Architecture Decision 1 result](../liaisonscape-initial-layout-execution-architecture-decision1-result.md)
+The [Initial Layout Execution Architecture Decision 1 result](../liaisonscape/liaisonscape-initial-layout-execution-architecture-decision1-result.md)
 provisionally adopts the execution split `Fast deterministic Initial Placement
 + explicit High-quality Auto Layout`, while keeping quality-solver readiness
 at `HOLD / NOT ESTABLISHED`. The decision does not adopt a provider or change
@@ -2861,7 +2861,7 @@ Initial Layout Release blocker remains `OPEN`.
 
 ### LiaisonScape Explicit High-quality Auto Layout Operation Lifecycle 1 (2026-09-14)
 
-The [Explicit High-quality Auto Layout Operation Lifecycle 1 result](../liaisonscape-explicit-high-quality-auto-layout-operation-lifecycle1-result.md)
+The [Explicit High-quality Auto Layout Operation Lifecycle 1 result](../liaisonscape/liaisonscape-explicit-high-quality-auto-layout-operation-lifecycle1-result.md)
 establishes the solver-independent lifecycle contract for the provisionally
 adopted execution split. The contract isolates an immutable input snapshot,
 generation-token cancellation, stale-result rejection, candidate/preview
@@ -2883,7 +2883,7 @@ Adaptive Initial Placement Cascade remains `INACTIVE`, Human Review remains
 
 ### LiaisonScape Explicit High-quality Auto Layout Operation Lifecycle Contract Closure 1 (2026-09-14)
 
-The [Explicit High-quality Auto Layout Operation Lifecycle Contract Closure 1 result](../liaisonscape-explicit-high-quality-auto-layout-operation-lifecycle-contract-closure1-result.md)
+The [Explicit High-quality Auto Layout Operation Lifecycle Contract Closure 1 result](../liaisonscape/liaisonscape-explicit-high-quality-auto-layout-operation-lifecycle-contract-closure1-result.md)
 closes the previous lifecycle contract with corrections. Source-first review
 confirmed that active-job semantic identity and accepted Node-coordinate revert
 validity must be separate: manual route, Self-loop, Relation-label, Node-label,
@@ -2910,7 +2910,7 @@ Initial Layout Release blocker remains `OPEN`.
 
 ### LiaisonScape Explicit High-quality Auto Layout Browser Execution Budget Study 1 (2026-09-14)
 
-The [Explicit High-quality Auto Layout Browser Execution Budget Study 1 result](../liaisonscape-explicit-high-quality-auto-layout-browser-execution-budget-study1-result.md)
+The [Explicit High-quality Auto Layout Browser Execution Budget Study 1 result](../liaisonscape/liaisonscape-explicit-high-quality-auto-layout-browser-execution-budget-study1-result.md)
 provides real-browser execution evidence without changing Product behavior.
 The Worker/background proposal path is feasible as a future execution
 hypothesis, but current Product-authoritative verification and preview remain
@@ -2935,7 +2935,7 @@ READY`, and the Initial Layout Release blocker remains `OPEN`.
 
 ### LiaisonScape Product-authoritative Verification Interruptibility Design Study 1 (2026-09-14)
 
-The [Product-authoritative Verification Interruptibility Design Study 1 result](../liaisonscape-product-authoritative-verification-interruptibility-design-study1-result.md)
+The [Product-authoritative Verification Interruptibility Design Study 1 result](../liaisonscape/liaisonscape-product-authoritative-verification-interruptibility-design-study1-result.md)
 decomposes the current source-faithful presentation evaluation into explicit
 label-free route, first route, Relation-label, Node-label, optional feedback
 route/label stages, and finalization. The diagnostic staged composition is
@@ -2964,7 +2964,7 @@ Layout Release blocker remains `OPEN`.
 
 ### LiaisonScape Product-authoritative Route Selection Inner-loop Accumulator / Interruptibility 1 (2026-09-14)
 
-The [Product-authoritative Route Selection Inner-loop Accumulator / Interruptibility 1 result](../liaisonscape-product-authoritative-route-selection-inner-loop-accumulator1-result.md)
+The [Product-authoritative Route Selection Inner-loop Accumulator / Interruptibility 1 result](../liaisonscape/liaisonscape-product-authoritative-route-selection-inner-loop-accumulator1-result.md)
 extracts the current ordinary route-selection inner loop into an explicit
 one-ordered-edge accumulator while retaining the existing synchronous Product
 entry point as a draining wrapper. Focused equivalence tests and five real
@@ -2989,7 +2989,7 @@ blocker remains `OPEN`.
 
 ### LiaisonScape Product-authoritative Relation-label Inner-loop Accumulator / Interruptibility 1 (2026-09-14)
 
-The [Product-authoritative Relation-label Inner-loop Accumulator / Interruptibility 1 result](../liaisonscape-product-authoritative-relation-label-inner-loop-accumulator1-result.md)
+The [Product-authoritative Relation-label Inner-loop Accumulator / Interruptibility 1 result](../liaisonscape/liaisonscape-product-authoritative-relation-label-inner-loop-accumulator1-result.md)
 extracts the current Relation-label pass into one ordered routed-edge work
 unit, including empty-label no-ops, while retaining the existing synchronous
 Product API as a draining wrapper. The source-faithful state separates the
@@ -3016,7 +3016,7 @@ Review remains `NOT READY`, and the Initial Layout Release blocker remains
 
 ### LiaisonScape Product-authoritative Node-label Inner-loop Accumulator / Interruptibility 1 (2026-09-14)
 
-The [Product-authoritative Node-label Inner-loop Accumulator / Interruptibility 1 result](../liaisonscape-product-authoritative-node-label-inner-loop-accumulator1-result.md)
+The [Product-authoritative Node-label Inner-loop Accumulator / Interruptibility 1 result](../liaisonscape/liaisonscape-product-authoritative-node-label-inner-loop-accumulator1-result.md)
 extracts the current input-order Node-label pass into one Node work unit while
 retaining the existing synchronous Product API as a draining wrapper. The
 source-faithful state keeps the initial Relation-label occupancy immutable,
@@ -3045,7 +3045,7 @@ Review remains `NOT READY`, and the Initial Layout Release blocker remains
 
 ### LiaisonScape Product-authoritative Full Verification Resumable Orchestration / Budget Closure 1 (2026-09-14)
 
-The [Product-authoritative Full Verification Resumable Orchestration / Budget Closure 1 result](../liaisonscape-product-authoritative-full-verification-resumable-orchestration1-result.md)
+The [Product-authoritative Full Verification Resumable Orchestration / Budget Closure 1 result](../liaisonscape/liaisonscape-product-authoritative-full-verification-resumable-orchestration1-result.md)
 composes the existing Route Selection, Relation-label, and Node-label
 accumulators into one explicit state machine while preserving the source
 dependency order: label-free route, first route, yielding-route derivation,
@@ -3077,7 +3077,7 @@ blocker remains `OPEN`. Session log remains intentionally unchanged.
 
 ### LiaisonScape Product-wide Verification Budget Closure / Scheduler Policy Study 1 (2026-09-14)
 
-The [Product-wide Verification Budget Closure / Scheduler Policy Study 1 result](../liaisonscape-product-wide-verification-budget-scheduler-policy-study1-result.md)
+The [Product-wide Verification Budget Closure / Scheduler Policy Study 1 result](../liaisonscape/liaisonscape-product-wide-verification-budget-scheduler-policy-study1-result.md)
 compares one-unit, fixed-two, elapsed-eight-ms, and hybrid-eight-ms-two-unit
 scheduler policies around the existing exact-equivalent full-verification state
 machine. All four policies completed canonical, dense, parallel, long-label,
@@ -3108,7 +3108,7 @@ Review remains `NOT READY`, and the Initial Layout Release blocker remains
 
 ### LiaisonScape Product-authoritative Verification Long-unit Attribution / Authority-preserving Micro-splitting 1 (2026-09-14)
 
-The [Product-authoritative Verification Long-unit Attribution / Authority-preserving Micro-splitting 1 result](../liaisonscape-product-authoritative-verification-long-unit-attribution-micro-splitting1-result.md)
+The [Product-authoritative Verification Long-unit Attribution / Authority-preserving Micro-splitting 1 result](../liaisonscape/liaisonscape-product-authoritative-verification-long-unit-attribution-micro-splitting1-result.md)
 adds source-step attribution to the existing exact-equivalent full-verification
 state machine. Five Edge 152 controls were measured with the one-unit policy
 under diagnostics-off/on and first/repeat browser runs. Current authoritative
@@ -3138,7 +3138,7 @@ unchanged.
 
 ### LiaisonScape Product-authoritative Verification Historical Long-slice Reproduction / Same-run Source-step Attribution 1 (2026-09-14)
 
-The [Product-authoritative Verification Historical Long-slice Reproduction / Same-run Source-step Attribution 1 result](../liaisonscape-product-authoritative-verification-historical-long-slice-reproduction1-result.md)
+The [Product-authoritative Verification Historical Long-slice Reproduction / Same-run Source-step Attribution 1 result](../liaisonscape/liaisonscape-product-authoritative-verification-historical-long-slice-reproduction1-result.md)
 repeated the source-step attribution study in the same Edge browser run that
 records scheduler turn, source-step, authority, diagnostics mode, and
 scheduler-gap fields together. Three page reload cycles covered canonical,
@@ -3174,7 +3174,7 @@ consequences and links to their dedicated results.
 
 ### LiaisonScape Product Node-label Relation-presentation-first Angular Escape Experiment 1 (2026-09-16)
 
-The [checkpoint result](../liaisonscape-product-node-label-relation-presentation-first-angular-escape1-result.md)
+The [checkpoint result](../liaisonscape/liaisonscape-product-node-label-relation-presentation-first-angular-escape1-result.md)
 holds the current Product routes and Relation-label rectangles fixed and adds
 only an opt-in diagnostic angular occupancy signal to the existing 32-angle
 automatic Node-label scorer. Horizontal, vertical, diagonal, high-degree,
@@ -3201,7 +3201,7 @@ Cascade remains inactive, and the Initial Layout Release blocker remains
 
 ### LiaisonScape Product Node-label Recovery Integration / Feasibility Experiment 1 (2026-09-16)
 
-The [checkpoint result](../liaisonscape-product-node-label-recovery-integration1-result.md)
+The [checkpoint result](../liaisonscape/liaisonscape-product-node-label-recovery-integration1-result.md)
 places the bounded Node-label recovery rule inside the normal Product
 presentation path as an explicit development-only candidate switch:
 `?node-label-recovery=candidate`. The normal `App` caller does not pass a
@@ -3239,7 +3239,7 @@ relative path to its dedicated result is adjusted for this History file.
 
 ### LiaisonScape Product-Owned Parallel Bundle + Relation-Label Ownership Generalization 1 (2026-09-16)
 
-The [checkpoint result](../liaisonscape-product-owned-parallel-bundle-generalization1-result.md)
+The [checkpoint result](../liaisonscape/liaisonscape-product-owned-parallel-bundle-generalization1-result.md)
 generalizes the prior widened Product Parallel presentation direction across
 the reverse/same-direction control, a five-Relation bundle, a mixed-incident
 control, and the public Lighthouse EN sample. Fixed `bundle-16` improved lane
@@ -3374,7 +3374,7 @@ original heading, date, status wording, source order, and dedicated authority
 link are preserved here. This section is historical evidence only; the live
 risk and target qualification remains in the current Roadmap heading.
 
-The [Independent Risk-Gate / Probe-Target Stability Validation 1 result](../liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
+The [Independent Risk-Gate / Probe-Target Stability Validation 1 result](../liaisonscape/liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
 rechecks the previous bounded multi-stage Product probe under failure
 injection, candidate-generation-order perturbation, and four independent
 graph-derived synthetic controls. The normal diagnostic path now requires
@@ -3406,7 +3406,7 @@ original heading, date, status wording, source order, and dedicated authority
 link are preserved here. This section is historical evidence only; the
 current tested-set qualification remains in the current Roadmap heading.
 
-The [Boundary Equivalence-Class Product Completion / Cost Envelope 1 result](../liaisonscape-boundary-equivalence-class-product-completion1-result.md)
+The [Boundary Equivalence-Class Product Completion / Cost Envelope 1 result](../liaisonscape/liaisonscape-boundary-equivalence-class-product-completion1-result.md)
 follows the order-dependency result by evaluating the entire cheap-equivalence
 class that crosses the normal K=4 boundary. The class is defined only by the
 existing six-decimal quantized cheap feature vector and must contain both K=4
@@ -3446,7 +3446,7 @@ original heading, date, status wording, source order, and dedicated authority
 link are preserved here. This section is historical evidence only; the
 current diagnostic consequence remains in the current Roadmap heading.
 
-The [Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1 result](../liaisonscape-bounded-multi-stage-product-probe1-result.md)
+The [Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1 result](../liaisonscape/liaisonscape-bounded-multi-stage-product-probe1-result.md)
 evaluates the next bounded architecture candidate after finalist screening:
 existing candidate generation, cheap lexicographic K=4, a graph-derived
 cheap-equivalence/high-risk gate, and zero, one, or two complete
@@ -3480,7 +3480,7 @@ original heading, date, status wording, source order, and dedicated authority
 link are preserved here. This section is historical evidence only; the
 current screening consequence remains in the current Roadmap heading.
 
-The [Bounded Screening Formulation / Finalist Recall 1 result](../liaisonscape-bounded-screening-finalist-recall1-result.md)
+The [Bounded Screening Formulation / Finalist Recall 1 result](../liaisonscape/liaisonscape-bounded-screening-finalist-recall1-result.md)
 reuses the existing candidate families and Product-authoritative oracle to
 compare deterministic finalist screens at K=2/3/4/6. The previous current
 top-4 exact-best recall was reproduced at `20/26`. A lexicographic geometry,
@@ -3511,7 +3511,7 @@ link are preserved here. This is historical evidence only; the current
 planning consequence remains in the current Roadmap's Product-authoritative
 Verification Execution / Budget summary.
 
-The [Product-authoritative Verification Scaling Envelope / Main-thread Viability 1 result](../liaisonscape-product-authoritative-verification-scaling-envelope-main-thread-viability1-result.md)
+The [Product-authoritative Verification Scaling Envelope / Main-thread Viability 1 result](../liaisonscape/liaisonscape-product-authoritative-verification-scaling-envelope-main-thread-viability1-result.md)
 measures the current source-faithful verification authority across six bounded
 workload families—sparse, dense, parallel, label-heavy, Self-loop, and mixed—at
 small, medium, and large levels: 18 cases total. The declared upper case is 24

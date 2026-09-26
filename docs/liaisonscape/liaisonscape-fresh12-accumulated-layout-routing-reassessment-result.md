@@ -36,7 +36,7 @@ The reassessment used:
 - current Product source at `e2r-liaison-scape@563d5bc3`;
 - the prior [Fresh12 diagnosis](liaisonscape-fresh12-initial-layout-quality-diagnostic.md);
 - the prior [Product-seed experiment](liaisonscape-fresh12-candidate-generation-experiment1-result.md);
-- the accepted workspace [Early Visual Smoke Check policy](visual-evidence-early-smoke-check-policy.md);
+- the accepted workspace [Early Visual Smoke Check policy](../visual-evidence-early-smoke-check-policy.md);
 - current Product geometry, routing, and label helpers; and
 - the historical experiments referenced below.
 

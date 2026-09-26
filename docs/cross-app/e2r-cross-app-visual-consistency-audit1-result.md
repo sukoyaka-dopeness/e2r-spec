@@ -113,10 +113,10 @@ separate non-blocking follow-up and is not a visual defect.
 - `docs/roadmap.md`
 - `docs/liaisonscape/cross-app-destructive-action-hierarchy-audit.md`
 - `docs/liaisonscape/cross-app-confirmation-dialog-spacing-audit.md`
-- `docs/narrativeline-phase24-navigation-safety-acceptance.md`
-- `docs/narrativeline-locale-consumer-acceptance.md`
-- `docs/narrativeline-timeline-shell-acceptance.md`
-- `docs/narrativeline-relation-blocker-presentation-formal-acceptance.md`
+- `docs/narrativeline/narrativeline-phase24-navigation-safety-acceptance.md`
+- `docs/narrativeline/narrativeline-locale-consumer-acceptance.md`
+- `docs/narrativeline/narrativeline-timeline-shell-acceptance.md`
+- `docs/narrativeline/narrativeline-relation-blocker-presentation-formal-acceptance.md`
 - `ai-knowledge/hypotheses/cross-app-action-hierarchy-and-destructive-controls.md`
 - `ai-knowledge/hypotheses/reference-first-ui-consistency-audit.md`
 

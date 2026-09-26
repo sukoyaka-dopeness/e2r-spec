@@ -52,7 +52,7 @@ this checkpoint produced no new visual candidate. No knowledge candidate was
 promoted. No push, tag, release, deploy, or publication was performed.
 
 The authoritative result is recorded in
-`docs/liaisonscape-independent-risk-gate-probe-target-stability1-result.md`.
+`docs/liaisonscape/liaisonscape-independent-risk-gate-probe-target-stability1-result.md`.
 
 `SESSION-0057 CHECKPOINT - GENERATION-ORDER DEPENDENCY CONFIRMED; RISK GATE
 AND PROBE TARGET REMAIN OPEN`

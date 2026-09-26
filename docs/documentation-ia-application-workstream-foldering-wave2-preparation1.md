@@ -146,15 +146,15 @@ Markdown links. Rescan and repair both forms.
 
 Do not include the following in Wave 2A without a separate Human decision:
 
-- `docs/dataset-handoff-v0-design.md` — shared design/contract entry that
+- `docs/cross-app/dataset-handoff-v0-design.md` — shared design/contract entry that
   remains a useful root-level cross-cutting authority and links to both app
   lanes.
-- `docs/liaisonscape-capability-handoff-public-recipient-deployment.md` —
+- `docs/liaisonscape/liaisonscape-capability-handoff-public-recipient-deployment.md` —
   LiaisonScape public-recipient deployment evidence that is adjacent to, but
   not identical with, the shared public NL-to-LS acceptance/parity records.
   Keep it at root pending a separately scoped application-vs-cross-app
   placement decision.
-- `docs/narrativeline-relation-blocker-card-presentation-follow-up.md` —
+- `docs/narrativeline/narrativeline-relation-blocker-card-presentation-follow-up.md` —
   separate presentation follow-up; do not absorb it into Handoff acceptance.
 - Cross-App Locale, Relation Deletion, public-release/provenance, and other
   mixed cross-cutting records — separate responsibilities, not a filename or
@@ -195,7 +195,7 @@ dirty and out of scope regardless.
   has a direct inbound reference from `docs/lighthouse-semantic-enrichment-decision.md`;
   that decision is cross-workstream. Do not move it in the five-file package
   cohort without separately scoping and repairing that reference.
-- `docs/validator-presentation-documentation-parity-fix-result.md` is an
+- `docs/validator/validator-presentation-documentation-parity-fix-result.md` is an
   adjacent Presentation documentation fix, not part of the 0.4.0 release
   sequence manifest above; retain it for a separate, exact reference audit.
 - `docs/liaisonscape-validator-release-residual-audit.md` is cross-app

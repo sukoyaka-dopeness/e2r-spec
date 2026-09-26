@@ -7,7 +7,7 @@ Status: implemented bounded experiment; runtime acceptance by automated gates
 ## Design1 authority
 
 This result implements only the B candidate selected by
-`docs/automatic-layout-initial-node-placement-design.md`: deterministic
+`docs/liaisonscape/automatic-layout-initial-node-placement-design.md`: deterministic
 nearest-free placement around the desired spawn for a freshly created Entity.
 The C candidate, local adjustment of existing Derived Entities, was not
 implemented.

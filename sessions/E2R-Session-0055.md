@@ -47,7 +47,7 @@ Actual Product visual review, and Human Review do not advance.
 - Initial Layout Release blocker: `OPEN`.
 
 The authoritative result is recorded in
-`docs/liaisonscape-bounded-screening-finalist-recall1-result.md`.
+`docs/liaisonscape/liaisonscape-bounded-screening-finalist-recall1-result.md`.
 
 Existing unrelated dirty work from Session 0054 remains preserved. No push,
 tag, release, deploy, or publication was performed.

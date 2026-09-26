@@ -73,9 +73,9 @@ which is retained as a feasibility failure rather than converted into a
 fallback winner.
 
 The fixed diagnostic artifact is
-[`benchmark-result-summary.json`](../../e2r-liaison-scape/experimental/quality-solver-benchmark1/benchmark-result-summary.json).
+[`benchmark-result-summary.json`](../../../e2r-liaison-scape/experimental/quality-solver-benchmark1/benchmark-result-summary.json).
 The reproducer is
-[`quality-solver-benchmark1.mjs`](../../e2r-liaison-scape/tools/quality-solver-benchmark1.mjs).
+[`quality-solver-benchmark1.mjs`](../../../e2r-liaison-scape/tools/quality-solver-benchmark1.mjs).
 
 ## Evidence
 

@@ -13,7 +13,7 @@ History unit, and the separate G2-B4 result were checked as distinct
 responsibilities.
 
 The dedicated authority is
-`docs/liaisonscape-boundary-equivalence-class-product-completion1-result.md`.
+`docs/liaisonscape/liaisonscape-boundary-equivalence-class-product-completion1-result.md`.
 The current Roadmap heading remains the planning authority for the live
 qualification boundary. The broad History unit is the eligible destination for
 dated detail if the later pilot is approved.

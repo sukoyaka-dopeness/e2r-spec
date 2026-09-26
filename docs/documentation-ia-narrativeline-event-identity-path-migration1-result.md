@@ -27,7 +27,7 @@ excluded-scope boundaries remain unchanged.
 
 - Updated the current [Roadmap](roadmap.md) link to the acceptance's new path.
 - Updated the moved design's relative link to the root-level
-  [NarrativeLine Event Human-readable Identity Audit](narrativeline-event-human-readable-identity-audit.md).
+  [NarrativeLine Event Human-readable Identity Audit](narrativeline/narrativeline-event-human-readable-identity-audit.md).
 - Added this result to the Documentation Hub and linked the outcome from the
   earlier preparation record. That preparation remains a snapshot of the
   pre-migration candidate analysis.

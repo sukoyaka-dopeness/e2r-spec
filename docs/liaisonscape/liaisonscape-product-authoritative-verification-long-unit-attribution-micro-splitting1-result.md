@@ -46,7 +46,7 @@ cannot be retroactively mapped exactly.
 ## Evidence
 
 The fixed Edge artifact is
-[`browser-result-summary.json`](../../e2r-liaison-scape/experimental/verification-long-unit-attribution1/browser-result-summary.json).
+[`browser-result-summary.json`](../../../e2r-liaison-scape/experimental/verification-long-unit-attribution1/browser-result-summary.json).
 Across all controls and first/repeat runs:
 
 | mode | max authoritative work unit | max phase transition | max measured source step |

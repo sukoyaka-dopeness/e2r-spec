@@ -61,16 +61,16 @@ Events, Relations, and the Extension sentinel remain preserved.
 ## LiaisonScape evidence
 
 The [LiaisonScape Detail / Deletion Modularization
-Readiness](../liaisonscape-detail-deletion-modularization-readiness.md) records
+Readiness](../liaisonscape/liaisonscape-detail-deletion-modularization-readiness.md) records
 the bounded state-controller responsibility decision. The [Relation deletion
-resolution implementation](../liaisonscape-relation-deletion-resolution-implementation.md)
+resolution implementation](../liaisonscape/liaisonscape-relation-deletion-resolution-implementation.md)
 records no-cascade Entity deletion and explicit resolution at commit `33d0427`.
 The accepted focus correction is recorded in the [Relation deletion resolution
-acceptance](../liaisonscape-relation-deletion-resolution-acceptance.md), and the
+acceptance](../liaisonscape/liaisonscape-relation-deletion-resolution-acceptance.md), and the
 presentation follow-up, implementation, and acceptance are recorded in the
 [action hierarchy audit](../liaisonscape/cross-app-destructive-action-hierarchy-audit.md), the
-[presentation implementation](../liaisonscape-relation-deletion-resolution-presentation-implementation.md),
-and the [presentation acceptance](../liaisonscape-relation-deletion-resolution-presentation-acceptance.md)
+[presentation implementation](../liaisonscape/liaisonscape-relation-deletion-resolution-presentation-implementation.md),
+and the [presentation acceptance](../liaisonscape/liaisonscape-relation-deletion-resolution-presentation-acceptance.md)
 at runtime commit `34d8164`.
 
 LiaisonScape passed its automated suite, lint, build, and diff checks. The

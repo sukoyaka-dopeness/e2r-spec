@@ -311,7 +311,7 @@ Browser-phase authority when Browser code changes outside that authority.
 54. PR-3: `NO`.
 55. Exact next prerequisite: bounded implementation checkpoint adding the authority field to the Restart2 Protocol A generator/tests.
 56. Next checkpoint: `NOT STARTED`.
-57. Result document: `docs/liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-design-correction1.md`.
+57. Result document: `docs/liaisonscape/liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-design-correction1.md`.
 58. Roadmap: changed additively.
 59. Knowledge Candidate decision: `CANDIDATE ONLY`.
 60. `ai-knowledge`: unchanged.

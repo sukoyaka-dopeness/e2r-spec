@@ -18,9 +18,9 @@ The controls were:
   Self-loop coexistence.
 
 The exact artifact is
-[`result-summary.json`](../../e2r-liaison-scape/experimental/product-owned-parallel-bundle-generalization1/result-summary.json).
+[`result-summary.json`](../../../e2r-liaison-scape/experimental/product-owned-parallel-bundle-generalization1/result-summary.json).
 The Actual Product smoke surfaces are indexed in
-[`visual-evidence-index.md`](../../e2r-liaison-scape/experimental/product-owned-parallel-bundle-generalization1/visual-evidence-index.md).
+[`visual-evidence-index.md`](../../../e2r-liaison-scape/experimental/product-owned-parallel-bundle-generalization1/visual-evidence-index.md).
 
 ## Candidate identity and policy comparison
 

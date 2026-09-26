@@ -98,7 +98,7 @@ docs/liaisonscape/liaisonscape-initial-placement-seed-ta2-policy-semantics-desig
 section 6: o(V) is the count of derived motif-overlap clusters containing V.
 
 The accepted topology definition is in
-docs/liaisonscape-initial-placement-motif-cluster-quality-criteria-audit.md:
+docs/liaisonscape/liaisonscape-initial-placement-motif-cluster-quality-criteria-audit.md:
 an unordered motif is a triangle of three distinct Entity Nodes with all
 three unordered Entity pairs present, and motifs sharing a Node form one
 connected overlap cluster. The accepted TA-1 witness record repeats the

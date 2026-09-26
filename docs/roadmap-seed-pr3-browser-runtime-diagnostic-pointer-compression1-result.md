@@ -42,7 +42,7 @@ detail remains in the linked checkpoint authorities.
 ## Current Browser planning boundary retained
 
 The current-host status follows the dedicated [current-host runtime blocker
-synchronization](liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md):
+synchronization](liaisonscape/liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md):
 
 - Current-host Browser execution and PR-3 Browser Evidence are **BLOCKED** by
   runtime qualification failure; exact root cause remains **UNRESOLVED** and

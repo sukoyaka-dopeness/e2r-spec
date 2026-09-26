@@ -52,7 +52,7 @@ Both commits are local and unpushed.
 
 The bounded result document is:
 
-docs/liaisonscape-automatic-self-loop-node-avoidance-result.md
+docs/liaisonscape/liaisonscape-automatic-self-loop-node-avoidance-result.md
 
 ## Validation
 

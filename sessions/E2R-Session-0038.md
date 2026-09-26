@@ -26,7 +26,7 @@ The following documentation was created and synchronized:
 
 ```text
 docs/dataset-replacement-safety-design.md
-docs/dataset-handoff-v0-design.md
+docs/cross-app/dataset-handoff-v0-design.md
 ```
 
 The checkpoint defines these independent conceptual states:
@@ -66,7 +66,7 @@ Committed files:
 
 ```text
 docs/dataset-replacement-safety-design.md
-docs/dataset-handoff-v0-design.md
+docs/cross-app/dataset-handoff-v0-design.md
 ```
 
 Validation:
@@ -146,7 +146,7 @@ e2r-validator/src/specification-validator.js
 
 ```text
 e2r-spec/docs/dataset-replacement-safety-design.md
-e2r-spec/docs/dataset-handoff-v0-design.md
+e2r-spec/docs/cross-app/dataset-handoff-v0-design.md
 ```
 
 ## Important current findings for Layout v0

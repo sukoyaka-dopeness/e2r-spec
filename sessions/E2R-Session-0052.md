@@ -170,7 +170,7 @@ ai-knowledge playbook change was preserved.
 
 The public blocker-card observation was recorded separately as
 **FOLLOW-UP / PRESENTATION ONLY / NOT A CAPABILITY HANDOFF BLOCKER** in
-[narrativeline-relation-blocker-card-presentation-follow-up.md](../docs/narrativeline-relation-blocker-card-presentation-follow-up.md).
+[narrativeline-relation-blocker-card-presentation-follow-up.md](../docs/narrativeline/narrativeline-relation-blocker-card-presentation-follow-up.md).
 
 The deferred observations are:
 
@@ -775,7 +775,7 @@ The cumulative handoff state at the end of this chat is therefore:
 
 On 2026-09-14, the LiaisonScape Initial Placement research state was handed
 off to the next chat room. The authoritative handoff record is
-`docs/liaisonscape-initial-placement-chatroom-handoff.md`; this session entry
+`docs/liaisonscape/liaisonscape-initial-placement-chatroom-handoff.md`; this session entry
 records the resume point without duplicating its detailed evidence.
 
 The active track is Structural Placement / Angular Ordering / Initial Node

@@ -194,9 +194,9 @@ docs/roadmap.md
 Untracked paths:
 
 ```text
-docs/liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md
-docs/liaisonscape-worktree-baseline-commit-readiness1-result.md
-docs/liaisonscape-density-adaptive-node-separation-experiment1-result.md
+docs/liaisonscape/liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md
+docs/liaisonscape/liaisonscape-worktree-baseline-commit-readiness1-result.md
+docs/liaisonscape/liaisonscape-density-adaptive-node-separation-experiment1-result.md
 docs/liaisonscape/liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md
 docs/liaisonscape/liaisonscape-explicit-auto-layout-catastrophic-preview-boundary1-result.md
 docs/liaisonscape/liaisonscape-explicit-auto-layout-dev-failure-diagnostic1-result.md
@@ -214,19 +214,19 @@ docs/liaisonscape/liaisonscape-explicit-auto-layout-product-eligibility-semantic
 docs/liaisonscape/liaisonscape-explicit-auto-layout-production-operation-staging1-result.md
 docs/liaisonscape/liaisonscape-explicit-auto-layout-reference-placement-regression-fixture1-result.md
 docs/liaisonscape/liaisonscape-explicit-auto-layout-safe-preview-failure-diagnosis1-result.md
-docs/liaisonscape-general-complex-dataset-practicality-reassessment1-result.md
-docs/liaisonscape-initial-automatic-display-integer-canonicalization-human-check-pass-closure1-result.md
-docs/liaisonscape-initial-automatic-display-integer-canonicalization-human-check1-result.md
-docs/liaisonscape-initial-automatic-display-integer-canonicalization1-result.md
+docs/liaisonscape/liaisonscape-general-complex-dataset-practicality-reassessment1-result.md
+docs/liaisonscape/liaisonscape-initial-automatic-display-integer-canonicalization-human-check-pass-closure1-result.md
+docs/liaisonscape/liaisonscape-initial-automatic-display-integer-canonicalization-human-check1-result.md
+docs/liaisonscape/liaisonscape-initial-automatic-display-integer-canonicalization1-result.md
 docs/liaisonscape/liaisonscape-pin-app-working-state-save-integration1-result.md
 docs/liaisonscape/liaisonscape-pin-persistence-authority-contract2-result.md
-docs/liaisonscape-pin-ui-human-check-a-popover-iteration2-result.md
-docs/liaisonscape-pin-ui-human-check-a-visual-iteration1-result.md
+docs/liaisonscape/liaisonscape-pin-ui-human-check-a-popover-iteration2-result.md
+docs/liaisonscape/liaisonscape-pin-ui-human-check-a-visual-iteration1-result.md
 docs/liaisonscape/liaisonscape-pin-ui1-result.md
-docs/liaisonscape-pin-working-anchor-consistency1-result.md
-docs/liaisonscape-pin-writer-atomic-save1-result.md
-docs/liaisonscape-pinned-cross-family-product-portfolio-experiment1-result.md
-docs/liaisonscape-pinned-frontier-feasibility1-result.md
+docs/liaisonscape/liaisonscape-pin-working-anchor-consistency1-result.md
+docs/liaisonscape/liaisonscape-pin-writer-atomic-save1-result.md
+docs/liaisonscape/liaisonscape-pinned-cross-family-product-portfolio-experiment1-result.md
+docs/liaisonscape/liaisonscape-pinned-frontier-feasibility1-result.md
 ```
 
 Impact: specification/history only. The new readiness and freeze documents

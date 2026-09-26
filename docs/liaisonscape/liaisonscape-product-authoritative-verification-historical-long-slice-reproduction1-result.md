@@ -37,7 +37,7 @@ not expanded; this checkpoint only attributes the already established
 one-unit baseline.
 
 The fixed artifact is
-[`browser-result-summary.json`](../../e2r-liaison-scape/experimental/verification-long-slice-reproduction1/browser-result-summary.json).
+[`browser-result-summary.json`](../../../e2r-liaison-scape/experimental/verification-long-slice-reproduction1/browser-result-summary.json).
 
 ## Evidence
 

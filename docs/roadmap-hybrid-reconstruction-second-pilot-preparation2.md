@@ -32,10 +32,10 @@ unchanged.
 The Roadmap is the sole current-planning authority. The following dedicated
 results are the evidence authorities for this manifest:
 
-- [Bounded Screening Formulation / Finalist Recall 1](liaisonscape-bounded-screening-finalist-recall1-result.md)
-- [Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1](liaisonscape-bounded-multi-stage-product-probe1-result.md)
-- [Boundary Equivalence-Class Product Completion / Cost Envelope 1](liaisonscape-boundary-equivalence-class-product-completion1-result.md)
-- [Independent Risk-Gate / Probe-Target Stability Validation 1](liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
+- [Bounded Screening Formulation / Finalist Recall 1](liaisonscape/liaisonscape-bounded-screening-finalist-recall1-result.md)
+- [Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1](liaisonscape/liaisonscape-bounded-multi-stage-product-probe1-result.md)
+- [Boundary Equivalence-Class Product Completion / Cost Envelope 1](liaisonscape/liaisonscape-boundary-equivalence-class-product-completion1-result.md)
+- [Independent Risk-Gate / Probe-Target Stability Validation 1](liaisonscape/liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
 
 The existing [Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md)
 is the only proposed historical destination. No new History unit is needed.

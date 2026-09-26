@@ -49,26 +49,26 @@ The LiaisonScape gate passed with 209 tests, lint, build, and diff check.
 
 The current application has these relevant boundaries:
 
-- [`src/services/EntityService.ts`](../../e2r-liaison-scape/src/services/EntityService.ts)
+- [`src/services/EntityService.ts`](../../../e2r-liaison-scape/src/services/EntityService.ts)
   owns Entity creation, deletion assessment,
   deletion, detail lookup, and Entity detail mutation.
-- [`src/services/RelationService.ts`](../../e2r-liaison-scape/src/services/RelationService.ts)
+- [`src/services/RelationService.ts`](../../../e2r-liaison-scape/src/services/RelationService.ts)
   owns Relation creation, deletion
   assessment, deletion, detail lookup, and Relation detail mutation.
-- [`src/components/EntityDetailDialog.tsx`](../../e2r-liaison-scape/src/components/EntityDetailDialog.tsx)
+- [`src/components/EntityDetailDialog.tsx`](../../../e2r-liaison-scape/src/components/EntityDetailDialog.tsx)
   renders Entity detail fields,
   related Relation information, and the disabled Entity delete action when
   incident Relations remain.
-- [`src/components/RelationDetailDialog.tsx`](../../e2r-liaison-scape/src/components/RelationDetailDialog.tsx)
+- [`src/components/RelationDetailDialog.tsx`](../../../e2r-liaison-scape/src/components/RelationDetailDialog.tsx)
   renders Relation endpoints,
   editable fields, technical details, and the explicit Relation delete action.
-- [`src/components/ConfirmationDialog.tsx`](../../e2r-liaison-scape/src/components/ConfirmationDialog.tsx)
+- [`src/components/ConfirmationDialog.tsx`](../../../e2r-liaison-scape/src/components/ConfirmationDialog.tsx)
   owns the generic delete-confirmation
   presentation and safe initial focus.
-- [`src/components/DetailDismissalConfirmation.tsx`](../../e2r-liaison-scape/src/components/DetailDismissalConfirmation.tsx)
+- [`src/components/DetailDismissalConfirmation.tsx`](../../../e2r-liaison-scape/src/components/DetailDismissalConfirmation.tsx)
   owns dirty-detail
   dismissal presentation, Escape handling, and Cancel focus.
-- [`src/App.tsx`](../../e2r-liaison-scape/src/App.tsx) composes these surfaces
+- [`src/App.tsx`](../../../e2r-liaison-scape/src/App.tsx) composes these surfaces
   and currently owns their state,
   transitions, Dataset updates, selection changes, and post-mutation cleanup.
 
@@ -324,9 +324,9 @@ but it must not directly replace the Dataset state or clean baseline.
 
 The current LiaisonScape baseline is 208 passing tests, with lint and build
 passing. The baseline UI contracts are represented by
-[`tests/appUiIntegration.test.ts`](../../e2r-liaison-scape/tests/appUiIntegration.test.ts),
-[`tests/dataset.test.ts`](../../e2r-liaison-scape/tests/dataset.test.ts), and
-[`tests/relation-service.test.ts`](../../e2r-liaison-scape/tests/relation-service.test.ts).
+[`tests/appUiIntegration.test.ts`](../../../e2r-liaison-scape/tests/appUiIntegration.test.ts),
+[`tests/dataset.test.ts`](../../../e2r-liaison-scape/tests/dataset.test.ts), and
+[`tests/relation-service.test.ts`](../../../e2r-liaison-scape/tests/relation-service.test.ts).
 The first extraction should retain and, where necessary, supplement
 coverage for:
 

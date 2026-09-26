@@ -24,7 +24,7 @@ The current NarrativeLine repository was audited without changing runtime,
 application, schema, UI, or test behavior. The source handoff was reduced to a
 focused set of 25 current files, grouped by application/UI, services, and
 integration tests. The exact list and links are recorded in
-`docs/e2r-narrativeline-next-phase-and-source-handoff-planning1-result.md`.
+`docs/narrativeline/e2r-narrativeline-next-phase-and-source-handoff-planning1-result.md`.
 
 Current NarrativeLine source is on `main` at `a525d2e`; its only tracked dirty
 path is the pre-existing `AGENTS.md` guidance update, which was preserved and

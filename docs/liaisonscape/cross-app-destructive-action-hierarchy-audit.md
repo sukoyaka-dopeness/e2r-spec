@@ -24,7 +24,7 @@ The audit used the current source and accepted records in:
 - Accepted evidence: [NarrativeLine Entity Deletion Resolution
   Acceptance](../narrativeline/narrativeline-entity-deletion-resolution-acceptance.md) and
   [LiaisonScape Relation Deletion Resolution Real Edge
-  Acceptance](../liaisonscape-relation-deletion-resolution-acceptance.md).
+  Acceptance](liaisonscape-relation-deletion-resolution-acceptance.md).
 
 The review covers normal and narrow layout, source/DOM order, Tab order,
 focus-visible behavior where already accepted, EN/JA label length, and the

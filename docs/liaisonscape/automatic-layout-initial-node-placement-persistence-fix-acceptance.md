@@ -9,9 +9,9 @@ Status: ACCEPTED / COMPLETE
 This is the bounded browser acceptance of persistence fix `24494f4 fix: keep
 automatic placement derived`, with follow-up synchronization fix
 `8a5d2a6 fix: synchronize placement adoption tracking`. The audit authority
-is `docs/automatic-layout-initial-node-placement-serialization-implications.md`
+is `docs/liaisonscape/automatic-layout-initial-node-placement-serialization-implications.md`
 (`b6eae41`); the implementation result is
-`docs/automatic-layout-initial-node-placement-persistence-fix-result.md`
+`docs/liaisonscape/automatic-layout-initial-node-placement-persistence-fix-result.md`
 (`ff3fac2`).
 
 The accepted contract uses stored Coordinates as baseline and saves only

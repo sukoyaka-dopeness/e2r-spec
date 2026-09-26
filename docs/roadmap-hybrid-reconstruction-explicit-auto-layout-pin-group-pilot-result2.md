@@ -26,7 +26,7 @@ practicality remain distinct from Explicit Auto Layout's qualified status.
 
 - **A — quality follow-ups:** retained the follow-up families and their
   non-blocking/frozen status in a concise current summary, with detail in the
-  [quality-freeze result](liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md).
+  [quality-freeze result](liaisonscape/liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md).
 - **A — Human Check B closure:** retained the exact bounded scope of the
   `QUALIFIED` disposition, the separate test-infrastructure gate, and a pointer
   to the [qualified closure result](liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md).

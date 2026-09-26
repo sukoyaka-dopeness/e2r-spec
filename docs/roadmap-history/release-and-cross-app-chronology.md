@@ -265,7 +265,7 @@ ACCEPTANCE PENDING** — 2026-08-28.
 The bounded LiaisonScape presentation implementation is complete at commit
 `34d8164` (`fix: refine Entity deletion resolution presentation`) and is
 recorded in [LiaisonScape Relation Deletion Resolution Presentation
-Implementation](../liaisonscape-relation-deletion-resolution-presentation-implementation.md).
+Implementation](../liaisonscape/liaisonscape-relation-deletion-resolution-presentation-implementation.md).
 The duplicate header `Keep Entity` was removed; the footer now keeps one safe
 action before zero-blocker-only `Delete Entity`, with a bounded desktop gap and
 safe-before-danger full-width narrow stacking. Human-facing EN/JA copy now
@@ -283,7 +283,7 @@ acceptance; deletion semantics and the accepted focus fix remain unchanged.
 The bounded LiaisonScape presentation refinement passed dedicated Microsoft
 Edge visual/interaction acceptance at runtime commit `34d8164`. Evidence is
 recorded in [LiaisonScape Relation Deletion Resolution Presentation
-Acceptance](../liaisonscape-relation-deletion-resolution-presentation-acceptance.md).
+Acceptance](../liaisonscape/liaisonscape-relation-deletion-resolution-presentation-acceptance.md).
 P1/P2 copy, P3 duplicate-action removal, P4/P5 zero-blocker EN/JA layout, P6
 desktop spacing, P7 narrow safe-before-danger stacking, and P10 focus
 regression all passed. P8/P9/P11/P12 passed as bounded regression evidence.
@@ -707,7 +707,7 @@ ai-knowledge changes remain deferred.
 
 `XAPP-CAPABILITY-HANDOFF11-LS-RECIPIENT-PUBLIC-DEPLOYMENT1` is **PUBLIC
 LIAISONSCAPE RECIPIENT PARITY ACCEPTED**. The deployment record is
-[LiaisonScape Capability Handoff Public Recipient Deployment](../liaisonscape-capability-handoff-public-recipient-deployment.md).
+[LiaisonScape Capability Handoff Public Recipient Deployment](../liaisonscape/liaisonscape-capability-handoff-public-recipient-deployment.md).
 
 With explicit recipient-first authorization, LiaisonScape `95a8c56` was pushed
 to `main` and deployed by the existing GitHub Pages workflow. Actions run
@@ -798,7 +798,7 @@ The remaining release sequence is:
 2. Resolve any resulting Coordinate/Layout serialization and schema
    implications. **CLOSED 2026-08-30:** the accepted automatic placement
    implementation introduces no new serialized contract, schema, or Validator
-   work; see [Automatic Placement Serialization Impact](../liaisonscape-automatic-placement-serialization-impact-result.md).
+   work; see [Automatic Placement Serialization Impact](../liaisonscape/liaisonscape-automatic-placement-serialization-impact-result.md).
 3. Complete the separate Presentation lifecycle cleanup, including removal
    of a deleted Relation ID's Presentation record where appropriate.
 4. Integrate and accept production Validator coverage for the release-
@@ -812,7 +812,7 @@ The remaining release sequence is:
 7. The LiaisonScape application version decision is now recorded as
    `0.2.0`. The current metadata remains `0.1.0`; the actual bump is deferred
    to bounded release preparation. See
-   `docs/liaisonscape-application-version-decision.md`.
+   `docs/liaisonscape/liaisonscape-application-version-decision.md`.
 8. Run the final pre-public-release audit.
 9. Obtain explicit authorization before any push or deployment.
 10. Perform public deployment acceptance only after that authorization.
@@ -855,7 +855,7 @@ Research shelf inventory and the Hub concept page remain separate workstreams.
 
 ### E2R-LIAISONSCAPE-INITIAL-NODE-PLACEMENT-OBJECTIVE-AUDIT1 (2026-08-30)
 
-The Initial Node Placement Objective Audit is recorded in [LiaisonScape Initial Node Placement Objective Audit](../liaisonscape-initial-node-placement-objective-audit.md).
+The Initial Node Placement Objective Audit is recorded in [LiaisonScape Initial Node Placement Objective Audit](../liaisonscape/liaisonscape-initial-node-placement-objective-audit.md).
 The result is `SAMPLE REFRESH REQUIRED - INITIAL PLACEMENT ALGORITHM
 ACCEPTABLE`: both Lighthouse Restoration samples contain stored coordinates
 for all 10 Entities, so Dataset open does not exercise the missing-coordinate
@@ -872,7 +872,7 @@ NarrativeLine Display-Order audit remains next in the pre-release sequence.
 The LiaisonScape repository-owned MIT license blocker is now remediated. The
 root `LICENSE` uses `Copyright (c) 2026 sukoyaka-dopeness`; `package.json`,
 `package-lock.json`, and README are synchronized. The evidence is recorded in
-[LiaisonScape License Remediation Result](../liaisonscape-license-remediation-result.md).
+[LiaisonScape License Remediation Result](../liaisonscape/liaisonscape-license-remediation-result.md).
 
 This closes only the license checkpoint. LiaisonScape remains `0.2.0` and
 `private: true`; runtime, Dataset, sample, Core, Extension, and specification
@@ -1032,7 +1032,7 @@ without reopening a closed boundary.
 | LiaisonScape selected Relation curve guidance | **ACCEPTED / NO DEFECT** | The current source starts curve manipulation only for the selected edge, and the existing closure document/tests record the matching guidance and Escape/pointer-cancel behavior. No implementation change is authorized by this observation. |
 | NarrativeLine no-date Event creation and History notice | **ALREADY IMPLEMENTED / OBSERVATION MISMATCH** | Current `classifyHistoryCapability()` treats absent History as editable, and the Event Detail notice is used for candidate, unknown, unsupported, or mixed History states. The current tests pass for a new Dataset with no existing H1 records: circa initialization does not show the Dataset-wide migration confirmation. If the notice appears for a genuinely new no-History Event, the payload/state or served revision must first be identified; do not alter the accepted H1→H2 boundary. |
 | NarrativeLine public Pages revision for the History observation | **REVISION UNVERIFIABLE** | At audit time, the public entry point responded and served a NarrativeLine bundle containing the read-only copy, but the HTML/assets exposed no commit SHA or deployment metadata. The then-recorded local source was `0600465df14e561bcf176d23c5ba9c471bc45027`, versus `origin/main` at `db49ceff2aa38398d716001d9e1bca35bb46732f`; these are historical references, not current application-repository state. The served artifact could not be mapped to either revision from the available evidence. |
-| NarrativeLine English-label narrow Header wrapping | **HISTORICAL OBSERVATION; BOUNDED LOCAL ACCEPTANCE LATER CLOSED** | The reported initial wrap and its unconfirmed cause are retained as the original observation. The later [narrow Header acceptance result](../narrativeline-narrow-header-robustness-acceptance1-result.md) records the local robustness correction and tested narrow EN/JA, navigation, focus-visible, and overflow checks as **ACCEPTED / CLOSED**. The original device-specific observation is not claimed disproven; physical-device reproduction or confirmation of a deployed artifact containing the correction remains outside that bounded closure. |
+| NarrativeLine English-label narrow Header wrapping | **HISTORICAL OBSERVATION; BOUNDED LOCAL ACCEPTANCE LATER CLOSED** | The reported initial wrap and its unconfirmed cause are retained as the original observation. The later [narrow Header acceptance result](../narrativeline/narrativeline-narrow-header-robustness-acceptance1-result.md) records the local robustness correction and tested narrow EN/JA, navigation, focus-visible, and overflow checks as **ACCEPTED / CLOSED**. The original device-specific observation is not claimed disproven; physical-device reproduction or confirmation of a deployed artifact containing the correction remains outside that bounded closure. |
 
 #### Detailed audit boundary
 
@@ -1065,7 +1065,7 @@ schema, Validator, or runtime change was made.
 | Application / surface | Classification | Additional local-browser evidence |
 | --- | --- | --- |
 | LiaisonScape Entity Detail / Relation Detail at 390px portrait and 844×390px landscape | **ACCEPTED / NO DEFECT** for the tested matrix | The local Vite app opened the Lighthouse sample through the normal sample action. At 390px portrait, the Entity Detail modal was `x=8, width=374, right=382` within the 390px viewport; Relation Detail was also `x=8, width=374, right=382`. Long Relation name/description values stayed inside the fields and used field-level scrolling/wrapping. At 844×390px landscape, both tested modal forms stayed within the viewport (`x=134, width=576, right=710`, `y=16, height=358, bottom=374`) and used internal vertical scrolling for the longer form. No horizontal document overflow was observed. This does not claim a physical-device safe-area or OS keyboard audit; those remain a separate environment-specific acceptance concern if the original report persists. |
-| NarrativeLine narrow Header with `戻る` + `English` | **INITIAL LOCAL MATRIX DID NOT REPRODUCE; BOUNDED ACCEPTANCE LATER CLOSED** | Cold/reload and SPA navigation were exercised through the local sample flow. At 390px, the Header buttons measured `戻る=46.44px` and `English=67.03px`, both at `y=16..52`; the same row remained intact at 375, 360, 350, 340, 320, and 300px with no document horizontal overflow. After toggling, the English-locale labels measured `Back=50.63px` and `日本語=65px`, also on one row. This non-reproduction remains part of the audit history. The later [narrow Header acceptance result](../narrativeline-narrow-header-robustness-acceptance1-result.md) closes the bounded local acceptance; it does not claim equivalent physical-device reproduction or identify the Public artifact's source revision. |
+| NarrativeLine narrow Header with `戻る` + `English` | **INITIAL LOCAL MATRIX DID NOT REPRODUCE; BOUNDED ACCEPTANCE LATER CLOSED** | Cold/reload and SPA navigation were exercised through the local sample flow. At 390px, the Header buttons measured `戻る=46.44px` and `English=67.03px`, both at `y=16..52`; the same row remained intact at 375, 360, 350, 340, 320, and 300px with no document horizontal overflow. After toggling, the English-locale labels measured `Back=50.63px` and `日本語=65px`, also on one row. This non-reproduction remains part of the audit history. The later [narrow Header acceptance result](../narrativeline/narrativeline-narrow-header-robustness-acceptance1-result.md) closes the bounded local acceptance; it does not claim equivalent physical-device reproduction or identify the Public artifact's source revision. |
 
 For the LiaisonScape pass, Escape closed the open Relation Detail modal and keyboard Tab produced the existing visible focus outline on the graph action. The modal source continues to provide a backdrop close button, dialog semantics, and `overflow: auto`; no accepted focus or dismissal contract was changed. For NarrativeLine, the Header flex/grid source was inspected together with the rendered button widths; no implementation conclusion is drawn from the non-reproduction.
 
@@ -1308,7 +1308,7 @@ presentation.
 
 Retained follow-ups from acceptance: the bounded viewport toolbar
 drag-handle/disclosure implementation following
-`docs/liaisonscape-viewport-toolbar-collapse-follow-up.md`, LiaisonScape
+`docs/liaisonscape/liaisonscape-viewport-toolbar-collapse-follow-up.md`, LiaisonScape
 Credits descriptive-copy localization, common E2R favicon, and Long-form
 Object Content / Media responsibility research. No new knowledge candidate was
 added.
@@ -1370,7 +1370,7 @@ Cross-App Flatness Experiment is separate.
 `ce446e5 fix: align Dataset metadata text`.
 
 The completed bounded follow-up is supported by [LiaisonScape Dataset metadata
-alignment audit](../liaisonscape-dataset-metadata-alignment-audit.md), whose design
+alignment audit](../liaisonscape/liaisonscape-dataset-metadata-alignment-audit.md), whose design
 result was **READY — BASELINE ALIGNMENT ONLY**. The accepted contract is local to
 the Dataset metadata label/value text pair: baseline alignment applies across
 the covered responsive metadata-row regimes (wide, 721px, 720px, 601px, 600px,

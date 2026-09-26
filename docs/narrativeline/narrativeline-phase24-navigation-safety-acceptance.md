@@ -111,7 +111,7 @@ subsequent instrumented minimal reproduction passed 5/5. This remains
 
 | Candidate | Classification | Existing/new | Target file | Rationale |
 | --- | --- | --- | --- | --- |
-| Nested contextual Header navigation | NarrativeLine-specific accepted contract | Existing documentation, now recorded here | This document; existing `docs/narrativeline-timeline-shell-acceptance.md` | The placement and semantics are application behavior, not a Core rule. |
+| Nested contextual Header navigation | NarrativeLine-specific accepted contract | Existing documentation, now recorded here | This document; existing `docs/narrativeline/narrativeline-timeline-shell-acceptance.md` | The placement and semantics are application behavior, not a Core rule. |
 | Loss-risk kinds and Browser traversal transaction | NarrativeLine-specific accepted contract/evidence | Existing Dataset-safety and navigation evidence; consolidated here | This document; `docs/narrativeline/narrativeline-modernization-nl-d5b-internal-navigation-loss-audit-acceptance.md` | The transaction preserves the existing Dataset/pending-work responsibility split. |
 | First Browser intent wins | NarrativeLine-specific accepted contract/evidence | New consolidated record | This document | One implementation has direct evidence; cross-app promotion is premature. |
 | Draft-history sanitation | Reusable knowledge candidate, not promoted | New candidate remains local | This document | In-place sanitation before future traversal is a useful review prompt, but evidence is currently one application. |

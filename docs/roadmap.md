@@ -55,7 +55,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | NarrativeLine Detail controls | **ACCEPTED / BOUNDED GEOMETRY CORRECTIONS COMPLETE** | NarrativeLine `df69e8e` and `8495724` cover destructive/detail action geometry, Timeline Edit, and Entity Detail form width; further Picker/Create or visual-style work requires a separate current-evidence audit |
 | NarrativeLine pre-public feature candidates | **SAMPLE ROLE / PROVENANCE DECISIONS RECORDED / PUBLIC ACCESS RELEASED** | [provenance authority and access result](e2r-initial-public-release-provenance-authority-cross-app-access-implementation1-result.md), [sample role decision preparation](e2r-public-sample-role-decision-preparation1-result.md), and [content/provenance audit](e2r-initial-public-release-content-sample-provenance-refresh-audit1-result.md); five ordinary Gallery families and separate Self-Description dogfood access are public; factual-source caveats remain provenance boundaries |
 | Recent application identity and shell corrections | **IMPLEMENTED / ACCEPTANCE STATUS SPLIT** | Timeline `↑/↓`, Timeline Footer, Detail bottom action/AppFrame continuity, Dataset title hierarchy/direct editing, product-name-only document titles, and title input chrome/terminology have implementation evidence but are not wholesale `ACCEPTED / CLOSED` without explicit visual acceptance. The common SVG favicon has Human browser-tab/narrow confirmation |
-| Cross-App Locale recipient preference | **CROSS-APP CLOSURE NOT ESTABLISHED / NOT AN INITIAL-RELEASE GATE** | NarrativeLine's [consumer acceptance](narrativeline-locale-consumer-acceptance.md) explicitly says the overall workstream is not complete; LiaisonScape's i18n MVP and Hub's [bilingual landing acceptance](hub/e2r-hub-public-entry-point-milestone-2-acceptance.md) are bounded component evidence, not closure of the shared startup-locale contract. No current priority is selected by this status sync. Hub direct Handoff remains a separate deferred capability under the Hub acceptance |
+| Cross-App Locale recipient preference | **CROSS-APP CLOSURE NOT ESTABLISHED / NOT AN INITIAL-RELEASE GATE** | NarrativeLine's [consumer acceptance](narrativeline/narrativeline-locale-consumer-acceptance.md) explicitly says the overall workstream is not complete; LiaisonScape's i18n MVP and Hub's [bilingual landing acceptance](hub/e2r-hub-public-entry-point-milestone-2-acceptance.md) are bounded component evidence, not closure of the shared startup-locale contract. No current priority is selected by this status sync. Hub direct Handoff remains a separate deferred capability under the Hub acceptance |
 | E2R workspace clone and evidence hygiene | **COMPLETED / ROOT PLACEMENT CLOSED (8 / 7 / 0)** | [workspace placement migration summary](#workspace-placement-migration--completed--2026-09-21); detailed evidence remains in workspace artifacts and Git history; future evidence disposition is separate work |
 | Initial Public Release | **FORMALLY CLOSED / PUBLIC AUTHORITIES VERIFIED / ACCEPTED BOUNDARIES PRESERVED** | [final closure audit](e2r-initial-public-release-closure-audit-result.md); five ordinary Gallery samples, separate Self-Description dogfood access, Hub/NarrativeLine/LiaisonScape provenance links, Validator `0.6.1`, and the accepted rights/provenance boundary are public and verified; deferred History 2, Lineage, visual-quality, and future product work remain separate follow-ups |
 
@@ -266,7 +266,7 @@ non-normative design direction without selecting an identifier, schema, or
 implementation.
 
 The Automatic Layout experiment order and interoperability evidence ladder are
-documented in `docs/automatic-layout-experiment-plan.md`. This remains an
+documented in `docs/liaisonscape/automatic-layout-experiment-plan.md`. This remains an
 experiment plan and does not establish a Layout identifier, schema, algorithm,
 or maturity model.
 
@@ -933,7 +933,7 @@ completion:
    click classification and current-dimension reclamping after collapse,
    expansion, resize, and locale changes. The accepted `720px` desktop/mobile
    boundary remains unchanged; no runtime change was made. See [LiaisonScape
-   Viewport Toolbar Collapse Follow-up](liaisonscape-viewport-toolbar-collapse-follow-up.md).
+   Viewport Toolbar Collapse Follow-up](liaisonscape/liaisonscape-viewport-toolbar-collapse-follow-up.md).
    - **Viewport handle tooltip visibility** — real-browser follow-up recorded:
      pointer-acquired focus can keep the tooltip visible after pointer leave.
      Do not blur the button; retain keyboard guidance and investigate a bounded
@@ -980,7 +980,7 @@ The same F2-LS1 manual acceptance added two cross-application UX questions:
 
 - **Viewport toolbar interaction semantics** — the existing drag-handle
   keyboard/focus follow-up is resolved by the [LiaisonScape Viewport Toolbar
-  Collapse Follow-up](liaisonscape-viewport-toolbar-collapse-follow-up.md) as
+  Collapse Follow-up](liaisonscape/liaisonscape-viewport-toolbar-collapse-follow-up.md) as
   a **DESIGN ACCEPTED / READY FOR BOUNDED IMPLEMENTATION** combined
   drag-handle plus disclosure-trigger contract. Runtime implementation remains
   a separate checkpoint; the `720px` handoff and no-keyboard-repositioning
@@ -1026,7 +1026,7 @@ Dataset acquisition is not assigned to right-click context menus.
 
 ### NarrativeLine Timeline Back-to-Top acceptance — 2026-08-25
 
-**ACCEPTED.** Back-to-Top is a transient Timeline navigation affordance; Add Event remains primary and More the terminal secondary-action container. Detailed behavior and acceptance evidence is preserved in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#narrativeline-timeline-back-to-top-acceptance-2026-08-25) and [NarrativeLine next-phase result](e2r-narrativeline-next-phase-and-source-handoff-planning1-result.md).
+**ACCEPTED.** Back-to-Top is a transient Timeline navigation affordance; Add Event remains primary and More the terminal secondary-action container. Detailed behavior and acceptance evidence is preserved in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#narrativeline-timeline-back-to-top-acceptance-2026-08-25) and [NarrativeLine next-phase result](narrativeline/e2r-narrativeline-next-phase-and-source-handoff-planning1-result.md).
 
 ## Active follow-up ledger — 2026-08-25
 
@@ -1066,7 +1066,7 @@ The Dataset metadata divider-spacing and label/value alignment checkpoints are m
 
 ### LS-METADATA-ALIGN1 — LiaisonScape Dataset metadata label/value alignment
 
-The LiaisonScape-local label/value alignment checkpoint is **FIXED / ACCEPTED** at the recorded runtime boundary. The 16px divider-spacing baseline remains unchanged. The general 600/601px topic, Cross-App Visual Style / Flatness, and NarrativeLine parity remain separate; detailed measurements and dated observations are in Roadmap History and the [alignment audit](liaisonscape-dataset-metadata-alignment-audit.md).
+The LiaisonScape-local label/value alignment checkpoint is **FIXED / ACCEPTED** at the recorded runtime boundary. The 16px divider-spacing baseline remains unchanged. The general 600/601px topic, Cross-App Visual Style / Flatness, and NarrativeLine parity remain separate; detailed measurements and dated observations are in Roadmap History and the [alignment audit](liaisonscape/liaisonscape-dataset-metadata-alignment-audit.md).
 
 ### Cross-application object identity direction
 
@@ -1172,7 +1172,7 @@ Locale Consumer was **COMPLETE / DOCUMENTED**, based on
 runtime checkpoint `ded44d6ca093431cc829d0aa47f6524ea789750a`, final automated
 evidence, and EN/JA manual acceptance. This records recipient-consumer
 readiness, not completion of Cross-App Locale or application release readiness.
-See [NarrativeLine Locale Consumer Acceptance](narrativeline-locale-consumer-acceptance.md).
+See [NarrativeLine Locale Consumer Acceptance](narrativeline/narrativeline-locale-consumer-acceptance.md).
 
 The dated next-target sequence was LiaisonScape locale consumer
 implementation/alignment, followed by Hub startup locale producer completion
@@ -1208,7 +1208,7 @@ These do not reopen the accepted locale consumer checkpoint.
 
 ### Cross-app Credits alignment follow-up
 
-NarrativeLine Credits behavior is accepted in the [locale-consumer authority](narrativeline-locale-consumer-acceptance.md),
+NarrativeLine Credits behavior is accepted in the [locale-consumer authority](narrativeline/narrativeline-locale-consumer-acceptance.md),
 and LiaisonScape Credits locale parity is recorded closed in the [Release and
 Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
 Hub's accepted [bilingual landing-page milestone](hub/e2r-hub-public-entry-point-milestone-2-acceptance.md)
@@ -1246,7 +1246,7 @@ following current summary takes precedence when older sections use stale
   LS-DIALOG-DRAFT1-F1, LS-DIALOG-DRAFT1-F2-E1, and the overall
   LS-DIALOG-DRAFT1 workstream are
   **ACCEPTED / CLOSED**. The endpoint identity closure is recorded in
-  [LiaisonScape Relation Endpoint Identity Acceptance](liaisonscape-relation-endpoint-identity-acceptance.md).
+  [LiaisonScape Relation Endpoint Identity Acceptance](liaisonscape/liaisonscape-relation-endpoint-identity-acceptance.md).
 - Object ID / Technical details and F2-LS1 locale/shell are accepted/closed.
 - LS-GRAPH-DRAG1 / D1R6R2 is accepted/closed and verified committed/pushed.
 - Session 0048 publication, Anonymous Dataset Sharing research, Temporal /
@@ -1265,7 +1265,7 @@ in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-
 That historical progression does not reopen the accepted ownership, no-cascade,
 explicit Relation-deletion, self/parallel Relation, or interoperability
 boundaries. The NarrativeLine endpoint-separator observation was corrected and
-included in its [later formal presentation acceptance](narrativeline-relation-blocker-presentation-formal-acceptance.md).
+included in its [later formal presentation acceptance](narrativeline/narrativeline-relation-blocker-presentation-formal-acceptance.md).
 The later [Cross-App visual consistency audit](cross-app/e2r-cross-app-visual-consistency-audit1-result.md)
 found no bounded current visual defect, without requiring pixel-identical UI.
 Targeted Handoff/discovery and broader Relation management remain separate
@@ -1287,7 +1287,7 @@ application should perform a readiness review and identify the smallest useful
 bounded extraction, or explicitly record why extraction is deferred. For
 LiaisonScape, the bounded Detail/deletion state-controller extraction is
 **IMPLEMENTED / ACCEPTED** at commit `98f7751`; its ownership boundary and
-evidence remain in [LiaisonScape Detail / Deletion Modularization Readiness](liaisonscape-detail-deletion-modularization-readiness.md).
+evidence remain in [LiaisonScape Detail / Deletion Modularization Readiness](liaisonscape/liaisonscape-detail-deletion-modularization-readiness.md).
 The record states that a separate 2B wiring checkpoint is unnecessary. Any
 future extraction requires its own readiness review under the workspace
 policy; no further Detail/deletion extraction is currently sequenced here.
@@ -1331,14 +1331,14 @@ The e2r-spec-owned helper is **IMPLEMENTED / ACCEPTED** and maintained in
 [README](../tools/edge-cdp/README.md) and regression coverage in
 [`edge-cdp-helper.test.mjs`](../tools/edge-cdp/edge-cdp-helper.test.mjs).
 The bounded real-Edge acceptance evidence, including native-dialog gating, is
-recorded in [LiaisonScape Relation Deletion Resolution Acceptance](liaisonscape-relation-deletion-resolution-acceptance.md).
+recorded in [LiaisonScape Relation Deletion Resolution Acceptance](liaisonscape/liaisonscape-relation-deletion-resolution-acceptance.md).
 This helper supplies evidence tooling; each scenario retains its own acceptance
 authority. It adds no production application dependency or runtime behavior.
 
 ### LS-DETAIL-DELETION-MODULARIZATION1-READINESS
 
 The readiness recommendation and accepted 2A state-controller boundary are
-preserved in [LiaisonScape Detail / Deletion Modularization Readiness](liaisonscape-detail-deletion-modularization-readiness.md).
+preserved in [LiaisonScape Detail / Deletion Modularization Readiness](liaisonscape/liaisonscape-detail-deletion-modularization-readiness.md).
 Cross-App blocker resolution, focused acceptance, bidirectional
 interoperability, and final capability closure are recorded in the [closure authority](cross-app/cross-app-relation-deletion-capability-closure.md)
 and [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
@@ -1363,7 +1363,7 @@ autofocus is closed as `LS-DIALOG-DRAFT1-F2-E1`; Create Relation initial focus
 and Credits initial focus remain separate open decisions.
 
 The overall `LS-DIALOG-DRAFT1` closure is recorded in the canonical
-[LiaisonScape Relation Endpoint Identity Acceptance](liaisonscape-relation-endpoint-identity-acceptance.md)
+[LiaisonScape Relation Endpoint Identity Acceptance](liaisonscape/liaisonscape-relation-endpoint-identity-acceptance.md)
 record. Its outside-dialog Creation click contract is no-dismissal with draft
 retention; this does not convert Creation to Credits-style backdrop dismissal.
 Action grouping and the two visual follow-ups remain separate and do not block
@@ -1517,10 +1517,10 @@ required.
 ### NarrativeLine Relation blocker-card presentation follow-up (2026-08-28)
 
 The earlier public Handoff12 observation and its exploratory evidence remain
-recorded in [NarrativeLine Relation Blocker-Card Presentation Follow-up](narrativeline-relation-blocker-card-presentation-follow-up.md).
+recorded in [NarrativeLine Relation Blocker-Card Presentation Follow-up](narrativeline/narrativeline-relation-blocker-card-presentation-follow-up.md).
 That presentation workstream is now **FORMALLY ACCEPTED / COMPLETE / CLOSED**
 at accepted NarrativeLine runtime `4591f3a`. Formal evidence is recorded in
-[NarrativeLine Relation Blocker Presentation Formal Acceptance](narrativeline-relation-blocker-presentation-formal-acceptance.md),
+[NarrativeLine Relation Blocker Presentation Formal Acceptance](narrativeline/narrativeline-relation-blocker-presentation-formal-acceptance.md),
 accepted by e2r-spec commit `2b52f15`.
 
 The accepted result includes labeled Relation Name / Source / Target identity,
@@ -1567,7 +1567,7 @@ vocabulary, deletion, or cross-app parity fix is opened by this checkpoint.
 
 The accepted presentation-only direction and its Relation Detail consequence
 are retained in the [directionality research authority](../research/exploratory/relation-direction-and-arrow-appearance.md)
-and the [Presentation reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md).
+and the [Presentation reconciliation result](liaisonscape/liaisonscape-presentation-relation-display-reconciliation-result.md).
 This is a historical decision checkpoint; later entries below record the
 selected labels, serialization contract, schema, and implementation evidence.
 
@@ -1577,7 +1577,7 @@ The accepted broader label `Relation display` is recorded in the
 [directionality research authority](../research/exploratory/relation-direction-and-arrow-appearance.md).
 It was later superseded for the four-mode control by the narrower `Arrow
 display` decision below; details and provenance are summarized in the
-[reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md).
+[reconciliation result](liaisonscape/liaisonscape-presentation-relation-display-reconciliation-result.md).
 
 ### LS-RELATION-DISPLAY-PERSISTENCE-OWNERSHIP1 (2026-08-29)
 
@@ -1585,13 +1585,13 @@ The [directionality research authority](../research/exploratory/relation-directi
 records the accepted Presentation-owned, Dataset-contained persistence
 responsibility and its boundaries. The later [Presentation Draft](../extensions/presentation-extension-draft.md)
 and schema define the serialization contract; LiaisonScape implementation
-evidence and limits are summarized in the [reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md).
+evidence and limits are summarized in the [reconciliation result](liaisonscape/liaisonscape-presentation-relation-display-reconciliation-result.md).
 
 ### LS-RELATION-DETAIL-ARROW-DISPLAY-ORDER-DECISION1 (2026-08-29)
 
 The accepted four-mode `Arrow display` label, presentation-only choices, and
 Relation Detail information order remain in the [directionality research authority](../research/exploratory/relation-direction-and-arrow-appearance.md).
-The [Presentation reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md)
+The [Presentation reconciliation result](liaisonscape/liaisonscape-presentation-relation-display-reconciliation-result.md)
 distinguishes that accepted design from committed LiaisonScape implementation
 and does not claim separate Human acceptance of the runtime feature.
 
@@ -1600,7 +1600,7 @@ and does not claim separate Human acceptance of the runtime feature.
 The current [Presentation Draft](../extensions/presentation-extension-draft.md)
 defines the Dataset-contained `0.1.0` candidate contract; the [structural schema](../schemas/extensions/presentation-draft.schema.json)
 and LiaisonScape reader/writer implementation are separately evidenced. See
-the [Presentation reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md)
+the [Presentation reconciliation result](liaisonscape/liaisonscape-presentation-relation-display-reconciliation-result.md)
 for the implementation checkpoints and the boundary between them and
 Draft/Stable status.
 
@@ -1612,7 +1612,7 @@ remain the contract authorities; `npm run validate:presentation-draft`
 checks the schema. Production Validator support has its own
 [integration result](validator/production-validator-extension-integration-result.md)
 and [acceptance](validator/production-validator-extension-integration-acceptance.md).
-The Extension remains a Draft candidate, not Stable; the [reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md)
+The Extension remains a Draft candidate, not Stable; the [reconciliation result](liaisonscape/liaisonscape-presentation-relation-display-reconciliation-result.md)
 records application implementation separately from those authorities.
 
 ### LS-RELATION-LINE-STYLE-DESIGN1 (2026-08-29)
@@ -1622,7 +1622,7 @@ Presentation/Layout boundaries remain in the [directionality research authority]
 and [Presentation Draft](../extensions/presentation-extension-draft.md).
 The schema and LiaisonScape reader/writer/UI implementation checkpoints are
 complete in their respective authorities; their evidence and non-acceptance
-limits are summarized in the [reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md).
+limits are summarized in the [reconciliation result](liaisonscape/liaisonscape-presentation-relation-display-reconciliation-result.md).
 
 ### LS-RELATION-LINE-STYLE-SCHEMA1 (2026-08-29)
 
@@ -1630,23 +1630,23 @@ The [structural schema](../schemas/extensions/presentation-draft.schema.json)
 includes `lineStyle` and its non-empty-string shape alongside `arrowDisplay`;
 the targeted gate is `npm run validate:presentation-draft`. Runtime fallback,
 preservation, rendering, and edit behavior belong to the Draft and application,
-not the schema. See the [reconciliation result](liaisonscape-presentation-relation-display-reconciliation-result.md)
+not the schema. See the [reconciliation result](liaisonscape/liaisonscape-presentation-relation-display-reconciliation-result.md)
 for implementation evidence; no Stable promotion is implied.
 
 ### LS-PRESENTATION-RELATION-DELETION-CLEANUP1 (2026-08-30)
 
-This bounded lifecycle item is **CLOSED** in the [cleanup result](liaisonscape-presentation-relation-deletion-cleanup-result.md):
+This bounded lifecycle item is **CLOSED** in the [cleanup result](liaisonscape/liaisonscape-presentation-relation-deletion-cleanup-result.md):
 explicit Relation deletion removes only its keyed Presentation record and
 preserves siblings and unrelated orphans. No global orphan repair or
 Validator/schema policy change is implied.
 
 The Initial Public Release is formally closed; its current status and retained boundaries remain in the status index and [closure audit](e2r-initial-public-release-closure-audit-result.md). The superseded pre-release and LiaisonScape 0.2.0 sequence is preserved, in original order and wording, in the [release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#pre-release-and-liaison-scape-020-release-preparation-chronology); its dated `current`, `next`, `blocked`, and `unauthorized` statements are historical snapshots.
 
-The Initial Node Placement Objective Audit remains relevant as evidence, not as the old release sequence: both Lighthouse samples had stored coordinates and did not exercise missing-coordinate placement. Its [dedicated audit](liaisonscape-initial-node-placement-objective-audit.md) is retained as context for the current Initial Layout attribution work below; it does not change the current execution order or authorize runtime, schema, or sample changes.
+The Initial Node Placement Objective Audit remains relevant as evidence, not as the old release sequence: both Lighthouse samples had stored coordinates and did not exercise missing-coordinate placement. Its [dedicated audit](liaisonscape/liaisonscape-initial-node-placement-objective-audit.md) is retained as context for the current Initial Layout attribution work below; it does not change the current execution order or authorize runtime, schema, or sample changes.
 
 ### LiaisonScape Initial-Layout Coarse Objective Self-loop Boundary Audit 1 (2026-09-11)
 
-The [Self-loop boundary audit](liaisonscape-initial-layout-coarse-objective-self-loop-boundary-audit1-result.md)
+The [Self-loop boundary audit](liaisonscape/liaisonscape-initial-layout-coarse-objective-self-loop-boundary-audit1-result.md)
 removed Self-loop Relations from ordinary straight-chord, long-edge,
 Relation-label corridor, and parallel-bundle proxies. Node occupancy metrics
 remain valid Node-geometry signals; loop angle/radius and loop-label behavior
@@ -1764,11 +1764,11 @@ The 40 dated Browser Capture, host/runtime qualification, restart, run-identity,
 
 ### PR-3 Browser Evidence current-host runtime blocker synchronization (2026-09-07)
 
-Current status is maintained in the [current-host runtime blocker synchronization](liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md): current-host Browser execution and PR-3 Browser Evidence are **BLOCKED**; the exact runtime root cause remains **UNRESOLVED**, no repository-local safe correction is identified, and the existing .62 authority pin remains deferred pending a qualified successor. B1 is not passed, V3 has not started, no successor authority is available, and Fresh lineage4 is ineligible. Resume only after runtime qualification passes under the same accepted security boundary and Browser authority is qualified/reconciled without rewriting historical evidence. This is not READY or PR-3 acceptance.
+Current status is maintained in the [current-host runtime blocker synchronization](liaisonscape/liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md): current-host Browser execution and PR-3 Browser Evidence are **BLOCKED**; the exact runtime root cause remains **UNRESOLVED**, no repository-local safe correction is identified, and the existing .62 authority pin remains deferred pending a qualified successor. B1 is not passed, V3 has not started, no successor authority is available, and Fresh lineage4 is ineligible. Resume only after runtime qualification passes under the same accepted security boundary and Browser authority is qualified/reconciled without rewriting historical evidence. This is not READY or PR-3 acceptance.
 
 ### NarrativeLine Display-Order Reordering Audit (2026-09-07)
 
-The [NarrativeLine Display-Order Reordering Audit](narrativeline-display-order-reordering-audit.md)
+The [NarrativeLine Display-Order Reordering Audit](narrativeline/narrativeline-display-order-reordering-audit.md)
 is **COMPLETE / DEFER FOR NOW**. It was selected as the next independent
 pre-public-release audit after PR-3 Browser Evidence became formally blocked;
 it does not reopen or depend on Browser execution.
@@ -1875,7 +1875,7 @@ operative constraints remain in the coordination authority below.
 
 The current end-to-end performance investigation is closed after the baseline
 recorded in [LiaisonScape End-to-End Dataset Open
-Baseline](liaisonscape-end-to-end-performance-baseline.md). Retain its timing
+Baseline](liaisonscape/liaisonscape-end-to-end-performance-baseline.md). Retain its timing
 seam, stage contracts, and profiler as observability for a later checkpoint.
 Re-measure the actual Product after a substantial feature change or a change
 in Dataset size or shape, then prioritize the bottleneck observed at that
@@ -1892,8 +1892,8 @@ remain historical records and are not rewritten by this summary.
 
 ### 1. Parallel / Incident Bundle Geometry Attribution — RETUNE
 
-The [parallel Edge / incident bundle retune result](liaisonscape-parallel-edge-incident-bundle-presentation-retune1-result.md)
-and its [human-review handoff](liaisonscape-parallel-edge-incident-bundle-human-review-handoff.md)
+The [parallel Edge / incident bundle retune result](liaisonscape/liaisonscape-parallel-edge-incident-bundle-presentation-retune1-result.md)
+and its [human-review handoff](liaisonscape/liaisonscape-parallel-edge-incident-bundle-human-review-handoff.md)
 establish that `parallel-pair-16` and `parallel-bundle-16` improve graph-space
 slot spacing in machine evidence, but user review did not establish a reliable
 readability improvement. The candidates remain unaccepted and must not inherit
@@ -1920,7 +1920,7 @@ required counter-signal.
 
 ### 2. Structural Placement / Angular Ordering Retune — RETUNE, ADJACENT
 
-The [obstacle-sensitive decomposition result](liaisonscape-initial-layout-obstacle-sensitive-crossing-decomposition-audit1-result.md)
+The [obstacle-sensitive decomposition result](liaisonscape/liaisonscape-initial-layout-obstacle-sensitive-crossing-decomposition-audit1-result.md)
 did not establish a quality-safe placement rule, but it did show that some
 crossings are placement-sensitive while the Titanic parallel residual is not
 explained by the current Node-obstacle predicate alone. Structural placement
@@ -1981,14 +1981,14 @@ remain summarized in the current entries below.
 **MIXED / RETUNE; no quality-safe presentation fix or Human acceptance.**
 Parallel geometry and Structural Placement / Angular Ordering remain adjacent,
 not serial; Self-loop interaction remains independent. No fixture-specific
-rule, Product default, or provider is selected. See the [dedicated result](liaisonscape-parallel-incident-bundle-geometry-attribution1-result.md).
+rule, Product default, or provider is selected. See the [dedicated result](liaisonscape/liaisonscape-parallel-incident-bundle-geometry-attribution1-result.md).
 
 ### LiaisonScape Parallel Incident-Bundle Corridor Retune 2 (2026-09-13)
 
 **RETUNE / NOT READY FOR HUMAN REVIEW.** The bounded label-aware corridor probe
 did not establish a quality-safe whole-bundle rule. Parallel and Structural
 Placement remain adjacent tracks; Self-loop remains independent. No routing
-default or acceptance is selected. See the [dedicated result](liaisonscape-parallel-incident-bundle-corridor-retune2-result.md).
+default or acceptance is selected. See the [dedicated result](liaisonscape/liaisonscape-parallel-incident-bundle-corridor-retune2-result.md).
 
 ### LiaisonScape Parallel / Incident Geometry Formulation Exploration 1 (2026-09-13)
 
@@ -1996,7 +1996,7 @@ default or acceptance is selected. See the [dedicated result](liaisonscape-paral
 quality-safe; the bounded evidence supports continued investigation of an
 atomic incident-allocation boundary, not an accepted presentation rule.
 Parallel and Structural Placement remain adjacent; Self-loop remains
-independent. See the [dedicated formulation result](liaisonscape-parallel-incident-geometry-formulation-exploration1-result.md).
+independent. See the [dedicated formulation result](liaisonscape/liaisonscape-parallel-incident-geometry-formulation-exploration1-result.md).
 
 ### LiaisonScape Parallel / Incident Routing Architecture Experiment 1 (2026-09-13)
 
@@ -2004,7 +2004,7 @@ independent. See the [dedicated formulation result](liaisonscape-parallel-incide
 negotiation boundary but did not produce a Human-reviewable candidate. Any
 placement request remains evidence, not an adopted rule. Parallel and
 Structural Placement remain adjacent; Self-loop remains independent. See the
-[dedicated formulation result](liaisonscape-parallel-incident-geometry-formulation-exploration1-result.md).
+[dedicated formulation result](liaisonscape/liaisonscape-parallel-incident-geometry-formulation-exploration1-result.md).
 
 ### LiaisonScape Endpoint-Sector / Port Allocation Architecture Experiment 2 (2026-09-13)
 
@@ -2012,21 +2012,21 @@ Structural Placement remain adjacent; Self-loop remains independent. See the
 architecture distinguishes feasible allocation from capacity shortage, but
 Titanic EN remains a shortage case and no Product routing change is adopted.
 Parallel and Structural Placement remain adjacent; Self-loop remains
-independent. See the [dedicated Experiment 2 result](liaisonscape-endpoint-sector-port-allocation-architecture-experiment2-result.md).
+independent. See the [dedicated Experiment 2 result](liaisonscape/liaisonscape-endpoint-sector-port-allocation-architecture-experiment2-result.md).
 
 ### LiaisonScape Endpoint Plan Candidate Compression + Capacity-Negotiated Placement Safety (2026-09-13)
 
 **RETUNE / NOT READY FOR HUMAN REVIEW.** Candidate compression did not preserve
 selected-plan identity across all controls; the request-driven placement
 counterfactual remains unintegrated and unaccepted. No Product integration or
-Human evidence is inherited. See the [dedicated capacity-safety result](liaisonscape-endpoint-plan-candidate-compression-capacity-safety-experiment-result.md).
+Human evidence is inherited. See the [dedicated capacity-safety result](liaisonscape/liaisonscape-endpoint-plan-candidate-compression-capacity-safety-experiment-result.md).
 
 ### LiaisonScape Endpoint Plan / Multi-Bundle Incident Allocation Experiment (2026-09-13)
 
 **RETUNE / NOT READY FOR HUMAN REVIEW.** The bounded endpoint-plan contract
 handles shared-endpoint bundle conflicts, but Titanic EN remains a routing
 capacity-shortage case; its placement counterfactual is unreviewed evidence,
-not a selected rule. See the [dedicated multi-bundle result](liaisonscape-endpoint-plan-multi-bundle-incident-allocation-experiment-result.md).
+not a selected rule. See the [dedicated multi-bundle result](liaisonscape/liaisonscape-endpoint-plan-multi-bundle-incident-allocation-experiment-result.md).
 
 ### Adaptive Initial Placement Cascade — HYPOTHESIS / FUTURE EXPERIMENT (2026-09-13)
 
@@ -2034,11 +2034,11 @@ not a selected rule. See the [dedicated multi-bundle result](liaisonscape-endpoi
 The bounded candidate-family probe did not retain all oracle-feasible plans;
 request-driven placement remains a pure, unintegrated contract without
 whole-graph or Actual Product acceptance. It does not change current execution
-priority. See the [dedicated cascade and endpoint-plan safety result](liaisonscape-adaptive-initial-placement-cascade-and-endpoint-plan-safety-result.md).
+priority. See the [dedicated cascade and endpoint-plan safety result](liaisonscape/liaisonscape-adaptive-initial-placement-cascade-and-endpoint-plan-safety-result.md).
 
 ### Current Initial Layout execution order — Parallel Closure, Structural Retune, and Presentation Re-evaluation (2026-09-14)
 
-The [Structural Placement / Angular Ordering Retune 1 result](liaisonscape-structural-placement-angular-ordering-retune1-result.md)
+The [Structural Placement / Angular Ordering Retune 1 result](liaisonscape/liaisonscape-structural-placement-angular-ordering-retune1-result.md)
 now makes the near-term order explicit:
 
 1. Parallel / Incident Architecture Closure: close the responsibility,
@@ -2114,7 +2114,7 @@ evidence remain open. Product default/adoption remains `HOLD`, production
 provider remains `NOT ESTABLISHED`, and the Initial Layout Release blocker
 remains `OPEN`.
 
-The [General Crossing-Aware Placement 1 result](liaisonscape-general-crossing-aware-placement1-result.md)
+The [General Crossing-Aware Placement 1 result](liaisonscape/liaisonscape-general-crossing-aware-placement1-result.md)
 keeps this track at `RETUNE / NOT READY FOR HUMAN REVIEW`. Compact guarded-grid
 placement restores viewport fit and screen-space Node separation but loses the
 strong dense crossing signal; continuous compression of the strong topology
@@ -2127,7 +2127,7 @@ after a viable geometry candidate; Self-loop remains independent. Product
 default/adoption is `HOLD`, production provider is `NOT ESTABLISHED`, and the
 Initial Layout Release blocker is `OPEN`.
 
-The [Joint-Constrained Crossing-Aware Placement 2 result](liaisonscape-joint-constrained-crossing-aware-placement2-result.md)
+The [Joint-Constrained Crossing-Aware Placement 2 result](liaisonscape/liaisonscape-joint-constrained-crossing-aware-placement2-result.md)
 closes continuous post-generation projection as `PIVOT / NOT READY FOR HUMAN
 REVIEW`. Hard graph-space separation removed Node overlap, but viewport fit
 still reduced screen separation; dense crossing retention was topology-
@@ -2142,7 +2142,7 @@ presentation re-evaluation and Self-loop remain downstream independent tracks.
 Product default/adoption remains `HOLD`, production provider remains `NOT
 ESTABLISHED`, and the Initial Layout Release blocker remains `OPEN`.
 
-The [Discrete Feasibility-First Structural Placement 1 result](liaisonscape-discrete-feasibility-first-placement1-result.md)
+The [Discrete Feasibility-First Structural Placement 1 result](liaisonscape/liaisonscape-discrete-feasibility-first-placement1-result.md)
 now records the state-space gate as `PIVOT / NOT READY FOR HUMAN REVIEW`.
 Canonical sparse cases stayed below 175 states per family, but Titanic reached
 the 25,000-state cap for three families and every dense control returned no
@@ -2154,7 +2154,7 @@ Auto Layout responsibility decision. Product default/adoption remains `HOLD`,
 production provider remains `NOT ESTABLISHED`, and the Initial Layout Release
 blocker remains `OPEN`.
 
-The [Narrow Graph Decomposition + Capacity Contract 1 result](liaisonscape-narrow-decomposition-capacity-contract1-result.md)
+The [Narrow Graph Decomposition + Capacity Contract 1 result](liaisonscape/liaisonscape-narrow-decomposition-capacity-contract1-result.md)
 records the first bounded decomposition audit as `B-LEANING / NOT READY FOR
 HUMAN REVIEW`. Biconnected local components kept canonical local searches below
 27 states and exposed explicit shared-endpoint demand, but Titanic and a
@@ -2169,7 +2169,7 @@ remains the finalist gate, and no new Product candidate or provider was
 adopted. Product default/adoption remains `HOLD`, production provider remains
 `NOT ESTABLISHED`, and the Initial Layout Release blocker remains `OPEN`.
 
-The [Parallel / Relation-label Presentation Re-evaluation 1 result](liaisonscape-parallel-relation-label-presentation-reevaluation1-result.md)
+The [Parallel / Relation-label Presentation Re-evaluation 1 result](liaisonscape/liaisonscape-parallel-relation-label-presentation-reevaluation1-result.md)
 records the post-Structural-Placement downstream audit as `RETUNE BOUNDARY
 CONFIRMED / NOT READY FOR HUMAN REVIEW`. Improved geometry can reduce some
 endpoint angular scarcity and side-bias cases, but fixed pair/bundle/corridor
@@ -2188,7 +2188,7 @@ remains `OPEN`.
 
 ### LiaisonScape Self-loop Angle / Ordinary Edge Interaction 1 (2026-09-14)
 
-The [Self-loop Angle / Ordinary Edge Interaction 1 result](liaisonscape-self-loop-angle-ordinary-edge-interaction1-result.md)
+The [Self-loop Angle / Ordinary Edge Interaction 1 result](liaisonscape/liaisonscape-self-loop-angle-ordinary-edge-interaction1-result.md)
 confirms the Self-loop routing/presentation boundary but keeps Product quality
 open as `NOT READY FOR HUMAN REVIEW`. The current implementation already has a
 bounded 36-candidate, 10-degree full-circle angle search and a deterministic
@@ -2217,7 +2217,7 @@ remains `OPEN`.
 
 ### LiaisonScape Self-loop-local Angle / Radius Capacity Allocation 1 (2026-09-14)
 
-The [Self-loop-local Angle / Radius Capacity Allocation 1 result](liaisonscape-self-loop-local-capacity-allocation1-result.md)
+The [Self-loop-local Angle / Radius Capacity Allocation 1 result](liaisonscape/liaisonscape-self-loop-local-capacity-allocation1-result.md)
 confirms that the existing 36-angle Self-loop domain can be searched with
 bounded local capacity signals, but does not establish a production-native
 allocator. Independent angle-only selection accepted `0/12` cases; a small
@@ -2242,7 +2242,7 @@ remains `NOT ESTABLISHED`, and the Initial Layout Release blocker remains
 
 ### LiaisonScape Self-loop-local Capacity Allocation 1 — Runtime Evidence Correction 1 (2026-09-14)
 
-The [Self-loop-local Capacity Allocation 1 — Runtime Evidence Correction 1 result](liaisonscape-self-loop-local-capacity-runtime-correction1-result.md)
+The [Self-loop-local Capacity Allocation 1 — Runtime Evidence Correction 1 result](liaisonscape/liaisonscape-self-loop-local-capacity-runtime-correction1-result.md)
 corrects the previous runtime measurement without changing the quality or
 feasibility matrix. The original `runCase()` timers were read after later arms
 had run, so angle-only included angle-plus-radius and owner-group work, while
@@ -2266,7 +2266,7 @@ blocker remains `OPEN`.
 
 ### LiaisonScape Self-loop Owner-local Finalist Recall + Dependency Reuse 1 (2026-09-14)
 
-The [Self-loop Owner-local Finalist Recall + Dependency Reuse 1 result](liaisonscape-self-loop-owner-local-recall-reuse1-result.md)
+The [Self-loop Owner-local Finalist Recall + Dependency Reuse 1 result](liaisonscape/liaisonscape-self-loop-owner-local-recall-reuse1-result.md)
 confirms a real finalist-recall shortage under the existing Product authority.
 The study authoritatively evaluated all `72` single-loop candidates for each
 of `32` loops and all `6^loop-count` retained owner-group combinations, for
@@ -2289,7 +2289,7 @@ ESTABLISHED`, and the Initial Layout Release blocker remains `OPEN`.
 
 ### LiaisonScape Self-loop Owner-local Recall-aware Pruning + Dependency Fingerprint 1 (2026-09-14)
 
-The [Self-loop Owner-local Recall-aware Pruning + Dependency Fingerprint 1 result](liaisonscape-self-loop-owner-local-recall-aware-pruning-dependency-fingerprint1-result.md)
+The [Self-loop Owner-local Recall-aware Pruning + Dependency Fingerprint 1 result](liaisonscape/liaisonscape-self-loop-owner-local-recall-aware-pruning-dependency-fingerprint1-result.md)
 corrects the preceding displayed-example aggregation: the actual single-loop
 false-negative total is `30`, while the prior `24` was only the sum of capped
 display arrays. The checkpoint evaluated all retained `6^loop-count` products
@@ -2312,7 +2312,7 @@ Layout Release blocker remains `OPEN`.
 
 ### LiaisonScape Responsibility-separated Initial Layout Re-baseline 1 (2026-09-14)
 
-The [Responsibility-separated Initial Layout Re-baseline 1 result](liaisonscape-responsibility-separated-initial-layout-rebaseline1-result.md)
+The [Responsibility-separated Initial Layout Re-baseline 1 result](liaisonscape/liaisonscape-responsibility-separated-initial-layout-rebaseline1-result.md)
 establishes the current Product path as the re-baseline: current deterministic
 Initial Placement followed by Product-authoritative routing, Relation-label,
 Node-label, and viewport presentation. Across 21 canonical, dense,
@@ -2345,17 +2345,17 @@ remains a `PROVISIONAL EXECUTION DIRECTION`, not Product adoption. The
 corrected lifecycle contract is closed for snapshot identity,
 cancellation/staleness, preview isolation, accept/reject, revert, and explicit
 persistence, but quality-solver readiness and Product integration remain
-separate holds. The [corrected lifecycle authority](liaisonscape-explicit-high-quality-auto-layout-operation-lifecycle-contract-closure1-result.md)
-is separate from the [full verification authority](liaisonscape-product-authoritative-full-verification-resumable-orchestration1-result.md).
+separate holds. The [corrected lifecycle authority](liaisonscape/liaisonscape-explicit-high-quality-auto-layout-operation-lifecycle-contract-closure1-result.md)
+is separate from the [full verification authority](liaisonscape/liaisonscape-product-authoritative-full-verification-resumable-orchestration1-result.md).
 
 Product-authoritative Route, Relation-label, and Node-label accumulator seams
 and their full resumable orchestration have bounded exact-equivalence and
 fail-closed evidence. This is execution evidence, not a Product-wide
-performance SLA. The [tested scaling envelope](liaisonscape-product-authoritative-verification-scaling-envelope-main-thread-viability1-result.md)
+performance SLA. The [tested scaling envelope](liaisonscape/liaisonscape-product-authoritative-verification-scaling-envelope-main-thread-viability1-result.md)
 is limited to its named controls.
 
 Product-wide verification budget and any hard production slice contract remain
-`NOT ESTABLISHED`. The [scheduler authority](liaisonscape-product-wide-verification-budget-scheduler-policy-study1-result.md)
+`NOT ESTABLISHED`. The [scheduler authority](liaisonscape/liaisonscape-product-wide-verification-budget-scheduler-policy-study1-result.md)
 remains diagnostic only; historical long-slice
 attribution do not authorize a production scheduler, Worker provider, quality
 solver, Product default, Adaptive Initial Placement Cascade, or Human Review
@@ -2367,7 +2367,7 @@ priority/boundary statements, and its compatibility-sensitive anchor remain.
 
 ### LiaisonScape Explicit High-quality Auto Layout Browser Execution Budget Study 1 (2026-09-14)
 
-The [browser budget study](liaisonscape-explicit-high-quality-auto-layout-browser-execution-budget-study1-result.md)
+The [browser budget study](liaisonscape/liaisonscape-explicit-high-quality-auto-layout-browser-execution-budget-study1-result.md)
 is retained as a current qualification boundary: the Worker/background path
 remains a future hypothesis, while Product-authoritative verification and
 preview budget closure remain unresolved.
@@ -2379,7 +2379,7 @@ chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#pr
 
 ### LiaisonScape Product-authoritative Verification Interruptibility Design Study 1 (2026-09-14)
 
-The [interruptibility study](liaisonscape-product-authoritative-verification-interruptibility-design-study1-result.md)
+The [interruptibility study](liaisonscape/liaisonscape-product-authoritative-verification-interruptibility-design-study1-result.md)
 supports a semantic stage seam, but intra-stage work remains a separate
 qualification boundary. Any resumed work must preserve Product authority,
 exact equivalence, and fail-closed no-partial-result behavior.
@@ -2405,7 +2405,7 @@ and the Initial Layout Release blocker remains `OPEN`.
 
 ### LiaisonScape Product-authoritative Relation-label Inner-loop Accumulator / Interruptibility 1 (2026-09-14)
 
-The [Relation-label accumulator result](liaisonscape-product-authoritative-relation-label-inner-loop-accumulator1-result.md)
+The [Relation-label accumulator result](liaisonscape/liaisonscape-product-authoritative-relation-label-inner-loop-accumulator1-result.md)
 establishes an equivalent ordered seam for the observed controls, while the
 preferred slice is not uniform and the Product-wide verification budget is
 still unestablished. This is not a Product SLA.
@@ -2415,7 +2415,7 @@ Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chro
 
 ### LiaisonScape Product-authoritative Node-label Inner-loop Accumulator / Interruptibility 1 (2026-09-14)
 
-The [Node-label accumulator result](liaisonscape-product-authoritative-node-label-inner-loop-accumulator1-result.md)
+The [Node-label accumulator result](liaisonscape/liaisonscape-product-authoritative-node-label-inner-loop-accumulator1-result.md)
 establishes an equivalent fail-closed seam for the observed controls. The
 qualification is bounded to those controls; full orchestration and
 Product-wide budget remain open.
@@ -2425,7 +2425,7 @@ Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chro
 
 ### LiaisonScape Product-wide Verification Budget Closure / Scheduler Policy Study 1 (2026-09-14)
 
-The [scheduler policy study](liaisonscape-product-wide-verification-budget-scheduler-policy-study1-result.md)
+The [scheduler policy study](liaisonscape/liaisonscape-product-wide-verification-budget-scheduler-policy-study1-result.md)
 establishes exact policy equivalence and a promising diagnostic soft quota,
 not a hard production budget. Keep Product-wide budget, production scheduler,
 provider, Product integration/default, and Human Review boundaries open.
@@ -2435,7 +2435,7 @@ preserved in the [Layout and Auto Layout chronology](roadmap-history/liaisonscap
 
 ### LiaisonScape Product-authoritative Verification Long-unit Attribution / Authority-preserving Micro-splitting 1 (2026-09-14)
 
-The [long-unit attribution result](liaisonscape-product-authoritative-verification-long-unit-attribution-micro-splitting1-result.md)
+The [long-unit attribution result](liaisonscape/liaisonscape-product-authoritative-verification-long-unit-attribution-micro-splitting1-result.md)
 found current source steps short in the controlled runs, while historical
 outlier attribution remained inconclusive. No arbitrary micro-split or
 Product-wide budget is established by this evidence.
@@ -2445,7 +2445,7 @@ Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chro
 
 ### LiaisonScape Product-authoritative Verification Historical Long-slice Reproduction / Same-run Source-step Attribution 1 (2026-09-14)
 
-The [same-run reproduction result](liaisonscape-product-authoritative-verification-historical-long-slice-reproduction1-result.md)
+The [same-run reproduction result](liaisonscape/liaisonscape-product-authoritative-verification-historical-long-slice-reproduction1-result.md)
 did not reproduce the historical long slices and supports retaining the
 one-edge, one-routed-edge, and one-Node seams without arbitrary micro-splits.
 This does not establish a Product-wide budget or SLA.
@@ -2483,7 +2483,7 @@ unchanged.
 
 ### LiaisonScape Bounded Screening Formulation / Finalist Recall 1 (2026-09-14)
 
-The [Bounded Screening Formulation / Finalist Recall 1 result](liaisonscape-bounded-screening-finalist-recall1-result.md)
+The [Bounded Screening Formulation / Finalist Recall 1 result](liaisonscape/liaisonscape-bounded-screening-finalist-recall1-result.md)
 supports a bounded diagnostic reduction of finalist candidates, but recall is
 not closed. The current planning consequence is:
 
@@ -2501,7 +2501,7 @@ not closed. The current planning consequence is:
 
 ### LiaisonScape Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1 (2026-09-14)
 
-The [Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1 result](liaisonscape-bounded-multi-stage-product-probe1-result.md)
+The [Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1 result](liaisonscape/liaisonscape-bounded-multi-stage-product-probe1-result.md)
 records a bounded one-probe diagnostic campaign over the existing candidate
 families and Product-authoritative verification seam. The campaign is useful
 evidence for diagnostic reduction, but it does not establish a production
@@ -2519,12 +2519,12 @@ The current planning consequence is:
   risk-gate, failure-closure, and probe-target stability qualification; and
 - the detailed probe counts, candidate-evaluation totals, trigger/cost
   matrices, and dated campaign progression are delegated to the [dedicated
-  result](liaisonscape-bounded-multi-stage-product-probe1-result.md) and the
+  result](liaisonscape/liaisonscape-bounded-multi-stage-product-probe1-result.md) and the
   [existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-bounded-multi-stage-product-probe-dense-cheap-equivalence-closure-1-2026-09-14).
 
 ### LiaisonScape Boundary Equivalence-Class Product Completion / Cost Envelope 1 (2026-09-14)
 
-The [Boundary Equivalence-Class Product Completion / Cost Envelope 1 result](liaisonscape-boundary-equivalence-class-product-completion1-result.md)
+The [Boundary Equivalence-Class Product Completion / Cost Envelope 1 result](liaisonscape/liaisonscape-boundary-equivalence-class-product-completion1-result.md)
 records a bounded boundary-equivalence completion architecture. The current
 planning consequence is:
 
@@ -2540,12 +2540,12 @@ planning consequence is:
   remain unestablished or open.
 
 Class definitions, cost/order matrices, failure-injection detail, candidate
-counts, and dated progression remain in the [dedicated result](liaisonscape-boundary-equivalence-class-product-completion1-result.md)
+counts, and dated progression remain in the [dedicated result](liaisonscape/liaisonscape-boundary-equivalence-class-product-completion1-result.md)
 and the [existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-boundary-equivalence-class-product-completion-cost-envelope-1-2026-09-14).
 
 ### LiaisonScape Independent Risk-Gate / Probe-Target Stability Validation 1 (2026-09-14)
 
-The [Independent Risk-Gate / Probe-Target Stability Validation 1 result](liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
+The [Independent Risk-Gate / Probe-Target Stability Validation 1 result](liaisonscape/liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
 separates bounded fail-closed diagnostic safety from the still-open
 risk-gate and probe-target qualification. The current planning consequence is:
 
@@ -2563,12 +2563,12 @@ risk-gate and probe-target qualification. The current planning consequence is:
   readiness remain unestablished or open.
 
 Perturbation matrices, independent-control detail, dated formulation, and
-checkpoint progression remain in the [dedicated result](liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
+checkpoint progression remain in the [dedicated result](liaisonscape/liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
 and the [existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-independent-risk-gate-probe-target-stability-validation-1-2026-09-14).
 
 ### LiaisonScape Production-shaped Quality Provider Execution / Browser Cost Envelope 1 (2026-09-14)
 
-The [Production-shaped Quality Provider Execution / Browser Cost Envelope 1 result](liaisonscape-production-shaped-quality-provider-execution-browser-cost-envelope1-result.md)
+The [Production-shaped Quality Provider Execution / Browser Cost Envelope 1 result](liaisonscape/liaisonscape-production-shaped-quality-provider-execution-browser-cost-envelope1-result.md)
 wraps the established diagnostic candidate generation, cheap K=4 screen, full
 boundary completion, and current Product-authoritative verification in a pure
 provider execution seam. The seam keeps the existing routing, Parallel /
@@ -2595,7 +2595,7 @@ is synchronized in Session 0059.
 
 ### LiaisonScape Product Verification Execution Architecture Decision 1 (2026-09-14)
 
-The [Product Verification Execution Architecture Decision 1 result](liaisonscape-product-verification-execution-architecture-decision1-result.md)
+The [Product Verification Execution Architecture Decision 1 result](liaisonscape/liaisonscape-product-verification-execution-architecture-decision1-result.md)
 traces the provider's dense main-thread blocker to synchronous whole-candidate
 `deriveBoundedAutomaticPresentation` calls. Existing Product-authoritative
 route, Relation-label, and Node-label accumulators materially improved the
@@ -2621,7 +2621,7 @@ Session 0060.
 
 ### LiaisonScape Worker Product Metric Parity / Actual Product Visual Candidate Gate 1 (2026-09-15)
 
-The [checkpoint result](liaisonscape-worker-product-metric-parity-actual-product-visual-candidate-gate1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-worker-product-metric-parity-actual-product-visual-candidate-gate1-result.md)
 confirms that the prior Worker response used a diagnostic-only score rather
 than the complete HQ research metric. A forward pure metric seam now supplies
 both synchronous and Worker verification without moving Product presentation
@@ -2643,7 +2643,7 @@ preview seam and representative visual smoke inspection.
 
 ### LiaisonScape Operation-local Actual Product HQ Candidate Preview / Visual Smoke 1 (2026-09-15)
 
-The [checkpoint result](liaisonscape-operation-local-actual-product-hq-candidate-preview-visual-smoke1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-operation-local-actual-product-hq-candidate-preview-visual-smoke1-result.md)
 establishes a development-only, non-adopting preview at the App's Node-geometry
 input. It leaves session positions, Dataset/persistence, dirty state, coordinate
 ownership, Save Coordinates, and manual authorities unchanged while reusing the
@@ -2662,7 +2662,7 @@ formulation against the visual failures; retain Self-loop as a missing control.
 
 ### LiaisonScape HQ Metric / Candidate Formulation Visual Failure Audit 1 (2026-09-15)
 
-The [checkpoint result](liaisonscape-hq-metric-candidate-formulation-visual-failure-audit1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-hq-metric-candidate-formulation-visual-failure-audit1-result.md)
 classifies the failure as `C. METRIC AND CANDIDATE FORMULATION BOTH
 INSUFFICIENT`. The current score omits Relation/Relation and Node/Relation label
 overlap, foreign-route/Relation-label collision, ownership ambiguity, and
@@ -2678,7 +2678,7 @@ solver search or retune a production scalar from these observations alone.
 
 ### LiaisonScape Explicit Label-Capacity Candidate Formulation Probe 1 (2026-09-15)
 
-The [checkpoint result](liaisonscape-explicit-label-capacity-candidate-formulation-probe1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-explicit-label-capacity-candidate-formulation-probe1-result.md)
 tests one bounded component-local expansion and repacking formulation derived
 from actual Product label bounds and Relation demand. It reduces dense label
 overlap from `13` to `1` and Japanese label-heavy overlap from `4` to `0`, with
@@ -2696,7 +2696,7 @@ checkpoint.
 
 ### LiaisonScape Bounded Label-Capacity / Screen-Scale / Ownership Formulation Refinement 1 (2026-09-15)
 
-The [checkpoint result](liaisonscape-bounded-label-capacity-screen-ownership-refinement1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-bounded-label-capacity-screen-ownership-refinement1-result.md)
 adds a three-variant, diagnostic-only local-grouping/2D-packing formulation
 with a baseline-relative fit budget and continuous ownership margin. Japanese
 multi-component output improves from fit `0.537` to `0.601` with foreign-route
@@ -2716,7 +2716,7 @@ Adaptive Cascade.
 
 ### LiaisonScape Occupied-Geometry Feasibility-First Extent Growth 1 (2026-09-15)
 
-The [checkpoint result](liaisonscape-occupied-geometry-feasibility-first-extent-growth1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-occupied-geometry-feasibility-first-extent-growth1-result.md)
 tests a bounded Product-presentation feedback loop instead of another fixed
 expansion multiplier. Actual Node body, Node-label, and Relation-label bounds
 are measured after each presentation pass; deterministic penetration
@@ -2746,7 +2746,7 @@ presentation boundary; do not transfer routing/labels or advance Human Review.
 
 ### LiaisonScape Infinite-Canvas Local-Density / Extent-Growth Re-baseline 1 (2026-09-15)
 
-The [checkpoint result](liaisonscape-infinite-canvas-local-density-extent-growth-rebaseline1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-infinite-canvas-local-density-extent-growth-rebaseline1-result.md)
 re-baselines the previous fit interpretation against the Product owner's
 effectively infinite canvas model. `fitGraphView(..., 800, 500)`, `fitScale`,
 `fitBudget`, and `extentScale` remain historical or camera diagnostics; the new
@@ -2771,7 +2771,7 @@ Adaptive Cascade.
 
 ### LiaisonScape Initial Layout Release-Bar / Hub Publication Re-prioritization 1 (2026-09-15)
 
-The [checkpoint result](liaisonscape-initial-layout-release-bar-hub-publication-reprioritization1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-initial-layout-release-bar-hub-publication-reprioritization1-result.md)
 redefines the Hub/publication bar without claiming that Initial Layout research
 is complete. The release-critical sequence is now:
 
@@ -2801,7 +2801,7 @@ Layout Release blocker remains `OPEN`. Session 0068 records this clarification.
 
 ### LiaisonScape Representative Sample Release-Quality Acceptance 1 (2026-09-15)
 
-The [checkpoint result](liaisonscape-representative-sample-release-quality-acceptance1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-representative-sample-release-quality-acceptance1-result.md)
 inspected the Actual Product surface rather than a diagnostic renderer.
 Lighthouse EN/JA were opened through the normal Product sample path; Titanic
 EN/JA and Apollo EN/JA were opened through the existing development-only
@@ -2826,7 +2826,7 @@ deferred.
 
 ### LiaisonScape Representative Sample Release-Quality Acceptance 2 - Ashen Crown Acquisition Evidence (2026-09-15)
 
-The [checkpoint result](liaisonscape-representative-sample-release-quality-acceptance2-ashen-crown-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-representative-sample-release-quality-acceptance2-ashen-crown-result.md)
 extends only the development-only canonical acceptance seam with Ashen Crown
 EN/JA. Both coordinate-less canonical files were validated and inspected on
 the Actual Product surface. English and Japanese opened and reloaded as stable
@@ -2845,7 +2845,7 @@ unchanged. Session 0069 records this continuation.
 
 ### LiaisonScape General / Complex Dataset Practicality Gate 1 (2026-09-15)
 
-The [checkpoint result](liaisonscape-general-complex-dataset-practicality-gate1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-general-complex-dataset-practicality-gate1-result.md)
 tests five deterministic coordinate-less controls through the current Fast
 `settleInitialPlacement` path and the existing explicit 12-iteration
 `solveAutoLayout` path. Fast placement is finite and deterministic in the
@@ -2873,7 +2873,7 @@ explicit HQ execution/quality contract, only if continued.
 
 ### LiaisonScape General / Complex Dataset Practicality Gate 2 - HQ Candidate Reconnection (2026-09-15)
 
-The [checkpoint result](liaisonscape-general-complex-dataset-practicality-gate2-hq-candidate-reconnection-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-general-complex-dataset-practicality-gate2-hq-candidate-reconnection-result.md)
 separates three previously conflated roles. Fast Initial Placement is the
 coordinate-less startup path. The current Product More -> Auto Layout action
 is the old `solveAutoLayout(input)` control, with source default
@@ -2904,7 +2904,7 @@ reconnection.
 
 ### LiaisonScape General / Complex Dataset Practicality Gate 3 - Bounded HQ Readability / Execution Budget (2026-09-15)
 
-The [checkpoint result](liaisonscape-general-complex-dataset-practicality-gate3-bounded-hq-readability-execution-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-general-complex-dataset-practicality-gate3-bounded-hq-readability-execution-result.md)
 selects one existing HQ research family: Infinite-Canvas Local-Density /
 Extent-Growth followed by Occupied-Geometry Feasibility-First feedback. No
 new solver family, provider, Product default, or Adaptive Cascade was added.
@@ -2931,7 +2931,7 @@ checkpoint.
 
 ### LiaisonScape Historical Best Candidate Re-comparison 1 - Past Visual Winners vs Current HQ Lineage (2026-09-15)
 
-The [checkpoint result](liaisonscape-historical-best-candidate-recomparison1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-historical-best-candidate-recomparison1-result.md)
 recompares the historical `post-structural-relaxation-v1`, Global Placement 3,
 Frontier-12, joint-constrained, and discrete structural lineages with the
 current Explicit Label-Capacity and Infinite-Canvas -> Occupied-Geometry
@@ -2962,7 +2962,7 @@ Session 0073 records this new objective.
 
 ### LiaisonScape Common-Fixture Cross-Lineage Comparison 1 - Historical Structural Candidates vs Current Capacity Candidates (2026-09-15)
 
-The [checkpoint result](liaisonscape-common-fixture-cross-lineage-comparison1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-common-fixture-cross-lineage-comparison1-result.md)
 materializes the historical structural lineages (as current-source
 reconstructions) and the current Label-Capacity / Infinite-Canvas /
 Occupied-Geometry lineages on the same bounded Dataset topology, Entity/
@@ -2990,7 +2990,7 @@ this new objective.
 
 ### LiaisonScape Structural-Seeded Capacity Refinement 1 - Strong Structural Geometry + Capacity / Occupied Feedback (2026-09-15)
 
-The [checkpoint result](liaisonscape-structural-seeded-capacity-refinement1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-structural-seeded-capacity-refinement1-result.md)
 applies the existing Label-Capacity, Infinite-Canvas, and Occupied-Geometry
 diagnostics after an existing structural seed on the exact common fixtures.
 Frontier is the primary seed because it retains canonical zero-crossing
@@ -3017,7 +3017,7 @@ records this new objective.
 
 ### LiaisonScape Frontier Actual-Product Visual Sweep 1 - Public Samples and Research Stress Fixtures (2026-09-15)
 
-The [checkpoint result](liaisonscape-frontier-actual-product-visual-sweep1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-frontier-actual-product-visual-sweep1-result.md)
 reconstructs the current Frontier-12 candidate once per row and inspects it
 through the real Product `App` surface using a disposable, non-adopting
 operation-local preview seam. Ten repository-verified public EN/JA samples
@@ -3048,7 +3048,7 @@ objective.
 
 ### LiaisonScape Frontier User Visual Comparison Handoff 1 - Public Samples and Complex Research Fixtures (2026-09-15)
 
-The [user visual comparison handoff](liaisonscape-frontier-user-visual-comparison-handoff1.md)
+The [user visual comparison handoff](liaisonscape/liaisonscape-frontier-user-visual-comparison-handoff1.md)
 opens the already materialized current-source Frontier candidate through the
 development-only Actual Product preview seam. It supplies exact URLs for the
 ten public EN/JA samples and five research/stress controls, preserves the
@@ -3067,7 +3067,7 @@ Release blocker remains `OPEN`. Session 0077 records this new objective.
 
 ### LiaisonScape Frontier vs G3 vs Post Current-Source Actual Product Comparison 1 (2026-09-15)
 
-The [comparison handoff](liaisonscape-frontier-g3-post-current-source-comparison1-handoff.md)
+The [comparison handoff](liaisonscape/liaisonscape-frontier-g3-post-current-source-comparison1-handoff.md)
 materializes Frontier, Global Placement 3, and Post from current source on the
 same Lighthouse EN/JA, Apollo 11 EN/JA, Titanic, Japanese long-label, and
 dense `k7-7` rows. All candidates use the same current Product surface and
@@ -3095,7 +3095,7 @@ Release blocker remains `OPEN`. Session 0078 records this new objective.
 
 ### LiaisonScape Topology-Aware Free-Form Crossing-Minimizing Auto Layout Experiment 1 (2026-09-15)
 
-The [experiment result](liaisonscape-topology-aware-free-form-crossing-minimizing-auto-layout-experiment1-result.md)
+The [experiment result](liaisonscape/liaisonscape-topology-aware-free-form-crossing-minimizing-auto-layout-experiment1-result.md)
 tests a diagnostic-only continuous placement line that derives topology-aware
 components, degree/hub roots, BFS layers, bridge signals, and bounded local
 relaxation without final grid or circle projection. Six candidates per row
@@ -3121,7 +3121,7 @@ this new objective.
 
 ### LiaisonScape Cross-Family Product-Authoritative Auto Layout Portfolio Selector Experiment 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-cross-family-product-authoritative-auto-layout-portfolio-selector1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-cross-family-product-authoritative-auto-layout-portfolio-selector1-result.md)
 tests whether existing Frontier, Post, and topology-aware free-form candidate
 families can be selected as a bounded portfolio under the current Product
 authority. On the same seven fixtures, a full oracle and a top-two cheap-screen
@@ -3158,7 +3158,7 @@ provider/default from this result.
 
 ### LiaisonScape Diagnostic Preview Fixture Integrity + Parallel One-Sided Product Quality Audit 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-diagnostic-preview-fixture-integrity-parallel-one-sided-product-quality-audit1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-diagnostic-preview-fixture-integrity-parallel-one-sided-product-quality-audit1-result.md)
 records the corrected fixture and one-sided observation as bounded diagnostic
 evidence: the rejected side was under hard feasibility pressure, and forcing
 it was not established as a safe fix. This is not formal acceptance or a
@@ -3167,7 +3167,7 @@ coordination remains **RETUNE**.
 
 ### LiaisonScape Product Presentation Local Spacing + Parallel/Label/Self-loop Refinement 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-product-presentation-local-spacing-parallel-label-self-loop-refinement1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-product-presentation-local-spacing-parallel-label-self-loop-refinement1-result.md)
 keeps the current Frontier-12 `parallel-self-loop-control` Node geometry and
 tests bounded Product presentation changes. Alpha/beta local spacing at 1.15x
 and 1.30x was compared with the current Product route policy and with the
@@ -3206,7 +3206,7 @@ Placement from this checkpoint.
 
 ### LiaisonScape Product-Owned Parallel Bundle + Relation-Label Ownership Generalization 1 (2026-09-16)
 
-The [dated generalization experiment](liaisonscape-product-owned-parallel-bundle-generalization1-result.md)
+The [dated generalization experiment](liaisonscape/liaisonscape-product-owned-parallel-bundle-generalization1-result.md)
 is preserved in the existing [Layout / Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-parallel-and-relation-label-diagnostic-progression-roadmap-source-snapshot-2026-09-25).
 It rejects a graph-wide adaptive spacing scalar as a general policy; the tested
 widened-bundle direction remains diagnostic, not adopted. Current Parallel
@@ -3214,7 +3214,7 @@ planning remains governed by the **RETUNE** coordination authority above.
 
 ### LiaisonScape Product-Owned Bundle-Local Capacity + Cross-Bundle Feasibility Experiment 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-product-owned-bundle-local-capacity-cross-bundle-feasibility1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-product-owned-bundle-local-capacity-cross-bundle-feasibility1-result.md)
 shows bundle-local demand can be a useful diagnostic signal, but bundle choices
 are coupled: shared-endpoint ownership and ordinary-route trade-offs remain,
 and joint-feasibility evidence is bounded. The candidate is not adopted or
@@ -3223,7 +3223,7 @@ Parallel **RETUNE** or establish an independent per-bundle rule.
 
 ### LiaisonScape Product-Owned Orientation-Aware Parallel Label Capacity + Stagger Experiment 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-product-owned-orientation-aware-label-capacity-stagger1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-product-owned-orientation-aware-label-capacity-stagger1-result.md)
 supports orientation-aware capacity as a bounded Product-presentation
 diagnostic only. One-line horizontal Relation-label capacity remains **OPEN**;
 vertical stagger is not established as a general rule, and higher-multiplicity
@@ -3232,7 +3232,7 @@ acceptance and does not change routing, label, endpoint-plan, or Product policy.
 
 ### LiaisonScape Product Relation-label Normal-offset Granularity + Parallel Bundle Capacity Attribution Experiment 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-product-relation-label-normal-offset-granularity1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-product-relation-label-normal-offset-granularity1-result.md)
 attributes the tested zero-offset rejection to foreign sibling-route pressure.
 This is bounded to the tested Product candidate/fixture envelope; collision-
 envelope retuning is **NOT ESTABLISHED**, and finer offsets do not independently
@@ -3241,7 +3241,7 @@ policy follows.
 
 ### LiaisonScape Product Relation-label Display-only Automatic Wrap Capacity Experiment 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-product-relation-label-display-only-wrap1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-product-relation-label-display-only-wrap1-result.md)
 finds display-only wrapping useful for some tested long horizontal labels, but
 vertical/diagonal association and higher-multiplicity routing residuals remain;
 it is not a general Product-quality solution. Relation names and authored
@@ -3250,7 +3250,7 @@ presentation state, default policy, or visual acceptance follows.
 
 ### LiaisonScape Product Node-label Relation-presentation-first Angular Escape Experiment 1 (2026-09-16)
 
-The [dated angular-escape diagnostic](liaisonscape-product-node-label-relation-presentation-first-angular-escape1-result.md)
+The [dated angular-escape diagnostic](liaisonscape/liaisonscape-product-node-label-relation-presentation-first-angular-escape1-result.md)
 and its bounded negative result are preserved in the [Layout / Auto Layout
 chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-node-label-diagnostic-progression-roadmap-source-snapshot-2026-09-25).
 
@@ -3259,7 +3259,7 @@ envelope; this does not select a Node-label, routing, or presentation policy.
 
 ### LiaisonScape Product Node-label Hysteresis / Recovery Attribution Experiment 1 (2026-09-16)
 
-The [dedicated result](liaisonscape-product-node-label-hysteresis-recovery-attribution1-result.md)
+The [dedicated result](liaisonscape/liaisonscape-product-node-label-hysteresis-recovery-attribution1-result.md)
 qualifies previous-placement hysteresis as the primary tested Node-label
 residual and the recovery formulation for continued bounded research only.
 Recovery remains diagnostic-only; this evidence does not establish production
@@ -3267,7 +3267,7 @@ policy, Product adoption, or general visual-quality acceptance.
 
 ### LiaisonScape Product Node-label Recovery Lifecycle Source-Parity Experiment 1 (2026-09-16)
 
-The [dedicated result](liaisonscape-product-node-label-recovery-lifecycle-source-parity1-result.md)
+The [dedicated result](liaisonscape/liaisonscape-product-node-label-recovery-lifecycle-source-parity1-result.md)
 records `A QUALIFIED` source parity only within its tested lifecycle envelope.
 It does not establish general Product adoption, settling, or visual-quality
 acceptance. Manual presentation and route, Relation-label, endpoint-plan, and
@@ -3277,7 +3277,7 @@ Self-loop boundaries remain unchanged.
 
 The dated development-only integration/feasibility progression is preserved in
 the [Layout / Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-node-label-diagnostic-progression-roadmap-source-snapshot-2026-09-25).
-The [dedicated result](liaisonscape-product-node-label-recovery-integration1-result.md)
+The [dedicated result](liaisonscape/liaisonscape-product-node-label-recovery-integration1-result.md)
 records bounded integration evidence, not Product default or production
 policy.
 
@@ -3288,7 +3288,7 @@ responsibility.
 
 ### LiaisonScape Product Node-label Recovery Dense / Browser Main-thread Feasibility Experiment 1 (2026-09-16)
 
-The [dedicated result](liaisonscape-product-node-label-recovery-dense-browser-feasibility1-result.md)
+The [dedicated result](liaisonscape/liaisonscape-product-node-label-recovery-dense-browser-feasibility1-result.md)
 is the authority for bounded dense-fixture and browser evidence.
 
 For the tested dense/full-presentation pipeline, browser-main-thread
@@ -3301,7 +3301,7 @@ measurements are not an SLA, and the quality/lifecycle boundary remains.
 
 ### LiaisonScape Product Node-label Recovery Reuse Fingerprint Attribution 1 (2026-09-16)
 
-The [latest reuse/fingerprint result](liaisonscape-product-node-label-recovery-reuse-fingerprint-attribution1-result.md)
+The [latest reuse/fingerprint result](liaisonscape/liaisonscape-product-node-label-recovery-reuse-fingerprint-attribution1-result.md)
 identified an earlier harness parity artifact: the source-parity arm first
 diverged at route reuse, then Relation-label and Node-label placement.
 Broader Product presentation settling remains **OPEN**; this attribution does
@@ -3312,7 +3312,7 @@ provider, Product default/integration, or Human Review readiness.
 
 ### LiaisonScape Self-loop Residual Responsibility Closure 1 (2026-09-16)
 
-The [checkpoint result](liaisonscape-self-loop-responsibility-closure1-result.md)
+The [checkpoint result](liaisonscape/liaisonscape-self-loop-responsibility-closure1-result.md)
 closes this research phase at **A/B QUALIFIED**: the Product selector owns
 automatic angle/radius geometry and bounded other-Node avoidance; joint Product
 collision quality remains deferred. Ordinary paths, Relation/Node labels, peer
@@ -3355,7 +3355,7 @@ transient preview, and production integration remain on hold.
 
 ### LiaisonScape Accepted Dirty Worktree Ownership Resolution / Canonical Baseline Commit 2 (2026-09-16)
 
-The [canonical-baseline result](liaisonscape-accepted-dirty-worktree-ownership-resolution-canonical-baseline-commit2-result.md)
+The [canonical-baseline result](liaisonscape/liaisonscape-accepted-dirty-worktree-ownership-resolution-canonical-baseline-commit2-result.md)
 records **ACCEPTED BASELINE ESTABLISHED / CANONICAL COMMITS CREATED**.
 LiaisonScape `9616a75` fixes the accepted runtime/source, Frontier
 generator/Worker/adapter chain, focused tests, and related evidence; E2R-SPEC
@@ -3405,7 +3405,7 @@ working state and persist through the explicit Save boundary. The exact
 contract and authority are in the [Pin persistence decision](liaisonscape/liaisonscape-pin-persistence-authority-contract2-result.md),
 [runtime integration](liaisonscape/liaisonscape-explicit-auto-layout-pin-runtime-integration1-result.md),
 [working-state / Save integration](liaisonscape/liaisonscape-pin-app-working-state-save-integration1-result.md),
-and [Pin UI Human Check A result](liaisonscape-pin-ui-human-check-a-popover-iteration2-result.md).
+and [Pin UI Human Check A result](liaisonscape/liaisonscape-pin-ui-human-check-a-popover-iteration2-result.md).
 The UI result does not make the Extension Stable.
 
 #### Edge and presentation authority during Explicit Auto Layout
@@ -3471,7 +3471,7 @@ non-blocking follow-up and does not reopen that acceptance. Follow-ups include
 Pinned global recovery, Presentation-aware local relaxation, Graph-space
 separation, Relation-label congestion, broader Node-label quality,
 circular-order behavior, and graph-size / density / label / topology effects.
-The [quality-freeze result](liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md)
+The [quality-freeze result](liaisonscape/liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md)
 holds the detailed evidence; no general quality closure or complexity
 threshold is established.
 
@@ -3487,7 +3487,7 @@ closure result](liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qua
 
 ### E2R-LIAISONSCAPE-GENERAL-COMPLEX-DATASET-PRACTICALITY-REASSESSMENT1 (2026-09-17)
 
-The [General / Complex Dataset practicality reassessment](liaisonscape-general-complex-dataset-practicality-reassessment1-result.md)
+The [General / Complex Dataset practicality reassessment](liaisonscape/liaisonscape-general-complex-dataset-practicality-reassessment1-result.md)
 classifies the current Product as **B. PRACTICALITY ACCEPTABLE WITH
 NON-BLOCKING QUALITY FOLLOW-UPS**. Current coordinate-less Initial Automatic
 Display opens an immediately usable fallback Graph, exposes accepted Pending /
@@ -3520,7 +3520,7 @@ separate private real-Dataset observation found a more compact Preview with
 increased Relation / Relation-label congestion. Cause and any complexity
 threshold across size, density, label pressure, and topology remain unresolved.
 The detailed evidence and frozen follow-up list are in the [quality-freeze
-result](liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md).
+result](liaisonscape/liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md).
 Initial Automatic Display remains accepted; Explicit Auto Layout Human Check B
 remains `QUALIFIED`. Neither status absorbs the other's lifecycle or quality
 boundary.
@@ -3536,7 +3536,7 @@ bounded local commits after human review.
 
 ### E2R-LIAISONSCAPE-WORKTREE-BASELINE-COMMIT-READINESS1 (2026-09-17)
 
-The [worktree baseline commit-readiness result](liaisonscape-worktree-baseline-commit-readiness1-result.md)
+The [worktree baseline commit-readiness result](liaisonscape/liaisonscape-worktree-baseline-commit-readiness1-result.md)
 converts the prior mixed-ownership audit into exact path manifests without
 creating a commit. The current status is 57 status paths in LiaisonScape and
 40 in e2r-spec (the new readiness record is included); neither index has
@@ -3584,7 +3584,7 @@ cover the reusable conclusion, so no duplicate Knowledge entry was added.
 
 ### E2R-LIAISONSCAPE-FINAL-RELEASE-READINESS-AUDIT1 (2026-09-17)
 
-The [Final Release-Readiness Audit result](liaisonscape-final-release-readiness-audit1-result.md)
+The [Final Release-Readiness Audit result](liaisonscape/liaisonscape-final-release-readiness-audit1-result.md)
 classifies the current committed state as **B. RELEASE-READY WITH DOCUMENTED
 NON-BLOCKING FOLLOW-UPS**. Current source, accepted Actual Product evidence,
 and fresh validation show no concrete release blocker in the audited
@@ -3610,7 +3610,7 @@ preserved as history; this entry is the current release-readiness status.
 
 ### E2R-NARRATIVELINE-VITE-24678-WARNING-DIAGNOSTIC1 (2026-09-23)
 
-The follow-up [test WS cleanup result](narrativeline-vite-test-ws-cleanup1-result.md)
+The follow-up [test WS cleanup result](narrativeline/narrativeline-vite-test-ws-cleanup1-result.md)
 is **IMPLEMENTED / ACCEPTED / CLOSED**. All 18 current NarrativeLine Vite
 middleware test servers use SSR loading/transform only and do not consume
 WebSocket/HMR APIs. Their per-server options now set `ws:false`, which disables
@@ -3621,7 +3621,7 @@ listeners/workers. Lint, build, and diff checks pass. No product/runtime or
 Public behavior changed. Future tests that exercise Vite WS/HMR must opt in
 explicitly for their own server.
 
-The [Vite 24678 warning diagnostic result](narrativeline-vite-24678-warning-diagnostic1-result.md)
+The [Vite 24678 warning diagnostic result](narrativeline/narrativeline-vite-24678-warning-diagnostic1-result.md)
 classifies the warning as **REPRODUCED TWICE / TEST-ONLY OPERATIONAL / ACCEPTED
 NON-BLOCKING / CLOSED**. A fresh `npm test` run emitted 89 middleware Vite
 WebSocket port warnings while completing naturally with 259/259 passing tests
@@ -3634,7 +3634,7 @@ the warning has no demonstrated test, process-lifecycle, product-runtime, or
 Public behavior impact. The previous LiaisonScape harness mitigation remains
 supporting evidence only; no cross-repository change was made.
 
-The follow-up [trigger audit](narrativeline-vite-24678-warning-trigger-audit1-result.md)
+The follow-up [trigger audit](narrativeline/narrativeline-vite-24678-warning-trigger-audit1-result.md)
 inspected installed Vite 8.1.5 and reproduced the trigger with eight parallel
 middleware-mode servers: one bound fixed WS port 24678 and seven logged
 `EADDRINUSE`. `hmr:false` does not disable this listener; `server.ws:false`
@@ -3642,7 +3642,7 @@ does. NarrativeLine's parallel test workers contribute the condition, but no
 cleanup leak or runtime impact was found. The existing warning remains
 **ACCEPTED / CLOSED** without test changes or output suppression.
 
-The [NarrativeLine next-phase and source-handoff planning result](e2r-narrativeline-next-phase-and-source-handoff-planning1-result.md)
+The [NarrativeLine next-phase and source-handoff planning result](narrativeline/e2r-narrativeline-next-phase-and-source-handoff-planning1-result.md)
 classifies the current state as **NARRATIVELINE NEXT PHASE CLEAR / SOURCE
 HANDOFF READY**. Current NarrativeLine source is stable at `a525d2e`; its only
 tracked dirty work is the pre-existing `AGENTS.md` guidance update, which was
@@ -3667,7 +3667,7 @@ guidance. No runtime, test, schema, UI, or Knowledge change was made.
 
 ### E2R-NARRATIVELINE-DOCUMENTATION-AND-FINAL-RELEASE-READINESS-AUDIT1 (2026-09-17)
 
-The [NarrativeLine documentation and final release-readiness audit result](e2r-narrativeline-documentation-and-final-release-readiness-audit1-result.md)
+The [NarrativeLine documentation and final release-readiness audit result](narrativeline/e2r-narrativeline-documentation-and-final-release-readiness-audit1-result.md)
 classifies the current state as **RELEASE-READY WITH DOCUMENTED NON-BLOCKING
 FOLLOW-UPS**. Current source is at `a525d2e`, with the pre-existing dirty
 `AGENTS.md` preserved. Documentation drift in the NarrativeLine MVP and UI
@@ -3682,7 +3682,7 @@ separate decisions.
 
 ### E2R-NARRATIVELINE-DOCUMENTATION-CLOSURE-RECONCILIATION1 (2026-09-17)
 
-The [NarrativeLine documentation closure reconciliation result](e2r-narrativeline-documentation-closure-reconciliation1-result.md)
+The [NarrativeLine documentation closure reconciliation result](narrativeline/e2r-narrativeline-documentation-closure-reconciliation1-result.md)
 confirmed and corrected two remaining wording drifts in the current working
 tree: `docs/MVP.md` now consistently distinguishes implemented bounded local
 time fields from deferred Time Zone/UTC offset/Instant work, and `docs/ui-spec.md`
@@ -3890,7 +3890,7 @@ application, User Guide, sample, schema, Validator, or runtime changes.
 
 | Candidate | Classification | Current evidence | Minimum next checkpoint |
 | --- | --- | --- | --- |
-| LiaisonScape selected Entity status Name display | **ACCEPTED / CLOSED** | At 390x844, a long selected Name wrapped within a 343px status box (x=16..359); document scroll width equaled the 390px viewport. Two same-name Entities remained independently selectable and produced the same name-based status; EN/JA integration tests cover empty-name ID fallback. Canvas tap cleared the status; locale switching updated the prefix. Current Dataset-open path clears selection. NarrativeLine's related Event→Entity Detail navigation was checked separately at 390px and stayed within a 390px document width. No source changes were needed. See [acceptance result](narrativeline-entity-selection-status-narrow-acceptance1-result.md). | None. Other selection-policy or display changes require a separate Human decision. |
+| LiaisonScape selected Entity status Name display | **ACCEPTED / CLOSED** | At 390x844, a long selected Name wrapped within a 343px status box (x=16..359); document scroll width equaled the 390px viewport. Two same-name Entities remained independently selectable and produced the same name-based status; EN/JA integration tests cover empty-name ID fallback. Canvas tap cleared the status; locale switching updated the prefix. Current Dataset-open path clears selection. NarrativeLine's related Event→Entity Detail navigation was checked separately at 390px and stayed within a 390px document width. No source changes were needed. See [acceptance result](narrativeline/narrativeline-entity-selection-status-narrow-acceptance1-result.md). | None. Other selection-policy or display changes require a separate Human decision. |
 | LiaisonScape Pin / Unpin User Guide coverage | **IMPLEMENTED / GUIDE COVERAGE UPDATED** | The EN/JA guides now document Pin/Unpin in Entity Detail and the Entity context menu, its Explicit Auto Layout constraint meaning, the working-state boundary, and persistence through Save node coordinates. The guides also record the related Add Relation empty-Entity boundary and explicit Auto Layout preview flow. Runtime, Pin semantics, Dataset, and Export behavior were not changed by this documentation checkpoint. |
 
 - NarrativeLine narrow Header robustness: **LOCAL ACCEPTANCE PASS / CLOSED**.
@@ -3898,7 +3898,7 @@ application, User Guide, sample, schema, Validator, or runtime changes.
   focus-visible, and horizontal bounds were verified; the live Public artifact
   also passed the tested Chromium 390px flow but its exact source revision is
   unidentifiable. Physical-device reproduction/deployment of the correction is
-  not claimed. See [acceptance result](narrativeline-narrow-header-robustness-acceptance1-result.md).
+  not claimed. See [acceptance result](narrativeline/narrativeline-narrow-header-robustness-acceptance1-result.md).
 
 #### Remaining open follow-ups and decisions
 

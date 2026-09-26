@@ -111,7 +111,7 @@ Source evidence:
 
 - `e2r-liaison-scape/src/viewport.ts` Self-loop branch and selector;
 - `e2r-liaison-scape/src/graph-presentation.ts` downstream route/label stages;
-- `e2r-spec/docs/liaisonscape-automatic-self-loop-node-avoidance-result.md`;
+- `e2r-spec/docs/liaisonscape/liaisonscape-automatic-self-loop-node-avoidance-result.md`;
 - existing Self-loop interaction, presentation, and Actual Product diagnostic
   artifacts under `e2r-liaison-scape/experimental/`.
 

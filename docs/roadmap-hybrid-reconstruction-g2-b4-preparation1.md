@@ -13,7 +13,7 @@ History unit, and the preceding G2-B1/B2/B3 results were checked as separate
 responsibilities.
 
 The dedicated authority is
-`docs/liaisonscape-independent-risk-gate-probe-target-stability1-result.md`.
+`docs/liaisonscape/liaisonscape-independent-risk-gate-probe-target-stability1-result.md`.
 The current Roadmap heading remains the planning authority for the live
 risk/target qualification. The broad History unit is the eligible destination
 for dated detail if the later pilot is approved.

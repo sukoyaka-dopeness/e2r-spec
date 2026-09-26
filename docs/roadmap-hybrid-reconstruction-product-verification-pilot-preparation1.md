@@ -50,14 +50,14 @@ provider decision.
 The E2R-SPEC result documents provide the stable evidence used for this
 manifest, including:
 
-- [Initial Layout execution architecture](liaisonscape-initial-layout-execution-architecture-decision1-result.md);
-- [lifecycle contract closure](liaisonscape-explicit-high-quality-auto-layout-operation-lifecycle-contract-closure1-result.md);
-- [browser budget study](liaisonscape-explicit-high-quality-auto-layout-browser-execution-budget-study1-result.md);
-- [full verification orchestration](liaisonscape-product-authoritative-full-verification-resumable-orchestration1-result.md);
-- [scheduler policy study](liaisonscape-product-wide-verification-budget-scheduler-policy-study1-result.md);
-- [same-run long-slice attribution](liaisonscape-product-authoritative-verification-historical-long-slice-reproduction1-result.md);
-- [verification scaling envelope](liaisonscape-product-authoritative-verification-scaling-envelope-main-thread-viability1-result.md);
-- [Product verification execution architecture](liaisonscape-product-verification-execution-architecture-decision1-result.md).
+- [Initial Layout execution architecture](liaisonscape/liaisonscape-initial-layout-execution-architecture-decision1-result.md);
+- [lifecycle contract closure](liaisonscape/liaisonscape-explicit-high-quality-auto-layout-operation-lifecycle-contract-closure1-result.md);
+- [browser budget study](liaisonscape/liaisonscape-explicit-high-quality-auto-layout-browser-execution-budget-study1-result.md);
+- [full verification orchestration](liaisonscape/liaisonscape-product-authoritative-full-verification-resumable-orchestration1-result.md);
+- [scheduler policy study](liaisonscape/liaisonscape-product-wide-verification-budget-scheduler-policy-study1-result.md);
+- [same-run long-slice attribution](liaisonscape/liaisonscape-product-authoritative-verification-historical-long-slice-reproduction1-result.md);
+- [verification scaling envelope](liaisonscape/liaisonscape-product-authoritative-verification-scaling-envelope-main-thread-viability1-result.md);
+- [Product verification execution architecture](liaisonscape/liaisonscape-product-verification-execution-architecture-decision1-result.md).
 
 ## Current planning synthesis that must survive
 

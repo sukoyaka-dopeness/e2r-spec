@@ -16,7 +16,7 @@ UI.
 ## Serialization audit authority and OUTCOME B summary
 
 The authority is
-`docs/automatic-layout-initial-node-placement-serialization-implications.md`
+`docs/liaisonscape/automatic-layout-initial-node-placement-serialization-implications.md`
 at e2r-spec commit `b6eae41`. The prior finding was that automatic Derived
 positions entered the render `positions` map, and an unrelated Entity drag
 could cause the whole map to be passed to `Save Coordinates`.

@@ -238,7 +238,7 @@ against a fail-closed local runtime-import closure before evidence execution.
 74. Next checkpoint: `NOT STARTED`.
 75. Implementation clone commit hash/subject: `b9b6530ecc937dc2d7dcb9b661445f6c301444a5` — `fix: accept clean line-ending conversions in authority check`.
 76. Implementation clone final state: clean, detached HEAD at `b9b6530ecc937dc2d7dcb9b661445f6c301444a5`.
-77. Result document: `docs/liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-implementation1.md`.
+77. Result document: `docs/liaisonscape/liaisonscape-browser-capture-pr3-run-identity-browser-implementation-authority-implementation1.md`.
 78. Roadmap: changed additively.
 79. Knowledge Candidate decision: `CANDIDATE ONLY`.
 80. `ai-knowledge`: unchanged.

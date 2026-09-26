@@ -88,7 +88,7 @@ Validation after rollback:
 The complete evidence is documented in:
 
 ```text
-e2r-spec/docs/automatic-layout-experiment-1b-density-framing-result.md
+e2r-spec/docs/liaisonscape/automatic-layout-experiment-1b-density-framing-result.md
 ```
 
 The roadmap was synchronized in `e2r-spec/docs/roadmap.md`.
@@ -105,7 +105,7 @@ docs: record graph density experiment evidence
 Committed files:
 
 ```text
-docs/automatic-layout-experiment-1b-density-framing-result.md
+docs/liaisonscape/automatic-layout-experiment-1b-density-framing-result.md
 docs/roadmap.md
 ```
 
@@ -362,7 +362,7 @@ Validation was green:
 The result was documented in:
 
 ```text
-docs/automatic-layout-experiment-1u-uniform-route-granularity-result.md
+docs/liaisonscape/automatic-layout-experiment-1u-uniform-route-granularity-result.md
 ```
 
 e2r-spec documentation checkpoint:

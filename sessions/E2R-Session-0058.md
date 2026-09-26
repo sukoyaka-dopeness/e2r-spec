@@ -60,7 +60,7 @@ new Product visual candidate was created. No knowledge candidate was promoted.
 No push, tag, release, deploy, or publication was performed.
 
 The authoritative result is recorded in
-`docs/liaisonscape-boundary-equivalence-class-product-completion1-result.md`.
+`docs/liaisonscape/liaisonscape-boundary-equivalence-class-product-completion1-result.md`.
 
 `SESSION-0058 CHECKPOINT - FULL BOUNDARY COMPLETION CLOSED TESTED RECALL
 WITHIN A BOUNDED DIAGNOSTIC COST ENVELOPE; CAPPED COMPLETION REMAINS OPEN`

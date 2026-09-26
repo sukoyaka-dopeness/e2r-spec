@@ -3,7 +3,7 @@
 **FOLLOW-UP / PRESENTATION ONLY / NOT A CAPABILITY HANDOFF BLOCKER**
 
 This follow-up records observations from the public NarrativeLine sender
-surface during [XAPP-CAPABILITY-HANDOFF12 public NL-to-LS acceptance](cross-app/cross-app-capability-handoff-public-nl-ls-acceptance.md).
+surface during [XAPP-CAPABILITY-HANDOFF12 public NL-to-LS acceptance](../cross-app/cross-app-capability-handoff-public-nl-ls-acceptance.md).
 The Capability Handoff current-source and public acceptance remains CLOSED and
 is not reopened by this record.
 

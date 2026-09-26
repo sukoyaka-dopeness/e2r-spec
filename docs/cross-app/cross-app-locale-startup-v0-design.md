@@ -5,7 +5,7 @@
 The historical design and implementation sequence below remain preserved. The
 current checkpoint is that NarrativeLine's locale consumer is **ACCEPTED / COMPLETE**
 at runtime commit `ded44d6ca093431cc829d0aa47f6524ea789750a`. See the bounded
-[NarrativeLine Locale Consumer Acceptance](../narrativeline-locale-consumer-acceptance.md)
+[NarrativeLine Locale Consumer Acceptance](../narrativeline/narrativeline-locale-consumer-acceptance.md)
 record. This does not complete Cross-App Locale: LiaisonScape recipient
 consumer alignment and Hub startup locale producer work remain pending.
 

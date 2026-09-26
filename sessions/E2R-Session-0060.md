@@ -36,7 +36,7 @@ authority, Product default, push, tag, release, deploy, or publication change
 was made. No knowledge candidate was promoted.
 
 The authoritative record is
-`docs/liaisonscape-product-verification-execution-architecture-decision1-result.md`.
+`docs/liaisonscape/liaisonscape-product-verification-execution-architecture-decision1-result.md`.
 
 `SESSION-0060 CHECKPOINT - WORKER PRODUCT VERIFICATION ARCHITECTURE
 ESTABLISHED IN TESTED ENVELOPE; PRODUCTION INTEGRATION REMAINS OPEN`

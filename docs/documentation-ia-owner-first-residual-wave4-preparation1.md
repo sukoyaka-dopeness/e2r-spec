@@ -2,9 +2,13 @@
 
 - Date: 2026-09-26
 - Basis: current E2R workspace tree and Git state at E2R-SPEC `aed6fe8fe399b4625f84d44a305e352e2d93eba5`
-- Status: **PREPARATION ONLY / NO RESIDUAL PATH MIGRATION AUTHORIZED**
+- Status: **PREPARATION COMPLETE; its approved 349-document manifest was executed by the [Wave 4 migration result](documentation-ia-owner-first-residual-wave4-path-migration1-result.md)**
 - Scope: post-Wave-3 and post-Seed-133 residual `docs/` root classification, exact candidate manifests, and reference-repair readiness
 - Related records: [Documentation Hub](README.md), [Documentation Plan](documentation-plan.md), [Primary-Responsibility Residual Classification Audit 1](documentation-ia-primary-responsibility-residual-classification-audit1.md), [NarrativeLine Locale experiment migration result](documentation-ia-narrativeline-locale-experiment-path-migration1-result.md)
+
+The source paths in this preparation's manifest are intentionally retained as
+the audit-time inventory. For execution, reference repair, and validation
+outcomes, see the linked migration result.
 
 ## Finding
 

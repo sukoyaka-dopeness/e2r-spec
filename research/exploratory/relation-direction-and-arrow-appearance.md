@@ -184,7 +184,7 @@ The live authority set is:
 | `extensions/layout-extension.md` | Layout describes how positions are displayed without modifying the Core. | Compatible candidate responsibility |
 | Earlier sections of this memo | Endpoint reversal, an opposite Relation, semantic symmetry, and hidden arrowheads are different operations. | Compatible exploratory distinction |
 | `docs/relation-endpoint-ui-directionality-follow-up.md` | The R2 endpoint-swap constraint is explicitly superseded by a planning intent to investigate presentation-only forms; exact iconography/schema remain unselected. | Superseded history plus clarification target |
-| `docs/liaisonscape-relation-attachment-and-arrowhead-result.md` | Current arrowhead orientation is derived from route samples and does not change Dataset persistence or Core data. | Compatible application result, not a directionality decision |
+| `docs/liaisonscape/liaisonscape-relation-attachment-and-arrowhead-result.md` | Current arrowhead orientation is derived from route samples and does not change Dataset persistence or Core data. | Compatible application result, not a directionality decision |
 
 The normative Core and responsibility boundaries take precedence over
 application planning. The existing research status `needs-review` for this

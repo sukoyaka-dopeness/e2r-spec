@@ -52,11 +52,11 @@ final 18-case run completed. This was a diagnostic fixture-construction
 correction and did not change Product source or Self-loop authority.
 
 The fixed Edge 152 artifact is
-[`browser-result-summary.json`](../../e2r-liaison-scape/experimental/verification-scaling-envelope1/browser-result-summary.json).
+[`browser-result-summary.json`](../../../e2r-liaison-scape/experimental/verification-scaling-envelope1/browser-result-summary.json).
 The reproducible page and harness are
-[`index.html`](../../e2r-liaison-scape/experimental/verification-scaling-envelope1/index.html)
+[`index.html`](../../../e2r-liaison-scape/experimental/verification-scaling-envelope1/index.html)
 and
-[`browser-main.ts`](../../e2r-liaison-scape/experimental/verification-scaling-envelope1/browser-main.ts).
+[`browser-main.ts`](../../../e2r-liaison-scape/experimental/verification-scaling-envelope1/browser-main.ts).
 
 ## Evidence
 

@@ -235,13 +235,13 @@ route/label crowding already recorded by Gate 3.
 
 Read-only evidence and current-source runs used:
 
-- `docs/liaisonscape-initial-layout-candidate-provenance-audit.md`;
-- `docs/liaisonscape-initial-layout-candidate-actual-product-acceptance1-result.md`;
-- `docs/liaisonscape-initial-layout-candidate-cross-fixture-acceptance2-result.md`;
+- `docs/liaisonscape/liaisonscape-initial-layout-candidate-provenance-audit.md`;
+- `docs/liaisonscape/liaisonscape-initial-layout-candidate-actual-product-acceptance1-result.md`;
+- `docs/liaisonscape/liaisonscape-initial-layout-candidate-cross-fixture-acceptance2-result.md`;
 - Global Placement 3 / Frontier-12 result, review, and user-evidence documents;
-- `docs/liaisonscape-explicit-label-capacity-candidate-formulation-probe1-result.md`;
-- `docs/liaisonscape-infinite-canvas-local-density-extent-growth-rebaseline1-result.md`;
-- `docs/liaisonscape-occupied-geometry-feasibility-first-extent-growth1-result.md`;
+- `docs/liaisonscape/liaisonscape-explicit-label-capacity-candidate-formulation-probe1-result.md`;
+- `docs/liaisonscape/liaisonscape-infinite-canvas-local-density-extent-growth-rebaseline1-result.md`;
+- `docs/liaisonscape/liaisonscape-occupied-geometry-feasibility-first-extent-growth1-result.md`;
 - `experimental/structural-formulation1/` through `3/` artifacts;
 - current Label-Capacity, Infinite-Canvas, and Occupied-Geometry result artifacts.
 

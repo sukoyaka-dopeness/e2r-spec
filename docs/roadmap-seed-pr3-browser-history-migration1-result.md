@@ -10,7 +10,7 @@ Each checkpoint body was already a short pointer to its dedicated result or diag
 
 The 40 authority links were adjusted from Roadmap-root-relative paths to `../` paths so they resolve from the History unit; the linked authority targets and pointer wording are otherwise unchanged.
 
-The current-host blocker synchronization remains in `docs/roadmap.md` immediately after the historical pointer. Its current status, unresolved cause, deferred authority pin, B1/V3/Fresh lineage state, and resume condition remain unchanged. The dedicated [current-host runtime blocker synchronization](liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md) and the earlier [Browser lineage pointer-compression result](roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md) remain the status/evidence authorities.
+The current-host blocker synchronization remains in `docs/roadmap.md` immediately after the historical pointer. Its current status, unresolved cause, deferred authority pin, B1/V3/Fresh lineage state, and resume condition remain unchanged. The dedicated [current-host runtime blocker synchronization](liaisonscape/liaisonscape-browser-capture-current-host-runtime-blocker-synchronization.md) and the earlier [Browser lineage pointer-compression result](roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md) remain the status/evidence authorities.
 
 ## References and validation
 

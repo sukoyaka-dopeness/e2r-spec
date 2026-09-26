@@ -21,9 +21,9 @@ read-only. The measurements below are diagnostic comparisons, not acceptance
 thresholds or a formal review.
 
 The checkpoint follows the workspace's [bounded visual geometry
-playbook](../../ai-knowledge/playbooks/bounded-visual-geometry-experiment.md)
+playbook](../../../ai-knowledge/playbooks/bounded-visual-geometry-experiment.md)
 and [actual Product inspection
-hypothesis](../../ai-knowledge/hypotheses/actual-product-surface-before-interaction-evidence.md):
+hypothesis](../../../ai-knowledge/hypotheses/actual-product-surface-before-interaction-evidence.md):
 calculated geometry supports diagnosis, while user-visible claims require the
 actual Product surface.
 

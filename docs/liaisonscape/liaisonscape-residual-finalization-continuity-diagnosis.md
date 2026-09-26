@@ -22,9 +22,9 @@ Fresh12, their artifacts, and the Fresh12 canonical Human Review result remain
 read-only. No governed Fresh lineage was created.
 
 This work uses the workspace's [bounded visual geometry
-playbook](../../ai-knowledge/playbooks/bounded-visual-geometry-experiment.md)
+playbook](../../../ai-knowledge/playbooks/bounded-visual-geometry-experiment.md)
 and [actual Product inspection
-hypothesis](../../ai-knowledge/hypotheses/actual-product-surface-before-interaction-evidence.md):
+hypothesis](../../../ai-knowledge/hypotheses/actual-product-surface-before-interaction-evidence.md):
 derived values establish mechanics, while user-visible quality remains an
 actual-Product observation.
 

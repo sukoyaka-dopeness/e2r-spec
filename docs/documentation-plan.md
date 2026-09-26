@@ -115,6 +115,12 @@ result](documentation-ia-seed-133-path-migration1-result.md). Their evidence
 lanes remain distinct, and the 15 diagnostic artifact links remain unresolved
 in the checked workspace.
 
+The two NarrativeLine-only recipient-preference experiment acceptances were
+also moved to `docs/narrativeline/`; see the [bounded Locale migration
+result](documentation-ia-narrativeline-locale-experiment-path-migration1-result.md).
+Their accepted experimental scopes do not close the shared Cross-App Locale
+design or other-consumer parity.
+
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,
 `docs/audits/`, `docs/acceptances/`, `docs/applications/`, or `docs/sessions/`

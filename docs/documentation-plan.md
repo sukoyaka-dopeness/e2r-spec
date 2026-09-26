@@ -34,12 +34,24 @@ documents and such approved focused maintenance.
 | --- | --- | --- |
 | Core, Extension, schema, or canonical example requirement | `spec/`, `extensions/`, `schemas/`, or `examples/` | Normative specification or canonical machine-readable artifact |
 | Reader-facing guides and bilingual walkthroughs | `docs/guides/`, linked from `docs/README.md` | Informative reader guidance; paired language versions remain discoverable together |
-| Cross-cutting planning, policy, or bounded checkpoint result | `docs/` root, linked from `docs/README.md` | Stable entry document or current/evidence record; foldering does not change authority |
+| E2R-wide or repository-wide primary responsibility | `docs/` root, linked from `docs/README.md` | Shared E2R-spec planning, policy, specification-repository decisions, and evidence; references to applications or Extensions do not by themselves make a document E2R-wide |
 | Application- or workstream-scoped documentation in this repository | Approved landing zones `docs/liaisonscape/`, `docs/narrativeline/`, `docs/hub/`, `docs/validator/`, or `docs/cross-app/`, when a bounded migration is approved | Physical navigation only; does not supersede the owning application, specification, or evidence authority |
 | Application design or application-owned acceptance | `applications/` in this repository or the owning application repository | Informative design or implementation evidence; source remains authoritative for behavior |
-| Exploratory research, hypothesis, or design decision | Existing responsibility-matched directory under top-level `research/` | Non-normative research; do not duplicate it under `docs/research/` |
+| E2R-wide exploratory research, hypothesis, or design decision not primarily owned by one application/workstream | Existing responsibility-matched directory under top-level `research/` | Non-normative research; do not duplicate it under `docs/research/`; application-owned research/evidence follows the application landing-zone rule |
 | Session chronology and handoff history | `sessions/` | Historical record; it does not define current status |
 | Reusable process knowledge | Sibling `ai-knowledge` repository | Guidance and decisions; it does not override this specification |
+
+Classify placement by the document's primary responsibility or authority:
+what it decides, contracts, implements, accepts, or operates. Do not infer an
+owner from filename prefixes, mentioned products, or referenced
+specifications. Application-owned material belongs in that application's
+approved landing zone; shared contracts, interoperability, parity, and
+cross-application acceptance belong in `docs/cross-app/`. Keep a document at
+the root only when its primary responsibility is genuinely E2R-wide or
+repository-wide. A dependency on Core, an Extension, or a schema is not by
+itself a root-placement reason. If a document has multiple responsibilities,
+split or group it only when existing evidence and authority boundaries make
+that separation clear; do not merge authorities to simplify paths.
 
 Human has adopted a narrow, responsibility-first hybrid for `docs/`, with
 these approved landing-zone names: `docs/guides/`, `docs/liaisonscape/`,
@@ -72,6 +84,11 @@ The [post-Wave-2 residual responsibility audit](documentation-ia-post-wave2-resi
 is a preparation-only review of remaining root cohorts. It authorizes no path
 changes; any next migration requires a separate Human selection and exact
 manifest.
+
+The [primary-responsibility residual classification audit](documentation-ia-primary-responsibility-residual-classification-audit1.md)
+applies the owner-first rule across residual root records and identifies
+candidate cohorts. It is also preparation only; exact candidates still require
+separate Human selection and a fresh reference scan before any move.
 
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,

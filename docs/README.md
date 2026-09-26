@@ -36,6 +36,7 @@ repository. Start with the responsibility that matches the question:
 - The bounded [Validator 0.4.0 lifecycle Wave 2B migration](documentation-ia-validator-0.4.0-lifecycle-wave2b-path-migration1-result.md) moved only its five package / consumer records; publication history and checkpoint authorization remain unchanged.
 - The [docs-wide organization audit](documentation-ia-docs-wide-organization-audit1.md) preserves the inventory and earlier options considered before the Human foldering decision.
 - The [post-Wave-2 residual responsibility audit](documentation-ia-post-wave2-residual-responsibility-audit1.md) assesses the remaining root cohorts; it is preparation only and authorizes no additional moves.
+- The [primary-responsibility residual classification audit](documentation-ia-primary-responsibility-residual-classification-audit1.md) reclassifies root records by their decision/evidence owner and supplies exact candidate manifests; it authorizes no path changes.
 
 Follow links from the responsible planning or evidence authority for current
 checkpoint details; this Hub is not an inventory of every audit and result.

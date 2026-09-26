@@ -1,0 +1,45 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [
+    { "id": "source" },
+    { "id": "target-1" },
+    { "id": "target-2" },
+    { "id": "target-3" },
+    { "id": "target-4" },
+    { "id": "target-5" },
+    { "id": "target-6" },
+    { "id": "target-7" },
+    { "id": "target-8" },
+    { "id": "target-9" },
+    { "id": "target-10" },
+    { "id": "target-11" },
+    { "id": "target-12" }
+  ],
+  "relations": [
+    { "id": "r-before", "sourceId": "source", "targetId": "target-1", "extensions": { "draft.github.sukoyaka-dopeness.relative-time": { "type": "relative-position", "relation": "before" } } },
+    { "id": "r-after", "sourceId": "source", "targetId": "target-2", "extensions": { "draft.github.sukoyaka-dopeness.relative-time": { "type": "relative-position", "relation": "after" } } },
+    { "id": "r-same-instant", "sourceId": "source", "targetId": "target-3", "extensions": { "draft.github.sukoyaka-dopeness.relative-time": { "type": "relative-position", "relation": "same-instant", "futureRelativeField": "preserve-me" } } },
+    { "id": "r-within", "sourceId": "source", "targetId": "target-4", "extensions": { "draft.github.sukoyaka-dopeness.relative-time": { "type": "containment", "relation": "within" } } },
+    { "id": "r-contains", "sourceId": "source", "targetId": "target-5", "extensions": { "draft.github.sukoyaka-dopeness.relative-time": { "type": "containment", "relation": "contains" } } },
+    { "id": "r-overlap", "sourceId": "source", "targetId": "target-6", "extensions": { "draft.github.sukoyaka-dopeness.relative-time": { "type": "interval-topology", "relation": "overlap" } } },
+    { "id": "r-touching", "sourceId": "source", "targetId": "target-7", "extensions": { "draft.github.sukoyaka-dopeness.relative-time": { "type": "interval-topology", "relation": "touching" } } },
+    { "id": "r-same-extent", "sourceId": "source", "targetId": "target-8", "extensions": { "draft.github.sukoyaka-dopeness.relative-time": { "type": "interval-topology", "relation": "same-temporal-extent" } } },
+    { "id": "r-calendar", "sourceId": "source", "targetId": "target-9", "extensions": { "draft.github.sukoyaka-dopeness.relative-time": { "type": "calendar-granule-relation", "granularity": "month", "displacement": 1, "calendar": "gregorian" } } },
+    { "id": "r-calendar-same", "sourceId": "source", "targetId": "target-10", "extensions": { "draft.github.sukoyaka-dopeness.relative-time": { "type": "calendar-granule-relation", "granularity": "day", "displacement": 0 } } },
+    { "id": "r-elapsed-after", "sourceId": "source", "targetId": "target-11", "extensions": { "draft.github.sukoyaka-dopeness.relative-time": { "type": "elapsed-offset", "direction": "after", "value": 90, "unit": "minute" } } },
+    { "id": "r-elapsed-before", "sourceId": "source", "targetId": "target-12", "extensions": { "draft.github.sukoyaka-dopeness.relative-time": { "type": "elapsed-offset", "direction": "before", "value": 3, "unit": "hour" } } }
+  ],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "draft.github.sukoyaka-dopeness.relative-time",
+          "version": "0.2.0",
+          "features": ["calendar-granule-relation", "containment", "elapsed-offset", "interval-topology", "relative-position"]
+        }
+      ]
+    }
+  }
+}

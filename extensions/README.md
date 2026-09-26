@@ -24,6 +24,9 @@ registered as Stable:
   (`history`, candidate version `2.0.0`; Stable `1.0.0` remains unchanged)
 - [Relative Time Extension Draft](relative-time-extension-draft.md)
   (`draft.github.sukoyaka-dopeness.relative-time`, draft `0.1.0`)
+- [Relative Time Extension Draft 0.2.0](relative-time-0.2.0-draft.md)
+  (`draft.github.sukoyaka-dopeness.relative-time`, Candidate `0.2.0`; `0.1.0`
+  remains unchanged)
 - [Lineage Extension Draft](lineage-extension-draft.md)
   (`draft.github.sukoyaka-dopeness.lineage`, draft `0.1.0`)
 - [Coordinate Extension Prototype](coordinate-extension.md)
@@ -96,12 +99,14 @@ History Extension may reference Calendar Extension in future versions.
 
 ---
 
-### Relative Time beyond Draft 0.1.0
+### Relative Time beyond Draft 0.2.0 Candidate
 
-The initial [Relative Time Extension Draft](relative-time-extension-draft.md)
-defines strict before/after/same-instant, within, Calendar-granule displacement,
-and elapsed offsets. Overlaps, meets, same-temporal-extent authoring, advanced
-constraints, and solver behavior remain future work.
+The [Relative Time Extension Draft 0.2.0](relative-time-0.2.0-draft.md)
+Candidate integrates the adopted atomic Recorded vocabulary and limits,
+including containment applicability and interval topology, alongside the
+existing quantitative Features. It remains non-Stable; consumer support is
+exact-version-specific, and no automatic Dataset migration is defined.
+Advanced inference and solver behavior remain outside this Candidate.
 
 ---
 

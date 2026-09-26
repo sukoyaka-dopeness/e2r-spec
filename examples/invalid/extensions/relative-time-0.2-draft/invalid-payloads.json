@@ -1,0 +1,8 @@
+[
+  { "type": "relative-position", "relation": "meets" },
+  { "type": "containment", "relation": "overlap" },
+  { "type": "interval-topology", "relation": "same-instant" },
+  { "type": "interval-topology", "relation": "touching", "unit": "hour" },
+  { "type": "calendar-granule-relation", "granularity": "fortnight", "displacement": 1 },
+  { "type": "elapsed-offset", "direction": "after", "value": 0, "unit": "second" }
+]

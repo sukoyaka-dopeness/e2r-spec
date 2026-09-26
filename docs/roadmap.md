@@ -467,10 +467,18 @@ Documentation IA direction and migration status are recorded immediately
 above; this entry does not broaden either scope.
 
 The Human selected evolution under the same Extension identity using a new
-exact version; `0.1.0` remains unchanged. The integration proposal and its
-remaining adoption choices are recorded in the [new-version proposal](./temporal/relative-time-new-exact-version-integration-proposal1.md).
-No version number, payload/Feature contract, migration policy, schema,
-Validator, or implementation change is adopted by that direction alone.
+exact version; `0.1.0` remains unchanged. The earlier [new-version integration
+proposal](./temporal/relative-time-new-exact-version-integration-proposal1.md)
+preserves the pre-disposition proposal and alternatives; its open choices were
+resolved by the subsequent bounded checkpoint recorded below.
+
+The Human subsequently selected exact Candidate `0.2.0`, the five-Feature
+representation, and no automatic or required `0.1.0` migration. The bounded
+[0.2.0 Draft/schema checkpoint](./temporal/relative-time-0.2.0-normative-draft-schema-checkpoint-result1.md)
+records that disposition and its structural artifacts. `0.1.0` remains
+unchanged; `0.2.0` remains Draft/Candidate, with no Validator or application
+support implied. The next separate checkpoint is exact-version Validator
+support review.
 
 > Historical snapshot — superseded by the current `NL-H2-R1` entry near the
 > end of this roadmap. The following readiness text records the pre-acceptance

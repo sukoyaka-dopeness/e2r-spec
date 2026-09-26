@@ -7,6 +7,7 @@
 - Follow-on execution: [Wave 3A bounded app-owned evidence migration](documentation-ia-wave3a-app-owned-evidence-path-migration1-result.md) completed manifests A, B, and D only; the other candidate manifests remain unchanged.
 - Follow-on execution: [Wave 3B bounded shared Cross-App migration](documentation-ia-wave3b-cross-app-evidence-path-migration1-result.md) completed manifests E, F, and G only; all other candidate manifests remain unchanged.
 - Follow-on execution: [NarrativeLine Locale experiment migration](documentation-ia-narrativeline-locale-experiment-path-migration1-result.md) completed the two records in manifest C at `docs/narrativeline/`; the list below remains the audit-time source-path inventory.
+- Follow-on audit: [Owner-first residual root Wave 4 preparation](documentation-ia-owner-first-residual-wave4-preparation1.md) reclassifies the post-Wave-3/Seed-133 tree and records the remaining exact candidate packets; it performs no further path migration.
 - Related records: [Documentation Hub](README.md), [post-Wave-2 audit](documentation-ia-post-wave2-residual-responsibility-audit1.md), [Wave 2 preparation](documentation-ia-application-workstream-foldering-wave2-preparation1.md).
 
 ## Executive finding

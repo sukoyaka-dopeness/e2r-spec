@@ -121,6 +121,13 @@ result](documentation-ia-narrativeline-locale-experiment-path-migration1-result.
 Their accepted experimental scopes do not close the shared Cross-App Locale
 design or other-consumer parity.
 
+The [owner-first residual root Wave 4 preparation](documentation-ia-owner-first-residual-wave4-preparation1.md)
+re-audits the current root after Wave 3 and Seed-133, proposing four exact
+application/Cross-App packets (349 records total) while retaining mixed
+release, Self-Description, and Research responsibilities for separate review.
+It authorizes no move; the unresolved 15 Seed-133 diagnostic artifact
+references remain unresolved.
+
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,
 `docs/audits/`, `docs/acceptances/`, `docs/applications/`, or `docs/sessions/`

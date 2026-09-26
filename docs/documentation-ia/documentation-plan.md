@@ -133,9 +133,12 @@ placement audit](documentation-ia-final-root-classification-and-ingress-gate-aud
 defined exact W5A–W5D manifests, assessed `docs/documentation-ia/` as a
 repository-governance responsibility, and prepared a future root-path
 allowlist gate. The approved [Wave 5 migration result](documentation-ia-wave5-final-residual-placement-migration1-result.md)
-records the 89 path moves and the actual 70-file root census. Two owner/scope
-HOLD records remain at root; no root-ingress gate is implemented until Human
-review of this resulting set.
+records the 89 path moves and the actual 70-file root census. The
+preparation-only [post-Wave-5 root classification audit](documentation-ia-post-wave5-root-classification-audit1.md)
+reassesses all 70 files and proposes five positive root placements plus exact
+destinations for the remaining responsibility cohorts. It performs no moves
+and does not implement the root-ingress gate; that gate remains deferred until
+Human approves a final placement baseline.
 
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,

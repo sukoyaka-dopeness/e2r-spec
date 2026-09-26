@@ -108,6 +108,12 @@ Pin status, Human Check B `QUALIFIED`, unresolved failure attribution, and
 frozen/non-blocking quality follow-up remain distinct. No Initial Placement
 Seed or other residual cohort is included.
 
+The [Initial Placement Seed 133-document path-migration readiness audit](documentation-ia-seed-133-path-migration-readiness-audit1.md)
+revalidates the candidate/assignment, PR-2, and PR-3 manifests and records
+reference-graph exceptions. It authorizes no path changes; an actual migration
+requires a fresh Human approval, including the identified Knowledge reference
+repair and decision on currently absent diagnostic artifacts.
+
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,
 `docs/audits/`, `docs/acceptances/`, `docs/applications/`, or `docs/sessions/`

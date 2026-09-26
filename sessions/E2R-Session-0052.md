@@ -340,7 +340,7 @@ The explicit whole-graph Auto Layout semantic decision was completed locally:
 
 - e2r-spec commit `156836b docs: decide explicit Auto Layout semantics`;
 - decision document:
-  `docs/liaisonscape-explicit-auto-layout-semantic-decision.md`;
+  `docs/liaisonscape/liaisonscape-explicit-auto-layout-semantic-decision.md`;
 - selected `SCOPE-B`, `PERSIST-B`, `DIRTY-B`, `OWN-B`, `ALG-C`, `SCHEMA-NO`,
   and `EXP-1A`;
 - R2 state: `DESIGN DEFINED — IMPLEMENTATION NOT STARTED`;

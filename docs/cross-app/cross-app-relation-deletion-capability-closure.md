@@ -68,7 +68,7 @@ records no-cascade Entity deletion and explicit resolution at commit `33d0427`.
 The accepted focus correction is recorded in the [Relation deletion resolution
 acceptance](../liaisonscape-relation-deletion-resolution-acceptance.md), and the
 presentation follow-up, implementation, and acceptance are recorded in the
-[action hierarchy audit](../cross-app-destructive-action-hierarchy-audit.md), the
+[action hierarchy audit](../liaisonscape/cross-app-destructive-action-hierarchy-audit.md), the
 [presentation implementation](../liaisonscape-relation-deletion-resolution-presentation-implementation.md),
 and the [presentation acceptance](../liaisonscape-relation-deletion-resolution-presentation-acceptance.md)
 at runtime commit `34d8164`.

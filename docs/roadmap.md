@@ -3370,8 +3370,8 @@ deferred.
 
 This dated readiness snapshot is retained as a navigation anchor; its execution
 state and proposal-vs-direct-apply discussion are historical. The later
-[Explicit Auto Layout lifecycle integration](liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md)
-and [qualified Human Check B disposition](liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md)
+[Explicit Auto Layout lifecycle integration](liaisonscape/liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md)
+and [qualified Human Check B disposition](liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md)
 own their bounded results. The original snapshot is preserved in the [Layout
 and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#explicit-auto-layout-readiness-and-pre-release-blocker-roadmap-source-snapshot-2026-09-25).
 This does not establish general visual-quality acceptance or change Initial
@@ -3391,9 +3391,9 @@ The dated pre-release blocker is no longer current planning status. Explicit
 Auto Layout has a bounded accepted Product lifecycle; Human Check B is
 **QUALIFIED** only for its recorded scope. This does not imply general visual
 quality acceptance, Pin maturity, rollout, or a change to Initial Automatic
-Display. See the [production integration](liaisonscape-explicit-auto-layout-production-integration-result.md),
-[lifecycle integration](liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md),
-[qualified closure](liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md),
+Display. See the [production integration](liaisonscape/liaisonscape-explicit-auto-layout-production-integration-result.md),
+[lifecycle integration](liaisonscape/liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md),
+[qualified closure](liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md),
 and [dated blocker chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#explicit-auto-layout-readiness-and-pre-release-blocker-roadmap-source-snapshot-2026-09-25).
 
 #### Entity Pin / Unpin — Explicit Auto Layout constraint direction
@@ -3403,7 +3403,7 @@ Extension contract, not Core data or a Coordinate field. A Pin is a hard
 placement constraint; moving an Entity does not itself Pin it. Pin changes are
 working state and persist through the explicit Save boundary. The exact
 contract and authority are in the [Pin persistence decision](liaisonscape/liaisonscape-pin-persistence-authority-contract2-result.md),
-[runtime integration](liaisonscape-explicit-auto-layout-pin-runtime-integration1-result.md),
+[runtime integration](liaisonscape/liaisonscape-explicit-auto-layout-pin-runtime-integration1-result.md),
 [working-state / Save integration](liaisonscape/liaisonscape-pin-app-working-state-save-integration1-result.md),
 and [Pin UI Human Check A result](liaisonscape-pin-ui-human-check-a-popover-iteration2-result.md).
 The UI result does not make the Extension Stable.
@@ -3413,8 +3413,8 @@ The UI result does not make the Extension Stable.
 Explicit Auto Layout computes placement candidates; LiaisonScape Product owns
 routing and derived Relation-label, Node-label, Self-loop, and viewport
 presentation. Existing manual presentation remains user-owned; a Node Pin is a
-placement constraint, not an Edge-route lock. See the [operation boundary](liaisonscape-explicit-auto-layout-operation-boundary1-result.md)
-and [lifecycle integration](liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md).
+placement constraint, not an Edge-route lock. See the [operation boundary](liaisonscape/liaisonscape-explicit-auto-layout-operation-boundary1-result.md)
+and [lifecycle integration](liaisonscape/liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md).
 
 #### Post-LiaisonScape and other product follow-ups
 
@@ -3452,8 +3452,8 @@ and security model.
 The original intermittent Safe Preview hard failure remains unattributed: its
 exact input and failure branch were not captured. Later qualified lifecycle
 review and successful ordinary/valid-Pin cases do not establish its cause. See
-the [failure diagnosis](liaisonscape-explicit-auto-layout-safe-preview-failure-diagnosis1-result.md)
-and the separate [Human Check B closure](liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md).
+the [failure diagnosis](liaisonscape/liaisonscape-explicit-auto-layout-safe-preview-failure-diagnosis1-result.md)
+and the separate [Human Check B closure](liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md).
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-DEV-FAILURE-DIAGNOSTIC1 (2026-09-17)
 
@@ -3461,7 +3461,7 @@ The DEV diagnostic makes a known invalid-Pin snapshot-capture failure
 observable; it did **not** identify the cause of the earlier intermittent Safe
 Preview failure. Its dated probe and diagnostic details are preserved in the
 [Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#dev-failure-diagnostic-roadmap-source-snapshot-2026-09-25)
-and the [dedicated diagnostic result](liaisonscape-explicit-auto-layout-dev-failure-diagnostic1-result.md).
+and the [dedicated diagnostic result](liaisonscape/liaisonscape-explicit-auto-layout-dev-failure-diagnostic1-result.md).
 
 ### Explicit Auto Layout quality follow-ups
 
@@ -3483,7 +3483,7 @@ movement of Pinned Nodes, Save Coordinates, and reload consistency. This is not
 unqualified or general visual-quality acceptance. Frozen quality follow-ups do
 not reopen the disposition; the full `npm test` Vite/HMR lifecycle gate remains
 a separate test-infrastructure gate, not a Product failure. See the [qualified
-closure result](liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md).
+closure result](liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md).
 
 ### E2R-LIAISONSCAPE-GENERAL-COMPLEX-DATASET-PRACTICALITY-REASSESSMENT1 (2026-09-17)
 

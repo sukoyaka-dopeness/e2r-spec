@@ -39,6 +39,7 @@ repository. Start with the responsibility that matches the question:
 - The [primary-responsibility residual classification audit](documentation-ia-primary-responsibility-residual-classification-audit1.md) reclassifies root records by their decision/evidence owner and supplies exact candidate manifests; it authorizes no path changes.
 - [Wave 3A — app-owned bounded evidence migration](documentation-ia-wave3a-app-owned-evidence-path-migration1-result.md) moved seven separate NarrativeLine modernization acceptances, two NarrativeLine Entity-deletion records, and one Validator Presentation-support result to their approved responsibility folders. The three authority lanes and each record's status remain distinct.
 - [Wave 3B — shared Cross-App contract/parity evidence migration](documentation-ia-wave3b-cross-app-evidence-path-migration1-result.md) moved only the approved Relation Deletion, Locale design, and shell/parity records; their three responsibility groups and checkpoint statuses remain separate.
+- [Wave 3C — LiaisonScape presentation / Explicit Auto Layout evidence migration](documentation-ia-wave3c-liaisonscape-evidence-path-migration1-result.md) moved only the two LiaisonScape-local presentation audits and 21 Explicit Auto Layout / Pin records; their individual checkpoint statuses and boundaries remain distinct.
 
 Follow links from the responsible planning or evidence authority for current
 checkpoint details; this Hub is not an inventory of every audit and result.

@@ -315,6 +315,8 @@ The manifests can be assembled into a larger Wave 3, but should remain separate 
 
 Wave 3A is the lowest-risk first actual wave, though it spans two destinations and distinct authorities. Wave 3B and Wave 3C can be separately approved later; combining all waves is technically possible but offers no responsibility benefit and increases reference-repair risk. No move in this audit is authorized. A selection should explicitly approve each cohort and whether direct path repair in `ai-knowledge` is permitted; without that permission, cohorts with Knowledge inbound links remain HOLD for actual migration.
 
+Wave 3C was subsequently approved and completed as a path-only migration; see the [Wave 3C result](documentation-ia-wave3c-liaisonscape-evidence-path-migration1-result.md). The manifest above remains the audit-time source inventory, not a current-path index.
+
 ## Worktree and validation record
 
 - Current E2R-SPEC HEAD at audit: `8af69e1603dea894c574ff76aff1bdad95a66671`; pre-existing untracked `work/` was not opened, changed, staged, or included.

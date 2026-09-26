@@ -136,8 +136,8 @@ Source evidence:
   Product presentation state in Worker evaluation;
 * `experimental/quality-operation-lifecycle/contract.mjs`: accepted but
   diagnostic-only Explicit lifecycle;
-* `docs/liaisonscape-explicit-auto-layout-preview-adoption-contract-reconciliation1-result.md`;
-* `docs/liaisonscape-explicit-auto-layout-catastrophic-preview-boundary1-result.md`.
+* `docs/liaisonscape/liaisonscape-explicit-auto-layout-preview-adoption-contract-reconciliation1-result.md`;
+* `docs/liaisonscape/liaisonscape-explicit-auto-layout-catastrophic-preview-boundary1-result.md`.
 
 Focused verification commands:
 

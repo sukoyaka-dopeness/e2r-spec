@@ -2241,7 +2241,7 @@ fresh worktree or explicit ownership map provides a safe boundary.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PREVIEW-PIN-CONTRACT1 (2026-09-17)
 
-The [Preview / Pin contract result](../liaisonscape-explicit-auto-layout-preview-pin-contract1-result.md)
+The [Preview / Pin contract result](../liaisonscape/liaisonscape-explicit-auto-layout-preview-pin-contract1-result.md)
 closes with **C. BLOCKED BY PERSISTENCE / AUTHORITY CONTRACT**. The
 Preview → Accept / Reject lifecycle is bounded as a separate Explicit Auto
 Layout operation: calculation is asynchronous and isolated, Cancel/Reject
@@ -2371,7 +2371,7 @@ Layout remains an active implementation/quality gap.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PRODUCT-ELIGIBILITY-SEMANTICS1 (2026-09-17)
 
-The [Product eligibility semantics result](../liaisonscape-explicit-auto-layout-product-eligibility-semantics1-result.md)
+The [Product eligibility semantics result](../liaisonscape/liaisonscape-explicit-auto-layout-product-eligibility-semantics1-result.md)
 is classified **C. MIXED**. The current
 `isAutomaticLayoutPresentationEligible` predicate is a strict five-condition
 Product presentation gate: zero routed crossings, Node-body overlap, label-
@@ -2400,7 +2400,7 @@ Preview or release decisions.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PREVIEW-ADOPTION-CONTRACT-RECONCILIATION1 (2026-09-17)
 
-The [Preview / Adoption contract reconciliation result](../liaisonscape-explicit-auto-layout-preview-adoption-contract-reconciliation1-result.md)
+The [Preview / Adoption contract reconciliation result](../liaisonscape/liaisonscape-explicit-auto-layout-preview-adoption-contract-reconciliation1-result.md)
 is classified **B. CONTRACT MOSTLY CLOSED / ONE EXPLICIT PRODUCT DECISION
 REQUIRED**. The solver-independent Explicit Auto Layout lifecycle remains
 closed: immutable snapshot, cancellation/stale validation, isolated Preview,
@@ -2423,7 +2423,7 @@ must not silently reinterpret the current research predicate.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PREVIEW-ADMISSIBILITY-VISUAL-GATE1 (2026-09-17)
 
-The [Preview admissibility visual gate result](../liaisonscape-explicit-auto-layout-preview-admissibility-visual-gate1-result.md)
+The [Preview admissibility visual gate result](../liaisonscape/liaisonscape-explicit-auto-layout-preview-admissibility-visual-gate1-result.md)
 records **B. TWO-TIER PREVIEW POLICY SUPPORTED / CATASTROPHIC CLASSIFIER
 REMAINS OPEN**. The selected policy preserves the pre-operation working
 display for structurally invalid or catastrophic Product presentation, while
@@ -2448,7 +2448,7 @@ be closed. Human Review and provider selection remain closed.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-CATASTROPHIC-PREVIEW-BOUNDARY1 (2026-09-17)
 
-The [Catastrophic Preview boundary result](../liaisonscape-explicit-auto-layout-catastrophic-preview-boundary1-result.md)
+The [Catastrophic Preview boundary result](../liaisonscape/liaisonscape-explicit-auto-layout-catastrophic-preview-boundary1-result.md)
 records **C. CATASTROPHIC CONCEPT CLOSED / AUTOMATED CLASSIFIER NOT YET
 JUSTIFIED / IMPLEMENTATION CAN STAGE WITH EXPLICIT POLICY SEAM**. A
 structurally valid candidate may still be blocked when its Product rendering
@@ -2471,7 +2471,7 @@ blocking.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PRODUCTION-OPERATION-STAGING1 (2026-09-17)
 
-The [Production operation staging result](../liaisonscape-explicit-auto-layout-production-operation-staging1-result.md)
+The [Production operation staging result](../liaisonscape/liaisonscape-explicit-auto-layout-production-operation-staging1-result.md)
 is classified **D. STAGING EXPOSED ARCHITECTURE CONFLICT / PRODUCTION
 IMPLEMENTATION HOLD**. Current `App.tsx` still uses the synchronous
 `solveAutoLayout` direct-apply path. The existing Worker adapter is scoped to
@@ -2493,7 +2493,7 @@ desirable. This is not permission to retune spacing in the staging checkpoint.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-OPERATION-BOUNDARY1 (2026-09-17)
 
-The [Explicit Auto Layout operation boundary result](../liaisonscape-explicit-auto-layout-operation-boundary1-result.md)
+The [Explicit Auto Layout operation boundary result](../liaisonscape/liaisonscape-explicit-auto-layout-operation-boundary1-result.md)
 is classified **B. OPERATION BOUNDARY ESTABLISHED / PIN INTEGRATION GAP
 REMAINS**. `src/explicit-auto-layout-operation.ts` now provides an immutable,
 serializable Explicit operation snapshot, shared Frontier candidate generation,
@@ -2512,7 +2512,7 @@ selection remain separate checkpoints.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PIN-RUNTIME-INTEGRATION1 (2026-09-17)
 
-The [Pin runtime integration result](../liaisonscape-explicit-auto-layout-pin-runtime-integration1-result.md)
+The [Pin runtime integration result](../liaisonscape/liaisonscape-explicit-auto-layout-pin-runtime-integration1-result.md)
 is classified **B. FIXED-ANCHOR OPERATION ESTABLISHED / PIN WRITER GAP
 REMAINS**. The Explicit operation now has a read-only Pin resolver for the
 accepted draft Layout Extension, exact compatible Coordinate anchors, staged
@@ -2622,7 +2622,7 @@ All remains deferred.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-APP-LIFECYCLE-INTEGRATION1 (2026-09-17)
 
-The [Explicit Auto Layout App lifecycle integration result](../liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md)
+The [Explicit Auto Layout App lifecycle integration result](../liaisonscape/liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md)
 is classified **B. LIFECYCLE INTEGRATED / READY FOR HUMAN CHECK B**. The normal
 Product command captures immutable App working state, runs the shared
 Frontier/Pin-aware/Product-selection path in a dedicated Worker, and exposes a
@@ -2638,7 +2638,7 @@ Check B remains open; release closure is not inferred before that review.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-PREVIEW-SURFACE-REFINEMENT1 (2026-09-17)
 
-The [Explicit Auto Layout Preview surface refinement result](../liaisonscape-explicit-auto-layout-preview-surface-refinement1-result.md)
+The [Explicit Auto Layout Preview surface refinement result](../liaisonscape/liaisonscape-explicit-auto-layout-preview-surface-refinement1-result.md)
 is classified **A. PREVIEW SURFACE REFINED / READY TO RESUME HUMAN CHECK B**.
 Human Check B confirmed lifecycle function and actual unpinned Node movement,
 then identified a bounded surface defect: Preview text/actions shared the
@@ -2657,7 +2657,7 @@ open and must not be inferred complete from this refinement.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-HUMAN-CHECK-B-RESUME1 (2026-09-17)
 
-The [Human Check B resume result](../liaisonscape-explicit-auto-layout-human-check-b-resume1-result.md)
+The [Human Check B resume result](../liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-resume1-result.md)
 is classified **A. COPY CORRECTED / HUMAN CHECK B READY**. Current source and
 Actual Product evidence confirm the accepted EN/JA Preview title and actions:
 `Review Auto Layout` / `Use this layout` / `Return to previous layout` and
@@ -2699,7 +2699,7 @@ dense Graph-space quality remains separate.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-HUMAN-CHECK-B-RETEST1 (2026-09-17)
 
-The [Human Check B retest result](../liaisonscape-explicit-auto-layout-human-check-b-retest1-result.md)
+The [Human Check B retest result](../liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-retest1-result.md)
 is classified **B. HUMAN CHECK B RETEST READY / FULL-SUITE ENVIRONMENTAL GATE
 STILL OPEN**. Current Actual Product evidence on the Lighthouse JA fixture
 shows fresh Unpinned Auto Layout reaching Preview with its quality warning,
@@ -2722,7 +2722,7 @@ remains user-owned, and dense Graph-space quality remains separate.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-HUMAN-CHECK-B-CLOSURE-GATE1 (2026-09-17)
 
-The [Human Check B Closure Gate result](../liaisonscape-explicit-auto-layout-human-check-b-closure-gate1-result.md)
+The [Human Check B Closure Gate result](../liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-closure-gate1-result.md)
 consolidates the accepted lifecycle, Pin, Preview, and Save evidence and
 records the Human Review quality findings for **Pinned global recovery** and
 **Presentation-aware local relaxation**. The gate is classified **B. EVIDENCE
@@ -2807,7 +2807,7 @@ are retained. Existing quality follow-ups remain unchanged.
 
 ### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-REFERENCE-PLACEMENT-REGRESSION-FIXTURE1 (2026-09-17)
 
-The [Explicit Auto Layout reference-placement regression fixture result](../liaisonscape-explicit-auto-layout-reference-placement-regression-fixture1-result.md)
+The [Explicit Auto Layout reference-placement regression fixture result](../liaisonscape/liaisonscape-explicit-auto-layout-reference-placement-regression-fixture1-result.md)
 classifies the checkpoint **B. REGRESSION REPRODUCED / RESPONSIBILITY STILL
 MIXED**. A neutral moderate 12-Entity / 19-Relation graph is available as a
 saved-coordinate reference and a topology-identical coordinate-less control,
@@ -3269,14 +3269,14 @@ The following dated Roadmap blocks are preserved from `docs/roadmap.md` at
 parent commit `94e9c7aa046886bd015d89bcbebd09d781409e30`. Their original
 status language and sequence describe that snapshot, not current planning.
 The current lifecycle and qualification boundary remain in the Roadmap; the
-[readiness audit](../liaisonscape-explicit-auto-layout-completion-readiness-current-state-gap-audit1-result.md),
-[production integration](../liaisonscape-explicit-auto-layout-production-integration-result.md),
-and [lifecycle integration](../liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md)
+[readiness audit](../liaisonscape/liaisonscape-explicit-auto-layout-completion-readiness-current-state-gap-audit1-result.md),
+[production integration](../liaisonscape/liaisonscape-explicit-auto-layout-production-integration-result.md),
+and [lifecycle integration](../liaisonscape/liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md)
 remain their dedicated evidence authorities.
 
 #### LiaisonScape Explicit Auto Layout Completion Readiness / Current-State Gap Audit 1 (2026-09-16)
 
-The [current-state audit result](../liaisonscape-explicit-auto-layout-completion-readiness-current-state-gap-audit1-result.md)
+The [current-state audit result](../liaisonscape/liaisonscape-explicit-auto-layout-completion-readiness-current-state-gap-audit1-result.md)
 confirms that the current Explicit Auto Layout button synchronously runs the
 deterministic `solveAutoLayout` structural Node solver on the main thread,
 directly updates working positions, marks graph-visible Entities adopted and
@@ -3333,13 +3333,13 @@ authority into the solver.
 This dated diagnostic progression is preserved from `docs/roadmap.md` at
 parent commit `94e9c7aa046886bd015d89bcbebd09d781409e30`. Its `READY TO
 CAPTURE NEXT HUMAN CHECK B FAILURE` / `HOLD` wording records the diagnostic
-checkpoint at that time. The [dedicated DEV diagnostic result](../liaisonscape-explicit-auto-layout-dev-failure-diagnostic1-result.md)
+checkpoint at that time. The [dedicated DEV diagnostic result](../liaisonscape/liaisonscape-explicit-auto-layout-dev-failure-diagnostic1-result.md)
 owns the probe evidence; current cause-attribution status remains in the
 Roadmap.
 
 #### E2R-LIAISONSCAPE-EXPLICIT-AUTO-LAYOUT-DEV-FAILURE-DIAGNOSTIC1 (2026-09-17)
 
-The [DEV failure diagnostic result](../liaisonscape-explicit-auto-layout-dev-failure-diagnostic1-result.md)
+The [DEV failure diagnostic result](../liaisonscape/liaisonscape-explicit-auto-layout-dev-failure-diagnostic1-result.md)
 is classified **A. DEV FAILURE DIAGNOSTIC ESTABLISHED / READY TO CAPTURE NEXT
 HUMAN CHECK B FAILURE**. Explicit Auto Layout hard failures now retain stage,
 reason, operation/snapshot/graph identity, Entity/Pin counts, Pin diagnostics,
@@ -3361,7 +3361,7 @@ quality remains a separate follow-up.
 
 **Current-state clarification:** the `HOLD` wording above is the dated status
 of those diagnostic checkpoints. The later Human disposition is **QUALIFIED**
-([closure result](../liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md)).
+([closure result](../liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md)).
 That bounded acceptance did not identify the cause of the earlier hard-failure
 observation; cause attribution remains a separate unresolved diagnostic
 question and does not reopen the qualified lifecycle acceptance.

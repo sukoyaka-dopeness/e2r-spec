@@ -177,7 +177,7 @@ by default.
 ### MUST HAVE
 
 - `docs/roadmap.md` — current status and priority authority.
-- `docs/cross-app-destructive-action-hierarchy-audit.md` — action-role and
+- `docs/liaisonscape/cross-app-destructive-action-hierarchy-audit.md` — action-role and
   focus boundary.
 - `docs/narrativeline-phase24-navigation-safety-acceptance.md` — accepted
   navigation/loss-risk contract.
@@ -192,7 +192,7 @@ by default.
   boundary and known documentation drift.
 - `docs/narrativeline-display-order-reordering-audit.md` — deferred chronology
   and presentation-order boundary.
-- `docs/cross-app-confirmation-dialog-spacing-audit.md` — related dialog
+- `docs/liaisonscape/cross-app-confirmation-dialog-spacing-audit.md` — related dialog
   comparison evidence.
 - `docs/application-design-principles.md` and
   `docs/application-recommendations.md` — when the task affects E2R/application

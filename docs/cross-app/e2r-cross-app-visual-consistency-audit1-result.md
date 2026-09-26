@@ -111,8 +111,8 @@ separate non-blocking follow-up and is not a visual defect.
 ## Referenced artifacts
 
 - `docs/roadmap.md`
-- `docs/cross-app-destructive-action-hierarchy-audit.md`
-- `docs/cross-app-confirmation-dialog-spacing-audit.md`
+- `docs/liaisonscape/cross-app-destructive-action-hierarchy-audit.md`
+- `docs/liaisonscape/cross-app-confirmation-dialog-spacing-audit.md`
 - `docs/narrativeline-phase24-navigation-safety-acceptance.md`
 - `docs/narrativeline-locale-consumer-acceptance.md`
 - `docs/narrativeline-timeline-shell-acceptance.md`

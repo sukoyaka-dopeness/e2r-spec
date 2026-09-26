@@ -29,7 +29,7 @@ practicality remain distinct from Explicit Auto Layout's qualified status.
   [quality-freeze result](liaisonscape-auto-layout-quality-freeze-and-worktree-baseline-audit1-result.md).
 - **A — Human Check B closure:** retained the exact bounded scope of the
   `QUALIFIED` disposition, the separate test-infrastructure gate, and a pointer
-  to the [qualified closure result](liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md).
+  to the [qualified closure result](liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md).
 - **HOLD — mixed practicality:** left the complete
   `E2R-LIAISONSCAPE-GENERAL-COMPLEX-DATASET-PRACTICALITY-REASSESSMENT1`
   heading and body unchanged because it jointly records Initial Automatic

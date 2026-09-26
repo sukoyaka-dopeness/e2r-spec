@@ -100,6 +100,14 @@ The original FAIL, later reacceptance, bounded closure, and the Locale and
 visual-parity qualifications remain separate. No other residual cohort is
 authorized by that move.
 
+Wave 3C moved only the two LiaisonScape-local presentation audits and 21
+Explicit Auto Layout / Pin evidence records into `docs/liaisonscape/`; see the
+[bounded migration result](documentation-ia-wave3c-liaisonscape-evidence-path-migration1-result.md).
+This changes physical placement only: accepted integration, Draft/non-Stable
+Pin status, Human Check B `QUALIFIED`, unresolved failure attribution, and
+frozen/non-blocking quality follow-up remain distinct. No Initial Placement
+Seed or other residual cohort is included.
+
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,
 `docs/audits/`, `docs/acceptances/`, `docs/applications/`, or `docs/sessions/`

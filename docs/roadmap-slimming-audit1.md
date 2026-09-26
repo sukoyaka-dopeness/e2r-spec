@@ -221,7 +221,7 @@ parent manifest below, not additional work-item counts.
 - **COMPRESS / MOVE TO HISTORY:** completed Explicit Auto Layout implementation,
   Pin/preview acceptance, and Human Check B progression. Keep a short current
   qualified disposition and open follow-ups linked to
-  `liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md`
+  `liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md`
   and the safe-preview/diagnostic results. Do not convert sibling dirty-tree
   evidence into status.
 - **HOLD:** any entry in `Remaining open follow-ups and decisions`, physical

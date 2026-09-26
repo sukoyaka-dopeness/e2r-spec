@@ -243,7 +243,7 @@ focus-management fix.
 2026-08-28.
 
 The bounded action-hierarchy audit is recorded in
-[Cross-App Destructive Action Hierarchy Audit](../cross-app-destructive-action-hierarchy-audit.md).
+[Cross-App Destructive Action Hierarchy Audit](../liaisonscape/cross-app-destructive-action-hierarchy-audit.md).
 NarrativeLine and LiaisonScape evidence does not establish a universal
 safe-left / destructive-right rule. The reusable principle is one clearly
 identified safe choice before the destructive choice in DOM and keyboard order,

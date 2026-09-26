@@ -480,7 +480,10 @@ unchanged; `0.2.0` remains Draft/Candidate. The separate local Validator
 exact-version support checkpoint is recorded in the
 [Validator support result](./validator/relative-time-0.2.0-exact-version-support-result1.md).
 This is read-only source support, not a package release or application
-support; the Candidate is not Stable and no migration is implied. The
+support. Validator `0.7.0` is prepared locally under the compatible-new-
+validation MINOR rule, but remains unpublished; normal package availability
+and fetchability of the pinned E2R-SPEC input remain prerequisites. The
+Candidate is not Stable and no migration is implied. The
 [first-consumer readiness preparation](./temporal/relative-time-0.2.0-first-consumer-readiness1.md)
 recommends NarrativeLine for a later read-only recognition/diagnostic and
 preservation slice, conditional on a normally consumable Validator artifact.

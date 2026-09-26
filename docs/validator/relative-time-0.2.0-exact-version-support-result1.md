@@ -37,3 +37,23 @@ Relative Time `0.2.0` valid example. The support is a local Validator source
 checkpoint only; it does not change the Validator package version, establish
 published package support, promote the Relative Time Candidate to Stable, or
 authorize application support, Dataset migration, release, or publication.
+
+## Normal package release preparation
+
+Validator commit [`79856e5`](https://github.com/sukoyaka-dopeness/e2r-validator/commit/79856e5)
+prepares the normal package candidate as `@sukoyaka-dopeness/e2r-validator`
+`0.7.0`. The current release policy assigns a compatible new validation
+capability to a MINOR release; the npm registry reported `0.6.1` as latest,
+so `0.7.0` is the next policy-conforming package version. Local package,
+fixture, and clean-install checks passed. This remains an unpublished local
+candidate, not application support or a Relative Time Stable promotion.
+
+CI and release workflows pin the E2R-SPEC input to commit
+`237fcb6191cc18622a3f692b8f4634b9374ee8f9`, which contains the exact Draft,
+schema, and fixture. At preparation time that commit was not present in the
+local `origin/main` tracking ref, and remote reachability could not be
+verified. It must be fetchable by the release workflow before the package can
+be normally consumed. Public repository updates, tag creation, GitHub Release,
+and npm publication remain unauthorized and unperformed. NarrativeLine
+remains unchanged and can begin its separately authorized read-only support
+slice only after a normal package release is available.

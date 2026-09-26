@@ -263,7 +263,7 @@ whole. Narrower research seeds are linked rather than duplicated:
   keeps explicit Groups separate from derived clusters;
 - [LiaisonScape One-button High-quality Automatic Coordinate Generation](../research/exploratory/liaisonscape-one-button-automatic-coordinate-generation.md)
   records the separate automatic-layout hypothesis; and
-- [AI Workflow Research Backlog](../docs/ai-workflow-research.md) preserves
+- [AI Workflow Research Backlog](../research/exploratory/ai-workflow-research.md) preserves
   proposal, validation, provenance, human-review, and internal-ID boundaries.
 
 The linked records remain authoritative for their narrower subjects. This

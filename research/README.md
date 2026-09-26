@@ -15,6 +15,11 @@ Extensions.
 - `source-citation/` — bounded Source/Citation research.
 - `exploratory/` — general exploratory research without a current workstream
   entry point.
+- [AI Workflow Research](exploratory/ai-workflow-research.md), the
+  [Gamebook / VS Code extension research note](exploratory/e2r-gamebook-vscode-extension-research-note1.md),
+  and the [Hub initial-layout latency-hiding hypothesis](exploratory/e2r-hub-initial-layout-precomputation-latency-hiding-hypothesis1.md)
+  are exploratory records; their placement does not restart deferred work or
+  authorize application implementation.
 - `tools/` — executable research harnesses and their tests. These remain in
   place until test-discovery and reference impact are handled explicitly.
 

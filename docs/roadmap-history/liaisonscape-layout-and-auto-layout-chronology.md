@@ -2829,7 +2829,7 @@ non-blocking follow-ups; Human Check B remains `QUALIFIED`.
 
 The following blocks were extracted from docs/roadmap.md at
 b316e86 (docs: prepare verification hybrid reconstruction pilot) under
-[Roadmap Hybrid Reconstruction — Product Verification Pilot Preparation 1](../roadmap-hybrid-reconstruction-product-verification-pilot-preparation1.md).
+[Roadmap Hybrid Reconstruction — Product Verification Pilot Preparation 1](../documentation-ia/roadmap-hybrid-reconstruction-product-verification-pilot-preparation1.md).
 They preserve the original heading order, dated status language, checkpoint
 wording, and evidence provenance. The current planning consequences remain in
 the Roadmap's [Current Initial Layout / Parallel Presentation Coordination](../roadmap.md#current-initial-layout-parallel-presentation-coordination-2026-09-13)

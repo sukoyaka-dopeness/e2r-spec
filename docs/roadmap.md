@@ -40,10 +40,10 @@ index](roadmap-history/README.md); its dated status language is historical.
 
 | Workstream | Current status | Authority / next decision |
 | --- | --- | --- |
-| Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable; [bounded baseline milestone outline consolidation](roadmap-baseline-milestone-outline-consolidation1-result.md); [exploratory Suite heading consolidation](roadmap-exploratory-suite-heading-consolidation1-result.md) |
-| Roadmap chronology / planning-history compression | **BOUNDED EXTRACTIONS AND COMPRESSIONS RECORDED** | [history index](roadmap-history/README.md); [Roadmap slimming results](roadmap-slimming-migration1-result.md), [tranche 2](roadmap-slimming-migration2-result.md), and [Relative Time / Documentation IA snapshot compression](roadmap-relative-time-and-documentation-ia-snapshot-compression1-result.md); detailed history-migration results remain linked from their entries; this roadmap remains the sole current-planning authority |
-| Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](roadmap-research-responsibility-audit1-result.md); [migration 1 result](roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
-| Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](roadmap-residual-responsibility-audit3.md); [audit 2](roadmap-residual-responsibility-audit2.md); [audit 1](roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); [Seed PR-3 Browser history migration result](roadmap-seed-pr3-browser-history-migration1-result.md); [this PR-3 pre-Browser history migration](roadmap-seed-pr3-prebrowser-history-migration1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
+| Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable; [bounded baseline milestone outline consolidation](documentation-ia/roadmap-baseline-milestone-outline-consolidation1-result.md); [exploratory Suite heading consolidation](documentation-ia/roadmap-exploratory-suite-heading-consolidation1-result.md) |
+| Roadmap chronology / planning-history compression | **BOUNDED EXTRACTIONS AND COMPRESSIONS RECORDED** | [history index](roadmap-history/README.md); [Roadmap slimming results](documentation-ia/roadmap-slimming-migration1-result.md), [tranche 2](documentation-ia/roadmap-slimming-migration2-result.md), and [Relative Time / Documentation IA snapshot compression](documentation-ia/roadmap-relative-time-and-documentation-ia-snapshot-compression1-result.md); detailed history-migration results remain linked from their entries; this roadmap remains the sole current-planning authority |
+| Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](documentation-ia/roadmap-research-responsibility-audit1-result.md); [migration 1 result](documentation-ia/roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
+| Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia/documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia/documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](documentation-ia/roadmap-residual-responsibility-audit3.md); [audit 2](documentation-ia/roadmap-residual-responsibility-audit2.md); [audit 1](documentation-ia/roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](documentation-ia/roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](documentation-ia/roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](documentation-ia/roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](documentation-ia/roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](documentation-ia/roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](documentation-ia/roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](documentation-ia/roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); [Seed PR-3 Browser history migration result](documentation-ia/roadmap-seed-pr3-browser-history-migration1-result.md); [this PR-3 pre-Browser history migration](documentation-ia/roadmap-seed-pr3-prebrowser-history-migration1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](history-2-user-facing-authoring-scope-result.md); [bounded scope closure](history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
@@ -72,7 +72,7 @@ History 2 authoring.
 The detailed 2026-09-23 LiaisonScape / NarrativeLine observation and
 audit-time evidence progression is preserved in the existing [Release and
 Cross-App Roadmap History](roadmap-history/release-and-cross-app-chronology.md#post-release-liaisonscape-narrativeline-observation-audit-2026-09-23)
-and its [migration result](roadmap-post-release-cross-app-observation-history-migration1-result.md).
+and its [migration result](documentation-ia/roadmap-post-release-cross-app-observation-history-migration1-result.md).
 Current dispositions and operative follow-ups remain in the status index and
 current session inventory; this historical record does not change them.
 
@@ -215,8 +215,8 @@ remain unauthorized by that evidence ([maturity decision](../research/coordinate
 
 ### Dataset Replacement Safety implementation checkpoint — 2026-08-20
 LiaisonScape D1-D7 and Dataset Handoff v0 are implemented and manually
-accepted within their recorded scope. See the [design](dataset-replacement-safety-design.md)
-and [implementation result](dataset-replacement-safety-liaison-scape-implementation-result.md);
+accepted within their recorded scope. See the [design](cross-app/dataset-replacement-safety-design.md)
+and [implementation result](liaisonscape/dataset-replacement-safety-liaison-scape-implementation-result.md);
 cross-application parity remains separate.
 
 ### NarrativeLine Focus Phase 2 closure — 2026-08-23
@@ -243,7 +243,7 @@ for their respective contracts and evidence.
    retrieval, migration, or application writers.
 3. **Coordinate Prototype `0.1.0` — FROZEN experimental compatibility /
    migration baseline, not Stable.** See the
-   [interoperability result](foreign-graph-coordinate-interop-experiment-result.md).
+   [interoperability result](cross-app/foreign-graph-coordinate-interop-experiment-result.md).
 4. **Coordinate Draft `0.1.0` — Draft candidate, not Stable.** See its
    [definition](../extensions/coordinate-extension-draft.md) and
    [bounded review](../research/coordinate/decisions/coordinate-draft-0.1.0-review.md).
@@ -413,15 +413,15 @@ adoption.
 > remain unchanged.
 
 The detailed evidence, alternatives, and prior-audit comparison remain in the
-[decision-preparation record](documentation-ia-roadmap-physical-modularization-decision-preparation1.md).
-The later [Roadmap-first structure decision](documentation-ia-roadmap-physical-modularization-direction-decision1.md)
+[decision-preparation record](documentation-ia/documentation-ia-roadmap-physical-modularization-decision-preparation1.md).
+The later [Roadmap-first structure decision](documentation-ia/documentation-ia-roadmap-physical-modularization-direction-decision1.md)
 supersedes this preparation snapshot; its chronology-only scope and separate
 deferral of wider `docs/` taxonomy are summarized in the current direction
 below.
 
 #### Current Human-selected Roadmap-first structure direction (2026-09-24)
 
-The Human-selected [Roadmap-first structure direction](documentation-ia-roadmap-physical-modularization-direction-decision1.md)
+The Human-selected [Roadmap-first structure direction](documentation-ia/documentation-ia-roadmap-physical-modularization-direction-decision1.md)
 keeps this file as the sole current-planning entry point and separates completed
 and historical chronology into a few broad evidence units; detailed checkpoint
 authority stays in dedicated documents, not duplicate Roadmap prose. The
@@ -436,7 +436,7 @@ per-file modularization is not the default.
 > migration remained undecided or had not started.
 
 The detailed gate and manifest remain in the
-[implementation-preparation record](documentation-ia-roadmap-physical-modularization-implementation-preparation1.md);
+[implementation-preparation record](documentation-ia/documentation-ia-roadmap-physical-modularization-implementation-preparation1.md);
 this historical snapshot does not describe current migration status.
 
 #### Historical snapshot — Roadmap Physical Modularization implementation-preparation status (2026-09-24)
@@ -447,8 +447,8 @@ historical snapshot; see the current direction and migration status below.
 
 #### Current Roadmap-first chronology migration status (2026-09-24)
 
-The [chronology structure decision](documentation-ia-roadmap-chronology-structure-decision1.md),
-[migration result](documentation-ia-roadmap-chronology-migration1-result.md),
+The [chronology structure decision](documentation-ia/documentation-ia-roadmap-chronology-structure-decision1.md),
+[migration result](documentation-ia/documentation-ia-roadmap-chronology-migration1-result.md),
 [history index](roadmap-history/README.md), and bounded migration results
 linked from the current-status index record completed extractions and
 compressions. They do not establish that every historical-looking paragraph
@@ -1374,7 +1374,7 @@ the behavioral closure.
 The full planning record is [Pre-public-release Feature Reconsideration](pre-public-release-feature-reconsideration.md).
 The detailed Relation directionality supersession is already recorded
 separately and complete in [Relation Endpoint UI / Directionality
-Follow-up](relation-endpoint-ui-directionality-follow-up.md). The remaining
+Follow-up](cross-app/relation-endpoint-ui-directionality-follow-up.md). The remaining
 endpoint vocabulary work is a later all-surface Cross-App audit covering
 terminology, arrows, and separators across LiaisonScape and NarrativeLine.
 
@@ -1666,7 +1666,7 @@ Placement order. See [E2R-managed Personal Storage Research](../research/explora
 The 2026-09-01 to 2026-09-03 Seed candidate-generation, assignment,
 structural-objective, and PR-2 preparation chronology is preserved in the
 [existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#seed-candidate-generation-assignment-structural-objective-and-pr-2-preparation-chronology-2026-09-01-to-2026-09-03).
-Its [bounded migration result](roadmap-seed-pr2-history-migration1-result.md)
+Its [bounded migration result](documentation-ia/roadmap-seed-pr2-history-migration1-result.md)
 records scope and reference checks. All 55 dated checkpoint blocks and their
 dedicated evidence pointers remain there in source order.
 
@@ -1750,7 +1750,7 @@ materially E2R-specific differentiation claim satisfies the frozen
 `RESTART-TRIGGER-v1` and is separately reviewed. This capsule is not active,
 next, or priority work; no extension repository, prototype, schema, player
 runtime, implementation, or Product change is authorized. See the [E2R
-Gamebook / Interactive Narrative VS Code Extension research note](e2r-gamebook-vscode-extension-research-note1.md)
+Gamebook / Interactive Narrative VS Code Extension research note](../research/exploratory/e2r-gamebook-vscode-extension-research-note1.md)
 for the hypotheses, unverified prior-art leads, open Core mapping question,
 and complete restart criteria.
 
@@ -2335,7 +2335,7 @@ and the Initial Layout Release blocker remains `OPEN`.
 
 ### LiaisonScape Product-authoritative Verification Execution / Budget — Canonical Current Planning Summary
 
-The [Hybrid reconstruction pilot result](roadmap-hybrid-reconstruction-product-verification-pilot-result1.md)
+The [Hybrid reconstruction pilot result](documentation-ia/roadmap-hybrid-reconstruction-product-verification-pilot-result1.md)
 consolidates the current consequence of PV-01, PV-02, PV-05, and PV-08;
 their dated checkpoint progression is preserved in the [Layout and Auto Layout
 chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution-budget-pilot-roadmap-source-snapshot-2026-09-25).
@@ -3769,7 +3769,7 @@ decisions remain separate.
 
 ### E2R-DOCUMENTATION-INFORMATION-ARCHITECTURE-ROADMAP-MODULARIZATION-AUDIT1 (2026-09-19)
 
-The [Documentation Information Architecture / Roadmap Modularization Audit](documentation-information-architecture-roadmap-modularization-audit1-result.md)
+The [Documentation Information Architecture / Roadmap Modularization Audit](documentation-ia/documentation-information-architecture-roadmap-modularization-audit1-result.md)
 is complete. Current recommendation: preserve existing documentation paths and
 the single roadmap, strengthen `docs/README.md` as a responsibility-based
 navigation hub, and keep detailed checkpoint evidence in dedicated result

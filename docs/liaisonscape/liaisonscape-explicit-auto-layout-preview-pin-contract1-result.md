@@ -32,7 +32,7 @@ Relevant source-of-truth records are:
 - [Explicit high-quality Auto Layout lifecycle](liaisonscape-explicit-high-quality-auto-layout-operation-lifecycle1-result.md)
 - [Explicit lifecycle contract closure](liaisonscape-explicit-high-quality-auto-layout-operation-lifecycle-contract-closure1-result.md)
 - [Explicit Auto Layout semantic decision](liaisonscape-explicit-auto-layout-semantic-decision.md)
-- [Layout persistence responsibility decision](../layout-persistence-responsibility-decision.md)
+- [Layout persistence responsibility decision](layout-persistence-responsibility-decision.md)
 - [Coordinate Extension draft](../../extensions/coordinate-extension-draft.md)
 
 ## Current Explicit Auto Layout path

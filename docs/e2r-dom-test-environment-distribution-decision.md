@@ -12,7 +12,7 @@ the permanent distribution and dependency model undecided.
 ## Prior pilot evidence
 
 The isolated consumer pilot recorded in
-[`e2r-dom-test-environment-liaison-scape-consumer-pilot-result.md`](e2r-dom-test-environment-liaison-scape-consumer-pilot-result.md)
+[`e2r-dom-test-environment-liaison-scape-consumer-pilot-result.md`](liaisonscape/e2r-dom-test-environment-liaison-scape-consumer-pilot-result.md)
 passed package build, package tests, tarball creation, consumer lint, and
 consumer build. The temporary helper adapter worked and the consumer's direct
 `jsdom` declaration could be removed. The remaining nine test failures were

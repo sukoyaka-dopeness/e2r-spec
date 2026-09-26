@@ -43,7 +43,7 @@ Webview, Custom Editor, and process boundaries remain unresolved.
 The existing [E2R for VS Code - OSINT Workbench research](e2r-vscode-osint-workbench.md)
 examines a broad power-user/local investigation environment, including local
 indexes, evidence, AI tools, and large-data processing. The existing [Gamebook
-VS Code research note](../../docs/e2r-gamebook-vscode-extension-research-note1.md)
+VS Code research note](e2r-gamebook-vscode-extension-research-note1.md)
 examines a focused interactive-narrative extension idea.
 
 This record addresses the narrower cross-application question of **hosting and

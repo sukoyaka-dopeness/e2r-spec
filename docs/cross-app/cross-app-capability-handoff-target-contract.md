@@ -583,7 +583,7 @@ This design was checked against:
 - [Dataset Handoff v0](dataset-handoff-v0-design.md);
 - [NarrativeLine Dataset Handoff v0 Formal Completion](../narrativeline/narrativeline-dataset-handoff-v0-formal-completion-acceptance.md);
 - [LiaisonScape Dataset Handoff v0 implementation](../liaisonscape/dataset-handoff-v0-liaison-scape-implementation-result.md);
-- [Dataset Acquisition Entry Point Alignment](../dataset-acquisition-entry-point-alignment.md);
+- [Dataset Acquisition Entry Point Alignment](dataset-acquisition-entry-point-alignment.md);
 - current NarrativeLine source at `7a695b3`;
 - current LiaisonScape source at `34d8164`; and
 - current Hub source at `9de6399`.

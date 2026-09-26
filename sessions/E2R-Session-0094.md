@@ -497,8 +497,8 @@ move, rename, or migration has been selected or started.
 ### Documentation IA Roadmap-first structure direction — 2026-09-24
 
 The Human selected the Roadmap-first direction in [Documentation IA / Roadmap
-Physical Modularization Direction Decision 1](../docs/documentation-ia-roadmap-physical-modularization-direction-decision1.md),
-using the preceding [decision-preparation record](../docs/documentation-ia-roadmap-physical-modularization-decision-preparation1.md)
+Physical Modularization Direction Decision 1](../docs/documentation-ia/documentation-ia-roadmap-physical-modularization-direction-decision1.md),
+using the preceding [decision-preparation record](../docs/documentation-ia/documentation-ia-roadmap-physical-modularization-decision-preparation1.md)
 as comparison evidence. Keep `docs/roadmap.md` as a concise current-planning
 entry point; retain detailed checkpoint evidence in its dedicated records;
 and separate completed/superseded/historical chronology from current planning
@@ -520,7 +520,7 @@ link rewrite has been performed or authorized.
 ### Historical snapshot — Roadmap modularization implementation-preparation gate — 2026-09-24
 
 The read-only migration preparation is recorded in [Documentation IA / Roadmap
-Physical Modularization Implementation Preparation 1](../docs/documentation-ia-roadmap-physical-modularization-implementation-preparation1.md).
+Physical Modularization Implementation Preparation 1](../docs/documentation-ia/documentation-ia-roadmap-physical-modularization-implementation-preparation1.md).
 It documents two bounded physical layout branches, identifies a contiguous
 completed workspace-migration chronology block as the clearest initial
 extraction candidate, maps mixed current/history regions, and records the
@@ -532,8 +532,8 @@ taxonomy remains deferred.
 ### Documentation IA bounded roadmap chronology migration — current state (2026-09-24)
 
 The Human-selected physical layout and conservative extraction gate are
-recorded in [Roadmap Chronology Structure Decision 1](../docs/documentation-ia-roadmap-chronology-structure-decision1.md)
-and the [migration result](../docs/documentation-ia-roadmap-chronology-migration1-result.md).
+recorded in [Roadmap Chronology Structure Decision 1](../docs/documentation-ia/documentation-ia-roadmap-chronology-structure-decision1.md)
+and the [migration result](../docs/documentation-ia/documentation-ia-roadmap-chronology-migration1-result.md).
 The first verified historical tranche—workspace placement, relocation,
 extraction, acceptance, and cleanup chronology—is preserved in
 [`docs/roadmap-history/legacy-chronology.md`](../docs/roadmap-history/legacy-chronology.md),

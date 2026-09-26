@@ -747,7 +747,7 @@ Each step should be a separate reviewable change.
 | `docs/application-design-principles.md` | No immediate semantic change; Derived/Owned guidance already supports the agendas |
 | `docs/application-recommendations.md` | Rename granularity terminology; later add Relative Time-aware interleaving guidance |
 | `docs/roadmap.md` | Update agenda and implementation evidence status separately |
-| `docs/ai-workflow-research.md` | Later adopt the Claim/Evidence/Assessment/Provenance terminology and preserve human review boundary |
+| `research/exploratory/ai-workflow-research.md` | Later adopt the Claim/Evidence/Assessment/Provenance terminology and preserve human review boundary |
 | `research/exploratory/historical-ecosystem.md` | Mark Node-level Confidence and `aliasAs` identity statements as superseded research |
 | `research/exploratory/human-readable-reference-code.md` | Preserve Reference Code work; replace primary/alias hierarchy with Core fallback plus Names distinction |
 | `research/exploratory/semantic-vocabulary-architecture.md` | Clarify concept aliases versus Object Names and carry offline durability requirements |

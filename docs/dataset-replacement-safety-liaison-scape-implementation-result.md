@@ -252,7 +252,7 @@ so the LiaisonScape prerequisite in Dataset Handoff v0 is satisfied. The
 LiaisonScape Dataset Handoff v0 implementation is now complete and manually
 accepted, reusing the accepted replacement/open pipeline. Its implementation
 result is recorded in
-`docs/dataset-handoff-v0-liaison-scape-implementation-result.md`.
+`docs/liaisonscape/dataset-handoff-v0-liaison-scape-implementation-result.md`.
 
 NarrativeLine has no D1–D7 parity checkpoint in this result and remains
 deferred.

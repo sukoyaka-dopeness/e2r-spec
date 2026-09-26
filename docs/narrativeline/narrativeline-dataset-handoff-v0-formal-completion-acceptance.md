@@ -63,7 +63,7 @@ fragment lifecycle, unknown-fragment preservation, and Home action recovery.
 ### Cross-application safety and implementation evidence
 
 LiaisonScape Dataset Handoff v0 is recorded as COMPLETE / MANUALLY ACCEPTED
-in `dataset-handoff-v0-liaison-scape-implementation-result.md`. Its accepted
+in `../liaisonscape/dataset-handoff-v0-liaison-scape-implementation-result.md`. Its accepted
 evidence covers HTTPS acquisition, CORS and credential boundaries, explicit
 failure, replacement safety, fragment cleanup, beforeunload, and
 Browser Back/Forward behavior. The reported verification baseline was 180

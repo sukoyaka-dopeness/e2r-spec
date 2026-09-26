@@ -61,10 +61,12 @@ responsibility, references, and migration boundary. These directories are
 physical navigation, not a new authority or status hierarchy. Cross-cutting
 IA, planning, and authority documents may remain at the `docs/` root.
 
-The Wave 2 foldering preparation records a possible bounded Handoff evidence
-packet and a separate Validator 0.4.0 lifecycle cohort. These are candidates
-only; no additional path migration is authorized until an exact manifest is
-selected and revalidated.
+Wave 2A completed the bounded 13-document Capability / Dataset Handoff
+evidence migration across the Cross-App, NarrativeLine, and LiaisonScape
+landing zones; see the [migration result](documentation-ia-handoff-evidence-wave2-path-migration1-result.md).
+The separate Validator 0.4.0 lifecycle remains only a candidate in the
+[Wave 2 preparation](documentation-ia-application-workstream-foldering-wave2-preparation1.md)
+and requires its own exact authorization and fresh reference check.
 
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,

@@ -29,9 +29,9 @@ resolved both blockers and authorized this bounded runtime checkpoint.
 # Authorization
 
 The governing authorization is
-[Cross-App Capability Handoff Sender Navigation Authorization](cross-app/cross-app-capability-handoff-sender-navigation-authorization.md),
+[Cross-App Capability Handoff Sender Navigation Authorization](../cross-app/cross-app-capability-handoff-sender-navigation-authorization.md),
 with readiness details in
-[Cross-App Capability Handoff Implementation Readiness](cross-app-capability-handoff-implementation-readiness.md).
+[Cross-App Capability Handoff Implementation Readiness](../cross-app/cross-app-capability-handoff-implementation-readiness.md).
 
 The accepted decisions used here are:
 

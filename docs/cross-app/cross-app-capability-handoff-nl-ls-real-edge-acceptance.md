@@ -61,9 +61,9 @@ Handoff9   -> current-source Real Edge acceptance
 ```
 
 The historical blocked record remains
-[NarrativeLine Capability Handoff Sender Implementation](narrativeline-capability-handoff-sender-implementation.md).
+[NarrativeLine Capability Handoff Sender Implementation](../narrativeline/narrativeline-capability-handoff-sender-implementation.md).
 The Handoff8B implementation result remains
-[NarrativeLine Capability Handoff Sender Runtime Implementation](narrativeline-capability-handoff-sender-runtime-implementation.md).
+[NarrativeLine Capability Handoff Sender Runtime Implementation](../narrativeline/narrativeline-capability-handoff-sender-runtime-implementation.md).
 
 # Public deployment evidence boundary
 

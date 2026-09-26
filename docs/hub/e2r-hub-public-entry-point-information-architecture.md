@@ -377,8 +377,8 @@ This design is consistent with:
 
 - `docs/dataset-handoff-v0-design.md`;
 - `docs/dataset-acquisition-entry-point-alignment.md`;
-- `docs/narrativeline-dataset-handoff-v0-formal-completion-acceptance.md`;
-- `docs/dataset-handoff-v0-liaison-scape-implementation-result.md`;
+- `docs/narrativeline/narrativeline-dataset-handoff-v0-formal-completion-acceptance.md`;
+- `docs/liaisonscape/dataset-handoff-v0-liaison-scape-implementation-result.md`;
 - the current NarrativeLine and LiaisonScape User Guides; and
 - the current Hub implementation and Pages deployment workflow.
 

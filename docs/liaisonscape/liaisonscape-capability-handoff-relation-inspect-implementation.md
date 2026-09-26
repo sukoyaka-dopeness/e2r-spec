@@ -47,11 +47,11 @@ Not implemented:
 
 The implementation is bounded by:
 
-- [Cross-App Capability Handoff Discovery Audit](cross-app-capability-handoff-discovery-audit.md);
-- [Cross-App Capability Handoff Target Contract](cross-app/cross-app-capability-handoff-target-contract.md);
-- [Cross-App Capability Handoff URL/Transport Contract](cross-app/cross-app-capability-handoff-url-transport-contract.md);
-- [Cross-App Capability Handoff Current Dataset Transfer Design](cross-app/cross-app-capability-handoff-current-dataset-transfer-design.md); and
-- [Cross-App Capability Handoff Implementation Readiness](cross-app-capability-handoff-implementation-readiness.md).
+- [Cross-App Capability Handoff Discovery Audit](../cross-app/cross-app-capability-handoff-discovery-audit.md);
+- [Cross-App Capability Handoff Target Contract](../cross-app/cross-app-capability-handoff-target-contract.md);
+- [Cross-App Capability Handoff URL/Transport Contract](../cross-app/cross-app-capability-handoff-url-transport-contract.md);
+- [Cross-App Capability Handoff Current Dataset Transfer Design](../cross-app/cross-app-capability-handoff-current-dataset-transfer-design.md); and
+- [Cross-App Capability Handoff Implementation Readiness](../cross-app/cross-app-capability-handoff-implementation-readiness.md).
 
 The accepted transport is a flat fragment containing the existing HTTPS
 `datasetUrl`, canonical full `targetObjectId`, optional exact-case

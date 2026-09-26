@@ -7,7 +7,7 @@
 **Status:** **AUDIT COMPLETE / DESIGN DIRECTION RECORDED / IMPLEMENTATION NOT AUTHORIZED**
 
 This is a discovery and design audit following the closure of the bounded
-[Cross-App Relation deletion capability](cross-app-relation-deletion-capability-closure.md).
+[Cross-App Relation deletion capability](../cross-app-relation-deletion-capability-closure.md).
 It records how a future capability-based Handoff could identify a suitable
 recipient application. It does not implement Handoff routing, a manifest,
 runtime discovery, or a new URL syntax.
@@ -34,11 +34,11 @@ the current inventory.
 
 ### NarrativeLine
 
-The accepted [NL-H1A startup acquisition](narrativeline-dataset-handoff-nl-h1a-startup-acquisition-acceptance.md)
-and [NL-H1B fragment lifecycle](narrativeline-dataset-handoff-nl-h1b-fragment-lifecycle-acceptance.md)
+The accepted [NL-H1A startup acquisition](../narrativeline/narrativeline-dataset-handoff-nl-h1a-startup-acquisition-acceptance.md)
+and [NL-H1B fragment lifecycle](../narrativeline/narrativeline-dataset-handoff-nl-h1b-fragment-lifecycle-acceptance.md)
 records establish the current v0 behavior. The source implementation is in
-[`DatasetHandoffService`](../../e2r-narrative-line/src/services/DatasetHandoffService.ts)
-and [`DatasetHandoffFragmentService`](../../e2r-narrative-line/src/services/DatasetHandoffFragmentService.ts).
+[`DatasetHandoffService`](../../../e2r-narrative-line/src/services/DatasetHandoffService.ts)
+and [`DatasetHandoffFragmentService`](../../../e2r-narrative-line/src/services/DatasetHandoffFragmentService.ts).
 
 At the accepted NarrativeLine HEAD `7a695b3`, the application:
 
@@ -57,15 +57,15 @@ This is Dataset acquisition and replacement behavior. It does not declare
 `inspect Relation`, `delete Relation`, or any other machine-readable
 capability, and it does not carry a target Object.
 
-The [NarrativeLine Dataset Handoff v0 formal completion](narrativeline-dataset-handoff-v0-formal-completion-acceptance.md)
+The [NarrativeLine Dataset Handoff v0 formal completion](../narrativeline/narrativeline-dataset-handoff-v0-formal-completion-acceptance.md)
 is the accepted v0 completion record. It does not claim Capability Handoff or
 Hub-wide recipient discovery.
 
 ### LiaisonScape
 
 The accepted [LiaisonScape Dataset Handoff v0 implementation
-result](dataset-handoff-v0-liaison-scape-implementation-result.md) and source
-[`src/dataset-handoff.ts`](../../e2r-liaison-scape/src/dataset-handoff.ts)
+result](../liaisonscape/dataset-handoff-v0-liaison-scape-implementation-result.md) and source
+[`src/dataset-handoff.ts`](../../../e2r-liaison-scape/src/dataset-handoff.ts)
 establish the current behavior at HEAD `34d8164`.
 
 LiaisonScape:
@@ -86,7 +86,7 @@ a published capability declaration.
 
 ### Hub
 
-At Hub HEAD `9de6399`, [`src/App.tsx`](../../e2r-hub/src/App.tsx) contains the
+At Hub HEAD `9de6399`, [`src/App.tsx`](../../../e2r-hub/src/App.tsx) contains the
 source-level `buildDatasetHandoffUrl(applicationUrl, datasetUrl)` helper. The
 Hub sample cards generate explicit links to NarrativeLine or LiaisonScape in
 the form `applicationUrl#datasetUrl=<encoded dataset URL>`. The direct sample
@@ -107,7 +107,7 @@ Hub direct Handoff as a future formal acceptance item.
 
 ## Dataset Handoff v0 boundary
 
-The [Dataset Handoff v0 design](dataset-handoff-v0-design.md) defines the
+The [Dataset Handoff v0 design](../dataset-handoff-v0-design.md) defines the
 minimal existing transport:
 
 ```text
@@ -524,7 +524,7 @@ The bounded Cross-App Relation deletion capability remains:
 FORMALLY ACCEPTED / CROSS-APP IMPLEMENTATION ALIGNED / COMPLETE
 ```
 
-The [closure record](cross-app-relation-deletion-capability-closure.md) is not
+The [closure record](../cross-app-relation-deletion-capability-closure.md) is not
 reopened by this audit. Both accepted applications already support the tested
 explicit inspect/delete path, so this audit does not add a Handoff dependency
 to that capability. Capability Handoff is a separate future routing lane.

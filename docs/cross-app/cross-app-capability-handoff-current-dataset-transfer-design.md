@@ -486,7 +486,7 @@ design-only checkpoint.
 ## Next bounded step
 
 The next checkpoint is the [Capability Handoff Implementation Readiness]
-(../cross-app-capability-handoff-implementation-readiness.md) audit. It verifies
+(cross-app-capability-handoff-implementation-readiness.md) audit. It verifies
 exact export/open entry points, round-trip preservation of unknown Extensions,
 dirty/pending transitions, failure-state ownership, manual target
 re-selection, and the absence of stale URL fallback. Runtime work remains

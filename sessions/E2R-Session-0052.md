@@ -161,7 +161,7 @@ accepted source/production safety substitute because a public HTTPS browser
 cannot inject a local file without user file-selection permission.
 
 The complete acceptance record is
-[cross-app-capability-handoff-public-nl-ls-acceptance.md](../docs/cross-app-capability-handoff-public-nl-ls-acceptance.md).
+[cross-app-capability-handoff-public-nl-ls-acceptance.md](../docs/cross-app/cross-app-capability-handoff-public-nl-ls-acceptance.md).
 LiaisonScape remained at accepted public revision `95a8c56` and was not
 changed or redeployed. Hub and ai-knowledge were untouched; the existing dirty
 ai-knowledge playbook change was preserved.

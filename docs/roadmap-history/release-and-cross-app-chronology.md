@@ -381,7 +381,7 @@ runtime, or ai-knowledge change was made by this documentation-only closure.
 
 `XAPP-CAPABILITY-HANDOFF1-DISCOVERY-AUDIT` is **AUDIT COMPLETE / DESIGN
 DIRECTION RECORDED / IMPLEMENTATION NOT AUTHORIZED**. The audit is recorded in
-[Cross-App Capability Handoff Discovery Audit](../cross-app-capability-handoff-discovery-audit.md).
+[Cross-App Capability Handoff Discovery Audit](../cross-app/cross-app-capability-handoff-discovery-audit.md).
 
 The source audit confirms that NarrativeLine and LiaisonScape implement the
 accepted Dataset Handoff v0 `datasetUrl` startup flow, while Hub currently
@@ -496,7 +496,7 @@ requires explicit authorization from that checkpoint.
 `XAPP-CAPABILITY-HANDOFF5-IMPLEMENTATION-READINESS` is **READINESS AUDIT
 COMPLETE / READY FOR A BOUNDED IMPLEMENTATION CHECKPOINT / IMPLEMENTATION NOT
 AUTHORIZED**. The audit is recorded in [Cross-App Capability Handoff
-Implementation Readiness](../cross-app-capability-handoff-implementation-readiness.md).
+Implementation Readiness](../cross-app/cross-app-capability-handoff-implementation-readiness.md).
 
 The audit confirms that the accepted contracts can be implemented with
 responsibility-based application modularization. e2r-spec owns contract
@@ -527,7 +527,7 @@ remains closed.
 `XAPP-CAPABILITY-HANDOFF6-LS-RECIPIENT-INSPECT1` is **IMPLEMENTED / AUTOMATED
 GREEN / BOUNDED BROWSER SMOKE PASS** at LiaisonScape commit `0f7fe1c`. The
 implementation record is [LiaisonScape Capability Handoff Relation Inspect
-Implementation](../liaisonscape-capability-handoff-relation-inspect-implementation.md).
+Implementation](../liaisonscape/liaisonscape-capability-handoff-relation-inspect-implementation.md).
 
 LiaisonScape now parses the accepted targeted flat fragment while preserving
 ordinary Dataset Handoff v0 behavior, reuses the existing HTTPS Dataset
@@ -553,7 +553,7 @@ dialog-spacing findings remain deferred.
 `XAPP-CAPABILITY-HANDOFF7-LS-RECIPIENT-DELETE-INTENT1` is **IMPLEMENTED /
 AUTOMATED GREEN / BOUNDED BROWSER SMOKE PASS** at LiaisonScape commit
 `95a8c56`. The implementation record is [LiaisonScape Capability Handoff
-Relation Delete Intent Implementation](../liaisonscape-capability-handoff-relation-delete-intent-implementation.md).
+Relation Delete Intent Implementation](../liaisonscape/liaisonscape-capability-handoff-relation-delete-intent-implementation.md).
 
 LiaisonScape now treats accepted `relation.delete` as a non-destructive intent:
 it reuses Dataset Handoff v0 acquisition, resolves the exact canonical Relation,
@@ -578,7 +578,7 @@ dialog-spacing findings remain deferred.
 `XAPP-CAPABILITY-HANDOFF8-NL-SENDER1` is **BLOCKED / NO RUNTIME CHANGE**. The
 requested NarrativeLine sender slice was stopped at the pre-implementation
 gate and is recorded in [NarrativeLine Capability Handoff
-Sender Implementation](../narrativeline-capability-handoff-sender-implementation.md).
+Sender Implementation](../narrativeline/narrativeline-capability-handoff-sender-implementation.md).
 
 At that checkpoint, the readiness document still stated **IMPLEMENTATION NOT
 AUTHORIZED** and did not record whether targeted recipient navigation was
@@ -621,7 +621,7 @@ implementation; this authorization does not begin it automatically.
 
 `XAPP-CAPABILITY-HANDOFF8B-NL-SENDER-IMPLEMENTATION1` is **IMPLEMENTED /
 AUTOMATED GREEN / BOUNDED CROSS-APP SMOKE PARTIAL**. The implementation record
-is [NarrativeLine Capability Handoff Sender Runtime Implementation](../narrativeline-capability-handoff-sender-runtime-implementation.md).
+is [NarrativeLine Capability Handoff Sender Runtime Implementation](../narrativeline/narrativeline-capability-handoff-sender-runtime-implementation.md).
 
 NarrativeLine now exposes the authorized Entity deletion-resolution Relation
 row sender surface for `relation.inspect`. It uses a pure targeted URL builder,
@@ -657,7 +657,7 @@ deferred work remain separate.
 
 `XAPP-CAPABILITY-HANDOFF9-NL-LS-REAL-EDGE-ACCEPTANCE1` is **FORMALLY ACCEPTED /
 CURRENT SOURCE REVISIONS**. The acceptance record is [Cross-App Capability
-Handoff NL-LS Real Edge Acceptance](../cross-app-capability-handoff-nl-ls-real-edge-acceptance.md).
+Handoff NL-LS Real Edge Acceptance](../cross-app/cross-app-capability-handoff-nl-ls-real-edge-acceptance.md).
 
 Current-source revisions `158adec` (NarrativeLine), `95a8c56` (LiaisonScape),
 and `39d6e08` (e2r-spec record) passed the fresh automated gates and bounded
@@ -684,7 +684,7 @@ work, third-party interoperability, and ai-knowledge changes remain deferred.
 
 `XAPP-CAPABILITY-HANDOFF10-PUBLIC-DEPLOYMENT-PARITY-READINESS1` is
 **DIAGNOSIS COMPLETE / PUSH-DEPLOY NOT PERFORMED**. The readiness record is
-[Cross-App Capability Handoff Public Deployment Parity Readiness](../cross-app-capability-handoff-public-deployment-parity-readiness.md).
+[Cross-App Capability Handoff Public Deployment Parity Readiness](../cross-app/cross-app-capability-handoff-public-deployment-parity-readiness.md).
 
 Current-source acceptance remains green at NarrativeLine `158adec`,
 LiaisonScape `95a8c56`, and the e2r-spec acceptance record `fb05042`.
@@ -729,7 +729,7 @@ dialog spacing, runtime fixes, and ai-knowledge changes remain deferred.
 `XAPP-CAPABILITY-HANDOFF12-NL-SENDER-PUBLIC-DEPLOYMENT1` is **PUBLIC
 NARRATIVELINE SENDER AND PUBLIC NL-to-LS E2E ACCEPTED**. The deployment and
 browser evidence is recorded in [Public NarrativeLine to LiaisonScape
-Capability Handoff Acceptance](../cross-app-capability-handoff-public-nl-ls-acceptance.md).
+Capability Handoff Acceptance](../cross-app/cross-app-capability-handoff-public-nl-ls-acceptance.md).
 
 With explicit authorization, NarrativeLine `158adec` was pushed to `main` and
 deployed through the existing GitHub Pages workflow. Actions run `33146076558`

@@ -7,7 +7,7 @@
 **Status:** **DESIGN ACCEPTED / TRANSPORT CONTRACT DEFINED IN FOLLOW-UP / IMPLEMENTATION NOT AUTHORIZED**
 
 This document defines the transport-independent semantic contract for a future
-capability-based Cross-App Handoff. It follows the [discovery audit](../cross-app-capability-handoff-discovery-audit.md)
+capability-based Cross-App Handoff. It follows the [discovery audit](cross-app-capability-handoff-discovery-audit.md)
 and adopts its first-party static capability direction. Its accepted URL
 transport is defined in the [URL/Transport Contract](cross-app-capability-handoff-url-transport-contract.md);
 this document remains the authority for transport-independent meaning and does
@@ -54,10 +54,10 @@ That value identifies where a recipient should obtain a Dataset. It is not
 Dataset identity, current in-memory content, a revision, provenance, a target
 Object, or a capability request.
 
-The accepted implementations are recorded for [NarrativeLine](../narrativeline-dataset-handoff-v0-formal-completion-acceptance.md)
-and [LiaisonScape](../dataset-handoff-v0-liaison-scape-implementation-result.md).
+The accepted implementations are recorded for [NarrativeLine](../narrativeline/narrativeline-dataset-handoff-v0-formal-completion-acceptance.md)
+and [LiaisonScape](../liaisonscape/dataset-handoff-v0-liaison-scape-implementation-result.md).
 Hub's current sample links remain ordinary explicit Dataset Handoff links; the
-source implementation is documented in the [discovery audit](../cross-app-capability-handoff-discovery-audit.md).
+source implementation is documented in the [discovery audit](cross-app-capability-handoff-discovery-audit.md).
 
 Future Capability Handoff must not silently redefine `datasetUrl` by adding
 target or capability meaning to existing v0 parsers.
@@ -578,11 +578,11 @@ untouched.
 
 This design was checked against:
 
-- [Cross-App Capability Handoff Discovery Audit](../cross-app-capability-handoff-discovery-audit.md);
+- [Cross-App Capability Handoff Discovery Audit](cross-app-capability-handoff-discovery-audit.md);
 - [Cross-App Relation Deletion Capability Closure](../cross-app-relation-deletion-capability-closure.md);
 - [Dataset Handoff v0](../dataset-handoff-v0-design.md);
-- [NarrativeLine Dataset Handoff v0 Formal Completion](../narrativeline-dataset-handoff-v0-formal-completion-acceptance.md);
-- [LiaisonScape Dataset Handoff v0 implementation](../dataset-handoff-v0-liaison-scape-implementation-result.md);
+- [NarrativeLine Dataset Handoff v0 Formal Completion](../narrativeline/narrativeline-dataset-handoff-v0-formal-completion-acceptance.md);
+- [LiaisonScape Dataset Handoff v0 implementation](../liaisonscape/dataset-handoff-v0-liaison-scape-implementation-result.md);
 - [Dataset Acquisition Entry Point Alignment](../dataset-acquisition-entry-point-alignment.md);
 - current NarrativeLine source at `7a695b3`;
 - current LiaisonScape source at `34d8164`; and

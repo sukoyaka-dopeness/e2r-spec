@@ -19,7 +19,7 @@ sender action.
 # Readiness authority
 
 The current
-[Cross-App Capability Handoff Implementation Readiness](cross-app-capability-handoff-implementation-readiness.md)
+[Cross-App Capability Handoff Implementation Readiness](../cross-app/cross-app-capability-handoff-implementation-readiness.md)
 resolves the bounded design decisions and lists NarrativeLine after the
 recipient in its recommended sequence, but its current status and conclusion
 both say **IMPLEMENTATION NOT AUTHORIZED**. The Handoff8 request therefore

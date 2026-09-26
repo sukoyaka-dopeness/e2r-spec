@@ -324,7 +324,7 @@ which remains partial recoverable session state rather than a complete dirty
 state. The subsequent bounded implementation added Dataset baseline tracking,
 pending-user-work detection, candidate staging, replacement confirmation, and
 conditional `beforeunload` protection. Its current acceptance is recorded in
-`docs/narrativeline-dataset-handoff-v0-formal-completion-acceptance.md`.
+`docs/narrativeline/narrativeline-dataset-handoff-v0-formal-completion-acceptance.md`.
 
 LiaisonScape has completed and manually accepted D1-D7 implementation,
 including Dataset baseline tracking, pending-user-work detection, D6
@@ -342,7 +342,7 @@ follow-up remains deferred
 ```
 
 The accepted LiaisonScape implementation evidence is recorded in
-`docs/dataset-handoff-v0-liaison-scape-implementation-result.md`.
+`docs/liaisonscape/dataset-handoff-v0-liaison-scape-implementation-result.md`.
 
 ## Mutable URL and future revision boundary
 

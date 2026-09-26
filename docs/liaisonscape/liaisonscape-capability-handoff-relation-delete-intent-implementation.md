@@ -22,12 +22,12 @@ behavior is changed.
 
 The implementation follows:
 
-- [Cross-App Capability Handoff Target Contract](cross-app/cross-app-capability-handoff-target-contract.md);
-- [Cross-App Capability Handoff URL/Transport Contract](cross-app/cross-app-capability-handoff-url-transport-contract.md);
-- [Cross-App Capability Handoff Current Dataset Transfer Design](cross-app/cross-app-capability-handoff-current-dataset-transfer-design.md);
-- [Cross-App Capability Handoff Implementation Readiness](cross-app-capability-handoff-implementation-readiness.md);
+- [Cross-App Capability Handoff Target Contract](../cross-app/cross-app-capability-handoff-target-contract.md);
+- [Cross-App Capability Handoff URL/Transport Contract](../cross-app/cross-app-capability-handoff-url-transport-contract.md);
+- [Cross-App Capability Handoff Current Dataset Transfer Design](../cross-app/cross-app-capability-handoff-current-dataset-transfer-design.md);
+- [Cross-App Capability Handoff Implementation Readiness](../cross-app/cross-app-capability-handoff-implementation-readiness.md);
 - [LiaisonScape Capability Handoff Relation Inspect Implementation](liaisonscape-capability-handoff-relation-inspect-implementation.md); and
-- [Cross-App Relation Deletion Capability Closure](cross-app-relation-deletion-capability-closure.md).
+- [Cross-App Relation Deletion Capability Closure](../cross-app-relation-deletion-capability-closure.md).
 
 ## Runtime revision
 

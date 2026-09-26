@@ -423,7 +423,7 @@ IMPLEMENTATION NOT AUTHORIZED
 ```
 
 The next bounded checkpoint is the [Capability Handoff Implementation
-Readiness](../cross-app-capability-handoff-implementation-readiness.md) audit. It
+Readiness](cross-app-capability-handoff-implementation-readiness.md) audit. It
 audits the current NL/LS parsers, URL cleanup ownership, startup failure
 states, static capability table placement, URL-size policy, and the design
 vectors above, together with the Current Dataset Transfer Design. Runtime

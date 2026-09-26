@@ -13,7 +13,7 @@ application behavior.
 ## NarrativeLine Dataset Handoff acceptance
 
 NarrativeLine NL-H1A Startup Acquisition Foundation was formally accepted in
-`docs/narrativeline-dataset-handoff-nl-h1a-startup-acquisition-acceptance.md`.
+`docs/narrativeline/narrativeline-dataset-handoff-nl-h1a-startup-acquisition-acceptance.md`.
 The implementation checkpoint was:
 
 - `13501723d253cb3a5589f675ab6f32c14ed76894` — add NarrativeLine Dataset
@@ -35,7 +35,7 @@ handoff acquisition is actually in progress.
 
 NarrativeLine NL-H1B Fragment Lifecycle & Source Semantics was formally
 accepted in
-`docs/narrativeline-dataset-handoff-nl-h1b-fragment-lifecycle-acceptance.md`.
+`docs/narrativeline/narrativeline-dataset-handoff-nl-h1b-fragment-lifecycle-acceptance.md`.
 The implementation checkpoint was:
 
 - `19345bb` — manage NarrativeLine Dataset handoff fragment lifecycle.
@@ -51,7 +51,7 @@ verification reported 70 tests passed, lint passed, build passed, and
 ## LiaisonScape Dataset Handoff and safety evidence
 
 LiaisonScape Dataset Handoff v0 is recorded as COMPLETE / MANUALLY ACCEPTED in
-`docs/dataset-handoff-v0-liaison-scape-implementation-result.md`.
+`docs/liaisonscape/dataset-handoff-v0-liaison-scape-implementation-result.md`.
 The accepted implementation checkpoints are:
 
 - `b350827` — fragment helpers;

@@ -23,7 +23,7 @@ endpoint separators or dialog spacing.
 # Blocking context
 
 The first Handoff8 attempt was stopped and recorded in
-[NarrativeLine Capability Handoff Sender Implementation](../narrativeline-capability-handoff-sender-implementation.md).
+[NarrativeLine Capability Handoff Sender Implementation](../narrativeline/narrativeline-capability-handoff-sender-implementation.md).
 At that time the readiness authority still said `IMPLEMENTATION NOT
 AUTHORIZED`, and same-tab versus new-tab/window behavior was not recorded.
 That historical record remains unchanged.

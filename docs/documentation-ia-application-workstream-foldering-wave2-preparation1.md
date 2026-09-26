@@ -252,3 +252,10 @@ bounded migrations, but this preparation does not authorize either one.
 No path, content, authority, status, or Roadmap change is performed by this
 preparation. The next actual migration requires Human selection of the exact
 manifest.
+
+### Subsequent disposition — Wave 2A
+
+Human later approved the exact 13-document Handoff evidence packet. The
+bounded path migration and reference repairs are recorded in the
+[Wave 2A migration result](documentation-ia-handoff-evidence-wave2-path-migration1-result.md).
+The separate Validator 0.4.0 cohort remains unperformed.

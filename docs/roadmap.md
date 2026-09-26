@@ -479,15 +479,14 @@ records that disposition and its structural artifacts. `0.1.0` remains
 unchanged; `0.2.0` remains Draft/Candidate. The separate local Validator
 exact-version support checkpoint is recorded in the
 [Validator support result](./validator/relative-time-0.2.0-exact-version-support-result1.md).
-This is read-only source support, not a package release or application
-support. Validator `0.7.0` is prepared locally under the compatible-new-
-validation MINOR rule, but remains unpublished; normal package availability
-and fetchability of the pinned E2R-SPEC input remain prerequisites. The
-Candidate is not Stable and no migration is implied. The
+The [Validator `0.7.0` publication result](./validator/validator-0.7.0-relative-time-0.2.0-publication-result1.md)
+records normally consumable read-only exact-version support for `0.2.0`, with
+`0.1.0` behavior preserved. The Candidate is not Stable and no Dataset
+migration or application acceptance is implied. The
 [first-consumer readiness preparation](./temporal/relative-time-0.2.0-first-consumer-readiness1.md)
 records the evidence for the Human-selected NarrativeLine first-consumer scope
 A: exact-version read-only recognition, diagnostics, and round-trip
-preservation, conditional on a normally consumable Validator artifact. The
+preservation. The normal-package prerequisite is now met. The
 first slice uses existing generic diagnostics without dedicated Relative Time
 EN/JA guidance. Timeline ordering or ordinal presentation, authoring, Derived
 reasoning, solver, and migration are outside this scope; no application

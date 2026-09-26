@@ -476,9 +476,11 @@ The Human subsequently selected exact Candidate `0.2.0`, the five-Feature
 representation, and no automatic or required `0.1.0` migration. The bounded
 [0.2.0 Draft/schema checkpoint](./temporal/relative-time-0.2.0-normative-draft-schema-checkpoint-result1.md)
 records that disposition and its structural artifacts. `0.1.0` remains
-unchanged; `0.2.0` remains Draft/Candidate, with no Validator or application
-support implied. The next separate checkpoint is exact-version Validator
-support review.
+unchanged; `0.2.0` remains Draft/Candidate. The separate local Validator
+exact-version support checkpoint is recorded in the
+[Validator support result](./validator/relative-time-0.2.0-exact-version-support-result1.md).
+This is read-only source support, not a package release or application
+support; the Candidate is not Stable and no migration is implied.
 
 > Historical snapshot — superseded by the current `NL-H2-R1` entry near the
 > end of this roadmap. The following readiness text records the pre-acceptance

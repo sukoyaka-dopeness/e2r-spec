@@ -466,11 +466,12 @@ The atomic-semantics phase and minimum state sync are closed. Current
 Documentation IA direction and migration status are recorded immediately
 above; this entry does not broaden either scope.
 
-The next Human decision under preparation is whether to authorize a bounded
-Draft/schema integration-and-versioning design checkpoint for the already
-adopted semantics, or to defer that work while Draft 0.1.0 remains unchanged.
-This is not a priority or implementation authorization; see the [decision
-preparation](./temporal/relative-time-post-adoption-next-human-decision-preparation1.md).
+The bounded integration-design preparation is authorized and recorded. The
+next Human decision is whether to revise the existing draft identity/version,
+prepare a new exact candidate version under that identity, use a distinct
+Extension identity, or defer integration. This is not a version, migration,
+schema, Validator, or implementation authorization; see the [integration
+design preparation](./temporal/relative-time-draft-schema-integration-design-preparation1.md).
 
 > Historical snapshot — superseded by the current `NL-H2-R1` entry near the
 > end of this roadmap. The following readiness text records the pre-acceptance

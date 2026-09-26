@@ -77,6 +77,15 @@ files pass; nested Markdown is outside the gate. The validator does not decide
 ownership, authority, normativity, status, acceptance, or whether a rationale
 should be approved.
 
+### Literal Markdown-extension matching
+
+The root gate recognizes only filenames whose final extension is the literal
+`.md`, case-insensitively. Allowlist paths must likewise end in a literal
+`.md` extension (also case-insensitively); names such as `fooamd` and `fooXmd`
+are not Markdown paths. This matcher-clarity correction leaves the reviewed
+five-path allowlist, root set, and placement policy unchanged. Regression
+coverage exercises both false suffixes and an uppercase `.MD` extension.
+
 ## Validation
 
 - `npm run test:docs-root-placement`: PASS, including exact-set acceptance,

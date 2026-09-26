@@ -8,7 +8,7 @@ export function validateDocsRootPlacement(docsRoot, manifest) {
 
   try {
     actualPaths = fs.readdirSync(docsRoot, { withFileTypes: true })
-      .filter((entry) => entry.isFile() && /\.md$/i.test(entry.name))
+      .filter((entry) => entry.isFile() && /[.]md$/i.test(entry.name))
       .map((entry) => `docs/${entry.name}`)
       .sort();
   } catch (error) {
@@ -46,7 +46,7 @@ export function validateDocsRootPlacement(docsRoot, manifest) {
     if (entryKeys.join(",") !== "path,rationale") {
       errors.push(`${label} must contain exactly the keys path and rationale.`);
     }
-    if (typeof entry.path !== "string" || !/^docs\/[^/\\]+\.md$/.test(entry.path)) {
+    if (typeof entry.path !== "string" || !/^docs\/[^/\\]+[.]md$/i.test(entry.path)) {
       errors.push(`${label} has a malformed immediate-root Markdown path.`);
       continue;
     }

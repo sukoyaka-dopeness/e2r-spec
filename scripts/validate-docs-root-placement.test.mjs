@@ -42,6 +42,27 @@ test("allows the exact reviewed root set and ignores Markdown below subfolders",
   });
 });
 
+test("recognizes only a literal .md extension, case-insensitively", () => {
+  withDocsRoot((docsRoot) => {
+    write(docsRoot, "README.md");
+    write(docsRoot, "roadmap.md");
+    write(docsRoot, "approved-uppercase.MD");
+    write(docsRoot, "fooamd");
+    write(docsRoot, "fooXmd");
+    const entries = [
+      ...initialEntries,
+      { path: "docs/approved-uppercase.MD", rationale: "Literal uppercase Markdown extension." },
+    ];
+    const result = validateDocsRootPlacement(docsRoot, manifest(entries));
+    assert.deepEqual(result.errors, []);
+    assert.deepEqual(result.actualPaths, [
+      "docs/README.md",
+      "docs/approved-uppercase.MD",
+      "docs/roadmap.md",
+    ]);
+  });
+});
+
 test("rejects a newly added immediate-root Markdown document", () => {
   withDocsRoot((docsRoot) => {
     write(docsRoot, "README.md");
@@ -88,6 +109,8 @@ test("rejects stale, duplicate, and malformed allowlist records", () => {
       { path: "docs/README.md", rationale: "Duplicate." },
       { path: "docs/missing.md", rationale: "Stale." },
       { path: "docs/nested/file.md", rationale: "Not root-level." },
+      { path: "docs/fooamd", rationale: "Missing literal extension dot." },
+      { path: "docs/fooXmd", rationale: "Missing literal extension dot." },
       { path: "docs/blank.md", rationale: "   " },
     ];
     const result = validateDocsRootPlacement(docsRoot, manifest(entries));

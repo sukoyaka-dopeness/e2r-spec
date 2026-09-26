@@ -35,6 +35,7 @@ repository. Start with the responsibility that matches the question:
 - The bounded [Capability / Dataset Handoff evidence Wave 2A migration](documentation-ia-handoff-evidence-wave2-path-migration1-result.md) moved 13 records across the Cross-App, NarrativeLine, and LiaisonScape zones without merging their status or authority. The same [Wave 2 preparation](documentation-ia-application-workstream-foldering-wave2-preparation1.md) records the subsequent Validator 0.4.0 Wave 2B migration.
 - The bounded [Validator 0.4.0 lifecycle Wave 2B migration](documentation-ia-validator-0.4.0-lifecycle-wave2b-path-migration1-result.md) moved only its five package / consumer records; publication history and checkpoint authorization remain unchanged.
 - The [docs-wide organization audit](documentation-ia-docs-wide-organization-audit1.md) preserves the inventory and earlier options considered before the Human foldering decision.
+- The [post-Wave-2 residual responsibility audit](documentation-ia-post-wave2-residual-responsibility-audit1.md) assesses the remaining root cohorts; it is preparation only and authorizes no additional moves.
 
 Follow links from the responsible planning or evidence authority for current
 checkpoint details; this Hub is not an inventory of every audit and result.

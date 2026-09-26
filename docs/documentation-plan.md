@@ -68,6 +68,11 @@ Wave 2B then moved only the five Validator 0.4.0 package / consumer lifecycle
 records; see the [Wave 2B result](documentation-ia-validator-0.4.0-lifecycle-wave2b-path-migration1-result.md).
 Neither path migration changed document authority or checkpoint status.
 
+The [post-Wave-2 residual responsibility audit](documentation-ia-post-wave2-residual-responsibility-audit1.md)
+is a preparation-only review of remaining root cohorts. It authorizes no path
+changes; any next migration requires a separate Human selection and exact
+manifest.
+
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,
 `docs/audits/`, `docs/acceptances/`, `docs/applications/`, or `docs/sessions/`

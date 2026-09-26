@@ -490,7 +490,12 @@ preservation. The normal-package prerequisite is now met. The
 first slice uses existing generic diagnostics without dedicated Relative Time
 EN/JA guidance. Timeline ordering or ordinal presentation, authoring, Derived
 reasoning, solver, and migration are outside this scope; no application
-implementation is accepted by this planning decision.
+implementation was accepted by that planning decision. NarrativeLine's bounded
+scope A implementation result
+(`e2r-narrative-line/docs/relative-time-0.2.0-first-consumer-scope-a-result.md`)
+now records local exact-version read-only support through the published
+Validator `0.7.0` dependency and round-trip tests. It does not establish
+Relative Time semantic presentation, Stable maturity, or an application release.
 
 > Historical snapshot — superseded by the current `NL-H2-R1` entry near the
 > end of this roadmap. The following readiness text records the pre-acceptance

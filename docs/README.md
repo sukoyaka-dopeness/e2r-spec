@@ -32,6 +32,7 @@ repository. Start with the responsibility that matches the question:
 - The bounded [Validator integration path migration](documentation-ia-validator-integration-path-migration1-result.md) moved only the three separate Production Validator Extension integration lifecycle records; their recorded checkpoint statuses and normative specification authorities are unchanged.
 - The bounded [LiaisonScape Pin evidence path migration](documentation-ia-liaisonscape-pin-path-migration1-result.md) moved only three distinct Pin persistence, Save integration, and UI result records; their dispositions and Extension maturity remain separate.
 - The bounded [Cross-App Current Dataset Handoff contract path migration](documentation-ia-cross-app-current-dataset-handoff-path-migration1-result.md) moved only the four design-contract and sender-navigation authorization records; runtime implementation and acceptance evidence remain in their existing locations.
+- The [application/workstream foldering Wave 2 preparation](documentation-ia-application-workstream-foldering-wave2-preparation1.md) identifies a 13-record Handoff evidence packet and a separate Validator 0.4.0 lifecycle as possible future migrations; it authorizes no moves.
 - The [docs-wide organization audit](documentation-ia-docs-wide-organization-audit1.md) preserves the inventory and earlier options considered before the Human foldering decision.
 
 Follow links from the responsible planning or evidence authority for current

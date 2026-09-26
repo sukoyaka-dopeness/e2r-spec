@@ -196,3 +196,11 @@ sender-navigation authorization records for `docs/cross-app/`. The first
 three contract records and the sender authorization remain separate in scope;
 no runtime implementation or acceptance record moved. See the
 [bounded migration result](documentation-ia-cross-app-current-dataset-handoff-path-migration1-result.md).
+
+### Subsequent preparation — Application/workstream foldering Wave 2
+
+The [Wave 2 preparation](documentation-ia-application-workstream-foldering-wave2-preparation1.md)
+re-audits the remaining root documents and proposes a 13-record Handoff
+evidence packet across the Cross-App, NarrativeLine, and LiaisonScape landing
+zones, with a separate five-record Validator 0.4.0 lifecycle candidate. No
+additional path migration is authorized by that preparation.

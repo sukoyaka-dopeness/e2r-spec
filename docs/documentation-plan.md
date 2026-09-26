@@ -61,6 +61,11 @@ responsibility, references, and migration boundary. These directories are
 physical navigation, not a new authority or status hierarchy. Cross-cutting
 IA, planning, and authority documents may remain at the `docs/` root.
 
+The Wave 2 foldering preparation records a possible bounded Handoff evidence
+packet and a separate Validator 0.4.0 lifecycle cohort. These are candidates
+only; no additional path migration is authorized until an exact manifest is
+selected and revalidated.
+
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,
 `docs/audits/`, `docs/acceptances/`, `docs/applications/`, or `docs/sessions/`

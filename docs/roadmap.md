@@ -46,7 +46,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia/documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia/documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](documentation-ia/roadmap-residual-responsibility-audit3.md); [audit 2](documentation-ia/roadmap-residual-responsibility-audit2.md); [audit 1](documentation-ia/roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](documentation-ia/roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](documentation-ia/roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](documentation-ia/roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](documentation-ia/roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](documentation-ia/roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](documentation-ia/roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](documentation-ia/roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); [Seed PR-3 Browser history migration result](documentation-ia/roadmap-seed-pr3-browser-history-migration1-result.md); [this PR-3 pre-Browser history migration](documentation-ia/roadmap-seed-pr3-prebrowser-history-migration1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
-| History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](./temporal/history-2-user-facing-authoring-scope-result.md); [bounded scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader shapes and Relative Time authoring remain outside the current scope |
+| History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](./temporal/history-2-user-facing-authoring-scope-result.md); [bounded scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader History 2 shapes remain outside scope; NarrativeLine Relative Time authoring is a separate application workstream below |
 | H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
 | History 2 bounded Stable registration | **IMPLEMENTED / PROFILE REGISTERED / VALIDATOR GREEN / PUBLIC SAMPLE RELEASE COMPLETE** | [implementation result](./temporal/history-2-position-circa-stable-profile-implementation-result.md); [sample migration result](./public-samples/public-sample-h2-migration-and-self-description-current-state-refresh-result.md); `history@2.0.0` remains Candidate while `history@2.0.0 / position-circa` is the adopted Stable profile; broader H2 surfaces remain deferred |
 | Dataset-wide History 1 to History 2 upgrade | **IMPLEMENTED / AUTOMATED GREEN / BOUNDED REAL-BROWSER AND HUMAN ACCEPTANCE COMPLETE** | [NarrativeLine implementation result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/history-2-dataset-wide-upgrade-implementation-result.md); [scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md) |
@@ -498,16 +498,20 @@ manual acceptance, including export/re-import preservation. It does not
 establish Relative Time semantic presentation, Stable maturity, or an
 application release.
 
-The Human subsequently directed that NarrativeLine `0.2.0` not be deployed
-yet: retain its local version candidate and Pages pin correction until a
-user-facing Relative Time milestone can author/edit Relative Time and provide
-meaningful Timeline placement for undated Events. Scope A remains the
-foundation only. The bounded [implementation-scope preparation](../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-milestone-scope-preparation1.md)
-records current app/spec boundaries and the still-open presentation,
-eligibility, conflict, and authoring decisions. No runtime or specification
-change is authorized by that preparation; Relative Time `0.2.0` and History
-`2.0.0` remain Candidates, and the NarrativeLine Credits date is deferred to
-the actual deployment day.
+The Human directed that NarrativeLine `0.2.0` not be deployed yet: retain its
+local version candidate and Pages pin correction until a user-facing Relative
+Time milestone can author/edit Relative Time and provide meaningful Timeline
+placement for undated Events. Scope A remains the foundation. The Human then
+adopted a bounded application design: Event-to-Event `relative-position`
+`before`/`after`, pairwise display projection for undated Events, no persisted
+inference, and explicit incomparability/conflict boundaries. The local
+[implementation result](../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-slice-implementation-result1.md)
+records source implementation and automated evidence; real-browser acceptance
+remains pending. The preceding [implementation-scope preparation](../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-milestone-scope-preparation1.md)
+preserves its alternatives as a superseded preparation snapshot. This is an
+application-only slice: Relative Time `0.2.0` and History `2.0.0` remain
+Candidates, no normative/specification or Validator change is made, and the
+NarrativeLine Credits date remains deferred to the actual deployment day.
 
 > Historical snapshot — superseded by the current `NL-H2-R1` entry near the
 > end of this roadmap. The following readiness text records the pre-acceptance

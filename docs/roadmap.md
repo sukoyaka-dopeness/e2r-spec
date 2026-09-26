@@ -485,10 +485,13 @@ validation MINOR rule, but remains unpublished; normal package availability
 and fetchability of the pinned E2R-SPEC input remain prerequisites. The
 Candidate is not Stable and no migration is implied. The
 [first-consumer readiness preparation](./temporal/relative-time-0.2.0-first-consumer-readiness1.md)
-recommends NarrativeLine for a later read-only recognition/diagnostic and
-preservation slice, conditional on a normally consumable Validator artifact.
-Relative Time presentation and Timeline ordering remain undecided and are not
-authorized.
+records the evidence for the Human-selected NarrativeLine first-consumer scope
+A: exact-version read-only recognition, diagnostics, and round-trip
+preservation, conditional on a normally consumable Validator artifact. The
+first slice uses existing generic diagnostics without dedicated Relative Time
+EN/JA guidance. Timeline ordering or ordinal presentation, authoring, Derived
+reasoning, solver, and migration are outside this scope; no application
+implementation is accepted by this planning decision.
 
 > Historical snapshot — superseded by the current `NL-H2-R1` entry near the
 > end of this roadmap. The following readiness text records the pre-acceptance

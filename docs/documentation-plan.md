@@ -128,6 +128,13 @@ records their execution, path-only reference repairs, and preserved authority
 lanes. The separate 15 Seed-133 diagnostic artifact references remain
 unresolved.
 
+The post-Wave-4 [final root classification and documentation-governance
+placement audit](documentation-ia-final-root-classification-and-ingress-gate-audit1.md)
+proposes bounded owner-first cohorts, evaluates `docs/documentation-ia/` as a
+repository-governance responsibility, and prepares an exact future root-path
+allowlist gate. No migration, new folder, or gate implementation is authorized
+by that audit.
+
 Keep the existing `docs/roadmap-history/` and `docs/evidence/` responsibilities
 unchanged. Do not create `docs/research/`, `docs/results/`, `docs/decisions/`,
 `docs/audits/`, `docs/acceptances/`, `docs/applications/`, or `docs/sessions/`

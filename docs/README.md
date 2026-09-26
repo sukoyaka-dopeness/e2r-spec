@@ -43,6 +43,7 @@ repository. Start with the responsibility that matches the question:
 - [Wave 3C — LiaisonScape presentation / Explicit Auto Layout evidence migration](documentation-ia-wave3c-liaisonscape-evidence-path-migration1-result.md) moved only the two LiaisonScape-local presentation audits and 21 Explicit Auto Layout / Pin records; their individual checkpoint statuses and boundaries remain distinct.
 - The [NarrativeLine Locale experiment path migration](documentation-ia-narrativeline-locale-experiment-path-migration1-result.md) moved only the two bounded NarrativeLine experiment acceptances; shared Cross-App Locale closure remains separate.
 - The [owner-first residual root Wave 4 preparation](documentation-ia-owner-first-residual-wave4-preparation1.md) preserves the audit-time 349-document manifest; the approved execution is recorded in the [Wave 4 path migration result](documentation-ia-owner-first-residual-wave4-path-migration1-result.md).
+- The [post-Wave-4 root classification and ingress-gate audit](documentation-ia-final-root-classification-and-ingress-gate-audit1.md) prepares exact residual migration cohorts, evaluates a Documentation IA landing zone, and designs—but does not implement—a future root-placement validation gate.
 
 Follow links from the responsible planning or evidence authority for current
 checkpoint details; this Hub is not an inventory of every audit and result.

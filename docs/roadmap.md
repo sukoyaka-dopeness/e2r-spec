@@ -498,6 +498,17 @@ manual acceptance, including export/re-import preservation. It does not
 establish Relative Time semantic presentation, Stable maturity, or an
 application release.
 
+The Human subsequently directed that NarrativeLine `0.2.0` not be deployed
+yet: retain its local version candidate and Pages pin correction until a
+user-facing Relative Time milestone can author/edit Relative Time and provide
+meaningful Timeline placement for undated Events. Scope A remains the
+foundation only. The bounded [implementation-scope preparation](../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-milestone-scope-preparation1.md)
+records current app/spec boundaries and the still-open presentation,
+eligibility, conflict, and authoring decisions. No runtime or specification
+change is authorized by that preparation; Relative Time `0.2.0` and History
+`2.0.0` remain Candidates, and the NarrativeLine Credits date is deferred to
+the actual deployment day.
+
 > Historical snapshot — superseded by the current `NL-H2-R1` entry near the
 > end of this roadmap. The following readiness text records the pre-acceptance
 > state and is retained for chronology.

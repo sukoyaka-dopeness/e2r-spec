@@ -1,8 +1,9 @@
 # NarrativeLine Relative Time Timeline Projection Presentation Follow-up
 
 Status: Projection identity and band / recorded-relation presentation
-implemented; automated checks pass; Human Browser Acceptance pending. Event
-Detail identity also awaits Human Browser Acceptance.
+implemented; automated checks pass; dedicated multi-band fixture available;
+Human Browser Acceptance pending. Event Detail identity also awaits Human
+Browser Acceptance.
 Date: 2026-09-27
 
 ## Observation
@@ -112,6 +113,17 @@ pass. Human Browser Acceptance remains pending. They do not change group or
 partial-order calculation, Recorded assertions, Event identity, ordinary
 Timeline ordering, or Dataset contents. The earlier candidate table above is
 historical decision preparation and is not current implementation status.
+
+The dedicated fixture
+`examples/relative-time-0.2-draft/timeline-projection-multi-band-acceptance.json`
+contains four undated synthetic Events and four `relative-position` assertions.
+It is expected to project as `Opening Signal`, then an unordered shared band
+containing `East Hall Gathering` and `West Hall Gathering`, then `Closing
+Signal`. It is for application acceptance only; it has not been adopted as a
+Hub or public sample. The NarrativeLine integration test loads this exact
+cross-repository fixture and checks its projection grouping and separate
+Recorded pair rows. Human visual review remains pending; this work is not
+`ACCEPTED` or `CLOSED`.
 
 ## Preserved boundaries
 

@@ -12,6 +12,7 @@ const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = join(scriptDirectory, "..");
 const schemaPath = "schemas/extensions/relative-time-0.2.0.schema.json";
 const validPath = "examples/relative-time-0.2-draft/all-families.json";
+const bandAcceptancePath = "examples/relative-time-0.2-draft/timeline-projection-multi-band-acceptance.json";
 const invalidPayloadPath = "examples/invalid/extensions/relative-time-0.2-draft/invalid-payloads.json";
 
 function readJson(relativePath) {
@@ -82,6 +83,20 @@ if (payloads.length !== 12) {
     fail(validPath, JSON.stringify(datasetIssues(validDocument)));
   } else {
     console.log(`PASS valid ${validPath} (12 assertions across five Features)`);
+  }
+}
+
+const bandAcceptanceDocument = readJson(bandAcceptancePath);
+const bandAcceptancePayloads = relativeTimePayloads(bandAcceptanceDocument);
+if (bandAcceptancePayloads.length !== 4) {
+  fail(bandAcceptancePath, `expected 4 relative-position assertions, found ${bandAcceptancePayloads.length}`);
+} else {
+  const badPayload = bandAcceptancePayloads.find((payload) => !validatePayload(payload));
+  if (badPayload) fail(bandAcceptancePath, ajv.errorsText(validatePayload.errors));
+  else if (datasetIssues(bandAcceptanceDocument).length > 0) {
+    fail(bandAcceptancePath, JSON.stringify(datasetIssues(bandAcceptanceDocument)));
+  } else {
+    console.log(`PASS valid ${bandAcceptancePath} (four relative-position assertions)`);
   }
 }
 

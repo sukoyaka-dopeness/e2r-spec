@@ -85,6 +85,14 @@ Relative Time Draft `0.1.0` examples are stored in
 before/after/same-instant, within, Calendar-granule displacement, and elapsed
 offset variants with exact Feature declarations.
 
+The Relative Time `0.2.0` Candidate example
+`examples/relative-time-0.2-draft/timeline-projection-multi-band-acceptance.json`
+is a focused NarrativeLine UI acceptance fixture, not a Hub Gallery or public
+sample. Its four undated Events and four qualitative `relative-position`
+Relations form three display bands, with two unordered Events in the middle
+band. It exists to review band grouping and recorded-pair presentation without
+adding other Relative Time Features.
+
 Negative payload and Dataset-level fixtures are stored under the corresponding
 `examples/invalid/extensions/history-2.0-draft*` and
 `examples/invalid/extensions/relative-time-draft*` directories. Temporal

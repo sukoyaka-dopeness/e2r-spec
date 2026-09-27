@@ -1,0 +1,68 @@
+{
+  "version": "1.0",
+  "entities": [],
+  "events": [
+    { "id": "opening-signal", "name": "Opening Signal" },
+    { "id": "east-hall-gathering", "name": "East Hall Gathering" },
+    { "id": "west-hall-gathering", "name": "West Hall Gathering" },
+    { "id": "closing-signal", "name": "Closing Signal" }
+  ],
+  "relations": [
+    {
+      "id": "opening-before-east-gathering",
+      "sourceId": "opening-signal",
+      "targetId": "east-hall-gathering",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.relative-time": {
+          "type": "relative-position",
+          "relation": "after"
+        }
+      }
+    },
+    {
+      "id": "opening-before-west-gathering",
+      "sourceId": "opening-signal",
+      "targetId": "west-hall-gathering",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.relative-time": {
+          "type": "relative-position",
+          "relation": "after"
+        }
+      }
+    },
+    {
+      "id": "east-gathering-before-closing",
+      "sourceId": "east-hall-gathering",
+      "targetId": "closing-signal",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.relative-time": {
+          "type": "relative-position",
+          "relation": "after"
+        }
+      }
+    },
+    {
+      "id": "west-gathering-before-closing",
+      "sourceId": "west-hall-gathering",
+      "targetId": "closing-signal",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.relative-time": {
+          "type": "relative-position",
+          "relation": "after"
+        }
+      }
+    }
+  ],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "draft.github.sukoyaka-dopeness.relative-time",
+          "version": "0.2.0",
+          "features": ["relative-position"]
+        }
+      ]
+    }
+  }
+}

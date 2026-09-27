@@ -1008,7 +1008,7 @@ observations, including their audit-time classifications, measurements,
 revision snapshots, and bounded candidates. Later dispositions are not
 rewritten into these records. Current status, operative Human decisions,
 and environment-specific limits remain in the [roadmap status index and
-current inventory](../roadmap.md#current-status-index-2026-09-22).
+current inventory](../roadmap.md#current-status-index-2026-09-27).
 
 ### Post-release LiaisonScape / NarrativeLine observation audit — 2026-09-23
 

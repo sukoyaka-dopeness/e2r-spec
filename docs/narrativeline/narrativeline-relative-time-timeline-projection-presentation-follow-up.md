@@ -1,8 +1,8 @@
 # NarrativeLine Relative Time Timeline Projection Presentation Follow-up
 
-Status: Projection and Event Detail identity corrections implemented;
-automated checks pass; Human Browser Acceptance pending. Band presentation
-audit complete; Human decision pending.
+Status: Projection identity and band / recorded-relation presentation
+implemented; automated checks pass; Human Browser Acceptance pending. Event
+Detail identity also awaits Human Browser Acceptance.
 Date: 2026-09-27
 
 ## Observation
@@ -62,7 +62,7 @@ label. The localized unnamed-Event fallback is the primary label when Name is
 empty. Chronology is not used. This change is scoped to Relative Time authoring
 and does not alter Timeline or Related Events identity presentation.
 
-## Band presentation audit and Human decision
+## Band presentation audit and Human decision (historical)
 
 The current projection description already says that bands are derived from
 recorded `before` / `after` assertions and their chains, are not saved, do not
@@ -85,8 +85,33 @@ Human should choose among presentation directions before implementation:
 
 All three options leave the underlying partial-order calculation and Recorded
 assertions unchanged. Removing the visible bands is distinct from styling the
-same derived groups more lightly; no option is selected by this audit. Runtime
-band presentation has not been changed. Human decision is pending.
+same derived groups more lightly. This records the decision-preparation state
+before Human selected a direction; the implementation status below supersedes
+its pending-decision status.
+
+## Human-selected band and recorded-relation presentation
+
+Human selected retaining the display-band groups while removing the repeated
+`Display placement` / `表示用の配置` label. Each band remains a list of Events,
+now shown as a light shared group with a subtle border and background rather
+than inside a strongly framed enclosing group. The projection explanation
+states once that group positions are not saved, do not represent dates,
+durations, or additional assertions, and that Events in the same group have
+no recorded order relative to one another.
+
+Recorded pairs now have the subsection heading `Recorded before/after
+relations` / `記録された前後関係`. At wide widths a pair reads `A → B`; at
+narrow widths it reads vertically as `A ↓ B`. The pair's own spacing stays
+tight, while separate pairs have more space between them. The narrow arrow is
+decorative; a visually hidden `before` / `より前` label supplies the direction
+to assistive technology. Event buttons keep their existing canonical-ID
+navigation and collision-safe display labels.
+
+The band and pair display changes are implemented and their automated checks
+pass. Human Browser Acceptance remains pending. They do not change group or
+partial-order calculation, Recorded assertions, Event identity, ordinary
+Timeline ordering, or Dataset contents. The earlier candidate table above is
+historical decision preparation and is not current implementation status.
 
 ## Preserved boundaries
 

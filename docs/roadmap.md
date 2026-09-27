@@ -509,9 +509,13 @@ inference, and explicit incomparability/conflict boundaries. The local
 records source implementation and automated evidence. The Human clarified that
 reversing one existing Relation's direction replaces that same Recorded
 assertion; a direct contradiction means conflict with another independent
-Relation, not a same-Relation edit. Event Detail now identifies each recorded
-Relation and separates its edit control from the new-assertion form. Focused
-regression tests pass; real-browser acceptance remains pending. The preceding
+Relation, not a same-Relation edit. Event Detail then identified each recorded
+Relation and separated its edit control from the new-assertion form. The
+following status was current at that initial implementation checkpoint only:
+focused regression tests passed and real-browser acceptance was pending. It was
+superseded by the later History-aware authoring follow-on, whose implementation
+result records automated and real-browser acceptance. Final user-facing
+milestone closure remains for Human acceptance. The preceding
 [implementation-scope preparation](../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-milestone-scope-preparation1.md)
 preserves its alternatives as a superseded preparation snapshot. This is an
 application-only slice: Relative Time `0.2.0` and History `2.0.0` remain

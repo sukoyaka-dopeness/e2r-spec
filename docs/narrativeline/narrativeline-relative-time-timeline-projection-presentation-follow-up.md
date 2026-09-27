@@ -1,7 +1,8 @@
 # NarrativeLine Relative Time Timeline Projection Presentation Follow-up
 
-Status: Human-selected direction implemented; automated checks pass; Real
-Browser and Human visual acceptance remain pending.
+Status: Projection and Event Detail identity corrections implemented;
+automated checks pass; Human Browser Acceptance pending. Band presentation
+audit complete; Human decision pending.
 Date: 2026-09-27
 
 ## Observation
@@ -43,13 +44,49 @@ pairwise assertions, incomparable pairs, and cycle details; Event buttons
 continue to navigate by the unchanged canonical Event ID. Chronology is not
 used as a display discriminator.
 
-NarrativeLine added an integration regression test covering duplicate named
+NarrativeLine added integration regression tests covering duplicate named
 Events, duplicate localized unnamed fallbacks, prefix extension, consistent
 labels across projection surfaces, exclusion of same-name Events outside the
-projection candidate set, and Event-button identity. Automated checks and the
-Human Browser Acceptance handoff are recorded in the follow-up implementation
-checkpoint. Human review remains pending; this identity correction is not
-`ACCEPTED` or `CLOSED`.
+projection candidate set, and Event-button identity. A separate authoring
+test checks matching labels between selector options, selected option, and
+Recorded assertion rows in EN/JA, along with the unchanged Relation endpoints
+on creation. Automated checks and the Human Browser Acceptance handoff are
+recorded in the follow-up implementation checkpoint. Human review remains
+pending; this identity correction is not `ACCEPTED` or `CLOSED`.
+
+Event Detail applies the same collision-safe presentation pattern to its
+Relative Time authoring candidates. Its comparison set consists of every
+Dataset Event other than the Event currently being edited, so selector options
+and Recorded assertion counterparts resolve the same candidate to the same
+label. The localized unnamed-Event fallback is the primary label when Name is
+empty. Chronology is not used. This change is scoped to Relative Time authoring
+and does not alter Timeline or Related Events identity presentation.
+
+## Band presentation audit and Human decision
+
+The current projection description already says that bands are derived from
+recorded `before` / `after` assertions and their chains, are not saved, do not
+represent dates, durations, or extra assertions, and leave Events in the same
+band unordered. In the component DOM, however, every `.relative-time-display-band`
+repeats the generic `Display placement` / `表示用の配置` label. CSS places each
+band in a tinted padded row inside a bordered `.relative-time-projection-group`.
+On narrow layouts the label moves above its Event buttons, so repetition also
+adds vertical space. The row makes co-level Events visibly grouped, but the
+generic label and box-like styling can suggest a stored placement record even
+though the explanatory paragraph says otherwise.
+
+Human should choose among presentation directions before implementation:
+
+| Candidate | What changes | Main trade-off |
+| --- | --- | --- |
+| **Keep band grouping; remove each repeated label** | Retain every co-level Event group and its current visual containers; let the existing section explanation describe them once. | Reduces repeated wording and narrow-screen height, while tinted boxed rows can still look like saved records. |
+| **Keep band grouping; use lighter grouping and one shared explanation** | Preserve which Events share a band, but reduce the repeated label and card-like fill/edges in favor of spacing or alignment. | Keeps unordered co-level grouping visible with less record-like weight; the grouping may become less obvious, especially in narrow layouts. |
+| **Do not show band groups; retain pairwise assertions and incomparable details** | Remove the band partition from the visible projection while keeping recorded pairwise rows and unordered-pair details. | Avoids the repeated labels and band boxes, but loses the compact co-level overview and risks making a long row list look totally ordered. |
+
+All three options leave the underlying partial-order calculation and Recorded
+assertions unchanged. Removing the visible bands is distinct from styling the
+same derived groups more lightly; no option is selected by this audit. Runtime
+band presentation has not been changed. Human decision is pending.
 
 ## Preserved boundaries
 

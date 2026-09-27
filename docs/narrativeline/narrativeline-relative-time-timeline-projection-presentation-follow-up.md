@@ -1,7 +1,7 @@
 # NarrativeLine Relative Time Timeline Projection Presentation Follow-up
 
-Status: Current-state audit complete; Human presentation decision and any
-implementation prioritization remain pending.
+Status: Human-selected direction implemented; automated checks pass; Real
+Browser and Human visual acceptance remain pending.
 Date: 2026-09-27
 
 ## Observation
@@ -18,15 +18,17 @@ become long.
 
 A future NarrativeLine presentation and information-hierarchy scope should
 reconsider how the Relative Time projection is explained and visually related
-to the ordinary Timeline. Progressive disclosure or folding may be explored
-if the projection becomes lengthy; neither approach is selected by this
-record.
+to the ordinary Timeline. Human selected an initially collapsed whole
+projection, a visibly primary ordinary Timeline heading, and Event Detail
+heading typography for that heading. No internal projection restructuring was
+selected.
 
 The current-state evidence and bounded presentation candidates are recorded in
 the [presentation audit 1 result](./narrativeline-relative-time-timeline-projection-presentation-audit1-result.md).
 
-This note records a presentation follow-up, not authorization to implement a
-particular UI change. Human scope selection and acceptance remain necessary.
+This note records the selected bounded implementation and its pending
+acceptance state. It does not claim `ACCEPTED` or `CLOSED`; Human visual and
+interaction review remains necessary.
 
 ## Preserved boundaries
 
@@ -41,3 +43,4 @@ or temporal bounds, or write Derived results to Recorded data.
 - [Current E2R-SPEC Roadmap status](../roadmap.md#current-status-index-2026-09-22)
 - [NarrativeLine Relative Time 0.2.0 implementation result](../../../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-slice-implementation-result1.md)
 - [Current-state presentation audit and Human decision preparation](./narrativeline-relative-time-timeline-projection-presentation-audit1-result.md)
+- [NarrativeLine implementation](../../../e2r-narrative-line/src/components/RelativeTimeTimelineProjection.tsx)

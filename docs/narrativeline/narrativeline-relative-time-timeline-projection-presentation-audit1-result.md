@@ -2,7 +2,7 @@
 
 Date: 2026-09-27
 
-Status: **CURRENT-STATE AUDIT COMPLETE / HUMAN PRESENTATION DECISION PENDING**
+Status: **HUMAN DIRECTION SELECTED / IMPLEMENTED / AUTOMATED GREEN / HUMAN BROWSER ACCEPTANCE PENDING**
 
 ## Scope
 
@@ -116,11 +116,44 @@ selected by this audit.
 | **B. Progressive disclosure for the whole Relative Time projection**: show a concise labelled summary and let the user open the bands, pairwise rows, and conflict details. | Reduces initial page length and prevents a large projection from dominating the ordinary list. | Users may miss the Relative Time view; a useful summary/count and discoverable summary label need Human selection. | No semantic change. It makes the projection's secondary role explicit but may reduce its proximity to the ordinary Timeline. | Handles large content best while closed. Native `<details>/<summary>` can preserve keyboard disclosure; test focus visibility, screen-reader naming, and EN/JA summary wrapping. |
 | **C. Keep a compact band overview visible and disclose supporting pairwise details**: retain the projected placement as the concise result; put its edge explanations and incomparability pairs behind a clearly named disclosure. | Gives users the partial-order overview while reducing repeated names and supporting detail in the initial view. | Still needs a rule for how much of a large band overview to show. Pairwise rows can be mistaken for a complete Recorded Relation list unless explicitly described as deduplicated projection edges. | Does not change projection or Recorded data. The view should state that displayed pairwise paths summarize direction, not Relation identity. | Better initial height for chains and normal-sized graphs, but the visible band overview can still grow. Native disclosure is keyboard-friendly; avoid inaccessible or repeated controls when supporting details are collapsed. |
 
-The choices leave two Human decisions open: whether the Relative Time result
-should be immediately visible or initially disclosed, and whether ordinary
-Timeline order should receive a stronger visual anchor relative to the
-projection. Copy, placement, and disclosure may be combined later only after
-Human selects the intended hierarchy.
+At audit time, the choices left the initial visibility and relative hierarchy
+for Human decision. Human subsequently selected whole-projection disclosure,
+ordinary Timeline primacy, and a visible ordinary Timeline heading using the
+Event Detail heading typography. The internal bands, pairwise rows, and
+incomparable-detail presentation were explicitly left unchanged.
+
+## Human-selected implementation sync
+
+NarrativeLine implemented the selected presentation direction:
+
+- the whole Relative Time projection is inside a native `<details>` disclosure
+  with no `open` attribute, so it starts collapsed;
+- its collapsed summary is `Relative Time (supplementary view)` / `相対時間（補助表示）`;
+- the ordinary Event list now has a visible `Timeline` / `タイムライン`
+  heading, using the Event Detail heading size, line height, letter spacing,
+  and inherited weight, including the existing narrow-screen size adjustment;
+- the projection remains before the ordinary list, but its compact collapsed
+  summary and the prominent ordinary-list heading make their hierarchy
+  visible; and
+- opening the disclosure retains the existing projection content and
+  interactions.
+
+The bounded implementation is NarrativeLine commit `b3bf3b5`
+(`feat: clarify Timeline and fold Relative Time projection`).
+
+Automated evidence after implementation: NarrativeLine **286/286 tests
+PASS**, lint **PASS**, production build **PASS**, and `git diff --check`
+**PASS**. The integration tests cover localized labels, initially closed
+state, the projection content when open, and unchanged ordinary Event order
+after opening.
+
+Real Browser acceptance remains pending. Computer Use found the NarrativeLine
+Edge window but failed to activate it on both the initial attempt and the one
+allowed refreshed-window retry (`failed to activate captured window`). No
+browser interaction or visual pass is claimed from this checkpoint. Human
+review should confirm the summary and visible heading hierarchy, EN/JA, wide
+and narrow layout, keyboard disclosure and focus visibility, and the unchanged
+Event edit buttons after opening.
 
 ## Preserved boundaries and disposition
 
@@ -135,10 +168,13 @@ This audit does not change:
 - scope for mixed dated/undated placement, consistency diagnostics, inferred
   dates/bounds, quantitative Relative Time, or manual Timeline ordering.
 
-No NarrativeLine runtime source, test, Candidate schema, History specification,
-Relative Time Draft, or Validator was changed. This is decision preparation,
-not acceptance or implementation authorization. Human presentation direction
-and any resulting acceptance scope remain pending.
+The current NarrativeLine implementation changes presentation source and
+integration tests only. Ordinary ordering, Relative Time projection
+calculation, Dataset persistence, Candidate schema, History specification,
+Relative Time Draft, Validator, and Event Detail authoring semantics are
+unchanged. This record reports implementation and automated evidence; it does
+not mark the result accepted or closed. Human visual and interaction
+acceptance remains pending.
 
 ## Source references
 

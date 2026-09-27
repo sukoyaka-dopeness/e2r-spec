@@ -1,6 +1,7 @@
 # NarrativeLine Relative Time Timeline Projection Presentation Follow-up
 
-Status: Follow-up recorded; implementation and prioritization pending.
+Status: Current-state audit complete; Human presentation decision and any
+implementation prioritization remain pending.
 Date: 2026-09-27
 
 ## Observation
@@ -21,6 +22,9 @@ to the ordinary Timeline. Progressive disclosure or folding may be explored
 if the projection becomes lengthy; neither approach is selected by this
 record.
 
+The current-state evidence and bounded presentation candidates are recorded in
+the [presentation audit 1 result](./narrativeline-relative-time-timeline-projection-presentation-audit1-result.md).
+
 This note records a presentation follow-up, not authorization to implement a
 particular UI change. Human scope selection and acceptance remain necessary.
 
@@ -36,3 +40,4 @@ or temporal bounds, or write Derived results to Recorded data.
 
 - [Current E2R-SPEC Roadmap status](../roadmap.md#current-status-index-2026-09-22)
 - [NarrativeLine Relative Time 0.2.0 implementation result](../../../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-slice-implementation-result1.md)
+- [Current-state presentation audit and Human decision preparation](./narrativeline-relative-time-timeline-projection-presentation-audit1-result.md)

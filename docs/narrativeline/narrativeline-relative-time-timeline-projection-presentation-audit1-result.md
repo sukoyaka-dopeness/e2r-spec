@@ -4,6 +4,10 @@ Date: 2026-09-27
 
 Status: **HUMAN DIRECTION SELECTED / IMPLEMENTED / AUTOMATED GREEN / HUMAN BROWSER ACCEPTANCE PENDING**
 
+This is the audit-time status snapshot. Human Browser Acceptance later closed
+the bounded projection presentation and Event identity correction; the current
+status and acceptance evidence are recorded in the [follow-up closure](./narrativeline-relative-time-timeline-projection-presentation-follow-up.md#formal-human-browser-acceptance-2026-09-27).
+
 ## Scope
 
 This audit prepares a bounded presentation decision for the existing

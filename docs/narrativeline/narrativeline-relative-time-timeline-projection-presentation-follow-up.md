@@ -1,9 +1,7 @@
 # NarrativeLine Relative Time Timeline Projection Presentation Follow-up
 
-Status: Projection identity and band / recorded-relation presentation
-implemented; automated checks pass; dedicated multi-band fixture available;
-Human Browser Acceptance pending. Event Detail identity also awaits Human
-Browser Acceptance.
+Status: **ACCEPTED / COMPLETE / CLOSED** — projection identity, band and
+Recorded-pair presentation, and Event Detail Relative Time identity.
 Date: 2026-09-27
 
 ## Observation
@@ -28,9 +26,8 @@ selected.
 The current-state evidence and bounded presentation candidates are recorded in
 the [presentation audit 1 result](./narrativeline-relative-time-timeline-projection-presentation-audit1-result.md).
 
-This note records the selected bounded implementation and its pending
-acceptance state. It does not claim `ACCEPTED` or `CLOSED`; Human visual and
-interaction review remains necessary.
+At implementation time this note recorded a pending acceptance state. The
+Human Browser Acceptance and current disposition are recorded below.
 
 ## Event identity correction for Human review
 
@@ -52,8 +49,8 @@ projection candidate set, and Event-button identity. A separate authoring
 test checks matching labels between selector options, selected option, and
 Recorded assertion rows in EN/JA, along with the unchanged Relation endpoints
 on creation. Automated checks and the Human Browser Acceptance handoff are
-recorded in the follow-up implementation checkpoint. Human review remains
-pending; this identity correction is not `ACCEPTED` or `CLOSED`.
+recorded in the follow-up implementation checkpoint. Human review was pending
+at that checkpoint; the current accepted disposition is recorded below.
 
 Event Detail applies the same collision-safe presentation pattern to its
 Relative Time authoring candidates. Its comparison set consists of every
@@ -109,10 +106,10 @@ to assistive technology. Event buttons keep their existing canonical-ID
 navigation and collision-safe display labels.
 
 The band and pair display changes are implemented and their automated checks
-pass. Human Browser Acceptance remains pending. They do not change group or
-partial-order calculation, Recorded assertions, Event identity, ordinary
-Timeline ordering, or Dataset contents. The earlier candidate table above is
-historical decision preparation and is not current implementation status.
+pass. They do not change group or partial-order calculation, Recorded
+assertions, Event identity, ordinary Timeline ordering, or Dataset contents.
+The earlier candidate table above is historical decision preparation and is
+not current implementation status.
 
 The dedicated fixture
 `examples/relative-time-0.2-draft/timeline-projection-multi-band-acceptance.json`
@@ -122,8 +119,48 @@ containing `East Hall Gathering` and `West Hall Gathering`, then `Closing
 Signal`. It is for application acceptance only; it has not been adopted as a
 Hub or public sample. The NarrativeLine integration test loads this exact
 cross-repository fixture and checks its projection grouping and separate
-Recorded pair rows. Human visual review remains pending; this work is not
-`ACCEPTED` or `CLOSED`.
+Recorded pair rows.
+
+## Formal Human Browser Acceptance (2026-09-27)
+
+Human reviewed the current NarrativeLine runtime in a real browser using the
+dedicated multi-band fixture and accepted this bounded presentation and
+identity scope:
+
+- the Relative Time disclosure starts collapsed with the accepted EN/JA
+  supplementary-view summary; the ordinary `Timeline` / `タイムライン`
+  heading remains the primary list heading;
+- the fixture shows three separate band regions with one, two, and one Events;
+  the two middle Events share a single light band frame and do not appear to
+  have a Recorded order between them;
+- repeated `Display placement` / `表示用の配置` labels are absent, while the
+  `Recorded before/after relations` / `記録された前後関係` section remains
+  visually separate;
+- wide and narrow pair layouts read `A → B` and `A / ↓ / B`, with enough
+  narrow-screen separation to scan distinct pairs;
+- EN/JA and an approximately 360px viewport have no observed horizontal
+  overflow or clipping; and
+- Event buttons open the intended Event Details.
+
+Human also confirmed collision-safe Event identity in the projection and
+Relative Time authoring UI. A unique display name remains name-only; duplicate
+names (including localized empty-name fallbacks) receive a presentation-only
+canonical-ID prefix beginning with the first eight characters and extending
+only as needed to distinguish the candidate Events. The close-prefix examples
+`01a0e27d-d`, `01a0e27d-e`, and `01a0e27d-f` were distinguishable in the
+browser. This behavior is identifier-format agnostic; no UUIDv7-specific rule
+or suffix policy is used. Full Event IDs remain canonical for button actions
+and stored data. The same identity behavior in Recorded assertion counterparts
+and new-relation choices is supported by current source and regression tests.
+
+The multi-band JSON remains an application Acceptance fixture only; it has
+not been adopted as a Hub Gallery or public sample. The accepted scope is
+**FORMALLY ACCEPTED / COMPLETE / CLOSED**. It changes presentation only and
+does not change Relative Time semantics, Relation identity, partial-order,
+cycle, or incomparability behavior, ordinary Timeline / History ordering,
+Dataset persistence, or Derived writeback. Mixed dated/undated placement,
+consistency diagnostics, Derived inference, quantitative Relative Time, and
+manual Timeline ordering remain out of scope.
 
 ## Preserved boundaries
 

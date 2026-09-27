@@ -46,7 +46,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia/documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia/documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](documentation-ia/roadmap-residual-responsibility-audit3.md); [audit 2](documentation-ia/roadmap-residual-responsibility-audit2.md); [audit 1](documentation-ia/roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](documentation-ia/roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](documentation-ia/roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](documentation-ia/roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](documentation-ia/roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](documentation-ia/roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](documentation-ia/roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](documentation-ia/roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); [Seed PR-3 Browser history migration result](documentation-ia/roadmap-seed-pr3-browser-history-migration1-result.md); [this PR-3 pre-Browser history migration](documentation-ia/roadmap-seed-pr3-prebrowser-history-migration1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine Relative Time identity and projection presentation | **FORMALLY ACCEPTED / COMPLETE / CLOSED — BOUNDED PRESENTATION AND IDENTITY CORRECTION** | [Human Browser Acceptance and closure](narrativeline/narrativeline-relative-time-timeline-projection-presentation-follow-up.md#formal-human-browser-acceptance-2026-09-27); [audit snapshot](narrativeline/narrativeline-relative-time-timeline-projection-presentation-audit1-result.md); the multi-band fixture is application acceptance evidence only, not a Hub or public sample; Relative Time semantics, ordinary Timeline ordering, and Dataset behavior are unchanged |
-| NarrativeLine Human-authored Timeline ordering | **REOPENED / CONCRETE HUMAN REQUIREMENT ESTABLISHED / OWNERSHIP AND PERSISTENCE AUDIT NEXT** | The [2026-09-07 Display-Order Reordering Audit](narrativeline/narrativeline-display-order-reordering-audit.md) remains an accurate historical defer decision; the current Human requirements and next checkpoint are recorded below. Temporary ordering remains an Application View State candidate; intentionally persisted non-temporal authorial order may be a Perspective responsibility, not `temporalOrder`. No Perspective adoption or implementation is authorized yet. |
+| NarrativeLine Human-authored Timeline ordering | **PORTABLE PERSPECTIVE DIRECTION SELECTED / REPRESENTATION AUDIT COMPLETE / HUMAN REPRESENTATION DECISION NEXT** | The [ownership/persistence audit](narrativeline/narrativeline-timeline-ordering-perspective-ownership-audit1.md) and [representation audit](narrativeline/narrativeline-perspective-ordering-representation-audit1.md) prepare the next Human choice. Human selected portable Perspective design preparation, sparse coverage, unplaced new Events, stable identity across rename, order retention with warnings after temporal evidence changes, independent Relative Time cycle handling, and keyboard move controls. The representation, rank rebalance policy, Extension ID/version/schema/serialization, and implementation remain undecided/unauthorized. The [2026-09-07 defer audit](narrativeline/narrativeline-display-order-reordering-audit.md) remains historical evidence. |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](./temporal/history-2-user-facing-authoring-scope-result.md); [bounded scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader History 2 shapes remain outside scope; NarrativeLine Relative Time authoring is a separate application workstream below |
 | H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
@@ -1872,8 +1872,10 @@ partial-order projection, ordinary History ordering, and Human-authored display
 order remain distinct responsibilities. Relative Time-derived display bands
 remain Derived presentation and do not become temporal facts through reordering.
 
-The next bounded checkpoint is **Timeline Human-Authored Ordering / Perspective
-Ownership and Persistence Audit**. It must prepare Human decisions on:
+The **Timeline Human-Authored Ordering / Perspective Ownership and Persistence
+Audit** is complete; its read-only evidence and decision options are recorded
+in the [audit result](narrativeline/narrativeline-timeline-ordering-perspective-ownership-audit1.md).
+The remaining checkpoint is the Human design decision. In particular:
 
 - temporary Application View State versus portable Dataset-persisted
   authorial order, and whether provisional Perspective is the appropriate
@@ -1888,17 +1890,42 @@ Ownership and Persistence Audit**. It must prepare Human decisions on:
 
 Perspective remains a provisional candidate for persisted authorial context:
 it is not a registered Extension, and its ID, schema, version, and
-serialization contract remain undecided. This Roadmap synchronization selects
-none of them and makes no Presentation or `temporalOrder` ownership change.
+serialization contract remain undecided. The audit selects none of them and
+makes no Presentation or `temporalOrder` ownership change. No implementation
+is authorized before the listed Human design decisions.
 
-The planned sequence is: (1) this Roadmap synchronization; (2) the bounded
-ownership and persistence audit; (3) the necessary Human design decisions;
-(4) only if authorized, a bounded Perspective prototype/schema checkpoint;
-(5) NarrativeLine implementation; (6) Real Browser / Human Acceptance; and
-(7) after the ordering workstream closes, NarrativeLine's Relative Time 0.2.0
-current-state, documentation, and release-readiness audit. The older
-2026-09-17 release-readiness evidence remains historical evidence and is not
-deleted or treated as a substitute for that later audit.
+The sequence is: (1) Roadmap synchronization and (2) the ownership/persistence
+audit, both complete; (3) Human design decisions; (4) only if authorized, a
+bounded Perspective prototype/schema checkpoint; (5) NarrativeLine
+implementation; (6) Real Browser / Human Acceptance; and (7) after the ordering
+workstream closes, NarrativeLine's Relative Time 0.2.0 current-state,
+documentation, and release-readiness audit. The older 2026-09-17
+release-readiness evidence remains historical evidence and is not deleted or
+treated as a substitute for that later audit.
+
+### NarrativeLine Perspective ordering representation decision preparation (2026-09-27)
+
+Human selected the direction to design Dataset-portable, non-temporal ordering
+under the provisional Perspective responsibility, usable beyond NarrativeLine
+and able to leave room for multiple Perspectives later. Partial/sparse coverage
+is allowed: new Events begin unplaced, Event deletion removes its Perspective
+references, and rename preserves placement by stable Event identity. History
+and Relative Time changes retain authored order and surface warnings rather
+than rewriting temporal facts. Relative Time cycles remain separate conflicts
+and are not resolved by Perspective. Keyboard-accessible move operations are
+the baseline; drag and drop is deferred.
+
+The read-only [Perspective Ordering Representation Audit](narrativeline/narrativeline-perspective-ordering-representation-audit1.md)
+compares ordered Event ID lists, rank/position tokens, anchored insertion, and
+pairwise authorial constraints. It verifies that Session 0005's old History
+`order`/LexoRank discussion is historical rather than Perspective authority;
+current History only permits order-preserving `temporalOrder` regeneration and
+does not require import/export normalization. No Perspective rebalance rule
+has been adopted. The next Human decision is the semantic representation
+(sequence of placed Events versus partial constraints), whether the previously
+reported anchor preference applies to storage or interaction, and—only if
+rank tokens are selected—their maintenance policy. No schema, Validator,
+prototype, or application implementation is authorized.
 
 ### Pre-Public-Release Push and Deployment Readiness Audit (2026-09-07)
 

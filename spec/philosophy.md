@@ -99,9 +99,11 @@ A persisted authorial context may describe which information is considered,
 how it is grouped, or a non-temporal order in which it is treated.
 
 This responsibility is distinct from semantic facts, History chronology,
-Coordinate, Layout, Presentation, and current application state. Current
-research provisionally calls this responsibility Perspective. This document
-does not register a Perspective Extension or define its schema.
+Coordinate, Layout, Presentation, and current application state. The
+[Perspective `0.1.0` Candidate](../extensions/perspective-extension-candidate.md)
+now defines only portable Human-authored Event ordering. Grouping and other
+possible authorial-context capabilities remain outside that Candidate. It is
+not a Stable Extension.
 
 ### Presentation Extensions
 

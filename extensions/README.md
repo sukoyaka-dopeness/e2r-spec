@@ -28,8 +28,8 @@ registered as Stable:
   (`draft.github.sukoyaka-dopeness.relative-time`, Candidate `0.2.0`; `0.1.0`
   remains unchanged)
 - [Perspective Extension Candidate — Human-Authored Event Ordering](perspective-extension-candidate.md)
-  (`draft.github.sukoyaka-dopeness.perspective`, proposed Candidate `0.1.0`;
-  pending Human adoption decision)
+  (`draft.github.sukoyaka-dopeness.perspective`, Human-adopted Candidate
+  `0.1.0`; not Stable)
 - [Lineage Extension Draft](lineage-extension-draft.md)
   (`draft.github.sukoyaka-dopeness.lineage`, draft `0.1.0`)
 - [Coordinate Extension Prototype](coordinate-extension.md)

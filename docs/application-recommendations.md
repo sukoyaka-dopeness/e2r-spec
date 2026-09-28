@@ -24,10 +24,10 @@ When multiple Events have the same temporal value, granularity, and comparison b
 Applications may regenerate `temporalOrder` values provided the represented relative temporal order is preserved. They should not use `temporalOrder` to reverse chronological order that is already established by the recorded temporal fields.
 
 A temporary custom display order is application state and should not be stored
-in `temporalOrder`. If a non-temporal authorial order is intentionally persisted
-for interoperability, it belongs to a future persisted authorial-context
-Extension, provisionally called Perspective, rather than History or
-Presentation.
+in `temporalOrder`. Intentionally portable Human-authored Event order is
+defined by the [Perspective `0.1.0` Candidate](../extensions/perspective-extension-candidate.md),
+separately from History and Presentation. A consumer should use the Candidate's
+exact-version declaration and preserve unsupported Perspective data.
 
 ---
 

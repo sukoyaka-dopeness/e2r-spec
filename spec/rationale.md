@@ -386,11 +386,11 @@ The same Events may reasonably be treated in different orders in different
 authorial contexts. One context may use chronology, another may emphasize a
 narrative path, and another may define a curated comparison.
 
-A non-temporal authorial order therefore does not belong in `temporalOrder`. A
-future persisted authorial-context Extension may record an independent Event
-order without changing the Events' temporal data. Current research
-provisionally calls this responsibility Perspective; this rationale does not
-define its schema or register such an Extension.
+A non-temporal authorial order therefore does not belong in `temporalOrder`.
+The [Perspective `0.1.0` Candidate](../extensions/perspective-extension-candidate.md)
+records an independent, sparse Human-authored Event sequence without changing
+the Events' temporal data. It is a bounded Candidate, not a Stable Extension;
+the Candidate document owns its payload and semantics.
 
 Temporary sorting, selection, panel state, scroll position, and similar application state remain outside the Dataset.
 

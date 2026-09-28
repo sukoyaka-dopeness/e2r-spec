@@ -46,7 +46,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia/documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia/documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](documentation-ia/roadmap-residual-responsibility-audit3.md); [audit 2](documentation-ia/roadmap-residual-responsibility-audit2.md); [audit 1](documentation-ia/roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](documentation-ia/roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](documentation-ia/roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](documentation-ia/roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](documentation-ia/roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](documentation-ia/roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](documentation-ia/roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](documentation-ia/roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); [Seed PR-3 Browser history migration result](documentation-ia/roadmap-seed-pr3-browser-history-migration1-result.md); [this PR-3 pre-Browser history migration](documentation-ia/roadmap-seed-pr3-prebrowser-history-migration1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine Relative Time identity and projection presentation | **FORMALLY ACCEPTED / COMPLETE / CLOSED — BOUNDED PRESENTATION AND IDENTITY CORRECTION** | [Human Browser Acceptance and closure](narrativeline/narrativeline-relative-time-timeline-projection-presentation-follow-up.md#formal-human-browser-acceptance-2026-09-27); [audit snapshot](narrativeline/narrativeline-relative-time-timeline-projection-presentation-audit1-result.md); the multi-band fixture is application acceptance evidence only, not a Hub or public sample; Relative Time semantics, ordinary Timeline ordering, and Dataset behavior are unchanged |
-| NarrativeLine Human-authored Timeline ordering | **CANDIDATE CONTRACT/SCHEMA PREPARED / HUMAN ADOPTION DECISION REQUIRED** | The [Perspective Candidate contract and decision packet](../extensions/perspective-extension-candidate.md) proposes portable sparse ordered Event IDs per Perspective, no portable rank/anchor, and derived temporal mismatch diagnostics. ID `draft.github.sukoyaka-dopeness.perspective` and version `0.1.0` are proposals only. Adoption, stale-reference policy, conflict acknowledgment portability, consumer defaults, exact schema/serialization, and runtime work remain for Human decision. Prior [ownership/persistence](narrativeline/narrativeline-timeline-ordering-perspective-ownership-audit1.md) and [representation audits](narrativeline/narrativeline-perspective-ordering-representation-audit1.md) remain evidence, not authority to implement. |
+| NarrativeLine Human-authored Timeline ordering | **PERSPECTIVE 0.1.0 CANDIDATE ADOPTED / NARRATIVELINE CONSUMER-WRITER NEXT** | The [Perspective Candidate contract](../extensions/perspective-extension-candidate.md) is current authority for portable sparse ordered Event IDs under `draft.github.sukoyaka-dopeness.perspective` `0.1.0`. It defines unplaced Events, multiple entries without a portable default, dangling-reference preservation, Event deletion cleanup, Derived temporal diagnostics, and unsupported-data preservation. It is not Stable. No further spec-side Human semantic decision blocks a bounded NarrativeLine consumer/writer implementation; application composition, interaction, and acceptance remain its next checkpoint. Earlier [ownership/persistence](narrativeline/narrativeline-timeline-ordering-perspective-ownership-audit1.md) and [representation audits](narrativeline/narrativeline-perspective-ordering-representation-audit1.md) remain historical evidence. |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](./temporal/history-2-user-facing-authoring-scope-result.md); [bounded scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader History 2 shapes remain outside scope; NarrativeLine Relative Time authoring is a separate application workstream below |
 | H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
@@ -636,10 +636,10 @@ only as color, icon, or line style.
 
 ### 4. Perspective
 
-`Perspective` remains provisional. Begin with one real persisted grouping or
-non-temporal ordering workflow rather than attempting the full Targeting,
-Grouping, Ordering, Relevance, Ranking, and Coordinate Selection family at
-once.
+The [Perspective `0.1.0` Candidate](../extensions/perspective-extension-candidate.md)
+is adopted for one bounded non-temporal Event ordering workflow. Targeting,
+Grouping, Relevance, Ranking, and Coordinate Selection remain outside this
+Candidate and need their own evidence before any future specification change.
 
 ### 5. Deterministic Engine experiments
 
@@ -933,12 +933,12 @@ change this status or authorize implementation.
 
 ## Evidence gates for candidate Extensions
 
-| Candidate | Current evidence | Missing before formalization |
+| Candidate | Current evidence | Further evidence / decision |
 | --- | --- | --- |
 | Specification | Draft `0.1.0`, architecture audit, accepted identifier model, bootstrap, dependencies, Features, Validator implementation and fixtures | Multi-application evidence, Stable identifier decision |
 | Coordinate | Frozen prototype `0.1.0`; reviewed draft candidate `0.1.0` with normative contract, schema, 5 valid/18 invalid fixtures, semantic validation, explicit atomic migration/refusal fixtures, and read-only Validator support | Application Draft writer/migration evidence, draft cross-application evidence, later Stable identifier review |
 | Layout | LiaisonScape routes, loops, labels, and layer requirements | Explicit experimental persistence, endpoint-change rules, round trips, partial support, second renderer |
-| Perspective | Nine-agenda conceptual model | Final naming review, concrete workflows for at least two capabilities, reference lifecycle, partial support |
+| Perspective | Human-adopted `0.1.0` Candidate for sparse Event ordering; exact ID, payload, lifecycle, and schema defined | NarrativeLine consumer/writer and interoperability evidence before any Stable review; other capability families remain deferred |
 | Presentation | LiaisonScape appearance requirements | Media boundary, reusable vocabulary, semantic independence, unknown-property preservation, second renderer |
 | Semantic | Relation labels demonstrate unmet semantic typing need | Vocabulary identity, typing model, external mapping, two consuming applications |
 | Media | Future selectable icon requirement | Resource identity, format/security rules, two application uses, Presentation dependency test |
@@ -957,7 +957,7 @@ Unless new evidence changes the decision, do not currently:
 - serialize ordinary Application View State into the E2R Dataset;
 - standardize LiaisonScape's current experimental Coordinate payload;
 - create a universal Generation Extension;
-- register Perspective before its name and workflows are proven;
+- promote Perspective to Stable before consumer and interoperability evidence;
 - treat arbitrary Relation direction as semantic hierarchy; or
 - make external registry or network access mandatory.
 
@@ -1944,6 +1944,23 @@ portable conflict acknowledgment, cross-projection composition, and unknown
 version round-trip expectations. No runtime, Validator integration, migration,
 public sample, temporal authority, or app implementation changed. The prior
 2026-09-27 preparation entry remains the record of that earlier checkpoint.
+
+### Perspective 0.1.0 Candidate adoption (2026-09-28)
+
+Human adopted the exact identifier, version, sparse ordered Event ID sequence,
+multi-Perspective structure without a portable default, Event lifecycle and
+dangling-import preservation, and Derived-only temporal conflict diagnostics
+in the [Perspective Candidate contract](../extensions/perspective-extension-candidate.md).
+Rank tokens, anchors, and pairwise constraints have no portable `0.1.0`
+ordering meaning. Unsupported and unselected entries must be preserved.
+
+The specification-side semantic gate for a bounded NarrativeLine
+consumer/writer is clear. Its implementation should handle exact-version
+recognition, one applicable Perspective or explicit selection, safe round-trip,
+Event deletion cleanup, and keyboard-accessible moves under the Candidate.
+Runtime Validator integration, additional consumers, migration, public
+samples, and Stable review remain separate checkpoints. The 2026-09-27 audits
+and earlier 2026-09-28 proposal entry retain their checkpoint-time status.
 
 ### Pre-Public-Release Push and Deployment Readiness Audit (2026-09-07)
 

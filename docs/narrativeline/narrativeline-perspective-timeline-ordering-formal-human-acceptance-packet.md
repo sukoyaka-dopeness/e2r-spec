@@ -178,11 +178,11 @@ PASS.
 
 | ID | Human check and expected evidence | Current disposition |
 | --- | --- | --- |
-| H1 — Timeline density and control hierarchy | Inspect the ordinary Timeline and use selection, keyboard focus, and touch to reveal ordering controls. | Human selected non-hover contextual disclosure. Implemented: controls appear only on the selected or focused Event; authorable rows can be reached and selected by keyboard, and tapping a row reveals controls on touch. **POST-CHANGE HUMAN REVIEW PENDING.** |
+| H1 — Timeline density and control hierarchy | Inspect the ordinary Timeline and use selection, keyboard focus, and touch to reveal ordering controls; review the final local warning and on-demand help presentation. | Human selected non-hover contextual disclosure. Controls appear only on the selected or focused Event; keyboard row selection and the native help disclosure work in the current runtime. The ambiguous warning ornament is removed while the text label and disclosure triangle remain. **FINAL TARGETED HUMAN PRESENTATION REVIEW PENDING** for the text-only warning and contextual help. Do not repeat closed H1 direction decisions. |
 | H2 — Narrow presentation | Inspect the representative Timeline at approximately 360 CSS px for names, controls, status, diagnostics, clipping, overlap, and horizontal scrolling. | **PASS — HUMAN REPORT, 2026-09-28:** post-refinement narrow view was inspected at about 360 CSS px; no new clipping, overlap, or horizontal-layout failure was reported. Exact measured width and locale were not retained in the handoff. |
 | H3 — Same-name target identity | Identify duplicate-name Events in Event Detail Relative Time choices and a recorded reference using visible hints; confirm the intended target. | **PASS — HUMAN REPORT, 2026-09-28:** post-refinement UI made the same-name target identifiable. Canonical operation targeting and resolver behavior remain covered by machine tests; no rerun requested. |
-| H4 — Keyboard, focus, feedback, repeated movement | Use keyboard moves, inspect focus and localized feedback, including a boundary; assess visual movement feedback. | Human confirmed motion, focus, and repeated movement were acceptable. A new defect showed Japanese move feedback in EN; fixed through the existing locale-message catalog and machine-verified in EN/JA. **POST-CHANGE HUMAN REVIEW PENDING** for EN/JA feedback only; motion/focus need not be repeated. |
-| H5 — Derived mismatch comprehension and local discovery | Read the rendered mismatch diagnostic without source; inspect local indicators near affected Events. Keep export available without extra confirmation. | **COMPREHENSION PASS; EXPORT PREFERENCE CONFIRMED.** Human understands that saved display order may differ from Relative Time Derived order and retains export without confirmation. Local discoverability was the follow-up; affected-Event disclosure is implemented and **POST-CHANGE HUMAN REVIEW PENDING**. |
+| H4 — Keyboard, focus, feedback, repeated movement | Use keyboard moves, inspect focus and localized feedback, including a boundary; assess visual movement feedback. | Human confirmed motion, focus, and repeated movement were acceptable. Current Edge runtime shows English and Japanese move feedback; switching EN → JA → EN re-presents the visible transient feedback in the current locale while retaining the Event name. Automated coverage agrees. **TARGETED HUMAN REVIEW PENDING** for the locale-switch feedback boundary only; motion/focus/repeated movement need not be repeated. |
+| H5 — Derived mismatch comprehension and local discovery | Read the rendered mismatch diagnostic without source; inspect local indicators near affected Events. Keep export available without extra confirmation. | **PASS / CLOSED:** Human understands the mismatch, approved discovery beside affected Events, and retains export without extra confirmation. The latest label/icon simplification is a presentation check tracked under H1; it does not reopen H5 comprehension or its accepted local-discovery direction. |
 | H6 — Native file open/export/re-open smoke | Use the native picker, export once, reopen that file, and confirm readable Dataset/order without unexpected diagnostics. | **PASS — HUMAN CONFIRMATION, 2026-09-28:** H6 reported OK. Earlier OS-picker preflight and machine round-trip evidence remain recorded separately. |
 
 H1–H4 are Human judgments about presentation and interaction that automated
@@ -262,12 +262,33 @@ Perspective/Relative Time semantics.
 ## Completion record
 
 Formal Human Acceptance remains **PENDING TARGETED POST-CHANGE HUMAN REVIEW —
-H1 CONTEXTUAL CONTROL ACCESS, H4 EN/JA MOVE FEEDBACK, AND H5 LOCAL WARNING
-DISCOVERABILITY**. H2, H3, H6, H4 motion/focus/repeated movement, and H5 warning
-comprehension/export preference are already closed and must not be repeated.
-Machine PASS does not substitute for the targeted Human review. Keep the
-historical blocked and stale-runtime records unchanged.
+H1 FINAL WARNING/HELP PRESENTATION AND H4 LOCALE-SWITCH FEEDBACK**. H2, H3, H5,
+H6, H4 motion/focus/repeated movement, and accepted H1 interaction direction
+are closed and must not be repeated. Machine and browser PASS do not substitute
+for these remaining targeted Human presentation checks. Keep the historical
+blocked and stale-runtime records unchanged.
 
 The NarrativeLine UI refinement is recorded in the linked implementation
 result. No Core/History/Relative Time/Perspective semantics, schemas, Validator,
 Hub, public sample, or deployment were changed for it.
+
+## Final presentation refinement evidence — 2026-09-28
+
+The final local warning keeps its clear `Review display order` disclosure text
+and native disclosure marker; its ambiguous circular ornament was removed.
+Ordering controls now carry a collapsed `About display order` native disclosure
+with the display-only safety explanation and the selected Event's Placed or
+Unplaced description. The EN and JA User Guides explain the on-demand help.
+The implementation result records the exact source, test, and Edge evidence.
+
+Live Edge at port 5181 displayed an English move result, then changed that
+visible transient result to Japanese when the locale changed, and a new
+Japanese move also produced Japanese feedback. Regression tests verify EN → JA
+→ EN while feedback remains visible. The pre-existing port 5173 tab and Dataset
+were untouched. No physical touch device was used.
+
+The next Human review is limited to the final text-only local warning and
+on-demand help presentation (H1), plus transient feedback across a locale
+switch (H4). H5's already accepted comprehension, local-discovery direction,
+and no-extra-export-confirmation preference remain closed. Formal acceptance
+remains pending those targeted checks.

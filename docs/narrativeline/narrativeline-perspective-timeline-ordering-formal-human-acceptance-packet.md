@@ -2,15 +2,15 @@
 
 Date prepared: 2026-09-28
 
-Status: **BOUNDED UI REFINEMENT IMPLEMENTED / POST-REFINEMENT HUMAN ACCEPTANCE PENDING**
+Status: **FORMAL HUMAN ACCEPTANCE ACCEPTED / CLOSED — 2026-09-28**
 
 Authority: [Perspective 0.1.0 Candidate](../../extensions/perspective-extension-candidate.md).
 Current planning authority: [E2R Roadmap](../roadmap.md).
 
 This packet records Human observations, the bounded NarrativeLine UI
-refinement, and the remaining Human-only review. It does not change accepted
-Extension semantics or the Perspective Candidate. Any design fork discovered
-during review returns to the Human before implementation.
+refinement, and final Human Acceptance. It does not change accepted Extension
+semantics or the Perspective Candidate. Any new design fork returns to the
+Human before implementation.
 
 ## Result classification for this packet
 
@@ -178,10 +178,10 @@ PASS.
 
 | ID | Human check and expected evidence | Current disposition |
 | --- | --- | --- |
-| H1 — Timeline density and control hierarchy | Inspect the ordinary Timeline and use selection, keyboard focus, and touch to reveal ordering controls; review the final local warning and on-demand help presentation. | Human selected non-hover contextual disclosure. Controls appear only on the selected or focused Event; keyboard row selection and the native help disclosure work in the current runtime. The ambiguous warning ornament is removed while the text label and disclosure triangle remain. **FINAL TARGETED HUMAN PRESENTATION REVIEW PENDING** for the text-only warning and contextual help. Do not repeat closed H1 direction decisions. |
+| H1 — Timeline density and control hierarchy | Inspect the ordinary Timeline and use selection, keyboard focus, and touch to reveal ordering controls; review the final local warning and on-demand help presentation. | **PASS / CLOSED — HUMAN-SELECTED DIRECTION AND FINAL BROWSER CHECK, 2026-09-28:** selected/focused controls remain contextual; warning and help disclosures start at the same content edge as Event title/description; both disclosure headings use the same bold hierarchy in Japanese and English. The existing warning text/triangle, help content, touch/keyboard direction, and information density remain accepted. No H1 choice remains open. |
 | H2 — Narrow presentation | Inspect the representative Timeline at approximately 360 CSS px for names, controls, status, diagnostics, clipping, overlap, and horizontal scrolling. | **PASS — HUMAN REPORT, 2026-09-28:** post-refinement narrow view was inspected at about 360 CSS px; no new clipping, overlap, or horizontal-layout failure was reported. Exact measured width and locale were not retained in the handoff. |
 | H3 — Same-name target identity | Identify duplicate-name Events in Event Detail Relative Time choices and a recorded reference using visible hints; confirm the intended target. | **PASS — HUMAN REPORT, 2026-09-28:** post-refinement UI made the same-name target identifiable. Canonical operation targeting and resolver behavior remain covered by machine tests; no rerun requested. |
-| H4 — Keyboard, focus, feedback, repeated movement | Use keyboard moves, inspect focus and localized feedback, including a boundary; assess visual movement feedback. | Human confirmed motion, focus, and repeated movement were acceptable. Current Edge runtime shows English and Japanese move feedback; switching EN → JA → EN re-presents the visible transient feedback in the current locale while retaining the Event name. Automated coverage agrees. **TARGETED HUMAN REVIEW PENDING** for the locale-switch feedback boundary only; motion/focus/repeated movement need not be repeated. |
+| H4 — Keyboard, focus, feedback, repeated movement | Use keyboard moves, inspect focus and localized feedback, including a boundary; assess visual movement feedback. | **PASS / CLOSED — HUMAN CONFIRMED, 2026-09-28:** motion, focus, repeated movement, EN/JA feedback, and the visible feedback changing to the current locale after locale switch are accepted. Automated coverage agrees. No H4 rerun is required. |
 | H5 — Derived mismatch comprehension and local discovery | Read the rendered mismatch diagnostic without source; inspect local indicators near affected Events. Keep export available without extra confirmation. | **PASS / CLOSED:** Human understands the mismatch, approved discovery beside affected Events, and retains export without extra confirmation. The latest label/icon simplification is a presentation check tracked under H1; it does not reopen H5 comprehension or its accepted local-discovery direction. |
 | H6 — Native file open/export/re-open smoke | Use the native picker, export once, reopen that file, and confirm readable Dataset/order without unexpected diagnostics. | **PASS — HUMAN CONFIRMATION, 2026-09-28:** H6 reported OK. Earlier OS-picker preflight and machine round-trip evidence remain recorded separately. |
 
@@ -251,22 +251,21 @@ matrix hoping later results will qualify earlier ones.
 Only a scenario executed on the qualified target can be `PRODUCT FAIL`. A
 design preference without an already-set acceptance expectation is a Human
 decision, not an inferred Product defect. Contextual controls are implemented
-for selected or keyboard-focused Events; H1 awaits Human review of keyboard
-and touch access. Motion/focus/repeated movement were Human-reviewed and are
-closed; H4 awaits only confirmation of the EN/JA feedback correction. H5
-comprehension and export preference are closed; only local indicator
-discoverability awaits review. Do not add export confirmation, adopt Cross-App
-control standards, introduce global identity architecture, or change
-Perspective/Relative Time semantics.
+for selected or keyboard-focused Events, and the final H1 warning/help
+alignment and heading hierarchy are browser-confirmed. H4 interaction and
+feedback, H5 comprehension/local discovery/export preference, H2, H3, and H6
+are closed. Do not add export confirmation, adopt Cross-App control standards,
+introduce global identity architecture, or change Perspective/Relative Time
+semantics.
 
 ## Completion record
 
-Formal Human Acceptance remains **PENDING TARGETED POST-CHANGE HUMAN REVIEW —
-H1 FINAL WARNING/HELP PRESENTATION**. H2, H3, H5, H6, H4 locale-switch
-feedback, H4 motion/focus/repeated movement, and the accepted H1 interaction
-direction are closed and must not be repeated. Machine and browser PASS do not
-substitute for the remaining targeted Human presentation check. Keep the
-historical blocked and stale-runtime records unchanged.
+Formal Human Acceptance is **ACCEPTED / CLOSED — 2026-09-28**. H1's final
+warning/help alignment and shared bold hierarchy are verified in isolated
+Edge at the current NarrativeLine checkout in both Japanese and English.
+H2/H3/H4/H5/H6 and the previously accepted H1 interaction direction remain
+closed; none were reopened or repeated. Keep historical blocked and stale-
+runtime records unchanged.
 
 The NarrativeLine UI refinement is recorded in the linked implementation
 result. No Core/History/Relative Time/Perspective semantics, schemas, Validator,
@@ -300,9 +299,8 @@ its History mismatch, not a Relative Time mismatch; Relative Time EN/JA copy
 was verified by integration tests. The existing 5173 tab and Dataset were
 untouched.
 
-Formal Human review is now limited to this final H1 warning/help wording and
-presentation. H4 locale-switch feedback, H4 motion/focus/repeated movement,
-H5 comprehension/export preference/local-discovery direction, H2, H3, H6, and
-the accepted H1 interaction direction remain closed and must not be reopened.
-No semantics, persisted model, schema, Validator, public sample, or deployment
-changed.
+The final selected presentation direction is implemented and browser-checked:
+both disclosure summaries align with Event content and share the bold visual
+weight in both locales. Formal Human Acceptance is **CLOSED** as recorded
+above. This does not alter semantics, persisted model, schema, Validator,
+public sample, or deployment.

@@ -262,11 +262,11 @@ Perspective/Relative Time semantics.
 ## Completion record
 
 Formal Human Acceptance remains **PENDING TARGETED POST-CHANGE HUMAN REVIEW —
-H1 FINAL WARNING/HELP PRESENTATION AND H4 LOCALE-SWITCH FEEDBACK**. H2, H3, H5,
-H6, H4 motion/focus/repeated movement, and accepted H1 interaction direction
-are closed and must not be repeated. Machine and browser PASS do not substitute
-for these remaining targeted Human presentation checks. Keep the historical
-blocked and stale-runtime records unchanged.
+H1 FINAL WARNING/HELP PRESENTATION**. H2, H3, H5, H6, H4 locale-switch
+feedback, H4 motion/focus/repeated movement, and the accepted H1 interaction
+direction are closed and must not be repeated. Machine and browser PASS do not
+substitute for the remaining targeted Human presentation check. Keep the
+historical blocked and stale-runtime records unchanged.
 
 The NarrativeLine UI refinement is recorded in the linked implementation
 result. No Core/History/Relative Time/Perspective semantics, schemas, Validator,
@@ -287,8 +287,22 @@ Japanese move also produced Japanese feedback. Regression tests verify EN → JA
 → EN while feedback remains visible. The pre-existing port 5173 tab and Dataset
 were untouched. No physical touch device was used.
 
-The next Human review is limited to the final text-only local warning and
-on-demand help presentation (H1), plus transient feedback across a locale
-switch (H4). H5's already accepted comprehension, local-discovery direction,
-and no-extra-export-confirmation preference remain closed. Formal acceptance
-remains pending those targeted checks.
+The final refinement additionally replaces user-facing EN/JA “Derived band”
+diagnostic vocabulary with wording that compares saved display order to the
+order indicated by recorded Relative Time relationships. Selected/focused
+Event cards are more compact, the local diagnostic disclosure has visible
+separation from the ordering-help disclosure, and the help summary shares the
+move-control row where it fits. Move targets remain 32px minimum. Targeted
+tests cover the EN/JA diagnostic wording and the CSS geometry constraints; an
+isolated Edge view confirmed the Japanese selected-row density and disclosure
+separation. That browser view used the built-in Berlin Wall sample and showed
+its History mismatch, not a Relative Time mismatch; Relative Time EN/JA copy
+was verified by integration tests. The existing 5173 tab and Dataset were
+untouched.
+
+Formal Human review is now limited to this final H1 warning/help wording and
+presentation. H4 locale-switch feedback, H4 motion/focus/repeated movement,
+H5 comprehension/export preference/local-discovery direction, H2, H3, H6, and
+the accepted H1 interaction direction remain closed and must not be reopened.
+No semantics, persisted model, schema, Validator, public sample, or deployment
+changed.

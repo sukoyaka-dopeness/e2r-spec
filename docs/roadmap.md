@@ -46,7 +46,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia/documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia/documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](documentation-ia/roadmap-residual-responsibility-audit3.md); [audit 2](documentation-ia/roadmap-residual-responsibility-audit2.md); [audit 1](documentation-ia/roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](documentation-ia/roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](documentation-ia/roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](documentation-ia/roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](documentation-ia/roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](documentation-ia/roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](documentation-ia/roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](documentation-ia/roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); [Seed PR-3 Browser history migration result](documentation-ia/roadmap-seed-pr3-browser-history-migration1-result.md); [this PR-3 pre-Browser history migration](documentation-ia/roadmap-seed-pr3-prebrowser-history-migration1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine Relative Time identity and projection presentation | **FORMALLY ACCEPTED / COMPLETE / CLOSED — BOUNDED PRESENTATION AND IDENTITY CORRECTION** | [Human Browser Acceptance and closure](narrativeline/narrativeline-relative-time-timeline-projection-presentation-follow-up.md#formal-human-browser-acceptance-2026-09-27); [audit snapshot](narrativeline/narrativeline-relative-time-timeline-projection-presentation-audit1-result.md); the multi-band fixture is application acceptance evidence only, not a Hub or public sample. That checkpoint did not change ordinary Timeline ordering; the later Perspective implementation is tracked separately below. |
-| NarrativeLine Human-authored Timeline ordering | **PERSPECTIVE 0.1.0 CANDIDATE ADOPTED / IMPLEMENTATION CANDIDATE GREEN / REAL BROWSER AND HUMAN ACCEPTANCE NEXT** | The [Perspective Candidate contract](../extensions/perspective-extension-candidate.md) remains specification authority. NarrativeLine's [bounded implementation result](../../e2r-narrative-line/docs/perspective-0.1.0-timeline-ordering-implementation-result.md) records `c4709d2`, automated tests/lint/build, sparse ordering, Derived diagnostics, keyboard controls, lifecycle and round-trip safety. Real Browser and Human Acceptance have not run; Validator integration, other consumers, public samples, and Stable review remain separate. Earlier [ownership/persistence](narrativeline/narrativeline-timeline-ordering-perspective-ownership-audit1.md) and [representation audits](narrativeline/narrativeline-perspective-ordering-representation-audit1.md) remain historical evidence. |
+| NarrativeLine Human-authored Timeline ordering | **PERSPECTIVE 0.1.0 CANDIDATE ADOPTED / IMPLEMENTATION CANDIDATE GREEN / FORMAL REAL-BROWSER AND HUMAN ACCEPTANCE NEXT** | The [Perspective Candidate contract](../extensions/perspective-extension-candidate.md) remains specification authority. NarrativeLine's [bounded implementation result and acceptance follow-up](../../e2r-narrative-line/docs/perspective-0.1.0-timeline-ordering-implementation-result.md) records `c4709d2`, automated tests/lint/build, sparse ordering, Derived diagnostics, keyboard controls, lifecycle and round-trip safety, plus Human-observed visual-density and export-warning acceptance questions. Formal Real Browser / Human Acceptance remains pending; only bounded UI refinement may follow before ordering workstream closure. Quantitative Relative Time remains a separate post-closure audit; Validator integration, other consumers, public samples, and Stable review remain separate. Earlier [ownership/persistence](narrativeline/narrativeline-timeline-ordering-perspective-ownership-audit1.md) and [representation audits](narrativeline/narrativeline-perspective-ordering-representation-audit1.md) remain historical evidence. |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](./temporal/history-2-user-facing-authoring-scope-result.md); [bounded scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader History 2 shapes remain outside scope; NarrativeLine Relative Time authoring is a separate application workstream below |
 | H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
@@ -778,6 +778,16 @@ semantics:
   buttons in LiaisonScape and NarrativeLine on desktop and narrow mobile
   layouts. Current user observation confirms that button boxes and their text
   feel oversized across both applications, rather than at one isolated screen.
+  The 2026-09-28 NarrativeLine Timeline observation adds that repeated ↑/↓
+  ordering utility buttons can visually dominate as Event count grows, and
+  routine placed/unplaced labels add persistent density. Treat these as current
+  evidence for the existing Cross-App follow-up, not as authorization for a
+  local CSS patch. Review a control hierarchy (primary, ordinary, compact
+  secondary/utility, icon-only utility, destructive) and whether visual box
+  size can be separated from pointer/touch target size; repeated utility
+  controls need not default to ordinary action-button prominence. Keep exact
+  dimensions, tokens, component APIs, and normative standard open for a later
+  Cross-App audit/design decision.
   Audit shared or app-wide control rules, including padding, height, border
   weight, font size, and responsive behaviour. Preserve touch-target,
   keyboard, contrast, and readable localized-label requirements while reducing
@@ -1894,12 +1904,26 @@ serialization contract remain undecided. The audit selects none of them and
 makes no Presentation or `temporalOrder` ownership change. No implementation
 is authorized before the listed Human design decisions.
 
-The sequence is: (1) Roadmap synchronization and (2) the ownership/persistence
-audit, both complete; (3) Human design decisions; (4) only if authorized, a
-bounded Perspective prototype/schema checkpoint; (5) NarrativeLine
-implementation; (6) Real Browser / Human Acceptance; and (7) after the ordering
-workstream closes, NarrativeLine's Relative Time 0.2.0 current-state,
-documentation, and release-readiness audit. The older 2026-09-17
+The preceding ownership-audit status is the 2026-09-27 checkpoint snapshot;
+the following dated entries record the later Human decisions, Candidate
+adoption, and implementation evidence. The update below is current planning.
+
+Current planning update (2026-09-28): the ownership/persistence audit, Human
+design decisions, Candidate contract, and implementation are complete. The
+current sequence is: (1) formal Real
+Browser / Human Acceptance of Perspective ordering, (2) only if needed,
+bounded UI refinement followed by re-acceptance, (3) ordering workstream
+closure, (4) a separate bounded audit/design checkpoint for Quantitative
+Relative Time (`calendar-granule-relation` and `elapsed-offset`), (5) any
+required Human semantic decisions, then separately decide Candidate
+integration/application implementation and its acceptance, and (6) NarrativeLine
+current-state/documentation/final release-readiness audit. The quantitative
+checkpoint must preserve the existing distinction between Calendar-granule
+displacement and elapsed duration (for example, “one Calendar month after” is
+not automatically “30 elapsed days after”). It is not implementation
+authorization. If Quantitative Relative Time is selected for NarrativeLine
+`0.2.0`, complete that work before the final release-readiness audit; do not
+run the final audit and then add a temporal feature. The older 2026-09-17
 release-readiness evidence remains historical evidence and is not deleted or
 treated as a substitute for that later audit.
 

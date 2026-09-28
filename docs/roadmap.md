@@ -46,7 +46,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia/documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia/documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](documentation-ia/roadmap-residual-responsibility-audit3.md); [audit 2](documentation-ia/roadmap-residual-responsibility-audit2.md); [audit 1](documentation-ia/roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](documentation-ia/roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](documentation-ia/roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](documentation-ia/roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](documentation-ia/roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](documentation-ia/roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](documentation-ia/roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](documentation-ia/roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); [Seed PR-3 Browser history migration result](documentation-ia/roadmap-seed-pr3-browser-history-migration1-result.md); [this PR-3 pre-Browser history migration](documentation-ia/roadmap-seed-pr3-prebrowser-history-migration1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine Relative Time identity and projection presentation | **FORMALLY ACCEPTED / COMPLETE / CLOSED — BOUNDED PRESENTATION AND IDENTITY CORRECTION** | [Human Browser Acceptance and closure](narrativeline/narrativeline-relative-time-timeline-projection-presentation-follow-up.md#formal-human-browser-acceptance-2026-09-27); [audit snapshot](narrativeline/narrativeline-relative-time-timeline-projection-presentation-audit1-result.md); the multi-band fixture is application acceptance evidence only, not a Hub or public sample. That checkpoint did not change ordinary Timeline ordering; the later Perspective implementation is tracked separately below. |
-| NarrativeLine Relative Time 0.2.0 import diagnostic / sample readiness | **EXACT SUPPORT VERIFIED / NEW HUMAN BROWSER WARNING REPORT REOPENS PARITY INVESTIGATION / SAMPLE DRAFT NON-PUBLIC** | NarrativeLine's [diagnostic and sample readiness result](../../e2r-narrative-line/docs/relative-time-0.2.0-import-diagnostic-and-sample-readiness-result.md) records that the earlier warning was not reproduced against that checkpoint's exact Validator `0.7.0` package/source path and automated import. Human has since reported a real-browser `読み込み情報` panel for both Lantern Market drafts while the Core-only fixture remains warning-free. The exact diagnostic and emitting app URL remain pending; no warning was suppressed or sample declaration changed. No Hub or public sample promotion occurred. |
+| NarrativeLine Relative Time 0.2.0 import diagnostic / sample readiness | **EXACT SUPPORT VERIFIED / HUMAN WARNING UNCLASSIFIED / BROWSER CAPTURE BLOCKED PENDING LOCAL-FILE ACCESS** | NarrativeLine's [diagnostic and sample readiness result](../../e2r-narrative-line/docs/relative-time-0.2.0-import-diagnostic-and-sample-readiness-result.md) records the earlier warning report and this checkpoint's runtime evidence. The available Edge page is `http://127.0.0.1:5173/e2r-narrative-line/`, a Vite dev page exposing `src/main.tsx`; its current Validator prebundle URL uses `v=5bbf2261` and contains exact `0.2.0` support. Core-only is visible with no warning; EN/JA warning presence is Human-reported but not recaptured here, and exact code/path/message/severity plus the emitting URL/revision are missing. Browser file selection requires the ChatGPT Edge extension's local-file access; its settings URL was blocked by browser policy, so Human must enable the setting manually or supply the diagnostic. No source cause or stale-build finding is established. Lantern Market remains non-public. |
 | NarrativeLine Human-authored Timeline ordering | **PERSPECTIVE 0.1.0 CANDIDATE ADOPTED / AUTOMATED ACCEPTANCE EXPANDED / BROWSER WARNING PARITY UNRESOLVED / FORMAL HUMAN ACCEPTANCE PENDING** | The [Perspective Candidate contract](../extensions/perspective-extension-candidate.md) remains specification authority. NarrativeLine's [implementation result and acceptance follow-up](../../e2r-narrative-line/docs/perspective-0.1.0-timeline-ordering-implementation-result.md) records `c4709d2` and Human-observed visual-density/export-warning questions. The [Relative Time browser-diagnostic and acceptance result](../../e2r-narrative-line/docs/relative-time-0.2.0-import-diagnostic-and-sample-readiness-result.md) records the new App/import integration and Perspective boundary tests. Human reports `読み込み情報` for Lantern Market EN/JA while the Core-only fixture is warning-free, but the exact code/path/message and emitting app URL are not yet recorded; no source defect or stale-runtime cause is established. Next: obtain those exact browser diagnostics, classify/fix only a bounded current-source defect if evidenced, then complete the small visual/wording/interaction review. Quantitative Relative Time remains a separate post-closure audit; Validator integration, other consumers, public samples, and Stable review remain separate. Earlier [ownership/persistence](narrativeline/narrativeline-timeline-ordering-perspective-ownership-audit1.md) and [representation audits](narrativeline/narrativeline-perspective-ordering-representation-audit1.md) remain historical evidence. |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](./temporal/history-2-user-facing-authoring-scope-result.md); [bounded scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader History 2 shapes remain outside scope; NarrativeLine Relative Time authoring is a separate application workstream below |
@@ -2002,14 +2002,22 @@ promotion.
 
 Human reports `読み込み情報` in a real browser for Lantern Market EN/JA and
 no such panel for the Core-only replacement fixture. The exact warning
-code/path/message and emitting app URL have not been supplied or reproduced in
-the currently visible local tab, so the cause remains unresolved. Current
-Validator `0.7.0` and the current import path support Relative Time `0.2.0`;
-current automated imports of all three Datasets remain warning-free. This does
-not establish a stale-runtime cause or authorize changing the sample declaration
-or suppressing diagnostics. See the [diagnostic and acceptance result](../../e2r-narrative-line/docs/relative-time-0.2.0-import-diagnostic-and-sample-readiness-result.md).
+code/path/message and emitting app URL have not been supplied. The current Edge
+tab at `http://127.0.0.1:5173/e2r-narrative-line/` is visibly running the Vite
+dev entry `src/main.tsx`, connected to Vite at `2026-09-28T04:19:04Z`; its
+transformed Validator import uses the current `.vite/deps` prebundle
+`v=5bbf2261`, which contains exact Relative Time `0.2.0` support. The visible
+Core-only fixture has no warning. Lantern Market EN/JA were not reloaded in this
+attempt because local file selection is blocked until Edge's ChatGPT extension
+has `Allow access to file URLs`; Human approved this setting, but the browser
+control policy blocked the extension-settings URL. Human must enable it
+manually or provide diagnostics from a fresh import. Current Validator `0.7.0`
+and automated imports support the samples, but the warning cause remains
+unclassified; neither a stale-runtime cause nor a current-source defect is
+established. No declaration was changed and no diagnostic suppressed. See the
+[diagnostic and acceptance result](../../e2r-narrative-line/docs/relative-time-0.2.0-import-diagnostic-and-sample-readiness-result.md).
 
-The app's Vite/jsdom gate now covers the production App import handler for the
+The app's Vite/jsdom gate covers the production App import handler for the
 Core-only fixture and Lantern Market EN/JA, clean replacement after a dirty
 Perspective move, repeated ordering moves and boundary controls, Relative Time
 Relation add/edit/delete non-mutation, and preservation of a Relative Time
@@ -2018,11 +2026,14 @@ sparse ordering, dirty state, round-trip, dated/undated placement, temporal
 non-mutation, Event lifecycle, dangling references, multiple/unsupported
 Perspectives, and replacement cancellation. The test exercises a synthetic
 File-like object, not the OS chooser/download path or the unresolved Human
-warning.
+warning. It uses `ssrLoadModule`, so it does not exercise the browser-optimized
+Validator prebundle or a retained page across builds. Another jsdom test would
+not cover that boundary. A maintained browser runner would be additional
+infrastructure; none was added in this bounded checkpoint.
 
 Formal Human Acceptance remains pending. First obtain the exact browser warning
-code/path/message and the app URL that emitted it. Once any browser/runtime
-cause is closed, Human review is limited to visual density/control hierarchy,
+code/path/message and the app URL/revision that emitted it. Once any
+browser/runtime cause is closed, Human review is limited to visual density/control hierarchy,
 placed/unplaced label density, same-name Event distinguishability, localized
 move feedback and warning comprehension, narrow viewport appearance, actual
 focus appearance/interaction feel, whether a warning needs an explicit export

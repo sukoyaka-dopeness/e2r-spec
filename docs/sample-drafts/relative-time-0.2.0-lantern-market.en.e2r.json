@@ -1,0 +1,112 @@
+{
+  "version": "1.0",
+  "entities": [
+    {
+      "id": "lantern-market",
+      "name": "Lantern Market",
+      "description": "A fictional neighborhood evening market that gathers around small food stalls."
+    },
+    {
+      "id": "mei-organizer",
+      "name": "Mei",
+      "description": "The market organizer who decides when the stalls can safely reopen."
+    },
+    {
+      "id": "ren-electrician",
+      "name": "Ren",
+      "description": "An electrician called to inspect the market's damaged power circuit."
+    }
+  ],
+  "events": [
+    {
+      "id": "power-outage",
+      "name": "The market loses power",
+      "description": "A sudden fault darkens the Lantern Market while the evening stalls are open."
+    },
+    {
+      "id": "lanterns-lit",
+      "name": "Stallholders light the lanterns",
+      "description": "The stallholders set out battery lanterns so visitors can see while the power is off."
+    },
+    {
+      "id": "circuit-isolated",
+      "name": "Ren isolates the damaged circuit",
+      "description": "Ren separates the faulty circuit from the rest of the market's electrical supply."
+    },
+    {
+      "id": "market-reopens",
+      "name": "The market reopens in lantern light",
+      "description": "Mei invites visitors back after the lanterns are ready and the damaged circuit is isolated."
+    }
+  ],
+  "relations": [
+    {
+      "id": "outage-before-lanterns",
+      "sourceId": "lanterns-lit",
+      "targetId": "power-outage",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.relative-time": {
+          "type": "relative-position",
+          "relation": "before"
+        }
+      }
+    },
+    {
+      "id": "outage-before-circuit-isolated",
+      "sourceId": "circuit-isolated",
+      "targetId": "power-outage",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.relative-time": {
+          "type": "relative-position",
+          "relation": "before"
+        }
+      }
+    },
+    {
+      "id": "lanterns-before-reopening",
+      "sourceId": "market-reopens",
+      "targetId": "lanterns-lit",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.relative-time": {
+          "type": "relative-position",
+          "relation": "before"
+        }
+      }
+    },
+    {
+      "id": "circuit-before-reopening",
+      "sourceId": "market-reopens",
+      "targetId": "circuit-isolated",
+      "extensions": {
+        "draft.github.sukoyaka-dopeness.relative-time": {
+          "type": "relative-position",
+          "relation": "before"
+        }
+      }
+    },
+    { "id": "outage-at-market", "sourceId": "power-outage", "targetId": "lantern-market", "name": "at" },
+    { "id": "lanterns-at-market", "sourceId": "lanterns-lit", "targetId": "lantern-market", "name": "at" },
+    { "id": "circuit-at-market", "sourceId": "circuit-isolated", "targetId": "lantern-market", "name": "at" },
+    { "id": "reopening-at-market", "sourceId": "market-reopens", "targetId": "lantern-market", "name": "at" },
+    { "id": "lanterns-set-up-by-stallholders", "sourceId": "lanterns-lit", "targetId": "mei-organizer", "name": "coordinated by" },
+    { "id": "circuit-checked-by-ren", "sourceId": "circuit-isolated", "targetId": "ren-electrician", "name": "carried out by" },
+    { "id": "reopening-approved-by-mei", "sourceId": "market-reopens", "targetId": "mei-organizer", "name": "approved by" }
+  ],
+  "extensions": {
+    "metadata": {
+      "datasetId": "draft-relative-time-lantern-market-en",
+      "title": "A Night Market Reopens After an Outage"
+    },
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        { "extension": "metadata", "version": "1.0.0" },
+        {
+          "extension": "draft.github.sukoyaka-dopeness.relative-time",
+          "version": "0.2.0",
+          "features": ["relative-position"]
+        }
+      ]
+    }
+  }
+}

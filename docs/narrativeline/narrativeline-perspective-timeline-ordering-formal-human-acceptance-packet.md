@@ -178,11 +178,11 @@ PASS.
 
 | ID | Human check and expected evidence | Current disposition |
 | --- | --- | --- |
-| H1 — Timeline density and control hierarchy | Inspect the ordinary Timeline, selected Event, and keyboard/touch access to display ordering. | Human direction confirmed: do not show ordering ↑/↓ controls constantly in ordinary Timeline. The specific disclosure model remains a **HUMAN DECISION REQUIRED**; current runtime still shows controls on every row. |
+| H1 — Timeline density and control hierarchy | Inspect the ordinary Timeline and use selection, keyboard focus, and touch to reveal ordering controls. | Human selected non-hover contextual disclosure. Implemented: controls appear only on the selected or focused Event; authorable rows can be reached and selected by keyboard, and tapping a row reveals controls on touch. **POST-CHANGE HUMAN REVIEW PENDING.** |
 | H2 — Narrow presentation | Inspect the representative Timeline at approximately 360 CSS px for names, controls, status, diagnostics, clipping, overlap, and horizontal scrolling. | **PASS — HUMAN REPORT, 2026-09-28:** post-refinement narrow view was inspected at about 360 CSS px; no new clipping, overlap, or horizontal-layout failure was reported. Exact measured width and locale were not retained in the handoff. |
 | H3 — Same-name target identity | Identify duplicate-name Events in Event Detail Relative Time choices and a recorded reference using visible hints; confirm the intended target. | **PASS — HUMAN REPORT, 2026-09-28:** post-refinement UI made the same-name target identifiable. Canonical operation targeting and resolver behavior remain covered by machine tests; no rerun requested. |
-| H4 — Keyboard, focus, feedback, repeated movement | Use keyboard moves, inspect focus and localized feedback, including a boundary; assess visual movement feedback. | Keyboard access and the corrected localized copy were confirmed. Human selected motion for reorder; this checkpoint implements it with reduced-motion support. **POST-MOTION BROWSER REVIEW PENDING** for actual focus ring, repeated moves, EN/JA feedback, and perceived motion. |
-| H5 — Derived mismatch comprehension | Read the rendered mismatch diagnostic without source and record whether it explains the discrepancy clearly. Keep the existing export path available. | **EXPORT PREFERENCE CONFIRMED:** export remains available without extra pre-export confirmation. Diagnostic-comprehension result remains **PENDING**; the preference does not imply warning comprehension. |
+| H4 — Keyboard, focus, feedback, repeated movement | Use keyboard moves, inspect focus and localized feedback, including a boundary; assess visual movement feedback. | Human confirmed motion, focus, and repeated movement were acceptable. A new defect showed Japanese move feedback in EN; fixed through the existing locale-message catalog and machine-verified in EN/JA. **POST-CHANGE HUMAN REVIEW PENDING** for EN/JA feedback only; motion/focus need not be repeated. |
+| H5 — Derived mismatch comprehension and local discovery | Read the rendered mismatch diagnostic without source; inspect local indicators near affected Events. Keep export available without extra confirmation. | **COMPREHENSION PASS; EXPORT PREFERENCE CONFIRMED.** Human understands that saved display order may differ from Relative Time Derived order and retains export without confirmation. Local discoverability was the follow-up; affected-Event disclosure is implemented and **POST-CHANGE HUMAN REVIEW PENDING**. |
 | H6 — Native file open/export/re-open smoke | Use the native picker, export once, reopen that file, and confirm readable Dataset/order without unexpected diagnostics. | **PASS — HUMAN CONFIRMATION, 2026-09-28:** H6 reported OK. Earlier OS-picker preflight and machine round-trip evidence remain recorded separately. |
 
 H1–H4 are Human judgments about presentation and interaction that automated
@@ -196,38 +196,39 @@ coverage already exist.
 
 ## Human-selected interaction and motion directions — 2026-09-28
 
-The Human selected two directions without selecting their detailed interaction
-model:
+The Human selected contextual disclosure that does not depend on pointer hover.
+Current source inspection showed that row click already selects an Event, while
+unselected rows were not keyboard-focusable. The bounded application model now
+uses existing row selection and keyboard focus: focus an Event row to reveal
+controls, select it with Enter or Space, and use its native move buttons; a
+touch tap selects the row and reveals the same controls. Only authorable
+Datasets make the rows keyboard stops for this ordering workflow. No separate
+mode or More-menu action is added.
 
-- Ordering ↑/↓ controls should not remain constantly visible in the ordinary
-  read-oriented Timeline. Keyboard and touch access must remain available, and
-  future drag-and-drop should work directly from ordinary Timeline without an
-  ordering-edit mode.
-- Event reorder and Timeline top/bottom navigation should each communicate
-  movement with motion. Reorder changes Dataset-owned Perspective display
-  order; top/bottom changes only the viewport. Neither animation state nor
-  navigation is Dataset data. The arrows on per-Event ordering controls and
-  top/bottom navigation controls therefore keep distinct responsibilities.
+This direction preserves the ordinary Timeline as a read-oriented view:
+ordering controls are hidden until a row is selected or focused. It keeps a
+future direct-drag interaction possible without an edit mode.
 
-The current `WorkspaceMoreMenu` contains Open and Export Dataset actions; it is
-not an existing ordering-mode entry point. Three materially different
-accessible candidates remain: controls on the selected Event only; a dedicated
-keyboard-accessible ordering mode, potentially entered from More; or
-per-Event contextual disclosure reachable by selection, keyboard focus, and
-touch. The first fits the current selection model but can make the function
-less discoverable. A mode preserves compact reading but adds a mode transition
-and must not gate future ordinary-mode drag-and-drop. Contextual disclosure
-avoids a global mode but needs a clear non-hover trigger and careful touch
-behavior. More is not selected as the mode entry point. Choose the disclosure
-model before hiding controls; do not implement hover-only access.
+The `WorkspaceMoreMenu` remains unchanged and continues to contain Open and
+Export Dataset actions. Selected/focused-row disclosure keeps future direct
+Drag & Drop available in ordinary Timeline without adding a mode. Per-Event
+↑/↓ continues to mean Dataset-owned display-order movement; top/bottom arrows
+continue to mean viewport navigation. Their labels and iconography are
+unchanged.
+The motion slice adds a short transform transition to reordered Timeline rows
+and smooth top/bottom viewport navigation when reduced motion is not requested.
+It skips row movement under `prefers-reduced-motion: reduce` and uses immediate
+navigation under that preference. Motion completion is not a prerequisite for
+focus, keyboard activation, Dataset mutation, save, or export.
 
-The independent motion slice adds a short transform transition to reordered
-Timeline rows and smooth top/bottom viewport navigation when reduced motion is
-not requested. It skips row movement under `prefers-reduced-motion: reduce`
-and uses immediate navigation under that preference. Motion completion is not
-a prerequisite for focus, keyboard activation, Dataset mutation, save, or
-export. Drag-and-drop, labels/icons, and a cross-application control standard
-remain outside this checkpoint.
+Ordering safety guidance is short and shown beside disclosed controls. The
+user guide explains the Placed / Unplaced · derived display labels and the
+affected-Event warning details. The Timeline keeps a compact diagnostic count
+with a collapsed full list; each affected Event also has a local, keyboard- and
+touch-operable detail disclosure. This changes presentation only. Diagnostic
+generation, wording meaning, severity, export availability, and persisted data
+remain unchanged. Drag-and-drop, labels/icons, and a cross-application control
+standard remain outside this checkpoint.
 
 ## Stop conditions and disposition
 
@@ -249,21 +250,23 @@ matrix hoping later results will qualify earlier ones.
 
 Only a scenario executed on the qualified target can be `PRODUCT FAIL`. A
 design preference without an already-set acceptance expectation is a Human
-decision, not an inferred Product defect. The current controls remain always
-visible pending the H1 disclosure decision. The Human selected motion direction,
-so motion is implemented as a bounded application refinement; H4 still
-requires browser review afterward. Do not add export confirmation, adopt
-Cross-App control standards, introduce global identity architecture, or change
+decision, not an inferred Product defect. Contextual controls are implemented
+for selected or keyboard-focused Events; H1 awaits Human review of keyboard
+and touch access. Motion/focus/repeated movement were Human-reviewed and are
+closed; H4 awaits only confirmation of the EN/JA feedback correction. H5
+comprehension and export preference are closed; only local indicator
+discoverability awaits review. Do not add export confirmation, adopt Cross-App
+control standards, introduce global identity architecture, or change
 Perspective/Relative Time semantics.
 
 ## Completion record
 
-Formal Human Acceptance remains **PENDING — H1 DISCLOSURE MODEL, H4 POST-MOTION
-BROWSER REVIEW, AND H5 DIAGNOSTIC COMPREHENSION**. H2, H3, and H6 are closed on
-Human-reported evidence; H5's no-extra-confirmation preference is confirmed
-independently of its pending comprehension check. Machine PASS and
-Codex-operated Edge checks do not substitute for the remaining Human review.
-Keep the historical blocked and stale-runtime records unchanged.
+Formal Human Acceptance remains **PENDING TARGETED POST-CHANGE HUMAN REVIEW —
+H1 CONTEXTUAL CONTROL ACCESS, H4 EN/JA MOVE FEEDBACK, AND H5 LOCAL WARNING
+DISCOVERABILITY**. H2, H3, H6, H4 motion/focus/repeated movement, and H5 warning
+comprehension/export preference are already closed and must not be repeated.
+Machine PASS does not substitute for the targeted Human review. Keep the
+historical blocked and stale-runtime records unchanged.
 
 The NarrativeLine UI refinement is recorded in the linked implementation
 result. No Core/History/Relative Time/Perspective semantics, schemas, Validator,

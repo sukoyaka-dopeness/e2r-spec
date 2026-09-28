@@ -2022,12 +2022,13 @@ warning.
 
 Formal Human Acceptance remains pending. First obtain the exact browser warning
 code/path/message and the app URL that emitted it. Once any browser/runtime
-cause is closed, Human review is limited to visual density and control
-hierarchy, localized wording and warning comprehension, narrow viewport
-appearance, actual focus appearance/interaction feel, and a small real-file
-open/export/re-open smoke. Lantern Market remains a non-public candidate draft;
-no Candidate semantics, schema, Validator, public sample, or temporal meaning
-changed.
+cause is closed, Human review is limited to visual density/control hierarchy,
+placed/unplaced label density, same-name Event distinguishability, localized
+move feedback and warning comprehension, narrow viewport appearance, actual
+focus appearance/interaction feel, whether a warning needs an explicit export
+confirmation, and a small real-file open/export/re-open smoke. Lantern Market
+remains a non-public candidate draft; no Candidate semantics, schema,
+Validator, public sample, or temporal meaning changed.
 
 ### Pre-Public-Release Push and Deployment Readiness Audit (2026-09-07)
 

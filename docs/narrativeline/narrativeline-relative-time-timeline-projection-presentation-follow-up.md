@@ -172,7 +172,7 @@ or temporal bounds, or write Derived results to Recorded data.
 
 ## Related authority
 
-- [Current E2R-SPEC Roadmap status](../roadmap.md#current-status-index-2026-09-27)
+- [Current E2R-SPEC Roadmap status](../roadmap.md#current-status-index-2026-09-28)
 - [NarrativeLine Relative Time 0.2.0 implementation result](../../../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-slice-implementation-result1.md)
 - [Current-state presentation audit and Human decision preparation](./narrativeline-relative-time-timeline-projection-presentation-audit1-result.md)
 - [NarrativeLine implementation](../../../e2r-narrative-line/src/components/RelativeTimeTimelineProjection.tsx)

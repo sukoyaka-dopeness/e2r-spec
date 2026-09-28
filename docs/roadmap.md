@@ -10,7 +10,7 @@ Status: Current planning document; non-normative
 
 Placement is closed at `8 directories / 7 Git repositories / 0 noncanonical root workspaces`.
 Seven canonical repositories remain direct children of `C:\Users\extra\E2R`; experimental and diagnostic workspaces, including the preserved receive-lifetime workspace, remain under `workspace/`.
-Current status is in the [status index](#current-status-index-2026-09-27); chronology and preservation evidence remain in the [legacy chronology](roadmap-history/legacy-chronology.md), workspace artifacts, and Git history.
+Current status is in the [status index](#current-status-index-2026-09-28); chronology and preservation evidence remain in the [legacy chronology](roadmap-history/legacy-chronology.md), workspace artifacts, and Git history.
 Future evidence disposition, provenance, archiving, and cleanup remain separate; placement closure does not authorize them.
 
 ## Operating principles
@@ -29,7 +29,7 @@ Future evidence disposition, provenance, archiving, and cleanup remain separate;
 - Keep ordinary Dataset use and Core validation independent of network access
   or an external registry.
 
-## Current status index — 2026-09-27
+## Current status index — 2026-09-28
 
 This short section is the entry point for current status. Detailed checkpoint
 records and retained planning entries remain below for evidence and chronology;
@@ -46,7 +46,7 @@ index](roadmap-history/README.md); its dated status language is historical.
 | Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia/documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia/documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](documentation-ia/roadmap-residual-responsibility-audit3.md); [audit 2](documentation-ia/roadmap-residual-responsibility-audit2.md); [audit 1](documentation-ia/roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](documentation-ia/roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](documentation-ia/roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](documentation-ia/roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](documentation-ia/roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](documentation-ia/roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](documentation-ia/roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](documentation-ia/roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); [Seed PR-3 Browser history migration result](documentation-ia/roadmap-seed-pr3-browser-history-migration1-result.md); [this PR-3 pre-Browser history migration](documentation-ia/roadmap-seed-pr3-prebrowser-history-migration1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
 | NarrativeLine Relative Time identity and projection presentation | **FORMALLY ACCEPTED / COMPLETE / CLOSED — BOUNDED PRESENTATION AND IDENTITY CORRECTION** | [Human Browser Acceptance and closure](narrativeline/narrativeline-relative-time-timeline-projection-presentation-follow-up.md#formal-human-browser-acceptance-2026-09-27); [audit snapshot](narrativeline/narrativeline-relative-time-timeline-projection-presentation-audit1-result.md); the multi-band fixture is application acceptance evidence only, not a Hub or public sample; Relative Time semantics, ordinary Timeline ordering, and Dataset behavior are unchanged |
-| NarrativeLine Human-authored Timeline ordering | **PORTABLE PERSPECTIVE DIRECTION SELECTED / REPRESENTATION AUDIT COMPLETE / HUMAN REPRESENTATION DECISION NEXT** | The [ownership/persistence audit](narrativeline/narrativeline-timeline-ordering-perspective-ownership-audit1.md) and [representation audit](narrativeline/narrativeline-perspective-ordering-representation-audit1.md) prepare the next Human choice. Human selected portable Perspective design preparation, sparse coverage, unplaced new Events, stable identity across rename, order retention with warnings after temporal evidence changes, independent Relative Time cycle handling, and keyboard move controls. The representation, rank rebalance policy, Extension ID/version/schema/serialization, and implementation remain undecided/unauthorized. The [2026-09-07 defer audit](narrativeline/narrativeline-display-order-reordering-audit.md) remains historical evidence. |
+| NarrativeLine Human-authored Timeline ordering | **CANDIDATE CONTRACT/SCHEMA PREPARED / HUMAN ADOPTION DECISION REQUIRED** | The [Perspective Candidate contract and decision packet](../extensions/perspective-extension-candidate.md) proposes portable sparse ordered Event IDs per Perspective, no portable rank/anchor, and derived temporal mismatch diagnostics. ID `draft.github.sukoyaka-dopeness.perspective` and version `0.1.0` are proposals only. Adoption, stale-reference policy, conflict acknowledgment portability, consumer defaults, exact schema/serialization, and runtime work remain for Human decision. Prior [ownership/persistence](narrativeline/narrativeline-timeline-ordering-perspective-ownership-audit1.md) and [representation audits](narrativeline/narrativeline-perspective-ordering-representation-audit1.md) remain evidence, not authority to implement. |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](./temporal/history-2-user-facing-authoring-scope-result.md); [bounded scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader History 2 shapes remain outside scope; NarrativeLine Relative Time authoring is a separate application workstream below |
 | H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
@@ -1511,7 +1511,7 @@ audits, S3 licensing/provenance and sample redistribution checks, then
 push/deployment readiness, public interoperability evidence, and the final
 pre-public-release audit. The later S3 result and Initial Public Release closure
 supersede this sequence as release planning; it is not the current execution
-order. Current status is in the [status index](#current-status-index-2026-09-27).
+order. Current status is in the [status index](#current-status-index-2026-09-28).
 Cross-App Locale itself is not closed, but this historical release sequence
 does not select its present priority or imply that the locale workstream blocks
 the already closed release.
@@ -1926,6 +1926,24 @@ has been adopted. The next Human decision is the semantic representation
 reported anchor preference applies to storage or interaction, and—only if
 rank tokens are selected—their maintenance policy. No schema, Validator,
 prototype, or application implementation is authorized.
+
+### Perspective Candidate contract checkpoint (2026-09-28)
+
+Following the Human selection of a sparse ordered Event ID sequence, a bounded
+Candidate contract and payload-shape schema are prepared in the
+[Perspective Extension Candidate](../extensions/perspective-extension-candidate.md).
+The proposed ID is `draft.github.sukoyaka-dopeness.perspective` and proposed
+version is `0.1.0`; neither is adopted or Stable. The payload leaves room for
+multiple Perspective entries, treats omitted Events as unplaced, and derives
+temporal mismatch diagnostics without serializing them. Candidate structural
+validation is wired into `npm run validate`.
+
+Human decisions remain required for adoption and exact identity/version,
+Perspective selection/default behavior, stale Event reference policy,
+portable conflict acknowledgment, cross-projection composition, and unknown
+version round-trip expectations. No runtime, Validator integration, migration,
+public sample, temporal authority, or app implementation changed. The prior
+2026-09-27 preparation entry remains the record of that earlier checkpoint.
 
 ### Pre-Public-Release Push and Deployment Readiness Audit (2026-09-07)
 

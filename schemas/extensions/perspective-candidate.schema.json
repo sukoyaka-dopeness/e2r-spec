@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/sukoyaka-dopeness/e2r-spec/main/schemas/extensions/perspective-candidate.schema.json",
+  "title": "Perspective Extension Candidate 0.1.0 payload",
+  "description": "Candidate payload shape only; Dataset and temporal semantics are outside this schema.",
+  "type": "object",
+  "required": ["perspectives"],
+  "properties": {
+    "perspectives": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "type": "string", "minLength": 1 },
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "eventOrder"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "eventOrder": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "uniqueItems": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

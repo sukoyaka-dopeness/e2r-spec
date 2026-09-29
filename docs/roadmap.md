@@ -1935,9 +1935,14 @@ application audit is complete, and Human selected both `0.2.0` quantitative
 Features for NarrativeLine authoring with direct one-hop date candidates.
 The [NarrativeLine implementation record](../../e2r-narrative-line/docs/quantitative-relative-time-user-facing-milestone-implementation.md)
 describes the local runtime and automated evidence. Human Browser Acceptance
-remains pending. The final NarrativeLine current-state/documentation/release-
-readiness audit follows that acceptance; no Candidate, schema, Validator,
-History, or Perspective contract was changed for this milestone.
+remains pending only for explicit review of the last Timeline candidate
+internal spacing and Event Detail date/QRT control geometry refinement; the
+implementation record separates previously accepted browser observations
+from automated safety evidence. NarrativeLine-local visual direction is
+recorded there without creating an E2R-wide or Cross-App style rule. The
+final NarrativeLine current-state/documentation/release-readiness audit
+follows formal QRT closure; no Candidate, schema, Validator, History, or
+Perspective contract was changed for this milestone.
 
 ### NarrativeLine Perspective ordering representation decision preparation (2026-09-27)
 

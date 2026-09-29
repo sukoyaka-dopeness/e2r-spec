@@ -1930,6 +1930,15 @@ run the final audit and then add a temporal feature. The older 2026-09-17
 release-readiness evidence remains historical evidence and is not deleted or
 treated as a substitute for that later audit.
 
+Quantitative Relative Time update (2026-09-29): the bounded semantic and
+application audit is complete, and Human selected both `0.2.0` quantitative
+Features for NarrativeLine authoring with direct one-hop date candidates.
+The [NarrativeLine implementation record](../../e2r-narrative-line/docs/quantitative-relative-time-user-facing-milestone-implementation.md)
+describes the local runtime and automated evidence. Human Browser Acceptance
+remains pending. The final NarrativeLine current-state/documentation/release-
+readiness audit follows that acceptance; no Candidate, schema, Validator,
+History, or Perspective contract was changed for this milestone.
+
 ### NarrativeLine Perspective ordering representation decision preparation (2026-09-27)
 
 Human selected the direction to design Dataset-portable, non-temporal ordering

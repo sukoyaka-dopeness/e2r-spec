@@ -63,6 +63,28 @@ declaration, Validator, package, or application behavior.
 
 ## Sample ledger
 
+### Cedar Observatory — NarrativeLine-owned release candidate (2026-09-30)
+
+The EN/JA pair is owned by NarrativeLine at
+`src/sample/cedar-observatory-showcase.{en,ja}.e2r.json` in the
+`e2r-narrative-line` repository. It is an application showcase candidate for
+NarrativeLine 0.2.0, not an E2R-SPEC canonical cross-app sample and not a
+replacement for the five existing Gallery sample families. Hub's sixth card
+links to those NarrativeLine-owned files for Handoff; Hub does not own a copy.
+Public HTTPS retrieval and end-to-end Handoff remain release-time checks.
+
+This fictional neighborhood-observatory story and its EN/JA Dataset content
+were created for the project with OpenAI Codex under Human direction and
+review. The two locales share object identity and temporal structure. No
+external factual chronology, copied prose, or assets were identified in the
+bounded content review. Human selected the same project-created sample-data
+policy used for other E2R samples: eligible project-created content is in the
+CC0 1.0 bucket **only where the project can grant those rights**. Third-party
+or imported material remains excluded. NarrativeLine's MIT software license
+does not license Dataset content. The scoped source notice is
+[NarrativeLine's sample README](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/src/sample/README.md).
+This record does not change existing sample authority or grant canonicality.
+
 | Pair | EN canonical | JA canonical | Class | History / authorship evidence | External basis | JA status | Verbatim audit | Bucket |
 |---|---|---|---|---|---|---|---|---|
 | Berlin Wall | `e2r-narrative-line/src/sample/berlin-wall-history.en.e2r.json` | `e2r-narrative-line/src/sample/berlin-wall-history.ja.e2r.json` | factual project-authored Dataset | NarrativeLine sample files are maintained in project history | Berlin Wall chronology and events; source bibliography still bounded | PROJECT-ADOPTED TRANSLATION — ORIGINAL AUTHORING METHOD NOT RECOVERABLE | no obvious long match found | CC0 candidate, source terms remain excluded |

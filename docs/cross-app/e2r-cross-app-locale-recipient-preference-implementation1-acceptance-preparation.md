@@ -3,8 +3,9 @@
 Date: 2026-10-01
 
 Status: Local implementation and automated evidence complete; Human Browser
-Acceptance in progress; LiaisonScape action-copy retest pending; Cross-App
-Locale remains OPEN.
+Acceptance in progress; the LiaisonScape action-copy retest is Human-reported
+PASS; additional controlled-browser evidence is recorded below; one Hub
+runtime observation requires review; Cross-App Locale remains OPEN.
 
 ## Scope and decision
 
@@ -29,8 +30,8 @@ preserves the boundary between UI locale and Dataset content/variant.
 | Repository | Baseline | Current implementation |
 | --- | --- | --- |
 | NarrativeLine | `eb583720df89797a1acf682b5cea747bc25e0cc6` | Accepted reference consumer, including browser fallback, temporary same-session conflict resolution, explicit selector persistence/fragment synchronization, Back / Forward boundary, and Handoff-before-fetch ordering. No runtime changes in this checkpoint. |
-| LiaisonScape | `75400c65b64938aee5c74efa8bd772bb6f1851ea` | Consumer added in the local working tree. It parses strict single `locale=en|ja`, honors valid legacy `liaisonscape.locale`, uses browser fallback without persistence, prompts only for request-vs-saved conflicts, retains temporary resolution in `sessionStorage`, gates startup Handoff until resolution, and updates preference plus only the owned locale fragment from the explicit Header selector. Existing Dataset Handoff parser, Replacement Safety, and one-shot startup guard remain in use. |
-| E2R Hub | `abebfd20e3ae754f6faa019976a035ec5ab6ddec` | Local producer change adds the current Hub locale to both application-entry links and all Dataset Handoff links. Dataset variant selection is unchanged and independent. Hub does not read recipient storage. |
+| LiaisonScape | `b93e9762ca2baa7e29d0dac4b99bb27970f4b618` | Current local candidate. It parses strict single `locale=en|ja`, honors valid legacy `liaisonscape.locale`, uses browser fallback without persistence, prompts only for request-vs-saved conflicts, retains temporary resolution in `sessionStorage`, gates startup Handoff until resolution, and updates preference plus only the owned locale fragment from the explicit Header selector. Existing Dataset Handoff parser, Replacement Safety, and one-shot startup guard remain in use. |
+| E2R Hub | `59015a29a4cd208d91d8a2d72b997b3fd6391811` | Current local candidate. It adds the current Hub locale to both application-entry links and all Dataset Handoff links. Dataset variant selection is independent. Hub does not read recipient storage. |
 
 No Dataset, Core, Extension, schema, Validator, or NarrativeLine runtime
 content was changed. LiaisonScape's accepted application architecture remains
@@ -96,8 +97,9 @@ corrected copy.
   fragment; reload after Back followed startup rules and showed Conflict.
 - The Human observed that LiaisonScape's Conflict action labels differed from
   NarrativeLine. The Human decided to adopt NarrativeLine's current EN/JA
-  labels exactly. That copy-only correction is recorded below; Human retest is
-  still pending.
+  labels exactly. That copy-only correction is recorded below. The retest status at the time
+  of this original report is superseded by the Human-reported PASS recorded
+  in the current acceptance section.
 
 LiaisonScape local commit
 `b93e9762ca2baa7e29d0dac4b99bb27970f4b618` changes only Conflict action copy
@@ -127,46 +129,73 @@ validation.
 
 ## Human Browser Acceptance: retest and remaining coverage
 
-### Minimum retest after copy correction
+### Copy retest after correction
 
-Using the corrected LiaisonScape local candidate, reopen a saved-EN /
-requested-JA Conflict and verify the action labels exactly match NarrativeLine:
-`Continue in English` and `日本語で表示`. Verify the Japanese-background
-counterpart uses `日本語で続ける` and `Show in English`. Confirm the labels do
-not expose saved-preference or link-request mechanics. This retest is not yet
-performed and must not be marked PASS until the Human reports it.
+The Human reports the minimum retest PASS on corrected LiaisonScape candidate
+`b93e9762ca2baa7e29d0dac4b99bb27970f4b618`: saved EN/requested JA and saved
+JA/requested EN both match NarrativeLine's action copy, without exposing saved
+preference or link-request mechanics. This is Human-reported browser evidence,
+separate from Codex-controlled observations below.
 
-### Other acceptance coverage still outstanding
+### Codex-controlled real-browser observations - 2026-10-01
 
-Use the local Hub, NarrativeLine, and LiaisonScape candidates to finish visual
-interaction and true browser lifecycle checks. Hub currently emits the public
-recipient base URLs; for local end-to-end checking, copy the generated
-fragment unchanged and open it at the corresponding local recipient origin.
-Public-site verification requires a separately authorized publication. The
-following items remain **NOT EXECUTED or only partially covered** and must not
-be reported as fully PASS:
+An isolated Edge profile was controlled through loopback CDP. The local
+candidates were Hub `59015a29a4cd208d91d8a2d72b997b3fd6391811`, NarrativeLine
+`eb583720df89797a1acf682b5cea747bc25e0cc6`, and LiaisonScape
+`b93e9762ca2baa7e29d0dac4b99bb27970f4b618`. These results are machine-
+observed browser evidence, not Human Browser Acceptance. For local Handoff
+checks, the recipient base was substituted while the Hub-generated fragment
+was otherwise preserved.
 
-1. Locale-only Hub EN/JA application-entry behavior without a conflicting
-   saved preference was not reported and remains unverified.
-2. Dataset-variant identity parity across both recipients was not reported;
-   the reported acquisition results do not establish which EN/JA variant each
-   received. Conflict-before-Handoff and both choices were observed, but the
-   corrected LiaisonScape copy requires the minimum retest above.
-3. LiaisonScape explicit locale selection and preservation of a loaded
-   Dataset, graph position, selection, and pending state were observed. Home
-   entry and other draft forms were not reported.
-4. LiaisonScape Back / Forward and reload behavior were observed as detailed
-   above. Equivalent NarrativeLine traversal coverage was not reported.
-5. Malformed, duplicate, empty, and unsupported locale values alongside a
-   valid Dataset Handoff remain unverified in a real browser.
-6. Initial saved-choice focus and Escape/backdrop behavior were observed for
-   LiaisonScape. Full Tab containment, responsive EN/JA presentation, and
-   absence of unexpected diagnostics across the complete flow remain
-   unverified.
+- Hub EN and JA application-entry links and Cedar links were inspected. Each
+  link carried the selected UI locale; Cedar's EN and JA links also selected
+  the corresponding Dataset variant. The Hub-generated EN and JA Cedar
+  Handoffs were opened locally in both recipients. All four acquisitions
+  succeeded; each made one request for the expected public Cedar JSON variant,
+  and each displayed content matching that variant. No console or page errors
+  were observed in these flows.
+- With a saved EN preference, both recipients showed an EN-background Conflict
+  for locale-only `#locale=ja`, initially focused the saved-language action,
+  and issued no external Dataset request before resolution. Tab and Shift+Tab
+  traversed and wrapped across the two action buttons in both consumers.
+- On each recipient, locale-only `locale=fr`, empty, `ja-JP`, duplicate, and
+  malformed-percent inputs with saved EN caused no Conflict, retained EN and
+  the durable EN preference, and caused no console/page error. These parser
+  checks had no Dataset Handoff; invalid-locale-plus-Handoff browser behavior
+  remains unverified.
+- At 320 and 375 CSS pixel widths, both EN-background and JA-background
+  Conflict dialogs in both recipients had document width equal to viewport
+  width. Dialog and action-button rectangles remained inside the viewport and
+  both buttons were enabled. This is geometry evidence, not subjective visual
+  acceptance.
+- A Hub reload and the observed recipient flows had no visible runtime alert,
+  console error, or page error. Selecting Japanese on Hub changed visible copy
+  and the generated recipient links to JA, while `document.documentElement.lang`
+  remained `en`. This reproducible locale/accessibility observation was not
+  changed; it requires Human review before an overall closure decision.
 
-No Cross-App Locale overall closure is claimed until this Human Browser
-Acceptance is completed and recorded. Cross-App live interoperability and all
-application `0.2.0` publication closures remain separate and closed.
+### Remaining acceptance and Human decision
+
+1. Human review and disposition of Hub's Japanese UI with
+   `document.documentElement.lang === "en"`: determine whether the root
+   language attribute is part of this producer acceptance gate or a separate
+   accessibility defect. No runtime change was made.
+2. Real-browser invalid, empty, unsupported, duplicate, and malformed locale
+   cases combined with valid Dataset Handoff, including successful acquisition
+   exactly once, remain unverified.
+3. Instrumented locale-selector switching on an already loaded Cedar Dataset
+   in each recipient, asserting unchanged Dataset content/state and no extra
+   Handoff fetch, remains unverified. The previously reported Human
+   LiaisonScape state-preservation result remains recorded above.
+4. Human visual review remains necessary for any subjective presentation
+   judgment; viewport geometry measurements do not substitute for it.
+
+NarrativeLine Back/Forward lifecycle already has accepted controlled
+real-browser evidence in the dedicated NarrativeLine Locale Consumer
+Acceptance record; LiaisonScape Back/Forward and reload evidence remains the
+Human-reported evidence above and was not repeated here. Cross-App Locale
+remains OPEN, not CLOSED. Cross-App live interoperability and all application
+`0.2.0` publication closures remain separate and closed.
 
 ## Working-state and publication boundary
 

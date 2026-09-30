@@ -74,11 +74,16 @@ checkpoint, with EN/JA versions created together. No external factual
 chronology, copied prose, or assets were intentionally used. See the
 [application-owned candidate record](../../../e2r-narrative-line/docs/cedar-observatory-showcase-release-candidate.md)
 for content and verification. This is local provenance evidence, not completed
-Human content review or a license grant. The project's authority to
-redistribute both Dataset files, and the intended Dataset-content license,
-require explicit Human confirmation before publication. NarrativeLine's MIT
-software license does not decide that content license. Existing public sample
-roles and rights records are unchanged.
+Human content review. On 2026-09-30, Human selected the same E2R sample-data
+licensing/provenance policy for Cedar as for the other project-created samples.
+The [scoped NarrativeLine notice](../../../e2r-narrative-line/src/sample/README.md)
+therefore places eligible project-created content of this EN/JA pair in the
+CC0 1.0 bucket **only where project rights can be granted**; any third-party or
+imported material remains excluded. No such external story, prose, or assets
+were identified in the current pair. NarrativeLine's MIT software license does
+not decide Dataset-content licensing. Human Browser Acceptance and public-write
+authorization remain pending; existing public sample roles and rights records
+are unchanged.
 
 | Pair | EN canonical | JA canonical | Class | History / authorship evidence | External basis | JA status | Verbatim audit | Bucket |
 |---|---|---|---|---|---|---|---|---|

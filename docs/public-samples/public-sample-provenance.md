@@ -68,7 +68,11 @@ declaration, Validator, package, or application behavior.
 The paired Cedar Observatory files at
 `e2r-narrative-line/src/sample/cedar-observatory-showcase.{en,ja}.e2r.json`
 are a **local NarrativeLine `0.2.0` release candidate**, not another row of the
-public five-family Gallery ledger and not an E2R-SPEC canonical sample.
+five-family canonical sample ledger and not an E2R-SPEC canonical sample.
+Hub now presents Cedar in its sample Gallery through an HTTPS Handoff link to
+these NarrativeLine-owned source files. That entry does not transfer Dataset
+ownership to Hub or confer canonical cross-app authority. The public source
+URL and end-to-end Handoff remain pending publication and Human review.
 They are a fictional story authored with Codex under Human direction for this
 checkpoint, with EN/JA versions created together. No external factual
 chronology, copied prose, or assets were intentionally used. See the

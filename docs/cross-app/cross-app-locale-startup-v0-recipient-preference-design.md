@@ -11,7 +11,7 @@ Back/Forward lifecycle, or NarrativeLine migration as pending are historical
 checkpoints unless explicitly marked current. LiaisonScape consumer alignment
 and Hub startup locale producer work remain pending.
 
-Status: Current shared recipient-preference contract; implementation checkpoint recorded 2026-10-01; Human Browser Acceptance pending
+Status: Current shared recipient-preference contract; implementation and Human Browser Acceptance complete; Cross-App Locale CLOSED 2026-10-01
 
 This document refines the accepted design checkpoint in
 `docs/cross-app/cross-app-locale-startup-v0-design.md` (commit `f681327`). The original
@@ -900,6 +900,7 @@ Implementation status at this checkpoint:
   is recorded in the [implementation and acceptance-preparation result](e2r-cross-app-locale-recipient-preference-implementation1-acceptance-preparation.md).
 - Hub application-entry and Dataset Handoff links include `locale=en|ja` for
   the Hub's current locale. It does not persist recipient state.
-- Automated repository validation is complete for this checkpoint. Human
-  Browser Acceptance remains pending, so overall Cross-App Locale remains
-  **OPEN / NOT CLOSED**.
+- Automated repository validation and Human Browser Acceptance are complete.
+  Closure evidence is recorded in the [acceptance-preparation result](e2r-cross-app-locale-recipient-preference-implementation1-acceptance-preparation.md).
+  Cross-App Locale is **CLOSED 2026-10-01** for the recorded local candidates;
+  publication remains a separate transaction.

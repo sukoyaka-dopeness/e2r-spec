@@ -69,8 +69,11 @@ The paired Cedar Observatory files at
 `e2r-narrative-line/src/sample/cedar-observatory-showcase.{en,ja}.e2r.json`
 are a **local NarrativeLine `0.2.0` release candidate**, not another row of the
 five-family canonical sample ledger and not an E2R-SPEC canonical sample.
-Hub now presents Cedar in its sample Gallery through an HTTPS Handoff link to
-these NarrativeLine-owned source files. That entry does not transfer Dataset
+Hub now presents Cedar after the existing five sample cards in its Gallery,
+with HTTPS Handoff links from the NarrativeLine-owned source files to both
+NarrativeLine and LiaisonScape. LiaisonScape can load the Entity graph but its
+Validator 0.6.0 reports the known Relative Time 0.2.0 specification-version
+warning. This entry does not transfer Dataset
 ownership to Hub or confer canonical cross-app authority. The public source
 URL and end-to-end Handoff remain pending publication and Human review.
 They are a fictional story authored with Codex under Human direction for this

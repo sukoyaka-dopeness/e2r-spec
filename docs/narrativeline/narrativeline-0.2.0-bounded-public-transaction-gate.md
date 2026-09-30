@@ -21,7 +21,7 @@ the Cedar provenance addition, a current Roadmap pointer, and its own session
 record. Independent local specification, schema, research, sample draft, and
 historical work must not be published by pushing the broader local `main`.
 
-NarrativeLine's pre-date local candidate is `8ed77f31ea6370ae7a8eeb2553845725dadad3cd`;
+NarrativeLine's current pre-date local candidate is `804bb17bf99c5cdace5ac72157967b1bf9b0e010`;
 Hub's local candidate is `6e1165bd4b328f89f32de82555b159dd0b08ec60`.
 These are **not yet approved public push revisions**. NarrativeLine's Credits
 version is 0.2.0, but its actual Released date is unset. On the actual public
@@ -54,16 +54,24 @@ public JSON responses, and live sites. Resume at the first unverified gate.
 Do not use force push, automatic rollback, or an extra push to mask a failed
 gate. A changed public state needs renewed Human review.
 
-The old NarrativeLine remote run at `3d98614d0b61718a48fc247eadf9686d771295f3`
-failed in `Run tests` because `RelativeTime02Consumer.test.js` reads
-`examples/relative-time-0.2-draft/all-families.json`, absent from its pinned
-E2R-SPEC revision `c3c8f5d`. Later Pages steps were skipped. The **current**
-NarrativeLine workflow pins E2R-SPEC `d14e345`, which also lacks that fixture;
-the fixture exists only in later local E2R-SPEC history (`237fcb6`). Thus the
-current release candidate has a concrete CI/deployment blocker despite local
-green tests against the broader local E2R-SPEC checkout. Resolve and verify
-the minimal fixture/workflow ownership before approving any NarrativeLine push;
-do not publish unrelated E2R-SPEC commits to make the test pass.
+The old NarrativeLine run at `3d98614d0b61718a48fc247eadf9686d771295f3`
+failed because its `RelativeTime02Consumer.test.js` dependency
+`examples/relative-time-0.2-draft/all-families.json` was absent from the then-
+pinned E2R-SPEC revision `c3c8f5d`. Current workflow pin `d14e345` contains
+that example. The current candidate also had tests reading an unpublished
+Lantern Market draft that is absent from `d14e345`. NarrativeLine now owns
+minimal test fixtures for both consumer behavior and the EN/JA projection
+checks; it no longer uses that unpublished draft. This keeps feature input
+and fixture identity application-owned without establishing a cross-repository
+fixture contract or publishing unrelated E2R-SPEC work.
+
+CI parity was rerun against the workflow's exact topology: NarrativeLine
+`804bb17bf99c5cdace5ac72157967b1bf9b0e010` beside an E2R-SPEC checkout at
+`d14e34561676d99e3de2dbf8b641c53eda372e2c`. All **348/348 tests PASS**, lint
+PASS, and build PASS. The four former 0.2.0 consumer tests pass in that run.
+This removes the known local-versus-pinned-fixture blocker. A new exact-SHA
+GitHub Actions run and Pages deployment are still required after Human approves
+the actual-date NarrativeLine revision and public transaction.
 
 The network-dependent production advisory scan was initially unavailable, but
 a network-capable retry of `npm audit --omit=dev --audit-level=low` on the

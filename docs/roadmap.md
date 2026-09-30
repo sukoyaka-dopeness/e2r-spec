@@ -1303,11 +1303,20 @@ does not authorize runtime changes. Existing component-level locale and
 dismissal records do not establish broad Credits visual parity.
 
 Hub's accepted [bilingual landing-page milestone](hub/e2r-hub-public-entry-point-milestone-2-acceptance.md)
-covers bounded locale and Credits behavior, but does not establish this
-follow-up's full Close/Escape/backdrop parity. No later closure record for that
-specific Hub check was found in the reviewed authorities; retain it as an
-open/deferred follow-up, not an Initial Public Release gate. The old entry does
-not authorize a runtime change.
+covers the earlier locale and Credits behavior. Its `0.2.0` local candidate
+`91cfd39c0c9bac9d49d8a42a16decb50874a0b67` now uses the same Application /
+Creator / First release / Updated metadata structure as NarrativeLine and
+LiaisonScape, and replaces the duplicate `×` plus Close actions with one
+visible Close action. Escape and backdrop dismissal return focus to the
+Credits opener; automated tests cover EN/JA copy and these dismissal paths.
+The displayed first-release date, `2026-08-18` JST, is supported by the first
+successful [Hub Pages deployment](https://github.com/sukoyaka-dopeness/e2r-hub/actions/runs/32045286774)
+for commit `adfd8afb01b1649bedb2f80fd6fffab57b09882d`. Hub Human Browser
+Acceptance remains pending for the localized visual hierarchy and layout.
+This bounded Hub alignment neither establishes broad Credits visual parity
+nor reopens the accepted NarrativeLine `0.2.0` release gate. The future
+NarrativeLine / LiaisonScape audit of backdrop hover and body line-height /
+vertical rhythm remains separate; it is not a release gate.
 
 ### Version and queued research note
 

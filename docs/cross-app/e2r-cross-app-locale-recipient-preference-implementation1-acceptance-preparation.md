@@ -2,7 +2,9 @@
 
 Date: 2026-10-01
 
-Status: Local implementation and automated evidence complete; Human Browser Acceptance pending; Cross-App Locale remains OPEN.
+Status: Local implementation and automated evidence complete; Human Browser
+Acceptance in progress; LiaisonScape action-copy retest pending; Cross-App
+Locale remains OPEN.
 
 ## Scope and decision
 
@@ -63,41 +65,104 @@ The jsdom integration environment emits existing React `attachEvent` /
 cause test failures. This checkpoint does not treat those harness traces as
 browser evidence.
 
-## Human Browser Acceptance still required
+## Human Browser evidence observed before copy correction — 2026-10-01
 
-Use the local Hub, NarrativeLine, and LiaisonScape candidates to verify visual
-interaction and true browser lifecycle behavior. Hub currently emits the
-public recipient base URLs; for local end-to-end checking, copy the generated
+The Human reported the following real-browser results for the local candidates
+used in this acceptance cycle: Hub `59015a29a4cd208d91d8a2d72b997b3fd6391811`,
+NarrativeLine `eb583720df89797a1acf682b5cea747bc25e0cc6`, and LiaisonScape
+`0d60340c2faf954742920404c7647c8ce72dab7b`. These results describe behavior
+before the bounded LiaisonScape copy correction below; they do not certify the
+corrected copy.
+
+- Normal EN/JA startup passed.
+- NarrativeLine saved-EN / requested-JA conflict passed: the background and
+  dialog remained EN; the saved choice acquired the Dataset in EN and kept
+  durable preference `en`; the requested choice acquired it in JA while
+  retaining durable `en`; same-tab reload retained the temporary JA choice
+  without reopening Conflict; a new independent session reopened Conflict.
+- LiaisonScape saved-EN / requested-JA conflict behavior passed: the
+  background/dialog were EN and initial focus was on the saved choice. Both
+  choices acquired the Dataset in their selected UI language while durable
+  preference stayed `en`; same-tab reload retained temporary JA without
+  Conflict; a new independent session reopened Conflict. Escape and backdrop
+  dismissal followed the saved-EN path, acquired the Dataset, and retained
+  durable `en`.
+- On a loaded LiaisonScape Dataset, changing an Entity selection and making an
+  unsaved position change before explicitly selecting JA then EN retained the
+  Dataset, graph position, selection, and pending state. The explicit choice
+  set `liaisonscape.locale=en` and URL `locale=en` while retaining
+  `datasetUrl`. Browser Back / Forward to historical `locale=ja` kept UI EN,
+  raised no Conflict, retained the Dataset, and did not reinterpret the old
+  fragment; reload after Back followed startup rules and showed Conflict.
+- The Human observed that LiaisonScape's Conflict action labels differed from
+  NarrativeLine. The Human decided to adopt NarrativeLine's current EN/JA
+  labels exactly. That copy-only correction is recorded below; Human retest is
+  still pending.
+
+LiaisonScape local commit
+`b93e9762ca2baa7e29d0dac4b99bb27970f4b618` changes only Conflict action copy
+and its target-language `lang` attributes: saved action `Continue in English` /
+`日本語で続ける`; requested action `Show in English` / `日本語で表示`. The
+backdrop action's accessible name follows the saved action label. Its callback,
+initial focus, Escape/backdrop resolution, locale resolution, persistence,
+session handling, URL state, and Handoff ordering are unchanged. NarrativeLine,
+Hub, and Dataset/specification content were not changed.
+
+These observations do not establish unreported cases such as malformed locale
+values with an active Handoff, all responsive sizes, or full Tab containment.
+No such cases are inferred as passed.
+
+Copy follow-up automated evidence on LiaisonScape
+`b93e9762ca2baa7e29d0dac4b99bb27970f4b618`:
+
+- `node --experimental-strip-types --test tests/locale-conflict-dialog.test.ts` — PASS.
+- `npm test` — 656/656 PASS, including the new EN/JA copy test.
+- `npm run lint` — PASS.
+- `npm run build` — PASS.
+
+The full test run emitted existing jsdom/React `attachEvent` / `detachEvent`
+compatibility traces during integration tests; they did not fail tests. The
+local LiaisonScape dev server remained listening on `127.0.0.1:5176` after
+validation.
+
+## Human Browser Acceptance: retest and remaining coverage
+
+### Minimum retest after copy correction
+
+Using the corrected LiaisonScape local candidate, reopen a saved-EN /
+requested-JA Conflict and verify the action labels exactly match NarrativeLine:
+`Continue in English` and `日本語で表示`. Verify the Japanese-background
+counterpart uses `日本語で続ける` and `Show in English`. Confirm the labels do
+not expose saved-preference or link-request mechanics. This retest is not yet
+performed and must not be marked PASS until the Human reports it.
+
+### Other acceptance coverage still outstanding
+
+Use the local Hub, NarrativeLine, and LiaisonScape candidates to finish visual
+interaction and true browser lifecycle checks. Hub currently emits the public
+recipient base URLs; for local end-to-end checking, copy the generated
 fragment unchanged and open it at the corresponding local recipient origin.
 Public-site verification requires a separately authorized publication. The
-following items remain **NOT EXECUTED** and must not be reported as PASS:
+following items remain **NOT EXECUTED or only partially covered** and must not
+be reported as fully PASS:
 
-1. Open locale-only Hub EN and JA application-entry links. Confirm each
-   recipient opens the requested UI language, independently of browser and
-   saved locale when there is no conflicting explicit preference.
-2. With a saved EN preference, open a Hub JA handoff to each recipient. Confirm
-   the Conflict Dialog appears before Dataset loading; choose saved and
-   requested paths separately. Confirm the EN saved preference remains
-   unchanged, the requested path displays JA, and both recipients acquire the
-   same Dataset variant Hub selected.
-3. Reload the same conflicted URL in the same tab after each temporary choice;
-   confirm the same request does not ask again and durable preference remains
-   unchanged. Open it in a new independent session and confirm normal startup
-   conflict resolution occurs.
-4. Exercise explicit locale selection on LiaisonScape Home and Workspace,
-   including a loaded Dataset with a selection or draft. Confirm graph/layout,
-   selection, Dataset, and in-progress work remain intact; the durable
-   preference changes; `locale` is replaced without disturbing `datasetUrl`
-   or unrelated fragment values.
-5. Use browser Back / Forward across locale-bearing and locale-free entries.
-   Confirm traversal leaves current UI and preference unchanged and does not
-   re-fetch Handoff. Reload after traversal and confirm normal startup rules
-   apply.
-6. Check malformed, duplicate, empty, and unsupported locale values alongside
-   a valid Dataset Handoff. Confirm the locale instruction is ignored while
-   independent Dataset acquisition proceeds.
-7. Check Conflict Dialog focus, Tab containment, Escape/backdrop resolution,
-   responsive EN/JA presentation, and absence of unexpected diagnostics.
+1. Locale-only Hub EN/JA application-entry behavior without a conflicting
+   saved preference was not reported and remains unverified.
+2. Dataset-variant identity parity across both recipients was not reported;
+   the reported acquisition results do not establish which EN/JA variant each
+   received. Conflict-before-Handoff and both choices were observed, but the
+   corrected LiaisonScape copy requires the minimum retest above.
+3. LiaisonScape explicit locale selection and preservation of a loaded
+   Dataset, graph position, selection, and pending state were observed. Home
+   entry and other draft forms were not reported.
+4. LiaisonScape Back / Forward and reload behavior were observed as detailed
+   above. Equivalent NarrativeLine traversal coverage was not reported.
+5. Malformed, duplicate, empty, and unsupported locale values alongside a
+   valid Dataset Handoff remain unverified in a real browser.
+6. Initial saved-choice focus and Escape/backdrop behavior were observed for
+   LiaisonScape. Full Tab containment, responsive EN/JA presentation, and
+   absence of unexpected diagnostics across the complete flow remain
+   unverified.
 
 No Cross-App Locale overall closure is claimed until this Human Browser
 Acceptance is completed and recorded. Cross-App live interoperability and all

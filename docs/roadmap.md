@@ -52,10 +52,11 @@ were updated on 2026-09-30; the section anchor is retained for existing links.
 | NarrativeLine Relative Time 0.2.0 import diagnostic / sample readiness | **EXACT SUPPORT VERIFIED / PRIOR EDGE WARNING REPRODUCED ON STALE DEV SERVER, CLEARED AFTER RESTART / SOURCE UNCHANGED** | NarrativeLine's [diagnostic and sample readiness result](../../e2r-narrative-line/docs/relative-time-0.2.0-import-diagnostic-and-sample-readiness-result.md) records the exact code/path and comparison. EN/JA both warned on the long-running `5173` Vite process; both were warning-free on a fresh server and after restarting `5173`. The warning was `specification_version_unsupported` at `uses/1/version`; the current Validator validates both files cleanly. The precise stale in-memory/cache object is inferred, not captured. No source, Validator, or Relative Time change was made. Lantern Market remains non-public. |
 | NarrativeLine Human-authored Timeline ordering | **PERSPECTIVE 0.1.0 CANDIDATE ADOPTED / FORMAL HUMAN ACCEPTANCE COMPLETE — CLOSED** | The [Perspective Candidate contract](../extensions/perspective-extension-candidate.md) remains specification authority. NarrativeLine's [implementation result](../../e2r-narrative-line/docs/perspective-0.1.0-timeline-ordering-implementation-result.md) records selected/focused-row controls, compact ordering help, plain-language EN/JA Relative Time mismatch copy, aligned and equally weighted local disclosures, current-locale transient feedback, and reduced-motion-aware movement. The [Formal Human Acceptance packet](narrativeline/narrativeline-perspective-timeline-ordering-formal-human-acceptance-packet.md) records H1–H6 closure. The separate [ordering progressive-disclosure follow-up](narrativeline/narrativeline-progressive-disclosure-human-acceptance.md) is also Human Accepted / Closed; portable Perspective semantics remain untouched. No semantics, persistence model, E2R-wide UI policy, or temporal non-mutation boundary changed. Quantitative Relative Time remains separate; Validator integration, other consumers, public samples, and Stable review remain separate. Earlier [ownership/persistence](narrativeline/narrativeline-timeline-ordering-perspective-ownership-audit1.md) and [representation audits](narrativeline/narrativeline-perspective-ordering-representation-audit1.md) remain historical evidence. |
 | NarrativeLine Perspective ordering Drag & Drop | **HUMAN ACCEPTED / CLOSED — SUPPLEMENTARY APPLICATION INPUT** | [Human Browser Acceptance](narrativeline/narrativeline-perspective-ordering-dnd-human-acceptance.md) and [NarrativeLine implementation result](../../e2r-narrative-line/docs/perspective-ordering-dnd-implementation-result.md). Card-wide drag is available only in explicit session-only display-order editing; ordinary Timeline and the ↑/↓ keyboard path remain intact. The card surface is the primary drop cue and before/after lines are secondary. No new portable ordering semantics or Dataset gesture state. |
-| NarrativeLine `0.2.0` Release Preparation | **HUMAN VERSION SELECTED / LOCAL RELEASE CANDIDATE PREPARATION — PUBLIC WRITE PENDING** | [final transaction preparation](narrativeline/narrativeline-0.2.0-final-release-transaction-preparation.md), [application preparation result](../../e2r-narrative-line/docs/release-preparation-0.2.0-result.md) and [current-state audit](../../e2r-narrative-line/docs/current-state-release-readiness-audit-2026-09-30.md). Human selected `0.2.0`, resolving the earlier `0.1.0` hold. Credits show Application / Creator / First release / Updated in EN/JA; Human Browser Acceptance is **PASS** for exact candidate `7245d8f8506c86c8af55fcf50de96da8bf82a307`, with no Credits blocker. Cross-App Credits visual parity is a future follow-up, not a release gate (see below). The local Cedar appearance, Timeline interaction, and Hub presentation checks are Human-accepted within their observed bounds. E2R-SPEC publication scope (44 local commits include independent Candidate and draft work), advisory evidence, exact remote/ref verification, public-write approval, and live-site Handoff acceptance remain. No Candidate/Validator maturity change. |
+| NarrativeLine `0.2.0` publication | **PUBLIC RELEASED / EXACT PAGES DEPLOYMENT VERIFIED** | Public `main` is `7245d8f8506c86c8af55fcf50de96da8bf82a307`; Pages run [36728316616](https://github.com/sukoyaka-dopeness/e2r-narrative-line/actions/runs/36728316616) succeeded for that exact SHA. The accepted candidate's EN/JA Cedar Timeline handoffs were also verified live; details and links are in the [publication verification result](narrativeline/narrativeline-0.2.0-publication-verification-result.md). Cross-App Credits visual parity remains a separate follow-up and is not a release blocker. |
 | LiaisonScape `0.2.0` publication | **CLOSED / EXACT PUBLIC REVISION AND PAGES DEPLOYMENT VERIFIED** | Public `main` is `75400c65b64938aee5c74efa8bd772bb6f1851ea`; Pages run [36738217857](https://github.com/sukoyaka-dopeness/e2r-liaison-scape/actions/runs/36738217857) succeeded for that exact SHA. Credits show Updated `2026-10-01`. Direct EN/JA Cedar Handoff through the published LiaisonScape completed with the Validator `0.7.0` consumer and no visible unsupported-version warning; see the [publication closure result](liaisonscape/liaisonscape-0.2.0-publication-closure-result.md). No further LiaisonScape write is authorized or needed for this closure. |
+| E2R Hub `0.2.0` | **HUMAN ACCEPTED LOCAL CANDIDATE / PUBLICATION PENDING** | The Human Browser Accepted candidate is local `main` HEAD `27b6a091ad33fbe1089dd9e4088654677ce71ac8` (six commits ahead of public `main`). Public `main` and Pages remain at `71ae8ab8c3255d91c89dd68ce788540dc13bba89`; deployment run [35686919464](https://github.com/sukoyaka-dopeness/e2r-hub/actions/runs/35686919464) succeeded for that older revision. Candidate acceptance is summarized under [Cross-app Credits alignment follow-up](#cross-app-credits-alignment-follow-up). The `0.2.0` candidate has not been publicly published. |
 | Multilingual public-sample Dataset identity | **CURRENT EN/JA SAMPLE DIRECTION SELECTED / FAMILY RELATIONSHIP REMAINS RESEARCH** | Current curated EN/JA public samples retain distinct language-specific `datasetId` values; corresponding Core Object IDs are shared for matching logical objects in these pairs only, not as a universal translation rule or global identity. Cedar IDs remain unchanged. A portable relationship for shared language/localization-family membership remains exploratory; field name, schema shape, and owner are unselected. See [Dataset language and localized variant architecture](../research/exploratory/dataset-language-and-localized-variant-architecture.md#human-selected-current-sample-direction--2026-09-30). This planning record changes no sample/schema and does not reopen the NarrativeLine release transaction. |
-| NarrativeLine Cedar Observatory showcase | **APPLICATION-OWNED LOCAL CANDIDATE / SAMPLE-DATA POLICY SELECTED / HUMAN BROWSER ACCEPTANCE PENDING** | [Human review preparation](../../e2r-narrative-line/docs/cedar-observatory-human-browser-acceptance-preparation.md), [sample candidate record](../../e2r-narrative-line/docs/cedar-observatory-showcase-release-candidate.md), [scoped content notice](../../e2r-narrative-line/src/sample/README.md), and [unreleased provenance note](public-samples/public-sample-provenance.md#unreleased-narrativeline-application-candidate--2026-09-30). Human selected the existing eligible project-created sample-data CC0 1.0 policy, distinct from software MIT; unknown third-party rights are excluded. Built-in sample launch buttons identify each sample by its human-readable name rather than a generic or numbered label. Hub places Cedar after the existing five cards and offers NarrativeLine and LiaisonScape Handoff to the NarrativeLine-owned EN/JA source pair. This is not canonical cross-app promotion or a Hub-owned content copy. LiaisonScape `0.2.0` now consumes Validator `0.7.0`; direct live EN/JA Cedar handoffs completed without the prior Relative Time `0.2.0` unsupported-version warning (see [LiaisonScape publication closure](liaisonscape/liaisonscape-0.2.0-publication-closure-result.md)). NarrativeLine Human Browser Acceptance and any later public Cedar promotion remain pending. |
+| Cedar Observatory EN/JA showcase | **PUBLIC NARRATIVELINE SOURCE / LIVE NARRATIVELINE AND LIAISONSCAPE HANDOFFS VERIFIED** | Cedar remains a NarrativeLine-owned sample pair, not an E2R-SPEC canonical sample or a public Hub Gallery entry. Public NarrativeLine `0.2.0` loads both EN and JA Cedar Timelines; public LiaisonScape `0.2.0` loads both Entity graphs without the former Validator `0.6.0` Relative Time `0.2.0` unsupported-version warning. See the [NarrativeLine publication verification](narrativeline/narrativeline-0.2.0-publication-verification-result.md) and [LiaisonScape publication closure](liaisonscape/liaisonscape-0.2.0-publication-closure-result.md). Hub's Cedar Gallery entry is part of its accepted but unpublished `0.2.0` local candidate. |
 | Future multi-visualization application | **PRE-IMPLEMENTATION RESEARCH RETAINED / DESIGN AND PROTOTYPE WORK ON HOLD** | [quadrant/Radar research handoff](../research/exploratory/multi-visualization-application-pre-implementation-research.md). Human paused the next application's design, naming, and prototype work at this checkpoint. Same Dataset can support Timeline and graph; semantic dimensions and values for quadrant/Radar are absent. No application repository, Extension, schema, or chart contract adopted. Future decisions remain separate from NarrativeLine release. |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](./temporal/history-2-user-facing-authoring-scope-result.md); [bounded scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader History 2 shapes remain outside scope; NarrativeLine Relative Time authoring is a separate application workstream below |
@@ -153,6 +154,10 @@ write.
 - Completion of these application workstreams does not change Core or Extension
   semantics and does not authorize Names writers, Relative Time semantics,
   Source/Citation product integration, or other deferred research work.
+
+These bullets preserve the 2026-08-17 status snapshot. Current NarrativeLine
+and LiaisonScape versions are listed under [Application maintenance](#application-maintenance)
+and the current status index above.
 
 ### Cross-repository software licensing direction
 
@@ -678,9 +683,10 @@ Other continuing topics include:
 
 - Keep Validator release automation, fixtures, package inspection, and
   tag/version checks healthy for the next published version.
-- Keep NarrativeLine at `0.1.0` until an explicit release or version decision.
-- LiaisonScape's First Distribution remains `0.1.0`; change its version only
-  through an explicit follow-up version decision.
+- NarrativeLine and LiaisonScape are publicly released at `0.2.0`. Check each
+  application's current release evidence before preparing a later version;
+  application versions remain separate from Dataset and specification
+  versions.
 - Keep Japanese and English guides aligned when behavior changes.
 - Preserve the LiaisonScape MVP boundary while architecture work continues.
 - Long-form Core Object Content / body applicability remains a research
@@ -1332,6 +1338,12 @@ for commit `adfd8afb01b1649bedb2f80fd6fffab57b09882d`. This accepted Hub
 alignment neither establishes broad Credits visual parity nor reopens the
 accepted NarrativeLine `0.2.0` release gate.
 
+The Hub candidate remains local: public `main` is
+`71ae8ab8c3255d91c89dd68ce788540dc13bba89`, and its latest Pages deployment
+run `35686919464` serves that revision. The accepted candidate is six commits
+ahead at `27b6a091ad33fbe1089dd9e4088654677ce71ac8`; no Hub `0.2.0` public
+publication has occurred.
+
 The future bounded audit compares the complete Credits surfaces in
 NarrativeLine, LiaisonScape, and Hub: typography; metadata and body formatting;
 line-height and vertical rhythm; spacing, dialog/modal padding, and information
@@ -1348,12 +1360,12 @@ redesign, or block NarrativeLine `0.2.0`.
 
 ### Version and queued research note
 
-The LiaisonScape next application release decision is now accepted as
-`0.2.0`, while the current metadata remains `0.1.0` until bounded release
-preparation. Application versioning remains separate from Dataset/schema
-versioning. Cross-App Locale, research shelf inventory, and the Hub
-concept-page update remain separate cross-app or future work and do not reopen
-the LiaisonScape version decision by themselves.
+LiaisonScape `0.2.0` is publicly released and its bounded publication is closed
+(see the current status index and [closure result](liaisonscape/liaisonscape-0.2.0-publication-closure-result.md)).
+Application versioning remains separate from Dataset/schema versioning.
+Cross-App Locale, research shelf inventory, and the Hub concept-page update
+remain separate cross-app or future work and do not reopen the completed
+LiaisonScape release decision.
 
 ### LS-DETAIL-RR1 Related Relation readability — ACCEPTED / CLOSED
 **ACCEPTED / CLOSED** at the project-specific acceptance boundary. Detailed implementation and manual evidence are retained in Roadmap History and the [modernization audit](../research/exploratory/liaisonscape-workspace-modernization-audit.md). Dataset identity, graph visibility, and Delete semantics remain unchanged. Current follow-ups remain: `LS-REL-ENDPOINT-ID1` (audit needed), `LS-DIALOG-DRAFT1` (audit needed), `LS-CTX-R1` (bug/fix needed), and `LS-GRAPH-DRAG1` (bug/audit needed).

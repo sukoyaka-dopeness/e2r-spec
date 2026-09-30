@@ -732,9 +732,11 @@ Hub-specific planning retained here:
   to canonical milestones 5 and 7; definitions, compatibility policy and
   manifest foundations are not duplicated here.
 - The existing [E2R Self-Description Dataset](../examples/e2r-self-description.json)
-  remains owned at this repository path; a suitable Hub entry point is a
-  Hub-specific follow-up. Placement, presentation, URL/Handoff behavior and
-  relation to sample-gallery UI remain implementation-checkpoint decisions.
+  remains owned at this repository path and is presented publicly by Hub as a
+  separate dogfood entry. The local visual-hierarchy follow-up is Human-
+  accepted with the unique tinted background removed and Gallery separation
+  retained; see the [bounded result](hub/self-description-visual-hierarchy-follow-up-result.md).
+  Dataset identity, content, links, and Handoff semantics were not changed.
 - Browser-local locale preference and retained-Dataset/project workspace
   remain exploratory Hub responsibilities, not Dataset content or an
   implicit Extension. Storage choices are not selected here. Browser storage

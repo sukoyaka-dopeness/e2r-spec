@@ -1999,6 +1999,11 @@ sufficient to prepare a formal visual-review candidate. It does not perform
 production default adoption or Human Review. Session 0096 records this staging
 checkpoint.
 
+> Historical reference note (2026-10-01): No committed Session 0096 file was
+> found in the reachable repository history. The ID is reserved; no Session
+> 0096 file is created. The sentence above is preserved as the original
+> historical checkpoint reference.
+
 ### LiaisonScape Frontier Automatic Display Formal Visual Review Preparation 1 (2026-09-16)
 
 The [formal visual review result](../liaisonscape/liaisonscape-frontier-automatic-display-formal-visual-review1-result.md)

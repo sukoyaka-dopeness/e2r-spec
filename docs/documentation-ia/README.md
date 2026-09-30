@@ -9,6 +9,7 @@ document-type taxonomy or a second planning authority.
 - [Roadmap](../roadmap.md) remains the sole current-planning authority.
 - [Documentation Plan](documentation-plan.md) records placement guidance.
 - [Session 0094 restoration result](session-0094-restoration-provenance-result.md) records the historical-file recovery and current-authority boundary.
+- [Session Log organization decision](session-log-physical-organization-decision1.md) records the adopted immutable-ID and 0100+ range-bucket policy.
 - [Session Log physical-organization decision preparation](session-log-physical-organization-human-decision-preparation.md) records the read-only inventory and Human choices; no paths are migrated.
 - [Final root classification audit](documentation-ia-final-root-classification-and-ingress-gate-audit1.md)
   preserves the Wave 5 exact manifests and root-ingress gate design.

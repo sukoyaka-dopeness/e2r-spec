@@ -60,7 +60,7 @@ were updated on 2026-09-30; the section anchor is retained for existing links.
 | H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
 | History 2 bounded Stable registration | **IMPLEMENTED / PROFILE REGISTERED / VALIDATOR GREEN / PUBLIC SAMPLE RELEASE COMPLETE** | [implementation result](./temporal/history-2-position-circa-stable-profile-implementation-result.md); [sample migration result](./public-samples/public-sample-h2-migration-and-self-description-current-state-refresh-result.md); `history@2.0.0` remains Candidate while `history@2.0.0 / position-circa` is the adopted Stable profile; broader H2 surfaces remain deferred |
 | Dataset-wide History 1 to History 2 upgrade | **IMPLEMENTED / AUTOMATED GREEN / BOUNDED REAL-BROWSER AND HUMAN ACCEPTANCE COMPLETE** | [NarrativeLine implementation result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/history-2-dataset-wide-upgrade-implementation-result.md); [scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md) |
-| Cross-App control density / Visual Style / Flatness | **BOUNDED CORRECTIONS ACCEPTED / BROADER STYLE FOLLOW-UP AUDIT OR DESIGN ONLY** | LiaisonScape `589e3bd` and NarrativeLine `e4c2dcb`, `df69e8e`, `8495724` cover the accepted More/ordinary/detail geometry corrections. A broader Hub-reference visual-language experiment remains a separate Human-selected design question; it does not authorize a blanket CSS rewrite. Human has also recorded a future Credits visual-parity audit for the specific backdrop-hover and body text-rhythm differences described in [Cross-app Credits alignment follow-up](#cross-app-credits-alignment-follow-up); it does not block NarrativeLine `0.2.0`. |
+| Cross-App control density / Visual Style / Flatness | **BOUNDED CORRECTIONS ACCEPTED / BROADER STYLE FOLLOW-UP AUDIT OR DESIGN ONLY** | LiaisonScape `589e3bd` and NarrativeLine `e4c2dcb`, `df69e8e`, `8495724` cover the accepted More/ordinary/detail geometry corrections. A broader Hub-reference visual-language experiment remains a separate Human-selected design question; it does not authorize a blanket CSS rewrite. The future Credits audit now covers all three applications and inventories backdrop-hover behavior across their dialogs/modals; see [Cross-app Credits alignment follow-up](#cross-app-credits-alignment-follow-up). It does not block NarrativeLine `0.2.0`. |
 | LiaisonScape viewport toolbar | **ACCEPTED / HUMAN VISUAL AND INTERACTION ACCEPTANCE COMPLETE** | LiaisonScape `8743fb0` records compact canvas-utility geometry and pointer-versus-keyboard focus/tooltip treatment while retaining drag, disclosure, zoom, reset, 720px, and keyboard behavior |
 | NarrativeLine Detail controls | **ACCEPTED / BOUNDED GEOMETRY CORRECTIONS COMPLETE** | NarrativeLine `df69e8e` and `8495724` cover destructive/detail action geometry, Timeline Edit, and Entity Detail form width; further Picker/Create or visual-style work requires a separate current-evidence audit |
 | NarrativeLine pre-public feature candidates | **SAMPLE ROLE / PROVENANCE DECISIONS RECORDED / PUBLIC ACCESS RELEASED** | [provenance authority and access result](./cross-app/e2r-initial-public-release-provenance-authority-cross-app-access-implementation1-result.md), [sample role decision preparation](./public-samples/e2r-public-sample-role-decision-preparation1-result.md), and [content/provenance audit](./public-samples/e2r-initial-public-release-content-sample-provenance-refresh-audit1-result.md); five ordinary Gallery families and separate Self-Description dogfood access are public; factual-source caveats remain provenance boundaries |
@@ -1296,27 +1296,38 @@ Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md).
 In the `0.2.0` Human review, the specific Cross-App visual observations were
 that LiaisonScape's backdrop darkens more on hover and that Credits body
 line-height / vertical rhythm differs between the two applications. Retain a
-future NarrativeLine / LiaisonScape Credits visual-parity audit to assess the
-full Credits surfaces; these two observations are evidence, not an exhaustive
-parity finding. This follow-up is not a NarrativeLine `0.2.0` release gate and
-does not authorize runtime changes. Existing component-level locale and
-dismissal records do not establish broad Credits visual parity.
+future NarrativeLine / LiaisonScape / Hub Credits visual-parity audit to
+assess the full Credits surfaces; these two observations are evidence, not an
+exhaustive parity finding. This follow-up is not a NarrativeLine `0.2.0`
+release gate and does not authorize runtime changes. Existing component-level
+locale and dismissal records do not establish broad Credits visual parity.
 
 Hub's accepted [bilingual landing-page milestone](hub/e2r-hub-public-entry-point-milestone-2-acceptance.md)
-covers the earlier locale and Credits behavior. Its `0.2.0` local candidate
-`91cfd39c0c9bac9d49d8a42a16decb50874a0b67` now uses the same Application /
+covers the earlier locale and Credits behavior. Its accepted `0.2.0` local
+candidate `27b6a091ad33fbe1089dd9e4088654677ce71ac8` uses the same Application /
 Creator / First release / Updated metadata structure as NarrativeLine and
-LiaisonScape, and replaces the duplicate `×` plus Close actions with one
-visible Close action. Escape and backdrop dismissal return focus to the
-Credits opener; automated tests cover EN/JA copy and these dismissal paths.
+LiaisonScape, and has one visible Close action. Human Browser Acceptance is
+complete for its EN/JA metadata, single Close action, and dismissal/focus
+behavior, including backdrop dismissal returning focus to the Credits opener.
 The displayed first-release date, `2026-08-18` JST, is supported by the first
 successful [Hub Pages deployment](https://github.com/sukoyaka-dopeness/e2r-hub/actions/runs/32045286774)
-for commit `adfd8afb01b1649bedb2f80fd6fffab57b09882d`. Hub Human Browser
-Acceptance remains pending for the localized visual hierarchy and layout.
-This bounded Hub alignment neither establishes broad Credits visual parity
-nor reopens the accepted NarrativeLine `0.2.0` release gate. The future
-NarrativeLine / LiaisonScape audit of backdrop hover and body line-height /
-vertical rhythm remains separate; it is not a release gate.
+for commit `adfd8afb01b1649bedb2f80fd6fffab57b09882d`. This accepted Hub
+alignment neither establishes broad Credits visual parity nor reopens the
+accepted NarrativeLine `0.2.0` release gate.
+
+The future bounded audit compares the complete Credits surfaces in
+NarrativeLine, LiaisonScape, and Hub: typography; metadata and body formatting;
+line-height and vertical rhythm; spacing, dialog/modal padding, and information
+hierarchy; backdrop color, darkness, and opacity; hover behavior around the
+backdrop and dialog; Close presentation; and EN/JA visual consistency. It also
+inspects every dialog/modal in all three applications for backdrop-hover
+changes in color, opacity, or darkness, using current source evidence to
+distinguish intentional visual states from incidental shared hover rules or
+selector interactions. LiaisonScape's Credits backdrop appearing darker on
+hover is the concrete observation prompting that inventory, not proof that
+other dialogs share the behavior. The audit is a future consistency review;
+it does not reopen accepted Credits behavior, authorize broad runtime/CSS
+redesign, or block NarrativeLine `0.2.0`.
 
 ### Version and queued research note
 

@@ -89,13 +89,42 @@ This is fixture evidence, not a normative guarantee for arbitrary Datasets.
 The convention should be preserved for curated localized samples because it
 enables useful comparison without implying global identity.
 
+## Human-selected current sample direction — 2026-09-30
+
+For the current EN/JA public sample pairs, each language-specific artifact
+remains an independent Dataset and retains its own `datasetId`. Human selected
+this direction for the existing public samples and the NarrativeLine Cedar
+Observatory pair; release preparation does not unify their Dataset IDs. Cedar
+continues to use `cedar-observatory-showcase-en` and
+`cedar-observatory-showcase-ja`.
+
+For corresponding Core Objects that represent the same logical object in these
+curated pairs, the current authoring direction is to retain the matching Core
+Object ID across the EN and JA artifacts. This records pairwise correspondence
+for these curated samples only. It does not establish a general rule that all
+translated Datasets must share every Object ID, nor does a matching ID by
+itself make Core Object IDs globally identifying across Datasets.
+
+Dataset identity and membership in a shared language/localization family are
+separate concerns. A portable way to relate language variants as members of
+the same content family remains a research question. No field name (including
+`datasetFamilyId`), schema shape, or Metadata/Extension ownership is selected
+here. The relationship must not be inferred from shared titles, languages, or
+matching Object IDs alone.
+
+This is a current project decision for the named sample pairs, not a new
+normative Core or Extension requirement. It changes no sample, Dataset ID, or
+schema and does not reopen the NarrativeLine release transaction.
+
 ## Dataset IDs
 
-The current preferred hypothesis is that localized files remain distinct
-Dataset artifacts and retain distinct Dataset IDs. This is appropriate because
-the files may be edited, distributed, versioned, or structurally changed
-independently. A Dataset ID must not imply that two artifacts are byte-identical
-or that their translation state is synchronized.
+For the current curated sample pairs, Human selected that localized files
+remain distinct Dataset artifacts and retain distinct Dataset IDs. This is
+appropriate because the files may be edited, distributed, versioned, or
+structurally changed independently. A Dataset ID must not imply that two
+artifacts are byte-identical or that their translation state is synchronized.
+This project-specific decision does not establish a universal Dataset
+localization policy.
 
 No Dataset IDs are changed by this research.
 
@@ -133,6 +162,12 @@ representations include:
 The correct owner is unresolved. A future relationship would need to distinguish
 translation, adaptation, fork, revision, and unrelated coincidence. It should
 also preserve source/provenance and allow structural divergence.
+
+The Human-selected direction above does not select such a representation. The
+future question is how independently identified Dataset artifacts can
+explicitly express shared content-family/localization-family membership, while
+keeping Dataset identity separate and allowing partial alignment or divergence.
+Field names, schema shape, and responsibility owner remain unselected.
 
 ## Structural divergence hypothesis
 

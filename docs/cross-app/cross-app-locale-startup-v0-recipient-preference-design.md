@@ -11,7 +11,7 @@ Back/Forward lifecycle, or NarrativeLine migration as pending are historical
 checkpoints unless explicitly marked current. LiaisonScape consumer alignment
 and Hub startup locale producer work remain pending.
 
-Status: Design refinement / current decision record; experiments required before implementation
+Status: Current shared recipient-preference contract; implementation checkpoint recorded 2026-10-01; Human Browser Acceptance pending
 
 This document refines the accepted design checkpoint in
 `docs/cross-app/cross-app-locale-startup-v0-design.md` (commit `f681327`). The original
@@ -578,7 +578,7 @@ This clarification does not close Closure A by itself and does not change the
 separate production-readiness gaps for Back / Forward locale lifecycle,
 Experiment 2C, or the LiaisonScape locale consumer.
 
-**CROSS-APP LOCALE RECIPIENT-PREFERENCE DESIGN: EXPERIMENTS REQUIRED BEFORE IMPLEMENTATION**
+**HISTORICAL STATUS (superseded by the 2026-10-01 Human decision): CROSS-APP LOCALE RECIPIENT-PREFERENCE DESIGN: EXPERIMENTS REQUIRED BEFORE IMPLEMENTATION**
 
 ## Closure A completion record
 
@@ -858,3 +858,48 @@ NarrativeLine architecture. Cross-App Locale Recipient-Preference production
 readiness nevertheless remains `NOT READY`; the next NarrativeLine scope is a
 final consumer readiness audit, followed by separate LiaisonScape consumer and
 Hub producer work.
+
+## Human decision and current shared implementation status (2026-10-01)
+
+The Human decision in the 2026-10-01 Cross-App Locale implementation handoff
+supersedes the earlier “experiments required before implementation” status and
+the unresolved repeated-reload question recorded above. Those experiment notes
+remain as historical evidence of the state before this decision. NarrativeLine's
+accepted recipient behavior is the shared model:
+
+- A single exact `#locale=en` or `#locale=ja` is a startup request for UI
+  presentation. It is independent of Dataset language, variant, or
+  `datasetUrl`; invalid, malformed, and duplicate locale parameters are
+  ignored as locale requests without blocking independent Handoff processing.
+- A valid request differing from a valid explicit saved preference opens a
+  Locale Conflict Dialog before Handoff acquisition. The saved and requested
+  choices resolve only this startup. The selected result is stored in
+  application session storage for the same request, so a same-tab reload does
+  not repeat the conflict; it does not replace the durable preference. A new
+  independent session performs normal startup resolution.
+- A valid legacy `liaisonscape.locale` value is an existing explicit
+  preference. Browser-language fallback is not explicit and is never
+  automatically persisted. Only an explicit application locale-selector
+  action updates the app-owned preference and replaces the owned `locale`
+  fragment while preserving `datasetUrl` and unrelated fragment values.
+- Back / Forward restores application navigation only. It does not resolve a
+  historical locale, change preference, rewrite the fragment, reopen Conflict,
+  or restart Handoff. Reload is a new startup.
+- Hub sends its currently displayed exact locale in recipient links and does
+  not read or infer recipient storage. Its Dataset variant decision remains
+  independent from the UI locale request.
+
+Implementation status at this checkpoint:
+
+- NarrativeLine remains the accepted reference implementation and was not
+  changed in this checkpoint.
+- LiaisonScape implements the consumer contract in
+  `src/locale-preference.ts` and its startup flow. The existing Handoff
+  pipeline remains behind Conflict resolution and retains its existing
+  validation, replacement safety, and exactly-once guard. Automated evidence
+  is recorded in the [implementation and acceptance-preparation result](e2r-cross-app-locale-recipient-preference-implementation1-acceptance-preparation.md).
+- Hub application-entry and Dataset Handoff links include `locale=en|ja` for
+  the Hub's current locale. It does not persist recipient state.
+- Automated repository validation is complete for this checkpoint. Human
+  Browser Acceptance remains pending, so overall Cross-App Locale remains
+  **OPEN / NOT CLOSED**.

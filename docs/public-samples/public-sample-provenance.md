@@ -191,9 +191,9 @@ This is a project-owned dogfood/technical Dataset describing the E2R
 specification, applications, and development history. It is not a normative
 replacement for the specification and is not part of the five-family Sample
 Gallery. Its separate Hub placement and application access are Human-approved
-and implemented. Final public publication/deployment, redistribution wording,
-and any legal Dataset-content grant remain separately authorized. The current
-project policy identifies eligible project-created example and dogfood content
-as a CC0 1.0 target, but this entry must not be presented as a completed legal
-grant when the applicable release authority has not made that decision for the
-selected public revision.
+and implemented, and the published Hub exposes the entry with application
+Handoff links. This public access does not settle redistribution wording or
+grant a license to the Dataset content. The current project policy identifies
+eligible project-created example and dogfood content as a CC0 1.0 target, but
+this entry must not be presented as a completed legal grant when the applicable
+release authority has not made that decision for the selected public revision.

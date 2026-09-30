@@ -54,7 +54,7 @@
     {
       "id": "e2r-hub",
       "name": "E2R Hub",
-      "description": "E2R ecosystem entry-point application; publication of this artifact is future work."
+      "description": "Public E2R ecosystem entry-point application; presents this Dataset as a separate dogfood entry with Handoff links to compatible applications."
     },
     {
       "id": "self-description",

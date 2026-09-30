@@ -33,11 +33,11 @@ it is encoded in E2R. NarrativeLine and LiaisonScape are not required to
 interpret Lineage semantics; they may preserve the unsupported payload
 opaquely.
 
-The artifact is local and not yet published through E2R Hub. A future Hub
-surface may offer open, validate, and view-JSON actions after public URL,
-redistribution status, final user-facing wording, and the eventual
-standards/document licensing decision are resolved. No license is selected by
-this artifact.
+The public E2R Hub presents this Dataset as a separate dogfood entry, outside
+the five-family Sample Gallery, with Handoff links to open it in NarrativeLine
+or LiaisonScape. This access surface does not make the Dataset normative or
+settle its redistribution or licensing status. No license is selected by this
+artifact.
 
 ## Curated development chronology
 

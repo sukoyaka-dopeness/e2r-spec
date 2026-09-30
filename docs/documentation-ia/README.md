@@ -8,6 +8,7 @@ document-type taxonomy or a second planning authority.
 - [Documentation Hub](../README.md) is the reader-facing entry point.
 - [Roadmap](../roadmap.md) remains the sole current-planning authority.
 - [Documentation Plan](documentation-plan.md) records placement guidance.
+- [Session Log physical-organization decision preparation](session-log-physical-organization-human-decision-preparation.md) records the read-only inventory and Human choices; no paths are migrated.
 - [Final root classification audit](documentation-ia-final-root-classification-and-ingress-gate-audit1.md)
   preserves the Wave 5 exact manifests and root-ingress gate design.
 - [Wave 5 migration result](documentation-ia-wave5-final-residual-placement-migration1-result.md)

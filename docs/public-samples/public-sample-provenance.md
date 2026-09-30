@@ -63,34 +63,48 @@ declaration, Validator, package, or application behavior.
 
 ## Sample ledger
 
-### Unreleased NarrativeLine application candidate — 2026-09-30
+### Cedar Observatory — published NarrativeLine-owned EN/JA pair
 
 The paired Cedar Observatory files at
 `e2r-narrative-line/src/sample/cedar-observatory-showcase.{en,ja}.e2r.json`
-are a **local NarrativeLine `0.2.0` release candidate**, not another row of the
-five-family canonical sample ledger and not an E2R-SPEC canonical sample.
-Hub now presents Cedar after the existing five sample cards in its Gallery,
-with HTTPS Handoff links from the NarrativeLine-owned source files to both
-NarrativeLine and LiaisonScape. LiaisonScape can load the Entity graph but its
-Validator 0.6.0 reports the known Relative Time 0.2.0 specification-version
-warning. This entry does not transfer Dataset
-ownership to Hub or confer canonical cross-app authority. The public source
-URL and end-to-end Handoff remain pending publication and Human review.
-They are a fictional story authored with Codex under Human direction for this
-checkpoint, with EN/JA versions created together. No external factual
-chronology, copied prose, or assets were intentionally used. See the
-[application-owned candidate record](../../../e2r-narrative-line/docs/cedar-observatory-showcase-release-candidate.md)
-for content and verification. This is local provenance evidence, not completed
-Human content review. On 2026-09-30, Human selected the same E2R sample-data
-licensing/provenance policy for Cedar as for the other project-created samples.
-The [scoped NarrativeLine notice](../../../e2r-narrative-line/src/sample/README.md)
+are a **public NarrativeLine-owned sample pair**. They are not another row of
+the five-family canonical sample ledger and are not E2R-SPEC canonical samples.
+The public NarrativeLine `main` is
+`eb583720df89797a1acf682b5cea747bc25e0cc6`; it includes the later Japanese
+User Guide documentation-only follow-up. NarrativeLine `0.2.0` feature
+publication remains closed at its recorded release revision, as documented in
+the [publication verification result](../narrativeline/narrativeline-0.2.0-publication-verification-result.md).
+
+The public Hub `main`,
+`6765bcbcc95658eef944636b3afd248cc3a588e0`, presents Cedar EN/JA in its Gallery
+with Handoff links to both applications. The public LiaisonScape `main`,
+`75400c65b64938aee5c74efa8bd772bb6f1851ea`, uses Validator `0.7.0`. Its public
+Cedar EN/JA acquisition showed no Relative Time `0.2.0` unsupported-version
+warning. Human Browser verification of all four Hub EN/JA-to-NarrativeLine /
+LiaisonScape routes confirmed Dataset acquisition and the expected Timeline
+or Entity graph, with no special error message or unexpected visible
+diagnostic. The [Cross-App live interoperability closure](../cross-app/e2r-cross-app-live-interoperability-closure-result.md)
+records that evidence. Cross-App Locale remains a separate open workstream.
+
+The publication and interoperability evidence changes neither ownership nor
+sample role: Cedar remains NarrativeLine-owned and does not acquire canonical
+E2R-SPEC or Hub ownership. The [2026-09-30 application candidate record](../../../e2r-narrative-line/docs/cedar-observatory-showcase-release-candidate.md)
+remains provenance and content evidence; its unreleased-candidate status is a
+dated preparation snapshot superseded by the later publication records. Cedar
+is a fictional story authored with Codex under Human direction, with EN/JA
+versions created together. No external factual chronology, copied prose, or
+assets were intentionally used.
+
+On 2026-09-30, Human selected the same E2R sample-data licensing/provenance
+policy for Cedar as for the other project-created samples. The [scoped
+NarrativeLine notice](../../../e2r-narrative-line/src/sample/README.md)
 therefore places eligible project-created content of this EN/JA pair in the
 CC0 1.0 bucket **only where project rights can be granted**; any third-party or
 imported material remains excluded. No such external story, prose, or assets
 were identified in the current pair. NarrativeLine's MIT software license does
-not decide Dataset-content licensing. Human Browser Acceptance and public-write
-authorization remain pending; existing public sample roles and rights records
-are unchanged.
+not decide Dataset-content licensing. These publication and Browser results do
+not expand the existing licensing/provenance boundary or change other sample
+roles and rights records.
 
 | Pair | EN canonical | JA canonical | Class | History / authorship evidence | External basis | JA status | Verbatim audit | Bucket |
 |---|---|---|---|---|---|---|---|---|

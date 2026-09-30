@@ -18,3 +18,8 @@ candidate is `d5fe2cc`; that exact SHA was rerun in the same topology and also
 passed. Public Cedar fetch, deployed
 revision, live Handoff, actual-date Credits commit, and public-write approval
 remain separate release gates.
+
+The production-only npm advisory scan returned zero vulnerabilities. The full
+install-tree scan reports three high transitive development dependencies with
+fixes available; this checkpoint did not update dependencies and records the
+toolchain finding separately from production dependency risk.

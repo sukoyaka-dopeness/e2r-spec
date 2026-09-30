@@ -76,7 +76,12 @@ the actual-date NarrativeLine revision and public transaction.
 The network-dependent production advisory scan was initially unavailable, but
 a network-capable retry of `npm audit --omit=dev --audit-level=low` on the
 NarrativeLine candidate returned **0 vulnerabilities** on 2026-09-30. This
-does not replace the exact-SHA remote CI and deployment gate.
+does not replace the exact-SHA remote CI and deployment gate. A full audit of
+the install tree reports three high-severity transitive development packages
+(`brace-expansion`, `nanoid`, `undici`), each with an available fix and none a
+direct dependency. No dependency update was made in this fixture-ownership
+checkpoint. The production-only result is clean; release policy for these
+build/test toolchain findings remains a separate security disposition.
 
 No tag, GitHub Release, npm publication, LiaisonScape Validator update, or
 canonical sample promotion is part of this transaction. This document records

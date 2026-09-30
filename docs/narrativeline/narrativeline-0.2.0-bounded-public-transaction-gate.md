@@ -74,14 +74,48 @@ GitHub Actions run and Pages deployment are still required after Human approves
 the actual-date NarrativeLine revision and public transaction.
 
 The network-dependent production advisory scan was initially unavailable, but
-a network-capable retry of `npm audit --omit=dev --audit-level=low` on the
-NarrativeLine candidate returned **0 vulnerabilities** on 2026-09-30. This
-does not replace the exact-SHA remote CI and deployment gate. A full audit of
-the install tree reports three high-severity transitive development packages
-(`brace-expansion`, `nanoid`, `undici`), each with an available fix and none a
-direct dependency. No dependency update was made in this fixture-ownership
-checkpoint. The production-only result is clean; release policy for these
-build/test toolchain findings remains a separate security disposition.
+a network-capable `npm audit --omit=dev --audit-level=low` on the exact
+NarrativeLine candidate returned **0 vulnerabilities** on 2026-09-30. A later
+repeat from this workspace could not reach the npm advisory endpoint; the
+lockfile and its installed dependency paths were inspected directly. The
+production-only result remains distinct from the full install-tree findings.
+
+The full-tree scan on this candidate reported three high-severity transitive
+development dependencies, all marked `dev` in the lockfile and outside the
+production dependency graph:
+
+- `brace-expansion@5.0.8` through `eslint → minimatch`. The reviewed
+  [GHSA-rgw5-rvv9-x895](https://github.com/advisories/GHSA-rgw5-rvv9-x895)
+  concerns denial of service when attacker-controlled brace patterns reach
+  expansion; it is patched in `5.0.9`. The current lint command is `eslint .`
+  and its patterns/configuration are repository-controlled, not Dataset input.
+- `nanoid@3.3.16` through `postcss`. The reviewed
+  [GHSA-2v37-7h3g-55p8](https://github.com/advisories/GHSA-2v37-7h3g-55p8)
+  concerns zero-size custom generators; it is patched in `3.3.18`. The current
+  PostCSS call site uses `nanoid(6)` with a fixed positive size. The separate
+  negative-size advisory is patched at `3.3.16`, the version present here.
+- `undici@8.10.0` through the development test environment's
+  `jsdom@30.0.1`. The reviewed
+  [GHSA-vp8m-p9jh-q5pm](https://github.com/nodejs/undici/security/advisories/GHSA-vp8m-p9jh-q5pm)
+  concerns cross-origin cache/deduplication when the affected interceptors are
+  configured; it is patched in `8.10.2`. NarrativeLine's DOM test helper uses
+  jsdom defaults, does not enable subresource loading or configure those
+  interceptors, and the current tests do not configure them.
+
+Bounded disposition: these findings are **known, unpatched development-tool
+advisories, not a current production-runtime or demonstrated release-pipeline
+exploitation blocker** for the reviewed source and workflow. The affected
+operations are not fed attacker-controlled Dataset content in current
+NarrativeLine; current Pages workflow runs on `main` pushes/manual dispatch,
+and invokes the repository's fixed lint/test/build commands. This is a
+reachability assessment, not a claim that the packages are fixed or that the
+advisories are low severity. Patched versions exist and a dependency-lockfile
+update remains a separate maintenance follow-up; no such update was made in
+this release-preparation checkpoint. If release policy requires a clean
+full-tree audit, stop before public writes and resolve that requirement first.
+The npm advisory endpoint was unavailable on the latest local retry, so this
+assessment relies on the previously recorded audit result, exact current
+lockfile/path inspection, and the package maintainers' reviewed advisories.
 
 No tag, GitHub Release, npm publication, LiaisonScape Validator update, or
 canonical sample promotion is part of this transaction. This document records

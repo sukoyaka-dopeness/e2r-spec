@@ -1947,6 +1947,24 @@ changed. The next checkpoint is the NarrativeLine current-state/documentation/
 final release-readiness audit; release execution and new showcase samples are
 not authorized by this closure.
 
+### NarrativeLine current-state / final release-readiness audit (2026-09-30)
+
+The current audit is recorded in the
+[NarrativeLine current-state and release-readiness result](../../e2r-narrative-line/docs/current-state-release-readiness-audit-2026-09-30.md).
+The NarrativeLine source baseline is `055b12e32f6e9b5e4ea7b9a053f9b7d70314161f`;
+bounded documentation synchronization follows that baseline. No concrete
+runtime or dependency blocker was established. Release execution remains
+pending Human decisions on the exact application version/release identity and
+whether a new application-owned showcase Dataset is in scope, followed by
+selection of the exact release revision and explicit authorization of the
+public-write transaction. Current package metadata is `0.2.0`, but this is
+not an accepted release decision; the existing application-maintenance hold
+at `0.1.0` remains until one is made. The app's Pages workflow deploys on a
+push to `main`, so that push is a public-write action. The QRT acceptance
+fixture remains test-only. This current audit supersedes earlier NarrativeLine
+release-readiness snapshots for present planning; their historical records are
+retained unchanged.
+
 ### NarrativeLine Perspective ordering representation decision preparation (2026-09-27)
 
 Human selected the direction to design Dataset-portable, non-temporal ordering

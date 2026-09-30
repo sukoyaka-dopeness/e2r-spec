@@ -8,8 +8,10 @@ Status: **HUMAN-ADOPTED / DOCUMENTED**
 The Human adopted the following organization policy after reviewing the
 [read-only decision preparation](session-log-physical-organization-human-decision-preparation.md):
 
-- Keep existing `E2R-Session-0001.md` through `E2R-Session-0099.md` at their
-  current flat paths. Do not bulk-move or rename them.
+- Session records with IDs below `0100` use the flat `sessions/` layout.
+- Existing numbered Session files below `0100` remain at their current paths;
+  none are moved or renamed. Future Sessions `0098` and `0099`, if created,
+  also use the flat layout.
 - Treat each four-digit Session ID as a global immutable identity. Do not
   reuse any used or reserved ID.
 - Reserve ID `0096` as a gap. Do not create `E2R-Session-0096.md`.

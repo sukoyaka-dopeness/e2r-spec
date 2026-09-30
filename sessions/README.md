@@ -9,8 +9,10 @@ and follow its links to dedicated result, decision, and Research authorities.
 
 - Session IDs are global, immutable, four-digit identities. Used or reserved
   IDs are never reused.
-- Existing IDs `0001`–`0099` remain at their current flat paths. They are not
-  bulk-moved or renamed.
+- Session records with IDs below `0100` use the flat `sessions/` layout.
+- Existing numbered Session files below `0100` stay at their current paths;
+  none are moved or renamed. Future Sessions `0098` and `0099`, if created,
+  also use the flat layout.
 - `0096` is a reserved gap. No `E2R-Session-0096.md` exists or should be
   created. A dated note beside the historical Roadmap reference records this
   disposition.

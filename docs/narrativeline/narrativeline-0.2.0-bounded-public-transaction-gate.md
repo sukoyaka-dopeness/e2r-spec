@@ -21,7 +21,7 @@ the Cedar provenance addition, a current Roadmap pointer, and its own session
 record. Independent local specification, schema, research, sample draft, and
 historical work must not be published by pushing the broader local `main`.
 
-NarrativeLine's current pre-date local candidate is `804bb17bf99c5cdace5ac72157967b1bf9b0e010`;
+NarrativeLine's current pre-date local candidate is `d5fe2cc33861d323afba82e34a736d1b6ae115e8`;
 Hub's local candidate is `6e1165bd4b328f89f32de82555b159dd0b08ec60`.
 These are **not yet approved public push revisions**. NarrativeLine's Credits
 version is 0.2.0, but its actual Released date is unset. On the actual public
@@ -66,7 +66,7 @@ and fixture identity application-owned without establishing a cross-repository
 fixture contract or publishing unrelated E2R-SPEC work.
 
 CI parity was rerun against the workflow's exact topology: NarrativeLine
-`804bb17bf99c5cdace5ac72157967b1bf9b0e010` beside an E2R-SPEC checkout at
+`d5fe2cc33861d323afba82e34a736d1b6ae115e8` beside an E2R-SPEC checkout at
 `d14e34561676d99e3de2dbf8b641c53eda372e2c`. All **348/348 tests PASS**, lint
 PASS, and build PASS. The four former 0.2.0 consumer tests pass in that run.
 This removes the known local-versus-pinned-fixture blocker. A new exact-SHA

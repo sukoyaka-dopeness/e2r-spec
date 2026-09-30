@@ -13,6 +13,8 @@ push, deployment, tagging, or publication.
 The old Pages failure and the current test fixture ownership mismatch were
 resolved by making NarrativeLine's test inputs application-owned. Full CI
 topology at NarrativeLine `804bb17` plus the workflow-pinned E2R-SPEC
-`d14e345` passed 348 tests, lint, and build. Public Cedar fetch, deployed
+`d14e345` passed 348 tests, lint, and build. The final local NarrativeLine
+candidate is `d5fe2cc`; that exact SHA was rerun in the same topology and also
+passed. Public Cedar fetch, deployed
 revision, live Handoff, actual-date Credits commit, and public-write approval
 remain separate release gates.

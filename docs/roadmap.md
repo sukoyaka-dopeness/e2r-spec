@@ -1930,20 +1930,22 @@ run the final audit and then add a temporal feature. The older 2026-09-17
 release-readiness evidence remains historical evidence and is not deleted or
 treated as a substitute for that later audit.
 
-Quantitative Relative Time update (2026-09-29): the bounded semantic and
-application audit is complete, and Human selected both `0.2.0` quantitative
-Features for NarrativeLine authoring with direct one-hop date candidates.
-The [NarrativeLine implementation record](../../e2r-narrative-line/docs/quantitative-relative-time-user-facing-milestone-implementation.md)
-describes the local runtime and automated evidence. Human Browser Acceptance
-explicitly passed the final Event Detail Name control geometry and field-group
-spacing refinement. One visual item remains pending: Human confirmation of
-the final Timeline candidate internal spacing, warning distinction, and
-separation between multiple candidates. The implementation record separates
-accepted browser observations from automated safety evidence. NarrativeLine-
-local visual direction is recorded there without creating an E2R-wide or
-Cross-App style rule. The final NarrativeLine current-state/documentation/
-release-readiness audit follows formal QRT closure; no Candidate, schema,
-Validator, History, or Perspective contract was changed for this milestone.
+Quantitative Relative Time update (2026-09-30): NarrativeLine's bounded
+`calendar-granule-relation` / `elapsed-offset` user-facing milestone is
+**HUMAN BROWSER ACCEPTANCE PASS / ACCEPTED / CLOSED**. The
+[implementation and acceptance record](../../e2r-narrative-line/docs/quantitative-relative-time-user-facing-milestone-implementation.md)
+records Human acceptance of direct one-hop Candidates, Calendar/elapsed
+meaning and precision, Recorded History separation and save boundaries,
+independent no-winner Candidates, preservation, Timeline disclosure and drag
+interaction boundaries, JA/EN ordinary/narrow presentation, identity
+disambiguation, and the final Candidate spacing and Event Detail control
+geometry refinements. Automated safety and regression evidence is recorded
+there separately. NarrativeLine-local presentation direction remains
+application scoped and does not establish an E2R-wide or Cross-App visual
+rule. No Candidate, schema, Validator, History, or Perspective contract was
+changed. The next checkpoint is the NarrativeLine current-state/documentation/
+final release-readiness audit; release execution and new showcase samples are
+not authorized by this closure.
 
 ### NarrativeLine Perspective ordering representation decision preparation (2026-09-27)
 

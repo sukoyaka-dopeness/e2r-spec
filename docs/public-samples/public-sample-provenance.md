@@ -63,6 +63,23 @@ declaration, Validator, package, or application behavior.
 
 ## Sample ledger
 
+### Unreleased NarrativeLine application candidate — 2026-09-30
+
+The paired Cedar Observatory files at
+`e2r-narrative-line/src/sample/cedar-observatory-showcase.{en,ja}.e2r.json`
+are a **local NarrativeLine `0.2.0` release candidate**, not another row of the
+public five-family Gallery ledger and not an E2R-SPEC canonical sample.
+They are a fictional story authored with Codex under Human direction for this
+checkpoint, with EN/JA versions created together. No external factual
+chronology, copied prose, or assets were intentionally used. See the
+[application-owned candidate record](../../../e2r-narrative-line/docs/cedar-observatory-showcase-release-candidate.md)
+for content and verification. This is local provenance evidence, not completed
+Human content review or a license grant. The project's authority to
+redistribute both Dataset files, and the intended Dataset-content license,
+require explicit Human confirmation before publication. NarrativeLine's MIT
+software license does not decide that content license. Existing public sample
+roles and rights records are unchanged.
+
 | Pair | EN canonical | JA canonical | Class | History / authorship evidence | External basis | JA status | Verbatim audit | Bucket |
 |---|---|---|---|---|---|---|---|---|
 | Berlin Wall | `e2r-narrative-line/src/sample/berlin-wall-history.en.e2r.json` | `e2r-narrative-line/src/sample/berlin-wall-history.ja.e2r.json` | factual project-authored Dataset | NarrativeLine sample files are maintained in project history | Berlin Wall chronology and events; source bibliography still bounded | PROJECT-ADOPTED TRANSLATION — ORIGINAL AUTHORING METHOD NOT RECOVERABLE | no obvious long match found | CC0 candidate, source terms remain excluded |

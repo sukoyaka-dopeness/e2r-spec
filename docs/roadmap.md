@@ -10,7 +10,7 @@ Status: Current planning document; non-normative
 
 Placement is closed at `8 directories / 7 Git repositories / 0 noncanonical root workspaces`.
 Seven canonical repositories remain direct children of `C:\Users\extra\E2R`; experimental and diagnostic workspaces, including the preserved receive-lifetime workspace, remain under `workspace/`.
-Current status is in the [status index](#current-status-index-2026-09-28); chronology and preservation evidence remain in the [legacy chronology](roadmap-history/legacy-chronology.md), workspace artifacts, and Git history.
+Current status is in the [status index](#current-status-index-2026-10-02); chronology and preservation evidence remain in the [legacy chronology](roadmap-history/legacy-chronology.md), workspace artifacts, and Git history.
 Future evidence disposition, provenance, archiving, and cleanup remain separate; placement closure does not authorize them.
 
 ## Operating principles
@@ -29,7 +29,9 @@ Future evidence disposition, provenance, archiving, and cleanup remain separate;
 - Keep ordinary Dataset use and Core validation independent of network access
   or an external registry.
 
-## Current status index — 2026-09-28
+<a id="current-status-index-2026-09-28"></a>
+
+## Current status index — 2026-10-02
 
 This short section is the entry point for current status. Detailed checkpoint
 records and retained planning entries remain below for evidence and chronology;
@@ -38,7 +40,9 @@ words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`. The completed
 workspace-migration chronology is preserved in the [roadmap history
 index](roadmap-history/README.md); its dated status language is historical.
 NarrativeLine release-preparation and future-application research entries below
-were updated on 2026-09-30; the section anchor is retained for existing links.
+were updated on 2026-09-30; ParameterPlotter Prototype 2 implementation status
+was synchronized on 2026-10-02. The 2026-09-28 section anchor is retained for
+existing links.
 
 | Workstream | Current status | Authority / next decision |
 | --- | --- | --- |
@@ -59,7 +63,7 @@ were updated on 2026-09-30; the section anchor is retained for existing links.
 | Multilingual public-sample Dataset identity | **CURRENT EN/JA SAMPLE DIRECTION SELECTED / FAMILY RELATIONSHIP REMAINS RESEARCH** | Current curated EN/JA public samples retain distinct language-specific `datasetId` values; corresponding Core Object IDs are shared for matching logical objects in these pairs only, not as a universal translation rule or global identity. Cedar IDs remain unchanged. A portable relationship for shared language/localization-family membership remains exploratory; field name, schema shape, and owner are unselected. See [Dataset language and localized variant architecture](../research/exploratory/dataset-language-and-localized-variant-architecture.md#human-selected-current-sample-direction--2026-09-30). This planning record changes no sample/schema and does not reopen the NarrativeLine release transaction. |
 | Cross-App live interoperability | **CLOSED / HUMAN BROWSER END-TO-END ACQUISITION VERIFIED** | The [closure result](cross-app/e2r-cross-app-live-interoperability-closure-result.md) records successful Hub EN/JA Cedar Dataset acquisition and expected Timeline / Entity graph in both public receiving applications. Cross-App Locale remains separately open. |
 | Cedar Observatory EN/JA showcase | **PUBLIC NARRATIVELINE SOURCE / HUB GALLERY ENTRY PUBLIC / LIVE CROSS-APP ACQUISITION CLOSED** | Cedar remains NarrativeLine-owned. Hub `0.2.0` presents Cedar EN/JA in its six-sample Gallery. Four Human Browser routes verified actual acquisition and expected receiving views; see the [Cross-App live interoperability closure result](cross-app/e2r-cross-app-live-interoperability-closure-result.md). Publication details remain in the [Hub](hub/e2r-hub-0.2.0-publication-closure-result.md), [NarrativeLine](narrativeline/narrativeline-0.2.0-publication-verification-result.md), and [LiaisonScape](liaisonscape/liaisonscape-0.2.0-publication-closure-result.md) results. |
-| Future multi-visualization application | **PRE-IMPLEMENTATION RESEARCH RETAINED / DESIGN AND PROTOTYPE WORK ON HOLD** | [quadrant/Radar research handoff](../research/exploratory/multi-visualization-application-pre-implementation-research.md). Human paused the next application's design, naming, and prototype work at this checkpoint. Same Dataset can support Timeline and graph; semantic dimensions and values for quadrant/Radar are absent. No application repository, Extension, schema, or chart contract adopted. Future decisions remain separate from NarrativeLine release. |
+| Future multi-visualization application | **PRODUCT RESPONSIBILITY HUMAN-APPROVED / PROTOTYPE 2 BOUNDED APPLICATION-LOCAL SCOPE HUMAN-ACCEPTED / CLOSED** | Human accepted and closed the bounded application-local Prototype 2 scope. Canonical case status is 19 Human PASS / 0 PENDING / B3 NOT RUN. B3 remains NOT RUN because no genuine Prototype 1 legacy-session fixture exists; Human explicitly accepted the missing browser evidence as a limitation, not as compatibility PASS. The [implementation and closure result](../research/prototypes/parameterplotter-1/prototype-2-bounded-implementation-result-2026-10-02.md) and [Human Browser Evaluation](../research/prototypes/parameterplotter-1/prototype-2-human-browser-evaluation-2026-10-02.md) record the authority and case results. The Quadrant connector defect and waiting-Entity plot-click discoverability remain separate follow-ups, not closure blockers. Portable Dimension/value semantics, Observation model, Dataset write-back/export, Core, Extension, schema, Validator, production implementation/repository/architecture, product name and release identity remain unadopted. |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](./temporal/history-2-user-facing-authoring-scope-result.md); [bounded scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader History 2 shapes remain outside scope; NarrativeLine Relative Time authoring is a separate application workstream below |
 | H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
@@ -871,11 +875,28 @@ deferred responsibilities; neither reopens this closure.
 
 ### Future application surface concepts
 
-The following remain future application concepts only, with naming and
-implementation deferred:
+The following remain future application concepts only, with implementation
+deferred:
 
-- a multi-visualization application that can present the same E2R Dataset
-  through quadrant/four-quadrant, radar, and future chart forms;
+- a future multi-visualization application, currently using
+  **ParameterPlotter** as its leading working name (not a selected product
+  name). Its application-local Prototype 1 interaction checkpoint is
+  Human-accepted; the [checkpoint](../research/prototypes/parameterplotter-1/prototype-1-checkpoint-2026-10-02.md)
+  records evidence and limits. Human approved one workspace that compares
+  selected E2R Entities using explicitly defined Dimensions and inspects the
+  same application-local temporary values through Profile, Radar, Quadrant,
+  and Matrix. The bounded local Prototype 2 experiment around per-Dimension
+  MIN/MAX, optional free-text unit, and derived presentation positions is
+  implementation complete, including Matrix commit position preservation and
+  the subsequent Dimension-local integer constraint. Its bounded
+  application-local scope is **HUMAN-ACCEPTED / CLOSED**, with canonical status
+  19 Human PASS / 0 PENDING / B3 NOT RUN. Human accepted the missing genuine
+  legacy-session browser evidence as a limitation; B3 is not compatibility
+  Human PASS. The [implementation and closure
+  result](../research/prototypes/parameterplotter-1/prototype-2-bounded-implementation-result-2026-10-02.md)
+  records the boundary. Product-level choices and portable semantics remain
+  deferred.
+  See the [dedicated Research overview](../research/exploratory/multi-visualization-application-pre-implementation-research.md);
 - a Notebook/document surface for diary, gamebook, outline, and long-form
   Object authoring use cases.
 
@@ -1600,7 +1621,7 @@ audits, S3 licensing/provenance and sample redistribution checks, then
 push/deployment readiness, public interoperability evidence, and the final
 pre-public-release audit. The later S3 result and Initial Public Release closure
 supersede this sequence as release planning; it is not the current execution
-order. Current status is in the [status index](#current-status-index-2026-09-28).
+order. Current status is in the [status index](#current-status-index-2026-10-02).
 Cross-App Locale itself is not closed, but this historical release sequence
 does not select its present priority or imply that the locale workstream blocks
 the already closed release.

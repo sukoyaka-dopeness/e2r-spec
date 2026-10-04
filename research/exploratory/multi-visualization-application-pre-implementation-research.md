@@ -1,9 +1,128 @@
-# Multi-visualization application — pre-implementation research
+# ParameterPlotter (working name) — multi-visualization application pre-implementation research
 
-Date: 2026-09-30
-Status: Research and Human design handoff; no application, Extension, or schema adopted
+Date: 2026-09-30; current status updated 2026-10-04
+Status: Prototype 1 accepted / Product responsibility Human-approved / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted); no portable contract, production application, Extension, or schema adopted
 
-## Product responsibility before chart choice
+## Prototype 1 checkpoint and current handoff — 2026-10-02
+
+The application-local ParameterPlotter Prototype 1 has been implemented and
+Human-accepted as bounded interaction evidence. Profile, Radar, Quadrant,
+and Matrix share Entity identity, temporary Dimensions and values, and the
+Prototype's missing-value behavior. Imported Dataset content remains
+read-only; temporary data stays in tab-session storage. Prototype 1 used the
+numeric range `-1..+1`, and Radar's 10-spoke cap was a provisional display
+limit.
+
+The [Prototype 1 checkpoint](../prototypes/parameterplotter-1/prototype-1-checkpoint-2026-10-02.md)
+records accepted interaction evidence, limitations, and the non-decisions
+made at that checkpoint. The [Prototype README](../prototypes/parameterplotter-1/README.md)
+contains implementation progression and bounded refinements. On 2026-10-02,
+Human approved the Product responsibility direction below; this resolves the
+checkpoint's pending decision without changing its historical record.
+
+The approved responsibility is one workspace to compare selected E2R
+Entities with explicitly defined Dimensions and inspect the same
+application-local temporary Entity–Dimension values through Profile, Radar,
+Quadrant, and Matrix. The values remain application-local session data, not a
+portable Observation model. The approval does not select a product name,
+portable Dimension/value contract, production implementation, application
+owner, Dataset write-back/export, Extension, schema, or Validator change.
+
+The bounded application-local Prototype 2 experiment around
+Dimension-specific MIN/MAX, optional free-text unit, arbitrary numeric
+ranges, and derived presentation positions is Human-accepted and closed within
+its bounded scope. Canonical evaluation status is 19 Human PASS / 0 PENDING /
+B3 NOT RUN. Human accepted the lack of a genuine Prototype 1 legacy-session
+browser fixture as a limitation; B3 is not Human PASS and no artificial fixture
+was created. See the [implementation and closure result](../prototypes/parameterplotter-1/prototype-2-bounded-implementation-result-2026-10-02.md)
+and the [Human Browser Evaluation guide](../prototypes/parameterplotter-1/prototype-2-human-browser-evaluation-2026-10-02.md).
+The latest bounded refinements preserve
+Matrix row/scroll/page position on value commit and implement the subsequent
+Human-selected Dimension-local integer constraint for all new value commits.
+The earlier Profile-global random-only option is superseded. Existing decimal
+records are retained and marked, with no ordinary plot position while violating
+the constraint; unconstrained Dimensions continue to allow decimals. This is
+application-local and adopts no portable precision or step contract.
+The closure does not adopt the [Dimension/value semantics checkpoint](parameterplotter-dimension-value-semantics-research-checkpoint-2026-10-02.md)'s
+deferred portable questions. Precision,
+directionality, portable zero and missing-state semantics, normalization,
+provenance, multiple observations, portable Dimension identity/vocabulary,
+and a Recorded Observation model remain open Research topics rather than
+decisions in this implementation.
+
+The following earlier sections retain their dated pre-Prototype context. In
+particular, the former pre-implementation gate authorized a local evidence
+probe only; its proposed MVP is not the current next action. Production
+architecture/framework, canonical repository and product name, Dataset
+write-back/export, Extension/schema/Validator work, release identity, and
+Radar's permanent 8-versus-10 policy remain undecided or deferred.
+
+## Historical Human-selected research direction — 2026-10-01
+
+**ParameterPlotter** is the leading working name for this future
+multi-visualization application; it is not a finalized product name. The
+concept is an application with a distinct view of an E2R Dataset from a
+Timeline or relationship graph, principally placing and comparing Entities
+across multiple parameter or semantic dimensions. The initial visualization
+forms under consideration are quadrant/four-quadrant and radar. 3D
+visualization remains future scope and is not required for an initial
+prototype.
+
+The first prototype direction is application-local and exploratory, using the
+Dataset read-only. Temporary parameters, view toggles, and generated profiles
+may be used to test the task and presentation without claiming portable Dataset
+semantics. Do not begin by adopting Core changes, an Extension, a schema,
+portable parameter contracts, or Dataset semantic write-back. Whether a
+portable parameter/dimension model is needed must be decided from prototype
+evidence.
+
+The application may later become an early consumer of reusable Semantic,
+Dictionary, or external-vocabulary capabilities. Vocabulary lookup/resolution,
+localized labels, stable Concept identity, caching/reuse, axis selection,
+Entity parameter input, and quadrant/radar rendering form a possible research
+path. A lazy resolution direction—semantic ID, local cache/pool, fetch when
+needed, then cache for reuse—may be evaluated. This does not make ordinary
+Dataset use or validation network-dependent, and failed retrieval must not
+erase Dataset-local fallback labels. Source/provenance, retrieved revision or
+version, language, licensing, and offline failure behavior require separate
+decisions before external vocabulary adoption. A parameter-dimension
+vocabulary and a typed Relation-predicate vocabulary may share infrastructure;
+their meaning and responsibility are not presumed identical.
+
+For initial vocabulary experiments, a human-selected polar pair such as
+`好き ↔ 嫌い` may be explored. Lexical antonymy alone does not establish a
+mathematical axis. Keep logical negation, polar antonymy, contrastive
+counterpart, and merely related concepts distinct; the Human must select and
+adopt a concept pair as an axis. More relational or contextual parameters
+remain future research.
+
+The local Prototype described as future work in this 2026-10-01 planning
+snapshot has since been completed as Prototype 1 (see the current handoff at
+the top of this document). The Product and any production implementation
+remain future work, not active implementation. This direction does not change
+current Hub publication or Cross-App release priorities. The relative order
+of product/production work and the Semantic/Dictionary/vocabulary foundation
+returns to Human judgment when supported by evidence. Repository ownership;
+production start; framework or visualization-library choice; portable
+representation or numeric normalization; Extension/schema; external provider
+or licensing policy; 3D technology; and release name, version, or date remain
+intentionally undecided. No runtime, Dataset, schema, Validator, application
+repository, or public artifact is changed by this Research direction.
+
+## Local Prototype observation: Enter-to-commit — 2026-10-01
+
+Human use of the local ParameterPlotter Prototype repeatedly surfaced a desire
+to press Enter immediately after editing a single-line text or numeric value
+whose commit target is clear. The Prototype is testing Enter-to-commit for
+Profile/Matrix numeric values and native single-line creation/edit forms for
+temporary Dimensions and Entities. Search/filter fields are excluded; Enter in
+multiline fields retains its newline meaning, and native select behavior is
+unchanged. This is application-local interaction evidence, not an accepted
+E2R-wide convention. After further Human use, audit relevant single-line edit
+surfaces in NarrativeLine and LiaisonScape and return any shared convention to
+Human decision. It conveys no portable data or Dataset write-back semantics.
+
+## Product responsibility hypothesis before Prototype evidence (historical)
 
 A possible product task is to **compare a selected set of E2R objects against
 explicit, named dimensions and inspect how the same observations appear in
@@ -14,11 +133,11 @@ data policy, and provenance. A bundle of unrelated charts would not establish
 that responsibility. NarrativeLine explains Event chronology; LiaisonScape
 explains connections. Neither currently owns dimension-based assessment.
 
-Start, if selected, with a read-only comparison prototype on explicitly
-supplied data. Authoring portable scores first would prematurely fix who owns
-the meaning, units, evidence, and revision policy. A read-only prototype may
-use application-local, clearly labeled demo observations, but must not imply
-that those observations came from the Dataset or write them back.
+The pre-Prototype proposal was to start with a read-only comparison probe on
+explicitly supplied data. Authoring portable scores first would prematurely
+fix who owns the meaning, units, evidence, and revision policy. Prototype 1
+has since supplied this application-local evidence while keeping temporary
+observations separate from the Dataset; see the current checkpoint above.
 
 ## Current evidence and ownership
 
@@ -59,7 +178,8 @@ Quadrant and Radar could project the same observations, but only after the
 following meaning is settled independently of geometry:
 
 - Stable dimension identity versus translated label and vocabulary source.
-- A numeric value's author, measured/assessed subject, range, unit, precision,
+- A numeric value's author, measured/assessed subject, Dimension-specific
+  MIN/MAX or other arbitrary numeric range, unit, precision,
   directionality (what “higher” means), and whether zero is meaningful.
 - Scale comparability and normalization. Radar especially can mislead when
   dimensions have unlike ranges; normalization is a Derived transformation,
@@ -68,6 +188,8 @@ following meaning is settled independently of geometry:
   fabricated as zero. Partial polygons and absent quadrant points need policy.
 - Multiple observations across time, assessors, or evidence sources;
   selection/aggregation must be explicit rather than a hidden winner.
+- The formal boundary between Recorded observations and Derived presentation
+  values, including any normalization contract.
 - The comparison set and which axes appear: temporary application selection
   first, with portable user-authored configuration only if interoperability
   justifies a later separate contract.
@@ -110,7 +232,17 @@ Dataset alone would therefore be visually possible only with fabricated or
 application-local demonstration values, not a faithful E2R Dataset projection.
 The sample stays a NarrativeLine story and is not distorted to solve that gap.
 
-## Human design gate and smallest next experiment
+## Pre-Prototype Human design gate (historical planning record)
+
+The questions and smallest-experiment outline below record the gate that
+preceded Prototype authorization. Prototype 1 has since been completed and
+Human-accepted as interaction evidence; see the current handoff at the top of
+this document. The former MVP proposal is historical. The next step recorded
+at that checkpoint was the separate Product responsibility review, not
+another Prototype UI pass. Human has since approved that responsibility and
+closed the bounded application-local Prototype 2 scope. The next Product
+milestone remains unselected; its decision-preparation packet is recorded in
+the current planning handoff below.
 
 Before implementation, Human should decide:
 

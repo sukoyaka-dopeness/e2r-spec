@@ -982,8 +982,12 @@ LiaisonScape Initial Placement checkpoint or authorize a Suite shell or new
 application.
 
 A separate [E2R Wiki / portable hosted Dataset research](../research/exploratory/e2r-wiki-portable-hosted-dataset-application.md)
-explores one possible application shape within that distant space; it does not
-change this status or authorize implementation.
+explores possible application shapes within that distant space, including the
+[private/multi-user candidate](../research/exploratory/e2r-wiki-portable-hosted-dataset-application.md#private--multi-user-wiki-application-shape-candidate--2026-10-02)
+with Entity pages, optional workflow Events, separate body revisions and
+structured hosted storage. Content location, identity/permissions,
+collaboration/export semantics and deployment remain undecided. This does
+not change the exploratory/not-active status or authorize implementation.
 
 ## Evidence gates for candidate Extensions
 

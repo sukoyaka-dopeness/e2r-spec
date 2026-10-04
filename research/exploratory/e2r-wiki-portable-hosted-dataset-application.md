@@ -4,6 +4,10 @@ Status: **EXPLORATORY / NOT ACTIVE / NOT AN IMPLEMENTATION AUTHORIZATION**
 
 Checked: 2026-09-25
 
+Additional application-shape research integrated: 2026-10-02. The original
+2026-09-25 hypotheses and provider snapshot below are retained; the later
+private/multi-user candidate does not replace them or change this status.
+
 This research explores a Wiki-like application built around portable E2R
 Datasets. It does not change E2R Core, any Extension or schema, current
 application responsibilities, or Roadmap priority. It is related to—but
@@ -213,6 +217,162 @@ free allowances does not establish an end-to-end free service, a predictable
 bill, or suitability for an actual workload. Free-plan exhaustion, account
 terms, access control, operational metadata, privacy, data durability,
 provider availability, and migration/export behavior remain research inputs.
+
+## Private / multi-user Wiki application-shape candidate — 2026-10-02
+
+Source: Human research request in the 2026-10-02 conversation. This adds a
+concrete private, shared-hosted use case to this existing research record;
+it is not an implementation instruction or a portable semantics decision.
+
+### Relationship to the existing hypotheses
+
+| Existing research | Additional candidate / distinction |
+| --- | --- |
+| Entity as subject/article, with coordinated article/timeline/graph views | One Wiki page per E2R Entity, with application page title, description, long-form Markdown body and attachments as possible content. Title may present an Entity's name; exact mapping and persistence are undecided. |
+| Long-form content alongside `description` | Markdown is a concrete application-shape candidate, not a Core `body` decision. Application-local documents, attached resources, Content/Text Extension and a future Core field remain alternatives under the existing long-form research. |
+| Explicit Event and Relation authoring | Entity-to-Entity connections may use E2R Relations; meaningful Wiki workflow transitions may additionally be represented as Events, separately from prose revisions. |
+| Accountless Dataset-specific management capability versus identity | Private invite-only collaboration adds a reason to investigate login, membership and editor identity. It coexists with the accountless/public-sharing lane rather than superseding it. |
+| Complete JSON object versus normalized/indexed storage | Structured application records, pages/revisions and memberships could be the working database; construct a faithful portable Dataset snapshot when needed, rather than treating one large JSON file as the only joint-editing database. |
+
+This is a Wiki-specific addition to the adjacent Personal Journal, Personal
+Storage and Host Authority research linked above. It changes neither
+NarrativeLine nor LiaisonScape's responsibilities. It creates no new Research
+authority, account requirement for local Dataset use, or authenticated
+Dataset Handoff contract.
+
+### Workflow occurrences versus text revisions
+
+Candidate page workflow labels include **Draft / 要検討 / 修正中 /
+レビュー済み / 完了**. These are illustrative application vocabulary, not
+adopted E2R types, a required sequence, or a specified state machine. A
+transition such as a page being reviewed or marked complete could be authored
+as a meaningful Event connected to the relevant Entity through Relations.
+This extends the earlier subject-world occurrence hypothesis with a possible
+Wiki-workflow occurrence; it does not make every edit-log entry an E2R Event.
+
+One candidate derives the current page status from its latest relevant status
+Event, instead of storing only a current-state field. Which Events qualify,
+what establishes "latest", ties and concurrent transitions, corrections or
+withdrawals, imported history, and a page with no status Event are unresolved.
+Array order alone is not a portable chronology: the Core defines no ordering
+requirement for its object collections. A cached current status could be a
+derived application read model; its authority and reconciliation would need
+to be researched rather than assuming it is a second independent truth.
+No Event payload, Relation vocabulary, ordering contract or temporal
+representation is selected by this candidate.
+
+The application can retain every body revision, its author and conflict
+metadata in its own revision store without converting every Markdown change
+into an E2R Event. Only intentionally selected, meaningful workflow
+occurrences might be mapped to Event history. Which of those occurrences
+and content revisions are included in an export remains open. Application
+revision history and E2R Event history therefore have separate purposes,
+retention, identity and export responsibilities; neither is an automatic
+replacement for the other.
+
+### Private collaboration responsibilities
+
+Authentication, membership, authorization and revision-author attribution
+belong to the hosted application candidate. No Core user/account object,
+permission field or portable provenance model is presumed. Application editor
+identity must not be confused with an Entity representing a person in the
+subject Dataset, nor automatically exported as such.
+
+Owner / Editor / Viewer roles and invite-only membership are candidates to
+investigate. Role capabilities, invitation lifecycle, membership removal,
+identity mapping, access to attachments and exports, and historical-author
+retention are not yet specified. Network/access-layer authentication and
+application login/session identity must be distinguished from application
+membership and per-operation authorization. Reaching the service does not
+by itself grant edit authority over every page or Dataset.
+
+Optimistic locking against a known revision, explicit conflict detection and
+Human conflict resolution are candidates for avoiding silent lost updates.
+Neither a database transaction nor login alone defines a collaboration
+protocol. Concurrent page edits, status transitions, attachment changes and
+exports may require different consistency boundaries. Server authority,
+Dataset identity, snapshot consistency, portable merge and offline round-trip
+editing remain unresolved; this note adopts no revision token, merge
+algorithm, real-time collaboration mechanism or concurrent editing contract.
+
+### Structured persistence and deployment candidate
+
+A working relational database may hold records corresponding to Entity,
+Event and Relation, alongside Wiki pages, body revisions, membership and
+application metadata. Its internal schema is not the E2R schema, and not
+every database record needs to become a Core Object. A candidate export path
+assembles the selected records into an ordinary self-contained Dataset,
+preserving IDs and valid Relation endpoints. Faithfulness, snapshot scope,
+private-data filtering and unknown-Extension preservation need evidence
+before selecting this path. Portable body/attachment packaging is still
+undecided; private blob URLs alone must not be assumed to make article
+content available offline or portable.
+
+The earlier complete-JSON model remains a comparison option. The following
+composition is a concrete leading candidate for this private use case, not
+canonical deployment architecture or an authorization to provision it:
+
+| Component candidate | Application responsibility to investigate |
+| --- | --- |
+| Cloudflare Workers | Application/API execution, authorization checks, revision operations and Dataset snapshot construction. |
+| Cloudflare D1 | Structured Entity/Event/Relation-corresponding application records, Wiki pages/revisions and membership; DB tables remain internal application storage. |
+| Cloudflare R2 | Images, attachments and other blobs, with application-controlled access and lifecycle. A JSON snapshot could also be stored here without making it the sole editing database. |
+| Cloudflare Access with an external identity provider | Private access-layer authentication/admission; identity validation and mapping into application membership remain separate responsibilities. This is not a selected application login or role implementation. |
+
+This responsibility-based split does not prescribe modules, tables or a
+framework. The accepted workspace
+[incremental modularization decision](../../../ai-knowledge/decisions/application-modularization-and-incremental-extraction.md)
+applies if architecture work is later authorized; it introduces no new
+ownership or portable semantics here.
+
+### Provider evidence checked 2026-10-02
+
+These official-source observations support only an implementation/deployment
+candidate. They do not refresh the separate 2026-09-25 pricing snapshot or
+establish a cost estimate. Quotas, pricing, account terms and authentication
+capabilities must be rechecked for a concrete workload before any selection.
+
+- Cloudflare's [storage comparison](https://developers.cloudflare.com/workers/platform/storage-options/)
+  describes D1 as relational/SQL storage accessible from Workers and R2 as
+  blob storage. Mapping Wiki records to D1 and attachments to R2 is this
+  research's application proposal, not a provider-defined E2R architecture.
+- [Access web application documentation](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/)
+  describes Access as an identity-aware proxy applying access policies before
+  requests reach an application. The [identity-provider documentation](https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/)
+  describes external IdP integration. These capabilities do not select Wiki
+  membership, Owner/Editor/Viewer permissions or portable user identity.
+- [D1 Time Travel documentation](https://developers.cloudflare.com/d1/reference/time-travel/)
+  describes point-in-time database recovery. Its [plan-specific limits](https://developers.cloudflare.com/d1/platform/limits/)
+  currently list a 7-day Free / 30-day Workers Paid recovery window. Restore
+  overwrites database state in place; this is operational recovery, not an
+  application-maintained revision archive. These periods are a dated provider
+  observation, not a Wiki revision-retention rule or permanent E2R requirement.
+
+The candidate Wiki application would need to persist the revision history it
+intends to retain, independently of an infrastructure recovery window. That
+history could live in D1/R2, but recovery of the database and inspection or
+restoration of one Wiki page revision remain different operations. E2R Event
+history is a third responsibility. Durability, backup/export, retention and
+deletion policies for all three remain open; Time Travel does not decide them.
+
+### Decisions still required before stronger claims
+
+- Long-form Core Object Content/body location and portable content/resource
+  preservation, under the existing `description` / Content/Text Extension /
+  future Core field research boundary.
+- Whether any workflow Events are portable, which vocabulary and transitions
+  they use, and how current status is derived under concurrency/corrections.
+- Application identities, roles, permissions, revision-author attribution,
+  revision model, persistence and collaboration protocol, without presuming
+  Core account/provenance additions.
+- Portable hosted Dataset identity, server authority, coherent snapshot
+  export, round-trip editing and merge semantics.
+- Provider suitability, recovery, operational limits and an explicit Human
+  implementation authorization. Private hosting/login remains specific to
+  this candidate, not a requirement on all E2R applications.
+
+All remain Research candidates. No Core, Extension, schema, Validator,
+application runtime, product responsibility or deployment is changed.
 
 ## Questions for later research
 

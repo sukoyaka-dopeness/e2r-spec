@@ -1,7 +1,7 @@
 # ParameterPlotter product-milestone decision preparation
 
 Date: 2026-10-04
-Status: **Candidate B selected by Human / dedicated production source published / GitHub Actions Check passed / release and deployment not authorized**
+Status: **Candidate B first Product slice HUMAN-ACCEPTED / dedicated production source published / GitHub Actions Check passed / release and deployment not authorized**
 
 ## Current evidence and readiness
 
@@ -26,6 +26,16 @@ Public `main`; remote `main` matches local HEAD
 `e31c67af3f89a23f959d151091e8f144f413624d`, and GitHub Actions `Check` passed
 for that revision. This does not select a formal product name, release
 identity, deployment, or portable data model.
+
+Human has now accepted the bounded Candidate B first Product slice after real
+Dataset browser review. Dataset read-only behavior, shared temporary values
+across all four views, replacement warning and preservation via **Keep current
+workspace**, session-loss disclosure, and ordinary/narrow presentation passed.
+The detailed evidence is in the
+[first-slice Human Acceptance record](https://github.com/sukoyaka-dopeness/e2r-parameter-plotter/blob/main/docs/first-slice-human-acceptance-2026-10-04.md).
+This acceptance does not adopt release, deployment, formal product name, or
+portable E2R semantics. Prototype 2 remains separately closed at 19 Human PASS
+/ 0 PENDING / B3 NOT RUN.
 
 ## First-slice workspace lifetime candidates prepared 2026-10-04
 

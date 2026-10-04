@@ -1,7 +1,7 @@
 # ParameterPlotter (working name) — multi-visualization application research
 
 Date: 2026-09-30; current status updated 2026-10-04
-Status: Prototype 1 accepted / Product responsibility Human-approved / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first slice Human-selected / dedicated production source publicly published; implementation commit `e77c610` and boundary-status sync commit `e31c67a` are on `main`; remote and local HEAD match `e31c67a`; GitHub Actions `Check` passed; approved repository topics set; no portable contract, Extension, or schema adopted
+Status: Prototype 1 accepted / Product responsibility Human-approved / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED (2026-10-04) / dedicated production source publicly published at `e31c67a`; GitHub Actions `Check` passed; approved repository topics set; no portable contract, Extension, or schema adopted
 
 ## Prototype 1 checkpoint and current handoff — 2026-10-02
 
@@ -79,6 +79,24 @@ status`). GitHub's remote `main` matched this HEAD, and the GitHub Actions
 `Check` workflow passed for it. The ten approved topics are set on the
 ParameterPlotter repository. No release, tag, or deployment was made. The
 Product boundary and Prototype 2 closure remain unchanged.
+
+## First Product slice Human Acceptance — 2026-10-04
+
+Human accepted the bounded Candidate B first Product slice after importing a
+genuine E2R Dataset and confirming Dataset read-only behavior, shared
+application-local values across Profile/Radar/Quadrant/Matrix, replacement
+warning and preservation through **Keep current workspace**, session-lifetime
+disclosure, and basic ordinary/narrow presentation. Human did not execute the
+destructive replacement action. The local syntax check and all 26 tests passed;
+GitHub Actions `Check` Run #1 / `verify` passed at public HEAD
+`e31c67af3f89a23f959d151091e8f144f413624d`. See the
+[first-slice Human Acceptance record](https://github.com/sukoyaka-dopeness/e2r-parameter-plotter/blob/main/docs/first-slice-human-acceptance-2026-10-04.md).
+
+This closes the bounded first Product slice only. It does not authorize a
+release, tag, deployment, formal product name, or portable contract. The
+Quadrant connector issue and waiting-Entity plot-click discoverability remain
+separate non-blocking follow-ups. Prototype 2 remains independently closed at
+19 Human PASS / 0 PENDING / B3 NOT RUN.
 
 The following earlier sections retain their dated pre-Prototype context. In
 particular, the former pre-implementation gate authorized a local evidence

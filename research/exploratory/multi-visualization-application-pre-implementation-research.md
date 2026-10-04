@@ -260,10 +260,21 @@ Before implementation, Human should decide:
    Extension or a deliberate Coordinate/Perspective revision? This cannot be
    selected from current authority alone.
 
-A minimal research MVP would load an unchanged Dataset, select a small set of
-Entities, attach **clearly separate temporary comparison observations** in
-the prototype, and toggle two-axis and multi-axis projections with visible
-missing-value and scale handling. It would be read-only, have no Dataset
-write-back, no schema/Validator changes, and no new app repository until the
-Human selects this product boundary. The next checkpoint is a design decision,
-separate from NarrativeLine release approval.
+The minimal research MVP proposed at that time would load an unchanged
+Dataset, select a small set of Entities, attach **clearly separate temporary
+comparison observations** in the prototype, and toggle two-axis and
+multi-axis projections with visible missing-value and scale handling. It was
+to be read-only, have no Dataset write-back, no schema/Validator changes, and
+no new app repository until the Human selected a Product boundary. The planned
+next checkpoint was a design decision separate from NarrativeLine release
+approval. Human later approved the Product responsibility and completed the
+bounded application-local Prototype 2. The next Product milestone remains
+unselected; see the current planning handoff below.
+
+## Current Product milestone handoff — 2026-10-04
+
+The next Product milestone remains unselected. See the [decision-preparation
+packet](parameterplotter-product-milestone-decision-preparation-2026-10-04.md)
+for the workspace lifetime/recovery decision and its A/B/C options. This is
+preparation only; it does not authorize implementation or select a product
+name, repository, architecture, framework, or portable contract.

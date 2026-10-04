@@ -1,7 +1,7 @@
-# ParameterPlotter (working name) — multi-visualization application pre-implementation research
+# ParameterPlotter (working name) — multi-visualization application research
 
 Date: 2026-09-30; current status updated 2026-10-04
-Status: Prototype 1 accepted / Product responsibility Human-approved / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted); no portable contract, production application, Extension, or schema adopted
+Status: Prototype 1 accepted / Product responsibility Human-approved / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first slice Human-selected / dedicated production source publicly published; implementation commit `e77c610` and boundary-status sync commit `e31c67a` are on `main`; remote and local HEAD match `e31c67a`; GitHub Actions `Check` passed; approved repository topics set; no portable contract, Extension, or schema adopted
 
 ## Prototype 1 checkpoint and current handoff — 2026-10-02
 
@@ -49,6 +49,34 @@ directionality, portable zero and missing-state semantics, normalization,
 provenance, multiple observations, portable Dimension identity/vocabulary,
 and a Recorded Observation model remain open Research topics rather than
 decisions in this implementation.
+
+On 2026-10-04, Human selected Candidate B for the first Product slice: a
+single-user, bounded app-local workspace with a read-only imported Dataset and
+application-local Dimensions, temporary Entities, and comparison values.
+Durability or recovery beyond the browser session is not guaranteed, and
+possible loss at session end must be explicit to users. Portable
+Observation/Dimension-value semantics, Dataset write-back/export, shared
+workspace, accounts, authentication, and cloud persistence are not first-slice
+requirements. ParameterPlotter remains a working name. Human selected the
+dedicated Public application repository
+[`sukoyaka-dopeness/e2r-parameter-plotter`](https://github.com/sukoyaka-dopeness/e2r-parameter-plotter)
+as canonical production source. The repository has been created and cloned;
+first-slice files are being prepared locally and remain unpushed. The
+[Product decision packet](parameterplotter-product-milestone-decision-preparation-2026-10-04.md)
+records the source boundary and implementation status. Human approval is still
+required before the first external source push. No portable contract,
+Dataset write-back, Extension, schema, or Validator change is adopted.
+
+## First source publication — 2026-10-04
+
+The reviewed first slice was pushed to the public repository's `main` branch.
+The implementation commit is `e77c6108171df005252ce9a25d042a770386b99d`
+(`feat: add ParameterPlotter first app slice`); the latest revision is
+`e31c67af3f89a23f959d151091e8f144f413624d` (`docs: sync first-slice commit
+status`). GitHub's remote `main` matched this HEAD, and the GitHub Actions
+`Check` workflow passed for it. The ten approved topics are set on the
+ParameterPlotter repository. No release, tag, or deployment was made. The
+Product boundary and Prototype 2 closure remain unchanged.
 
 The following earlier sections retain their dated pre-Prototype context. In
 particular, the former pre-implementation gate authorized a local evidence
@@ -267,14 +295,17 @@ multi-axis projections with visible missing-value and scale handling. It was
 to be read-only, have no Dataset write-back, no schema/Validator changes, and
 no new app repository until the Human selected a Product boundary. The planned
 next checkpoint was a design decision separate from NarrativeLine release
-approval. Human later approved the Product responsibility and completed the
-bounded application-local Prototype 2. The next Product milestone remains
-unselected; see the current planning handoff below.
+approval. Human later approved the Product responsibility, completed and
+closed the bounded application-local Prototype 2, and selected Candidate B for
+the first Product slice. See the current planning handoff below.
 
-## Current Product milestone handoff — 2026-10-04
+## Current Product milestone and source-boundary handoff — 2026-10-04
 
-The next Product milestone remains unselected. See the [decision-preparation
-packet](parameterplotter-product-milestone-decision-preparation-2026-10-04.md)
-for the workspace lifetime/recovery decision and its A/B/C options. This is
-preparation only; it does not authorize implementation or select a product
-name, repository, architecture, framework, or portable contract.
+Human selected Candidate B: a bounded, single-user app-local first slice with
+a read-only imported Dataset, temporary comparison data, and no durability or
+recovery guarantee beyond the browser session. Possible session-end loss must
+be disclosed. ParameterPlotter remains a working name. Its dedicated
+production source has been published on GitHub; this publication does not
+select a formal product name, release identity, portable model, or deployment.
+See the [decision-preparation packet](parameterplotter-product-milestone-decision-preparation-2026-10-04.md)
+for the source boundary and deferred decisions.

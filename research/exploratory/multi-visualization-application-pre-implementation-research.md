@@ -60,12 +60,14 @@ workspace, accounts, authentication, and cloud persistence are not first-slice
 requirements. ParameterPlotter remains a working name. Human selected the
 dedicated Public application repository
 [`sukoyaka-dopeness/e2r-parameter-plotter`](https://github.com/sukoyaka-dopeness/e2r-parameter-plotter)
-as canonical production source. The repository has been created and cloned;
-first-slice files are being prepared locally and remain unpushed. The
+as canonical production source. At this decision checkpoint, the repository
+had been created and cloned, first-slice files were being prepared locally,
+and the source had not yet been pushed. The
 [Product decision packet](parameterplotter-product-milestone-decision-preparation-2026-10-04.md)
-records the source boundary and implementation status. Human approval is still
-required before the first external source push. No portable contract,
-Dataset write-back, Extension, schema, or Validator change is adopted.
+records the source boundary and implementation status. The first external
+source push was later approved and completed as recorded below. No portable
+contract, Dataset write-back, Extension, schema, or Validator change is
+adopted.
 
 ## First source publication — 2026-10-04
 

@@ -30,6 +30,9 @@ registered as Stable:
 - [Perspective Extension Candidate — Human-Authored Event Ordering](perspective-extension-candidate.md)
   (`draft.github.sukoyaka-dopeness.perspective`, Human-adopted Candidate
   `0.1.0`; not Stable)
+- [Dimension Assessment Extension Candidate](dimension-assessment-extension-candidate.md)
+  (`draft.github.sukoyaka-dopeness.dimension-assessment`, Human-adopted
+  Candidate `0.1.0`; not Stable)
 - [Lineage Extension Draft](lineage-extension-draft.md)
   (`draft.github.sukoyaka-dopeness.lineage`, draft `0.1.0`)
 - [Coordinate Extension Prototype](coordinate-extension.md)

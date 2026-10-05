@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "entities": [
+    { "id": "entity-a", "name": "Entity A" },
+    { "id": "entity-b", "name": "Entity B" }
+  ],
+  "events": [],
+  "relations": [],
+  "extensions": {
+    "draft.github.sukoyaka-dopeness.dimension-assessment": {
+      "specVersion": "0.1.0",
+      "dimensions": [
+        {
+          "id": "impact",
+          "name": "Impact",
+          "min": -2.7,
+          "max": 3.6,
+          "integerOnly": true,
+          "unit": "review points",
+          "lowLabel": "Lower",
+          "highLabel": "Higher"
+        },
+        {
+          "id": "confidence",
+          "name": "Confidence",
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "assessments": [
+        { "entityId": "entity-a", "dimensionId": "impact", "value": -2 },
+        { "entityId": "entity-a", "dimensionId": "confidence", "value": 0 },
+        { "entityId": "entity-b", "dimensionId": "impact", "value": 3 }
+      ]
+    },
+    "draft.github.sukoyaka-dopeness.specification": {
+      "specVersion": "0.1.0",
+      "uses": [
+        {
+          "extension": "draft.github.sukoyaka-dopeness.dimension-assessment",
+          "version": "0.1.0"
+        }
+      ]
+    }
+  }
+}

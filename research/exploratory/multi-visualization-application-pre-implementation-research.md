@@ -1,7 +1,7 @@
 # ParameterPlotter (working name) — multi-visualization application research
 
-Date: 2026-09-30; current status updated 2026-10-04
-Status: Prototype 1 accepted / Product responsibility Human-approved / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED (2026-10-04) / dedicated production source publicly published at `e31c67a`; GitHub Actions `Check` passed; approved repository topics set; no portable contract, Extension, or schema adopted
+Date: 2026-09-30; current status updated 2026-10-05
+Status: Prototype 1 accepted / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED / successor lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / bounded successor runtime and production Validator support IN PROGRESS LOCALLY (uncommitted, unpublished; no successor Human acceptance) / other Product policies remain open
 
 ## Prototype 1 checkpoint and current handoff — 2026-10-02
 
@@ -24,9 +24,11 @@ The approved responsibility is one workspace to compare selected E2R
 Entities with explicitly defined Dimensions and inspect the same
 application-local temporary Entity–Dimension values through Profile, Radar,
 Quadrant, and Matrix. The values remain application-local session data, not a
-portable Observation model. The approval does not select a product name,
+portable Observation model. At that 2026-10-02 approval checkpoint, Human had not selected a product name,
 portable Dimension/value contract, production implementation, application
-owner, Dataset write-back/export, Extension, schema, or Validator change.
+owner, Dataset write-back/export, Extension, schema, or Validator change. A
+later decision adopted the bounded Dimension Assessment Extension Candidate
+described below; it does not retroactively change the Prototype 1 evidence.
 
 The bounded application-local Prototype 2 experiment around
 Dimension-specific MIN/MAX, optional free-text unit, arbitrary numeric
@@ -64,10 +66,15 @@ as canonical production source. At this decision checkpoint, the repository
 had been created and cloned, first-slice files were being prepared locally,
 and the source had not yet been pushed. The
 [Product decision packet](parameterplotter-product-milestone-decision-preparation-2026-10-04.md)
-records the source boundary and implementation status. The first external
-source push was later approved and completed as recorded below. No portable
-contract, Dataset write-back, Extension, schema, or Validator change is
-adopted.
+records the source boundary and implementation status. At that first-slice
+checkpoint no portable contract, Dataset write-back, Extension, schema, or
+Validator change was adopted. Human later adopted the Dimension Assessment
+Candidate for successor Product work; Candidate B acceptance and its session-only
+boundary remain historical and unchanged. The first external
+source push was later approved and completed as recorded below. The later
+Dimension Assessment Candidate is Human-adopted as a successor portable data
+contract; Dataset write-back implementation, production schema/Validator
+integration, and application runtime remain unimplemented.
 
 ## First source publication — 2026-10-04
 
@@ -98,11 +105,97 @@ Quadrant connector issue and waiting-Entity plot-click discoverability remain
 separate non-blocking follow-ups. Prototype 2 remains independently closed at
 19 Human PASS / 0 PENDING / B3 NOT RUN.
 
-The following earlier sections retain their dated pre-Prototype context. In
-particular, the former pre-implementation gate authorized a local evidence
-probe only; its proposed MVP is not the current next action. Production
-architecture/framework, canonical repository and product name, Dataset
-write-back/export, Extension/schema/Validator work, release identity, and
+After that acceptance, Human approved the successor capability direction:
+production Validator integration; Dataset Entity edit/delete; Temporary
+Entity promotion; Dataset Save/Export; comparison-work persistence and
+recovery beyond a browser session; visible storage-failure handling; a public
+application shell; and eventual external deployment. The direction initially
+left portable representation, persistence artifacts, Entity field allowlist,
+Temporary Entity promotion identity, invalid/unsupported Dataset policy,
+shell, hosting, URL, product name, and release identity open. Human
+subsequently selected the Dataset Entity deletion policy: block deletion while
+incident Relations remain, expose their identities, do not cascade or allow
+dangling Relations, and provide targeted LiaisonScape inspection only when
+the exact Relation can be resolved against the same current Dataset. Human
+also selected browser-local persistence plus a user-managed, self-contained
+ParameterPlotter workspace backup/import with an embedded Dataset dependency
+snapshot. Browser-storage write failure permits editing to continue in the
+current session only with visible degraded/unsaved status. Dataset JSON Export remains a separate portable Dataset artifact. The later
+Dimension Assessment Candidate defines an explicit Dataset-level portable
+Dimension/Assessment representation for authored facts; existing
+application-local workspace data is not implicitly converted to it. Human decided that blank or whitespace-only `name` / `description`
+values remove the optional field; omitting an unchanged field preserves it.
+The Entity edit-field allowlist is now Human-decided as Candidate A: ordinary Dataset Entity editing
+may change only `name` and `description`, keeps `id` immutable, and preserves
+all other known/unknown fields, Extensions, and unrelated Dataset content.
+Nonblank trim/normalization remains open, and future Extension authoring
+requires a separate decision naming its Extension, version, fields, and need.
+Candidate B remains accepted as its original
+session-only first slice and is not reopened. These remain application-level decisions, not an
+E2R-wide rule. Human has decided Workspace Import/Restore uses whole-workspace
+replacement, not merge, and pre-activation failure leaves both the active
+workspace and prior browser-local copy intact. Replacing changed, degraded, or
+unsaved current work requires explicit loss confirmation with Cancel or
+Discard and Restore; a separate backup is optional. If persistence fails once
+a valid restore is activation-ready, apply it in memory as degraded/unsaved,
+disclose possible loss, and retain the prior browser-local copy until the new
+workspace is successfully persisted. Exact UI and other Product policies
+remain open. Human subsequently decided that ordinary new Entities are
+created directly as Dataset Entities; Temporary creation/promotion is outside
+the normal successor workflow. Dimensions, comparison values, selection,
+placement, and view state remain workspace-owned; the later Dimension
+Assessment Candidate separately defines portable Dataset Dimensions and
+explicit Assessments but does not automatically convert existing workspace
+data. The earlier conditional-promotion decision is retained as historical evidence and
+is not a current requirement. The published Candidate B source persists and
+reloads `tempEntities`. Human subsequently decided that the successor has no
+compatibility guarantee for Candidate B session-only workspaces and does not
+migrate, auto-promote, convert, or restore legacy `tempEntities`; it may start
+new workspace state. No migration or rescue guarantee is adopted. See the
+[legacy-workspace decision](parameterplotter-public-product-readiness-checkpoint-2026-10-04.md#human-decision-legacy-candidate-b-temporary-workspace-compatibility--2026-10-05),
+[historical promotion decision](parameterplotter-public-product-readiness-checkpoint-2026-10-04.md#historical-human-decision-temporary-entity-promotion-identity-and-value-continuity--2026-10-05),
+[restore-safety decision record](parameterplotter-public-product-readiness-checkpoint-2026-10-04.md#human-decision-workspace-import--restore-replacement-safety--2026-10-05),
+[Product milestone decision packet](parameterplotter-product-milestone-decision-preparation-2026-10-04.md#human-decision-comparison-work-persistence-and-recovery--2026-10-05), and
+[persistence decision record](parameterplotter-public-product-readiness-checkpoint-2026-10-04.md#human-decision-persistence-and-recovery-promise--2026-10-05).
+
+## Human-adopted Dimension Assessment Candidate 0.1.0 - 2026-10-05
+
+Human selected a portable Candidate Extension based on the comparison
+responsibility explored in ParameterPlotter. The Candidate authority is
+[Dimension Assessment Extension Candidate](../../extensions/dimension-assessment-extension-candidate.md),
+identifier `draft.github.sukoyaka-dopeness.dimension-assessment`, display
+name **Dimension Assessment Extension**, version `0.1.0`. It carries
+Dataset-level Dimension definitions and at most one explicitly authored
+numeric Assessment per Entity-by-Dimension pair. Dimensions have inclusive hard
+bounds; integer-only Dimensions require at least one valid integer in range.
+Absence of an Assessment means unassessed, while zero is an ordinary numeric
+value. Unit is free text without conversion semantics; endpoint labels are
+optional as a pair.
+
+This Candidate does not define a general Observation or measurement model,
+provenance, time series, arbitrary numeric Entity properties, or application
+presentation. Normalized values, Radar vertices, Quadrant positions, rank,
+selection, and view state are Derived/application state, not Recorded
+Extension data. ParameterPlotter's Human-decided Rescale operation remains an
+application authoring choice rather than a normative Extension mutation
+algorithm.
+
+The Candidate is Human-adopted but not Stable. Bounded production Validator
+support and ParameterPlotter application integration are now in local
+implementation; their scope and verification are recorded in the
+[successor implementation result](parameterplotter-successor-first-bounded-implementation-result-2026-10-05.md).
+This does not register the Candidate as Stable or imply Human acceptance.
+Prototype 2 remains HUMAN-ACCEPTED / CLOSED at 19 Human PASS / 0 PENDING /
+B3 NOT RUN. Candidate B first-slice acceptance remains its historical
+session-only boundary. Cross-consumer interoperability testing and Stable
+promotion remain separate work.
+
+The following earlier sections retain their dated pre-Prototype and
+decision-preparation context. Their implementation authorization/status was
+true at those checkpoints and is not the current status. Human has since
+authorized bounded successor implementation; remaining Product choices are
+tracked in the linked readiness checkpoint. Production
+architecture/framework, formal product name, release identity, and
 Radar's permanent 8-versus-10 policy remain undecided or deferred.
 
 ## Historical Human-selected research direction — 2026-10-01

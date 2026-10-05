@@ -240,3 +240,19 @@ This closure changes no research disposition: portable Dimension/value and
 Observation contracts, normalization, provenance, Dataset write-back/export,
 Core/Extension/schema/Validator changes, production architecture/repository,
 product name and release identity remain unadopted or deferred.
+
+
+## Subsequent disposition: Dimension Assessment Candidate 0.1.0 - 2026-10-05
+
+The statements above record the 2026-10-02 research checkpoint and remain
+historical evidence of what had not yet been selected at that time. On
+2026-10-05, Human adopted the bounded [Dimension Assessment Extension
+Candidate](../../extensions/dimension-assessment-extension-candidate.md),
+identifier `draft.github.sukoyaka-dopeness.dimension-assessment`, version
+`0.1.0`. It defines portable Dataset-level Dimension definitions and
+Entity Assessments within the explicit scope of that Candidate; it does not
+turn the earlier prototype into a portable Observation model or general
+measurement system. The Candidate is not Stable and no application runtime or
+production Validator integration is established. The earlier evidence and
+deferred questions remain useful historical context but no longer mean that
+all portable Dimension/value semantics are wholly unselected.

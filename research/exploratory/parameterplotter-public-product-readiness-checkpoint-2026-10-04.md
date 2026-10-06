@@ -1,7 +1,7 @@
 # ParameterPlotter public Product and deployment readiness checkpoint
 
 Date: 2026-10-04
-Status: **Human-approved capability direction / lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / bounded successor functional behavior HUMAN-ACCEPTED at source `b9a8e1fee6499c191c66033296e98965d777684e` / current local source includes copy-only follow-up `a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8` / not published / other Product policies remain open**
+Status: **Human-approved capability direction / lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / bounded successor functional behavior HUMAN-ACCEPTED at source `b9a8e1fee6499c191c66033296e98965d777684e` / current verified local source `35e8a8c1612d4aa9ce00feef75f255d4d5a6776d` includes post-acceptance copy and presentation corrections / narrow viewport browser review NOT RUN / not published / other Product policies remain open**
 
 ## Purpose and authority
 
@@ -28,9 +28,12 @@ open. Human later adopted the Dimension Assessment Extension Candidate 0.1.0;
 it is not Stable. Its bounded production Validator/runtime integration is
 functionally Human-accepted for local source revision
 `b9a8e1fee6499c191c66033296e98965d777684e` and has not been published.
-The later local commit `a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8` updates
-only the direct Dataset Entity Description placeholder and its regression
-assertion; it does not change the Human-accepted behavior or source baseline.
+The later local commits `a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8` and
+`35e8a8c1612d4aa9ce00feef75f255d4d5a6776d` update the direct Dataset Entity
+Description placeholder and implement the Human-decided endpoint-label
+presentation, respectively. Both have automated regression coverage; neither
+changes the Human-accepted behavior baseline. The separate successor narrow
+viewport browser review is not yet run.
 
 The earlier decisions remain intact:
 
@@ -46,7 +49,8 @@ The earlier decisions remain intact:
 - Human later adopted the Dimension Assessment Extension Candidate 0.1.0,
   described below. It is not Stable. Production Validator support and
   ParameterPlotter runtime integration are functionally Human-accepted at
-  local source revision `b9a8e1fee6499c191c66033296e98965d777684e`; the
+  Human-accepted source revision is `b9a8e1fee6499c191c66033296e98965d777684e`;
+  verified post-acceptance local source is `35e8a8c1612d4aa9ce00feef75f255d4d5a6776d`;
   [acceptance record](../../../e2r-parameter-plotter/docs/successor-human-acceptance-2026-10-06.md)
   and implementation details remain local and unpublished.
   Dataset write-back is not a separate non-portable mechanism: Candidate
@@ -1169,10 +1173,11 @@ evidence limitation. No unresolved functional FAIL remains in the accepted
 scope. The tested ParameterPlotter source is fixed at local commit
 `b9a8e1fee6499c191c66033296e98965d777684e`; its acceptance record is fixed in
 local ParameterPlotter documentation commit
-`43a6bad44ed29e6e199a76b6f39d3143276a154d`. The current local source also
-contains the copy-only Description placeholder correction at
-`a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8`; it does not alter the accepted
-source baseline. These revisions remain unpublished.
+`be8a08dcdc5ff18c63ca4951e89b0a7178db0caf`. Current verified local source
+`35e8a8c1612d4aa9ce00feef75f255d4d5a6776d` includes the post-acceptance copy
+and endpoint-label presentation corrections; it does not alter the accepted
+source baseline. The requested narrow viewport browser review remains NOT RUN.
+These revisions remain unpublished.
 This status does not make Candidate `0.1.0` Stable and does not
 authorize release, tag, deployment, Pages, or Hub publication. Cross-consumer
 interoperability and Stable review remain separate gates.

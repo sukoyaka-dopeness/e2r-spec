@@ -1,7 +1,7 @@
 # ParameterPlotter (working name) — multi-visualization application research
 
 Date: 2026-09-30; current status updated 2026-10-06
-Status: Prototype 1 accepted / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED / successor lifecycle and authoring policies HUMAN-DECIDED / bounded successor functional application behavior HUMAN-ACCEPTED / CLOSED at local source `b9a8e1fee6499c191c66033296e98965d777684e` / current local source includes copy-only follow-up `a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8` / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / current acceptance documentation fixed at local ParameterPlotter commit `43a6bad44ed29e6e199a76b6f39d3143276a154d` / source and docs unpublished / release and deployment not approved
+Status: Prototype 1 accepted / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED / successor lifecycle and authoring policies HUMAN-DECIDED / bounded successor functional application behavior HUMAN-ACCEPTED / CLOSED at local source `b9a8e1fee6499c191c66033296e98965d777684e` / current verified local source `35e8a8c1612d4aa9ce00feef75f255d4d5a6776d` includes post-acceptance corrections / narrow viewport browser review NOT RUN / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / current acceptance documentation fixed at local ParameterPlotter commit `be8a08dcdc5ff18c63ca4951e89b0a7178db0caf` / source and docs unpublished / release and deployment not approved
 
 ## Prototype 1 checkpoint and current handoff — 2026-10-02
 
@@ -187,10 +187,11 @@ the [successor Human Acceptance record](../../../e2r-parameter-plotter/docs/succ
 The accepted source is fixed at local commit
 `b9a8e1fee6499c191c66033296e98965d777684e`; the acceptance documentation is
 fixed at local ParameterPlotter commit
-`43a6bad44ed29e6e199a76b6f39d3143276a154d`. Both remain unpublished. Current
-local source additionally contains the copy-only Description placeholder
-correction at `a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8`; it does not replace
-the accepted source baseline. This
+`be8a08dcdc5ff18c63ca4951e89b0a7178db0caf`. Current verified local source
+`35e8a8c1612d4aa9ce00feef75f255d4d5a6776d` includes post-acceptance copy and
+endpoint-label corrections and does not replace the accepted source baseline.
+The requested narrow viewport browser review remains NOT RUN. Both commits
+remain unpublished. This
 does not register the Candidate as Stable or approve release or deployment.
 The earlier [implementation result](parameterplotter-successor-first-bounded-implementation-result-2026-10-05.md)
 remains the implementation evidence checkpoint.

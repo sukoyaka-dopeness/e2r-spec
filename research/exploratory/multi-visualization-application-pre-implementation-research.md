@@ -1,7 +1,7 @@
 # ParameterPlotter (working name) — multi-visualization application research
 
-Date: 2026-09-30; current status updated 2026-10-05
-Status: Prototype 1 accepted / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED / successor lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / bounded successor runtime and production Validator support IN PROGRESS LOCALLY (uncommitted, unpublished; no successor Human acceptance) / other Product policies remain open
+Date: 2026-09-30; current status updated 2026-10-06
+Status: Prototype 1 accepted / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED / successor lifecycle and authoring policies HUMAN-DECIDED / bounded successor functional application behavior HUMAN-ACCEPTED / CLOSED at local source `b9a8e1fee6499c191c66033296e98965d777684e` / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / acceptance documentation fixed at local ParameterPlotter commit `a46c853abe8d4fdf702130c67b21f93daf9aea51` / source and docs unpublished / release and deployment not approved
 
 ## Prototype 1 checkpoint and current handoff — 2026-10-02
 
@@ -181,10 +181,16 @@ application authoring choice rather than a normative Extension mutation
 algorithm.
 
 The Candidate is Human-adopted but not Stable. Bounded production Validator
-support and ParameterPlotter application integration are now in local
-implementation; their scope and verification are recorded in the
-[successor implementation result](parameterplotter-successor-first-bounded-implementation-result-2026-10-05.md).
-This does not register the Candidate as Stable or imply Human acceptance.
+support and ParameterPlotter application integration have received functional
+Human Acceptance for the tested local working tree; the detailed result is in
+the [successor Human Acceptance record](../../../e2r-parameter-plotter/docs/successor-human-acceptance-2026-10-06.md).
+The accepted source is fixed at local commit
+`b9a8e1fee6499c191c66033296e98965d777684e`; the acceptance documentation is
+fixed at local ParameterPlotter commit
+`a46c853abe8d4fdf702130c67b21f93daf9aea51`. Both remain unpublished. This
+does not register the Candidate as Stable or approve release or deployment.
+The earlier [implementation result](parameterplotter-successor-first-bounded-implementation-result-2026-10-05.md)
+remains the implementation evidence checkpoint.
 Prototype 2 remains HUMAN-ACCEPTED / CLOSED at 19 Human PASS / 0 PENDING /
 B3 NOT RUN. Candidate B first-slice acceptance remains its historical
 session-only boundary. Cross-consumer interoperability testing and Stable

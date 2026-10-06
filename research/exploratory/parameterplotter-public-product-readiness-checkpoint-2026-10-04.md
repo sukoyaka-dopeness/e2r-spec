@@ -1,17 +1,18 @@
 # ParameterPlotter public Product and deployment readiness checkpoint
 
 Date: 2026-10-04
-Status: **Human-approved capability direction / lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / first bounded successor implementation IN PROGRESS LOCALLY (uncommitted, unpublished; no successor Human acceptance) / other Product policies remain open**
+Status: **Human-approved capability direction / lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / bounded successor functional behavior HUMAN-ACCEPTED / accepted source fixed at local commit `b9a8e1fee6499c191c66033296e98965d777684e` / not published / other Product policies remain open**
 
 ## Purpose and authority
 
 This checkpoint records Product decision preparation and the resulting
 Human-selected boundaries after the accepted Candidate B first slice. The
 dated audit and decision-preparation sections remain evidence from their
-original checkpoints; the current successor implementation status is recorded
-in the implementation result linked below. Nothing here reopens Prototype 2
-or Candidate B acceptance, registers the Candidate as Stable, or authorizes
-release or deployment.
+original checkpoints. The initial implementation status below is a dated
+snapshot; the current functional acceptance status is recorded in the
+2026-10-06 section and linked acceptance record. Nothing here reopens
+Prototype 2 or Candidate B acceptance, registers the Candidate as Stable, or
+authorizes release or deployment.
 
 Human approved moving ParameterPlotter toward an externally usable E2R
 application with production Validator integration, Dataset Entity edit and
@@ -24,7 +25,9 @@ creation. Human has also selected the Dataset Entity deletion policy and the
 comparison-work persistence/recovery policy recorded below. Exact artifact and storage details, other successor policies,
 shell composition, host, public URL, product name, and release identity remain
 open. Human later adopted the Dimension Assessment Extension Candidate 0.1.0;
-it is not Stable and has no production Validator/runtime integration.
+it is not Stable. Its bounded production Validator/runtime integration is
+functionally Human-accepted for local source revision
+`b9a8e1fee6499c191c66033296e98965d777684e` and has not been published.
 
 The earlier decisions remain intact:
 
@@ -39,8 +42,10 @@ The earlier decisions remain intact:
   `e31c67af3f89a23f959d151091e8f144f413624d`.
 - Human later adopted the Dimension Assessment Extension Candidate 0.1.0,
   described below. It is not Stable. Production Validator support and
-  ParameterPlotter runtime integration are now in bounded local implementation;
-  see the [successor implementation result](parameterplotter-successor-first-bounded-implementation-result-2026-10-05.md).
+  ParameterPlotter runtime integration are functionally Human-accepted at
+  local source revision `b9a8e1fee6499c191c66033296e98965d777684e`; the
+  [acceptance record](../../../e2r-parameter-plotter/docs/successor-human-acceptance-2026-10-06.md)
+  and implementation details remain local and unpublished.
   Dataset write-back is not a separate non-portable mechanism: Candidate
   Dimensions and Assessments are Dataset data, while release identity, tag,
   and deployment remain unadopted or unperformed.
@@ -1116,7 +1121,7 @@ explicitly limited to the Dataset and associated comparison work; it requires
 a separate decision only if exact visual-session restoration is promised.
 Candidate B and Prototype 2 historical boundaries remain unchanged.
 
-## Current successor implementation checkpoint - 2026-10-05
+## Initial successor implementation checkpoint - 2026-10-05 (historical status)
 
 Human has selected the Candidate authoring scope and Dataset/workspace
 lifecycle policies described in the preceding historical preparation. The
@@ -1134,6 +1139,34 @@ It includes direct Dataset Entity CRUD, Dimension/Assessment authoring,
 reviewed Rescale, diagnostic read-only handling for Validator errors,
 validated Export, whole-workspace backup/restore, replacement/exit loss
 protection, and visible degraded/unsaved handling. It does not migrate legacy
-Candidate B Temporary workspace state. Candidate Stable registration,
-cross-consumer interoperability acceptance, release, and deployment remain
-separate.
+Candidate B Temporary workspace state. At that checkpoint, Candidate Stable
+registration, cross-consumer interoperability acceptance, Human acceptance,
+release, and deployment remained separate. The later local functional
+acceptance is recorded below.
+
+## Successor functional Human Acceptance - 2026-10-06
+
+**HUMAN-ACCEPTED / FUNCTIONALLY CLOSED FOR THE TESTED LOCAL WORKTREE.** Human
+and Codex real-browser evidence covers Dataset replacement and loss
+protection, Dataset Export baseline and reopen, workspace persistence and
+backup/restore, Entity and Candidate authoring, numeric and range validation,
+reviewed Rescale, warning-only opaque Extension preservation, and diagnostic
+read-only handling for Validator errors. Human also confirmed pending-draft
+Reload protection in Edge: Cancel retained the draft; continuing Reload
+discarded only the draft and restored the saved clean workspace. The detailed
+case matrix and exact evidence classifications are in the
+[successor functional acceptance record](../../../e2r-parameter-plotter/docs/successor-human-acceptance-2026-10-06.md).
+
+Final Gate passed: ParameterPlotter syntax and 46/46 tests, Validator 136/136
+tests, e2r-spec validation including 13 Candidate cases, vendored Validator
+synchronization, and `git diff --check`. Browser-local storage failure
+injection was not run in a live browser; its degraded-state and previous-copy
+preservation behavior is covered by automated tests and remains an explicit
+evidence limitation. No unresolved functional FAIL remains in the accepted
+scope. The tested ParameterPlotter source is fixed at local commit
+`b9a8e1fee6499c191c66033296e98965d777684e`; its acceptance record is fixed in
+local ParameterPlotter documentation commit
+`a46c853abe8d4fdf702130c67b21f93daf9aea51`. Neither revision is published.
+This status does not make Candidate `0.1.0` Stable and does not
+authorize release, tag, deployment, Pages, or Hub publication. Cross-consumer
+interoperability and Stable review remain separate gates.

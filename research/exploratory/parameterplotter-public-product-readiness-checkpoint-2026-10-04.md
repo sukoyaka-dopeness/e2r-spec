@@ -1,7 +1,7 @@
 # ParameterPlotter public Product and deployment readiness checkpoint
 
 Date: 2026-10-04
-Status: **Human-approved capability direction / lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / bounded successor functional behavior HUMAN-ACCEPTED at source `b9a8e1fee6499c191c66033296e98965d777684e` / current verified local source `35e8a8c1612d4aa9ce00feef75f255d4d5a6776d` includes post-acceptance copy and presentation corrections / narrow viewport browser review NOT RUN / not published / other Product policies remain open**
+Status: **Human-approved capability direction / lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / bounded successor functional behavior HUMAN-ACCEPTED at source `b9a8e1fee6499c191c66033296e98965d777684e` / current verified local source `623b73b77d055be7f38d8d87ba109e7c8947c0a3` includes post-acceptance presentation correction / Codex 390px real-browser review of all four views PASS / current local status documentation `dd3c03bafdd74cc9b0e358eb7d36a9afd10f5d09` / current source has no new Human functional acceptance / browser storage failure injection NOT RUN / not published / other Product policies remain open**
 
 ## Purpose and authority
 
@@ -28,12 +28,15 @@ open. Human later adopted the Dimension Assessment Extension Candidate 0.1.0;
 it is not Stable. Its bounded production Validator/runtime integration is
 functionally Human-accepted for local source revision
 `b9a8e1fee6499c191c66033296e98965d777684e` and has not been published.
-The later local commits `a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8` and
-`35e8a8c1612d4aa9ce00feef75f255d4d5a6776d` update the direct Dataset Entity
-Description placeholder and implement the Human-decided endpoint-label
-presentation, respectively. Both have automated regression coverage; neither
-changes the Human-accepted behavior baseline. The separate successor narrow
-viewport browser review is not yet run.
+The later local commits `a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8`,
+`35e8a8c1612d4aa9ce00feef75f255d4d5a6776d`, and
+`623b73b77d055be7f38d8d87ba109e7c8947c0a3` update the direct Dataset Entity
+Description placeholder, implement the Human-decided endpoint-label
+presentation, and suppress separators for empty label fields, respectively.
+Automated regression coverage passes; none changes the Human-accepted behavior
+baseline. A Codex 390px real-browser review of all four views passed, including
+Radar spoke additions and Quadrant axis selection. This does not constitute
+new Human functional acceptance.
 
 The earlier decisions remain intact:
 
@@ -50,7 +53,7 @@ The earlier decisions remain intact:
   described below. It is not Stable. Production Validator support and
   ParameterPlotter runtime integration are functionally Human-accepted at
   Human-accepted source revision is `b9a8e1fee6499c191c66033296e98965d777684e`;
-  verified post-acceptance local source is `35e8a8c1612d4aa9ce00feef75f255d4d5a6776d`;
+  verified post-acceptance local source is `623b73b77d055be7f38d8d87ba109e7c8947c0a3`;
   [acceptance record](../../../e2r-parameter-plotter/docs/successor-human-acceptance-2026-10-06.md)
   and implementation details remain local and unpublished.
   Dataset write-back is not a separate non-portable mechanism: Candidate
@@ -1174,10 +1177,13 @@ scope. The tested ParameterPlotter source is fixed at local commit
 `b9a8e1fee6499c191c66033296e98965d777684e`; its acceptance record is fixed in
 local ParameterPlotter documentation commit
 `be8a08dcdc5ff18c63ca4951e89b0a7178db0caf`. Current verified local source
-`35e8a8c1612d4aa9ce00feef75f255d4d5a6776d` includes the post-acceptance copy
+`623b73b77d055be7f38d8d87ba109e7c8947c0a3` includes the post-acceptance copy
 and endpoint-label presentation corrections; it does not alter the accepted
-source baseline. The requested narrow viewport browser review remains NOT RUN.
-These revisions remain unpublished.
+source baseline. A Codex 390px review of all four views passed as follow-up
+evidence, without changing Human acceptance. Latest status documentation is
+local commit `dd3c03bafdd74cc9b0e358eb7d36a9afd10f5d09`. Browser-storage
+failure injection remains NOT RUN, and the successor source/docs remain
+unpublished.
 This status does not make Candidate `0.1.0` Stable and does not
 authorize release, tag, deployment, Pages, or Hub publication. Cross-consumer
 interoperability and Stable review remain separate gates.

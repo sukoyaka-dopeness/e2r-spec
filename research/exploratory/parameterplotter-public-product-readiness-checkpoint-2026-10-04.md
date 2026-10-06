@@ -1,7 +1,7 @@
 # ParameterPlotter public Product and deployment readiness checkpoint
 
 Date: 2026-10-04
-Status: **Human-approved capability direction / lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / bounded successor functional behavior HUMAN-ACCEPTED / accepted source fixed at local commit `b9a8e1fee6499c191c66033296e98965d777684e` / not published / other Product policies remain open**
+Status: **Human-approved capability direction / lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / bounded successor functional behavior HUMAN-ACCEPTED at source `b9a8e1fee6499c191c66033296e98965d777684e` / current local source includes copy-only follow-up `a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8` / not published / other Product policies remain open**
 
 ## Purpose and authority
 
@@ -28,6 +28,9 @@ open. Human later adopted the Dimension Assessment Extension Candidate 0.1.0;
 it is not Stable. Its bounded production Validator/runtime integration is
 functionally Human-accepted for local source revision
 `b9a8e1fee6499c191c66033296e98965d777684e` and has not been published.
+The later local commit `a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8` updates
+only the direct Dataset Entity Description placeholder and its regression
+assertion; it does not change the Human-accepted behavior or source baseline.
 
 The earlier decisions remain intact:
 

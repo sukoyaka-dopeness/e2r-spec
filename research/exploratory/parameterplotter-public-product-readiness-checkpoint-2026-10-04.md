@@ -1169,7 +1169,10 @@ evidence limitation. No unresolved functional FAIL remains in the accepted
 scope. The tested ParameterPlotter source is fixed at local commit
 `b9a8e1fee6499c191c66033296e98965d777684e`; its acceptance record is fixed in
 local ParameterPlotter documentation commit
-`a46c853abe8d4fdf702130c67b21f93daf9aea51`. Neither revision is published.
+`43a6bad44ed29e6e199a76b6f39d3143276a154d`. The current local source also
+contains the copy-only Description placeholder correction at
+`a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8`; it does not alter the accepted
+source baseline. These revisions remain unpublished.
 This status does not make Candidate `0.1.0` Stable and does not
 authorize release, tag, deployment, Pages, or Hub publication. Cross-consumer
 interoperability and Stable review remain separate gates.

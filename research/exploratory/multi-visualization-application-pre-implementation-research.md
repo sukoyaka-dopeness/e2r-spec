@@ -1,7 +1,7 @@
 # ParameterPlotter (working name) — multi-visualization application research
 
 Date: 2026-09-30; current status updated 2026-10-06
-Status: Prototype 1 accepted / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED / successor lifecycle and authoring policies HUMAN-DECIDED / bounded successor functional application behavior HUMAN-ACCEPTED / CLOSED at local source `b9a8e1fee6499c191c66033296e98965d777684e` / current local source includes copy-only follow-up `a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8` / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / acceptance documentation fixed at local ParameterPlotter commit `18e52e13c514989d66a5ace99db6850354a88583` / source and docs unpublished / release and deployment not approved
+Status: Prototype 1 accepted / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED / successor lifecycle and authoring policies HUMAN-DECIDED / bounded successor functional application behavior HUMAN-ACCEPTED / CLOSED at local source `b9a8e1fee6499c191c66033296e98965d777684e` / current local source includes copy-only follow-up `a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8` / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / current acceptance documentation fixed at local ParameterPlotter commit `43a6bad44ed29e6e199a76b6f39d3143276a154d` / source and docs unpublished / release and deployment not approved
 
 ## Prototype 1 checkpoint and current handoff — 2026-10-02
 
@@ -187,7 +187,7 @@ the [successor Human Acceptance record](../../../e2r-parameter-plotter/docs/succ
 The accepted source is fixed at local commit
 `b9a8e1fee6499c191c66033296e98965d777684e`; the acceptance documentation is
 fixed at local ParameterPlotter commit
-`18e52e13c514989d66a5ace99db6850354a88583`. Both remain unpublished. Current
+`43a6bad44ed29e6e199a76b6f39d3143276a154d`. Both remain unpublished. Current
 local source additionally contains the copy-only Description placeholder
 correction at `a27b6ef5056291cbe1c5a2ff80e69a43c55aa5c8`; it does not replace
 the accepted source baseline. This

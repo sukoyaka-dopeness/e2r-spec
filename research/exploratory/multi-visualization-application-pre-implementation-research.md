@@ -1,7 +1,7 @@
 # ParameterPlotter (working name) — multi-visualization application research
 
 Date: 2026-09-30; current status updated 2026-10-06
-Status: Prototype 1 accepted / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED / successor lifecycle and authoring policies HUMAN-DECIDED / bounded successor functional application behavior HUMAN-ACCEPTED / CLOSED at local source `b9a8e1fee6499c191c66033296e98965d777684e` / current verified local source `111be04898f354efe92856dfdd355ca89845fa59` includes post-acceptance source/UI corrections / Codex 390px real-browser review of all four views PASS / latest local status documentation `e6733aad51cd083e54329a6d59a9de5f364186d3` / current source has no new Human functional acceptance / browser storage failure injection NOT RUN / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / source and docs unpublished / release and deployment not approved
+Status: Prototype 1 accepted / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED / successor lifecycle and authoring policies HUMAN-DECIDED / bounded successor functional application behavior HUMAN-ACCEPTED / CLOSED at local source `b9a8e1fee6499c191c66033296e98965d777684e` / current verified local source `111be04898f354efe92856dfdd355ca89845fa59` includes post-acceptance source/UI corrections / Codex 390px real-browser review of all four views PASS / latest local readiness documentation `7280f1fd77d2e1df24e247e680314b3d3c4d2f97` / Product UI audit `e6733aad51cd083e54329a6d59a9de5f364186d3` / current source has no new Human functional acceptance / browser storage failure injection NOT RUN / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / source and docs unpublished / release and deployment not approved
 
 ## Prototype 1 checkpoint and current handoff — 2026-10-02
 
@@ -193,8 +193,8 @@ control accessibility corrections; it does not replace the accepted source
 baseline. A Codex real-browser review at 390px passed for Profile, Radar
 (including spoke additions), Quadrant (including axis selection), and Matrix;
 the new More disclosure was reviewed at desktop size only. This is follow-up
-evidence, not a new Human acceptance. Latest local status
-documentation is commit `e6733aad51cd083e54329a6d59a9de5f364186d3`.
+evidence, not a new Human acceptance. The Product/UI audit document is commit `e6733aad51cd083e54329a6d59a9de5f364186d3`; latest local successor readiness
+documentation is commit `7280f1fd77d2e1df24e247e680314b3d3c4d2f97`.
 Browser-storage write-failure injection remains NOT RUN. The source and docs
 remain unpublished. The 2026-10-07 Product/UI audit records the approved More
 action hierarchy and the remaining Home/startup, EN/JA terminology, sample,

@@ -1,7 +1,7 @@
 # ParameterPlotter (working name) — multi-visualization application research
 
 Date: 2026-09-30; current status updated 2026-10-06
-Status: Prototype 1 accepted / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED / successor lifecycle and authoring policies HUMAN-DECIDED / bounded successor functional application behavior HUMAN-ACCEPTED / CLOSED at local source `b9a8e1fee6499c191c66033296e98965d777684e` / current verified local source `623b73b77d055be7f38d8d87ba109e7c8947c0a3` includes post-acceptance corrections / Codex 390px real-browser review of all four views PASS / latest local status documentation `dd3c03bafdd74cc9b0e358eb7d36a9afd10f5d09` / current source has no new Human functional acceptance / browser storage failure injection NOT RUN / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / source and docs unpublished / release and deployment not approved
+Status: Prototype 1 accepted / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED / successor lifecycle and authoring policies HUMAN-DECIDED / bounded successor functional application behavior HUMAN-ACCEPTED / CLOSED at local source `b9a8e1fee6499c191c66033296e98965d777684e` / current verified local source `111be04898f354efe92856dfdd355ca89845fa59` includes post-acceptance source/UI corrections / Codex 390px real-browser review of all four views PASS / latest local status documentation `e6733aad51cd083e54329a6d59a9de5f364186d3` / current source has no new Human functional acceptance / browser storage failure injection NOT RUN / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / source and docs unpublished / release and deployment not approved
 
 ## Prototype 1 checkpoint and current handoff — 2026-10-02
 
@@ -188,15 +188,18 @@ The accepted source is fixed at local commit
 `b9a8e1fee6499c191c66033296e98965d777684e`; the acceptance documentation is
 fixed at local ParameterPlotter commit
 `be8a08dcdc5ff18c63ca4951e89b0a7178db0caf`. Current verified local source
-`623b73b77d055be7f38d8d87ba109e7c8947c0a3` includes the post-acceptance
-endpoint-label separator correction and does not replace the accepted source
+`111be04898f354efe92856dfdd355ca89845fa59` includes post-acceptance endpoint-label, workspace action hierarchy, and View
+control accessibility corrections; it does not replace the accepted source
 baseline. A Codex real-browser review at 390px passed for Profile, Radar
 (including spoke additions), Quadrant (including axis selection), and Matrix;
-it is follow-up evidence, not a new Human acceptance. Latest local status
-documentation is commit `dd3c03bafdd74cc9b0e358eb7d36a9afd10f5d09`.
+the new More disclosure was reviewed at desktop size only. This is follow-up
+evidence, not a new Human acceptance. Latest local status
+documentation is commit `e6733aad51cd083e54329a6d59a9de5f364186d3`.
 Browser-storage write-failure injection remains NOT RUN. The source and docs
-remain unpublished. This
-does not register the Candidate as Stable or approve release or deployment.
+remain unpublished. The 2026-10-07 Product/UI audit records the approved More
+action hierarchy and the remaining Home/startup, EN/JA terminology, sample,
+Footer/Credits/identity, and Dataset-title authoring gates; see the [audit](../../../e2r-parameter-plotter/docs/product-ui-completion-audit-2026-10-07.md).
+This does not register the Candidate as Stable or approve release or deployment.
 The earlier [implementation result](parameterplotter-successor-first-bounded-implementation-result-2026-10-05.md)
 remains the implementation evidence checkpoint.
 Prototype 2 remains HUMAN-ACCEPTED / CLOSED at 19 Human PASS / 0 PENDING /

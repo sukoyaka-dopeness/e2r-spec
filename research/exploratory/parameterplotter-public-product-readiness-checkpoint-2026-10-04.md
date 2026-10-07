@@ -1,7 +1,7 @@
 # ParameterPlotter public Product and deployment readiness checkpoint
 
 Date: 2026-10-04
-Status: **Human-approved capability direction / lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / bounded successor functional behavior HUMAN-ACCEPTED at source `b9a8e1fee6499c191c66033296e98965d777684e` / current verified local source `623b73b77d055be7f38d8d87ba109e7c8947c0a3` includes post-acceptance presentation correction / Codex 390px real-browser review of all four views PASS / current local status documentation `dd3c03bafdd74cc9b0e358eb7d36a9afd10f5d09` / current source has no new Human functional acceptance / browser storage failure injection NOT RUN / not published / other Product policies remain open**
+Status: **Human-approved capability direction / lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / bounded successor functional behavior HUMAN-ACCEPTED at source `b9a8e1fee6499c191c66033296e98965d777684e` / current local source `111be04898f354efe92856dfdd355ca89845fa59` includes post-acceptance workspace-action and accessibility corrections / Codex 390px real-browser review of all four views PASS / current local status documentation `e6733aad51cd083e54329a6d59a9de5f364186d3` / current source has no new Human functional acceptance / browser storage failure injection NOT RUN / not published / other Product policies remain open**
 
 ## Purpose and authority
 
@@ -1187,3 +1187,7 @@ unpublished.
 This status does not make Candidate `0.1.0` Stable and does not
 authorize release, tag, deployment, Pages, or Hub publication. Cross-consumer
 interoperability and Stable review remain separate gates.
+
+## Product / UI completion audit - 2026-10-07
+
+The local implementation checkpoint `111be04898f354efe92856dfdd355ca89845fa59` groups Open E2R Dataset, Workspace Restore, E2R JSON Export, and Workspace Backup under a non-primary More disclosure while preserving the three separate artifact/lifecycle responsibilities. This is post-Acceptance correction only; functional Human Acceptance remains fixed at `b9a8e1fee6499c191c66033296e98965d777684e`. The audit and its 54-test validation are recorded in [ParameterPlotter documentation](../../../e2r-parameter-plotter/docs/product-ui-completion-audit-2026-10-07.md) and local documentation commit `e6733aad51cd083e54329a6d59a9de5f364186d3`. The More disclosure has desktop-sized Edge evidence only; the previous 390px view audit does not cover it. Home/startup responsibilities, EN/JA scope and terminology, sample content/provenance, Footer/Credits and identity, and Dataset-title authoring remain open. The successor source is unpublished; no push, release, or deployment is authorized by this audit.

@@ -196,6 +196,12 @@ project-adopted localization. No external story or copied prose dependency was
 identified in this bounded audit. It is eligible project-created data, subject
 to confirmation of project release authority.
 
+### Ashen Crown Candidate 0.2.0 Assessment content (2026-10-08)
+
+Human approved and adopted seven Dimension definitions and 70 Assessments for these fictional samples. The Assessments are AI-authored fictional settings adopted by Human; they are not mechanically derived from Core Events or Relations and are not claims sourced from external authorities. The EN and JA Datasets use the same Dimension IDs, ranges, integer constraints, Entity/Dimension pairs, and values, with Human-approved localized names, endpoint labels, and plain-text Descriptions. Existing language-specific Dataset IDs and Core objects remain unchanged.
+
+This content record does not change the pair's existing "CC0 candidate after project authority" status or confirm public release authority. No external story dependency was identified in the bounded review; this addition is not a comprehensive rights review or publication authorization.
+
 ### Titanic EN/JA
 
 The pair is a project-authored historical voyage Dataset with matching IDs,

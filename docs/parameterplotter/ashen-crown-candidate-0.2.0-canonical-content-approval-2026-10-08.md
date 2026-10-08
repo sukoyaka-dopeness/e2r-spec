@@ -2,11 +2,11 @@
 
 Date: 2026-10-08
 
-Status: **HUMAN CONTENT APPROVAL PENDING — NOT IMPLEMENTED**
+Status: **HUMAN CONTENT APPROVED / CANONICAL EN/JA SAMPLES IMPLEMENTED**
 
-This packet requests final Human approval of the EN/JA Dimension names,
-endpoint labels, and complete Dimension Descriptions proposed for the canonical
-The Ashen Crown pair. It does not authorize or perform a sample update.
+This packet records the final Human approval of the EN/JA Dimension names,
+endpoint labels, and complete Dimension Descriptions for the canonical The
+Ashen Crown pair, followed by their implementation in both canonical samples.
 
 ## Authority and evidence checked
 
@@ -52,7 +52,11 @@ value, not missing data: it is a scale minimum except for Contribution to
 Concord, where it is the defined neutral overall effect. An absent Assessment
 record means unassessed; this sample has no unassessed pair.
 
-## Final wording proposed for Human approval
+## Final wording approved by Human
+
+Human approved all names, endpoint labels, and complete EN/JA Descriptions in
+this section together, without edits, on 2026-10-08. The strings below are the
+approved content used in the canonical sample update.
 
 The wording below retains the existing proposal. It is plain text under
 Candidate 0.2.0; Markdown-like characters, if any, have no special meaning.
@@ -154,11 +158,11 @@ normalization is implied.
   language; changing ParameterPlotter's UI locale must not translate or alter
   these portable descriptions.
 
-No semantic contradiction was found that requires changing the adopted values
-or the existing wording proposal. This is a consistency review, not Human
-approval of the wording.
+No semantic contradiction was found that required changing the adopted values
+or wording proposal. Human subsequently approved these exact wordings without
+revision on 2026-10-08.
 
-## Canonical identity and provenance to preserve during a later update
+## Canonical identity and provenance preserved in the update
 
 The current canonical English sample uses Dataset ID `ashen-crown-en-v1` and
 title `The Ashen Crown`; the Japanese sample uses Dataset ID
@@ -168,13 +172,13 @@ title `The Ashen Crown`; the Japanese sample uses Dataset ID
 Relation IDs, topology, and localized Core content must be preserved. Do not
 import browser-test Entities or duplicate Dimensions.
 
-If approved and implemented later, add the same seven Dimension IDs, bounds,
-integer constraints, and 70 Entity/Dimension Assessment values to both
+The implementation adds the same seven Dimension IDs, bounds, integer
+constraints, and 70 Entity/Dimension Assessment values to both
 language-specific Datasets, with the approved localized names, endpoint
-labels, and Descriptions. Declare the exact Dimension Assessment Candidate
-`0.2.0` in its payload and matching Specification Extension `uses` entry;
-retain the existing Metadata and History declarations. Do not claim 0.1.0,
-silently downgrade, or alter Core facts to express an Assessment.
+labels, and Descriptions. Each payload and its matching Specification
+Extension `uses` entry declare exact Candidate `0.2.0`; existing Metadata and
+History declarations remain. No Core facts were changed to express an
+Assessment.
 
 The provenance record describes Ashen Crown as a project-created fictional
 sample with a project-adopted Japanese localization whose exact authoring
@@ -183,26 +187,50 @@ in the bounded review and marks the content **CC0 candidate after project
 authority**; this wording is not a release authorization or a comprehensive
 rights audit. The new Assessment values are AI-authored fictional settings
 adopted by Human, not facts mechanically derived from Events or Relations.
-Any later provenance update should describe that authorship/adoption without
-inventing a Japanese translation workflow or claiming external facts as
-relicensed.
+The provenance addendum records that authorship/adoption without inventing a
+Japanese translation workflow or claiming external facts as relicensed.
 
-## Human decision requested
+The canonical sample update is recorded in the adjacent commit together with
+this approval record and the scoped provenance addendum. It does not refresh
+ParameterPlotter's bundled sample or authorize Hub integration, Cross-App
+acceptance, Stable promotion, release, or publication.
 
-Please approve the EN/JA names, low/high labels, and full Descriptions in the
-table as a set, or identify the exact rows/phrases to revise. The seven IDs,
-the ranges, `integerOnly: true`, and all 70 Assessment values are already
-Human-adopted and are not being asked for again.
+## Implementation and validation evidence
 
-After the wording is approved, a separate implementation checkpoint may
-update only the two canonical files, validate the paired payloads against
-Candidate 0.2.0 and Production Validator, preserve the Core identity above,
-and update provenance evidence as warranted. Bundled-sample refresh remains a
-separate checkpoint. Candidate Stable promotion and public release remain out
-of scope.
+- Both canonical files now contain Candidate `0.2.0`, seven approved
+  Dimensions, and all 70 approved Entity/Dimension pairs. EN and JA use the
+  same IDs, ranges, integer constraints, and values; their names, labels, and
+  Descriptions use the approved locale-specific text.
+- The Specification Extension declares the Dimension Assessment extension at
+  `0.2.0` in both files. Its own version, existing Metadata and History `uses`
+  entries, and the complete Metadata payload remain unchanged.
+- A comparison with the pre-update canonical files confirmed identical Core
+  objects and unchanged existing non-Dimension extensions. Dataset IDs remain
+  `ashen-crown-en-v1` and `ashen-crown-ja-v1`; counts remain 10 Entities, 12
+  Events, and 57 Relations per Dataset.
+- `npm.cmd run validate` passed, including the E2R-SPEC Candidate
+  0.1.0/0.2.0 validation suite (36 cases). The Production Validator at
+  `d81a6a7c6047f39369e425ca018d3b4b80bd18c6` returned `valid: true` with no
+  diagnostics for both canonical files. A separate pair audit verified every
+  approved value, range/integer constraint, unique pair, and EN/JA parity.
+- Provenance now records the values as AI-authored fictional settings adopted
+  by Human, not facts derived from Core Events/Relations or external sources.
+  Existing rights and publication gates remain open and unchanged.
+
+## Acceptance boundary and next checkpoint
+
+Human approved the EN/JA names, low/high labels, and full Descriptions in the
+table as a set, without changes. The seven IDs, ranges, `integerOnly: true`,
+and all 70 Assessment values remain the earlier adopted design.
+
+The approved wording and adopted values are now implemented in the two
+canonical files and validated against Candidate 0.2.0 and Production
+Validator. Bundled-sample refresh remains a separate checkpoint. Candidate
+Stable promotion and public release remain out of scope.
 
 ## Worktree boundary
 
-This approval packet and its concise Roadmap pointer do not modify canonical
-samples, schemas, validators, or application runtime. Existing unrelated
-dirty and untracked work is retained.
+This checkpoint changes only the two canonical EN/JA samples and their
+approval, provenance, and Roadmap records. It does not modify schemas,
+validators, or application runtime. Existing unrelated dirty and untracked
+work is retained.

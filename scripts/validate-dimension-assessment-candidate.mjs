@@ -8,10 +8,13 @@ const EXTENSION_ID = "draft.github.sukoyaka-dopeness.dimension-assessment";
 const SPECIFICATION_ID = "draft.github.sukoyaka-dopeness.specification";
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = join(scriptDirectory, "..");
-const schema = JSON.parse(readFileSync(join(repositoryRoot, "schemas/extensions/dimension-assessment-candidate.schema.json"), "utf8"));
+const schemas = new Map([
+  ["0.1.0", JSON.parse(readFileSync(join(repositoryRoot, "schemas/extensions/dimension-assessment-candidate.schema.json"), "utf8"))],
+  ["0.2.0", JSON.parse(readFileSync(join(repositoryRoot, "schemas/extensions/dimension-assessment-candidate-0.2.0.schema.json"), "utf8"))],
+]);
 const example = JSON.parse(readFileSync(join(repositoryRoot, "examples/dimension-assessment-candidate/basic.json"), "utf8"));
 const ajv = new Ajv2020({ allErrors: true, strict: true });
-const validatePayload = ajv.compile(schema);
+const validators = new Map([...schemas].map(([version, schema]) => [version, ajv.compile(schema)]));
 
 function semanticIssues(dataset) {
   const issues = [];
@@ -100,8 +103,13 @@ function semanticIssues(dataset) {
   return issues;
 }
 
-function check(label, dataset, expected) {
+function check(label, dataset, expected, version = dataset.extensions?.[EXTENSION_ID]?.specVersion) {
   const payload = dataset.extensions?.[EXTENSION_ID];
+  const validatePayload = validators.get(version);
+  if (!validatePayload) {
+    console.error(`FAIL ${label}: no exact Candidate schema for ${version}`);
+    return false;
+  }
   const schemaValid = validatePayload(payload);
   const issues = schemaValid ? semanticIssues(dataset) : [];
   const valid = schemaValid && issues.length === 0;
@@ -171,10 +179,54 @@ const cases = [
   }, false],
 ];
 
-const failed = cases.filter(([label, dataset, expected]) => !check(label, dataset, expected));
+const commonCases = cases.slice(0, -1);
+const versionedCases = commonCases.map(([label, dataset, expected]) => {
+  const versioned = structuredClone(dataset);
+  const payload = versioned.extensions[EXTENSION_ID];
+  payload.specVersion = "0.2.0";
+  const specification = versioned.extensions[SPECIFICATION_ID];
+  if (specification?.uses) {
+    for (const declaration of specification.uses) {
+      if (declaration.extension === EXTENSION_ID) declaration.version = "0.2.0";
+    }
+  }
+  return [`0.2.0 ${label}`, versioned, expected];
+});
+
+const descriptionBase = {
+  version: "1.0", entities: [{ id: "e" }], events: [], relations: [],
+  extensions: { [EXTENSION_ID]: { specVersion: "0.2.0", dimensions: [{ id: "d", name: "D", min: 0, max: 1 }], assessments: [{ entityId: "e", dimensionId: "d", value: 0 }] } },
+};
+function withDescription(description) {
+  const dataset = structuredClone(descriptionBase);
+  dataset.extensions[EXTENSION_ID].dimensions[0].description = description;
+  return dataset;
+}
+const descriptionCases = [
+  ["0.2.0 Description omitted", descriptionBase, true],
+  ["0.2.0 multiline Description", withDescription("Scale meaning.\nOverall story premise."), true],
+  ["0.2.0 Markdown characters are plain text", withDescription("**Literal markup** is still text."), true],
+  ["0.2.0 long Description has no fixed upper limit", withDescription(`a${"b".repeat(10000)}`), true],
+  ["0.2.0 empty Description", withDescription(""), false],
+  ["0.2.0 whitespace-only Description", withDescription(" \t\n "), false],
+  ["0.2.0 Description must be a string", withDescription({ text: "not plain text" }), false],
+  ["0.2.0 Specification Extension version conflict", { ...structuredClone(descriptionBase), extensions: { ...structuredClone(descriptionBase.extensions), [SPECIFICATION_ID]: { specVersion: "0.1.0", uses: [{ extension: EXTENSION_ID, version: "0.1.0" }] } } }, false],
+];
+
+const exampleWithDescription = structuredClone(example);
+exampleWithDescription.extensions[EXTENSION_ID].dimensions[0].description = "not permitted in 0.1.0";
+const crossVersionCases = [
+  ["0.2.0 payload rejected by 0.1.0 schema", descriptionBase, false, "0.1.0"],
+  ["0.1.0 payload rejected by 0.2.0 schema", example, false, "0.2.0"],
+  ["0.1.0 schema rejects Description field", exampleWithDescription, false, "0.1.0"],
+];
+
+const allCases = [...cases, ...versionedCases, ...descriptionCases];
+const failed = allCases.filter(([label, dataset, expected]) => !check(label, dataset, expected))
+  .concat(crossVersionCases.filter(([label, dataset, expected, version]) => !check(label, dataset, expected, version)));
 if (failed.length > 0) {
   console.error(`Dimension Assessment Candidate validation failed with ${failed.length} case(s).`);
   process.exitCode = 1;
 } else {
-  console.log(`Dimension Assessment Candidate payload and semantic checks passed (${cases.length} cases).`);
+  console.log(`Dimension Assessment Candidate 0.1.0/0.2.0 payload and semantic checks passed (${allCases.length + crossVersionCases.length} cases).`);
 }

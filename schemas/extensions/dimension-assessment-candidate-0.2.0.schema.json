@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/sukoyaka-dopeness/e2r-spec/main/schemas/extensions/dimension-assessment-candidate-0.2.0.schema.json",
+  "title": "Dimension Assessment Extension Candidate 0.2.0 payload",
+  "description": "Payload shape for draft.github.sukoyaka-dopeness.dimension-assessment at exact Candidate version 0.2.0. Dataset references and cross-record semantics are checked separately.",
+  "type": "object",
+  "required": ["specVersion", "dimensions", "assessments"],
+  "properties": {
+    "specVersion": { "const": "0.2.0" },
+    "dimensions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/dimension" }
+    },
+    "assessments": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/assessment" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "dimension": {
+      "type": "object",
+      "required": ["id", "name", "min", "max"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string" },
+        "min": { "type": "number" },
+        "max": { "type": "number" },
+        "integerOnly": { "type": "boolean" },
+        "unit": { "type": "string" },
+        "lowLabel": { "type": "string" },
+        "highLabel": { "type": "string" },
+        "description": {
+          "type": "string",
+          "pattern": "\\S"
+        }
+      },
+      "additionalProperties": false
+    },
+    "assessment": {
+      "type": "object",
+      "required": ["entityId", "dimensionId", "value"],
+      "properties": {
+        "entityId": { "type": "string", "minLength": 1 },
+        "dimensionId": { "type": "string", "minLength": 1 },
+        "value": { "type": "number" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

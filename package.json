@@ -4,7 +4,7 @@
   "private": true,
   "description": "Development tooling for the E2R specification.",
   "scripts": {
-    "validate": "npm run test:docs-root-placement && npm run validate:docs-root-placement && npm run validate:history && npm run validate:history-2-draft && npm run validate:relative-time-draft && npm run validate:relative-time-0.2.0 && npm run validate:coordinate-draft && npm run validate:names-draft && npm run validate:names-draft-ids && npm run validate:presentation-draft && npm run validate:perspective-candidate && npm run validate:dimension-assessment-candidate && npm run validate:liaisonscape-layout-draft && npm run validate:visual-review-result && npm run validate:extension-profile-maturity && npm run validate:apollo-sample && npm run validate:public-samples-coordinate-less",
+    "validate": "npm run test:docs-root-placement && npm run validate:docs-root-placement && npm run validate:history && npm run validate:history-2-draft && npm run validate:relative-time-draft && npm run validate:relative-time-0.2.0 && npm run validate:coordinate-draft && npm run validate:names-draft && npm run validate:names-draft-ids && npm run validate:presentation-draft && npm run validate:perspective-candidate && npm run validate:dimension-assessment-candidate && npm run validate:ashen-crown-ja-dimension-localization && npm run validate:liaisonscape-layout-draft && npm run validate:visual-review-result && npm run validate:extension-profile-maturity && npm run validate:apollo-sample && npm run validate:public-samples-coordinate-less",
     "validate:docs-root-placement": "node scripts/validate-docs-root-placement.mjs",
     "test:docs-root-placement": "node --test scripts/validate-docs-root-placement.test.mjs",
     "validate:apollo-sample": "node scripts/validate-apollo-sample.mjs",
@@ -18,6 +18,7 @@
     "validate:presentation-draft": "node scripts/validate-presentation-draft-schema.mjs",
     "validate:perspective-candidate": "node scripts/validate-perspective-candidate-schema.mjs",
     "validate:dimension-assessment-candidate": "node scripts/validate-dimension-assessment-candidate.mjs",
+    "validate:ashen-crown-ja-dimension-localization": "node scripts/validate-ashen-crown-ja-dimension-localization.mjs",
     "validate:liaisonscape-layout-draft": "node scripts/validate-liaisonscape-layout-draft-schema.mjs",
     "validate:visual-review-result": "node scripts/validate-visual-review-result-schema.mjs",
     "validate:extension-profile-maturity": "node scripts/validate-extension-profile-maturity-registry.mjs",

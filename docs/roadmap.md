@@ -6,6 +6,19 @@ Status: Current planning document; non-normative
 
 ## Purpose
 
+## ParameterPlotter EN/JA locale acceptance update - 2026-10-08
+
+ParameterPlotter's bounded EN/JA locale presentation milestone is HUMAN
+BROWSER ACCEPTED / PASS / CLOSED at source commit
+`5d7c23647ec14b9c7738d52056c4c1b05895f8b9`. Human-tested scope and limits are
+recorded in the [acceptance result](../../e2r-parameter-plotter/docs/locale-human-acceptance-2026-10-08.md).
+This closes locale review only; overall Product acceptance and public-release
+readiness remain open. Dimension Assessment `0.1.0` remains non-Stable. The
+separate Entity drawer menu-visibility follow-up and unverified
+`dimensionDisplayName()` issue do not reopen locale acceptance. Other mainline
+dependencies and publication gates remain as recorded below.
+
+
 ### Workspace placement migration — COMPLETED — 2026-09-21
 
 Placement is closed at `8 directories / 7 Git repositories / 0 noncanonical root workspaces`.

@@ -14,8 +14,11 @@ BROWSER ACCEPTED / PASS / CLOSED at source commit
 recorded in the [acceptance result](../../e2r-parameter-plotter/docs/locale-human-acceptance-2026-10-08.md).
 This closes locale review only; overall Product acceptance and public-release
 readiness remain open. Dimension Assessment `0.1.0` remains non-Stable. The
-separate Entity drawer menu-visibility follow-up and unverified
-`dimensionDisplayName()` issue do not reopen locale acceptance. Other mainline
+separate Entity drawer menu-visibility follow-up and resolved
+`dimensionDisplayName()` correction do not reopen locale acceptance. Human browser
+regression evidence is limited to duplicate-Dimension rendering; new-save
+acceptance remains untested. See the [incident record](../../e2r-parameter-plotter/docs/dimension-duplicate-incident-human-investigation-2026-10-08.md).
+Other mainline
 dependencies and publication gates remain as recorded below.
 
 

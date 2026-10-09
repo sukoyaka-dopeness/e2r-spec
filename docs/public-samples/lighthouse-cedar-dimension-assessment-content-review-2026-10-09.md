@@ -2,13 +2,20 @@
 
 Date: 2026-10-09
 
-Status: **HUMAN CONTENT REVIEW READY / NOT ADOPTED**
+Status: **HUMAN CONTENT REVIEW SNAPSHOT — SUPERSEDED BY CONTENT ADOPTION AND DATASET IMPLEMENTATION**
+
+On 2026-10-09 Human adopted the recommended content in this review. The
+implementation and validation disposition is recorded in the
+[implementation result](lighthouse-cedar-dimension-assessment-implementation-result-2026-10-09.md).
+The pending-decision language below describes the review checkpoint before
+that adoption; it is retained as the record of what was reviewed. Browser
+acceptance and publication are separate and are not established by adoption.
 
 This document refines the [initial design proposal](lighthouse-cedar-dimension-assessment-design-proposal-2026-10-09.md)
-for Human review. It does not authorize or perform Dataset changes. Every
-numeric value below is an AI-authored fictional assessment proposal, not a
-fact mechanically calculated from Core records. Human adoption is still
-required for the Dimensions, wording, scales, and values.
+for Human review. At the original review checkpoint it did not authorize
+Dataset changes. Every numeric value below is an AI-authored fictional
+assessment, not a fact mechanically calculated from Core records; Human
+subsequently adopted the recommendations as Dataset content.
 
 ## Sources and authority
 

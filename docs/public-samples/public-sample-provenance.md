@@ -243,3 +243,23 @@ grant a license to the Dataset content. The current project policy identifies
 eligible project-created example and dogfood content as a CC0 1.0 target, but
 this entry must not be presented as a completed legal grant when the applicable
 release authority has not made that decision for the selected public revision.
+
+## Lighthouse and Cedar Dimension Assessment content adoption — 2026-10-09
+
+Human adopted the five Dimensions and 31 Lighthouse Assessments, and the five
+Dimensions and 16 Cedar Assessments, in the final content review. The values
+are AI-authored qualitative interpretations for these fictional Datasets
+adopted by Human as Dataset content. They were not mechanically derived from
+Core Entity, Event, or Relation records and are not external factual
+evaluations. The [implementation result](lighthouse-cedar-dimension-assessment-implementation-result-2026-10-09.md)
+records the exact owner files, Candidate `0.2.0` declarations, parity checks,
+and preserved Core/Extension content.
+
+Lighthouse remains E2R-SPEC-owned; its LiaisonScape `public/` pair is the
+existing distribution mirror and was synchronized to the canonical owner
+files. Cedar remains NarrativeLine-owned at
+`e2r-narrative-line/src/sample/cedar-observatory-showcase.{en,ja}.e2r.json`;
+Hub continues to link to that source and holds no separate content copy.
+Existing Dataset IDs, Core Object IDs, authorship/localization qualifications,
+and licensing boundaries remain unchanged. Human adoption of these fictional
+assessments is not a publication, redistribution, rights, or release approval.

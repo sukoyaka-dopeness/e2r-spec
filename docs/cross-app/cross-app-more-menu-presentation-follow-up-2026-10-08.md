@@ -2,6 +2,15 @@
 
 Date: 2026-10-08
 
+## Current disposition — 2026-10-09
+
+**HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED CROSS-APP MORE MENU
+PRESENTATION AND KEYBOARD PARITY).** The later Human Browser closure in
+[ParameterPlotter's acceptance record](../../../e2r-parameter-plotter/docs/cross-app-more-menu-acceptance-closure-2026-10-09.md)
+records the reviewed scope, accepted revisions, automated evidence, and
+unverified limits. The original status and design-direction record below are
+retained as the initial 2026-10-08 checkpoint, not current OPEN state.
+
 ## Status
 
 - Human-selected design direction: **ADOPTED**

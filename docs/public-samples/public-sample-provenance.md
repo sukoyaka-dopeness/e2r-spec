@@ -246,14 +246,19 @@ release authority has not made that decision for the selected public revision.
 
 ## Lighthouse and Cedar Dimension Assessment content adoption — 2026-10-09
 
-Human adopted the five Dimensions and 31 Lighthouse Assessments, and the five
-Dimensions and 16 Cedar Assessments, in the final content review. The values
+Human initially adopted the five Dimensions and 31 Lighthouse Assessments, and
+the five Dimensions and 16 Cedar Assessments, in the final content review. In
+a subsequent decision on 2026-10-09, Human removed Cedar's
+`cedar.technical-role-expertise` Dimension and its sole Assessment for Ren
+Sato. The current Cedar pair therefore has four Dimensions and 15 Assessments
+per locale; no replacement values were added. The values
 are AI-authored qualitative interpretations for these fictional Datasets
 adopted by Human as Dataset content. They were not mechanically derived from
 Core Entity, Event, or Relation records and are not external factual
 evaluations. The [implementation result](lighthouse-cedar-dimension-assessment-implementation-result-2026-10-09.md)
-records the exact owner files, Candidate `0.2.0` declarations, parity checks,
-and preserved Core/Extension content.
+records the initial adoption, later Cedar revision, exact owner files,
+Candidate `0.2.0` declarations, parity checks, and preserved Core/Extension
+content.
 
 Lighthouse remains E2R-SPEC-owned; its LiaisonScape `public/` pair is the
 existing distribution mirror and was synchronized to the canonical owner

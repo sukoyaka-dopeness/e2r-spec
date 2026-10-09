@@ -4,6 +4,13 @@ Date: 2026-10-09
 
 Status: **HUMAN CONTENT REVIEW SNAPSHOT — SUPERSEDED BY CONTENT ADOPTION AND DATASET IMPLEMENTATION**
 
+Follow-up: the original Cedar five-Dimension/16-Assessment adoption was
+partially superseded by Human's later same-day decision to remove
+`cedar.technical-role-expertise` and Ren Sato's sole Assessment. The current
+Cedar owner pair has four Dimensions and 15 Assessments per locale. Lighthouse
+remains at five Dimensions and 31 Assessments. See the subsequent revision in
+the [implementation result](lighthouse-cedar-dimension-assessment-implementation-result-2026-10-09.md).
+
 On 2026-10-09 Human adopted the recommended content in this review. The
 implementation and validation disposition is recorded in the
 [implementation result](lighthouse-cedar-dimension-assessment-implementation-result-2026-10-09.md).

@@ -4,6 +4,17 @@ Date: 2026-10-09
 
 Status: **HUMAN CONTENT ADOPTED / DATASET IMPLEMENTED**
 
+## Subsequent Cedar revision — 2026-10-09
+
+After the original content adoption below, Human approved a narrower Cedar
+design: remove `cedar.technical-role-expertise` and Ren Sato's sole Assessment
+on that Dimension. The current Cedar owner pair therefore has four Dimensions
+and 15 Assessments per locale. The original five-Dimension/16-Assessment
+adoption and Ren's value `3` remain recorded below as historical evidence of
+the earlier decision; the later decision supersedes that portion only. No
+Assessment was added to another Entity, and Lighthouse was not changed by this
+revision.
+
 ## Human decision and content provenance
 
 On 2026-10-09 Human adopted the recommended content in the
@@ -11,7 +22,9 @@ On 2026-10-09 Human adopted the recommended content in the
 without further changes:
 
 - Lighthouse Restoration Project: five Dimensions and 31 Assessments.
-- Cedar Observatory: An Open Night: five Dimensions and 16 Assessments.
+- Cedar Observatory: An Open Night was initially adopted at five Dimensions
+  and 16 Assessments; the subsequent revision leaves four Dimensions and 15
+  Assessments per locale.
 - All scales are integer-only `0..5`; EN/JA counterparts share Dimension
   IDs, bounds, integer constraints, and Assessment mappings/values while
   retaining their existing distinct Dataset IDs and localized display text.
@@ -33,7 +46,7 @@ promotion.
 |---|---|---|
 | Lighthouse EN/JA | `examples/lighthouse-restoration-demo.en.e2r.json`; `examples/lighthouse-restoration-demo.ja.e2r.json` in E2R-SPEC | 10 Entities, 11 Events, 28 Relations, 5 Dimensions, 31 Assessments per locale |
 | Lighthouse distribution mirror | `e2r-liaison-scape/public/lighthouse-restoration-demo.en.e2r.json`; `.ja.e2r.json` | Each mirror is byte-identical to its E2R-SPEC owner source; existing Hub retrieval URL remains unchanged |
-| Cedar EN/JA | `e2r-narrative-line/src/sample/cedar-observatory-showcase.en.e2r.json`; `.ja.e2r.json` | 6 Entities, 12 Events, 28 Relations, 5 Dimensions, 16 Assessments per locale; NarrativeLine remains owner |
+| Cedar EN/JA | `e2r-narrative-line/src/sample/cedar-observatory-showcase.en.e2r.json`; `.ja.e2r.json` | 6 Entities, 12 Events, 28 Relations, currently 4 Dimensions and 15 Assessments per locale; NarrativeLine remains owner |
 
 No Hub copy, ParameterPlotter bundled sample, or application runtime was
 created or changed.
@@ -42,10 +55,11 @@ The final adopted content includes Lighthouse Beacon System readiness `4`,
 Daniel role expertise `2`, and Elias community-service contribution `1`.
 Cedar Neighborhood Visitors receive only the open-night-role score `2`;
 attendance, observing experience, and operational contribution remain
-unasserted. Ren's technical expertise portrayal is `3`; Bluebird Telescope has
-no technical-expertise Assessment. The previous `technical-preparation`
-proposal was not implemented; the adopted Dimension ID is
-`cedar.technical-role-expertise`.
+unasserted. The initial adoption assigned Ren technical-role-expertise `3`,
+but the later Human revision removed that Dimension and its sole Assessment;
+the current Dataset makes no technical-role-expertise comparison and adds no
+replacement score. Bluebird Telescope has no such Assessment. The previous
+`technical-preparation` proposal was not implemented.
 
 ## Preservation and validation
 
@@ -54,8 +68,10 @@ For each of the four owner files, the implementation compared the parsed Core
 and confirmed it was unchanged. Existing non-Specification Extensions were
 also compared and preserved. EN/JA parity was checked for Dimension IDs,
 bounds, integer constraints, and ordered Assessment Entity/Dimension/value
-records. The 47 implemented records and Dimension prose were taken directly
-from the Human-adopted review. The current Candidate 0.2.0 schema requires
+records. The initial adoption implemented 47 records and Dimension prose from
+the Human-adopted review; the subsequent Cedar revision removes one record,
+leaving 46 current Assessments across both Dataset families per locale. The
+current Candidate 0.2.0 schema requires
 non-blank string descriptions and keeps them plain text; the payload and
 Specification Extension declarations agree at `0.2.0`.
 
@@ -67,8 +83,9 @@ Validation completed for this checkpoint:
 - ParameterPlotter's vendored Validator `validateDataset`: all four owner
   Datasets are valid with no diagnostics.
 - E2R-SPEC content checks confirmed 10/11/28 Lighthouse Core counts and
-  6/12/28 Cedar Core counts, retained Dataset IDs, five Dimensions and the
-  adopted Assessment totals in each locale, exact `0.2.0` payload/declaration
+  6/12/28 Cedar Core counts, retained Dataset IDs, five Lighthouse Dimensions
+  and 31 Assessments, four Cedar Dimensions and 15 Assessments per locale,
+  exact `0.2.0` payload/declaration
   parity, and EN/JA ID/scale/value parity. Core collections and non-Specification
   Extensions were unchanged. Both Lighthouse mirrors are byte-identical to
   their canonical owner files.
@@ -96,8 +113,10 @@ path and safely preserves unknown extension content. These checks do not
 establish new Human Browser Acceptance, visual review, or publication
 readiness for the updated Dataset content.
 
-The previous review checkpoint is retained at
+The original content review is retained as the initial adoption snapshot at
 [the content review record](lighthouse-cedar-dimension-assessment-content-review-2026-10-09.md).
 The [sample provenance ledger](public-sample-provenance.md) carries the
-adoption addendum without changing existing sample authorship, translation,
-ownership, or rights qualifications.
+original adoption and subsequent revision without changing existing sample
+authorship, translation, ownership, or rights qualifications. ParameterPlotter
+Human Browser Acceptance preparation is tracked separately in the
+[local review guide](lighthouse-cedar-dimension-assessment-human-browser-acceptance-preparation-2026-10-09.md).

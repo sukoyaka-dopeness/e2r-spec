@@ -24,11 +24,15 @@ The applications retain their distinct save models. ParameterPlotter keeps its W
 ## Verification and evidence limits
 
 - ParameterPlotter automated regression tests cover active/stale tab records, stale revision refusal, and no-Web-Locks fail-closed behavior; `npm.cmd run check` passed (36 modules, 148 tests) and `npm.cmd run build` passed.
-- NarrativeLine automated service tests cover live/stale registration, replacement refusal during peer work, retry when peer work clears, and stale revision refusal; the production build and full suite passed (353/353 tests).
+- NarrativeLine automated service tests cover live/stale registration, replacement refusal during peer work, retry when peer work clears, stale revision refusal, and fail-closed behavior without Web Locks; the production build and full suite passed (354/354 tests).
 - LiaisonScape and Hub received read-only source audits; no runtime changes were made there.
 - In an isolated Edge profile, Codex served ParameterPlotter, NarrativeLine, and LiaisonScape on distinct paths of the same temporary `127.0.0.1:4185` origin. ParameterPlotter's pending Dimension draft blocked a competing Lighthouse Handoff without changing the saved Workspace; after cancelling, a fresh Handoff tab accepted the 10-Entity Dataset, and a stale tab did not overwrite it. On NarrativeLine, an open Event draft blocked another tab's Ashen Crown Handoff and left the saved Dataset unchanged; after cancelling, the status cleared. NarrativeLine's clean retry and stale-tab write were not confirmed in this browser run. Loading NarrativeLine did not mutate ParameterPlotter's app-specific Workspace key. These are Codex browser checks, not Human Browser Acceptance or GitHub Pages verification.
 - Human Browser Acceptance remains pending. Public hosted behavior, every retrieval/validation failure path, cancel/retry in both apps, and stale-tab writes in NarrativeLine still need bounded review before any release reassessment.
 
 The per-application implementation notes are `e2r-parameter-plotter/docs/cross-tab-workspace-safety-2026-10-10.md` and `e2r-narrative-line/docs/cross-tab-workspace-safety-2026-10-10.md` in their respective repositories.
+
+## Application version impact
+
+The implementation audit found NarrativeLine `package.json` at `0.2.0`; because its runtime changed, `0.2.1` is a candidate patch version for a future authorized release, not a version change made by this checkpoint. LiaisonScape is `0.2.0` and has no runtime change, so a safety-policy-only alignment does not justify a version bump. ParameterPlotter's private `package.json` declares no application version and the inspected repository does not establish an initial-public-version contract; choose that version only through the separate release/version decision. Hub remains `0.0.0` and had no runtime change. Core, Extension, and Dimension Assessment Candidate versions are unchanged.
 
 This checkpoint does not change the existing Public Release NO-GO. Human Browser Acceptance, the final safety audit, and any separate release authorization remain required. No push, tag, deployment, publication, or Pages configuration change was performed.

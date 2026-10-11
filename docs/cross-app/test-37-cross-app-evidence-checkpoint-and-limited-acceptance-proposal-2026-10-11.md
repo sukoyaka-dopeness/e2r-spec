@@ -1,18 +1,18 @@
 # Test 37 Cross-App Evidence Checkpoint and Limited Acceptance Proposal
 
 Date: 2026-10-11
-Status: Evidence checkpoint prepared for Human review. This document proposes
-limited local ParameterPlotter × NarrativeLine acceptance; it does not make
-that acceptance decision. Cross-Context Workspace Safety remains Pending and
-PUBLIC RELEASE remains NO-GO.
+Status: Limited local ParameterPlotter × NarrativeLine Formal Acceptance was
+Human-approved on 2026-10-12 for the recorded scope below. The earlier proposal
+state is retained as history. Cross-Context Workspace Safety overall remains
+Pending and PUBLIC RELEASE remains NO-GO.
 
 ## Scope and authority
 
 This checkpoint consolidates the recorded Test 28–37 evidence relevant to
 ParameterPlotter (PP) and NarrativeLine (NL), including the latest Codex-led
-same-origin browser revalidation and NL rejected-work Export recovery. It does
-not change runtime, tests, schema, application versions, adopted contracts, or
-prior acceptance decisions.
+same-origin browser revalidation and NL rejected-work Export recovery, and now
+records Human's limited Formal Acceptance decision dated 2026-10-12. It does
+not change runtime, tests, schema, application versions, or adopted contracts.
 
 The authoritative contract is
 [`Cross-Context Workspace Safety`](cross-context-workspace-safety-design-2026-10-10.md).
@@ -220,7 +220,7 @@ uncovered strongly enough to mandate another test before Human may decide on
 this bounded claim. Human may request a narrower scope, additional evidence,
 or decline acceptance. Those choices remain theirs.
 
-## Current status and review request
+## Proposal state before Human decision (preserved history)
 
 - NarrativeLine Startup Workspace / Resume: **HUMAN ACCEPTED** for Test
   37-NL-01–09 only.
@@ -233,10 +233,58 @@ or decline acceptance. Those choices remain theirs.
   Accepted. Pre-fix failures remain historical.
 - Test 37 Cross-App revalidation and NL rejected-work file recovery:
   **CODEX BROWSER VERIFIED** for reported scenarios only.
-- Local PP × NL limited Formal Acceptance: **READY — Pending Human Decision**.
+- Local PP × NL limited Formal Acceptance: **READY — Pending Human Decision**
+  at the time of this proposal; this pending status is superseded by the
+  Human decision recorded below.
 - Cross-Context Workspace Safety overall: **Pending**.
 - PUBLIC RELEASE: **NO-GO**.
 
-Human review requested: decide whether to accept the bounded local PP × NL
-claim above, narrow it, request a specific additional evidence item, or defer.
-No Acceptance or release status is changed by this document.
+The review request above reflects the state before Human's decision on
+2026-10-12. It is retained as proposal history and is no longer an open
+decision.
+
+## Human decision: limited local PP × NL Formal Acceptance
+
+**Decision date:** 2026-10-12
+**Decision:** **LIMITED FORMAL ACCEPTANCE — HUMAN APPROVED**
+
+Human approved the following scope:
+
+> ローカル同一OriginのParameterPlotter × NarrativeLineについて、
+> Evidence Checkpointに明記された検証済み範囲に限り、
+> 限定Formal Acceptanceを正式承認します。
+> Cross-Context Workspace Safety全体はPending、
+> PUBLIC RELEASEはNO-GOを維持してください。
+
+The accepted scope is limited to the local same-origin PP × NL environments
+and the operations represented in the evidence above. It covers the recorded
+evidence for application-owned Workspace independence; stale-writer refusal;
+protection of unsaved work during tested replacements; prevention of
+implicit re-writes after refusal; saved-Workspace recovery through tested
+Reload flows; tested BFCache page-state, pending-work, and coordination
+recovery; Export rescue of tested refused work; and the recorded PP-only
+coordination failure injection and fail-closed result. Each claim retains its
+evidence class, conditions, and limitations from the cited records. In particular,
+Codex Browser Verified, Automated Test Verified, and Source / Design Audit
+remain distinct from Human Browser Acceptance; Codex-run tests are not
+reclassified as Human-run tests by this decision.
+
+This limited acceptance does not include LiaisonScape or all E2R apps,
+production GitHub Pages / HTTPS / CORS / Handoff, other browsers or all edit
+forms, untested race orderings, NarrativeLine browser-level abnormal
+termination recovery, NarrativeLine browser-level Web Locks failure
+injection, naturally occurring coordination failures, or publication and
+release authorization. Prior failures and incidents, including PP Test 32,
+remain part of the history.
+
+## Current status after Human decision
+
+- Local PP × NL Limited Formal Acceptance: **HUMAN APPROVED — 2026-10-12**,
+  for the bounded scope stated above.
+- NarrativeLine Startup Workspace / Resume: **HUMAN ACCEPTED** for
+  Test 37-NL-01–09 only.
+- Test 37 overall: **Partial PASS — tested scope only**. Codex cross-app
+  evidence and the NL limited Human acceptance remain separate evidence
+  classes; this decision does not make all of Test 37 Human Accepted.
+- Cross-Context Workspace Safety overall: **Pending**.
+- PUBLIC RELEASE: **NO-GO**.

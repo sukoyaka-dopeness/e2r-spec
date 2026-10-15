@@ -1750,89 +1750,38 @@ reconstruction checkpoint.
 
 ### NL-EVENT-ID1 — Event Human-readable Identity Disambiguation
 
-The historical audit wording below is preserved as the state at that
-checkpoint. The current superseding status is:
-
-**FORMALLY ACCEPTED / COMPLETE / CLOSED.**
-
-Accepted runtime: NarrativeLine `4f066d5`. Acceptance evidence is recorded in
-[NarrativeLine Event Identity Formal Acceptance](narrativeline/narrativeline-event-identity-formal-acceptance.md),
-with acceptance documentation commit `e7c7dd1`.
-
-The accepted implementation scope is limited to the Timeline Event list and
-Entity Detail Related Events. Event name remains primary; ambiguity is
-candidate-set-local; chronology is the conditional human-readable
-discriminator; Timeline does not duplicate chronology already visible in its
-normal presentation; Related Events conditionally shows chronology; and
-unresolved same-name/same-chronology ambiguity uses a presentation-only
-short-ID fallback. The full exact `event.id` remains canonical operation
-identity. Raw History precision is not exposed, `temporalOrder` remains valid
-Timeline sorting data but is intentionally excluded from human-facing Event
-identity, and EN/JA share the ambiguity semantics while visible chronology
-remains the responsibility of existing locale/date presentation.
-
-Accepted evidence is 221/221 automated tests, lint/build/diff-check PASS,
-Microsoft Edge Formal Acceptance PASS, ordinary and approximately 360px
-presentation PASS, long-name presentation PASS, canonical Event navigation
-PASS, Relation blocker regression PASS, and no visible mojibake.
-
-This closure does not claim completion for every current or future Event
-surface. Dedicated Event Picker, Event search, generic reference picker,
-global Event identity component, Event Detail identity redesign,
-delete/association dialog redesign, and full-ID-by-default presentation were
-not added by NL-EVENT-ID1. They are not opened as automatic follow-ups by this
-closure; further Event identity work requires new concrete evidence.
-
-Historical audit checkpoint state (preserved):
-
-**FOLLOW-UP / AUDIT NEEDED.** NarrativeLine should audit Event identity
-presentation where Event names alone are insufficient to distinguish objects.
-Candidate semantic disambiguators are visible date/time, History precision,
-and History `order`, followed by a short Object ID only when ambiguity remains.
-This is display-only: full Object IDs remain canonical operation identity.
-
-Candidate surfaces include Event Picker, Related Events, Event selection,
-display-order UI, search/reference pickers, and Timeline presentation. The
-follow-up must not alter Event identity, History `order`, precision semantics,
-Core or History schema, or Dataset behavior. No global UUID display rule is
-adopted. NarrativeLine implementation and acceptance evidence are still
-required.
+**FORMALLY ACCEPTED / COMPLETE / CLOSED** at NarrativeLine `4f066d5`;
+[formal acceptance](narrativeline/narrativeline-event-identity-formal-acceptance.md).
+Scope is the Timeline Event list and Entity Detail Related Events only.
+Identity is candidate-set-local: name, conditional existing chronology, then
+a collision-safe presentation-only short ID when ambiguity remains. Timeline
+does not repeat visible chronology; Related Events adds it conditionally.
+Full `event.id` remains canonical operation identity. Raw History precision is
+not exposed; `temporalOrder` remains sorting data, not human-facing identity.
+EN/JA share ambiguity semantics while chronology keeps locale formatting.
+Other Event surfaces are not accepted or automatically opened as follow-ups;
+further work requires concrete evidence. No global UUID display rule or change
+to Core, History, Dataset semantics or operation identity is introduced.
+The old audit, closure detail and evidence are preserved in
+[History](roadmap-history/release-and-cross-app-chronology.md#nl-event-id1--event-human-readable-identity-disambiguation).
 
 ### NarrativeLine Relation blocker-card presentation follow-up (2026-08-28)
 
-The earlier public Handoff12 observation and its exploratory evidence remain
-recorded in [NarrativeLine Relation Blocker-Card Presentation Follow-up](narrativeline/narrativeline-relation-blocker-card-presentation-follow-up.md).
-That presentation workstream is now **FORMALLY ACCEPTED / COMPLETE / CLOSED**
-at accepted NarrativeLine runtime `4591f3a`. Formal evidence is recorded in
-[NarrativeLine Relation Blocker Presentation Formal Acceptance](narrativeline/narrativeline-relation-blocker-presentation-formal-acceptance.md),
-accepted by e2r-spec commit `2b52f15`.
-
-The accepted result includes labeled Relation Name / Source / Target identity,
-the Japanese `つながりの名前` / `始点` / `終点` labels, independently
-wrappable endpoints, Candidate B compact action geometry with narrow fallback,
-matched button/Handoff internal label alignment, long-name robustness, EN/JA
-real-browser verification, and no visible mojibake. Automated evidence was
-197/197 tests PASS with lint/build/diff-check PASS; Edge real-browser
-acceptance also passed.
-
-The earlier endpoint-separator encoding observation was resolved by
-NarrativeLine commit `0eae8df fix: correct Relation endpoint separator`, which
-changed the separator to the intended/current `→` before the final combined
-blocker acceptance. It is included in accepted runtime `4591f3a` and is no
-longer an open Presentation follow-up. The later Japanese Relation-label
-mojibake was a separate incident introduced by `529f209` and corrected by
-`da54d55`; the two incidents remain distinct. The `Keep Entity` footer
-placement remains a separate responsibility and no global safe-left/
-danger-right rule was introduced.
-
-This closure resolves the earlier Candidate B geometry uncertainty, Candidate C
-identity uncertainty, Japanese Relation-label mojibake, and matched blocker
-action-label alignment findings within this workstream. Those findings remain
-valid historical intermediate evidence and are not rewritten. Entity/Relation
-deletion semantics, the Capability Handoff contract, Dataset Handoff,
-Core/Extension/schema, Hub, LiaisonScape, and ai-knowledge remain unchanged.
-Capability Handoff acceptance stays CLOSED / ACCEPTED. This closure does not
-alter unrelated NarrativeLine, cross-application, or deployment work.
+**FORMALLY ACCEPTED / COMPLETE / CLOSED** at NarrativeLine `4591f3a`;
+[formal acceptance](narrativeline/narrativeline-relation-blocker-presentation-formal-acceptance.md).
+Scope is the reviewed Entity deletion blocker: separate Relation Name, Source
+and Target rows with independent endpoint wrapping; JA labels remain
+`つながりの名前` / `始点` / `終点`. Candidate B card-end actions retain the
+narrow fallback and matched local button/Handoff label alignment.
+The `Keep Entity` footer is separate; no global safe-left/danger-right or
+Cross-App pixel-parity rule is adopted. Existing inline confirmation, Cancel,
+focus and modified/pending-work protection remain; canonical IDs and
+Entity/Relation deletion semantics are unchanged. Capability Handoff remains
+independently CLOSED / ACCEPTED; its contract, Dataset Handoff and application
+boundaries are not reopened. No broader Product or other-screen acceptance is implied.
+Separator and Japanese-label corrections remain distinct resolved incidents.
+Their provenance, detailed acceptance and earlier observations are preserved in
+[History](roadmap-history/release-and-cross-app-chronology.md#narrativeline-relation-blocker-card-presentation-follow-up-2026-08-28).
 
 ### LS-MODAL-DIALOG-CONSISTENCY-AUDIT1 (2026-08-29)
 

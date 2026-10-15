@@ -37,6 +37,11 @@ not a second planning authority. Statements such as `current`, `next`, or
   candidate snapshots transferred in C-1. The intervening adopted-contract entry
   and current bounded acceptance remain in the Roadmap; historical pending
   decisions are not new open tasks.
+  The [NarrativeLine Event identity and Relation blocker snapshots](release-and-cross-app-chronology.md#narrativeline-event-identity-and-relation-blocker-presentation-snapshots)
+  preserve the two complete Roadmap blocks transferred in C-2, including old
+  audit language and detailed bounded closure evidence. Current display rules,
+  scope, canonical identity and operation-safety boundaries remain summarized
+  under the original Roadmap headings; no broader acceptance is implied.
 - [LiaisonScape Layout and Auto Layout chronology](liaisonscape-layout-and-auto-layout-chronology.md)
   preserves the early Initial Placement / routing progression, the historical
   Seed candidate-generation, assignment, structural-objective, and PR-2

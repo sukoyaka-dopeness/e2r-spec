@@ -32,6 +32,11 @@ not a second planning authority. Statements such as `current`, `next`, or
   preserves five superseded 2026-09-19 proposal, decision, implementation,
   blocker-repair, and upgrade-planning snapshots; the bounded closure remains
   current in the roadmap and is summarized in the [migration result](../documentation-ia/roadmap-hybrid-reconstruction-history2-candidate3-migration-result1.md).
+  The [NarrativeLine Perspective proposal and implementation chronology](release-and-cross-app-chronology.md#narrativeline-perspective-proposal-and-implementation-chronology-2026-09-27-to-2026-09-28)
+  preserves three 2026-09-27/28 preparation, Candidate-proposal and implementation-
+  candidate snapshots transferred in C-1. The intervening adopted-contract entry
+  and current bounded acceptance remain in the Roadmap; historical pending
+  decisions are not new open tasks.
 - [LiaisonScape Layout and Auto Layout chronology](liaisonscape-layout-and-auto-layout-chronology.md)
   preserves the early Initial Placement / routing progression, the historical
   Seed candidate-generation, assignment, structural-objective, and PR-2

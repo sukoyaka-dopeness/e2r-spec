@@ -1442,3 +1442,75 @@ tests, lint, build, and diff checks passed.
 
 Remaining follow-ups are `LS-REL-ENDPOINT-ID1`, `LS-DIALOG-DRAFT1`,
 `LS-CTX-R1`, and `LS-GRAPH-DRAG1`; none is accepted or implemented by RR1.
+
+## NarrativeLine Perspective proposal and implementation chronology (2026-09-27 to 2026-09-28)
+
+Status: **HISTORICAL ROADMAP SNAPSHOTS - NOT CURRENT PLANNING AUTHORITY**
+
+Transferred on 2026-10-15 from `docs/roadmap.md` at source checkpoint
+`bfdfa73ff862dd781e6517a19f0c7b43ef84df58` (Roadmap Slimming C-1).
+The three complete blocks below retain their original wording, dates, status
+language and source order; only relative Markdown links are rebased. Their
+proposal-stage decisions and pending acceptance describe those earlier stages.
+The intervening Candidate adoption entry intentionally remains in the Roadmap.
+
+Use the [current Roadmap status index](../roadmap.md#current-status-index-2026-10-02)
+and [Candidate adoption entry](../roadmap.md#perspective-010-candidate-adoption-2026-09-28)
+for current planning. The [Perspective Candidate](../../extensions/perspective-extension-candidate.md)
+and [formal Human Acceptance](../narrativeline/narrativeline-perspective-timeline-ordering-formal-human-acceptance-packet.md)
+retain their own authority; this transcription changes neither status nor scope.
+
+### NarrativeLine Perspective ordering representation decision preparation (2026-09-27)
+
+Human selected the direction to design Dataset-portable, non-temporal ordering
+under the provisional Perspective responsibility, usable beyond NarrativeLine
+and able to leave room for multiple Perspectives later. Partial/sparse coverage
+is allowed: new Events begin unplaced, Event deletion removes its Perspective
+references, and rename preserves placement by stable Event identity. History
+and Relative Time changes retain authored order and surface warnings rather
+than rewriting temporal facts. Relative Time cycles remain separate conflicts
+and are not resolved by Perspective. Keyboard-accessible move operations are
+the baseline; drag and drop is deferred.
+
+The read-only [Perspective Ordering Representation Audit](../narrativeline/narrativeline-perspective-ordering-representation-audit1.md)
+compares ordered Event ID lists, rank/position tokens, anchored insertion, and
+pairwise authorial constraints. It verifies that Session 0005's old History
+`order`/LexoRank discussion is historical rather than Perspective authority;
+current History only permits order-preserving `temporalOrder` regeneration and
+does not require import/export normalization. No Perspective rebalance rule
+has been adopted. The next Human decision is the semantic representation
+(sequence of placed Events versus partial constraints), whether the previously
+reported anchor preference applies to storage or interaction, and—only if
+rank tokens are selected—their maintenance policy. No schema, Validator,
+prototype, or application implementation is authorized.
+
+### Perspective Candidate contract checkpoint (2026-09-28)
+
+Following the Human selection of a sparse ordered Event ID sequence, a bounded
+Candidate contract and payload-shape schema are prepared in the
+[Perspective Extension Candidate](../../extensions/perspective-extension-candidate.md).
+The proposed ID is `draft.github.sukoyaka-dopeness.perspective` and proposed
+version is `0.1.0`; neither is adopted or Stable. The payload leaves room for
+multiple Perspective entries, treats omitted Events as unplaced, and derives
+temporal mismatch diagnostics without serializing them. Candidate structural
+validation is wired into `npm run validate`.
+
+Human decisions remain required for adoption and exact identity/version,
+Perspective selection/default behavior, stale Event reference policy,
+portable conflict acknowledgment, cross-projection composition, and unknown
+version round-trip expectations. No runtime, Validator integration, migration,
+public sample, temporal authority, or app implementation changed. The prior
+2026-09-27 preparation entry remains the record of that earlier checkpoint.
+
+### NarrativeLine Perspective implementation candidate (2026-09-28)
+
+NarrativeLine local commit `c4709d2` provides the bounded Perspective `0.1.0`
+consumer/writer candidate. [Its implementation result](../../../e2r-narrative-line/docs/perspective-0.1.0-timeline-ordering-implementation-result.md)
+records the ordinary Timeline composition, Human move operation, Derived
+diagnostics, Dataset lifecycle integration, and automated verification. The
+next gate is Real Browser / Human Acceptance. Candidate specification meaning
+and maturity remain unchanged; this checkpoint does not authorize release,
+public sample changes, Validator integration, other consumers, or Stable
+promotion.
+
+<!-- End of the three C-1 source blocks. -->

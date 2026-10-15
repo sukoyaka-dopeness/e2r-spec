@@ -29,6 +29,57 @@ Seven canonical repositories remain direct children of `C:\Users\extra\E2R`; exp
 Current status is in the [status index](#current-status-index-2026-10-02); chronology and preservation evidence remain in the [legacy chronology](roadmap-history/legacy-chronology.md), workspace artifacts, and Git history.
 Future evidence disposition, provenance, archiving, and cleanup remain separate; placement closure does not authorize them.
 
+<a id="current-mainline-synchronization---2026-10-07"></a>
+
+## Current mainline synchronization - 2026-10-15
+
+ParameterPlotter is a pre-public Product. The integrated implementation is saved
+in local checkpoint `9c4dcbd`; Single Active Editor's product contract is
+Human-approved, its implementation and automated checks are complete, and its
+Human Browser Acceptance remains **PENDING**. The [approved design](parameterplotter/parameterplotter-single-active-editor-design-2026-10-14.md)
+and [implementation evidence](../../e2r-parameter-plotter/docs/single-active-editor-implementation-2026-10-14.md)
+govern startup ownership, dedicated non-owner guidance, retained Handoff intent,
+and explicit reload/reopening after ownership release. The new policy replaces
+the prior normal two-editable-tab UX; it does not expand or revoke historical
+M1-C6/M1-C21 bounded acceptances.
+
+Current Human gates include Single Active Editor lifecycle/Handoff/recovery,
+non-owner common Footer/Credits, Home visual/focus behavior, title-button copy,
+Workspace notification UI, and generated Extension declarations. Automated and
+DOM evidence supports these implementations; it is not Human Browser PASS.
+Workspace/right Drawer button sizing and Entity menu visibility have their
+existing bounded Drawer UX closure; Human confirmed on 2026-10-15 that the
+previously retained button-size item is that same accepted issue (see index).
+The old Tab C anomaly remains **UNRESOLVED**; broader
+Cross-Context Workspace Safety acceptance, the deferred every-overlay audit,
+and final Product/release review remain separate gates. **ParameterPlotter
+PUBLIC RELEASE remains NO-GO.** No priority order is selected among these gates.
+
+Favicon, EN/JA locale presentation, Candidate 0.2.0 integration, and the reviewed
+sample cases have their own completed/bounded evidence in the status index;
+they are not the old unstarted next-step sequence. User Guides and local Hub
+integration exist; public ParameterPlotter Handoff/HTTPS/CORS and publication
+verification remain pending. Dimension Assessment remains a non-Stable Candidate.
+The [sample provenance](public-samples/public-sample-provenance.md) and
+[Candidate contract](../extensions/dimension-assessment-extension-candidate.md)
+remain authoritative; no sample fact may be inferred to fill a planning gap.
+
+Generated Extension Declaration Integrity is a [Human-accepted application-quality Decision](../../ai-knowledge/decisions/generated-extension-declaration-integrity.md)
+(`528c474`), distinct from the historical Export-only limited acceptance.
+Internal Dataset/Workspace declaration generation is implemented in ParameterPlotter
+and awaits Human Browser Acceptance; other applications have not been audited
+or updated under this principle. Specification omission remains permitted.
+
+Existing NarrativeLine Perspective implementation and acceptance remain intact.
+Future Multiple Perspectives, display-order evolution, LiaisonScape selectable
+SVG icons, and Cross-App UX proposals remain Research/follow-up material, not
+newly selected priorities or shared standards. The [Perspective acceptance packet](narrativeline/narrativeline-perspective-timeline-ordering-formal-human-acceptance-packet.md)
+and [display-order audit](narrativeline/narrativeline-display-order-reordering-audit.md)
+retain their evidence. Ko-fi adoption/placement remains a Human decision.
+Previously published Hub/NarrativeLine/LiaisonScape 0.2.0 and Cross-App Locale
+closures are unchanged; LiaisonScape Diagnostics D1 is bounded CLOSED, D2 OPEN.
+Push, deployment, release and publication require separate authorization.
+
 ## Operating principles
 
 - Keep the Core minimal and stable.
@@ -47,7 +98,9 @@ Future evidence disposition, provenance, archiving, and cleanup remain separate;
 
 <a id="current-status-index-2026-09-28"></a>
 
-## Current status index — 2026-10-02
+<a id="current-status-index-2026-10-02"></a>
+
+## Current status index — 2026-10-15
 
 This short section is the entry point for current status. Detailed checkpoint
 records and retained planning entries remain below for evidence and chronology;
@@ -55,10 +108,11 @@ they do not override this index merely because they contain stronger-looking
 words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`. The completed
 workspace-migration chronology is preserved in the [roadmap history
 index](roadmap-history/README.md); its dated status language is historical.
-NarrativeLine release-preparation and future-application research entries below
-were updated on 2026-09-30; ParameterPlotter Prototype 2 implementation status
-was synchronized on 2026-10-02. The 2026-09-28 section anchor is retained for
-existing links.
+Current-state synchronization is dated 2026-10-15. Dated implementation and
+acceptance records retain their original evidence boundaries; old source hashes
+are historical snapshots, not necessarily the latest integrated source. The
+2026-09-28 and 2026-10-02 section anchors are retained for existing links.
+Roadmap History extraction/compression remains a separate later stage.
 
 | Workstream | Current status | Authority / next decision |
 | --- | --- | --- |
@@ -75,20 +129,37 @@ existing links.
 | NarrativeLine Perspective ordering Drag & Drop | **HUMAN ACCEPTED / CLOSED — SUPPLEMENTARY APPLICATION INPUT** | [Human Browser Acceptance](narrativeline/narrativeline-perspective-ordering-dnd-human-acceptance.md) and [NarrativeLine implementation result](../../e2r-narrative-line/docs/perspective-ordering-dnd-implementation-result.md). Card-wide drag is available only in explicit session-only display-order editing; ordinary Timeline and the ↑/↓ keyboard path remain intact. The card surface is the primary drop cue and before/after lines are secondary. No new portable ordering semantics or Dataset gesture state. |
 | NarrativeLine `0.2.0` publication | **PUBLIC RELEASED / EXACT PAGES DEPLOYMENT VERIFIED** | Public `main` is `7245d8f8506c86c8af55fcf50de96da8bf82a307`; Pages run [36728316616](https://github.com/sukoyaka-dopeness/e2r-narrative-line/actions/runs/36728316616) succeeded for that exact SHA. The accepted candidate's EN/JA Cedar Timeline handoffs were also verified live; details and links are in the [publication verification result](narrativeline/narrativeline-0.2.0-publication-verification-result.md). Cross-App Credits visual parity remains a separate follow-up and is not a release blocker. |
 | LiaisonScape `0.2.0` publication | **CLOSED / EXACT PUBLIC REVISION AND PAGES DEPLOYMENT VERIFIED** | Public `main` is `75400c65b64938aee5c74efa8bd772bb6f1851ea`; Pages run [36738217857](https://github.com/sukoyaka-dopeness/e2r-liaison-scape/actions/runs/36738217857) succeeded for that exact SHA. Credits show Updated `2026-10-01`. Direct EN/JA Cedar Handoff through the published LiaisonScape completed with the Validator `0.7.0` consumer and no visible unsupported-version warning; see the [publication closure result](liaisonscape/liaisonscape-0.2.0-publication-closure-result.md). No further LiaisonScape write is authorized or needed for this closure. |
-| E2R Hub `0.2.0` | **PUBLIC RELEASED / EXACT PAGES DEPLOYMENT VERIFIED / CLOSED** | Public `main` is `6765bcbcc95658eef944636b3afd248cc3a588e0`; Pages run [36748968007](https://github.com/sukoyaka-dopeness/e2r-hub/actions/runs/36748968007) succeeded for that exact SHA. See the [publication closure result](hub/e2r-hub-0.2.0-publication-closure-result.md) for Credits and live EN/JA Hub verification. Cross-App Locale remains a separate open workstream. |
+| E2R Hub `0.2.0` | **PUBLIC RELEASED / EXACT PAGES DEPLOYMENT VERIFIED / CLOSED** | Public `main` is `6765bcbcc95658eef944636b3afd248cc3a588e0`; Pages run [36748968007](https://github.com/sukoyaka-dopeness/e2r-hub/actions/runs/36748968007) succeeded for that exact SHA. See the [publication closure result](hub/e2r-hub-0.2.0-publication-closure-result.md) for Credits and live EN/JA Hub verification. Cross-App Locale was subsequently CLOSED; see the separate Locale row and publication verification below. |
 | Multilingual public-sample Dataset identity | **CURRENT EN/JA SAMPLE DIRECTION SELECTED / FAMILY RELATIONSHIP REMAINS RESEARCH** | Current curated EN/JA public samples retain distinct language-specific `datasetId` values; corresponding Core Object IDs are shared for matching logical objects in these pairs only, not as a universal translation rule or global identity. Cedar IDs remain unchanged. A portable relationship for shared language/localization-family membership remains exploratory; field name, schema shape, and owner are unselected. See [Dataset language and localized variant architecture](../research/exploratory/dataset-language-and-localized-variant-architecture.md#human-selected-current-sample-direction--2026-09-30). This planning record changes no sample/schema and does not reopen the NarrativeLine release transaction. |
-| Cross-App live interoperability | **CLOSED / HUMAN BROWSER END-TO-END ACQUISITION VERIFIED** | The [closure result](cross-app/e2r-cross-app-live-interoperability-closure-result.md) records successful Hub EN/JA Cedar Dataset acquisition and expected Timeline / Entity graph in both public receiving applications. Cross-App Locale remains separately open. |
-| Cross-app Dataset JSON export filename consistency | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Human accepted the nine reviewed downloads across NarrativeLine, LiaisonScape, and ParameterPlotter; see the [Human Acceptance closure](cross-app/cross-app-dataset-json-export-filename-human-acceptance-closure-2026-10-12.md) and [cross-app design decision](cross-app/cross-app-dataset-json-export-filename-consistency.md). |
-| Cross-app Metadata Extension version declaration in Export | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Human accepted the bounded PP-1, LS-1, LS-2, PP-2, LS-3, LS-4, and RT-1 browser cases. See the [Human Browser Review and bounded closure](cross-app/cross-app-export-specification-declaration-alignment-human-browser-review-and-closure-proposal-2026-10-12.md); all other Extension/version combinations and broader interoperability remain outside this acceptance. |
+| Cross-App live interoperability | **CLOSED / HUMAN BROWSER END-TO-END ACQUISITION VERIFIED** | The [closure result](cross-app/e2r-cross-app-live-interoperability-closure-result.md) records successful Hub EN/JA Cedar Dataset acquisition and expected Timeline / Entity graph in both public receiving applications. Cross-App Locale was subsequently CLOSED under its separate publication verification below. |
 | Cedar Observatory EN/JA showcase | **PUBLIC NARRATIVELINE SOURCE / HUB GALLERY ENTRY PUBLIC / LIVE CROSS-APP ACQUISITION CLOSED** | Cedar remains NarrativeLine-owned. Hub `0.2.0` presents Cedar EN/JA in its six-sample Gallery. Four Human Browser routes verified actual acquisition and expected receiving views; see the [Cross-App live interoperability closure result](cross-app/e2r-cross-app-live-interoperability-closure-result.md). Publication details remain in the [Hub](hub/e2r-hub-0.2.0-publication-closure-result.md), [NarrativeLine](narrativeline/narrativeline-0.2.0-publication-verification-result.md), and [LiaisonScape](liaisonscape/liaisonscape-0.2.0-publication-closure-result.md) results. |
 | Future multi-visualization application | **PRODUCT RESPONSIBILITY HUMAN-APPROVED / PROTOTYPE 2 BOUNDED APPLICATION-LOCAL SCOPE HUMAN-ACCEPTED / CLOSED** | Human accepted and closed the bounded application-local Prototype 2 scope. Canonical case status is 19 Human PASS / 0 PENDING / B3 NOT RUN. B3 remains NOT RUN because no genuine Prototype 1 legacy-session fixture exists; Human explicitly accepted the missing browser evidence as a limitation, not as compatibility PASS. The [implementation and closure result](../research/prototypes/parameterplotter-1/prototype-2-bounded-implementation-result-2026-10-02.md) and [Human Browser Evaluation](../research/prototypes/parameterplotter-1/prototype-2-human-browser-evaluation-2026-10-02.md) record the authority and case results. The Quadrant connector defect and waiting-Entity plot-click discoverability remain separate follow-ups, not closure blockers. Prototype 2 itself adopted no portable Dimension/value contract, Observation model, Dataset write-back/export, Core, Extension, schema, or Validator change; the later Human-adopted Dimension Assessment Candidate is tracked separately below. Human selected Candidate B for the first Product slice and the dedicated production source repository; the P2 closure and its evidence remain unchanged. |
-| ParameterPlotter first Product slice | **CANDIDATE B HUMAN-SELECTED / SOURCE PUBLISHED / FIRST PRODUCT SLICE HUMAN-ACCEPTED** | Human accepted the bounded single-user app-local workspace after real Dataset browser review: Dataset read-only, shared temporary values across Profile/Radar/Quadrant/Matrix, replacement warning and preservation via “Keep current workspace,” session-loss disclosure, and ordinary/narrow presentation. Public source HEAD `e31c67a` and GitHub Actions `Check` passed; local syntax and 26 tests passed. See the [first-slice acceptance record](https://github.com/sukoyaka-dopeness/e2r-parameter-plotter/blob/main/docs/first-slice-human-acceptance-2026-10-04.md) and [decision packet](../research/exploratory/parameterplotter-product-milestone-decision-preparation-2026-10-04.md). Prototype 2 remains separately closed at 19 Human PASS / 0 PENDING / B3 NOT RUN. At this historical Candidate B acceptance checkpoint portable semantics were not selected; the successor Dimension Assessment Candidate had not yet been adopted or implemented. It is now Human-adopted and functionally accepted in a separate local successor checkpoint, but remains non-Stable. Release, deployment, and formal product name remain unselected. |
-| ParameterPlotter successor Product decisions | **CAPABILITY DIRECTION HUMAN-APPROVED / LIFECYCLE POLICIES HUMAN-DECIDED / BOUNDED SUCCESSOR FUNCTIONAL ACCEPTANCE HUMAN-ACCEPTED / CLOSED** | The Human-accepted successor source remains `b9a8e1fee6499c191c66033296e98965d777684e`; current local source `111be04898f354efe92856dfdd355ca89845fa59` adds the post-acceptance More action hierarchy and View control accessibility correction without changing that baseline. The local Product/UI audit is `e2r-parameter-plotter` documentation commit `e6733aad51cd083e54329a6d59a9de5f364186d3`; it records current surface gaps and the next Human gates. More received desktop Edge review; the prior 390px four-view review does not cover this new disclosure. Source remains unpublished; browser-storage failure injection is NOT RUN. Home/startup hierarchy, EN/JA scope and terminology, sample content/provenance, Footer/Credits and identity, and Dataset-title authoring remain open. Candidate `0.1.0` remains non-Stable; release, deployment, cross-consumer interoperability and Stable review remain separate gates. See the [successor Human Acceptance record](../../e2r-parameter-plotter/docs/successor-human-acceptance-2026-10-06.md), [Product/UI audit](../../e2r-parameter-plotter/docs/product-ui-completion-audit-2026-10-07.md), [readiness checkpoint](../research/exploratory/parameterplotter-public-product-readiness-checkpoint-2026-10-04.md), and [implementation result](../research/exploratory/parameterplotter-successor-first-bounded-implementation-result-2026-10-05.md). |
-| Dimension Assessment Extension Candidate | **HUMAN-ADOPTED CANDIDATE 0.1.0 / LOCAL VALIDATOR AND PARAMETERPLOTTER INTEGRATION FUNCTIONALLY HUMAN-ACCEPTED / NOT STABLE** | The [Dimension Assessment Extension Candidate](../extensions/dimension-assessment-extension-candidate.md) (`draft.github.sukoyaka-dopeness.dimension-assessment`, display name Dimension Assessment Extension, version `0.1.0`) defines Dataset-level Dimension definitions and Entity Assessments with inclusive hard bounds. It is a portable data contract, not an Observation/measurement model; derived chart positions and application view state remain outside the payload. The functionally accepted local integration remains source commit `b9a8e1fee6499c191c66033296e98965d777684e`; current verified local source `111be04898f354efe92856dfdd355ca89845fa59` has post-acceptance corrections only. The Product/UI audit document is local commit `e6733aad51cd083e54329a6d59a9de5f364186d3`; current successor readiness documentation is local commit `7280f1fd77d2e1df24e247e680314b3d3c4d2f97`. The 390px review is Codex follow-up evidence, not Human acceptance of the later source. Browser-storage failure injection remains NOT RUN, and the source/docs remain unpublished. This does not register the Candidate as Stable or alter Prototype 2 closure or the historical Candidate B first-slice boundary. See the [Human Acceptance record](../../e2r-parameter-plotter/docs/successor-human-acceptance-2026-10-06.md), [implementation result](../research/exploratory/parameterplotter-successor-first-bounded-implementation-result-2026-10-05.md), and [ParameterPlotter current research overview](../research/exploratory/multi-visualization-application-pre-implementation-research.md#human-adopted-dimension-assessment-candidate-010--2026-10-05).
+| ParameterPlotter first Product slice | **CANDIDATE B HUMAN-SELECTED / SOURCE PUBLISHED / FIRST PRODUCT SLICE HUMAN-ACCEPTED** | Human accepted the bounded single-user app-local workspace after real Dataset browser review: Dataset read-only, shared temporary values across Profile/Radar/Quadrant/Matrix, replacement warning and preservation via “Keep current workspace,” session-loss disclosure, and ordinary/narrow presentation. Public source HEAD `e31c67a` and GitHub Actions `Check` passed; local syntax and 26 tests passed. See the [first-slice acceptance record](https://github.com/sukoyaka-dopeness/e2r-parameter-plotter/blob/main/docs/first-slice-human-acceptance-2026-10-04.md) and [decision packet](../research/exploratory/parameterplotter-product-milestone-decision-preparation-2026-10-04.md). Prototype 2 remains separately closed at 19 Human PASS / 0 PENDING / B3 NOT RUN. At this historical Candidate B acceptance checkpoint portable semantics were not selected; the successor Dimension Assessment Candidate had not yet been adopted or implemented. It is now Human-adopted and functionally accepted in a separate local successor checkpoint, but remains non-Stable. Those were unselected at the historical first-slice checkpoint; the formal name is now ParameterPlotter. Current implementation and release gates are tracked separately below. |
+| ParameterPlotter successor Product decisions | **HISTORICAL SUCCESSOR FUNCTIONAL ACCEPTANCE CLOSED / CURRENT INTEGRATION IMPLEMENTED / NEW HUMAN GATES PENDING** | Successor acceptance remains bounded to `b9a8e1f`; Workspace Backup/Restore removal was separately accepted at `34f72fad`. Current integrated local implementation `9c4dcbd` includes later safety, Single Active Editor, Home/common UI, title authoring, notification and generated-declaration work, without extending those acceptances. Product name is ParameterPlotter; browser-local recovery and portable E2R JSON remain distinct. See [historical successor acceptance](../../e2r-parameter-plotter/docs/successor-human-acceptance-2026-10-06.md), [Workspace Backup removal](../../e2r-parameter-plotter/docs/workspace-backup-removal-human-acceptance-2026-10-07.md), [Single Active Editor design](parameterplotter/parameterplotter-single-active-editor-design-2026-10-14.md), and the specific pending rows below. Product acceptance and release remain pending / NO-GO. |
+| Dimension Assessment Extension Candidate | **HUMAN-ADOPTED CANDIDATE / BOUNDED INTEGRATION HUMAN-ACCEPTED / NOT STABLE** | The [Candidate contract](../extensions/dimension-assessment-extension-candidate.md) governs explicit Dimensions and Assessments; no Observation/measurement model or derived chart position is added to the payload. Historical 0.1.0 functional acceptance remains at `b9a8e1f`; the later 0.2.0 integration has its own bounded closure below. Current integrated ParameterPlotter source is `9c4dcbd`, not a new whole-Product acceptance. See [successor acceptance](../../e2r-parameter-plotter/docs/successor-human-acceptance-2026-10-06.md) and [0.2.0 integration closure](../../e2r-parameter-plotter/docs/candidate-0.2.0-human-browser-acceptance-closure-2026-10-08.md). Candidate maturity, Stable promotion and interoperability acceptance are unchanged. |
 | ParameterPlotter Candidate 0.2.0 integration | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED INTEGRATION)** | Accepted runtime source `a2b4c311013c946f1006a3c8ad58bade22743110`; scope and limits are in the [Human Browser Acceptance closure](../../e2r-parameter-plotter/docs/candidate-0.2.0-human-browser-acceptance-closure-2026-10-08.md). Candidate remains non-Stable; this does not accept the whole Product or authorize release/publication. |
-| The Ashen Crown Candidate 0.2.0 canonical EN/JA sample | **CANONICAL EN/JA UPDATED / BOUNDED JA TEXT REPAIR HUMAN BROWSER ACCEPTED / BOUNDED EN BUNDLED SAMPLE HUMAN BROWSER ACCEPTED / CANDIDATE NON-STABLE** | The seven Human-approved Dimensions and 70 Assessments are present in both canonical samples. The JA text repair is Human Browser Accepted / Pass / Closed; the EN bundled sample integration from ParameterPlotter Home is separately Human Browser Accepted / Pass / Closed. See the [JA text repair closure](parameterplotter/ashen-crown-ja-canonical-dimension-text-human-browser-closure-2026-10-08.md), [EN bundled sample closure](../../e2r-parameter-plotter/docs/ashen-crown-bundled-sample-human-browser-closure-2026-10-08.md), [sync result](../../e2r-parameter-plotter/docs/ashen-crown-bundled-sample-sync-2026-10-08.md), [content approval](parameterplotter/ashen-crown-candidate-0.2.0-canonical-content-approval-2026-10-08.md), and [sample provenance](public-samples/public-sample-provenance.md). Candidate remains non-Stable; Cross-App Acceptance, Hub integration, Stable promotion, and publication remain separate.
-| Lighthouse / Cedar Dimension Assessment sample expansion | **HUMAN CONTENT REVIEW READY / DECISION PENDING** | The [content review](public-samples/lighthouse-cedar-dimension-assessment-content-review-2026-10-09.md) audits all 48 proposed cells and provides EN/JA Dimension copy. Canonical owner Datasets and distribution mirrors remain unchanged pending Human adoption. |
-| ParameterPlotter Workspace / right Drawer button geometry | **OPEN / HUMAN-OBSERVED FOLLOW-UP / NOT IMPLEMENTED / NOT HUMAN-ACCEPTED** | Human identified a same-role button-size mismatch between the Workspace and right-side Drawer in EN and JA. The observed follow-up is recorded in the [current ParameterPlotter implementation status](../../e2r-parameter-plotter/docs/successor-first-implementation.md). It may be grouped with other Human-selected UI corrections; it does not imply a measured geometry audit or broader redesign. |
+| The Ashen Crown Candidate 0.2.0 canonical EN/JA sample | **CANONICAL EN/JA UPDATED / BOUNDED JA TEXT REPAIR AND EN BUNDLED SAMPLE HUMAN BROWSER ACCEPTED / NON-STABLE** | Seven approved Dimensions and 70 Assessments are present. The [JA canonical text repair closure](parameterplotter/ashen-crown-ja-canonical-dimension-text-human-browser-closure-2026-10-08.md) and [EN bundled Home sample closure](../../e2r-parameter-plotter/docs/ashen-crown-bundled-sample-human-browser-closure-2026-10-08.md) accept their listed cases only. Local Hub integration exists under its separate pending review below; broader Cross-App acceptance, Stable promotion and ParameterPlotter publication remain separate. See [content approval](parameterplotter/ashen-crown-candidate-0.2.0-canonical-content-approval-2026-10-08.md) and [provenance](public-samples/public-sample-provenance.md). |
+| Lighthouse / Cedar Dimension Assessment sample expansion | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED PARAMETERPLOTTER SAMPLE INTEGRATION)** | Human accepted the reviewed ParameterPlotter views for Lighthouse EN/JA and Cedar EN; Cedar JA was individually shown in Matrix only. Exact scope and unreviewed surfaces are in the [Human Browser Acceptance closure](public-samples/lighthouse-cedar-parameterplotter-human-browser-acceptance-closure-2026-10-09.md). Dataset publication and broader application acceptance remain separate. |
+| Hub to ParameterPlotter Sample Acquisition | **IMPLEMENTED / AUTOMATED VERIFIED / CODEX BROWSER VERIFIED / HUMAN BROWSER ACCEPTANCE PENDING** | Human selected Startup Handoff v0. Isolated Chrome verified local Hub Ashen Crown EN/JA handoff, locale preference, failure safety, and Cancel preservation; the Home sample label/selection also passed local browser review. Human review remains pending for unapplied drafts, complete user-originated flows, and public HTTPS/CORS. E2R-SPEC ownership is unchanged. See the [readiness audit](../../e2r-parameter-plotter/docs/user-guides-and-pre-public-readiness-2026-10-09.md), local [Hub integration](../../e2r-hub/docs/local-ashen-crown-handoff-and-sample-locale-integration-2026-10-09.md), and [Home locale checkpoint](../../e2r-parameter-plotter/docs/home-sample-locale-alignment-ashen-crown-2026-10-09.md). |
+| Hub three-app and sample Gallery review | **IMPLEMENTED / AUTOMATED VERIFIED / CODEX BROWSER VERIFIED / HUMAN BROWSER REVIEW PENDING** | Isolated Chrome confirmed three application cards, the approved top/bottom sample ordering, equal bottom-row alignment at desktop width, EN/JA switching, configured ParameterPlotter guide paths, and no horizontal overflow at 390px. Human review remains pending. See the [local Hub integration checkpoint](../../e2r-hub/docs/local-ashen-crown-handoff-and-sample-locale-integration-2026-10-09.md) and [ParameterPlotter readiness audit](../../e2r-parameter-plotter/docs/user-guides-and-pre-public-readiness-2026-10-09.md). |
+| Hub optional Ko-fi support link | **RECORDED PROPOSAL / ADOPTION AND PLACEMENT DECISION PENDING** | Retain the proposal for an optional external support link to https://ko-fi.com/sukoyaka_dopeness near the bottom of Hub Home, subordinate to Dataset/app actions and never required for use. This does not replace GitHub Sponsors. No adoption, implementation priority or placement is authorized by this synchronization; Human must decide before implementation. |
+| Cross-app Dataset JSON export filename consistency | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | On 2026-10-12, Human confirmed short Japanese title, long Japanese title, and title-less fallback downloads in all three apps. Long-title outputs matched with hash `d61fccfc`, and the full title remained in each JSON. The browser appended `(1)`, `(2)`, etc. for duplicate download names. See the [bounded Human Acceptance closure](cross-app/cross-app-dataset-json-export-filename-human-acceptance-closure-2026-10-12.md). See the [cross-app decision](cross-app/cross-app-dataset-json-export-filename-consistency.md). The independent UX and Metadata follow-ups below do not reopen this review or earlier Acceptance. |
+| Cross-app Dataset title confirmation wording | **PARAMETERPLOTTER IMPLEMENTED / AUTOMATED PASS / HUMAN VISUAL ACCEPTANCE PENDING** | ParameterPlotter now uses 「タイトルを適用」 / `Apply title`, matching the related applications, at integrated checkpoint `9c4dcbd`. This changes presentation only, not submit/draft/save behavior. See [implementation and independent follow-ups](parameterplotter/parameterplotter-home-peer-work-safety-evidence-checkpoint-2026-10-14.md#independent-follow-ups-and-exclusions). Narrow layout and visual acceptance remain pending; this is not a new Cross-App standard or expansion of M1-C21. |
+| Cross-app Metadata Extension version declaration in Export | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | On 2026-10-12, Human accepted the bounded review covering PP-1, LS-1, LS-2, PP-2, LS-3, LS-4, and RT-1. This does not accept every Extension/version or broader interoperability. LiaisonScape D1 candidate/current Diagnostics attribution is now separately **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)**; D2 Dataset-change Diagnostics re-evaluation remains open. See the [bounded Acceptance closure](cross-app/cross-app-export-specification-declaration-alignment-human-browser-review-and-closure-proposal-2026-10-12.md), [D1 closure](liaisonscape/liaisonscape-diagnostics-d1-human-acceptance-closure-2026-10-12.md), and [Home Import feedback closure](liaisonscape/liaisonscape-home-import-failure-feedback-human-acceptance-closure-2026-10-12.md). |
+| LiaisonScape Home Import failure feedback | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Human formally accepted on 2026-10-12 the bounded browser review: HOME-1 through HOME-4, RETRY-1, WS-1 through WS-2, and SAFE-1 through SAFE-2 all PASS. This covers reviewed local Import feedback, same-file retry, and Dataset protection only. File-reading failure was not reproduced in the Human Browser Review and remains supported by automated evidence only. See the [bounded Acceptance closure](liaisonscape/liaisonscape-home-import-failure-feedback-human-acceptance-closure-2026-10-12.md). Its independent D2 Dataset-change Diagnostics re-evaluation follow-up remains open below; D1 source attribution has its own bounded closure. |
+| LiaisonScape Diagnostics lifecycle and source attribution | **D1 HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED); D2 OPEN** | Human accepted D1 on 2026-10-12 after D1-01 through D1-09 PASS and FOCUS-01 through FOCUS-06 PASS. The bounded acceptance covers candidate/current Diagnostics separation, reviewed replacement safety, keyboard access and focus restoration only. D2, Dataset-change Diagnostics re-evaluation including the Metadata warning after title removal, remains open. See the [D1 Human Acceptance closure](liaisonscape/liaisonscape-diagnostics-d1-human-acceptance-closure-2026-10-12.md) and the [historical evidence/proposal checkpoint](liaisonscape/liaisonscape-diagnostics-d1-human-browser-evidence-and-bounded-acceptance-proposal-2026-10-12.md). The non-blocking visual focus-indicator observations and their unresolved cause are documented in the closure. D1 does not change other acceptances; ParameterPlotter PUBLIC RELEASE remains NO-GO. |
+| ParameterPlotter Cross-Tab Warning Redundancy / Feedback Lifecycle | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Historical pre-Single Active Editor evidence: Human explicitly approved the bounded 2026-10-12 acceptance covering replacement refusal/Cancel and work protection, peer-warning clearance with prior save-stop retention, past-event explanation, Home and Workspace EN/JA switching in both directions, Home at 390px, and Workspace at 1280px. Workspace 390px passed in an earlier review before the final repair and is excluded. The [acceptance closure record](parameterplotter/parameterplotter-cross-tab-warning-ux-human-acceptance-closure-2026-10-12.md) defines the evidence and exclusions. The prior Codex report recorded 187 tests, syntax check of 38 modules, and build of 60 Pages files PASS; these automated results were not rerun for this documentation sync. Codex Browser was unavailable during implementation. Existing Test 35-B-V and Cross-App Dataset JSON Export Filename CLOSED (BOUNDED) remain unchanged. PUBLIC RELEASE remains NO-GO. See also the [Cross-Context Workspace Safety contract](cross-app/cross-context-workspace-safety-design-2026-10-10.md) and [Test 35 evidence](../../e2r-parameter-plotter/docs/stale-writer-export-reload-recovery-verification-2026-10-11.md). |
+| ParameterPlotter Home-to-Workspace Safety Recovery | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Historical limited M1-C6 recovery acceptance approved 2026-10-13 for the recorded peer-work save refusal, Home recovery, in-memory Dataset return, E2R JSON Export of the changed title, persistence refusal remaining latched after Export, recovery control after Export and JA/EN switch, and visible unchanged saved title in a separate tab (not byte-level storage comparison). The owning-tab Return/Export path is retained under Single Active Editor, whose lifecycle is not covered by this acceptance. Tab C Continue Editing anomaly remains unresolved; read-only Dataset recovery, other refusal causes, complete Cross-Context Workspace Safety, and PUBLIC RELEASE remain open / NO-GO. See the [Human evidence and bounded acceptance closure](../../e2r-parameter-plotter/docs/stale-writer-export-reload-recovery-verification-2026-10-11.md). |
+| ParameterPlotter Home Peer-Work Action Availability | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Human approved the recorded same-origin Edge InPrivate two-tab title-draft/acquisition/Continue flow on 2026-10-14; specification checkpoint `c19cc6a` retains initial FAIL, M1-C22/C23 draft repairs, M1-C24 DOM/focus repair and Human post-fix PASS. See [evidence and limited closure](parameterplotter/parameterplotter-home-peer-work-safety-evidence-checkpoint-2026-10-14.md). Other editors, timing, accessibility, browsers and hosting remain excluded. Single Active Editor now replaces this normal two-editable-tab contract, including non-owner Continue availability; the historical acceptance is neither revoked nor transferred to the new policy. UI consistency is implemented but Human visual acceptance remains pending. Tab C UNRESOLVED; D2 OPEN; ParameterPlotter PUBLIC RELEASE NO-GO. |
+| ParameterPlotter Single Active Editor | **PRODUCT CONTRACT APPROVED / IMPLEMENTED / HUMAN BROWSER ACCEPTANCE PENDING** | One editing owner at startup per same-origin browser partition, including Home. Duplicate tabs show dedicated guidance and never queue/take over; explicit reload or reopening loads the last saved Workspace. Blocked Handoff intent is retained without acquisition. Write gate, revision protection and owning-tab Return/Export remain. M1-C6/M1-C21 closures are historical bounded evidence, not acceptance of this new normal policy. See [approved design](parameterplotter/parameterplotter-single-active-editor-design-2026-10-14.md) and [implementation evidence](../../e2r-parameter-plotter/docs/single-active-editor-implementation-2026-10-14.md). Tab C UNRESOLVED; Diagnostics D2 OPEN; PUBLIC RELEASE NO-GO. |
+| ParameterPlotter Home/common UI and focus restoration | **IMPLEMENTED / AUTOMATED PASS / HUMAN VISUAL ACCEPTANCE PENDING** | Integrated checkpoint `9c4dcbd` retains neutral disabled styling, natural Home layout and title wording. Owner mode omits focus-driven peer refresh; no transient checking opacity/layout churn or permanent warning gap is intended. Non-owner screens reuse locale-aware Header/Footer and Credits without acquisition/takeover. Home recovery warnings precede actions. See [Single Active Editor implementation and common UI correction](../../e2r-parameter-plotter/docs/single-active-editor-implementation-2026-10-14.md). Earlier Human visual failures remain historical evidence, not a new PASS; current visual/lifecycle review is pending. |
+| ParameterPlotter Workspace notification UI | **IMPLEMENTED / AUTOMATED PASS / HUMAN BROWSER ACCEPTANCE PENDING** | Persistent browser-save and Export-baseline state stays in the status line; normal operation success is compact, while refusal/recovery alerts, Export instructions and Validator findings remain visible. See [verification and review boundary](../../e2r-parameter-plotter/docs/workspace-notification-ui-verification-2026-10-14.md). Its earlier Metadata warning is addressed separately by generated declarations below, not suppressed by notification presentation. |
+| Generated Extension Declaration Integrity | **COMMON PRINCIPLE HUMAN-ACCEPTED / PARAMETERPLOTTER IMPLEMENTED AND AUTOMATED PASS / HUMAN BROWSER ACCEPTANCE PENDING** | [Accepted Knowledge](../../ai-knowledge/decisions/generated-extension-declaration-integrity.md) at `528c474` requires accurate declarations at app-owned generation/edit/deletion boundaries without guessing external unknown/future data. ParameterPlotter `9c4dcbd` initializes explicit New Dataset with Specification 0.1.0 / uses: [], declares generated Metadata and supported Dimension Assessment, and preserves conservative external-data behavior; see [verification](../../e2r-parameter-plotter/docs/generated-specification-declarations-verification-2026-10-14.md). Specification remains optional under E2R; this bootstrap is not mandatory for other apps. No automatic saved-Workspace migration or other-app adoption is implied. Historical Export-only acceptance above is unchanged. |
+| ParameterPlotter Workspace / right Drawer button sizes | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Human confirmed on 2026-10-15 that this is the same issue covered by the existing [formal Drawer UX closure](../../e2r-parameter-plotter/docs/drawer-ux-human-browser-acceptance-closure-2026-10-08.md). That closure accepts ordinary-action sizing in EN/JA at ordinary and narrow widths, at source `0207349`. The [earlier OPEN observation](../../e2r-parameter-plotter/docs/successor-first-implementation.md#human-observed-workspace--right-drawer-button-size-follow-up--2026-10-08) remains historical evidence. This synchronization adds no acceptance scope and does not accept later Home disabled styling. |
+| ParameterPlotter Entity drawer menu visibility | **HISTORICAL BOUNDED HUMAN BROWSER ACCEPTANCE CLOSED** | The [formal Drawer UX closure](../../e2r-parameter-plotter/docs/drawer-ux-human-browser-acceptance-closure-2026-10-08.md) supersedes the earlier OPEN observation for menu reveal, already-visible no-scroll, background scroll isolation, Tab/Escape/focus and Edit/Delete cases at `0207349`. This is an existing acceptance, not a new whole-Product PASS or expansion of the button-size closure above. |
+| ParameterPlotter EN/JA User Guides | **LOCAL MARKDOWN GUIDES / HUB GITHUB LINKS UPDATED / PUBLIC LINK CHECK PENDING PUSH** | The existing EN/JA guide content has been migrated from HTML to ../../e2r-parameter-plotter/docs/user-guide-en.md and user-guide-ja.md; Hub now links to the intended GitHub Markdown paths, matching NarrativeLine and LiaisonScape. The guide changes and Hub links are local/unpushed, so public reachability remains pending. See the [pre-publication readiness audit](../../e2r-parameter-plotter/docs/user-guides-and-pre-public-readiness-2026-10-09.md) and [source consistency audit](../../e2r-hub/docs/public-sample-source-consistency-and-release-readiness-2026-10-09.md). |
+| Public Hub to ParameterPlotter Handoff | **OPEN / NOT DEPLOYED** | Local sources and owner/distribution copies are reconciled, but current public Dataset revisions could not be verified; the expected ParameterPlotter project URL and production Hub build inputs are now configured locally; the workflow, Pages settings, and live URL remain unverified. Public HTTPS/CORS and Handoff review require authorized deployment. See the [source consistency and readiness audit](../../e2r-hub/docs/public-sample-source-consistency-and-release-readiness-2026-10-09.md). |
+| ParameterPlotter GitHub Pages deployment preparation | **LOCAL DEPLOYMENT ARTIFACT AND HUB CONFIGURATION PREPARED / NOT DEPLOYED** | Static Pages build/workflow and Hub production build inputs are local only. No repository setting, push, workflow dispatch, deploy, or public source verification was performed. Full existing branch ranges and outstanding Human gates are recorded in the [push-range audit](../../e2r-hub/docs/deployment-preparation-push-range-audit-2026-10-09.md), [Hub configuration](../../e2r-hub/docs/parameterplotter-production-handoff-configuration-2026-10-09.md), and [ParameterPlotter Pages preparation](../../e2r-parameter-plotter/docs/github-pages-deployment-preparation-2026-10-09.md). |
 | NarrativeLine H2 `circa` regression candidate | **ACCEPTED / HUMAN VISUAL ACCEPTANCE COMPLETE — BOUNDED REPAIR** | NarrativeLine `02592a0` preserves existing date/time data and `3efa637` places the marker on the most specific visible Timeline row; JA date+time acceptance is `1989-11-09` / `18時53分頃`; History 2.0.0 remains Candidate |
 | History 2 broader authoring scope | **DEFERRED / BOUNDED H2-POSITION-CIRCA CLOSED; FUTURE SCOPE DECISION ONLY IF REOPENED** | [scope result](./temporal/history-2-user-facing-authoring-scope-result.md); [bounded scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); broader History 2 shapes remain outside scope; NarrativeLine Relative Time authoring is a separate application workstream below |
 | H2-POSITION-CIRCA | **ACCEPTED / CLOSED — BOUNDED AUTHORING SCOPE** | [scope closure](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md); [NarrativeLine acceptance result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/h2-position-circa-bounded-authoring-implementation-result.md); History 2.0.0 remains Candidate |
@@ -101,9 +172,6 @@ existing links.
 | NarrativeLine pre-public feature candidates | **SAMPLE ROLE / PROVENANCE DECISIONS RECORDED / PUBLIC ACCESS RELEASED** | [provenance authority and access result](./cross-app/e2r-initial-public-release-provenance-authority-cross-app-access-implementation1-result.md), [sample role decision preparation](./public-samples/e2r-public-sample-role-decision-preparation1-result.md), and [content/provenance audit](./public-samples/e2r-initial-public-release-content-sample-provenance-refresh-audit1-result.md); five ordinary Gallery families and separate Self-Description dogfood access are public; factual-source caveats remain provenance boundaries |
 | Recent application identity and shell corrections | **IMPLEMENTED / ACCEPTANCE STATUS SPLIT** | Timeline `↑/↓`, Timeline Footer, Detail bottom action/AppFrame continuity, Dataset title hierarchy/direct editing, product-name-only document titles, and title input chrome/terminology have implementation evidence but are not wholesale `ACCEPTED / CLOSED` without explicit visual acceptance. The common SVG favicon has Human browser-tab/narrow confirmation |
 | Cross-App Locale recipient preference | **CLOSED / PUBLIC REVISIONS AND DEPLOYMENTS VERIFIED** | Contract and acceptance remain in the [design authority](cross-app/cross-app-locale-startup-v0-recipient-preference-design.md) and [closure evidence](cross-app/e2r-cross-app-locale-recipient-preference-implementation1-acceptance-preparation.md). Public Hub `a588cb9`, LiaisonScape `b93e976`, and E2R-SPEC `d8c3e4e` were verified after publication; see the [publication verification result](cross-app/e2r-cross-app-locale-publication-verification-result.md). Cross-App Locale remains CLOSED. |
-| LiaisonScape Diagnostics lifecycle and source attribution | **D1 HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED); D2 OPEN** | Human accepted D1 on 2026-10-12 after D1-01 through D1-09 PASS and FOCUS-01 through FOCUS-06 PASS. The bounded acceptance covers candidate/current Diagnostics separation, reviewed replacement safety, keyboard access and focus restoration only. D2, Dataset-change Diagnostics re-evaluation including the Metadata warning after title removal, remains open. See the [D1 Human Acceptance closure](liaisonscape/liaisonscape-diagnostics-d1-human-acceptance-closure-2026-10-12.md) and the [historical evidence/proposal checkpoint](liaisonscape/liaisonscape-diagnostics-d1-human-browser-evidence-and-bounded-acceptance-proposal-2026-10-12.md). The non-blocking visual focus-indicator observations and their unresolved cause are documented in the closure. D1 does not change other acceptances; PUBLIC RELEASE remains NO-GO. |
-| LiaisonScape Home Import failure feedback | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Human formally accepted on 2026-10-12 the bounded browser review: HOME-1 through HOME-4, RETRY-1, WS-1 through WS-2, and SAFE-1 through SAFE-2 all PASS. This covers reviewed local Import feedback, same-file retry, and Dataset protection only. File-reading failure was not reproduced in the Human Browser Review and remains supported by automated evidence only. See the [bounded Acceptance closure](liaisonscape/liaisonscape-home-import-failure-feedback-human-acceptance-closure-2026-10-12.md). Its independent D2 Dataset-change Diagnostics re-evaluation follow-up remains open below; D1 source attribution has its own bounded closure.
-| ParameterPlotter Cross-Tab Warning Redundancy / Feedback Lifecycle | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Human explicitly approved the bounded 2026-10-12 acceptance covering replacement refusal/Cancel and work protection, peer-warning clearance with prior save-stop retention, past-event explanation, Home and Workspace EN/JA switching in both directions, Home at 390px, and Workspace at 1280px. Workspace 390px passed in an earlier review before the final repair and is excluded. The [acceptance closure record](parameterplotter/parameterplotter-cross-tab-warning-ux-human-acceptance-closure-2026-10-12.md) defines the evidence and exclusions. The prior Codex report recorded 187 tests, syntax check of 38 modules, and build of 60 Pages files PASS; these automated results were not rerun for this documentation sync. Codex Browser was unavailable during implementation. Existing Test 35-B-V and Cross-App Dataset JSON Export Filename CLOSED (BOUNDED) remain unchanged. PUBLIC RELEASE remains NO-GO. See also the [Cross-Context Workspace Safety contract](cross-app/cross-context-workspace-safety-design-2026-10-10.md) and [Test 35 evidence](../../e2r-parameter-plotter/docs/stale-writer-export-reload-recovery-verification-2026-10-11.md).
 | E2R workspace clone and evidence hygiene | **COMPLETED / ROOT PLACEMENT CLOSED (8 / 7 / 0)** | [workspace placement migration summary](#workspace-placement-migration--completed--2026-09-21); detailed evidence remains in workspace artifacts and Git history; future evidence disposition is separate work |
 | Initial Public Release | **FORMALLY CLOSED / PUBLIC AUTHORITIES VERIFIED / ACCEPTED BOUNDARIES PRESERVED** | [final closure audit](./release-governance/e2r-initial-public-release-closure-audit-result.md); five ordinary Gallery samples, separate Self-Description dogfood access, Hub/NarrativeLine/LiaisonScape provenance links, Validator `0.6.1`, and the accepted rights/provenance boundary are public and verified; deferred History 2, Lineage, visual-quality, and future product work remain separate follow-ups |
 | NarrativeLine 0.2.0 / Cedar Observatory | **PUBLICATION CLOSED; DOCUMENTATION FOLLOW-UP PUBLISHED** | NarrativeLine feature publication closed at `7245d8f8506c86c8af55fcf50de96da8bf82a307`; the Japanese User Guide follow-up is public at `eb583720df89797a1acf682b5cea747bc25e0cc6`. The 2026-09-30 [bounded transaction gate](narrativeline/narrativeline-0.2.0-bounded-public-transaction-gate.md) and dated Cedar candidate snapshot are retained as historical preparation evidence. |
@@ -120,7 +188,7 @@ History 2 authoring.
 
 The detailed 2026-09-23 LiaisonScape / NarrativeLine observation and
 audit-time evidence progression is preserved in the existing [Release and
-Cross-App Roadmap History](roadmap-history/release-and-cross-app-chronology.md#post-release-liaisonscape-narrativeline-observation-audit-2026-09-23)
+Cross-App Roadmap History](roadmap-history/release-and-cross-app-chronology.md#post-release-liaisonscape--narrativeline-observation-audit-2026-09-23)
 and its [migration result](documentation-ia/roadmap-post-release-cross-app-observation-history-migration1-result.md).
 Current dispositions and operative follow-ups remain in the status index and
 current session inventory; this historical record does not change them.
@@ -155,7 +223,7 @@ The current root-placement status remains summarized in the status index above.
 Current-state reconciliation (2026-09-24): e2r-spec S3 repository-level
 standards/data licensing application and public-sample provenance formalization
 are **COMPLETE**; see the [S3 result](./public-samples/public-sample-provenance-formalization-result.md)
-and [provenance authority](./public-sample-provenance.md). The Initial Public
+and [provenance authority](./public-samples/public-sample-provenance.md). The Initial Public
 Release is **FORMALLY CLOSED** per the [closure audit](./release-governance/e2r-initial-public-release-closure-audit-result.md).
 The dated baseline and release-planning statements below that describe S3,
 publication, or release-readiness as pending are historical snapshots, not
@@ -558,7 +626,7 @@ placement for undated Events. Scope A remains the foundation. The Human then
 adopted a bounded application design: Event-to-Event `relative-position`
 `before`/`after`, pairwise display projection for undated Events, no persisted
 inference, and explicit incomparability/conflict boundaries. The local
-[implementation result](../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-slice-implementation-result1.md)
+[implementation result](../../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-slice-implementation-result1.md)
 records source implementation and automated evidence. The Human clarified that
 reversing one existing Relation's direction replaces that same Recorded
 assertion; a direct contradiction means conflict with another independent
@@ -569,7 +637,7 @@ focused regression tests passed and real-browser acceptance was pending. It was
 superseded by the later History-aware authoring follow-on, whose implementation
 result records automated and real-browser acceptance. Final user-facing
 milestone closure remains for Human acceptance. The preceding
-[implementation-scope preparation](../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-milestone-scope-preparation1.md)
+[implementation-scope preparation](../../e2r-narrative-line/docs/relative-time-0.2.0-user-facing-milestone-scope-preparation1.md)
 preserves its alternatives as a superseded preparation snapshot. This is an
 application-only slice: Relative Time `0.2.0` and History `2.0.0` remain
 Candidates, no normative/specification or Validator change is made, and the
@@ -904,12 +972,14 @@ deferred responsibilities; neither reopens this closure.
 
 ### Future application surface concepts
 
-The following remain future application concepts only, with implementation
-deferred:
+The following retains the earlier application-concept snapshot. ParameterPlotter
+has since become the named, implemented Product; its current implementation,
+Candidate and acceptance boundaries are in the status index above. Notebook
+and unselected portable information concepts remain deferred:
 
 - a future multi-visualization application, currently using
-  **ParameterPlotter** as its leading working name (not a selected product
-  name). Its application-local Prototype 1 interaction checkpoint is
+  **ParameterPlotter** as its working name at that historical snapshot (now the
+  selected Product name). Its application-local Prototype 1 interaction checkpoint is
   Human-accepted; the [checkpoint](../research/prototypes/parameterplotter-1/prototype-1-checkpoint-2026-10-02.md)
   records evidence and limits. Human approved one workspace that compares
   selected E2R Entities using explicitly defined Dimensions and inspects the
@@ -923,8 +993,9 @@ deferred:
   legacy-session browser evidence as a limitation; B3 is not compatibility
   Human PASS. The [implementation and closure
   result](../research/prototypes/parameterplotter-1/prototype-2-bounded-implementation-result-2026-10-02.md)
-  records the boundary. Product-level choices and portable semantics remain
-  deferred.
+  records the boundary. Product choices and the Dimension Assessment Candidate
+  were subsequently adopted in their own bounded records; remaining portable
+  information concepts are still Research, not implied by prototype closure.
   See the [dedicated Research overview](../research/exploratory/multi-visualization-application-pre-implementation-research.md);
 - a Notebook/document surface for diary, gamebook, outline, and long-form
   Object authoring use cases.
@@ -1181,17 +1252,17 @@ target and visual affordance, mobile/touch behavior, and cross-app parity.
 
 ### NarrativeLine Workspace More acceptance — 2026-08-25
 
-**ACCEPTED / COMPLETE.** Add Event remains primary; Open and Export are secondary actions. Home-first acquisition remains canonical, and LiaisonScape parity remains deferred under the current [Home-first direction](#home-first-dataset-acquisition-hierarchy). Native picker and real-touch acceptance remain outside the recorded browser acceptance. Detailed checkpoint evidence is preserved in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#narrativeline-workspace-more-acceptance-2026-08-25) and [modernization authority](../research/exploratory/liaisonscape-workspace-modernization-audit.md).
+**ACCEPTED / COMPLETE.** Add Event remains primary; Open and Export are secondary actions. Home-first acquisition remains canonical, and LiaisonScape parity remains deferred under the current [Home-first direction](#home-first-dataset-acquisition-hierarchy). Native picker and real-touch acceptance remain outside the recorded browser acceptance. Detailed checkpoint evidence is preserved in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#narrativeline-workspace-more-acceptance--2026-08-25) and [modernization authority](../research/exploratory/liaisonscape-workspace-modernization-audit.md).
 
 ### NarrativeLine Timeline Back-to-Top acceptance — 2026-08-25
 
-**ACCEPTED.** Back-to-Top is a transient Timeline navigation affordance; Add Event remains primary and More the terminal secondary-action container. Detailed behavior and acceptance evidence is preserved in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#narrativeline-timeline-back-to-top-acceptance-2026-08-25) and [NarrativeLine next-phase result](narrativeline/e2r-narrativeline-next-phase-and-source-handoff-planning1-result.md).
+**ACCEPTED.** Back-to-Top is a transient Timeline navigation affordance; Add Event remains primary and More the terminal secondary-action container. Detailed behavior and acceptance evidence is preserved in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#narrativeline-timeline-back-to-top-acceptance--2026-08-25) and [NarrativeLine next-phase result](narrativeline/e2r-narrativeline-next-phase-and-source-handoff-planning1-result.md).
 
 ## Active follow-up ledger — 2026-08-25
 
 ### LiaisonScape LS-M2A acceptance — 2026-08-25
 
-**ACCEPTED / COMPLETE at the application-local boundary.** Open/Export remain secondary, and Dataset Replacement Safety is preserved. This does not establish cross-app parity; current deferrals and follow-ups remain in the entries below. Detailed scope and acceptance evidence is preserved in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#liaisonscape-ls-m2a-acceptance-2026-08-25) and [modernization authority](../research/exploratory/liaisonscape-workspace-modernization-audit.md). The dated next-step sequence is historical.
+**ACCEPTED / COMPLETE at the application-local boundary.** Open/Export remain secondary, and Dataset Replacement Safety is preserved. This does not establish cross-app parity; current deferrals and follow-ups remain in the entries below. Detailed scope and acceptance evidence is preserved in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#liaisonscape-ls-m2a-acceptance--2026-08-25) and [modernization authority](../research/exploratory/liaisonscape-workspace-modernization-audit.md). The dated next-step sequence is historical.
 
 ### Current execution order
 
@@ -1338,8 +1409,9 @@ See [NarrativeLine Locale Consumer Acceptance](narrativeline/narrativeline-local
 The dated next-target sequence was LiaisonScape locale consumer
 implementation/alignment, followed by Hub startup locale producer completion
 and final cross-app closure. It is historical sequencing, not a current
-priority selection. Cross-App Locale remains not closed under the linked
-acceptance; the Initial Public Release closure does not complete it. The Hub
+priority selection. That consumer acceptance alone did not close Cross-App
+Locale; its later separate closure/publication verification is recorded in the
+current-status index. The Initial Public Release closure is distinct. The Hub
 direct Handoff capability is separate and remains deferred under the Hub
 milestone acceptance.
 
@@ -1426,12 +1498,14 @@ redesign, or block NarrativeLine `0.2.0`.
 LiaisonScape `0.2.0` is publicly released and its bounded publication is closed
 (see the current status index and [closure result](liaisonscape/liaisonscape-0.2.0-publication-closure-result.md)).
 Application versioning remains separate from Dataset/schema versioning.
-Cross-App Locale, research shelf inventory, and the Hub concept-page update
-remain separate cross-app or future work and do not reopen the completed
-LiaisonScape release decision.
+Cross-App Locale has its separate CLOSED publication record in the status
+index. Research shelf inventory and the Hub concept-page update remain
+separate future work and do not reopen the completed LiaisonScape release.
 
 ### LS-DETAIL-RR1 Related Relation readability — ACCEPTED / CLOSED
 **ACCEPTED / CLOSED** at the project-specific acceptance boundary. Detailed implementation and manual evidence are retained in Roadmap History and the [modernization audit](../research/exploratory/liaisonscape-workspace-modernization-audit.md). Dataset identity, graph visibility, and Delete semantics remain unchanged. Current follow-ups remain: `LS-REL-ENDPOINT-ID1` (audit needed), `LS-DIALOG-DRAFT1` (audit needed), `LS-CTX-R1` (bug/fix needed), and `LS-GRAPH-DRAG1` (bug/audit needed).
+
+<a id="roadmap-reconstruction-checkpoint-current-canonical-summary"></a>
 
 ## Roadmap reconstruction checkpoint — current canonical summary
 
@@ -1439,8 +1513,10 @@ Date: 2026-08-27
 
 This roadmap is a non-normative planning and status document. Dated planning
 and historical checkpoint sections are retained as historical evidence. The
-following current summary takes precedence when older sections use stale
-"next", "audit needed", or "untracked" wording.
+following records the 2026-08-27 reconstruction summary. The current
+mainline and status index above take precedence; this dated summary is not a
+second current-planning authority. Operative OPEN/deferred items remain unless
+a later explicit acceptance or Human decision supersedes them.
 
 ### Completed / synchronized
 
@@ -1551,6 +1627,11 @@ the current status above remain operative.
 
 ### Open / deferred
 
+This is the retained 2026-08-27 scope snapshot, not a fresh OPEN classification
+for every item. Later bounded toolbar, favicon, sample and publication closures
+are recorded in the current status index; unresolved/deferred work is not
+implicitly closed by that distinction.
+
 destructive styling
 parity, viewport toolbar drag-handle / disclosure implementation, `LS-CTX-R1`, the
 Cross-App Visual Style / Flatness Experiment, Initial Node Placement / LS-M3,
@@ -1655,9 +1736,9 @@ push/deployment readiness, public interoperability evidence, and the final
 pre-public-release audit. The later S3 result and Initial Public Release closure
 supersede this sequence as release planning; it is not the current execution
 order. Current status is in the [status index](#current-status-index-2026-10-02).
-Cross-App Locale itself is not closed, but this historical release sequence
-does not select its present priority or imply that the locale workstream blocks
-the already closed release.
+Cross-App Locale subsequently CLOSED under the separate publication
+verification linked in the status index. This historical release sequence
+neither reopens it nor selects a new development priority.
 
 When a completed item appears in an older ledger as current-open, that wording
 is historical. When the same follow-up appears in multiple sections, the
@@ -1727,7 +1808,7 @@ at accepted NarrativeLine runtime `4591f3a`. Formal evidence is recorded in
 accepted by e2r-spec commit `2b52f15`.
 
 The accepted result includes labeled Relation Name / Source / Target identity,
-the Japanese `縺､縺ｪ縺後ｊ縺ｮ蜷榊燕` / `蟋狗せ` / `邨らせ` labels, independently
+the Japanese `つながりの名前` / `始点` / `終点` labels, independently
 wrappable endpoints, Candidate B compact action geometry with narrow fallback,
 matched button/Handoff internal label alignment, long-name robustness, EN/JA
 real-browser verification, and no visible mojibake. Automated evidence was
@@ -1843,7 +1924,7 @@ explicit Relation deletion removes only its keyed Presentation record and
 preserves siblings and unrelated orphans. No global orphan repair or
 Validator/schema policy change is implied.
 
-The Initial Public Release is formally closed; its current status and retained boundaries remain in the status index and [closure audit](./release-governance/e2r-initial-public-release-closure-audit-result.md). The superseded pre-release and LiaisonScape 0.2.0 sequence is preserved, in original order and wording, in the [release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#pre-release-and-liaison-scape-020-release-preparation-chronology); its dated `current`, `next`, `blocked`, and `unauthorized` statements are historical snapshots.
+The Initial Public Release is formally closed; its current status and retained boundaries remain in the status index and [closure audit](./release-governance/e2r-initial-public-release-closure-audit-result.md). The superseded pre-release and LiaisonScape 0.2.0 sequence is preserved, in original order and wording, in the [release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#pre-release-and-liaisonscape-020-release-preparation-chronology); its dated `current`, `next`, `blocked`, and `unauthorized` statements are historical snapshots.
 
 The Initial Node Placement Objective Audit remains relevant as evidence, not as the old release sequence: both Lighthouse samples had stored coordinates and did not exercise missing-coordinate placement. Its [dedicated audit](liaisonscape/liaisonscape-initial-node-placement-objective-audit.md) is retained as context for the current Initial Layout attribution work below; it does not change the current execution order or authorize runtime, schema, or sample changes.
 
@@ -1963,7 +2044,7 @@ and complete restart criteria.
 
 ### Seed PR-3 Browser Capture / runtime diagnostic lineage — historical
 
-The 40 dated Browser Capture, host/runtime qualification, restart, run-identity, transport/helper, and convergence checkpoints are preserved in the [LiaisonScape Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#seed-pr3-browser-capture-and-runtime-diagnostic-chronology-2026-09-04-to-2026-09-05); their detailed evidence remains linked from that history unit. This historical delegation does not change the current-host status or resume condition recorded in the immediately following current-planning entry.
+The 40 dated Browser Capture, host/runtime qualification, restart, run-identity, transport/helper, and convergence checkpoints are preserved in the [LiaisonScape Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#seed-pr-3-browser-capture-and-runtime-diagnostic-chronology-2026-09-04-to-2026-09-05); their detailed evidence remains linked from that history unit. This historical delegation does not change the current-host status or resume condition recorded in the immediately following current-planning entry.
 
 ### PR-3 Browser Evidence current-host runtime blocker synchronization (2026-09-07)
 
@@ -2259,7 +2340,7 @@ not authorized here. Fresh12 evidence is unchanged, Human Review remains
 
 ### Early diagnostic visual smoke check before expensive evidence (2026-09-08)
 
-The [Early Smoke Check policy](./visual-evidence-early-smoke-check-policy.md)
+The [Early Smoke Check policy](./evidence/visual-evidence-early-smoke-check-policy.md)
 is accepted as a lightweight, non-authoritative process safeguard for visual
 output workflows. Before a large candidate matrix, long browser capture, or
 formal visual review, the workflow should inspect the first trustworthy output
@@ -2287,8 +2368,7 @@ checkpoint progression (2026-09-11 to 2026-09-13) is preserved in the
 [historical chronology](roadmap-history/liaisonscape-layout-and-auto-layout-
 chronology.md#initial-layout-product-provider-frontier-and-presentation-
 progression-2026-09-11-to-2026-09-13), with migration details in the
-[bounded result](roadmap-initial-layout-product-frontier-history-migration1-
-result.md). Its dated checkpoint status is historical; current planning and
+[bounded result](documentation-ia/roadmap-initial-layout-product-frontier-history-migration1-result.md). Its dated checkpoint status is historical; current planning and
 operative constraints remain in the coordination authority below.
 
 ### LiaisonScape Dataset display-time performance follow-up (deferred)
@@ -2758,7 +2838,7 @@ and the Initial Layout Release blocker remains `OPEN`.
 The [Hybrid reconstruction pilot result](documentation-ia/roadmap-hybrid-reconstruction-product-verification-pilot-result1.md)
 consolidates the current consequence of PV-01, PV-02, PV-05, and PV-08;
 their dated checkpoint progression is preserved in the [Layout and Auto Layout
-chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution-budget-pilot-roadmap-source-snapshot-2026-09-25).
+chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution--budget-pilot--roadmap-source-snapshot-2026-09-25).
 
 Fast deterministic Initial Placement plus explicit High-quality Auto Layout
 remains a `PROVISIONAL EXECUTION DIRECTION`, not Product adoption. The
@@ -2795,7 +2875,7 @@ preview budget closure remain unresolved.
 Do not treat the measurements as a Product SLA or as adoption of a Worker,
 quality solver, Product default, Adaptive Cascade, or Human Review candidate.
 The dated browser evidence is preserved in the [Layout and Auto Layout
-chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution-budget-pilot-roadmap-source-snapshot-2026-09-25).
+chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution--budget-pilot--roadmap-source-snapshot-2026-09-25).
 
 ### LiaisonScape Product-authoritative Verification Interruptibility Design Study 1 (2026-09-14)
 
@@ -2805,7 +2885,7 @@ qualification boundary. Any resumed work must preserve Product authority,
 exact equivalence, and fail-closed no-partial-result behavior.
 
 Historical stage timings and the dated next-step wording are preserved in the
-[Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution-budget-pilot-roadmap-source-snapshot-2026-09-25).
+[Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution--budget-pilot--roadmap-source-snapshot-2026-09-25).
 
 ### Organic Relationship-Shaped Placement — HYPOTHESIS / FUTURE STRUCTURAL DIRECTION
 
@@ -2831,7 +2911,7 @@ preferred slice is not uniform and the Product-wide verification budget is
 still unestablished. This is not a Product SLA.
 
 Detailed measurements and the dated progression remain in the [Layout and
-Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution-budget-pilot-roadmap-source-snapshot-2026-09-25).
+Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution--budget-pilot--roadmap-source-snapshot-2026-09-25).
 
 ### LiaisonScape Product-authoritative Node-label Inner-loop Accumulator / Interruptibility 1 (2026-09-14)
 
@@ -2841,7 +2921,7 @@ qualification is bounded to those controls; full orchestration and
 Product-wide budget remain open.
 
 Detailed measurements and the dated progression remain in the [Layout and
-Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution-budget-pilot-roadmap-source-snapshot-2026-09-25).
+Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution--budget-pilot--roadmap-source-snapshot-2026-09-25).
 
 ### LiaisonScape Product-wide Verification Budget Closure / Scheduler Policy Study 1 (2026-09-14)
 
@@ -2851,7 +2931,7 @@ not a hard production budget. Keep Product-wide budget, production scheduler,
 provider, Product integration/default, and Human Review boundaries open.
 
 Policy measurements, cancellation trade-offs, and dated next-step wording are
-preserved in the [Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution-budget-pilot-roadmap-source-snapshot-2026-09-25).
+preserved in the [Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution--budget-pilot--roadmap-source-snapshot-2026-09-25).
 
 ### LiaisonScape Product-authoritative Verification Long-unit Attribution / Authority-preserving Micro-splitting 1 (2026-09-14)
 
@@ -2861,7 +2941,7 @@ outlier attribution remained inconclusive. No arbitrary micro-split or
 Product-wide budget is established by this evidence.
 
 The source-step measurements and dated disposition remain in the [Layout and
-Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution-budget-pilot-roadmap-source-snapshot-2026-09-25).
+Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution--budget-pilot--roadmap-source-snapshot-2026-09-25).
 
 ### LiaisonScape Product-authoritative Verification Historical Long-slice Reproduction / Same-run Source-step Attribution 1 (2026-09-14)
 
@@ -2871,7 +2951,7 @@ one-edge, one-routed-edge, and one-Node seams without arbitrary micro-splits.
 This does not establish a Product-wide budget or SLA.
 
 The 60-run evidence and historical status wording remain in the [Layout and
-Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution-budget-pilot-roadmap-source-snapshot-2026-09-25).
+Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#product-verification-execution--budget-pilot--roadmap-source-snapshot-2026-09-25).
 
 compares current Fast Initial Placement with the existing joint-constrained,
 bounded structural-frontier, and limited discrete feasibility-first candidate
@@ -2916,7 +2996,7 @@ not closed. The current planning consequence is:
   retroactively close this screening boundary; and
 - detailed K comparisons, fixture-level misses, timing/regret measurements,
   and dated progression are preserved in the [existing Layout and Auto Layout
-  chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-bounded-screening-formulation-finalist-recall-1-2026-09-14)
+  chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-bounded-screening-formulation--finalist-recall-1-2026-09-14)
   and the dedicated result.
 
 ### LiaisonScape Bounded Multi-stage Product Probe / Dense Cheap-equivalence Closure 1 (2026-09-14)
@@ -2940,7 +3020,7 @@ The current planning consequence is:
 - the detailed probe counts, candidate-evaluation totals, trigger/cost
   matrices, and dated campaign progression are delegated to the [dedicated
   result](liaisonscape/liaisonscape-bounded-multi-stage-product-probe1-result.md) and the
-  [existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-bounded-multi-stage-product-probe-dense-cheap-equivalence-closure-1-2026-09-14).
+  [existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-bounded-multi-stage-product-probe--dense-cheap-equivalence-closure-1-2026-09-14).
 
 ### LiaisonScape Boundary Equivalence-Class Product Completion / Cost Envelope 1 (2026-09-14)
 
@@ -2961,7 +3041,7 @@ planning consequence is:
 
 Class definitions, cost/order matrices, failure-injection detail, candidate
 counts, and dated progression remain in the [dedicated result](liaisonscape/liaisonscape-boundary-equivalence-class-product-completion1-result.md)
-and the [existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-boundary-equivalence-class-product-completion-cost-envelope-1-2026-09-14).
+and the [existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-boundary-equivalence-class-product-completion--cost-envelope-1-2026-09-14).
 
 ### LiaisonScape Independent Risk-Gate / Probe-Target Stability Validation 1 (2026-09-14)
 
@@ -2984,7 +3064,7 @@ risk-gate and probe-target qualification. The current planning consequence is:
 
 Perturbation matrices, independent-control detail, dated formulation, and
 checkpoint progression remain in the [dedicated result](liaisonscape/liaisonscape-independent-risk-gate-probe-target-stability1-result.md)
-and the [existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-independent-risk-gate-probe-target-stability-validation-1-2026-09-14).
+and the [existing Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#liaisonscape-independent-risk-gate--probe-target-stability-validation-1-2026-09-14).
 
 ### LiaisonScape Production-shaped Quality Provider Execution / Browser Cost Envelope 1 (2026-09-14)
 
@@ -3793,7 +3873,7 @@ state and proposal-vs-direct-apply discussion are historical. The later
 [Explicit Auto Layout lifecycle integration](liaisonscape/liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md)
 and [qualified Human Check B disposition](liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md)
 own their bounded results. The original snapshot is preserved in the [Layout
-and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#explicit-auto-layout-readiness-and-pre-release-blocker-roadmap-source-snapshot-2026-09-25).
+and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#explicit-auto-layout-readiness-and-pre-release-blocker--roadmap-source-snapshot-2026-09-25).
 This does not establish general visual-quality acceptance or change Initial
 Automatic Display authority.
 
@@ -3802,7 +3882,7 @@ Automatic Display authority.
 This heading retains its historical anchor. Current Explicit Auto Layout,
 Pin, and presentation responsibilities are summarized below; the dated
 readiness and pre-release progression is in the [existing broad
-chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#explicit-auto-layout-readiness-and-pre-release-blocker-roadmap-source-snapshot-2026-09-25).
+chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#explicit-auto-layout-readiness-and-pre-release-blocker--roadmap-source-snapshot-2026-09-25).
 Dedicated results linked here remain the evidence authorities.
 
 #### LiaisonScape Explicit Auto Layout — active release blocker
@@ -3814,7 +3894,7 @@ quality acceptance, Pin maturity, rollout, or a change to Initial Automatic
 Display. See the [production integration](liaisonscape/liaisonscape-explicit-auto-layout-production-integration-result.md),
 [lifecycle integration](liaisonscape/liaisonscape-explicit-auto-layout-app-lifecycle-integration1-result.md),
 [qualified closure](liaisonscape/liaisonscape-explicit-auto-layout-human-check-b-qualified-closure1-result.md),
-and [dated blocker chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#explicit-auto-layout-readiness-and-pre-release-blocker-roadmap-source-snapshot-2026-09-25).
+and [dated blocker chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#explicit-auto-layout-readiness-and-pre-release-blocker--roadmap-source-snapshot-2026-09-25).
 
 #### Entity Pin / Unpin — Explicit Auto Layout constraint direction
 
@@ -3880,7 +3960,7 @@ and the separate [Human Check B closure](liaisonscape/liaisonscape-explicit-auto
 The DEV diagnostic makes a known invalid-Pin snapshot-capture failure
 observable; it did **not** identify the cause of the earlier intermittent Safe
 Preview failure. Its dated probe and diagnostic details are preserved in the
-[Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#dev-failure-diagnostic-roadmap-source-snapshot-2026-09-25)
+[Layout and Auto Layout chronology](roadmap-history/liaisonscape-layout-and-auto-layout-chronology.md#dev-failure-diagnostic--roadmap-source-snapshot-2026-09-25)
 and the [dedicated diagnostic result](liaisonscape/liaisonscape-explicit-auto-layout-dev-failure-diagnostic1-result.md).
 
 ### Explicit Auto Layout quality follow-ups
@@ -4221,7 +4301,7 @@ Current status is governed by this closure entry and the linked [scope
 closure result](./temporal/history-2-dataset-wide-h1-to-h2-upgrade-scope-closure-result.md).
 Historical proposal, decision-preparation, implementation, blocker-repair,
 and Dataset-wide planning snapshots are preserved in the [History 2 position/
-circa chronology](roadmap-history/release-and-cross-app-chronology.md#history-2-position-circa-authoring-and-dataset-upgrade-chronology-2026-09-19).
+circa chronology](roadmap-history/release-and-cross-app-chronology.md#history-2-positioncirca-authoring-and-dataset-upgrade-chronology-2026-09-19).
 
 ### E2R-INITIAL-PUBLIC-RELEASE-CROSS-APP-FOLLOW-UPS-RECONCILIATION1 (2026-09-19)
 

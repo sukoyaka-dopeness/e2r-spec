@@ -2123,7 +2123,8 @@ changed. The next checkpoint is the NarrativeLine current-state/documentation/
 final release-readiness audit; release execution and new showcase samples are
 not authorized by this closure.
 
-### NarrativeLine current-state / final release-readiness audit (2026-09-30)
+<a id="narrativeline-current-state--final-release-readiness-audit-2026-09-30"></a>
+### NarrativeLine current-state / final release-readiness audit — historical snapshot (2026-09-30)
 
 The current audit is recorded in the
 [NarrativeLine current-state and release-readiness result](../../e2r-narrative-line/docs/current-state-release-readiness-audit-2026-09-30.md).
@@ -2137,9 +2138,11 @@ public-write transaction. Current package metadata is `0.2.0`, but this is
 not an accepted release decision; the existing application-maintenance hold
 at `0.1.0` remains until one is made. The app's Pages workflow deploys on a
 push to `main`, so that push is a public-write action. The QRT acceptance
-fixture remains test-only. This current audit supersedes earlier NarrativeLine
-release-readiness snapshots for present planning; their historical records are
-retained unchanged.
+fixture remains test-only. At the 2026-09-30 checkpoint, this audit superseded
+earlier NarrativeLine release-readiness snapshots for planning at that time. It is
+a dated historical record, not current authority. Current publication status is
+recorded in the [Current status index](#current-status-index-2026-10-02) and the
+[0.2.0 publication verification result](narrativeline/narrativeline-0.2.0-publication-verification-result.md).
 
 ### NarrativeLine Perspective ordering representation decision preparation (2026-09-27)
 

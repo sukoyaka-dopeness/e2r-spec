@@ -1277,9 +1277,11 @@ target and visual affordance, mobile/touch behavior, and cross-app parity.
 
 **ACCEPTED / COMPLETE at the application-local boundary.** Open/Export remain secondary, and Dataset Replacement Safety is preserved. This does not establish cross-app parity; current deferrals and follow-ups remain in the entries below. Detailed scope and acceptance evidence is preserved in the [Release and Cross-App chronology](roadmap-history/release-and-cross-app-chronology.md#liaisonscape-ls-m2a-acceptance--2026-08-25) and [modernization authority](../research/exploratory/liaisonscape-workspace-modernization-audit.md). The dated next-step sequence is historical.
 
-### Current execution order
+<a id="current-execution-order"></a>
 
-This 2026-08-25 execution-order snapshot is superseded and is retained in Roadmap History only. Use the [current canonical reconstruction summary](#roadmap-reconstruction-checkpoint-current-canonical-summary) for current order and priority.
+### Historical execution-order snapshot — 2026-08-25
+
+This 2026-08-25 execution-order snapshot is superseded and retained in Roadmap History only. For current status, use the [Current mainline](#current-mainline-synchronization---2026-10-07) and [Current status index](#current-status-index-2026-10-02). The [E2R-wide milestones](#proposed-e2r-wide-milestones) describe ecosystem planning; they do not establish a new immediate implementation order or priority.
 
 ### Planned visual follow-ups before public release
 
@@ -1520,7 +1522,7 @@ separate future work and do not reopen the completed LiaisonScape release.
 
 <a id="roadmap-reconstruction-checkpoint-current-canonical-summary"></a>
 
-## Roadmap reconstruction checkpoint — current canonical summary
+## Roadmap reconstruction checkpoint — historical summary (2026-08-27)
 
 Date: 2026-08-27
 
@@ -1738,7 +1740,8 @@ larger Research audit follows completion of the current small-fix sequence;
 this record does not silently reorder the roadmap or promote every candidate
 to mandatory implementation.
 
-### Current execution order
+<a id="current-execution-order-1"></a>
+### Current execution order — historical snapshot (2026-08-27)
 
 Historical execution-order snapshot: at this roadmap reconstruction checkpoint,
 the active sequence was Cross-App Locale production readiness, NarrativeLine

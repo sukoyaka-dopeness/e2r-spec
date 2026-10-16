@@ -1,7 +1,38 @@
-# ParameterPlotter (working name) — multi-visualization application research
+# ParameterPlotter — multi-visualization application research
 
-Date: 2026-09-30; current status updated 2026-10-06
-Status: Prototype 1 accepted / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED / successor lifecycle and authoring policies HUMAN-DECIDED / bounded successor functional application behavior HUMAN-ACCEPTED / CLOSED at local source `b9a8e1fee6499c191c66033296e98965d777684e` / current verified local source `111be04898f354efe92856dfdd355ca89845fa59` includes post-acceptance source/UI corrections / Codex 390px real-browser review of all four views PASS / latest local readiness documentation `7280f1fd77d2e1df24e247e680314b3d3c4d2f97` / Product UI audit `e6733aad51cd083e54329a6d59a9de5f364186d3` / current source has no new Human functional acceptance / browser storage failure injection NOT RUN / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / source and docs unpublished / release and deployment not approved
+Date: 2026-09-30; current status updated 2026-10-07
+Status: Formal Product name HUMAN-SELECTED as ParameterPlotter (2026-10-07) / Prototype 1 accepted / bounded application-local Prototype 2 HUMAN-ACCEPTED / CLOSED (19 Human PASS / 0 PENDING / B3 NOT RUN; legacy browser-evidence limitation accepted) / Candidate B first Product slice HUMAN-ACCEPTED / successor lifecycle and authoring policies HUMAN-DECIDED / bounded successor functional behavior HUMAN-ACCEPTED / CLOSED at local source `b9a8e1fee6499c191c66033296e98965d777684e` / latest committed local source `2940b3fbf390e185781f3844f263bfe9401757c5` includes post-acceptance corrections / Workspace Backup/Restore removal HUMAN-ACCEPTED for correction source `34f72fad67b9d59b011dbad3880ff0f5a09a0f45` / formal Product identity applied in later correction `2940b3f` without extending the earlier acceptance / browser storage failure injection NOT RUN / Dimension Assessment Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / local source and docs unpublished / release and deployment not approved
+
+## Current successor Product direction — 2026-10-07
+
+Human selected the Product identity and presentation/acquisition directions
+recorded in the [future-direction Research context](entity-linked-portable-information-future-direction-2026-10-07.md): formal name **ParameterPlotter**, Dataset title editing through existing Metadata, The Ashen Crown as the main sample direction, the selected Japanese core UI vocabulary, Home acquisition aligned with current NarrativeLine/LiaisonScape patterns, and reuse of their accepted/current shell visual language. Exact all-surface copy, sample semantic facts/provenance, and implementation details remain open where noted in that Research record.
+
+Human superseded the 2026-10-05 choice of browser-local persistence plus
+user-managed Workspace Backup/Restore. Current direction retains browser-local
+automatic persistence and same-browser/profile recovery, but removes Download
+Workspace Backup and Restore Workspace Backup from the initial Product.
+Portable save/exchange is E2R Dataset JSON; browser-local persistence serves
+continuity and same-browser recovery. Existing visible degraded/unsaved
+handling and loss protection remain. Dataset replacement and exit protection
+are not waived by removing Backup. Workspace Backup/Restore removal was
+Human-accepted for source
+`34f72fad67b9d59b011dbad3880ff0f5a09a0f45`; the detailed evidence is in the
+[removal acceptance record](../../../e2r-parameter-plotter/docs/workspace-backup-removal-human-acceptance-2026-10-07.md).
+The earlier broad functional acceptance remains tied to
+`b9a8e1fee6499c191c66033296e98965d777684e`. Formal Product identity was applied
+in a later local correction at `2940b3fbf390e185781f3844f263bfe9401757c5`;
+that correction has not received a new broad functional acceptance. Browser
+storage failure injection remains NOT RUN.
+The older persistence/restore decision sections below are retained as dated
+historical evidence, superseded as current Product policy.
+
+The [2026-10-07 Entity-linked portable information audit](entity-portable-information-responsibility-audit-2026-10-07.md)
+and the future-direction Research context are complementary: the audit maps
+ownership gaps and open decision gates; the Research context preserves the
+Human-stated future application direction without adopting new portable
+semantics. Quantity/Measurement/Observation, Classification, provenance
+targeting, portable templates, and Character Sheet ownership remain open.
 
 ## Prototype 1 checkpoint and current handoff — 2026-10-02
 
@@ -119,7 +150,10 @@ dangling Relations, and provide targeted LiaisonScape inspection only when
 the exact Relation can be resolved against the same current Dataset. Human
 also selected browser-local persistence plus a user-managed, self-contained
 ParameterPlotter workspace backup/import with an embedded Dataset dependency
-snapshot. Browser-storage write failure permits editing to continue in the
+snapshot. This 2026-10-05 selection is retained as historical evidence and was
+explicitly superseded on 2026-10-07: current policy removes user-managed
+Workspace Backup/Restore from the initial Product while retaining browser-local
+continuity and recovery. Browser-storage write failure permits editing to continue in the
 current session only with visible degraded/unsaved status. Dataset JSON Export remains a separate portable Dataset artifact. The later
 Dimension Assessment Candidate defines an explicit Dataset-level portable
 Dimension/Assessment representation for authored facts; existing
@@ -132,15 +166,10 @@ Nonblank trim/normalization remains open, and future Extension authoring
 requires a separate decision naming its Extension, version, fields, and need.
 Candidate B remains accepted as its original
 session-only first slice and is not reopened. These remain application-level decisions, not an
-E2R-wide rule. Human has decided Workspace Import/Restore uses whole-workspace
-replacement, not merge, and pre-activation failure leaves both the active
-workspace and prior browser-local copy intact. Replacing changed, degraded, or
-unsaved current work requires explicit loss confirmation with Cancel or
-Discard and Restore; a separate backup is optional. If persistence fails once
-a valid restore is activation-ready, apply it in memory as degraded/unsaved,
-disclose possible loss, and retain the prior browser-local copy until the new
-workspace is successfully persisted. Exact UI and other Product policies
-remain open. Human subsequently decided that ordinary new Entities are
+E2R-wide rule. Human decided Workspace Import/Restore's whole-workspace
+replacement and failure-safety contract on 2026-10-05; those decisions apply to
+the historical backup/restore direction and are not a current initial-Product
+feature requirement after the 2026-10-07 superseding decision. Human subsequently decided that ordinary new Entities are
 created directly as Dataset Entities; Temporary creation/promotion is outside
 the normal successor workflow. Dimensions, comparison values, selection,
 placement, and view state remain workspace-owned; the later Dimension
@@ -154,9 +183,9 @@ migrate, auto-promote, convert, or restore legacy `tempEntities`; it may start
 new workspace state. No migration or rescue guarantee is adopted. See the
 [legacy-workspace decision](parameterplotter-public-product-readiness-checkpoint-2026-10-04.md#human-decision-legacy-candidate-b-temporary-workspace-compatibility--2026-10-05),
 [historical promotion decision](parameterplotter-public-product-readiness-checkpoint-2026-10-04.md#historical-human-decision-temporary-entity-promotion-identity-and-value-continuity--2026-10-05),
-[restore-safety decision record](parameterplotter-public-product-readiness-checkpoint-2026-10-04.md#human-decision-workspace-import--restore-replacement-safety--2026-10-05),
+[historical restore-safety decision record](parameterplotter-public-product-readiness-checkpoint-2026-10-04.md#human-decision-workspace-import--restore-replacement-safety--2026-10-05),
 [Product milestone decision packet](parameterplotter-product-milestone-decision-preparation-2026-10-04.md#human-decision-comparison-work-persistence-and-recovery--2026-10-05), and
-[persistence decision record](parameterplotter-public-product-readiness-checkpoint-2026-10-04.md#human-decision-persistence-and-recovery-promise--2026-10-05).
+[historical persistence decision record](parameterplotter-public-product-readiness-checkpoint-2026-10-04.md#human-decision-persistence-and-recovery-promise--2026-10-05).
 
 ## Human-adopted Dimension Assessment Candidate 0.1.0 - 2026-10-05
 

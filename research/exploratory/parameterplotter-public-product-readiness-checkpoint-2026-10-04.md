@@ -1,7 +1,9 @@
 # ParameterPlotter public Product and deployment readiness checkpoint
 
 Date: 2026-10-04
-Status: **Human-approved capability direction / lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / bounded successor functional behavior HUMAN-ACCEPTED at source `b9a8e1fee6499c191c66033296e98965d777684e` / current local source `111be04898f354efe92856dfdd355ca89845fa59` includes post-acceptance workspace-action and accessibility corrections / Codex 390px real-browser review of all four views PASS / current local readiness documentation `7280f1fd77d2e1df24e247e680314b3d3c4d2f97` / Product UI audit `e6733aad51cd083e54329a6d59a9de5f364186d3` / current source has no new Human functional acceptance / browser storage failure injection NOT RUN / not published / other Product policies remain open**
+Status: **Human-approved capability direction / lifecycle and authoring policies HUMAN-DECIDED / Dimension Assessment Extension Candidate 0.1.0 HUMAN-ADOPTED (not Stable) / bounded successor functional behavior HUMAN-ACCEPTED at source `b9a8e1fee6499c191c66033296e98965d777684e` / Workspace Backup/Restore removal HUMAN-ACCEPTED for correction source `34f72fad67b9d59b011dbad3880ff0f5a09a0f45` / latest committed local source `2940b3fbf390e185781f3844f263bfe9401757c5` includes later formal-name correction, which has not received new broad functional acceptance / browser storage failure injection NOT RUN / local source and docs unpublished / other selected initial-Product directions remain pending**
+
+> **Editorial note (2026-10-16):** Textual damage was identified in this Research document. Some original wording was verified against Git history or existing authoritative material. The four remaining passages were edited for readability with Human approval; these edits are not claims that the exact original wording has been recovered. The damage source and time of occurrence are unknown. Research semantics and existing Human decisions were not changed.
 
 ## Purpose and authority
 
@@ -22,9 +24,13 @@ public application shell, and eventual external deployment. That original
 capability direction named Temporary Entity promotion; Human later superseded
 it as the normal new-Entity path by deciding on direct Dataset Entity
 creation. Human has also selected the Dataset Entity deletion policy and the
-comparison-work persistence/recovery policy recorded below. Exact artifact and storage details, other successor policies,
-shell composition, host, public URL, product name, and release identity remain
-open. Human later adopted the Dimension Assessment Extension Candidate 0.1.0;
+comparison-work persistence/recovery policy recorded below. Exact artifact and
+storage details, other successor policies, shell composition, host, public
+URL, and release identity remain open. Human selected **ParameterPlotter** as
+the formal Product name on 2026-10-07; dated decision snapshots below that
+describe the name as open or as a working name retain their original
+historical status. Human later adopted the Dimension Assessment Extension
+Candidate 0.1.0;
 it is not Stable. Its bounded production Validator/runtime integration is
 functionally Human-accepted for local source revision
 `b9a8e1fee6499c191c66033296e98965d777684e` and has not been published.
@@ -108,7 +114,7 @@ warnings) and keep validation read-only. Require a separate Product rule for
 openability and authoring eligibility. Do not treat `valid: true` as proof
 that every contained Extension is understood or safely editable.
 
-### Entity edit-field allowlist  Ecurrent evidence
+### Entity edit-field allowlist — current evidence
 
 E2R Core gives every Core Object a required `id`, optional `name`, optional
 `description`, and optional `extensions`. The ID identifies the object within
@@ -151,7 +157,7 @@ and satisfy that operation's safety conditions. Unknown data may not be
 repaired, normalized, dropped, or rewritten. Dataset Export revalidates and
 blocks on errors; that export rule does not itself choose editable fields.
 
-### Dataset Entity edit-field allowlist alternatives  Ehistorical preparation
+### Dataset Entity edit-field allowlist alternatives — historical preparation
 
 | Candidate | Initial authoring scope | Benefits | Costs and boundaries |
 |---|---|---|---|
@@ -178,9 +184,9 @@ specific known Extension field was supported by evidence as required for this
 app. The recommendation and alternatives below are retained as the historical
 decision material; the subsequent Human decision is recorded next.
 
-### Human decision: Dataset Entity edit-field allowlist  E2026-10-05
+### Human decision: Dataset Entity edit-field allowlist — 2026-10-05
 
-Human selected **Candidate A  ECore labels only** for initial ordinary Dataset
+Human selected **Candidate A — Core labels only** for initial ordinary Dataset
 Entity editing:
 
 > Ordinary Dataset Entity editing may change only `name` and `description`;
@@ -198,7 +204,7 @@ preservation must be demonstrated when implementation is authorized;
 nonblank normalization and future E2R-wide Research remain separate and do
 not reopen this allowlist decision.
 
-### NarrativeLine blank-value behavior audit  E2026-10-05
+### NarrativeLine blank-value behavior audit — 2026-10-05
 
 In the current NarrativeLine Entity Detail form, both text controls are passed
 to `handleUpdateEntity()` on **Save Entity** exactly as entered. That handler
@@ -219,7 +225,7 @@ path; this is runtime-code evidence, not a Human visual acceptance. The
 behavior differs from LiaisonScape's blank-clears behavior and is not a
 Cross-App convention.
 
-### Entity deletion policy comparison  E2026-10-04 audit snapshot; superseded
+### Entity deletion policy comparison — 2026-10-04 audit snapshot; superseded
 
 LiaisonScape's current `assessEntityDeletion` refuses deletion when any
 incident Relation exists. Its UI directs the user to remove or review those
@@ -256,7 +262,7 @@ reconciled by its documentation-only commit `29b15c09bd91181cbba27dcb5203fec331d
 the old NarrativeLine conflict described in this 2026-10-04 snapshot is not
 current evidence.
 
-### Human decision resolution: Dataset Entity deletion  E2026-10-05
+### Human decision resolution: Dataset Entity deletion — 2026-10-05
 
 ParameterPlotter does not own Relation lifecycle or provide general Relation
 editing. A Dataset Entity with any incident Relation cannot be deleted. The
@@ -301,7 +307,7 @@ allowlist, Validator policy, and comparison-work persistence are recorded in
 their own decision sections. No implementation is authorized by these
 documentation decisions.
 
-### Temporary Entity promotion is a new identity/lifecycle operation  Ehistorical preparation
+### Temporary Entity promotion is a new identity/lifecycle operation — historical preparation
 
 The accepted ParameterPlotter slice has no promotion operation. NarrativeLine
 and LiaisonScape can create Dataset Entities and generate unique Core Object
@@ -320,7 +326,7 @@ promotion. A candidate is an atomic transition that allocates or retains one
 unique Dataset ID and preserves the local value association; its ID rule still
 needs selection.
 
-### Temporary Entity promotion  Ebounded Human decision preparation (2026-10-05; historical)
+### Temporary Entity promotion — bounded Human decision preparation (2026-10-05; historical)
 
 The production source at `sukoyaka-dopeness/e2r-parameter-plotter` HEAD
 `785e70177975d682ce0e97bb97636f978d6362f2` is the accepted Candidate B
@@ -329,7 +335,7 @@ the Entity form creates application-local IDs as `temp:` plus
 `crypto.randomUUID()` and checks them against current Entity IDs. `model.js`
 stores comparison values by Entity ID (`values[entityId][dimensionId]`), and
 `views.js` keys selection/presentation by that identity. The Entity menu still
-renders “Add to Dataset · unavailable E there is no promotion workflow or test
+renders “Add to Dataset · unavailable” — there is no promotion workflow or test
 covering an identity/value transition.
 
 The Core requires each `id` to be a non-empty string unique across all Entity,
@@ -400,7 +406,7 @@ A later decision removed Temporary Entity creation and promotion from the
 normal successor workflow; neither the recommendation nor Candidate C is a
 current creation requirement. No implementation is authorized by this prep.
 
-### Historical Human decision: Temporary Entity promotion identity and value continuity  E2026-10-05
+### Historical Human decision: Temporary Entity promotion identity and value continuity — 2026-10-05
 
 This decision was adopted for a workflow where a new comparison Entity began
 as Temporary and could later be promoted. Human later superseded that premise
@@ -408,7 +414,7 @@ for ordinary new Entity creation. Preserve this decision as historical Product
 evidence; it does not require a normal promotion capability and does not
 determine how legacy Temporary records are handled.
 
-Human selected **Candidate C  Econditional continuity with safe fallback**.
+Human selected **Candidate C — conditional continuity with safe fallback**.
 Promotion retains the Temporary Entity's existing ID when it is valid and
 unique across every Core Object in the active Dataset. Only when it cannot be
 safely reused does promotion assign a new unique Dataset Entity ID. This is an
@@ -442,7 +448,7 @@ Dimension/value/Observation semantics or change ordinary Dataset Entity edit,
 deletion, Validator, persistence, or restore policies. Implementation remains
 unauthorized.
 
-### Human decision: direct Dataset Entity creation lifecycle  E2026-10-05
+### Human decision: direct Dataset Entity creation lifecycle — 2026-10-05
 
 Human decided that the ordinary new-Entity workflow creates a Dataset Entity
 directly. It does not first create a Temporary Entity, and Temporary Entity
@@ -453,7 +459,7 @@ in the existing workspace remains application-local and is not automatically
 converted into portable Dataset facts by this creation decision. The later
 Candidate separately defines portable Dimensions and explicit Dataset
 Assessments. A future need for a
-Dataset-independent comparison subject or “what-if EEntity requires a separate
+Dataset-independent comparison subject or “what-if” Entity requires a separate
 capability proposal and Human decision; none is adopted now.
 
 This decision does not specify the creation form, ID generation method/format,
@@ -561,7 +567,7 @@ round-trip behavior have browser acceptance evidence.
 
 ## Human decisions and candidates
 
-### Decision 1  EWhat exactly is persisted and how can the user recover it?
+### Decision 1 — What exactly is persisted and how can the user recover it?
 
 This is the first gate. It determines whether comparison work is app-local or
 portable, how it survives browser closure, and whether Save/Export names refer
@@ -587,7 +593,7 @@ immediate recovery-promise choice at that time. Human later adopted the separate
 Dimension Assessment Candidate 0.1.0 below; it does not make the workspace
 backup itself an E2R Dataset or automatically convert workspace-only data.
 
-### Human decision: persistence and recovery promise  E2026-10-05
+### Human decision: persistence and recovery promise — 2026-10-05
 
 Human selected **C: browser-local persistence plus user-managed
 ParameterPlotter workspace backup/import**. The candidates below describe
@@ -597,7 +603,7 @@ Product guarantees, not storage-engine choices; A and B were not selected.
 |---|---|---|
 | **A. Browser-local persistence only** | Comparison work is retained for later use in the same browser profile and application origin, subject to browser storage availability. | Clearing site data, browser eviction, profile/device loss, or unavailable storage can remove or prevent recovery. This is not a user-held backup and does not promise transfer to another device. |
 | **B. User-managed ParameterPlotter workspace backup/import only** | The user can create and later restore a separate ParameterPlotter workspace artifact, including on another browser/device when they retain the artifact. | Recovery depends on the user's copy and its freshness. Product responsibility includes explaining what it contains, how it relates to the source Dataset, import compatibility, and safe replacement of current work. It does not itself provide automatic continuity between visits. |
-| **C. Browser-local persistence plus workspace backup/import  ESELECTED** | Ordinary same-profile/origin continuity plus a user-controlled recovery/transfer path independent of browser storage. The workspace backup is self-contained for comparison-work restoration and includes the E2R Dataset snapshot needed by that workspace. | Provides the approved application-local recovery promise without portable E2R semantics, while adding backup freshness, restore, compatibility, replacement, and support responsibilities alongside browser-storage failure handling. |
+| **C. Browser-local persistence plus workspace backup/import — SELECTED** | Ordinary same-profile/origin continuity plus a user-controlled recovery/transfer path independent of browser storage. The workspace backup is self-contained for comparison-work restoration and includes the E2R Dataset snapshot needed by that workspace. | Provides the approved application-local recovery promise without portable E2R semantics, while adding backup freshness, restore, compatibility, replacement, and support responsibilities alongside browser-storage failure handling. |
 
 The embedded Dataset snapshot is a dependency snapshot used to restore the
 ParameterPlotter workspace. It does not make comparison Dimensions or values
@@ -654,7 +660,7 @@ application work, and recoverable session state are independent—but its
 D1-D7 contract applies to NarrativeLine/LiaisonScape and has not been adopted
 as ParameterPlotter behavior.
 
-### Human decision: Workspace Import / Restore replacement safety  E2026-10-05
+### Human decision: Workspace Import / Restore replacement safety — 2026-10-05
 
 Human selected **whole-workspace replacement**. Import/Restore activates the
 backup's embedded E2R Dataset dependency snapshot together with its associated
@@ -666,8 +672,8 @@ Human separately approves them later.
 
 | Candidate | User-visible guarantee | Loss / merge responsibility | Failure behavior and Dataset meaning |
 |---|---|---|---|
-| **A. Whole-workspace replacement  ESELECTED** | A successful restore makes the imported Dataset snapshot and its associated application-local comparison work the active workspace as one unit. | No merge/conflict rules are part of the initial scope. The imported Dataset snapshot may differ from the current Dataset; restore switches to the snapshot included in the backup. If current work may be lost, explicit loss confirmation allows Cancel or Discard and Restore; a separate backup is optional and not required to succeed. | Pre-activation read, parse, eligibility, or activation-preparation failure does not partially replace the active workspace or damage the prior browser-local persisted copy. If persistence fails after a valid restore is activation-ready, apply it as active in-memory degraded/unsaved work and retain the prior persisted copy until the new workspace is successfully written. |
-| **B. Merge into the current workspace  ENOT ADOPTED; OUT OF INITIAL SCOPE** | Would combine imported work with the active workspace while retaining some current content. | Would require Dataset identity/snapshot mismatch, Dimension identity and duplicate handling, Temporary Entity identity, value collision, and divergent Dataset-version semantics. | Merge and partial-merge failure behavior are not designed or adopted. A later proposal requires a separate Human decision. |
+| **A. Whole-workspace replacement — SELECTED** | A successful restore makes the imported Dataset snapshot and its associated application-local comparison work the active workspace as one unit. | No merge/conflict rules are part of the initial scope. The imported Dataset snapshot may differ from the current Dataset; restore switches to the snapshot included in the backup. If current work may be lost, explicit loss confirmation allows Cancel or Discard and Restore; a separate backup is optional and not required to succeed. | Pre-activation read, parse, eligibility, or activation-preparation failure does not partially replace the active workspace or damage the prior browser-local persisted copy. If persistence fails after a valid restore is activation-ready, apply it as active in-memory degraded/unsaved work and retain the prior persisted copy until the new workspace is successfully written. |
+| **B. Merge into the current workspace — NOT ADOPTED; OUT OF INITIAL SCOPE** | Would combine imported work with the active workspace while retaining some current content. | Would require Dataset identity/snapshot mismatch, Dimension identity and duplicate handling, Temporary Entity identity, value collision, and divergent Dataset-version semantics. | Merge and partial-merge failure behavior are not designed or adopted. A later proposal requires a separate Human decision. |
 
 The current states that a restore policy distinguishes are:
 
@@ -691,7 +697,7 @@ the current active workspace is retained and the pre-restore browser-local
 persisted copy is not partially overwritten or damaged. Partial restore is not
 a Product behavior.
 
-**Human decision  Eprotect current work before replacement:** when the current
+**Human decision — protect current work before replacement:** when the current
 Dataset has changes, comparison work is present, or memory-only degraded /
 unsaved work exists, restore requires explicit confirmation that current work
 will be lost. The user may cancel or explicitly choose **Discard and Restore**.
@@ -699,7 +705,7 @@ A current-workspace backup may be offered as an optional recovery route when
 available, but successful backup is not a prerequisite; backup failure does
 not prohibit an explicit discard-and-restore choice.
 
-**Human decision  Epersistence failure after activation is ready:** if the
+**Human decision — persistence failure after activation is ready:** if the
 incoming workspace passes read, parse, eligibility, and activation
 preparation, but the browser-local persistence write then fails, apply the
 restore as the active in-memory workspace and show it as degraded / unsaved.
@@ -740,12 +746,12 @@ behavior, and failure warning/retry presentation remain open or unadopted
 as listed below. The later Dimension Assessment Candidate is recorded in its
 own decision section.
 
-### Decision 2  EWhich Dataset mutations are allowed, and what happens to references?
+### Decision 2 — Which Dataset mutations are allowed, and what happens to references?
 
 The capability direction authorizes Entity edit/delete in principle. Dataset
 Entity editing and deletion boundaries are Human-decided as follows:
 
-- **Editable fields: DECIDED  ECandidate A, Core labels only.** Ordinary
+- **Editable fields: DECIDED — Candidate A, Core labels only.** Ordinary
   Dataset Entity edits may change `name` and `description`; `id` is immutable;
   other known/unknown fields, Extensions, and unrelated Dataset content must
   be retained. Blank or whitespace-only text removes the optional field, and
@@ -760,7 +766,7 @@ Entity editing and deletion boundaries are Human-decided as follows:
   policy, not an E2R-wide rule. Unknown/unsupported Dataset authoring
   eligibility remains under Decision 3 and is not settled by this deletion
   decision.
-- **New Entity creation lifecycle: DECIDED  Ecreate Dataset Entities
+- **New Entity creation lifecycle: DECIDED — create Dataset Entities
   directly.** Temporary Entity creation/promotion is outside the normal
   successor workflow. Dimensions, comparison values, selection, placement,
   and view state remain workspace-owned; this decision does not copy them into
@@ -780,7 +786,7 @@ convert, or restore legacy `tempEntities`. The successor may start new workspace
 state; no migration UI, rescue guarantee, or concrete fresh-start mechanism is
 adopted. No Temporary Entity promotion is required in the normal workflow.
 
-### Human decision: Validator open / authoring policy  E2026-10-05
+### Human decision: Validator open / authoring policy — 2026-10-05
 
 The Validator is a read-only diagnostic dependency, not a Product policy
 engine. Its `valid` result is false when any diagnostic has severity `error`;
@@ -838,7 +844,7 @@ eligible. The existing E2R Dataset Entity deletion policy and workspace
 replacement decisions remain unchanged. This decision preparation does not
 authorize Validator integration or runtime changes.
 
-### Decision 4  ESave, Export, and replacement language
+### Decision 4 — Save, Export, and replacement language
 
 The Product distinction is decided; exact labels and flows remain open:
 
@@ -860,7 +866,7 @@ is not adopted wholesale as ParameterPlotter's exact contract. Exact
 replacement behavior when one artifact has been exported/backed up but the
 other has not remains undecided.
 
-### Decision 5  EPublic shell, hosting, and release identity
+### Decision 5 — Public shell, hosting, and release identity
 
 **Can wait until the workflows are specified and accepted.** The approved
 direction requires an externally usable shell and eventual deployment, but
@@ -978,7 +984,7 @@ This section preserves its original decision-preparation state. Human later
 selected the Dataset mutation / Export baseline, replacement and exit
 protection, and bounded Candidate authoring policies summarized in the
 [current implementation checkpoint](#current-successor-implementation-checkpoint-2026-10-05).
-Its proposals and “not authorized Ewording below describe that earlier gate,
+Its proposals and “not authorized” wording below describe that earlier gate,
 not current status.
 
 Status: **Decision preparation only; no lifecycle policy is adopted by this
@@ -1062,7 +1068,7 @@ a Dataset, restoring a workspace, and leaving/reloading the application:
 | **C. Always require explicit confirmation for any changed current workspace** | Any Dataset mutation or comparison-work change triggers the same confirmation regardless of browser persistence, export, or backup; action outcomes remain separate. | Easiest safety rule to explain, but may warn even when the requested operation would preserve the work or when a verified recovery copy exists. |
 
 Under recommended A, the following cases remain distinct rather than collapsing
-to one “saved Eflag: E2R export succeeds while workspace-only drafts/state
+to one “saved” flag: E2R export succeeds while workspace-only drafts/state
 remain; workspace backup succeeds while the active Dataset has changes not
 exported as E2R JSON; browser persistence succeeds while no user-managed backup
 exists; and browser persistence fails while active memory contains the only
@@ -1086,7 +1092,7 @@ minimum already includes the Dataset snapshot carrying portable Dimensions
 and Assessments plus the associated comparison work. It does not imply a
 backup of every transient view or browser state.
 
-### Candidate authoring and runtime authorization  Ehistorical preparation
+### Candidate authoring and runtime authorization — historical preparation
 
 Human subsequently selected bounded Candidate authoring and authorized the
 first successor implementation. The original comparison and authorization
@@ -1188,6 +1194,56 @@ This status does not make Candidate `0.1.0` Stable and does not
 authorize release, tag, deployment, Pages, or Hub publication. Cross-consumer
 interoperability and Stable review remain separate gates.
 
-## Product / UI completion audit - 2026-10-07
+## Current Human-selected Product direction — 2026-10-07
 
-The local implementation checkpoint `111be04898f354efe92856dfdd355ca89845fa59` groups Open E2R Dataset, Workspace Restore, E2R JSON Export, and Workspace Backup under a non-primary More disclosure while preserving the three separate artifact/lifecycle responsibilities. This is post-Acceptance correction only; functional Human Acceptance remains fixed at `b9a8e1fee6499c191c66033296e98965d777684e`. The audit and its 54-test validation are recorded in [ParameterPlotter documentation](../../../e2r-parameter-plotter/docs/product-ui-completion-audit-2026-10-07.md) and local documentation commit `e6733aad51cd083e54329a6d59a9de5f364186d3`. The More disclosure has desktop-sized Edge evidence only; the previous 390px view audit does not cover it. Home/startup responsibilities, EN/JA scope and terminology, sample content/provenance, Footer/Credits and identity, and Dataset-title authoring remain open. The successor source is unpublished; no push, release, or deployment is authorized by this audit.
+Human selected **ParameterPlotter** as the formal Product name. Dataset title
+editing belongs in the initial Product and uses existing
+`extensions.metadata.title` responsibility, without a new top-level name. The
+Ashen Crown is the main sample direction, but its semantic sample facts and
+provenance remain Human-authored/approved and have not been added. The selected
+Japanese core UI vocabulary is Dimension = 評価軸 (軸 in narrow context),
+Assessment = 値, Profile = プロファイル, Radar = レーダー, Quadrant = 四象限
+and Matrix = マトリクス. This does not select all dialog, error, confirmation,
+or empty-state wording; cross-app comparison with NarrativeLine and LiaisonScape
+is still needed. Home/acquisition should follow their current pattern:
+Continue Editing only when recoverable browser-local work exists, New Dataset,
+Open E2R Dataset, and Open Sample Dataset. Shell visual language should reuse
+their accepted/current evidence. Exact CSS, DOM, and breakpoints are not fixed.
+
+Human explicitly superseded the 2026-10-05 selection of browser-local
+persistence plus user-managed Workspace Backup/Restore. Current initial Product
+direction retains browser-local automatic persistence and same-browser/profile
+continuity/recovery, but excludes Download Workspace Backup and Restore
+Workspace Backup. Portable save/exchange is E2R Dataset JSON; browser-local
+persistence is for same-browser continuity. Existing explicit loss protection
+for Dataset replacement/exit and visible degraded/unsaved handling remain in
+force; removing Backup does not imply that a memory-only state is saved or
+remove a loss warning. Exact storage-failure retry/recovery behavior remains
+unselected.
+
+Workspace Backup/Restore UI and runtime behavior were removed and Human-accepted
+for ParameterPlotter source
+`34f72fad67b9d59b011dbad3880ff0f5a09a0f45`; see the [removal acceptance
+record](../../../e2r-parameter-plotter/docs/workspace-backup-removal-human-acceptance-2026-10-07.md).
+The prior broad Functional Human Acceptance remains tied to its recorded source
+revision. Formal Product identity was applied in a later correction at
+`2940b3fbf390e185781f3844f263bfe9401757c5`, without extending that acceptance.
+Earlier dated decisions below remain evidence of the
+policy that was then selected;
+they are superseded as current Product authority only where the 2026-10-07
+direction above conflicts with them. Candidate 0.1.0 semantics, its status as
+non-Stable, historical Candidate B acceptance, and the accepted source
+revision remain unchanged.
+
+The broader future information direction and its open Research gates are
+recorded in [Entity-linked portable information: future direction and Research
+context](entity-linked-portable-information-future-direction-2026-10-07.md).
+It complements rather than replaces the [bounded responsibility audit](entity-portable-information-responsibility-audit-2026-10-07.md):
+generic value carriers, Quantity/Measurement/Observation ownership,
+Classification, provenance targets, portable parameter templates, and
+Character Sheet ownership remain unresolved. No new portable semantics are
+adopted.
+
+## Product / UI completion audit - 2026-10-07 (dated implementation snapshot)
+
+The local implementation checkpoint `111be04898f354efe92856dfdd355ca89845fa59` groups Open E2R Dataset, Workspace Restore, E2R JSON Export, and Workspace Backup under a non-primary More disclosure while preserving the three separate artifact/lifecycle responsibilities. This is post-Acceptance correction only; functional Human Acceptance remains fixed at `b9a8e1fee6499c191c66033296e98965d777684e`. The audit and its 54-test validation are recorded in [ParameterPlotter documentation](../../../e2r-parameter-plotter/docs/product-ui-completion-audit-2026-10-07.md) and local documentation commit `e6733aad51cd083e54329a6d59a9de5f364186d3`. The More disclosure has desktop-sized Edge evidence only; the previous 390px view audit does not cover it. Its listed open Product decisions describe that audit snapshot and are superseded where the current Human-selected Product direction above resolves them. The successor source is unpublished; no push, release, or deployment is authorized by this audit.

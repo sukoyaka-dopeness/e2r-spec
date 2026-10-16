@@ -1,0 +1,90 @@
+<div id="apollo-routing-inspection">
+  <style>
+    #apollo-routing-inspection { color: var(--foreground); font: 400 14px/1.4 system-ui, sans-serif; }
+    #apollo-routing-inspection .controls { display:flex; flex-wrap:wrap; gap:12px; align-items:end; margin-bottom:10px; }
+    #apollo-routing-inspection label { display:flex; flex-direction:column; gap:4px; }
+    #apollo-routing-inspection select, #apollo-routing-inspection button { font:inherit; color:var(--foreground); background:var(--background); border:1px solid var(--border); padding:5px 8px; }
+    #apollo-routing-inspection button { cursor:pointer; }
+    #apollo-routing-inspection .readout { margin:0 0 8px; min-height:22px; }
+    #apollo-routing-inspection svg { display:block; width:100%; height:520px; border:1px solid var(--border); background:var(--background); touch-action:none; }
+    #apollo-routing-inspection .route { fill:none; stroke:var(--muted-foreground); stroke-width:2; opacity:.62; }
+    #apollo-routing-inspection .route.focus { stroke:var(--viz-series-1); stroke-width:4; opacity:1; }
+    #apollo-routing-inspection .route.straight { stroke:var(--viz-series-2); stroke-width:3; stroke-dasharray:8 6; opacity:.95; }
+    #apollo-routing-inspection .node { fill:var(--card); stroke:var(--border); stroke-width:1.5; }
+    #apollo-routing-inspection .node.focus { stroke:var(--viz-series-1); stroke-width:3; }
+    #apollo-routing-inspection .node-label { fill:var(--foreground); font-size:11px; text-anchor:middle; dominant-baseline:middle; pointer-events:none; }
+    #apollo-routing-inspection .edge-label { fill:var(--muted-foreground); font-size:10px; pointer-events:none; }
+    #apollo-routing-inspection .legend { display:flex; flex-wrap:wrap; gap:14px; margin-top:8px; color:var(--muted-foreground); }
+    #apollo-routing-inspection .swatch { display:inline-block; width:22px; border-top:3px solid currentColor; margin-right:5px; vertical-align:middle; }
+    #apollo-routing-inspection .dash { border-top-style:dashed; }
+  </style>
+  <div class="controls">
+    <label>Inspect edge
+      <select id="edge-select" aria-label="Inspect edge"></select>
+    </label>
+    <label>View
+      <select id="view-select" aria-label="View mode">
+        <option value="compare">Current route + straight candidate</option>
+        <option value="current">Current routes only</option>
+        <option value="straight">Straight candidate only</option>
+      </select>
+    </label>
+    <button id="reset-view" type="button">Reset pan / zoom</button>
+  </div>
+  <p id="readout" class="readout" aria-live="polite"></p>
+  <svg id="route-svg" role="img" aria-label="Apollo 11 current route and straight candidate diagnostic comparison" viewBox="-130 -90 560 520"></svg>
+  <div class="legend"><span><span class="swatch" style="color:var(--viz-series-1)"></span>selected current route</span><span><span class="swatch dash" style="color:var(--viz-series-2)"></span>straight candidate</span><span><span class="swatch" style="color:var(--muted-foreground)"></span>other current routes</span></div>
+  <script>
+    (() => {
+      const root = document.getElementById("apollo-routing-inspection");
+      const svg = root.querySelector("#route-svg");
+      const select = root.querySelector("#edge-select");
+      const view = root.querySelector("#view-select");
+      const readout = root.querySelector("#readout");
+      const data = {
+        nodes: {
+          armstrong:[64.452,275.674], aldrin:[173.913,321.014], collins:[10.638,165.795], nasa:[239.982,265.789],
+          columbia:[154.384,146.030], eagle:[299.371,167.664], "saturn-v":[55.151,55.807], moon:[283.646,44.577], hornet:[159.794,-4.154]
+        },
+        labels: {armstrong:"armstrong", aldrin:"aldrin", collins:"collins", nasa:"NASA", columbia:"Columbia", eagle:"Eagle", "saturn-v":"Saturn V", moon:"Moon", hornet:"Hornet"},
+        routes: [
+          {id:"entity-1",s:"armstrong",t:"nasa",a:[95.749,251.625],c:[148.843,210.826],b:[207.982,246.491],o:-60,l:120.540,sl:111.706,d:1.0791,nd:51.43,ld:41.80,xc:4,xs:1},
+          {id:"entity-2",s:"aldrin",t:"nasa",a:[204.530,295.422],c:[206.947,293.401],b:[209.364,291.381],o:0,l:6.300,sl:6.300,d:1,nd:141.46,ld:65.59,xc:0,xs:0},
+          {id:"entity-3",s:"collins",t:"nasa",a:[42.498,187.624],c:[115.718,237.792],b:[207.982,258.579],o:24,l:181.150,sl:180.376,d:1.0043,nd:75.58,ld:48.33,xc:3,xs:4},
+          {id:"entity-4",s:"armstrong",t:"eagle",a:[96.452,264.412],c:[186.924,232.572],b:[267.371,186.135],o:12,l:188.260,sl:188.119,d:1.0007,nd:64.36,ld:0,xc:4,xs:4},
+          {id:"entity-5",s:"aldrin",t:"eagle",a:[173.350,289.014],c:[171.628,191.150],b:[267.371,173.547],o:-84,l:165.185,sl:118.513,d:1.3938,nd:16.17,ld:4.90,xc:4,xs:0},
+          {id:"entity-6",s:"collins",t:"columbia",a:[42.638,161.395],c:[82.511,155.912],b:[122.384,150.430],o:0,l:80.496,sl:80.496,d:1,nd:102.90,ld:72,xc:1,xs:1},
+          {id:"entity-7",s:"columbia",t:"eagle",a:[186.384,150.805],c:[226.878,156.847],b:[267.371,162.889],o:0,l:81.884,sl:81.884,d:1,nd:105.82,ld:0,xc:0,xs:0},
+          {id:"entity-8",s:"nasa",t:"saturn-v",a:[207.982,255.602],c:[84.513,216.299],b:[61.005,87.807],o:-84,l:235.819,sl:199.557,d:1.1817,nd:14.96,ld:14.20,xc:4,xs:2},
+          {id:"entity-9",s:"eagle",t:"moon",a:[295.283,135.664],c:[291.509,106.120],b:[287.734,76.577],o:0,l:59.568,sl:59.568,d:1,nd:141.08,ld:9.91,xc:0,xs:0},
+          {id:"entity-10",s:"saturn-v",t:"columbia",a:[66.479,87.807],c:[80.550,127.555],b:[122.384,138.023],o:36,l:78.611,sl:53.763,d:1.4622,nd:111.33,ld:69.79,xc:0,xs:0},
+          {id:"entity-11",s:"hornet",t:"columbia",a:[158.641,27.846],c:[157.089,70.938],b:[155.537,114.030],o:0,l:86.240,sl:86.240,d:1,nd:102.42,ld:50.72,xc:0,xs:0}
+        ]
+      };
+      for (const route of data.routes) {
+        const option = document.createElement("option"); option.value = route.id; option.textContent = `${route.id}: ${data.labels[route.s]} → ${data.labels[route.t]}`; select.append(option);
+      }
+      select.value = "entity-10";
+      let transform = {x:0,y:0,k:1}; let drag = null;
+      const point = (pair) => ({x:pair[0],y:pair[1]});
+      const path = (route, straight) => { const a=straight?route.a:route.a, b=route.b, c=straight?[(route.a[0]+route.b[0])/2,(route.a[1]+route.b[1])/2]:route.c; return `M ${a[0]} ${a[1]} Q ${c[0]} ${c[1]} ${b[0]} ${b[1]}`; };
+      const draw = () => {
+        const chosen = data.routes.find(r=>r.id===select.value); const mode=view.value;
+        svg.innerHTML = "";
+        const layer = document.createElementNS("http://www.w3.org/2000/svg","g"); layer.setAttribute("transform",`translate(${transform.x} ${transform.y}) scale(${transform.k})`); svg.append(layer);
+        for (const route of data.routes) { if(mode==="straight" || route.id===chosen.id && mode==="compare") continue; const p=document.createElementNS(svg.namespaceURI,"path"); p.setAttribute("d",path(route,false)); p.setAttribute("class",`route ${route.id===chosen.id?"focus":""}`); layer.append(p); }
+        if(mode!=="current") { const p=document.createElementNS(svg.namespaceURI,"path"); p.setAttribute("d",path(chosen,true)); p.setAttribute("class","route straight"); layer.append(p); }
+        for (const [id,coords] of Object.entries(data.nodes)) { const circle=document.createElementNS(svg.namespaceURI,"circle"); circle.setAttribute("cx",coords[0]); circle.setAttribute("cy",coords[1]); circle.setAttribute("r","16"); circle.setAttribute("class",`node ${chosen.s===id||chosen.t===id?"focus":""}`); layer.append(circle); const text=document.createElementNS(svg.namespaceURI,"text"); text.setAttribute("x",coords[0]); text.setAttribute("y",coords[1]); text.setAttribute("class","node-label"); text.textContent=data.labels[id]; layer.append(text); }
+        for (const route of data.routes) { const text=document.createElementNS(svg.namespaceURI,"text"); text.setAttribute("x",route.c[0]); text.setAttribute("y",route.c[1]); text.setAttribute("class","edge-label"); text.textContent=route.id; layer.append(text); }
+        const directStatus = chosen.nd >= 60 ? "straight node-clear" : "straight node-blocked"; const labelStatus = chosen.ld > 0 ? "straight label-clear" : "straight label-blocked"; const crossDelta = chosen.xs - chosen.xc;
+        readout.textContent = `${chosen.id} · curvature offset ${chosen.o} · detour ${chosen.d.toFixed(3)}× · current length ${chosen.l.toFixed(1)} vs straight ${chosen.sl.toFixed(1)} · ${directStatus} (${chosen.nd.toFixed(1)}) · ${labelStatus} · crossings current ${chosen.xc}, straight-vs-current ${chosen.xs} (${crossDelta>=0?"+":""}${crossDelta})`;
+      };
+      select.addEventListener("change",draw); view.addEventListener("change",draw); root.querySelector("#reset-view").addEventListener("click",()=>{transform={x:0,y:0,k:1};draw();});
+      svg.addEventListener("pointerdown",e=>{svg.setPointerCapture(e.pointerId);drag={x:e.clientX,y:e.clientY,tx:transform.x,ty:transform.y};});
+      svg.addEventListener("pointermove",e=>{if(!drag)return;transform.x=drag.tx+(e.clientX-drag.x)/2;transform.y=drag.ty+(e.clientY-drag.y)/2;draw();});
+      svg.addEventListener("pointerup",()=>{drag=null;}); svg.addEventListener("pointercancel",()=>{drag=null;});
+      svg.addEventListener("wheel",e=>{e.preventDefault();transform.k=Math.max(.35,Math.min(3,transform.k*(e.deltaY<0?1.1:.9)));draw();},{passive:false});
+      draw();
+    })();
+  </script>
+</div>

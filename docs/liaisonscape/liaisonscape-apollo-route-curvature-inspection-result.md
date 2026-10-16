@@ -106,7 +106,7 @@ it did not assert that a full rerun would preserve every downstream route.
 The temporary inspection surface allows edge-by-edge selection and comparison
 of current and straight candidate geometry, with pan and zoom:
 
-`C:/Users/extra/E2R/e2r-spec/work/apollo-routing-inspection.html`
+[`work/apollo-routing-inspection.html`](../../work/apollo-routing-inspection.html)
 
 It is non-authoritative and intentionally shows diagnostic geometry only. Its
 script syntax check passed; no Product or historical evidence file was changed.

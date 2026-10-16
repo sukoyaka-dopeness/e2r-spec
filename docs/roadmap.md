@@ -907,6 +907,30 @@ provenance, caching, deterministic selection, and adoption boundaries.
 
 ## Application UX maintenance follow-up
 
+### Optional Entity text blank behavior across applications
+
+**APPLICATION-LEVEL CONSISTENCY FOLLOW-UP / PREFERRED DIRECTION, NOT A
+CROSS-APP STANDARD.** Current evidence differs: NarrativeLine keeps blank and
+whitespace-only Entity `name` / `description` as present strings; LiaisonScape
+removes the optional field; ParameterPlotter has selected Candidate A
+(`name` / `description` only) and applies its Human-decided blank-removes
+policy to those allowlisted fields. Prefer aligning application behavior with
+LiaisonScape / ParameterPlotter's blank-to-absent treatment. This does not
+authorize a NarrativeLine change. Any
+NarrativeLine implementation proposal first requires a bounded impact audit
+covering existing Datasets, tests, related forms/services, and other Core
+Object authoring surfaces. The evidence and future Core-semantics Research
+responsibility are recorded in the [optional Core text field Research seed](../research/exploratory/optional-core-text-field-blank-semantics-research-seed.md).
+
+### Cross-App single-line Enter-to-commit consistency
+
+**FUTURE UX FOLLOW-UP / NOT YET ADOPTED.** Evaluate Enter-to-commit in the
+local ParameterPlotter Prototype. After Human-use evidence, audit applicable
+single-line edit surfaces in NarrativeLine and LiaisonScape; any shared
+Cross-App convention requires a later Human decision. Do not apply it
+mechanically to Search, multiline input, native selects, or ambiguous submit
+behavior. The bounded observation is in [ParameterPlotter research](../research/exploratory/multi-visualization-application-pre-implementation-research.md#local-prototype-observation-enter-to-commit--2026-10-01).
+
 The following bounded application-maintenance items are recorded for both
 NarrativeLine and LiaisonScape. They do not change E2R Core or Extension
 semantics:

@@ -2,7 +2,7 @@
 
 Date: 2026-10-14
 
-Status: **PRODUCT CONTRACT HUMAN APPROVED / IMPLEMENTED LOCALLY / HUMAN BROWSER ACCEPTANCE PENDING**.
+Status: **PRODUCT CONTRACT HUMAN APPROVED / IMPLEMENTED LOCALLY / HUMAN ACCEPTED / CLOSED (BOUNDED)**. Decision date: 2026-10-17.
 
 ## Scope and authority
 
@@ -82,9 +82,18 @@ historical closure or establish new acceptance.
 keeps its **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** scope. An owning
 tab with degraded memory retains Home Return and existing Workspace Export;
 Export cannot clear the save-refusal latch. New ownership/lifecycle behavior
-requires its own Human Browser Review.
+has separate Human Browser Review evidence recorded below; this does not
+broaden the historical M1-C6 or M1-C21 closures.
 
 See the [implementation and verification record](../../../e2r-parameter-plotter/docs/single-active-editor-implementation-2026-10-14.md)
-for executable evidence and review cases. Automated/DOM evidence is not real
-browser lifecycle, visual, download-completion or assistive-technology acceptance.
+for executable evidence, review cases, and the Human-reported SAE-01–SAE-07
+**PASS (BOUNDED)** results. Human formally accepted the approved Product Contract
+and integrated implementation on 2026-10-17: **HUMAN ACCEPTED / CLOSED
+(BOUNDED)**. BU-01 and BU-02 also
+record bounded Human Browser PASS results for beforeunload protection with
+unapplied input and degraded persistence. See the [Final Acceptance Decision
+Packet](./parameterplotter-single-active-editor-final-acceptance-decision-packet-2026-10-17.md)
+for the coverage matrix, historical proposal, and formal decision. Automated/DOM evidence is
+not real browser lifecycle, visual, download-completion or assistive-technology
+acceptance.
 Tab C root cause remains **UNRESOLVED**, Diagnostics D2 **OPEN**, PUBLIC RELEASE **NO-GO**.

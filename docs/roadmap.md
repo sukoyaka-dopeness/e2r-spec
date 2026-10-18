@@ -42,10 +42,11 @@ Future evidence disposition, provenance, archiving, and cleanup remain separate;
 
 <a id="current-mainline-synchronization---2026-10-07"></a>
 
-## Current mainline synchronization - 2026-10-18
+## Current mainline synchronization - 2026-10-19
 
-ParameterPlotter is a pre-public Product. The integrated implementation is saved
-in local checkpoint `9c4dcbd`; Single Active Editor's product contract is
+ParameterPlotter is a pre-public Product. The 2026-10-14 integrated
+implementation baseline is saved in local checkpoint `9c4dcbd`; Single Active
+Editor's product contract is
 Human-approved, its implementation and automated checks are complete, and its
 2026-10-17 Human decision is **HUMAN ACCEPTED / CLOSED (BOUNDED)**. The [approved design](parameterplotter/parameterplotter-single-active-editor-design-2026-10-14.md)
 and [implementation evidence](../../e2r-parameter-plotter/docs/single-active-editor-implementation-2026-10-14.md)
@@ -55,12 +56,16 @@ the prior normal two-editable-tab UX; it does not expand or revoke historical
 M1-C6/M1-C21 bounded acceptances. ParameterPlotter Home/common UI and Focus
 Restoration were separately **HUMAN ACCEPTED / CLOSED (BOUNDED)** on
 2026-10-18; see the [formal acceptance record](../../e2r-parameter-plotter/docs/home-common-ui-human-acceptance-closure-2026-10-18.md).
+ParameterPlotter's Dataset title confirmation wording and its reviewed basic
+visual/interaction behavior were independently **HUMAN ACCEPTED / CLOSED
+(BOUNDED)** on 2026-10-19; see the [title wording acceptance](../../e2r-parameter-plotter/docs/dataset-title-confirmation-wording-human-acceptance-2026-10-19.md).
 
 <a id="current-human-gates"></a>
 
-Current Human gates include independent title-button copy and Workspace
-notification UI. Automated and DOM evidence supports those implementations; it
-is not Human Browser PASS. Home/common UI, including the reviewed non-owner
+The independent title-button copy gate has its bounded Human closure; Workspace
+notification UI still awaits overall Human Acceptance. Automated and DOM
+evidence supports implemented behavior but does not itself establish Human
+Browser PASS. Home/common UI, including the reviewed non-owner
 common Footer/Credits and Workspace brand focus, has its separate
 [bounded Human closure](../../e2r-parameter-plotter/docs/home-common-ui-human-acceptance-closure-2026-10-18.md).
 Workspace/right Drawer button sizing and Entity menu visibility have their
@@ -119,7 +124,7 @@ Push, deployment, release and publication require separate authorization.
 
 <a id="current-status-index--2026-10-15"></a>
 
-## Current status index — 2026-10-18
+## Current status index — 2026-10-19
 
 This short section is the entry point for current status. Detailed checkpoint
 records and retained planning entries remain below for evidence and chronology;
@@ -127,7 +132,7 @@ they do not override this index merely because they contain stronger-looking
 words such as `NEXT`, `OPEN`, `BLOCKED`, or `UNSTARTED`. The completed
 workspace-migration chronology is preserved in the [roadmap history
 index](roadmap-history/README.md); its dated status language is historical.
-Current-state synchronization is dated 2026-10-18; this records status updates,
+Current-state synchronization is dated 2026-10-19; this records status updates,
 not a new audit of every workstream. Dated implementation and
 acceptance records retain their original evidence boundaries; old source hashes
 are historical snapshots, not necessarily the latest integrated source. The
@@ -164,7 +169,7 @@ Roadmap History extraction/compression remains a separate later stage.
 | Hub three-app and sample Gallery review | **IMPLEMENTED / AUTOMATED VERIFIED / CODEX BROWSER VERIFIED / HUMAN BROWSER REVIEW PENDING** | Isolated Chrome confirmed three application cards, the approved top/bottom sample ordering, equal bottom-row alignment at desktop width, EN/JA switching, configured ParameterPlotter guide paths, and no horizontal overflow at 390px. Human review remains pending. See the [local Hub integration checkpoint](../../e2r-hub/docs/local-ashen-crown-handoff-and-sample-locale-integration-2026-10-09.md) and [ParameterPlotter readiness audit](../../e2r-parameter-plotter/docs/user-guides-and-pre-public-readiness-2026-10-09.md). |
 | <a id="human-decision-ko-fi"></a>Hub optional Ko-fi support link | **RECORDED PROPOSAL / ADOPTION AND PLACEMENT DECISION PENDING** | Retain the proposal for an optional external support link to https://ko-fi.com/sukoyaka_dopeness near the bottom of Hub Home, subordinate to Dataset/app actions and never required for use. This does not replace GitHub Sponsors. No adoption, implementation priority or placement is authorized by this synchronization; Human must decide before implementation. |
 | Cross-app Dataset JSON export filename consistency | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | On 2026-10-12, Human confirmed short Japanese title, long Japanese title, and title-less fallback downloads in all three apps. Long-title outputs matched with hash `d61fccfc`, and the full title remained in each JSON. The browser appended `(1)`, `(2)`, etc. for duplicate download names. See the [bounded Human Acceptance closure](cross-app/cross-app-dataset-json-export-filename-human-acceptance-closure-2026-10-12.md). See the [cross-app decision](cross-app/cross-app-dataset-json-export-filename-consistency.md). The independent UX and Metadata follow-ups below do not reopen this review or earlier Acceptance. |
-| Cross-app Dataset title confirmation wording | **PARAMETERPLOTTER IMPLEMENTED / AUTOMATED PASS / HUMAN VISUAL ACCEPTANCE PENDING** | ParameterPlotter now uses 「タイトルを適用」 / `Apply title`, matching the related applications, at integrated checkpoint `9c4dcbd`. This changes presentation only, not submit/draft/save behavior. See [implementation and independent follow-ups](parameterplotter/parameterplotter-home-peer-work-safety-evidence-checkpoint-2026-10-14.md#independent-follow-ups-and-exclusions). Narrow layout and visual acceptance remain pending; this is not a new Cross-App standard or expansion of M1-C21. |
+| Cross-app Dataset title confirmation wording | **PARAMETERPLOTTER HUMAN ACCEPTED / CLOSED (BOUNDED)** (2026-10-19) | Human accepted ParameterPlotter's `Apply title` / 「タイトルを適用」 and the reviewed basic title interaction in EN/JA at normal width and 390 CSS px, on the reported `e20de35` source. See the [formal bounded acceptance](../../e2r-parameter-plotter/docs/dataset-title-confirmation-wording-human-acceptance-2026-10-19.md) and [historical implementation follow-up](parameterplotter/parameterplotter-home-peer-work-safety-evidence-checkpoint-2026-10-14.md#independent-follow-ups-and-exclusions). This is neither a new Cross-App standard nor NarrativeLine/LiaisonScape reacceptance, Dataset save-safety acceptance, Workspace Notification UI closure, or expansion of M1-C21. Product Acceptance remains PENDING; ParameterPlotter PUBLIC RELEASE remains NO-GO. |
 | Cross-app Metadata Extension version declaration in Export | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | On 2026-10-12, Human accepted the bounded review covering PP-1, LS-1, LS-2, PP-2, LS-3, LS-4, and RT-1. This does not accept every Extension/version or broader interoperability. LiaisonScape D1 candidate/current Diagnostics attribution is now separately **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)**; D2 Dataset-change Diagnostics re-evaluation remains open. See the [bounded Acceptance closure](cross-app/cross-app-export-specification-declaration-alignment-human-browser-review-and-closure-proposal-2026-10-12.md), [D1 closure](liaisonscape/liaisonscape-diagnostics-d1-human-acceptance-closure-2026-10-12.md), and [Home Import feedback closure](liaisonscape/liaisonscape-home-import-failure-feedback-human-acceptance-closure-2026-10-12.md). |
 | LiaisonScape Home Import failure feedback | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Human formally accepted on 2026-10-12 the bounded browser review: HOME-1 through HOME-4, RETRY-1, WS-1 through WS-2, and SAFE-1 through SAFE-2 all PASS. This covers reviewed local Import feedback, same-file retry, and Dataset protection only. File-reading failure was not reproduced in the Human Browser Review and remains supported by automated evidence only. See the [bounded Acceptance closure](liaisonscape/liaisonscape-home-import-failure-feedback-human-acceptance-closure-2026-10-12.md). Its independent D2 Dataset-change Diagnostics re-evaluation follow-up remains open below; D1 source attribution has its own bounded closure. |
 | <a id="liaisonscape-diagnostics-status"></a>LiaisonScape Diagnostics lifecycle and source attribution | **D1 HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED); D2 OPEN** | Human accepted D1 on 2026-10-12 after D1-01 through D1-09 PASS and FOCUS-01 through FOCUS-06 PASS. The bounded acceptance covers candidate/current Diagnostics separation, reviewed replacement safety, keyboard access and focus restoration only. D2, Dataset-change Diagnostics re-evaluation including the Metadata warning after title removal, remains open. See the [D1 Human Acceptance closure](liaisonscape/liaisonscape-diagnostics-d1-human-acceptance-closure-2026-10-12.md) and the [historical evidence/proposal checkpoint](liaisonscape/liaisonscape-diagnostics-d1-human-browser-evidence-and-bounded-acceptance-proposal-2026-10-12.md). The non-blocking visual focus-indicator observations and their unresolved cause are documented in the closure. D1 does not change other acceptances; ParameterPlotter PUBLIC RELEASE remains NO-GO. |

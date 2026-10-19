@@ -74,10 +74,13 @@ the reviewed non-owner common Footer/Credits and Workspace brand focus, has its 
 Workspace/right Drawer button sizing and Entity menu visibility have their
 existing bounded Drawer UX closure; Human confirmed on 2026-10-15 that the
 previously retained button-size item is that same accepted issue (see index).
-The old Tab C anomaly remains **UNRESOLVED**; broader
-Cross-Context Workspace Safety acceptance, the deferred every-overlay audit,
-and final Product/release review remain separate gates. **ParameterPlotter
-PUBLIC RELEASE remains NO-GO.** No priority order is selected among these gates.
+The old Tab C anomaly remains historical with root cause **UNRESOLVED**. Human's
+[2026-10-19 disposition](parameterplotter/parameterplotter-tab-c-historical-disposition-decision-2026-10-19.md)
+keeps the current SAE normal-route Human Browser PASS separate and does not
+treat the old incident as an independent Product Acceptance blocker at this
+time. Broader Cross-Context Workspace Safety acceptance, the deferred
+every-overlay audit, and final Product/release review remain separate gates.
+**ParameterPlotter PUBLIC RELEASE remains NO-GO.** No priority order is selected among these gates.
 
 Favicon, EN/JA locale presentation, Candidate 0.2.0 integration, and the reviewed
 sample cases have their own completed/bounded evidence in the status index;
@@ -94,6 +97,14 @@ Internal Dataset/Workspace declaration generation is implemented in ParameterPlo
 and is **HUMAN ACCEPTED / CLOSED (BOUNDED)** for the reviewed G1/G2/G3 cases;
 other applications have not been audited or updated under this principle.
 Specification omission remains permitted.
+
+NarrativeLine's confirmed startup Dataset/revision race has a bounded
+correction **HUMAN ACCEPTED / CLOSED (BOUNDED)** on 2026-10-19. The
+[implementation and formal acceptance record](../../e2r-narrative-line/docs/startup-dataset-revision-race-fix-2026-10-19.md)
+separates the pre-fix two-tab defect, post-fix automated/Codex browser checks,
+and Human normal-operation review. The local NarrativeLine source checkpoint is
+`e35dd60347a831df92469d55c48fb74079df2a62`. Cross-Context Workspace Safety overall
+remains **PENDING**; this correction does not close other apps or release gates.
 
 Existing NarrativeLine Perspective implementation and acceptance remain intact.
 Future Multiple Perspectives, display-order evolution, LiaisonScape selectable
@@ -150,6 +161,8 @@ Roadmap History extraction/compression remains a separate later stage.
 | Roadmap → Research responsibility | **FIRST BOUNDED COMPRESSION COMPLETE / OTHER CANDIDATES REMAIN** | [audit result](documentation-ia/roadmap-research-responsibility-audit1-result.md); [migration 1 result](documentation-ia/roadmap-research-responsibility-migration1-result.md); current planning and Research priorities unchanged; other candidates require separate Human-reviewed manifests |
 | Residual Roadmap responsibility audit | **AUDIT 3 COMPLETE / E2R-WIDE MILESTONES CANONICAL; HUB-SPECIFIC SUPPLEMENT RECORDED** | [Human decision](documentation-ia/documentation-ia-e2r-wide-milestone-authority-decision1.md); [decision preparation](documentation-ia/documentation-ia-hub-vs-e2r-wide-milestone-authority-decision-preparation1.md); [fresh whole-roadmap audit 3](documentation-ia/roadmap-residual-responsibility-audit3.md); [audit 2](documentation-ia/roadmap-residual-responsibility-audit2.md); [audit 1](documentation-ia/roadmap-residual-responsibility-audit1.md); [Initial Placement / routing compression result](documentation-ia/roadmap-initial-placement-routing-pointer-compression1-result.md); [pre-release chronology migration result](documentation-ia/roadmap-pre-release-chronology-migration1-result.md); [mixed-area responsibility audit](documentation-ia/roadmap-mixed-seed-readiness-browser-responsibility-audit1.md); [Seed research pointer compression result](documentation-ia/roadmap-seed-research-pointer-compression1-result.md); [Seed PR-2 lineage compression result](documentation-ia/roadmap-seed-production-pr2-lineage-pointer-compression1-result.md); [Seed PR-3 pre-Browser preparation compression result](documentation-ia/roadmap-seed-pr3-pre-browser-preparation-pointer-compression1-result.md); [Seed PR-3 Browser lineage compression result](documentation-ia/roadmap-seed-pr3-browser-runtime-diagnostic-pointer-compression1-result.md); [Seed PR-3 Browser history migration result](documentation-ia/roadmap-seed-pr3-browser-history-migration1-result.md); [this PR-3 pre-Browser history migration](documentation-ia/roadmap-seed-pr3-prebrowser-history-migration1-result.md); other mixed groups remain unchanged; current execution order is unchanged |
 | NarrativeLine NL-H2-R1 | **ACCEPTED / MANUAL ACCEPTANCE COMPLETE** | [accepted application result](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/nl-h2-r1-history-2-candidate-recognition-and-edit-refusal-result.md) |
+| NarrativeLine Startup Dataset / Revision Race | **HUMAN ACCEPTED / CLOSED (BOUNDED)** (2026-10-19) | [Formal acceptance and correction evidence](../../e2r-narrative-line/docs/startup-dataset-revision-race-fix-2026-10-19.md). The pre-fix R1/R2 overwrite was a confirmed defect. The accepted correction binds the loaded Dataset to its expected revision; controlled post-fix checks refused the stale write and retained R2, while Human reviewed normal startup, Resume, title retention, and Export. The post-fix R2 write was test-injected, not an independent two-tab Human race test. Cross-Context Workspace Safety overall remains PENDING. |
+| ParameterPlotter old Tab C | **HISTORICAL / ROOT CAUSE UNRESOLVED; NOT AN INDEPENDENT PRODUCT ACCEPTANCE BLOCKER AT THIS TIME** (Human decision 2026-10-19) | [Human-adopted disposition](parameterplotter/parameterplotter-tab-c-historical-disposition-decision-2026-10-19.md). Keep the four-tab incident separate from current SAE normal-route bounded Human PASS. No FIXED/RESOLVED claim; Cross-Context Workspace Safety and Product Acceptance remain PENDING, Public Release NO-GO. |
 | NarrativeLine Relative Time identity and projection presentation | **FORMALLY ACCEPTED / COMPLETE / CLOSED — BOUNDED PRESENTATION AND IDENTITY CORRECTION** | [Human Browser Acceptance and closure](narrativeline/narrativeline-relative-time-timeline-projection-presentation-follow-up.md#formal-human-browser-acceptance-2026-09-27); [audit snapshot](narrativeline/narrativeline-relative-time-timeline-projection-presentation-audit1-result.md); the multi-band fixture is application acceptance evidence only, not a Hub or public sample. That checkpoint did not change ordinary Timeline ordering; the later Perspective implementation is tracked separately below. |
 | NarrativeLine Relative Time progressive disclosure | **HUMAN ACCEPTED / IMPLEMENTED / CLOSED — APPLICATION PRESENTATION ONLY** | [Human Acceptance and closure](narrativeline/narrativeline-progressive-disclosure-human-acceptance.md); [NarrativeLine implementation result](../../e2r-narrative-line/docs/progressive-disclosure-human-acceptance-result.md). OFF/ON/DIAGNOSTIC visibility, session-only More activation, Timeline/Event Detail coordination, replacement derivation, unsupported `0.3.0` diagnostic discovery, authoring refusal, and export preservation were accepted. Last-record deletion is not a current user-visible operation and was outside this Browser Acceptance. No Relative Time semantics/schema, Candidate, or Validator change. |
 | NarrativeLine Relative Time 0.2.0 import diagnostic / sample readiness | **EXACT SUPPORT VERIFIED / PRIOR EDGE WARNING REPRODUCED ON STALE DEV SERVER, CLEARED AFTER RESTART / SOURCE UNCHANGED** | NarrativeLine's [diagnostic and sample readiness result](../../e2r-narrative-line/docs/relative-time-0.2.0-import-diagnostic-and-sample-readiness-result.md) records the exact code/path and comparison. EN/JA both warned on the long-running `5173` Vite process; both were warning-free on a fresh server and after restarting `5173`. The warning was `specification_version_unsupported` at `uses/1/version`; the current Validator validates both files cleanly. The precise stale in-memory/cache object is inferred, not captured. No source, Validator, or Relative Time change was made. Lantern Market remains non-public. |

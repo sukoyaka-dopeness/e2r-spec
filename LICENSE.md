@@ -36,7 +36,7 @@ all contents are project-created.
 
 Sample-specific authorship, source references, translation status, and
 redistribution readiness are recorded in
-`docs/public-sample-provenance.md`. Canonicality and official E2R designation
+`docs/public-samples/public-sample-provenance.md`. Canonicality and official E2R designation
 are governance properties and are not granted by these licenses.
 
 This repository-level map formalizes the accepted E2R standards licensing

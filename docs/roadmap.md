@@ -7,11 +7,11 @@ Status: Current planning document; non-normative
 ## Purpose
 
 This roadmap is the sole entry point for current planning. Choose a reading
-purpose below; these routes do not define new status categories or an execution
-order. Follow the linked entries for their exact scope and formal evidence.
+purpose below; the selected work-order section records the current Human
+sequence, while the other routes retain their own scope and evidence.
 
 - **Current ecosystem state:** [Current mainline](#current-mainline-synchronization---2026-10-07) and [Current status index](#current-status-index-2026-10-02), including published closures and qualified or pending work.
-- **Plans, dependencies and deferrals:** [E2R-wide milestones](#proposed-e2r-wide-milestones), [Candidate evidence gates](#evidence-gates-for-candidate-extensions) and [Explicitly deferred](#explicitly-deferred). The milestones describe the ecosystem planning structure, not a newly selected immediate implementation priority.
+- **Selected application work order:** [2026-10-23 Human priority](#selected-application-work-order) for named publication, Home/guide, and LiaisonScape design-audit work. [E2R-wide milestones](#proposed-e2r-wide-milestones), [Candidate evidence gates](#evidence-gates-for-candidate-extensions) and [Explicitly deferred](#explicitly-deferred) retain their separate planning roles.
 - **Human adoption or scope decisions:** [adopted Ko-fi direction](#human-decision-ko-fi) and [remaining follow-ups and scope decisions](#remaining-open-follow-ups-and-decisions). Adoption of a direction does not authorize implementation or publication.
 - **Current Human gates and bounded closures:** [Current Human gates](#current-human-gates) and their linked records; the [Workspace notification UI](../../e2r-parameter-plotter/docs/workspace-notification-ui-verification-2026-10-14.md#workspace-notification-ui-formal-human-acceptance--2026-10-19) and [generated-declaration review](../../e2r-parameter-plotter/docs/generated-specification-declarations-verification-2026-10-14.md#generated-extension-declaration-integrity-formal-human-decision--2026-10-17) are closed within their documented bounds. Automated PASS alone does not establish Human Acceptance.
 - **Unresolved technical investigations:** the [Tab C boundary in the current mainline](#current-human-gates) and [LiaisonScape Diagnostics](#liaisonscape-diagnostics-status). Investigation states remain distinct from adoption decisions and acceptance reviews; retain each entry's own status and scope.
@@ -174,7 +174,7 @@ is **HUB-CREDITS-FOCUS1 HUMAN ACCEPTED / CLOSED (BOUNDED)**; see the
 The interrupted HUB-3APP-REVIEW2 [browser checkpoint](https://github.com/sukoyaka-dopeness/e2r-hub/blob/8c48a1dc4e872990d46105fd3573b5e908086bd3/docs/local-ashen-crown-handoff-and-sample-locale-integration-2026-10-09.md#hub-3app-review2--bounded-human-browser-checkpoint-and-resumption)
 has a subsequent [FORMAL HUMAN ACCEPTED / CLOSED (BOUNDED) decision](https://github.com/sukoyaka-dopeness/e2r-hub/blob/8c48a1dc4e872990d46105fd3573b5e908086bd3/docs/local-ashen-crown-handoff-and-sample-locale-integration-2026-10-09.md#hub-3app-review2-formal-human-acceptance--bounded-local-review)
 for the reviewed local three-app/Gallery and representative Handoff scope.
-Human approved this order: Roadmap and
+On 2026-10-22, Human approved this then-current order: Roadmap and
 checkpoint synchronization; LiaisonScape Dimension Assessment UI preservation
 investigation; bounded Hub formal acceptance decision; Hub public release
 candidate audit. The limited LiaisonScape preservation acceptance (local LiaisonScape record `docs/dimension-assessment-ui-preservation-human-acceptance-2026-10-22.md`, unpublished at this checkpoint)
@@ -188,6 +188,88 @@ LiaisonScape and ParameterPlotter remain separate future work. NarrativeLine's
 Ko-fi Home link is published in `0.2.2` and included in its bounded Formal
 Release Closure, as recorded in the current status index.
 Any further push, deployment, release or publication requires separate authorization.
+
+<a id="selected-application-work-order"></a>
+
+## Selected application work order — 2026-10-23
+
+Human selected this execution order for the named Hub and three-application
+maintenance and publication work. It does not reorder E2R-wide milestones,
+Initial Layout research, or other independent technical and UX follow-ups.
+Each implementation, acceptance, exact-commit push, and automatic deployment
+retains its own authorization and evidence boundary.
+
+1. **Publish ParameterPlotter M2-W Closure documentation.** The accepted
+   Credits update is already deployed, but the later Formal Human Closure is
+   only in local, unpushed documentation commit
+   `0a8b5aa70e255b9978cbc49227fcc3da24a0ac22`. Before a documentation-only
+   push, Human must approve the exact range, automatic Check/Pages deployment,
+   and whether Credits `Updated: 2026-10-21` remains appropriate. A later
+   deployment date does not by itself settle the application's update-date
+   meaning. See the [Credits update status](#current-status-index-2026-10-02).
+2. **Reconcile LiaisonScape closure documentation.** Its local Credits Closure
+   commit `ee44498ef67775f9fa4bee83694a24d874f29f7f` and Lighthouse JA
+   preservation commit `ad416354a7893fdc9f052af6b47f19937b4a05cf` remain
+   unpushed. The preservation record's sibling-Validator relative link will
+   not reach that repository on GitHub; README and the Credits record call the
+   approved application source `54202255df0c34e26c2e1b2d2654ba782e4c4d5e`
+   the current `main`, which a later documentation push would advance.
+   Correct those references while retaining the historical source SHA and
+   bounded Human decisions, then re-audit the resulting exact push range.
+3. **Publish LiaisonScape LS-CREDITS-LINK3 and LS-DA-PRESERVE2 records** only
+   after that reconciliation and separate Human approval of the exact commits
+   and automatic CI/Pages deployment. The latter is a specific Lighthouse JA
+   preservation acceptance, not Dimension Assessment editing support, a
+   general Dataset guarantee, Candidate Stable promotion, or Diagnostics D2
+   closure.
+4. **Synchronize E2R-SPEC's public Roadmap state** after the application
+   documentation actually becomes public, through its own reviewed commit and
+   separately authorized push. The [current status index](#current-status-index-2026-10-02)
+   continues to distinguish published deployment evidence from the local,
+   unpublished detailed Closure records until then.
+5. **Add Ko-fi to Hub Home.**
+6. **Add Ko-fi to LiaisonScape Home.** Both use the [Human-adopted four-app
+   placement direction](#human-decision-ko-fi). NarrativeLine's link is
+   already published and bounded Human-accepted in `0.2.2`; ParameterPlotter
+   remains a separate Home task below. Each app's implementation, review, and
+   publication is independent.
+7. **Improve ParameterPlotter Home**, providing access to Sample information
+   and EN/JA User Guides, with restrained GitHub Sponsors and Ko-fi links.
+8. **Improve the ParameterPlotter EN/JA guides** around basic use, saving,
+   Export, and useful tasks. Preserve the Home information hierarchy and
+   divide implementation and acceptance into appropriate responsibility
+   units. The [existing Home and guide direction](#current-status-index-2026-10-02)
+   remains the scope authority; these items are not retroactive blockers for
+   `0.1.0`.
+9. **Audit LiaisonScape Extension recognition versus functional support** as
+   the design candidate below. This step authorizes an audit, not runtime,
+   Validator, Core, Extension, or schema implementation.
+
+<a id="liaisonscape-extension-recognition-audit"></a>
+
+### LiaisonScape Extension recognition — Human-preferred direction, design audit pending
+
+Human prefers distinguishing an Extension whose identifier and exact version
+are recognized but whose function LiaisonScape does not support from an unknown
+or invalid Extension. The first concrete audit case is Dimension Assessment
+`0.2.0` Candidate. Recognition must not imply that LiaisonScape can interpret,
+display, or edit its payload, or that every Extension needs implementation in
+every E2R app. The [Specification Extension](../extensions/specification-extension.md)
+describes used versions, not application capabilities; this Roadmap candidate
+does not change that contract or promote a Candidate to Stable.
+
+The audit should inspect current Validator and LiaisonScape behavior before
+proposing any application-local capability model: identifier and exact-version
+recognition, Validator declaration/diagnostic boundaries, functional support,
+user-facing explanation for known-but-unsupported data, genuinely unknown or
+invalid data, preservation and Export evidence, and EN/JA presentation. Do not
+silence `unknown_extension` or `specification_unavailable` solely to make a
+recognized payload appear supported; keep genuine limitations visible. The
+[LS-DA-PRESERVE2 status](#current-status-index-2026-10-02) proves preservation
+only for its reviewed Lighthouse JA path, not general safety or editing
+support. Diagnostics D2 remains a separate OPEN Dataset-change re-evaluation
+issue, even where this design audit examines related evidence. No specific UI
+wording, status taxonomy, implementation, or cross-app standard is adopted.
 
 ## Operating principles
 
@@ -274,6 +356,7 @@ Roadmap History extraction/compression remains a separate later stage.
 | LiaisonScape Home Import failure feedback | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Human formally accepted on 2026-10-12 the bounded browser review: HOME-1 through HOME-4, RETRY-1, WS-1 through WS-2, and SAFE-1 through SAFE-2 all PASS. This covers reviewed local Import feedback, same-file retry, and Dataset protection only. File-reading failure was not reproduced in the Human Browser Review and remains supported by automated evidence only. See the [bounded Acceptance closure](liaisonscape/liaisonscape-home-import-failure-feedback-human-acceptance-closure-2026-10-12.md). Its independent D2 Dataset-change Diagnostics re-evaluation follow-up remains open below; D1 source attribution has its own bounded closure. |
 | <a id="liaisonscape-diagnostics-status"></a>LiaisonScape Diagnostics lifecycle and source attribution | **D1 HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED); D2 OPEN** | Human accepted D1 on 2026-10-12 after D1-01 through D1-09 PASS and FOCUS-01 through FOCUS-06 PASS. The bounded acceptance covers candidate/current Diagnostics separation, reviewed replacement safety, keyboard access and focus restoration only. D2, Dataset-change Diagnostics re-evaluation including the Metadata warning after title removal, remains open. See the [D1 Human Acceptance closure](liaisonscape/liaisonscape-diagnostics-d1-human-acceptance-closure-2026-10-12.md) and the [historical evidence/proposal checkpoint](liaisonscape/liaisonscape-diagnostics-d1-human-browser-evidence-and-bounded-acceptance-proposal-2026-10-12.md). The non-blocking visual focus-indicator observations and their unresolved cause are documented in the closure. D1 does not change other acceptances; ParameterPlotter publication was not authorized at that checkpoint; see the later 0.1.0 publication row. |
 | LiaisonScape Dimension Assessment Dataset preservation investigation | **LS-DA-PRESERVE2 FORMAL HUMAN ACCEPTED / CLOSED (BOUNDED); LIMITED PRE-HUB-PUBLICATION INVESTIGATION COMPLETE** | The LiaisonScape acceptance record (`docs/dimension-assessment-ui-preservation-human-acceptance-2026-10-22.md`, local and unpublished at this checkpoint) retains LS-DA-PRESERVE1's actual-Export evidence gap and the later Human public-Edge Lighthouse JA Handoff, two description edits, actual UI Export, submitted-JSON structural comparison, and fresh InPrivate re-import. Human accepted preservation for that specific path, including the 5 Dimensions, 31 Assessments and Specification declarations; the submitted Export file was not directly available for this documentation pass. `unknown_extension` and `specification_unavailable` remain warnings, not demonstrated data loss. Diagnostics D2 remains OPEN. This limited preservation acceptance grants no general Dataset/Extension guarantee, Dimension Assessment editing support, or Candidate Stable promotion; it did not itself grant overall Hub acceptance or authorize the separate Hub publication recorded above. |
+| LiaisonScape recognized-but-unsupported Extension distinction | **HUMAN-PREFERRED DIRECTION / DESIGN AUDIT PENDING / NOT IMPLEMENTED** | Distinguish known identifier and exact version from actual LiaisonScape functional support; first review Dimension Assessment `0.2.0` Candidate. Preserve genuine unknown, invalid, and unavailable-specification diagnostics. See the [audit scope and boundaries](#liaisonscape-extension-recognition-audit). Diagnostics D2 remains independently OPEN. |
 | ParameterPlotter Cross-Tab Warning Redundancy / Feedback Lifecycle | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Historical pre-Single Active Editor evidence: Human explicitly approved the bounded 2026-10-12 acceptance covering replacement refusal/Cancel and work protection, peer-warning clearance with prior save-stop retention, past-event explanation, Home and Workspace EN/JA switching in both directions, Home at 390px, and Workspace at 1280px. Workspace 390px passed in an earlier review before the final repair and is excluded. The [acceptance closure record](parameterplotter/parameterplotter-cross-tab-warning-ux-human-acceptance-closure-2026-10-12.md) defines the evidence and exclusions. The prior Codex report recorded 187 tests, syntax check of 38 modules, and build of 60 Pages files PASS; these automated results were not rerun for this documentation sync. Codex Browser was unavailable during implementation. Existing Test 35-B-V and Cross-App Dataset JSON Export Filename CLOSED (BOUNDED) remain unchanged. Public Release was NO-GO at that checkpoint; see the later 0.1.0 publication row. See also the [Cross-Context Workspace Safety contract](cross-app/cross-context-workspace-safety-design-2026-10-10.md) and [Test 35 evidence](../../e2r-parameter-plotter/docs/stale-writer-export-reload-recovery-verification-2026-10-11.md). |
 | ParameterPlotter Home-to-Workspace Safety Recovery | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Historical limited M1-C6 recovery acceptance approved 2026-10-13 for the recorded peer-work save refusal, Home recovery, in-memory Dataset return, E2R JSON Export of the changed title, persistence refusal remaining latched after Export, recovery control after Export and JA/EN switch, and visible unchanged saved title in a separate tab (not byte-level storage comparison). The owning-tab Return/Export path is retained under Single Active Editor, whose lifecycle is not covered by this acceptance. Tab C Continue Editing anomaly remains unresolved; read-only Dataset recovery, other refusal causes, complete Cross-Context Workspace Safety, and Public Release remained open / NO-GO at that checkpoint; see the later 0.1.0 publication row. See the [Human evidence and bounded acceptance closure](../../e2r-parameter-plotter/docs/stale-writer-export-reload-recovery-verification-2026-10-11.md). |
 | ParameterPlotter Home Peer-Work Action Availability | **HUMAN BROWSER ACCEPTED / PASS / CLOSED (BOUNDED)** | Human approved the recorded same-origin Edge InPrivate two-tab title-draft/acquisition/Continue flow on 2026-10-14; specification checkpoint `c19cc6a` retains initial FAIL, M1-C22/C23 draft repairs, M1-C24 DOM/focus repair and Human post-fix PASS. See [evidence and limited closure](parameterplotter/parameterplotter-home-peer-work-safety-evidence-checkpoint-2026-10-14.md). Other editors, timing, accessibility, browsers and hosting remain excluded. Single Active Editor now replaces this normal two-editable-tab contract, including non-owner Continue availability; the historical acceptance is neither revoked nor transferred to the new policy. At that 2026-10-14 checkpoint, UI consistency was implemented and Human visual acceptance remained pending; the distinct 2026-10-18 Home/common UI bounded closure is recorded below. Tab C UNRESOLVED; D2 OPEN; ParameterPlotter Public Release was NO-GO at that checkpoint; see the later 0.1.0 publication row. |
@@ -2079,9 +2162,9 @@ LiaisonScape and Hub now have low-prominence GitHub Sponsors Home links in their
 application source. The Human-adopted ParameterPlotter Home follow-up is in the
 [current status index](#current-status-index-2026-10-02); its implementation and
 publication remain pending. The separately adopted four-app Ko-fi direction
-shares this low-prominence placement. NarrativeLine's later local bounded Human
-Browser acceptance is tracked above; the other apps and publication still require
-their own authorized work.
+shares this low-prominence placement. NarrativeLine's `0.2.2` link is now
+published and bounded Human-accepted; Hub, LiaisonScape, and ParameterPlotter
+still require separate authorized implementation, acceptance, and publication.
 
 This status-only update does not reorder the active LiaisonScape Initial
 Placement sequence and does not authorize changes to application source,

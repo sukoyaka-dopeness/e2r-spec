@@ -185,7 +185,8 @@ observation of its 11 Events in that public run. Hub Formal Publication Closure
 was subsequently **HUMAN ACCEPTED / CLOSED (BOUNDED)**; see the same Hub record.
 ParameterPlotter Home and guide improvements and Ko-fi implementation in Hub,
 LiaisonScape and ParameterPlotter remain separate future work. NarrativeLine's
-local Ko-fi acceptance is tracked in the current status index; publication is pending.
+Ko-fi Home link is published in `0.2.2` and included in its bounded Formal
+Release Closure, as recorded in the current status index.
 Any further push, deployment, release or publication requires separate authorization.
 
 ## Operating principles
@@ -915,9 +916,9 @@ Other continuing topics include:
 
 - Keep Validator release automation, fixtures, package inspection, and
   tag/version checks healthy for the next published version.
-- NarrativeLine is publicly released at `0.2.1`; LiaisonScape remains at
-  `0.2.0`. Check each application's current release evidence before preparing
-  a later version;
+- NarrativeLine is publicly released at `0.2.2`; LiaisonScape is publicly
+  released at `0.2.1`. Check each application's current release evidence
+  before preparing a later version;
   application versions remain separate from Dataset and specification
   versions.
 - Keep Japanese and English guides aligned when behavior changes.

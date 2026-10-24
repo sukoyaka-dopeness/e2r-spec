@@ -224,8 +224,8 @@ The selected ParameterPlotter Home/guide maintenance and M2-W documentation
 were published with the bounded, Human-closed `0.1.1` release. LiaisonScape's
 LS-CREDITS-LINK3 and LS-DA-PRESERVE2 records were reconciled and published in
 the later documentation-only `main` transaction. The [current status index](#current-status-index-2026-10-02)
-links to their separate evidence. This 2026-10-24 Roadmap synchronization is
-local until its own reviewed commit and separately authorized publication.
+links to their separate evidence. The 2026-10-24 Roadmap synchronization has
+been locally committed; GitHub publication requires separate authorization.
 
 The Human-selected sequence and current gates are:
 

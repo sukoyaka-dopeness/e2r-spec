@@ -178,9 +178,10 @@ at `0.2.3`. Its application source is `33732e8307579df6de00f8f89d5a19341f449abb`
 [Actions run 40183570153](https://github.com/sukoyaka-dopeness/e2r-liaison-scape/actions/runs/40183570153)
 passed 675/675 tests, lint, build, and Pages deployment on 2026-10-25 at
 19:11:29 JST. Public HTML, JS, and CSS returned HTTP 200; served asset hashes
-matched the verified build. Local EN/JA Credits Human Browser Acceptance is
-bounded; public HTTPS Human Browser Review and Formal Publication Closure are
-**PENDING**. Credits show `First release: 2026-08-16` and `Updated: 2026-10-25`.
+matched the verified build. Local EN/JA Credits Human Browser Acceptance and
+the later public HTTPS Human Browser Review are separate bounded PASS evidence;
+Human formally accepted `0.2.3` Publication Closure within those bounds.
+Credits show `First release: 2026-08-16` and `Updated: 2026-10-25`.
 The earlier `0.2.2` application source and pre-closure-documentation
 GitHub `main` were `e5bcd8accd0a44ad51b04b825e8ebbc3a25a96a4`;
 [Actions run 40116813665](https://github.com/sukoyaka-dopeness/e2r-liaison-scape/actions/runs/40116813665)
@@ -297,9 +298,9 @@ be rejected by validation errors. The
 only for its reviewed Lighthouse JA path, not general safety or editing
 support. The separate D2-FIX1 Dataset-change re-evaluation correction is now
 published in `0.2.3` and Human Browser accepted within bounds; Formal D2
-Closure is Human accepted within the same bounded scope, while `0.2.3`
-Public HTTPS Human Browser Review and Formal Publication Closure remain
-pending. This Validator decision adopts no
+Closure is Human accepted within the same bounded scope. The later `0.2.3`
+public HTTPS Human Browser Review and Formal Publication Closure are also
+Human accepted within their separate bounded scope. This Validator decision adopts no
 dependency update or cross-app UI standard.
 
 ## Operating principles
@@ -341,7 +342,7 @@ Roadmap History extraction/compression remains a separate later stage.
 
 | Workstream | Current status | Authority / next decision |
 | --- | --- | --- |
-| LiaisonScape `0.2.3` D2 maintenance publication | **PUBLISHED / CI AND PAGES PASS / PUBLIC HTTPS TECHNICAL VERIFICATION PASS; PUBLIC HTTPS HUMAN BROWSER REVIEW AND FORMAL PUBLICATION CLOSURE PENDING** (2026-10-25) | Application source `33732e8307579df6de00f8f89d5a19341f449abb`; [Actions run 40183570153](https://github.com/sukoyaka-dopeness/e2r-liaison-scape/actions/runs/40183570153) deployed at 19:11:29 JST after 675/675 tests, lint, and build passed. Served HTML/JS/CSS returned HTTP 200 and asset hashes matched the verified build. Credits show Version `0.2.3`, First release `2026-08-16`, Updated `2026-10-25`; the local EN/JA Credits Human Browser Review was accepted within bounds. [Publication evidence](../../e2r-liaison-scape/docs/liaisonscape-0.2.3-maintenance-release-candidate-2026-10-25.md#subsequent-bounded-local-human-browser-acceptance-and-publication) retains the public-browser and Closure gates. Documentation synchronization remains local pending separate Push authorization. |
+| LiaisonScape `0.2.3` D2 maintenance publication | **PUBLISHED / CI AND PAGES PASS / PUBLIC HTTPS TECHNICAL VERIFICATION PASS; PUBLIC HTTPS HUMAN BROWSER ACCEPTED / PASS (BOUNDED); FORMAL PUBLICATION CLOSURE HUMAN ACCEPTED / CLOSED (BOUNDED)** (2026-10-25) | Application source `33732e8307579df6de00f8f89d5a19341f449abb`; [Actions run 40183570153](https://github.com/sukoyaka-dopeness/e2r-liaison-scape/actions/runs/40183570153) deployed at 19:11:29 JST after 675/675 tests, lint, and build passed. Served HTML/JS/CSS returned HTTP 200 and asset hashes matched the verified build. Credits show Version `0.2.3`, First release `2026-08-16`, Updated `2026-10-25`. Human reported bounded public EN/JA Home and Credits, locale and dismissal/focus, representative D2 warning removal with Entity retention, and no obvious Runtime Error or Dataset-protection regression, then separately approved bounded Formal Publication Closure. [Publication and Closure record](../../e2r-liaison-scape/docs/liaisonscape-0.2.3-maintenance-release-candidate-2026-10-25.md#subsequent-public-https-human-browser-acceptance-and-formal-publication-closure) retains the evidence limits. Documentation synchronization remains local pending separate Push authorization. |
 | LiaisonScape `0.2.2` Ko-fi Home publication | **PUBLISHED / CI AND PAGES PASS / PUBLIC HTTPS HUMAN BROWSER REVIEW PASS / CLOSED (BOUNDED); FORMAL PUBLICATION CLOSURE HUMAN ACCEPTED / CLOSED (BOUNDED)** (2026-10-25) | Published application source and pre-documentation-sync GitHub `main` `e5bcd8accd0a44ad51b04b825e8ebbc3a25a96a4`; [Actions run 40116813665](https://github.com/sukoyaka-dopeness/e2r-liaison-scape/actions/runs/40116813665) deployed at 02:37:04 JST. Credits show `0.2.2`, First release `2026-08-16`, Updated `2026-10-25`. Human reported bounded EN/JA public HTTPS Browser PASS for Credits, Ko-fi, locale and basic Home at normal and 390px widths, then expressly accepted bounded Formal Publication Closure; [publication and Human closure evidence](../../e2r-liaison-scape/docs/liaisonscape-0.2.2-publication-and-human-review-2026-10-25.md). The separate Footer Credits sizing issue remains OPEN. |
 | LiaisonScape narrow-width Footer Credits button sizing | **OPEN / LOW PRIORITY / POST-RELEASE VISUAL FOLLOW-UP; NONBLOCKING** (2026-10-25) | Human observed a larger Footer Credits / クレジット button at 390px than at normal width in EN/JA on public `0.2.2`. Determine whether this is intentional responsive design or a CSS side effect; compare dimensions, spacing and visual hierarchy while preserving the mobile tap area. No cause or fix is adopted. This does not invalidate bounded public Human Browser PASS or the subsequent bounded Formal Publication Closure; [review and closure record](../../e2r-liaison-scape/docs/liaisonscape-0.2.2-publication-and-human-review-2026-10-25.md). |
 | Documentation Hub / roadmap hygiene / new-document path policy | **IMPLEMENTED** | `docs/README.md`, `docs/documentation-plan.md`, and this section; existing paths remain stable; [bounded baseline milestone outline consolidation](documentation-ia/roadmap-baseline-milestone-outline-consolidation1-result.md); [exploratory Suite heading consolidation](documentation-ia/roadmap-exploratory-suite-heading-consolidation1-result.md) |

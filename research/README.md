@@ -20,6 +20,10 @@ Extensions.
   and the [Hub initial-layout latency-hiding hypothesis](exploratory/e2r-hub-initial-layout-precomputation-latency-hiding-hypothesis1.md)
   are exploratory records; their placement does not restart deferred work or
   authorize application implementation.
+- The [2026-10-28 future E2R applications and Semantic Vocabulary checkpoint](exploratory/future-e2r-applications-and-semantic-vocabulary-checkpoint-2026-10-28.md)
+  records provisional Character Sheet, configurable-field, shared Vocabulary,
+  creative-writing, and OSINT directions without adopting a product, portable
+  contract, or Roadmap priority.
 - `tools/` — executable research harnesses and their tests. These remain in
   place until test-discovery and reference impact are handled explicitly.
 

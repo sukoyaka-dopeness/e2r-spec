@@ -9,6 +9,16 @@ read only the matching scoped entries.
 Treat the specification as authoritative; knowledge entries provide scoped
 evidence and reusable process guidance only.
 
+## Cross-repository workspace placement
+
+Before creating or selecting an isolated clone, Git Worktree, experiment,
+diagnostic or test workspace, Browser Profile, or preservation artifact for an
+E2R task, consult the workspace placement policy in the parent
+`C:\Users\extra\E2R\AGENTS.md`. Use its canonical root allowlist and
+`workspace\` purpose areas. Existing non-canonical root paths remain subject
+to individual review; this reference does not authorize moving or deleting
+them.
+
 ## Repository Purpose
 
 This repository defines the E2R specification.

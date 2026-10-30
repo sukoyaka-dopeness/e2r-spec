@@ -1002,6 +1002,20 @@ placement implementation is authorized by this pointer.
 
 ## Research priority
 
+### MotifMosaic and vocabulary direction (2026-10-31)
+
+Human selected a future product direction that combines general Entity editing
+and creative-writing assistance in one prospective application; **MotifMosaic**
+is a candidate name. EntityPool is not prioritized as a separate application.
+Human also selected a separate future repository for common E2R vocabulary
+artifacts and experiments, with **e2r-vocabulary** as a candidate name. The
+[Research checkpoint](../research/exploratory/motifmosaic-and-vocabulary-architecture-checkpoint-2026-10-31.md)
+records the view, Classification, story-method, Journal, and ownership questions.
+The working dependency is repository setup before a bounded vocabulary-fetch
+experiment, then Classification and application experiments; none is started or
+authorized here. This direction does not reorder the existing E2R-wide work
+sequence or settle portable contracts, MVP scope, or publication.
+
 ### 1. Semantic responsibility and vocabulary architecture
 
 Relation `name` is a human-readable Core label, not an interoperable semantic

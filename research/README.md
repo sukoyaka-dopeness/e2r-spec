@@ -24,6 +24,9 @@ Extensions.
   records provisional Character Sheet, configurable-field, shared Vocabulary,
   creative-writing, and OSINT directions without adopting a product, portable
   contract, or Roadmap priority.
+- The [2026-10-31 MotifMosaic and Vocabulary checkpoint](exploratory/motifmosaic-and-vocabulary-architecture-checkpoint-2026-10-31.md)
+  records the later Human product and repository direction, story-method UX
+  candidates, and the remaining Classification, content, and persistence gates.
 - `tools/` — executable research harnesses and their tests. These remain in
   place until test-discovery and reference impact are handled explicitly.
 

@@ -105,8 +105,9 @@ and guard checkpoint already preserve the reusable placement rule.
 
 The guard checkpoint exists locally in `ai-knowledge`; that repository is
 `main` ahead of `origin/main` by three commits and has an unrelated modified
-`playbooks/e2r-edge-cdp-browser-diagnostic.md`. It was not changed here. E2R-SPEC
-`main` is ahead of `origin/main` by two commits and retains the modified
+`playbooks/e2r-edge-cdp-browser-diagnostic.md`. It was not changed here. Before
+the closure Commit below, E2R-SPEC `main` was ahead of `origin/main` by two
+commits and retained the modified
 `research/README.md`, the untracked future-application Research checkpoint,
 and untracked Session 0109. Those files were not staged or included in this
 checkpoint. LiaisonScape retains three unrelated untracked files; its tracked
@@ -142,3 +143,39 @@ move or delete artifacts, change a Repository runtime or Dataset, alter Git
 Index/Branch/Refs, modify the accepted placement Decision or AGENTS files,
 change another Repository, or push any commit. The existing dirty and
 untracked work described above remains separate.
+
+## Chat handoff after closure Commit
+
+The closure checkpoint was committed locally as
+`9fce82e68c8f3b7bf5fbba0accd9774827bd2e02`, subject
+`docs: close E2R root consolidation checkpoint`. It contains only this
+Roadmap update and Session 0110. It was not pushed. After that commit,
+E2R-SPEC `main` was three commits ahead of `origin/main`.
+
+At the handoff check, the final root still had the ten canonical repositories
+and `workspace/`, `z` was absent, and the workspace root still had only the
+three purpose directories. The z-preservation package and its manifest remain
+under `workspace/artifacts/`; no further Cleanup is pending in this workstream.
+
+Keep these separate working states intact when resuming:
+
+- E2R-SPEC has the pre-existing modified `research/README.md`, untracked
+  future-application Research checkpoint, and untracked Session 0109.
+- `ai-knowledge` is at `2490b1477961299fea22ecbab08452d887019c2d`, three
+  commits ahead of `origin/main`, with the existing modified
+  `playbooks/e2r-edge-cdp-browser-diagnostic.md`.
+- LiaisonScape has a tracked-clean `main` and three unrelated untracked paths:
+  `.tmp-normal-offset-output.json`, `.tmp-reference-layout-regression1.json`,
+  and `experimental/product-evaluation-seam/spacing-inspection2/`. Its
+  routing-preview Worktree remains registered under
+  `workspace/experimental/workspaces/`.
+- E2R-SPEC's E2D/E2F Temp Worktrees remain registered and their preservation
+  packages remain under `workspace/artifacts/`.
+- `e2r-motif-mosaic` and `e2r-vocabulary` have local `main` branches without
+  upstreams; the other inspected canonical repositories were clean at this
+  check.
+
+No root or workspace cleanup, preservation-package mutation, Push, Release, or
+Deployment remains authorized by this closure. Resume with the next Human
+directed mainline task while keeping the unrelated dirty and untracked state
+above separate.

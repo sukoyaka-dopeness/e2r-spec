@@ -369,6 +369,21 @@ are historical snapshots, not necessarily the latest integrated source. The
 2026-09-28, 2026-10-02 and 2026-10-15 section anchors are retained for existing links.
 Roadmap History extraction/compression remains a separate later stage.
 
+**Human decision on 2026-11-12:** Publication Acceptance and Publication
+Closure are **APPROVED (BOUNDED)** for the three-app Locale Conflict Dialog
+visual refinement and, independently, NarrativeLine Home action width. The
+Human adopted the Codex-operated public Chrome/CDP evidence and prior local
+acceptance and publication evidence; this does not claim Human operation of the
+96 cases. The [Locale evidence and decision](../../e2r-narrative-line/docs/locale-conflict-focus-geometry-2026-11-07.md)
+and [Home-width decision](../../e2r-narrative-line/docs/home-action-width-visual-refinement-2026-11-06.md)
+retain scope and exclusions. The 320px 286px/288px difference remains accepted.
+Official Browser Use remains independently BLOCKED. Screen-reader speech,
+successor Handoff-dialog focus contention, other engines, all editing/save
+failure states, full delivered dependency identity, unobserved console warnings
+and Runtime paths, and Cross-Context Workspace Safety overall remain outside
+these closures, without automatic FAIL or new publication blockers. Other
+workstreams, including Home-to-Hub, are not closed by this decision.
+
 ## Equal-priority Sample Dataset warning UX - 2026-10-28
 
 Human formally accepted NarrativeLine Cedar and LiaisonScape L3 independently and closed the equal-priority Public Beta 0.2.4 publication milestone within bounded scopes. The [NarrativeLine release record](../../e2r-narrative-line/docs/public-beta-0.2.4-release-candidate-preparation-2026-10-28.md) and [LiaisonScape release record](../../e2r-liaison-scape/docs/liaisonscape-0.2.4-release-candidate-preparation-2026-10-28.md) contain the separate source, deployment and Closure evidence. No new public Human Browser review was performed.

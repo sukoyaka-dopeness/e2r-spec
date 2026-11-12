@@ -24,6 +24,10 @@ Extensions.
   records provisional Character Sheet, configurable-field, shared Vocabulary,
   creative-writing, and OSINT directions without adopting a product, portable
   contract, or Roadmap priority.
+- The [2026-10-30 future application ecosystem ideas checkpoint](exploratory/future-application-ecosystem-session-ideas-checkpoint-2026-10-30.md)
+  extends that record to general Entity profiles, viewpoint and claim boundaries,
+  creative and investigation workspaces, Wiki/Journal publication, host roles,
+  mobile use, and federation. It makes no architecture or planning commitment.
 - The [2026-10-31 MotifMosaic and Vocabulary checkpoint](exploratory/motifmosaic-and-vocabulary-architecture-checkpoint-2026-10-31.md)
   records the later Human product and repository direction, story-method UX
   candidates, and the remaining Classification, content, and persistence gates.

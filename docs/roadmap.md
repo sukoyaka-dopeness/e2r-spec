@@ -398,13 +398,16 @@ acceptance and publication decisions.
   implementation. The visualization was locally accepted, pushed and deployed
   in Hub commit a8a89fb; bounded public technical review passed. The later
   Hub main 30d9393 contains it plus locale reception. See the [Hub record](https://github.com/sukoyaka-dopeness/e2r-hub/blob/main/docs/dataset-workflow-visualization-2026-11-04.md).
-  Dataset Workflow Publication Closure is still pending Human decision; no
+  Human confirmed the public EN/JA diagrams and approved bounded Publication
+  Closure on 2026-11-12; see the Hub record's dated Closure addendum. No
   real-time synchronization, shared store or automatic merge is asserted.
 - **Home-to-Hub:** the four-app sequence resumed after the earlier LiaisonScape
   Push failure, all four apps were deployed, and bounded public E2E passed for
   the then-reviewed revisions. See the [Hub summary](https://github.com/sukoyaka-dopeness/e2r-hub/blob/main/docs/home-to-hub-navigation-2026-11-04.md)
   and [LiaisonScape evidence](https://github.com/sukoyaka-dopeness/e2r-liaison-scape/blob/main/docs/home-to-hub-navigation-2026-11-04.md).
-  Human Publication Closure remains pending, independently of the other items.
+  Human confirmed the new-tab route to Hub and independently approved bounded
+  Publication Closure on 2026-11-12. The dated Closure addenda in the Hub and
+  app records retain the Human/Codex evidence distinction and unverified limits.
 - **MotifMosaic / Vocabulary:** local documentation-only bootstrap repositories
   exist at c7278f9 and aefa9e1. Neither has an origin remote or an assigned license;
   runtime, external fetch, portable Classification/Field/Template contracts and

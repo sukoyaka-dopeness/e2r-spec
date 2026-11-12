@@ -14,7 +14,8 @@ workspace placement work to an inactive state. This is a documentation and
 inventory closure, not an application, Core, Extension, or Dataset change. The
 [Roadmap](../../docs/roadmap.md) remains the current planning authority; this
 Session is historical evidence. The accepted cross-repository policy remains
-the [`E2R Workspace Placement` Decision](../../../ai-knowledge/decisions/e2r-workspace-placement.md).
+the `E2R Workspace Placement` Decision (workspace-local:
+`ai-knowledge/decisions/e2r-workspace-placement.md`; not yet published).
 
 Status: **ROOT CONSOLIDATION CLOSED / CURRENT LAYOUT VERIFIED / WORKSPACE ROOT
 GUARD 9/9 PASS / DOCUMENTATION CHECKPOINT RECORDED LOCALLY / NO PUSH**.
@@ -78,7 +79,8 @@ integrity authorities; this Session does not duplicate their file inventories.
 ## Placement guard and root instructions
 
 The accepted placement policy is recorded in the existing
-[`E2R Workspace Placement` Decision](../../../ai-knowledge/decisions/e2r-workspace-placement.md).
+`E2R Workspace Placement` Decision (workspace-local:
+`ai-knowledge/decisions/e2r-workspace-placement.md`; not yet published).
 The read-only guard and its test remain in the existing `ai-knowledge`
 checkpoint `2490b1477961299fea22ecbab08452d887019c2d`. At this checkpoint, the
 current workspace layout check passed and the guard test reported **9/9**:

@@ -14,7 +14,7 @@ sequence, while the other routes retain their own scope and evidence.
 - **Selected application work order:** [2026-10-23 Human selection, updated 2026-10-25](#selected-application-work-order) for the published Hub and LiaisonScape steps and completed LiaisonScape design decision. [E2R-wide milestones](#proposed-e2r-wide-milestones), [Candidate evidence gates](#evidence-gates-for-candidate-extensions) and [Explicitly deferred](#explicitly-deferred) retain their separate planning roles.
 - **Human adoption or scope decisions:** [adopted Ko-fi direction](#human-decision-ko-fi) and [remaining follow-ups and scope decisions](#remaining-open-follow-ups-and-decisions). Adoption of a direction does not authorize implementation or publication.
 - **Current Human gates and bounded closures:** [Current Human gates](#current-human-gates) and their linked records; the [Workspace notification UI](../../e2r-parameter-plotter/docs/workspace-notification-ui-verification-2026-10-14.md#workspace-notification-ui-formal-human-acceptance--2026-10-19) and [generated-declaration review](../../e2r-parameter-plotter/docs/generated-specification-declarations-verification-2026-10-14.md#generated-extension-declaration-integrity-formal-human-decision--2026-10-17) are closed within their documented bounds. Automated PASS alone does not establish Human Acceptance.
-- **E2R root and workspace placement:** the current consolidated layout and closure are summarized in the [2026-10-31 Root Consolidation checkpoint](../sessions/0100-0199/E2R-Session-0110.md); the [accepted placement Decision](../../ai-knowledge/decisions/e2r-workspace-placement.md) remains the cross-repository policy authority.
+- **E2R root and workspace placement:** the current consolidated layout and closure are summarized in the [2026-10-31 Root Consolidation checkpoint](../sessions/0100-0199/E2R-Session-0110.md); the accepted placement Decision (`ai-knowledge/decisions/e2r-workspace-placement.md`, workspace-local and not yet published) remains the cross-repository policy authority.
 - **Unresolved technical investigations:** the [Tab C boundary in the current mainline](#current-human-gates) and [LiaisonScape Diagnostics](#liaisonscape-diagnostics-status). Investigation states remain distinct from adoption decisions and acceptance reviews; retain each entry's own status and scope.
 - **Earlier chronology:** [Roadmap History index](roadmap-history/README.md). Dated checkpoints and historical uses of current, next or open do not override the current mainline and status index.
 
@@ -374,8 +374,8 @@ Closure are **APPROVED (BOUNDED)** for the three-app Locale Conflict Dialog
 visual refinement and, independently, NarrativeLine Home action width. The
 Human adopted the Codex-operated public Chrome/CDP evidence and prior local
 acceptance and publication evidence; this does not claim Human operation of the
-96 cases. The [Locale evidence and decision](../../e2r-narrative-line/docs/locale-conflict-focus-geometry-2026-11-07.md)
-and [Home-width decision](../../e2r-narrative-line/docs/home-action-width-visual-refinement-2026-11-06.md)
+96 cases. The [Locale evidence and decision](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/locale-conflict-focus-geometry-2026-11-07.md)
+and [Home-width decision](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/home-action-width-visual-refinement-2026-11-06.md)
 retain scope and exclusions. The 320px 286px/288px difference remains accepted.
 Official Browser Use remains independently BLOCKED. Screen-reader speech,
 successor Handoff-dialog focus contention, other engines, all editing/save

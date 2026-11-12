@@ -14,7 +14,7 @@ sequence, while the other routes retain their own scope and evidence.
 - **Selected application work order:** [2026-10-23 Human selection, updated 2026-10-25](#selected-application-work-order) for the published Hub and LiaisonScape steps and completed LiaisonScape design decision. [E2R-wide milestones](#proposed-e2r-wide-milestones), [Candidate evidence gates](#evidence-gates-for-candidate-extensions) and [Explicitly deferred](#explicitly-deferred) retain their separate planning roles.
 - **Human adoption or scope decisions:** [adopted Ko-fi direction](#human-decision-ko-fi) and [remaining follow-ups and scope decisions](#remaining-open-follow-ups-and-decisions). Adoption of a direction does not authorize implementation or publication.
 - **Current Human gates and bounded closures:** [Current Human gates](#current-human-gates) and their linked records; the [Workspace notification UI](../../e2r-parameter-plotter/docs/workspace-notification-ui-verification-2026-10-14.md#workspace-notification-ui-formal-human-acceptance--2026-10-19) and [generated-declaration review](../../e2r-parameter-plotter/docs/generated-specification-declarations-verification-2026-10-14.md#generated-extension-declaration-integrity-formal-human-decision--2026-10-17) are closed within their documented bounds. Automated PASS alone does not establish Human Acceptance.
-- **E2R root and workspace placement:** the current consolidated layout and closure are summarized in the [2026-10-31 Root Consolidation checkpoint](../sessions/0100-0199/E2R-Session-0110.md); the accepted placement Decision (`ai-knowledge/decisions/e2r-workspace-placement.md`, workspace-local and not yet published) remains the cross-repository policy authority.
+- **E2R root and workspace placement:** the current consolidated layout and closure are summarized in the [2026-10-31 Root Consolidation checkpoint](../sessions/0100-0199/E2R-Session-0110.md); the [accepted placement Decision](https://github.com/sukoyaka-dopeness/e2r-ai-knowledge/blob/main/decisions/e2r-workspace-placement.md) remains the cross-repository policy authority.
 - **Unresolved technical investigations:** the [Tab C boundary in the current mainline](#current-human-gates) and [LiaisonScape Diagnostics](#liaisonscape-diagnostics-status). Investigation states remain distinct from adoption decisions and acceptance reviews; retain each entry's own status and scope.
 - **Earlier chronology:** [Roadmap History index](roadmap-history/README.md). Dated checkpoints and historical uses of current, next or open do not override the current mainline and status index.
 
@@ -369,6 +369,68 @@ are historical snapshots, not necessarily the latest integrated source. The
 2026-09-28, 2026-10-02 and 2026-10-15 section anchors are retained for existing links.
 Roadmap History extraction/compression remains a separate later stage.
 
+### November 2026 mainline status reconciliation - 2026-11-12
+
+The initial synchronization below is a historical snapshot; subsequent public
+evidence and the Human decision follow it.
+
+This current-status update supplements the dated 2026-10-25 index below; it
+does not reorder the Human-selected execution sequence or revise historical
+acceptance and publication decisions.
+
+- **Locale Dialog / NarrativeLine Home width:** bounded Human Acceptance of
+  the three-app Locale Conflict Dialog visual refinement and, separately, the
+  NarrativeLine Home button width was recorded on 2026-11-07. The accepted source
+  commits were normally pushed and their CI and GitHub Pages workflows succeeded:
+  NarrativeLine [927628b](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/locale-conflict-focus-geometry-2026-11-07.md),
+  LiaisonScape [81c7214](https://github.com/sukoyaka-dopeness/e2r-liaison-scape/blob/main/docs/locale-conflict-focus-geometry-2026-11-07.md),
+  ParameterPlotter [0f3642a](https://github.com/sukoyaka-dopeness/e2r-parameter-plotter/blob/main/docs/locale-conflict-focus-geometry-2026-11-07.md).
+  [NarrativeLine Home width](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/home-action-width-visual-refinement-2026-11-06.md)
+  is independently accepted; the 320px two-pixel difference is accepted.
+  Public HTTPS and scoped primary assets matched publication evidence; full
+  dependency identity is not established. The requested post-deployment official
+  Public Browser Acceptance verification remains **BLOCKED**, most recently by
+  the VS Code Browser Access Host connection; no Product FAIL is inferred.
+  Publication Acceptance and Publication Closure remain separate Human decisions.
+  Screen-reader speech, direct saved-Locale inspection in the real browser and
+  successor-Handoff-dialog focus contention remain NOT VERIFIED.
+- **Hub Dataset Workflow:** the earlier 2026-11-04 Research proposal preceded
+  implementation. The visualization was locally accepted, pushed and deployed
+  in Hub commit a8a89fb; bounded public technical review passed. The later
+  Hub main 30d9393 contains it plus locale reception. See the [Hub record](https://github.com/sukoyaka-dopeness/e2r-hub/blob/main/docs/dataset-workflow-visualization-2026-11-04.md).
+  Dataset Workflow Publication Closure is still pending Human decision; no
+  real-time synchronization, shared store or automatic merge is asserted.
+- **Home-to-Hub:** the four-app sequence resumed after the earlier LiaisonScape
+  Push failure, all four apps were deployed, and bounded public E2E passed for
+  the then-reviewed revisions. See the [Hub summary](https://github.com/sukoyaka-dopeness/e2r-hub/blob/main/docs/home-to-hub-navigation-2026-11-04.md)
+  and [LiaisonScape evidence](https://github.com/sukoyaka-dopeness/e2r-liaison-scape/blob/main/docs/home-to-hub-navigation-2026-11-04.md).
+  Human Publication Closure remains pending, independently of the other items.
+- **MotifMosaic / Vocabulary:** local documentation-only bootstrap repositories
+  exist at c7278f9 and aefa9e1. Neither has an origin remote or an assigned license;
+  runtime, external fetch, portable Classification/Field/Template contracts and
+  release/distribution policy remain undecided. The earlier Research direction and
+  [2026-11-04 checkpoint](../research/exploratory/motifmosaic-vocabulary-cross-app-dataset-workflow-checkpoint-2026-11-04.md)
+  remain non-normative, and the pre-existing selected priorities are unchanged.
+
+The 2026-11-12 updates in this index and linked app/Hub records are local
+Documentation changes, not a new acceptance, public browser PASS, release
+authorization or Publication Closure. Existing uncommitted records remain separate.
+
+**Later evidence on 2026-11-12:** the preceding index is a historical
+synchronization snapshot. An independent isolated Chrome/CDP public review and
+subsequent evidence audit recorded 96 Locale Dialog cases and nine English Home
+geometry measurements as bounded PASS. Direct saved-Locale comparison is now
+verified in those public test cases; the 320px Home difference remains Human
+accepted. See the [NarrativeLine](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/locale-conflict-focus-geometry-2026-11-07.md),
+[LiaisonScape](https://github.com/sukoyaka-dopeness/e2r-liaison-scape/blob/main/docs/locale-conflict-focus-geometry-2026-11-07.md),
+[ParameterPlotter](https://github.com/sukoyaka-dopeness/e2r-parameter-plotter/blob/main/docs/locale-conflict-focus-geometry-2026-11-07.md),
+and [Home width](https://github.com/sukoyaka-dopeness/e2r-narrative-line/blob/main/docs/home-action-width-visual-refinement-2026-11-06.md)
+records. This does not resolve the official Browser Use BLOCKED history or
+establish Human Publication Acceptance or Closure. Screen-reader speech,
+successor Handoff-dialog focus contention, other browser engines, all
+editing/save-failure states and complete deployed dependency identity remain
+NOT VERIFIED. The evidence does not change the execution priority.
+
 **Human decision on 2026-11-12:** Publication Acceptance and Publication
 Closure are **APPROVED (BOUNDED)** for the three-app Locale Conflict Dialog
 visual refinement and, independently, NarrativeLine Home action width. The
@@ -383,6 +445,7 @@ failure states, full delivered dependency identity, unobserved console warnings
 and Runtime paths, and Cross-Context Workspace Safety overall remain outside
 these closures, without automatic FAIL or new publication blockers. Other
 workstreams, including Home-to-Hub, are not closed by this decision.
+
 
 ## Equal-priority Sample Dataset warning UX - 2026-10-28
 
@@ -1049,6 +1112,24 @@ The working dependency is repository setup before a bounded vocabulary-fetch
 experiment, then Classification and application experiments; none is started or
 authorized here. This direction does not reorder the existing E2R-wide work
 sequence or settle portable contracts, MVP scope, or publication.
+
+The [2026-11-04 Research checkpoint](../research/exploratory/motifmosaic-vocabulary-cross-app-dataset-workflow-checkpoint-2026-11-04.md)
+records the Human's simpler common Entity Editor and optional-template direction,
+AI dialogue as a future creative workflow, Cross-App Classification and import
+questions, and a Hub explanation of continuing one Dataset across applications.
+Template reuse and field identity, Classification ownership and round-trip
+preservation, AI context/adoption, and Hub UX scope remain evidence or Human
+decision gates. At the checkpoint, the Hub item was a UX research candidate;
+that discussion adopted no implementation, portable contract, or change to the
+selected execution order. The later published Hub visualization is noted below.
+
+Later status (2026-11-12): local documentation-only MotifMosaic and Vocabulary
+bootstrap repositories now exist, and the Hub Dataset Workflow visualization was
+accepted and published. Repository initialization, publication evidence and
+remaining decisions are recorded in the [current status index](#current-status-index-2026-10-02);
+no vocabulary fetch, portable contract, implementation priority or closure follows
+from the historical Research checkpoint.
+
 
 ### 1. Semantic responsibility and vocabulary architecture
 
